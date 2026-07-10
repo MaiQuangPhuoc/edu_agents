@@ -61,7 +61,7 @@ def _calc_chapter_distribution(knowledge_scores: dict, so_cau: int, muc_tieu_die
 
         de  = round(n * ratio["de"])
         tb  = round(n * ratio["trung_binh"])
-        kho = n - de - tb  # phần còn lại tránh lệch do làm tròn
+        kho = n - de - tb  # phần còn lại tránh lệch,sai xót do làm tròn
 
         result[ch_key] = {"so_cau": n, "de": de, "trung_binh": tb, "kho": kho}
         assigned += n
