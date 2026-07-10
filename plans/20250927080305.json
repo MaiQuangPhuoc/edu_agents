@@ -1,0 +1,1114 @@
+{
+  "plan_id": "20250927080305",
+  "time": "2025-09-27 08:04:43",
+  "status": "Đang học",
+  "overview_result": {
+    "study_modules": [
+      {
+        "module_name": "Chương 2: Hàm số bậc nhất và bậc hai",
+        "lesson_titles": [
+          "Bài 1: Hàm số",
+          "Bài 2: Hàm số y = ax + b",
+          "Bài 3: Hàm số bậc hai"
+        ],
+        "objectives": [
+          "Hiểu khái niệm hàm số, tập xác định, tập giá trị.",
+          "Nghiên cứu tính chất và cách vẽ đồ thị hàm số bậc nhất.",
+          "Nghiên cứu đồ thị, trục đối xứng, đỉnh và tính chất của hàm số bậc hai."
+        ],
+        "description": "Nghiên cứu về hàm số bậc nhất và bậc hai, bao gồm khái niệm, tính chất và cách khảo sát, vẽ đồ thị.",
+        "resources": [
+          {
+            "type": "video",
+            "url": "youtube.com/playlist?list=hm_so_bac_nhat_va_bac_hai_toan _10",
+            "title": "Video bài giảng Hàm số bậc nhất và bậc hai"
+          },
+          {
+            "type": "tài liệu",
+            "url": "tailieutoan.vn/ham_so_bac_nhat_va_bac_hai",
+            "title": "Tài liệu Hàm số bậc nhất và bậc hai"
+          }
+        ],
+        "duration_estimate": "3 tuần",
+        "priority": "cao"
+      },
+      {
+        "module_name": "Chương 6: Cung và góc lượng giác, Công thức lượng giác",
+        "lesson_titles": [
+          "Bài 1: Cung và góc lượng giác",
+          "Bài 2: Giá trị lượng giác của một cung",
+          "Bài 3: Công thức lượng giác"
+        ],
+        "objectives": [
+          "Nắm vững khái niệm về đường tròn lượng giác, cung và góc lượng giác.",
+          "Nắm vững định nghĩa các giá trị lượng giác và các mối quan hệ cơ bản.",
+          "Nắm vững các công thức lượng giác cơ bản."
+        ],
+        "description": "Giới thiệu về các khái niệm cơ bản của lượng giác và các công thức lượng giác.",
+        "resources": [
+          {
+            "type": "video",
+            "url": "youtube.com/playlist?list=Lượng_giác_Toán_10",
+            "title": "Video bài giảng Cung và góc Lượng giác, công thức lượng giác"
+          },
+          {
+            "type": "tài liệu",
+            "url": "tailieutoan.vn/chuyen-de-luong_giac",
+            "title": "Tài liệu Cung và góc lượng giác, công thức lượng giác"
+          }
+        ],
+        "duration_estimate": "3 tuần",
+        "priority": "cao"
+      },
+      {
+        "module_name": "Chương 9: Phương pháp tọa độ trong mặt phẳng",
+        "lesson_titles": [
+          "Bài 1: Phương trình đường thẳng",
+          "Bài 2: Phương trình đường tròn"
+        ],
+        "objectives": [
+          "Nắm vững các dạng phương trình đường thẳng và các bài toán liên quan.",
+          "Giới thiệu phương trình đường tròn và cách xác định tâm, bán kính."
+        ],
+        "description": "Chuyển đổi các bài toán hình học sang ngôn ngữ đại số bằng cách sử dụng hệ tọa độ, tập trung vào phương trình đường thẳng và đường tròn.",
+        "resources": [
+          {
+            "type": "video",
+            "url": "youtube.com/playlist?list=Phương_pháp_tọa_độ_mặt_phẳng_Toán_10",
+            "title": "Video bài giảng Phương pháp tọa độ mặt phẳng"
+          },
+          {
+            "type": "tài liệu",
+            "url": "tailieutoan.vn/chuyen-de-phuong_phap_toa_do",
+            "title": "Tài liệu Phương pháp tọa độ mặt phẳng"
+          }
+        ],
+        "duration_estimate": "3 tuần",
+        "priority": "cao"
+      }
+    ],
+    "constraints": {
+      "available_hours_per_day": "2 giờ",
+      "deadline": "2025-12-12",
+      "max_modules_per_week": 1,
+      "available_days_per_week": [
+        "thứ tư",
+        "thứ năm",
+        "thứ bảy"
+      ]
+    },
+    "learner_profile": {
+      "level": "học lực giỏi Toán 10",
+      "preferred_study_style": "Học qua video, đọc tài liệu lý thuyết và sau đó làm bài tập.",
+      "learning_goals": "Thi học sinh giỏi Toán 10, Đạt giải nhất kỳ thi học sinh giỏi Toán 10.",
+      "plan_name": "Kế hoạch thi học sinh giỏi Toán 10",
+      "plan_scope": "Các chủ đề kém và chủ đề quan tâm muốn học"
+    }
+  },
+  "study_details_result": {
+    "total_number_sessions": 64,
+    "sessions_done": 0,
+    "detail_plans": [
+      {
+        "module_name": "Chương 2: Hàm số bậc nhất và bậc hai",
+        "total_number_session_in_module": 8,
+        "total_number_session_done_in_module": 0,
+        "lessons": [
+          {
+            "lesson_id": "T10-ĐS-C2-B2",
+            "lesson_plan": "Đại số Học kỳ: Kì 1",
+            "lesson_dif": "2/5 (Nhận biết & Thông hiểu)",
+            "total_number_sessions_in_lesson": 3,
+            "lesson_title": "Hàm số y = ax + b",
+            "descriptions": "Nhận biết, nắm vững các đặc điểm và vẽ đồ thị của hàm số y=ax+b.",
+            "objectives": [
+              "Nhận biết, nắm vững các đặc điểm và vẽ đồ thị của hàm số y=ax+b."
+            ],
+            "sessions": [
+              {
+                "session_id": "T10-ĐS-C2-B2-B1",
+                "session_number": 1,
+                "status": "Chưa hoàn thành",
+                "session_name": "Giới thiệu hàm số y = ax + b",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Định nghĩa hàm số y=ax+b, với a,b là các hằng số và a≠0. Hệ số góc a và tung độ gốc b.",
+                "objectives": [
+                  "Nắm được định nghĩa hàm số y=ax+b.",
+                  "Hiểu ý nghĩa của hệ số góc a và tung độ gốc b."
+                ],
+                "activities": [
+                  "Nghe giảng lý thuyết",
+                  "Đọc tài liệu"
+                ],
+                "assignments": [
+                  "Bài tập nhận biết dạng hàm số y=ax+b"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=kYx325y1r1I",
+                    "title": "Video bài giảng Hàm số y = ax + b"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-ham-so-bac-nhat-y--ax--b-a109833.html",
+                    "title": "Tài liệu Hàm số y = ax + b"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-ham-so-bac-nhat-toan-10-179833",
+                    "title": "Bài tập Hàm số y = ax + b"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C2-B2-B2",
+                "session_number": 2,
+                "status": "Chưa hoàn thành",
+                "session_name": "Đồ thị và chiều biến thiên hàm số y = ax + b",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Đồ thị là một đường thẳng, cắt trục tung tại điểm (0;b) và có hệ số góc là a. Chiều biến thiên: Đồng biến khi a>0, nghịch biến khi a<0.",
+                "objectives": [
+                  "Vẽ được đồ thị hàm số y=ax+b.",
+                  "Xác định được chiều biến thiên của hàm số."
+                ],
+                "activities": [
+                  "Xem video",
+                  "Làm bài tập"
+                ],
+                "assignments": [
+                  "Bài tập vẽ đồ thị hàm số y=ax+b",
+                  "Bài tập xác định chiều biến thiên"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=kYx325y1r1I",
+                    "title": "Video bài giảng Hàm số y = ax + b"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-ham-so-bac-nhat-y--ax--b-a109833.html",
+                    "title": "Tài liệu Hàm số y = ax + b"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-ham-so-bac-nhat-toan-10-179833",
+                    "title": "Bài tập Hàm số y = ax + b"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C2-B2-B3",
+                "session_number": 3,
+                "status": "Chưa hoàn thành",
+                "session_name": "Ứng dụng và bài tập nâng cao",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Giải phương trình và bất phương trình bằng đồ thị. Xác định hàm số khi biết các yếu tố liên quan.",
+                "objectives": [
+                  "Vận dụng đồ thị để giải phương trình, bất phương trình.",
+                  "Tìm được hàm số khi biết các điều kiện."
+                ],
+                "activities": [
+                  "Thảo luận nhóm",
+                  "Giải bài tập nâng cao"
+                ],
+                "assignments": [
+                  "Bài tập giải phương trình, bất phương trình bằng đồ thị",
+                  "Bài tập tìm hàm số"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=kYx325y1r1I",
+                    "title": "Video bài giảng Hàm số y = ax + b"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-ham-so-bac-nhat-y--ax--b-a109833.html",
+                    "title": "Tài liệu Hàm số y = ax + b"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-ham-so-bac-nhat-toan-10-179833",
+                    "title": "Bài tập Hàm số y = ax + b"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "lesson_id": "T10-ĐS-C2-B3",
+            "lesson_plan": "Đại số Học kỳ: Kì 1",
+            "lesson_dif": "4/5 (Vận dụng & Vận dụng cao)",
+            "total_number_sessions_in_lesson": 5,
+            "lesson_title": "Hàm số bậc hai",
+            "descriptions": "Nhận biết, nắm vững các đặc điểm (trục đối xứng, đỉnh, bảng biến thiên) và vẽ đồ thị của hàm số y=ax^2+bx+c.",
+            "objectives": [
+              "Nhận biết, nắm vững các đặc điểm (trục đối xứng, đỉnh, bảng biến thiên) và vẽ đồ thị của hàm số y=ax^2+bx+c."
+            ],
+            "sessions": [
+              {
+                "session_id": "T10-ĐS-C2-B3-B1",
+                "session_number": 1,
+                "status": "Chưa hoàn thành",
+                "session_name": "Định nghĩa và đồ thị hàm số bậc hai",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Định nghĩa hàm số bậc hai y=ax^2+bx+c, a≠0. Đồ thị là một đường parabol.",
+                "objectives": [
+                  "Nắm vững định nghĩa hàm số bậc hai.",
+                  "Nhận biết đồ thị hàm số bậc hai là một parabol."
+                ],
+                "activities": [
+                  "Nghe giảng lý thuyết",
+                  "Đọc tài liệu"
+                ],
+                "assignments": [
+                  "Bài tập nhận biết dạng hàm số bậc hai"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=R2jQx1hK7yU",
+                    "title": "Video bài giảng Hàm số bậc hai"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-ham-so-bac-hai-a109834.html",
+                    "title": "Tài liệu Hàm số bậc hai"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-ham-so-bac-hai-toan-10-179834",
+                    "title": "Bài tập Hàm số bậc hai"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C2-B3-B2",
+                "session_number": 2,
+                "status": "Chưa hoàn thành",
+                "session_name": "Trục đối xứng và đỉnh của parabol",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Tìm tọa độ đỉnh I và phương trình trục đối xứng x = -b/(2a) của parabol y=ax^2+bx+c.",
+                "objectives": [
+                  "Xác định được tọa độ đỉnh của parabol.",
+                  "Viết được phương trình trục đối xứng của parabol."
+                ],
+                "activities": [
+                  "Xem video",
+                  "Làm bài tập"
+                ],
+                "assignments": [
+                  "Bài tập tìm đỉnh và trục đối xứng của parabol"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=R2jQx1hK7yU",
+                    "title": "Video bài giảng Hàm số bậc hai"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-ham-so-bac-hai-a109834.html",
+                    "title": "Tài liệu Hàm số bậc hai"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-ham-so-bac-hai-toan-10-179834",
+                    "title": "Bài tập Hàm số bậc hai"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C2-B3-B3",
+                "session_number": 3,
+                "status": "Chưa hoàn thành",
+                "session_name": "Bảng biến thiên và vẽ đồ thị hàm số bậc hai",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Lập bảng biến thiên thể hiện chiều biến thiên của hàm số. Vẽ đồ thị parabol.",
+                "objectives": [
+                  "Lập được bảng biến thiên.",
+                  "Vẽ chính xác đồ thị hàm số bậc hai."
+                ],
+                "activities": [
+                  "Thảo luận nhóm",
+                  "Thực hành vẽ đồ thị"
+                ],
+                "assignments": [
+                  "Bài tập lập bảng biến thiên",
+                  "Bài tập vẽ đồ thị hàm số bậc hai"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=R2jQx1hK7yU",
+                    "title": "Video bài giảng Hàm số bậc hai"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-ham-so-bac-hai-a109834.html",
+                    "title": "Tài liệu Hàm số bậc hai"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-ham-so-bac-hai-toan-10-179834",
+                    "title": "Bài tập Hàm số bậc hai"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C2-B3-B4",
+                "session_number": 4,
+                "status": "Chưa hoàn thành",
+                "session_name": "Tìm giá trị lớn nhất, nhỏ nhất",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Tìm giá trị lớn nhất, nhỏ nhất của hàm số bậc hai trên một khoảng cho trước.",
+                "objectives": [
+                  "Vận dụng kiến thức về hàm số bậc hai để tìm GTLN, GTNN trên khoảng."
+                ],
+                "activities": [
+                  "Giải bài tập ứng dụng",
+                  "Ôn tập lý thuyết"
+                ],
+                "assignments": [
+                  "Bài tập tìm GTLN, GTNN của hàm số bậc hai"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=R2jQx1hK7yU",
+                    "title": "Video bài giảng Hàm số bậc hai"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-ham-so-bac-hai-a109834.html",
+                    "title": "Tài liệu Hàm số bậc hai"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-ham-so-bac-hai-toan-10-179834",
+                    "title": "Bài tập Hàm số bậc hai"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C2-B3-B5",
+                "session_number": 5,
+                "status": "Chưa hoàn thành",
+                "session_name": "Bài tập tổng hợp và ôn tập",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Tổng hợp các dạng bài tập về hàm số bậc hai.",
+                "objectives": [
+                  "Củng cố và hệ thống hóa kiến thức về hàm số bậc hai."
+                ],
+                "activities": [
+                  "Làm bài tập tổng hợp",
+                  "Hỏi đáp"
+                ],
+                "assignments": [
+                  "Bài tập tổng hợp chương hàm số bậc hai"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=R2jQx1hK7yU",
+                    "title": "Video bài giảng Hàm số bậc hai"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-ham-so-bac-hai-a109834.html",
+                    "title": "Tài liệu Hàm số bậc hai"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-ham-so-bac-hai-toan-10-179834",
+                    "title": "Bài tập Hàm số bậc hai"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "module_name": "Chương 6: Cung và góc lượng giác, Công thức lượng giác",
+        "total_number_session_in_module": 9,
+        "total_number_session_done_in_module": 0,
+        "lessons": [
+          {
+            "lesson_id": "T10-ĐS-C6-B1",
+            "lesson_plan": "Đại số Học kỳ: Kì 2",
+            "lesson_dif": "3/5 (Thông hiểu & Vận dụng)",
+            "total_number_sessions_in_lesson": 3,
+            "lesson_title": "Cung và góc lượng giác",
+            "descriptions": "Nắm vững khái niệm về đường tròn lượng giác, cung và góc lượng giác. Hiểu và biết cách biểu diễn trên đường tròn lượng giác.",
+            "objectives": [
+              "Nắm vững khái niệm về đường tròn lượng giác, cung và góc lượng giác.",
+              "Hiểu và biết cách biểu diễn trên đường tròn lượng giác."
+            ],
+            "sessions": [
+              {
+                "session_id": "T10-ĐS-C6-B1-B1",
+                "session_number": 1,
+                "status": "Chưa hoàn thành",
+                "session_name": "Đường tròn định hướng và cung lượng giác",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Khái niệm đường tròn định hướng. Khái niệm cung lượng giác và các đo bằng độ, radian.",
+                "objectives": [
+                  "Hiểu khái niệm đường tròn định hướng.",
+                  "Nắm được khái niệm cung lượng giác và đơn vị đo."
+                ],
+                "activities": [
+                  "Nghe giảng lý thuyết",
+                  "Đọc tài liệu"
+                ],
+                "assignments": [
+                  "Bài tập nhận biết đường tròn định hướng",
+                  "Bài tập về cung lượng giác"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=F3tJ8X5rKkM",
+                    "title": "Video bài giảng Cung và góc lượng giác"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-cung-va-goc-luong-giac-a109878.html",
+                    "title": "Tài liệu Cung và góc lượng giác"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-trac-nghiem-cung-va-goc-luong-giac-toan-10-187004",
+                    "title": "Bài tập Cung và góc lượng giác"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C6-B1-B2",
+                "session_number": 2,
+                "status": "Chưa hoàn thành",
+                "session_name": "Góc lượng giác và biểu diễn trên đường tròn",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Khái niệm góc lượng giác. Biểu diễn cung và góc lượng giác trên đường tròn lượng giác.",
+                "objectives": [
+                  "Hiểu khái niệm góc lượng giác.",
+                  "Biểu diễn được cung và góc lượng giác trên đường tròn lượng giác."
+                ],
+                "activities": [
+                  "Xem video",
+                  "Làm bài tập"
+                ],
+                "assignments": [
+                  "Bài tập biểu diễn cung lượng giác trên đường tròn"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=F3tJ8X5rKkM",
+                    "title": "Video bài giảng Cung và góc lượng giác"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-cung-va-goc-luong-giac-a109878.html",
+                    "title": "Tài liệu Cung và góc lượng giác"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-trac-nghiem-cung-va-goc-luong-giac-toan-10-187004",
+                    "title": "Bài tập Cung và góc lượng giác"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C6-B1-B3",
+                "session_number": 3,
+                "status": "Chưa hoàn thành",
+                "session_name": "Chuyển đổi đơn vị và bài tập vận dụng",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Chuyển đổi đơn vị đo giữa độ và radian. Bài tập vận dụng các khái niệm đã học.",
+                "objectives": [
+                  "Thực hiện thành thạo việc chuyển đổi đơn vị.",
+                  "Vận dụng kiến thức để giải các bài tập cơ bản."
+                ],
+                "activities": [
+                  "Thảo luận nhóm",
+                  "Giải bài tập"
+                ],
+                "assignments": [
+                  "Bài tập chuyển đổi đơn vị độ và radian",
+                  "Bài tập tổng hợp về cung và góc lượng giác"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=F3tJ8X5rKkM",
+                    "title": "Video bài giảng Cung và góc lượng giác"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-cung-va-goc-luong-giac-a109878.html",
+                    "title": "Tài liệu Cung và góc lượng giác"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-trac-nghiem-cung-va-goc-luong-giac-toan-10-187004",
+                    "title": "Bài tập Cung và góc lượng giác"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "lesson_id": "T10-ĐS-C6-B2",
+            "lesson_plan": "Đại số Học kỳ: Kì 2",
+            "lesson_dif": "4/5 (Vận dụng & Vận dụng cao)",
+            "total_number_sessions_in_lesson": 3,
+            "lesson_title": "Giá trị lượng giác của một cung",
+            "descriptions": "Nắm vững định nghĩa các giá trị lượng giác. Tính giá trị lượng giác của các cung. Nắm vững các công thức cơ bản và mối liên hệ giữa chúng.",
+            "objectives": [
+              "Nắm vững định nghĩa các giá trị lượng giác.",
+              "Tính giá trị lượng giác của các cung.",
+              "Nắm vững các công thức cơ bản và mối liên hệ giữa chúng."
+            ],
+            "sessions": [
+              {
+                "session_id": "T10-ĐS-C6-B2-B1",
+                "session_number": 1,
+                "status": "Chưa hoàn thành",
+                "session_name": "Định nghĩa các giá trị lượng giác",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Định nghĩa sin, cos, tan, cot của một cung lượng giác trên đường tròn lượng giác.",
+                "objectives": [
+                  "Nắm vững định nghĩa sin, cos, tan, cot.",
+                  "Xác định được các giá trị lượng giác trên đường tròn lượng giác."
+                ],
+                "activities": [
+                  "Nghe giảng lý thuyết",
+                  "Đọc tài liệu"
+                ],
+                "assignments": [
+                  "Bài tập nhận biết các giá trị lượng giác"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=F3tJ8X5rKkM",
+                    "title": "Video bài giảng Giá trị lượng giác của một cung"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-gia-tri-luong-giac-cua-mot-cung-a109880.html",
+                    "title": "Tài liệu Giá trị lượng giác của một cung"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-trac-nghiem-gia-tri-luong-giac-cua-mot-cung-toan-10-187006",
+                    "title": "Bài tập Giá trị lượng giác của một cung"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C6-B2-B2",
+                "session_number": 2,
+                "status": "Chưa hoàn thành",
+                "session_name": "Tính giá trị lượng giác và công thức cơ bản",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Tính giá trị lượng giác của các cung đặc biệt. Nắm vững các công thức lượng giác cơ bản như sin^2(x)+cos^2(x)=1, công thức cộng (chưa chi tiết).",
+                "objectives": [
+                  "Tính được giá trị lượng giác của các cung đặc biệt.",
+                  "Nắm vững các công thức lượng giác cơ bản."
+                ],
+                "activities": [
+                  "Xem video",
+                  "Làm bài tập"
+                ],
+                "assignments": [
+                  "Bài tập tính giá trị lượng giác",
+                  "Bài tập áp dụng công thức cơ bản"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=F3tJ8X5rKkM",
+                    "title": "Video bài giảng Giá trị lượng giác của một cung"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-gia-tri-luong-giac-cua-mot-cung-a109880.html",
+                    "title": "Tài liệu Giá trị lượng giác của một cung"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-trac-nghiem-gia-tri-luong-giac-cua-mot-cung-toan-10-187006",
+                    "title": "Bài tập Giá trị lượng giác của một cung"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C6-B2-B3",
+                "session_number": 3,
+                "status": "Chưa hoàn thành",
+                "session_name": "Rút gọn biểu thức và chứng minh đẳng thức",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Vận dụng các giá trị và công thức lượng giác để rút gọn biểu thức và chứng minh đẳng thức.",
+                "objectives": [
+                  "Thành thạo việc rút gọn biểu thức lượng giác.",
+                  "Chứng minh được các đẳng thức lượng giác cơ bản."
+                ],
+                "activities": [
+                  "Thảo luận nhóm",
+                  "Giải bài tập"
+                ],
+                "assignments": [
+                  "Bài tập rút gọn biểu thức",
+                  "Bài tập chứng minh đẳng thức lượng giác"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=F3tJ8X5rKkM",
+                    "title": "Video bài giảng Giá trị lượng giác của một cung"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-gia-tri-luong-giac-cua-mot-cung-a109880.html",
+                    "title": "Tài liệu Giá trị lượng giác của một cung"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-trac-nghiem-gia-tri-luong-giac-cua-mot-cung-toan-10-187006",
+                    "title": "Bài tập Giá trị lượng giác của một cung"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "lesson_id": "T10-ĐS-C6-B3",
+            "lesson_plan": "Đại số Học kỳ: Kì 2",
+            "lesson_dif": "4/5 (Vận dụng & Vận dụng cao)",
+            "total_number_sessions_in_lesson": 4,
+            "lesson_title": "Công thức lượng giác",
+            "descriptions": "Nắm vững và vận dụng các công thức lượng giác: công thức cộng, công thức nhân đôi, công thức biến đổi tổng thành tích và tích thành tổng.",
+            "objectives": [
+              "Nắm vững và vận dụng các công thức lượng giác: công thức cộng, công thức nhân đôi, công thức biến đổi tổng thành tích và tích thành tổng."
+            ],
+            "sessions": [
+              {
+                "session_id": "T10-ĐS-C6-B3-B1",
+                "session_number": 1,
+                "status": "Chưa hoàn thành",
+                "session_name": "Công thức cộng",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Công thức cộng: Công thức tính sin, cos, tan của tổng hoặc hiệu hai góc. Ví dụ: cos(a+b).",
+                "objectives": [
+                  "Nắm vững công thức cộng.",
+                  "Áp dụng công thức cộng để tính toán."
+                ],
+                "activities": [
+                  "Nghe giảng lý thuyết",
+                  "Đọc tài liệu"
+                ],
+                "assignments": [
+                  "Bài tập áp dụng công thức cộng"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=kYx325y1r1I",
+                    "title": "Video bài giảng Công thức lượng giác"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-cong-thuc-luong-giac-c45a6249.html",
+                    "title": "Tài liệu Công thức lượng giác"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-ve-cong-thuc-luong-giac-lop-10-52603/",
+                    "title": "Bài tập Công thức lượng giác"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C6-B3-B2",
+                "session_number": 2,
+                "status": "Chưa hoàn thành",
+                "session_name": "Công thức nhân đôi và cung liên kết",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Công thức nhân đôi: Công thức tính các giá trị lượng giác của góc 2a theo các giá trị của góc a. Cung liên kết.",
+                "objectives": [
+                  "Nắm vững công thức nhân đôi.",
+                  "Hiểu và vận dụng công thức cung liên kết."
+                ],
+                "activities": [
+                  "Xem video",
+                  "Làm bài tập"
+                ],
+                "assignments": [
+                  "Bài tập áp dụng công thức nhân đôi",
+                  "Bài tập về cung liên kết"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=kYx325y1r1I",
+                    "title": "Video bài giảng Công thức lượng giác"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-cong-thuc-luong-giac-c45a6249.html",
+                    "title": "Tài liệu Công thức lượng giác"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-ve-cong-thuc-luong-giac-lop-10-52603/",
+                    "title": "Bài tập Công thức lượng giác"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C6-B3-B3",
+                "session_number": 3,
+                "status": "Chưa hoàn thành",
+                "session_name": "Công thức biến đổi tổng thành tích và tích thành tổng",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Các công thức biến đổi tích thành tổng và ngược lại.",
+                "objectives": [
+                  "Nắm vững các công thức biến đổi tổng-tích và tích-tổng."
+                ],
+                "activities": [
+                  "Thảo luận nhóm",
+                  "Giải bài tập"
+                ],
+                "assignments": [
+                  "Bài tập áp dụng công thức biến đổi tổng-tích",
+                  "Bài tập áp dụng công thức biến đổi tích-tổng"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=kYx325y1r1I",
+                    "title": "Video bài giảng Công thức lượng giác"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-cong-thuc-luong-giac-c45a6249.html",
+                    "title": "Tài liệu Công thức lượng giác"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-ve-cong-thuc-luong-giac-lop-10-52603/",
+                    "title": "Bài tập Công thức lượng giác"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C6-B3-B4",
+                "session_number": 4,
+                "status": "Chưa hoàn thành",
+                "session_name": "Bài tập tổng hợp và giải phương trình lượng giác",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Tổng hợp các dạng bài tập về công thức lượng giác. Giải phương trình, bất phương trình lượng giác.",
+                "objectives": [
+                  "Vận dụng linh hoạt các công thức lượng giác.",
+                  "Giải được phương trình, bất phương trình lượng giác."
+                ],
+                "activities": [
+                  "Làm bài tập tổng hợp",
+                  "Hỏi đáp"
+                ],
+                "assignments": [
+                  "Bài tập tổng hợp chương công thức lượng giác",
+                  "Bài tập giải phương trình, bất phương trình lượng giác"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=kYx325y1r1I",
+                    "title": "Video bài giảng Công thức lượng giác"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-cong-thuc-luong-giac-c45a6249.html",
+                    "title": "Tài liệu Công thức lượng giác"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-ve-cong-thuc-luong-giac-lop-10-52603/",
+                    "title": "Bài tập Công thức lượng giác"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "module_name": "Chương 9: Phương pháp tọa độ trong mặt phẳng",
+        "total_number_session_in_module": 5,
+        "total_number_session_done_in_module": 0,
+        "lessons": [
+          {
+            "lesson_id": "T10-HH-C3-B1",
+            "lesson_plan": "Hình học Học kỳ: Kì 2",
+            "lesson_dif": "3/5 (Thông hiểu & Vận dụng)",
+            "total_number_sessions_in_lesson": 3,
+            "lesson_title": "Phương trình đường thẳng",
+            "descriptions": "Nắm vững các loại phương trình đường thẳng và biết cách chuyển đổi giữa chúng. Nắm vững cách tính khoảng cách từ một điểm đến một đường thẳng và góc giữa hai đường thẳng.",
+            "objectives": [
+              "Nắm vững các loại phương trình đường thẳng và biết cách chuyển đổi giữa chúng.",
+              "Nắm vững cách tính khoảng cách từ một điểm đến một đường thẳng và góc giữa hai đường thẳng."
+            ],
+            "sessions": [
+              {
+                "session_id": "T10-HH-C3-B1-B1",
+                "session_number": 1,
+                "status": "Chưa hoàn thành",
+                "session_name": "Vectơ chỉ phương, vectơ pháp tuyến và phương trình tham số",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Khái niệm vectơ chỉ phương và vectơ pháp tuyến của đường thẳng. Phương trình tham số của đường thẳng.",
+                "objectives": [
+                  "Hiểu và xác định được vectơ chỉ phương, vectơ pháp tuyến.",
+                  "Viết được phương trình tham số của đường thẳng."
+                ],
+                "activities": [
+                  "Nghe giảng lý thuyết",
+                  "Đọc tài liệu"
+                ],
+                "assignments": [
+                  "Bài tập xác định vectơ chỉ phương, pháp tuyến",
+                  "Bài tập viết phương trình tham số"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=F3tJ8X5rKkM",
+                    "title": "Video bài giảng Phương trình đường thẳng"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-phuong-trinh-duong-thang-c46a6252.html",
+                    "title": "Tài liệu Phương trình đường thẳng"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-trac-nghiem-phuong-trinh-duong-thang-toan-10-187016",
+                    "title": "Bài tập Phương trình đường thẳng"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-HH-C3-B1-B2",
+                "session_number": 2,
+                "status": "Chưa hoàn thành",
+                "session_name": "Phương trình tổng quát",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Phương trình tổng quát của đường thẳng: Ax+By+C=0. Cách chuyển đổi giữa phương trình tham số và phương trình tổng quát.",
+                "objectives": [
+                  "Nắm vững dạng phương trình tổng quát.",
+                  "Chuyển đổi linh hoạt giữa các dạng phương trình đường thẳng."
+                ],
+                "activities": [
+                  "Xem video",
+                  "Làm bài tập"
+                ],
+                "assignments": [
+                  "Bài tập viết phương trình tổng quát",
+                  "Bài tập chuyển đổi phương trình"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=F3tJ8X5rKkM",
+                    "title": "Video bài giảng Phương trình đường thẳng"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-phuong-trinh-duong-thang-c46a6252.html",
+                    "title": "Tài liệu Phương trình đường thẳng"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-trac-nghiem-phuong-trinh-duong-thang-toan-10-187016",
+                    "title": "Bài tập Phương trình đường thẳng"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-HH-C3-B1-B3",
+                "session_number": 3,
+                "status": "Chưa hoàn thành",
+                "session_name": "Khoảng cách và góc giữa hai đường thẳng",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Công thức tính khoảng cách từ một điểm đến một đường thẳng. Công thức tính góc giữa hai đường thẳng.",
+                "objectives": [
+                  "Vận dụng công thức tính khoảng cách.",
+                  "Tính được góc giữa hai đường thẳng."
+                ],
+                "activities": [
+                  "Thảo luận nhóm",
+                  "Giải bài tập"
+                ],
+                "assignments": [
+                  "Bài tập tính khoảng cách",
+                  "Bài tập tính góc giữa hai đường thẳng"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=F3tJ8X5rKkM",
+                    "title": "Video bài giảng Phương trình đường thẳng"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-phuong-trinh-duong-thang-c46a6252.html",
+                    "title": "Tài liệu Phương trình đường thẳng"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-trac-nghiem-phuong-trinh-duong-thang-toan-10-187016",
+                    "title": "Bài tập Phương trình đường thẳng"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "lesson_id": "T10-HH-C3-B2",
+            "lesson_plan": "Hình học Học kỳ: Kì 2",
+            "lesson_dif": "3/5 (Thông hiểu & Vận dụng)",
+            "total_number_sessions_in_lesson": 2,
+            "lesson_title": "Phương trình đường tròn",
+            "descriptions": "Nắm vững cách viết phương trình đường tròn khi biết tâm và bán kính. Nhận biết và tìm tâm, bán kính của đường tròn từ phương trình đã cho.",
+            "objectives": [
+              "Nắm vững cách viết phương trình đường tròn khi biết tâm và bán kính.",
+              "Nhận biết và tìm tâm, bán kính của đường tròn từ phương trình đã cho."
+            ],
+            "sessions": [
+              {
+                "session_id": "T10-HH-C3-B2-B1",
+                "session_number": 1,
+                "status": "Chưa hoàn thành",
+                "session_name": "Phương trình đường tròn với tâm và bán kính cho trước",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Phương trình đường tròn có dạng (x−a)^2+(y−b)^2=R^2 với tâm I(a,b) và bán kính R.",
+                "objectives": [
+                  "Viết được phương trình đường tròn khi biết tâm và bán kính."
+                ],
+                "activities": [
+                  "Nghe giảng lý thuyết",
+                  "Đọc tài liệu"
+                ],
+                "assignments": [
+                  "Bài tập viết phương trình đường tròn"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=F3tJ8X5rKkM",
+                    "title": "Video bài giảng Phương trình đường tròn"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-phuong-trinh-duong-tron-a109903.html",
+                    "title": "Tài liệu Phương trình đường tròn"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-trac-nghiem-phuong-trinh-duong-tron-toan-10-187017",
+                    "title": "Bài tập Phương trình đường tròn"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-HH-C3-B2-B2",
+                "session_number": 2,
+                "status": "Chưa hoàn thành",
+                "session_name": "Nhận biết và tìm tâm, bán kính từ phương trình",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Nhận biết phương trình đường tròn dạng x^2+y^2+2Ax+2By+C=0. Tìm tâm và bán kính của đường tròn.",
+                "objectives": [
+                  "Nhận biết và tìm được tâm, bán kính từ phương trình đường tròn."
+                ],
+                "activities": [
+                  "Xem video",
+                  "Làm bài tập"
+                ],
+                "assignments": [
+                  "Bài tập tìm tâm, bán kính đường tròn",
+                  "Bài tập lập phương trình tiếp tuyến"
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=F3tJ8X5rKkM",
+                    "title": "Video bài giảng Phương trình đường tròn"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-phuong-trinh-duong-tron-a109903.html",
+                    "title": "Tài liệu Phương trình đường tròn"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-trac-nghiem-phuong-trinh-duong-tron-toan-10-187017",
+                    "title": "Bài tập Phương trình đường tròn"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>EduAgent Chat</title>
+  <link rel="stylesheet" href="../css/chat.css">
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <div class="logo">📘 EduAgent</div>
+      <div class="status">🟢 Đang hoạt động</div>
+    </header>
+
+    <main class="chat-body" id="chatBody">
+      <!-- Tin nhắn demo -->
+      <div class="message bot">
+        <div class="avatar"></div>
+        <div class="text">
+          Xin chào! Tôi là <b>EduAgent</b>, trợ lý học tập của bạn.<br>
+          Hôm nay bạn muốn bắt đầu với <b>chương trình Toán 10</b> chứ?
+        </div>
+      </div>
+
+      <div class="message user">
+        <div class="avatar"></div>
+        <div class="text">Vâng, em muốn học chương 1: Mệnh đề và tập hợp.</div>
+      </div>
+
+      <div class="message bot">
+        <div class="avatar"></div>
+        <div class="text">
+          Tuyệt vời! Trước hết cho tôi biết học lực hiện tại của bạn trong môn Toán?
+        </div>
+      </div>
+
+      <div class="message user">
+        <div class="avatar"></div>
+        <div class="text">Em học khá ổn, nhưng còn yếu phần lượng giác và hàm số bậc hai.</div>
+      </div>
+
+      <div class="message bot">
+        <div class="avatar"></div>
+        <div class="text">
+          Cảm ơn bạn! Vậy mục tiêu của bạn là gì? Ôn thi học sinh giỏi hay chỉ muốn nắm chắc kiến thức cơ bản?
+        </div>
+      </div>
+    </main>
+
+    <footer class="chat-footer">
+      <input type="text" id="userInput" placeholder="Nhập câu hỏi của bạn...">
+      <button id="sendBtn">Gửi</button>
+    </footer>
+  </div>
+
+  <script src="../js/chat.js"></script>
+</body>
+</html>

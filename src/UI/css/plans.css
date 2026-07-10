@@ -1,0 +1,19 @@
+/* Toolbar */
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+
+/* Tag & Progress */
+.tag{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;background:#f1f5f9;color:#334155;font-size:12px}
+.tag.primary{background:var(--primary-weak);color:var(--primary)}
+.progress-wrap{background:#f1f5f9;border-radius:999px;height:8px;overflow:hidden}
+.progress{height:8px;background:var(--primary);width:0;transition:width .25s}
+
+/* Table */
+.table{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.table th,.table td{padding:14px 16px;text-align:left}
+.table thead th{background:var(--primary-weak);color:var(--primary);font-weight:700}
+.table tbody tr+tr td{border-top:1px solid var(--border)}
+.empty{text-align:center;color:var(--muted);padding:28px}
+
+tr.selected {
+  border: 2px solid red;
+}

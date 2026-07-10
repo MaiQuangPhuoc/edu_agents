@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Buổi học • StudyUI</title>
+  <link rel="stylesheet" href="../css/base.css"/>
+  <link rel="stylesheet" href="../css/session.css"/>
+</head>
+<body>
+  <!-- Header chung -->
+  <div id="app-header"></div>
+
+  <!-- <main>
+    <div class="session-info">
+      <div class="info-item">📅 Ngày: 12/08/2025</div>
+      <div class="info-item">⚡ Buổi: Sáng</div>
+      <div class="info-item">⏰ Thời gian: 08:00</div>
+    </div>
+
+    <section class="lesson-detail">
+      <h2>📌 Bài học: Tập hợp - Phần tử và Ký hiệu <span class="badge">Buổi 1</span></h2>
+    </section>
+
+    <section class="content">
+      <div class="box">
+        <h3>📘 Nội dung cần nắm</h3>
+        <ul>
+          <li>Các ký hiệu cơ bản: ∈, ∉, ⊂</li>
+          <li>Tập hợp rỗng, tập hợp con</li>
+          <li>Bài tập minh họa</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>💡 Đề xuất hoạt động</h3>
+        <ul>
+          <li>Thực hành bài tập về bài toán ứng dụng</li>
+          <li>Tìm hiểu thêm qua tài liệu tham khảo</li>
+          <li>Làm bài tập theo hướng dẫn trong tài liệu</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="exercise">
+      <h3>✍️ Dạng bài tập</h3>
+      <p>- Tìm ĐKXĐ của phương trình</p>
+      <p>- Giải phương trình và kiểm tra nghiệm</p>
+    </section>
+
+    <section class="resources">
+      <h3>📂 Tài Nguyên</h3>
+      <a href="#">[Video]</a>
+      <a href="#">[Doc]</a>
+      <a href="#">[Quiz]</a>
+    </section>
+  </main> -->
+
+  <main>
+    <div class="session-info">
+      <div class="info-item">📅 <span id="session-date"></span></div>
+      <div class="info-item">⚡ <span id="session-number"></span></div>
+      <div class="info-item">⏰ Thời gian: <span id="session-time"></span></div>
+    </div>
+
+    <section class="lesson-detail">
+      <h2>
+        📌 Bài học: <span id="lesson-title"></span> 
+        <span class="badge" id="lesson-plan"></span>
+      </h2>
+    </section>
+
+    <section class="content">
+      <div class="box">
+        <h3>📘 Nội dung cần nắm</h3>
+        <ul id="core-content"></ul>
+      </div>
+
+      <div class="box">
+        <h3>💡 Đề xuất hoạt động</h3>
+        <ul id="activities"></ul>
+      </div>
+    </section>
+
+    <section class="exercise">
+      <h3>✍️ Dạng bài tập</h3>
+      <ul id="assignments"></ul>
+    </section>
+
+    <section class="resources">
+      <h3>📂 Tài Nguyên</h3>
+      <div id="resources"></div>
+    </section>
+  </main>
+
+
+  <!-- Footer chung -->
+  <div id="app-footer"></div>
+
+  <script type="module" src="../js/main.js"></script>
+  <script type="module" src="../js/session.js"></script>
+</body>
+</html>

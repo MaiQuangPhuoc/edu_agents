@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đánh giá qua bài kiểm tra</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/minitest.css" />
+</head>
+<body>
+    <div id="app-header"></div>
+
+    
+    <div class="container">
+        <h1>Đánh giá qua bài kiểm tra</h1>
+
+        <form id="quizForm">
+        <!-- Các câu hỏi -->
+        <div class="question">
+            <p>Câu 1: Mệnh đề nào sau đây là đúng?</p>
+            <label><input type="radio" name="q1" value="A"> Mọi số chẵn đều chia hết cho 4</label>
+            <label><input type="radio" name="q1" value="B"> Mọi số nguyên tố lớn hơn 2 đều là số lẻ</label>
+            <label><input type="radio" name="q1" value="C"> √2 là số hữu tỉ</label>
+            <label><input type="radio" name="q1" value="D"> 0 là số nguyên tố</label>
+        </div>
+
+        <div class="question">
+            <p>Câu 2: Hàm số y = 2x + 1 có đồ thị là:</p>
+            <label><input type="radio" name="q2" value="A"> Parabol</label>
+            <label><input type="radio" name="q2" value="B"> Đường thẳng</label>
+            <label><input type="radio" name="q2" value="C"> Đường tròn</label>
+            <label><input type="radio" name="q2" value="D"> Elip</label>
+        </div>
+
+        <div class="question">
+            <p>Câu 3: Phương trình đường tròn (x - 1)² + (y + 2)² = 9 có tâm và bán kính là:</p>
+            <label><input type="radio" name="q3" value="A"> Tâm (1; -2), R = 3</label>
+            <label><input type="radio" name="q3" value="B"> Tâm (-1; 2), R = 9</label>
+            <label><input type="radio" name="q3" value="C"> Tâm (1; 2), R = 3</label>
+            <label><input type="radio" name="q3" value="D"> Tâm (1; -2), R = 9</label>
+        </div>
+
+        <div class="question">
+            <p>Câu 4: Nghiệm của phương trình x² - 5x + 6 = 0 là:</p>
+            <label><input type="radio" name="q4" value="A"> x = 2 hoặc x = 3</label>
+            <label><input type="radio" name="q4" value="B"> x = -2 hoặc x = -3</label>
+            <label><input type="radio" name="q4" value="C"> x = 6 hoặc x = -1</label>
+            <label><input type="radio" name="q4" value="D"> x = 1 hoặc x = 5</label>
+        </div>
+
+        <div class="question">
+            <p>Câu 5: Giá trị lớn nhất của hàm số y = -x² + 4x + 5 là:</p>
+            <label><input type="radio" name="q5" value="A"> 9</label>
+            <label><input type="radio" name="q5" value="B"> 5</label>
+            <label><input type="radio" name="q5" value="C"> 4</label>
+            <label><input type="radio" name="q5" value="D"> 11</label>
+        </div>
+
+        <div class="question">
+            <p>Câu 6: Hệ phương trình { x + y = 3 ; x - y = 1 } có nghiệm là:</p>
+            <label><input type="radio" name="q6" value="A"> x=2, y=1</label>
+            <label><input type="radio" name="q6" value="B"> x=1, y=2</label>
+            <label><input type="radio" name="q6" value="C"> x=3, y=0</label>
+            <label><input type="radio" name="q6" value="D"> x=0, y=3</label>
+        </div>
+
+        <div class="question">
+            <p>Câu 7: Bất phương trình 2x - 3 &gt; 1 có nghiệm là:</p>
+            <label><input type="radio" name="q7" value="A"> x &gt; 2</label>
+            <label><input type="radio" name="q7" value="B"> x &lt; 2</label>
+            <label><input type="radio" name="q7" value="C"> x ≥ 2</label>
+            <label><input type="radio" name="q7" value="D"> x ≤ 2</label>
+        </div>
+
+        <div class="question">
+            <p>Câu 8: Tập xác định của hàm số y = √(x - 1) là:</p>
+            <label><input type="radio" name="q8" value="A"> x ≥ 0</label>
+            <label><input type="radio" name="q8" value="B"> x &gt; 1</label>
+            <label><input type="radio" name="q8" value="C"> x ≥ 1</label>
+            <label><input type="radio" name="q8" value="D"> x ≤ 1</label>
+        </div>
+
+        <div class="question">
+            <p>Câu 9: Đường thẳng đi qua hai điểm A(0;1), B(2;5) có phương trình:</p>
+            <label><input type="radio" name="q9" value="A"> y = 2x + 1</label>
+            <label><input type="radio" name="q9" value="B"> y = 2x - 1</label>
+            <label><input type="radio" name="q9" value="C"> y = x + 1</label>
+            <label><input type="radio" name="q9" value="D"> y = -2x + 1</label>
+        </div>
+
+        <div class="question">
+            <p>Câu 10: Giá trị lượng giác cos²α + sin²α bằng:</p>
+            <label><input type="radio" name="q10" value="A"> 0</label>
+            <label><input type="radio" name="q10" value="B"> 1</label>
+            <label><input type="radio" name="q10" value="C"> 2</label>
+            <label><input type="radio" name="q10" value="D"> cos2α</label>
+        </div>
+
+        <div class="actions">
+            <button type="button" id="saveBtn">Nộp bài</button>
+            <button type="button" id="selfEvalBtn">Tự đánh giá</button>
+        </div>
+        </form>
+    </div>
+
+    <div id="app-footer"></div>
+
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/minitest.js"></script>
+</body>
+</html>

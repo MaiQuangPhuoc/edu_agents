@@ -1,0 +1,63 @@
+:root{
+  --bg:#f7fbff; --white:#fff; --text:#0f172a; --muted:#64748b;
+  --primary:#2563eb; --primary-weak:#e6efff; --border:#e5e7eb;
+  --shadow:0 10px 20px rgba(2,6,23,.06);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg)}
+a{color:inherit;text-decoration:none}
+.container{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* Header */
+.site-header{position:sticky;top:0;background:var(--white);border-bottom:1px solid var(--border);z-index:20}
+.navbar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700}
+.brand .dot{width:10px;height:10px;border-radius:50%;background:var(--primary)}
+.brand span{color:var(--primary)}
+.nav{display:flex;gap:8px}
+.nav a{padding:10px 14px;border-radius:10px;color:var(--muted);transition:.2s}
+.nav a:hover{background:var(--primary-weak);color:var(--primary)}
+.nav a.active{background:var(--primary);color:#fff}
+
+/* Hero (Trang chủ) */
+.hero{padding:48px 0}
+.hero-card{background:var(--white);border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);padding:28px;display:grid;grid-template-columns:1.2fr .8fr;gap:24px}
+.hero h1{margin:0 0 8px;font-size:32px;line-height:1.25}
+.hero p{margin:0;color:var(--muted)}
+.badge{display:inline-flex;align-items:center;gap:8px;background:var(--primary-weak);color:var(--primary);padding:6px 10px;border-radius:999px;font-size:12px;font-weight:600}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:#fff;padding:10px 14px;border-radius:12px;cursor:pointer;transition:.2s;font-weight:600}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--primary);color:#fff;border-color:transparent}
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+.stat{background:#fff;border:1px solid var(--border);border-radius:14px;padding:16px}
+.stat .kpi{font-size:22px;font-weight:800}
+.stat .label{color:var(--muted);font-size:13px}
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+.card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:18px;transition:transform .15s, box-shadow .15s}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.card h3{margin:0 0 8px;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:14px}
+
+/* Footer */
+.site-footer{margin-top:40px;border-top:1px solid var(--border);background:#fff}
+.footer-wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;height:64px;color:var(--muted);font-size:14px}
+
+/* Khung trang & khối chung */
+.page{padding:28px 0}
+.page-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.page-title h1{margin:0;font-size:24px}
+.panel{background:#fff;border:1px solid var(--border);border-radius:14px;padding:18px}
+.input{height:40px;padding:0 12px;border:1px solid var(--border);border-radius:10px;background:#fff;outline:none}
+.input:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(37,99,235,.08)}
+.select,.textarea{border:1px solid var(--border);border-radius:10px;padding:10px 12px;background:#fff}
+.textarea{min-height:96px;resize:vertical}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-card{grid-template-columns:1fr}
+  .card-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:600px){
+  .nav{display:none}
+  .card-grid{grid-template-columns:1fr}
+}

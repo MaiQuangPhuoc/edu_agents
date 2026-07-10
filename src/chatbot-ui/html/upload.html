@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chatbot UI</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/chat.css">
+  <link rel="stylesheet" href="../css/upload.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-title">🤖 Chatbot</div>
+      <nav class="menu">
+        <button onclick="window.location.href='chat.html'">🗨️ Chat</button>
+
+        <button onclick="loadPage('upload')">📁 Upload</button>
+        <button onclick="loadPage('settings')">⚙️ Settings</button>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="header">
+        <div class="profile">
+          <img src="../assets/profile.png" alt="Profile">
+          <span>User</span>
+        </div>
+        <div class="header-right">
+          <select class="quick-settings">
+            <option>Quick Settings</option>
+          </select>
+          <button id="theme-toggle">🌙</button>
+        </div>
+      </header>
+
+      <section id="content">
+        <!-- upload -->
+
+          <div class="upload-container">
+            <div class="upload-box" id="drop-area">
+              <p>📄 Kéo & thả file Word vào đây<br>hoặc</p>
+              <input type="file" id="fileElem" accept=".doc,.docx" />
+              <label class="button" for="fileElem">Chọn file Word</label>
+              <div id="file-name"></div>
+              <button id="send-link-btn" style="display: none;">📤 Gửi đường dẫn</button>
+            </div>
+          </div>
+        
+      </section>
+    </main>
+
+
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/upload.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Overview • StudyUI</title>
+  <link rel="stylesheet" href="../css/base.css"/>
+  <link rel="stylesheet" href="../css/overview.css"/>
+</head>
+<body>
+  <div id="app-header"></div>
+
+  <!-- <main class="container page">
+    <h1 class="page-title">KẾ HOẠCH HỌC TẬP TOÁN 10</h1>
+    <p class="subtitle">Phạm vi kế hoạch: Học kì 1 (130 ngày)</p>
+
+    <div class="constraints">
+      <div class="constraint-item">⏱️ 2 giờ/ngày</div>
+      <div class="constraint-item">📅 3 ngày/tuần (Thứ tư, Thứ năm, Thứ bảy)</div>
+      <div class="constraint-item">🎯 Hạn chót: 12/12/2025</div>
+      <div class="constraint-item">⚡ Tối đa 1 chương/tuần</div>
+    </div>
+
+    <div class="learner">
+      <h2>Thông tin người học</h2>
+      <ul>
+        <li>Trình độ: học lực giỏi</li>
+        <li>Phong cách học: học qua video lý thuyết và bài tập</li>
+        <li>Mục tiêu: Thi học sinh giỏi toán 10, đạt giải nhất kì thi</li>
+        <li>Phạm vi: Các chủ đề kém và chủ đề quan tâm muốn học</li>
+      </ul>
+    </div>
+
+    <h2>Lộ trình học</h2>
+    <div id="modules"></div>
+  </main> -->
+
+  <main class="container page">
+    <h1 id="plan-title" class="page-title"></h1>
+    <p id="plan-scope" class="subtitle"></p>
+
+    <!-- Constraints -->
+    <div class="constraints">
+      <div id="time-per-day" class="constraint-item"></div>
+      <div id="days-per-week" class="constraint-item"></div>
+      <div id="deadline" class="constraint-item"></div>
+      <div id="max-chapter" class="constraint-item"></div>
+    </div>
+
+    <!-- Learner profile -->
+    <div class="learner">
+      <h2>Thông tin người học</h2>
+      <ul>
+        <li id="level"></li>
+        <li id="style"></li>
+        <li id="goal"></li>
+        <li id="scope"></li>
+      </ul>
+    </div>
+
+    <h2>Lộ trình học</h2>
+    <div id="modules"></div>
+  </main>
+
+
+  <div id="app-footer"></div>
+
+  <script type="module" src="../js/main.js"></script>
+  <script type="module" src="../js/overview.js"></script>
+</body>
+</html>

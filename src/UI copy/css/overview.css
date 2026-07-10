@@ -1,0 +1,135 @@
+.page-title {
+  text-align:center;
+  color:var(--primary);
+  margin-bottom:4px;
+  font-size:24px;
+  font-weight:700;
+}
+.subtitle {
+  text-align:center;
+  color:var(--muted);
+  margin-bottom:20px;
+  font-size:14px;
+}
+
+/* Constraints */
+.constraints {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  justify-content:center;
+  margin-bottom:20px;
+}
+.constraint-item {
+  background:var(--primary-weak);
+  color:var(--primary);
+  padding:8px 14px;
+  border-radius:20px;
+  font-size:14px;
+  transition:background .2s;
+}
+.constraint-item:hover {
+  background:var(--primary);
+  color:#fff;
+}
+
+/* Learner profile */
+.learner {
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:16px 20px;
+  margin-bottom:24px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.05);
+  transition:transform .2s, box-shadow .2s;
+}
+.learner:hover {
+  transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+.learner h2 {margin-top:0;color:var(--primary);font-size:18px}
+.learner ul {margin:0;padding-left:20px;color:#334155;font-size:14px}
+
+/* Module cards */
+.module-card {
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:18px 20px;
+  margin-bottom:20px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.05);
+  transition:transform .2s, box-shadow .2s;
+}
+.module-card:hover {
+  transform:translateY(-4px);
+  box-shadow:0 6px 16px rgba(0,0,0,0.12);
+}
+.module-header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:10px;
+}
+.module-header h3 {
+  margin:0;
+  color:var(--primary);
+  font-size:16px;
+}
+.priority {
+  background:var(--primary);
+  color:#fff;
+  padding:4px 10px;
+  border-radius:8px;
+  font-size:12px;
+}
+
+/* Lessons */
+.lessons {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:12px;
+}
+.lesson {
+  border:1px solid var(--border);
+  padding:6px 12px;
+  border-radius:8px;
+  font-size:13px;
+  background:#f8fafc;
+  cursor:pointer;
+  transition:all .2s;
+}
+.lesson:hover {
+  background:var(--primary-weak);
+  color:var(--primary);
+  border-color:var(--primary);
+}
+
+/* Resources */
+.resources {
+  margin-top:12px;
+  display:flex;
+  gap:16px;
+  font-size:13px;
+  color:var(--muted);
+}
+.resources span {
+  cursor:pointer;
+  transition:color .2s;
+}
+.resources span:hover {color:var(--primary)}
+
+/* Progress bar */
+.progress-wrap {
+  background:#f1f5f9;
+  border-radius:999px;
+  height:8px;
+  overflow:hidden;
+  margin-top:12px;
+}
+.progress {
+  height:8px;
+  background:var(--primary);
+  width:0;
+  transition:width .4s ease;
+}

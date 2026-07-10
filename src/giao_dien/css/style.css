@@ -1,0 +1,120 @@
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f9ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+header h1 {
+  color: #0056b3;
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+header p {
+  color: #444;
+  font-size: 16px;
+}
+
+/* Thông tin tổng quan */
+.overview {
+  display: flex;
+  justify-content: space-around;
+  background: #e6f0ff;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+.overview-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+.overview-item .icon {
+  font-size: 18px;
+  color: #0056b3;
+}
+
+/* Module */
+.module {
+  border: 1px solid #cce0ff;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 20px 0;
+  background: #fdfdff;
+}
+.module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.module-header h3 {
+  color: #0056b3;
+  font-size: 20px;
+}
+.priority {
+  background: #0056b3;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Lessons */
+.lessons {
+  margin: 15px 0;
+}
+.lessons button {
+  background: #e6f0ff;
+  border: 1px solid #99c2ff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.lessons button:hover {
+  background: #0056b3;
+  color: #fff;
+}
+
+/* Resources */
+.resources {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.resources .icon {
+  margin-right: 8px;
+  color: #0056b3;
+}
+.resources a {
+  color: #0056b3;
+  text-decoration: none;
+  margin: 0 4px;
+}
+.resources a:hover {
+  text-decoration: underline;
+}

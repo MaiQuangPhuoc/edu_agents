@@ -1,0 +1,24 @@
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --accent: #007bff;
+}
+
+[data-theme="dark"] {
+  --bg: #1f1f1f;
+  --text: #f1f1f1;
+  --accent: #66b0ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  height: 100vh;
+}

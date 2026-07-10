@@ -1,0 +1,674 @@
+{
+  "plan_id": "20250927022810",
+  "time": "2025-09-27 02:32:46",
+  "status": "Đang học",
+  "overview_result": {
+    "study_modules": [
+      {
+        "module_name": "Chương 2: Hàm số bậc nhất và bậc hai",
+        "lesson_titles": [
+          "Bài 3: Hàm số bậc hai"
+        ],
+        "objectives": [
+          "Hiểu về đồ thị (parabol), trục đối xứng, đỉnh và các tính chất của hàm số bậc hai.",
+          "Nắm vững kiến thức về hàm số bậc hai để giải quyết các bài toán liên quan."
+        ],
+        "description": "Tập trung nghiên cứu về hàm số bậc hai, bao gồm đồ thị (parabol), trục đối xứng, đỉnh và các tính chất.",
+        "resources": [
+          {
+            "type": "video",
+            "url": "youtube.com/playlist?list=hm_so_bac_nhat_va_bac_hai_toan _10",
+            "title": "Video bài giảng Hàm số bậc nhất và bậc hai"
+          },
+          {
+            "type": "tài liệu",
+            "url": "tailieutoan.vn/ham_so_bac_nhat_va_bac_hai",
+            "title": "Tài liệu Hàm số bậc nhất và bậc hai"
+          }
+        ],
+        "duration_estimate": "3 tuần",
+        "priority": "cao"
+      },
+      {
+        "module_name": "Chương 3: Phương trình, Hệ phương trình",
+        "lesson_titles": [
+          "Bài 1: Đại cương về phương trình",
+          "Bài 2: Phương trình quy về phương trình bậc nhất, bậc hai"
+        ],
+        "objectives": [
+          "Nắm vững các khái niệm cơ bản về phương trình.",
+          "Biết cách biến đổi các phương trình phức tạp về dạng bậc nhất hoặc bậc hai để giải."
+        ],
+        "description": "Cung cấp kiến thức về phương trình, bao gồm phương trình bậc nhất và bậc hai, cùng với các phương pháp giải.",
+        "resources": [
+          {
+            "type": "video",
+            "url": "youtube.com/playlist?list=Phuong_trinh_he_phuong_trinh",
+            "title": "Video bài giảng Phương trình, Hệ phương trình"
+          },
+          {
+            "type": "tài liệu",
+            "url": "tailieutoan.vn/chuyen-de-phuong-trinh-he-phuong-trinh",
+            "title": "Tài liệu Phương trình, Hệ phương trình"
+          }
+        ],
+        "duration_estimate": "3 tuần",
+        "priority": "cao"
+      },
+      {
+        "module_name": "Chương 9: Phương pháp tọa độ trong mặt phẳng",
+        "lesson_titles": [
+          "Bài 1: Phương trình đường thẳng"
+        ],
+        "objectives": [
+          "Nắm vững các dạng phương trình đường thẳng (tham số, tổng quát).",
+          "Hiểu mối liên hệ giữa các vectơ chỉ phương, vectơ pháp tuyến.",
+          "Giải các bài toán liên quan đến khoảng cách và góc của đường thẳng."
+        ],
+        "description": "Giới thiệu phương pháp tọa độ trong mặt phẳng, tập trung vào phương trình đường thẳng.",
+        "resources": [
+          {
+            "type": "video",
+            "url": "youtube.com/playlist?list=Phương_pháp_tọa_độ_mặt_phẳng_Toán_10",
+            "title": "Video bài giảng Phương pháp tọa độ mặt phẳng"
+          },
+          {
+            "type": "tài liệu",
+            "url": "tailieutoan.vn/chuyen-de-phuong_phap_toa_do",
+            "title": "Tài liệu Phương pháp tọa độ mặt phẳng"
+          }
+        ],
+        "duration_estimate": "3 tuần",
+        "priority": "cao"
+      }
+    ],
+    "constraints": {
+      "available_hours_per_day": "6 tiếng/tuần",
+      "deadline": "2025-12-12",
+      "max_modules_per_week": 1,
+      "available_days_per_week": [
+        "thứ tư",
+        "thứ năm",
+        "thứ bảy"
+      ]
+    },
+    "learner_profile": {
+      "level": "học lực giỏi Toán 10",
+      "preferred_study_style": "học qua video, đọc tài liệu lý thuyết và sau đó làm bài tập",
+      "learning_goals": "Thi học sinh giỏi Toán 10, Đạt giải nhất kỳ thi học sinh giỏi Toán 10",
+      "plan_name": "Luyện thi học sinh giỏi Toán 10",
+      "plan_scope": "Các chủ đề yếu kém và chủ đề quan tâm muốn học"
+    }
+  },
+  "study_details_result": {
+    "total_number_sessions": 31,
+    "sessions_done": 0,
+    "detail_plans": [
+      {
+        "module_name": "Chương 2: Hàm số bậc nhất và bậc hai",
+        "total_number_session_in_module": 5,
+        "total_number_session_done_in_module": 0,
+        "lessons": [
+          {
+            "lesson_id": "T10-ĐS-C2-B3",
+            "lesson_plan": "Đại số Học kỳ: Kì 1",
+            "lesson_dif": "4/5 (Vận dụng & Vận dụng cao)",
+            "total_number_sessions_in_lesson": 5,
+            "lesson_title": "Bài 3: Hàm số bậc hai",
+            "descriptions": "Nhận biết, nắm vững các đặc điểm (trục đối xứng, đỉnh, bảng biến thiên) và vẽ đồ thị của hàm số y=ax2+bx+c.",
+            "objectives": [
+              "Nhận biết, nắm vững các đặc điểm (trục đối xứng, đỉnh, bảng biến thiên) và vẽ đồ thị của hàm số y=ax2+bx+c."
+            ],
+            "sessions": [
+              {
+                "session_id": "T10-ĐS-C2-B3-B1",
+                "session_number": 1,
+                "status": "Chưa hoàn thành",
+                "session_name": "Giới thiệu hàm số bậc hai và đồ thị (Parabol)",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Định nghĩa hàm số bậc hai y=ax^2+bx+c, a!=0. Đặc điểm đồ thị (parabol), trục đối xứng, đỉnh.",
+                "objectives": [
+                  "Hiểu định nghĩa hàm số bậc hai.",
+                  "Nhận biết đồ thị là parabol, xác định được trục đối xứng và đỉnh."
+                ],
+                "activities": [
+                  "Nghe giảng, ghi chép lý thuyết.",
+                  "Quan sát và phân tích đồ thị parabol mẫu."
+                ],
+                "assignments": [
+                  "Bài tập nhận biết dạng hàm số bậc hai.",
+                  "Xác định tọa độ đỉnh và trục đối xứng của parabol cho trước."
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=R2jQx1hK7yU",
+                    "title": "Video bài giảng Hàm số bậc hai"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-ham-so-bac-hai-a109834.html",
+                    "title": "Tài liệu Hàm số bậc hai"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-ham-so-bac-hai-toan-10-179834",
+                    "title": "Bài tập Hàm số bậc hai"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C2-B3-B2",
+                "session_number": 2,
+                "status": "Chưa hoàn thành",
+                "session_name": "Lập bảng biến thiên và vẽ đồ thị hàm số bậc hai",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Cách lập bảng biến thiên cho hàm số bậc hai. Các bước vẽ đồ thị parabol.",
+                "objectives": [
+                  "Nắm vững cách lập bảng biến thiên.",
+                  "Thực hành vẽ đồ thị hàm số bậc hai."
+                ],
+                "activities": [
+                  "Thực hành lập bảng biến thiên theo mẫu.",
+                  "Vẽ đồ thị hàm số bậc hai với các hệ số khác nhau."
+                ],
+                "assignments": [
+                  "Lập bảng biến thiên và vẽ đồ thị cho 5 hàm số bậc hai.",
+                  "Bài tập tìm giá trị lớn nhất, nhỏ nhất của hàm số trên khoảng."
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=R2jQx1hK7yU",
+                    "title": "Video bài giảng Hàm số bậc hai"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-ham-so-bac-hai-a109834.html",
+                    "title": "Tài liệu Hàm số bậc hai"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-ham-so-bac-hai-toan-10-179834",
+                    "title": "Bài tập Hàm số bậc hai"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C2-B3-B3",
+                "session_number": 3,
+                "status": "Chưa hoàn thành",
+                "session_name": "Ứng dụng của hàm số bậc hai - Bài toán thực tế",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Ứng dụng của hàm số bậc hai trong các bài toán thực tế (tối ưu hóa, quỹ đạo, ...).",
+                "objectives": [
+                  "Nhận biết các bài toán có thể mô hình hóa bằng hàm số bậc hai.",
+                  "Vận dụng kiến thức để giải các bài toán thực tế."
+                ],
+                "activities": [
+                  "Phân tích các ví dụ ứng dụng thực tế.",
+                  "Thảo luận cách giải các bài toán."
+                ],
+                "assignments": [
+                  "Giải các bài toán thực tế liên quan đến hàm số bậc hai."
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=R2jQx1hK7yU",
+                    "title": "Video bài giảng Hàm số bậc hai"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-ham-so-bac-hai-a109834.html",
+                    "title": "Tài liệu Hàm số bậc hai"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-ham-so-bac-hai-toan-10-179834",
+                    "title": "Bài tập Hàm số bậc hai"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C2-B3-B4",
+                "session_number": 4,
+                "status": "Chưa hoàn thành",
+                "session_name": "Ôn tập và luyện tập hàm số bậc hai",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Tổng hợp kiến thức về hàm số bậc hai. Luyện tập các dạng bài tập từ cơ bản đến nâng cao.",
+                "objectives": [
+                  "Hệ thống hóa kiến thức.",
+                  "Nâng cao kỹ năng giải bài tập."
+                ],
+                "activities": [
+                  "Giải đề thi/bài tập tổng hợp.",
+                  "Thảo luận các dạng toán khó."
+                ],
+                "assignments": [
+                  "Hoàn thành bộ bài tập ôn tập chương."
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=R2jQx1hK7yU",
+                    "title": "Video bài giảng Hàm số bậc hai"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-ham-so-bac-hai-a109834.html",
+                    "title": "Tài liệu Hàm số bậc hai"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-ham-so-bac-hai-toan-10-179834",
+                    "title": "Bài tập Hàm số bậc hai"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C2-B3-B5",
+                "session_number": 5,
+                "status": "Chưa hoàn thành",
+                "session_name": "Kiểm tra kiến thức hàm số bậc hai",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Đánh giá mức độ nắm vững kiến thức về hàm số bậc hai qua bài kiểm tra.",
+                "objectives": [
+                  "Đánh giá kết quả học tập.",
+                  "Xác định các phần kiến thức cần củng cố thêm."
+                ],
+                "activities": [
+                  "Làm bài kiểm tra trắc nghiệm/tự luận.",
+                  "Xem lại và sửa lỗi bài kiểm tra."
+                ],
+                "assignments": [
+                  "Hoàn thành bài kiểm tra."
+                ],
+                "resources": [
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-ham-so-bac-hai-toan-10-179834",
+                    "title": "Bài tập Hàm số bậc hai"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "module_name": "Chương 3: Phương trình, Hệ phương trình",
+        "total_number_session_in_module": 5,
+        "total_number_session_done_in_module": 0,
+        "lessons": [
+          {
+            "lesson_id": "T10-ĐS-C3-B1",
+            "lesson_plan": "Đại số Học kỳ: Kì 1",
+            "lesson_dif": "2/5 (Nhận biết & Thông hiểu)",
+            "total_number_sessions_in_lesson": 2,
+            "lesson_title": "Bài 1: Đại cương về phương trình",
+            "descriptions": "Hiểu khái niệm phương trình, nghiệm, điều kiện xác định (ĐKXĐ) và các phép biến đổi tương đương.",
+            "objectives": [
+              "Hiểu khái niệm phương trình, nghiệm, điều kiện xác định (ĐKXĐ) và các phép biến đổi tương đương."
+            ],
+            "sessions": [
+              {
+                "session_id": "T10-ĐS-C3-B1-B1",
+                "session_number": 1,
+                "status": "Chưa hoàn thành",
+                "session_name": "Khái niệm phương trình và nghiệm",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Định nghĩa phương trình một ẩn, nghiệm của phương trình. Tập nghiệm của phương trình.",
+                "objectives": [
+                  "Hiểu rõ khái niệm phương trình và nghiệm.",
+                  "Xác định được tập nghiệm của một số phương trình đơn giản."
+                ],
+                "activities": [
+                  "Nghe giảng, ghi chú lý thuyết.",
+                  "Thảo luận các ví dụ về phương trình và nghiệm."
+                ],
+                "assignments": [
+                  "Bài tập nhận biết phương trình và nghiệm.",
+                  "Tìm nghiệm của các phương trình cho trước."
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=refoQO9iAP4",
+                    "title": "Video bài giảng Đại cương về phương trình"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-dai-cuong-ve-phuong-trinh-c45a5091.html",
+                    "title": "Tài liệu Đại cương về phương trình"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-trac-nghiem-dai-cuong-ve-phuong-trinh-toan-10-186985",
+                    "title": "Bài tập Đại cương về phương trình"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C3-B1-B2",
+                "session_number": 2,
+                "status": "Chưa hoàn thành",
+                "session_name": "Điều kiện xác định và phương trình tương đương",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Khái niệm điều kiện xác định (ĐKXĐ). Các phép biến đổi tương đương để giải phương trình. Khái niệm phương trình tương đương.",
+                "objectives": [
+                  "Xác định được ĐKXĐ của phương trình.",
+                  "Nắm vững các phép biến đổi tương đương.",
+                  "Nhận biết các phương trình tương đương."
+                ],
+                "activities": [
+                  "Thực hành tìm ĐKXĐ.",
+                  "Áp dụng các phép biến đổi tương đương để giải phương trình."
+                ],
+                "assignments": [
+                  "Bài tập tìm ĐKXĐ.",
+                  "Bài tập nhận biết phương trình tương đương."
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=refoQO9iAP4",
+                    "title": "Video bài giảng Đại cương về phương trình"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-dai-cuong-ve-phuong-trinh-c45a5091.html",
+                    "title": "Tài liệu Đại cương về phương trình"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-trac-nghiem-dai-cuong-ve-phuong-trinh-toan-10-186985",
+                    "title": "Bài tập Đại cương về phương trình"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "lesson_id": "T10-ĐS-C3-B2",
+            "lesson_plan": "Đại số Học kỳ: Kì 1",
+            "lesson_dif": "3/5 (Thông hiểu & Vận dụng)",
+            "total_number_sessions_in_lesson": 3,
+            "lesson_title": "Bài 2: Phương trình quy về phương trình bậc nhất, bậc hai",
+            "descriptions": "Nắm vững cách giải phương trình dạng fracP(x)Q(x)=0 và phương trình chứa ẩn dưới dấu căn sqrtf(x)=g(x).",
+            "objectives": [
+              "Nắm vững cách giải phương trình dạng fracP(x)Q(x)=0 và phương trình chứa ẩn dưới dấu căn sqrtf(x)=g(x)."
+            ],
+            "sessions": [
+              {
+                "session_id": "T10-ĐS-C3-B2-B1",
+                "session_number": 1,
+                "status": "Chưa hoàn thành",
+                "session_name": "Giải phương trình chứa ẩn ở mẫu",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Phương trình chứa ẩn ở mẫu: Điều kiện xác định (ĐKXĐ) là mẫu số khác 0. Cách giải: khử mẫu, giải phương trình mới, và đối chiếu nghiệm với ĐKXĐ.",
+                "objectives": [
+                  "Hiểu cách xác định ĐKXĐ cho phương trình chứa ẩn ở mẫu.",
+                  "Thực hiện thành thạo các bước giải phương trình chứa ẩn ở mẫu."
+                ],
+                "activities": [
+                  "Phân tích ví dụ về phương trình chứa ẩn ở mẫu.",
+                  "Thực hành giải các bài tập."
+                ],
+                "assignments": [
+                  "Bài tập giải phương trình chứa ẩn ở mẫu."
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=F_S9g9y4i3E",
+                    "title": "Video bài giảng Phương trình quy về bậc nhất, bậc hai"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-phuong-trinh-quy-ve-phuong-trinh-bac-nhat-bac-hai-a109848.html",
+                    "title": "Tài liệu Phương trình quy về bậc nhất, bậc hai"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-phuong-trinh-quy-ve-phuong-trinh-bac-nhat-bac-hai-toan-10-186987",
+                    "title": "Bài tập Phương trình quy về bậc nhất, bậc hai"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C3-B2-B2",
+                "session_number": 2,
+                "status": "Chưa hoàn thành",
+                "session_name": "Giải phương trình chứa ẩn dưới dấu căn",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Phương trình chứa ẩn dưới dấu căn: Bình phương hai vế sau khi đặt ĐKXĐ (biểu thức dưới dấu căn không âm, và vế còn lại không âm nếu có).",
+                "objectives": [
+                  "Hiểu điều kiện để bình phương hai vế của phương trình chứa căn.",
+                  "Thực hiện các bước giải phương trình chứa ẩn dưới dấu căn."
+                ],
+                "activities": [
+                  "Phân tích ví dụ về phương trình chứa căn.",
+                  "Làm bài tập ứng dụng."
+                ],
+                "assignments": [
+                  "Bài tập giải phương trình chứa ẩn dưới dấu căn."
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=F_S9g9y4i3E",
+                    "title": "Video bài giảng Phương trình quy về bậc nhất, bậc hai"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-phuong-trinh-quy-ve-phuong-trinh-bac-nhat-bac-hai-a109848.html",
+                    "title": "Tài liệu Phương trình quy về bậc nhất, bậc hai"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-phuong-trinh-quy-ve-phuong-trinh-bac-nhat-bac-hai-toan-10-186987",
+                    "title": "Bài tập Phương trình quy về bậc nhất, bậc hai"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-ĐS-C3-B2-B3",
+                "session_number": 3,
+                "status": "Chưa hoàn thành",
+                "session_name": "Tổng hợp và luyện tập",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Bài toán tổng hợp kết hợp nhiều dạng phương trình. Luyện tập giải các bài toán phức tạp.",
+                "objectives": [
+                  "Vận dụng linh hoạt các phương pháp đã học để giải các bài toán.",
+                  "Nâng cao kỹ năng giải phương trình."
+                ],
+                "activities": [
+                  "Giải các bài tập tổng hợp.",
+                  "Thảo luận các dạng toán khó."
+                ],
+                "assignments": [
+                  "Hoàn thành bộ bài tập ôn tập chương."
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=F_S9g9y4i3E",
+                    "title": "Video bài giảng Phương trình quy về bậc nhất, bậc hai"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-phuong-trinh-quy-ve-phuong-trinh-bac-nhat-bac-hai-a109848.html",
+                    "title": "Tài liệu Phương trình quy về bậc nhất, bậc hai"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-phuong-trinh-quy-ve-phuong-trinh-bac-nhat-bac-hai-toan-10-186987",
+                    "title": "Bài tập Phương trình quy về bậc nhất, bậc hai"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "module_name": "Chương 9: Phương pháp tọa độ trong mặt phẳng",
+        "total_number_session_in_module": 3,
+        "total_number_session_done_in_module": 0,
+        "lessons": [
+          {
+            "lesson_id": "T10-HH-C3-B1",
+            "lesson_plan": "Hình học Học kỳ: Kì 2",
+            "lesson_dif": "3/5 (Thông hiểu & Vận dụng)",
+            "total_number_sessions_in_lesson": 3,
+            "lesson_title": "Bài 1: Phương trình đường thẳng",
+            "descriptions": "Nắm vững các dạng phương trình đường thẳng và biết cách chuyển đổi giữa chúng. Nắm vững cách tính khoảng cách từ một điểm đến một đường thẳng và góc giữa hai đường thẳng.",
+            "objectives": [
+              "Nắm vững các dạng phương trình đường thẳng và biết cách chuyển đổi giữa chúng.",
+              "Nắm vững cách tính khoảng cách từ một điểm đến một đường thẳng và góc giữa hai đường thẳng."
+            ],
+            "sessions": [
+              {
+                "session_id": "T10-HH-C3-B1-B1",
+                "session_number": 1,
+                "status": "Chưa hoàn thành",
+                "session_name": "Giới thiệu về phương trình đường thẳng",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Vectơ chỉ phương và vectơ pháp tuyến của đường thẳng. Phương trình tham số của đường thẳng.",
+                "objectives": [
+                  "Hiểu khái niệm vectơ chỉ phương và vectơ pháp tuyến.",
+                  "Nắm vững dạng phương trình tham số của đường thẳng."
+                ],
+                "activities": [
+                  "Nghe giảng, ghi chép lý thuyết.",
+                  "Phân tích mối liên hệ giữa vectơ chỉ phương và vectơ pháp tuyến."
+                ],
+                "assignments": [
+                  "Bài tập xác định vectơ chỉ phương, pháp tuyến.",
+                  "Viết phương trình tham số của đường thẳng khi biết các yếu tố."
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=F3tJ8X5rKkM",
+                    "title": "Video bài giảng Phương trình đường thẳng"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-phuong-trinh-duong-thang-c46a6252.html",
+                    "title": "Tài liệu Phương trình đường thẳng"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-trac-nghiem-phuong-trinh-duong-thang-toan-10-187016",
+                    "title": "Bài tập Phương trình đường thẳng"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-HH-C3-B1-B2",
+                "session_number": 2,
+                "status": "Chưa hoàn thành",
+                "session_name": "Phương trình tổng quát và các bài toán liên quan",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Phương trình tổng quát của đường thẳng (Ax+By+C=0). Các bài toán liên quan: tính khoảng cách từ một điểm đến một đường thẳng, tính góc giữa hai đường thẳng.",
+                "objectives": [
+                  "Nắm vững dạng phương trình tổng quát.",
+                  "Biết cách tính khoảng cách và góc giữa hai đường thẳng."
+                ],
+                "activities": [
+                  "Thực hành viết phương trình tổng quát.",
+                  "Áp dụng công thức tính khoảng cách và góc."
+                ],
+                "assignments": [
+                  "Bài tập viết phương trình tổng quát.",
+                  "Bài tập tính khoảng cách và góc."
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=F3tJ8X5rKkM",
+                    "title": "Video bài giảng Phương trình đường thẳng"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-phuong-trinh-duong-thang-c46a6252.html",
+                    "title": "Tài liệu Phương trình đường thẳng"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-trac-nghiem-phuong-trinh-duong-thang-toan-10-187016",
+                    "title": "Bài tập Phương trình đường thẳng"
+                  }
+                ]
+              },
+              {
+                "session_id": "T10-HH-C3-B1-B3",
+                "session_number": 3,
+                "status": "Chưa hoàn thành",
+                "session_name": "Luyện tập và ứng dụng",
+                "daily": {
+                  "hours": 7.0
+                },
+                "core_content": "Tổng hợp các dạng bài tập về phương trình đường thẳng. Ứng dụng trong giải quyết các bài toán hình học.",
+                "objectives": [
+                  "Vận dụng kiến thức đã học để giải các bài toán phức tạp.",
+                  "Nâng cao kỹ năng giải toán."
+                ],
+                "activities": [
+                  "Giải các bài tập tổng hợp.",
+                  "Thảo luận các dạng toán khó."
+                ],
+                "assignments": [
+                  "Hoàn thành bộ bài tập ôn tập chương."
+                ],
+                "resources": [
+                  {
+                    "type": "video",
+                    "url": "https://www.youtube.com/watch?v=F3tJ8X5rKkM",
+                    "title": "Video bài giảng Phương trình đường thẳng"
+                  },
+                  {
+                    "type": "tài liệu",
+                    "url": "https://loigiaihay.com/ly-thuyet-phuong-trinh-duong-thang-c46a6252.html",
+                    "title": "Tài liệu Phương trình đường thẳng"
+                  },
+                  {
+                    "type": "bài tập",
+                    "url": "https://vndoc.com/bai-tap-trac-nghiem-phuong-trinh-duong-thang-toan-10-187016",
+                    "title": "Bài tập Phương trình đường thẳng"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

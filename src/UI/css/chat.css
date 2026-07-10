@@ -1,0 +1,172 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;              /* khung chiếm 75% chiều cao màn hình */
+  min-height: 520px;         /* đảm bảo tối thiểu */
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--bg, #f9fafb);
+}
+
+/* vùng hiển thị tin nhắn */
+.chat-body {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+}
+
+/* bong bóng tin nhắn */
+.msg {
+  max-width: 70%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+.msg p {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* căn hàng */
+.row {
+  display: flex;
+  gap: 8px;
+}
+.row.user {
+  justify-content: flex-end;
+}
+.row.user .msg {
+  background: var(--primary, #2563eb);
+  color: #fff;
+  border-color: transparent;
+}
+.row.bot {
+  justify-content: flex-start;
+}
+.row .meta {
+  font-size: 12px;
+  color: var(--muted, #6b7280);
+  margin-top: 4px;
+}
+
+/* thanh nhập tin nhắn */
+.chat-input {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid var(--border);
+  background: var(--bg, #f9fafb);
+}
+
+.chat-text {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  outline: none;
+}
+.chat-text:focus {
+  border-color: var(--primary, #2563eb);
+}
+
+.btn-primary {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: var(--primary, #2563eb);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* nút + */
+.btn-plus {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* menu option */
+.option-menu {
+  position: absolute;
+  bottom: 150px;
+  left: 250px;
+  border: 1px solid #e8b8b8;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  min-width: 180px;
+  z-index: 10;
+}
+.hidden {
+  display: none;
+}
+.option {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.option:hover {
+  background: #f1f5f9;
+}
+
+/* option đã chọn */
+#selectedOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 8px 12px;
+  border-top: 1px solid var(--border);
+  background: #f9fafb;
+}
+.selected {
+  padding: 5px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+  font-size: 14px;
+}
+.remove {
+  margin-left: 6px;
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
+
+/* typing indicator */
+.typing {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 13px;
+  color: var(--muted, #6b7280);
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #94a3b8;
+  animation: blink 1s infinite ease-in-out;
+}
+.dot:nth-child(2) {
+  animation-delay: .2s;
+}
+.dot:nth-child(3) {
+  animation-delay: .4s;
+}
+@keyframes blink {
+  0%, 80%, 100% { opacity: .2 }
+  40% { opacity: 1 }
+}

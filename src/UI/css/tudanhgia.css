@@ -1,0 +1,120 @@
+:root {
+  --primary: #2563eb;
+  --bg: #f9fafb;
+  --card-bg: #ffffff;
+  --border: #e5e7eb;
+  --text: #1f2937;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: var(--bg);
+  margin: 0;
+  padding: 20px;
+  color: var(--text);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+.exercise {
+  margin-bottom: 16px;
+}
+
+.exercise label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* input ghi chú chỉ có border-bottom */
+.options input[type="text"] {
+  border: none;
+  border-bottom: 1px solid var(--border);
+  padding: 4px 2px;
+  outline: none;
+  flex: 1;
+  min-width: 120px;
+}
+
+.options input[type="text"]:focus {
+  border-bottom-color: var(--primary);
+}
+
+ 
+/* nút lưu */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  justify-content: space-between;
+  /* border-top: 1px solid rgb(190, 123, 123); */
+}
+
+button {
+  background-color: #1e90ff; /* xanh dương */
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #187bcd;
+}
+
+#testBtn {
+  background-color: #28a745; /* xanh lá cho khác */
+}
+
+#testBtn:hover {
+  background-color: #218838;
+}
+

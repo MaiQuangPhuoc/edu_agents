@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kế hoạch học • StudyUI</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/plans.css" />
+
+  </head>
+  <body>
+    <div id="app-header"></div>
+
+    <main class="container page">
+      <div class="page-title">
+        <h1>Danh sách kế hoạch học</h1>
+        <div class="actions">
+          <button id="btnSave" class="btn btn-primary">Lưu</button>
+          <button id="btnDelete" class="btn btn-danger">Xóa</button>
+        </div>
+
+        <!-- <div class="badge">Demo dữ liệu giả lập</div> -->
+      </div>
+
+      <div class="toolbar">
+        <input id="q" class="input" placeholder="Tìm kế hoạch theo tên..." />
+        <select id="status" class="select">
+          <option value="">Tất cả trạng thái</option>
+          <option value="ongoing">Đang học</option>
+          <option value="paused">Tạm dừng</option>
+          <option value="done">Hoàn thành</option>
+        </select>
+        <button id="newPlanBtn" class="btn btn-primary">+ Tạo kế hoạch</button>
+      </div>
+
+      <div class="panel">
+        <table class="table" aria-label="Bảng kế hoạch học">
+          <thead>
+            <tr>
+              <th>ID_plan</th>
+              <th>Tên kế hoạch</th>
+              <th>Time</th>
+              <th>Tiến độ</th>
+              <th>Trạng thái</th>
+              <th style="width:120px">Hành động</th>
+            </tr>
+          </thead>
+          <tbody id="planRows">
+            <!-- JS sẽ render -->
+          </tbody>
+        </table>
+
+        <div id="empty" class="empty" style="display:none">Không có kế hoạch nào khớp bộ lọc.</div>
+      </div>
+    </main>
+
+    <div id="app-footer"></div>
+
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/plans.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chatbot UI</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-title">🤖 Chatbot</div>
+      <nav class="menu">
+        <button onclick="loadPage('chat')">🗨️ Chat</button>
+        <button onclick="loadPage('upload')">📁 Upload</button>
+        <button onclick="loadPage('settings')">⚙️ Settings</button>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="header">
+        <div class="profile">
+          <img src="assets/profile.png" alt="Profile">
+          <span>User</span>
+        </div>
+        <div class="header-right">
+          <select class="quick-settings">
+            <option>Quick Settings</option>
+          </select>
+          <button id="theme-toggle">🌙</button>
+        </div>
+      </header>
+
+      <section id="content">
+        <div class="chat-container">
+          <div class="chat-box" id="chat-box">
+            <div class="message bot">🤖 Xin chào! Tôi có thể giúp gì cho bạn?</div>
+          </div>
+          <div class="input-area">
+            <input type="text" id="user-input" placeholder="Nhập tin nhắn..." />
+            <button id="send-btn">Gửi</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/chat.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chatbot • StudyUI</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/upload.css" />
+  </head>
+  <body>
+    <div id="app-header"></div>
+
+    <main class="upload-container">
+      <div class="upload-box" id="uploadBox">
+        <div class="upload-icon">⬆️</div>
+        <p class="upload-title">🚀 Tải lên tài liệu của bạn</p>
+        <p class="upload-subtitle">Kéo thả tập tin vào đây hoặc 
+          <label for="fileInput" class="choose-btn">chọn từ máy tính</label>
+        </p>
+        <input type="file" id="fileInput" hidden accept=".pdf,.doc,.docx,.txt,.jpg,.png">
+        <div class="file-types">
+          <span>.PDF</span><span>.DOC</span><span>.DOCX</span><span>.TXT</span><span>.JPG</span><span>.PNG</span>
+        </div>
+        <p class="file-size">Kích thước tối đa: 10MB mỗi tập tin</p>
+
+        <!-- Hiển thị file đã chọn -->
+        <div id="fileInfo" class="file-info hidden"></div>
+      </div>
+    </main>
+
+    <div id="app-footer"></div>
+
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/upload.js"></script>
+  </body>
+</html>
