@@ -1,0 +1,190 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "chuong": "Chương 1 - Mệnh đề và Tập hợp",
+      "bai": "Mệnh đề",
+      "dang_bai": "Mệnh đề tương đương",
+      "do_kho": "trung_binh",
+      "yeu_cau": "Xác định hai mệnh đề tương đương",
+      "muc_dich": "Đánh giá khả năng suy luận logic",
+      "ngu_canh": [
+        "Mệnh đề tương đương",
+        "Logic toán học"
+      ]
+    },
+    {
+      "id": 2,
+      "chuong": "Chương 1 - Mệnh đề và Tập hợp",
+      "bai": "Tập hợp",
+      "dang_bai": "Chứng minh quan hệ tập con",
+      "do_kho": "kho",
+      "yeu_cau": "Phân tích quan hệ giữa các tập hợp",
+      "muc_dich": "Đánh giá khả năng chứng minh",
+      "ngu_canh": [
+        "Tập con",
+        "Quan hệ giữa các tập hợp"
+      ]
+    },
+    {
+      "id": 3,
+      "chuong": "Chương 2 - Bất phương trình",
+      "bai": "Bất phương trình chứa dấu giá trị tuyệt đối",
+      "dang_bai": "Giải bất phương trình giá trị tuyệt đối",
+      "do_kho": "trung_binh",
+      "yeu_cau": "Xử lý dấu giá trị tuyệt đối",
+      "muc_dich": "Đánh giá kỹ năng biến đổi",
+      "ngu_canh": [
+        "Giá trị tuyệt đối"
+      ]
+    },
+    {
+      "id": 4,
+      "chuong": "Chương 2 - Bất phương trình",
+      "bai": "Bất phương trình",
+      "dang_bai": "Tìm tham số để bất phương trình có nghiệm",
+      "do_kho": "kho",
+      "yeu_cau": "Kết hợp điều kiện tham số",
+      "muc_dich": "Đánh giá tư duy phân tích",
+      "ngu_canh": [
+        "Tham số",
+        "Điều kiện nghiệm"
+      ]
+    },
+    {
+      "id": 5,
+      "chuong": "Chương 3 - Hàm số",
+      "bai": "Hàm số",
+      "dang_bai": "Xác định tính đồng biến nghịch biến",
+      "do_kho": "trung_binh",
+      "yeu_cau": "Phân tích sự biến thiên",
+      "muc_dich": "Đánh giá khả năng đọc hiểu hàm số",
+      "ngu_canh": [
+        "Tính đơn điệu"
+      ]
+    },
+    {
+      "id": 6,
+      "chuong": "Chương 3 - Hàm số",
+      "bai": "Hàm số bậc hai",
+      "dang_bai": "Xác định giá trị lớn nhất nhỏ nhất",
+      "do_kho": "kho",
+      "yeu_cau": "Khai thác đặc điểm parabol",
+      "muc_dich": "Đánh giá khả năng vận dụng",
+      "ngu_canh": [
+        "Giá trị cực trị"
+      ]
+    },
+    {
+      "id": 7,
+      "chuong": "Chương 4 - Hệ thức lượng",
+      "bai": "Đường tròn lượng giác",
+      "dang_bai": "Xác định điểm biểu diễn góc",
+      "do_kho": "trung_binh",
+      "yeu_cau": "Liên hệ góc và vị trí trên đường tròn",
+      "muc_dich": "Đánh giá khả năng hình dung hình học",
+      "ngu_canh": [
+        "Đường tròn lượng giác"
+      ]
+    },
+    {
+      "id": 8,
+      "chuong": "Chương 4 - Hệ thức lượng",
+      "bai": "Công thức lượng giác",
+      "dang_bai": "Rút gọn biểu thức lượng giác",
+      "do_kho": "kho",
+      "yeu_cau": "Kết hợp nhiều công thức lượng giác",
+      "muc_dich": "Đánh giá khả năng biến đổi",
+      "ngu_canh": [
+        "Hằng đẳng thức lượng giác"
+      ]
+    },
+    {
+      "id": 9,
+      "chuong": "Chương 5 - Thống kê",
+      "bai": "Mẫu số liệu",
+      "dang_bai": "Tính tần số và tần suất",
+      "do_kho": "de",
+      "yeu_cau": "Xử lý bảng số liệu đơn giản",
+      "muc_dich": "Đánh giá kỹ năng thống kê cơ bản",
+      "ngu_canh": [
+        "Tần số",
+        "Tần suất"
+      ]
+    },
+    {
+      "id": 10,
+      "chuong": "Chương 5 - Thống kê",
+      "bai": "Mẫu số liệu ghép nhóm",
+      "dang_bai": "Phân tích bảng ghép nhóm",
+      "do_kho": "trung_binh",
+      "yeu_cau": "Đọc và xử lý dữ liệu ghép nhóm",
+      "muc_dich": "Đánh giá khả năng phân tích dữ liệu",
+      "ngu_canh": [
+        "Dữ liệu ghép nhóm"
+      ]
+    },
+    {
+      "id": 11,
+      "chuong": "Chương 6 - Xác suất",
+      "bai": "Biến cố",
+      "dang_bai": "Biến cố giao và hợp",
+      "do_kho": "trung_binh",
+      "yeu_cau": "Phân tích mối quan hệ giữa các biến cố",
+      "muc_dich": "Đánh giá khả năng suy luận",
+      "ngu_canh": [
+        "Giao biến cố",
+        "Hợp biến cố"
+      ]
+    },
+    {
+      "id": 12,
+      "chuong": "Chương 6 - Xác suất",
+      "bai": "Xác suất",
+      "dang_bai": "Bài toán rút thẻ",
+      "do_kho": "trung_binh",
+      "yeu_cau": "Tính xác suất trong tình huống thực tế",
+      "muc_dich": "Đánh giá khả năng mô hình hóa",
+      "ngu_canh": [
+        "Rút thẻ ngẫu nhiên"
+      ]
+    },
+    {
+      "id": 13,
+      "chuong": "Chương 6 - Xác suất",
+      "bai": "Xác suất",
+      "dang_bai": "Bài toán gieo xúc xắc",
+      "do_kho": "de",
+      "yeu_cau": "Tính xác suất cổ điển",
+      "muc_dich": "Đánh giá kỹ năng tính toán",
+      "ngu_canh": [
+        "Xúc xắc"
+      ]
+    },
+    {
+      "id": 14,
+      "chuong": "Chương 6 - Xác suất",
+      "bai": "Xác suất",
+      "dang_bai": "Bài toán chọn tổ hợp",
+      "do_kho": "kho",
+      "yeu_cau": "Kết hợp xác suất và đếm",
+      "muc_dich": "Đánh giá tư duy tổ hợp",
+      "ngu_canh": [
+        "Đếm",
+        "Tổ hợp"
+      ]
+    },
+    {
+      "id": 15,
+      "chuong": "Chương 6 - Xác suất",
+      "bai": "Xác suất",
+      "dang_bai": "Biến cố có điều kiện",
+      "do_kho": "kho",
+      "yeu_cau": "Phân tích xác suất trong điều kiện cho trước",
+      "muc_dich": "Đánh giá khả năng suy luận nâng cao",
+      "ngu_canh": [
+        "Xác suất có điều kiện"
+      ]
+    }
+  ]
+}

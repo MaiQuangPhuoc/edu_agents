@@ -22,8 +22,8 @@ from langgraph.graph import END
 from langgraph.prebuilt import ToolNode, tools_condition
 logger = logging.getLogger(__name__)
 from langgraph.graph import MessagesState, StateGraph
-from src.tools.tool import get_id_tools, retrieve_tool_score
-from src.tools.tools_web_search import tools_web_search
+from src.tool.tool import get_id_tools, retrieve_tool_score
+from src.tool.tools_web_search import tools_web_search
 
 from src.configs import env_config
 # from src.clients.databases import qdrant_qa
@@ -31,70 +31,15 @@ from src.configs import env_config
 from sentence_transformers import CrossEncoder
 
 
-# collect_tool = create_parser_output_tool(
-#     llm_client=LLMClient(model=env_config.model, api_provider=env_config.api_provider),
-#     state=MiniTestState
-# )
-
-
-# tool_get_id = get_id_tools(
-#     llm_client=LLMClient(model=env_config.model, api_provider=env_config.api_provider),
-#     state=get_id_plan
-# )
-
-
 class QAProgramPromptBuilder:
     """Agent responsible for collecting and managing user learning mini_test."""
 
     def __init__(self):
-        with open(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\src.agents.qa_program.call.sp.txt","r", encoding="utf-8") as file:
+        with open(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\qa_program_sp.txt","r", encoding="utf-8") as file:
             self._prompt_template = file.read()
 
-        with open(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\src.agents.qa_program.call.um.txt","r", encoding="utf-8") as file:
+        with open(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\qa_program_um.txt","r", encoding="utf-8") as file:
             self._user_message_template = file.read()
-
-        # prompt_final
-        # with open(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\src.agents.qa_planner.call.sp.txt","r", encoding="utf-8") as file:
-        #     self._prompt_template_final = file.read()
-
-        # with open(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\src.agents.qa_planner.call.um.txt","r", encoding="utf-8") as file:
-        #     self._user_message_template_final = file.read()
-
-    # def build_final(self, state: State):
-    #     # conversation_messages = [
-    #     #     msg.content
-    #     #     for msg in state["messages"]
-    #     #     # if msg.type in ("human", "ai")
-    #     #     if msg.type in "human"
-
-    #     # ]
-    #     # text = "\n".join(conversation_messages)
-
-    #     human_messages = [msg.content for msg in state["messages"] if msg.type == "human"]
-
-    #     # Lấy list chỉ chứa message cuối cùng
-    #     conversation_messages = [human_messages[-1]] if human_messages else []
-
-    #     text = "\n".join(conversation_messages)
-
-
-    #     plan_data = state.get("plan_data")
-    #     if plan_data:
-    #         print("plan_data OK ")
-
-    #     user_message = self._user_message_template_final.format(
-    #         qa_user=text,
-    #         plan_data = plan_data
-    #     )
-
-
-    #     system_message = self._prompt_template_final
-
-    #     return [
-    #         SystemMessage(content=system_message),
-    #         HumanMessage(content=user_message)
-    #     ]
-    
 
     def build(self, state: State,doc_retrieval , doc_web_search):
         conversation_messages = [

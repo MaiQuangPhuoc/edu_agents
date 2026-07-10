@@ -17,7 +17,7 @@ Mệnh đề, mệnh đề chứa biến là gì? dạng bài tập của mệnh
 hàm số bậc hai có quan hệ gì với hàm số bậc nhất? công thức hàm số bậc hai?
 tập hợp là gì, tập hợp và mệnh đề liên quan như thế nào? 
 Định nghĩa , tính chất và các dạng bài tập của hàm số lượng giác ? 
-tôi muốn tạo kế hoạch học tập 
+
 
 LỊCH SỬ HỘI THOẠI :
 {his}
@@ -166,4 +166,8 @@ Khi xác nhận, bạn PHẢI gọi tool review_tool và trả về JSON đúng 
 Nếu không có phản hồi cho một mục, để chuỗi rỗng "".
 
 
- 
+
+# tôi cần tạo đề thi toán 10 , 20 câu trắc nghiệm trong 100 phút với mục tiêu 9 điểm để ôn thi cuối kì ,phạm vi 3 chương đầu tiên phần đại số ,chương 1 khá , chương 2 giỏi chương 3 6 điểm ,lưu ý  chú ý các chương 1 ,3
+# 1,0,2,0,2,1,0,2,0,3
+# 2,0,3,0,0,3
+# 1,2,1,2,3,1,3

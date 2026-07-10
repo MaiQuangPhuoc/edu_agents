@@ -1,0 +1,365 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "chuong": "Chương 1 - Mệnh đề và Tập hợp",
+      "bai": "Mệnh đề",
+      "dang_bai": "Xác định tính đúng sai của mệnh đề",
+      "do_kho": "de",
+      "yeu_cau": "Nhận biết khái niệm mệnh đề",
+      "muc_dich": "Đánh giá khả năng nhận biết",
+      "ngu_canh": [
+        "Khái niệm mệnh đề",
+        "Mệnh đề đúng và sai"
+      ]
+    },
+    {
+      "id": 2,
+      "chuong": "Chương 1 - Mệnh đề và Tập hợp",
+      "bai": "Mệnh đề",
+      "dang_bai": "Phủ định mệnh đề",
+      "do_kho": "de",
+      "yeu_cau": "Xác định phủ định của mệnh đề",
+      "muc_dich": "Đánh giá khả năng ghi nhớ",
+      "ngu_canh": [
+        "Phủ định mệnh đề"
+      ]
+    },
+    {
+      "id": 3,
+      "chuong": "Chương 1 - Mệnh đề và Tập hợp",
+      "bai": "Mệnh đề",
+      "dang_bai": "Mệnh đề kéo theo",
+      "do_kho": "trung_binh",
+      "yeu_cau": "Phân tích quan hệ kéo theo",
+      "muc_dich": "Đánh giá khả năng hiểu",
+      "ngu_canh": [
+        "Mệnh đề kéo theo"
+      ]
+    },
+    {
+      "id": 4,
+      "chuong": "Chương 1 - Mệnh đề và Tập hợp",
+      "bai": "Tập hợp",
+      "dang_bai": "Biểu diễn tập hợp",
+      "do_kho": "de",
+      "yeu_cau": "Nhận biết cách biểu diễn tập hợp",
+      "muc_dich": "Đánh giá khả năng nhận biết",
+      "ngu_canh": [
+        "Tập hợp"
+      ]
+    },
+    {
+      "id": 5,
+      "chuong": "Chương 1 - Mệnh đề và Tập hợp",
+      "bai": "Tập hợp",
+      "dang_bai": "Các phép toán tập hợp",
+      "do_kho": "trung_binh",
+      "yeu_cau": "Thực hiện giao hai tập hợp",
+      "muc_dich": "Đánh giá khả năng vận dụng",
+      "ngu_canh": [
+        "Giao tập hợp"
+      ]
+    },
+    {
+      "id": 6,
+      "chuong": "Chương 1 - Mệnh đề và Tập hợp",
+      "bai": "Tập hợp",
+      "dang_bai": "Các phép toán tập hợp",
+      "do_kho": "trung_binh",
+      "yeu_cau": "Thực hiện hợp hai tập hợp",
+      "muc_dich": "Đánh giá khả năng vận dụng",
+      "ngu_canh": [
+        "Hợp tập hợp"
+      ]
+    },
+    {
+      "id": 7,
+      "chuong": "Chương 1 - Mệnh đề và Tập hợp",
+      "bai": "Tập hợp",
+      "dang_bai": "Hiệu tập hợp",
+      "do_kho": "kho",
+      "yeu_cau": "Vận dụng hiệu tập hợp",
+      "muc_dich": "Đánh giá khả năng suy luận",
+      "ngu_canh": [
+        "Hiệu tập hợp"
+      ]
+    },
+    {
+      "id": 8,
+      "chuong": "Chương 2 - Bất phương trình",
+      "bai": "Bất phương trình bậc nhất",
+      "dang_bai": "Giải bất phương trình",
+      "do_kho": "de",
+      "yeu_cau": "Giải bất phương trình cơ bản",
+      "muc_dich": "Đánh giá kỹ năng tính toán",
+      "ngu_canh": [
+        "Bất phương trình bậc nhất"
+      ]
+    },
+    {
+      "id": 9,
+      "chuong": "Chương 2 - Bất phương trình",
+      "bai": "Bất phương trình bậc nhất",
+      "dang_bai": "Biểu diễn nghiệm",
+      "do_kho": "de",
+      "yeu_cau": "Biểu diễn tập nghiệm",
+      "muc_dich": "Đánh giá khả năng trình bày",
+      "ngu_canh": [
+        "Tập nghiệm"
+      ]
+    },
+    {
+      "id": 10,
+      "chuong": "Chương 2 - Bất phương trình",
+      "bai": "Bất phương trình bậc nhất",
+      "dang_bai": "Bất phương trình chứa tham số",
+      "do_kho": "kho",
+      "yeu_cau": "Phân tích điều kiện tham số",
+      "muc_dich": "Đánh giá tư duy phân tích",
+      "ngu_canh": [
+        "Tham số"
+      ]
+    },
+    {
+      "id": 11,
+      "chuong": "Chương 3 - Hàm số",
+      "bai": "Hàm số bậc nhất",
+      "dang_bai": "Tìm tập xác định",
+      "do_kho": "de",
+      "yeu_cau": "Xác định tập xác định",
+      "muc_dich": "Đánh giá khả năng nhận biết",
+      "ngu_canh": [
+        "Tập xác định"
+      ]
+    },
+    {
+      "id": 12,
+      "chuong": "Chương 3 - Hàm số",
+      "bai": "Hàm số bậc nhất",
+      "dang_bai": "Đọc đồ thị",
+      "do_kho": "trung_binh",
+      "yeu_cau": "Phân tích đồ thị hàm số",
+      "muc_dich": "Đánh giá khả năng hiểu",
+      "ngu_canh": [
+        "Đồ thị hàm số"
+      ]
+    },
+    {
+      "id": 13,
+      "chuong": "Chương 3 - Hàm số",
+      "bai": "Hàm số bậc hai",
+      "dang_bai": "Xác định đỉnh parabol",
+      "do_kho": "trung_binh",
+      "yeu_cau": "Tính tọa độ đỉnh",
+      "muc_dich": "Đánh giá khả năng vận dụng",
+      "ngu_canh": [
+        "Parabol"
+      ]
+    },
+    {
+      "id": 14,
+      "chuong": "Chương 3 - Hàm số",
+      "bai": "Hàm số bậc hai",
+      "dang_bai": "Xét dấu tam thức",
+      "do_kho": "kho",
+      "yeu_cau": "Kết hợp đồ thị và nghiệm",
+      "muc_dich": "Đánh giá khả năng suy luận",
+      "ngu_canh": [
+        "Tam thức bậc hai"
+      ]
+    },
+    {
+      "id": 15,
+      "chuong": "Chương 4 - Hệ thức lượng",
+      "bai": "Giá trị lượng giác",
+      "dang_bai": "Tính sin cos",
+      "do_kho": "de",
+      "yeu_cau": "Nhớ giá trị đặc biệt",
+      "muc_dich": "Đánh giá ghi nhớ",
+      "ngu_canh": [
+        "Góc đặc biệt"
+      ]
+    },
+    {
+      "id": 16,
+      "chuong": "Chương 4 - Hệ thức lượng",
+      "bai": "Giá trị lượng giác",
+      "dang_bai": "Tính tan",
+      "do_kho": "de",
+      "yeu_cau": "Tính tan góc đặc biệt",
+      "muc_dich": "Đánh giá ghi nhớ",
+      "ngu_canh": [
+        "Tan góc đặc biệt"
+      ]
+    },
+    {
+      "id": 17,
+      "chuong": "Chương 4 - Hệ thức lượng",
+      "bai": "Hệ thức lượng",
+      "dang_bai": "Áp dụng công thức",
+      "do_kho": "trung_binh",
+      "yeu_cau": "Vận dụng công thức lượng giác",
+      "muc_dich": "Đánh giá khả năng áp dụng",
+      "ngu_canh": [
+        "Công thức lượng giác"
+      ]
+    },
+    {
+      "id": 18,
+      "chuong": "Chương 4 - Hệ thức lượng",
+      "bai": "Hệ thức lượng",
+      "dang_bai": "Biến đổi biểu thức",
+      "do_kho": "kho",
+      "yeu_cau": "Biến đổi biểu thức lượng giác",
+      "muc_dich": "Đánh giá tư duy tổng hợp",
+      "ngu_canh": [
+        "Biến đổi lượng giác"
+      ]
+    },
+    {
+      "id": 19,
+      "chuong": "Chương 5 - Thống kê",
+      "bai": "Số liệu thống kê",
+      "dang_bai": "Tính trung bình",
+      "do_kho": "de",
+      "yeu_cau": "Tính số trung bình cộng",
+      "muc_dich": "Đánh giá kỹ năng tính toán",
+      "ngu_canh": [
+        "Số trung bình cộng"
+      ]
+    },
+    {
+      "id": 20,
+      "chuong": "Chương 5 - Thống kê",
+      "bai": "Số liệu thống kê",
+      "dang_bai": "Tính trung vị",
+      "do_kho": "de",
+      "yeu_cau": "Tìm trung vị",
+      "muc_dich": "Đánh giá kỹ năng tính toán",
+      "ngu_canh": [
+        "Trung vị"
+      ]
+    },
+    {
+      "id": 21,
+      "chuong": "Chương 5 - Thống kê",
+      "bai": "Số liệu thống kê",
+      "dang_bai": "Tính phương sai",
+      "do_kho": "trung_binh",
+      "yeu_cau": "Tính phương sai dữ liệu",
+      "muc_dich": "Đánh giá khả năng vận dụng",
+      "ngu_canh": [
+        "Phương sai"
+      ]
+    },
+    {
+      "id": 22,
+      "chuong": "Chương 5 - Thống kê",
+      "bai": "Số liệu thống kê",
+      "dang_bai": "Đọc biểu đồ",
+      "do_kho": "trung_binh",
+      "yeu_cau": "Phân tích biểu đồ",
+      "muc_dich": "Đánh giá khả năng hiểu dữ liệu",
+      "ngu_canh": [
+        "Biểu đồ"
+      ]
+    },
+    {
+      "id": 23,
+      "chuong": "Chương 6 - Xác suất",
+      "bai": "Biến cố",
+      "dang_bai": "Xác định biến cố",
+      "do_kho": "de",
+      "yeu_cau": "Nhận biết biến cố",
+      "muc_dich": "Đánh giá khả năng nhận biết",
+      "ngu_canh": [
+        "Biến cố"
+      ]
+    },
+    {
+      "id": 24,
+      "chuong": "Chương 6 - Xác suất",
+      "bai": "Biến cố",
+      "dang_bai": "Không gian mẫu",
+      "do_kho": "de",
+      "yeu_cau": "Xác định không gian mẫu",
+      "muc_dich": "Đánh giá kỹ năng cơ bản",
+      "ngu_canh": [
+        "Không gian mẫu"
+      ]
+    },
+    {
+      "id": 25,
+      "chuong": "Chương 6 - Xác suất",
+      "bai": "Xác suất cổ điển",
+      "dang_bai": "Tính xác suất",
+      "do_kho": "trung_binh",
+      "yeu_cau": "Áp dụng công thức xác suất",
+      "muc_dich": "Đánh giá khả năng vận dụng",
+      "ngu_canh": [
+        "Xác suất cổ điển"
+      ]
+    },
+    {
+      "id": 26,
+      "chuong": "Chương 6 - Xác suất",
+      "bai": "Xác suất cổ điển",
+      "dang_bai": "Biến cố đối",
+      "do_kho": "trung_binh",
+      "yeu_cau": "Tính xác suất biến cố đối",
+      "muc_dich": "Đánh giá khả năng suy luận",
+      "ngu_canh": [
+        "Biến cố đối"
+      ]
+    },
+    {
+      "id": 27,
+      "chuong": "Chương 6 - Xác suất",
+      "bai": "Xác suất cổ điển",
+      "dang_bai": "Bài toán nhiều bước",
+      "do_kho": "kho",
+      "yeu_cau": "Kết hợp nhiều quy tắc",
+      "muc_dich": "Đánh giá tư duy tổng hợp",
+      "ngu_canh": [
+        "Xác suất nâng cao"
+      ]
+    },
+    {
+      "id": 28,
+      "chuong": "Chương 6 - Xác suất",
+      "bai": "Xác suất cổ điển",
+      "dang_bai": "Bài toán thực tế",
+      "do_kho": "kho",
+      "yeu_cau": "Mô hình hóa bài toán xác suất",
+      "muc_dich": "Đánh giá khả năng ứng dụng",
+      "ngu_canh": [
+        "Xác suất thực tiễn"
+      ]
+    },
+    {
+      "id": 29,
+      "chuong": "Chương 6 - Xác suất",
+      "bai": "Xác suất cổ điển",
+      "dang_bai": "Biến cố độc lập",
+      "do_kho": "kho",
+      "yeu_cau": "Phân tích biến cố độc lập",
+      "muc_dich": "Đánh giá tư duy xác suất",
+      "ngu_canh": [
+        "Biến cố độc lập"
+      ]
+    },
+    {
+      "id": 30,
+      "chuong": "Chương 6 - Xác suất",
+      "bai": "Xác suất cổ điển",
+      "dang_bai": "Biến cố xung khắc",
+      "do_kho": "kho",
+      "yeu_cau": "Phân tích quan hệ giữa các biến cố",
+      "muc_dich": "Đánh giá khả năng suy luận",
+      "ngu_canh": [
+        "Biến cố xung khắc"
+      ]
+    }
+  ]
+}

@@ -21,7 +21,7 @@ from langgraph.graph import END
 from langgraph.prebuilt import ToolNode, tools_condition
 logger = logging.getLogger(__name__)
 from langgraph.graph import MessagesState, StateGraph
-from src.tools.tool import get_id_tools
+from src.tool.tool import get_id_tools
 from src.configs import env_config
   
 
@@ -41,17 +41,17 @@ class QAPromptBuilder:
     """Agent responsible for collecting and managing user learning mini_test."""
 
     def __init__(self):
-        with open(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\src.agents.qa_planner.call.sp.get_id.txt","r", encoding="utf-8") as file:
+        with open(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\qa_planner_sp_get_id.txt","r", encoding="utf-8") as file:
             self._prompt_template = file.read()
 
-        with open(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\src.agents.qa_planner.call.um.get_id.txt","r", encoding="utf-8") as file:
+        with open(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\qa_planner_um_get_id.txt","r", encoding="utf-8") as file:
             self._user_message_template = file.read()
 
         # prompt_final
-        with open(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\src.agents.qa_planner.call.sp.txt","r", encoding="utf-8") as file:
+        with open(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\qa_planner_sp.txt","r", encoding="utf-8") as file:
             self._prompt_template_final = file.read()
 
-        with open(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\src.agents.qa_planner.call.um.txt","r", encoding="utf-8") as file:
+        with open(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\qa_planner_um.txt","r", encoding="utf-8") as file:
             self._user_message_template_final = file.read()
 
     def build_final(self, state: State):

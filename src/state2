@@ -1,23 +1,23 @@
-class Level(str, Enum):
-    low="hạn chế"
-    basic="cơ bản"
-    fair="hiểu bài"
-    good="tốt"
+# class Level(str, Enum):
+#     low="hạn chế"
+#     basic="cơ bản"
+#     fair="hiểu bài"
+#     good="tốt"
 
-class ChapterLevel(BaseModel):
-    # chapter_id: str = Field(..., description="ID chương, ví dụ: 'ch01'")
-    # chapter_index :int = Field(...,description="Thứ tự chương , vidu : 1")
-    # chapter_name: str = Field(..., description="Tên chương, ví dụ: 'tập hợp'")
-    # level: Level = Field(..., description="Trình độ hiện tại, ví dụ: 'cơ bản'")
-    chapter_id: str  
-    chapter_index :int  
-    chapter_name: str  
-    level: Level  
+# class ChapterLevel(BaseModel):
+#     # chapter_id: str = Field(..., description="ID chương, ví dụ: 'ch01'")
+#     # chapter_index :int = Field(...,description="Thứ tự chương , vidu : 1")
+#     # chapter_name: str = Field(..., description="Tên chương, ví dụ: 'tập hợp'")
+#     # level: Level = Field(..., description="Trình độ hiện tại, ví dụ: 'cơ bản'")
+#     chapter_id: str  
+#     chapter_index :int  
+#     chapter_name: str  
+#     level: Level  
 
-class MiniTestState(TypedDict):  
-    messages: Annotated[list[AnyMessage], add_messages]
-    grade: str  
-    chapter_level: List[ChapterLevel]  
-    # messages: Annotated[list[AnyMessage], add_messages]
-    # grade: str = Field(..., description="Tình trạng hiện tại, ví dụ: 'lớp 10'")
-    # chapter_level: List[ChapterLevel] = Field(..., description="Danh sách chương và trình độ")
+# class MiniTestState(TypedDict):  
+#     messages: Annotated[list[AnyMessage], add_messages]
+#     grade: str  
+#     chapter_level: List[ChapterLevel]  
+#     # messages: Annotated[list[AnyMessage], add_messages]
+#     # grade: str = Field(..., description="Tình trạng hiện tại, ví dụ: 'lớp 10'")
+#     # chapter_level: List[ChapterLevel] = Field(..., description="Danh sách chương và trình độ")

@@ -2,41 +2,13 @@ from langchain_core.tools import tool
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
-from src.state import AgentProfile  , DailyInfo , FeedbackResult, get_id_plan
+# from src.state1 import AgentProfile   
+from src.state1 import AgentProfile  , DailyInfo , FeedbackResult, get_id_plan
+
 
 from src.clients.databases import qdrant
 from src.modules.rag.retrievers import VectorStoreRetriever
 from src.configs import env_config
-
-# def create_retrieve_tool(vector_db, retrieve_count: int):
-#     """Create retrieve tool for the bot."""
-#     @tool(response_format="content")
-#     def retrieve(query: str):
-#         """Retrieve information related to a query."""
-#         retrieved_docs = vector_db.db.similarity_search(
-#             query, 
-#             k=retrieve_count,
-#         )
-#         content = "\n\n".join(
-#             f"Content: {doc.page_content}"
-#             for doc in retrieved_docs
-#         )
-#         return content
-#     return retrieve
-
-# def retrieve_tool(vector_store, search_kwargs):
-#     """crearte retrieve tool """
-#     @tool(response_format="content")
-#     def retrieve(query: str):
-#         """retriever documents"""
-#         my_retriever = VectorStoreRetriever(
-#             vector_store=vector_store,
-#             search_kwargs=search_kwargs
-#         )
-#         base_retriever = my_retriever.as_retriever()
-#         docs = base_retriever.invoke(query)
-#         return docs
-#     return retrieve
 
 
 def retrieve_tool(vector_store, search_kwargs):

@@ -17,7 +17,7 @@ from src.state import State, AgentProfile , StudyPlanOverview
 # from src.clients.databases import qdrant
 from src.clients.llm import LLMClient
 from langchain_core.runnables import RunnableConfig
-from src.tools.tool import retrieve_tool
+from src.tool.tool import retrieve_tool
 from langchain_core.documents import Document
 # sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from src.clients.databases import qdrant
@@ -29,13 +29,13 @@ from langchain_core.messages import AIMessage
 class OverviewPlannerPromptBuilder:
     def __init__(self):
         with open(
-            r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\src.agents.overview_planner.call.sp.txt",
+            r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\overview_planner_sp.txt",
             "r", encoding="utf-8"
         ) as file:
             self._prompt_template = file.read()
 
         with open(
-            r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\src.agents.overview_planner.call.um.txt",
+            r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\overview_planner_um.txt",
             "r", encoding="utf-8"
         ) as file:
             self._user_message_template = file.read()

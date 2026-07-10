@@ -10,7 +10,7 @@ from src.clients.llm import LLMClient
 from src.state import State ,FeedbackResult, StudyPlanDetail
 # from src.clients.databases import qdrant
 # from src.state import State, StudyPlanDetail 
-from src.tools.tool import   create_daily_tool , review_tools
+from src.tool.tool import   create_daily_tool , review_tools
 # from src.agents.overview_planner import OverViewPlanner
 # from langchain.schema import AIMessage
 # from sentence_transformers import CrossEncoder
@@ -36,24 +36,24 @@ class ReviewPlannerPromptBuilder:
     def __init__(self):
         # System prompt: vai trò của agent (không chứa data)
         with open(
-            r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\src.agents.review_planner.call.sp.collect.txt",
+            r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\review_planner_sp_collect.txt",
             "r", encoding="utf-8"
         ) as file:
             self._system_prompt = file.read()
 
         # User prompt: khung chứa dữ liệu học viên + hội thoại
         with open(
-            r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\src.agents.review_planner.call.um.collect.txt",
+            r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\review_planner_um_collect.txt",
             "r", encoding="utf-8"
         ) as file:
             self._user_message_template = file.read()
 
 
         # finlal prompt
-        with open(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\src.agents.review_planner.call.sp.txt","r", encoding="utf-8") as file:
+        with open(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\review_planner_sp.txt","r", encoding="utf-8") as file:
             self._system_prompt_final = file.read()
 
-        with open(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\src.agents.review_planner.call.um.txt","r", encoding="utf-8") as file:
+        with open(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompts\review_planner_um.txt","r", encoding="utf-8") as file:
             self._user_message_template_final  = file.read()
 
     def build_prompt_final(self, state: State):
