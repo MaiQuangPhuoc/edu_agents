@@ -24,34 +24,6 @@ from src.modules.rag.process_toan_10.retrievers2 import VectorStoreRetriever
 from functools import partial
 load_dotenv()
  
-# llm_client = LLMClient(model=env_config.model, api_provider=env_config.api_provider)
- 
-# def retrieve_docs(state: ExamState) -> dict:
-#     print(">>> [Node] retrieve_docs")
-#     return {"current_step": "retrieve_docs"}
- 
-# def build_knowledge(state: ExamState, llm_client: LLMClient) -> dict:
-#     print(">>> [Node] build_knowledge")
-#     return {"current_step": "build_knowledge"}
- 
- 
-# def build_matrix(state: ExamState) -> dict:
-#     print(">>> [Node] build_matrix")
-#     return {"current_step": "build_matrix"}
- 
-# def build_specs(state: ExamState) -> dict:
-#     print(">>> [Node] build_specs")
-#     return {"current_step": "build_specs"}
- 
-def generate_questions(state: ExamState) -> dict:
-    print(">>> [Node] generate_questions")
-    return {"current_step": "generate_questions"}
- 
-def evaluate_exam(state: ExamState) -> dict:
-    print(">>> [Node] evaluate_exam")
-    return {"current_step": "evaluate_exam", "exam_review": {"status": "pass"}}
- 
- 
 def create_graph(llm_client: LLMClient,retriever):
     g = StateGraph(ExamState)
  
@@ -175,15 +147,6 @@ def run():
         )
  
         state["messages"].append(HumanMessage(content=user_input))
- 
-        # # Chỉ invoke đúng bước cần thiết
-        # if not state.get("profile_complete"):
-        #     state = graph.invoke(state)
-        # elif not state.get("knowledge_done"):
-        #     state = graph.invoke(state)
-        # else:
-        #     break
-        # thay bằng
 
 
         if not state.get("profile_complete"):
@@ -209,19 +172,7 @@ def run():
             print(f"Trợ lý: {ai_messages[-1].content}\n")
             print("-"*70)
  
- 
-        # in tóm tắt knowledge chỉ 1 lần khi vừa xong
-        # if state.get("knowledge_done") and not state.get("matrix_done"):
-        #     scores = state.get("knowledge_scores", {})
-        #     print("\n📋 TÓM TẮT MỨC ĐỘ QUAN TÂM:")
-        #     for ch, lessons in scores.items():
-        #         print(f"\n  {ch.upper()}:")
-        #         for lesson, sections in lessons.items():
-        #             print(f"    Bài: {lesson}")
-        #             for sec, score in sections.items():
-        #                 label = ["Không", "Ít", "Bình thường", "Cao"][score]
-        #                 print(f"      - {sec}: {score} ({label})")
-        #     print("\n✅ Hoàn tất bước 3. Bắt đầu xây dựng ma trận đề...\n")
+
  
         if state.get("knowledge_done"):
             print(f"knowledge_done ====> TRUE")

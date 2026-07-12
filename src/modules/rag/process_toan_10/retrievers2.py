@@ -107,5 +107,10 @@ class VectorStoreRetriever:
         # logger.info(f"Rerank scores: {[round(float(s), 4) for s, _ in ranked]}")
         print(f" ========== Rerank scores: {[round(float(s), 4) for s, _ in ranked]} ========== ")
 
-        return [doc for _, doc in ranked[:top_k]]
+        top_docs = []
+        for score, doc in ranked[:top_k]:
+            doc.metadata["rerank_score"] = float(score)
+            top_docs.append(doc)
+        return top_docs
+
     
