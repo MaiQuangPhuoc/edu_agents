@@ -1,3 +1,6 @@
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..","..")))
+
 from langchain_core.tools import tool
 import sympy as sp
 
@@ -101,4 +104,9 @@ def sympy_evaluate(expression: str) -> str:
         return f"LOI: khong the tinh gia tri - {e}"
 
 
-QA_TOOLS = [sympy_diff, sympy_solve, sympy_simplify, sympy_evaluate]
+from src.edu_qa.tools.set_tools import SET_TOOLS
+from src.edu_qa.tools.inequality_tools import INEQUALITY_TOOLS
+from src.edu_qa.tools.quadratic_tools import QUADRATIC_TOOLS
+
+QA_TOOLS = [sympy_diff, sympy_solve, sympy_simplify, sympy_evaluate] + SET_TOOLS + INEQUALITY_TOOLS + QUADRATIC_TOOLS
+# print("QA_TOOLS =", [t.name for t in QA_TOOLS])

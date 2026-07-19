@@ -1,0 +1,7 @@
+Câu hỏi: {query}
+
+Các đoạn tài liệu tìm được:
+{context}
+
+Dựa CHỈ vào nội dung trên, đánh giá xem đã đủ thông tin để trả lời câu hỏi chưa.
+Không suy đoán ngoài nội dung đã cho.

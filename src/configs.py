@@ -76,12 +76,12 @@ class EnvConfig(BaseSettings):
     console_log_format: str = "%(levelname)s %(message)s"
 
     class Config:
-        env_file = r"D:\VKU\Nam_4\ky_I\computer_vision\EDUAGENT\src\.env"
+        env_file = r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\.env"
         extra = "ignore"
 
 env_config = EnvConfig()
 
 from src.app_logging import setup_logging
 setup_logging()
-print(env_config.model)
-print(env_config.openrouter_api_key)
+# print(env_config.model)
+# print(env_config.openrouter_api_key)

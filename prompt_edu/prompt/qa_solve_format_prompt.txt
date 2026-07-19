@@ -1,0 +1,13 @@
+Câu hỏi: {question}
+
+Các tool đã được gọi và kết quả trả về (đây là căn cứ DUY NHẤT được phép dùng):
+{tool_calls_text}
+
+Câu trả lời thô từ agent giải toán:
+{raw_answer}
+
+Nhiệm vụ: dựa CHỈ vào kết quả tool đã gọi ở trên, KHÔNG tự tính lại, KHÔNG suy đoán thêm,
+tách câu trả lời thành 2 phần:
+- ket_qua: chỉ chứa đáp số/kết quả cuối cùng, ngắn gọn, không kèm diễn giải.
+- cac_buoc: diễn giải các bước tính toán dẫn tới kết quả, phải khớp đúng với tool và
+  kết quả tool đã trả về ở trên.

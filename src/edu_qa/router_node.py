@@ -1,6 +1,6 @@
 import json, re
 import sys, os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
 from pathlib import Path
 from langchain_core.messages import AIMessage
 from src.edu_qa.qa_state import QAState

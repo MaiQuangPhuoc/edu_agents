@@ -6,7 +6,8 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".
 from src.modules.rag.vectorstores2 import VectorStoreManager
 # from langchain_core.documents import Document
 # from docx import Document
-from langchain.schema import Document
+# from langchain.schema import Document
+from langchain_core.documents import Document
 from src.clients.embedding import embeddings_qa
 from src.configs import env_config
 # from docx import Document
@@ -246,7 +247,7 @@ def run(filepath):
     return all_chunks
 
 if __name__ == '__main__':
-    path = r'D:\VKU\Nam_4\ky_I\computer_vision\EDUAGENT\src\modules\documents\grade_10_chan_troi_sang_tao_toan_1.md'
+    path = r'D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\documents\grade_10_chan_troi_sang_tao_toan_1.md'
     chapters = split_chapters(path)
 
     all_chunks = []
@@ -292,7 +293,7 @@ if __name__ == '__main__':
                 vector_store = vector_manager.create_vector_store(
                     documents=batch,
                     embeddings=embeddings_qa,
-                    collection_name="doc_toan_10_1"
+                    collection_name="documents"
                 )
                 print(f"✓ Batch {i+1}/{len(batches)}")
                 time.sleep(1)  # nghỉ 1s giữa các batch

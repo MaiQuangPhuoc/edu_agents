@@ -1,6 +1,6 @@
 # src/modules/rag/retrievers.py
 import os
-os.environ["FASTEMBED_CACHE_PATH"] = r"C:\Users\Phuoc\fastembed_cache"
+# os.environ["FASTEMBED_CACHE_PATH"] = r"C:\Users\Phuoc\fastembed_cache"
 import logging
 from langchain_qdrant import QdrantVectorStore, RetrievalMode, FastEmbedSparse
 from langchain_core.embeddings import Embeddings

@@ -24,9 +24,12 @@
 # from sentence_transformers import SentenceTransformer
 # embeddings_qa = SentenceTransformer('bkai-foundation-models/vietnamese-bi-encoder')
 
-from langchain_community.embeddings import HuggingFaceEmbeddings
+# from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 
 # khởi tạo model embeddings (ví dụ dùng sentence-transformers)
 embeddings_qa = HuggingFaceEmbeddings(
     model_name="bkai-foundation-models/vietnamese-bi-encoder"
 )
+
+print('Embeddings model initialized successfully.')
