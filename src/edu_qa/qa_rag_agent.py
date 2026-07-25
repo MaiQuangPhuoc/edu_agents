@@ -14,10 +14,11 @@ BATCH_PROMPT_PATH = PROMPT_DIR / "qa_rag_batch_prompt.txt"
 
 INITIAL_K = 3
 K_STEP = 3
-THRESHOLD_HIGH = 0.8
-THRESHOLD_LOW = 0.7
+THRESHOLD_HIGH = 0.6
+THRESHOLD_LOW = 0.5
 BATCH_SIZE = 3
 NO_ANSWER_MARKER = "Không biết"
+MAX_CONTEXT_CHUNKS = 3
 
 
 class SubQueryAnswer(BaseModel):
@@ -31,8 +32,6 @@ class BatchAnswer(BaseModel):
 
 # ── Bước 1: retrieve + rerank + lọc theo ngưỡng (code thuần, không LLM) ────
 
-MAX_CONTEXT_CHUNKS = 3
-
 def _filter_and_cap(docs: list, threshold: float, max_chunks: int = MAX_CONTEXT_CHUNKS) -> list:
     """Lấy toàn bộ chunk vượt ngưỡng, nếu nhiều hơn max_chunks thì giữ top max_chunks điểm cao nhất."""
     filtered = [d for d in docs if d.metadata.get("rerank_score", 0.0) >= threshold]
@@ -43,7 +42,7 @@ def _filter_and_cap(docs: list, threshold: float, max_chunks: int = MAX_CONTEXT_
 
 
 def _rerank_from_vectordb(retriever: VectorStoreRetriever, query: str, k: int) -> list:
-    candidates = retriever.hybrid_search(query)
+    candidates = retriever.hybrid_search_qa(query, k=k)
     return retriever.rerank(query, candidates, top_k=k)
 
 
@@ -54,24 +53,29 @@ def _web_results_to_documents(results: list[dict]) -> list[Document]:
     ]
 
 
-def _get_context_for_query(retriever: VectorStoreRetriever, query: str) -> tuple[list, str]:
+def _get_context_for_query(retriever: VectorStoreRetriever, retrieval_query: str) -> tuple[list, str]:
+    """retrieval_query: câu query văn phong lý thuyết, dùng để retrieve/rerank (không phải text gốc có số liệu)."""
+
     # Vòng 1: lấy nhiều ứng viên để rerank, ngưỡng cao
-    reranked = _rerank_from_vectordb(retriever, query, k=10)
+    print(f" ============= re - rank {THRESHOLD_HIGH} ============= \n" * 2)
+    reranked = _rerank_from_vectordb(retriever, retrieval_query, k=10)
     filtered = _filter_and_cap(reranked, THRESHOLD_HIGH)
     if filtered:
         return filtered, "rag"
 
     # Vòng 2: tăng số ứng viên rerank, hạ ngưỡng
-    reranked = _rerank_from_vectordb(retriever, query, k=15)
+    print(f" ============= re - rank {THRESHOLD_LOW} ============= \n" * 2)
+    reranked = _rerank_from_vectordb(retriever, retrieval_query, k=15)
     filtered = _filter_and_cap(reranked, THRESHOLD_LOW)
     if filtered:
         return filtered, "rag"
 
     # Fallback: web search, 1 lần duy nhất
-    web_results = web_search_math.invoke({"query": query})
+    web_results = web_search_math.invoke({"query": retrieval_query})
     if web_results:
+        print(f" ============= web search ============= \n" * 3)
         web_docs = _web_results_to_documents(web_results)
-        web_reranked = retriever.rerank(query, web_docs, top_k=10)
+        web_reranked = retriever.rerank(retrieval_query, web_docs, top_k=10)
         filtered = _filter_and_cap(web_reranked, THRESHOLD_LOW)
         if filtered:
             return filtered, "web_search"
@@ -94,6 +98,7 @@ def _to_retrieved_chunks(docs: list) -> list[RetrievedChunk]:
 # ── Bước 2: gọi LLM theo batch tối đa BATCH_SIZE cặp/lần ───────────────────
 
 def _build_items_text(pairs: list[tuple[str, str, list]]) -> str:
+    """pairs dùng q.text (giữ nguyên số liệu bài toán) để LLM trả lời đúng bài, không phải retrieval_query."""
     parts = []
     for sub_query_id, question_text, docs in pairs:
         context_text = "\n".join(d.page_content for d in docs)
@@ -133,9 +138,9 @@ async def run_qa_rag_agent(
     rag_results: list[RagResult] = []
     valid_pairs: list[tuple[str, str, list]] = []  # (sub_query_id, text, docs) có context hợp lệ
 
-    # Bước 1: lấy context cho từng sub_query (code thuần, không LLM)
+    # Bước 1: lấy context cho từng sub_query, RETRIEVE bằng retrieval_query (không LLM)
     for q in queries:
-        docs, source = _get_context_for_query(retriever, q.text)
+        docs, source = _get_context_for_query(retriever, q.retrieval_query)
 
         if not docs:
             rag_results.append(RagResult(
@@ -146,6 +151,7 @@ async def run_qa_rag_agent(
                 retrieve_round=2,
             ))
         else:
+            # dùng q.text (câu gốc có số liệu) khi đưa cho LLM trả lời
             valid_pairs.append((q.id, q.text, docs))
 
     # Bước 2: gọi LLM theo batch tối đa BATCH_SIZE cặp/lần
@@ -165,3 +171,5 @@ async def run_qa_rag_agent(
 
     state.rag_results = rag_results
     return state
+
+print("QA RAG Agent completed.")

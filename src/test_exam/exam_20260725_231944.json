@@ -1,0 +1,302 @@
+[
+  {
+    "chuong": "Chương I: MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề phủ định",
+    "do_kho": "de",
+    "question": "Cho mệnh đề 'Đơi là một loài chim'. Mệnh đề phủ định của nó là?",
+    "options": {
+      "A": "Đơi không phải là một loài chim",
+      "B": "Đơi là một loài động vật",
+      "C": "Đơi là một loài thực vật",
+      "D": "Đơi là một loài nấm"
+    },
+    "correct_answer": "A",
+    "giai_thich": "Theo định nghĩa SGK trang ...: Mệnh đề phủ định của một mệnh đề P là mệnh đề không P. Do đó, mệnh đề phủ định của 'Đơi là một loài chim' là 'Đơi không phải là một loài chim'."
+  },
+  {
+    "chuong": "Chương I: MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề đảo",
+    "do_kho": "trung_binh",
+    "question": "Cho mệnh đề 'Nếu trời mưa thì đường sẽ trơn'. Mệnh đề đảo của nó là?",
+    "options": {
+      "A": "Nếu đường trơn thì trời mưa",
+      "B": "Nếu trời nắng thì đường sẽ khô",
+      "C": "Nếu đường khô thì trời nắng",
+      "D": "Nếu trời mưa thì đường sẽ khô"
+    },
+    "correct_answer": "A",
+    "giai_thich": "Theo định nghĩa SGK trang ...: Mệnh đề đảo của một mệnh đề 'Nếu P thì Q' là 'Nếu Q thì P'. Do đó, mệnh đề đảo của 'Nếu trời mưa thì đường sẽ trơn' là 'Nếu đường trơn thì trời mưa'."
+  },
+  {
+    "chuong": "Chương I: MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Nhắc lại về tập hợp",
+    "do_kho": "trung_binh",
+    "question": "Tập hợp là?",
+    "options": {
+      "A": "Là một tập các phần tử có tính chất chung",
+      "B": "Là một tập các phần tử không có tính chất chung",
+      "C": "Là một tập các phần tử có tính chất riêng",
+      "D": "Là một tập các phần tử không có tính chất riêng"
+    },
+    "correct_answer": "A",
+    "giai_thich": "Theo định nghĩa SGK trang ...: Tập hợp là một tập các phần tử có tính chất chung. Các phần tử trong tập hợp được gọi là các phần tử của tập hợp."
+  },
+  {
+    "chuong": "Chương I: MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Một số tập con của tập hợp số thực",
+    "do_kho": "kho",
+    "question": "Cho tập hợp số thực R. Tập con của R là?",
+    "options": {
+      "A": "Tập hợp số tự nhiên N",
+      "B": "Tập hợp số nguyên Z",
+      "C": "Tập hợp số hữu tỉ Q",
+      "D": "Tất cả các đáp án trên"
+    },
+    "correct_answer": "D",
+    "giai_thich": "Theo định nghĩa SGK trang ...: Tập con của một tập hợp là một tập hợp mà tất cả các phần tử của nó đều thuộc tập hợp ban đầu. Do đó, tập hợp số tự nhiên N, tập hợp số nguyên Z và tập hợp số hữu tỉ Q đều là tập con của tập hợp số thực R."
+  },
+  {
+    "chuong": "Chương I: MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp, phần bù của tập con",
+    "do_kho": "kho",
+    "question": "Cho hai tập hợp A và B. Hiệu của A và B là?",
+    "options": {
+      "A": "A ∪ B",
+      "B": "A ∩ B",
+      "C": "A \\ B",
+      "D": "B \\ A"
+    },
+    "correct_answer": "C",
+    "giai_thich": "Theo định nghĩa SGK trang ...: Hiệu của hai tập hợp A và B là tập hợp các phần tử thuộc A nhưng không thuộc B, kí hiệu là A \\ B."
+  },
+  {
+    "chuong": "Chương I: MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp, phần bù của tập con",
+    "do_kho": "kho",
+    "question": "Cho tập hợp A và tập con B của A. Phần bù của B trong A là?",
+    "options": {
+      "A": "A ∪ B",
+      "B": "A ∩ B",
+      "C": "A \\ B",
+      "D": "B \\ A"
+    },
+    "correct_answer": "C",
+    "giai_thich": "Theo định nghĩa SGK trang ...: Phần bù của tập con B trong tập hợp A là tập hợp các phần tử thuộc A nhưng không thuộc B, kí hiệu là A \\ B."
+  },
+  {
+    "chuong": "Chương I: MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp, phần bù của tập con",
+    "do_kho": "kho",
+    "question": "Cho hai tập hợp A và B. Để tính hiệu của A và B, ta cần?",
+    "options": {
+      "A": "Tính giao của A và B",
+      "B": "Tính hợp của A và B",
+      "C": "Tính phần bù của B trong A",
+      "D": "Tính phần bù của A trong B"
+    },
+    "correct_answer": "C",
+    "giai_thich": "Theo định nghĩa SGK trang ...: Để tính hiệu của A và B, ta cần tính phần bù của B trong A, kí hiệu là A \\ B."
+  },
+  {
+    "chuong": "Chương 1 - Bất phương trình bậc nhất hai ẩn",
+    "bai": "Bài 1: Khái niệm bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Khái niệm bất phương trình bậc nhất hai ẩn",
+    "do_kho": "de",
+    "question": "Bất phương trình bậc nhất hai ẩn là gì?",
+    "options": {
+      "A": "Là phương trình bậc nhất hai ẩn có chứa dấu \"=\"",
+      "B": "Là phương trình bậc nhất hai ẩn có chứa dấu \"≠\"",
+      "C": "Là phương trình bậc nhất hai ẩn có chứa dấu \"<\" hoặc \">\"",
+      "D": "Là phương trình bậc nhất hai ẩn có chứa dấu \"≤\" hoặc \"≥\""
+    },
+    "correct_answer": "C",
+    "giai_thich": "Theo định nghĩa SGK trang 123: bất phương trình bậc nhất hai ẩn là phương trình bậc nhất hai ẩn có chứa dấu \"<\" hoặc \">\". Ví dụ: 2x + 3y < 5 là một bất phương trình bậc nhất hai ẩn."
+  },
+  {
+    "chuong": "Chương 1 - Bất phương trình bậc nhất hai ẩn",
+    "bai": "Bài 2: Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn",
+    "do_kho": "trung_binh",
+    "question": "Cách biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn trên mặt phẳng tọa độ là gì?",
+    "options": {
+      "A": "Vẽ đồ thị của bất phương trình bậc nhất hai ẩn và chọn điểm nằm bên phải đường thẳng",
+      "B": "Vẽ đồ thị của bất phương trình bậc nhất hai ẩn và chọn điểm nằm bên trái đường thẳng",
+      "C": "Vẽ đồ thị của bất phương trình bậc nhất hai ẩn và chọn điểm nằm trên đường thẳng",
+      "D": "Vẽ đồ thị của bất phương trình bậc nhất hai ẩn và chọn điểm nằm ngoài đường thẳng"
+    },
+    "correct_answer": "B",
+    "giai_thich": "Theo quy tắc biểu diễn miền nghiệm SGK trang 125: cách biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn trên mặt phẳng tọa độ là vẽ đồ thị của bất phương trình bậc nhất hai ẩn và chọn điểm nằm bên trái đường thẳng. Ví dụ: bất phương trình 2x + 3y < 5 có đồ thị là đường thẳng 2x + 3y = 5 và miền nghiệm là tập hợp các điểm nằm bên trái đường thẳng này."
+  },
+  {
+    "chuong": "Chương 1 - Bất phương trình bậc nhất hai ẩn",
+    "bai": "Bài 2: Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của biểu thức F = ax + by trên một miền đa giác",
+    "do_kho": "trung_binh",
+    "question": "Cách tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của biểu thức F = ax + by trên một miền đa giác là gì?",
+    "options": {
+      "A": "Tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của F tại các đỉnh của miền đa giác",
+      "B": "Tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của F tại các cạnh của miền đa giác",
+      "C": "Tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của F tại các điểm nằm trong miền đa giác",
+      "D": "Tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của F tại các điểm nằm ngoài miền đa giác"
+    },
+    "correct_answer": "A",
+    "giai_thich": "Theo cách tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của biểu thức F = ax + by trên một miền đa giác SGK trang 130: cách tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của F là tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của F tại các đỉnh của miền đa giác. Ví dụ: giá trị lớn nhất của F = 2x + 3y trên miền đa giác ABC là giá trị lớn nhất của F tại các đỉnh A, B, C."
+  },
+  {
+    "chuong": "Chương 1 - Bất phương trình bậc nhất hai ẩn",
+    "bai": "Bài 2: Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn",
+    "do_kho": "kho",
+    "question": "Cách biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn trên mặt phẳng tọa độ với các điều kiện phức tạp là gì?",
+    "options": {
+      "A": "Vẽ đồ thị của bất phương trình bậc nhất hai ẩn và chọn điểm nằm bên phải đường thẳng, sau đó thêm các điều kiện phức tạp",
+      "B": "Vẽ đồ thị của bất phương trình bậc nhất hai ẩn và chọn điểm nằm bên trái đường thẳng, sau đó thêm các điều kiện phức tạp",
+      "C": "Vẽ đồ thị của bất phương trình bậc nhất hai ẩn và chọn điểm nằm trên đường thẳng, sau đó thêm các điều kiện phức tạp",
+      "D": "Vẽ đồ thị của bất phương trình bậc nhất hai ẩn và chọn điểm nằm ngoài đường thẳng, sau đó thêm các điều kiện phức tạp"
+    },
+    "correct_answer": "B",
+    "giai_thich": "Theo quy tắc biểu diễn miền nghiệm với các điều kiện phức tạp SGK trang 135: cách biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn trên mặt phẳng tọa độ với các điều kiện phức tạp là vẽ đồ thị của bất phương trình bậc nhất hai ẩn và chọn điểm nằm bên trái đường thẳng, sau đó thêm các điều kiện phức tạp. Ví dụ: bất phương trình 2x + 3y < 5 với điều kiện x > 0 và y > 0 có đồ thị là đường thẳng 2x + 3y = 5 và miền nghiệm là tập hợp các điểm nằm bên trái đường thẳng này và thỏa mãn x > 0 và y > 0."
+  },
+  {
+    "chuong": "Chương 1 - Bất phương trình bậc nhất hai ẩn",
+    "bai": "Bài 2: Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của biểu thức F = ax + by trên một miền đa giác",
+    "do_kho": "kho",
+    "question": "Cách tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của biểu thức F = ax + by trên một miền đa giác với các điều kiện phức tạp là gì?",
+    "options": {
+      "A": "Tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của F tại các đỉnh của miền đa giác, sau đó thêm các điều kiện phức tạp",
+      "B": "Tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của F tại các cạnh của miền đa giác, sau đó thêm các điều kiện phức tạp",
+      "C": "Tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của F tại các điểm nằm trong miền đa giác, sau đó thêm các điều kiện phức tạp",
+      "D": "Tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của F tại các điểm nằm ngoài miền đa giác, sau đó thêm các điều kiện phức tạp"
+    },
+    "correct_answer": "A",
+    "giai_thich": "Theo cách tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của biểu thức F = ax + by trên một miền đa giác với các điều kiện phức tạp SGK trang 140: cách tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của F là tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của F tại các đỉnh của miền đa giác, sau đó thêm các điều kiện phức tạp. Ví dụ: giá trị lớn nhất của F = 2x + 3y trên miền đa giác ABC với điều kiện x > 0 và y > 0 là giá trị lớn nhất của F tại các đỉnh A, B, C và thỏa mãn x > 0 và y > 0."
+  },
+  {
+    "chuong": "Chương III: HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Bài 1: Hàm số và đồ thị",
+    "dang_bai": "Hàm số. Tập xác định và tập giá trị của hàm số",
+    "do_kho": "de",
+    "question": "Tập xác định của hàm số y = x^2 - 4x + 3 là?",
+    "options": {
+      "A": "(-∞, ∞)",
+      "B": "[0, ∞)",
+      "C": "(-∞, 0)",
+      "D": "[1, 2]"
+    },
+    "correct_answer": "A",
+    "giai_thich": "Hàm số y = x^2 - 4x + 3 là một hàm số bậc hai và có tập xác định là tất cả các số thực. Vì vậy, tập xác định của hàm số này là (-∞, ∞)."
+  },
+  {
+    "chuong": "Chương III: HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Bài 2: Hàm số bậc hai",
+    "dang_bai": "Hàm số bậc hai",
+    "do_kho": "de",
+    "question": "Dạng tổng quát của một hàm số bậc hai là?",
+    "options": {
+      "A": "y = ax + b",
+      "B": "y = ax^2 + bx + c",
+      "C": "y = ax^3 + bx^2 + cx + d",
+      "D": "y = ax^4 + bx^3 + cx^2 + dx + e"
+    },
+    "correct_answer": "B",
+    "giai_thich": "Dạng tổng quát của một hàm số bậc hai là y = ax^2 + bx + c, nơi a, b và c là các hằng số và a ≠ 0."
+  },
+  {
+    "chuong": "Chương III: HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Bài 2: Hàm số bậc hai",
+    "dang_bai": "Đồ thị hàm số bậc hai",
+    "do_kho": "trung_binh",
+    "question": "Đồ thị của hàm số y = x^2 - 4x + 3 có dạng nào?",
+    "options": {
+      "A": "Đường thẳng",
+      "B": "Parabol mở rộng lên trên",
+      "C": "Parabol mở rộng xuống dưới",
+      "D": "Đường cong dạng sine"
+    },
+    "correct_answer": "B",
+    "giai_thich": "Đồ thị của hàm số y = x^2 - 4x + 3 là một parabol mở rộng lên trên vì hệ số của x^2 là dương."
+  },
+  {
+    "chuong": "Chương III: HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Bài 2: Hàm số bậc hai",
+    "dang_bai": "Đồ thị hàm số bậc hai",
+    "do_kho": "trung_binh",
+    "question": "Sự biến thiên của hàm số y = x^2 - 4x + 3 là?",
+    "options": {
+      "A": "Giảm dần trên khoảng (-∞, 2) và tăng dần trên khoảng (2, ∞)",
+      "B": "Tăng dần trên khoảng (-∞, 2) và giảm dần trên khoảng (2, ∞)",
+      "C": "Giảm dần trên cả khoảng (-∞, ∞)",
+      "D": "Tăng dần trên cả khoảng (-∞, ∞)"
+    },
+    "correct_answer": "A",
+    "giai_thich": "Sự biến thiên của hàm số y = x^2 - 4x + 3 là giảm dần trên khoảng (-∞, 2) và tăng dần trên khoảng (2, ∞) vì đồ thị của hàm số này là một parabol mở rộng lên trên."
+  },
+  {
+    "chuong": "Chương III: HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Bài 2: Hàm số bậc hai",
+    "dang_bai": "Ứng dụng của hàm số bậc hai",
+    "do_kho": "kho",
+    "question": "Một công ty muốn tối ưu hóa lợi nhuận từ việc bán một sản phẩm. Hàm số lợi nhuận có dạng y = -x^2 + 10x + 20, nơi x là số lượng sản phẩm bán ra. Số lượng sản phẩm bán ra để tối ưu hóa lợi nhuận là?",
+    "options": {
+      "A": "5",
+      "B": "10",
+      "C": "15",
+      "D": "20"
+    },
+    "correct_answer": "A",
+    "giai_thich": "Để tối ưu hóa lợi nhuận, ta cần tìm giá trị của x使 cho y có giá trị lớn nhất. Trong trường hợp này, vì hệ số của x^2 là âm, nên đồ thị của hàm số là một parabol mở rộng xuống dưới. Giá trị của x tại đỉnh của parabol này sẽ cho giá trị lớn nhất của y. Sử dụng công thức x = -b / 2a, ta có x = -10 / (2 * -1) = 5."
+  },
+  {
+    "chuong": "Chương III: HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Bài 2: Hàm số bậc hai",
+    "dang_bai": "Ứng dụng của hàm số bậc hai",
+    "do_kho": "kho",
+    "question": "Một vật thể được ném lên từ mặt đất với vận tốc ban đầu 20 m/s. Chiều cao của vật thể tại thời điểm t (giây) có thể được mô hình hóa bằng hàm số h(t) = -5t^2 + 20t + 1. Chiều cao tối đa mà vật thể có thể đạt được là?",
+    "options": {
+      "A": "20 m",
+      "B": "21 m",
+      "C": "25 m",
+      "D": "26 m"
+    },
+    "correct_answer": "C",
+    "giai_thich": "Chiều cao tối đa mà vật thể có thể đạt được xảy ra tại thời điểm mà h(t) có giá trị lớn nhất. Tìm thời điểm này bằng cách sử dụng công thức t = -b / 2a, ta có t = -20 / (2 * -5) = 2. Thay t = 2 vào hàm số h(t) = -5t^2 + 20t + 1, ta có h(2) = -5(2)^2 + 20(2) + 1 = -20 + 40 + 1 = 21. Nhưng đây là lúc tính h(t) tại t=2, còn chiều cao tối đa thực tế đạt được là khi h(t) đạt cực đại. Do đó, tính h(t) tại t=2 cho ta chiều cao tại thời điểm đó, không phải là giá trị cực đại. Để tìm cực đại, ta tính h(t) = -5t^2 + 20t + 1 tại thời điểm t mà tại đó h'(t) = 0. Vì h'(t) = -10t + 20, nên h'(t) = 0 khi -10t + 20 = 0, tức t = 2. Thay t = 2 vào h(t) = -5t^2 + 20t + 1, ta có h(2) = -5(2)^2 + 20(2) + 1 = -20 + 40 + 1 = 21. Vậy chiều cao tối đa mà vật thể có thể đạt được là 21 m."
+  },
+  {
+    "chuong": "Chương III: HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Bài 2: Hàm số bậc hai",
+    "dang_bai": "Đồ thị hàm số bậc hai",
+    "do_kho": "kho",
+    "question": "Tính chất đối xứng của đồ thị hàm số bậc hai y = ax^2 + bx + c là?",
+    "options": {
+      "A": "Đồ thị đối xứng với trục y",
+      "B": "Đồ thị đối xứng với trục x",
+      "C": "Đồ thị đối xứng với đường thẳng x = -b / 2a",
+      "D": "Đồ thị không đối xứng"
+    },
+    "correct_answer": "C",
+    "giai_thich": "Tính chất đối xứng của đồ thị hàm số bậc hai y = ax^2 + bx + c là đối xứng với đường thẳng x = -b / 2a. Đây là trục đối xứng của parabol."
+  },
+  {
+    "chuong": "Chương III: HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Bài 2: Hàm số bậc hai",
+    "dang_bai": "Ứng dụng của hàm số bậc hai",
+    "do_kho": "kho",
+    "question": "Một nhà thiết kế muốn tạo ra một mô hình mặt đường cho một con đường mới. Mô hình này có thể được mô tả bằng hàm số y = -0,1x^2 + 2x + 10, nơi x là khoảng cách từ điểm bắt đầu và y là chiều cao của mặt đường. Mô hình này có ý nghĩa gì trong thực tế?",
+    "options": {
+      "A": "Mô hình mặt đường này thể hiện chiều cao của mặt đường giảm dần khi khoảng cách từ điểm bắt đầu tăng",
+      "B": "Mô hình mặt đường này thể hiện chiều cao của mặt đường tăng dần khi khoảng cách từ điểm bắt đầu tăng",
+      "C": "Mô hình mặt đường này thể hiện chiều cao của mặt đường không đổi khi khoảng cách từ điểm bắt đầu tăng",
+      "D": "Mô hình mặt đường này không có ý nghĩa trong thực tế"
+    },
+    "correct_answer": "A",
+    "giai_thich": "Mô hình mặt đường này có thể được sử dụng để thiết kế đường dẫn cho xe cộ, đảm bảo rằng chiều cao của mặt đường giảm dần khi khoảng cách từ điểm bắt đầu tăng, giúp xe cộ di chuyển an toàn và thoải mái."
+  }
+]

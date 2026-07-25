@@ -4,9 +4,9 @@ from pydantic import BaseModel, Field
 
 class SubQuery(BaseModel):
     id: str = Field(..., description="ID của sub-query, VD: '1', '2', '1.1' nếu là câu hỏi con của câu 1")
-    text: str = Field(..., description="Câu query đã được viết lại rõ ràng, tách nhỏ nếu câu gốc chứa nhiều ý, VD: 'Đạo hàm là gì', 'Vì sao hàm số bậc nhất đồng biến khi a>0'")
+    text: str = Field(..., description="Câu query đã được viết lại rõ ràng, tách nhỏ nếu câu gốc chứa nhiều ý, giữ đúng nội dung bài toán gốc (số liệu, dữ kiện)")
+    retrieval_query: str = Field(..., description="Câu query viết lại theo văn phong LÝ THUYẾT/KHÁI NIỆM (không chứa số liệu cụ thể của bài), dùng để tìm kiếm trong sách giáo khoa, VD: 'Phép giao của hai tập hợp' thay vì 'Tính A giao B với A={1,2,3}'")
     chapter_hint: Optional[str] = Field(default=None, description="Gợi ý chương/bài liên quan nếu nhận diện được từ câu hỏi, VD: 'Chương 1', 'Bài đạo ôn'")
-
 
 class RouterOutput(BaseModel):
     loai: Literal[1, 2, 3] = Field(..., description="Phân loại câu hỏi: 1 = mơ hồ cần hỏi lại, 2 = câu hỏi lý thuyết, 3 = câu hỏi cần tính toán")

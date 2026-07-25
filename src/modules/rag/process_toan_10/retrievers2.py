@@ -93,6 +93,13 @@ class VectorStoreRetriever:
         print(f" ========== hibird search : {len(results)} ========== ")
 
         return results
+        
+
+    def hybrid_search_qa(self, query: str, k: int | None = None) -> list[Document]:
+        """Kết hợp semantic + text search."""
+        results = self._hybrid_store.similarity_search(query, k=k or self.top_k)
+        print(f" ========== hibird search : {len(results)} ========== ")
+        return results
 
     def rerank(self, query: str, docs: list, top_k: int = 3) -> list[Document]:
         """Rerank docs bằng cross-encoder, chỉ giữ top_k chính xác nhất."""

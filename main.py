@@ -1,92 +1,126 @@
+import sys, os, asyncio
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 
-from ast import Dict, Import
-import logging
-import sys ,os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
-from src.clients.databases import qdrant 
+from dotenv import load_dotenv
 from src.clients.llm import LLMClient
-from src.state import State ,  AgentProfile, StudyPlanOverview
-from src.agents.profile_collector import ProfileCollector
-from src.agents.overview_planner import OverViewPlanner
-from src.agents.detail_planner import DetailPlanner 
-from src.agents.review_planner import ReviewPlanner 
-from src.agents.mini_test import MiniTestPlanner 
-import asyncio
-from datetime import datetime
-import json
-from langgraph.graph import MessagesState, StateGraph
-from langgraph.graph import END, START, StateGraph, MessagesState
-from langgraph.checkpoint.memory import MemorySaver
-import asyncio
-from langchain_core.runnables import RunnableConfig
-from pydantic_settings import BaseSettings
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from src.clients.embedding import embeddings_qa
 from src.configs import env_config
+from src.modules.rag.process_toan_10.retrievers2 import VectorStoreRetriever
 
+load_dotenv()
 
-import asyncio
-from typingAny,  Import Dict, Any
-from langgraph.graph import StateGraph, START, END
-from langgraph.checkpoint.memory import MemorySaver
-from langchain.schema import HumanMessage, AIMessage
-
-
-def main():
-    logging.basicConfig(level=logging.INFO)
-    logger = logging.getLogger("Main")
-
-    # Initialize the LLM client
-    llm_client = LLMClient()
-
-    # Set up the initial state
-    state = State(
-        messages=[],
-        profile_user=None,
-        profile_completed=False,
-        ok=""
+EXIT_KEYWORDS = {"menu", "đổi chức năng", "doi chuc nang", "quay lại", "quay lai"}
+def _init_shared():
+    llm_client = LLMClient(model=env_config.model, api_provider=env_config.api_provider)
+    retriever = VectorStoreRetriever(
+        url=env_config.qdrant_url,
+        api_key=env_config.qdrant_api_key,
+        embeddings=embeddings_qa,
+        collection_name="documents",
+        top_k=10,
     )
+    return llm_client, retriever
 
-    # Run the Profile Collector
-    logger.info("Starting Profile Collector...")
-    profile_collector = ProfileCollector(llm_client)
-    profile_agent = profile_collector(state)
 
-    while not state["profile_completed"]:
-        user_input = input("You: ")
-        state["messages"].append({"role": "user", "content": user_input})
+async def run_qa_mode(llm_client, retriever):
+    from src.edu_qa.graph import build_qa_graph
+    from src.edu_qa.state import QAState, ChatTurn
 
-        response = profile_agent.invoke(
-            state,
-            config=RunnableConfig(configurable={"thread_id": "profile_thread"})
-        )
-
-        # Update state with the response
-        state.update(response)
-        print(f"System: {response['messages'][-1]['content']}")
-
-    logger.info("Profile collection completed.")
-
-    # Run the Overview Planner
-    logger.info("Starting Overview Planner...")
-    overview_planner = OverviewPlanner(llm_client, qdrant)
-    overview_agent = overview_planner(state)
+    graph = build_qa_graph(llm_client, retriever)
+    chat_history: list[ChatTurn] = []
 
     while True:
-        user_input = input("You: ")
-        state["messages"].append({"role": "user", "content": user_input})
+        user_input = input("Học sinh: ").strip()
+        if user_input.lower() == "quit":
+            break
+        if user_input.lower() in EXIT_KEYWORDS:
+            print("Quay lại menu chọn chức năng...\n")
+            return "menu"
+        if not user_input:
+            continue
 
-        response = overview_agent.invoke(
-            state,
-            config=RunnableConfig(configurable={"thread_id": "overview_thread"})
-        )
+        state = QAState(user_query=user_input, chat_history=chat_history)
+        result_dict = await graph.ainvoke(state)
+        result = QAState(**result_dict)
 
-        # Update state with the response
-        state.update(response)
-        print(f"System: {response['messages'][-1]['content']}")
+        print("-" * 70)
+        print(f"Trợ lý: {result.final_answer}")
+        print("-" * 70)
 
-        if response.get("end", False):
-            logger.info("Overview planning completed.")
+        chat_history.append(ChatTurn(user_query=user_input, final_answer=result.final_answer))
+
+
+def run_exam_mode(llm_client, retriever):
+    from src.edu_exam.run_exam import create_graph
+    from langchain_core.messages import HumanMessage
+
+    graph = create_graph(llm_client, retriever)
+
+    state = {
+        "messages": [], "student_profile": {}, "profile_complete": False,
+        "detected_chapters": [], "retrieved_chunks": [], "retrieve_complete": False,
+        "scope_chapters": {}, "scope_lessons": {}, "section_selected": False,
+        "scored_chunks": [], "_pending_sections": [], "knowledge_profile": {},
+        "knowledge_queue": None, "knowledge_pending": None, "knowledge_scores": {},
+        "knowledge_done": False, "completed_build_knowlege": False, "exam_matrix": {},
+        "question_specs": [], "specs_done": False, "generated_exam": [], "exam_memory": [],
+        "generate_done": False, "exam_review": {}, "final_exam": [], "evaluate_done": False,
+        "current_step": "", "error": None,
+    }
+
+    while True:
+        user_input = input("Học sinh: ").strip()
+        if user_input.lower() == "quit":
+            break
+        if user_input.lower() in EXIT_KEYWORDS:
+            print("Quay lại menu chọn chức năng...\n")
+            return "menu"
+        if not user_input:
+            continue
+
+        state["messages"].append(HumanMessage(content=user_input))
+        state = graph.invoke(state)
+
+        ai_messages = [m for m in state["messages"] if hasattr(m, "type") and m.type == "ai"]
+        if ai_messages:
+            print("-" * 70)
+            print(f"Trợ lý: {ai_messages[-1].content}\n")
+            print("-" * 70)
+
+        if state.get("evaluate_done"):
             break
 
+
+def run_planning_mode(llm_client, retriever):
+    print("Chức năng lộ trình học đang phát triển, chưa khả dụng.")
+
+
+async def main():
+    llm_client, retriever = _init_shared()
+
+    while True:
+        print("=" * 50)
+        print("1. Hỏi đáp")
+        print("2. Tạo bài kiểm tra")
+        print("3. Tạo lộ trình học")
+        print("=" * 50)
+
+        mode = input("Chọn chức năng (1/2/3): ").strip()
+
+        if mode == "1":
+            signal = await run_qa_mode(llm_client, retriever)
+        elif mode == "2":
+            signal = run_exam_mode(llm_client, retriever)
+        elif mode == "3":
+            run_planning_mode(llm_client, retriever)
+            signal = None
+        else:
+            print("Lựa chọn không hợp lệ.")
+            continue
+
+        if signal != "menu":
+            break
+
+
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

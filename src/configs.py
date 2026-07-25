@@ -81,7 +81,7 @@ class EnvConfig(BaseSettings):
 
 env_config = EnvConfig()
 
-from src.app_logging import setup_logging
-setup_logging()
+# from src.app_logging import setup_logging
+# setup_logging()
 # print(env_config.model)
 # print(env_config.openrouter_api_key)

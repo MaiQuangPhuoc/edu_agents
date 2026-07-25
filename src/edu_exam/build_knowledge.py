@@ -11,7 +11,7 @@ from src.edu_exam.curriculum import normalize_chapter_key, CHAPTER_MAP
  
  
 PROMPT_PATH = Path(r'D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompt_edu\prompt\build_knowledge.txt')
-SECTIONS_PATH = Path(r'D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\rag\process_toan_10\curriculum_sections.json')
+SECTIONS_PATH = Path(r'D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\documents\curriculum_sections.json')
 CURRICULUM_SECTIONS = json.loads(SECTIONS_PATH.read_text(encoding="utf-8"))
  
  

@@ -12,6 +12,7 @@ from src.edu_qa.qa_rag_agent import run_qa_rag_agent
 from src.edu_qa.qa_solve_agent import run_qa_solve_agent
 from src.edu_qa.qa_format_agent import run_qa_format_agent
 
+ 
 
 def route_after_router(state: QAState) -> str:
     if state.router_output.loai == 1:
@@ -30,8 +31,10 @@ def build_qa_graph(llm_client: LLMClient, retriever: VectorStoreRetriever):
 
     g.add_node("qa_router", partial(run_qa_router_agent, llm_client=llm_client))
     g.add_node("qa_rag",    partial(run_qa_rag_agent, llm_client=llm_client, retriever=retriever))
-    g.add_node("qa_solve",  partial(run_qa_solve_agent, llm_client=llm_client, retriever=retriever))
+    g.add_node("qa_solve",  partial(run_qa_solve_agent, llm_client=llm_client))
     g.add_node("qa_format", partial(run_qa_format_agent, llm_client=llm_client))
+    # g.add_node("qa_format", partial(run_qa_format_agent))
+
 
     g.set_entry_point("qa_router")
 

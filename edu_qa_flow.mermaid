@@ -1,0 +1,102 @@
+flowchart TD
+    START([User query + chat_history]) --> ROUTER[qa_router_agent<br/>1 lần gọi LLM]
+
+    ROUTER --> ROUTEROUT{{RouterOutput:<br/>loai, ly_do,<br/>sub_queries text/retrieval_query/chapter_hint,<br/>clarify_question}}
+
+    ROUTEROUT -->|loai = 1 mơ hồ| SKIP1[Bỏ qua qa_rag và qa_solve]
+    ROUTEROUT -->|loai = 2 lý thuyết| RAGENTRY[Vào qa_rag_agent]
+    ROUTEROUT -->|loai = 3 tính toán| RAGENTRY
+
+    SKIP1 --> FORMAT
+
+    %% ================= QA_RAG_AGENT =================
+    subgraph RAG["qa_rag_agent — lặp cho từng sub_query"]
+        direction TB
+        RAGENTRY --> RQ[Lấy retrieval_query của 1 sub_query]
+
+        RQ --> R1[retriever.hybrid_search retrieval_query, k=10<br/>retriever.rerank top_k=10]
+        R1 --> F1{Có chunk<br/>rerank_score ≥ 0.6 ?}
+
+        F1 -->|Có| CAP1[Giữ toàn bộ chunk đạt ngưỡng<br/>nếu quá 3 thì cap top 3 điểm cao nhất]
+        F1 -->|Không| R2[retriever.hybrid_search retrieval_query, k=15<br/>retriever.rerank top_k=15]
+
+        R2 --> F2{Có chunk<br/>rerank_score ≥ 0.5 ?}
+        F2 -->|Có| CAP2[Giữ toàn bộ chunk đạt ngưỡng<br/>cap top 3 điểm cao nhất]
+        F2 -->|Không| WEB[web_search_math retrieval_query<br/>chỉ domain Toán uy tín VN]
+
+        WEB --> WCHECK{Có kết quả web?}
+        WCHECK -->|Không| NOCTX[docs rỗng]
+        WCHECK -->|Có| WR[rerank web_docs, top_k=10]
+        WR --> F3{Có chunk<br/>rerank_score ≥ 0.5 ?}
+        F3 -->|Có| CAP3[Giữ toàn bộ chunk đạt ngưỡng<br/>cap top 3, source=web_search]
+        F3 -->|Không| NOCTX
+
+        CAP1 --> COLLECT[Gom vào valid_pairs:<br/>sub_query_id, text, docs]
+        CAP2 --> COLLECT
+        CAP3 --> COLLECT
+        NOCTX --> MARKNA[RagResult:<br/>is_sufficient=False<br/>answer=Không biết]
+
+        COLLECT --> MORE{Còn sub_query<br/>chưa xét?}
+        MARKNA --> MORE
+        MORE -->|Có| RQ
+        MORE -->|Không, đã xét hết| BATCHSPLIT[Chia valid_pairs thành<br/>các batch tối đa 3 cặp]
+
+        BATCHSPLIT --> LLMBATCH[Gọi LLM 1 lần / batch<br/>input: list text, context<br/>output: list ket_qua]
+        LLMBATCH --> BATCHMORE{Còn batch<br/>chưa gọi?}
+        BATCHMORE -->|Có| LLMBATCH
+        BATCHMORE -->|Không| RAGRESULT[RagResult cho mỗi sub_query:<br/>chunks, is_sufficient=True,<br/>answer, retrieve_round]
+    end
+
+    RAGRESULT --> AFTERRAG{loai?}
+    MARKNA -.-> AFTERRAG
+    AFTERRAG -->|loai = 2| FORMAT
+    AFTERRAG -->|loai = 3| SOLVEENTRY[Vào qa_solve_agent]
+
+    %% ================= QA_SOLVE_AGENT =================
+    subgraph SOLVE["qa_solve_agent — lặp cho từng sub_query"]
+        direction TB
+        SOLVEENTRY --> GETCTX[Lấy answer từ RagResult<br/>theo sub_query_id]
+
+        GETCTX --> CTXCHECK{answer =<br/>Không biết ?}
+        CTXCHECK -->|Có| INSUFFICIENT[SolveResult:<br/>tool_used=none<br/>result=chưa đủ dữ kiện]
+
+        CTXCHECK -->|Không, có context| BINDTOOLS[LLM + bind_tools MATH_TOOLS<br/>4 meta-tool:<br/>algebra_tool, set_tool,<br/>linear_inequality_tool, quadratic_tool]
+
+        BINDTOOLS --> TOOLCALL{LLM có<br/>gọi tool?}
+        TOOLCALL -->|Không| ERRNOTOOL[SolveResult lỗi:<br/>LLM không gọi tool nào]
+        TOOLCALL -->|Có| RUNTOOL[Code Python gọi thật<br/>tool_fn.invoke tool_args<br/>SymPy tính toán]
+
+        RUNTOOL --> ERRCHECK{Kết quả tool<br/>bắt đầu bằng LOI: ?}
+        ERRCHECK -->|Có lỗi| ERRTOOL[SolveResult lỗi:<br/>ghi lại lỗi tool]
+        ERRCHECK -->|Thành công| DESCRIBE[Gọi LLM lần 2:<br/>mô tả quy trình các bước<br/>dựa trên tool_name, tool_args, tool_output]
+
+        DESCRIBE --> SOLVEOK[SolveResult:<br/>tool_used, tool_input,<br/>result, steps]
+
+        INSUFFICIENT --> SOLVEMORE{Còn sub_query<br/>chưa xét?}
+        ERRNOTOOL --> SOLVEMORE
+        ERRTOOL --> SOLVEMORE
+        SOLVEOK --> SOLVEMORE
+        SOLVEMORE -->|Có| GETCTX
+        SOLVEMORE -->|Không| SOLVEDONE[Toàn bộ solve_results đã sẵn sàng]
+    end
+
+    SOLVEDONE --> FORMAT
+
+    %% ================= QA_FORMAT_AGENT =================
+    subgraph FMT["qa_format_agent"]
+        direction TB
+        FORMAT[Gom nội dung theo loai:<br/>loai1: clarify_question<br/>loai2: answer từng sub_query<br/>loai3: result + steps từng sub_query]
+        FORMAT --> LLMFMT[Gọi LLM 1 lần duy nhất<br/>viết văn xuôi tự nhiên<br/>tách riêng Câu 1, Câu 2...]
+        LLMFMT --> FINAL[final_answer]
+    end
+
+    FINAL --> SAVEHIST[run_qa.py: lưu vào chat_history<br/>user_query + final_answer]
+    SAVEHIST --> END_([Trả lời cho học sinh])
+
+    style ROUTER fill:#4A90D9,color:#fff
+    style RAG fill:#FFF4E0
+    style SOLVE fill:#E8F5E9
+    style FMT fill:#F3E5F5
+    style RAGRESULT fill:#FFE0B2
+    style SOLVEDONE fill:#C8E6C9
+    style FINAL fill:#E1BEE7
