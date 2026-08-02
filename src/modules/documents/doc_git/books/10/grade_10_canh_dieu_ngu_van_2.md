@@ -2521,6 +2521,9 @@ d) Sân khấu lô nhô mấy chúng đầu trọc
 
 80
 == 82 ==
+
+VIẾT
+
 VIẾT BÀI VĂN NGHỊ LUẬN
 PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM THƠ
 
@@ -3222,6 +3225,9 @@ c) Cảm đi một mình trong đêm. Trăn đưa đại hội 2 ở phía bãi 
 4. Viết một đoạn văn (khoảng 8 - 10 dòng) triển khai ý từ câu chủ đề sau đây:
 Đừng để người thân bị tổn thương vì sự vô tâm của bạn.
 == 108 ==
+
+## VIẾT
+
 VIẾT BÀI VĂN NGHỊ LUẬN
 PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM VĂN HỌC
 

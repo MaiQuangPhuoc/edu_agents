@@ -1,4 +1,4 @@
-<!-- part 1 -->
+<!-- chunk 1 - 113 từ -->
 Bài 7 THƠ TỰ DO, YÊU CẦU CẦN ĐẠT :
 • Phân tích, đánh giá được giá trị thẩm mĩ của các yếu tố hình thức (nhân vật trữ tình, hình ảnh, từ ngữ,...) và nội dung (cảm hứng chủ đạo, chủ đề,...) trong bài thơ trữ tình (thể thơ tự do) viết về đề tài quê hương, đất nước.
 
@@ -12,13 +12,13 @@ Bài 7 THƠ TỰ DO, YÊU CẦU CẦN ĐẠT :
 
 ---
 
-<!-- part 2 -->
+<!-- chunk 2 - 109 từ -->
 Bài 7 THƠ TỰ DO, KIẾN THỨC NGỮ VĂN :
 1. Thơ tự do khác với thơ cách luật, không có thể thức nhất định, không bị ràng buộc về số dòng, số chữ, vần,... Khác với thơ vần xuôi, thơ tự do là thơ có phân dòng. Bài thơ tự do có thể là sự kết hợp của các đoạn làm theo nhiều thể khác nhau hoặc tự do hoàn toàn. Thơ tự do xuất hiện do nhu cầu giải phóng cảm xúc khỏi sự ràng buộc chặt chẽ của các quy tắc về hình thức, phản ánh được những khía cạnh mới của cuộc sống đa dạng, thể hiện cái nhìn nghệ thuật mới của nhà thơ.
 
 ---
 
-<!-- part 3 -->
+<!-- chunk 3 - 118 từ -->
 Bài 7 THƠ TỰ DO, KIẾN THỨC NGỮ VĂN :
 2. Nhân vật trữ tình
 
@@ -31,7 +31,7 @@ Nhân vật trữ tình (một dạng biểu hiện của chủ thể trữ tìn
 
 ---
 
-<!-- part 4 -->
+<!-- chunk 4 - 131 từ -->
 Bài 7 THƠ TỰ DO, KIẾN THỨC NGỮ VĂN :
 3. Hình ảnh, ngôn từ và cảm hứng chủ đạo
 
@@ -41,7 +41,7 @@ Bài 7 THƠ TỰ DO, KIẾN THỨC NGỮ VĂN :
 
 ---
 
-<!-- part 5 -->
+<!-- chunk 5 - 194 từ -->
 Bài 7 THƠ TỰ DO, KIẾN THỨC NGỮ VĂN :
 4. Ôn tập các biện pháp tu từ
 
@@ -51,6 +51,10 @@ Có thể chia các biện pháp tu từ đã học thành hai nhóm:
 
 - Các biện pháp tu từ dựa trên quan hệ kết hợp, bao gồm: điệp ngữ, đảo ngữ, liệt kê, nói quá, nói giảm - nói tránh,... Đặc điểm của các biện pháp tu từ này là thông qua sự phối hợp, sắp xếp từ ngữ và các yếu tố ngữ âm để tạo ra những ý nghĩa bổ sung có hiệu quả cao. Ví dụ:
 
+---
+
+<!-- chunk 6 - 80 từ -->
+Bài 7 THƠ TỰ DO, KIẾN THỨC NGỮ VĂN :
 Ngày em phơi nhiều bom nổ chậm
 Đêm nằm mơ nối mơ vang nhà
 Chuyện kể từ nơi nhớ sâu xa
@@ -63,7 +67,7 @@ Thương em, thương em, thương em biết mấy...
 
 ---
 
-<!-- part 6 -->
+<!-- chunk 7 - 176 từ -->
 Bài 7 THƠ TỰ DO, Đọc hiểu văn bản, tác phẩm ĐẤT NƯỚC
 NGUYỄN ĐÌNH THI :, Chuẩn bị
 ĐẤT NƯỚC
@@ -79,11 +83,15 @@ NGUYỄN ĐÌNH THI
 - Đọc trước bài thơ Đất nước, tìm hiểu những thông tin về nhà thơ Nguyễn Đình Thi và hoàn cảnh ra đời của tác phẩm. Lựa chọn và ghi chép lại một số thông tin giúp đọc hiểu bài thơ.
 - Em biết những bài thơ nào viết về đất nước? Ấn tượng, cảm xúc, suy nghĩ,... mà những bài thơ đó gợi ra cho em là gì?
 
+---
+
+<!-- chunk 8 - 26 từ -->
+Bài 7 THƠ TỰ DO, Đọc hiểu văn bản, tác phẩm ĐẤT NƯỚC
 [Hình ảnh một người đàn ông trung niên mặc áo sơ mi trắng, với chú thích: Nguyễn Đình Thi (1924 - 2003), quê ở Hà Nội]
 
 ---
 
-<!-- part 7 -->
+<!-- chunk 9 - 174 từ -->
 Bài 7 THƠ TỰ DO, Đọc hiểu văn bản, tác phẩm ĐẤT NƯỚC
 NGUYỄN ĐÌNH THI :, Đọc hiểu
 2 Đọc hiểu
@@ -106,13 +114,16 @@ NGUYỄN ĐÌNH THI :, Đọc hiểu
 70
 == 72 ==
 
-
 3. Mùa thu nay khác rồi
 Tôi đứng vui nghe giữa núi đồi
 Gió thổi rừng tre phập phới
 Trời thu thay áo mới
 Trong biếc nõi cười thiết tha
 
+---
+
+<!-- chunk 10 - 192 từ -->
+Bài 7 THƠ TỰ DO, Đọc hiểu văn bản, tác phẩm ĐẤT NƯỚC
 [Hình ảnh minh họa: Bức tranh vẽ cảnh thiên nhiên với núi đồi xanh, cánh đồng lúa vàng, cây tre và mặt nước phản chiếu. Cảnh vật thể hiện vẻ đẹp của mùa thu.]
 
 Trời xanh đây là của chúng ta
@@ -138,13 +149,16 @@ Từ góc lửa bờ tre hờn hậu
 Khổ 3: Chú ý đổi dài của các dòng thơ, phép điệp, phép liệt kê, hiệp vần, giọng điệu và cảm xúc của nhân vật trữ tình.
 Hình dung bức tranh đất nước trong "mùa thu nay" qua cảm nhận của nhân vật trữ tình.
 
+---
+
+<!-- chunk 11 - 184 từ -->
+Bài 7 THƠ TỰ DO, Đọc hiểu văn bản, tác phẩm ĐẤT NƯỚC
 Chú ý những cảm nhận của tác giả về đất nước trong chiến tranh.
 
 Từ khổ 5 - 10: Những dòng thơ nào chủ yếu thể hiện cảm nhận về:
 - Đất nước đau thương, cảm hờn?
 - Đất nước quật cường, anh dũng?
 == 73 ==
-
 
 6. Bát cơm chan đầy nước mắt
 Bay còn giằng khỏi miệng ta
@@ -173,7 +187,7 @@ Rũ bùn đứng dậy sáng loà.
 
 ---
 
-<!-- part 8 -->
+<!-- chunk 12 - 18 từ -->
 Bài 7 THƠ TỰ DO, Đọc hiểu văn bản, tác phẩm 1948 – 1955
 (Thơ, NXB Văn học, Hà Nội, 2001) :
 1948 – 1955
@@ -181,14 +195,14 @@ Bài 7 THƠ TỰ DO, Đọc hiểu văn bản, tác phẩm 1948 – 1955
 
 ---
 
-<!-- part 9 -->
+<!-- chunk 13 - 19 từ -->
 Bài 7 THƠ TỰ DO, Đọc hiểu văn bản, tác phẩm 1948 – 1955
 (Thơ, NXB Văn học, Hà Nội, 2001) :, Đọc hiểu
 Lưu ý thông tin về thời gian sáng tác.
 
 ---
 
-<!-- part 10 -->
+<!-- chunk 14 - 171 từ -->
 Bài 7 THƠ TỰ DO, Đọc hiểu văn bản, tác phẩm 1948 – 1955
 (Thơ, NXB Văn học, Hà Nội, 2001) :, Câu hỏi
 1. Bài thơ Đất nước có thể được chia làm mấy phần? Cảm xúc của nhân vật trữ tình có sự thay đổi như thế nào qua các phần này? Từ đó, hãy nêu cảm hứng chủ đạo của bài thơ.
@@ -201,15 +215,18 @@ Bài 7 THƠ TỰ DO, Đọc hiểu văn bản, tác phẩm 1948 – 1955
 
 5. Trình bày cảm nhận của em về hình tượng đất nước được khắc họa trong khổ thơ cuối.
 
+---
+
+<!-- chunk 15 - 80 từ -->
+Bài 7 THƠ TỰ DO, Đọc hiểu văn bản, tác phẩm 1948 – 1955
 6. Trong bài thơ, nhân vật trữ tình xưng "tôi", sau đó chuyển sang xưng "ta" ("chúng ta"). Theo em, việc thay đổi hai đại từ này có ý nghĩa gì?
 == 74 ==
-
 
 7. Từ hai dòng thơ: "Đêm đêm rì rầm trong tiếng dạt / Những buổi ngày xưa vọng nói về", em cảm nhận được lời nhắn nhủ gì trong tiếng vọng "rì rầm" ấy? Hãy chia sẻ bằng một đoạn văn (khoảng 8 - 10 dòng).
 
 ---
 
-<!-- part 11 -->
+<!-- chunk 16 - 117 từ -->
 Bài 7 THƠ TỰ DO, Đọc hiểu văn bản, tác phẩm LÍNH ĐẢO HÁT TÌNH CA TRÊN ĐẢO
 TRẦN ĐĂNG KHOA :, Chuẩn bị
 LÍNH ĐẢO HÁT TÌNH CA TRÊN ĐẢO
@@ -227,7 +244,7 @@ TRẦN ĐĂNG KHOA
 
 ---
 
-<!-- part 12 -->
+<!-- chunk 17 - 160 từ -->
 Bài 7 THƠ TỰ DO, Đọc hiểu văn bản, tác phẩm LÍNH ĐẢO HÁT TÌNH CA TRÊN ĐẢO
 TRẦN ĐĂNG KHOA :, Đọc hiểu
 2. Đọc hiểu
@@ -255,7 +272,10 @@ Khổ 1, 2: Chú ý từ ngữ nhân vật trữ tình tự xưng và sự đặ
 (1) Trường Sa là vùng đảo cát, gió to và sóng dữ, cứ sau vài giờ, đảo lại thay đổi hình dạng.
 == 75 ==
 
+---
 
+<!-- chunk 18 - 187 từ -->
+Bài 7 THƠ TỰ DO, Đọc hiểu văn bản, tác phẩm LÍNH ĐẢO HÁT TÌNH CA TRÊN ĐẢO
 [Hình ảnh minh họa: Ba người lính hải quân đang ngồi trên bãi biển, mặc đồng phục trắng và xanh. Một người đang chơi đàn guitar, hai người còn lại đang hát. Phía sau là biển xanh và có vài con chim bay trên bầu trời.]
 
 4. Có lúc vui cứ gọi đùa sư cụ
@@ -278,6 +298,10 @@ Khổ 1, 2: Chú ý từ ngữ nhân vật trữ tình tự xưng và sự đặ
    Những bóng dáng nào sẽ đến với chúng anh
    Trông bốn phía chỉ âm u mây nước
 
+---
+
+<!-- chunk 19 - 169 từ -->
+Bài 7 THƠ TỰ DO, Đọc hiểu văn bản, tác phẩm LÍNH ĐẢO HÁT TÌNH CA TRÊN ĐẢO
 8. Nào hát lên cho mây nước biết
    Rằng chúng ta là những con người
    Yêu em thủy chung hơn muối mặn
@@ -297,7 +321,6 @@ Chú ý đến phép điệp trong các khổ thơ 8, 9.
 74
 == 76 ==
 
-
 Ta đứng vững giữa muôn trùng sóng gió
 Tổ quốc Việt Nam bắt đầu từ nơi này...
 
@@ -313,7 +336,7 @@ Kết thúc bài thơ có điều gì bất ngờ?
 
 ---
 
-<!-- part 13 -->
+<!-- chunk 20 - 191 từ -->
 Bài 7 THƠ TỰ DO, Đọc hiểu văn bản, tác phẩm LÍNH ĐẢO HÁT TÌNH CA TRÊN ĐẢO
 TRẦN ĐĂNG KHOA :, Câu hỏi
 1. Nhân vật trữ tình trong bài thơ Lính đảo hát tình ca trên đảo là ai? Có thể chia bài thơ làm mấy phần? Hãy đặt tên cho mỗi phần đó.
@@ -326,11 +349,15 @@ TRẦN ĐĂNG KHOA :, Câu hỏi
 
 5. Bài thơ viết về những người lính trên quần đảo Trường Sa vào đầu những năm 80 của thế kỉ XX. Cuộc sống vật chất và tâm hồn của người lính đảo trong bài thơ gợi cho em suy nghĩ gì?
 
+---
+
+<!-- chunk 21 - 37 từ -->
+Bài 7 THƠ TỰ DO, Đọc hiểu văn bản, tác phẩm LÍNH ĐẢO HÁT TÌNH CA TRÊN ĐẢO
 6. Tưởng tượng em là khán giả trong buổi biểu diễn văn nghệ của người lính đảo. Hãy chia sẻ cảm nhận, suy nghĩ,... của em khi đó bằng một đoạn văn (khoảng 8 - 10 dòng).
 
 ---
 
-<!-- part 14 -->
+<!-- chunk 22 - 157 từ -->
 Bài 7 THƠ TỰ DO, Thực hành đọc hiểu, tác phẩm ĐI TRONG HƯƠNG TRÀM :, Chuẩn bị
 ĐI TRONG HƯƠNG TRÀM
 
@@ -356,7 +383,7 @@ Rừng tràm (Ảnh: baodantoc.vn)
 
 ---
 
-<!-- part 15 -->
+<!-- chunk 23 - 193 từ -->
 Bài 7 THƠ TỰ DO, Thực hành đọc hiểu, tác phẩm ĐI TRONG HƯƠNG TRÀM :, Đọc hiểu
 # Đọc hiểu
 
@@ -383,12 +410,15 @@ Chú ý không gian, thời gian, hình ảnh hoa tràm.
 Những biện pháp tu từ nào được sử dụng trong các khổ thơ 2 và 3?
 == 78 ==
 
-
 4. Du đi đâu và xa cách bao lâu
 Anh vẫn có bóng em, giữa bóng trăm bát ngát
 Anh vẫn thấy mắt em trên lá trầm xanh ngát
 Anh vẫn nghe tinh em trong hương trầm xôn xao.
 
+---
+
+<!-- chunk 24 - 33 từ -->
+Bài 7 THƠ TỰ DO, Thực hành đọc hiểu, tác phẩm ĐI TRONG HƯƠNG TRÀM :, Đọc hiểu
 (Tuyển tập thơ Việt Nam (giai đoạn chống Mỹ cứu nước),
 NXB Hội Nhà văn, Hà Nội, 1999)
 
@@ -396,7 +426,7 @@ Cách diễn đạt của khổ thơ này có gì giống và khác với khổ 
 
 ---
 
-<!-- part 16 -->
+<!-- chunk 25 - 184 từ -->
 Bài 7 THƠ TỰ DO, Thực hành đọc hiểu, tác phẩm ĐI TRONG HƯƠNG TRÀM :, Câu hỏi
 1. Nhân vật trữ tình trong bài thơ Đi trong hương trầm là ai? Vì sao em xác định như vậy?
 
@@ -410,7 +440,7 @@ Bài 7 THƠ TỰ DO, Thực hành đọc hiểu, tác phẩm ĐI TRONG HƯƠNG T
 
 ---
 
-<!-- part 17 -->
+<!-- chunk 26 - 69 từ -->
 Bài 7 THƠ TỰ DO, Thực hành đọc hiểu, tác phẩm MÙA HOA MẬN :, Chuẩn bị
 MÙA HOA MẬN
 
@@ -427,7 +457,7 @@ CHU THUỲ LIÊN(*)
 
 ---
 
-<!-- part 18 -->
+<!-- chunk 27 - 197 từ -->
 Bài 7 THƠ TỰ DO, Thực hành đọc hiểu, tác phẩm MÙA HOA MẬN :, Đọc hiểu
 2. Đọc hiểu
 
@@ -455,6 +485,10 @@ Chú ý hình ảnh, các biện pháp tu từ được sử dụng trong văn b
 
 Đoạn thơ cuối có gì đặc biệt về hình ảnh, cảm xúc?
 
+---
+
+<!-- chunk 28 - 15 từ -->
+Bài 7 THƠ TỰ DO, Thực hành đọc hiểu, tác phẩm MÙA HOA MẬN :, Đọc hiểu
 (1) Nhà trinh tường: nhà có tường làm bằng đất nện.
 
 78
@@ -462,7 +496,7 @@ Chú ý hình ảnh, các biện pháp tu từ được sử dụng trong văn b
 
 ---
 
-<!-- part 19 -->
+<!-- chunk 29 - 173 từ -->
 Bài 7 THƠ TỰ DO, Thực hành đọc hiểu, tác phẩm MÙA HOA MẬN :, Câu hỏi
 1. Bài thơ Mùa hoa mận thể hiện tâm trạng, cảm xúc của nhân vật trữ tình về điều gì? Dòng thơ nào được điệp lại trong bài?
 
@@ -478,7 +512,7 @@ Bài 7 THƠ TỰ DO, Thực hành đọc hiểu, tác phẩm MÙA HOA MẬN :, C
 
 ---
 
-<!-- part 20 -->
+<!-- chunk 30 - 128 từ -->
 Bài 7 THƠ TỰ DO, THỰC HÀNH TIẾNG VIỆT :
 1. Phân tích giá trị của biện pháp tu từ so sánh trong các câu thơ dưới đây:
 
@@ -506,7 +540,7 @@ d) Tinh yêu là vũ khí
 
 ---
 
-<!-- part 21 -->
+<!-- chunk 31 - 84 từ -->
 Bài 7 THƠ TỰ DO, THỰC HÀNH TIẾNG VIỆT :
 2. Tìm và phân tích tác dụng nghệ thuật của các biện pháp tu từ trong những câu thơ dưới đây ở bài Đất nước của Nguyễn Đình Thi:
 
@@ -523,7 +557,7 @@ c) Sóng nổ rung trời giận dữ
 
 ---
 
-<!-- part 22 -->
+<!-- chunk 32 - 125 từ -->
 Bài 7 THƠ TỰ DO, THỰC HÀNH TIẾNG VIỆT :
 3. Xác định biện pháp tu từ trong những câu thơ sau và phân tích tác dụng của chúng:
 
@@ -550,7 +584,7 @@ d) Sân khấu lô nhô mấy chúng đầu trọc
 
 ---
 
-<!-- part 23 -->
+<!-- chunk 33 - 41 từ -->
 Bài 7 THƠ TỰ DO, THỰC HÀNH TIẾNG VIỆT :
 4. Hãy viết một đoạn văn (khoảng 5 - 7 dòng) bàn về giá trị nghệ thuật của bài thơ Đất nước (Nguyễn Đình Thi), trong đoạn văn có sử dụng biện pháp tu từ so sánh.
 
@@ -559,7 +593,7 @@ Bài 7 THƠ TỰ DO, THỰC HÀNH TIẾNG VIỆT :
 
 ---
 
-<!-- part 24 -->
+<!-- chunk 34 - 193 từ -->
 Bài 7 THƠ TỰ DO, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM THƠ :, Định hướng
 1. Định hướng
@@ -572,6 +606,10 @@ Tham khảo bài viết sau đây để nhận biết được đặc điểm v�
 
 Tự tình (bài 2) là một tác phẩm trong chùm Tự tình của Hồ Xuân Hương - "Bà chúa thơ Nôm". Tự tình là kể nỗi lòng, một đề tài thường thấy trong thơ xưa.
 
+---
+
+<!-- chunk 35 - 192 từ -->
+Bài 7 THƠ TỰ DO, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 Mở đầu là một âm thanh đêm khuya:
 Đêm khuya văng vẳng trống canh đồn
 
@@ -583,9 +621,12 @@ Trơ cái hồng nhan với nước non
 
 Mở đầu nêu nội dung gì?
 
+---
+
+<!-- chunk 36 - 175 từ -->
+Bài 7 THƠ TỰ DO, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 Người viết phân tích bài thơ theo trình tự nào?
 == 83 ==
-
 
 đáng giận. Tiếng trống thôi gian đang đánh vào cảm thức cô đơn. Người phụ nữ tỉnh dậy không chỉ thấy mình nằm một mình trơ trọi, mà cảm thấy rõ cái phận hồng nhan vô duyên của mình. "Nước non" là hình ảnh của vũ trụ, của đời, của thế giới. Một số phận đang đổ giữa đời.
 
@@ -597,6 +638,10 @@ Chén rượu tỉnh mới thoáng qua, mới có chút say đã hết, lại t�
 Xiên ngang mặt đất, rêu từng đám,
 Đẫm toạc chân mây, đá mấy hòn.
 
+---
+
+<!-- chunk 37 - 173 từ -->
+Bài 7 THƠ TỰ DO, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 Đây là cảnh thực của đêm trăng bóng xế, ánh sáng của nó xiên ngang mặt đất, "đẫm toạc chân mây" hay còn là kí ức đã qua? "Xiên ngang", "đẫm toạc" có thể là từ tả cảnh, nhưng đứng hơn nó là tính, là gợi nhắc những kí niệm, đồng thời là cả khao khát nữa, những động tác mạnh mẽ đầy sức sống.
 
 Ngàn nỗi xuân đi, xuân lại lại,
@@ -604,11 +649,14 @@ Mảnh tình san sẻ tí con con.
 
 Thời gian trong bài thơ đâu phải chỉ là một đêm. Đó là một đêm trong vô vàn đêm, năm này qua năm khác. Xuân đi xuân lại lại. Thời gian tuần hoàn. Xuân vẫn đang còn. Nhưng cuộc đời tình ái thì ít ỏi quá. Người ta còn gọi tình người là "khối" tình, "tấm" tình, ở đây Hồ Xuân Hương chỉ gọi là "mảnh" tình. Cái mảnh như mảnh vỡ, mong manh, không nguyên vẹn. Một mảnh tình đã bé nhỏ đến thế, mà cũng chỉ được "san sẻ tí con con"!...
 
+---
+
+<!-- chunk 38 - 176 từ -->
+Bài 7 THƠ TỰ DO, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 Cả bài thơ là một nỗi khao khát tình duyên, nỗi than đời bất công, là tình cảnh đáng thương của người phụ nữ đổ đang, lẻ mọn, một biểu hiện thương thân mà con người cá nhân đã thức tỉnh. [...]
 
 (Theo Trần Đình Sử, Đọc văn, học văn, NXB Giáo dục, 2001)
 == 84 ==
-
 
 Khi phân tích, đánh giá một tác phẩm thơ, các em cần lưu ý một số điểm sau:
 
@@ -618,11 +666,15 @@ Khi phân tích, đánh giá một tác phẩm thơ, các em cần lưu ý một
 
 - Nội dung và nghệ thuật liên quan chặt chẽ với nhau. Vì thế, khi phân tích cần làm rõ vai trò và tác dụng của các yếu tố hình thức nghệ thuật trong việc làm nổi bật nội dung.
 
+---
+
+<!-- chunk 39 - 36 từ -->
+Bài 7 THƠ TỰ DO, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 - Nghị luận về một tác phẩm thơ có thể yêu cầu phân tích, đánh giá toàn bộ tác phẩm, đoạn trích hoặc tập trung vào một số nội dung, hình thức của tác phẩm thơ.
 
 ---
 
-<!-- part 25 -->
+<!-- chunk 40 - 167 từ -->
 Bài 7 THƠ TỰ DO, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM THƠ :, Định hướng
 b) Để viết bài văn nghị luận phân tích, đánh giá tác phẩm thơ, các em cần chú ý:
@@ -637,7 +689,7 @@ b) Để viết bài văn nghị luận phân tích, đánh giá tác phẩm th�
 
 ---
 
-<!-- part 26 -->
+<!-- chunk 41 - 198 từ -->
 Bài 7 THƠ TỰ DO, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM THƠ :, Thực hành
 2 Thực hành
@@ -671,7 +723,7 @@ a) Chuẩn bị (ví dụ với đề 2)
 
 ---
 
-<!-- part 27 -->
+<!-- chunk 42 - 150 từ -->
 Bài 7 THƠ TỰ DO, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM THƠ :, Thực hành
 b) Tìm ý và lập dàn ý
@@ -685,6 +737,10 @@ b) Tìm ý và lập dàn ý
 Mở bài:
 Giới thiệu khái quát về bài thơ và nêu vấn đề: Vẻ đẹp về nội dung và nghệ thuật trong hai khổ thơ mở đầu bài Đất nước của Nguyễn Đình Thi. Ví dụ: Đất nước của Nguyễn Đình Thi là một bài thơ hay. Bằng những hình ảnh, ngôn ngữ tinh tế, trong sáng, hai khổ thơ đầu trong bài đã mở ra dòng hoài niệm của nhân vật trữ tình về mùa thu Hà Nội trong quá khứ.
 
+---
+
+<!-- chunk 43 - 188 từ -->
+Bài 7 THƠ TỰ DO, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 Thân bài:
 + Giới thiệu chung về đoạn thơ (tác giả, hoàn cảnh ra đời của bài thơ,...).
 + Phân tích, đánh giá đoạn thơ để làm rõ vấn đề của bài viết. Người viết có thể sắp xếp các ý theo trật tự khác nhau (theo bố cục, mạch cảm xúc của nhân vật trữ tình, theo các khía cạnh của vấn đề,...). Ví dụ, có thể sắp xếp nội dung phân tích, đánh giá hai khổ thơ đầu của bài Đất nước theo bố cục, mạch cảm xúc của nhân vật trữ tình như sau:
@@ -692,14 +748,13 @@ Thân bài:
 • Mùa thu Hà Nội trong quá khứ qua hoài niệm của nhân vật trữ tình (phân tích, đánh giá nội dung và nghệ thuật của khổ thơ sau).
 == 86 ==
 
-
 Kết bài
 + Khái quát, tổng hợp lại vẻ đẹp nội dung và hình thức của đoạn thơ.
 + Nêu suy nghĩ, đánh giá khái quát và cảm xúc của bản thân về đoạn thơ.
 
 ---
 
-<!-- part 28 -->
+<!-- chunk 44 - 66 từ -->
 Bài 7 THƠ TỰ DO, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM THƠ :, Thực hành
 c) Viết
@@ -708,12 +763,16 @@ c) Viết
 
 ---
 
-<!-- part 29 -->
+<!-- chunk 45 - 45 từ -->
 Bài 7 THƠ TỰ DO, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM THƠ :, Thực hành
 d) Kiểm tra và chỉnh sửa
 Đọc lại bài văn đã viết. Đối chiếu với mục 1. Định hướng và dàn ý ở trên để phát hiện và sửa lỗi theo yêu cầu sau:
 
+---
+
+<!-- chunk 46 - 170 từ -->
+Bài 7 THƠ TỰ DO, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 Nội dung kiểm tra | Yêu cầu cụ thể
 --- | ---
 Bố cục ba phần | - Mở bài: Đã giới thiệu được đoạn thơ và nêu ý kiến nhận xét, đánh giá của bản thân về đoạn thơ chưa?<br>- Thân bài:<br>+ Có giới thiệu được ngắn gọn thông tin khái quát về đoạn thơ không?<br>+ Có phân tích được các yếu tố hình thức, nội dung của đoạn thơ để làm rõ ý kiến không?<br>+ Có so sánh với tác giả, tác phẩm khác cùng đề tài, chủ đề và liên hệ với bản thân người viết hay không?<br>+ Có chia thành nhiều đoạn văn tương ứng với các ý cần triển khai không?<br>- Kết bài: Có khái quát, tổng hợp nội dung, nghệ thuật của đoạn thơ và nêu được suy nghĩ,... của người viết không?
@@ -722,7 +781,7 @@ Các lỗi còn mắc | Tham khảo yêu cầu đã nêu ở Bài 5 (trang 25).
 
 ---
 
-<!-- part 30 -->
+<!-- chunk 47 - 80 từ -->
 Bài 7 THƠ TỰ DO, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VỀ MỘT TÁC PHẨM THƠ :, Định hướng
 1. Định hướng
 
@@ -736,7 +795,7 @@ và đặc sắc nghệ thuật (thể loại, từ ngữ, vần, nhịp, các b
 
 ---
 
-<!-- part 31 -->
+<!-- chunk 48 - 84 từ -->
 Bài 7 THƠ TỰ DO, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VỀ MỘT TÁC PHẨM THƠ :, Định hướng
 b) Để giới thiệu, đánh giá về một tác phẩm thơ, các em cần chú ý:
 
@@ -750,7 +809,7 @@ b) Để giới thiệu, đánh giá về một tác phẩm thơ, các em cần 
 
 ---
 
-<!-- part 32 -->
+<!-- chunk 49 - 117 từ -->
 Bài 7 THƠ TỰ DO, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VỀ MỘT TÁC PHẨM THƠ :, Thực hành
 # 2. Thực hành
 
@@ -768,7 +827,7 @@ a) Chuẩn bị
 
 ---
 
-<!-- part 33 -->
+<!-- chunk 50 - 162 từ -->
 Bài 7 THƠ TỰ DO, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VỀ MỘT TÁC PHẨM THƠ :, Thực hành
 b) Tìm ý và lập dàn ý
 
@@ -785,9 +844,12 @@ b) Tìm ý và lập dàn ý
 - Lập dàn ý cho bài nói bằng cách lựa chọn, sắp xếp các ý theo bố cục ba phần:
 == 88 ==
 
-
 Mở đầu: Giới thiệu bài thơ và vấn đề trình bày.
 
+---
+
+<!-- chunk 51 - 137 từ -->
+Bài 7 THƠ TỰ DO, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VỀ MỘT TÁC PHẨM THƠ :, Thực hành
 Nội dung chính:
 Lần lượt giới thiệu bài thơ theo trình tự phù hợp. Ví dụ:
 + Đọc diễn cảm bài thơ (đoạn thơ); giới thiệu hoàn cảnh ra đời, nội dung chính của bài thơ (nhân vật trữ tình và cảm xúc, tâm trạng của nhân vật trữ tình trong bài thơ,...).
@@ -799,7 +861,7 @@ Kết thúc: Khẳng định lại ý nghĩa của bài thơ và bày tỏ mong 
 
 ---
 
-<!-- part 34 -->
+<!-- chunk 52 - 44 từ -->
 Bài 7 THƠ TỰ DO, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VỀ MỘT TÁC PHẨM THƠ :, Thực hành
 c) Nói và nghe
 
@@ -809,7 +871,7 @@ c) Nói và nghe
 
 ---
 
-<!-- part 35 -->
+<!-- chunk 53 - 23 từ -->
 Bài 7 THƠ TỰ DO, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VỀ MỘT TÁC PHẨM THƠ :, Thực hành
 d) Kiểm tra và chỉnh sửa
 
@@ -817,7 +879,7 @@ Tham khảo yêu cầu đã nêu ở Bài 5, phần Nói và nghe, mục d (tran
 
 ---
 
-<!-- part 36 -->
+<!-- chunk 54 - 71 từ -->
 Bài 7 THƠ TỰ DO, TỰ ĐÁNH GIÁ :
 Đọc văn bản sau và thực hiện các yêu cầu (từ câu 1 đến câu 10) bên dưới:
 
@@ -832,7 +894,7 @@ Em đã lấy tình yêu Tổ quốc của mình thắp lên ngọn lửa
 
 ---
 
-<!-- part 37 -->
+<!-- chunk 55 - 62 từ -->
 Bài 7 THƠ TỰ DO, TỰ ĐÁNH GIÁ :, Nội dung
 2. Đơn vị tôi hành quân qua con đường mòn
 Gặp hố bom nhắc chuyện người con gái
@@ -845,7 +907,7 @@ Có nước trời xoa dịu vết thương đau.
 
 ---
 
-<!-- part 38 -->
+<!-- chunk 56 - 28 từ -->
 Bài 7 THƠ TỰ DO, TỰ ĐÁNH GIÁ :, Nội dung
 3. Em nằm dưới đất sâu
 Như khoảng trời đã nằm yên trong đất
@@ -854,7 +916,7 @@ Những vì sao ngời chói, lung linh.
 
 ---
 
-<!-- part 39 -->
+<!-- chunk 57 - 55 từ -->
 Bài 7 THƠ TỰ DO, TỰ ĐÁNH GIÁ :, Nội dung
 4. Có phải thịt da em mềm mại, trắng trong
 Đã hoá thành những làn mây trắng?
@@ -866,7 +928,7 @@ Ngày hôm nay bước tiếp quãng đường dài?
 
 ---
 
-<!-- part 40 -->
+<!-- chunk 58 - 57 từ -->
 Bài 7 THƠ TỰ DO, TỰ ĐÁNH GIÁ :, Nội dung
 5. Tên con đường là tên em gửi lại
 Cái chết em xanh khoảng trời con gái
@@ -880,7 +942,7 @@ LÂM THỊ MỸ DA
 
 ---
 
-<!-- part 41 -->
+<!-- chunk 59 - 178 từ -->
 Bài 7 THƠ TỰ DO, TỰ ĐÁNH GIÁ :, Câu hỏi
 1. Nhân vật trữ tình trong bài thơ là ai?
 A. "Em" - cô thanh niên xung phong
@@ -888,7 +950,6 @@ B. "Tôi" - người lính trên đường hành quân
 C. Đồng đội của "tôi" - những người lính
 D. Bạn bè của "tôi" - những người "có gương mặt em riêng"
 == 90 ==
-
 
 2. Phương án nào nêu đúng về các hình ảnh "ngọn lửa", "vì sao ngồi chơi lưng linh", "làn mây trắng", "vầng dương" trong bài thơ?
    A. Hình ảnh tả thực khung cảnh hồ bơm nơi người nữ thanh niên hi sinh
@@ -900,18 +961,30 @@ D. Bạn bè của "tôi" - những người "có gương mặt em riêng"
    A. Khổ 1                B. Khổ 2
    C. Khổ 4                D. Khổ 5
 
+---
+
+<!-- chunk 60 - 87 từ -->
+Bài 7 THƠ TỰ DO, TỰ ĐÁNH GIÁ :, Câu hỏi
 4. Phương án nào sau đây không thể hiện nội dung của khổ thơ thứ tư?
    A. Sự bất tử hoá vẻ đẹp cao cả của người nữ thanh niên xung phong
    B. Cảm hứng ngợi ca, trân trọng sự hi sinh cao cả của người nữ thanh niên xung phong
    C. Nỗi đau đớn, bi thương trước sự hi sinh của người nữ thanh niên xung phong
    D. Ý nghĩa cao cả của sự hi sinh dũng cảm ở những người nữ thanh niên xung phong
 
+---
+
+<!-- chunk 61 - 147 từ -->
+Bài 7 THƠ TỰ DO, TỰ ĐÁNH GIÁ :, Câu hỏi
 5. Phương án nào nêu đúng biện pháp tu từ được sử dụng trong dòng thơ "Cái chết em xanh khoảng trời con gái" và tác dụng của biện pháp đó?
    A. Ẩn dụ - Sự trân trọng, xúc động sâu sắc trước hành động hi sinh, dâng hiến trọn vẹn tuổi thanh xuân cho Tổ quốc của người nữ thanh niên xung phong
    B. Hoán dụ - Sự khẳng định vẻ đẹp tâm hồn bất tử của người nữ thanh niên xung phong
    C. Nhân hoá - Sự hi sinh, dâng hiến trọn vẹn tuổi thanh xuân cho Tổ quốc của người nữ thanh niên xung phong đã thấu động cả thiên nhiên
    D. So sánh - Sự hi sinh, dâng hiến trọn vẹn tuổi thanh xuân cho Tổ quốc của người nữ thanh niên xung phong cao cả, đẹp đẽ như khoảng trời còn mãi
 
+---
+
+<!-- chunk 62 - 173 từ -->
+Bài 7 THƠ TỰ DO, TỰ ĐÁNH GIÁ :, Câu hỏi
 6. Điểm gặp gỡ giữa nhân vật người nữ thanh niên xung phong trong bài thơ trên và người lính trong bài thơ Lính đảo hát tình ca trên đảo của Trần Đăng Khoa là gì?
    A. Tâm hồn lạc quan, yêu đời
    B. Tình yêu cao cả dành cho Tổ quốc
@@ -920,7 +993,6 @@ D. Bạn bè của "tôi" - những người "có gương mặt em riêng"
 
 89
 == 91 ==
-
 
 7. Em hiểu như thế nào về nhan đề bài thơ Khoảng trời, hố bom?
 
@@ -932,7 +1004,7 @@ D. Bạn bè của "tôi" - những người "có gương mặt em riêng"
 
 ---
 
-<!-- part 42 -->
+<!-- chunk 63 - 58 từ -->
 Bài 7 THƠ TỰ DO, HƯỚNG DẪN TỰ HỌC :
 1. Tìm đọc thêm một số bài thơ về chủ đề quê hương, đất nước.
 

@@ -477,6 +477,58 @@ HANDLERS = {
     "HƯỚNG DẪN TỰ HỌC": cut_raw,
 }
 
+# ── Hậu xử lý: chia part quá dài thành chunk nhỏ ──────────────────────
+
+MAX_WORDS_PER_CHUNK = 200
+MIN_WORDS_PER_CHUNK = 100
+
+
+def _dem_so_tu(text: str) -> int:
+    return len(text.split())
+
+
+def _split_doan_van(text: str) -> list[str]:
+    return [p.strip() for p in re.split(r'\n\s*\n', text) if p.strip()]
+
+
+def _gom_doan_theo_so_tu(paragraphs: list[str], min_words=MIN_WORDS_PER_CHUNK, max_words=MAX_WORDS_PER_CHUNK) -> list[str]:
+    """Gộp đoạn liên tiếp tới sát ngưỡng max; nếu thêm đoạn kế tiếp vượt max thì
+    chốt chunk hiện tại, không cắt trong đoạn."""
+    chunks, buf, buf_words = [], [], 0
+    for p in paragraphs:
+        w = _dem_so_tu(p)
+        if not buf:
+            buf, buf_words = [p], w
+        elif buf_words + w <= max_words:
+            buf.append(p)
+            buf_words += w
+        else:
+            chunks.append('\n\n'.join(buf))
+            buf, buf_words = [p], w
+    if buf:
+        chunks.append('\n\n'.join(buf))
+    return chunks
+
+
+def chia_nho_part_neu_qua_dai(part_text: str, max_words=MAX_WORDS_PER_CHUNK) -> list[str]:
+    """part_text = header_line + '\n' + nội dung.
+    Nếu tổng số từ nội dung <= max_words -> giữ nguyên 1 chunk.
+    Nếu quá dài -> chia thành nhiều chunk theo đoạn, mỗi chunk lặp lại header."""
+    lines = part_text.splitlines()
+    if not lines:
+        return [part_text]
+
+    header_line = lines[0]
+    noi_dung = "\n".join(lines[1:]).strip()
+
+    if not noi_dung or _dem_so_tu(noi_dung) <= max_words:
+        return [part_text]
+
+    doan_list = _split_doan_van(noi_dung)
+    sub_chunks = _gom_doan_theo_so_tu(doan_list, max_words=max_words)
+
+    return [f"{header_line}\n{sc}" for sc in sub_chunks]
+
 
 # ── Đọc file, tách mục lớn, chạy pipeline ────────────────────────────
 
@@ -539,18 +591,25 @@ def cut_bai_muc(input_path: Path) -> Path:
             continue
         all_parts.extend(HANDLERS[muc_name](body, so_bai, ten_bai, muc_name))
 
+    # ── hậu xử lý: chia part quá dài thành chunk nhỏ ──
+    final_chunks = []
+    for p in all_parts:
+        final_chunks.extend(chia_nho_part_neu_qua_dai(p))
+
     output_path = input_path.with_name(input_path.stem + "_chunk.md")
     out_lines = []
-    for i, p in enumerate(all_parts, start=1):
-        out_lines.append(f"<!-- part {i} -->")
-        out_lines.append(p)
+    for i, c in enumerate(final_chunks, start=1):
+        noi_dung = "\n".join(c.splitlines()[1:])  # bỏ dòng header khi đếm từ
+        so_tu = _dem_so_tu(noi_dung)
+        out_lines.append(f"<!-- chunk {i} - {so_tu} từ -->")
+        out_lines.append(c)
         out_lines.append("\n---\n")
     output_path.write_text("\n".join(out_lines), encoding="utf-8")
 
-    print(f"✅ Bài {so_bai} - {ten_bai}: {len(all_parts)} part -> {output_path}")
+    print(f"✅ Bài {so_bai} - {ten_bai}: {len(all_parts)} part gốc -> {len(final_chunks)} chunk cuối -> {output_path}")
     return output_path
 
 
 if __name__ == "__main__":
-    INPUT = Path(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\documents\doc_git\books\10\bai\canh_dieu_ngu_van_bai_6.md")
+    INPUT = Path(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\documents\doc_git\books\10\bai\canh_dieu_ngu_van_bai_7.md")
     cut_bai_muc(INPUT)

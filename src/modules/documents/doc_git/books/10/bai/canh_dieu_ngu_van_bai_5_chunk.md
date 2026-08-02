@@ -974,17 +974,13 @@ Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, văn bản Thư dụ Vươn
 Thư dụ Vương Thông lần nữa
 (Tái dụ Vương Thông thư(*))
 
----
-
-<!-- part 32 -->
-Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Nội dung
 1. Kính cẩn gửi thư tới trước cửa quân của quan Tổng binh cùng các vị đại nhân!
 
 Kể ra người dùng binh(1) giỏi là ở chỗ biết rõ thời thế mà thôi. Được thời có thế, thì mặt biển thành cồn, nhỏ hoá ra lớn; mất thời thất thế, thì mạnh hoá ra yếu, yên lại chuyển nguy. Sự thay đổi ấy chỉ ở trong khoảnh khắc trở bàn tay mà thôi. Nay các ông không hiểu rõ thời thế, lại trang sức bằng lời đối trá, thế chẳng phải là hạng thất phu(2) hèn kém ư? Sao đáng để cùng bàn việc binh được?
 
 ---
 
-<!-- part 33 -->
+<!-- part 32 -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Nội dung
 2. Trước đây, các ông bề ngoài thì giả cách giảng hoà, bên trong ngầm mưu gian trá, cứ đào hào, đắp luỹ, ngồi đợi viện binh, tâm tính không minh bạch, trong ngoài lại khác nhau, sao có thể khiến ta tin tưởng mà không nghi ngờ cho được. Cổ nhân có câu: "Bụng dạ người khác, ta lường đoán biết.", nghĩa là thế đó. [...]
 
@@ -1023,7 +1019,7 @@ Nay ta dấy nghĩa binh, trên dưới đồng lòng, anh hùng hết sức, qu
 
 ---
 
-<!-- part 34 -->
+<!-- part 33 -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Nội dung
 3. Nay giữ cái thành cỏn con để chờ sáu điều tất bại, ta lấy làm tiếc cho các ông lắm! Người xưa có câu: "Nước xa không thể cứu lửa gần". Giả viện binh có đến, cũng chẳng ích gì cho sự bại vong. Trước, Phương Chính, Mã Kỳ chuyên làm điều hà khắc bạo ngược, dân chúng lầm than, thiên hạ oán thán. Đào phản mộ ở làng ấp ta, bắt vợ con của dân ta, người sống bị hại, người chết ngậm oan. Nếu các ông biết xét kĩ sự thế, nhân rõ thời cơ, chém lấy đầu Phương Chính, Mã Kỳ đem nộp trước cửa quân, thì sẽ tránh cho người trong thành khỏi bị giết, hận gắn vết thương trong nước, hoà hảo lại thông, can qua(5) dứt hẳn. Nếu muốn kéo quân về nước, thì
 
@@ -1047,7 +1043,7 @@ NXB Khoa học xã hội, Hà Nội, 1995)
 
 ---
 
-<!-- part 35 -->
+<!-- part 34 -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Câu hỏi
 1. Sắp xếp lại các câu sau cho đúng với trình tự: luận điểm – lí lẽ – dẫn chứng mà Nguyễn Trãi đã trình bày trong bức thư.
 
@@ -1057,10 +1053,6 @@ b) Trước đây, các ông bề ngoài thì giả cách giảng hoà, bên tro
 
 c) Kẻ ra người đứng binh giới là ở chỗ biết rõ thời thế mà thôi.
 
----
-
-<!-- part 36 -->
-Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Câu hỏi
 2. Bức thư của Nguyễn Trãi chỉ ra sáu điều phải thua của quân Minh. Em hãy điền vào vở những nội dung còn thiếu ở cột B rồi ghép thứ tự điều phải thua ở cột A với các nội dung ở cột B sao cho chính xác.
 
 [Bảng với hai cột A và B]
@@ -1086,10 +1078,7 @@ B
 30
 == 32 ==
 
----
 
-<!-- part 37 -->
-Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Câu hỏi
 3. Nhận định nào sau đây không đúng về thái độ của Nguyễn Trãi qua cách xưng hô với quân Minh?
 
 A. Nguyễn Trãi đã quá nhún nhường trước kẻ thù khi quân ta đang ở thế mạnh hơn chúng.
@@ -1100,10 +1089,6 @@ C. Ông đã phân loại kẻ thù để có cách xưng hô tỏ thái độ r
 
 D. Mục đích của bức thư là nhằm mở đường cho kẻ thù rút quân về nước, chấm dứt chiến tranh, đem lại hoà bình, độc lập cho dân tộc nên sự nhún nhường trong cách xưng hô là hợp lí.
 
----
-
-<!-- part 38 -->
-Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Câu hỏi
 4. Trong Thư dụ Vương Thông lần nữa, có đoạn viết: "Trước, Phương Chính, Mã Kỳ chuyên làm điều hà khắc, bạo ngược, dân chúng lầm than, thiên hạ oán thán. Đào phần mộ ở làng ấp ta, bắt vợ con của dân ta, người sống bị hại, người chết ngậm oan. Nếu các ông biết xét kĩ sự thế, nhân rõ thời cơ, chém lấy đầu Phương Chính, Mã Kỳ đem nộp trước cửa quân, thì sẽ tránh cho người trong thành khỏi bị giết, hẳn gân vết thương trong nước, hoà hảo lại thông, can qua dứt hẳn.". Câu nào sau đây nêu đúng mục đích của đoạn thư trên?
 
 A. Việc đòi chém Phương Chính, Mã Kỳ là điều kiện để hai bên giảng hoà, chấm dứt chiến tranh.
@@ -1114,37 +1099,21 @@ C. Đoạn văn lên án tội ác quân Minh, chỉ đích danh thủ phạm đ
 
 D. Những câu văn đó thể hiện ý chí và quyết tâm của quân dân Đại Việt trong việc tiêu diệt quân Minh nếu chúng không chịu giảng hoà và rút quân về nước.
 
----
-
-<!-- part 39 -->
-Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Câu hỏi
 5. Từ những tư liệu mà em tìm hiểu được, hãy trình bày hoàn cảnh ra đời của Thư dụ Vương Thông lần nữa và cho biết quan điểm của Nguyễn Trãi được thể hiện trong bức thư.
 
----
-
-<!-- part 40 -->
-Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Câu hỏi
 6. Phân tích nghệ thuật lập luận được Nguyễn Trãi thể hiện trong bức thư (từ quan niệm thời thế, chỉ rõ âm mưu và tình thế của đối phương, vạch ra các nguyên nhân dẫn đến thất bại của chúng, tới việc đưa ra giải pháp kết thúc chiến tranh) để làm rõ
 == 33 ==
 
 
 chiến lược "mưu phạt, tâm công" của nghĩa quân Lam Sơn trong cuộc kháng chiến chống quân Minh xâm lược.
 
----
-
-<!-- part 41 -->
-Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Câu hỏi
 7. Phân tích một số từ ngữ, hình ảnh trong bức thư để làm nổi bật tư thế, niềm tin, ý chí và tinh thần yêu chuộng hoà bình của cha ông ta trước kẻ thù xâm lược.
 
----
-
-<!-- part 42 -->
-Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Câu hỏi
 8. Bức thư giúp em hiểu biết thêm điều gì về tư tưởng và tài năng của Nguyễn Trãi?
 
 ---
 
-<!-- part 43 -->
+<!-- part 35 -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, HƯỚNG DẪN TỰ HỌC :
 1. Truy cập Internet để tìm hiểu các thông tin về Nguyễn Trãi và các tác phẩm đã học:
 - Thu thập tư liệu gồm: bài viết, hình ảnh, video liên quan.

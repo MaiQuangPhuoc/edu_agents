@@ -316,13 +316,9 @@ Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN, Đọc hiểu văn bản, tác phẩ
 ---
 
 <!-- part 8 -->
-Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN, Đọc hiểu văn bản, tác phẩm NGƯỜI Ở BÊN SÔNG CHÂU :
+Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN, Đọc hiểu văn bản, tác phẩm NGƯỜI Ở BÊN SÔNG CHÂU :, Chuẩn bị
 NGƯỜI Ở BÊN SÔNG CHÂU
 
----
-
-<!-- part 9 -->
-Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN, Đọc hiểu văn bản, tác phẩm NGƯỜI Ở BÊN SÔNG CHÂU :, Đọc hiểu
 SƯƠNG NGUYỆT MINH(*)
 
 # Chuẩn bị
@@ -346,6 +342,10 @@ SƯƠNG NGUYỆT MINH(*)
 
 - Tìm hiểu thêm về tác giả Sương Nguyệt Minh và truyện Người ở bến sông Châu, lựa chọn những thông tin liên quan giúp em hiểu thêm truyện ngắn này.
 
+---
+
+<!-- part 9 -->
+Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN, Đọc hiểu văn bản, tác phẩm NGƯỜI Ở BÊN SÔNG CHÂU :, Đọc hiểu
 # Đọc hiểu
 
 ## Ngày đi Mậy khoác ba lô về làng, chú San đi lấy vợ.
@@ -514,15 +514,10 @@ Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN, Đọc hiểu văn bản, tác phẩ
 
 <!-- part 11 -->
 Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN, Thực hành đọc hiểu, tác phẩm HỒI TRÓNG CỔ THÀNH
-(Trích Tam quốc diễn nghĩa) :
+(Trích Tam quốc diễn nghĩa) :, Chuẩn bị
 HỒI TRÓNG CỔ THÀNH
 (Trích Tam quốc diễn nghĩa)
 
----
-
-<!-- part 12 -->
-Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN, Thực hành đọc hiểu, tác phẩm HỒI TRÓNG CỔ THÀNH
-(Trích Tam quốc diễn nghĩa) :, Đọc hiểu
 LA QUÁN TRUNG(*)
 
 1 Chuẩn bị
@@ -543,6 +538,11 @@ Tam quốc diễn nghĩa là bộ tiểu thuyết lịch sử dài 120 hồi. T�
 
 sau này, gặp nhau, kết nghĩa anh em ở vườn đào, thề cùng nhau sống chết để khôi phục nhà Hán. Ở thời kì đầu loạn lạc, ba anh em gặp rất nhiều khó khăn, mỗi người một ngả. Lưu Bị phải theo Viên Thiệu, Quan Công bất đắc dĩ theo Tào Tháo, còn Trương Phi lưu lạc ở Cổ Thành. Đoạn trích sau đây kể chuyện Quan Công sau khi biết Lưu Bị đang ở bên phía Viên Thiệu đã đem hai chị dâu chạy khỏi doanh trại của Tào Tháo, trên đường đi biết tin Trương Phi đã lấy được Cổ Thành nên tìm về đoàn tụ.
 
+---
+
+<!-- part 12 -->
+Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN, Thực hành đọc hiểu, tác phẩm HỒI TRÓNG CỔ THÀNH
+(Trích Tam quốc diễn nghĩa) :, Đọc hiểu
 # 2. Đọc hiểu
 
 1. Châu Thương theo Quan Công sang Nhữ Nam. Đi được vài ngày, trông xa xa trên đỉnh núi, có một tòa thành, Quan Công hỏi thổ dân(1) là thành nào? Thổ dân nói:

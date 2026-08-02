@@ -1,7 +1,5 @@
-# BÀI 8
-VĂN BẢN NGHỊ LUẬN
-
-## YÊU CẦU CẦN ĐẠT
+<!-- part 1 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, YÊU CẦU CẦN ĐẠT :
 - Nhận biết và phân tích được nội dung, mối quan hệ, cách sắp xếp của luận đề, luận điểm, lí lẽ, dẫn chứng tiêu biểu và vai trò của các yếu tố biểu cảm trong văn bản nghị luận. Xác định được mục đích, quan điểm của người viết và ý nghĩa, tác động của văn bản đối với bản thân.
 
 - Nhận biết và phân tích được tính mạch lạc, tính liên kết của đoạn văn và văn bản; từ đó, nhận biết và sửa lỗi về mạch lạc, liên kết trong đoạn văn và văn bản.
@@ -12,11 +10,18 @@ VĂN BẢN NGHỊ LUẬN
 
 - Giữ gìn và phát huy những giá trị nhân văn cao đẹp (yêu thương, chia sẻ, cảm thông,...); trân trọng và yêu thích khám phá vẻ đẹp của tác phẩm văn học.
 
-## KIẾN THỨC NGỮ VĂN
+---
+
+<!-- part 2 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, KIẾN THỨC NGỮ VĂN :
 1. Cách sắp xếp, trình bày luận đề, luận điểm, lí lẽ và dẫn chứng
 
 Trong văn bản nghị luận, luận đề là quan điểm bao trùm toàn bộ bài viết, thường được nêu ở nhan đề hoặc trong phần mở đầu của bài viết. Luận điểm nhằm triển khai làm rõ cho luận đề; số luận điểm nhiều hay ít tùy thuộc vào dung lượng và nội dung của vấn đề. Mỗi luận điểm thường được trình bày bằng một cấu khái quát và được làm sáng tỏ bởi các lí lẽ, dẫn chứng. Cách sắp xếp, trình bày các yếu tố trên thể hiện bố cục và trình tự, thứ bậc (kết cấu) của hệ thống ý trong bài nghị luận; giúp cho bài viết rõ ràng, mạch lạc và có sức thuyết phục cao.
 
+---
+
+<!-- part 3 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, KIẾN THỨC NGỮ VĂN :
 2. Tác phẩm văn học và người đọc
 
 Tác phẩm văn học là sáng tạo nghệ thuật ngôn từ của nhà văn, là đối tượng tiếp nhận của người đọc. Thông qua hoạt động tiếp nhận, người đọc không chỉ nhận ra
@@ -25,6 +30,10 @@ Tác phẩm văn học là sáng tạo nghệ thuật ngôn từ của nhà văn
 
 cái hay, cái đẹp (hoặc chưa hay, chưa đẹp) về nội dung, nghệ thuật của văn bản mà còn hiểu biết thêm về cuộc sống và chính mình. Các hoạt động tiếp nhận thường bao gồm: đọc văn bản; tưởng tượng, tái tạo thế giới hình tượng; tìm kiếm, kết nối thông tin trong và ngoài văn bản để phân tích, đánh giá nội dung, ý nghĩa và đặc sắc nghệ thuật của tác phẩm cũng như bổ sung các ý nghĩa từ vốn sống, trải nghiệm của người đọc và bối cảnh thời đại;...
 
+---
+
+<!-- part 4 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, KIẾN THỨC NGỮ VĂN :
 3. Sửa lỗi về đoạn văn và văn bản
 
 Văn bản phải có tính mạch lạc (liên kết về mặt nội dung) và tính liên kết (liên kết về mặt hình thức). Để bảo đảm tính mạch lạc, các phần, các đoạn văn, các câu trong văn bản đều phải phục vụ chủ đề chung của văn bản và được sắp xếp theo một trình tự hợp lí. Để bảo đảm tính liên kết, mối quan hệ về nội dung giữa các câu, các đoạn văn, các phần trong văn bản phải được thể hiện bằng những phương tiện ngôn ngữ thích hợp.
@@ -59,10 +68,12 @@ Trong tác phẩm "Chí Phèo", Nam Cao đã vẽ lên bộ mặt của con qu�
 
 Cách sửa: Thay từ nhưng bằng bởi vậy, vì vậy, bởi thế.
 
-## ĐỌC
-Đọc hiểu văn bản
+---
 
+<!-- part 5 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, Đọc hiểu văn bản, tác phẩm BẢN SẮC LÀ HÀNH TRANG :, Chuẩn bị
 BẢN SẮC LÀ HÀNH TRANG
+
 NGUYỄN SĨ ĐÚNG(*)
 
 1. Chuẩn bị
@@ -90,6 +101,10 @@ NGUYỄN SĨ ĐÚNG(*)
 
 - Từ những hiểu biết và trải nghiệm cá nhân, em hãy suy nghĩ về ý nghĩa của vấn đề mà văn bản nghị luận trên đã nêu lên.
 
+---
+
+<!-- part 6 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, Đọc hiểu văn bản, tác phẩm BẢN SẮC LÀ HÀNH TRANG :, Đọc hiểu
 2. Đọc hiểu
 
 1. Hội nhập là việc sống kết vào với biển, chứ không phải việc sống tan biến vào trong biển. Chúng ta gắn kết với thế giới, chứ không phải chúng ta tan biến vào thế giới.
@@ -117,7 +132,10 @@ Bản sắc văn hoá còn có thể bổ sung giá trị cho các hàng hoá v�
 (4) Bản năng: toàn bộ những hoạt động, những hành vi bẩm sinh tự nhiên của một sinh vật đối với môi trường xung quanh hay những kích thích từ bên trong để tự vệ, sinh sản,... thường để phản biệt với ý thức.
 == 97 ==
 
+---
 
+<!-- part 7 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, Đọc hiểu văn bản, tác phẩm BẢN SẮC LÀ HÀNH TRANG :, Câu hỏi
 1. Em hiểu như thế nào về nhan đề Bản sắc là hành trang? Nhan đề này cho em biết vấn đề tác giả bàn luận trong văn bản là gì? Vấn đề ấy có ý nghĩa như thế nào trong bối cảnh toàn cầu hoá và hội nhập?
 
 2. Hãy nêu ý chính được trình bày ở ba phần của bài viết theo gợi ý sau:
@@ -134,7 +152,12 @@ Phần 3:
 
 6. Em hiểu như thế nào về câu kết của bài viết: "Giữ gìn bản sắc của dân tộc không chỉ là phương châm hành động, mà còn là bản năng tồn tại của chúng ta."? Vấn đề đặt ra trong văn bản trên có ý nghĩa gì với cá nhân em?
 
+---
+
+<!-- part 8 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, Đọc hiểu văn bản, tác phẩm GIÓ THANH LAY ĐỘNG CÀNH CÓ TRÚC :, Chuẩn bị
 GIÓ THANH LAY ĐỘNG CÀNH CÓ TRÚC
+
 CHU VĂN SƠN(*)
 
 1) Chuẩn bị
@@ -143,6 +166,10 @@ CHU VĂN SƠN(*)
 
 - Đọc trước văn bản Gió thanh lay động cành cỏ trúc và tìm hiểu thêm toàn văn bài viết về Nguyễn Khuyến qua chùm thơ thu của tác giả Chu Văn Sơn.
 
+---
+
+<!-- part 9 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, Đọc hiểu văn bản, tác phẩm GIÓ THANH LAY ĐỘNG CÀNH CÓ TRÚC :, Đọc hiểu
 2) Đọc hiểu
 
 1. Mùa thu phải chăng là mùa mà thiên nhiên trở nên thư thái hơn? Nó là cái quãng lặng để hoà giải hai đối cực là mùa hè nóng nực và mùa đông buốt giá. Sự hoà giải ấy
@@ -225,7 +252,10 @@ Những từ ngữ nào có tác dụng kết nối ý của phần 5 với các
 99
 == 101 ==
 
+---
 
+<!-- part 10 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, Đọc hiểu văn bản, tác phẩm GIÓ THANH LAY ĐỘNG CÀNH CÓ TRÚC :, Câu hỏi
 1. Em hiểu như thế nào về nhan đề Gió thanh lay động cành cỏ trúc?
 
 2. Hãy chỉ ra các luận điểm của văn bản Gió thanh lay động cành cỏ trúc và trình tự sắp xếp các luận điểm đó.
@@ -238,9 +268,12 @@ Những từ ngữ nào có tác dụng kết nối ý của phần 5 với các
 
 6. Liên hệ với bài Thụ điếu đã học ở Bài 2, em hãy đề xuất một luận điểm (1 hoặc 2 câu) nêu rõ được tâm hồn và tài nghệ của Nguyễn Khuyến qua chùm thơ thu.
 
-Thực hành đọc hiểu
+---
 
+<!-- part 11 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, Thực hành đọc hiểu, tác phẩm ĐỪNG GÂY TỔN THƯƠNG :, Chuẩn bị
 ĐỪNG GÂY TỔN THƯƠNG
+
 CA-REN CA-XÂY(*)
 
 1 Chuẩn bị
@@ -254,6 +287,10 @@ CA-REN CA-XÂY(*)
 100
 == 102 ==
 
+---
+
+<!-- part 12 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, Thực hành đọc hiểu, tác phẩm ĐỪNG GÂY TỔN THƯƠNG :, Đọc hiểu
 # Đọc hiểu
 
 ## 1. "Đừng bao giờ khiến người khác tổn thương" ư? Một điều nghe qua có vẻ đơn giản; nhưng cái khó là làm sao chúng ta biết được mình đã gây tổn thương cho người khác, đặc biệt là khi họ không bị tổn hại gì về thân thể.
@@ -324,6 +361,10 @@ Không làm tổn thương người khác mang lại hiệu quả gì?
 
 [Hình ảnh chứa một khung màu xanh lá cây nhạt với các câu hỏi:]
 
+---
+
+<!-- part 13 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, Thực hành đọc hiểu, tác phẩm ĐỪNG GÂY TỔN THƯƠNG :, Câu hỏi
 1. Em hiểu như thế nào về nhận đề Đừng gây tổn thương?
 
 2. Chỉ ra mối quan hệ giữa phần mở đầu và hai phần sau trong văn bản.
@@ -337,13 +378,20 @@ Không làm tổn thương người khác mang lại hiệu quả gì?
 104
 == 106 ==
 
-## THỰC HÀNH TIẾNG VIỆT
+---
+
+<!-- part 14 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, THỰC HÀNH TIẾNG VIỆT :
 1. Trong các đoạn văn sau đây, tác giả đã sử dụng những từ ngữ nào để liên kết các câu trong đoạn?
 
 a) Nếu muốn thay đổi tính chất của các mối quan hệ với mọi người xung quanh, bạn phải ý thức rõ tác động của những gì mình nói ra. Có lẽ, chúng ta không cố tình gây tổn thương người khác bằng nhận xét của mình. Thật ra, chúng ta cứ nghĩ mình đang cư xử lịch thiệp hay thậm chí là ân cần, nhưng biểu hiện trên gương mặt của người đối diện mới nói lên sự thật. (Ca-ren Ca-xây)
 
 b) Sự sáng tạo trong văn học nghệ thuật gần giống với sự sáng tạo ra sự sống: "Đúng hình tượng là để lấy sự sống tác động vào sự sống, lấy sự sống sinh ra sự sống". Nhưng đây là một sự sống đặc biệt, một sự sống bất diệt. Hình tượng văn học có giá trị, một khi ra đời, tham gia vào sinh hoạt xã hội như một con người thực. Người ta tắm sư với Kiều, thương Kiều, khóc Kiều và mê Kiều. Từ những nét mực, trang giấy bỗng hiện lên cả một thế giới đã lùi sâu vào dĩ vãng. Chính cái "phép màu" kì diệu ấy đã khiến Go-rơ-ki (Gorki) ngồi đọc truyện ngắn "Trái tim bình dị" của Phlô-be (Flaubert), cảm thấy như trong quyển sách có một thứ áo thuật gì khó hiểu; và Go-rơ-ki đã mấy lần giơ tờ giấy ra trước ánh sáng, nhìn qua các dòng chữ để tìm xem có cái bí mật gì ở trong ấy không. (Nguyễn Đăng Mạnh)
 
+---
+
+<!-- part 15 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, THỰC HÀNH TIẾNG VIỆT :
 2. Đọc các đoạn văn dưới đây và thực hiện những nhiệm vụ sau:
 
 - Xác định chủ đề của đoạn văn.
@@ -369,6 +417,10 @@ Nỗi niềm u ẩn không chịu buông tha cho Tam nguyên Yên Đổ. Cái c�
 
 c) Tại sao chúng ta cứ xử thô lỗ? Bởi vì chúng ta bị xao nhãng, đầu óc ta đang mải mơ màng những việc khác? Đôi khi, lí do này đúng. Nhưng sự thô lỗ thường là dấu hiệu của cảm giác bất an. Đó là cách chúng ta tránh né người khác để họ không nhận thấy cảm giác thật của mình. Làm như vậy có thể hiệu quả nhưng nó chẳng giúp ích cho ai cả. Nó khiến mọi người xa rời nhau thay vì đoàn kết vì một mục đích chung. Chúng ta không bao giờ tìm thấy sự bình yên nếu cứ khăng khăng bảo vệ cái ốc đảo cô đơn của mình. Cố gắng theo đuổi mối liên kết chung với mọi người là con đường bằng phẳng nhất đưa chúng ta đến hoà bình. (Ca-ren Ca-xây)
 
+---
+
+<!-- part 16 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, THỰC HÀNH TIẾNG VIỆT :
 3. Phát hiện và sửa lỗi trong các đoạn văn sau:
 
 a) Cảnh vật trong bài thơ "Câu cá mùa thu" của Nguyễn Khuyến thật là vắng vẻ. Ngõ trúc quanh co, sóng nước gợn ti, lá vàng đưa vèo, chiếc thuyền bé teo teo. Cảnh vật dường như ngưng đọng, im lìm. Bởi vậy, nét bút của Nguyễn Khuyến đã tạo dựng được rất thành công cảnh sắc im ắng ấy. (Dẫn theo Bùi Minh Toán, Nguyễn Quang Ninh)
@@ -377,15 +429,19 @@ b) Trong ca dao Việt Nam, những bài về tình yêu nam nữ là những b�
 
 c) Cảm đi một mình trong đêm. Trăn đưa đại hội 2 ở phía bãi bồi bên một dòng sông. Hai bờ con cùng viết đơn xin ra mắt trăn. Mùa thu hoạch lạc đã vào chúng cuối. (Dẫn theo Trần Ngọc Thêm)
 
+---
+
+<!-- part 17 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, THỰC HÀNH TIẾNG VIỆT :
 4. Viết một đoạn văn (khoảng 8 - 10 dòng) triển khai ý từ câu chủ đề sau đây:
 Đừng để người thân bị tổn thương vì sự vô tâm của bạn.
 == 108 ==
 
-VIẾT 
+---
 
-VIẾT BÀI VĂN NGHỊ LUẬN
-PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM VĂN HỌC
-
+<!-- part 18 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
+PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM VĂN HỌC :, Định hướng
 # 1. Định hướng
 
 a) Đọc hai đoạn trích sau và trả lời những câu hỏi bên dưới:
@@ -411,6 +467,11 @@ in trong Giảng văn văn học Việt Nam, NXB Giáo dục, 2005)
 
 - Đoạn nào chủ yếu sử dụng thao tác phân tích và đoạn nào tập trung nêu cảm nhận, đánh giá của người viết? Hãy chỉ ra sự khác nhau giữa phân tích và đánh giá trong hai đoạn trích trên.
 
+---
+
+<!-- part 19 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
+PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM VĂN HỌC :, Định hướng
 b) Đối tượng phân tích, đánh giá có thể là toàn bộ tác phẩm hoặc chỉ tập trung vào một số yếu tố nổi bật về nội dung (đề tài, cảm hứng,...), hình thức nghệ thuật (ngôn từ, kết cấu,...). Để viết bài nghị luận phân tích, đánh giá một tác phẩm văn học, ngoài các yêu cầu cơ bản đã nêu ở Bài 6 (trang 58), các em cần chú ý thêm một số điểm sau:
 
 - Xác định đối tượng phân tích, đánh giá: toàn bộ tác phẩm hay một số yếu tố, thể loại của tác phẩm, tác giả và bối cảnh lịch sử, hoàn cảnh ra đời,...
@@ -425,12 +486,18 @@ Mở bài | Giới thiệu tên tác phẩm, tác giả, bối cảnh lịch s�
 Thân bài | - Nêu tóm tắt nội dung chính của tác phẩm.<br>- Phân tích giá trị của tác phẩm (nội dung và nghệ thuật).<br>- Đánh giá (nhận xét, bình luận) về thành công của tác giả trong việc thể hiện nội dung và nghệ thuật. | - Giới thiệu cụ thể một số yếu tố nổi bật mà bài viết phân tích, đánh giá.<br>- Phân tích cái hay, cái đẹp của các yếu tố đã nêu.<br>- Đánh giá (nhận xét, bình luận) về vai trò, tác dụng của các yếu tố ấy trong tác phẩm.
 Kết bài | - Khái quát về vị trí, ý nghĩa của tác phẩm đối với sự nghiệp văn học của tác giả.<br>- Chỉ ra tác động của tác phẩm với người đọc và với cả nhân người viết. | - Khái quát về giá trị của các yếu tố đã phân tích đối với tác phẩm.<br>- Nêu ấn tượng và cảm xúc của người viết về các yếu tố đã phân tích.
 
+---
+
+<!-- part 20 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
+PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM VĂN HỌC :, Thực hành
 2. Thực hành
 
 Bài tập: Viết bài văn phân tích, đánh giá nét đặc sắc về nội dung và hình thức nghệ thuật của một tác phẩm văn học mà em đã học hoặc đã đọc.
 
 108
 == 110 ==
+
 a) Chuẩn bị
 
 - Đọc và nhận diện yêu cầu của bài tập về kiểu bài và nội dung, phạm vi vấn đề cần giải quyết.
@@ -439,6 +506,11 @@ a) Chuẩn bị
 
 - Xác định các yếu tố nội dung và hình thức nghệ thuật đặc sắc của tác phẩm đã chọn.
 
+---
+
+<!-- part 21 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
+PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM VĂN HỌC :, Thực hành
 b) Tìm ý và lập dàn ý
 
 - Tìm ý cho bài viết bằng cách đặt và trả lời các câu hỏi sau:
@@ -450,6 +522,11 @@ b) Tìm ý và lập dàn ý
 
 - Lập dàn ý theo ba phần của bài văn. Chú ý: đây là dạng bài phân tích, đánh giá nét đặc sắc về nội dung hoặc hình thức, không phải toàn bộ tác phẩm. Tham khảo thêm cách triển khai bài phân tích, đánh giá một số yếu tố đã nêu ở ý b, mục 1. Định hướng.
 
+---
+
+<!-- part 22 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
+PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM VĂN HỌC :, Thực hành
 c) Viết
 
 - Dựa vào dàn ý đã làm để viết bài văn hoàn chỉnh.
@@ -464,18 +541,28 @@ c) Viết
 
 + Thể hiện một cách tự nhiên quan điểm, cách hiểu riêng của bản thân, có thể tham khảo nhưng không được sao chép nội dung phân tích, đánh giá của người khác.
 
+---
+
+<!-- part 23 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
+PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM VĂN HỌC :, Thực hành
 d) Kiểm tra và chỉnh sửa
 
 Sau khi viết xong, đối chiếu lại các yêu cầu của bài văn để chỉnh sửa theo hướng dẫn sau:
 == 111 ==
 
-## NÓI VÀ NGHE
-GIỚI THIỆU, ĐÁNH GIÁ VẺ ĐẸP CỦA TÁC PHẨM VĂN HỌC
+---
 
+<!-- part 24 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VẺ ĐẸP CỦA TÁC PHẨM VĂN HỌC :, Định hướng
 1. Định hướng
 
 a) Giới thiệu, đánh giá vẻ đẹp của tác phẩm văn học là sử dụng ngôn ngữ nói và các phương tiện như tranh, ảnh, video,... và máy chiếu, màn hình (nếu có) để trình bày và thuyết phục người nghe về những nét đặc sắc, độc đáo của tác phẩm văn chương hay vai trò, sức mạnh của văn học đối với cuộc sống con người mà cá nhân đã tự tìm hiểu, lí giải, chiêm nghiệm.
 
+---
+
+<!-- part 25 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VẺ ĐẸP CỦA TÁC PHẨM VĂN HỌC :, Định hướng
 b) Để giới thiệu, đánh giá cái hay, cái đẹp của tác phẩm văn học, các em cần chú ý:
 
 - Xác định tác phẩm văn học mà mình tâm đắc, yêu thích và có hiểu biết chắc chắn, nhất là hiểu biết về những giá trị nội dung, hình thức nghệ thuật đặc sắc sẽ được trình bày.
@@ -505,6 +592,10 @@ Các lỗi còn mắc: Tham khảo yêu cầu đã nêu ở Bài 5 (trang 25).
 - Xây dựng nội dung chi tiết cho bài nói.
 - Chuẩn bị các phương tiện như tranh, ảnh, video,... và máy chiếu, màn hình (nếu có).
 
+---
+
+<!-- part 26 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VẺ ĐẸP CỦA TÁC PHẨM VĂN HỌC :, Thực hành
 2. Thực hành
 
 Bài tập: Giới thiệu, đánh giá nét đặc sắc về nội dung và hình thức nghệ thuật của một tác phẩm văn học mà em đã học hoặc đã đọc.
@@ -513,17 +604,32 @@ a) Chuẩn bị
 - Thực hiện việc chuẩn bị như hướng dẫn ở mục 1. Định hướng.
 - Xem lại dàn ý đã làm ở phần Viết.
 
+---
+
+<!-- part 27 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VẺ ĐẸP CỦA TÁC PHẨM VĂN HỌC :, Thực hành
 b) Tìm ý và lập dàn ý
 Xem xét dàn ý đã nêu ở phần Viết và bổ sung một số ý phù hợp với phần Nói và nghe.
 
+---
+
+<!-- part 28 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VẺ ĐẸP CỦA TÁC PHẨM VĂN HỌC :, Thực hành
 c) Nói và nghe
 - Dựa vào nội dung dàn ý đã chuẩn bị để thực hiện thuyết trình.
 - Cách thuyết trình và thảo luận: tham khảo các yêu cầu đã nêu ở Bài 5, phần Nói và nghe, mục c (trang 27).
 
+---
+
+<!-- part 29 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VẺ ĐẸP CỦA TÁC PHẨM VĂN HỌC :, Thực hành
 d) Kiểm tra và chỉnh sửa
 Tham khảo yêu cầu đã nêu ở Bài 5, phần Nói và nghe, mục d (trang 27).
 
-## TỰ ĐÁNH GIÁ
+---
+
+<!-- part 30 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, TỰ ĐÁNH GIÁ :, văn bản "Phép mầu" kì diệu của văn học
 Đọc văn bản sau và thực hiện các yêu cầu (từ câu 1 đến câu 10) bên dưới:
 
 "Phép mầu" kì diệu của văn học(*)
@@ -549,6 +655,10 @@ Trong tận cùng xương tuỷ.
 
 "Sự khổ mòn của tình yêu thương, sự quen cho những cái không tốt, không đúng, không đẹp, sự lười biếng suy nghĩ, sự tính toán cho mình - những cái đó làm cho con mất người ta thường ngày mờ đi ít nhiều.". Phẩm chất của con người, những suy nghĩ, tình cảm khát vọng cao đẹp bị cuộc sống vùi dập, mờ đi. Tác phẩm văn học tốt sẽ có tác dụng làm cho con người như "bừng thức tỉnh, tự nhận thấy rõ tâm hồn mình, thực sự tìm thấy mình" (Nguyễn Đình Thi). [...]
 
+---
+
+<!-- part 31 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, TỰ ĐÁNH GIÁ :, Nội dung
 2. Không nên nghĩ rằng tác động của tác phẩm cũng như sự liên hệ của người đọc bao giờ cũng phải thông qua con đường lô gích. Tác động thầm mĩ có đặc điểm và quy luật riêng rất uyển chuyển. Thường là trực tiếp, gần như bằng trực giác và bằng liên tưởng rất linh hoạt, chịu sự quy định của rất nhiều yếu tố. Rồi sau đó, ta mới có thể dùng tư duy lô gích để giải thích. Xin lấy một ví dụ, những suy nghĩ của Ta-go (Tagore) khi đọc Sếch-xpia (Shakespeare): "Trong tình yêu thắm thiết của Rô-mê-ô (Romeo) và Giu-li-ét (Juliet), trong tiếng rên xiết điên đại của vua Lia (Lear), trong ngọn lửa ghen ngày càng bùng cháy của Ô-then-lô (Othello), có một cái gì làm cho chúng tôi hăng say và phấn khởi. Cuộc đời bó hẹp của chúng ta đã bị ngăn cách bởi một sự đơn điệu làm cho tình cảm sôi nổi không thể xuất hiện trong cuộc sống xã hội, môi trường hoạt động của chúng ta. Tất cả mọi việc của chúng ta đều lặng lẽ và yên ả. Tất nhiên những trái tim của chúng ta khao khát một nguồn thúc đẩy mãnh liệt của những tình cảm sôi nổi trong văn học Anh. Chúng tôi sung sướng thưởng thức nghệ thuật văn học Anh không phải vì thầm mĩ mà vì trong sự định trệ của chúng ta, văn học ấy đem đến một làn sóng
 
 112
@@ -559,6 +669,10 @@ mãnh liệt, mặc dầu làn sóng ấy có thể mang tất cả cái gì đ�
 
 (NGUYỄN DUY BÌNH, Dạy văn dạy cái hay – cái đẹp, NXB Giáo dục, 1983)
 
+---
+
+<!-- part 32 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, TỰ ĐÁNH GIÁ :, Câu hỏi
 1. Theo văn bản trên, một tác phẩm văn học được xem là hấp dẫn khi tác phẩm ấy khiến cho người đọc:
    A. Mải mê đọc và quên hết nội dung của tác phẩm
    B. Thích thú đi tìm những kiến thức ở ngoài tác phẩm
@@ -637,7 +751,10 @@ d) ... trong tiếng rên xiết điên dại của vua Lia, trong ngọn lửa 
 
 10. Vì sao nói: Tác phẩm văn học tốt sẽ có tác dụng làm cho con người như "bừng thức tỉnh"?
 
-## HƯỚNG DẪN TỰ HỌC
+---
+
+<!-- part 33 -->
+Bài 8 VĂN BẢN NGHỊ LUẬN, HƯỚNG DẪN TỰ HỌC :
 1. Đọc mở rộng các văn bản nghị luận (nghị luận xã hội và nghị luận văn học) bằng cách:
 
 - Tìm đọc các sách, báo về các bài văn nghị luận xã hội và các bài phân tích, đánh giá tác phẩm văn học.
@@ -646,3 +763,5 @@ d) ... trong tiếng rên xiết điên dại của vua Lia, trong ngọn lửa 
 
 2. Tập viết các bài phân tích, bình luận và gửi bài tham gia: câu lạc bộ văn học, báo tường, báo, tạp chí.
 == 117 ==
+
+---

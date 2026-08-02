@@ -149,8 +149,10 @@ Lòng ta bắt ngất ánh bình minh
 Người lên như nước vỡ bờ
 Nước Việt Nam từ máu lửa
 Rũ bùn đứng dậy sáng loà.
+
 1948 – 1955
 (Thơ, NXB Văn học, Hà Nội, 2001)
+
 Lưu ý thông tin về thời gian sáng tác.
 
 1. Bài thơ Đất nước có thể được chia làm mấy phần? Cảm xúc của nhân vật trữ tình có sự thay đổi như thế nào qua các phần này? Từ đó, hãy nêu cảm hứng chủ đạo của bài thơ.
@@ -462,7 +464,6 @@ d) Sân khấu lô nhô mấy chúng đầu trọc
 
 80
 == 82 ==
-
 ## VIẾT
 VIẾT BÀI VĂN NGHỊ LUẬN
 PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM THƠ

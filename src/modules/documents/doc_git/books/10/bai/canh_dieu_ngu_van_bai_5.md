@@ -71,9 +71,9 @@ Nguyễn Trãi (1380 - 1442),
 Anh hùng dân tộc - Danh nhân văn hoá
 == 7 ==
 
-2. Đọc hiểu
+# Đọc hiểu
 
-1. Người anh hùng dân tộc
+## I. Người anh hùng dân tộc
 
 Nguyễn Trãi sinh năm 1380, hiệu là Ức Trai, quê gốc ở làng Chi Ngại, huyện Phượng Sơn, lộ Lạng Giang (nay thuộc Chi Lăng, Hải Dương); sau dời về làng Ngọc Ổi, huyện Thường Phúc, lộ Đông Đô (nay là Nhị Khê, Thường Tín, Hà Nội). Cha là Nguyễn Phi Khanh, đỗ Thái học sinh(1) thời Trần. Mẹ là Trần Thị Thái, con quan Tư đồ(2) Trần Nguyên Đán. Dòng họ bên nội, bên ngoại của Nguyễn Trãi đều có truyền thống yêu nước và truyền thống văn hoá, văn học.
 
@@ -95,7 +95,7 @@ Sau ngày hoà bình lập lại, Nguyễn Trãi đem hết tâm huyết, tài n
 == 8 ==
 
 
-2. Nhà văn hoá, nhà văn kiệt xuất
+II. Nhà văn hoá, nhà văn kiệt xuất
 
 Nguyễn Trãi không chỉ là người anh hùng dân tộc mà còn là một nhà văn hoá khai sáng, một nhà văn, nhà thơ mà những đóng góp của ông đã tạo ra bước ngoặt mới trong lịch sử phát triển của văn hoá, văn học Việt Nam. Ngoài những đóng góp quan trọng trong các hoạt động thực tiễn, ông còn để lại một di sản to lớn trên nhiều lĩnh vực: tư tưởng, chính trị, quân sự, ngoại giao, lịch sử, địa lí, văn học,... với nhiều tác phẩm có giá trị như: Quân trung từ mệnh tập, Đại cáo bình Ngô, Dư địa chí (Chí Linh sơn phú), Lam Sơn thực lục (Bộ sử biên niên về thời kì ở Lam Sơn), Văn bia Vĩnh Lăng, Chuyến đi về cũ Bằng Hồ, Dư địa chí (Ghi chép về địa lí), Ức Trai thi tập (Tập thơ của Ức Trai)... Các tác phẩm này đều được viết bằng chữ Hán. Nguyễn Trãi còn có tập thơ Quốc âm thi tập viết bằng chữ Nôm, đánh dấu sự hình thành, phát triển của thơ ca tiếng Việt. Phần lớn các bài trong tập thơ được Nguyễn Trãi viết trong thời kì về sống ẩn dật ở Côn Sơn.
 
@@ -192,7 +192,7 @@ Kết thúc văn bản, người viết khẳng định điều gì?
 (Bình Ngô đại cáo)
 NGUYỄN TRÃI
 
-1. Chuẩn bị
+1 Chuẩn bị
 
 - Xem lại phần Kiến thức ngữ văn và nội dung bài Nguyễn Trãi - Cuộc đời và sự nghiệp để vận dụng vào đọc hiểu văn bản này.
 

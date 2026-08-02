@@ -80,8 +80,19 @@ def save_bai_file(so_bai: str, tieu_de_line: str, muc_dict: dict[str, str]) -> P
     return out_path
 
 
+
+KET_THUC_MARKER = "ÔN TẬP VÀ TỰ ĐÁNH GIÁ CUỐI HỌC KÌ II"
+
+def cat_bo_phan_cuoi(text: str) -> str:
+    """Nếu gặp marker kết thúc học kỳ, cắt bỏ toàn bộ từ đó tới hết file."""
+    idx = text.find(KET_THUC_MARKER)
+    if idx == -1:
+        return text
+    return text[:idx].rstrip()
+
 def run():
     text = SOURCE.read_text(encoding="utf-8")
+    text = cat_bo_phan_cuoi(text)
 
     gioi_thieu, bai_blocks = split_by_bai(text)
 
