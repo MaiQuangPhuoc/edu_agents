@@ -611,5 +611,5 @@ def cut_bai_muc(input_path: Path) -> Path:
 
 
 if __name__ == "__main__":
-    INPUT = Path(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\documents\doc_git\books\10\bai\canh_dieu_ngu_van_bai_7.md")
+    INPUT = Path(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\documents\doc_git\books\10\bai\canh_dieu_ngu_van_bai_8.md")
     cut_bai_muc(INPUT)

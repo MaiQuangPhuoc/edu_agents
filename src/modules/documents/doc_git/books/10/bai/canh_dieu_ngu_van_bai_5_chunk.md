@@ -1,4 +1,4 @@
-<!-- part 1 -->
+<!-- chunk 1 - 153 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, YÊU CẦU CẦN ĐẠT :
 • Vận dụng được hiểu biết về bối cảnh lịch sử, văn hóa, về tác giả và thể loại vào việc đọc hiểu các tác phẩm tiêu biểu của Nguyễn Trãi. Phân tích và đánh giá được giá trị nội dung, nghệ thuật một số tác phẩm của Nguyễn Trãi, qua đó thấy được vẻ đẹp con người, thơ văn và những đóng góp của ông cho sự phát triển của văn học dân tộc.
 
@@ -12,18 +12,22 @@ Bài 5 THƠ VĂN NGUYỄN TRÃI, YÊU CẦU CẦN ĐẠT :
 
 ---
 
-<!-- part 2 -->
+<!-- chunk 2 - 133 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, KIẾN THỨC NGỮ VĂN :
 1. Bối cảnh lịch sử, văn hóa, xã hội với việc đọc hiểu tác phẩm văn học
 
 - Đọc hiểu tác phẩm văn học luôn gắn liền với việc vận dụng kiến thức về hoàn cảnh lịch sử, văn hóa, xã hội. Hoàn cảnh lịch sử, văn hóa, xã hội thời kì nhà văn sống với những sự kiện, các mối quan hệ xã hội, sinh hoạt văn hóa đã tác động trực tiếp hoặc gián tiếp tới sáng tác của nhà văn và được phản ánh một cách sâu sắc trong các tác phẩm của họ. Nhiều vấn đề trong tác phẩm văn học chỉ có thể cắt nghĩa được khi vận dụng các tri thức về hoàn cảnh lịch sử, văn hóa, xã hội vào việc đọc hiểu tác phẩm đó.
 
+---
+
+<!-- chunk 3 - 149 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, KIẾN THỨC NGỮ VĂN :
 - Thời đại Nguyễn Trãi là thời đại đau thương và quật khởi. Đau thương bởi sau hơn bốn thế kỉ độc lập, tự chủ (từ năm 938 đến 1407), dân tộc ta lại rơi vào thảm họa mất nước, chịu sự thống trị tàn bạo của giặc Minh xâm lược. Quật khởi bởi đây là giai đoạn truyền thống yêu nước, anh hùng được trỗi dậy và phát huy mạnh mẽ, mà đỉnh cao là cuộc khởi nghĩa Lam Sơn - cuộc khởi nghĩa gian khổ bậc nhất, thắng lợi huy hoàng bậc nhất trong lịch sử Việt Nam trước năm 1945. Nguyễn Trãi là người sống hết mình với thời đại, có những đóng góp to lớn vào thắng lợi của cuộc khởi nghĩa Lam Sơn và sự nghiệp xây dựng đất nước sau khi dân tộc giành lại quyền độc lập, tự chủ.
 == 5 ==
 
 ---
 
-<!-- part 3 -->
+<!-- chunk 4 - 166 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, KIẾN THỨC NGỮ VĂN :
 2. Nghị luận xã hội trung đại
 
@@ -31,11 +35,15 @@ Nghị luận xã hội trung đại thường được viết bằng các thể
 
 - Là thể văn tổng hợp "văn, sử, triết bất phân", có sự kết hợp hài hoà giữa lí lẽ và cảm xúc, giữa tư tưởng và tình cảm của người viết; do vậy, văn bản vừa có tính thuyết phục của lí lẽ, vừa giàu màu sắc biểu cảm nghệ thuật. Nghị luận trung đại thường được viết bằng văn biền ngẫu(1), từ ngữ trang trọng, uyên bác, giàu tính ước lệ, tượng trưng.
 
+---
+
+<!-- chunk 5 - 200 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, KIẾN THỨC NGỮ VĂN :
 - Trong nhiều bài nghị luận xã hội trung đại, vai trò của người viết rất đặc biệt, tác giả thường là các bậc vua, chúa, thủ lĩnh hoặc được vua, chúa, thủ lĩnh uỷ nhiệm soạn thảo các văn bản. Như việc Nguyễn Trãi thừa lệnh và nhân danh Lê Lợi viết thư từ rần báo các tướng sĩ của ta và thuyết phục tướng giặc nhà Minh, được tập hợp trong sách Quân trung từ mệnh tập (Tập văn từ lệnh trong quân). Nguyễn Trãi cũng được Lê Lợi giao viết Bình Ngô(2) đại cáo (Đại cáo bình Ngô)(3) với danh nghĩa nhà vua để bố cáo thiên hạ về đại thắng của dân tộc,... Các tác giả được uỷ thác thường là những nhà văn hoá lỗi lạc hoặc có địa vị, uy tín cao trong triều đình và xã hội. Văn bản nghị luận do họ soạn thảo không chỉ thể hiện tư tưởng, tình cảm của các bậc vua, chúa, thủ lĩnh, đại diện cho tư tưởng thời đại, ý chí, khát vọng của cả quốc gia, dân tộc, mà còn chứa đựng trí tuệ, tình cảm và tài năng văn chương của mỗi người.
 
 ---
 
-<!-- part 4 -->
+<!-- chunk 6 - 161 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, KIẾN THỨC NGỮ VĂN :
 3. Thơ Nôm Đường luật thất ngôn xen lục ngôn
 
@@ -45,7 +53,7 @@ Bài 5 THƠ VĂN NGUYỄN TRÃI, KIẾN THỨC NGỮ VĂN :
 
 ---
 
-<!-- part 5 -->
+<!-- chunk 7 - 183 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, KIẾN THỨC NGỮ VĂN :
 4. Biện pháp liệt kê
 
@@ -58,16 +66,23 @@ Liệt kê là biện pháp tu từ, theo đó, người nói, người viết k
 4
 == 6 ==
 
-
 mạnh, hiệu quả cao trong miêu tả, kể chuyện hoặc biểu lộ tình cảm, cảm xúc. Phép liệt kê được dùng trong cả văn xuôi và văn vần.
 
+---
+
+<!-- chunk 8 - 122 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, KIẾN THỨC NGỮ VĂN :
 Xét theo cấu tạo, các sự vật, sự việc, hoạt động, tính chất, trạng thái,... có thể được liệt kê theo từng cặp hoặc không theo từng cặp. Ví dụ, trong câu: "Toàn thể dân tộc Việt Nam quyết đem tất cả tinh thần và lực lượng, tính mạng và của cải để giữ vững quyền tự do, độc lập ấy." (Hồ Chí Minh), tác giả liệt kê sự vật theo từng cặp: "tinh thần và lực lượng", "tính mạng và của cải". Cách liệt kê này làm nổi bật quyết tâm của dân tộc ta bảo vệ nền độc lập bằng cả sức mạnh tinh thần và vật chất, sẵn sàng hi sinh cả tính mạng và tài sản của mình.
 
+---
+
+<!-- chunk 9 - 114 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, KIẾN THỨC NGỮ VĂN :
 Xét theo ý nghĩa, các sự vật, sự việc, hoạt động, tính chất, trạng thái,... có thể được liệt kê theo kiểu tăng tiến hoặc không tăng tiến. Ví dụ, trong ba câu nối tiếp nhau: "Ai có súng dùng súng. Ai có gươm dùng gươm, không có gươm thì dùng cuốc, thuổng, gậy gộc. Ai cũng phải ra sức chống thực dân Pháp, cứu nước." (Hồ Chí Minh), tác giả liệt kê sự vật theo thứ tự tăng dần, từ những vũ khí chuyên dùng để chiến đấu như "súng", "gươm" đến những vật dụng hàng ngày như "cuốc", "thuổng", "gậy gộc" để động viên toàn dân tham gia đánh giặc, giữ nước.
 
 ---
 
-<!-- part 6 -->
+<!-- chunk 10 - 142 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm NGUYỄN TRÃI – CUỘC ĐỜI VÀ SỰ NGHIỆP :, Chuẩn bị
 NGUYỄN TRÃI – CUỘC ĐỜI VÀ SỰ NGHIỆP
 
@@ -86,18 +101,30 @@ Anh hùng dân tộc - Danh nhân văn hoá
 
 ---
 
-<!-- part 7 -->
+<!-- chunk 11 - 102 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm NGUYỄN TRÃI – CUỘC ĐỜI VÀ SỰ NGHIỆP :, Đọc hiểu
-2. Đọc hiểu
+# Đọc hiểu
 
-1. Người anh hùng dân tộc
+## I. Người anh hùng dân tộc
 
 Nguyễn Trãi sinh năm 1380, hiệu là Ức Trai, quê gốc ở làng Chi Ngại, huyện Phượng Sơn, lộ Lạng Giang (nay thuộc Chi Lăng, Hải Dương); sau dời về làng Ngọc Ổi, huyện Thường Phúc, lộ Đông Đô (nay là Nhị Khê, Thường Tín, Hà Nội). Cha là Nguyễn Phi Khanh, đỗ Thái học sinh(1) thời Trần. Mẹ là Trần Thị Thái, con quan Tư đồ(2) Trần Nguyên Đán. Dòng họ bên nội, bên ngoại của Nguyễn Trãi đều có truyền thống yêu nước và truyền thống văn hoá, văn học.
 
+---
+
+<!-- chunk 12 - 171 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm NGUYỄN TRÃI – CUỘC ĐỜI VÀ SỰ NGHIỆP :, Đọc hiểu
 Năm 1400, Nguyễn Trãi đỗ Thái học sinh, cùng với cha ra làm quan nhà Hồ. Năm 1406, giặc Minh cướp nước ta, Nguyễn Phi Khanh bị bắt sang Trung Quốc. Tương truyền, Nguyễn Trãi định đi theo, phụng dưỡng cha để giữ trọn đạo hiếu, nhưng nghe lời cha dặn, ông đã quay về tìm đường cứu nước. Ông bị giặc Minh giam lỏng ở thành Đông Quan, sau tìm đến Lam Sơn, tham gia cuộc khởi nghĩa do Lê Lợi lãnh đạo. Nguyễn Trãi đã dâng Bình Ngô sách (Kế sách đánh đuổi quân Minh), cùng Lê Lợi và các tướng lĩnh bàn bạc việc quân, vạch ra đường lối chiến lược của cuộc khởi nghĩa. Ông giúp Lê Lợi soạn thảo chiếu lệnh, văn thư, đấu tranh ngoại giao với quân Minh, góp phần quan trọng vào sự nghiệp giải phóng đất nước. Cuối năm 1427 - đầu năm 1428, cuộc khởi nghĩa Lam Sơn toàn thắng, Nguyễn Trãi thừa lệnh Lê Lợi viết Đại cáo bình Ngô.
 
+---
+
+<!-- chunk 13 - 198 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm NGUYỄN TRÃI – CUỘC ĐỜI VÀ SỰ NGHIỆP :, Đọc hiểu
 Sau ngày hoà bình lập lại, Nguyễn Trãi đem hết tâm huyết, tài năng, sức lực tham gia vào công cuộc xây dựng đất nước. Tuy nhiên, do những mâu thuẫn trong triều đình, do bọn quyền thần, gian thần lộng hành, Nguyễn Trãi không còn được tin dùng như trước. Ông lui về ở ẩn tại Côn Sơn (nay thuộc Chí Linh, Hải Dương). Nhưng khi được vua Lê Thái Tông trọng dụng, ông lại hăm hở ra giúp đời, giúp nước. Giữa lúc Nguyễn Trãi đang giữ trọng trách công việc quốc gia thì năm 1442 xảy ra vụ án Lệ Chi viên (tên chữ Nôm là Trái Vải hoặc Vườn Vải) ở huyện Gia Định (nay thuộc Gia Bình, Bắc Ninh). Ông bị bọn gian thần vu cho tội giết vua và chịu án "tru di tam tộc"(3). Lê Thánh Tông khi lên ngôi, đã minh oan cho Nguyễn Trãi và cho sưu tầm lại văn thơ của ông. Năm 1980, Tổ chức Giáo dục, Khoa học và Văn hoá của Liên hợp quốc (UNESCO) đã tổ chức Kỉ niệm 600 năm ngày sinh của Anh hùng dân tộc, Danh nhân văn hoá Nguyễn Trãi.
 
+---
+
+<!-- chunk 14 - 169 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm NGUYỄN TRÃI – CUỘC ĐỜI VÀ SỰ NGHIỆP :, Đọc hiểu
 (*) Các câu gợi ý bên phải văn bản chỉ để học sinh theo dõi thêm về nội dung, nghệ thuật,... trong khi đọc, không cần trả lời.
 
 (1) Thái học sinh: học vị người đỗ kì thi Hội thời Trần - Hồ, tương đương với học vị Tiến sĩ các đời sau.
@@ -111,13 +138,24 @@ Sau ngày hoà bình lập lại, Nguyễn Trãi đem hết tâm huyết, tài n
 2. Chú ý những đóng góp của Nguyễn Trãi cho đất nước và bi kịch cuối đời ông.]
 == 8 ==
 
+II. Nhà văn hoá, nhà văn kiệt xuất
 
-2. Nhà văn hoá, nhà văn kiệt xuất
+---
 
+<!-- chunk 15 - 209 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm NGUYỄN TRÃI – CUỘC ĐỜI VÀ SỰ NGHIỆP :, Đọc hiểu
 Nguyễn Trãi không chỉ là người anh hùng dân tộc mà còn là một nhà văn hoá khai sáng, một nhà văn, nhà thơ mà những đóng góp của ông đã tạo ra bước ngoặt mới trong lịch sử phát triển của văn hoá, văn học Việt Nam. Ngoài những đóng góp quan trọng trong các hoạt động thực tiễn, ông còn để lại một di sản to lớn trên nhiều lĩnh vực: tư tưởng, chính trị, quân sự, ngoại giao, lịch sử, địa lí, văn học,... với nhiều tác phẩm có giá trị như: Quân trung từ mệnh tập, Đại cáo bình Ngô, Dư địa chí (Chí Linh sơn phú), Lam Sơn thực lục (Bộ sử biên niên về thời kì ở Lam Sơn), Văn bia Vĩnh Lăng, Chuyến đi về cũ Bằng Hồ, Dư địa chí (Ghi chép về địa lí), Ức Trai thi tập (Tập thơ của Ức Trai)... Các tác phẩm này đều được viết bằng chữ Hán. Nguyễn Trãi còn có tập thơ Quốc âm thi tập viết bằng chữ Nôm, đánh dấu sự hình thành, phát triển của thơ ca tiếng Việt. Phần lớn các bài trong tập thơ được Nguyễn Trãi viết trong thời kì về sống ẩn dật ở Côn Sơn.
 
+---
+
+<!-- chunk 16 - 214 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm NGUYỄN TRÃI – CUỘC ĐỜI VÀ SỰ NGHIỆP :, Đọc hiểu
 Nguyễn Trãi có công rất lớn trong việc giúp Lê Lợi xây dựng một đường lối chính trị và quân sự đúng đắn ngay từ khi tham gia khởi nghĩa Lam Sơn. Đó là đường lối đấu tranh dựa trên tư tưởng nhân nghĩa vì người dân, vì đất nước. Năm 1426, khi cuộc kháng chiến chống giặc Minh sắp sửa kết thúc, ông đã giúp Lê Lợi cho mở kì thi, lựa chọn nhân tài để phục vụ cho công cuộc kiến thiết đất nước lâu dài. Nguyễn Trãi chủ trương xây dựng thể chế chính trị thân dân vững mạnh, kết hợp truyền thống dân chủ, đoàn kết của dân tộc và những mặt tích cực của Nho giáo với khát vọng "khiến cho trong thôn cùng, xóm vắng không còn một tiếng hờn giận, oán sầu"(*). Nguyễn Trãi có những kế hoạch mới mẻ về việc xây dựng hình luật, âm nhạc, khoa cử, tiến hành các quy chế về lễ nghi, nội trị, biên soạn sách vở... Mặc dù tầm huyết xây dựng một thể chế và một nền văn hoá như ông mong muốn, đương thời chưa thực hiện được trọn vẹn, nhưng đây sẽ là nền tảng cho sự phát triển bền vững, lâu dài của đất nước.
 
+---
+
+<!-- chunk 17 - 190 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm NGUYỄN TRÃI – CUỘC ĐỜI VÀ SỰ NGHIỆP :, Đọc hiểu
 Những đóng góp về văn học của Nguyễn Trãi là hết sức to lớn, có giá trị mở đầu cho nhiều truyền thống quý báu của văn học dân tộc. Thơ văn Nguyễn Trãi thấm nhuần tư tưởng yêu nước, nhân nghĩa vì dân, cùng với niềm suy tư thể sự và tình yêu thiên nhiên, đất nước. "Yêu nước, thương dân" và "nhân nghĩa vì dân", khát vọng xây dựng một quốc gia độc lập, hưng thịnh, thái bình, người dân được sống ấm no, hạnh phúc là những nội dung lớn trong thơ văn Nguyễn Trãi. Ông luôn đau đáu một tấm lòng vì nước: "Đêm ngày cuồn cuộn
 
 (*) Các trích dẫn thơ văn Nguyễn Trãi trong bài này lấy từ cuốn Nguyễn Trãi toàn tập tân biên, tập 1, 2, 3, NXB Văn học - Trung tâm Nghiên cứu Quốc học, Hà Nội, 2001.
@@ -129,7 +167,10 @@ Nguyễn Trãi có đóng góp như thế nào về văn hoá?
 Những nội dung cơ bản của phần này là gì?
 == 9 ==
 
+---
 
+<!-- chunk 18 - 108 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm NGUYỄN TRÃI – CUỘC ĐỜI VÀ SỰ NGHIỆP :, Đọc hiểu
 nước triều Đông" (Thuật hưng, bài 5 - Quốc âm thi tập), chiến đấu quên mình để giải phóng dân tộc khỏi ách nô lệ giặc Minh, để cao nhân nghĩa cứu nước, cứu dân:
 
 Việc nhân nghĩa(1) cốt ở yên dân(2)
@@ -139,8 +180,16 @@ Quân điếu phạt(3) trước lo trừ bạo
 
 Ông không chỉ để cao vai trò của người dân, coi "dân là gốc của nước", "Lật thuyền mới biết sức dân như nước" (Cửa biển, bản dịch) mà còn biết ơn dân: "Ân lộc đền ơn kẻ cày cày" (Gương bầu khuyên răn (Bảo kính cảnh giới), bài 19 - Quốc âm thi tập).
 
+---
+
+<!-- chunk 19 - 256 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm NGUYỄN TRÃI – CUỘC ĐỜI VÀ SỰ NGHIỆP :, Đọc hiểu
 Thơ văn Nguyễn Trãi phản ánh bức chân dung con người Nguyễn Trãi với vẻ đẹp của sự hài hòa giữa một vĩ nhân và một con người hết sức đời thường. Tìm hiểu thơ văn của ông, ta sẽ thấy một Nguyễn Trãi vô cùng gần gũi, bình dị. Đó là người con chí hiếu, luôn canh cánh nỗi niềm chưa báo đáp công ơn sinh thành: "Tình phụ cơm trời, áo chả" (Ngôn chí, bài 7 - Quốc âm thi tập). Đó là người bạn chí tình, qua bao tháng trăm, thành bại của cuộc đời, vẫn hẹn ước có buổi về lại nơi quê nhà, cùng bạn vác cuốc ra đồng trong một ngày xuân: "Nhi Khê năm khắc hẹn / Nôn chụp cuộc xuân nhà" (Tặng bạn (Tặng hữu nhân), bản dịch). Nguyễn Trãi yêu thương, gắn bó với quê hương từ một ánh trăng trên bến Bình Than, con đường làng Chí Ngại, đến một dòng suối, một cây tùng nơi "núi nhà" Côn Sơn,... Ông yêu thiên nhiên, chan hòa cùng tạo vật: "Núi lặng giếng, chim bầu bạn / Mây khách khứa, nguyệt anh em" (Thuật hưng, bài 19 - Quốc âm thi tập). Nguyễn Trãi nâng niu, giữ gìn vẻ đẹp của thiên nhiên, cũng là giữ gìn môi trường sống tự nhiên: "Rừng tiếc chim về ngại phát cây" (Man thuật, bài 6 - Quốc âm thi tập),... Thiên nhiên trong thơ ông như bức tranh hoành tráng, gắn liền với địa danh lịch sử dân tộc:
 
+---
+
+<!-- chunk 20 - 178 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm NGUYỄN TRÃI – CUỘC ĐỜI VÀ SỰ NGHIỆP :, Đọc hiểu
 Kinh ngạc bẩm vẫm non mây khúc,
 Giáo gươm chim gầy bãi bao tăng.
 Quan hà hiểm yếu trời kia đất,
@@ -164,7 +213,10 @@ Câu nào nêu nhận xét khái quát về con người Nguyễn Trãi thể hi
 Bài viết đã dẫn ra những tác phẩm nào của Nguyễn Trãi?
 == 10 ==
 
+---
 
+<!-- chunk 21 - 195 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm NGUYỄN TRÃI – CUỘC ĐỜI VÀ SỰ NGHIỆP :, Đọc hiểu
 Những sự vật bình dị, dân dã, đời thường như quả núc nác, lành mùng tơi, bẹ rau muống, con đồng đong,... cũng đều được Nguyễn Trãi đưa vào thơ một cách tự nhiên, tạo nên những rung động thầm mĩ mới.
 
 Nguyễn Trãi yêu tình yêu của con người và cũng đau nỗi đau của con người. Thơ ông chứa đựng nhiều chiêm nghiệm về thói đen bạc của lòng người: "Bụi mọt lòng người cực hiểm thay" (Man thuật, bài 4 – Quốc âm thi tập) khi chứng kiến những nghịch cảnh éo le, bất công của xã hội: "Phương những tiếc cao điều hãy lượn / Hoa thường hay héo, cỏ thường tươi" (Tự thuật, bài 9 – Quốc âm thi tập). Nhà thơ đối diện với thực tại đen tối ấy bằng tư thế của cây "trúc quân tử", của cây tùng "Một mình lạt thuở ba đông" (Tùng, bài 1 – Quốc âm thi tập), bằng cái tâm của hoa cúc, hoa sen, với một lí tưởng sống cao cả:
@@ -174,12 +226,24 @@ Có nhân, có trí, có anh hùng.
 
 (Gương bầu khuyên răn, bài 5)
 
+---
+
+<!-- chunk 22 - 184 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm NGUYỄN TRÃI – CUỘC ĐỜI VÀ SỰ NGHIỆP :, Đọc hiểu
 Thơ văn Nguyễn Trãi là sự kết tinh nghệ thuật của nhiều thể kí văn học Việt Nam. Ông có công lớn trong việc hoàn thiện, phát triển, khởi đầu nhiều thể loại văn học. Ông là nhà văn chính luận xuất sắc, đưa thể văn nghị luận ở giai đoạn này đạt đến đỉnh cao hoàn thiện. Quân trung từ mệnh tập "có sức mạnh của mười vạn quân" (Phan Huy Chú). Sức mạnh ấy được tạo nên từ sự kết hợp tài tình giữa tư tưởng yêu nước, nhân nghĩa vì dân với nghệ thuật viết văn luận chiến bậc thầy. Ở áng "thiên cổ hùng văn"(1) Đại cáo bình Ngô – "bản Tuyên ngôn Độc lập thứ hai" của dân tộc – tài năng văn chương của Nguyễn Trãi đã đạt đến đỉnh cao nghệ thuật rực rỡ, đúng như Lê Quý Đôn từng ca ngợi: ông là người "viết thư, thảo hịch tài giỏi hơn hết một thời". Cùng với các tác phẩm chiếu, biểu,... khác, Nguyễn Trãi đã xây đắp nên mộng văn hóa, tư tưởng cho dân tộc.
 
+---
+
+<!-- chunk 23 - 191 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm NGUYỄN TRÃI – CUỘC ĐỜI VÀ SỰ NGHIỆP :, Đọc hiểu
 Ở thể phú, ngòi bút của Nguyễn Trãi cũng đã đạt được những thành công lớn, tiêu biểu là Phú núi Chí Linh. Về thi ca, Nguyễn Trãi là một nhà thơ trữ tình sâu sắc. Với Ức Trai thi tập, ông đã đưa thơ chữ Hán Việt Nam đạt đến độ thuần nhị, tạo ra một thế giới thẩm mĩ phong phú, vừa trí tuệ, hào hùng, lại vừa trữ tình, lãng mạn. Đặc biệt, với tập thơ chữ Nôm Quốc âm thi tập, Nguyễn Trãi đã khẳng định tiếng Việt là một ngôn ngữ văn học có khả năng phản ánh sâu sắc thế giới nội tâm của con người cũng như đời sống xã hội. Ông đã đem lại cho thơ Nôm một hệ thống thẩm mĩ mới, đưa vào trong các bài thơ của mình tục ngữ, lời ăn tiếng nói dân dã và những hình ảnh đời thường. Trong số 254 bài thơ trong Quốc âm thi tập, có tới 186 bài được viết theo hình thức thơ thất ngôn xen lục ngôn. Nhà thơ
 
 (1) Thiên cổ hùng văn: áng văn hùng tráng muôn đời.
 
+---
+
+<!-- chunk 24 - 192 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm NGUYỄN TRÃI – CUỘC ĐỜI VÀ SỰ NGHIỆP :, Đọc hiểu
 Phần này nêu vấn đề gì trong thơ văn Nguyễn Trãi?
 
 Chú ý vị trí và đóng góp của hai tập thơ Ức Trai thi tập, Quốc âm thi tập.
@@ -187,11 +251,14 @@ Chú ý vị trí và đóng góp của hai tập thơ Ức Trai thi tập, Qu�
 9
 == 11 ==
 
-
 rất có ý thức trong việc sáng tạo một "lối thơ Việt Nam" (Đặng Thai Mai), thể hiện trong cả việc Việt hoá nhiều ngữ liệu Hán học, tạo ra các hình ảnh và ngôn ngữ nghệ thuật mới của người Việt.
 
 Đến với thơ văn Nguyễn Trãi, chúng ta đến với một con người vừa lớn lao, cao cả, vừa rất đỗi thân thương, gần gũi, đúng như nhận định của cố Thủ tướng Phạm Văn Đồng: "Nguyễn Trãi là người chân đạp đất Việt Nam, đầu đội trời Việt Nam, tâm hồn lồng gió của thời đại, thông cảm sâu xa với nỗi lòng người dân lúc bấy giờ, suốt đời tận tụy cho một lí tưởng cao quý. Nguyễn Trãi là khí phách của dân tộc, là tinh hoa của dân tộc."(1) Trên hai tru cầu dân tộc và nhân bản, thơ văn Nguyễn Trãi nối xưa với nay, nối Việt Nam với nhân loại.(*)
 
+---
+
+<!-- chunk 25 - 32 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm NGUYỄN TRÃI – CUỘC ĐỜI VÀ SỰ NGHIỆP :, Đọc hiểu
 [Hình ảnh có một hộp màu hồng với nội dung:]
 Kết thúc văn bản, người viết khẳng định điều gì?
 
@@ -199,7 +266,7 @@ Kết thúc văn bản, người viết khẳng định điều gì?
 
 ---
 
-<!-- part 8 -->
+<!-- chunk 26 - 184 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm NGUYỄN TRÃI – CUỘC ĐỜI VÀ SỰ NGHIỆP :, Câu hỏi
 1. Văn bản Nguyễn Trãi - Cuộc đời và sự nghiệp gồm mấy phần, mỗi phần giới thiệu cho người đọc nội dung gì?
 2. Dựa vào văn bản trên, em hãy xác định:
@@ -212,7 +279,7 @@ Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm NGUYỄN 
 
 ---
 
-<!-- part 9 -->
+<!-- chunk 27 - 163 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
 (Bình Ngô đại cáo)
 NGUYỄN TRÃI :, Chuẩn bị
@@ -220,7 +287,7 @@ NGUYỄN TRÃI :, Chuẩn bị
 (Bình Ngô đại cáo)
 NGUYỄN TRÃI
 
-1. Chuẩn bị
+1 Chuẩn bị
 
 - Xem lại phần Kiến thức ngữ văn và nội dung bài Nguyễn Trãi - Cuộc đời và sự nghiệp để vận dụng vào đọc hiểu văn bản này.
 
@@ -238,7 +305,7 @@ Bài Đại cáo được viết bằng văn biền ngẫu, bố cục gồm b�
 
 ---
 
-<!-- part 10 -->
+<!-- chunk 28 - 173 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
 (Bình Ngô đại cáo)
 NGUYỄN TRÃI :, Đọc hiểu
@@ -266,12 +333,15 @@ Chỉ ra ý chính của đoạn văn và tác dụng của nghệ thuật đố
 
 Những tư tưởng, sự việc khách quan nào được khẳng định làm căn cứ triển khai toàn bộ nội dung bài Đại cáo?
 
+---
+
+<!-- chunk 29 - 196 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
 (*) Văn bản này không có câu: "Từng nghe" hay "Thay trời hành đạo, Hoàng thượng phán rằng" như trong một số văn bản xuất hiện về sau.
 (**) Ở các văn bản, để học sinh tiện theo dõi, người biên soạn sách thường đánh số thứ tự dòng thơ hoặc chia phân các văn bản.
 (1) Văn hiến: nước có truyền thống văn hoá, văn minh và hiền tài thì gọi là nước văn hiến (văn: theo quan niệm thời Nguyễn Trãi dùng để chỉ ngôn ngữ, văn tự, thư tịch, văn chương, giáo dục khoa cử, điển chương, phong tục,...; hiến: chỉ người hiền tài).
 (2) Theo quan niệm của một số sử gia thời trung đại (như nhóm Ngô Sĩ Liên trong Đại Việt sử kí toàn thư) thì thời kì nhà Triệu cai trị nước ta (từ 207 đến 137 trước Công nguyên) cũng được coi là một triều đại của Đại Việt.
 == 13 ==
-
 
 Lưu Cung(1) tham công nên thất bại,
 Triệu Tiết(2) thích lớn phải tiêu vong.
@@ -280,6 +350,10 @@ Sông Bạch Đằng giết tươi(3) Ô Mã.
 Việc xưa xem xét,
 Chứng cứ còn ghi.
 
+---
+
+<!-- chunk 30 - 173 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
 2. Vừa rồi:
 Nhân họ Hồ chính sự phiền hà,
 Để trong nước lòng dân oán hận.
@@ -300,6 +374,10 @@ Nheo nhóc thay kẻ goá bụa khốn cùng.
 Thằng há miệng, đứa nhe răng, máu mỡ bấy no nê chưa chán,
 Nay xây nhà, mai dập đất, chân tay nào phục dịch cho vừa.
 
+---
+
+<!-- chunk 31 - 166 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
 (1) Lưu Cung: vua Nam Hán, năm 938, sai con là Hoàng Thao đem quân sang xâm lược nước ta, bị Ngô Quyền đánh bại trên sông Bạch Đằng.
 (2) Triệu Tiết: tướng nhà Tống cùng Quách Quỳ đem quân xâm chiếm Đại Việt bị Lý Thường Kiệt đánh đuổi trên phòng tuyến sông Như Nguyệt năm 1076.
 (3) Theo Đại Việt sử kí toàn thư (Kỉ nhà Trần) thì Ô Mã Nhi bị quân dân nhà Trần bắt sống trong trận Bạch Đằng (1288); sau thả cho về nước, trên đường về thì thuyền bị đắm và chết đuối trên sông Bạch Đằng.
@@ -310,7 +388,10 @@ Nay xây nhà, mai dập đất, chân tay nào phục dịch cho vừa.
 Chú ý giọng điệu, nghệ thuật đối lập ở đoạn cao trào và hệ thống hình ảnh, cách nêu chứng cứ để kết tội kẻ thù.
 == 14 ==
 
+---
 
+<!-- chunk 32 - 169 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
 Nặng nề những nỗi phù phen,
 Tan tác cả nghề canh cửi.
 Độc ác thay, trúc Nam Sơn không ghi hết tội(1),
@@ -337,6 +418,10 @@ Nhân tài như lá mùa thu.
 Việc bôn tẩu(6) thiếu kẻ đỡ đần,
 Nơi duy ác(7) hiếm người bàn bạc.
 
+---
+
+<!-- chunk 33 - 225 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
 (1) Người xưa thường dùng thẻ trúc để ghi chép; Nam Sơn (Trung Quốc) là nơi có rừng trúc. Câu thơ ý nói tội ác của giặc nhiều không thể ghi chép hết.
 (2) Nếm mật nằm gai: nói về sự chịu đựng gian khổ để quyết chí mưu đồ việc lớn. Thời Xuân Thu (Trung Quốc), nước Việt bị nước Ngô thôn tính. Vua nước Việt là Câu Tiễn bị bắt, đã dùng khổ nhục kế để được tha về nước. Về tới nước Việt, Câu Tiễn thường nằm trên đống củi gai để ngủ không yên giấc, thường nếm mật đắng để ăn không biết ngon, nuôi chí phục thù. Sau hai mươi năm trời chuẩn bị lực lượng, Câu Tiễn đã xuất binh đánh bại quân Ngô.
 (3) Sách lược thao: sách dạy về cách dùng binh, đánh trận.
@@ -345,11 +430,14 @@ Nơi duy ác(7) hiếm người bàn bạc.
 (6) Bôn tẩu: chạy ngược, chạy xuôi lo công việc.
 (7) Duy ác: màn che. Ngày xưa, khi lượng ra trận thường quây màn trướng làm sở chỉ huy, do đó, duy ác được dùng để chỉ nơi bố thám mưu bàn việc quân.
 
+---
+
+<!-- chunk 34 - 191 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
 Chú ý việc tác giả hoá thân vào Lê Lợi để diễn tả nỗi lòng của lãnh tụ cuộc khởi nghĩa.
 
 13
 == 15 ==
-
 
 Chỉ vì:
 Tấm lòng cứu nước, vẫn đăm đăm muốn tiến về đông(1),
@@ -373,6 +461,10 @@ Lấy chí nhân(8) để thay cường bạo.
 Trần Bồ Đằng(9) sấm vang chớp giật,
 Miền Trà Lân(10) trúc chẻ tro bay.
 
+---
+
+<!-- chunk 35 - 322 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
 (1) Tiến về đông: mượn điển xưa nhằm nói việc nghĩa quân Lam Sơn từ Thanh Hoá muốn tiến ra Đông Đô (tức thành Thăng Long) để giải phóng đất nước khỏi ách xâm lược của giặc Minh.
 (2) Đánh phía ta: lấy ý từ chuyện Tín Lăng Quân nước Ngụy (Trung Quốc) nghe nói Hầu Doanh là người hiền tài, đưa xe đi đón, mới ngồi bên ta (trái), bèn được tôn trọng hơn. Ở đây ý nói Lê Lợi trân trọng nhân tài, mong muốn tìm được người hiền tài ra giúp nước.
 (3) Linh Sơn: núi Chi Linh, thuộc huyện Lang Chánh, Thanh Hoá.
@@ -383,12 +475,19 @@ Miền Trà Lân(10) trúc chẻ tro bay.
 (8) Chí nhân: lòng nhân nghĩa ở mức độ cao.
 (9), (10) Bồ Đằng: một ngọn núi thuộc Quỳ Châu, Nghệ An; Trà Lân: thuộc huyện Con Cuông, Nghệ An.
 
+---
+
+<!-- chunk 36 - 37 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
 Nghĩa quân gặp những khó khăn nào và điều gì đã giúp họ vượt qua?
 
 Nhìp điệu câu văn diễn tả cuộc chiến đấu và các chiến công ở đây có gì đặc biệt?
 == 16 ==
 
+---
 
+<!-- chunk 37 - 269 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
 Sĩ khí đã hăng,
 Quân thanh(1) càng mạnh.
 Trần Trí, Sơn Thọ nghe hơi mà mất vía,
@@ -417,6 +516,10 @@ Sau lại sai tướng chẹn đường, tuyệt nguồn lương thực.
 Ngày mười tám, trận Chi Lăng, Liễu Thăng thất thế,
 Ngày hai mươi, trận Mã Yên(9), Liễu Thăng cụt đầu.
 
+---
+
+<!-- chunk 38 - 169 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
 (1) Sĩ khí, quân thanh: chí khí và thanh thế của quân sĩ.
 (2) Tây Kinh: tức thành Tây Đô do Hồ Quý Ly (1336 – 1407) xây dựng ở huyện Vĩnh Lộc, Thanh Hoá.
 (3) Ninh Kiều, Tốt Động: những địa điểm thuộc huyện Chương Mỹ, Hà Nội ngày nay.
@@ -429,6 +532,10 @@ người, dùng lí lẽ nhân nghĩa để làm tan rã tư tưởng, tinh th�
 cho đội quân xâm lược Đại Việt.
 (8), (9) Khâu Ôn, Mã Yên: những địa điểm thuộc tỉnh Lạng Sơn.
 
+---
+
+<!-- chunk 39 - 36 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
 Cách thể hiện khí thế
 chiến thắng của quân ta
 và thất bại của quân Minh
@@ -437,7 +544,10 @@ nói về giai đoạn đầu của
 cuộc khởi nghĩa?
 == 17 ==
 
+---
 
+<!-- chunk 40 - 236 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
 Ngày hăm lăm, bá tước Lương Minh đại bại tư vong,
 Ngày hăm tám, thượng thư Lý Khánh cũng kế tự vẫn.
 Thuận đà, ta đưa lưỡi dao tung phá,
@@ -467,6 +577,10 @@ Thành Đan Xá(7) thây chất thành núi, cỏ nội đầm đìa máu đen.
 Cứu binh hai đạo tan tành, quay gót chẳng kịp,
 Quân giặc các thành khốn đốn, cởi giáp ra hàng.
 
+---
+
+<!-- chunk 41 - 194 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
 (1) Kinh ngạc: ở đây chỉ sức mạnh và sự hung dữ của quân giặc (kinh: cá voi, là loại cá to, mạnh; ngạc: cá sấu, rất hung dữ).
 (2) Lạng Giang, Xương Giang: những địa điểm thuộc tỉnh Bắc Giang.
 (3) Bình Than: thuộc vùng Phả Lại (Hải Dương) ngày nay.
@@ -482,11 +596,14 @@ Chú ý những biện pháp nghệ thuật miêu tả sự thất bại của g
 16
 == 18 ==
 
-
 Tướng giặc bị cầm tù, như hổ đói vẫy đuôi xin cứu mạng.
 
 Thần vũ chẳng giết hại, thể lòng trời, ta mở đường hiếu sinh(1)
 
+---
+
+<!-- chunk 42 - 195 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
 Mã Kỳ, Phương Chính, cấp cho năm trăm chiếc thuyền, ra đến bể mà vẫn hồn bay phách lạc,
 
 Vương Thông, Mã Anh, phát cho vài nghìn cỗ ngựa, về đến nước mà vẫn tim đập chân run.
@@ -528,6 +645,10 @@ Ai nấy đều hay.
 (Theo bản dịch của BÙI KỶ, BÙI VĂN NGUYÊN chỉnh lí,
 Hợp tuyển văn học trung đại Việt Nam, tập một, NXB Giáo dục, 2004)
 
+---
+
+<!-- chunk 43 - 151 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
 (1) Thần vũ chẳng giết hại: ý nói uy vũ thần thánh thiêng liêng có sức mạnh chiến thắng mà không cần phải sát hại kẻ thù. Hiếu sinh: quý trọng sinh mạng con người.
 (2) Xã tắc: nơi tế thần đất gọi là xã, nơi tế thần lúa gọi là tắc. Nghĩa bóng chỉ đất nước, bờ cõi.
 (3) Kiền khôn (hoặc càn khôn): hai quẻ trong Kinh Dịch chỉ trời, đất. Bỉ: bế tắc; thái: thông suốt.
@@ -542,7 +663,7 @@ Phần kết đã thể hiện tư tưởng, khát vọng gì của dân tộc v
 
 ---
 
-<!-- part 11 -->
+<!-- chunk 44 - 167 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
 (Bình Ngô đại cáo)
 NGUYỄN TRÃI :, Câu hỏi
@@ -563,6 +684,10 @@ b) Chỉ ra mối liên hệ giữa các phần trên và cho biết: Bài Đạ
 
 4. Hãy phân tích vai trò của yếu tố biểu cảm trong bài Đại cáo qua các dẫn chứng cụ thể.
 
+---
+
+<!-- chunk 45 - 134 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
 5. Quan niệm về quốc gia, dân tộc được Nguyễn Trãi thể hiện trong bài Đại cáo như thế nào? Phân tích ý thức độc lập và tinh thần tự hào dân tộc được thể hiện trong quan niệm ấy.
 
 6. Liên hệ với những hiểu biết ở phần Kiến thức ngữ văn và văn bản Nguyễn Trãi - Cuộc đời và sự nghiệp, hãy xác định:
@@ -575,7 +700,7 @@ b) Vì sao Đại cáo bình Ngô được coi là "bản Tuyên ngôn Độc l�
 
 ---
 
-<!-- part 12 -->
+<!-- chunk 46 - 135 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, Thực hành đọc hiểu, tác phẩm NGUYỄN TRÃI :, Chuẩn bị
 NGUYỄN TRÃI
 
@@ -591,7 +716,7 @@ NGUYỄN TRÃI
 
 ---
 
-<!-- part 13 -->
+<!-- chunk 47 - 78 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, Thực hành đọc hiểu, tác phẩm NGUYỄN TRÃI :, Đọc hiểu
 2. Đọc hiểu
 
@@ -607,6 +732,10 @@ Dân giàu đủ khắp đòi(15) phương.
 (Theo Nguyễn Trãi - Quốc âm thi tập, PHẠM LUẬN phiên âm và chú giải,
 NXB Giáo dục Việt Nam, 2012)
 
+---
+
+<!-- chunk 48 - 209 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Thực hành đọc hiểu, tác phẩm NGUYỄN TRÃI :, Đọc hiểu
 (1) Rỏi: nhàn, rỗi.
 (2) Thuở ngày trường: thuở ngày dài.
 (3) Hoè: một loại cây mùa hè ra hoa có màu vàng tươi. Hình tượng cây hoè xum xuê, tươi tốt là biểu trưng cho sự thanh bình, phát đạt, sum họp.
@@ -623,6 +752,10 @@ NXB Giáo dục Việt Nam, 2012)
 (14) Ngu cầm: đàn của vua Ngu Thuấn. Ngu là tên một triều đại huyền thoại do vua Thuấn lập nên, nơi đây xã hội thanh bình, người dân có cuộc sống ấm no, hạnh phúc. Vua Thuấn gảy đàn ca khúc Nam phong, có câu: "Gió nam mát mẻ / Làm cho dân ta bớt ưu phiền / Gió nam thổi đúng lúc / Khiến cho dân ta thêm sung túc".
 (15) Đòi: nhiều, muôn.
 
+---
+
+<!-- chunk 49 - 45 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, Thực hành đọc hiểu, tác phẩm NGUYỄN TRÃI :, Đọc hiểu
 Chú ý số chữ trong các câu; những từ thuần Việt đồng tự; từ chỉ màu sắc, hương vị, âm thanh trong bài thơ.
 
 Tiếng đàn Ngu cầm và mong ước của Nguyễn Trãi có mối liên hệ như thế nào?
@@ -632,7 +765,7 @@ Tiếng đàn Ngu cầm và mong ước của Nguyễn Trãi có mối liên h�
 
 ---
 
-<!-- part 14 -->
+<!-- chunk 50 - 137 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, Thực hành đọc hiểu, tác phẩm NGUYỄN TRÃI :, Câu hỏi
 1. Tìm hiểu nhan đề và nội dung chính của bài thơ Gương bầu khuyên rận (bài 43).
 
@@ -646,7 +779,7 @@ Bài 5 THƠ VĂN NGUYỄN TRÃI, Thực hành đọc hiểu, tác phẩm NGUYỄ
 
 ---
 
-<!-- part 15 -->
+<!-- chunk 51 - 92 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, THỰC HÀNH TIẾNG VIỆT :
 1. Hai câu in đậm dưới đây áp dụng biện pháp tu từ nào để khẳng định chủ quyền quốc gia và nền độc lập của nước ta? Tên các triều đại Việt Nam, Trung Hoa được sắp xếp như thế nào?
 
@@ -661,7 +794,7 @@ Song hào kiệt đời nào cũng có.
 
 ---
 
-<!-- part 16 -->
+<!-- chunk 52 - 86 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, THỰC HÀNH TIẾNG VIỆT :
 2. Tìm và nêu tác dụng của một số biện pháp tu từ liệt kê mà Nguyễn Trãi đã sử dụng trong văn bản Đại cáo bình Ngô để:
 
@@ -680,7 +813,7 @@ e) Ca ngợi chiến thắng vang dội của quân ta.
 
 ---
 
-<!-- part 17 -->
+<!-- chunk 53 - 187 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, THỰC HÀNH TIẾNG VIỆT :
 3. Tìm biện pháp liệt kê trong các câu dưới đây. Ngoài cách sắp xếp từ ngữ trong phép liệt kê của tác giả, em có thể sắp xếp lại như thế nào? Giải thích cách sắp xếp từ ngữ của em.
 
@@ -692,13 +825,13 @@ c) Muốn biến hoài bão đó thành hiện thực thì trong hành trang c�
 
 ---
 
-<!-- part 18 -->
+<!-- chunk 54 - 40 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, THỰC HÀNH TIẾNG VIỆT :
 4. Hãy viết một đoạn văn (khoảng 6 - 8 dòng) nêu ý kiến của em về giọng văn hào hùng của Đại cáo bình Ngô (Nguyễn Trãi), trong đoạn văn có sử dụng biện pháp tu từ liệt kê.
 
 ---
 
-<!-- part 19 -->
+<!-- chunk 55 - 196 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 VỀ MỘT VẤN ĐỀ XÃ HỘI :, Định hướng
 1 Định hướng
@@ -715,11 +848,14 @@ Văn bản bàn về vấn đề gì?
 
 Xác định luận điểm của văn bản.
 
+---
+
+<!-- chunk 56 - 184 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 (1) Ưu hoạn: ưu tư và hoạn nạn (ưu: lo, buồn; hoạn: tai họa, hoạn nạn). Ở đây có thể hiểu là nỗi lo lắng, buồn đau.
 
 21
 == 23 ==
-
 
 Sao có thể gọi là trí thức những kẻ chỉ lo lắng cho bản thân và chỉ bận khoản trước sự mất còn nhỏ nhặt của cuộc sống?
 
@@ -729,6 +865,10 @@ Khi Trần Hưng Đạo "ngày quên ăn, đêm quên ngủ, nước mắt đầ
 
 Đau khổ của người trí thức chân chính là đau khổ được nhân lên gấp đôi, bởi đó là đau khổ của nhân dân được cộng thêm những suy tư của người trí thức.
 
+---
+
+<!-- chunk 57 - 183 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 Nguyễn Trãi đã suốt đời suy tư trước nỗi đau khổ của nhân dân. Bao nhiêu bài thơ đã phản ánh những suy tư ấy của Nguyễn Trãi trước cảnh nước mất, nhà tan, quân thù bạo ngược:
 
 Binh sinh độc bão tiên ưu niệm,
@@ -741,6 +881,10 @@ Cảm xúc trong đêm đầu thuyền ở cửa biển)
 
 Khác hẳn với những nhà nho đương thời mà một bộ phận đã theo giặc, một bộ phận khác đi với các vua Hậu Trần, Nguyễn Trãi tìm đến Lê Lợi, một người áo vải ở Lam Sơn. Người ấy chẳng thuộc dòng họ vua chúa nào, nhưng lại có khả năng tập hợp quảng đại nhân dân để giải phóng đất nước. Chẳng ngại mình là cháu ngoại của nhà Trần, lại đã đỗ tiến sĩ và làm quan Ngự sử của triều cũ, Nguyễn Trãi đã tình nguyện suốt đời chiến đấu trung thành dưới cờ của Lê Lợi.
 
+---
+
+<!-- chunk 58 - 75 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 (Vũ Khiêu, Người trí thức tự tình hoa của dân tộc,
 in trong Kỉ niệm 600 năm sinh Nguyễn Trãi,
 NXB Khoa học xã hội, Hà Nội, 1982)
@@ -753,7 +897,7 @@ Nhận biết các tri thức về bối cảnh lịch sử, văn hoá, hiểu b
 
 ---
 
-<!-- part 20 -->
+<!-- chunk 59 - 167 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 VỀ MỘT VẤN ĐỀ XÃ HỘI :, Định hướng
 b) Để viết được bài nghị luận về một vấn đề xã hội bàn về một tư tưởng, đạo lí, các em cần chú ý:
@@ -761,20 +905,23 @@ b) Để viết được bài nghị luận về một vấn đề xã hội bà
 - Lựa chọn một vấn đề tư tưởng, đạo lí nổi bật trong đời sống xã hội để làm đề tài cho bài nghị luận. Loại đề nghị luận này thường thông qua các câu danh ngôn,
 == 24 ==
 
-
 tục ngữ, ca dao hoặc lời phát biểu nổi tiếng của các nhân vật lịch sử,... để yêu cầu người viết bàn luận, làm rõ.
 
 - Nên tìm tới các vấn đề tư tưởng, đạo lí có tính thời sự và liên quan đến thế hệ trẻ. Ví dụ như: lí tưởng sống của thanh niên xưa và nay, quan niệm về lòng yêu nước, lòng tự hào dân tộc của lớp trẻ thời kì hội nhập,...
 
 - Tìm hiểu kĩ vấn đề được lựa chọn, xác định nội dung cần trình bày.
 
+---
+
+<!-- chunk 60 - 109 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 - Tìm ý và lập dàn ý cho bài viết: xác định luận đề, các luận điểm, lựa chọn dẫn chứng. Bố cục bài viết theo ba phần; các luận điểm, lí lẽ được triển khai phải gắn bó mật thiết và xuất phát từ luận đề đã nêu. Các dẫn chứng có thể lấy từ đời sống, trong lịch sử và trong tác phẩm văn học.
 
 - Xác định rõ thái độ, tình cảm khi bàn luận về vấn đề đã nêu. Vận dụng được kiến thức và những trải nghiệm trong thực tế để bài viết trở nên sâu sắc và có ý nghĩa xã hội hơn.
 
 ---
 
-<!-- part 21 -->
+<!-- chunk 61 - 115 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 VỀ MỘT VẤN ĐỀ XÃ HỘI :, Thực hành
 # 2. Thực hành
@@ -791,7 +938,7 @@ a) Chuẩn bị
 
 ---
 
-<!-- part 22 -->
+<!-- chunk 62 - 170 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 VỀ MỘT VẤN ĐỀ XÃ HỘI :, Thực hành
 b) Tìm ý và lập dàn ý
@@ -809,12 +956,19 @@ b) Tìm ý và lập dàn ý
 23
 == 25 ==
 
-
 - Lập dàn ý cho bài viết bằng cách lựa chọn và sắp xếp các ý theo bố cục ba phần:
 
+---
+
+<!-- chunk 63 - 77 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 Mở bài:
 Dẫn dắt và nêu vấn đề xã hội cần nghị luận. Có thể dẫn dắt vào bài bằng nhiều cách khác nhau như trích các câu thơ viết về lòng yêu nước; dẫn ra những tấm gương hi sinh cao cả vì Tổ quốc; trích câu nói nổi tiếng về lòng yêu nước của Chủ tịch Hồ Chí Minh hoặc các danh nhân từ xưa đến nay;... từ đó, nêu vấn đề cần nghị luận.
 
+---
+
+<!-- chunk 64 - 195 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 Thân bài:
 + Nêu quan niệm (ý kiến) của em về lòng yêu nước. Lí giải (nếu lí lẽ) vì sao như thế là yêu nước.
 + Dẫn ra và phân tích các biểu hiện về lòng yêu nước (bằng chứng): Các biểu hiện trong lịch sử dân tộc từ xưa đến nay; biểu hiện trên nhiều lĩnh vực như trong chiến đấu bảo vệ Tổ quốc, lao động xây dựng đất nước, học tập, nghiên cứu khoa học hoặc trong lĩnh vực thể thao, văn hoá,... Cũng có thể dẫn ra một số tác phẩm thơ văn viết về lòng yêu nước đã học.
@@ -822,13 +976,17 @@ Thân bài:
 + Nêu lên các quan niệm khác nhau, chứng minh hoặc bác bỏ cách hiểu chưa đúng về lòng yêu nước, so sánh những biểu hiện giống và khác nhau về lòng yêu nước, nhất là lòng yêu nước, tự hào dân tộc trong công cuộc xây dựng và phát triển đất nước thời kì hội nhập quốc tế ngày nay,...
 + Chỉ ra điểm mới trong quan niệm về lòng yêu nước trong thời đại ngày nay.
 
+---
+
+<!-- chunk 65 - 36 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 Kết bài:
 + Khẳng định lại ý nghĩa và giá trị của lòng yêu nước.
 + Phát biểu suy nghĩ và cách thức thể hiện lòng yêu nước, tự hào dân tộc của cá nhân mình.
 
 ---
 
-<!-- part 23 -->
+<!-- chunk 66 - 164 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 VỀ MỘT VẤN ĐỀ XÃ HỘI :, Thực hành
 c) Viết
@@ -848,9 +1006,12 @@ c) Viết
 24
 == 26 ==
 
-
 - Trong khi viết, các em cần chú ý:
 
+---
+
+<!-- chunk 67 - 100 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 + Lấy dẫn chứng trong cả cuộc sống và các tác phẩm văn học, nêu và phân tích các dẫn chứng ấy để làm rõ vấn đề (tránh việc chỉ nêu ra các dẫn chứng mà không phân tích, nhận xét).
 
 + Phát biểu cảm nghĩ và quan niệm của cá nhân về lòng yêu nước một cách trung thực, giản dị, tránh hô hào, khuôn sáo, bất chước,...
@@ -859,13 +1020,17 @@ c) Viết
 
 ---
 
-<!-- part 24 -->
+<!-- chunk 68 - 47 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 VỀ MỘT VẤN ĐỀ XÃ HỘI :, Thực hành
 d) Kiểm tra và chỉnh sửa
 
 Đọc lại bài văn đã viết. Đối chiếu bài văn đã viết với mục 1. Định hướng và dàn ý ở trên để phát hiện và sửa lỗi theo yêu cầu sau:
 
+---
+
+<!-- chunk 69 - 180 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 Nội dung kiểm tra | Yêu cầu cụ thể
 --- | ---
 Bố cục ba phần | - Mở bài: Đã giới thiệu được vấn đề xã hội cần bàn luận chưa?<br>- Thân bài:<br>+ Có nêu được quan niệm về lòng yêu nước và lí giải vì sao như thế là yêu nước không?<br>+ Đã dẫn ra và phân tích các biểu hiện về lòng yêu nước trong lịch sử dân tộc từ xưa đến nay trên nhiều lĩnh vực chưa?<br>+ Có nêu ra được các biểu hiện của yêu nước ngày nay không?<br>- Kết bài: Đã khẳng định lại ý nghĩa, giá trị của lòng yêu nước và phát biểu cảm nghĩ của cá nhân về vấn đề yêu nước chưa?
@@ -874,7 +1039,7 @@ Các lỗi còn mắc | - Lỗi về ý: thiếu ý, lạc ý,...<br>- Lỗi v�
 
 ---
 
-<!-- part 25 -->
+<!-- chunk 70 - 70 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, NÓI VÀ NGHE, đề bài THUYẾT TRÌNH VÀ THẢO LUẬN VỀ MỘT VẤN ĐỀ XÃ HỘI :, Định hướng
 ## 1. Định hướng
 
@@ -884,7 +1049,7 @@ Phần này tiếp tục luyện tập thuyết trình và thảo luận về m�
 
 ---
 
-<!-- part 26 -->
+<!-- chunk 71 - 183 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, NÓI VÀ NGHE, đề bài THUYẾT TRÌNH VÀ THẢO LUẬN VỀ MỘT VẤN ĐỀ XÃ HỘI :, Định hướng
 b) Để thuyết trình, thảo luận về một vấn đề xã hội, các em cần chú ý:
 
@@ -904,7 +1069,7 @@ b) Để thuyết trình, thảo luận về một vấn đề xã hội, các e
 
 ---
 
-<!-- part 27 -->
+<!-- chunk 72 - 68 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, NÓI VÀ NGHE, đề bài THUYẾT TRÌNH VÀ THẢO LUẬN VỀ MỘT VẤN ĐỀ XÃ HỘI :, Thực hành
 2. Thực hành
 
@@ -920,7 +1085,7 @@ a) Chuẩn bị
 
 ---
 
-<!-- part 28 -->
+<!-- chunk 73 - 42 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, NÓI VÀ NGHE, đề bài THUYẾT TRÌNH VÀ THẢO LUẬN VỀ MỘT VẤN ĐỀ XÃ HỘI :, Thực hành
 b) Tìm ý và lập dàn ý
 
@@ -930,14 +1095,17 @@ b) Tìm ý và lập dàn ý
 
 ---
 
-<!-- part 29 -->
+<!-- chunk 74 - 38 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, NÓI VÀ NGHE, đề bài THUYẾT TRÌNH VÀ THẢO LUẬN VỀ MỘT VẤN ĐỀ XÃ HỘI :, Thực hành
 c) Nói và nghe
 
 - Người chủ trì: Nêu vấn đề, thống nhất cách thức trình bày, thảo luận (ví dụ: mục đích, nội dung chính, yêu cầu,...), mời người nói trình bày ý kiến.
 == 28 ==
 
+---
 
+<!-- chunk 75 - 220 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, NÓI VÀ NGHE, đề bài THUYẾT TRÌNH VÀ THẢO LUẬN VỀ MỘT VẤN ĐỀ XÃ HỘI :, Thực hành
 Người nói | Người nghe
 --- | ---
 - Giới thiệu bài thuyết trình theo dàn ý đã chuẩn bị. | - Nghe một cách chăm chú; sử dụng các yếu tố cử chỉ, nét mặt, ánh mắt để khích lệ người nói.
@@ -945,13 +1113,17 @@ Người nói | Người nghe
 - Đảm bảo sự phù hợp, thống nhất giữa nội dung với hình thức và các phương tiện hỗ trợ thuyết trình. Chú ý cách diễn đạt sao cho hấp dẫn người nghe và tạo vấn đề để thảo luận. | - Chuẩn bị các nội dung cần hỏi (nếu có), các ý kiến phản biện, tranh luận về nội dung bài thuyết trình; ghi lại nhận xét, cảm nhận về vấn đề xã hội được người nói trình bày,...
 - Đặt câu hỏi hoặc trả lời các câu hỏi người khác đặt ra về vấn đề vừa thuyết trình. |
 
+---
+
+<!-- chunk 76 - 59 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, NÓI VÀ NGHE, đề bài THUYẾT TRÌNH VÀ THẢO LUẬN VỀ MỘT VẤN ĐỀ XÃ HỘI :, Thực hành
 - Thảo luận: Sau khi người nói trình bày xong, người chủ trì mời người nghe phát biểu ý kiến hoặc nêu câu hỏi, tranh luận,...
 
 - Kết thúc thảo luận: Người chủ trì tổng hợp ý kiến của cả nhóm về vấn đề thảo luận, những điểm đã thống nhất và những điểm còn tranh luận (nếu có).
 
 ---
 
-<!-- part 30 -->
+<!-- chunk 77 - 165 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, NÓI VÀ NGHE, đề bài THUYẾT TRÌNH VÀ THẢO LUẬN VỀ MỘT VẤN ĐỀ XÃ HỘI :, Thực hành
 d) Kiểm tra và chỉnh sửa
 
@@ -967,7 +1139,7 @@ Người nói | Người nghe
 
 ---
 
-<!-- part 31 -->
+<!-- chunk 78 - 135 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, văn bản Thư dụ Vương Thông lần nữa
 Đọc văn bản sau và thực hiện các yêu cầu (từ câu 1 đến câu 8) bên dưới:
 
@@ -980,14 +1152,22 @@ Kể ra người dùng binh(1) giỏi là ở chỗ biết rõ thời thế mà 
 
 ---
 
-<!-- part 32 -->
+<!-- chunk 79 - 107 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Nội dung
 2. Trước đây, các ông bề ngoài thì giả cách giảng hoà, bên trong ngầm mưu gian trá, cứ đào hào, đắp luỹ, ngồi đợi viện binh, tâm tính không minh bạch, trong ngoài lại khác nhau, sao có thể khiến ta tin tưởng mà không nghi ngờ cho được. Cổ nhân có câu: "Bụng dạ người khác, ta lường đoán biết.", nghĩa là thế đó. [...]
 
 Sự thế ngày nay, cho dẫu ngôi cao(3) có đem quân cả nước sang chăng nữa, cũng chỉ thúc nhanh sự bại vong mà thôi, huống là Trương Phụ(4) chỉ tự đến nộp mạng thì đâu có gì đáng nói!
 
+---
+
+<!-- chunk 80 - 122 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Nội dung
 [...] Nay các ông kể cùng lực kiệt, quân sĩ nhọc mệt, trong thiếu lương thực, ngoài không viện binh, bám hờ cụm đất nhỏ nhoi, nghi tam cải thành tro trọi, há chẳng phải như thịt trên thớt, cá trong nồi sao? Thế mà lại còn muốn lừa dối dân nước ta, dụ dỗ những điều phi nghĩa. Ho là những kẻ trung thần nghĩa sĩ, ngay cả khi thời cũng vẫn khôn, "nén mặt nằm gai", cũng còn chẳng chịu mưu đồ kia khác, lẽ nào ngày nay lại đi tin nghe những lời bất nghĩa của bọn các ông hay sao? Chỉ e người Nam trong thành nhớ mến chủ cũ(5), cũng như người Ngô ở đây không kham
 
+---
+
+<!-- chunk 81 - 175 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Nội dung
 (*) Nhân đề bức thư là do người đời sau đặt. Tái: lần nữa; dụ: lời báo ban, khuyên nhủ; Vương Thông: quan Tổng binh, thống lĩnh quân đội nhà Minh từ tháng 9-1426 đến tháng 12-1427 trong cuộc chiến tranh xâm lược Đại Việt.
 (1) Dùng binh: sử dụng quân đội trong chiến trận.
 (2) Thất phu: người đàn ông tầm thường.
@@ -998,9 +1178,12 @@ Sự thế ngày nay, cho dẫu ngôi cao(3) có đem quân cả nước sang ch
 28
 == 30 ==
 
-
 nói khôn khó, họ sẽ cùng hứa hại lại các ông rồi dẫn nhau ra hàng, giống như Trương Phi, Lã Bố(1), lại bị chính thuộc hạ giết hại, đó là lẽ tất nhiên thôi.
 
+---
+
+<!-- chunk 82 - 196 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Nội dung
 Nay ở các thành, từ Đô ti(2) trở xuống, đều cấm giản bọn các ông đã lừa dối họ, ai cũng buông lời oán thán. Hoặc đã có người hiến kế hạ thành, lại có kẻ trèo luỹ trốn ra ngoài, chế tạo chiến cụ, sửa đóng xe thang. Ngay bọn người đang bị khốn ấy sẽ giết lẫn nhau, hà tất phải đợi đến quân sĩ của ta nữa.
 
 Nay ta suy tính hộ các ông thì có sáu điều phải thua.
@@ -1011,6 +1194,10 @@ Nước lũ mùa hạ chảy tràn, cầu sàn, rào luỹ sụp lở, cửi có
 
 Nước ông quân mạnh, ngựa khoẻ, nay đều đóng cả ở biên giới phía bắc để phòng bị quân Nguyên, không rồi mà nhìn đến phương nam được. Đó là điều phải thua thứ ba!
 
+---
+
+<!-- chunk 83 - 98 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Nội dung
 Luôn luôn đóng binh dao, liên tiếp bày đánh dẹp, dân sống không yên, nhao nhao thất vọng. Đó là điều phải thua thứ tư!
 
 Gian thần chuyên chính(3), bao chúa giữ ngôi, người cốt nhục hại nhau, chốn cung đình sinh biến(4). Đó là điều phải thua thứ năm!
@@ -1019,10 +1206,14 @@ Nay ta dấy nghĩa binh, trên dưới đồng lòng, anh hùng hết sức, qu
 
 ---
 
-<!-- part 33 -->
+<!-- chunk 84 - 141 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Nội dung
 3. Nay giữ cái thành cỏn con để chờ sáu điều tất bại, ta lấy làm tiếc cho các ông lắm! Người xưa có câu: "Nước xa không thể cứu lửa gần". Giả viện binh có đến, cũng chẳng ích gì cho sự bại vong. Trước, Phương Chính, Mã Kỳ chuyên làm điều hà khắc bạo ngược, dân chúng lầm than, thiên hạ oán thán. Đào phản mộ ở làng ấp ta, bắt vợ con của dân ta, người sống bị hại, người chết ngậm oan. Nếu các ông biết xét kĩ sự thế, nhân rõ thời cơ, chém lấy đầu Phương Chính, Mã Kỳ đem nộp trước cửa quân, thì sẽ tránh cho người trong thành khỏi bị giết, hận gắn vết thương trong nước, hoà hảo lại thông, can qua(5) dứt hẳn. Nếu muốn kéo quân về nước, thì
 
+---
+
+<!-- chunk 85 - 147 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Nội dung
 (1) Trương Phi, Lã Bố: hai nhân vật trong tiểu thuyết Tam quốc diễn nghĩa của nhà văn Trung Quốc La Quán Trung. Cả hai người đó hà khắc với người dưới quyền nên bị họ làm phản, giết chết.
 (2) Đô ti: chức quan thời Minh, nắm binh quyền của một tỉnh.
 (3) Chuyên chính: nắm quyền cai trị độc đoán.
@@ -1032,9 +1223,12 @@ Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Nội dung
 29
 == 31 ==
 
-
 cầu đường sửa sang, thuyền ghe sắm đủ, thuỷ bộ hai đường, tùy theo ý muốn, đưa quân ra khỏi cõi, yên ổn muôn phần. Ta sẽ giữ phận bề tôi, không thiếu chức cống.
 
+---
+
+<!-- chunk 86 - 93 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Nội dung
 Nếu như không nghe theo như thế, thì nên chỉnh quân bày trận, giao chiến với ta ở chốn đồng bằng, quyết một trận được thua, đáng xem tài hơn kém, chứ không nên ở chùi trong xó hang cùng, bắt chước cái lối dân bà mà mang cái nhục khăn yếm như thế!(1)
 
 (NGUYỄN TRÃI, theo bản dịch trong Nguyễn Trãi toàn tập tân biên, tập một,
@@ -1043,7 +1237,7 @@ NXB Khoa học xã hội, Hà Nội, 1995)
 
 ---
 
-<!-- part 34 -->
+<!-- chunk 87 - 179 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Câu hỏi
 1. Sắp xếp lại các câu sau cho đúng với trình tự: luận điểm – lí lẽ – dẫn chứng mà Nguyễn Trãi đã trình bày trong bức thư.
 
@@ -1057,6 +1251,10 @@ c) Kẻ ra người đứng binh giới là ở chỗ biết rõ thời thế m�
 
 [Bảng với hai cột A và B]
 
+---
+
+<!-- chunk 88 - 133 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Câu hỏi
 A
 a) Điều phải thua thứ nhất
 b) Điều phải thua thứ hai
@@ -1073,11 +1271,14 @@ B
 5) ... anh hùng hết sức, quân lính càng luyện, khi giới càng tinh... Còn quân sĩ trong thành thì đều mỏi mệt...
 6) ... nay đều đóng cả ở biên giới phía bắc... không rồi mà nhìn đến phương nam được.
 
+---
+
+<!-- chunk 89 - 188 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Câu hỏi
 (1) Ở đây, Nguyễn Trãi có ý nhắc đến câu chuyện trong Tam quốc diễn nghĩa (La Quán Trung), hồi 103: Khổng Minh đóng quân ở gò Ngũ Thượng, dụ mặt quân Ngụy không ra khiêu chiến, bèn cho người mang thư và tặng cô dâm khăn, yếm và y phục của đàn bà đến cho Tư Mã Ý. "Cái nhục khăn yếm" chỉ việc kẻ nam nhi cư xử nhút nhát, yếu đuối như phụ nữ.
 
 30
 == 32 ==
-
 
 3. Nhận định nào sau đây không đúng về thái độ của Nguyễn Trãi qua cách xưng hô với quân Minh?
 
@@ -1087,6 +1288,10 @@ B. Nguyễn Trãi có lúc tỏ ra tôn trọng kẻ thù nhưng rất kiên quy
 
 C. Ông đã phân loại kẻ thù để có cách xưng hô tỏ thái độ rõ ràng với từng loại người. Ngay với Tổng binh Vương Thông, khi cần thiết Nguyễn Trãi vẫn có cách xưng hô cứng rắn mang tính cảnh cáo.
 
+---
+
+<!-- chunk 90 - 200 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Câu hỏi
 D. Mục đích của bức thư là nhằm mở đường cho kẻ thù rút quân về nước, chấm dứt chiến tranh, đem lại hoà bình, độc lập cho dân tộc nên sự nhún nhường trong cách xưng hô là hợp lí.
 
 4. Trong Thư dụ Vương Thông lần nữa, có đoạn viết: "Trước, Phương Chính, Mã Kỳ chuyên làm điều hà khắc, bạo ngược, dân chúng lầm than, thiên hạ oán thán. Đào phần mộ ở làng ấp ta, bắt vợ con của dân ta, người sống bị hại, người chết ngậm oan. Nếu các ông biết xét kĩ sự thế, nhân rõ thời cơ, chém lấy đầu Phương Chính, Mã Kỳ đem nộp trước cửa quân, thì sẽ tránh cho người trong thành khỏi bị giết, hẳn gân vết thương trong nước, hoà hảo lại thông, can qua dứt hẳn.". Câu nào sau đây nêu đúng mục đích của đoạn thư trên?
@@ -1095,6 +1300,10 @@ A. Việc đòi chém Phương Chính, Mã Kỳ là điều kiện để hai bê
 
 B. Tác giả kể tội Phương Chính, Mã Kỳ trong bức thư nhằm chia rẽ nội bộ kẻ địch, khiến chúng nghi kị, sát phạt lẫn nhau.
 
+---
+
+<!-- chunk 91 - 184 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Câu hỏi
 C. Đoạn văn lên án tội ác quân Minh, chỉ đích danh thủ phạm để người dân và binh lính người Việt trong thành cảm phẫn nổi dậy, kết hợp trong ngoài cùng đánh thành.
 
 D. Những câu văn đó thể hiện ý chí và quyết tâm của quân dân Đại Việt trong việc tiêu diệt quân Minh nếu chúng không chịu giảng hoà và rút quân về nước.
@@ -1104,16 +1313,19 @@ D. Những câu văn đó thể hiện ý chí và quyết tâm của quân dân
 6. Phân tích nghệ thuật lập luận được Nguyễn Trãi thể hiện trong bức thư (từ quan niệm thời thế, chỉ rõ âm mưu và tình thế của đối phương, vạch ra các nguyên nhân dẫn đến thất bại của chúng, tới việc đưa ra giải pháp kết thúc chiến tranh) để làm rõ
 == 33 ==
 
-
 chiến lược "mưu phạt, tâm công" của nghĩa quân Lam Sơn trong cuộc kháng chiến chống quân Minh xâm lược.
 
+---
+
+<!-- chunk 92 - 57 từ -->
+Bài 5 THƠ VĂN NGUYỄN TRÃI, TỰ ĐÁNH GIÁ :, Câu hỏi
 7. Phân tích một số từ ngữ, hình ảnh trong bức thư để làm nổi bật tư thế, niềm tin, ý chí và tinh thần yêu chuộng hoà bình của cha ông ta trước kẻ thù xâm lược.
 
 8. Bức thư giúp em hiểu biết thêm điều gì về tư tưởng và tài năng của Nguyễn Trãi?
 
 ---
 
-<!-- part 35 -->
+<!-- chunk 93 - 162 từ -->
 Bài 5 THƠ VĂN NGUYỄN TRÃI, HƯỚNG DẪN TỰ HỌC :
 1. Truy cập Internet để tìm hiểu các thông tin về Nguyễn Trãi và các tác phẩm đã học:
 - Thu thập tư liệu gồm: bài viết, hình ảnh, video liên quan.
