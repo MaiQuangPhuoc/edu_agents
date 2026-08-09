@@ -1,15 +1,31 @@
-<!-- chunk 1 - (1) 142 từ (0) 117 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục tiêu
+<!-- chunk 1 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục tiêu
+loai: noi_dung
+---
 Học xong bài này, em sẽ:
-✓ Trình bày được khái niệm lịch sử và phân biệt được hiện thực lịch sử, nhận thức lịch sử. Giải thích được khái niệm Sử học.
-✓ Trình bày được đối tượng nghiên cứu của Sử học. Nêu được chức năng, nhiệm vụ của Sử học và ý nghĩa của một số nguyên tắc cơ bản của Sử học.
-✓ Phân biệt được các nguồn sử liệu: lời nói – truyền khẩu, thành văn, hiện vật,...
-✓ Nêu được một số phương pháp cơ bản của Sử học và bước đầu vận dụng được một số phương pháp cơ bản của Sử học thông qua các bài tập cụ thể.
+- Trình bày được khái niệm lịch sử và phân biệt được hiện thực lịch sử, nhận thức lịch sử. Giải thích được khái niệm Sử học.
+- Trình bày được đối tượng nghiên cứu của Sử học. Nêu được chức năng, nhiệm vụ của Sử học và ý nghĩa của một số nguyên tắc cơ bản của Sử học.
+- Phân biệt được các nguồn sử liệu: lời nói – truyền khẩu, thành văn, hiện vật,...
+- Nêu được một số phương pháp cơ bản của Sử học và bước đầu vận dụng được một số phương pháp cơ bản của Sử học thông qua các bài tập cụ thể.
 
 ---
 
-<!-- chunk 2 - (1) 181 từ (0) 155 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mô tả bài
+<!-- chunk 2 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mô tả bài
+loai: noi_dung
+---
 Đầu tháng 8-1945, Mỹ ném hai quả bom nguyên tử xuống thành phố Hi-rô-si-ma và Na-ga-sa-ki của Nhật Bản. Đến nay, sự kiện lịch sử này còn nhiều ý kiến đánh giá trái chiều:
 
 [Hình ảnh mô tả vụ nổ bom nguyên tử, với đám mây hình nấm đặc trưng]
@@ -24,8 +40,16 @@ Vậy lịch sử là gì? Hiện thực lịch sử và nhận thức lịch s�
 
 ---
 
-<!-- chunk 3 - (1) 185 từ (0) 149 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 1 Lịch sử, hiện thực lịch sử và nhận thức lịch sử
+<!-- chunk 3 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 1 Lịch sử, hiện thực lịch sử và nhận thức lịch sử
+loai: noi_dung
+---
 1. Lịch sử, hiện thực lịch sử và nhận thức lịch sử
 
 Khái niệm lịch sử có thể hiểu theo ba nghĩa chính:
@@ -33,7 +57,6 @@ Khái niệm lịch sử có thể hiểu theo ba nghĩa chính:
 Thứ nhất, lịch sử là những gì đã diễn ra trong quá khứ của xã hội loài người.
 
 Thứ hai, lịch sử là những câu chuyện về quá khứ hoặc tác phẩm ghi chép về quá khứ.
-== 6 ==
 
 Thứ ba, lịch sử là một khoa học (còn gọi là Sử học) nghiên cứu về quá khứ của con người. Khoa học lịch sử nghiên cứu các sự kiện, hiện tượng đã diễn ra trong xã hội loài người và phát hiện ra quy luật phát sinh, phát triển của nó.
 
@@ -43,8 +66,16 @@ Bảng 1.1. Hiện thực lịch sử và nhận thức lịch sử
 
 ---
 
-<!-- chunk 4 - (1) 220 từ (0) 184 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 1 Lịch sử, hiện thực lịch sử và nhận thức lịch sử
+<!-- chunk 4 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 1 Lịch sử, hiện thực lịch sử và nhận thức lịch sử
+loai: noi_dung
+---
 Hiện thực lịch sử | Nhận thức lịch sử
 --- | ---
 Là toàn bộ những gì đã diễn ra trong quá khứ, tồn tại một cách khách quan, không phụ thuộc vào ý muốn chủ quan của con người. | Là toàn bộ những tri thức, hiểu biết, những ý niệm và hình dung của con người về quá khứ (nhận thức về sự kiện, hiện tượng đã diễn ra).
@@ -52,8 +83,16 @@ Ngày 2-9-1945, tại Quảng trường Ba Đình, Hà Nội, trước hàng v�
 
 ---
 
-<!-- chunk 5 - (1) 164 từ (0) 128 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 1 Lịch sử, hiện thực lịch sử và nhận thức lịch sử
+<!-- chunk 5 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 1 Lịch sử, hiện thực lịch sử và nhận thức lịch sử
+loai: noi_dung
+---
 [Hình ảnh mô tả một buổi lễ ngoài trời với một bục phát biểu được trang trí và nhiều người đứng xung quanh]
 
 Hình 1.2. Chủ tịch Hồ Chí Minh đọc bản Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội (ngày 2-9-1945)
@@ -64,18 +103,33 @@ Nhận thức lịch sử có sự khác nhau là do mục đích nghiên cứu,
 
 ---
 
-<!-- chunk 6 - (1) 112 từ (0) 74 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 1 Lịch sử, hiện thực lịch sử và nhận thức lịch sử, Câu hỏi
+<!-- chunk 6 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 1 Lịch sử, hiện thực lịch sử và nhận thức lịch sử
+loai: cau_hoi
+---
 Đọc thông tin và quan sát các hình 1.1, 1.2, hãy:
 - Trình bày khái niệm lịch sử. Phân biệt hiện thực lịch sử và nhận thức lịch sử.
 - Phân biệt hiện thực lịch sử và nhận thức lịch sử qua sự kiện Chủ tịch Hồ Chí Minh đọc bản "Tuyên ngôn Độc lập" tại Quảng trường Ba Đình, Hà Nội ngày 2-9-1945.
 - Giải thích khái niệm Sử học.
-== 7 ==
 
 ---
 
-<!-- chunk 7 - (1) 211 từ (0) 172 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+<!-- chunk 7 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+loai: noi_dung
+---
 2. Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
 2.1. Đối tượng nghiên cứu của Sử học
 
@@ -85,8 +139,16 @@ Nhận thức về đối tượng nghiên cứu của Sử học xuất hiện 
 
 ---
 
-<!-- chunk 8 - (1) 152 từ (0) 113 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+<!-- chunk 8 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+loai: noi_dung
+---
 Hình 1.3. Trang bìa sách về lịch sử thế giới
 [Hình ảnh bìa sách "WORLD HISTORY" của tác giả Natasha Hanes]
 
@@ -99,20 +161,37 @@ Thời phong kiến: "Vua sai coi việc chép sử, cho nên dầu thế nào s
 
 ---
 
-<!-- chunk 9 - (1) 68 từ (0) 27 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học, Câu hỏi
+<!-- chunk 9 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+loai: cau_hoi
+---
 Đọc thông tin, tư liệu và quan sát các hình 1.3, 1.4, hãy trình bày đối tượng nghiên cứu của Sử học. Cho ví dụ cụ thể.
 
 ---
 
-<!-- chunk 10 - (1) 223 từ (0) 175 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học, 2.2 Chức năng và nhiệm vụ của Sử học
+<!-- chunk 10 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+noi_dung: Chức năng và nhiệm vụ của Sử học
+id_noi_dung: 2.2
+loai: noi_dung
+---
 2.2. Chức năng và nhiệm vụ của Sử học
 
 Chức năng của Sử học là khôi phục hiện thực lịch sử một cách chính xác, khách quan (chức năng khoa học) và phục vụ cuộc sống của con người hiện tại thông qua những bài học kinh nghiệm được đúc kết từ quá khứ (chức năng xã hội).
 
 Nhiệm vụ của Sử học là cung cấp những tri thức khoa học về lịch sử và giáo dục, nêu gương.
-== 8 ==
 
 Hình ảnh mô tả sơ đồ chức năng và nhiệm vụ của Sử học, bao gồm:
 
@@ -132,8 +211,18 @@ hiểu đúng quá khứ) và nhân văn)
 
 ---
 
-<!-- chunk 11 - (1) 168 từ (0) 120 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học, 2.2 Chức năng và nhiệm vụ của Sử học
+<!-- chunk 11 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+noi_dung: Chức năng và nhiệm vụ của Sử học
+id_noi_dung: 2.2
+loai: noi_dung
+---
 Sơ đồ 1.1. Chức năng và nhiệm vụ của Sử học
 
 "Vì sao phải viết quốc sử? Vì sử chỉ yêu ghi chép công việc. Có chính trị của một đời thì phải có sử của một đời. Mà sự ghi chép của sử giữ nghĩ luận rất nghiêm, tỏ điểm việc trị trị thì sáng tỏ ngang với Mặt Trời, Mặt Trăng, rõn rẽ kể loan tác thì ráo riết như sương thu lạnh buốt, người thiện biết thì có thể bắt chước, người ác biết thì có thể tự răn, quan hệ với chính trị không phải là ít. Cho nên mới làm ra quốc sử".
@@ -142,20 +231,39 @@ Sơ đồ 1.1. Chức năng và nhiệm vụ của Sử học
 
 ---
 
-<!-- chunk 12 - (1) 98 từ (0) 48 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học, 2.2 Chức năng và nhiệm vụ của Sử học, Câu hỏi
+<!-- chunk 12 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+noi_dung: Chức năng và nhiệm vụ của Sử học
+id_noi_dung: 2.2
+loai: cau_hoi
+---
 Đọc thông tin, tư liệu và quan sát sơ đồ 1.1, hãy:
 - Nêu chức năng và nhiệm vụ của Sử học. Cho ví dụ cụ thể.
 - Cho biết ý nghĩa đoạn trích trong bài tựa sách "Đại Việt sử ký tục biên" của Phạm Công Trứ.
 
 ---
 
-<!-- chunk 13 - (1) 221 từ (0) 174 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học, 2.3 Nguyên tắc cơ bản của Sử học
+<!-- chunk 13 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+noi_dung: Nguyên tắc cơ bản của Sử học
+id_noi_dung: 2.3
+loai: noi_dung
+---
 2.3. Nguyên tắc cơ bản của Sử học
 
 Việc nghiên cứu và trình bày lịch sử luôn gắn liền với những nguyên tắc cơ bản. Trong đó, nguyên tắc khách quan, trung thực và tiến bộ phải đặt lên hàng đầu. Ngoài ra, việc nghiên cứu và trình bày lịch sử cũng cần bảo đảm tính toàn diện và cụ thể.
-== 9 ==
 
 Bảng 1.2. Các nguyên tắc cơ bản của Sử học và ý nghĩa của các nguyên tắc cơ bản
 
@@ -166,8 +274,18 @@ Các nguyên tắc cơ bản của Sử học:
 
 ---
 
-<!-- chunk 14 - (1) 194 từ (0) 147 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học, 2.3 Nguyên tắc cơ bản của Sử học
+<!-- chunk 14 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+noi_dung: Nguyên tắc cơ bản của Sử học
+id_noi_dung: 2.3
+loai: noi_dung
+---
 Ý nghĩa của các nguyên tắc cơ bản:
 - Định hướng việc nghiên cứu cho nhà sử học: bám sát mục tiêu, nhiệm vụ, phương pháp nghiên cứu,...
 - Giúp nhà sử học hiểu rõ sứ mệnh, trách nhiệm, đạo đức trong quá trình nghiên cứu, trình bày lịch sử.
@@ -179,8 +297,18 @@ Thời Chiến Quốc, Tề Trang Công bị Thôi Trữ là quan đại phu nư
 
 ---
 
-<!-- chunk 15 - (1) 182 từ (0) 135 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học, 2.3 Nguyên tắc cơ bản của Sử học
+<!-- chunk 15 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+noi_dung: Nguyên tắc cơ bản của Sử học
+id_noi_dung: 2.3
+loai: noi_dung
+---
 Thái sư Bá có ba người em trai là Trọng, Thúc, Quý. Trọng và Thúc được gọi đến và cũng chép vào sách sử câu chữ đúng như người anh đã viết. Thôi Trữ lại giết Trọng và Thúc. Còn lại Quý cũng cầm lấy thẻ sách viết đúng như câu của ba người anh.
 
 Thôi Trữ cầm sách xem, hỏi Quý: "Ba người anh của nhà ngươi đều vì câu này mà bị giết chết, lẽ nào ngươi không biết quý tiếc mạng sống của mình sao?".
@@ -191,25 +319,52 @@ Thôi Trữ nghe xong đánh trả lại thẻ sách cho Quý và không giết 
 
 ---
 
-<!-- chunk 16 - (1) 147 từ (0) 100 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học, 2.3 Nguyên tắc cơ bản của Sử học
+<!-- chunk 16 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+noi_dung: Nguyên tắc cơ bản của Sử học
+id_noi_dung: 2.3
+loai: noi_dung
+---
 Quý cầm thẻ sách ra ngoài, khi sắp đến Sử quán thì gặp Nam sử Thị. Quý hỏi ông tại sao phải đến đây, Nam sử Thị đáp: "Tôi nghe nói rằng anh em nhà ông vì kiên quyết viết đúng sự thật mà đều bị giết chết cả, lo rằng không có người viết lại việc này đúng sự thật nữa, vì vậy tôi vội cầm thẻ sách đến đây". Quý liền đưa thẻ sách đang cầm trong tay cho Nam sử Thị xem, lúc này Nam sử Thị mới yên tâm ra về.
 
 (Sử ký, Tư Mã Thiên)
 
 ---
 
-<!-- chunk 17 - (1) 99 từ (0) 50 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học, 2.3 Nguyên tắc cơ bản của Sử học, Câu hỏi
+<!-- chunk 17 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+noi_dung: Nguyên tắc cơ bản của Sử học
+id_noi_dung: 2.3
+loai: cau_hoi
+---
 Đọc thông tin, tư liệu và quan sát bảng 1.2, hãy:
 - Nêu ý nghĩa các nguyên tắc cơ bản của Sử học.
 - Cho biết câu chuyện "Thôi Trữ giết vua" phản ánh nguyên tắc nào của Sử học. Ý nghĩa của câu chuyện là gì?
-== 10 ==
 
 ---
 
-<!-- chunk 18 - (1) 152 từ (0) 113 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+<!-- chunk 18 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+loai: noi_dung
+---
 3. Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
 3.1. Các nguồn sử liệu
 
@@ -221,8 +376,16 @@ Bảng 1.3. Nguồn sử liệu sơ cấp và nguồn sử liệu thứ cấp
 
 ---
 
-<!-- chunk 19 - (1) 219 từ (0) 180 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+<!-- chunk 19 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+loai: noi_dung
+---
 Nguồn sử liệu sơ cấp | Nguồn sử liệu thứ cấp
 --- | ---
 Là sử liệu được tạo ra đầu tiên, gần nhất hoặc gắn liền với thời gian xuất hiện của các sự kiện, hiện tượng được nghiên cứu như hồ sơ, văn kiện, nhật kí, ảnh chụp, đoạn băng hình, hiện vật gốc,... | Là sử liệu được tạo ra sau thời điểm xuất hiện của các sự vật, hiện tượng được nghiên cứu, thường là những công trình, tác phẩm, bài báo nghiên cứu về lịch sử.
@@ -234,12 +397,19 @@ Hình 1.5. Một trang Châu bản triều Nguyễn về thực thi chủ quyề
 
 ---
 
-<!-- chunk 20 - (1) 194 từ (0) 155 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+<!-- chunk 20 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+loai: noi_dung
+---
 Hình 1.6. Trang bìa cuốn sách Lịch sử Việt Nam từ nguồn gốc đến thế kỉ XIX
 
 [Hình ảnh mô tả bìa sách "Lịch sử Việt Nam" của tác giả Đào Duy Anh, có hình vẽ minh họa các nhân vật lịch sử]
-== 11 ==
 
 Căn cứ vào dạng thức tồn tại, sử liệu được chia làm bốn loại hình cơ bản: sử liệu lời nói – truyền khẩu, sử liệu hiện vật, sử liệu hình ảnh, sử liệu thành văn.
 
@@ -249,8 +419,16 @@ Sử liệu lời nói – truyền khẩu là nguồn sử liệu thông qua l�
 
 ---
 
-<!-- chunk 21 - (1) 206 từ (0) 167 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+<!-- chunk 21 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+loai: noi_dung
+---
 Vua nói: Các giống ở trên núi khác với các loài ở dưới nước. Các loài ở dưới nước chỉ ưa những gì giống với mình và ghét những gì khác mình, vì vậy ta mới bị gây hại,... Vua bèn ra lệnh, ai cũng phải lấy màu xanh hình thủy quái vào người. Từ đó, dân không bị thương lũng gây thương tích nữa. Tục vẽ mình của dân Bách Việt bắt đầu có kể từ đấy".
 
 (Lĩnh Nam chích quái, phần Hồng Bàng thị truyện)
@@ -263,14 +441,21 @@ Hình 1.7. Thạp đồng Đào Thịnh (Văn hóa Đông Sơn), có niên đạ
 
 ---
 
-<!-- chunk 22 - (1) 216 từ (0) 177 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+<!-- chunk 22 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+loai: noi_dung
+---
 Sử liệu hình ảnh là nguồn sử liệu phản ánh về quá khứ thông qua tư liệu hình ảnh, gồm tranh, ảnh, bảng hình,...
 
 Hình 1.8. Ga-li-lê bị đưa ra xét xử trước tòa án Giáo hội năm 1633 (tranh vẽ)
 
 [Hình ảnh một bức tranh vẽ cảnh xét xử trong một phòng lớn với nhiều nhân vật mặc trang phục thời Trung cổ. Trung tâm bức tranh là một người đàn ông đứng trước một bàn với các vị quan tòa ngồi phía sau.]
-== 12 ==
 
 Sử liệu thành văn là nguồn sử liệu bằng chữ viết như sách, báo, bản ghi chép, nhật kí, hiệp ước, hiệp định,...
 
@@ -280,14 +465,32 @@ Hình 1.9. Điện mật của Đại tướng, Tổng Tư lệnh Võ Nguyên Gi
 
 ---
 
-<!-- chunk 23 - (1) 75 từ (0) 34 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học, Câu hỏi
+<!-- chunk 23 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+loai: cau_hoi
+---
 Đọc thông tin, tư liệu và quan sát bảng 1.3, các hình từ 1.5 đến 1.9, hãy phân biệt các nguồn sử liệu và cho biết giá trị của mỗi loại hình sử liệu.
 
 ---
 
-<!-- chunk 24 - (1) 186 từ (0) 137 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học, 3.2 Một số phương pháp cơ bản của Sử học
+<!-- chunk 24 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+noi_dung: Một số phương pháp cơ bản của Sử học
+id_noi_dung: 3.2
+loai: noi_dung
+---
 3.2. Một số phương pháp cơ bản của Sử học
 
 Khi tìm hiểu, nghiên cứu hoặc trình bày lịch sử, nhà sử học có thể sử dụng nhiều phương pháp khác nhau, như phương pháp lịch sử và lô-gic, phương pháp lịch đại và đồng đại, phương pháp tiếp cận liên ngành,...
@@ -300,8 +503,18 @@ Phương pháp nghiên cứu:
 
 ---
 
-<!-- chunk 25 - (1) 182 từ (0) 133 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học, 3.2 Một số phương pháp cơ bản của Sử học
+<!-- chunk 25 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+noi_dung: Một số phương pháp cơ bản của Sử học
+id_noi_dung: 3.2
+loai: noi_dung
+---
 Phương pháp trình bày:
 - Phương pháp lịch đại: Trình bày lịch sử theo thời gian trước - sau (mỗi liên hệ đoạn), giúp người đọc thấy được tiến trình của lịch sử.
 - Phương pháp đồng đại: Trình bày lịch sử theo không gian ở cùng giai đoạn (mỗi liên hệ ngang), giúp người đọc thấy được những sự kiện, hiện tượng diễn ra trong một thời điểm, giai đoạn cụ thể.
@@ -310,12 +523,21 @@ Phương pháp tiếp cận:
 - Phương pháp tiếp cận liên ngành: Sử học khai thác thông tin của nhiều ngành khoa học (Khảo cổ học, Dân tộc học, Văn hóa học,...) để làm sáng tỏ các sự kiện, hiện tượng lịch sử có liên quan.
 
 Sơ đồ 1.2. Một số phương pháp cơ bản của Sử học
-== 13 ==
 
 ---
 
-<!-- chunk 26 - (1) 199 từ (0) 150 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học, 3.2 Một số phương pháp cơ bản của Sử học
+<!-- chunk 26 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+noi_dung: Một số phương pháp cơ bản của Sử học
+id_noi_dung: 3.2
+loai: noi_dung
+---
 Tùy thuộc vào mục đích, nhiệm vụ, đối tượng nghiên cứu hoặc trình bày thông tin lịch sử, nhà sử học sẽ lựa chọn các phương pháp cụ thể. Tuy nhiên, phương pháp mô tả lịch sử (phương pháp lịch sử) và phương pháp tìm ra đặc điểm khái quát (phương pháp lô-gic) vẫn là các phương pháp chủ đạo.
 
 [Hình ảnh mô tả một dòng thời gian với các sự kiện lịch sử quan trọng của Việt Nam trong thế kỷ XX:
@@ -330,8 +552,18 @@ Sơ đồ 1.3. Các sự kiện tiêu biểu của lịch sử Việt Nam trong 
 
 ---
 
-<!-- chunk 27 - (1) 199 từ (0) 148 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học, 3.2 Một số phương pháp cơ bản của Sử học, Câu hỏi
+<!-- chunk 27 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_bai: 1
+muc: Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+noi_dung: Một số phương pháp cơ bản của Sử học
+id_noi_dung: 3.2
+loai: cau_hoi
+---
 - Đọc thông tin và quan sát các sơ đồ 1.2, 1.3, hãy nêu những nét chính về một số phương pháp cơ bản của Sử học.
 - Sơ đồ 1.3 phản ánh phương pháp nghiên cứu nào của Sử học?
 
@@ -339,28 +571,39 @@ Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN TH
 
 2. Hãy cho biết ý nghĩa câu nói của Giôốc-giơ Ô-oen (người Anh): "Cách hữu hiệu nhất để hủy diệt một dân tộc là phủ nhận và xóa bỏ sự hiểu biết của họ về lịch sử của chính họ".
 
----
-
-<!-- chunk 28 - (1) 92 từ (0) 41 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ, Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học, 3.2 Một số phương pháp cơ bản của Sử học, Câu hỏi
 3. Tìm kiếm thông tin và giới thiệu những nguồn sử liệu có thể khôi phục sự kiện Chủ tịch Hồ Chí Minh đọc bản Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội ngày 2-9-1945.
-== 14 ==
 
 ---
 
-<!-- chunk 29 - (1) 146 từ (0) 123 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG, Mục tiêu
+<!-- chunk 29 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_bai: 2
+muc: Mục tiêu
+loai: noi_dung
+---
 Học xong bài này, em sẽ:
-✓ Nêu được vai trò và ý nghĩa của tri thức lịch sử đối với đời sống của cá nhân và xã hội hiện đại.
-✓ Giải thích được sự cần thiết phải học tập lịch sử suốt đời.
-✓ Biết sưu tầm, thu thập, xử lí thông tin và sử liệu để học tập, khám phá lịch sử.
-✓ Vận dụng được kiến thức, bài học lịch sử đã học để giải thích những vấn đề thời sự trong nước và thế giới, những vấn đề trong thực tiễn cuộc sống.
-✓ Quan tâm, yêu thích và tham gia các hoạt động tìm hiểu lịch sử, văn hóa của dân tộc Việt Nam và thế giới.
+- Nêu được vai trò và ý nghĩa của tri thức lịch sử đối với đời sống của cá nhân và xã hội hiện đại.
+- Giải thích được sự cần thiết phải học tập lịch sử suốt đời.
+- Biết sưu tầm, thu thập, xử lí thông tin và sử liệu để học tập, khám phá lịch sử.
+- Vận dụng được kiến thức, bài học lịch sử đã học để giải thích những vấn đề thời sự trong nước và thế giới, những vấn đề trong thực tiễn cuộc sống.
+- Quan tâm, yêu thích và tham gia các hoạt động tìm hiểu lịch sử, văn hóa của dân tộc Việt Nam và thế giới.
 
 ---
 
-<!-- chunk 30 - (1) 164 từ (0) 140 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG, Mô tả bài
+<!-- chunk 30 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_bai: 2
+muc: Mô tả bài
+loai: noi_dung
+---
 Đền Hùng và ngày Giỗ Tổ Hùng Vương (10-3 âm lịch) là biểu tượng của truyền thống yêu nước và đoàn kết hướng về cội nguồn của dân tộc Việt Nam. Tín ngưỡng thờ cúng Hùng Vương đã trở thành nét đặc sắc trong văn hóa truyền thống của người Việt Nam, đồng thời cũng là biểu hiện của tri thức lịch sử.
 
 Vậy tri thức lịch sử có vai trò, ý nghĩa như thế nào đối với cuộc sống của mỗi cá nhân và xã hội? Vì sao chúng ta cần phải học tập và khám phá lịch sử?
@@ -371,8 +614,16 @@ Hình 2.1. Lễ hội Đền Hùng (Phú Thọ)
 
 ---
 
-<!-- chunk 31 - (1) 178 từ (0) 145 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG, Mục 1 Vai trò và ý nghĩa của tri thức lịch sử
+<!-- chunk 31 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_bai: 2
+muc: Mục 1 Vai trò và ý nghĩa của tri thức lịch sử
+loai: noi_dung
+---
 1. Vai trò và ý nghĩa của tri thức lịch sử
 
 Tri thức lịch sử là những hiểu biết của con người về các lĩnh vực liên quan đến lịch sử, thông qua quá trình học tập, khám phá, nghiên cứu và trải nghiệm. Tri thức lịch sử có vai trò quan trọng đối với mỗi cá nhân và toàn xã hội.
@@ -384,12 +635,19 @@ Sơ đồ 2.1. Vai trò của tri thức lịch sử
 1. Trang bị những hiểu biết về quá khứ cho cá nhân và xã hội.
 2. Góp phần bảo tồn và phát huy các giá trị lịch sử, văn hóa của các cộng đồng.
 3. Là cơ sở để các cộng đồng cùng chung sống và phát triển bền vững.
-== 15 ==
 
 ---
 
-<!-- chunk 32 - (1) 180 từ (0) 147 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG, Mục 1 Vai trò và ý nghĩa của tri thức lịch sử
+<!-- chunk 32 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_bai: 2
+muc: Mục 1 Vai trò và ý nghĩa của tri thức lịch sử
+loai: noi_dung
+---
 Tri thức lịch sử cũng có ý nghĩa quan trọng, giúp con người nhận thức sâu sắc về cội nguồn, về bản sắc của cá nhân và cộng đồng trong mọi thời đại. Hiểu biết về cội nguồn, bản sắc là cơ sở để con người hiểu về chính mình và thế giới. Đây là nền tảng để tồn tại, gìn giữ và phát huy các giá trị lịch sử, văn hoá cộng đồng và chung sống trong một thế giới đa dạng.
 
 "... Một dân tộc mà không có kiến thức về lịch sử, nguồn gốc và văn hoá về dân tộc mình thì cũng giống như cây không có gốc".
@@ -399,8 +657,16 @@ Nhờ tri thức lịch sử, con người có thể đúc kết và vận dụn
 
 ---
 
-<!-- chunk 33 - (1) 182 từ (0) 149 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG, Mục 1 Vai trò và ý nghĩa của tri thức lịch sử
+<!-- chunk 33 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_bai: 2
+muc: Mục 1 Vai trò và ý nghĩa của tri thức lịch sử
+loai: noi_dung
+---
 "Sử ta dạy cho ta bài học này: lúc nào dân ta đoàn kết muôn người như một thì nước ta độc lập, tự do. Trái lại, lúc nào dân ta không đoàn kết thì bị nước ngoài xâm lấn".
 (Nên học sử ta,
 Hồ Chí Minh)
@@ -414,18 +680,33 @@ Trên cơ sở những hiểu biết đúng và đầy đủ về quá trình l�
 
 ---
 
-<!-- chunk 34 - (1) 100 từ (0) 65 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG, Mục 1 Vai trò và ý nghĩa của tri thức lịch sử, Câu hỏi
+<!-- chunk 34 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_bai: 2
+muc: Mục 1 Vai trò và ý nghĩa của tri thức lịch sử
+loai: cau_hoi
+---
 - Đọc thông tin, tư liệu và quan sát sơ đồ 2.1, hình 2.2, hãy cho biết vai trò và ý nghĩa của tri thức lịch sử đối với cuộc sống của con người.
 - Trong bối cảnh toàn cầu hoá hiện nay, theo em cần phải làm gì để giữ gìn và phát huy bản sắc văn hoá dân tộc?
 
 14
-== 16 ==
 
 ---
 
-<!-- chunk 35 - (1) 181 từ (0) 149 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG, Mục 2 Học tập và khám phá lịch sử suốt đời
+<!-- chunk 35 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_bai: 2
+muc: Mục 2 Học tập và khám phá lịch sử suốt đời
+loai: noi_dung
+---
 2. Học tập và khám phá lịch sử suốt đời
 2.1. Sự cần thiết phải học tập lịch sử suốt đời
 
@@ -439,8 +720,16 @@ Tri thức về lịch sử biến đổi và phát triển không ngừng, gắ
 
 ---
 
-<!-- chunk 36 - (1) 192 từ (0) 160 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG, Mục 2 Học tập và khám phá lịch sử suốt đời
+<!-- chunk 36 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_bai: 2
+muc: Mục 2 Học tập và khám phá lịch sử suốt đời
+loai: noi_dung
+---
 3
 Cùng với tìm hiểu tri thức, việc học tập lịch sử suốt đời sẽ giúp mỗi người mở rộng và cập nhật vốn kiến thức; hoàn thiện và phát triển kĩ năng, xây dựng sự tự tin, thích ứng với những thay đổi nhanh chóng của xã hội; tạo ra những cơ hội mới trong cuộc sống và nghề nghiệp.
 
@@ -452,20 +741,37 @@ Cuộc thi "Tìm hiểu về ASEAN" nằm trong khuôn khổ dự án của Ủy
 
 ---
 
-<!-- chunk 37 - (1) 61 từ (0) 27 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG, Mục 2 Học tập và khám phá lịch sử suốt đời, Câu hỏi
+<!-- chunk 37 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_bai: 2
+muc: Mục 2 Học tập và khám phá lịch sử suốt đời
+loai: cau_hoi
+---
 Đọc thông tin và quan sát bảng 2.1, hình 2.3, hãy giải thích vì sao phải học tập lịch sử suốt đời. Cho ví dụ cụ thể.
 
 ---
 
-<!-- chunk 38 - (1) 228 từ (0) 179 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG, Mục 2 Học tập và khám phá lịch sử suốt đời, 2.2 Thu thập, xử lí thông tin và sử liệu để làm giàu tri thức lịch sử
+<!-- chunk 38 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_bai: 2
+muc: Mục 2 Học tập và khám phá lịch sử suốt đời, xử lí thông tin và sử liệu để làm giàu tri thức lịch sử
+noi_dung: Thu thập
+id_noi_dung: 2.2
+loai: noi_dung
+---
 2.2. Thu thập, xử lí thông tin và sử liệu để làm giàu tri thức lịch sử
 
 Để tìm hiểu quá khứ và làm giàu tri thức lịch sử, cần dựa vào các nguồn sử liệu từ quá khứ. Sử liệu đóng vai trò là cầu nối giữa hiện thực lịch sử và tri thức lịch sử. Thu thập, xử lí thông tin và sử liệu là những khâu quan trọng trong nghiên cứu cũng như học tập, tìm hiểu lịch sử.
 
 15
-== 17 ==
 
 Bảng 2.2. Thu thập, xử lí thông tin và sử liệu
 
@@ -475,8 +781,18 @@ Thu thập sử liệu:
 
 ---
 
-<!-- chunk 39 - (1) 218 từ (0) 169 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG, Mục 2 Học tập và khám phá lịch sử suốt đời, 2.2 Thu thập, xử lí thông tin và sử liệu để làm giàu tri thức lịch sử
+<!-- chunk 39 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_bai: 2
+muc: Mục 2 Học tập và khám phá lịch sử suốt đời, xử lí thông tin và sử liệu để làm giàu tri thức lịch sử
+noi_dung: Thu thập
+id_noi_dung: 2.2
+loai: noi_dung
+---
 Xử lí thông tin và sử liệu:
 - Là quá trình phân loại, đánh giá, thẩm định nguồn sử liệu đã thu thập được.
 - Nhằm xác định tính xác thực, độ tin cậy và giá trị thông tin của các nguồn sử liệu đối với việc học tập, nghiên cứu và tìm hiểu lịch sử.
@@ -491,20 +807,50 @@ Sơ đồ 2.2. Quy trình thu thập, xử lí thông tin và sử liệu
 
 ---
 
-<!-- chunk 40 - (1) 126 từ (0) 77 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG, Mục 2 Học tập và khám phá lịch sử suốt đời, 2.2 Thu thập, xử lí thông tin và sử liệu để làm giàu tri thức lịch sử
+<!-- chunk 40 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_bai: 2
+muc: Mục 2 Học tập và khám phá lịch sử suốt đời, xử lí thông tin và sử liệu để làm giàu tri thức lịch sử
+noi_dung: Thu thập
+id_noi_dung: 2.2
+loai: noi_dung
+---
 Mỗi sự kiện lịch sử thường được phản ánh qua các nguồn sử liệu khác nhau, ở những thời điểm và của các tác giả khác nhau, nên công việc thu thập và xử lí thông tin sử liệu khá phức tạp, phải trải qua nhiều công đoạn. Nếu sự kiện lịch sử xảy ra càng xa thời điểm thu thập sử liệu thì sẽ càng khó khăn cho việc tìm kiếm và khôi phục lịch sử.
 
 ---
 
-<!-- chunk 41 - (1) 84 từ (0) 33 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG, Mục 2 Học tập và khám phá lịch sử suốt đời, 2.2 Thu thập, xử lí thông tin và sử liệu để làm giàu tri thức lịch sử, Câu hỏi
+<!-- chunk 41 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_bai: 2
+muc: Mục 2 Học tập và khám phá lịch sử suốt đời, xử lí thông tin và sử liệu để làm giàu tri thức lịch sử
+noi_dung: Thu thập
+id_noi_dung: 2.2
+loai: cau_hoi
+---
 Đọc thông tin và quan sát bảng 2.2, sơ đồ 2.2, hãy nêu cách thức thu thập và xử lí thông tin sử liệu trong quá trình học tập, khám phá lịch sử.
 
 ---
 
-<!-- chunk 42 - (1) 152 từ (0) 108 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG, Mục 2 Học tập và khám phá lịch sử suốt đời, 2.3 Kết nối kiến thức, bài học lịch sử vào cuộc sống
+<!-- chunk 42 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_bai: 2
+muc: Mục 2 Học tập và khám phá lịch sử suốt đời, bài học lịch sử vào cuộc sống
+noi_dung: Kết nối kiến thức
+id_noi_dung: 2.3
+loai: noi_dung
+---
 2.3. Kết nối kiến thức, bài học lịch sử vào cuộc sống
 
 Sử dụng tri thức lịch sử, thông qua tri thức lịch sử sẽ giúp con người giải thích, hiểu rõ hơn những vấn đề thời sự trong nước và quốc tế, những vấn đề thực tiễn cuộc sống hiện nay.
@@ -513,10 +859,20 @@ Hiện tại luôn khởi nguồn từ quá khứ. Những vấn đề thời s�
 
 ---
 
-<!-- chunk 43 - (1) 204 từ (0) 160 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG, Mục 2 Học tập và khám phá lịch sử suốt đời, 2.3 Kết nối kiến thức, bài học lịch sử vào cuộc sống
+<!-- chunk 43 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_bai: 2
+muc: Mục 2 Học tập và khám phá lịch sử suốt đời, bài học lịch sử vào cuộc sống
+noi_dung: Kết nối kiến thức
+id_noi_dung: 2.3
+loai: noi_dung
+---
 Việc nhận thức đầy đủ và toàn diện về những vấn đề đương đại không thể tách rời tri thức lịch sử liên quan trong quá khứ. Kết nối kiến thức, bài học lịch sử vào cuộc sống chính là sử dụng tri thức lịch sử để giải thích và hiểu rõ hơn những vấn đề của cuộc sống hiện tại, là việc nhìn nhận về cuộc sống hôm nay từ quan điểm lịch sử.
-== 18 ==
+
 Tình trạng nóng lên toàn cầu liên quan đến các cuộc cách mạng công nghiệp diễn ra từ thế kỉ XVIII với việc sử dụng trên quy mô lớn các nguồn nguyên liệu hoá thạch (than đá, dầu mỏ, khí đốt,...).
 
 Hình 2.4. Băng tan ở Bắc Cực do sự nóng lên của toàn cầu
@@ -525,8 +881,18 @@ Hình 2.4. Băng tan ở Bắc Cực do sự nóng lên của toàn cầu
 
 ---
 
-<!-- chunk 44 - (1) 182 từ (0) 138 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG, Mục 2 Học tập và khám phá lịch sử suốt đời, 2.3 Kết nối kiến thức, bài học lịch sử vào cuộc sống
+<!-- chunk 44 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_bai: 2
+muc: Mục 2 Học tập và khám phá lịch sử suốt đời, bài học lịch sử vào cuộc sống
+noi_dung: Kết nối kiến thức
+id_noi_dung: 2.3
+loai: noi_dung
+---
 Tri thức lịch sử có giá trị lớn đối với mỗi cá nhân và xã hội, có mối liên hệ chặt chẽ với nhiều lĩnh vực của cuộc sống như chính trị, kinh tế, văn hoá, giáo dục, môi trường,... Nhiều nhà chính trị, nhà văn hoá nổi tiếng như Xi-xê-rông (La Mã cổ đại), Lo Ác-ton (I-ta-li-a), Giớc-giơ Ô-oen (Anh), Các Mác (Đức), Hồ Chí Minh (Việt Nam)... đã khẳng định sự cần thiết phải đưa kiến thức lịch sử vào cuộc sống.
 
 "Lịch sử là bằng chứng của thời đại, là ngọn lửa của chân lí, là sinh mệnh của kí ức, là thầy dạy của cuộc sống và là sứ giả của cổ nhân".
@@ -537,8 +903,18 @@ Tri thức lịch sử có giá trị lớn đối với mỗi cá nhân và xã
 
 ---
 
-<!-- chunk 45 - (1) 205 từ (0) 159 từ -->
-Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG, Mục 2 Học tập và khám phá lịch sử suốt đời, 2.3 Kết nối kiến thức, bài học lịch sử vào cuộc sống, Câu hỏi
+<!-- chunk 45 -->
+---
+mon: Lịch sử 10
+chu_de: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+id_chu_de: 1
+bai: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_bai: 2
+muc: Mục 2 Học tập và khám phá lịch sử suốt đời, bài học lịch sử vào cuộc sống
+noi_dung: Kết nối kiến thức
+id_noi_dung: 2.3
+loai: cau_hoi
+---
 Đọc thông tin, tư liệu và quan sát hình 2.4, hãy:
 - Cho biết kiến thức và bài học lịch sử có mối liên hệ như thế nào với cuộc sống hiện tại.
 - Vận dụng kiến thức lịch sử để giải thích nguyên nhân băng tan ở Bắc Cực và cho biết tác động của hiện tượng này đối với nhân loại.
@@ -548,6 +924,5 @@ Môn lịch sử 10, CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC, Bài 2: TRI THỨ
 2. Hãy sưu tầm một câu chuyện về truyền thống đoàn kết của nhân dân Việt Nam trong lịch sử và kể với bạn học (nêu rõ nguồn gốc của câu chuyện và cách thức sưu tầm).
 
 3. Em đã từng sử dụng những kiến thức lịch sử nào để giải quyết các tình huống gặp phải trong cuộc sống? Hãy chia sẻ một vài ví dụ với thầy cô và bạn học.
-== 19 ==
 
 ---

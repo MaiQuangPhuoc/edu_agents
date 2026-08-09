@@ -12,13 +12,14 @@ CHECK_MARK = '✓'
 MUC_SO_NGUYEN_RE = re.compile(r'^#{0,3}\s*(\d+)\.(?!\d)\s+(.*)$')
 
 # CAU_HOI_MUC_MARKER_RE = re.compile(r'^Đọc thông tin.*$', re.IGNORECASE | re.MULTILINE)
-CAU_HOI_MUC_MARKER_RE = re.compile(r'^\??\s*Đọc thông tin.*$', re.IGNORECASE | re.MULTILINE)
+# CAU_HOI_MUC_MARKER_RE = re.compile(r'^\??\s*Đọc thông tin.*$', re.IGNORECASE | re.MULTILINE)
+CAU_HOI_MUC_MARKER_RE = re.compile(r'^[\?\-\*]?\s*Đọc thông tin.*$', re.IGNORECASE | re.MULTILINE)
 
 MIN_WORDS = 200
-MAX_WORDS = 350
+MAX_WORDS = 180
 
 
-def _dem_so_tu(text: str) -> int:
+def dem_so_tu(text: str) -> int:
     return len(text.split())
 
 
@@ -31,7 +32,7 @@ def _gom_doan_theo_so_tu(paragraphs: list[str], min_words=MIN_WORDS, max_words=M
     chốt chunk hiện tại, không cắt trong đoạn."""
     chunks, buf, buf_words = [], [], 0
     for p in paragraphs:
-        w = _dem_so_tu(p)
+        w = dem_so_tu(p)
         if not buf:
             buf, buf_words = [p], w
         elif buf_words + w <= max_words:
@@ -56,7 +57,7 @@ def chia_nho_part_neu_qua_dai(part_text: str, max_words=MAX_WORDS) -> list[str]:
     header_line = lines[0]
     noi_dung = "\n".join(lines[1:]).strip()
 
-    if not noi_dung or _dem_so_tu(noi_dung) <= max_words:
+    if not noi_dung or dem_so_tu(noi_dung) <= max_words:
         return [part_text]
 
     doan_list = _split_doan_van(noi_dung)
@@ -279,9 +280,14 @@ def process_file(input_path: Path) -> Path:
     output_path = input_path.with_name(input_path.stem + "_chunk.md")
     out_lines = []
     for i, c in enumerate(final_chunks, start=1):
-        noi_dung = "\n".join(c.splitlines()[1:])
-        so_tu = _dem_so_tu(noi_dung)
-        out_lines.append(f"<!-- chunk {i} - {so_tu} từ -->")
+        lines_c = c.splitlines()
+        header_line = lines_c[0] if lines_c else ""
+        noi_dung_c = "\n".join(lines_c[1:])
+
+        so_tu_co_header = dem_so_tu(header_line) + dem_so_tu(noi_dung_c)
+        so_tu_khong_header = dem_so_tu(noi_dung_c)
+
+        out_lines.append(f"<!-- chunk {i} - (1) {so_tu_co_header} từ (0) {so_tu_khong_header} từ -->")
         out_lines.append(c)
         out_lines.append("\n---\n")
 
