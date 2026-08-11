@@ -44,8 +44,6 @@ Nhân vật trữ tình (một dạng biểu hiện của chủ thể trữ tìn
 
 (1) Lê Bá Hán, Trần Đình Sử, Nguyễn Khắc Phi (đồng Chủ biên), Từ điển Thuật ngữ văn học, NXB Giáo dục, 1992, trang 156.
 
-68
-
 ---
 
 <!-- chunk 4 -->
@@ -153,8 +151,6 @@ Sau lưng thềm nắng lá rơi đầy
 (*), (**) Khi đọc hiểu các văn bản khác trong Bài 7, học sinh cần vận dụng các gợi ý ở đây.
 (1) Hơi may: hơi gió heo may (gió heo may: gió nhẹ, lạnh và khô, thường có vào mùa thu ở miền Bắc nước ta).
 
-70
-
 3. Mùa thu nay khác rồi
 Tôi đứng vui nghe giữa núi đồi
 Gió thổi rừng tre phập phới
@@ -237,30 +233,10 @@ Người lên như nước vỡ bờ
 Nước Việt Nam từ máu lửa
 Rũ bùn đứng dậy sáng loà.
 
----
-
-<!-- chunk 11 -->
----
-mon: Ngữ văn 10
-bai: Bài 7 THƠ TỰ DO
-id_bai: 7
-muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm 1948 – 1955
-loai: noi_dung
----
 (Thơ, NXB Văn học, Hà Nội, 2001)
 1948 – 1955
 (Thơ, NXB Văn học, Hà Nội, 2001)
 
----
-
-<!-- chunk 12 -->
----
-mon: Ngữ văn 10
-bai: Bài 7 THƠ TỰ DO
-id_bai: 7
-muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm 1948 – 1955
-loai: noi_dung
----
 (Thơ, NXB Văn học, Hà Nội, 2001), Đọc hiểu
 Lưu ý thông tin về thời gian sáng tác.
 
@@ -406,8 +382,6 @@ Bản tình ca của lính đảo có gì đặc biệt?
 
 Chú ý đến phép điệp trong các khổ thơ 8, 9.
 
-74
-
 Ta đứng vững giữa muôn trùng sóng gió
 Tổ quốc Việt Nam bắt đầu từ nơi này...
 
@@ -463,8 +437,6 @@ HOÀI VŨ(*)
 - Đọc trước bài thơ Đi trong hương tràm và tìm hiểu, ghi chép những thông tin về nhà thơ Hoài Vũ.
 
 (*) Tác giả Hoài Vũ, tên khai sinh là Nguyễn Đình Vọng, sinh năm 1935, quê ở Quảng Ngãi.
-
-75
 
 - Nghe bài hát Đi trong hương tràm do nhạc sĩ Thuận Yến phổ nhạc từ bài thơ này. Bài hát mang đến cho em những cảm xúc như thế nào?
 
@@ -598,8 +570,6 @@ Chú ý hình ảnh, các biện pháp tu từ được sử dụng trong văn b
 
 (1) Nhà trinh tường: nhà có tường làm bằng đất nện.
 
-78
-
 ---
 
 <!-- chunk 24 -->
@@ -710,19 +680,7 @@ d) Sân khấu lô nhô mấy chúng đầu trọc
 Người xem ngồn ngang cũng rất linh trọc đầu
 (Trần Đăng Khoa)
 
----
-
-<!-- chunk 28 -->
----
-mon: Ngữ văn 10
-bai: Bài 7 THƠ TỰ DO
-id_bai: 7
-muc: Môn Ngữ văn 10, THỰC HÀNH TIẾNG VIỆT
-loai: noi_dung
----
 4. Hãy viết một đoạn văn (khoảng 5 - 7 dòng) bàn về giá trị nghệ thuật của bài thơ Đất nước (Nguyễn Đình Thi), trong đoạn văn có sử dụng biện pháp tu từ so sánh.
-
-80
 
 ---
 
@@ -886,8 +844,6 @@ Tôi nhớ những ngày thu đã xa
 Sáng chớm lạnh trong lòng Hà Nội
 Những phố dài xao xác hơi may
 
-83
-
 Người ra đi đâu không ngoảnh lại
 Sau lưng thềm nắng lá rơi đầy"
 (Đất nước - Nguyễn Đình Thi)
@@ -947,25 +903,15 @@ Kết bài
 mon: Ngữ văn 10
 bai: Bài 7 THƠ TỰ DO
 id_bai: 7
-muc: Môn Ngữ văn 10, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
+muc: Môn Ngữ văn 10, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM THƠ, Thực hành
 loai: noi_dung
 ---
-PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM THƠ, Thực hành
+
 c) Viết
 - Viết bài văn theo dàn ý đã lập.
 - Chú ý nêu rõ cảm nhận, ý kiến của bản thân về vẻ đẹp của đoạn thơ; diễn đạt (hành văn) có cảm xúc trung thực, không sao chép văn mẫu; dùng từ ngữ chính xác và viết đúng chính tả, ngữ pháp;...
 
----
 
-<!-- chunk 40 -->
----
-mon: Ngữ văn 10
-bai: Bài 7 THƠ TỰ DO
-id_bai: 7
-muc: Môn Ngữ văn 10, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
-loai: noi_dung
----
-PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM THƠ, Thực hành
 d) Kiểm tra và chỉnh sửa
 Đọc lại bài văn đã viết. Đối chiếu với mục 1. Định hướng và dàn ý ở trên để phát hiện và sửa lỗi theo yêu cầu sau:
 
@@ -998,8 +944,6 @@ loai: noi_dung
 1. Định hướng
 
 a) Giới thiệu, đánh giá về một tác phẩm thơ là trình bày trước người nghe những thông tin cơ bản về bài thơ như: nhan đề, tác giả, nội dung (đề tài, chủ đề, cảm xúc,...)
-
-85
 
 và đặc sắc nghệ thuật (thể loại, từ ngữ, vần, nhịp, các biện pháp tu từ,...); đồng thời, nêu nhận xét, ý kiến của người giới thiệu về nội dung, nghệ thuật,... của bài thơ đó.
 
@@ -1069,10 +1013,6 @@ b) Tìm ý và lập dàn ý
 4. Bài thơ thể hiện cái nhìn của tác giả về con người và cuộc đời như thế nào?
 5. Yếu tố (nội dung hay hình thức) nào để lại trong em ấn tượng sâu đậm nhất? Vì sao?]
 
-- Lập dàn ý cho bài nói bằng cách lựa chọn, sắp xếp các ý theo bố cục ba phần:
-
-Mở đầu: Giới thiệu bài thơ và vấn đề trình bày.
-
 ---
 
 <!-- chunk 46 -->
@@ -1083,6 +1023,10 @@ id_bai: 7
 muc: Môn Ngữ văn 10, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VỀ MỘT TÁC PHẨM THƠ, Thực hành
 loai: noi_dung
 ---
+- Lập dàn ý cho bài nói bằng cách lựa chọn, sắp xếp các ý theo bố cục ba phần:
+
+Mở đầu: Giới thiệu bài thơ và vấn đề trình bày.
+
 Nội dung chính:
 Lần lượt giới thiệu bài thơ theo trình tự phù hợp. Ví dụ:
 + Đọc diễn cảm bài thơ (đoạn thơ); giới thiệu hoàn cảnh ra đời, nội dung chính của bài thơ (nhân vật trữ tình và cảm xúc, tâm trạng của nhân vật trữ tình trong bài thơ,...).
@@ -1108,30 +1052,10 @@ c) Nói và nghe
 
 - Cách thuyết trình và thảo luận: tham khảo các yêu cầu đã nêu ở Bài 5, phần Nói và nghe, mục c (trang 27).
 
----
-
-<!-- chunk 48 -->
----
-mon: Ngữ văn 10
-bai: Bài 7 THƠ TỰ DO
-id_bai: 7
-muc: Môn Ngữ văn 10, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VỀ MỘT TÁC PHẨM THƠ, Thực hành
-loai: noi_dung
----
 d) Kiểm tra và chỉnh sửa
 
 Tham khảo yêu cầu đã nêu ở Bài 5, phần Nói và nghe, mục d (trang 27).
 
----
-
-<!-- chunk 49 -->
----
-mon: Ngữ văn 10
-bai: Bài 7 THƠ TỰ DO
-id_bai: 7
-muc: Môn Ngữ văn 10, TỰ ĐÁNH GIÁ
-loai: noi_dung
----
 Đọc văn bản sau và thực hiện các yêu cầu (từ câu 1 đến câu 10) bên dưới:
 
 Khoảng trời, hố bom
@@ -1161,31 +1085,11 @@ Mưa dọng lại một khoảng trời nhỏ nhỏ
 Đất nước mình nhân hậu
 Có nước trời xoa dịu vết thương đau.
 
----
-
-<!-- chunk 51 -->
----
-mon: Ngữ văn 10
-bai: Bài 7 THƠ TỰ DO
-id_bai: 7
-muc: Môn Ngữ văn 10, TỰ ĐÁNH GIÁ, Nội dung
-loai: noi_dung
----
 3. Em nằm dưới đất sâu
 Như khoảng trời đã nằm yên trong đất
 Đêm đêm, tâm hồn em toả sáng
 Những vì sao ngời chói, lung linh.
 
----
-
-<!-- chunk 52 -->
----
-mon: Ngữ văn 10
-bai: Bài 7 THƠ TỰ DO
-id_bai: 7
-muc: Môn Ngữ văn 10, TỰ ĐÁNH GIÁ, Nội dung
-loai: noi_dung
----
 4. Có phải thịt da em mềm mại, trắng trong
 Đã hoá thành những làn mây trắng?
 Và ban ngày khoảng trời ngập nắng
@@ -1194,16 +1098,6 @@ Hỡi Mặt Trời, hãy chính trái tim em trong ngực
 Soi cho tôi
 Ngày hôm nay bước tiếp quãng đường dài?
 
----
-
-<!-- chunk 53 -->
----
-mon: Ngữ văn 10
-bai: Bài 7 THƠ TỰ DO
-id_bai: 7
-muc: Môn Ngữ văn 10, TỰ ĐÁNH GIÁ, Nội dung
-loai: noi_dung
----
 5. Tên con đường là tên em gửi lại
 Cái chết em xanh khoảng trời con gái
 Tôi soi lòng mình trong cuộc sống của em
@@ -1256,16 +1150,6 @@ B. Cảm hứng ngợi ca, trân trọng sự hi sinh cao cả của người n�
 C. Nỗi đau đớn, bi thương trước sự hi sinh của người nữ thanh niên xung phong
 D. Ý nghĩa cao cả của sự hi sinh dũng cảm ở những người nữ thanh niên xung phong
 
----
-
-<!-- chunk 56 -->
----
-mon: Ngữ văn 10
-bai: Bài 7 THƠ TỰ DO
-id_bai: 7
-muc: Môn Ngữ văn 10, TỰ ĐÁNH GIÁ
-loai: cau_hoi
----
 5. Phương án nào nêu đúng biện pháp tu từ được sử dụng trong dòng thơ "Cái chết em xanh khoảng trời con gái" và tác dụng của biện pháp đó?
 A. Ẩn dụ - Sự trân trọng, xúc động sâu sắc trước hành động hi sinh, dâng hiến trọn vẹn tuổi thanh xuân cho Tổ quốc của người nữ thanh niên xung phong
 B. Hoán dụ - Sự khẳng định vẻ đẹp tâm hồn bất tử của người nữ thanh niên xung phong
@@ -1288,8 +1172,6 @@ B. Tình yêu cao cả dành cho Tổ quốc
 C. Tình yêu lứa đôi thuỷ chung, son sắt
 D. Nỗi nhớ quê hương, gia đình da diết
 
-89
-
 7. Em hiểu như thế nào về nhan đề bài thơ Khoảng trời, hố bom?
 
 8. Chỉ ra và phân tích tác dụng của một biện pháp tu từ trong bài thơ.
@@ -1311,7 +1193,5 @@ loai: noi_dung
 1. Tìm đọc thêm một số bài thơ về chủ đề quê hương, đất nước.
 
 2. Lưu lại, học thuộc lòng những câu thơ hay và ghi chép cảm nhận, đánh giá của bản thân về một bài thơ hoặc một vài câu thơ đã lựa chọn thuộc chủ đề quê hương, đất nước.
-
-90
 
 ---
