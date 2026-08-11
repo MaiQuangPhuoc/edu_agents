@@ -5,25 +5,35 @@ from pathlib import Path
 # CẤU HÌNH ĐƯỜNG DẪN THEO TỪNG MÔN
 # ══════════════════════════════════════════════════════════════════
 
+
+ROOT = Path(
+    r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI"
+    r"\EDUAGENT\src\modules\documents\doc_git\books"
+)
+
+BOOK_10 = ROOT / "10"
+CHUNK = BOOK_10 / "chunk"
+
+
 CAU_HINH = {
     "1": {
         "ten_mon": "Lịch sử 10",
         "input_files": [
-            Path(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\documents\doc_git\books\10"
-                 fr"\grade_10_canh_dieu_lich_su_chu_de_{x}_chunk.md")
+            BOOK_10 / "grade_10_canh_dieu_lich_su" / f"chu_de_{x}_chunk.md"
             for x in range(1, 8)
         ],
-        "output_dir": Path(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\documents\doc_git\books\10\chunk\lich_su"),
+        "output_dir": CHUNK / "lich_su",
     },
+
     "2": {
         "ten_mon": "Ngữ văn 10",
-        "input_files": None,
-        "input_dir": Path(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\documents\doc_git\books\10\bai"),
-        "input_pattern": "canh_dieu_ngu_van_bai_*_chunk.md",
-        "output_dir": Path(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\documents\doc_git\books\10\chunk\ngu_van"),
+        "input_files": [
+            BOOK_10 / "chunk/ngu_van" / f"canh_dieu_ngu_van_bai_{x}_chunk.md"
+            for x in range(5, 9)
+        ],
+        "output_dir": CHUNK / "ngu_van",
     },
 }
-
 
 # ══════════════════════════════════════════════════════════════════
 # BƯỚC 1: đọc file thô, tách từng chunk theo comment '<!-- chunk N - X từ -->'
@@ -204,15 +214,7 @@ def run():
     ten_mon = cfg["ten_mon"]
     la_lich_su = (lua_chon == "1")
     output_dir = cfg["output_dir"]
-
-    if cfg.get("input_files") is not None:
-        input_files = cfg["input_files"]
-    else:
-        input_files = sorted(cfg["input_dir"].glob(cfg["input_pattern"]))
-
-    if not input_files:
-        print("Không tìm thấy file input nào.")
-        return
+    input_files = cfg["input_files"]
 
     for input_path in input_files:
         if not input_path.exists():

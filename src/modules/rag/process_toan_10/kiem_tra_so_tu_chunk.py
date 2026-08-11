@@ -246,11 +246,11 @@ def dem_file(input_path: Path):
 
 
 if __name__ == "__main__":
-    BASE_DIR = Path(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\documents\doc_git\books\10\bai")
+    BASE_DIR = Path(r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\documents\doc_git\books\10\chunk\ngu_van")
     TEN_GOC = "canh_dieu_ngu_van"
 
     for x in range(1, 8):
-        input_path = BASE_DIR / f"{TEN_GOC}_bai_{x}_chunk.md"
+        input_path = BASE_DIR / f"{TEN_GOC}_bai_{x}_chunk_final.md"
         if not input_path.exists():
             print(f"⚠️  Không tìm thấy file: {input_path}\n")
             continue
