@@ -82,16 +82,6 @@ loai: noi_dung
 
 (1) Hình tượng người nông dân trong văn học hiện thực có những nét đẹp truyền thống. (2) Nếu đặt họ bên những nhân vật phản diện như Nghi Lại, Nghi Quế, thì họ hoàn toàn đối lập với bản chất kệch cỡm, nhố nhăng, tàn ác của bọn quan lại. (3) Chị Dậu không như Thúy Kiều hay Kiều Nguyệt Nga khi gặp hoạn nạn thì vào cõi Phật để hưởng chút bình an, mà chị đã đấu tranh để bảo vệ nhân phẩm. (Dẫn theo Nguyễn Minh Thuyết)
 
----
-
-<!-- chunk 6 -->
----
-mon: Ngữ văn 10
-bai: Bài 8 VĂN BẢN NGHỊ LUẬN
-id_bai: 8
-muc: Môn Ngữ văn 10, KIẾN THỨC NGỮ VĂN
-loai: noi_dung
----
 Trong đoạn văn trên, ý câu (3) mâu thuẫn với ý câu (1). Cách sửa: viết lại câu (3) để thống nhất với chủ đề được nêu ở câu (1).
 
 + Các câu của đoạn văn (các phần, các đoạn văn trong văn bản) không được sắp xếp theo một trình tự hợp lí. Ví dụ: (1) Năm 19 tuổi chị đẻ đứa con trai, sau đó chồng chị mắc bệnh, ốm liền trong hai năm rồi chết. (2) Chị làm quần quật phụng dưỡng cha mẹ
@@ -301,8 +291,6 @@ loai: noi_dung
 
 (*) Tác giả Chu Văn Sơn (1962 - 2019), quê ở Thanh Hoá.
 
-96
-
 khiến cho tất cả đều như được thanh lọc. Tất cả dường như đều êm ái hơn, nhẹ nhàng hơn, mềm mỏng hơn, trong trẻo hơn, mát mẻ hơn, phong quang hơn, thưa thoáng hơn,... Nắm được cái thần của mùa thu phải chăng là cảm được, truyền được những nét ấy vào thi ca của mình? Chùm thơ này, bài nào cũng làm được điều đó.
 
 Hãy nhìn riêng vào một bài, một bài thôi, Thu vịnh:
@@ -371,16 +359,6 @@ loai: noi_dung
 ---
 Nước và trời soi chiếu qua nhau qua cảm quan của thi sĩ. Với hai sắc độ ấy, bức tranh thu của Nguyễn Khuyến đã lan tỏa một gam xanh vừa thanh đạm vừa sâu lắng, điều mà Xuân Diệu gọi là "những điều xanh". Thi sĩ nhìn ra cái lan hơi dương cố lại dương không quản quyết đấu con sóng. Ấy là vẻ hư ảo chỉ có trong tiết trời thu: Nước biếc trong như tấm khói phu. Cái nhà cổ thấp le te của Nguyễn Khuyến thấp thoáng trong cả ba bài thu, ở đây được hiện ra chỉ với một khung cửa sổ theo lối cắt cảnh: Song thưa để mặc bóng trăng vào. Không gian mở ra từ những khung cửa với hàng song thưa vốn là không gian quen thuộc của trăng thu, cũng là không gian quen thuộc của các thi sĩ phương Đông. Cửa sổ mở thông vào thiên nhiên, cho tâm hồn giao lưu với ngoại giới, hòa với tạo vật. Chữ song thưa rất không đậm mà thật ăn nhịp, hòa điệu được với cái không khí riêng của mùa thu. Thực thì, khung cửa kia mùa nào chẳng thế, chẳng phải thu đến thì nó thưa hơn. Nhưng, có phải sang đến mùa thu thì cái vẻ thưa của nó mới lưu thành ấn tượng trong nhãn quan(1) thi sĩ như một nét song thu, để khung cửa ấy thật sự ăn nhập với cái vẻ thưa thoáng, phong quang và êm đềm vốn là ý vị riêng của mùa thu? Và vầng trăng tri kỉ thoái mái đi về cùng với thi nhân qua cái khung trời thông thoáng trữ tình ấy?
 
----
-
-<!-- chunk 22 -->
----
-mon: Ngữ văn 10
-bai: Bài 8 VĂN BẢN NGHỊ LUẬN
-id_bai: 8
-muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm GIÓ THANH LAY ĐỘNG CÀNH CÓ TRÚC, Đọc hiểu
-loai: noi_dung
----
 4 Đến hai câu luận, không gian và thời gian bỗng mở rộng ra:
 
 Mấy chùm trước giậu hoa năm ngoái,
@@ -468,8 +446,6 @@ Tất cả những điều ấy chẳng phải đã khiến cho Nguyễn Khuyế
 [Ở góc phải dưới trang có một hộp chú thích màu hồng nhạt với nội dung:]
 Những từ ngữ nào có tác dụng kết nối ý của phần 5 với các phần trước đó?
 
-99
-
 ---
 
 <!-- chunk 28 -->
@@ -488,16 +464,6 @@ loai: cau_hoi
 
 4. Ở đoạn văn cuối ("Tất cả những điều ấy [...] đến thế kỉ nào?"), tác giả chủ yếu sử dụng kiểu câu nào? Theo em, kiểu câu ấy có tác dụng gì trong việc thể hiện thông điệp, giọng điệu, sắc thái cảm xúc của người viết?
 
----
-
-<!-- chunk 29 -->
----
-mon: Ngữ văn 10
-bai: Bài 8 VĂN BẢN NGHỊ LUẬN
-id_bai: 8
-muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm GIÓ THANH LAY ĐỘNG CÀNH CÓ TRÚC
-loai: cau_hoi
----
 5. Đoạn văn sau cho thấy tác giả đã huy động những kiến thức nào vào việc đọc hiểu văn bản: "Ba chữ mây tùng cao cho thấy tầm nhìn thi sĩ rộng mở cùng với các tầng trời. Nếu nên phỏng gợi những khoảng xa của hậu cảnh, thì ở gần tầm mắt hơn, hiện ra một tiền cảnh là cần trúc lo pho... Tầm nhìn dịch chuyển từ xa đến gần. Và, không phải cành trúc, ngọn trúc mà phải là cần trúc. Chữ cần là nét cong mềm mại thật hợp điệu thu. Chữ lo pho là vẻ đẹp lưa thưa mà lay động. Chữ hắt hiu thật là cái hồn của gió thu."?
 
 6. Liên hệ với bài Thụ điếu đã học ở Bài 2, em hãy đề xuất một luận điểm (1 hoặc 2 câu) nêu rõ được tâm hồn và tài nghệ của Nguyễn Khuyến qua chùm thơ thu.
@@ -542,16 +508,6 @@ loai: noi_dung
 
 Chú ý cách nêu vấn đề của tác giả.
 
----
-
-<!-- chunk 32 -->
----
-mon: Ngữ văn 10
-bai: Bài 8 VĂN BẢN NGHỊ LUẬN
-id_bai: 8
-muc: Môn Ngữ văn 10, Thực hành đọc hiểu, tác phẩm ĐỪNG GÂY TỔN THƯƠNG, Đọc hiểu
-loai: noi_dung
----
 Không giao tiếp bằng mắt với người bạn nói chuyện hay đang được giới thiệu, không đáp lại khi ai đó cần bạn trả lời một câu hỏi, không đến xia đến người đang nói trong cuộc thảo luận – tất cả những hành vi này đều gây tổn thương. Coi nhẹ lời gợi ý của bạn thân về công việc quan trọng cả hai đang tham gia thực hiện có thể gây bất lợi cho mối quan hệ cũng như lòng nhiệt tình của người ấy. Một trong những hình thức gây tổn thương phổ biến và rõ ràng nhất là không lắng nghe khi người khác đang có nói điều gì đó với bạn. Một số người nói rằng, bị lờ đi như thế khiến họ cảm thấy đau đớn không kém gì bị xâm phạm thân thể.
 
 ---
@@ -586,16 +542,6 @@ Câu trả lời của chúng ta cho những câu hỏi trên đủ để nói l
 
 Nếu muốn thay đổi tính chất của các mối quan hệ với mọi người xung quanh, bạn phải ý thức rõ tác động của những gì mình nói ra. Có lẽ, chúng ta không cố tình gây tổn thương người khác bằng nhận xét của mình. Thật ra, chúng ta cứ nghĩ mình đang cư xử lịch thiệp hay thậm chí là ân cần, nhưng biểu hiện trên gương mặt của người đối diện mới nói lên sự thật.
 
----
-
-<!-- chunk 35 -->
----
-mon: Ngữ văn 10
-bai: Bài 8 VĂN BẢN NGHỊ LUẬN
-id_bai: 8
-muc: Môn Ngữ văn 10, Thực hành đọc hiểu, tác phẩm ĐỪNG GÂY TỔN THƯƠNG, Đọc hiểu
-loai: noi_dung
----
 Không ai trong chúng ta đủ khéo léo để che giấu mức độ ảnh hưởng từ lời nói và hành động của người khác đối với mình. Cặp mắt trừng trừng, ánh nhìn lo đi nơi khác, cái nhếch mép hay đôi môi trề xuống... thường bộc lộ cảm xúc thật của chúng ta. Nhận thấy được những biểu hiện này ở người khác giúp chúng ta đưa ra các lựa chọn tốt hơn trong những lần giao tiếp về sau, với bất kì ai.
 
 Hầu hết chúng ta đều không chủ tâm tỏ ra ác ý trong giao tiếp, trừ khi với kẻ thù thật sự. Những câu bình luận mỉa mai cũng thường xuất hiện một cách vô ý, xuất phát từ cảm xúc nhất thời hay sự thiếu suy nghĩ chứ không phải từ bản chất xấu xa, hèn hạ.
@@ -612,16 +558,6 @@ loai: noi_dung
 ---
 Phương pháp giải quyết vấn đề này là tập trung tri óc. Đơn giản thôi! Bạn hãy đưa ra quyết định và theo đuổi nó bằng cách rèn luyện. Bạn có thể tạo nên mọi sự khác biệt trong mối quan hệ nếu tuân theo quy tắc ứng xử cơ bản: Đừng nói với người khác những điều mà bạn không muốn nghe. Tôi muốn bạn nhớ lại câu chuyện về người phóng viên vẫn mua báo từ một kẻ bán báo vô văn hoá. Người phóng viên ấy đã lựa chọn cách cư xử từ tế ngay cả với một kẻ chẳng ra gì. Ông ấy chọn hành động ôn hoà. Đôi lúc chúng ta có suy nghĩ sai lầm rằng đáp trả là cần thiết. Và nó thường được ngụy biện rằng đó là sự công bằng. Nhưng hành động "ăn miếng trả miếng" chỉ cho thấy bạn là người yếu đuối và thiếu suy nghĩ. Nói đơn giản hơn là bạn chẳng được lợi gì khi đối xử với người khác không tử tế.
 
----
-
-<!-- chunk 37 -->
----
-mon: Ngữ văn 10
-bai: Bài 8 VĂN BẢN NGHỊ LUẬN
-id_bai: 8
-muc: Môn Ngữ văn 10, Thực hành đọc hiểu, tác phẩm ĐỪNG GÂY TỔN THƯƠNG, Đọc hiểu
-loai: noi_dung
----
 Mỗi tình huống ta trải qua đều là cơ hội để lựa chọn con đường tương tác đúng đắn giữa ta và người khác. Chúng ta không cần phải đáp trả bằng thái độ tương tự khi ai đó đối xử tệ với mình. Chọn cách ứng xử cùng với yêu thương không quá khó so với chọn cách đáp trả tàn nhẫn. Đó chỉ là một quyết định mà thôi – quyết định mang lại lợi ích cho tất cả mọi người.
 
 ---
@@ -675,7 +611,6 @@ loai: noi_dung
 ---
 Hãy đối mặt với thực tế. Dùng lời nói sỉ nhục người khác không bao giờ là thái độ hợp lí, ngay cả trong những hoàn cảnh thù địch nhất; nó gây ra những vết thương không đáng có trong tâm hồn. Có người từng nói, đại ý: "Chúng ta chỉ được giao phó một nhiệm vụ duy nhất, đó là yêu thương lẫn nhau. Nếu không thể làm được như vậy thì ít nhất hãy cố gắng kiềm chế để không xúc phạm nhau.". Đó là lời gợi ý đơn giản để sống cuộc đời bình yên và hạnh phúc. Nó khởi đầu bằng những thay đổi tích cực nhỏ bé mà về sau trở thành thói quen. Bất kì ai trong chúng ta cũng có thể hoàn thành nhiệm vụ này nếu có quyết tâm.
 
-3. Mỗi ngày một cam kết
 
 ---
 
@@ -687,6 +622,7 @@ id_bai: 8
 muc: Môn Ngữ văn 10, Thực hành đọc hiểu, tác phẩm ĐỪNG GÂY TỔN THƯƠNG, Đọc hiểu
 loai: noi_dung
 ---
+3. Mỗi ngày một cam kết
 "Mỗi ngày, chúng ta phải sống sao cho xứng đáng.".
 Lựa chọn này giúp ta đơn giản hóa cuộc sống và quyết định của mình trên nhiều khía cạnh, hơn hẳn điều chúng ta tưởng tượng ban đầu. [...] Chúng ta chỉ có duy nhất ngày hôm nay thôi. Chúng ta chỉ có duy nhất khoảnh khắc này mà thôi.
 
@@ -714,8 +650,6 @@ loai: noi_dung
 ---
 Chúng ta phán xét và quy tội cho người khác. Chúng ta "giảng bảy" khiến họ thất bại, đôi khi do có ý nhưng thường thì vô ý nhiều hơn. Lời nói, nét mặt, ngôn ngữ cơ thể của chúng ta, tất cả đều chuyển tải một thông điệp nào đó, nếu ta bất cẩn, chúng sẽ dễ dàng biến thành thái độ khinh thường hoặc vô tâm. Nhiều hình thức gây tổn thương khác nhau đã ăn sâu vào tiềm thức, đến nỗi chúng ta phải thật cảnh giác để không lặp lại nó. Tương tự, đôi khi, việc chúng ta hạ thấp người khác
 
-103
-
 ---
 
 <!-- chunk 45 -->
@@ -728,16 +662,6 @@ loai: noi_dung
 ---
 trở thành một thói quen. Chỉ cần cam kết thực hiện và kết hợp với việc rèn luyện, "không làm tổn thương người khác" sẽ trở nên đơn giản, và phần thưởng của nó sẽ xuất hiện ngay lập tức. Chúng ta cảm thấy nhẹ nhõm và thanh thản cả về thể chất lẫn tinh thần. Chúng ta không còn phải đoán già đoán non liệu những hành động của mình sẽ gây ra tác động hay hậu quả như thế nào đối với người khác. Mỗi ngày mới có một dòng chảy mới, dòng chảy hứa hẹn đem đến cảm giác hạnh phúc và bình yên cho chúng ta.
 
----
-
-<!-- chunk 46 -->
----
-mon: Ngữ văn 10
-bai: Bài 8 VĂN BẢN NGHỊ LUẬN
-id_bai: 8
-muc: Môn Ngữ văn 10, Thực hành đọc hiểu, tác phẩm ĐỪNG GÂY TỔN THƯƠNG, Đọc hiểu
-loai: noi_dung
----
 Bạn sẽ gặt hái được nhiều điều tốt đẹp từ lời cam kết đơn giản này. Thế nhưng, sự lôi kéo, dụ dỗ của thói quen ứng xử cũ vẫn lởn vởn quanh bạn gần như mọi lúc. Không phải vì bạn có tính thô lỗ hay vô tâm mà hầu hết chúng ta đều cảm thấy sợ hãi, sợ rằng người khác đang qua mặt mình về tiền tài, sự nghiệp, thậm chí cả tình cảm và tinh thần. Nỗi sợ hãi thúc đẩy chúng ta hành động theo chiều hướng gây tổn thương cho mọi người, trong đó có bản thân ta. Vết thương gây ra cho chính bản thân là trầm trọng và khó lành nhất.
 
 ---
@@ -889,16 +813,6 @@ b) Trong ca dao Việt Nam, những bài về tình yêu nam nữ là những b�
 
 c) Cảm đi một mình trong đêm. Trăn đưa đại hội 2 ở phía bãi bồi bên một dòng sông. Hai bờ con cùng viết đơn xin ra mắt trăn. Mùa thu hoạch lạc đã vào chúng cuối. (Dẫn theo Trần Ngọc Thêm)
 
----
-
-<!-- chunk 56 -->
----
-mon: Ngữ văn 10
-bai: Bài 8 VĂN BẢN NGHỊ LUẬN
-id_bai: 8
-muc: Môn Ngữ văn 10, THỰC HÀNH TIẾNG VIỆT
-loai: noi_dung
----
 4. Viết một đoạn văn (khoảng 8 - 10 dòng) triển khai ý từ câu chủ đề sau đây:
 Đừng để người thân bị tổn thương vì sự vô tâm của bạn.
 
@@ -919,32 +833,10 @@ a) Đọc hai đoạn trích sau và trả lời những câu hỏi bên dưới
 
 Đoạn 1:
 
----
-
-<!-- chunk 58 -->
----
-mon: Ngữ văn 10
-bai: Bài 8 VĂN BẢN NGHỊ LUẬN
-id_bai: 8
-muc: Môn Ngữ văn 10, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
-loai: noi_dung
----
 Khác với bút pháp truyện cổ tích, truyện Nôm,..., nhân vật và hoàn cảnh được lí tưởng hoá, phân tuyến rạch ròi, Kiều bình nổi loạn không thế, đã được ghi chép gần gũi với hiện thực. Điều đó được thể hiện trong việc xây dựng các nhân vật. Kiều bình nổi loạn có hai phe: Trịnh Tống và Trịnh Cán; phe Trịnh Tống có thể xem là chính thống, phe Hoàng Đình Bảo và Đặng Thị Huệ là phản nghịch nhưng cả hai đều không có những nhân vật cực đoan, hoặc quá hoàn hảo, hoặc quá xấu xa, mà nói chung đều đa dạng, đều thực. Lấy nhân vật Hoàng Đình Bảo làm ví dụ. Hoàng là nhân vật phản diện, thao túng cả triều đình, nhiều tham vọng, quyền mưu nhưng y vẫn còn chút ánh sáng trong lương tâm, thể hiện ở việc đối xử với Trịnh Tống, người đã từ chối sự cộng tác và đe dọa sẽ giết Hoàng, đối thủ chính có thể đem đến sự nguy hiểm cho sự nghiệp của Hoàng. Hoàng còn có thể khóc khi người ta đặt vấn đề tính mạng của Tống với y. [...]
 
----
-
-<!-- chunk 59 -->
----
-mon: Ngữ văn 10
-bai: Bài 8 VĂN BẢN NGHỊ LUẬN
-id_bai: 8
-muc: Môn Ngữ văn 10, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
-loai: noi_dung
----
 (Theo Trần Thị Băng Thanh, Kiều bình nổi loạn,
 in trong Giảng văn văn học Việt Nam, NXB Giáo dục, 2005)
-
-Đoạn 2:
 
 ---
 
@@ -956,6 +848,8 @@ id_bai: 8
 muc: Môn Ngữ văn 10, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
 loai: noi_dung
 ---
+Đoạn 2:
+
 Ở bài Thu điếu, ta gặp một tiếng cá quẫy vọng lên từ đáy nước (Cá đâu đớp động dưới chân bèo). Ở bài Thu vịnh, ta lại gặp một tiếng chim di trú rớt xuống từ không trung. Đến từ hai phía khác nhau, nhưng cùng đánh động một tâm hồn, cả hai đều là những tiếng động nhằm làm cho vẻ yên tĩnh của trời và nước trở nên thâm sâu, thanh vắng. Ấy đó cũng là cái thủ pháp quen thuộc: dùng cái động để gọi cái tĩnh. Hai chữ nước nào cuối câu, thực ra cũng là chữ rất không đâu nhưng sao lại đón chứa được trong đó bao nhiêu là xa vắng của thiên không. Nó gợi ra đáng điệu thi nhân nghe vọng vào xa xăm. Mà vọng vào xa xăm kì thực là chìm vào cõi tâm tư bất tận của chính mình. Chữ nghĩa của Nguyễn Khuyến ở đâu cũng lắng, cũng lặng những cảm xúc chìm. Cảm xúc được tiết chế, được giấu kín. Lối thể hiện ấy giữ cho tình nồng mà lời vẫn đạm là thế.
 
 ---
@@ -983,10 +877,10 @@ loai: noi_dung
 mon: Ngữ văn 10
 bai: Bài 8 VĂN BẢN NGHỊ LUẬN
 id_bai: 8
-muc: Môn Ngữ văn 10, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
+muc: Môn Ngữ văn 10, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM VĂN HỌC, Định hướng
 loai: noi_dung
 ---
-PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM VĂN HỌC, Định hướng
+
 b) Đối tượng phân tích, đánh giá có thể là toàn bộ tác phẩm hoặc chỉ tập trung vào một số yếu tố nổi bật về nội dung (đề tài, cảm hứng,...), hình thức nghệ thuật (ngôn từ, kết cấu,...). Để viết bài nghị luận phân tích, đánh giá một tác phẩm văn học, ngoài các yêu cầu cơ bản đã nêu ở Bài 6 (trang 58), các em cần chú ý thêm một số điểm sau:
 
 - Xác định đối tượng phân tích, đánh giá: toàn bộ tác phẩm hay một số yếu tố, thể loại của tác phẩm, tác giả và bối cảnh lịch sử, hoàn cảnh ra đời,...
@@ -1018,10 +912,10 @@ Kết bài | - Khái quát về vị trí, ý nghĩa của tác phẩm đối v�
 mon: Ngữ văn 10
 bai: Bài 8 VĂN BẢN NGHỊ LUẬN
 id_bai: 8
-muc: Môn Ngữ văn 10, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
+muc: Môn Ngữ văn 10, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM VĂN HỌC, Thực hành
 loai: noi_dung
 ---
-PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM VĂN HỌC, Thực hành
+
 2. Thực hành
 
 Bài tập: Viết bài văn phân tích, đánh giá nét đặc sắc về nội dung và hình thức nghệ thuật của một tác phẩm văn học mà em đã học hoặc đã đọc.
@@ -1065,10 +959,10 @@ b) Tìm ý và lập dàn ý
 mon: Ngữ văn 10
 bai: Bài 8 VĂN BẢN NGHỊ LUẬN
 id_bai: 8
-muc: Môn Ngữ văn 10, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
+muc: Môn Ngữ văn 10, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM VĂN HỌC, Thực hành
 loai: noi_dung
 ---
-PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM VĂN HỌC, Thực hành
+
 c) Viết
 
 - Dựa vào dàn ý đã làm để viết bài văn hoàn chỉnh.
@@ -1083,17 +977,6 @@ c) Viết
 
 + Thể hiện một cách tự nhiên quan điểm, cách hiểu riêng của bản thân, có thể tham khảo nhưng không được sao chép nội dung phân tích, đánh giá của người khác.
 
----
-
-<!-- chunk 67 -->
----
-mon: Ngữ văn 10
-bai: Bài 8 VĂN BẢN NGHỊ LUẬN
-id_bai: 8
-muc: Môn Ngữ văn 10, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
-loai: noi_dung
----
-PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM VĂN HỌC, Thực hành
 d) Kiểm tra và chỉnh sửa
 
 Sau khi viết xong, đối chiếu lại các yêu cầu của bài văn để chỉnh sửa theo hướng dẫn sau:
@@ -1177,56 +1060,16 @@ a) Chuẩn bị
 - Thực hiện việc chuẩn bị như hướng dẫn ở mục 1. Định hướng.
 - Xem lại dàn ý đã làm ở phần Viết.
 
----
-
-<!-- chunk 72 -->
----
-mon: Ngữ văn 10
-bai: Bài 8 VĂN BẢN NGHỊ LUẬN
-id_bai: 8
-muc: Môn Ngữ văn 10, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VẺ ĐẸP CỦA TÁC PHẨM VĂN HỌC, Thực hành
-loai: noi_dung
----
 b) Tìm ý và lập dàn ý
 Xem xét dàn ý đã nêu ở phần Viết và bổ sung một số ý phù hợp với phần Nói và nghe.
 
----
-
-<!-- chunk 73 -->
----
-mon: Ngữ văn 10
-bai: Bài 8 VĂN BẢN NGHỊ LUẬN
-id_bai: 8
-muc: Môn Ngữ văn 10, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VẺ ĐẸP CỦA TÁC PHẨM VĂN HỌC, Thực hành
-loai: noi_dung
----
 c) Nói và nghe
 - Dựa vào nội dung dàn ý đã chuẩn bị để thực hiện thuyết trình.
 - Cách thuyết trình và thảo luận: tham khảo các yêu cầu đã nêu ở Bài 5, phần Nói và nghe, mục c (trang 27).
 
----
-
-<!-- chunk 74 -->
----
-mon: Ngữ văn 10
-bai: Bài 8 VĂN BẢN NGHỊ LUẬN
-id_bai: 8
-muc: Môn Ngữ văn 10, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VẺ ĐẸP CỦA TÁC PHẨM VĂN HỌC, Thực hành
-loai: noi_dung
----
 d) Kiểm tra và chỉnh sửa
 Tham khảo yêu cầu đã nêu ở Bài 5, phần Nói và nghe, mục d (trang 27).
 
----
-
-<!-- chunk 75 -->
----
-mon: Ngữ văn 10
-bai: Bài 8 VĂN BẢN NGHỊ LUẬN
-id_bai: 8
-muc: Môn Ngữ văn 10, TỰ ĐÁNH GIÁ, văn bản "Phép mầu" kì diệu của văn học
-loai: noi_dung
----
 Đọc văn bản sau và thực hiện các yêu cầu (từ câu 1 đến câu 10) bên dưới:
 
 "Phép mầu" kì diệu của văn học(*)
@@ -1255,8 +1098,6 @@ id_bai: 8
 muc: Môn Ngữ văn 10, TỰ ĐÁNH GIÁ, văn bản "Phép mầu" kì diệu của văn học
 loai: noi_dung
 ---
-111
-
 Tác phẩm văn học có sức hấp dẫn làm cho người đọc nhập vào cái thế giới do nhà văn sáng tạo, cùng sống với những nhân vật tưởng tượng như với người thực. Tác phẩm trò chuyện với con người về những sự việc ngoài đời, dần dần dẫn dắt thành ra câu chuyện của người đọc với chính mình. Cái nội dung ở ngoài người đọc chuyển hoá thành chuyện của chính người đọc. Những vấn đề của tác phẩm nêu lên biến thành những vấn đề của chính người đọc tự đặt ra với mình mà suy nghĩ. Mấy câu thơ sau đây của Huy Cận nói về âm nhạc cũng có thể mở rộng cho văn học:
 
 Nhạc giúp ta mở thêm nghin chiều rộng,
@@ -1281,8 +1122,6 @@ muc: Môn Ngữ văn 10, TỰ ĐÁNH GIÁ, Nội dung
 loai: noi_dung
 ---
 2. Không nên nghĩ rằng tác động của tác phẩm cũng như sự liên hệ của người đọc bao giờ cũng phải thông qua con đường lô gích. Tác động thầm mĩ có đặc điểm và quy luật riêng rất uyển chuyển. Thường là trực tiếp, gần như bằng trực giác và bằng liên tưởng rất linh hoạt, chịu sự quy định của rất nhiều yếu tố. Rồi sau đó, ta mới có thể dùng tư duy lô gích để giải thích. Xin lấy một ví dụ, những suy nghĩ của Ta-go (Tagore) khi đọc Sếch-xpia (Shakespeare): "Trong tình yêu thắm thiết của Rô-mê-ô (Romeo) và Giu-li-ét (Juliet), trong tiếng rên xiết điên đại của vua Lia (Lear), trong ngọn lửa ghen ngày càng bùng cháy của Ô-then-lô (Othello), có một cái gì làm cho chúng tôi hăng say và phấn khởi. Cuộc đời bó hẹp của chúng ta đã bị ngăn cách bởi một sự đơn điệu làm cho tình cảm sôi nổi không thể xuất hiện trong cuộc sống xã hội, môi trường hoạt động của chúng ta. Tất cả mọi việc của chúng ta đều lặng lẽ và yên ả. Tất nhiên những trái tim của chúng ta khao khát một nguồn thúc đẩy mãnh liệt của những tình cảm sôi nổi trong văn học Anh. Chúng tôi sung sướng thưởng thức nghệ thuật văn học Anh không phải vì thầm mĩ mà vì trong sự định trệ của chúng ta, văn học ấy đem đến một làn sóng
-
-112
 
 mãnh liệt, mặc dầu làn sóng ấy có thể mang tất cả cái gì đó bắn từ dưới đáy phơi trần lên trên mặt.". Tuy Ta-go nói "không phải vì thấm mỏ", nhưng rõ ràng chính cái thấm mỏ đã tạo nên xúc động và suy nghĩ ấy của ông.
 
@@ -1327,7 +1166,7 @@ C. Thường là trực tiếp, gần như bằng trực giác và bằng liên 
 D. Không nên nghĩ rằng tác động của tác phẩm cũng như sự liên hệ của người đọc bao giờ cũng phải thông qua con đường lô gích.
 E. Rồi sau đó, ta mới có thể dùng tư duy lô gích để giải thích.
 
-4. Nhận xét nào nêu đúng và đầy đủ những đặc điểm chung về ngôn từ trong các câu văn sau?
+
 
 ---
 
@@ -1339,6 +1178,7 @@ id_bai: 8
 muc: Môn Ngữ văn 10, TỰ ĐÁNH GIÁ
 loai: cau_hoi
 ---
+4. Nhận xét nào nêu đúng và đầy đủ những đặc điểm chung về ngôn từ trong các câu văn sau?
 "Sự khó mòn của tình yêu thương, sự quen cho những cái không tốt, không đúng, không đẹp, sự lười biếng suy nghĩ, sự tính toán cho mình – những cái đó làm cho con mắt người ta thường ngày mờ đi ít nhiều.".
 
 "Trong tình yêu thầm thiết của Rô-mê-ô và Giu-li-ét, trong tiếng rên xiết điên dại của vua Lia, trong ngọn lửa ghen ngày càng bùng cháy của Ô-then-lô, có một cái gì làm cho chúng tôi hãng say và phấn khởi.".
@@ -1351,7 +1191,7 @@ C. Giàu hình tượng và phong cách cá nhân
 
 D. Giàu tính văn chương và tính thời sự
 
-5. Phương án nào cho thấy đặc điểm của giọng điệu nghị luận trong đoạn văn sau?
+
 
 ---
 
@@ -1363,6 +1203,8 @@ id_bai: 8
 muc: Môn Ngữ văn 10, TỰ ĐÁNH GIÁ
 loai: cau_hoi
 ---
+5. Phương án nào cho thấy đặc điểm của giọng điệu nghị luận trong đoạn văn sau?
+
 "Không nên nghĩ rằng tác động của tác phẩm cũng như sự liên hệ của người đọc bao giờ cũng phải thông qua con đường lô gích. Tác động thầm mĩ có đặc điểm và quy luật riêng rất uyển chuyển. Thường là trực tiếp, gần như bằng trực giác và bằng liên tưởng rất linh hoạt, chịu sự quy định của rất nhiều yếu tố. Rồi sau đó, ta mới có thể dùng tư duy lô gích để giải thích. Xin lấy một ví dụ...".
 
 A. Độc thoại nhẹ nhàng để chia sẻ thông tin mới
@@ -1373,12 +1215,6 @@ C. Gay gắt, phủ nhận ý kiến của đối phương
 
 D. Đối thoại, trao đổi nhằm thuyết phục
 
-6. Ghép các lí lẽ, dẫn chứng ở cột B cho phù hợp với luận điểm ở cột A.
-
-[Bảng với hai cột A và B]
-
-A:
-(1) Tác phẩm văn học có sức hấp dẫn làm cho người đọc nhập vào cái thế giới do nhà văn sáng tạo.
 
 ---
 
@@ -1390,6 +1226,13 @@ id_bai: 8
 muc: Môn Ngữ văn 10, TỰ ĐÁNH GIÁ
 loai: cau_hoi
 ---
+6. Ghép các lí lẽ, dẫn chứng ở cột B cho phù hợp với luận điểm ở cột A.
+
+[Bảng với hai cột A và B]
+
+A:
+(1) Tác phẩm văn học có sức hấp dẫn làm cho người đọc nhập vào cái thế giới do nhà văn sáng tạo.
+
 (2) Tác động thầm mĩ có đặc điểm và quy luật riêng rất uyển chuyển.
 
 B:

@@ -505,16 +505,6 @@ loai: noi_dung
 (1) Văn hiến: nước có truyền thống văn hoá, văn minh và hiền tài thì gọi là nước văn hiến (văn: theo quan niệm thời Nguyễn Trãi dùng để chỉ ngôn ngữ, văn tự, thư tịch, văn chương, giáo dục khoa cử, điển chương, phong tục,...; hiến: chỉ người hiền tài).
 (2) Theo quan niệm của một số sử gia thời trung đại (như nhóm Ngô Sĩ Liên trong Đại Việt sử kí toàn thư) thì thời kì nhà Triệu cai trị nước ta (từ 207 đến 137 trước Công nguyên) cũng được coi là một triều đại của Đại Việt.
 
----
-
-<!-- chunk 31 -->
----
-mon: Ngữ văn 10
-bai: Bài 5 THƠ VĂN NGUYỄN TRÃI
-id_bai: 5
-muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
-loai: noi_dung
----
 Lưu Cung(1) tham công nên thất bại,
 Triệu Tiết(2) thích lớn phải tiêu vong.
 Cửa Hàm Tử bắt sống Toa Đô,
@@ -571,16 +561,6 @@ loai: noi_dung
 
 Chú ý giọng điệu, nghệ thuật đối lập ở đoạn cao trào và hệ thống hình ảnh, cách nêu chứng cứ để kết tội kẻ thù.
 
----
-
-<!-- chunk 34 -->
----
-mon: Ngữ văn 10
-bai: Bài 5 THƠ VĂN NGUYỄN TRÃI
-id_bai: 5
-muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
-loai: noi_dung
----
 Nặng nề những nỗi phù phen,
 Tan tác cả nghề canh cửi.
 Độc ác thay, trúc Nam Sơn không ghi hết tội(1),
@@ -625,16 +605,6 @@ loai: noi_dung
 (6) Bôn tẩu: chạy ngược, chạy xuôi lo công việc.
 (7) Duy ác: màn che. Ngày xưa, khi lượng ra trận thường quây màn trướng làm sở chỉ huy, do đó, duy ác được dùng để chỉ nơi bố thám mưu bàn việc quân.
 
----
-
-<!-- chunk 36 -->
----
-mon: Ngữ văn 10
-bai: Bài 5 THƠ VĂN NGUYỄN TRÃI
-id_bai: 5
-muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
-loai: noi_dung
----
 Chú ý việc tác giả hoá thân vào Lê Lợi để diễn tả nỗi lòng của lãnh tụ cuộc khởi nghĩa.
 
 13
@@ -691,16 +661,6 @@ loai: noi_dung
 (8) Chí nhân: lòng nhân nghĩa ở mức độ cao.
 (9), (10) Bồ Đằng: một ngọn núi thuộc Quỳ Châu, Nghệ An; Trà Lân: thuộc huyện Con Cuông, Nghệ An.
 
----
-
-<!-- chunk 39 -->
----
-mon: Ngữ văn 10
-bai: Bài 5 THƠ VĂN NGUYỄN TRÃI
-id_bai: 5
-muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
-loai: noi_dung
----
 Nghĩa quân gặp những khó khăn nào và điều gì đã giúp họ vượt qua?
 
 Nhìp điệu câu văn diễn tả cuộc chiến đấu và các chiến công ở đây có gì đặc biệt?
@@ -765,16 +725,7 @@ người, dùng lí lẽ nhân nghĩa để làm tan rã tư tưởng, tinh th�
 cho đội quân xâm lược Đại Việt.
 (8), (9) Khâu Ôn, Mã Yên: những địa điểm thuộc tỉnh Lạng Sơn.
 
----
 
-<!-- chunk 42 -->
----
-mon: Ngữ văn 10
-bai: Bài 5 THƠ VĂN NGUYỄN TRÃI
-id_bai: 5
-muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
-loai: noi_dung
----
 Cách thể hiện khí thế
 chiến thắng của quân ta
 và thất bại của quân Minh
@@ -950,16 +901,7 @@ b) Chỉ ra mối liên hệ giữa các phần trên và cho biết: Bài Đạ
 
 4. Hãy phân tích vai trò của yếu tố biểu cảm trong bài Đại cáo qua các dẫn chứng cụ thể.
 
----
 
-<!-- chunk 48 -->
----
-mon: Ngữ văn 10
-bai: Bài 5 THƠ VĂN NGUYỄN TRÃI
-id_bai: 5
-muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm ĐẠI CÁO BÌNH NGÔ
-loai: noi_dung
----
 5. Quan niệm về quốc gia, dân tộc được Nguyễn Trãi thể hiện trong bài Đại cáo như thế nào? Phân tích ý thức độc lập và tinh thần tự hào dân tộc được thể hiện trong quan niệm ấy.
 
 6. Liên hệ với những hiểu biết ở phần Kiến thức ngữ văn và văn bản Nguyễn Trãi - Cuộc đời và sự nghiệp, hãy xác định:
@@ -1178,8 +1120,6 @@ Xác định luận điểm của văn bản.
 
 (1) Ưu hoạn: ưu tư và hoạn nạn (ưu: lo, buồn; hoạn: tai họa, hoạn nạn). Ở đây có thể hiểu là nỗi lo lắng, buồn đau.
 
-21
-
 Sao có thể gọi là trí thức những kẻ chỉ lo lắng cho bản thân và chỉ bận khoản trước sự mất còn nhỏ nhặt của cuộc sống?
 
 Sao có thể gọi là trí thức những kẻ không ra khỏi cái vỏ ốc của thân phận mình, không thấy được lẽ sống của nhân loại, không xác định được trách nhiệm trước vận mệnh của Tổ quốc và nhân dân?
@@ -1251,16 +1191,6 @@ tục ngữ, ca dao hoặc lời phát biểu nổi tiếng của các nhân v�
 
 - Tìm hiểu kĩ vấn đề được lựa chọn, xác định nội dung cần trình bày.
 
----
-
-<!-- chunk 62 -->
----
-mon: Ngữ văn 10
-bai: Bài 5 THƠ VĂN NGUYỄN TRÃI
-id_bai: 5
-muc: Môn Ngữ văn 10, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN
-loai: noi_dung
----
 - Tìm ý và lập dàn ý cho bài viết: xác định luận đề, các luận điểm, lựa chọn dẫn chứng. Bố cục bài viết theo ba phần; các luận điểm, lí lẽ được triển khai phải gắn bó mật thiết và xuất phát từ luận đề đã nêu. Các dẫn chứng có thể lấy từ đời sống, trong lịch sử và trong tác phẩm văn học.
 
 - Xác định rõ thái độ, tình cảm khi bàn luận về vấn đề đã nêu. Vận dụng được kiến thức và những trải nghiệm trong thực tế để bài viết trở nên sâu sắc và có ý nghĩa xã hội hơn.
@@ -1594,16 +1524,6 @@ loai: noi_dung
 
 Sự thế ngày nay, cho dẫu ngôi cao(3) có đem quân cả nước sang chăng nữa, cũng chỉ thúc nhanh sự bại vong mà thôi, huống là Trương Phụ(4) chỉ tự đến nộp mạng thì đâu có gì đáng nói!
 
----
-
-<!-- chunk 80 -->
----
-mon: Ngữ văn 10
-bai: Bài 5 THƠ VĂN NGUYỄN TRÃI
-id_bai: 5
-muc: Môn Ngữ văn 10, TỰ ĐÁNH GIÁ, Nội dung
-loai: noi_dung
----
 [...] Nay các ông kể cùng lực kiệt, quân sĩ nhọc mệt, trong thiếu lương thực, ngoài không viện binh, bám hờ cụm đất nhỏ nhoi, nghi tam cải thành tro trọi, há chẳng phải như thịt trên thớt, cá trong nồi sao? Thế mà lại còn muốn lừa dối dân nước ta, dụ dỗ những điều phi nghĩa. Ho là những kẻ trung thần nghĩa sĩ, ngay cả khi thời cũng vẫn khôn, "nén mặt nằm gai", cũng còn chẳng chịu mưu đồ kia khác, lẽ nào ngày nay lại đi tin nghe những lời bất nghĩa của bọn các ông hay sao? Chỉ e người Nam trong thành nhớ mến chủ cũ(5), cũng như người Ngô ở đây không kham
 
 ---
@@ -1622,8 +1542,6 @@ loai: noi_dung
 (3) Ngôi cao: chỉ vua nhà Minh.
 (4) Trương Phụ: tướng nhà Minh, đem quân xâm lược nước ta (1406 - 1407), đánh bại quân đội của Hồ Quý Ly, dẫn đầu nhiều cuộc khởi nghĩa của Đại Việt.
 (5) Chủ cũ: ở đây nói người nước Nam (Đại Việt) ở thành Đông Quan tuy tạm sống trong vùng quân Minh chiếm đóng nhưng lòng vẫn nhớ chủ cũ là vua nhà Trần.
-
-28
 
 nói khôn khó, họ sẽ cùng hứa hại lại các ông rồi dẫn nhau ra hàng, giống như Trương Phi, Lã Bố(1), lại bị chính thuộc hạ giết hại, đó là lẽ tất nhiên thôi.
 
@@ -1691,8 +1609,6 @@ loai: noi_dung
 (4) Chốn cung đình sinh biến: chỉ việc chém giết lẫn nhau nhiều đời trong triều đình nhà Minh.
 (5) Can qua: được dùng với nghĩa là chiến tranh, loạn lạc (can: cái mộc, qua: cái mác; đều là các binh khí dùng trong chiến trận).
 
-29
-
 cầu đường sửa sang, thuyền ghe sắm đủ, thuỷ bộ hai đường, tùy theo ý muốn, đưa quân ra khỏi cõi, yên ổn muôn phần. Ta sẽ giữ phận bề tôi, không thiếu chức cống.
 
 Nếu như không nghe theo như thế, thì nên chỉnh quân bày trận, giao chiến với ta ở chốn đồng bằng, quyết một trận được thua, đáng xem tài hơn kém, chứ không nên ở chùi trong xó hang cùng, bắt chước cái lối dân bà mà mang cái nhục khăn yếm như thế!(1)
@@ -1722,17 +1638,6 @@ c) Kẻ ra người đứng binh giới là ở chỗ biết rõ thời thế m�
 2. Bức thư của Nguyễn Trãi chỉ ra sáu điều phải thua của quân Minh. Em hãy điền vào vở những nội dung còn thiếu ở cột B rồi ghép thứ tự điều phải thua ở cột A với các nội dung ở cột B sao cho chính xác.
 
 [Bảng với hai cột A và B]
-
----
-
-<!-- chunk 87 -->
----
-mon: Ngữ văn 10
-bai: Bài 5 THƠ VĂN NGUYỄN TRÃI
-id_bai: 5
-muc: Môn Ngữ văn 10, TỰ ĐÁNH GIÁ
-loai: cau_hoi
----
 A
 a) Điều phải thua thứ nhất
 b) Điều phải thua thứ hai
@@ -1761,24 +1666,12 @@ loai: cau_hoi
 ---
 (1) Ở đây, Nguyễn Trãi có ý nhắc đến câu chuyện trong Tam quốc diễn nghĩa (La Quán Trung), hồi 103: Khổng Minh đóng quân ở gò Ngũ Thượng, dụ mặt quân Ngụy không ra khiêu chiến, bèn cho người mang thư và tặng cô dâm khăn, yếm và y phục của đàn bà đến cho Tư Mã Ý. "Cái nhục khăn yếm" chỉ việc kẻ nam nhi cư xử nhút nhát, yếu đuối như phụ nữ.
 
-30
-
 3. Nhận định nào sau đây không đúng về thái độ của Nguyễn Trãi qua cách xưng hô với quân Minh?
 
 A. Nguyễn Trãi đã quá nhún nhường trước kẻ thù khi quân ta đang ở thế mạnh hơn chúng.
 
 B. Nguyễn Trãi có lúc tỏ ra tôn trọng kẻ thù nhưng rất kiên quyết khi chúng động chạm đến quyền lợi dân tộc.
 
----
-
-<!-- chunk 89 -->
----
-mon: Ngữ văn 10
-bai: Bài 5 THƠ VĂN NGUYỄN TRÃI
-id_bai: 5
-muc: Môn Ngữ văn 10, TỰ ĐÁNH GIÁ
-loai: cau_hoi
----
 C. Ông đã phân loại kẻ thù để có cách xưng hô tỏ thái độ rõ ràng với từng loại người. Ngay với Tổng binh Vương Thông, khi cần thiết Nguyễn Trãi vẫn có cách xưng hô cứng rắn mang tính cảnh cáo.
 
 D. Mục đích của bức thư là nhằm mở đường cho kẻ thù rút quân về nước, chấm dứt chiến tranh, đem lại hoà bình, độc lập cho dân tộc nên sự nhún nhường trong cách xưng hô là hợp lí.
@@ -1799,7 +1692,10 @@ A. Việc đòi chém Phương Chính, Mã Kỳ là điều kiện để hai bê
 
 B. Tác giả kể tội Phương Chính, Mã Kỳ trong bức thư nhằm chia rẽ nội bộ kẻ địch, khiến chúng nghi kị, sát phạt lẫn nhau.
 
----
+C. Đoạn văn lên án tội ác quân Minh, chỉ đích danh thủ phạm để người dân và binh lính người Việt trong thành cảm phẫn nổi dậy, kết hợp trong ngoài cùng đánh thành.
+
+D. Những câu văn đó thể hiện ý chí và quyết tâm của quân dân Đại Việt trong việc tiêu diệt quân Minh nếu chúng không chịu giảng hoà và rút quân về nước.
+
 
 <!-- chunk 91 -->
 ---
@@ -1809,10 +1705,6 @@ id_bai: 5
 muc: Môn Ngữ văn 10, TỰ ĐÁNH GIÁ
 loai: cau_hoi
 ---
-C. Đoạn văn lên án tội ác quân Minh, chỉ đích danh thủ phạm để người dân và binh lính người Việt trong thành cảm phẫn nổi dậy, kết hợp trong ngoài cùng đánh thành.
-
-D. Những câu văn đó thể hiện ý chí và quyết tâm của quân dân Đại Việt trong việc tiêu diệt quân Minh nếu chúng không chịu giảng hoà và rút quân về nước.
-
 5. Từ những tư liệu mà em tìm hiểu được, hãy trình bày hoàn cảnh ra đời của Thư dụ Vương Thông lần nữa và cho biết quan điểm của Nguyễn Trãi được thể hiện trong bức thư.
 
 6. Phân tích nghệ thuật lập luận được Nguyễn Trãi thể hiện trong bức thư (từ quan niệm thời thế, chỉ rõ âm mưu và tình thế của đối phương, vạch ra các nguyên nhân dẫn đến thất bại của chúng, tới việc đưa ra giải pháp kết thúc chiến tranh) để làm rõ
@@ -1842,6 +1734,4 @@ loai: noi_dung
 trong Quân trung từ mệnh tập, Văn bia Vĩnh Lăng; một số bài thơ trong Ức Trai thi tập và Quốc âm thi tập của Nguyễn Trãi.
 - Các bài viết về Nguyễn Trãi và thơ văn của ông.
 
-32
-
----
+ 

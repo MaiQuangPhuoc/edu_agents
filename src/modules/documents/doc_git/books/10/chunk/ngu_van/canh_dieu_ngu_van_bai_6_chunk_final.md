@@ -50,16 +50,6 @@ loai: noi_dung
 
 - Người kể chuyện hạn tri thường là người kể chuyện theo ngôi kể thứ nhất. Người kể chuyện hạn tri thường trực tiếp tham dự hoặc chứng kiến các sự việc xảy ra trong truyện nên vị trí quan sát, miêu tả, trần thuật,... bị giới hạn. Vì người kể chuyện đồng thời là một nhân vật trong truyện nên không biết được những diễn biến trong suy nghĩ, cảm xúc của các nhân vật khác; thường bày tỏ quan điểm và thái độ chủ quan khi thuật chuyện. Ví dụ: Trong truyện ngắn Ngày cuối cùng của chiến tranh (Vũ Cao Phan), phần lớn thông tin cung cấp cho người đọc đến từ trải nghiệm cá nhân và khả năng quan sát, cảm nghĩ của người kể chuyện xưng "tôi".
 
----
-
-<!-- chunk 4 -->
----
-mon: Ngữ văn 10
-bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
-id_bai: 6
-muc: Môn Ngữ văn 10, KIẾN THỨC NGỮ VĂN
-loai: noi_dung
----
 Trần thuật từ điểm nhìn hạn tri có ưu điểm là tạo được hiệu quả về tính trực tiếp như đang chứng kiến các sự việc xảy ra ở hiện trường, có cơ hội để đi sâu khai thác thế giới nội tâm nhân vật – người kể. Tuy nhiên, điểm nhìn này lại hạn chế trong việc phản ánh toàn cảnh bức tranh xã hội, môi trường hoạt động và tâm lí của các nhân vật khác.
 
 ---
@@ -72,7 +62,7 @@ id_bai: 6
 muc: Môn Ngữ văn 10, KIẾN THỨC NGỮ VĂN
 loai: noi_dung
 ---
-- Người kể chuyện toàn tri thường là người kể chuyện theo ngôi thứ ba. Người kể chuyện toàn tri không trực tiếp tham gia câu chuyện nhưng là người quan sát toàn năng, biết hết tất cả mọi việc; biết rõ hoàn cảnh, lai lịch, cảm giác, suy nghĩ và hành động của các nhân vật. Ví dụ: Người kể chuyện trong các tiểu thuyết chương hồi như Hoàng Lê nhất thống chí (Ngô gia văn phái), Tam quốc diễn nghĩa (La Quán Trung) biết rất rõ sự việc, diễn biến và kết cục tất yếu của mọi chuyện và thường tự tin đưa ra các nhận xét, bình luận về nhân vật, sự việc,... Trong truyện Người ở bến sông Châu (Sương Nguyệt Minh), người kể chuyện có khả năng di chuyển điểm nhìn linh hoạt, thâm nhập vào đời sống nội tâm phức tạp của các nhân vật. Ở truyện ngắn này, người kể chuyện toàn tri thường mượn quan điểm, thái độ, cảm giác của nhân vật Mai để kể chuyện. Bằng cách này, điểm nhìn nghệ thuật có sự đan xen, chuyển đổi từ điểm nhìn bên ngoài (tác giả) sang điểm nhìn bên trong (nhân vật Mai) và ngược lại.
+Người kể chuyện toàn tri thường là người kể chuyện theo ngôi thứ ba. Người kể chuyện toàn tri không trực tiếp tham gia câu chuyện nhưng là người quan sát toàn năng, biết hết tất cả mọi việc; biết rõ hoàn cảnh, lai lịch, cảm giác, suy nghĩ và hành động của các nhân vật. Ví dụ: Người kể chuyện trong các tiểu thuyết chương hồi như Hoàng Lê nhất thống chí (Ngô gia văn phái), Tam quốc diễn nghĩa (La Quán Trung) biết rất rõ sự việc, diễn biến và kết cục tất yếu của mọi chuyện và thường tự tin đưa ra các nhận xét, bình luận về nhân vật, sự việc,... Trong truyện Người ở bến sông Châu (Sương Nguyệt Minh), người kể chuyện có khả năng di chuyển điểm nhìn linh hoạt, thâm nhập vào đời sống nội tâm phức tạp của các nhân vật. Ở truyện ngắn này, người kể chuyện toàn tri thường mượn quan điểm, thái độ, cảm giác của nhân vật Mai để kể chuyện. Bằng cách này, điểm nhìn nghệ thuật có sự đan xen, chuyển đổi từ điểm nhìn bên ngoài (tác giả) sang điểm nhìn bên trong (nhân vật Mai) và ngược lại.
 
 Trần thuật từ điểm nhìn toàn tri rất linh hoạt và được dùng rất rộng rãi. Bởi lẽ, trần thuật từ điểm nhìn toàn tri giúp người đọc biết được nhiều thông tin hơn, rõ hơn về nhân vật và sự việc so với việc kể chuyện từ điểm nhìn hạn tri. Tuy nhiên, người đọc ít có được cảm giác kết nối trực tiếp, gắn gũi với nhân vật như trần thuật từ điểm nhìn hạn tri.
 
@@ -91,8 +81,6 @@ loai: noi_dung
 Chêm xen là biện pháp tu từ, theo đó, tác giả xen thêm một thành phần biệt lập ngay sau bộ phận thể hiện thông tin chính trong câu để bổ sung ý nghĩa hoặc gia tăng tính hình tượng, sắc thái biểu cảm cho câu. Bộ phận chêm xen thường được tách biệt bằng các dấu phẩy, dấu gạch ngang hay dấu ngoặc đơn. Ví dụ:
 
 (1) Hạn tri: biết có hạn; toàn tri: biết hết (tri: biết).
-
-34
 
 a) Cô bé nhà bên (có ai ngờ)
 Cũng vào du kích.
@@ -121,17 +109,6 @@ NGÔ GIA VĂN PHÁI(*)
 1. Chuẩn bị
 
 - Đọc phần Kiến thức ngữ văn để vận dụng vào đọc hiểu văn bản này.(**)
-
----
-
-<!-- chunk 8 -->
----
-mon: Ngữ văn 10
-bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
-id_bai: 6
-muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm KIỂU BÌNH NỐI LOẠN
-loai: noi_dung
----
 - Cần lưu ý: Tiểu thuyết chương hồi xuất hiện đầu tiên và thịnh hành ở Trung Quốc khoảng từ thế kỉ XIV đến cuối thế kỉ XVIII. Đặc điểm nổi bật của tiểu thuyết chương hồi là sự phân chia tác phẩm thành những hồi khác nhau. Mỗi hồi đều có tiêu đề khái quát nội dung được trình bày trong hồi. Kết thúc mỗi hồi thường có câu thơ mang tính chất bình luận. Sau những câu thơ là những lời gắn kết hồi trước với hồi sau, kích thích sự quan tâm, chú ý của người đọc. Tiểu thuyết chương hồi thường chú ý đến các sự kiện, tình huống bất ngờ, gây hồi hộp, căng thẳng, thú vị. Trong tiểu thuyết chương hồi, tính cách nhân vật được thể hiện tương đối nhất quán, rõ ràng thông qua đối thoại và hành động.
 
 ---
@@ -151,8 +128,6 @@ loai: noi_dung
 (*) Ngô gia văn phái: một nhóm tác giả đồng họ Ngô Thì, làng Tả Thanh Oai, trấn Sơn Nam Thượng (nay thuộc huyện Thanh Trì, Hà Nội), trong đó, Ngô Thì Chí (1753 - 1788), Ngô Thì Du (1772 - 1840) là hai tác giả chính.
 (**), (***) Khi đọc hiểu văn bản tiểu thuyết chương hồi khác trong Bài 6, học sinh cần vận dụng các gợi ý ở đây.
 (1) Hoàng Lê nhất thống chí: ghi chép về công cuộc thống nhất của vương triều nhà Lê.
-
-35
 
 + Nội dung đoạn trích mang lại cho em những hiểu biết, suy nghĩ và tình cảm gì?
 
@@ -218,7 +193,6 @@ Người kể chuyện là ai?
 
 Người kể chuyện nhận xét gì về đầu bếp, gia thần của Trịnh Tông?
 
-36
 
 ---
 
@@ -252,16 +226,6 @@ Sau đó, họ bèn ngầm đi báo cho nhau, hẹn ngày tụ họp ở chùa K
 
 - Chỉ sợ anh em không cùng một bụng thôi. Chứ nếu ba quân đồng lòng, thì bất quá chỉ thừa dịp cúng cơm sáng xong, đánh một hồi trống trong phủ làm hiệu rồi kéo ùa cả vào, nắm cẳng hắn, vứt chõng gông xuống dưới thêm một cái là xong thôi mà!
 
----
-
-<!-- chunk 15 -->
----
-mon: Ngữ văn 10
-bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
-id_bai: 6
-muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm KIỂU BÌNH NỐI LOẠN
-loai: noi_dung
----
 Mọi người đều reo mừng hưởng ứng và cùng nhìn về phía kẻ mới nói, thì ra đó là viên biện lại của đội Tiếp bảo(5) tên là Bằng Vũ.
 
 Gã Bằng Vũ này là người huyện Thanh Chương, Nghệ An, ông cha vốn là công thần đời Lê trung hưng. Về sau tập ấm(6) đã hết, con cháu trở nên nghèo nàn. Bằng Vũ được người làng thuê đi lính thay. Gã người
@@ -287,7 +251,6 @@ Chú ý động cơ và thái độ của đầu bếp, thân quân.
 
 Ai là người kể chuyện về nhân vật Bằng Vũ?
 
-37
 
 ---
 
@@ -331,16 +294,6 @@ Gặp lúc trời sắp tối, người nhà Quản Huy có kẻ khuyên hãn n�
 
 Đêm ấy, Quản Huy ngủ ở trong phủ, cũng chỉ đem theo vài người hầu như mọi ngày, không hề phòng bị gì hết.
 
----
-
-<!-- chunk 19 -->
----
-mon: Ngữ văn 10
-bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
-id_bai: 6
-muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm KIỂU BÌNH NỐI LOẠN
-loai: noi_dung
----
 Sáng mai, lễ cúng cơm bữa sáng vừa xong, các quan đang sắp lui trào, Bằng Vũ vào trong phủ, đánh luôn ba hồi, chín tiếng trống. Các quan ngơ ngác nhìn nhau. Quản Huy sai người đóng chặt cửa các(4), bắt trói Bằng Vũ đem chém. Khi Bằng Vũ đã bị trói rồi, Thụy trung hầu bảo Quản Huy rằng:
 
 - Bọn chúng lập mưu này không phải chỉ có một đứa, nếu chém Bằng Vũ thì đảng gian sẽ lọt lưới hết. Chi bằng hãy giam nó lại, để tra xét thêm cho triệt hết mầm loan.
@@ -362,7 +315,6 @@ loai: noi_dung
 (3) Tờ khải: giấy tờ của các quan để trình lên vua chúa.
 (4) Các: nơi làm việc của các quan trong một Bộ.
 
-38
 
 [Ở góc phải của trang có một ô màu hồng nhạt với nội dung:]
 Chú ý lời nói, thái độ và hành động của Quản Huy.
@@ -434,8 +386,6 @@ Khí thế của kiêu binh được miêu tả như thế nào?
 
 Chú ý hành động và thái độ của Quận Châu trước đám kiêu binh.
 
-39
-
 ---
 
 <!-- chunk 24 -->
@@ -464,16 +414,6 @@ Em ruột Quận Huy là Lý Vũ hầu Hoàng Lượng nghe tin có biến vội
 
 - Xin ngồi cao thêm nữa để thiên hạ đều được thấy mặt rồng, cho thoả lòng vui của mọi người!
 
----
-
-<!-- chunk 26 -->
----
-mon: Ngữ văn 10
-bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
-id_bai: 6
-muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm KIỂU BÌNH NỐI LOẠN
-loai: noi_dung
----
 Trong lúc gấp vội không có kỉ sáp, họ phải dùng tạm chiếc mâm vẫn bày cỗ lộc làm ghế, đặt thế tử ngồi lên, rồi tám người kè vai vào khiêng. Chốc chốc, họ lại nâng bổng chiếc mâm lên trên đầu mà đỡi, đầu mỏi lại hạ xuống vai, rồi vai mỏi lại nâng lên đầu. Cứ thế lên lên xuống xuống y như người ta giỡn quả cầu hoặc rước pho tượng Phật. Mỗi lần thế tử được nhô lên cao, quân lính lại vỗ tay reo hò vang lên một chặp. Những kẻ buôn bán ở các phố phường, chợ búa đều tranh nhau kéo đến xem mặt chúa, sân phủ đông như họp chợ.
 
 Quận Châu phải đem ngọn cờ đuôi báo phất ở giữa sân, rồi khua chiêng thu quân, mãi đến hơn một trống canh mới yên.
@@ -495,7 +435,6 @@ Mấy hôm trước, ngày nào trời cũng u ám. Hôm ấy, tư dưng bầu t
 (3) Phủ đường: nơi làm việc của các quan tri phủ thời xưa.
 (4) Hồ Thủy Quán: hồ Hoàn Kiếm bây giờ.
 
-40
 
 Tình thế bất lực, thảm hại và bi đát của Quận Huy được miêu tả qua những chi tiết nào?
 
@@ -515,16 +454,6 @@ Quân lính dắt chiếc sập ngự ở ngoài phủ đường, các quan đ�
 
 [Hình ảnh minh họa: Bức tranh vẽ một cảnh quân lính đang tập trung trước một công trình kiến trúc cổ. Trong đó có một nhân vật mặc áo đỏ nổi bật giữa đám đông quân lính mặc trang phục màu xanh lá cây. Bầu trời phía sau có màu đỏ cam, tạo nên không khí hùng tráng và sôi động.]
 
----
-
-<!-- chunk 29 -->
----
-mon: Ngữ văn 10
-bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
-id_bai: 6
-muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm KIỂU BÌNH NỐI LOẠN
-loai: noi_dung
----
 Lại nói, bọn quân lính tuy đã giết chết anh em Quận Huy, nhưng cơn giận vẫn chưa hả. Phò lập thế tử Tông lên ngôi chúa xong xuôi, họ lại kéo đến quỳ ở trước mặt chúa xin phá tất cả dinh cơ của Quận Huy. Chúa ưng lời ngay. Ba quân liền reo lớn:
 
 - Quan cứ lệnh, lính cứ truyền, mau đi phá hủy dinh Quận Huy, anh em ơi!
@@ -554,8 +483,6 @@ Kiểu binh lính hành bức áp chúa cũ, trả thù các đại thần như 
 
 Chi tiết nào cho thấy Trịnh Tông bất lực, không kiểm soát được kiểu binh?
 
-41
-
 ---
 
 <!-- chunk 31 -->
@@ -564,7 +491,7 @@ mon: Ngữ văn 10
 bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
 id_bai: 6
 muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm KIỂU BÌNH NỐI LOẠN
-loai: noi_dung
+loai: cau_hoi
 ---
 (Trích Hoàng Lê nhất thống chí)(1), Câu hỏi
 1. Hãy nêu những sự kiện chính trong văn bản Kiều bình nổi loạn và cho biết mâu thuẫn ở đây là gì.
@@ -606,8 +533,6 @@ Chuẩn bị
 (*) Tác giả Sương Nguyệt Minh, tên khai sinh là Nguyễn Ngọc Sơn, sinh năm 1958, quê ở Ninh Bình.
 (**), (***) Khi đọc hiểu văn bản truyện ngắn khác trong Bài 6, học sinh cần vận dụng các gợi ý ở đây.
 
-42
-
 + Em biết gì về hậu quả của chiến tranh? Hãy chia sẻ những hiểu biết ấy.
 
 - Tìm hiểu thêm về tác giả Sương Nguyệt Minh và truyện Người ở bến sông Châu, lựa chọn những thông tin liên quan giúp em hiểu thêm truyện ngắn này.
@@ -646,16 +571,6 @@ Mai cứ ngỡ mình trong mơ. Khi bừng tỉnh, Mai đã thấy ông chèo đ
 
 Chập tối.
 
----
-
-<!-- chunk 35 -->
----
-mon: Ngữ văn 10
-bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
-id_bai: 6
-muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm NGƯỜI Ở BÊN SÔNG CHÂU, Đọc hiểu
-loai: noi_dung
----
 Gió ở bến sông Châu thổi quần quật. Sau túp lều cỏ, tàu lá chuối rung lật bật. Nước sông Châu chảy xa xả(1), vài con két đi ăn về muộn thình thoảng kêu lạc loài giữa không trung. Mai rón lại neo chặt đò. Ông đi trước, đi Mậy tập tễnh theo sau về xóm Trại. [...]
 
 (1) Chảy xa xả (từ địa phương Ninh Bình): dòng chảy mạnh tạo thành các lớp sóng xô vào nhau nhưng không dữ dội.
@@ -721,8 +636,6 @@ Chú ý tác dụng của biện pháp điệp từ trong đoạn này.
 
 Hình dung tâm trạng của các nhân vật.
 
-44
-
 ---
 
 <!-- chunk 40 -->
@@ -781,9 +694,7 @@ Nhận xét về quyết định của nhân vật dì Mây.
 
 Chú ý thái độ của các nhân vật.
 
-45
 
-Chiều chiều.
 
 ---
 
@@ -795,6 +706,8 @@ id_bai: 6
 muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm NGƯỜI Ở BÊN SÔNG CHÂU, Đọc hiểu
 loai: noi_dung
 ---
+Chiều chiều.
+
 Mẹ hái lá bưởi mang ra bến sông Châu. Mẹ và dì gội đầu cho nhau. Tóc dì Mậy rung nhiều, xơ và thưa. Ngày chưa đi bộ đội, dì thường sai Mai lấy ghế đẩu cho dì đứng lên chải tóc. Tóc dì đen óng mượt. Những lúc gội đầu xong, dì nằm sát chân tóc quạy mù mịt. Bao nhiêu hạt nước li ti bắn ra rơi cả vào mặt Mai. Chú San nấp bên hàng rậm bụt, vạch lá nhìn trộm cũng giật mình. Mùa hoa loa kèn, dì Mậy rủ Mai ra triền sông chơi. Hai dì cháu đuổi nhau. Chạy ngược chiều gió thổi, tóc dì xõa tung bay bồng bềnh, bồng bềnh như mây. Mai thầm ước khi thành thiếu nữ có mái tóc mây dài đẹp như dì. Mẹ và dì Mậy nặng tình quá. Hai chị em rù rì rù rì chuyện trò. Mai chẳng rõ, chỉ thấy chốc chốc mẹ thở dài. Lúc về, mẹ dặn: "Mai. Chịu khó học hành rồi đỡ đần ông cho dì vui. Đừng có nhảy cẫng đi chơi, bỏ dì ngồi một mình.". Mẹ lại bảo: "Dì ra đây là phải. Ở nhà nhìn sang bên kia hàng rậm bụt thấy người ta như đôi chim cu, đến tối cũng nấu rượu.". Mai lờ mờ hiểu được câu: "Chị em gái như trái cau non.".
 
 ---
@@ -825,20 +738,8 @@ Dì Mậy thỉnh thoảng cũng phụ với ông chèo đò. Dì bỏ chân gi�
 
 Chi tiết về mái tóc dì Mậy trước đây và bây giờ có ý nghĩa gì?
 
-46
-
 cho chúng mày nợ đến nửa cỗ lương rồi trả.". Bọn nó nhao nhao: "Ừ trả đâu. Chúng chẳu đốn lại, đi lấy chồng đi mừng luôn thế.". Dị Mây chợt thoáng buồn. Chúng nó kín đáo nhìn nhau, nói lảng sang chuyện khác.
 
----
-
-<!-- chunk 47 -->
----
-mon: Ngữ văn 10
-bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
-id_bai: 6
-muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm NGƯỜI Ở BÊN SÔNG CHÂU, Đọc hiểu
-loai: noi_dung
----
 Thường đi, mỗi lần qua chúng nó bơ vào lều cỗ khi thì hoa quả, lúc lại bánh trái. Cô đứa còn ngắt cành hoa loa kèn to cắm ở đầu chõng tre dị nằm nữa. Lũ bạn Mai như một đàn chim sẻ chợt ùa đến, thoắt bay đi, làm cho bến sông Châu lúc ồn ào náo động, lúc lại im ắng, buồn tẻ.
 
 ---
@@ -865,18 +766,22 @@ loai: noi_dung
 ---
 3. Làng xây trạm xá mới. Bà y sĩ trưởng trạm không sống nổi với nghề, bỏ việc. Thiếu người, bàn ghế, giường tủ để trơ trọng. Biết dị là quân y sĩ Trường Sơn, ông Chủ tịch xã nói khó với dị ra giúp. Dị Mây trở lại nghề. Khổ nhất là những đêm trời mưa, người ta gọi dị Mây đến khám tại nhà. Đường quê khấp khểnh sõng trâu, dị bước đẩy bước hụt. Con đường từ bến sông đến trạm xá có vài trăm mét, dị cắm cạch(1) bước, lưng thấm đẫm mồ hôi. Ông Chủ tịch xã bảo: "Tập xe đạp đi, tôi cho người sửa đường rải đá mát.". Dị Mây bảo: "Trạm xá còn thiếu thuốc. Tôi có, cũng như người tập thể dục.". Mấy tháng rồi, lúc trời mưa, con đường đầy dấu chân trơn in vào đất phù sa.
 
-Đêm mưa.
+
 
 ---
 
 <!-- chunk 50 -->
 ---
+
+
 mon: Ngữ văn 10
 bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
 id_bai: 6
 muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm NGƯỜI Ở BÊN SÔNG CHÂU, Đọc hiểu
 loai: noi_dung
 ---
+Đêm mưa.
+
 Vợ chú San vượt cạn thiếu tháng. Thai ngôi ngược lại trăng hoa quẩn cổ. Thím Ba loay hoay đỡ mãi, cô Thanh không đẻ được. Cô cứ luôn mồm kêu: "Chị Ba ơi... Em chết mất... Em đau quá!...". Cô Thanh đuối dần, không còn sức rặn, một hai phần sống, tám chín phần chết. Đường lên huyện xa lắc. Đò ngang cách trở. Mưa gió dầm dề. Người ướt lướt thướt, chú San mặt cắt không còn một hạt máu. Dị Mây khoác áo mưa đến. Chú San đang đờ khóc đờ mếu. Thím Ba lại vướng
 
 (1) Cắm cạch: gọi tả việc chân chú, khó khăn bước đi kèm theo âm thanh của những vật cứng va chạm vào nhau.
@@ -924,7 +829,6 @@ loai: noi_dung
 ---
 Lính công binh làm cầu rà bom suốt ngày ngụp lặn ở bến sông Châu. Người nào cũng đen ngòm, khỏe như vâm, nhưng trông hiền khô. Lũ bạn Mai đi học qua suốt ngày trêu chọc... Ngồi trước trang sách, đầu óc Mai cứ để ở đâu đâu. Khổ thế! Người nón nào, bụi rậm không yên. Mẹ hốt hoảng chạy về nhà la lối: "Ơi em ơi là em ơi ơi... Em sống khôn thác thiêng...". Lo quá, Mai cứ nghĩ dì Mậy... Bố quát: "Cái gì? Nói đi nào. Cứ ông ông khóc.". "Thím Ba... Mình ra mà coi... người ta bảo thím dìm đứa vương bom bị.". Hoảng quá, Mai chạy theo bố ra bến sông. Chân cứ dùn lại, trống ngực đánh thình thịch, tức thở. Người ta bọc vòng trong vòng ngoài. Bố đến, mọi người giãn ra. Dì Mậy ngồi cạnh thím Ba, im phắc. Tóc dì xoã ra, mắt đảo hoảnh, vô hồn như nhìn về
 
-48
 
 ---
 
@@ -957,16 +861,6 @@ loai: noi_dung
 ---
 Giữa nền trời mờ đục, sẵu từng đàn giăng giăng hình chữ V bay mải miết về phương Nam tránh rét. Trong làng thêm nhiều người đan áo. Ông mặc ấm mới lần xuống bến. Lính công binh bắc thêm một nhịp cầu. Họ khảo nhau thủ trưởng tán dì Mây không đỡ. Ở bờ bên này họ bảo: "Dì Mây chẳn cửa hầm che chở cho thương binh. Bọn nó người lính công binh sốt rét tóc rụng trọc đầu vẫn lành lặn, còn cô y sĩ Trường Sơn bị mảnh đạn phạt mất chân.". Bên kia bờ sông họ bảo: "Chú Quang sốt rét vẫn còn hành hạ, lấy vợ chắc gì đã có con.". Lính đúc móng giữa dòng lại nói: "Chú Quang đi suốt dọc sông Châu tìm cô y sĩ Trường Sơn đã cứu mình thoát nạn.". Dân xóm Trại thì đồn: dì Mây sắp lấy chồng. Còn bên bến sông Châu là ngôi nhà tình nghĩa dựng ngay trên nền căn lều cũ, dì Mây thở dài: "Ngày ấy, ở Trường Sơn có hẹn ước gì đâu. Bây giờ người ta đã là kĩ sư. Còn mình... liệu có nên không?". Rồi dì lại vỗ về âu ơ ru thằng Cún ngủ.
 
----
-
-<!-- chunk 56 -->
----
-mon: Ngữ văn 10
-bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
-id_bai: 6
-muc: Môn Ngữ văn 10, Đọc hiểu văn bản, tác phẩm NGƯỜI Ở BÊN SÔNG CHÂU, Đọc hiểu
-loai: noi_dung
----
 Chuyện tình của thủ trưởng, chẳng biết có thật không, lính trẻ truyền nhau đến nên như huyền thoại. Nhưng có một sự thật chẳng hề nói quá: Đêm nào vẳng tiếng ru vọng ra từ căn nhà mới xây bên bến sông Châu là những người lính công binh thao thức hoài, khó ngủ...
 
 Đêm sông Châu.
@@ -1047,7 +941,6 @@ Tam quốc diễn nghĩa là bộ tiểu thuyết lịch sử dài 120 hồi. T�
 
 (*) Tác giả La Quán Trung (khoảng 1330 - 1400), quê ở Sơn Tây (Trung Quốc).
 
-50
 
 ---
 
@@ -1236,7 +1129,6 @@ Em có bất ngờ với tình huống này không? Vì sao?
 
 Khí phách và tài nghệ của Quan Công được thể hiện ra sao?
 
-53
 
 ---
 
@@ -1290,8 +1182,6 @@ loai: noi_dung
 
 a) Lúc đó, buổi sáng của một ngày trước Ba mươi tháng Tư, năm người lính đứng bên chiếc cổng sắt xiêu vẹo, phía trong nhô cao một tháp xi măng lênh khênh.
 
-54
-
 b) Vào phiên liên lạc sớm với trung đoàn, tôi được nhắc tăng cường cảnh giác và được biết thêm rằng ngày hôm nay – rất có thể là ngày hôm nay – các binh đoàn bộ binh sẽ tiến vào nội đô.
 
 ---
@@ -1332,16 +1222,6 @@ Tôi đã đến với anh rồi đấy...).
 
 b) Chị Phèo hình như đã trông thấy trước tuổi già của hắn, đói rét và ốm đau, và cô độc, cái này còn đáng sợ hơn đói rét và ốm đau. (Nam Cao)
 
----
-
-<!-- chunk 73 -->
----
-mon: Ngữ văn 10
-bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
-id_bai: 6
-muc: Môn Ngữ văn 10, THỰC HÀNH TIẾNG VIỆT
-loai: noi_dung
----
 4. Hãy viết một đoạn văn (khoảng 5 – 7 dòng) có sử dụng biện pháp tu từ chêm xen, sau đó, nhận xét về tác dụng tu từ của chúng.
 
 ---
@@ -1364,16 +1244,6 @@ a) Phân tích, đánh giá một tác phẩm truyện là nêu lên và làm s�
 
 Phân tích và đánh giá là những thao tác thường kết hợp với nhau trong các bài nghị luận văn học. Ví dụ, trong đoạn trích sau đây, người viết tập trung phân tích và đánh giá tính hoàn chỉnh về cốt truyện của văn bản Hồi trống Cổ Thành:
 
----
-
-<!-- chunk 75 -->
----
-mon: Ngữ văn 10
-bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
-id_bai: 6
-muc: Môn Ngữ văn 10, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM TRUYỆN, Định hướng
-loai: noi_dung
----
 Hồi trống Cổ Thành chỉ là một đoạn trích ngắn song vẫn có thể xem là một câu chuyện trong tác phẩm tự sự có cốt truyện hoàn chỉnh, tức diễn ra qua các bước thường thấy: trình bày (giới thiệu nhân vật, sự việc, hoàn cảnh), khai đoan (hoặc thắt nút: sự việc bắt đầu), phát triển (các biến cố tiếp diễn), đỉnh điểm (hoặc cao trào), mở nút (thường đồng thời cũng là kết thúc).
 
 ---
@@ -1388,16 +1258,6 @@ loai: noi_dung
 ---
 Phần đầu đoạn trích trình bày những việc diễn ra trước khi Trương Phi, nhân vật trung tâm của đoạn trích, xuất hiện. Quan Công, sau khi thoát khỏi tay Tào Tháo, nghe lời Tôn Cần, đưa hai vợ của Lưu Bị là Cam phu nhân và Mỵ phu nhân đi về Nhữ Nam gặp Lưu Bị. Trên đường về Nhữ Nam, được biết Trương Phi sau khi thua trận đã chiếm được Cổ Thành làm căn cứ, Quan Công rất mừng, "liền sai ngay Tôn Cần vào thành báo tin, bảo Trương Phi ra đón". Tôn Cần vừa nói xong, Trương Phi đã đứng dựng thịnh nộ, "chẳng nói năng gì, lập tức mặc áo giáp, vác mâu lên ngựa, dẫn một nghìn quân, đi tắt ra cửa bắc", "mặt trơn xoe, râu vểnh ngược, hò thét như sấm, mưa xà mâu chạy lại đâm Quan Công". Còn Quan Công, thấy Trương Phi, lại "mừng rỡ vô cùng, giao long đao cho Châu Thương cầm, tế ngựa lại đón". Tình hình diễn ra quá bất ngờ, sự việc chính đã bắt đầu, mâu thuẫn đã bùng nổ mà một bên liên quan vẫn chưa hề rõ đầu đuôi câu chuyện. Quá trình phát triển của các biến cố dần phơi bày nguyên nhân sự việc và đẩy mâu thuẫn tới cao trào. Quan Công nhắc lại việc kết nghĩa vườn đào, tưởng để uốn nắn thái độ quá khích của Trương Phi, không ngờ lại như "đổ dầu vào lửa", càng làm cho Trương Phi thêm phẫn nộ. Theo Trương Phi, Quan Công ở với Tào một thời gian, nhận tước hầm Tào phong cho là đã phản bội; đã phản bội còn rêu rao "nghĩa vườn đào", lại càng đáng căm thù và phỉ nhổ. Biết lầm vào tình thế "khó nói", Quan Công đã kiên trì, bình tĩnh, lần lượt nhờ Cam phu nhân,
 
----
-
-<!-- chunk 77 -->
----
-mon: Ngữ văn 10
-bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
-id_bai: 6
-muc: Môn Ngữ văn 10, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM TRUYỆN, Định hướng
-loai: noi_dung
----
 Tác giả nêu nhận xét về vấn đề gì trong đoạn mở đầu?
 
 Tác giả phân tích, làm rõ nhận xét nêu ở đoạn mở đầu bằng cách nào?
@@ -1430,16 +1290,6 @@ Phân biệt lí lẽ phân tích của tác giả và các bằng chứng lấy
 
 Tính chất hoàn chỉnh về cốt truyện của đoạn trích nêu ở mở đầu đã được làm rõ chưa?
 
----
-
-<!-- chunk 80 -->
----
-mon: Ngữ văn 10
-bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
-id_bai: 6
-muc: Môn Ngữ văn 10, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM TRUYỆN, Định hướng
-loai: noi_dung
----
 Câu chuyện diễn ra qua hàng loạt biến cố bất ngờ đầy kịch tính. Bất ngờ mà lại là tất yếu, hợp lô gích. Có thể chứng minh không khó khăn tính tất yếu của một biến cố đương như bất ngờ trong đoạn trích. Có lẽ bất ngờ nhất là sự xuất hiện đột ngột của Sài Dương. Như trên đã nói, trong các tướng Tào, chỉ có một mình Sài Dương là không phục Quan Công... Trong cuộc tranh hùng triền miên, con người hiểu thắng và tự phụ ấy ắt sẽ tìm cơ hội để đọ tài với Quan Công. Biết Quan Công chém Tần Kỳ, tướng Hạ Hầu Đôn của Tào đã tiến đoán là thế nào Sài Dương cũng tìm cách báo thù. Quan Công trả ơn Tào Tháo dù biết đó là người của đối phương. Sài Dương báo oán Quan Công dù Tào mấy lần ngăn cản. Cả hai điều đó đều tất yếu vì đều là sản phẩm của quan niệm ân oán cá nhân trong xã hội phong kiến. Trước sau mâu thuẫn giữa Sài Dương và Quan Công cũng phải bùng nổ và sự bùng nổ ấy mang đến hai lần tính tất yếu! [...] Qua những va chạm, xung đột, tính cách hai nhân vật chính đã được thể hiện một cách sinh động, rõ nét.
 
 ---
@@ -1504,16 +1354,6 @@ a) Chuẩn bị
 
 - Đọc kĩ đề bài và chú ý các vấn đề đã nêu trong mục 1. Định hướng ở trên để vận dụng vào bài viết.
 
----
-
-<!-- chunk 84 -->
----
-mon: Ngữ văn 10
-bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
-id_bai: 6
-muc: Môn Ngữ văn 10, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM TRUYỆN, Thực hành
-loai: noi_dung
----
 b) Tìm ý và lập dàn ý
 
 - Tìm ý cho bài viết bằng cách đặt và trả lời các câu hỏi sau:
@@ -1559,16 +1399,6 @@ c) Viết
 - Dựa vào dàn ý đã chuẩn bị để viết bài văn hoàn chỉnh.
 - Cần chú ý: Bài viết đủ ba phần; các luận điểm trong phần thân bài cần làm rõ cho vấn đề nêu ở mở bài (phân tích, đánh giá về nhân vật di Mậy); các ví dụ (bằng chứng) lấy từ truyện Người ở bến sông Châu phải phù hợp; lời văn trong sáng, thể hiện được thái độ, tình cảm của người viết đối với nhân vật được phân tích;...
 
----
-
-<!-- chunk 87 -->
----
-mon: Ngữ văn 10
-bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
-id_bai: 6
-muc: Môn Ngữ văn 10, VIẾT, đề bài VIẾT BÀI VĂN NGHỊ LUẬN PHÂN TÍCH, ĐÁNH GIÁ MỘT TÁC PHẨM TRUYỆN, Thực hành
-loai: noi_dung
----
 d) Kiểm tra và chỉnh sửa
 Đọc lại bài văn đã viết, đối chiếu với mục 1. Định hướng và dàn ý ở trên để phát hiện và sửa lỗi theo yêu cầu sau:
 
@@ -1605,17 +1435,6 @@ a) Giới thiệu, đánh giá về một tác phẩm truyện là nêu lên ý 
 
 việc thuyết trình để giới thiệu và đánh giá về một tác phẩm truyện có thể tập trung vào một phương diện hoặc vấn đề nổi bật nào đó. Trong phần Viết, các em đã được hướng dẫn cách làm bài văn nghị luận phân tích, đánh giá một tác phẩm truyện. Với phần Nói và nghe, các em cần chuyển nội dung bài viết thành bài thuyết trình, kết hợp với lời nói, giọng điệu và ngôn ngữ cơ thể phù hợp để trình bày lại nội dung đã viết trước người nghe.
 
----
-
-<!-- chunk 90 -->
----
-mon: Ngữ văn 10
-bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
-id_bai: 6
-muc: Môn Ngữ văn 10, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ
-loai: noi_dung
----
-VỀ MỘT TÁC PHẨM TRUYỆN, Định hướng
 b) Để giới thiệu, đánh giá về một tác phẩm truyện, các em cần chú ý:
 
 - Đọc lại truyện; tìm hiểu, ghi nhớ các thông tin về tác giả, hoàn cảnh ra đời của tác phẩm; tóm tắt truyện, nắm vững các điểm đặc sắc về hình thức và nội dung của truyện.
@@ -1629,15 +1448,14 @@ b) Để giới thiệu, đánh giá về một tác phẩm truyện, các em c�
 mon: Ngữ văn 10
 bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
 id_bai: 6
-muc: Môn Ngữ văn 10, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ
+muc: Môn Ngữ văn 10, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VỀ MỘT TÁC PHẨM TRUYỆN, Thực hành
 loai: noi_dung
 ---
-VỀ MỘT TÁC PHẨM TRUYỆN, Thực hành
 2. Thực hành
 
 Bài tập: Chọn một trong hai vấn đề sau để trình bày trước lớp:
 
-(1) Giới thiệu, đánh giá nghệ thuật xây dựng tính cách các nhân vật Trương Phi và Quan Công trong đoạn trích "Hồi trống Cổ Thành" ("Tam quốc diễn nghĩa" - La Quán Trung).
+(1) Giới thiệu, đánh giá nghệ thuật xây dựng tính cách các nhân vật Trương Phi và Quan Công tr  ong đoạn trích "Hồi trống Cổ Thành" ("Tam quốc diễn nghĩa" - La Quán Trung).
 
 (2) Giới thiệu, đánh giá về nhân vật di Mây trong truyện "Người ở bến sông Châu" của Sương Nguyệt Minh.
 
@@ -1656,10 +1474,10 @@ a) Chuẩn bị (ví dụ với vấn đề 2)
 mon: Ngữ văn 10
 bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
 id_bai: 6
-muc: Môn Ngữ văn 10, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ
+muc: Môn Ngữ văn 10, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VỀ MỘT TÁC PHẨM TRUYỆN, Thực hành
 loai: noi_dung
 ---
-VỀ MỘT TÁC PHẨM TRUYỆN, Thực hành
+
 b) Tìm ý và lập dàn ý
 
 - Tìm ý: xem lại dàn ý đã chuẩn bị ở phần Viết; bổ sung ý (nếu cần) và những chỗ cần lược bỏ, cần nhấn mạnh trong bài nói.
@@ -1667,8 +1485,6 @@ b) Tìm ý và lập dàn ý
 - Lập dàn ý: xem lại dàn ý và nội dung đã làm ở phần Viết; tổ chức, sắp xếp lại cho phù hợp với trình tự bài nói. Các em cần chú ý:
 
 + Cần nhắc yêu cầu thuyết trình trong bài Giới thiệu, đánh giá về một tác phẩm truyện để bổ sung ý mới, sắp xếp lại các ý cho mạch lạc, phù hợp với nội dung bài thuyết trình. Bố cục của bài nói này tương tự bố cục ba phần của bài viết.
-
-61
 
 + Cũng có thể trình bày theo trật tự khác nhưng cần nêu được các nội dung chính mà đề bài đã yêu cầu.
 
@@ -1679,27 +1495,16 @@ b) Tìm ý và lập dàn ý
 mon: Ngữ văn 10
 bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
 id_bai: 6
-muc: Môn Ngữ văn 10, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ
+muc: Môn Ngữ văn 10, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ VỀ MỘT TÁC PHẨM TRUYỆN, Thực hành
 loai: noi_dung
 ---
-VỀ MỘT TÁC PHẨM TRUYỆN, Thực hành
+
 c) Nói và nghe
 
 - Dựa vào nội dung dàn ý đã chuẩn bị để thực hiện thuyết trình.
 
 - Cách thuyết trình và thảo luận: tham khảo các yêu cầu đã nêu ở Bài 5, phần Nói và nghe, mục c (trang 27).
 
----
-
-<!-- chunk 94 -->
----
-mon: Ngữ văn 10
-bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
-id_bai: 6
-muc: Môn Ngữ văn 10, NÓI VÀ NGHE, đề bài GIỚI THIỆU, ĐÁNH GIÁ
-loai: noi_dung
----
-VỀ MỘT TÁC PHẨM TRUYỆN, Thực hành
 d) Kiểm tra và chỉnh sửa
 
 Tham khảo yêu cầu đã nêu ở Bài 5, phần Nói và nghe, mục d (trang 27).
@@ -1800,20 +1605,8 @@ loai: noi_dung
 
 Ngày làm việc đã trở lại mà không một ai trong Cô nhi viện đi qua hướng này, trong khi các ma xơ thì cố ý lòng vòng đứng ngồi chẳng yên. Cũng chẳng có lễ sáng trong nhà nguyện nữa, đương nhiên. Và cũng không một ai trong
 
-63
-
 chúng tôi nhìn thấy ma xơ Giám đốc đâu, bà như giấu mặt vậy. Tất cả giống một sự đóng loa tự tố cáo.
 
----
-
-<!-- chunk 101 -->
----
-mon: Ngữ văn 10
-bai: Bài 6 TIỂU THUYẾT VÀ TRUYỆN NGẮN
-id_bai: 6
-muc: Môn Ngữ văn 10, TỰ ĐÁNH GIÁ, Nội dung
-loai: noi_dung
----
 Vào phiên liên lạc sớm với trung đoàn, tôi được nhắc tăng cường cảnh giác và được biết thêm rằng ngày hôm nay - rất có thể là ngày hôm nay - các quân đoàn bộ binh sẽ tiến vào nội đô. Trong báo cáo của mình, tôi cũng đề cập đến tình hình mất đất nơi tác nghiệp và xin được toàn quyền hành động. Trung đoàn trưởng đồng ý: "Gắng hết sức bắt sống hay gọi hàng. Đừng phung phí cái chết, chiến tranh sắp qua rồi. Và lại ở đó đang có nhiều trẻ em, phải không?".
 
 ---
@@ -1865,8 +1658,6 @@ loai: noi_dung
 Vinh tăng chiết áp của chiếc đài bán dẫn Sô-ni (Sony) lúc nào cũng cập kè bên sườn anh. Đập ngay vào tai tôi lệnh hạ vũ khí cho quân đội Sài Gòn của Tổng thống Dương Văn Minh(1). Tôi cảm nhận cả mình cũng không có cảm xúc rõ rệt nữa khi hướng về đồng đội:
 
 (1) Tổng thống Dương Văn Minh: Dương Văn Minh (1916 - 2001) giữ chức vụ Tổng thống chế độ Việt Nam Cộng hoà trong hai ngày cuối cùng của chiến tranh.
-
-64
 
 - Chúng ta sẽ đánh trận cuối cùng của chiến tranh.
 
@@ -1923,8 +1714,6 @@ NXB Hội Nhà văn, Hà Nội, 1998)
 
 (1) Hào hển (như hổn hển): nói, thở mạnh và mệt nhọc.
 (2) Đầu Chúa tuần nan (đầu Thánh giá): cử chỉ, nghi thức của người theo đạo Thiên Chúa để tuyên xưng đức tin, nhớ ơn hoặc tạ ơn Chúa.
-
-65
 
 ---
 

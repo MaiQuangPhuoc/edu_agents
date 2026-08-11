@@ -1828,8 +1828,7 @@ Các lỗi còn mắc | Tham khảo yêu cầu đã nêu ở Bài 5 (trang 25).
 
 NÓI VÀ NGHE
 
-GIỚI THIỆU, ĐÁNH GIÁ
-VỀ MỘT TÁC PHẨM TRUYỆN
+GIỚI THIỆU, ĐÁNH GIÁ VỀ MỘT TÁC PHẨM TRUYỆN 
 
 1. Định hướng
 
