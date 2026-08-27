@@ -1,0 +1,36 @@
+Nếu là mình
+
+Schema cuối cùng của Router Agent sẽ là:
+
+class RouterOutput(BaseModel):
+
+    is_valid: bool
+
+    reasoning: str
+
+    subject: str
+
+    topic: str | None
+
+    intent: str
+
+    query_rewritten: str
+
+    memory_used: bool
+
+    multi_intent: bool
+
+    sub_queries: list[str]
+
+    confidence: float
+
+và coi:
+
+reasoning
+
+là trường quan trọng nhất, vì nó lưu lại toàn bộ quá trình suy luận của Router trước khi đưa ra các nhãn:
+
+subject
+topic
+intent
+query_rewritten

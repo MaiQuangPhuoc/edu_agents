@@ -1435,11 +1435,7 @@ c) $x-5y < 2$;           d) $-3x+y+2 \leq 0$;
 e) $3(x-1)+4(y-2) < 5x-3$.
 
 2. Biểu diễn miền nghiệm của hệ bất phương trình sau trên mặt phẳng tọa độ Oxy:
-
-$\begin{cases}
-x-2y > 0 \\
-x+3y < 3.
-\end{cases}$
+Hệ bất phương trình { x-2y>0 \n x+3y<3 } 
 
 3. Một công ty dự định sản xuất hai loại sản phẩm A và B. Các sản phẩm này được chế tạo từ ba loại nguyên liệu I, II và III. Số kilôgam dự trữ từng loại nguyên liệu và số kilôgam từng loại nguyên liệu cần dùng để sản xuất ra 1 kg sản phẩm được cho trong bảng sau:
 
