@@ -20,7 +20,8 @@ class VectorStoreRetriever:
         embeddings: Embeddings,
         collection_name: str = "documents",
         top_k: int = 10,
-        reranker_model: str = "BAAI/bge-reranker-base"
+        # reranker_model: str = "BAAI/bge-reranker-base"
+        reranker_model = "BAAI/bge-reranker-v2-m3"
     ):
         self._client = QdrantClient(
             url=url,

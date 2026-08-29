@@ -259,7 +259,7 @@ def upload_file_to_qdrant(input_path, embeddings_qa):
                 vector_manager.create_vector_store(
                     documents=batch,
                     embeddings=embeddings_qa,
-                    collection_name="new_documents"
+                    collection_name="doc_final"
                 )
 
                 print(
@@ -371,6 +371,6 @@ base_path = r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\do
 subjects = ["toan", "ngu_van", "lich_su"]
 
 for mon in subjects:
-    input_path = Path(base_path) / mon / f"{mon}_10_all_chunks_final.md"
+    input_path = Path(base_path) / mon / f"{mon}_10_all_chunks_final_updated.md"
     print(f"Uploading: {input_path}")
     upload_file_to_qdrant(input_path, embeddings_qa)
