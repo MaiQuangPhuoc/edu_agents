@@ -1,0 +1,9790 @@
+<!-- chunk 1 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "1"
+section_name: Mục tiêu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_1
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+Học xong bài này, em sẽ:
+- Trình bày được khái niệm lịch sử và phân biệt được hiện thực lịch sử, nhận thức lịch sử. Giải thích được khái niệm Sử học.
+- Trình bày được đối tượng nghiên cứu của Sử học. Nêu được chức năng, nhiệm vụ của Sử học và ý nghĩa của một số nguyên tắc cơ bản của Sử học.
+- Phân biệt được các nguồn sử liệu: lời nói – truyền khẩu, thành văn, hiện vật,...
+- Nêu được một số phương pháp cơ bản của Sử học và bước đầu vận dụng được một số phương pháp cơ bản của Sử học thông qua các bài tập cụ thể.
+
+<!-- chunk 2 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "2"
+section_name: Mô tả bài
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_2
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+Đầu tháng 8-1945, Mỹ ném hai quả bom nguyên tử xuống thành phố Hi-rô-si-ma và Na-ga-sa-ki của Nhật Bản. Đến nay, sự kiện lịch sử này còn nhiều ý kiến đánh giá trái chiều:
+
+[Hình ảnh mô tả vụ nổ bom nguyên tử, với đám mây hình nấm đặc trưng]
+
+Hình 1.1. Mỹ ném bom nguyên tử xuống Hi-rô-si-ma, Nhật Bản (ngày 6-8-1945)
+
+Ý kiến thứ nhất: Mỹ ném bom nguyên tử xuống Nhật Bản làm cho Chiến tranh thế giới thứ hai chấm dứt sớm hơn nhiều tháng, hạn chế thiệt hại sinh mạng cho các bên tham chiến.
+
+Ý kiến thứ hai: Mỹ không cần thiết phải ném bom nguyên tử. Đó là tội ác chiến tranh, là hành vi tàn bạo chống lại loài người.
+
+Vậy lịch sử là gì? Hiện thực lịch sử và nhận thức lịch sử là gì và có liên quan đến những yếu tố cơ bản nào?
+
+<!-- chunk 3 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "3"
+section_name: Mục 1 Lịch sử, hiện thực lịch sử và nhận thức lịch sử
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_3
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+1. Lịch sử, hiện thực lịch sử và nhận thức lịch sử
+
+Khái niệm lịch sử có thể hiểu theo ba nghĩa chính:
+
+Thứ nhất, lịch sử là những gì đã diễn ra trong quá khứ của xã hội loài người.
+
+Thứ hai, lịch sử là những câu chuyện về quá khứ hoặc tác phẩm ghi chép về quá khứ.
+
+Thứ ba, lịch sử là một khoa học (còn gọi là Sử học) nghiên cứu về quá khứ của con người. Khoa học lịch sử nghiên cứu các sự kiện, hiện tượng đã diễn ra trong xã hội loài người và phát hiện ra quy luật phát sinh, phát triển của nó.
+
+Như vậy, khái niệm lịch sử gắn liền với hai yếu tố cơ bản: hiện thực lịch sử và nhận thức lịch sử.
+
+Bảng 1.1. Hiện thực lịch sử và nhận thức lịch sử
+Hiện thực lịch sử | Nhận thức lịch sử
+
+<!-- chunk 5 -->
+
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "5"
+section_name: Mục 1 Lịch sử, hiện thực lịch sử và nhận thức lịch sử
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_5
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+[Hình ảnh mô tả một buổi lễ ngoài trời với một bục phát biểu được trang trí và nhiều người đứng xung quanh]
+
+Hình 1.2. Chủ tịch Hồ Chí Minh đọc bản Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội (ngày 2-9-1945)
+
+Hiện thực lịch sử có trước, nhận thức lịch sử có sau. Hiện thực lịch sử là duy nhất và không thể thay đổi, nhưng nhận thức lịch sử rất đa dạng và có thể thay đổi theo thời gian. Hiện thực lịch sử luôn khách quan, còn nhận thức lịch sử vừa khách quan, vừa chủ quan.
+
+Nhận thức lịch sử có sự khác nhau là do mục đích nghiên cứu, nguồn sử liệu, quan điểm tiếp cận, phương pháp nghiên cứu,...
+
+<!-- chunk 6 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "6"
+section_name: Mục 1 Lịch sử, hiện thực lịch sử và nhận thức lịch sử
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_6
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+Đọc thông tin và quan sát các hình 1.1, 1.2, hãy:
+- Trình bày khái niệm lịch sử. Phân biệt hiện thực lịch sử và nhận thức lịch sử.
+- Phân biệt hiện thực lịch sử và nhận thức lịch sử qua sự kiện Chủ tịch Hồ Chí Minh đọc bản "Tuyên ngôn Độc lập" tại Quảng trường Ba Đình, Hà Nội ngày 2-9-1945.
+- Giải thích khái niệm Sử học.
+
+<!-- chunk 7 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "7"
+section_name: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_7
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+2. Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+2.1. Đối tượng nghiên cứu của Sử học
+
+Đối tượng nghiên cứu của Sử học rất đa dạng và mang tính toàn diện, gồm toàn bộ những hoạt động của con người (cá nhân, tổ chức, cộng đồng, quốc gia hoặc khu vực,...) trong quá khứ, diễn ra trên mọi lĩnh vực như chính trị, ngoại giao, quân sự, kinh tế, xã hội, văn hoá,...
+
+Nhận thức về đối tượng nghiên cứu của Sử học xuất hiện từ khi con người biết ghi chép về lịch sử. Nhưng trong xã hội cổ giai cấp, quan niệm về đối tượng của Sử học lại khác biệt: Sử học phương Đông thời kì cổ - trung đại chủ yếu ghi chép về hoạt động của vua, quan, triều đình,...; Sử học mác-xít cho rằng lịch sử xã hội loài người là lịch sử của quần chúng nhân dân, lịch sử của những phương thức sản xuất kế tiếp nhau.
+
+<!-- chunk 8 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "8"
+section_name: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_8
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+Hình 1.3. Trang bìa sách về lịch sử thế giới
+[Hình ảnh bìa sách "WORLD HISTORY" của tác giả Natasha Hanes]
+
+Hình 1.4. Trang bìa sách về lịch sử Việt Nam
+[Hình ảnh bìa sách "GIÁO TRÌNH LỊCH SỬ VIỆT NAM" tập VI, từ 1954 đến 1975]
+
+Thời phong kiến: "Vua sai coi việc chép sử, cho nên dầu thế nào sự chép sử cũng không được tự do, thường có ý thiên vị về nhà vua, thành ra trong sử chỉ cần chép những chuyện quan hệ đến nhà vua, hơn là những chuyện quan hệ đến sự tiến hoá của nhân dân trong nước".
+
+(Việt Nam sử lược, Trần Trọng Kim)
+
+<!-- chunk 9 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "9"
+section_name: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_9
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+Đọc thông tin, tư liệu và quan sát các hình 1.3, 1.4, hãy trình bày đối tượng nghiên cứu của Sử học. Cho ví dụ cụ thể.
+
+<!-- chunk 10 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "10"
+section_name: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: Chức năng và nhiệm vụ của Sử học
+has_table: false
+chunk_id: ls_10
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+2.2. Chức năng và nhiệm vụ của Sử học
+
+Chức năng của Sử học là khôi phục hiện thực lịch sử một cách chính xác, khách quan (chức năng khoa học) và phục vụ cuộc sống của con người hiện tại thông qua những bài học kinh nghiệm được đúc kết từ quá khứ (chức năng xã hội).
+
+Nhiệm vụ của Sử học là cung cấp những tri thức khoa học về lịch sử và giáo dục, nêu gương.
+
+Hình ảnh mô tả sơ đồ chức năng và nhiệm vụ của Sử học, bao gồm:
+
+SỬ HỌC
+↓
+CHỨC NĂNG
+↙ ↘
+Chức năng khoa học ↔ Chức năng xã hội
+(khôi phục hiện thực lịch sử) (phục vụ cuộc sống của con người)
+↓
+NHIỆM VỤ
+↙ ↘
+Cung cấp tri thức khoa học ↔ Giáo dục, nêu gương
+(những tri thức đã được khoa học (hướng tới những phẩm chất,
+lịch sử thừa nhận, giúp con người giá trị tốt đẹp, tiến bộ
+hiểu đúng quá khứ) và nhân văn)
+
+<!-- chunk 11 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "11"
+section_name: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: Chức năng và nhiệm vụ của Sử học
+has_table: false
+chunk_id: ls_11
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+Sơ đồ 1.1. Chức năng và nhiệm vụ của Sử học
+
+"Vì sao phải viết quốc sử? Vì sử chỉ yêu ghi chép công việc. Có chính trị của một đời thì phải có sử của một đời. Mà sự ghi chép của sử giữ nghĩ luận rất nghiêm, tỏ điểm việc trị trị thì sáng tỏ ngang với Mặt Trời, Mặt Trăng, rõn rẽ kể loan tác thì ráo riết như sương thu lạnh buốt, người thiện biết thì có thể bắt chước, người ác biết thì có thể tự răn, quan hệ với chính trị không phải là ít. Cho nên mới làm ra quốc sử".
+
+(Bài tựa sách Đại Việt sử ký tục biên, Phạm Công Trứ)
+
+<!-- chunk 12 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "12"
+section_name: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: Chức năng và nhiệm vụ của Sử học
+has_table: false
+chunk_id: ls_12
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+Đọc thông tin, tư liệu và quan sát sơ đồ 1.1, hãy:
+- Nêu chức năng và nhiệm vụ của Sử học. Cho ví dụ cụ thể.
+- Cho biết ý nghĩa đoạn trích trong bài tựa sách "Đại Việt sử ký tục biên" của Phạm Công Trứ.
+
+<!-- chunk 13 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "13"
+section_name: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: Nguyên tắc cơ bản của Sử học
+has_table: false
+chunk_id: ls_13
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+2.3. Nguyên tắc cơ bản của Sử học
+
+Việc nghiên cứu và trình bày lịch sử luôn gắn liền với những nguyên tắc cơ bản. Trong đó, nguyên tắc khách quan, trung thực và tiến bộ phải đặt lên hàng đầu. Ngoài ra, việc nghiên cứu và trình bày lịch sử cũng cần bảo đảm tính toàn diện và cụ thể.
+
+Bảng 1.2. Các nguyên tắc cơ bản của Sử học và ý nghĩa của các nguyên tắc cơ bản
+
+Các nguyên tắc cơ bản của Sử học:
+- Khách quan: Dựa trên các nguồn sử liệu, nhà sử học khôi phục lại hiện thực lịch sử một cách khách quan, không nhận thức phiến diện, một chiều.
+- Trung thực: Nhà sử học cần trung thực, tôn trọng sự thật, không xuyên tạc, thêm bớt hoặc làm sai lệch hiện thực lịch sử.
+- Tiến bộ: Từ thấu hiểu quá khứ, Sử học hướng đến những giá trị tốt đẹp, góp phần xây dựng xã hội văn minh, tiến bộ.
+
+<!-- chunk 14 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "14"
+section_name: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: Nguyên tắc cơ bản của Sử học
+has_table: false
+chunk_id: ls_14
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+Ý nghĩa của các nguyên tắc cơ bản:
+- Định hướng việc nghiên cứu cho nhà sử học: bám sát mục tiêu, nhiệm vụ, phương pháp nghiên cứu,...
+- Giúp nhà sử học hiểu rõ sứ mệnh, trách nhiệm, đạo đức trong quá trình nghiên cứu, trình bày lịch sử.
+- Phê phán các quan điểm sai trái, bảo vệ lẽ phải, ủng hộ quan điểm khoa học, tiến bộ và nhân văn.
+
+Câu chuyện "Thôi Trữ giết vua"
+
+Thời Chiến Quốc, Tề Trang Công bị Thôi Trữ là quan đại phu nước Tề giết chết. Thôi Trữ lệnh cho Thái sư Bá (quan chép sử) viết: Tề Trang Công chết do bị sốt rét, để che dấu sự thật. Thái sư Bá không chịu, kiên quyết viết rằng: "Thôi Trữ giết vua Quang (tức Tề Trang Công)". Thôi Trữ nổi giận, giết chết Thái sư Bá.
+
+<!-- chunk 15 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "15"
+section_name: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: Nguyên tắc cơ bản của Sử học
+has_table: false
+chunk_id: ls_15
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+Thái sư Bá có ba người em trai là Trọng, Thúc, Quý. Trọng và Thúc được gọi đến và cũng chép vào sách sử câu chữ đúng như người anh đã viết. Thôi Trữ lại giết Trọng và Thúc. Còn lại Quý cũng cầm lấy thẻ sách viết đúng như câu của ba người anh.
+
+Thôi Trữ cầm sách xem, hỏi Quý: "Ba người anh của nhà ngươi đều vì câu này mà bị giết chết, lẽ nào ngươi không biết quý tiếc mạng sống của mình sao?".
+
+Quý ưng dung đáp rằng: "Viết đúng sự thật là chức trách của quan chép sử. Nếu vì cầu sống mà làm chuyện sai trái, vậy thân thể chết còn hơn!".
+
+Thôi Trữ nghe xong đánh trả lại thẻ sách cho Quý và không giết ông nữa.
+
+<!-- chunk 16 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "16"
+section_name: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: Nguyên tắc cơ bản của Sử học
+has_table: false
+chunk_id: ls_16
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+Quý cầm thẻ sách ra ngoài, khi sắp đến Sử quán thì gặp Nam sử Thị. Quý hỏi ông tại sao phải đến đây, Nam sử Thị đáp: "Tôi nghe nói rằng anh em nhà ông vì kiên quyết viết đúng sự thật mà đều bị giết chết cả, lo rằng không có người viết lại việc này đúng sự thật nữa, vì vậy tôi vội cầm thẻ sách đến đây". Quý liền đưa thẻ sách đang cầm trong tay cho Nam sử Thị xem, lúc này Nam sử Thị mới yên tâm ra về.
+
+(Sử ký, Tư Mã Thiên)
+
+<!-- chunk 17 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "17"
+section_name: Mục 2 Đối tượng, chức năng, nhiệm vụ và nguyên tắc cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: Nguyên tắc cơ bản của Sử học
+has_table: false
+chunk_id: ls_17
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+Đọc thông tin, tư liệu và quan sát bảng 1.2, hãy:
+- Nêu ý nghĩa các nguyên tắc cơ bản của Sử học.
+- Cho biết câu chuyện "Thôi Trữ giết vua" phản ánh nguyên tắc nào của Sử học. Ý nghĩa của câu chuyện là gì?
+
+<!-- chunk 18 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "18"
+section_name: Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_18
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+3. Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+3.1. Các nguồn sử liệu
+
+Thông tin về hoạt động của con người trong quá khứ được lưu giữ ở nhiều dạng khác nhau, được gọi là nguồn sử liệu. Không có sử liệu, nhà sử học không thể khôi phục được hiện thực lịch sử.
+
+Căn cứ vào mối liên hệ giữa các sự vật, hiện tượng được nghiên cứu và giá trị của thông tin, sử liệu được chia làm hai nguồn cơ bản: sử liệu sơ cấp và sử liệu thứ cấp.
+
+Bảng 1.3. Nguồn sử liệu sơ cấp và nguồn sử liệu thứ cấp
+Nguồn sử liệu sơ cấp | Nguồn sử liệu thứ cấp
+
+<!-- chunk 20 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "20"
+section_name: Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_20
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+Hình 1.6. Trang bìa cuốn sách Lịch sử Việt Nam từ nguồn gốc đến thế kỉ XIX
+
+[Hình ảnh mô tả bìa sách "Lịch sử Việt Nam" của tác giả Đào Duy Anh, có hình vẽ minh họa các nhân vật lịch sử]
+
+Căn cứ vào dạng thức tồn tại, sử liệu được chia làm bốn loại hình cơ bản: sử liệu lời nói – truyền khẩu, sử liệu hiện vật, sử liệu hình ảnh, sử liệu thành văn.
+
+Sử liệu lời nói – truyền khẩu là nguồn sử liệu thông qua lời nói, truyền khẩu, gồm những câu chuyện truyền thuyết, cổ tích, giai thoại,... được lưu truyền từ đời này qua đời khác hoặc những lời kể của nhân chứng lịch sử.
+
+"Bấy giờ, dân trên núi xuống nước đánh bắt cá thường bị thương lũng gây tổn thương, bèn cùng nhau tâu việc ấy với Vua [Lạc Long Quân].
+
+<!-- chunk 21 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "21"
+section_name: Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_21
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+Vua nói: Các giống ở trên núi khác với các loài ở dưới nước. Các loài ở dưới nước chỉ ưa những gì giống với mình và ghét những gì khác mình, vì vậy ta mới bị gây hại,... Vua bèn ra lệnh, ai cũng phải lấy màu xanh hình thủy quái vào người. Từ đó, dân không bị thương lũng gây thương tích nữa. Tục vẽ mình của dân Bách Việt bắt đầu có kể từ đấy".
+
+(Lĩnh Nam chích quái, phần Hồng Bàng thị truyện)
+
+Sử liệu hiện vật là nguồn sử liệu vật thể do con người tạo tác, gồm các di tích, công trình hoặc đồ vật cụ thể.
+
+Hình 1.7. Thạp đồng Đào Thịnh (Văn hóa Đông Sơn), có niên đại cách ngày nay 2 500 – 2 000 năm
+
+[Hình ảnh một chiếc thạp đồng cổ có hình dáng như một chiếc bình lớn với nắp đậy, có màu nâu đồng và có vẻ đã trải qua thời gian lâu dài.]
+
+<!-- chunk 22 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "22"
+section_name: Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_22
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+Sử liệu hình ảnh là nguồn sử liệu phản ánh về quá khứ thông qua tư liệu hình ảnh, gồm tranh, ảnh, bảng hình,...
+
+Hình 1.8. Ga-li-lê bị đưa ra xét xử trước tòa án Giáo hội năm 1633 (tranh vẽ)
+
+[Hình ảnh một bức tranh vẽ cảnh xét xử trong một phòng lớn với nhiều nhân vật mặc trang phục thời Trung cổ. Trung tâm bức tranh là một người đàn ông đứng trước một bàn với các vị quan tòa ngồi phía sau.]
+
+Sử liệu thành văn là nguồn sử liệu bằng chữ viết như sách, báo, bản ghi chép, nhật kí, hiệp ước, hiệp định,...
+
+[Hình ảnh mô tả một điện mật của Đại tướng Võ Nguyên Giáp gửi các đơn vị tham gia chiến dịch giải phóng Sài Gòn - Gia Định ngày 7-4-1975]
+
+Hình 1.9. Điện mật của Đại tướng, Tổng Tư lệnh Võ Nguyên Giáp gửi các đơn vị tham gia chiến dịch giải phóng Sài Gòn - Gia Định ngày 7-4-1975 (Bảo tàng Lịch sử Quốc gia)
+
+<!-- chunk 23 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "23"
+section_name: Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_23
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+Đọc thông tin, tư liệu và quan sát bảng 1.3, các hình từ 1.5 đến 1.9, hãy phân biệt các nguồn sử liệu và cho biết giá trị của mỗi loại hình sử liệu.
+
+<!-- chunk 24 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "24"
+section_name: Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: Một số phương pháp cơ bản của Sử học
+has_table: false
+chunk_id: ls_24
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+3.2. Một số phương pháp cơ bản của Sử học
+
+Khi tìm hiểu, nghiên cứu hoặc trình bày lịch sử, nhà sử học có thể sử dụng nhiều phương pháp khác nhau, như phương pháp lịch sử và lô-gic, phương pháp lịch đại và đồng đại, phương pháp tiếp cận liên ngành,...
+
+[Sơ đồ mô tả các phương pháp cơ bản của Sử học, bao gồm:]
+
+Phương pháp nghiên cứu:
+- Phương pháp lịch sử: Tìm hiểu, khôi phục, mô tả các sự kiện, hiện tượng (về quá trình ra đời, phát triển và suy vong), gắn với bối cảnh lịch sử cụ thể,...
+- Phương pháp lô-gic: Tìm hiểu lịch sử trong hình thức tổng quát để tìm ra các đặc điểm chung, bản chất, quy luật, mối quan hệ nhân - quả của lịch sử,...
+
+<!-- chunk 25 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "25"
+section_name: Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: Một số phương pháp cơ bản của Sử học
+has_table: false
+chunk_id: ls_25
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+Phương pháp trình bày:
+- Phương pháp lịch đại: Trình bày lịch sử theo thời gian trước - sau (mỗi liên hệ đoạn), giúp người đọc thấy được tiến trình của lịch sử.
+- Phương pháp đồng đại: Trình bày lịch sử theo không gian ở cùng giai đoạn (mỗi liên hệ ngang), giúp người đọc thấy được những sự kiện, hiện tượng diễn ra trong một thời điểm, giai đoạn cụ thể.
+
+Phương pháp tiếp cận:
+- Phương pháp tiếp cận liên ngành: Sử học khai thác thông tin của nhiều ngành khoa học (Khảo cổ học, Dân tộc học, Văn hóa học,...) để làm sáng tỏ các sự kiện, hiện tượng lịch sử có liên quan.
+
+Sơ đồ 1.2. Một số phương pháp cơ bản của Sử học
+
+<!-- chunk 26 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "26"
+section_name: Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: Một số phương pháp cơ bản của Sử học
+has_table: false
+chunk_id: ls_26
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+Tùy thuộc vào mục đích, nhiệm vụ, đối tượng nghiên cứu hoặc trình bày thông tin lịch sử, nhà sử học sẽ lựa chọn các phương pháp cụ thể. Tuy nhiên, phương pháp mô tả lịch sử (phương pháp lịch sử) và phương pháp tìm ra đặc điểm khái quát (phương pháp lô-gic) vẫn là các phương pháp chủ đạo.
+
+[Hình ảnh mô tả một dòng thời gian với các sự kiện lịch sử quan trọng của Việt Nam trong thế kỷ XX:
+
+- 1930: Đảng Cộng sản Việt Nam được thành lập
+- 1945: Cách mạng tháng Tám thành công
+- 1954: Cuộc kháng chiến chống thực dân Pháp kết thúc
+- 1975: Cuộc kháng chiến chống Mỹ, cứu nước kết thúc
+- 1986: Việt Nam bắt đầu công cuộc Đổi mới]
+
+Sơ đồ 1.3. Các sự kiện tiêu biểu của lịch sử Việt Nam trong thế kỷ XX
+
+<!-- chunk 27 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ
+id_lesson: 1
+section_id: "27"
+section_name: Mục 3 Các nguồn sử liệu và một số phương pháp cơ bản của Sử học
+sub_type: 
+sub_id: " "
+sub_name: Một số phương pháp cơ bản của Sử học
+has_table: false
+chunk_id: ls_27
+---
+[ Bài 1: HIỆN THỰC LỊCH SỬ VÀ NHẬN THỨC LỊCH SỬ ]
+
+- Đọc thông tin và quan sát các sơ đồ 1.2, 1.3, hãy nêu những nét chính về một số phương pháp cơ bản của Sử học.
+- Sơ đồ 1.3 phản ánh phương pháp nghiên cứu nào của Sử học?
+
+1. Dựa vào kiến thức đã học, hãy giải thích lời phát biểu của Đại tướng Võ Nguyên Giáp tại Đại hội toàn quốc lần thứ hai của Hội Sử học (1988): "Lịch sử chỉ xảy ra duy nhất có một lần, nhưng do nhiều người viết và viết lại nhiều lần. Dù ở thời điểm nào, nhà sử học cũng phải thật trung thực, khách quan".
+
+2. Hãy cho biết ý nghĩa câu nói của Giôốc-giơ Ô-oen (người Anh): "Cách hữu hiệu nhất để hủy diệt một dân tộc là phủ nhận và xóa bỏ sự hiểu biết của họ về lịch sử của chính họ".
+
+3. Tìm kiếm thông tin và giới thiệu những nguồn sử liệu có thể khôi phục sự kiện Chủ tịch Hồ Chí Minh đọc bản Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội ngày 2-9-1945.
+
+<!-- chunk 28 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_lesson: 2
+section_id: "29"
+section_name: Mục tiêu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_28
+---
+[ Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG ]
+
+Học xong bài này, em sẽ:
+- Nêu được vai trò và ý nghĩa của tri thức lịch sử đối với đời sống của cá nhân và xã hội hiện đại.
+- Giải thích được sự cần thiết phải học tập lịch sử suốt đời.
+- Biết sưu tầm, thu thập, xử lí thông tin và sử liệu để học tập, khám phá lịch sử.
+- Vận dụng được kiến thức, bài học lịch sử đã học để giải thích những vấn đề thời sự trong nước và thế giới, những vấn đề trong thực tiễn cuộc sống.
+- Quan tâm, yêu thích và tham gia các hoạt động tìm hiểu lịch sử, văn hóa của dân tộc Việt Nam và thế giới.
+
+<!-- chunk 29 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_lesson: 2
+section_id: "30"
+section_name: Mô tả bài
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_29
+---
+[ Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG ]
+
+Đền Hùng và ngày Giỗ Tổ Hùng Vương (10-3 âm lịch) là biểu tượng của truyền thống yêu nước và đoàn kết hướng về cội nguồn của dân tộc Việt Nam. Tín ngưỡng thờ cúng Hùng Vương đã trở thành nét đặc sắc trong văn hóa truyền thống của người Việt Nam, đồng thời cũng là biểu hiện của tri thức lịch sử.
+
+Vậy tri thức lịch sử có vai trò, ý nghĩa như thế nào đối với cuộc sống của mỗi cá nhân và xã hội? Vì sao chúng ta cần phải học tập và khám phá lịch sử?
+
+Hình 2.1. Lễ hội Đền Hùng (Phú Thọ)
+
+[Hình ảnh mô tả một đoàn người mặc áo đỏ, cầm cờ đang diễu hành trong một lễ hội tại Đền Hùng. Họ đi trên một con đường dẫn đến cổng đền.]
+
+<!-- chunk 30 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_lesson: 2
+section_id: "31"
+section_name: Mục 1 Vai trò và ý nghĩa của tri thức lịch sử
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_30
+---
+[ Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG ]
+
+1. Vai trò và ý nghĩa của tri thức lịch sử
+
+Tri thức lịch sử là những hiểu biết của con người về các lĩnh vực liên quan đến lịch sử, thông qua quá trình học tập, khám phá, nghiên cứu và trải nghiệm. Tri thức lịch sử có vai trò quan trọng đối với mỗi cá nhân và toàn xã hội.
+
+Sơ đồ 2.1. Vai trò của tri thức lịch sử
+
+[Sơ đồ gồm 3 hình tròn nối tiếp nhau từ trái sang phải, mỗi hình tròn chứa một nội dung:]
+
+1. Trang bị những hiểu biết về quá khứ cho cá nhân và xã hội.
+2. Góp phần bảo tồn và phát huy các giá trị lịch sử, văn hóa của các cộng đồng.
+3. Là cơ sở để các cộng đồng cùng chung sống và phát triển bền vững.
+
+<!-- chunk 31 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_lesson: 2
+section_id: "32"
+section_name: Mục 1 Vai trò và ý nghĩa của tri thức lịch sử
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_31
+---
+[ Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG ]
+
+Tri thức lịch sử cũng có ý nghĩa quan trọng, giúp con người nhận thức sâu sắc về cội nguồn, về bản sắc của cá nhân và cộng đồng trong mọi thời đại. Hiểu biết về cội nguồn, bản sắc là cơ sở để con người hiểu về chính mình và thế giới. Đây là nền tảng để tồn tại, gìn giữ và phát huy các giá trị lịch sử, văn hoá cộng đồng và chung sống trong một thế giới đa dạng.
+
+"... Một dân tộc mà không có kiến thức về lịch sử, nguồn gốc và văn hoá về dân tộc mình thì cũng giống như cây không có gốc".
+(Mác-cốt Ga-vây)
+
+Nhờ tri thức lịch sử, con người có thể đúc kết và vận dụng thành công nhiều bài học kinh nghiệm trong cuộc sống, tránh lặp lại những sai lầm từ quá khứ.
+
+<!-- chunk 32 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_lesson: 2
+section_id: "33"
+section_name: Mục 1 Vai trò và ý nghĩa của tri thức lịch sử
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_32
+---
+[ Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG ]
+
+"Sử ta dạy cho ta bài học này: lúc nào dân ta đoàn kết muôn người như một thì nước ta độc lập, tự do. Trái lại, lúc nào dân ta không đoàn kết thì bị nước ngoài xâm lấn".
+(Nên học sử ta,
+Hồ Chí Minh)
+
+[Hình ảnh mô tả một cuộc họp ngoài trời với nhiều người đội mũ nón lá đang ngồi nghe một người đứng trên bậc thềm phát biểu]
+
+Hình 2.2. Chủ tịch Hồ Chí Minh nói chuyện với cán bộ, chiến sĩ
+Đại đoàn Quân Tiên phong tại Đền Hùng, Phú Thọ (1954)
+
+Trên cơ sở những hiểu biết đúng và đầy đủ về quá trình lịch sử, tri thức lịch sử còn giúp con người có thể dự báo chính xác về thời cơ và nguy cơ trong tương lai, hoặc thấy được chiều hướng vận động, phát triển của hiện tại.
+
+<!-- chunk 33 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_lesson: 2
+section_id: "34"
+section_name: Mục 1 Vai trò và ý nghĩa của tri thức lịch sử
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_33
+---
+[ Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG ]
+
+- Đọc thông tin, tư liệu và quan sát sơ đồ 2.1, hình 2.2, hãy cho biết vai trò và ý nghĩa của tri thức lịch sử đối với cuộc sống của con người.
+- Trong bối cảnh toàn cầu hoá hiện nay, theo em cần phải làm gì để giữ gìn và phát huy bản sắc văn hoá dân tộc?
+
+<!-- chunk 34 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_lesson: 2
+section_id: "35"
+section_name: Mục 2 Học tập và khám phá lịch sử suốt đời
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_34
+---
+[ Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG ]
+
+2. Học tập và khám phá lịch sử suốt đời
+2.1. Sự cần thiết phải học tập lịch sử suốt đời
+
+Bảng 2.1. Sự cần thiết phải học tập lịch sử suốt đời
+
+1
+Tri thức lịch sử rất rộng lớn và đa dạng. Những kiến thức lịch sử ở nhà trường chỉ là một phần nhỏ trong kho tàng tri thức lịch sử của quốc gia, nhân loại. Muốn hiểu đầy đủ và đúng đắn về lịch sử cần có một quá trình lâu dài.
+
+2
+Tri thức về lịch sử biến đổi và phát triển không ngừng, gắn liền với sự xuất hiện của các nguồn sử liệu mới, những quan điểm và nhận thức mới, lĩnh vực nghiên cứu mới,... Do vậy, những nhận thức về sự kiện, hiện tượng lịch sử của con người hôm nay rất có thể sẽ thay đổi trong tương lai.
+
+<!-- chunk 35 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_lesson: 2
+section_id: "36"
+section_name: Mục 2 Học tập và khám phá lịch sử suốt đời
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_35
+---
+[ Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG ]
+
+Cùng với tìm hiểu tri thức, việc học tập lịch sử suốt đời sẽ giúp mỗi người mở rộng và cập nhật vốn kiến thức; hoàn thiện và phát triển kĩ năng, xây dựng sự tự tin, thích ứng với những thay đổi nhanh chóng của xã hội; tạo ra những cơ hội mới trong cuộc sống và nghề nghiệp.
+
+[Hình ảnh mô tả một nhóm người đang xem các bộ trang phục truyền thống được trưng bày trên ma-nơ-canh]
+
+Hình 2.3. Tìm hiểu trang phục truyền thống của các nước ASEAN tại Bảo tàng Lịch sử Quốc gia (2020)
+
+Cuộc thi "Tìm hiểu về ASEAN" nằm trong khuôn khổ dự án của Ủy ban Văn hoá Thông tin ASEAN (COCI), được tổ chức hai năm một lần. Đây là sân chơi dành cho học sinh cấp Trung học phổ thông, nhằm nâng cao sự hiểu biết về đất nước và con người của các nước thành viên ASEAN.
+
+<!-- chunk 36 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_lesson: 2
+section_id: "37"
+section_name: Mục 2 Học tập và khám phá lịch sử suốt đời
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_36
+---
+[ Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG ]
+
+Đọc thông tin và quan sát bảng 2.1, hình 2.3, hãy giải thích vì sao phải học tập lịch sử suốt đời. Cho ví dụ cụ thể.
+
+<!-- chunk 37 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_lesson: 2
+section_id: "38"
+section_name: Mục 2 Học tập và khám phá lịch sử suốt đời, xử lí thông tin và sử liệu để làm giàu tri thức lịch sử
+sub_type: 
+sub_id: " "
+sub_name: Thu thập
+has_table: false
+chunk_id: ls_37
+---
+[ Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG ]
+
+2.2. Thu thập, xử lí thông tin và sử liệu để làm giàu tri thức lịch sử
+
+Để tìm hiểu quá khứ và làm giàu tri thức lịch sử, cần dựa vào các nguồn sử liệu từ quá khứ. Sử liệu đóng vai trò là cầu nối giữa hiện thực lịch sử và tri thức lịch sử. Thu thập, xử lí thông tin và sử liệu là những khâu quan trọng trong nghiên cứu cũng như học tập, tìm hiểu lịch sử.
+
+15
+
+Bảng 2.2. Thu thập, xử lí thông tin và sử liệu
+
+Thu thập sử liệu:
+- Là quá trình khảo sát, tìm kiếm, sưu tầm và tập hợp những thông tin liên quan đến đối tượng học tập, nghiên cứu, tìm hiểu lịch sử. Những thông tin này bao gồm các nguồn sử liệu sơ cấp, thứ cấp; các loại hình sử liệu như lời nói - truyền khẩu, hiện vật, hình ảnh, thành văn,...
+- Có thể thực hiện bằng phỏng vấn, sử dụng bảng hỏi, khảo sát, quan sát, điền dã,...
+
+<!-- chunk 38 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_lesson: 2
+section_id: "39"
+section_name: Mục 2 Học tập và khám phá lịch sử suốt đời, xử lí thông tin và sử liệu để làm giàu tri thức lịch sử
+sub_type: 
+sub_id: " "
+sub_name: Thu thập
+has_table: false
+chunk_id: ls_38
+---
+[ Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG ]
+
+Xử lí thông tin và sử liệu:
+- Là quá trình phân loại, đánh giá, thẩm định nguồn sử liệu đã thu thập được.
+- Nhằm xác định tính xác thực, độ tin cậy và giá trị thông tin của các nguồn sử liệu đối với việc học tập, nghiên cứu và tìm hiểu lịch sử.
+
+[Sơ đồ quy trình thu thập, xử lí thông tin và sử liệu gồm 4 bước:
+1. Lập thư mục và danh mục các nguồn sử liệu cần thu thập để phục vụ cho việc học tập, nghiên cứu và tìm hiểu lịch sử.
+2. Sưu tầm, đọc và ghi chép thông tin sử liệu liên quan đến vấn đề nghiên cứu.
+3. Chọn lọc, phân loại sử liệu để thuận lợi cho việc xác minh và đánh giá.
+4. Xác minh, đánh giá về nguồn gốc sử liệu, thời điểm ra đời, nội dung sử liệu phản ánh,...]
+
+Sơ đồ 2.2. Quy trình thu thập, xử lí thông tin và sử liệu
+
+<!-- chunk 39 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_lesson: 2
+section_id: "40"
+section_name: Mục 2 Học tập và khám phá lịch sử suốt đời, xử lí thông tin và sử liệu để làm giàu tri thức lịch sử
+sub_type: 
+sub_id: " "
+sub_name: Thu thập
+has_table: false
+chunk_id: ls_39
+---
+[ Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG ]
+
+Mỗi sự kiện lịch sử thường được phản ánh qua các nguồn sử liệu khác nhau, ở những thời điểm và của các tác giả khác nhau, nên công việc thu thập và xử lí thông tin sử liệu khá phức tạp, phải trải qua nhiều công đoạn. Nếu sự kiện lịch sử xảy ra càng xa thời điểm thu thập sử liệu thì sẽ càng khó khăn cho việc tìm kiếm và khôi phục lịch sử.
+
+<!-- chunk 40 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_lesson: 2
+section_id: "41"
+section_name: Mục 2 Học tập và khám phá lịch sử suốt đời, xử lí thông tin và sử liệu để làm giàu tri thức lịch sử
+sub_type: 
+sub_id: " "
+sub_name: Thu thập
+has_table: false
+chunk_id: ls_40
+---
+[ Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG ]
+
+Đọc thông tin và quan sát bảng 2.2, sơ đồ 2.2, hãy nêu cách thức thu thập và xử lí thông tin sử liệu trong quá trình học tập, khám phá lịch sử.
+
+<!-- chunk 41 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_lesson: 2
+section_id: "42"
+section_name: Mục 2 Học tập và khám phá lịch sử suốt đời, bài học lịch sử vào cuộc sống
+sub_type: 
+sub_id: " "
+sub_name: Kết nối kiến thức
+has_table: false
+chunk_id: ls_41
+---
+[ Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG ]
+
+2.3. Kết nối kiến thức, bài học lịch sử vào cuộc sống
+
+Sử dụng tri thức lịch sử, thông qua tri thức lịch sử sẽ giúp con người giải thích, hiểu rõ hơn những vấn đề thời sự trong nước và quốc tế, những vấn đề thực tiễn cuộc sống hiện nay.
+
+Hiện tại luôn khởi nguồn từ quá khứ. Những vấn đề thời sự và thực tiễn hôm nay không phải xuất hiện một cách ngẫu nhiên mà đều ít nhiều xuất phát từ những gì diễn ra trong quá khứ, là kết quả của quá trình hình thành, phát triển và biến đổi qua thời gian.
+
+<!-- chunk 42 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_lesson: 2
+section_id: "43"
+section_name: Mục 2 Học tập và khám phá lịch sử suốt đời, bài học lịch sử vào cuộc sống
+sub_type: 
+sub_id: " "
+sub_name: Kết nối kiến thức
+has_table: false
+chunk_id: ls_42
+---
+[ Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG ]
+
+Việc nhận thức đầy đủ và toàn diện về những vấn đề đương đại không thể tách rời tri thức lịch sử liên quan trong quá khứ. Kết nối kiến thức, bài học lịch sử vào cuộc sống chính là sử dụng tri thức lịch sử để giải thích và hiểu rõ hơn những vấn đề của cuộc sống hiện tại, là việc nhìn nhận về cuộc sống hôm nay từ quan điểm lịch sử.
+
+Tình trạng nóng lên toàn cầu liên quan đến các cuộc cách mạng công nghiệp diễn ra từ thế kỉ XVIII với việc sử dụng trên quy mô lớn các nguồn nguyên liệu hoá thạch (than đá, dầu mỏ, khí đốt,...).
+
+Hình 2.4. Băng tan ở Bắc Cực do sự nóng lên của toàn cầu
+
+[Hình ảnh mô tả cảnh băng tan ở Bắc Cực với một con gấu Bắc Cực đứng trên một tảng băng trôi giữa vùng nước biển xanh.]
+
+<!-- chunk 43 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_lesson: 2
+section_id: "44"
+section_name: Mục 2 Học tập và khám phá lịch sử suốt đời, bài học lịch sử vào cuộc sống
+sub_type: 
+sub_id: " "
+sub_name: Kết nối kiến thức
+has_table: false
+chunk_id: ls_43
+---
+[ Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG ]
+
+Tri thức lịch sử có giá trị lớn đối với mỗi cá nhân và xã hội, có mối liên hệ chặt chẽ với nhiều lĩnh vực của cuộc sống như chính trị, kinh tế, văn hoá, giáo dục, môi trường,... Nhiều nhà chính trị, nhà văn hoá nổi tiếng như Xi-xê-rông (La Mã cổ đại), Lo Ác-ton (I-ta-li-a), Giớc-giơ Ô-oen (Anh), Các Mác (Đức), Hồ Chí Minh (Việt Nam)... đã khẳng định sự cần thiết phải đưa kiến thức lịch sử vào cuộc sống.
+
+"Lịch sử là bằng chứng của thời đại, là ngọn lửa của chân lí, là sinh mệnh của kí ức, là thầy dạy của cuộc sống và là sứ giả của cổ nhân".
+(Xi-xê-rô)
+
+"Lịch sử không phải là gánh nặng cho kí ức, mà là sự soi sáng của tâm hồn".
+(Lo Ác-ton)
+
+<!-- chunk 44 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 1
+chapter_name: CHỦ ĐỀ 1 LỊCH SỬ VÀ SỬ HỌC
+lesson: Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG
+id_lesson: 2
+section_id: "45"
+section_name: Mục 2 Học tập và khám phá lịch sử suốt đời, bài học lịch sử vào cuộc sống
+sub_type: 
+sub_id: " "
+sub_name: Kết nối kiến thức
+has_table: false
+chunk_id: ls_44
+---
+[ Bài 2: TRI THỨC LỊCH SỬ VÀ CUỘC SỐNG ]
+
+Đọc thông tin, tư liệu và quan sát hình 2.4, hãy:
+- Cho biết kiến thức và bài học lịch sử có mối liên hệ như thế nào với cuộc sống hiện tại.
+- Vận dụng kiến thức lịch sử để giải thích nguyên nhân băng tan ở Bắc Cực và cho biết tác động của hiện tượng này đối với nhân loại.
+
+1. Tri thức lịch sử có vai trò, ý nghĩa như thế nào đối với cá nhân và xã hội?
+
+2. Hãy sưu tầm một câu chuyện về truyền thống đoàn kết của nhân dân Việt Nam trong lịch sử và kể với bạn học (nêu rõ nguồn gốc của câu chuyện và cách thức sưu tầm).
+
+3. Em đã từng sử dụng những kiến thức lịch sử nào để giải quyết các tình huống gặp phải trong cuộc sống? Hãy chia sẻ một vài ví dụ với thầy cô và bạn học.
+
+<!-- chunk 45 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC
+id_lesson: 3
+section_id: "1"
+section_name: Mục tiêu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_45
+---
+[ Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC ]
+
+Học xong bài này, em sẽ:
+- Giải thích được Sử học là môn khoa học mang tính liên ngành.
+- Phân tích được mối liên hệ giữa Sử học với các ngành khoa học xã hội và nhân văn khác.
+- Nêu được vai trò của các ngành khoa học tự nhiên và công nghệ đối với Sử học.
+- Giải thích được sự hỗ trợ của Sử học đối với các ngành khoa học tự nhiên và công nghệ.
+
+<!-- chunk 46 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC
+id_lesson: 3
+section_id: "2"
+section_name: Mô tả bài
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_46
+---
+[ Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC ]
+
+Năm 1998, Ủy ban Di sản Thế giới của UNESCO thông qua Nghị quyết ghi danh Chi-chen Ít-đa – thành phố thời tiền thực dân Tây Ban Nha, thuộc nền văn minh May-a cổ đại (Mê-hi-cô hiện nay) vào danh mục Di sản Văn hóa Thế giới.
+
+Vậy những ngành khoa học, lĩnh vực nào đã và đang nghiên cứu về Khu di tích Chi-chen Ít-da hoặc sử dụng tri thức lịch sử về khu di tích này? Mối quan hệ giữa Sử học với các ngành khoa học, lĩnh vực đó được thể hiện như thế nào?
+
+[Hình ảnh mô tả kim tự tháp Chi-chen Ít-da (Mê-hi-cô) với cấu trúc bậc thang đặc trưng của nền văn minh Maya cổ đại. Kim tự tháp có hình dáng hùng vĩ, được xây dựng bằng đá, nổi bật trên nền trời xanh và cỏ xanh xung quanh. Có một số du khách đang đứng gần chân kim tự tháp.]
+
+Hình 3.1. Kim tự tháp Chi-chen Ít-da (Mê-hi-cô)
+
+<!-- chunk 47 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC
+id_lesson: 3
+section_id: "3"
+section_name: Mục 1 Sử học - môn khoa học mang tính liên ngành
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_47
+---
+[ Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC ]
+
+1. Sử học - môn khoa học mang tính liên ngành
+
+Để phục dựng được hoạt động của con người trong quá khứ, Sử học cần kết hợp nhiều phương pháp nghiên cứu khác nhau. Đồng thời, Sử học cũng khai thác tri thức của nhiều ngành khoa học có liên quan, đặc biệt là khoa học xã hội và nhân văn (Địa lí học, Tôn giáo học, Văn học, Nhân học,...).
+
+Ngày 31-7-2010, Ủy ban Di sản Thế giới của UNESCO thông qua Nghị quyết ghi danh Khu di tích trung tâm Hoàng thành Thăng Long (Việt Nam) là Di sản Văn hóa Thế giới. Để khôi phục và làm nổi bật giá trị của Khu di tích trung tâm Hoàng thành Thăng Long trên các lĩnh vực, Sử học đã khai thác và sử dụng tri thức, phương pháp nghiên cứu của nhiều ngành khoa học, như Khảo cổ học, Địa lí học, Văn học, Tôn giáo học, Kiến trúc, Nghệ thuật,...
+
+<!-- chunk 48 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC
+id_lesson: 3
+section_id: "4"
+section_name: Mục 1 Sử học - môn khoa học mang tính liên ngành
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_48
+---
+[ Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC ]
+
+[Hình ảnh mô tả một nhóm người đang xem triển lãm các hiện vật khảo cổ và nghệ thuật tại một bảo tàng. Có nhiều bức ảnh và hiện vật được trưng bày trên tường và trong tủ kính.]
+
+Hình 3.2. Hướng dẫn viên giới thiệu các hiện vật được trưng bày tại Khu di tích trung tâm Hoàng thành Thăng Long
+
+Mọi sự kiện, hiện tượng lịch sử diễn ra trong quá khứ đều gắn với những điều kiện tự nhiên và bối cảnh chính trị, xã hội cụ thể. Nhà sử học không thể miêu tả, phục dựng lại một cách đầy đủ, toàn diện bức tranh về quá khứ nếu chỉ sử dụng những tri thức hoặc các phương pháp lịch sử đơn thuần.
+
+Bên cạnh đó, một số đối tượng hoặc chủ đề nghiên cứu đòi hỏi nhà sử học cần có một nền tảng kiến thức vững chắc về lĩnh vực đó trước khi nghiên cứu chuyên sâu, như lịch sử kinh tế, lịch sử nghệ thuật, lịch sử tôn giáo,...
+
+<!-- chunk 49 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC
+id_lesson: 3
+section_id: "5"
+section_name: Mục 1 Sử học - môn khoa học mang tính liên ngành
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_49
+---
+[ Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC ]
+
+Đọc thông tin và quan sát hình 3.2, hãy giải thích vì sao Sử học là môn khoa học mang tính liên ngành. Lấy ví dụ cụ thể.
+
+<!-- chunk 50 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC
+id_lesson: 3
+section_id: "6"
+section_name: Mục 2 Mối liên hệ giữa Sử học với các ngành khoa học xã hội và nhân văn
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_50
+---
+[ Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC ]
+
+2. Mối liên hệ giữa Sử học với các ngành khoa học xã hội và nhân văn
+2.1. Sử học với các ngành khoa học xã hội và nhân văn
+
+Trong số các ngành khoa học xã hội và nhân văn, Sử học là một môn khoa học ra đời sớm, có vị trí, vai trò quan trọng và nổi bật. Sự hình thành, phát triển của các ngành khoa học xã hội và nhân văn luôn có sự kết nối và gắn liền với tri thức lịch sử. Đồng thời, sự tồn tại và phát triển của Sử học không thể biệt lập và tách rời với các ngành khoa học xã hội và nhân văn.
+
+Tri thức về lịch sử luôn đóng vai trò là một trong những nguồn tri thức nền tảng đối với khoa học xã hội và nhân văn ở mọi lĩnh vực, đặc biệt là trong việc nghiên cứu sự hình thành, biến đổi của các lĩnh vực thuộc đời sống văn hoá và xã hội của con người. Sử học cung cấp tri thức về bối cảnh, nội dung, tác động, ý nghĩa,... để làm rõ hơn lịch sử hình thành và phát triển của các ngành.
+
+[Hình ảnh minh họa về Bản Tuyên ngôn Độc lập được Chủ tịch Hồ Chí Minh soạn thảo và đọc trước quần chúng nhân dân tại Quảng trường Ba Đình, Hà Nội ngày 2-9-1945. Hình ảnh này được mô tả là văn kiện vừa có giá trị lịch sử, vừa có giá trị văn học, tư tưởng,... Tuyên ngôn Độc lập là đối tượng nghiên cứu của các nhà nghiên cứu lịch sử, văn học, tư tưởng,...]
+
+Hình 3.3. Trang bìa bản Tuyên ngôn Độc lập (Bảo tàng Hồ Chí Minh, Hà Nội)
+
+<!-- chunk 51 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC
+id_lesson: 3
+section_id: "8"
+section_name: Mục 2 Mối liên hệ giữa Sử học với các ngành khoa học xã hội và nhân văn
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_51
+---
+[ Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC ]
+
+Trong số các ngành khoa học xã hội và nhân văn, Sử học có mối liên hệ đặc biệt gắn gũi với Khảo cổ học, Nhân học, Văn học, Địa lí học, Triết học,... Trong nhiều trường hợp, mối liên hệ Văn - Sử - Địa, Sử - Triết,... có sự gắn kết và giao thoa không thể tách rời.
+
+[Sơ đồ minh họa mối liên hệ giữa Sử học với các ngành khoa học xã hội và nhân văn khác, bao gồm: Khảo cổ học, Nhân học, Văn học, Ngôn ngữ học, Địa lí học, Chính trị học, Triết học, Tâm lí học, Tôn giáo học, Xã hội học, Văn hóa học]
+
+Sơ đồ 3.1. Mối liên hệ giữa Sử học với các ngành khoa học xã hội và nhân văn
+
+<!-- chunk 52 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC
+id_lesson: 3
+section_id: "9"
+section_name: Mục 2 Mối liên hệ giữa Sử học với các ngành khoa học xã hội và nhân văn
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_52
+---
+[ Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC ]
+
+Đọc thông tin và quan sát hình 3.3, sơ đồ 3.1, hãy nêu mối liên hệ giữa Sử học với các ngành khoa học xã hội và nhân văn khác. Lấy ví dụ và phân tích.
+
+<!-- chunk 53 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC
+id_lesson: 3
+section_id: "10"
+section_name: Mục 2 Mối liên hệ giữa Sử học với các ngành khoa học xã hội và nhân văn
+sub_type: 
+sub_id: " "
+sub_name: Các ngành khoa học xã hội và nhân văn với Sử học
+has_table: false
+chunk_id: ls_53
+---
+[ Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC ]
+
+2.2. Các ngành khoa học xã hội và nhân văn với Sử học
+
+Trong quá trình nghiên cứu lịch sử, nhà sử học thường xuyên khai thác, sử dụng tri thức của các ngành khoa học khác như Khảo cổ học, Địa lí học, Văn học, Xã hội học, Nhân học, Tôn giáo học,...
+
+Những thông tin của các ngành khoa học xã hội và nhân văn hỗ trợ Sử học tìm hiểu và nghiên cứu lịch sử một cách toàn diện hơn, cụ thể và chính xác hơn.
+
+Bình Ngô đại cáo là bài cáo được viết bằng chữ Hán, do Nguyễn Trãi soạn thảo năm 1428, thay lời Bình Định Vương Lê Lợi để tuyên cáo về việc đã giành thắng lợi trong cuộc khởi nghĩa Lam Sơn, khẳng định nền độc lập của nước Đại Việt. Văn bản này vừa có giá trị đặc biệt đối với Văn học, vừa giúp các nhà sử học tìm hiểu và trình bày lịch sử cuộc khởi nghĩa Lam Sơn một cách sống động, chi tiết về thời gian, không gian, nhân vật và sự kiện.
+
+[Hình ảnh một trang văn bản cổ viết bằng chữ Hán]
+Hình 3.4. Trang đầu tiên của bài Bình Ngô đại cáo
+
+Mối liên hệ giữa Sử học với các ngành khoa học xã hội và nhân văn là mối liên hệ gắn bó, tương hỗ và ngày càng quan trọng trong xu thế phát triển liên ngành, đa ngành của các lĩnh vực khoa học ngày nay.
+
+<!-- chunk 54 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC
+id_lesson: 3
+section_id: "12"
+section_name: Mục 2 Mối liên hệ giữa Sử học với các ngành khoa học xã hội và nhân văn
+sub_type: 
+sub_id: " "
+sub_name: Các ngành khoa học xã hội và nhân văn với Sử học
+has_table: false
+chunk_id: ls_54
+---
+[ Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC ]
+
+[Hình ảnh một quảng trường rộng lớn bên bờ sông, có nhiều người tham dự và các công trình kiến trúc]
+
+Hình 3.5. Quảng trường Chiến thắng và tượng đài Ngô Quyền, Lê Đại Hành, Trần Hưng Đạo tại Tràng Kênh (Thủy Nguyên, Hải Phòng)
+
+Để nghiên cứu, trình bày về những trận đánh trên sông Bạch Đằng (các năm 938, 981 và 1288), nhà sử học phải khảo cứu nhiều nguồn sử liệu khác nhau, đồng thời dựa vào kết quả nghiên cứu của Khảo cổ học, Văn học, Địa lí học,...
+
+<!-- chunk 55 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC
+id_lesson: 3
+section_id: "13"
+section_name: Mục 2 Mối liên hệ giữa Sử học với các ngành khoa học xã hội và nhân văn
+sub_type: 
+sub_id: " "
+sub_name: Các ngành khoa học xã hội và nhân văn với Sử học
+has_table: false
+chunk_id: ls_55
+---
+[ Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC ]
+
+Đọc thông tin và quan sát các hình 3.4, 3.5, hãy nêu mối liên hệ giữa các ngành khoa học xã hội và nhân văn khác đối với Sử học. Lấy ví dụ và phân tích.
+
+21
+
+<!-- chunk 56 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC
+id_lesson: 3
+section_id: "14"
+section_name: Mục 3 Mối liên hệ giữa Sử học với các ngành khoa học tự nhiên và công nghệ
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_56
+---
+[ Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC ]
+
+3. Mối liên hệ giữa Sử học với các ngành khoa học tự nhiên và công nghệ
+3.1. Sử học với các ngành khoa học tự nhiên và công nghệ
+
+Mọi ngành khoa học tự nhiên và công nghệ đều có lịch sử. Muốn biết được lịch sử phát triển của ngành như thế nào (về sự ra đời, các chặng đường phát triển, đặc điểm và thành tựu nổi bật, sự tác động của các phát minh, sáng chế đối với cuộc sống,...), người ta cần đến sự hỗ trợ của Sử học.
+
+[Hình ảnh minh họa sự phát triển của công nghiệp qua các thời kỳ, từ nhà máy công nghiệp cổ điển đến robot và máy tính hiện đại]
+
+CUỐI THẾ KỈ XVIII - ĐẦU THẾ KỈ XIX | CUỐI THẾ KỈ XIX - ĐẦU THẾ KỈ XX | NỬA SAU THẾ KỈ XX | ĐẦU THẾ KỈ XXI - NGÀY NAY
+
+<!-- chunk 58 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC
+id_lesson: 3
+section_id: "17"
+section_name: Mục 3 Mối liên hệ giữa Sử học với các ngành khoa học tự nhiên và công nghệ
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_58
+---
+[ Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC ]
+
+Đọc thông tin và quan sát sơ đồ 3.2, bảng 3, hãy nêu vai trò của Sử học đối với các ngành khoa học tự nhiên và công nghệ. Lấy ví dụ và phân tích.
+
+<!-- chunk 59 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC
+id_lesson: 3
+section_id: "18"
+section_name: Mục 3 Mối liên hệ giữa Sử học với các ngành khoa học tự nhiên và công nghệ
+sub_type: 
+sub_id: " "
+sub_name: Các ngành khoa học tự nhiên và công nghệ với Sử học
+has_table: false
+chunk_id: ls_59
+---
+[ Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC ]
+
+3.2. Các ngành khoa học tự nhiên và công nghệ với Sử học
+
+Khoa học tự nhiên liên quan đến việc phát minh, phát hiện, mô tả và dự đoán các hiện tượng tự nhiên dựa trên những bằng chứng cụ thể thông qua quan sát, ghi lại quá trình theo dõi, thực nghiệm,... Khoa học tự nhiên và công nghệ có mối quan hệ tương hỗ với Sử học.
+
+[Hình minh họa thể hiện mối liên hệ giữa Sử học và các ngành khoa học khác. Sử học nằm ở trung tâm, được kết nối với các ngành: Vật lí học, Toán học, Hóa học, Sinh học, Thiên văn học, Địa lí tự nhiên, Tin học.]
+
+Sơ đồ 3.3. Mối liên hệ giữa một số ngành khoa học tự nhiên với Sử học
+
+Các ngành khoa học tự nhiên và công nghệ có vai trò quan trọng đối với Sử học trong quá trình sưu tầm, tìm kiếm sử liệu, nghiên cứu, tìm hiểu, tái hiện quá khứ. Các lĩnh vực như Vật lí học, Hóa học, Sinh học, Địa lí tự nhiên, Thiên văn học, Toán học, Tin học,... cung cấp dữ liệu rộng lớn và đa dạng cho các nhà sử học. Đó là hệ thống tri thức chuyên ngành, phương pháp nghiên cứu, khái niệm,... Thông qua đó, nhà sử học có thể mô tả, trình bày lịch sử một cách toàn diện, cụ thể và chính xác hơn.
+
+[Khung thông tin màu hồng]
+Địa lí tự nhiên cung cấp những dữ liệu để các nhà sử học nghiên cứu về lịch sử khu vực, vùng miền hoặc các sự kiện, hiện tượng lịch sử gắn với địa hình, khí hậu, thổ nhưỡng, tài nguyên,...
+
+<!-- chunk 60 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC
+id_lesson: 3
+section_id: "20"
+section_name: Mục 3 Mối liên hệ giữa Sử học với các ngành khoa học tự nhiên và công nghệ
+sub_type: 
+sub_id: " "
+sub_name: Các ngành khoa học tự nhiên và công nghệ với Sử học
+has_table: false
+chunk_id: ls_60
+---
+[ Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC ]
+
+Thiên văn học cung cấp những tri thức cơ bản để nhà sử học khám phá về quá trình làm ra lịch và cách tính thời gian của con người trong lịch sử.
+
+Toán học với các phương pháp phân tích định lượng, thống kê, chọn mẫu,... được nhà sử học sử dụng khi xử lí số liệu, làm cơ sở cho các nhận xét, kết luận,...
+
+[Khung thông tin màu xanh nhạt kèm hình ảnh]
+Năm 2020, thông qua công nghệ viễn thám, các nhà khoa học đã phát hiện một cấu trúc rộng lớn ở vùng Guyt-sơ (Anh), cách di chỉ cư trạch Sơ-tôn-hen-giơ 3 km. Di chỉ này có niên đại khoảng 4 500 năm trước, là cấu trúc tiền sử lớn nhất được tìm thấy ở Anh.
+
+Hình 3.6. Dấu tích cấu trúc tiền sử tại Guyt-sơ (Anh)
+[Hình ảnh chụp từ trên cao thể hiện một vùng đất rộng lớn với các cánh đồng và khu dân cư. Có một vòng tròn màu đỏ đánh dấu vị trí của cấu trúc tiền sử được phát hiện.]
+
+<!-- chunk 61 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC
+id_lesson: 3
+section_id: "22"
+section_name: Mục 3 Mối liên hệ giữa Sử học với các ngành khoa học tự nhiên và công nghệ
+sub_type: 
+sub_id: " "
+sub_name: Các ngành khoa học tự nhiên và công nghệ với Sử học
+has_table: false
+chunk_id: ls_61
+---
+[ Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC ]
+
+Các lĩnh vực công nghệ thông tin, viễn thám, hệ thống thông tin địa lí (GIS), trí tuệ nhân tạo, internet vạn vật, thực tại ảo,... hỗ trợ các nhà sử học một cách hiệu quả trong quá trình thu thập và xử lí sử liệu, trình bày và tái hiện quá khứ. Công nghệ số kĩ thuật hiện đại giúp Sử học có thể thực hiện được những dự án, nhiệm vụ nan giải trước đây, như tìm dấu vết của các nền văn minh cổ xưa, tái hiện không gian lịch sử, tái tạo hiện vật lịch sử, đo đạc và thiết lập bản đồ di tích trên quy mô lớn, nghiên cứu về nguồn gốc nhân chủng thông qua y – sinh học, giải trình tự gen,...
+
+<!-- chunk 62 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC
+id_lesson: 3
+section_id: "23"
+section_name: Mục 3 Mối liên hệ giữa Sử học với các ngành khoa học tự nhiên và công nghệ
+sub_type: 
+sub_id: " "
+sub_name: Các ngành khoa học tự nhiên và công nghệ với Sử học
+has_table: false
+chunk_id: ls_62
+---
+[ Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC ]
+
+[Hình minh họa: Sơ đồ thể hiện mối liên hệ giữa Sử học và các lĩnh vực công nghệ. Trung tâm là "SỬ HỌC", xung quanh là các lĩnh vực như "Viễn thám", "Trí tuệ nhân tạo", "Internet vạn vật", "Thực tại ảo", "In 3D", "Giải trình tự gen", "Thực tại ảo tăng cường", "Công nghệ thông tin".]
+
+Sơ đồ 3.4. Mối liên hệ giữa một số lĩnh vực công nghệ với Sử học
+
+[Hình ảnh: Một phòng trưng bày bảo tàng với nhiều hiện vật và tranh ảnh được trưng bày trong tủ kính và trên tường, được chiếu sáng rõ ràng.]
+
+Hình 3.7. Ứng dụng công nghệ tương tác 3D trong giới thiệu, trưng bày chủ đề "Lịch sử Việt Nam thời tiền sử" (Bảo tàng Lịch sử Quốc gia)
+
+<!-- chunk 63 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC
+id_lesson: 3
+section_id: "24"
+section_name: Mục 3 Mối liên hệ giữa Sử học với các ngành khoa học tự nhiên và công nghệ
+sub_type: 
+sub_id: " "
+sub_name: Các ngành khoa học tự nhiên và công nghệ với Sử học
+has_table: false
+chunk_id: ls_63
+---
+[ Bài 3: SỬ HỌC VỚI CÁC LĨNH VỰC KHOA HỌC KHÁC ]
+
+Đọc thông tin và quan sát các sơ đồ 3.3, 3.4, các hình 3.6, 3.7, hãy nêu vai trò của các ngành khoa học tự nhiên và công nghệ đối với Sử học. Lấy ví dụ và phân tích.
+
+1. Bằng kiến thức lịch sử đã học, hãy làm sáng tỏ nhận định: Sử học là ngành khoa học có mối quan hệ với nhiều ngành, nhiều lĩnh vực khác nhau.
+
+2. Trình bày mối liên hệ giữa Sử học với các ngành khoa học xã hội và nhân văn. Lấy ví dụ phân tích về mối liên hệ đó.
+
+3. Em đã khai thác và sử dụng công nghệ thông tin để học tập lịch sử và các môn học khác như thế nào?
+
+<!-- chunk 64 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "25"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục tiêu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_64
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+Học xong bài này, em sẽ:
+- Phân tích được mối quan hệ giữa Sử học với công tác bảo tồn và phát huy giá trị di sản văn hoá, di sản thiên nhiên.
+- Phân tích được vai trò của Sử học đối với một số ngành, nghề trong lĩnh vực Công nghiệp văn hoá; tác động của sự phát triển các ngành nghề thuộc lĩnh vực Công nghiệp văn hoá đối với việc quảng bá lịch sử, văn hoá của dân tộc và nhân loại.
+- Giải thích được vai trò của lịch sử và văn hoá đối với sự phát triển du lịch; tác động của du lịch đối với công tác bảo tồn di tích lịch sử, văn hoá.
+- Vận động các bạn và mọi người cùng tham gia bảo vệ các di sản văn hoá, di sản thiên nhiên ở địa phương.
+
+<!-- chunk 65 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "26"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mô tả bài
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_65
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+Ngày 3-11-2020, Tổ chức Giải thưởng Du lịch Thế giới (WTA) công bố Giải thưởng Du lịch Thế giới lần thứ 27 khu vực châu Á. Theo đó, Việt Nam đã giành được chiến thắng trong cuộc bình chọn ba hạng mục và trở thành "Điểm đến hàng đầu châu Á về di sản, ẩm thực và văn hoá".
+
+Hình 4.1. Một góc Vịnh Hạ Long (Quảng Ninh)
+
+[Hình ảnh mô tả một phần của Vịnh Hạ Long với nhiều đảo đá vôi nhô lên từ mặt nước xanh biếc. Có nhiều thuyền du lịch đang neo đậu trong vịnh, tạo nên một khung cảnh hài hòa giữa thiên nhiên và hoạt động du lịch.]
+
+Vậy Sử học có những đóng góp gì vào sự kiện trên? Sử học có vai trò như thế nào trong công tác bảo tồn, phát huy những giá trị di sản văn hoá, di sản thiên nhiên? Sử học có mối quan hệ như thế nào đối với một số ngành, nghề trong lĩnh vực Công nghiệp văn hoá?
+
+<!-- chunk 66 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "27"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 1 Sử học với công tác bảo tồn và phát huy giá trị di sản văn hoá, di sản thiên nhiên
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_66
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+1. Sử học với công tác bảo tồn và phát huy giá trị di sản văn hoá, di sản thiên nhiên
+
+Di sản văn hoá và di sản thiên nhiên là một bộ phận của lịch sử, được lưu giữ trong hiện tại. Sử học và di sản văn hoá, di sản thiên nhiên có mối quan hệ gắn bó mật thiết.
+
+Thứ nhất, các loại hình di sản văn hoá (vật thể, phi vật thể, hỗn hợp,...) đều đóng vai trò là nguồn sử liệu quan trọng đặc biệt đối với nghiên cứu lịch sử. Việc bảo tồn di sản theo dạng thức vốn có là cơ sở để nhà sử học có thể miêu tả, trình bày lịch sử quá khứ một cách chính xác.
+
+Thứ hai, Sử học nghiên cứu về lịch sử hình thành, phát triển của di sản văn hoá, di sản thiên nhiên; xác định vị trí, vai trò và ý nghĩa của di sản đối với cộng đồng.
+
+<!-- chunk 67 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "28"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 1 Sử học với công tác bảo tồn và phát huy giá trị di sản văn hoá, di sản thiên nhiên
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_67
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+Thứ ba, Sử học cung cấp những thông tin có giá trị và tin cậy (về đặc điểm, loại hình, cấu trúc, địa bàn dân cư, tác động – ảnh hưởng,...) liên quan đến di sản văn hoá, di sản thiên nhiên, làm cơ sở cho công tác bảo tồn và phát huy giá trị của di sản.
+
+Dân ca Quan họ là loại hình văn hoá dân gian được hình thành từ lâu đời. Từ 49 làng Quan họ cổ, đến nay đã có 369 làng Quan họ thực hành, 381 câu lạc bộ Dân ca Quan họ với trên 10 000 người ở các độ tuổi tham gia (trong đó hơn 600 người có khả năng truyền dạy cho lớp trẻ). Dân ca Quan họ là biểu tượng văn hoá trong quá trình hội nhập văn hoá quốc tế, đã lan ra khắp vùng Kinh Bắc và nhiều địa phương trên cả nước, phát triển mạnh trong cộng đồng kiều bào ở Đức, Pháp, Séc, Nga,...
+
+<!-- chunk 68 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "29"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 1 Sử học với công tác bảo tồn và phát huy giá trị di sản văn hoá, di sản thiên nhiên
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_68
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+Dân ca Quan họ đã được UNESCO ghi danh là Di sản Văn hoá phi vật thể đại diện của nhân loại (2009).
+
+[Hình ảnh mô tả một buổi biểu diễn dân ca Quan họ. Nhiều người mặc trang phục truyền thống đang đứng trên sân khấu, một số cầm ô, một số cầm quạt. Phía sau là bối cảnh trang trí với những hình tròn lớn có hoa văn. Màu sắc chủ đạo là đen, hồng và vàng.]
+
+Hình 4.2. Biểu diễn Dân ca Quan họ (Bắc Ninh)
+
+Thứ tư, công tác bảo tồn và phát huy giá trị di sản văn hoá, di sản thiên nhiên có vai trò đặc biệt quan trọng trong việc duy trì kí ức và bản sắc cộng đồng, thúc đẩy kinh tế – xã hội phát triển bền vững, giáo dục thế hệ trẻ, bảo vệ sự đa dạng văn hoá và đa dạng sinh học trên toàn cầu.
+
+<!-- chunk 69 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "30"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 1 Sử học với công tác bảo tồn và phát huy giá trị di sản văn hoá, di sản thiên nhiên
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_69
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+Bên cạnh đó, thông qua các phương pháp nghiên cứu, Sử học xác định giá trị của các di sản văn hoá, di sản thiên nhiên cần bảo tồn; đề xuất những hình thức, phương pháp bảo tồn bền vững, hiệu quả. Ngược lại, công tác bảo tồn giúp giữ gìn được những giá trị lịch sử của di sản cho cộng đồng và nhân loại.
+
+Năm 1987, Ủy ban Di sản Thế giới của UNESCO ghi danh thành phố Vơ-ni-dơ và đầm phá Vơ-ni-dơ (I-ta-li-a) vào Danh mục Di sản Thế giới. Vơ-ni-dơ là một trong những điểm đến du lịch phổ biến và nổi tiếng của châu Âu, là thành phố mang tính biểu tượng, có giá trị lớn đối với sự phát triển kinh tế, xã hội và hình ảnh đất nước I-ta-li-a.
+
+<!-- chunk 70 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "31"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 1 Sử học với công tác bảo tồn và phát huy giá trị di sản văn hoá, di sản thiên nhiên
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_70
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+Năm 2021, UNESCO đưa ra khuyến cáo đối với chính quyền thành phố Vơ-ni-dơ cần "quản lí du lịch bền vững hơn". Ngày 13-7-2021, Chính phủ I-ta-li-a ra lệnh cấm các tàu du lịch lớn vào trung tâm thành phố Vơ-ni-dơ để bảo tồn hệ sinh thái và di sản vùng đầm phá này.
+
+[Hình ảnh mô tả một góc thành phố Vơ-ni-dơ (I-ta-li-a) với các tòa nhà nhiều màu sắc dọc theo kênh đào, có những chiếc thuyền gondola đang di chuyển trên mặt nước.]
+
+Hình 4.3. Một góc thành phố Vơ-ni-dơ (I-ta-li-a)
+
+Chỉ hơn hai tháng sau khi Cách mạng tháng Tám năm 1945 thành công, ngày 23-11-1945, Chủ tịch Hồ Chí Minh đã kí Sắc lệnh số 65/SL về việc bảo tồn tất cả cổ tích trên toàn cõi Việt Nam.
+
+<!-- chunk 71 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "32"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 1 Sử học với công tác bảo tồn và phát huy giá trị di sản văn hoá, di sản thiên nhiên
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_71
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+Ngày 24-11-2005, Thủ tướng Chính phủ Việt Nam ra Quyết định số 36/2005/QĐ-TTg, lấy ngày 23-11 hằng năm là Ngày Di sản Văn hoá Việt Nam. Quyết định này đã xác định các yêu cầu cơ bản về giáo dục truyền thống yêu nước, lòng tự hào dân tộc, ý thức trách nhiệm của toàn dân trong việc bảo vệ và phát huy di sản văn hoá dân tộc.
+
+<!-- chunk 72 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "33"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 1 Sử học với công tác bảo tồn và phát huy giá trị di sản văn hoá, di sản thiên nhiên
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_72
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+Đọc thông tin và quan sát các hình 4.2, 4.3, hãy phân tích mối quan hệ giữa Sử học với công tác bảo tồn và phát huy các giá trị di sản văn hoá, di sản thiên nhiên. Hãy làm rõ mối quan hệ đó qua một ví dụ cụ thể.
+
+<!-- chunk 73 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "34"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 2 Sử học với sự phát triển ngành Công nghiệp văn hoá
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_73
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+2. Sử học với sự phát triển ngành Công nghiệp văn hoá
+
+Ngày nay, phát triển ngành Công nghiệp văn hoá trở thành một nhiệm vụ trọng tâm của nhiều quốc gia trên thế giới. Sử học có mối quan hệ gắn bó chặt chẽ với một số ngành, nghề trong lĩnh vực Công nghiệp văn hoá.
+
+Bảng 4. Mối quan hệ giữa Sử học với sự phát triển ngành Công nghiệp văn hoá
+
+<!-- chunk 74 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "35"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 2 Sử học với sự phát triển ngành Công nghiệp văn hoá
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_74
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+SỬ HỌC ĐỐI VỚI NGÀNH CÔNG NGHIỆP VĂN HOÁ:
+• Cung cấp những tri thức liên quan đến ngành (về quá trình hình thành, phát triển và biến đổi; về vị trí, vai trò của ngành trong đời sống xã hội,...).
+• Hình thành ý tưởng và nguồn cảm hứng cho ngành Công nghiệp văn hoá (để tái hiện ảnh, các loại hình giải trí, thời trang,... gắn với quảng bá di sản văn hoá).
+• Nghiên cứu, đề xuất chiến lược phát triển bền vững (kết hợp giữa bảo tồn các giá trị lịch sử, văn hoá với phát triển kinh tế, xã hội).
+
+<!-- chunk 75 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "36"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 2 Sử học với sự phát triển ngành Công nghiệp văn hoá
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_75
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+NGÀNH CÔNG NGHIỆP VĂN HOÁ ĐỐI VỚI SỬ HỌC:
+• Cung cấp thông tin, nguồn tri thức của ngành cho việc nghiên cứu lịch sử (về quá trình ra đời, thực trạng, triển vọng, vị trí và đóng góp của ngành đối với xã hội,...).
+• Thúc đẩy Sử học phát triển (quảng bá các giá trị lịch sử, văn hoá truyền thống,... của các cộng đồng, cũng như tri thức lịch sử và văn hoá nhân loại).
+• Góp phần lưu giữ và phát huy các giá trị lịch sử, văn hoá trong cộng đồng (thông qua ngành để giáo dục các thế hệ, tôn vinh các giá trị lịch sử, văn hoá,...).
+
+<!-- chunk 76 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "37"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 2 Sử học với sự phát triển ngành Công nghiệp văn hoá
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_76
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+Theo phê duyệt của Thủ tướng Chính phủ (2006), ngành Công nghiệp văn hoá của Việt Nam có 12 lĩnh vực chủ chốt, bao gồm: Quảng cáo; Kiến trúc; Phần mềm và các trò chơi giải trí; Thủ công mĩ nghệ; Thiết kế; Điện ảnh; Xuất bản; Thời trang; Nghệ thuật biểu diễn; Mĩ thuật, nhiếp ảnh và triển lãm; Truyền hình và phát thanh; Du lịch văn hoá.
+
+<!-- chunk 77 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "38"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 2 Sử học với sự phát triển ngành Công nghiệp văn hoá
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_77
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+Đọc thông tin và quan sát bảng 4, hãy nêu vai trò của Sử học đối với một số ngành, nghề trong lĩnh vực Công nghiệp văn hoá. Trình bày tác động của sự phát triển các ngành, nghề thuộc lĩnh vực Công nghiệp văn hoá đối với Sử học.
+
+<!-- chunk 78 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "39"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 3 Lịch sử và văn hoá đối với sự phát triển du lịch
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_78
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+3. Lịch sử và văn hoá đối với sự phát triển du lịch
+
+Trong việc phát triển du lịch – ngành "Công nghiệp không khói", những giá trị về lịch sử, văn hoá truyền thống có vai trò đặc biệt quan trọng.
+
+Yếu tố hàng đầu của sản phẩm du lịch chính là "sức hấp dẫn của địa danh", bao gồm các yếu tố về lịch sử, văn hoá truyền thống, tôn giáo, tín ngưỡng, ẩm thực, giải trí, sản phẩm thủ công mĩ nghệ,... Thông qua các phương tiện truyền thông quảng bá, du khách trong nước và quốc tế sẽ lựa chọn địa danh để đến tham quan, tìm hiểu và trải nghiệm.
+
+<!-- chunk 79 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "40"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 3 Lịch sử và văn hoá đối với sự phát triển du lịch
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_79
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+Việt Nam được bầu chọn là "Điểm đến hàng đầu châu Á về di sản, ẩm thực và văn hoá" là nhờ có hệ thống di tích lịch sử, di sản văn hoá và di sản thiên nhiên trên khắp cả nước, như Phố cổ Hà Nội, Cố đô Hoa Lư (Ninh Bình), Cố đô Huế, Phố cổ Hội An (Quảng Nam), Vịnh Hạ Long (Quảng Ninh),...
+
+Điểm chung của các địa danh này chính là sức hấp dẫn của các yếu tố về lịch sử, văn hoá, cảnh quan. Đây cũng là những nơi còn lưu giữ được dấu ấn lịch sử, văn hoá truyền thống một cách có hệ thống, được bảo tồn và khai thác một cách khoa học.
+
+Hình 4.4. Du khách tham quan Phố cổ Hội An (Quảng Nam)
+
+Hình 4.5. Biểu diễn áo dài - di sản văn hóa Việt Nam
+
+[Hình ảnh bên trái: Một con đường trong phố cổ Hội An với nhiều du khách đang đi bộ, các cửa hàng và nhà cổ hai bên đường.]
+
+<!-- chunk 80 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "41"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 3 Lịch sử và văn hoá đối với sự phát triển du lịch
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_80
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+[Hình ảnh bên phải: Bốn người mẫu mặc áo dài truyền thống Việt Nam với các màu sắc khác nhau đang trình diễn trên sân khấu.]
+
+Sơ đồ 4.1. Vai trò của lịch sử và văn hóa đối với sự phát triển du lịch
+
+[Sơ đồ gồm 3 mũi tên nối tiếp nhau, mỗi mũi tên chứa một nội dung:]
+
+1. Là nguồn di sản, tài nguyên quý giá để phát triển ngành Du lịch, đem lại những nguồn lực lớn.
+
+2. Cung cấp tri thức lịch sử, văn hóa để hỗ trợ quảng bá, thúc đẩy ngành Du lịch phát triển bền vững.
+
+3. Cung cấp bài học kinh nghiệm, hình thành tư tưởng để lên kế hoạch, xây dựng chiến lược phát triển ngành Du lịch,...
+
+<!-- chunk 81 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "42"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 3 Lịch sử và văn hoá đối với sự phát triển du lịch
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_81
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+Sự phát triển của du lịch sẽ góp phần mang lại nhiều nguồn lợi: tạo ra việc làm cho người lao động; mang lại nguồn lực cho phát triển kinh tế - xã hội; thúc đẩy quá trình hội nhập và giao lưu quốc tế; quảng bá lịch sử, văn hóa cộng đồng ra bên ngoài,...
+
+Lâu đài Hạc Trắng Hi-mê-gi (Nhật Bản) được xây dựng lần đầu năm 1333, nâng cấp năm 1346 và hoàn thiện năm 1618. Tường của lâu đài được làm bằng gỗ và phủ một lớp thạch cao trắng để chống cháy, nên gọi là lâu đài Hạc Trắng. Lâu đài chứa đựng nhiều nét văn hóa đặc sắc và lịch sử truyền thống của Nhật Bản, trở thành địa điểm tham quan nổi tiếng của người dân Nhật Bản và du khách quốc tế.
+
+<!-- chunk 82 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "43"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 3 Lịch sử và văn hoá đối với sự phát triển du lịch
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_82
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+Năm 1993, UNESCO đã ghi danh lâu đài Hi-mê-gi là Di sản Thế giới. Người Nhật luôn tự hào và coi đây là "quốc bảo". Mùa thu và mùa xuân là thời điểm đẹp nhất để chiêm ngưỡng vẻ đẹp của lâu đài gần 700 tuổi này.
+
+Hình 4.6. Lâu đài Hạc Trắng Hi-mê-gi (Nhật Bản)
+
+[Hình ảnh: Lâu đài Hạc Trắng Hi-mê-gi màu trắng nổi bật giữa những cây hoa anh đào đang nở rộ. Phía trước là một cây cầu màu đỏ bắc qua hồ nước phản chiếu cảnh đẹp.]
+
+Sơ đồ 4.2. Vai trò của du lịch đối với bảo tồn di tích lịch sử và văn hoá
+
+[Sơ đồ gồm 3 hộp màu xanh nối tiếp nhau bằng mũi tên, nội dung như sau:]
+
+<!-- chunk 83 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "44"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 3 Lịch sử và văn hoá đối với sự phát triển du lịch
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_83
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+Mang lại nguồn lực hỗ trợ cho việc bảo tồn di tích lịch sử và văn hoá. → Cung cấp thông tin của ngành để Sử học nghiên cứu, đề xuất giải pháp bảo tồn và phát triển bền vững. → Quảng bá lịch sử, văn hoá công đồng ra bên ngoài; kết nối và nâng cao vị thế của các ngành Du lịch, Sử học,...
+
+Năm 1990, khách quốc tế đến Việt Nam là 250 000 lượt (có 1 triệu lượt khách nội địa). Năm 2019, số lượt khách quốc tế vượt mốc 18 triệu (5 triệu lượt khách nội địa).
+
+Năm 1990, tổng thu từ du lịch chỉ đạt 1 340 tỉ đồng; năm 2019 là 755 000 tỉ đồng (khoảng 32,8 tỉ USD), trong đó tổng thu từ du khách quốc tế đạt 421 000 tỉ đồng (18,3 tỉ USD). Ngành du lịch đã đóng góp 8,8 % GDP vào ngân sách quốc gia, giải quyết việc làm cho 3 triệu người lao động.
+
+(Nguồn: Tổng cục Du lịch Việt Nam, 2020)
+
+<!-- chunk 84 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "45"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 3 Lịch sử và văn hoá đối với sự phát triển du lịch
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_84
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+Quảng Ninh là tỉnh dẫn đầu cả nước về đóng góp của Du lịch dịch vụ cho nền kinh tế của tỉnh, với 45,9 % (năm 2020). Năm 2019, tỉnh đón 14 triệu lượt du khách (có 5,7 triệu lượt khách quốc tế), thu về 29 500 tỉ đồng.
+
+(Nguồn: Sở Du lịch Quảng Ninh, 2020)
+
+<!-- chunk 85 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 2
+chapter_name: CHỦ ĐỀ 2: VAI TRÒ CỦA SỬ HỌC
+lesson: Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC
+id_lesson: 4
+section_id: "46"
+section_name: NGÀNH NGHỀ HIỆN ĐẠI, Mục 3 Lịch sử và văn hoá đối với sự phát triển du lịch
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_85
+---
+[ Bài 4: SỬ HỌC VỚI MỘT SỐ LĨNH VỰC ]
+
+? Đọc thông tin, tư liệu và quan sát các hình từ 4.4 đến 4.6, các sơ đồ 4.1, 4.2, hãy:
+- Giải thích vai trò của lịch sử và văn hoá đối với sự phát triển du lịch.
+- Phân tích tác động của du lịch đối với công tác bảo tồn di tích lịch sử và văn hoá.
+Lấy ví dụ cụ thể và phân tích.
+
+1. Vẽ sơ đồ tư duy thể hiện những nội dung chính của bài học.
+
+2. Kể tên 5 di sản văn hoá của Việt Nam được UNESCO ghi danh là Di sản Thế giới. Hãy giới thiệu về các giá trị lịch sử, văn hoá liên quan đến những di sản đó.
+
+3. Giới thiệu một di sản (hoặc địa điểm) ở địa phương em có thể phát triển du lịch.
+
+<!-- chunk 86 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 5: KHÁI NIỆM VĂN MINH
+id_lesson: 5
+section_id: "1"
+section_name: Mục tiêu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_86
+---
+[ Bài 5: KHÁI NIỆM VĂN MINH ]
+
+Học xong bài này, em sẽ:
+- Giải thích được khái niệm văn minh.
+- Bước đầu phân biệt được ở mức cơ bản khái niệm văn minh, văn hoá.
+- Trình bày được sự phát triển của các nền văn minh trên thế giới thời kì cổ - trung đại theo tiến trình lịch sử trên trục thời gian.
+- Có ý thức trân trọng và góp phần bảo tồn những thành tựu của văn minh thế giới.
+
+<!-- chunk 87 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 5: KHÁI NIỆM VĂN MINH
+id_lesson: 5
+section_id: "2"
+section_name: Mô tả bài
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_87
+---
+[ Bài 5: KHÁI NIỆM VĂN MINH ]
+
+Ngôi đền Hoi-sa-le-oa-ra là một trong những thành tựu nổi bật của nền văn minh Ấn Độ thời kì cổ - trung đại, là niềm tự hào của người dân Ấn Độ.
+
+Vậy văn minh là gì? Giữa văn minh và văn hoá có điểm gì giống và khác nhau? Văn minh thế giới thời kì cổ - trung đại đã trải qua tiến trình phát triển như thế nào?
+
+[Hình ảnh mô tả ngôi đền Hoi-sa-le-oa-ra ở Ấn Độ với kiến trúc phức tạp và trang trí tinh xảo]
+
+Hình 5.1. Ngôi đền Hoi-sa-le-oa-ra (Ấn Độ)
+
+<!-- chunk 88 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 5: KHÁI NIỆM VĂN MINH
+id_lesson: 5
+section_id: "3"
+section_name: Mục 1 Khái niệm văn minh
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_88
+---
+[ Bài 5: KHÁI NIỆM VĂN MINH ]
+
+1. Khái niệm văn minh
+
+Văn minh có mối liên hệ chặt chẽ với văn hoá. Văn hoá là tổng thể những giá trị vật chất và tinh thần do con người sáng tạo ra trong quá trình lịch sử. Văn minh là trạng thái tiến bộ về cả vật chất và tinh thần của xã hội loài người, tức là trạng thái phát triển cao của nền văn hoá. Văn minh còn có nghĩa là đã thoát khỏi thời kì nguyên thuỷ. Trái với văn minh là trạng thái "dã man".
+
+Văn hoá xuất hiện đồng thời cùng với loài người. Ngoài văn hoá vật chất, con người còn sáng tạo ra những giá trị tinh thần. Trên cơ sở nền văn hoá thời nguyên thuỷ, đến khi xuất hiện nhà nước và chữ viết, loài người tiến vào thời kì văn minh.
+
+<!-- chunk 90 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 5: KHÁI NIỆM VĂN MINH
+id_lesson: 5
+section_id: "5"
+section_name: Mục 1 Khái niệm văn minh
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_90
+---
+[ Bài 5: KHÁI NIỆM VĂN MINH ]
+
+Thông thường, vào thời kì thành lập nhà nước, chữ viết cũng xuất hiện, vì thế văn hóa có bước phát triển nhảy vọt. Tuy nhiên, do hoàn cảnh cụ thể, ở một số nơi, khi nhà nước ra đời vẫn chưa có chữ viết, nhưng đó là những trường hợp không điển hình.
+
+? - Đọc thông tin và quan sát bảng 5, hãy cho biết văn minh là gì. Phân biệt văn hóa và văn minh. Con người bước vào thời kì văn minh khi có điều kiện nào?
+- Trong các hình 5.2 và 5.3, hình nào vừa là biểu hiện của văn hóa, vừa là biểu hiện của văn minh? Vì sao?
+
+<!-- chunk 91 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 5: KHÁI NIỆM VĂN MINH
+id_lesson: 5
+section_id: "6"
+section_name: Mục 2 Khái quát tiến trình phát triển lịch sử văn minh thế giới thời kì cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_91
+---
+[ Bài 5: KHÁI NIỆM VĂN MINH ]
+
+2. Khái quát tiến trình phát triển lịch sử văn minh thế giới thời kì cổ - trung đại
+
+Trong thời kì cổ đại, ở phương Đông có bốn trung tâm văn minh lớn là Ai Cập, Lưỡng Hà, Trung Hoa và Ấn Độ. Điểm chung nổi bật của các nền văn minh này là đều hình thành trên lưu vực của các dòng sông lớn. Chính nhờ sự bồi đắp phù sa của những dòng sông đó nên đất đai ở những nơi này trở nên màu mỡ, nông nghiệp có điều kiện phát triển, dẫn đến sự xuất hiện sớm của nhà nước. Do đó, cư dân ở đây sớm bước vào xã hội văn minh và hơn thế nữa là sáng tạo nên những nền văn minh rực rỡ.
+
+<!-- chunk 92 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 5: KHÁI NIỆM VĂN MINH
+id_lesson: 5
+section_id: "7"
+section_name: Mục 2 Khái quát tiến trình phát triển lịch sử văn minh thế giới thời kì cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_92
+---
+[ Bài 5: KHÁI NIỆM VĂN MINH ]
+
+Ở phương Tây có hai nền văn minh lớn là Hy Lạp và La Mã. Điểm chung của hai nền văn minh này là hình thành ở ven biển, đồng bằng nhỏ hẹp, đất đai khô cằn,... nên khi có công cụ lao động bằng sắt mới xuất hiện nền văn minh. Những thành tựu rực rỡ của văn minh Hy Lạp và La Mã là cơ sở của văn minh châu Âu sau này.
+
+Đến thời kì trung đại, ở phương Đông, văn minh Ấn Độ và Trung Hoa tiếp tục phát triển đến khi bị các nước thực dân phương Tây xâm lược và đô hộ. Ở phương Tây, đến thời hậu kì trung đại, văn minh thời Phục hưng được phục hồi trên cơ sở văn minh Hy Lạp và La Mã cổ đại.
+
+<!-- chunk 93 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 5: KHÁI NIỆM VĂN MINH
+id_lesson: 5
+section_id: "8"
+section_name: Mục 2 Khái quát tiến trình phát triển lịch sử văn minh thế giới thời kì cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_93
+---
+[ Bài 5: KHÁI NIỆM VĂN MINH ]
+
+Trong lịch sử thế giới cổ - trung đại đã tồn tại những nền văn minh khác nhau, nhưng những nền văn minh này không hoàn toàn biệt lập. Thông qua các hoạt động như chiến tranh, buôn bán, truyền giáo,... các nền văn minh này đã có sự tiếp xúc, ảnh hưởng lẫn nhau.
+
+[Hình ảnh mô tả tiến trình phát triển lịch sử văn minh thế giới thời kì cổ - trung đại. Biểu đồ thời gian cho thấy sự phát triển của các nền văn minh ở phương Đông và phương Tây từ 4000 năm TCN đến năm 2000.]
+
+Sơ đồ 5. Tiến trình phát triển lịch sử văn minh thế giới thời kì cổ - trung đại
+
+<!-- chunk 94 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 5: KHÁI NIỆM VĂN MINH
+id_lesson: 5
+section_id: "9"
+section_name: Mục 2 Khái quát tiến trình phát triển lịch sử văn minh thế giới thời kì cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_94
+---
+[ Bài 5: KHÁI NIỆM VĂN MINH ]
+
+Đọc thông tin và quan sát sơ đồ 5, hãy:
+- Trình bày khái quát tiến trình lịch sử văn minh thế giới thời kì cổ - trung đại.
+- Kể tên các nền văn minh tiêu biểu tương ứng với các giai đoạn của tiến trình lịch sử văn minh thế giới thời kì cổ - trung đại.
+
+1. Hãy cho biết các hình ảnh dưới đây là biểu hiện của văn hoá hay văn minh. Vì sao?
+
+[Hình 5.4: Đồ trang sức thời nguyên thuỷ - Hình ảnh cho thấy các đồ trang sức bằng vàng có hình dạng như vòng, mặt dây chuyền từ thời nguyên thuỷ]
+
+[Hình 5.5: Đền Pac-tê-nông (Hy Lạp) - Hình ảnh cho thấy một công trình kiến trúc cổ đại của Hy Lạp được chiếu sáng vào ban đêm]
+
+2. Văn minh Văn Lang - Âu Lạc, văn minh Đại Việt ở Việt Nam thuộc giai đoạn nào của lịch sử văn minh thế giới? Vì sao?
+
+<!-- chunk 95 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "10"
+section_name: Mục tiêu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_95
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Học xong bài này, em sẽ:
+- Giải thích được cơ sở hình thành văn minh Ai Cập cổ đại, Trung Hoa và Ấn Độ cổ - trung đại.
+- Nêu được ý nghĩa của những thành tựu cơ bản thuộc nền văn minh Ai Cập cổ đại, Trung Hoa cổ - trung đại và Ấn Độ cổ - trung đại.
+- Biết cách sưu tầm và sử dụng tư liệu lịch sử để tìm hiểu về các nền văn minh cổ - trung đại ở phương Đông.
+
+<!-- chunk 96 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "11"
+section_name: Mô tả bài
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_96
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Kim tự tháp Kê-ốp (Ai Cập) là một trong bảy kì quan của thế giới cổ đại và là kì quan duy nhất còn tồn tại đến ngày nay. Đây được coi là biểu tượng của nền văn minh Ai Cập cổ đại. Cùng với Ai Cập cổ đại, Trung Hoa và Ấn Độ cũng là những nền văn minh lớn của nhân loại thời kì cổ - trung đại.
+
+Vậy văn minh Ai Cập, Trung Hoa và Ấn Độ được hình thành trên những cơ sở nào và những thành tựu của các nền văn minh này có ý nghĩa ra sao?
+
+[Hình ảnh mô tả Kim tự tháp Kê-ốp (Ai Cập)]
+
+<!-- chunk 97 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "12"
+section_name: Mục 1 Văn minh Ai Cập cổ đại
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_97
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+1. Văn minh Ai Cập cổ đại
+1.1. Cơ sở hình thành
+
+Văn minh Ai Cập cổ đại là một trong những nền văn minh ra đời sớm nhất, phát triển rực rỡ thời cổ đại. Nền văn minh này được hình thành bên dòng sông Nin với những điều kiện thuận lợi về tự nhiên, kinh tế, chính trị, xã hội và dân cư.
+
+[Sơ đồ mô tả cơ sở hình thành văn minh Ai Cập cổ đại, bao gồm các yếu tố:
+
+Điều kiện tự nhiên: Lịch sử Ai Cập gắn liền với dòng sông Nin. Hệ thống đê đã viết: "Ai Cập là tặng phẩm của sông Nin".
+
+Kinh tế: Trên cơ sở công cụ lao động bằng đá, đồng,... kinh tế phát triển. Nông nghiệp đồng vai trò chủ đạo.
+
+Chính trị: Nhà nước quân chủ chuyên chế trung ương tập quyền, đứng đầu là Pha-ra-ông. Quyền lực tối cao của vua là cơ sở quan trọng của văn minh Ai Cập cổ đại.
+
+<!-- chunk 98 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "13"
+section_name: Mục 1 Văn minh Ai Cập cổ đại
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_98
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Xã hội: Xã hội phân chia thành quý tộc, nông dân, nô lệ,... Sự phân chia xã hội tạo ra một bộ phận chuyên sản xuất, phục vụ,...
+
+Dân cư: Cư dân bao gồm các bộ lạc từ Đông Bắc châu Phi và Tây Á. Họ sống quần tụ lại và trở thành chủ nhân của nền văn minh Ai Cập cổ đại.]
+
+[Hình ảnh bên trái: Bản đồ khu vực Ai Cập và sông Nin, với chú thích về lãnh thổ Ai Cập cổ đại và các thành phố cổ đại.]
+
+[Hình ảnh bên phải: Một đoạn sông uốn lượn qua vùng đồng cỏ xanh.]
+
+Hình 6.2. Một đoạn sông Nin (Ai Cập)
+
+Sông Nin dài khoảng 6 400 km, đoạn chảy qua Ai Cập dài khoảng 700 km, bồi đắp hai bên bờ rộng khoảng 15 - 25 km. Riêng vùng châu thổ ở hạ lưu dài khoảng 160 km theo bờ biển.
+
+Lược đồ 6.1. Ai Cập cổ đại
+
+<!-- chunk 99 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "14"
+section_name: Mục 1 Văn minh Ai Cập cổ đại
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_99
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+"Sông Nin không chỉ tạo nên ở vùng thung lũng một dải đất phù sa màu mỡ mà hằng năm còn mang nước tưới cho cây cối, hoa màu tốt tươi, biến Ai Cập từ "một dòng cát bụi" trở thành "một vườn hoa",... Không phải ngẫu nhiên mà người Ai Cập từ thời xa xưa đã coi thủy thần Ô-di-rít (thần sông Nin) là thần hộ mệnh của cả vương quốc".
+
+(Lịch sử thế giới cổ đại, Lương Ninh (Chủ biên))
+
+<!-- chunk 100 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "15"
+section_name: Mục 1 Văn minh Ai Cập cổ đại
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_100
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+? Đọc thông tin, tư liệu và quan sát sơ đồ 6.1, hình 6.2 và lược đồ 6.1, hãy:
+- Giải thích những cơ sở hình thành nền văn minh Ai Cập.
+- Lí giải vì sao Hê-rô-đốt cho rằng: "Ai Cập là tặng phẩm của sông Nin".
+
+<!-- chunk 101 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "16"
+section_name: Mục 1 Văn minh Ai Cập cổ đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_101
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+1.2. Những thành tựu cơ bản
+
+Về chữ viết, cư dân Ai Cập cổ đại viết chữ tượng hình mô phỏng vật thật để nói lên ý nghĩ của mình. Họ thường viết chữ trên giấy Pa-pi-rút hoặc khắc trên đá. Chữ viết phản ánh trình độ tư duy của cư dân Ai Cập, là phương tiện chủ yếu lưu giữ thông tin từ đời này qua đời khác, đồng thời là cơ sở để người đời sau nghiên cứu về văn hoá thời kì cổ đại.
+
+Về Toán học, cư dân Ai Cập cổ đại đã nghĩ ra phép đếm đến 10, họ rất giỏi về hình học và đã tính được số Pi (π) bằng 3,16. Sự hiểu biết toán học này là biểu hiện cao của tư duy, đã được sử dụng trong cuộc sống như xây dựng, đo ruộng đất, lập bản đồ,... đồng thời là cơ sở cho nền toán học sau này.
+
+Hình 6.3. Chữ tượng hình của cư dân Ai Cập cổ đại trên giấy pa-pi-rút
+
+<!-- chunk 102 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "17"
+section_name: Mục 1 Văn minh Ai Cập cổ đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_102
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+[Hình ảnh mô tả các chữ tượng hình Ai Cập cổ đại được khắc trên giấy pa-pi-rút với nhiều biểu tượng và hình vẽ khác nhau.]
+
+Hình 6.4. Chữ số của cư dân Ai Cập cổ đại
+
+[Hình ảnh minh họa hệ thống chữ số của người Ai Cập cổ đại, bao gồm các biểu tượng đại diện cho các số từ 1 đến 1.000.000.]
+
+Hình 6.5. Kim tự tháp và tượng Nhân sư (Ai Cập)
+
+[Hình ảnh cho thấy kim tự tháp và tượng Nhân sư nổi tiếng của Ai Cập, với kim tự tháp lớn ở phía sau và tượng Nhân sư ở phía trước.]
+
+<!-- chunk 103 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "18"
+section_name: Mục 1 Văn minh Ai Cập cổ đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_103
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Về kiến trúc và điêu khắc, cư dân Ai Cập cổ đại đã xây dựng những công trình kiến trúc, điêu khắc đồ sộ như kim tự tháp, tượng Nhân sư,... Nghệ thuật kiến trúc và điêu khắc của Ai Cập cổ đại phản ánh trình độ tư duy, khả năng sáng tạo của con người và mang tính thẩm mĩ cao, đồng thời là biểu hiện đỉnh cao của tính chuyên chế, quan niệm tôn giáo.
+
+"Kim tự tháp Kê-ốp cao 147 m. Để xây dựng kim tự tháp này người ta sử dụng tới khoảng 2,3 triệu tảng đá, mỗi tảng nặng 2,5 - 4 tấn. Hàng triệu tảng đá được ghè đẽo theo kích thước đã định, rồi được mài nhẵn và xếp chồng lên nhau hàng trăm tầng, không có bất cứ một loại vật liệu kết dính nào mà vẫn đứng vững bền, năm nghìn năm nay như muốn thách thức với thời gian,..."
+
+(Lịch sử văn minh thế giới, Vũ Dương Ninh (Chủ biên))
+
+<!-- chunk 104 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "19"
+section_name: Mục 1 Văn minh Ai Cập cổ đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_104
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Ngoài ra, cư dân Ai Cập cổ đại còn có nhiều thành tựu văn minh trên các lĩnh vực khác như Lịch pháp, Thiên văn học, Văn học, Y học,...
+
+Kĩ thuật ướp xác ra đời ở Ai Cập từ thời Cổ vương quốc khoảng năm 2700 TCN và tồn tại đến thế kỉ V. Kĩ thuật ướp xác của cư dân Ai Cập còn nhiều điều bí ẩn mà ngày nay các nhà khoa học đang tìm lời giải đáp.
+
+Hình 6.6. Mô phỏng cảnh ướp xác của cư dân Ai Cập (tranh vẽ)
+
+[Hình ảnh minh họa cảnh ướp xác của người Ai Cập cổ đại, với một nhân vật có đầu chó sói (có thể là thần Anubis) đang thực hiện nghi lễ ướp xác trên một xác ướp.]
+
+<!-- chunk 105 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "20"
+section_name: Mục 1 Văn minh Ai Cập cổ đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_105
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Nền văn minh Ai Cập cổ đại đã để lại cho nhân loại nhiều thành tựu to lớn, rực rỡ. Đây là sản phẩm của trí tuệ, của sự lao động sáng tạo và là những đóng góp trực tiếp của cư dân Ai Cập đối với sự phát triển của nhiều lĩnh vực trong nền văn minh thế giới.
+
+<!-- chunk 106 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "21"
+section_name: Mục 1 Văn minh Ai Cập cổ đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_106
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Đọc thông tin, tư liệu và quan sát các hình từ 6.3 đến 6.6, hãy:
+- Cho biết nền văn minh Ai Cập cổ đại đã đạt được những thành tựu chủ yếu nào. Hãy giới thiệu về một trong số các thành tựu đó.
+- Trình bày ý nghĩa của những thành tựu văn minh Ai Cập cổ đại.
+- Nêu những hiểu biết của em về kĩ thuật ướp xác của cư dân Ai Cập cổ đại.
+
+<!-- chunk 107 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "22"
+section_name: Mục 2 Văn minh Trung Hoa cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_107
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+2. Văn minh Trung Hoa cổ - trung đại
+2.1. Cơ sở hình thành
+
+Văn minh Trung Hoa thời kì cổ - trung đại là nền văn minh phát triển lâu đời, liên tục, gắn liền với những đồng bằng rộng lớn do Hoàng Hà và Trường Giang bồi đắp, cùng những điều kiện thuận lợi khác.
+
+[Bảng thông tin về cơ sở hình thành văn minh Trung Hoa cổ - trung đại, bao gồm 5 cột: Điều kiện tự nhiên, Kinh tế, Chính trị, Xã hội, Dân cư. Mỗi cột liệt kê các đặc điểm tương ứng.]
+
+Sơ đồ 6.2. Cơ sở hình thành văn minh Trung Hoa cổ - trung đại
+
+Trường Giang dài khoảng 6 385 km, là con sông dài nhất châu Á và xếp thứ ba thế giới (sau sông Nin ở châu Phi, sông A-ma-dôn ở Nam Mỹ ) về chiều dài, bắt nguồn từ vùng núi phía tây Trung Hoa (tỉnh Thanh Hải) và chảy về phía đông đổ ra biển Hoa Đông.
+
+<!-- chunk 108 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "23"
+section_name: Mục 2 Văn minh Trung Hoa cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_108
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Hoàng Hà dài 5 464 km, là con sông xếp thứ hai châu Á (sau Trường Giang) và xếp thứ sáu thế giới về chiều dài. Hoàng Hà bắt nguồn từ núi Côn Lôn (tỉnh Thanh Hải), đổ ra vịnh Bột Hải (gần thành phố Đông Định, tỉnh Sơn Đông).
+
+Hình 6.7. Một đoạn Hoàng Hà (Trung Hoa)
+
+[Hình ảnh: Một khúc cong của sông Hoàng Hà với nước màu vàng đất, uốn lượn qua vùng đất rộng lớn có địa hình đồi núi xanh tươi hai bên bờ.]
+
+Lược đồ 6.2. Trung Hoa cổ đại
+
+[Hình ảnh: Bản đồ Trung Hoa cổ đại, hiển thị các thành phố cổ đại và lãnh thổ Trung Hoa thời cổ đại được đánh dấu màu xanh lá cây. Các thành phố được đánh dấu bao gồm Yên Kinh, Hàm Dương, Lạc Dương, Nam Trinh và Thọ Xuân. Bản đồ cũng hiển thị các sông ngòi và biển xung quanh.]
+
+CHÚ GIẢI
+■ Thành phố cổ đại
+■ Lãnh thổ Trung Hoa thời cổ đại
+~ Biên giới quốc gia ngày nay
+
+<!-- chunk 110 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "25"
+section_name: Mục 2 Văn minh Trung Hoa cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_110
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+? Đọc thông tin và quan sát sơ đồ 6.2, lược đồ 6.2 và hình 6.7, hãy giải thích những cơ sở hình thành nền văn minh Trung Hoa thời kì cổ - trung đại.
+
+<!-- chunk 111 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "26"
+section_name: Mục 2 Văn minh Trung Hoa cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_111
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+2.2. Những thành tựu cơ bản
+Về chữ viết, cư dân Trung Hoa cổ đại sáng tạo ra chữ viết của mình từ thời nhà Thương, trải qua nhiều loại hình khác nhau như Giáp cốt văn, Kim văn, Tiểu triện, Lệ thư, Khải thư, Hành thư,... Chữ viết của cư dân Trung Hoa có ảnh hưởng đến chữ viết của nhiều nước lân cận như Nhật Bản, Việt Nam,...
+
+Về tư tưởng và tôn giáo, Nho giáo giữ vai trò quan trọng. Người đầu tiên khởi xướng Nho giáo là Khổng Tử. Nho giáo từng bước trở thành công cụ phục vụ cho nhà nước, là hệ tư tưởng của chế độ quân chủ ở Trung Hoa, đồng thời có ảnh hưởng lớn tới nhiều nước như Triều Tiên, Nhật Bản, Việt Nam,...
+
+Hình 6.8. Chữ tượng hình (Trung Hoa)
+[Hình ảnh: Minh họa các chữ tượng hình Trung Hoa, bao gồm các biến thể của chữ "Mộc" (cây) qua các thời kỳ]
+
+<!-- chunk 112 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "27"
+section_name: Mục 2 Văn minh Trung Hoa cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_112
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Khổng Tử (551 - 479 TCN), tự là Trọng Ni, người tỉnh Sơn Đông, Trung Hoa. Ông là người khởi xướng Nho giáo. Các tác phẩm tiêu biểu do ông soạn thảo hoặc đệ tử ghi lại lời của ông là: Luận Ngữ, Kinh Thi, Kinh Thư, Kinh Dịch, Kinh Xuân Thu,...
+
+Hình 6.9. Khổng Tử (tranh vẽ)
+
+Đạo giáo chính thức ra đời vào cuối thế kỉ II, là một trong những tôn giáo lớn của Trung Hoa. Đạo giáo thờ "Đạo" và tôn Lão Tử (Thái Thượng Lão Quân) làm giáo chủ.
+
+"Đạo giáo đã có những ảnh hưởng đáng kể đối với văn hoá Trung Hoa, nhất là việc phát minh ra thuốc súng, phép dưỡng sinh và văn học nghệ thuật".
+(Lịch sử văn minh thế giới, Vũ Dương Ninh (Chủ biên))
+
+<!-- chunk 113 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "28"
+section_name: Mục 2 Văn minh Trung Hoa cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_113
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Phật giáo ở Trung Hoa cũng rất phát triển, nhiều ngôi chùa lớn được xây dựng. Các nhà sư Trung Hoa đã tìm đường sang Ấn Độ để tìm hiểu giáo lí của Phật giáo. Ngược lại, nhiều nhà sư của Ấn Độ cũng đến Trung Hoa để truyền đạo.
+
+Sử học ở Trung Hoa thời kì cổ - trung đại được khởi đầu từ thời Tây Hán và đạt được nhiều thành tựu to lớn. Người đặt nền móng cho nền Sử học Trung Hoa là Tư Mã Thiên. Bộ Sử kí do ông soạn thảo là một tác phẩm nổi tiếng, có giá trị cao về mặt tư liệu và tư tưởng.
+
+<!-- chunk 114 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "29"
+section_name: Mục 2 Văn minh Trung Hoa cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_114
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Sử kí gồm 130 thiên, do Tư Mã Thiên soạn thảo từ năm 109 TCN đến năm 91 TCN, ghi lại lịch sử Trung Hoa từ thời Hoàng Đế thần thoại cho tới thời ông sống. Sử kí là nền tảng của Sử học Trung Hoa. Có thể so sánh Tư Mã Thiên và Sử kí của Trung Hoa với Hê-rô-đốt và Lịch sử của Hy Lạp cổ đại.
+
+Hình 6.10. Tư Mã Thiên và Sử kí (tranh vẽ)
+
+Văn học Trung Hoa đa dạng, nhiều thể loại. Kinh Thi là một bộ tổng hợp thơ ca dân gian của Trung Hoa, một trong năm bộ sách kinh điển của Nho giáo. Thơ Đường phản ánh toàn diện bộ mặt xã hội và đã đạt đến đỉnh cao của nghệ thuật, với các nhà thơ tiêu biểu
+
+<!-- chunk 115 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "30"
+section_name: Mục 2 Văn minh Trung Hoa cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_115
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+là Lý Bạch, Đỗ Phủ, Bạch Cư Dị,... Tiểu thuyết chương hồi đặc biệt phát triển dưới thời Minh, Thanh, tiêu biểu là Tam quốc diễn nghĩa của La Quán Trung, Thủy hử của Thi Nại Am, Tây du kí của Ngô Thừa Ân, Hồng lâu mộng của Tào Tuyết Cần. Văn học Trung Hoa thể hiện trình độ phát triển về tư duy và có ảnh hưởng lớn tới khu vực châu Á.
+
+Trung Hoa có nhiều công trình kiến trúc, điêu khắc đặc sắc, tiêu biểu là Vạn Lí Trường Thành, Tử Cấm Thành, tượng Phật chùa Lạc Sơn,... Nhiều công trình vẫn còn tồn tại đến ngày nay.
+
+[Hình ảnh mô tả một đoạn của Vạn Lí Trường Thành, công trình kiến trúc đồ sộ uốn lượn trên những ngọn đồi xanh]
+
+Hình 6.11. Một đoạn Vạn Lí Trường Thành
+
+[Hình ảnh mô tả tượng Phật khổng lồ được chạm khắc vào vách núi đá màu đỏ, bên cạnh một dòng sông]
+
+Hình 6.12. Tượng Phật chùa Lạc Sơn
+
+<!-- chunk 116 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "31"
+section_name: Mục 2 Văn minh Trung Hoa cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_116
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Thành tựu Toán học tiêu biểu là cuốn Cửu chương toán thuật được biên soạn dưới thời Hán, đã nêu ra các phương pháp tính diện tích và khối lượng khác nhau,... Nhà toán học tiêu biểu là Tổ Xung Chi. Ông đã tính được số Pi (π) đến 7 chữ số thập phân.
+
+Trung Hoa có bốn phát minh quan trọng là kĩ thuật in, làm giấy, thuốc súng và la bàn. Kĩ thuật in và làm giấy có vai trò lớn trong lĩnh vực văn học, phổ biến tri thức và phát triển văn hoá. Thuốc súng có ảnh hưởng lớn đến kĩ thuật quân sự. La bàn có tác động lớn trong lĩnh vực hàng hải, mở ra khả năng tìm kiếm thị trường mới, mở đường cho sự xâm nhập và xâm lược của chủ nghĩa thực dân.
+
+[Hình ảnh mô tả một la bàn cổ bằng kim loại với mặt số trang trí hoa văn phức tạp]
+
+Hình 6.13. La bàn
+
+<!-- chunk 117 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "32"
+section_name: Mục 2 Văn minh Trung Hoa cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_117
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Năm 105, Thái Luân đã cải tiến kĩ thuật làm giấy ở Trung Hoa bằng cách dùng vỏ cây, sợi gai, vải rách,... nghiền nhỏ, xeo thành tờ, chế tạo ra giấy.
+
+Ngoài ra, văn minh Trung Hoa cũng đạt nhiều thành tựu trên các lĩnh vực khác, như Thiên văn học, Lịch pháp học, Y học,...
+
+
+Những thành tựu của nền văn minh Trung Hoa cổ - trung đại là sản phẩm của trí tuệ, của sự lao động sáng tạo và có những đóng góp to lớn đối với sự phát triển của nền văn minh thế giới. Văn minh Trung Hoa đã lan truyền và ảnh hưởng mạnh mẽ đến các quốc gia lân cận như Triều Tiên, Nhật Bản, Việt Nam,...
+
+<!-- chunk 118 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "33"
+section_name: Mục 2 Văn minh Trung Hoa cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_118
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Đọc thông tin, tư liệu và quan sát các hình từ 6.8 đến 6.13, hãy trình bày những thành tựu chủ yếu của văn minh Trung Hoa cổ - trung đại. Những thành tựu đó có ý nghĩa như thế nào?
+
+<!-- chunk 119 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "34"
+section_name: Mục 3 Văn minh Ấn Độ cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_119
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+3. Văn minh Ấn Độ cổ - trung đại
+3.1. Cơ sở hình thành
+
+Văn minh Ấn Độ thời kì cổ - trung đại là một trong những nền văn minh phát triển lâu đời, rực rỡ. Sông Ấn và sông Hằng tạo ra những điều kiện tự nhiên thuận lợi cho sự phát triển của kinh tế, chính trị, xã hội và dân cư. Đó là những cơ sở quan trọng đối với sự hình thành và phát triển của văn minh Ấn Độ.
+
+[Hình ảnh bản đồ Ấn Độ cổ đại, hiển thị các thành thị cổ đại và khu vực thuận lợi cho phát triển nông nghiệp. Bản đồ bao gồm các địa danh như Ha-ráp-pa, Mô-hen-giô-đa-rô, Ma-thu-ra, Pa-ta-li-pu-tra, Tam-ra-lip-ti, Pa-la-va, Ben-gô-la. Dãy Hi-ma-lay-a được thể hiện ở phía bắc.]
+
+Lược đồ 6.3. Ấn Độ cổ đại
+
+[Sơ đồ thể hiện các yếu tố cơ sở hình thành văn minh Ấn Độ cổ - trung đại, bao gồm:]
+
+<!-- chunk 120 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "35"
+section_name: Mục 3 Văn minh Ấn Độ cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_120
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Điều kiện tự nhiên:
+Sông Ấn và sông Hằng bồi đắp thành hai đồng bằng màu mỡ ở miền Bắc Ấn Độ. Vì vậy, nơi đây trở thành cái nôi của văn minh Ấn Độ.
+
+Kinh tế:
+Kinh tế nông nghiệp, thủ công nghiệp và thương nghiệp đã dẫn xuất hiện và từng bước phát triển.
+
+Chính trị:
+Mô hình nhà nước quân chủ chuyên chế trung ương tập quyền, đứng đầu là vua, có quyền lực vô hạn.
+
+Xã hội:
+Chế độ đẳng cấp Vác-na với bốn đẳng cấp chính là Bra-ma, Ksa-tri-a, Vai-si-a, Su-dra.
+
+Dân cư:
+Đa dạng về tộc người, trong đó chủ yếu là người Dra-vi-đa ở miền Nam và người A-ri-a ở miền Bắc.
+
+Văn minh Ấn Độ hình thành
+
+Sơ đồ 6.3. Cơ sở hình thành văn minh Ấn Độ cổ - trung đại
+
+Hình 6.14. Thành phố cổ Ha-rắp-pa (tranh vẽ)
+
+[Hình ảnh mô tả một thành phố cổ với các tòa nhà bằng gạch đỏ, đường phố hẹp và người dân đang sinh hoạt.]
+
+<!-- chunk 121 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "36"
+section_name: Mục 3 Văn minh Ấn Độ cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_121
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Sông Ấn (In-đus) dài khoảng 3 000 km, bắt nguồn từ dãy Hi-ma-lay-a qua Ca-sơ-mia, đổ vào biển Ả Rập tạo thành châu thổ sông Ấn rộng lớn.
+
+Sông Hằng (Gan-ga) dài khoảng 3 000 km. Đây là con sông được coi là linh thiêng nhất Ấn Độ, là vị thần bảo trợ cho cuộc sống và con người Ấn Độ.
+
+<!-- chunk 122 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "37"
+section_name: Mục 3 Văn minh Ấn Độ cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_122
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Đọc thông tin và quan sát lược đồ 6.3, sơ đồ 6.3 và hình 6.14, hãy giải thích những cơ sở hình thành nên văn minh Ấn Độ thời kì cổ - trung đại.
+
+<!-- chunk 123 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "38"
+section_name: Mục 3 Văn minh Ấn Độ cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_123
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+3.2. Những thành tựu cơ bản
+
+Về chữ viết, cư dân Ấn Độ sớm sáng tạo ra chữ viết, điển hình là chữ Bra-mi, chữ San-krít (Phạn).... Chữ viết Ấn Độ phản ánh trình độ tư duy cao của người dân Ấn Độ và có ảnh hưởng đến chữ viết của nhiều quốc gia khác như Thái Lan, Lào, Cam-pu-chia,...
+
+Hình 6.15. Chữ San-krít trên lá cọ
+
+[Hình ảnh mô tả các trang viết bằng chữ San-krít trên lá cọ, với nhiều dòng chữ nhỏ được viết trên bề mặt lá.]
+
+Văn học Ấn Độ thời cổ - trung đại đạt được nhiều thành tựu lớn, tiêu biểu là kinh Vê-đa, sử thi (nổi bật là Ma-ha-bha-ra-ta và Ra-ma-y-a-na), kịch (tiêu biểu là tác phẩm Sơ-cun-to-la).
+
+Ma-ha-bha-ra-ta là bản trường ca gồm khoảng 110 000 câu thơ đôi, được coi là một bộ "bách khoa toàn thư" phản ánh mọi mặt của đời sống xã hội Ấn Độ thời đó.
+
+<!-- chunk 124 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "39"
+section_name: Mục 3 Văn minh Ấn Độ cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_124
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Ra-ma-y-a-na là một bộ sử thi gồm khoảng 24 000 câu thơ đôi, mô tả mối tình của hoàng tử Ra-ma và công chúa Xi-ta. Thiên tình sử này ảnh hưởng tới văn học dân gian một số nước Đông Nam Á, như Riêm Kê ở Cam-pu-chia, Ra-ma Khiên ở Thái Lan,...
+
+<!-- chunk 125 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "40"
+section_name: Mục 3 Văn minh Ấn Độ cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_125
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Ấn Độ là nơi ra đời nhiều tôn giáo lớn như Hin-đu giáo, Phật giáo, đồng thời cũng là nơi du nhập và phát triển của Hồi giáo,... Hin-đu giáo ra đời và phát triển sớm, bắt nguồn từ tín ngưỡng cổ xưa của cư dân Ấn Độ. Phật giáo ra đời vào khoảng thế kỉ VI TCN do Thái tử Xít-đác-ta Gô-ta-ma, hiệu là Sa-ki-a Mâu-ni (Thích Ca Mâu Ni) khởi xướng. Phật giáo được truyền bá mạnh mẽ dưới thời vua A-sô-ca (thế kỉ III TCN). Các tôn giáo lớn của Ấn Độ có ảnh hưởng lớn đến cuộc sống của cư dân Ấn Độ và có ảnh hưởng mạnh mẽ ra bên ngoài, đặc biệt là Trung Hoa và khu vực Đông Nam Á.
+
+Hình 6.16. Thích Ca Mâu Ni dưới cây bồ đề (tranh vẽ)
+
+<!-- chunk 126 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "41"
+section_name: Mục 3 Văn minh Ấn Độ cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_126
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+[Mô tả hình ảnh: Tranh vẽ Đức Phật Thích Ca Mâu Ni đang ngồi thiền dưới cây bồ đề. Đức Phật mặc y vàng, ngồi trên đài sen, xung quanh là cảnh thiên nhiên với cây cối, hoa lá và động vật.]
+
+Hin-du giáo (ban đầu là Bà-la-môn giáo) ra đời vào khoảng cuối thế kỉ I TCN, trong hoàn cảnh đang có sự bất bình đẳng rất sâu sắc về đẳng cấp.
+
+Phật giáo: Các tín đồ Phật giáo lấy năm 544 TCN là năm thứ nhất theo Phật lịch. Họ cho đây là năm mà Đức Phật đã đắc đạo. Giáo lí cơ bản của đạo Phật là Tứ diệu đế (bốn điều cần giác ngộ về thế giới); nhân duyên; ứng hộ bình đẳng,...
+
+<!-- chunk 127 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "42"
+section_name: Mục 3 Văn minh Ấn Độ cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_127
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Về kiến trúc và điêu khắc, phổ biến ở Ấn Độ là các công trình đền, chùa, tháp, tượng Phật,... Trong đó, nổi bật là những công trình kiến trúc được khoét trong núi đá. Gắn liền với chùa là những pho tượng Phật được tạc bằng đá rất tinh xảo. Nghệ thuật thời trung đại nối tiếp nghệ thuật thời cổ đại, nhiều công trình kiến trúc điêu khắc được xây dựng, tiêu biểu là lăng Ta-giơ Ma-han, Pháo đài Đỏ (La Ki-la), đền Kha-giu-ra-hô,...
+
+Những công trình kiến trúc và điêu khắc của Ấn Độ cổ - trung đại vừa thể hiện trình độ phát triển cao của con người, vừa thể hiện ảnh hưởng của tôn giáo tới nghệ thuật. Kiến trúc và điêu khắc Ấn Độ có ảnh hưởng lớn tới khu vực Đông Nam Á, trong đó có Việt Nam.
+
+Những thành tựu nghệ thuật Ấn Độ đã trở thành di sản văn hoá có giá trị lớn của nhân loại.
+
+Hình 6.17. Lăng Ta-giơ Ma-han
+
+<!-- chunk 128 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "43"
+section_name: Mục 3 Văn minh Ấn Độ cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_128
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+[Mô tả hình ảnh: Hình ảnh lăng Ta-giơ Ma-han, một công trình kiến trúc nổi tiếng của Ấn Độ. Lăng được xây bằng đá cẩm thạch trắng, có mái vòm lớn và bốn tháp nhỏ ở bốn góc. Phía trước lăng là một hồ nước dài phản chiếu hình ảnh công trình, hai bên là những hàng cây xanh.]
+
+Về Toán học, người Ấn Độ thời cổ - trung đại sáng tạo ra hệ thống chữ số tự nhiên, trong đó đóng góp lớn nhất là phát minh ra số 0. Nhờ vậy, việc tính toán trở nên đơn giản, ngắn gọn. Họ đã tính được căn bậc 2 và căn bậc 3; đã biết về quan hệ giữa ba cạnh trong một tam giác.
+
+Ngoài ra, văn minh Ấn Độ thời kì cổ - trung đại còn đạt được những thành tựu trên các lĩnh vực Y học, Thiên văn học, Triết học,...
+
+<!-- chunk 129 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "44"
+section_name: Mục 3 Văn minh Ấn Độ cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_129
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Cư dân Ấn Độ thời kì cổ - trung đại đã sáng tạo nhiều thành tựu văn minh rực rỡ và có ảnh hưởng lớn đến văn minh nhân loại, đặc biệt là văn minh Đông Nam Á.
+
+<!-- chunk 130 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG
+id_lesson: 6
+section_id: "45"
+section_name: Mục 3 Văn minh Ấn Độ cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_130
+---
+[ Bài 6: MỘT SỐ NỀN VĂN MINH PHƯƠNG ĐÔNG ]
+
+Đọc thông tin và quan sát các hình từ 6.15 đến 6.17, hãy cho biết cư dân Ấn Độ cổ - trung đại đã đạt được những thành tựu văn minh nào. Những thành tựu văn minh đó có ý nghĩa như thế nào?
+
+1. Lập bảng về thành tựu tiêu biểu của các nền văn minh Ai Cập cổ đại, Trung Hoa và Ấn Độ cổ - trung đại theo mẫu sau:
+
+[Bảng với các cột: Thành tựu, Chữ viết, Tư tưởng tôn giáo, Toán học, Kiến trúc điêu khắc, Lĩnh vực khác]
+[Các hàng: Ai Cập cổ đại, Trung Hoa cổ - trung đại, Ấn Độ cổ - trung đại]
+[Tất cả các ô trong bảng đều có dấu hỏi]
+
+2. Trong vai một hướng dẫn viên du lịch, hãy giới thiệu với bạn học một công trình kiến trúc tiêu biểu của nền văn minh Ai Cập cổ đại hoặc văn minh Trung Hoa, Ấn Độ cổ - trung đại.
+
+3. Sưu tầm tư liệu và giới thiệu về một công trình kiến trúc ở Việt Nam chịu ảnh hưởng của văn minh Ấn Độ cổ - trung đại.
+
+<!-- chunk 132 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "47"
+section_name: Mục tiêu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_132
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+Học xong bài này, em sẽ:
+- Phân tích được cơ sở hình thành và nêu được ý nghĩa của những thành tựu cơ bản của văn minh Hy Lạp, La Mã.
+- Phân tích được bối cảnh lịch sử và nêu được ý nghĩa của những thành tựu cơ bản của văn minh thời Phục hưng.
+- Biết cách sưu tầm và sử dụng tư liệu lịch sử để tìm hiểu về các nền văn minh phương Tây thời kì cổ - trung đại.
+
+<!-- chunk 133 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "48"
+section_name: Mô tả bài
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_133
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+"Không có cơ sở văn minh Hy Lạp và La Mã thì cũng không có châu Âu hiện đại". Đây là nhận định của Ph. Ăng-ghen trong tác phẩm Chống Đuy-rinh về ý nghĩa của nền văn minh Hy Lạp, La Mã. Hai nền văn minh này là một trong những cơ sở cho sự hình thành nền văn minh thời Phục hưng ở Tây Âu và văn minh phương Tây sau này.
+
+Vậy các nền văn minh Hy Lạp, La Mã, văn minh thời Phục hưng được hình thành dựa trên những cơ sở nào? Những thành tựu của các nền văn minh này có ý nghĩa ra sao?
+
+<!-- chunk 134 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "49"
+section_name: Mục 1 Văn minh Hy Lạp, La Mã
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_134
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+1. Văn minh Hy Lạp, La Mã
+1.1. Cơ sở hình thành
+Điều kiện tự nhiên, dân cư, kinh tế
+
+Khu vực Nam Âu có hai bán đảo nhô vươn dài ra Địa Trung Hải là bán đảo Ban-căng và bán đảo I-ta-li-a. Phần lớn lãnh thổ là đồi núi, xen giữa là những cánh đồng nhỏ hẹp; đất đai khô cằn, trong lòng đất có nhiều khoáng sản, bờ biển khúc khuỷu có nhiều vũng, vịnh. Những điều kiện tự nhiên này tạo thuận lợi cho sự phát triển mạnh mẽ của thủ công nghiệp, thương nghiệp và hàng hải.
+
+Cư dân Hy Lạp cổ đại gồm nhiều tộc người, như người Ê-ô-li-ăng, người I-ô-niêng, người A-kê-ăng và người Đô-ri-ăng. Cư dân La Mã cổ đại chủ yếu là người I-ta-li-an (người I-ta-li-ốt), sống ở đồng bằng I-ta-li-um. Về sau, một bộ phận người I-ta-li-ốt
+
+<!-- chunk 135 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "50"
+section_name: Mục 1 Văn minh Hy Lạp, La Mã
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_135
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+[Hình ảnh: Bản đồ khu vực Hy Lạp cổ đại, hiển thị các thành phố quan trọng như Pen-la, Đen-phơ, A-ten, Xpác-tơ và các vùng biển xung quanh như Biển I-ô-ni, Biển Ê-giê, Địa Trung Hải.]
+
+Lược đồ 7.1. Hy Lạp cổ đại
+
+dựng lên thành Rô-ma nên gọi là người Rô-ma. Ngoài ra còn có người Gô-loa, Ê-tơ-rux-cơ, người Hy Lạp,... Họ chính là chủ nhân sáng tạo nên những thành tựu của nền văn minh Hy Lạp và La Mã cổ đại.
+
+[Hình ảnh bản đồ khu vực Địa Trung Hải và châu Âu cổ đại, với chú giải về các lãnh thổ La Mã qua các thời kỳ]
+
+Lược đồ 7.2. Lược đồ La Mã (từ thế kỉ V TCN đến thế kỉ II)
+
+<!-- chunk 136 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "51"
+section_name: Mục 1 Văn minh Hy Lạp, La Mã
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_136
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+Ở Hy Lạp và La Mã, kinh tế thủ công nghiệp và thương nghiệp đóng vai trò chủ đạo. Bên cạnh đó, hình thức kinh tế điền trang trong nông nghiệp cũng phát triển. Đây là cơ sở kinh tế quan trọng để hình thành nền văn minh Hy Lạp và La Mã.
+
+<!-- chunk 137 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "52"
+section_name: Mục 1 Văn minh Hy Lạp, La Mã
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_137
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+Đọc thông tin và quan sát các lược đồ 7.1, 7.2, hãy phân tích tác động của điều kiện tự nhiên, dân cư, kinh tế đến việc hình thành nền văn minh Hy Lạp và La Mã.
+
+Chính trị, xã hội
+
+Vào khoảng thế kỉ VIII - VI TCN, các nhà nước Hy Lạp và La Mã đã ra đời. Ở Hy Lạp là quốc gia thành bang, tiêu biểu là thành bang A-ten và Xpác. Đây là những thành bang dân chủ cổ đại điển hình. Tại La Mã, nhà nước điển hình là nền cộng hoà quý tộc, nhà nước đế chế.
+
+[Hình ảnh minh họa cảnh đại hội công dân ở Hy Lạp cổ đại]
+
+Hình 7.1. Toàn cảnh Đại hội công dân ở Hy Lạp (tranh vẽ)
+
+Ở Hy Lạp cổ đại, người dân tự do có quyền cùng với quý tộc bầu ra những người cai quản đất nước theo thời hạn quy định. Nền dân chủ chủ nô được duy trì suốt các thế kỉ tồn tại của mình.
+
+<!-- chunk 138 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "53"
+section_name: Mục 1 Văn minh Hy Lạp, La Mã
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_138
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+Trong nhiều thế kỉ tồn tại, Nhà nước La Mã đã phát triển từ một nền vương chính thành một nền cộng hoà quý tộc và sau đó thành một đế chế. Thông qua việc chinh phục và đồng hoá, La Mã cuối cùng đã thống trị khu vực Địa Trung Hải, Tây Âu, Tiểu Á, Bắc Phi và toàn bộ vùng Trung và Nam Âu.
+
+Xã hội Hy Lạp và La Mã bao gồm chủ nô, bình dân và nô lệ. Chủ nô là tầng lớp có thế lực về chính trị và kinh tế gồm các chủ xưởng, chủ trang trại, chủ thuyền buôn và sở hữu nhiều nô lệ. Bình dân là những người tự do, gồm nông dân nghèo, thợ thủ công, nô lệ được giải phóng,... Nô lệ là tầng lớp chiếm số đông trong xã hội, làm việc nặng nhọc ở các trang trại, trong các xưởng thủ công, khuân vác hàng hoá và chèo thuyền. Nô lệ bị coi như "những công cụ biết nói" của chủ nô.
+
+<!-- chunk 139 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "54"
+section_name: Mục 1 Văn minh Hy Lạp, La Mã
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_139
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+Chính nền dân chủ cổ đại và chế độ bóc lột nô lệ tàn bạo là những cơ sở chính trị, xã hội quan trọng dẫn đến sự hình thành văn minh Hy Lạp và La Mã.
+
+[Hình minh họa: Một bức tranh vẽ cảnh một cuộc họp dân chủ cổ đại, với một tòa nhà có mái ngói đỏ ở trung tâm và đám đông người xung quanh.]
+
+Hình 7.2. Nhà hát ở A-ten (tranh vẽ)
+
+Hy Lạp và La Mã là hai nền văn minh do các dân tộc khác nhau lập nên. Văn minh La Mã có sự tiếp nối, kế thừa từ văn minh Hy Lạp và hai nền văn minh này có những điểm tương đồng nên thường gọi là văn minh Hy - La.
+
+Sự kế thừa nền văn minh phương Đông cổ đại
+
+Văn minh Hy Lạp và La Mã ra đời sau nên có điều kiện tiếp thu, kế thừa những thành tựu của văn minh phương Đông như Lịch pháp, Toán học, Thiên văn học,...
+
+<!-- chunk 140 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "55"
+section_name: Mục 1 Văn minh Hy Lạp, La Mã
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_140
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+Cuộc viễn chinh về phía đông của A-léch-xăng-đơ-rốt Đại đế (334 TCN) đã thúc đẩy mạnh mẽ sự giao lưu văn hoá giữa Hy Lạp và phương Đông. Nền văn minh Hy Lạp được truyền bá mạnh sang các nước phương Đông. Ngược lại các thành bang Hy Lạp có điều kiện tiếp thu, giao lưu với văn hoá phương Đông để phát triển hơn. Năm 45 TCN, sau khi trở về từ Ai Cập, Xê-da đã mời các nhà toán học và thiên văn học Ai Cập đến Rô-ma để cải cách lịch.
+
+Đọc thông tin và quan sát các hình 7.1, 7.2, hãy phân tích những cơ sở chính trị, xã hội và sự kế thừa nền văn minh phương Đông đối với sự hình thành nền văn minh Hy Lạp, La Mã cổ đại.
+
+<!-- chunk 141 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "56"
+section_name: Mục 1 Văn minh Hy Lạp, La Mã
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_141
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+1.2. Những thành tựu cơ bản
+
+Cư dân Hy Lạp đã sáng tạo ra hệ chữ cái A, B, C và La Mã đã kế thừa, phát triển thành chữ La-tinh. Đó là nền tảng chữ viết theo hệ chữ La-tinh hiện nay. Chữ viết Hy Lạp và La Mã đơn giản, ngắn gọn, linh hoạt, mang tính khái quát hóa.
+
+Văn học Hy Lạp cổ đại phong phú, nhiều thể loại (sử thi, kịch, thần thoại,...) và đạt nhiều thành tựu lớn. Trong đó, nổi bật là sử thi I-li-át và Ô-đi-xê của Hô-me, kịch Ô-đíp làm vua của Xô-phốc-lơ.
+
+[Hình minh họa: Một bức tượng và phù điêu trên một công trình kiến trúc cổ đại với chữ khắc trên đá]
+
+Hình 7.3. Chữ La-tinh trên Khải hoàn môn Công-xtăng-tin ở La Mã cổ đại
+
+<!-- chunk 142 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "57"
+section_name: Mục 1 Văn minh Hy Lạp, La Mã
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_142
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+Triết học Hy Lạp và La Mã cổ đại chia làm hai trường phái chính: triết học duy vật và triết học duy tâm. Triết học duy vật gồm những đại diện tiêu biểu là Ta-lét, Hê-ra-clít,... Triết học duy tâm gồm những đại diện tiêu biểu là A-rít-xtốt, Xô-crát, Pơ-la-tông,... Triết học Hy Lạp và La Mã cổ đại được xem là những thành tựu rực rỡ của văn minh phương Tây, tạo nên cơ sở hình thành của Triết học châu Âu sau này.
+
+Một trong những thành tựu tôn giáo nổi bật của văn minh La Mã là sự ra đời của Thiên Chúa giáo (thế kỉ I). Từ thế kỉ IV, Thiên Chúa giáo được lan tỏa mạnh mẽ và trở thành một trong những tôn giáo lớn trên thế giới.
+
+<!-- chunk 143 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "58"
+section_name: Mục 1 Văn minh Hy Lạp, La Mã
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_143
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+Về Lịch pháp và Thiên văn học, cư dân Hy Lạp và La Mã cổ đại đã biết làm lịch dựa theo sự chuyển động của Trái Đất quanh Mặt Trời. Họ tính được một năm có 365 ngày 6 giờ, chia thành 12 tháng. Việc tính lịch và quan sát thiên văn vừa có ý nghĩa đối với cuộc sống đương thời, vừa là cơ sở cho cách tính lịch (Dương lịch) sau này.
+
+Cư dân Hy Lạp và La Mã có nhiều thành tựu về khoa học trên các lĩnh vực khác nhau, gắn liền với tên tuổi của các nhà khoa học nổi tiếng. Toán học có Pi-ta-go, Ta-lét, Ơ-clít; Vật lí có Ác-si-mét; Y học có Hi-pô-crát; Sử học có Hê-rô-đốt, Tuy-xi-đít,... Nhiều nhà khoa học đã tìm ra được những định lí, định đề, tiên đề khoa học. Những hiểu biết về khoa học của cư dân Hy Lạp và La Mã được ứng dụng hiệu quả trong cuộc sống và cũng là nền tảng của khoa học hiện đại.
+
+<!-- chunk 144 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "59"
+section_name: Mục 1 Văn minh Hy Lạp, La Mã
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_144
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+Ác-si-mét sinh năm 287 TCN, tại Si-ra-cu-se, một thành phố của Hy Lạp trên đảo Si-ci-le. Ông là một nhà toán học và vật lí học, từng làm việc tại thành phố A-léch-xan-đri-a (Ai Cập). Ông đã tính được giá trị số Pi bằng 3,14, tìm ra công thức tính lực đẩy của nước hay còn gọi là lực đẩy Ác-si-mét và nguyên lí đòn bẩy. Ác-si-mét từng có câu nói nổi tiếng: "Hãy cho tôi một điểm tựa, tôi sẽ nhấc bổng Trái Đất lên".
+
+<!-- chunk 145 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "60"
+section_name: Mục 1 Văn minh Hy Lạp, La Mã
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_145
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+Cư dân Hy Lạp và La Mã cổ đại đã tạo nên nhiều công trình kiến trúc, điêu khắc tinh xảo, như đền Pác-tê-nông ở A-ten (Hy Lạp), đấu trường Cô-li-dê ở La Mã, tượng lực sĩ ném đĩa, tượng thần Vệ nữ ở Mi-lô,... Những thành tựu văn học, nghệ thuật của Hy Lạp và La Mã đạt tới một trình độ cao, mang tính thực tế, tính tế và tính dân tộc sâu sắc. Đó là hình mẫu cho những tác phẩm văn học, nghệ thuật của châu Âu trong các giai đoạn sau, như thời Phục hưng, cận đại, hiện đại,...
+
+[Hình 7.4. Tượng Ác-si-mét]
+(Hình ảnh mô tả một bức tượng bán thân của một người đàn ông có râu dài và tóc xoăn, được cho là Ác-si-mét)
+
+[Hình 7.5. Đền Pác-tê-nông (Hy Lạp)]
+(Hình ảnh mô tả một công trình kiến trúc cổ đại với nhiều cột đá lớn, được biết đến là đền Parthenon ở Athens, Hy Lạp)
+
+<!-- chunk 146 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "61"
+section_name: Mục 1 Văn minh Hy Lạp, La Mã
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_146
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+Ô-lim-píc là Đại hội thể thao nổi tiếng ở Hy Lạp cổ đại. Đại hội được tổ chức bốn năm một lần vào mùa hè ở Ô-lim-pi-a, với nhiều môn thi đấu như đi bộ, vật tự do, đua ngựa, ném đĩa, nhảy xa, ma-ra-tông,... Ý nghĩa của Đại hội thể thao Ô-lim-píc là rèn luyện sức khỏe, giải trí, gắn kết. Thể thao Hy Lạp cổ đại đặt cơ sở cho nhiều môn thể thao trên thế giới sau này.
+
+Ngoài ra, văn minh Hy Lạp và La Mã còn có những thành tựu trên các lĩnh vực Sử học, Luật pháp,...
+
+Cư dân Hy Lạp và La Mã cổ đại đã tạo nên nền văn minh rực rỡ trên nhiều lĩnh vực. Văn minh Hy Lạp - La Mã là cơ sở đầu tiên của nền văn minh phương Tây sau này.
+
+[Hình ảnh mô tả một bức tượng người ném đĩa bằng đá cẩm thạch, với chú thích "Hình 7.6. Tượng lực sĩ ném đĩa"]
+
+[Hình ảnh biểu tượng Olympic gồm 5 vòng tròn màu xanh dương, đen, đỏ, vàng và xanh lá cây đan xen nhau, với chú thích "Hình 7.7. Biểu tượng của Đại hội thể thao Ô-lim-píc"]
+
+<!-- chunk 148 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "63"
+section_name: Mục 1 Văn minh Hy Lạp, La Mã
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_148
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+Đọc thông tin và quan sát các hình từ 7.3 đến 7.7, hãy:
+- Cho biết cư dân Hy Lạp và La Mã có những thành tựu văn minh cơ bản nào. Những thành tựu đó có ý nghĩa ra sao?
+- Giới thiệu một thành tựu tiêu biểu nhất.
+
+<!-- chunk 149 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "64"
+section_name: Mục 2 Văn minh thời Phục hưng
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_149
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+2. Văn minh thời Phục hưng
+2.1. Bối cảnh lịch sử
+
+Đến thời hậu kì trung đại, đặc biệt là với sự phát triển của các thành thị và tác động của các cuộc phát kiến địa lí, kinh tế Tây Âu có nhiều thay đổi. Quan hệ sản xuất tư bản chủ nghĩa hình thành cùng với sự phát triển kinh tế công thương nghiệp, sự tiến bộ của khoa học - kĩ thuật.
+
+Tây Âu lúc này vẫn dưới sự thống trị của chế độ phong kiến. Sự khắt khe của Giáo hội Thiên Chúa giáo đã kìm hãm sự phát triển kinh tế tư bản chủ nghĩa.
+
+Giai cấp tư sản đã xuất hiện trong lòng xã hội phong kiến, họ muốn có hệ tư tưởng và nền văn hoá riêng để phục vụ cho đời sống tinh thần của mình. Hệ tư tưởng lỗi thời của Giáo hội Thiên Chúa giáo và của quý tộc, phong kiến cản trở sự phát triển của giai cấp tư sản đang lên.
+
+<!-- chunk 150 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "65"
+section_name: Mục 2 Văn minh thời Phục hưng
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_150
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+Gắn liền với sự xuất hiện của các thành thị trung đại là sự hình thành chủ nghĩa nhân văn. Nhiều trường đại học được thành lập, như Đại học Pa-ri (Pháp), Đại học Ô-xphót (Anh), Đại học Pa-téc-mơ (I-ta-li-a),...
+
+"Trường Đại học Pa-ri có bốn khoa là nghệ thuật, y học, luật học và thần học, trong đó nghệ thuật là khoa học sơ cấp, chương trình học tập là "Bảy môn nghệ thuật tự do"."
+(Lịch sử văn minh thế giới, Vũ Dương Ninh (Chủ biên))
+
+Văn minh Hy Lạp và La Mã cổ đại có nhiều nét gần gũi với tư tưởng của giai cấp tư sản và đối lập với tư tưởng phong kiến. Vì vậy, giai cấp tư sản muốn "phục hồi" lại một số nội dung của văn minh Hy Lạp và La Mã, tiếp tục phát triển lên một nền văn minh mới. Thành phố Phô-lo-ren (I-ta-li-a) là nơi khởi nguồn văn minh thời Phục hưng, sau đó lan rộng khắp châu Âu.
+
+<!-- chunk 151 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "66"
+section_name: Mục 2 Văn minh thời Phục hưng
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_151
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+Hình 7.8. Một hội chợ ở Sâm-pa-nhơ (Pháp) thời trung đại (tranh vẽ)
+
+[Hình ảnh mô tả một cảnh hội chợ thời trung đại với nhiều người buôn bán, trao đổi hàng hóa, có cả gia súc và các hoạt động khác diễn ra trong một không gian rộng lớn trước một tòa nhà hai tầng.]
+
+Một trong những lí do khiến thành phố Phô-lo-ren (I-ta-li-a) trở thành nơi khởi nguồn của văn minh thời Phục hưng là vai trò của dòng họ Mê-đi-xi. Đây là một dòng họ có nhiều người là chủ ngân hàng lớn. Họ đóng vai trò quan trọng trong nền chính trị thành phố, đồng thời cũng chủ trương khuyến khích phát triển nghệ thuật.
+
+Hình 7.9. Một góc thành phố Phô-lo-ren (I-ta-li-a)
+
+[Hình ảnh cho thấy một góc nhìn panorama của thành phố Florence, Ý, với nhà thờ chính Santa Maria del Fiore nổi bật ở trung tâm, có mái vòm lớn màu đỏ gạch và tháp chuông cao. Xung quanh là những mái nhà màu đỏ gạch của thành phố cổ kính.]
+
+<!-- chunk 152 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "67"
+section_name: Mục 2 Văn minh thời Phục hưng
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_152
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+? Đọc thông tin, tư liệu và quan sát các hình 7.8, 7.9, hãy cho biết văn minh thời Phục hưng diễn ra trong bối cảnh lịch sử nào. Vì sao Phô-lo-ren (I-ta-li-a) lại là nơi khởi nguồn của văn minh thời Phục hưng?
+
+50
+
+<!-- chunk 153 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "68"
+section_name: Mục 2 Văn minh thời Phục hưng
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_153
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+2.2. Những thành tựu cơ bản
+
+Văn minh thời Phục hưng đạt được những thành tựu chủ yếu trên các lĩnh vực: Văn học, Triết học, Khoa học và Nghệ thuật.
+
+Văn học có nhiều tác phẩm tiêu biểu như Thần khúc của A. Đan-tê, Đôn Ki-hô-tê của M. Xéc-van-téc, Rô-mê-ô và Giu-li-ét của Sếch-xpia,...
+
+Triết học thời Phục hưng kịch liệt phê phán triết học duy tâm, lên án chế độ phong kiến, đề cao trí thức, lí trí của con người. Đại diện tiêu biểu là Mi-chen đơ Mông-ten-nhơ (Pháp), Ê-ra-xmơ (Hà Lan), La Ra-mê (Pháp),...
+
+Khoa học gắn liền với sự đóng góp của các nhà khoa học trên lĩnh vực Toán học, Thiên văn học, tiêu biểu là Cô-péc-nich, Bru-nô và Ga-li-lê với thuyết Nhật tâm.
+
+Nghệ thuật đạt được nhiều thành tựu lớn, tiêu biểu là bức họa Nàng Mô-na Li-sa, Bữa ăn tối cuối cùng của Lê-ô-na đơ Vanh-xi, Tượng Đa-vít, Sự sáng tạo A-đam của Mi-ken-lăng-giơ, lâu đài Sam-bô (Pháp), nhà thờ Xanh Pi-tơ (Va-ti-căng),...
+
+<!-- chunk 154 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "69"
+section_name: Mục 2 Văn minh thời Phục hưng
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_154
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+[Hình ảnh minh họa: Ba bức tranh được mô tả như sau:
+1. Một bức tranh vẽ cảnh một người đàn ông và một người phụ nữ trong trang phục cổ điển đang ôm nhau. Chú thích: "Hình 7.10. Hình ảnh minh họa tác phẩm Rô-mê-ô và Giu-li-ét"
+2. Chân dung một người đàn ông trẻ đội mũ, mặc áo choàng lông thú. Chú thích: "Hình 7.11. Chân dung Cô-péc-nich (tranh vẽ)"
+3. Chân dung một người đàn ông trung niên có râu, đội khăn trùm đầu. Chú thích: "Hình 7.12. Chân dung Bru-nô (tranh vẽ)"]
+
+Các nhà văn hóa thời Phục hưng đã lên án, chấm biếm Giáo hội Thiên Chúa giáo đương thời. Qua việc phê phán, đả kích tầng lớp quý tộc phong kiến, họ đã chĩa mũi nhọn đầu tranh chống chế độ phong kiến thời đại nói chung.
+
+<!-- chunk 155 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "70"
+section_name: Mục 2 Văn minh thời Phục hưng
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_155
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+Văn minh thời Phục hưng cũng đề cao giá trị con người và quyền tự do cá nhân. Họ đòi cho con người được tự do hành động, đề cao tình cảm thực, ca ngợi tình yêu tự do, trong đó có tình yêu nam nữ.
+
+Các nhà văn hoá thời Phục hưng còn đề cao chủ nghĩa duy vật, khoa học, tiến bộ, coi trọng các ngành khoa học tự nhiên, các phương pháp thực nghiệm và gắn với cuộc sống hiện thực.
+
+[Hình ảnh mô tả bức tranh "Bữa ăn tối cuối cùng" của Leonardo da Vinci, với 13 người ngồi quanh một bàn dài trong một căn phòng lớn có kiến trúc cổ điển.]
+
+Hình 7.13. Bức họa Bữa ăn tối cuối cùng
+
+<!-- chunk 156 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "71"
+section_name: Mục 2 Văn minh thời Phục hưng
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_156
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+"Những kết quả nghiên cứu của các nhà bác học thời Phục hưng không những đã góp phần công hiến to lớn vào sự phát triển khoa học của nhân loại, mà đã thực sự là một cuộc cách mạng trong lĩnh vực tư tưởng, đã đập tan thế giới quan duy tâm thần bí của Giáo hội, xây dựng thế giới quan duy vật tiến bộ".
+
+(Lịch sử thế giới trung đại, Lương Ninh - Đặng Đức An)
+
+Văn minh thời Phục hưng là một bước tiến lớn trong lịch sử văn minh ở Tây Âu. Đó là tinh thần nhân văn và tiến bộ trong tư tưởng và văn học, là sự sáng tạo và phát minh trong khoa học với những ý tưởng đi trước thời đại, là chủ nghĩa hiện thực trong nghệ thuật. Nền văn minh này là cầu nối từ văn hoá phong kiến sang văn hoá tư sản. Đó vừa là cơ sở vừa là giai đoạn khởi đầu của văn minh Tây Âu thời cận đại.
+
+<!-- chunk 157 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 3
+chapter_name: CHỦ ĐỀ 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ - TRUNG ĐẠI
+lesson: Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY
+id_lesson: 7
+section_id: "72"
+section_name: Mục 2 Văn minh thời Phục hưng
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_157
+---
+[ Bài 7: MỘT SỐ NỀN VĂN MINH PHƯƠNG TÂY ]
+
+Đọc thông tin, tư liệu và quan sát các hình từ 7.10 đến 7.13, hãy nêu thành tựu và ý nghĩa của văn minh thời Phục hưng.
+
+1. Hãy vẽ sơ đồ tư duy thể hiện cơ sở hình thành, thành tựu và ý nghĩa của văn minh Hy Lạp và La Mã thời cổ đại, văn minh thời Phục hưng.
+
+2. Đóng vai là hướng dẫn viên du lịch, hãy giới thiệu một thành tựu của văn minh Hy Lạp và La Mã (hoặc văn minh thời Phục hưng).
+
+3. Tại sao nói văn minh thời Phục hưng đã sản sinh ra "những người khổng lồ"?
+
+52
+
+<!-- chunk 158 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "1"
+section_name: Mục tiêu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_158
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+Học xong bài này, em sẽ:
+- Trình bày được những nét chính về bối cảnh lịch sử, nêu được những thành tựu cơ bản, ý nghĩa đối với phát triển kinh tế của Cách mạng công nghiệp lần thứ nhất và lần thứ hai.
+- Phân tích được tác động của Cách mạng công nghiệp lần thứ nhất và lần thứ hai đối với xã hội, văn hóa.
+- Biết cách sưu tầm và sử dụng một số tư liệu để tìm hiểu về các cuộc cách mạng công nghiệp.
+
+<!-- chunk 159 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "2"
+section_name: Mô tả bài
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_159
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+Tháp Ép-phen (Pháp) được khánh thành vào ngày 31-3-1889 sau 21 tháng xây dựng. Tháp nặng 7 000 tấn, cao 300 m, được làm từ 18 000 thanh thép, nối với nhau bởi 2,5 triệu chiếc đinh tán. Tháp Ép-phen là một thành tựu tiêu biểu của Cách mạng công nghiệp thời kì cận đại, là niềm tự hào của người dân Pháp nói chung và Pa-ri nói riêng.
+
+Cuộc Cách mạng công nghiệp lần thứ nhất và lần thứ hai diễn ra trong bối cảnh lịch sử nào? Thành tựu, ý nghĩa và tác động của nó ra sao?
+
+[Hình ảnh mô tả Tháp Eiffel ở Paris, Pháp]
+
+<!-- chunk 160 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "3"
+section_name: Mục 1 Cuộc Cách mạng công nghiệp lần thứ nhất
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_160
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+1. Cuộc Cách mạng công nghiệp lần thứ nhất
+1.1. Bối cảnh lịch sử
+
+Nhờ những điều kiện thuận lợi về kinh tế, chính trị, xã hội và kĩ thuật, cuối thế kỉ XVIII – đầu thế kỉ XIX, các nước tư bản đã tiến hành cách mạng công nghiệp. Anh là nước đi tiên phong, sau đó là các nước Pháp, Đức, Mỹ,...
+
+[Sơ đồ mô tả bối cảnh lịch sử dẫn đến cuộc Cách mạng công nghiệp lần thứ nhất, bao gồm các yếu tố:
+- Các cuộc phát kiến địa lí (thế kỉ XV - XVI) tác động và thúc đẩy kinh tế công, thương nghiệp phát triển, thị trường mở rộng.
+- Giai cấp tư sản lên cầm quyền sau các cuộc cách mạng tư sản.
+- Nông dân mất đất, trở thành lao động tự do.
+- Những cải tiến và tiến bộ về kĩ thuật trong công trường thủ công.]
+
+Anh là nước tiên hành cách mạng công nghiệp sớm nhất nhờ những điều kiện thuận lợi như tiến hành cách mạng tư sản từ sớm, kinh tế phát triển, có nhiều cải tiến kĩ thuật trong sản xuất.
+
+<!-- chunk 162 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "5"
+section_name: Mục 1 Cuộc Cách mạng công nghiệp lần thứ nhất
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_162
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+Đọc thông tin và quan sát sơ đồ 8.1, hình 8.2, hãy:
+- Cho biết cuộc Cách mạng công nghiệp lần thứ nhất diễn ra trong bối cảnh lịch sử nào.
+- Giải thích tại sao cuộc Cách mạng công nghiệp lần thứ nhất lại diễn ra đầu tiên ở Anh.
+
+Hình 8.2. Máy kéo sợi chạy bằng sức nước (tranh vẽ)
+
+<!-- chunk 163 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "6"
+section_name: Mục 1 Cuộc Cách mạng công nghiệp lần thứ nhất
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_163
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+1.2. Những thành tựu cơ bản
+
+Năm 1769, trên cơ sở tiếp thu những thành quả nghiên cứu của những người đi trước và tự cải tiến, Giêm Oát đã thử chế tạo thành công một chiếc máy hơi nước kiểu đơn hướng. Năm 1782, ông chế tạo thành công một chiếc máy hơi nước song hướng, có thể làm nguồn động lực xoay tròn. Năm 1784, Giêm Oát nhận bằng phát minh sáng chế về máy hơi nước.
+
+Ngay sau khi ra đời, máy hơi nước của Giêm Oát nhanh chóng được đưa vào sử dụng rộng rãi trong sản xuất. Nhờ đó, các nhà máy có thể được xây dựng ở nhiều nơi. Đến đầu thế kỉ XIX, việc sử dụng máy hơi nước đã trở nên phổ biến ở nước Anh. Đây được coi là sự khởi đầu của quá trình công nghiệp hoá.
+
+<!-- chunk 164 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "7"
+section_name: Mục 1 Cuộc Cách mạng công nghiệp lần thứ nhất
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_164
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+Trước khi có máy hơi nước, ngành dệt nước Anh sử dụng máy chạy bằng sức nước. Do đó, các nhà máy phải xây dựng gần bờ sông, xa trung tâm dân cư. Về mùa đông, nước bị đóng băng, nhà máy phải ngừng hoạt động.
+
+Hình 8.3. Chân dung Giêm Oát (tranh vẽ)
+Hình 8.4. Mô hình máy hơi nước của Giêm Oát
+
+Trong thời kì này, động cơ đốt trong cũng ra đời, tiêu biểu là phát minh của Giôn Bác-bo (năm 1791, người Anh), Thô-mát Mít (năm 1794, người Anh), Giôn Ste-phen (năm 1798, người Mỹ), Sa-mu-en Bờ-rao (năm 1823, người Mỹ).... Động cơ đốt trong nhanh chóng thúc đẩy cơ giới hoá sản xuất, nâng cao chất lượng sản phẩm và năng suất lao động.
+
+<!-- chunk 165 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "8"
+section_name: Mục 1 Cuộc Cách mạng công nghiệp lần thứ nhất
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_165
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+Ngành giao thông vận tải cũng có những bước tiến lớn. Đầu thế kỉ XIX, tàu thuỷ và xe lửa đã xuất hiện với đầu máy chạy bằng hơi nước. Năm 1814, G. Xti-phen-xơn chế tạo thành công chiếc đầu máy xe lửa. Năm 1825, nước Anh khánh thành đoạn đường sắt đầu tiên nối trung tâm công nghiệp Man-chét-xtơ với cảng Li-vơ-pun. Đến giữa thế kỉ XIX, nước Anh đã có khoảng 10 000 km đường sắt.
+
+[Hình 8.5. G. Xti-phen-xơn (tranh vẽ)]
+[Hình 8.6. Đầu máy xe lửa Xti-phen-xơn]
+
+[Hình 8.7. Tàu thuỷ chạy bằng động cơ hơi nước (tranh vẽ)]
+
+Ngày 17-8-1807, lần đầu tiên 40 hành khách đã tham gia một hành trình bằng đường biển từ Niu Y-oóc tới An-ba-ni trên tàu Cơ-lê-mông và trở về an toàn. Tàu chạy được 150 dặm (khoảng 241 km) trong 32 giờ. Cuộc chạy thử này là một sự kiện quan trọng trong lịch sử ngành hàng hải và cũng chứng minh sự thành công của cách tàu thuỷ vận chuyển bằng máy hơi nước.
+
+<!-- chunk 166 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "9"
+section_name: Mục 1 Cuộc Cách mạng công nghiệp lần thứ nhất
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_166
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+Đọc thông tin và quan sát các hình từ 8.5 đến 8.7, hãy cho biết cuộc Cách mạng công nghiệp lần thứ nhất đạt được những thành tựu cơ bản nào. Thành tựu nào có vai trò quan trọng nhất? Vì sao?
+
+<!-- chunk 167 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "10"
+section_name: Mục 2 Cuộc Cách mạng công nghiệp lần thứ hai
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_167
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+2. Cuộc Cách mạng công nghiệp lần thứ hai
+2.1. Bối cảnh lịch sử
+
+Cuộc Cách mạng công nghiệp lần thứ hai được tiến hành ở Mỹ, Anh, Pháp, Đức,... vào cuối thế kỉ XIX - đầu thế kỉ XX.
+
+Sơ đồ 8.2. Bối cảnh lịch sử diễn ra cuộc Cách mạng công nghiệp lần thứ hai
+
+[Sơ đồ minh họa các yếu tố dẫn đến Cách mạng công nghiệp lần thứ hai, bao gồm:
+- Trên cơ sở thành tựu từ cuộc Cách mạng công nghiệp lần thứ nhất.
+- Các nước Âu - Mỹ hoàn thành các cuộc cách mạng tư sản.
+- Chủ nghĩa tư bản chuyển từ tự do cạnh tranh sang chủ nghĩa tư bản độc quyền.
+- Lực lượng sản xuất ở các nước tư bản đạt trình độ cao.
+Các yếu tố trên dẫn đến Cách mạng công nghiệp lần thứ hai.]
+
+<!-- chunk 168 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "11"
+section_name: Mục 2 Cuộc Cách mạng công nghiệp lần thứ hai
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_168
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+Đọc thông tin và quan sát sơ đồ 8.2, hãy cho biết cuộc Cách mạng công nghiệp lần thứ hai diễn ra trong bối cảnh lịch sử nào.
+
+<!-- chunk 169 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "12"
+section_name: Mục 2 Cuộc Cách mạng công nghiệp lần thứ hai
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_169
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+2.2. Những thành tựu cơ bản
+
+Cuộc Cách mạng công nghiệp lần thứ hai đạt được những thành tựu trên nhiều lĩnh vực, như sử dụng điện năng, động cơ điện gắn với quá trình điện khí hoá, sản xuất dây chuyền, sự phát triển của các ngành công nghiệp hoá chất, dầu mỏ, thép, điện lực, in ấn,...
+
+Những phát minh về điện của các nhà bác học như Ghê-ốc Xi-môn Ôm (1789 - 1854, người Đức), Mai-con Pha-ra-đây (1791 - 1867, người Anh), Giêm Pre-xcốt Giun (1818 - 1889, người Anh), E.K. Len-xơ (1804 - 1865, người Nga)... đã mở ra khả năng ứng dụng một nguồn năng lượng mới.
+
+Năm 1879, Thô-mát Ê-đi-xơn phát minh ra bóng đèn điện có khả năng ứng dụng rộng rãi trong thực tế. Năm 1891, kĩ sư người Nga là Đô-rô-vôn-xki đã chế tạo thành công máy phát điện và động cơ điện xoay chiều. Máy phát điện đã được sử dụng để cung cấp năng lượng cho nhiều nhà máy.
+
+<!-- chunk 170 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "13"
+section_name: Mục 2 Cuộc Cách mạng công nghiệp lần thứ hai
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_170
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+Cùng với việc sử dụng rộng rãi điện năng, động cơ đốt trong tiếp tục được cải tiến, ứng dụng trong thời kì này.
+
+Kĩ thuật luyện kim được cải tiến, với việc sử dụng lò Bét-xme và lò Mác-tanh. Tuốc bin phát điện được sử dụng để cung cấp điện năng. Thép được sản xuất với số lượng lớn và giá thành hạ nhanh chóng.
+
+[Hình ảnh mô tả một người đàn ông đứng cạnh một thiết bị điện, có chú thích: Hình 8.8. Bóng đèn điện - một phát minh của Thô-mát Ê-đi-xơn]
+
+Đặc điểm của cuộc Cách mạng công nghiệp lần thứ hai là dây chuyền sản xuất hàng loạt, điển hình là ứng dụng sản xuất xe hơi của hãng Ford (Mỹ).
+
+<!-- chunk 171 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "14"
+section_name: Mục 2 Cuộc Cách mạng công nghiệp lần thứ hai
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_171
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+Năm 1860, động cơ đốt trong được ứng dụng nhanh chóng để cơ giới hoá sản xuất và lần đầu tiên được kĩ sư Ê-chiên-nơ Lơ-noa ứng dụng vào lĩnh vực thương mại. Năm 1876, kĩ sư Ni-cô-la Ốt-tô đã sáng chế ra động cơ đốt trong hiện đại.
+
+Từ năm 1870 đến năm 1900, sản lượng thép trên thế giới đã tăng từ 250 000 tấn lên 28,3 triệu tấn. Ứng dụng thép ngày càng được phổ biến trong xây dựng, giao thông vận tải, chế tạo máy móc, sản xuất vũ khí,...
+
+[Hình ảnh mô tả một thiết bị lò luyện gang Bét-xơ-me. Hình vẽ kỹ thuật cho thấy hai phần của lò: phần A là thân lò hình trứng với các đai ốc và phần B là mặt cắt ngang của lò.]
+
+Hình 8.9. Lò luyện gang Bét-xme
+
+<!-- chunk 172 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "15"
+section_name: Mục 2 Cuộc Cách mạng công nghiệp lần thứ hai
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_172
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+Dầu di-ê-zen được khai thác để thắp sáng và cung cấp nguồn nhiên liệu mới cho các phương tiện giao thông. Công nghiệp hoá học ra đời phục vụ ngành nhuộm, phân bón, thuốc nổ, điện lực, in ấn,... Phát minh ra máy điện tín giúp cho việc liên lạc ngày càng xa và nhanh hơn.
+
+Thành tựu quan trọng trong giao thông vận tải thời kì này là phát minh và sản xuất ô tô, máy bay. Nhờ sự cải tiến của động cơ đốt trong, chiếc ô tô đầu tiên trên thế giới đã được Các Ben phát minh năm 1886. Năm 1903, hai anh em người Mỹ là Vin-bơ Rai và Oóc-vin Rai đã chế tạo thành công chiếc máy bay đầu tiên, đánh dấu sự ra đời của ngành hàng không thế giới.
+
+<!-- chunk 173 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "16"
+section_name: Mục 2 Cuộc Cách mạng công nghiệp lần thứ hai
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_173
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+"Ngành hàng không ra đời là một bước đột phá trong sự phát triển của công nghệ cuối thế kỉ XIX đến đầu thế kỉ XX. Cuộc chinh phục không gian là một ví dụ tuyệt vời về cách hiểu biết chính thức về tự nhiên kết hợp với kinh nghiệm để tạo ra một trong những phát minh ấn tượng nhất mọi thời đại".
+
+(Cách mạng công nghiệp lần thứ hai, 1870 - 1914, Giô-en Mo-ky)
+
+Những chiếc xe chạy bằng hơi nước thử nghiệm đầu tiên được chế tạo vào cuối thế kỉ XVIII. Đến cuối thế kỉ XIX, thế giới đã chứng kiến những tiến bộ lớn trong thiết kế và chế tạo ô tô với việc sử dụng động cơ đốt trong. Ô tô từng bước được sản xuất phổ biến nhằm mục đích thương mại.
+
+<!-- chunk 174 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "17"
+section_name: Mục 2 Cuộc Cách mạng công nghiệp lần thứ hai
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_174
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+[Hình ảnh 1: Một chiếc xe ba bánh cổ điển, có ghế ngồi và bánh xe lớn. Phía dưới có chú thích:]
+Hình 8.10. Ô tô đầu tiên trên thế giới do Các Ben phát minh (1886)
+
+[Hình ảnh 2: Một chiếc máy bay đang cất cánh trên bãi biển, có một người đứng gần đó. Phía dưới có chú thích:]
+Hình 8.11. Máy bay đầu tiên trên thế giới do hai anh em Vin-bơ Rai và Oóc-vin Rai chế tạo (1903)
+
+<!-- chunk 175 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "18"
+section_name: Mục 2 Cuộc Cách mạng công nghiệp lần thứ hai
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_175
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+Đọc thông tin, tư liệu và quan sát các hình từ 8.8 đến 8.11, hãy cho biết cuộc Cách mạng công nghiệp lần thứ hai đã đạt được những thành tựu cơ bản nào.
+
+<!-- chunk 176 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "19"
+section_name: Mục 3 Ý nghĩa, tác động của cuộc Cách mạng công nghiệp lần thứ nhất và lần thứ hai
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_176
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+3. Ý nghĩa, tác động của cuộc Cách mạng công nghiệp lần thứ nhất và lần thứ hai
+3.1. Ý nghĩa
+
+Cách mạng công nghiệp lần thứ nhất và lần thứ hai đã làm thay đổi diện mạo các nước tư bản. Máy hơi nước đã tạo ra nguồn động lực mới, dùng máy móc thay thế sức lao động của con người, khởi đầu quá trình công nghiệp hoá. Những tiến bộ về kĩ thuật cũng đã mở ra khả năng lớn trong việc thúc đẩy sản xuất, sản lượng công nghiệp tăng lên nhanh chóng.
+
+Cuộc Cách mạng công nghiệp lần thứ nhất đã thay thế lao động tay chân của con người bằng lao động của máy móc, chuyển nền sản xuất thủ công sang cơ khí hoá.
+
+Cuộc Cách mạng công nghiệp lần thứ hai đã chuyển nền sản xuất từ cơ khí hoá sang điện khí hoá, làm thay đổi căn bản nền sản xuất và cơ cấu kinh tế tư bản chủ nghĩa.
+
+<!-- chunk 177 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "20"
+section_name: Mục 3 Ý nghĩa, tác động của cuộc Cách mạng công nghiệp lần thứ nhất và lần thứ hai
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_177
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+Trong Tuyên ngôn của Đảng Cộng sản (1848), Mác và Ăng-ghen viết: "Chỉ trong chưa đầy một thế kỉ, giai cấp tư sản đã tạo ra được một lực lượng sản xuất nhiều hơn, đồ sộ hơn lực lượng sản xuất của tất cả các thế hệ trước cộng lại".
+
+Cách mạng công nghiệp cũng góp phần thúc đẩy những chuyển biến mạnh mẽ trong các ngành kinh tế khác, đặc biệt là nông nghiệp và giao thông vận tải. Nhu cầu công nghiệp hoá khiến nền nông nghiệp nhanh chóng chuyển sang phương thức chuyên canh hoặc thâm canh.
+
+<!-- chunk 178 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "21"
+section_name: Mục 3 Ý nghĩa, tác động của cuộc Cách mạng công nghiệp lần thứ nhất và lần thứ hai
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_178
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+Đọc thông tin, hãy nêu ý nghĩa của cuộc Cách mạng công nghiệp lần thứ nhất và lần thứ hai đối với sự phát triển kinh tế.
+
+<!-- chunk 179 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "22"
+section_name: Mục 3 Ý nghĩa, tác động của cuộc Cách mạng công nghiệp lần thứ nhất và lần thứ hai
+sub_type: 
+sub_id: " "
+sub_name: Tác động
+has_table: false
+chunk_id: ls_179
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+3.2. Tác động
+Đối với xã hội
+
+Hai giai cấp cơ bản của xã hội tư bản là tư sản và vô sản hình thành. Giai cấp tư sản bao gồm chủ xưởng, chủ nhà máy, chủ hãng buôn, chủ đồn điền,... Giai cấp vô sản là những người mất ruộng đất, tư liệu sản xuất,... trở thành những người làm thuê trong các công xưởng, nhà máy.
+
+Sự bóc lột của giai cấp tư sản đối với giai cấp vô sản làm xuất hiện mâu thuẫn chủ yếu trong xã hội tư bản. Đó là nguyên nhân sâu xa dẫn đến cuộc đấu tranh của giai cấp vô sản chống lại giai cấp tư sản.
+
+[Hình ảnh minh họa: Một bức tranh biếm họa thể hiện sự bóc lột của giai cấp tư sản đối với giai cấp vô sản. Hai người đàn ông mặc trang phục sang trọng đang kéo một chiếc túi tiền, trong khi một người công nhân nằm dưới đất dưới chân họ.]
+
+<!-- chunk 180 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "23"
+section_name: Mục 3 Ý nghĩa, tác động của cuộc Cách mạng công nghiệp lần thứ nhất và lần thứ hai
+sub_type: 
+sub_id: " "
+sub_name: Tác động
+has_table: false
+chunk_id: ls_180
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+Hình 8.12. Giai cấp tư sản vắt kiệt sức lao động của giai cấp vô sản (tranh biếm họa)
+
+
+Cuộc Cách mạng công nghiệp lần thứ nhất và lần thứ hai đã làm xuất hiện nhiều trung tâm công nghiệp mới và thành thị đông dân, điển hình là các thành phố Luân Đôn, Pa-ri, Béc-lin, Niu Y-oóc,...
+
+[Hình ảnh mô tả thành phố Pa-ri năm 1900, với tháp Eiffel nổi bật ở trung tâm, xung quanh là các tòa nhà và đường phố của thành phố.]
+
+Hình 8.13. Thành phố Pa-ri (1900)
+
+Đối với văn hoá
+
+Cuộc Cách mạng công nghiệp lần thứ nhất và lần thứ hai có tác động lớn đến đời sống văn hoá của nhân loại, đặc biệt là các nước Âu - Mỹ.
+
+[Sơ đồ minh họa tác động của cuộc Cách mạng công nghiệp lần thứ nhất và lần thứ hai đối với văn hoá, bao gồm 4 mục chính:]
+
+<!-- chunk 181 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "24"
+section_name: Mục 3 Ý nghĩa, tác động của cuộc Cách mạng công nghiệp lần thứ nhất và lần thứ hai
+sub_type: 
+sub_id: " "
+sub_name: Tác động
+has_table: false
+chunk_id: ls_181
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+Tác động của cuộc Cách mạng công nghiệp lần thứ nhất và lần thứ hai đối với văn hoá:
+- Thúc đẩy giao lưu, kết nối văn hoá toàn cầu
+- Rút ngắn khoảng cách không gian, thời gian
+- Nâng cao đời sống vật chất, tinh thần của con người
+- Hình thành lối sống, tác phong công nghiệp,...
+
+Sơ đồ 8.3. Tác động của cuộc Cách mạng công nghiệp lần thứ nhất và lần thứ hai đối với văn hoá
+
+<!-- chunk 182 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI
+id_lesson: 8
+section_id: "25"
+section_name: Mục 3 Ý nghĩa, tác động của cuộc Cách mạng công nghiệp lần thứ nhất và lần thứ hai
+sub_type: 
+sub_id: " "
+sub_name: Tác động
+has_table: false
+chunk_id: ls_182
+---
+[ Bài 8: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ CẬN ĐẠI ]
+
+Đọc thông tin và quan sát sơ đồ 8.3, các hình 8.12, 8.13, hãy phân tích tác động của cuộc Cách mạng công nghiệp lần thứ nhất và lần thứ hai đối với xã hội, văn hoá.
+
+1. Lập bảng thể hiện những thành tựu tiêu biểu của cuộc Cách mạng công nghiệp lần thứ nhất và lần thứ hai.
+
+2. Thành tựu nào của cuộc Cách mạng công nghiệp lần thứ nhất và lần thứ hai có ý nghĩa nhất? Vì sao?
+
+3. Nêu và phân tích một thành tựu của cuộc Cách mạng công nghiệp lần thứ nhất và lần thứ hai tác động đến cuộc sống của bản thân em.
+
+4. Hãy làm sáng tỏ nhận định của Cơ-lau Xva-bo: "Cuộc Cách mạng công nghiệp lần thứ nhất sử dụng năng lượng nước và hơi nước để cơ giới hoá sản xuất. Cuộc Cách mạng công nghiệp lần thứ hai diễn ra nhờ ứng dụng điện năng để sản xuất hàng loạt".
+
+<!-- chunk 183 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "26"
+section_name: Mục tiêu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_183
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Học xong bài này, em sẽ:
+- Trình bày được nét chính về bối cảnh lịch sử, những thành tựu cơ bản và ý nghĩa đối với sự phát triển kinh tế của cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư.
+- Phân tích được tác động của Cách mạng công nghiệp lần thứ ba và lần thứ tư đối với xã hội, văn hóa.
+- Vận dụng những hiểu biết về tác động hai mặt của Cách mạng công nghiệp lần thứ ba và lần thứ tư thông qua việc tuân thủ những quy định của pháp luật trong cách thức giao tiếp trên internet, mạng xã hội,...
+- Có thái độ trân trọng những thành quả của các cuộc cách mạng công nghiệp đối với sự phát triển của lịch sử.
+
+<!-- chunk 184 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "27"
+section_name: Mô tả bài
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_184
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Sô-phi-a là một rô-bốt được chế tạo và thiết kế năm 2015, mang hình dáng giống con người. Ngày 25-10-2017, Sô-phi-a là rô-bốt đầu tiên được Chính phủ Ả-rập Xê-út cấp quyền công dân như con người. Đây là sản phẩm của cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư, đồng thời là dấu mốc quan trọng trong tiến trình phát triển của nhân loại.
+
+[Hình ảnh mô tả một rô-bốt có hình dáng giống người phụ nữ, với dòng chữ "AI for GOOD" phía sau]
+
+Hình 9.1. Rô-bốt Sô-phi-a
+
+Vậy cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư diễn ra trong bối cảnh lịch sử nào? Thành tựu, ý nghĩa và tác động của nó ra sao?
+
+<!-- chunk 185 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "28"
+section_name: Mục 1 Cuộc Cách mạng công nghiệp lần thứ ba
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_185
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+1. Cuộc Cách mạng công nghiệp lần thứ ba
+1.1. Bối cảnh lịch sử
+
+Cuộc Cách mạng công nghiệp lần thứ ba diễn ra vào nửa sau thế kỉ XX, khởi đầu ở nước Mỹ, sau đó phát triển ở các nước khác như Liên Xô, Nhật Bản, Anh, Pháp, Đức,...
+
+[Sơ đồ mô tả các yếu tố dẫn đến Cách mạng công nghiệp lần thứ ba]
+
+Sơ đồ 9.1. Bối cảnh lịch sử diễn ra cuộc Cách mạng công nghiệp lần thứ ba
+
+<!-- chunk 186 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "29"
+section_name: Mục 1 Cuộc Cách mạng công nghiệp lần thứ ba
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_186
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Những thành tựu của Cách mạng công nghiệp lần thứ nhất và lần thứ hai. + Nhu cầu đời sống vật chất, tinh thần ngày càng cao. + Các vấn đề toàn cầu như bùng nổ dân số, ô nhiễm môi trường, dịch bệnh,... + Chiến tranh thế giới thứ hai đặt ra nhu cầu phát minh các loại vũ khí mới. + Không hoảng năng lượng và sự cạn kiệt của tài nguyên thiên nhiên. + Sự phát triển mạnh mẽ của nền kinh tế, đặc biệt là ở các nước tư bản chủ nghĩa. = Cách mạng công nghiệp lần thứ ba
+
+Đặc điểm lớn nhất của cuộc Cách mạng công nghiệp lần thứ ba là khoa học đã trở thành lực lượng sản xuất trực tiếp. Mọi phát minh kĩ thuật đều bắt nguồn từ những kết quả nghiên cứu của khoa học. Khoa học tham gia trực tiếp vào sản xuất, trở thành nguồn gốc chính của những tiến bộ kĩ thuật và công nghệ.
+
+<!-- chunk 187 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "30"
+section_name: Mục 1 Cuộc Cách mạng công nghiệp lần thứ ba
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_187
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Từ những năm 70 của thế kỉ XX, cuộc Cách mạng công nghiệp chủ yếu diễn ra trên lĩnh vực công nghệ nên được gọi là cuộc Cách mạng khoa học - công nghệ.
+
+<!-- chunk 188 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "31"
+section_name: Mục 1 Cuộc Cách mạng công nghiệp lần thứ ba
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_188
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Đọc thông tin và quan sát sơ đồ 9.1, hãy trình bày bối cảnh lịch sử diễn ra cuộc Cách mạng công nghiệp lần thứ ba.
+
+<!-- chunk 189 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "32"
+section_name: Mục 1 Cuộc Cách mạng công nghiệp lần thứ ba
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_189
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+1.2. Những thành tựu cơ bản
+
+Thành tựu cơ bản của cuộc Cách mạng công nghiệp lần thứ ba là tự động hoá dựa vào máy tính, internet, công nghệ thông tin, thiết bị điện tử,...
+
+Máy tính điện tử ra đời đầu tiên ở Mỹ năm 1946, chạy bằng điện tử chân không. Sự ra đời của máy tính điện tử đã dẫn đến tự động hoá trong quá trình sản xuất. Máy tự động và hệ thống máy tự động không chỉ "làm việc" thay con người, mà còn có thể "nghĩ" thay con người. Đến những năm 90 của thế kỉ XX, nhiều lĩnh vực, nhiều ngành nghề đã được điều khiển bằng máy tính.
+
+<!-- chunk 190 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "33"
+section_name: Mục 1 Cuộc Cách mạng công nghiệp lần thứ ba
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_190
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+ENIAC (Electronic Numerical Integrator And Computer) là máy tính điện tử số đầu tiên do Giáo sư Mô-sơ-ly và học trò thiết kế vào năm 1943, hoàn thành vào năm 1946. Đây là một máy tính khổng lồ với chiều dài 20 m, chiều cao 2,8 m. ENIAC bao gồm: 18 000 đèn điện tử, 1 500 công tắc tự động, nặng hơn 30 tấn và tiêu thụ 140 KW/giờ. Máy tính có khả năng thực hiện 5 000 phép toán cộng trong một giây.
+
+[Hình ảnh mô tả một máy tính cỡ lớn chiếm gần hết một căn phòng, với nhiều bảng điều khiển và dây dẫn]
+
+Hình 9.2. Máy tính điện tử số đầu tiên
+
+<!-- chunk 191 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "34"
+section_name: Mục 1 Cuộc Cách mạng công nghiệp lần thứ ba
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_191
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+"Máy tính điện tử là một trong những thành tựu vĩ đại nhất của con người, vì chúng nâng cao sức mạnh trí óc cũng như công nghệ. Làn sóng thứ hai đã làm tăng sức mạnh cơ bắp của chúng ta, và chúng ta không biết trí óc của chúng ta sẽ đưa chúng ta đến đâu,... Máy tính sẽ giúp chúng ta suy nghĩ sâu hơn về chúng ta và về thế giới".
+
+(Làn sóng thứ ba, An-vin Tốp-phơ-lơ)
+
+Internet được phát minh năm 1957 bởi Văn phòng Xử lí Công nghệ thông tin của ARPA (Cơ quan nghiên cứu các Dự án kĩ thuật cao của Mỹ). Đây là cơ quan xây dựng nguyên mẫu đầu tiên của internet và đặt những nền tảng cho mạng internet ngày nay.
+
+<!-- chunk 192 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "35"
+section_name: Mục 1 Cuộc Cách mạng công nghiệp lần thứ ba
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_192
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Năm 1969, internet được khai thác sử dụng, nhưng phải đến năm 1990 bước ngoặt của internet mới diễn ra. Tim Béc-nơ-ly, kĩ sư mạng điện toán người Anh, đã sáng tạo ra một công cụ đơn giản và hầu như miễn phí để thu thập thông tin từ internet - một giao thức mạng tên World Wide Web (WWW). Từ năm 1991, khi WWW bắt đầu đi vào hoạt động, web và internet phát triển đồng nhất với tốc độ chóng mặt.
+
+Sự ra đời của máy tính cá nhân, hệ điều hành, internet và trình duyệt web đã đánh dấu sự ra đời của cuộc cách mạng số hoá.
+
+"Là một phát minh mang tính cải biến thế giới, internet có nhiều yếu tố giống máy in ngày xưa. Nó khiến cho chi phí tạo dựng, truyền và lưu trữ thông tin sụt giảm hẳn và khiến thông tin gần gũi với con người ta hơn nhiều. Nó đánh gục độc quyền truyền thông".
+(Thế giới phẳng, Thô-mát L. Phơ-ri-man)
+
+<!-- chunk 193 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "36"
+section_name: Mục 1 Cuộc Cách mạng công nghiệp lần thứ ba
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_193
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Cùng với sự phát triển của internet, công nghệ thông tin phát triển mạnh mẽ như một sự bùng nổ trên phạm vi toàn cầu. Công nghệ thông tin là một nhánh ngành kĩ thuật máy tính và phần mềm để chuyển đổi, lưu giữ, bảo vệ, xử lí, truyền tải và thu thập thông tin. Từ đây, máy vi tính được sử dụng ở khắp mọi nơi và có khả năng liên kết với nhau bởi các mạng truyền dữ liệu, hình thành mạng thông tin máy tính toàn cầu.
+
+[Hình ảnh minh họa mô phỏng kết nối internet qua máy tính, với quả địa cầu ở giữa và các máy tính xung quanh được kết nối bằng các đường mạng]
+
+Hình 9.3. Mô phỏng kết nối internet qua máy tính
+
+<!-- chunk 194 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "37"
+section_name: Mục 1 Cuộc Cách mạng công nghiệp lần thứ ba
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_194
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Thiết bị điện tử là loại thiết bị có chứa linh kiện bán dẫn và các mạch điện tử cho phép tự động hoá trong các quá trình công nghệ và kiểm tra sản phẩm. Nhiều thiết bị điện tử từng bước được chế tạo, như thiết bị viễn thông (điện thoại, ti-vi,...), thiết bị thu thanh và truyền hình (ra-đa, kính thiên văn, vệ tinh nhân tạo,...), thiết bị y tế (tia X-quang, bức xạ,...). Nhờ vậy, thiết bị điện tử trực tiếp làm tăng năng suất lao động, nâng cao chất lượng sản phẩm, cải thiện điều kiện làm việc.
+
+Hình 9.4. Một số thiết bị điện tử phổ biến hiện nay
+
+[Hình ảnh mô tả nhiều thiết bị điện tử hiện đại như laptop, máy tính bảng, điện thoại thông minh, máy in, và các phụ kiện khác được sắp xếp cùng nhau.]
+
+<!-- chunk 195 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "38"
+section_name: Mục 1 Cuộc Cách mạng công nghiệp lần thứ ba
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_195
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Cuộc Cách mạng công nghiệp lần thứ ba còn đạt được những thành tựu trên lĩnh vực chế tạo vật liệu mới, chinh phục vũ trụ, giao thông vận tải và thông tin liên lạc, sử dụng nguồn năng lượng mới, công nghệ sinh học,...
+
+Hình 9.5. Nhà máy sản xuất năng lượng Mặt Trời
+[Hình ảnh mô tả một nhà máy điện mặt trời với nhiều tấm pin năng lượng mặt trời được lắp đặt trên mái nhà.]
+
+Hình 9.6. Cừu Đô-li - cừu nhân bản vô tính đầu tiên
+[Hình ảnh một con cừu đang nhìn thẳng vào máy ảnh, có bộ lông dày màu trắng.]
+
+Hình 9.7. Vệ tinh Sput-nich - vệ tinh nhân tạo đầu tiên trên thế giới
+[Hình ảnh một vệ tinh hình cầu kim loại với các ăng-ten đang bay trong không gian.]
+
+Hình 9.8. Con người đặt chân lên Mặt Trăng
+[Hình ảnh một phi hành gia trong bộ đồ không gian đang đứng trên bề mặt Mặt Trăng bên cạnh lá cờ Mỹ.]
+
+<!-- chunk 196 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "39"
+section_name: Mục 1 Cuộc Cách mạng công nghiệp lần thứ ba
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_196
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+? Đọc thông tin, tư liệu và quan sát các hình từ 9.2 đến 9.8, hãy nêu những thành tựu cơ bản của cuộc Cách mạng công nghiệp lần thứ ba. Giới thiệu một thành tựu tiêu biểu nhất.
+
+64
+
+<!-- chunk 197 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "40"
+section_name: Mục 2 Cuộc Cách mạng công nghiệp lần thứ tư
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_197
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+2. Cuộc Cách mạng công nghiệp lần thứ tư
+2.1. Bối cảnh lịch sử
+
+Cuộc Cách mạng công nghiệp lần thứ tư bắt đầu từ đầu thế kỉ XXI. Mỹ, Đức, Nhật Bản, Anh, Pháp,... tiếp tục là những quốc gia đi đầu trong cuộc cách mạng này.
+
+[Sơ đồ 9.2. Bối cảnh lịch sử diễn ra cuộc Cách mạng công nghiệp lần thứ tư]
+
+Những thành tựu từ ba cuộc cách mạng công nghiệp trước đó. + Nhu cầu đời sống vật chất, tinh thần ngày càng cao. + Toàn cầu hóa tiếp tục diễn ra mạnh mẽ, đem lại những cơ hội và thách thức đối với các nước. + Khủng hoảng tài chính, nợ công, suy thoái kinh tế toàn cầu,... đặt ra yêu cầu mới. = Cách mạng công nghiệp lần thứ tư
+
+<!-- chunk 198 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "41"
+section_name: Mục 2 Cuộc Cách mạng công nghiệp lần thứ tư
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_198
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Khái niệm Cách mạng công nghiệp lần thứ tư (Cách mạng công nghiệp 4.0) xuất phát từ khái niệm Industrie 4.0 trong một báo cáo của Chính phủ Đức năm 2013. Industrie 4.0 kết nối các hệ thống dữ liệu và cơ sở sản xuất thông minh để tạo ra sự hội tụ kĩ thuật số giữa công nghiệp, kinh doanh, chức năng và quy trình bên trong.
+
+<!-- chunk 199 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "42"
+section_name: Mục 2 Cuộc Cách mạng công nghiệp lần thứ tư
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_199
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Đọc thông tin và quan sát sơ đồ 9.2, hãy trình bày bối cảnh lịch sử diễn ra cuộc Cách mạng công nghiệp lần thứ tư.
+
+<!-- chunk 200 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "43"
+section_name: Mục 2 Cuộc Cách mạng công nghiệp lần thứ tư
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_200
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+2.2. Những thành tựu cơ bản
+
+Thành tựu cơ bản của cuộc Cách mạng công nghiệp lần thứ tư là kĩ thuật số, công nghệ sinh học và sự phát triển công nghệ liên ngành, đa ngành.
+
+Những yếu tố cốt lõi của kĩ thuật số trong cuộc Cách mạng công nghiệp 4.0 là Trí tuệ nhân tạo (AI), Internet kết nối vạn vật (Internet of Things–IoT) và Dữ liệu lớn (Big Data).
+
+Trí tuệ nhân tạo là khoa học và kĩ thuật sản xuất máy móc thông minh, đặc biệt là các chương trình máy tính thông minh. Trí tuệ nhân tạo được ứng dụng trong nhiều lĩnh vực như nhà máy thông minh, rô-bốt thông minh, giao thông vận tải, y tế, giáo dục, xây dựng,... Trí tuệ nhân tạo đã góp phần không nhỏ trong việc giúp con người tiết kiệm sức lao động, đẩy nhanh quá trình tự động hoá và số hoá nền kinh tế với chi phí rẻ hơn so với những cách thức truyền thống.
+
+[Hình 9.9. Người máy A-si-mô]
+
+<!-- chunk 201 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "44"
+section_name: Mục 2 Cuộc Cách mạng công nghiệp lần thứ tư
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_201
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+"Trí tuệ nhân tạo (AI) có mặt khắp nơi xung quanh chúng ta, từ những chiếc xe và máy bay không người lái đến trợ lí ảo và phần mềm dịch thuật. Nó đang thay đổi cuộc sống của chúng ta. AI đã đạt được những tiến bộ ấn tượng, nhờ hiệu năng máy tính tăng nhanh theo cấp số nhân và sự sẵn có của một lượng dữ liệu đồ sộ, từ các phần mềm trước đây dùng để phát minh ra loại thuốc mới đến các thuật toán dự đoán mối quan tâm văn hoá của chúng ta".
+
+(Cuộc Cách mạng công nghiệp lần thứ tư, Cô-lau Xva-bo)
+
+Hình 9.10. Rô-bốt thông minh tham gia vào quá trình tự động hoá sản xuất
+
+[Hình ảnh mô tả một cánh tay robot công nghiệp đang thao tác trên một dây chuyền sản xuất, với các bộ phận cơ khí và điện tử phức tạp.]
+
+<!-- chunk 202 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "45"
+section_name: Mục 2 Cuộc Cách mạng công nghiệp lần thứ tư
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_202
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Internet kết nối vạn vật được mô tả là mối quan hệ giữa các sự vật như sản phẩm, dịch vụ, địa điểm,... và con người, hình thành nhờ sự kết nối của nhiều công nghệ và nhiều nền tảng khác nhau. Internet kết nối vạn vật có phạm vi ứng dụng rất rộng lớn, điển hình như điều hành sản xuất, xe thông minh, nhà máy thông minh, giao thông vận tải, quản lí môi trường, mua sắm trực tuyến, học tập trực tuyến,...
+
+Hình 9.11. Công nghệ thực tế ảo
+
+[Hình ảnh minh họa công nghệ thực tế ảo, với một người đang tương tác với màn hình lớn hiển thị các biểu đồ, đồ thị và dữ liệu phức tạp.]
+
+<!-- chunk 203 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "46"
+section_name: Mục 2 Cuộc Cách mạng công nghiệp lần thứ tư
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_203
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Dữ liệu lớn chỉ một tập hợp dữ liệu rất lớn và phức tạp, bao gồm các khâu phân tích, thu thập, giám sát dữ liệu, tìm kiếm, chia sẻ, lưu trữ, truyền nhận, trực quan, truy vấn và tính riêng tư. Với đặc điểm như trên, Dữ liệu lớn được ứng dụng trong nhiều lĩnh vực như sản xuất, xây dựng, giao thông vận tải, quản lí nhà nước, giáo dục và đào tạo,...
+
+
+Công nghệ sinh học và sự phát triển của các công nghệ liên ngành, đa ngành,... cũng đạt nhiều thành tựu to lớn.
+
+<!-- chunk 204 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "47"
+section_name: Mục 2 Cuộc Cách mạng công nghiệp lần thứ tư
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_204
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Công nghệ sinh học là lĩnh vực đa ngành và liên ngành, gắn kết với nhiều lĩnh vực trong sản xuất và cuộc sống như chọn tạo giống cây trồng vật nuôi mang các đặc tính mới; chế biến và bảo quản thực phẩm; sản xuất các chế phẩm sinh học sử dụng trong nông nghiệp, thuốc bảo vệ thực vật; ứng dụng trong y học và dược phẩm, chẩn đoán bệnh; xử lí ô nhiễm môi trường, rác thải,...
+Ba công nghệ chủ yếu tác động đến sự thay đổi cuộc sống con người là công nghệ gen (công nghệ di truyền), nuôi cấy mô và nhân bản.
+
+[Hình ảnh minh họa: Một bàn tay đeo găng tay đang cầm một ống nghiệm chứa chất lỏng màu xanh lá cây, với nền là các lá cây xanh mơn mởn.]
+
+Hình 9.12. Ứng dụng công nghệ sinh học trong sản xuất nông nghiệp
+
+<!-- chunk 205 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "48"
+section_name: Mục 2 Cuộc Cách mạng công nghiệp lần thứ tư
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_205
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+"Việc giải mã trình tự gen và đặc biệt là chỉnh sửa gen trong những năm gần đây đã giúp giảm đáng kể về chi phí và những khó khăn so với trước. Trước đây, phải mất hơn 10 năm và 2,7 tỉ USD để hoàn thành Dự án bản đồ gen người. Ngày nay, một gen có thể được giải mã trình tự trong vài tiếng với chi phí dưới 1 000 USD Mỹ".
+
+(Cuộc Cách mạng công nghiệp lần thứ tư, Cờ-lau Xva-bơ)
+
+Ngoài ra, Cách mạng công nghiệp lần thứ tư còn đạt nhiều thành tựu trên lĩnh vực vật lí với rô-bốt thế hệ mới, máy in 3D, xe tự lái, công nghệ na-nô, các vật liệu mới (gờ-ra-phen, sô-kai-mi-on), điện toán đám mây,...
+
+<!-- chunk 206 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "49"
+section_name: Mục 2 Cuộc Cách mạng công nghiệp lần thứ tư
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu cơ bản
+has_table: false
+chunk_id: ls_206
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Đọc thông tin, tư liệu và quan sát các hình từ 9.9 đến 9.12, hãy trình bày những thành tựu cơ bản của cuộc Cách mạng công nghiệp lần thứ tư. Giới thiệu một thành tựu tiêu biểu nhất.
+
+<!-- chunk 207 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "50"
+section_name: Mục 3 Ý nghĩa, tác động của cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_207
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+3. Ý nghĩa, tác động của cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư
+3.1. Ý nghĩa
+
+Với sự xuất hiện của nền sản xuất mới dựa trên công nghệ điện tử, mức độ đóng góp của khoa học công nghệ vào tăng trưởng kinh tế ngày càng lớn.
+
+Việc sử dụng người máy công nghiệp được coi là phương tiện kĩ thuật quan trọng hợp thành chương trình hiện đại hoá toàn bộ nền sản xuất, tạo ra các ngành sản xuất tự động, năng suất lao động tăng cao mà không có sự tham gia của con người.
+
+Việc sử dụng máy điện toán trong thiết kế, chế tạo máy, lĩnh vực hàng không, tên lửa, vũ trụ, điện tử,... đã cho phép giải quyết một tổ hợp lớn các bài toán sản xuất của công nghiệp hiện đại và đem lại hiệu quả kinh tế to lớn.
+
+<!-- chunk 208 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "51"
+section_name: Mục 3 Ý nghĩa, tác động của cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_208
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Công nghệ thông tin ngày càng được ứng dụng rộng rãi trong mọi ngành kinh tế và hoạt động xã hội. Có thể nói, cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư đã đưa nhân loại sang nền văn minh thông tin.
+
+Trong những năm đầu thế kỉ XX, đóng góp của khoa học công nghệ vào tăng trưởng kinh tế mới chỉ là 10 – 20 %, đến những năm cuối thế kỉ XX đóng góp này đã tăng lên 75 – 80 %.
+
+[Hình ảnh mô tả một cánh tay robot đang thao tác trên một chiếc xe hơi trong dây chuyền sản xuất tự động]
+Hình 9.13. Sản xuất ô tô theo dây chuyền tự động hoá
+
+[Hình ảnh minh họa các thiết bị kết nối Internet như PC, Mini-Note, Notebook, Mobile, Database, Remote Server, Remote Desktop]
+Hình 9.14. Công nghệ điện toán đám mây
+
+<!-- chunk 209 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "52"
+section_name: Mục 3 Ý nghĩa, tác động của cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_209
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Sự phát triển mạnh mẽ của cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư đã thúc đẩy quá trình toàn cầu hoá và khu vực hoá nền kinh tế thế giới.
+
+Năm trụ cột chính của toàn cầu hoá
+
+[Sơ đồ mô tả 5 trụ cột chính của toàn cầu hóa]
+- Mạng lưới thông tin toàn cầu
+- Mạng lưới và hệ thống siêu thị toàn cầu
+- Mạng lưới và hệ thống trụ sở lao động toàn cầu
+- Mạng lưới và hệ thống tài chính toàn cầu
+- Vai trò và sự phát triển của các công ty xuyên quốc gia
+
+Sơ đồ 9.3. Năm trụ cột chính của toàn cầu hoá
+
+Hình 9.15. Mô hình toàn cầu hoá
+
+<!-- chunk 210 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "53"
+section_name: Mục 3 Ý nghĩa, tác động của cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_210
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+? Đọc thông tin và quan sát sơ đồ 9.3, các hình từ 9.13 đến 9.15, hãy làm rõ ý nghĩa của cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư đối với sự phát triển kinh tế của thế giới. Cho ví dụ cụ thể.
+
+[Hình minh họa: Một quả địa cầu được bao quanh bởi nhiều hình người đa màu sắc đứng thành vòng tròn, thể hiện sự kết nối toàn cầu]
+
+<!-- chunk 211 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "54"
+section_name: Mục 3 Ý nghĩa, tác động của cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư
+sub_type: 
+sub_id: " "
+sub_name: Tác động
+has_table: false
+chunk_id: ls_211
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+3.2. Tác động
+
+Đối với xã hội
+
+Cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư tiếp tục tác động mạnh mẽ đến xã hội, đặc biệt là sự xuất hiện của giai cấp công nhân hiện đại. Số lượng công nhân có tri thức, kĩ năng và trình độ chuyên môn cao ngày càng tăng, số lượng công nhân lao động phổ thông có xu hướng giảm dần.
+
+Giai cấp công nhân hiện đại vẫn tiếp tục giữ vai trò là lực lượng chính trị - xã hội chủ yếu trong các cuộc đấu tranh chính trị. Tuy nhiên, so với trước đây, cuộc đấu tranh của công nhân hiện đại mang tính chất kinh tế - xã hội nhiều hơn.
+
+Cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư cũng có tác động tiêu cực, như làm gia tăng khoảng cách giữa người giàu và người nghèo ở các nước, làm xói mòn bản sắc văn hoá, giá trị truyền thống của các cộng đồng...
+
+<!-- chunk 212 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "55"
+section_name: Mục 3 Ý nghĩa, tác động của cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư
+sub_type: 
+sub_id: " "
+sub_name: Tác động
+has_table: false
+chunk_id: ls_212
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
++ Cuộc đấu tranh của công nhân hiện đại có những biểu hiện mới như bảo vệ dân chủ, nhân quyền, chống phân biệt chủng tộc, chống lại tiêu cực của toàn cầu hoá, bảo vệ môi trường,...
+
+Đối với văn hoá
+
+Cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư dẫn đến sự biến đổi mạnh mẽ về văn hoá.
+
+Bảng 9. Tác động của các cuộc Cách mạng công nghiệp hiện đại đến văn hoá
+
+Tích cực:
+- Mở rộng mối giao lưu và quan hệ giữa con người với con người.
+- Thúc đẩy các công đồng, các dân tộc, các nền văn hoá xích lại gần nhau hơn.
+- Đưa tri thức thâm nhập sâu vào nền sản xuất vật chất.
+- Tác động mạnh mẽ đến xu hướng tiêu dùng.
+
+<!-- chunk 213 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "56"
+section_name: Mục 3 Ý nghĩa, tác động của cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư
+sub_type: 
+sub_id: " "
+sub_name: Tác động
+has_table: false
+chunk_id: ls_213
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Tiêu cực:
+- Làm tăng sự lệ thuộc của con người vào công nghệ như máy tính, điện thoại thông minh, hệ thống mạng internet,...
+- Phát sinh tình trạng văn hoá "lai căng".
+- Nguy cơ đánh mất văn hoá truyền thống.
+- Xung đột giữa nhiều yếu tố, giá trị văn hoá truyền thống và hiện đại.
+
+
+Wifi là công nghệ cho phép nhiều thiết bị có thể kết nối với nhau mà không cần trải qua nhiều bước cài đặt, không cần tới bộ định tuyến độc lập. Các thiết bị có thể kết nối với nhau qua wifi phổ biến hiện nay là máy tính, điện thoại thông minh, ti-vi thông minh,...
+
+[Hình minh họa kết nối wifi với nhiều thiết bị như máy tính xách tay, điện thoại thông minh, bộ định tuyến và kết nối internet]
+
+Hình 9.16. Mô hình kết nối wifi với người dùng
+
+<!-- chunk 214 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "57"
+section_name: Mục 3 Ý nghĩa, tác động của cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư
+sub_type: 
+sub_id: " "
+sub_name: Tác động
+has_table: false
+chunk_id: ls_214
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Trong vài thập niên gần đây, Việt Nam là quốc gia có tốc độ phát triển mạnh mẽ về viễn thông và công nghệ thông tin. Công nghệ thông tin đang được phổ cập rộng rãi đến người dân và ứng dụng trong mọi lĩnh vực hoạt động kinh tế, xã hội. Đây là một thuận lợi rất lớn về hạ tầng cho Việt Nam trong cuộc Cách mạng công nghiệp 4.0.
+
+<!-- chunk 215 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 4
+chapter_name: CHỦ ĐỀ 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI
+lesson: Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI
+id_lesson: 9
+section_id: "58"
+section_name: Mục 3 Ý nghĩa, tác động của cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư
+sub_type: 
+sub_id: " "
+sub_name: Tác động
+has_table: false
+chunk_id: ls_215
+---
+[ Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI KÌ HIỆN ĐẠI ]
+
+Đọc thông tin và quan sát bảng 9, hình 9.16, hãy phân tích tác động của cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư đối với xã hội, văn hoá. Việt Nam đã và đang thích nghi với cuộc cách mạng đó như thế nào?
+
+1. Lập bảng mô tả những thành tựu tiêu biểu của cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư.
+
+2. Hãy nêu và phân tích tác động của một thành tựu từ cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư đến cuộc sống của bản thân em.
+
+3. Hãy nêu một số giải pháp để khắc phục những tác động tiêu cực của cuộc Cách mạng công nghiệp lần thứ ba và lần thứ tư đối với con người.
+
+4. Hãy làm sáng tỏ nhận định của Cô-lau Xva-bo: "Cuộc Cách mạng công nghiệp lần thứ ba sử dụng điện tử và công nghệ thông tin để tự động hoá sản xuất. Bây giờ, cuộc Cách mạng công nghiệp lần thứ tư đang nảy sinh từ cuộc Cách mạng công nghiệp lần thứ ba, nó kết hợp các công nghệ lại với nhau, làm mờ ranh giới giữa vật lí, kĩ thuật số và sinh học".
+
+<!-- chunk 216 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 10
+section_id: "1"
+section_name: Mục tiêu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_216
+---
+[ Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Học xong bài này, em sẽ:
+- Phân tích được tác động của vị trí địa lí, điều kiện tự nhiên đối với sự hình thành văn minh Đông Nam Á thời kì cổ - trung đại.
+- Nêu được nét khái quát về cơ sở xã hội của văn minh Đông Nam Á thời kì cổ - trung đại.
+- Phân tích được những ảnh hưởng của văn hóa Ấn Độ, Trung Hoa đối với văn minh Đông Nam Á thời kì cổ - trung đại.
+
+<!-- chunk 217 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 10
+section_id: "2"
+section_name: Mô tả bài
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_217
+---
+[ Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Những cánh đồng lúa uốn lượn ở Chiềng Mai (Thái Lan), Mù Cang Chải và Sa Pa (Việt Nam), Ba-li (In-đô-nê-xi-a), Ba-na-uê (Phi-líp-pin) được bình chọn là nằm trong số các địa danh có ruộng bậc thang đẹp nhất thế giới. Đó cũng là hình ảnh quen thuộc thường thấy ở đa số các quốc gia Đông Nam Á, là đặc trưng của một nền văn minh nông nghiệp trồng lúa nước phát triển lâu đời.
+
+[Hình ảnh mô tả ruộng bậc thang xanh mướt với nhiều tầng lớp uốn lượn theo địa hình đồi núi. Có một dòng suối nhỏ chảy qua giữa cánh đồng.]
+
+Hình 10.1. Ruộng bậc thang Ba-na-uê (Phi-líp-pin)
+
+Vậy văn minh Đông Nam Á được hình thành trên những cơ sở nào? Các yếu tố văn hóa bên ngoài như Ấn Độ, Trung Hoa có tác động như thế nào tới sự hình thành và phát triển của văn minh Đông Nam Á thời kì cổ - trung đại?
+
+<!-- chunk 218 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 10
+section_id: "3"
+section_name: Mục 1 Cơ sở tự nhiên
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_218
+---
+[ Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+1. Cơ sở tự nhiên
+1.1. Vị trí địa lí
+
+Đông Nam Á nằm ở phía đông nam của châu Á, gồm hai bộ phận là Đông Nam Á lục địa và Đông Nam Á hải đảo. Khu vực này được coi là cầu nối giữa Ấn Độ Dương với Thái Bình Dương, lục địa Á - Âu với châu Úc, là nơi giao thoa giữa các nền văn hoá lớn.
+
+[Hình ảnh: Bản đồ tự nhiên khu vực Đông Nam Á ngày nay. Bản đồ thể hiện địa hình, đường bờ biển, các quốc gia và vùng biển của khu vực Đông Nam Á. Bao gồm cả phần lục địa và hải đảo, với các nước như Việt Nam, Thái Lan, Indonesia, Philippines, Malaysia, v.v. Bản đồ có chú thích về độ cao địa hình và các ký hiệu địa lý khác.]
+
+<!-- chunk 219 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 10
+section_id: "4"
+section_name: Mục 1 Cơ sở tự nhiên
+sub_type: 
+sub_id: " "
+sub_name: Điều kiện tự nhiên
+has_table: false
+chunk_id: ls_219
+---
+[ Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+1.2. Điều kiện tự nhiên
+
+Địa hình Đông Nam Á bao gồm hệ thống núi, cao nguyên, thung lũng, đồng bằng, xen kẽ với đảo, quần đảo,... Sự chia cắt giữa lục địa với hải đảo, giữa các đảo và ngay trong lục địa đã tạo ra sự đa dạng của cảnh quan tự nhiên, môi trường sinh thái.
+
+Bên cạnh đó, phần lớn các quốc gia Đông Nam Á đều tiếp giáp biển nên có điều kiện thuận lợi để phát triển nghề đi biển và buôn bán đường biển. Biển cũng tạo ra đường giao thương cho các nước trong khu vực, đồng thời nối liền Đông Nam Á với các tuyến thương mại hàng hải quốc tế.
+
+<!-- chunk 220 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 10
+section_id: "5"
+section_name: Mục 1 Cơ sở tự nhiên
+sub_type: 
+sub_id: " "
+sub_name: Điều kiện tự nhiên
+has_table: false
+chunk_id: ls_220
+---
+[ Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Ma-lác-ca từng là một thương cảng tấp nập, thu hút nhiều tàu thuyền và thương nhân từ Trung Hoa, Ấn Độ, Ả Rập và châu Âu. Hiện nay, thành phố cổ Ma-lác-ca mang trong mình dấu ấn đa văn hoá trong đời sống, kiến trúc và tôn giáo, pha trộn nét văn hoá của Bồ Đào Nha, Hà Lan, Anh.
+
+Đông Nam Á có nhiều sông lớn như Mê Công, Sa-lu-en, I-ra-oa-đi, sông Hồng, Chao Pho-ray-a,... Các con sông này đã tạo nên những vùng đồng bằng châu thổ màu mỡ, phì nhiêu như đồng bằng sông Cửu Long (Việt Nam), đồng bằng Mê Nam (Thái Lan), đồng bằng I-ra-oa-đi (Mi-an-ma),... Đây là điều kiện thuận lợi cho sự phát triển của nghề nông trồng lúa nước.
+
+Hệ thống sông ngòi còn đóng vai trò là những tuyến đường giao thông huyết mạch, phục vụ cho sự quần cư, đi lại,... của cư dân Đông Nam Á.
+
+<!-- chunk 221 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 10
+section_id: "6"
+section_name: Mục 1 Cơ sở tự nhiên
+sub_type: 
+sub_id: " "
+sub_name: Điều kiện tự nhiên
+has_table: false
+chunk_id: ls_221
+---
+[ Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Đông Nam Á nằm trong khu vực khí hậu nhiệt đới ẩm gió mùa điển hình với đặc trưng chung là nóng ẩm, mưa nhiều. Điều này đã tạo cho khu vực Đông Nam Á những đặc điểm tự nhiên khác với các nước cùng vĩ độ.
+
+Gió mùa và khí hậu biển đã làm cho những địa điểm như Hà Nội, Man-đa-lay, Côn-ka-ta đáng lẽ có thể khô cằn lại trở nên xanh tốt và trù phú; hoặc làm cho những khu vực xích đạo đáng lẽ "chỉ có rừng cây rậm rạp, dân cư thưa vắng và lạc hậu" như trong sách giáo khoa Địa lí phổ thông thường nói về châu Phi xích đạo, thì lại có những đô thị đông đúc và thịnh vượng như Cua-la Lăm-pơ, Xin-ga-po, Gia-các-ta,...
+
+(Đông Nam Á - Lịch sử từ nguyên thuỷ đến ngày nay, Lương Ninh (Chủ biên))
+
+<!-- chunk 222 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 10
+section_id: "7"
+section_name: Mục 1 Cơ sở tự nhiên
+sub_type: 
+sub_id: " "
+sub_name: Điều kiện tự nhiên
+has_table: false
+chunk_id: ls_222
+---
+[ Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Hình 10.2. Một góc thành phố Ma-lác-ca (Ma-lay-xi-a ngày nay)
+[Hình ảnh mô tả một góc nhìn panorama của thành phố Ma-lác-ca với tòa nhà Quốc hội có mái vòm màu đỏ nổi bật bên bờ sông. Cảnh quan thành phố hiện đại pha trộn với kiến trúc cổ, được bao quanh bởi màu sắc mùa thu ấm áp.]
+
+Hình 10.3. Một đoạn sông Mê Công trên lãnh thổ Việt Nam
+[Hình ảnh chụp từ trên cao một đoạn sông Mê Công uốn lượn qua vùng đồng bằng xanh tươi của Việt Nam. Hai bên bờ sông là những cánh đồng và khu vực canh tác nông nghiệp rộng lớn.]
+
+Đông Nam Á có nguồn tài nguyên thiên nhiên đa dạng, đặc biệt là sự phong phú của các loại khoáng sản, lâm sản, thổ sản,... Khu vực này cũng là xứ sở của những cây hương liệu, gia vị đặc trưng như trầm hương, quế, hồ tiêu,...
+
+Vị trí địa lí, điều kiện tự nhiên thuận lợi, nền kinh tế nông nghiệp trồng lúa nước và giao thương đường biển sớm phát triển đã tạo cơ sở cho sự ra đời của văn minh Đông Nam Á
+
+<!-- chunk 223 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 10
+section_id: "9"
+section_name: Mục 1 Cơ sở tự nhiên
+sub_type: 
+sub_id: " "
+sub_name: Điều kiện tự nhiên
+has_table: false
+chunk_id: ls_223
+---
+[ Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Đọc thông tin và quan sát bản đồ 10, các hình 10.2, 10.3, hãy:
+- Trình bày những nét chính về vị trí địa lí và điều kiện tự nhiên ở Đông Nam Á.
+- Phân tích những tác động của vị trí địa lí và điều kiện tự nhiên đối với sự hình thành văn minh Đông Nam Á.
+
+<!-- chunk 224 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 10
+section_id: "10"
+section_name: Mục 2 Cơ sở xã hội
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_224
+---
+[ Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+2. Cơ sở xã hội
+2.1. Cư dân, tộc người
+
+Cư dân Đông Nam Á được cho là kết quả của sự pha trộn giữa hai chủng tộc: Môn-gô-lô-ít và Ốt-xtra-lô-ít.
+
+[Hình minh họa về sự pha trộn của các chủng tộc ở Đông Nam Á]
+
+Sơ đồ 10. Khái quát sự hình thành tộc người ở Đông Nam Á
+
+Từ mối loại hình nhân chủng trên và sự pha trộn giữa các nhóm đã hình thành nên những tộc người khác nhau. Vì thế, thành phần tộc người ở Đông Nam Á rất phong phú, mỗi tộc người hay nhóm tộc người lại có những nét văn hóa khác nhau. Điểm chung là các quốc gia Đông Nam Á đều có mặt hầu hết các tộc người thuộc cả nhóm Nam Á và Anh-đô-nê-diêng.
+
+<!-- chunk 225 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 10
+section_id: "11"
+section_name: Mục 2 Cơ sở xã hội
+sub_type: 
+sub_id: " "
+sub_name: Tổ chức xã hội
+has_table: false
+chunk_id: ls_225
+---
+[ Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+2.2. Tổ chức xã hội
+
+Tổ chức xã hội cơ bản của cư dân Đông Nam Á là làng (với tên gọi khác nhau ở mỗi vùng, miền). Làng có vai trò tạo dựng nên các cộng đồng cư dân có quan hệ gắn gũi với nhau, cùng đoàn kết để chinh phục thiên nhiên và chống ngoại xâm. Chính sự phát triển của các cộng đồng cư dân này đã chuẩn bị cho sự ra đời của văn minh Đông Nam Á.
+
+<!-- chunk 226 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 10
+section_id: "12"
+section_name: Mục 2 Cơ sở xã hội
+sub_type: 
+sub_id: " "
+sub_name: Tổ chức xã hội
+has_table: false
+chunk_id: ls_226
+---
+[ Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+? Đọc thông tin và quan sát sơ đồ 10, hình 10.4, hãy:
+- Nêu khái quát về cư dân, tộc người ở Đông Nam Á.
+- Cho biết những nét chính về tổ chức xã hội ở Đông Nam Á.
+
+Hình 10.4. Làng kan-cha-na-bu-ri (Thái Lan)
+
+[Hình ảnh mô tả một cảnh làng quê ven sông, có những ngôi nhà nhỏ và thuyền đậu bên bờ, xung quanh là cây cối xanh tươi và núi non xa xa]
+
+<!-- chunk 227 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 10
+section_id: "13"
+section_name: Mục 3 Ảnh hưởng của văn hoá Ấn Độ, Trung Hoa
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_227
+---
+[ Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+3. Ảnh hưởng của văn hoá Ấn Độ, Trung Hoa
+3.1. Ảnh hưởng của văn hoá Ấn Độ
+
+Từ khoảng đầu Công nguyên, cư dân Đông Nam Á đã có sự tiếp xúc, giao lưu với văn hoá Ấn Độ thông qua các thương nhân và nhà truyền đạo. Trên cơ sở gìn giữ nền văn hoá bản địa, cư dân Đông Nam Á đã tiếp nhận có chọn lọc và sáng tạo các giá trị mới từ văn hoá Ấn Độ, như tôn giáo, chữ viết, văn học, nghệ thuật, kiến trúc, lễ hội,...
+
+<!-- chunk 228 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 10
+section_id: "14"
+section_name: Mục 3 Ảnh hưởng của văn hoá Ấn Độ, Trung Hoa
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_228
+---
+[ Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Hin-đu giáo, Phật giáo từ Ấn Độ để lại dấu ấn sâu đậm trong cách thức tổ chức bộ máy nhà nước và đời sống tinh thần của nhiều quốc gia Đông Nam Á như Chăm-pa, Cam-pu-chia,... Chữ viết, văn học Ấn Độ có mặt ở hầu hết các quốc gia Đông Nam Á, đặc biệt là chữ Phan và tác phẩm Ra-ma-y-a-na. Trên cơ sở tác phẩm Ra-ma-y-a-na, nhiều quốc gia ở Đông Nam Á đã sáng tạo ra các tác phẩm của riêng mình như Riêm Kê (Cam-pu-chia), Ra-ma Khiên (Thái Lan), Pha Lắc Pha Lam (Lào), Ma-na-rao (Phi-líp-pin),...
+
+Hình 10.5. Bia Võ Cạnh (Việt Nam) - tấm bia cổ nhất bằng chữ Phạn ở Đông Nam Á
+
+[Hình ảnh mô tả một tấm bia đá cổ có khắc chữ]
+
+Hình 10.6. Đền Hin-đu giáo Pram-ba-nan (In-đô-nê-xi-a)
+
+[Hình ảnh mô tả một quần thể đền đài Hin-đu giáo với nhiều tháp cao và kiến trúc phức tạp]
+
+<!-- chunk 229 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 10
+section_id: "15"
+section_name: Mục 3 Ảnh hưởng của văn hoá Ấn Độ, Trung Hoa
+sub_type: 
+sub_id: " "
+sub_name: Ảnh hưởng của văn hoá Trung Hoa
+has_table: false
+chunk_id: ls_229
+---
+[ Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+3.2. Ảnh hưởng của văn hoá Trung Hoa
+
+Các quốc gia Đông Nam Á tiếp xúc với Trung Hoa từ những thế kỉ tiếp giáp Công nguyên. Sự bành trướng của các vương triều Trung Hoa xuống Đông Nam Á đã tạo ra sự tiếp xúc và giao thoa văn hoá. Nho giáo, Đạo giáo và nhiều học thuyết tư tưởng khác của Trung Hoa đã được truyền bá vào Đông Nam Á. Trong đó, Nho giáo có tác động tới tư tưởng trị nước của một số nhà nước quân chủ, tiêu biểu là Việt Nam.
+
+"Giao Châu bấy giờ là mảnh đất tương đối yên ổn, nhiều nhà nho Trung Hoa chạy sang nương náu và sáng tác học thuật,... Tình hình trên làm cho người Giao Châu dần dần làm quen với Nho giáo, rồi từ đó có sự thay đổi trong nhận thức, trong thái độ với Nho, từ phản ứng đến tiếp thu, từ xa lạ đến gần gũi,... ".
+
+<!-- chunk 230 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 10
+section_id: "16"
+section_name: Mục 3 Ảnh hưởng của văn hoá Ấn Độ, Trung Hoa
+sub_type: 
+sub_id: " "
+sub_name: Ảnh hưởng của văn hoá Trung Hoa
+has_table: false
+chunk_id: ls_230
+---
+[ Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+(Lịch sử tư tưởng Việt Nam, tập 1, Nguyễn Tài Thư (Chủ biên))
+
+Ảnh hưởng của văn hoá Trung Hoa còn được thể hiện trên nhiều lĩnh vực đời sống xã hội của cư dân Đông Nam Á như ngôn ngữ, văn học, ẩm thực, trang phục, kiến trúc,...
+
+[Hình ảnh mô tả một ngôi đền có kiến trúc Trung Hoa với mái cong nhiều tầng, cột đỏ và trang trí màu sắc rực rỡ]
+
+Hình 10.7. Đền Thiên Hậu (Ma-lay-xi-a) — ngôi đền có sự kết hợp các yếu tố Phật giáo, Đạo giáo và Nho giáo
+
+Việc tiếp xúc với văn hoá Ấn Độ, Trung Hoa đã thúc đẩy sự ra đời của nhiều quốc gia sơ kì ở Đông Nam Á, tạo nên bước chuyển biến quan trọng trong tiến trình lịch sử khu vực này
+
+Trên cơ sở tự nhiên và xã hội, nhu cầu có kết của cộng đồng cư dân và ảnh hưởng của những yếu tố văn hoá từ Ấn Độ, Trung Hoa, từ khoảng đầu Công nguyên, cư dân Đông Nam Á đã bước vào kỉ nguyên có nhà nước, đánh dấu sự ra đời của văn minh.
+
+<!-- chunk 231 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 10
+section_id: "18"
+section_name: Mục 3 Ảnh hưởng của văn hoá Ấn Độ, Trung Hoa
+sub_type: 
+sub_id: " "
+sub_name: Ảnh hưởng của văn hoá Trung Hoa
+has_table: false
+chunk_id: ls_231
+---
+[ Bài 10: CƠ SỞ HÌNH THÀNH VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Đọc thông tin và quan sát các hình từ 10.5 đến 10.7, hãy nêu và phân tích những ảnh hưởng của văn hoá Ấn Độ và Trung Hoa đối với văn minh Đông Nam Á.
+
+1. Văn minh Đông Nam Á được hình thành trên những cơ sở nào?
+
+2. Hãy lựa chọn và phân tích một trong các yếu tố của văn hoá Ấn Độ hoặc Trung Hoa có ảnh hưởng đến văn minh Đông Nam Á.
+
+3. Sưu tầm tranh ảnh và tư liệu về một số thành tựu văn minh Đông Nam Á tiêu biểu chịu ảnh hưởng của văn hoá Ấn Độ, Trung Hoa còn tồn tại đến ngày nay.
+
+<!-- chunk 232 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "19"
+section_name: Mục tiêu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_232
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Học xong bài này, em sẽ:
+- Trình bày được các giai đoạn phát triển của văn minh Đông Nam Á thời kì cổ - trung đại trên đường thời gian.
+- Nêu được một số thành tựu tiêu biểu của văn minh Đông Nam Á thời kì cổ - trung đại.
+- Biết cách sưu tầm và sử dụng một số tư liệu để tìm hiểu về lịch sử văn minh Đông Nam Á thời kì cổ - trung đại.
+- Biết trân trọng giá trị trường tồn của các di sản văn minh Đông Nam Á thời kì cổ - trung đại, tham gia bảo tồn các di sản văn minh ở Đông Nam Á nói chung và ở Việt Nam nói riêng.
+
+<!-- chunk 233 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "20"
+section_name: Mô tả bài
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_233
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Khu đền Ăng-co Vát được coi là công trình kiến trúc mang tính biểu tượng, ghi dấu một thời hoàng kim của Vương quốc Cam-pu-chia thời Ăng-co (802 - 1432). Vương quốc Cam-pu-chia cùng với các quốc gia khác trong khu vực đã tạo dựng nên một hành trình văn minh Đông Nam Á phát triển liên tục qua nhiều giai đoạn và đạt những thành tựu rực rỡ.
+
+Vậy hành trình phát triển của văn minh Đông Nam Á diễn ra như thế nào? Trong quá trình đó, văn minh Đông Nam Á đã đạt được những thành tựu tiêu biểu gì?
+
+[Hình ảnh mô tả khu đền Ăng-co Vát (Cam-pu-chia) với các tháp đền lớn phản chiếu trên mặt nước, dưới bầu trời xanh và hoàng hôn.]
+
+Hình 11.1. Khu đền Ăng-co Vát (Cam-pu-chia)
+
+<!-- chunk 234 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "21"
+section_name: Mục 1 Hành trình phát triển của văn minh Đông Nam Á
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_234
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+1. Hành trình phát triển của văn minh Đông Nam Á
+
+Hành trình phát triển của văn minh Đông Nam Á gắn liền với các giai đoạn phát triển của lịch sử khu vực, có thể chia thành ba giai đoạn: từ đầu Công nguyên đến thế kỉ X, từ thế kỉ X đến thế kỉ XV, từ thế kỉ XVI đến thế kỉ XIX.
+
+1.1. Từ đầu Công nguyên đến thế kỉ X
+
+Từ đầu Công nguyên đến thế kỉ VII, trên nền tảng của văn hoá bản địa với kĩ nghệ sắt khá phát triển và những ảnh hưởng của văn hoá Ấn Độ, Trung Hoa, ở Đông Nam Á đã hình thành một số quốc gia như Phù Nam, Chăm-pa, Ta-ru-ma, Ma-lay-u, Ha-ri-pun-giay-a,... trong đó lớn mạnh nhất là Phù Nam.
+
+[Hình ảnh mô tả một di tích cổ với các tòa tháp bằng gạch đá cổ xưa trong một khu vực có cây cối xanh tươi]
+
+<!-- chunk 235 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "22"
+section_name: Mục 1 Hành trình phát triển của văn minh Đông Nam Á
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_235
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Hình 11.2. Di tích Trà Kiệu - kinh đô cũa Vương quốc Chăm-pa (Quảng Nam, Việt Nam)
+
+Từ thế kỉ VII đến thế kỉ X, sau khi Phù Nam suy yếu, khu vực Đông Nam Á hình thành thêm một số quốc gia mới, bên cạnh đó là một số quốc gia nhỏ trước đây bị thôn tính hoặc hợp nhất lại với nhau thành những nước lớn hơn, tiêu biểu là Ăng-co, Sri Vi-giay-a.
+
+Sự ra đời và bước đầu phát triển của các nhà nước là thành tựu văn minh nổi bật nhất trong giai đoạn này.
+
+<!-- chunk 236 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "23"
+section_name: Mục 1 Hành trình phát triển của văn minh Đông Nam Á
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_236
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+? Đọc thông tin và quan sát hình 11.2, hãy trình bày sự phát triển của văn minh Đông Nam Á từ đầu Công nguyên đến thế kỉ X.
+
+<!-- chunk 237 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "24"
+section_name: Mục 1 Hành trình phát triển của văn minh Đông Nam Á
+sub_type: 
+sub_id: " "
+sub_name: Từ thế kỉ X đến thế kỉ XV
+has_table: false
+chunk_id: ls_237
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+1.2. Từ thế kỉ X đến thế kỉ XV
+
+Đây là giai đoạn hình thành những quốc gia thống nhất và lớn mạnh ở Đông Nam Á như Đại Việt, Ăng-co, Chăm-pa, Pa-gan, Lan Xang, Su-khô-thay, A-giút-thay-a, Ma-gia-pa-hít,...
+
+[Hình ảnh mô tả một thành phố cổ với nhiều ngôi đền và tháp màu vàng nổi bật trên nền trời xanh và núi non xa xa]
+
+Hình 11.3. Thành cổ Pa-gan (Mi-an-ma)
+
+Vương quốc Pa-gan tồn tại trong khoảng thế kỉ X - XIII, từng là một vương quốc thịnh vượng ở Đông Nam Á. Các quốc vương của Pa-gan rất tôn sùng Phật giáo nên đã cho xây dựng khoảng 5 000 ngôi chùa, tháp dọc theo bờ sông I-ra-oa-đi. Hiện nay, thành cổ Pa-gan còn lại di tích của gần 2 000 ngôi chùa, tháp.
+
+<!-- chunk 238 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "25"
+section_name: Mục 1 Hành trình phát triển của văn minh Đông Nam Á
+sub_type: 
+sub_id: " "
+sub_name: Từ thế kỉ X đến thế kỉ XV
+has_table: false
+chunk_id: ls_238
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Sự hoàn thiện của các nhà nước quân chủ với nền kinh tế phát triển thịnh đạt và xã hội ổn định đã đưa văn minh Đông Nam Á bước vào giai đoạn phát triển rực rỡ. Trong giai đoạn này, văn minh Đông Nam Á đã định hình bản sắc với những thành tựu đặc sắc và sáng tạo trên cơ sở tiếp thu có chọn lọc những ảnh hưởng của văn hoá Ấn Độ, Trung Hoa. Bên cạnh đó, sự xâm nhập và lan toả của Hồi giáo đã tạo nên những sắc thái mới cho văn minh Đông Nam Á.
+
+<!-- chunk 239 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "26"
+section_name: Mục 1 Hành trình phát triển của văn minh Đông Nam Á
+sub_type: 
+sub_id: " "
+sub_name: Từ thế kỉ X đến thế kỉ XV
+has_table: false
+chunk_id: ls_239
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+? Đọc thông tin và quan sát hình 11.3, hãy trình bày sự phát triển của văn minh Đông Nam Á từ thế kỉ X đến thế kỉ XV.
+
+<!-- chunk 240 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "27"
+section_name: Mục 1 Hành trình phát triển của văn minh Đông Nam Á
+sub_type: 
+sub_id: " "
+sub_name: Từ thế kỉ XVI đến thế kỉ XIX
+has_table: false
+chunk_id: ls_240
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+1.3. Từ thế kỉ XVI đến thế kỉ XIX
+
+Đây là giai đoạn khủng hoảng và suy vong của nhiều quốc gia phong kiến Đông Nam Á, gắn liền với quá trình xâm nhập của các nước phương Tây, khởi đầu bằng sự kiện Bồ Đào Nha đánh chiếm Ma-lắc-ca (1511).
+
+[Hình ảnh mô tả một buổi lễ tôn giáo với nhiều người tham dự, có cây thánh giá và cờ hiệu]
+
+Hình 11.4. Thánh lễ Thiên Chúa giáo đầu tiên ở Phi-líp-pin (tranh vẽ)
+
+Thánh lễ Thiên Chúa giáo đầu tiên diễn ra ở Phi-líp-pin vào ngày 31-3-1521 tại thị trấn Li-ma-xa-oa, tỉnh Nam Lây-tê, do hạm đội tàu của Phéc-đi-năng Ma-giên-lăng cử hành. Sự kiện này đã đánh dấu việc Thiên Chúa giáo lần đầu tiên xuất hiện ở Phi-líp-pin và cũng là thánh lễ đầu tiên ở Đông Nam Á.
+
+<!-- chunk 241 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "28"
+section_name: Mục 1 Hành trình phát triển của văn minh Đông Nam Á
+sub_type: 
+sub_id: " "
+sub_name: Từ thế kỉ XVI đến thế kỉ XIX
+has_table: false
+chunk_id: ls_241
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Sự du nhập văn hoá phương Tây cũng đem đến cho Đông Nam Á nhiều yếu tố văn hoá mới, như tôn giáo, ngôn ngữ, các hình thức văn hoá vật chất, tư tưởng nhân văn,... Văn minh Đông Nam Á trong giai đoạn này tiếp tục phát triển và đạt nhiều thành tựu quan trọng, đặc biệt là văn học, nghệ thuật.
+
+Với sự xâm nhập của văn hoá phương Tây, một số ngôn ngữ mới đã du nhập vào Đông Nam Á, như tiếng Anh, tiếng Pháp, tiếng Tây Ban Nha,... và được một bộ phận cư dân sử dụng. Ở Việt Nam, chữ Quốc ngữ cũng xuất hiện. Những ngôn ngữ này có vai trò đặc biệt quan trọng trong việc thúc đẩy quá trình giao lưu, tiếp biến văn hoá giữa phương Tây với Đông Nam Á.
+
+<!-- chunk 242 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "29"
+section_name: Mục 1 Hành trình phát triển của văn minh Đông Nam Á
+sub_type: 
+sub_id: " "
+sub_name: Từ thế kỉ XVI đến thế kỉ XIX
+has_table: false
+chunk_id: ls_242
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Đọc thông tin và quan sát hình 11.4, hãy cho biết trong giai đoạn từ thế kỉ XVI đến thế kỉ XIX, văn minh Đông Nam Á đã tiếp nhận những yếu tố mới nào từ phương Tây.
+
+<!-- chunk 243 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "30"
+section_name: Mục 2 Một số thành tựu tiêu biểu của văn minh Đông Nam Á thời kì cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_243
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+2. Một số thành tựu tiêu biểu của văn minh Đông Nam Á thời kì cổ - trung đại
+2.1. Tín ngưỡng và tôn giáo
+
+Tín ngưỡng
+
+Trên cơ sở văn minh nông nghiệp trồng lúa nước, trong điều kiện địa lí tự nhiên tương đồng, cư dân Đông Nam Á có chung nhiều tín ngưỡng bản địa, như tín ngưỡng thờ cúng tổ tiên, thờ thần tự nhiên, thờ thần động vật,...
+
+[Hình ảnh minh họa lễ Ba-xi đề chúc phúc, cầu may ở Lào với nhiều người ngồi quanh một bàn thờ nhỏ có cắm nến]
+
+Hình 11.5. Lễ Ba-xi để chúc phúc, cầu may ở Lào (tranh vẽ)
+
+Theo quan niệm của người Lào, trong thế giới vô hình mà con người cảm thấy được, có vô vàn những phi (ma): phi rừng, phi núi, phi lửa,... Người Xa-cu-đai (In-đô-nê-xi-a) tin rằng mọi vật đều có linh hồn. Người Thái gọi những lực lượng siêu nhiên, thần bí bằng cái tên chung là phi: phi lửa, phi núi, phi bệnh,...
+
+<!-- chunk 244 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "31"
+section_name: Mục 2 Một số thành tựu tiêu biểu của văn minh Đông Nam Á thời kì cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_244
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Tôn giáo
+
+Đông Nam Á là nơi hội tụ các tôn giáo lớn trên thế giới là Phật giáo, Hin-du giáo, Hồi giáo và Thiên Chúa giáo. Đó cũng là những tôn giáo có ảnh hưởng sâu rộng tới đời sống của cư dân trong khu vực, nhưng mức độ ảnh hưởng có sự khác biệt giữa các quốc gia.
+
+[Hình ảnh một thánh đường Hồi giáo màu trắng với mái vòm màu đen, phía trước có hồ nước]
+
+Hình 11.6. Thánh đường Bai-tu-ra-man (In-đô-nê-xi-a)
+
+Cư dân Đông Nam Á chủ yếu tiếp thu Phật giáo và Hin-du giáo từ Ấn Độ thông qua con đường thương mại và truyền giáo từ những thế kỉ tiếp giáp Công nguyên. Riêng người Việt chủ yếu tiếp nhận hệ tư tưởng Nho giáo và các tôn giáo từ Trung Hoa. Trong các thế kỉ sau đó, Hồi giáo và Thiên Chúa giáo cũng được lan truyền tới Đông Nam Á. Một số tôn giáo đã trở thành quốc giáo ở các quốc gia Đông Nam Á trong thời gian dài.
+
+<!-- chunk 245 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "32"
+section_name: Mục 2 Một số thành tựu tiêu biểu của văn minh Đông Nam Á thời kì cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_245
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+? Đọc thông tin và quan sát các hình 11.5, 11.6, hãy:
+- Nêu các hình thức tín ngưỡng dân gian của cư dân Đông Nam Á.
+- Kể tên những tôn giáo phổ biến ở các quốc gia Đông Nam Á. Vì sao các tôn giáo này lại được đông đảo cư dân Đông Nam Á đón nhận?
+
+<!-- chunk 246 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "33"
+section_name: Mục 2 Một số thành tựu tiêu biểu của văn minh Đông Nam Á thời kì cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Văn tự và văn học
+has_table: false
+chunk_id: ls_246
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+2.2. Văn tự và văn học
+
+Văn tự
+
+Tiếp thu hệ thống chữ viết của Ấn Độ, cư dân Đông Nam Á đã sáng tạo ra chữ viết riêng, như chữ viết của người Chăm, người Khơ-me, người Thái, người Môn, người Mã Lai,... Riêng người Việt tiếp thu một phần hệ thống chữ Hán của Trung Hoa và sáng tạo ra chữ Nôm. Chữ Hán và chữ Nôm được sử dụng rộng rãi trong một thời gian dài trước khi chữ Quốc ngữ ra đời ở Việt Nam.
+
+Người Chăm sáng tạo ra chữ Chăm cổ vào đầu thế kỉ IV. Tiếp đó, người Khơ-me tiếp thu chữ Phan để tạo ra chữ Khơ-me cổ vào thế kỉ VII. Người Mã Lai tạo ra chữ Mã Lai cổ vào khoảng thế kỉ IX. Chữ Thái cổ được ghi lại đầu tiên trên tấm bia đá của vua Ram Khăm-heng vào cuối thế kỉ XIII.
+
+<!-- chunk 247 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "34"
+section_name: Mục 2 Một số thành tựu tiêu biểu của văn minh Đông Nam Á thời kì cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Văn tự và văn học
+has_table: false
+chunk_id: ls_247
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Văn học
+
+Đông Nam Á có một kho tàng văn học dân gian rất phong phú với nhiều thể loại như truyện thuyết, sử thi, truyện cổ tích, truyện thơ, ca dao, tục ngữ,... Những tác phẩm tiêu biểu là sử thi Đẻ đất đẻ nước (Việt Nam), truyện thuyết Po-rắc Thon (Cam-pu-chia), thần thoại Pun-ho Nhan-ho (Lào),...
+
+Văn học viết ở Đông Nam Á ra đời khá muộn. Từ khoảng thế kỉ X - XIII, nhiều quốc gia Đông Nam Á mới xuất hiện nền văn học viết. Một số tác phẩm tiêu biểu là Truyện Kiều (Việt Nam), Truyện sư Me-lay-u (Ma-lay-xi-a),...
+
+<!-- chunk 248 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "35"
+section_name: Mục 2 Một số thành tựu tiêu biểu của văn minh Đông Nam Á thời kì cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Văn tự và văn học
+has_table: false
+chunk_id: ls_248
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Văn học Đông Nam Á chịu ảnh hưởng sâu sắc của văn học Ấn Độ, Trung Hoa, Ả Rập và phương Tây. Các sáng tác văn học của Cam-pu-chia được viết bằng chữ Phan và chữ Khơ-me cổ trên các văn bia và có sử dụng nhiều điển tích Hin-đu giáo. Văn học Việt Nam thời quân chủ chịu ảnh hưởng của văn học Trung Hoa cả về hình thức và nội dung, trong khi văn học In-đô-nê-xi-a và Ma-lay-xi-a chịu ảnh hưởng của văn học Ả Rập và phương Tây.
+
+<!-- chunk 249 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "36"
+section_name: Mục 2 Một số thành tựu tiêu biểu của văn minh Đông Nam Á thời kì cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Văn tự và văn học
+has_table: false
+chunk_id: ls_249
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Đọc thông tin và quan sát hình 11.7, hãy nêu những thành tựu về văn tự và văn học Đông Nam Á.
+
+<!-- chunk 250 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "37"
+section_name: Mục 2 Một số thành tựu tiêu biểu của văn minh Đông Nam Á thời kì cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Kiến trúc và điêu khắc
+has_table: false
+chunk_id: ls_250
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+2.3. Kiến trúc và điêu khắc
+Kiến trúc
+
+Nghệ thuật kiến trúc ở Đông Nam Á phát triển mạnh và đạt nhiều thành tựu ở cả ba dòng kiến trúc: dân gian, tôn giáo và cung đình.
+
+Trong kiến trúc dân gian, nhà sàn được coi là một biểu tượng văn hoá thích hợp với điều kiện khí hậu nóng ẩm ở các địa hình khác nhau của cư dân Đông Nam Á.
+
+Kiến trúc tôn giáo đa dạng với hệ thống chùa, tháp, đền, miếu, lăng mộ, thành đường, nhà thờ. Chịu ảnh hưởng của nhiều loại hình kiến trúc du nhập từ bên ngoài, kiến trúc tôn giáo Đông Nam Á phổ biến với các công trình kiến trúc Hin-đu giáo, Phật giáo, Hồi giáo và Thiên Chúa giáo.
+
+[Hình 11.7. Tấm bia của vua Ram Khăm-heng (Thái Lan)]
+
+Kiến trúc cung đình điển hình là hệ thống cung điện tại các kinh đô, tiêu biểu như Thăng Long (Việt Nam), A-giút-thay-a (Thái Lan), Luông Pha-băng (Lào), Phnôm-pênh (Cam-pu-chia),...
+
+<!-- chunk 251 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "38"
+section_name: Mục 2 Một số thành tựu tiêu biểu của văn minh Đông Nam Á thời kì cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Kiến trúc và điêu khắc
+has_table: false
+chunk_id: ls_251
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+A-giút-thay-a được vua U-thong xây dựng làm kinh đô vào năm 1350. Vào thời kì cực thịnh, A-giút-thay-a được coi là một "thành phố vĩ đại" với hoàng cung rộng lớn, hơn 300 ngôi chùa và những tháp đất vàng cùng hàng ngàn bức tượng điêu khắc. Di tích này nằm bên bờ sông Chao Phơ-ray-a và là biểu tượng của một đô thị thịnh vượng bậc nhất Đông Nam Á.
+
+[Hình ảnh mô tả: Một quần thể kiến trúc cổ với nhiều tháp và đền thờ có kiến trúc đặc trưng của Thái Lan, được xây dựng bằng gạch đá với màu nâu đỏ, nổi bật trên nền cỏ xanh và bầu trời xanh.]
+
+Hình 11.8. Cố đô A-giút-thay-a (Thái Lan)
+
+<!-- chunk 252 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "39"
+section_name: Mục 2 Một số thành tựu tiêu biểu của văn minh Đông Nam Á thời kì cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Kiến trúc và điêu khắc
+has_table: false
+chunk_id: ls_252
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Điêu khắc
+
+Nghệ thuật điêu khắc Đông Nam Á đạt đến trình độ cao với nhiều tác phẩm được chạm khắc công phu, độc đáo và chịu ảnh hưởng rõ nét của điêu khắc Ấn Độ, Trung Hoa. Phổ biến là các tác phẩm điêu khắc mang tính chất tôn giáo, như tượng thần, tượng Phật và phù điêu.
+
+[Hình ảnh mô tả: Một công trình kiến trúc cổ đại với nhiều khuôn mặt được chạm khắc trên đá, nổi bật là một khuôn mặt lớn ở trung tâm với nụ cười bí ẩn, được bao quanh bởi các cấu trúc đá phức tạp.]
+
+Hình 11.9. Tượng thần ở đền Bay-on (Cam-pu-chia)
+
+Những pho tượng cổ niên đại sớm ở Đông Nam Á là tượng Phật, tượng Vit-xnu ở Phù Nam. Từ đầu thiên niên kỉ II, nghệ thuật điêu khắc Đông Nam Á gắn với các trung tâm kiến trúc kì vĩ, như khu đền Ăng-co (Cam-pu-chia); quần thể chùa, tháp Pa-gan (Mi-an-ma); kinh đô A-giút-thay-a (Thái Lan); Thạt Luông (Lào),...
+
+<!-- chunk 253 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 5
+chapter_name: CHỦ ĐỀ 5 VĂN MINH ĐÔNG NAM Á
+lesson: Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI
+id_lesson: 11
+section_id: "40"
+section_name: Mục 2 Một số thành tựu tiêu biểu của văn minh Đông Nam Á thời kì cổ - trung đại
+sub_type: 
+sub_id: " "
+sub_name: Kiến trúc và điêu khắc
+has_table: false
+chunk_id: ls_253
+---
+[ Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU CỦA VĂN MINH ĐÔNG NAM Á THỜI KÌ CỔ - TRUNG ĐẠI ]
+
+Đọc thông tin và quan sát các hình 11.8, 11.9, hãy nêu thành tựu chủ yếu của kiến trúc, điêu khắc ở Đông Nam Á.
+
+1. Hãy thể hiện trên trục thời gian các giai đoạn phát triển của văn minh Đông Nam Á từ đầu Công nguyên đến thế kỉ XIX.
+
+2. Vẽ sơ đồ tư duy thể hiện các thành tựu tiêu biểu của văn minh Đông Nam Á thời kì cổ - trung đại.
+
+3. Sưu tầm tranh ảnh, tư liệu về các công trình kiến trúc Đông Nam Á và phân loại theo ba dòng: kiến trúc dân gian, kiến trúc tôn giáo, kiến trúc cung đình.
+
+<!-- chunk 254 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 12: VĂN MINH VĂN LANG – ÂU LẠC
+id_lesson: 12
+section_id: "1"
+section_name: Mục tiêu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_254
+---
+[ Bài 12: VĂN MINH VĂN LANG – ÂU LẠC ]
+
+Học xong bài này, em sẽ:
+- Nêu được cơ sở hình thành văn minh Văn Lang – Âu Lạc.
+- Nêu được những thành tựu tiêu biểu của văn minh Văn Lang – Âu Lạc.
+- Biết cách sưu tầm và sử dụng tư liệu lịch sử để tìm hiểu về văn minh Văn Lang – Âu Lạc.
+- Biết vận dụng hiểu biết về nền văn minh Văn Lang – Âu Lạc để giới thiệu về đất nước, con người Việt Nam.
+- Nhận thức được giá trị trường tồn của nền văn minh Văn Lang – Âu Lạc.
+- Có ý thức trân trọng và có trách nhiệm góp phần bảo tồn các di sản văn hóa của dân tộc.
+
+<!-- chunk 255 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 12: VĂN MINH VĂN LANG – ÂU LẠC
+id_lesson: 12
+section_id: "2"
+section_name: Mô tả bài
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_255
+---
+[ Bài 12: VĂN MINH VĂN LANG – ÂU LẠC ]
+
+Năm 1893, trong một lần đào đê, người dân đã phát hiện ra một chiếc trống đồng và đưa về thờ tại đình làng Ngọc Lũ (Hà Nam). Hiện nay trống đồng Ngọc Lũ được lưu giữ tại Bảo tàng Lịch sử Quốc gia. Trống đồng Ngọc Lũ thuộc nền văn hóa Đông Sơn, là một trong những biểu tượng của nền văn minh Văn Lang – Âu Lạc.
+
+Vậy cơ sở hình thành và những thành tựu tiêu biểu của nền văn minh Văn Lang – Âu Lạc là gì?
+
+[Hình 12.1. Trống đồng Ngọc Lũ (Hà Nam)]
+
+<!-- chunk 256 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 12: VĂN MINH VĂN LANG – ÂU LẠC
+id_lesson: 12
+section_id: "3"
+section_name: Mục 1 Cơ sở hình thành
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_256
+---
+[ Bài 12: VĂN MINH VĂN LANG – ÂU LẠC ]
+
+1. Cơ sở hình thành
+1.1. Điều kiện tự nhiên
+Văn minh Văn Lang – Âu Lạc hình thành chủ yếu trên phạm vi lưu vực sông Hồng, sông Mã, sông Cả (Bắc Bộ và Bắc Trung Bộ Việt Nam ngày nay). Phía bắc tiếp giáp với Trung Hoa, phía đông giáp biển, đây là những yếu tố vị trí địa lí thuận đẩy sự giao lưu, tiếp xúc của cư dân Việt cổ với các nền văn minh khác.
+
+Hệ thống sông Hồng, sông Mã, sông Cả đã bồi đắp phù sa, hình thành các vùng đồng bằng màu mỡ, tạo điều kiện thuận lợi để cư dân sớm định cư trong các xóm làng. Người Việt cổ trở thành chủ nhân của nền văn minh Văn Lang – Âu Lạc.
+
+<!-- chunk 257 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 12: VĂN MINH VĂN LANG – ÂU LẠC
+id_lesson: 12
+section_id: "4"
+section_name: Mục 1 Cơ sở hình thành
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_257
+---
+[ Bài 12: VĂN MINH VĂN LANG – ÂU LẠC ]
+
+Văn minh Văn Lang – Âu Lạc hình thành trong khu vực chịu ảnh hưởng của khí hậu nhiệt đới ẩm gió mùa. Lượng ánh sáng Mặt Trời lớn và lượng mưa nhiều là yếu tố thuận lợi để cư dân trồng trọt, chăn nuôi; bảo đảm nguồn thức ăn đa dạng. Nguồn tài nguyên khoáng sản phong phú (sắt, đồng, chì, thiếc,...) là cơ sở để cư dân chế tác các loại hình công cụ lao động trong sản xuất và đồ dùng trong sinh hoạt hằng ngày.
+
+Văn minh Văn Lang - Âu Lạc còn gọi là văn minh sông Hồng hoặc văn minh Việt cổ, ra đời vào khoảng thế kỉ VII TCN, gắn liền với sự phát triển của văn hoá Đông Sơn và sự ra đời của nước Văn Lang - Âu Lạc.
+
+[Hình ảnh bản đồ miền Bắc Việt Nam và một phần Trung Quốc, với chú thích về thủ đô ngày nay, sông và biên giới quốc gia ngày nay]
+
+Lược đồ 12. Lưu vực sông Hồng, sông Mã, sông Cả (Bắc Bộ, Bắc Trung Bộ Việt Nam ngày nay)
+
+<!-- chunk 258 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 12: VĂN MINH VĂN LANG – ÂU LẠC
+id_lesson: 12
+section_id: "6"
+section_name: Mục 1 Cơ sở hình thành
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_258
+---
+[ Bài 12: VĂN MINH VĂN LANG – ÂU LẠC ]
+
+Đọc thông tin và quan sát lược đồ 12, hãy nêu cơ sở về điều kiện tự nhiên hình thành nền văn minh Văn Lang - Âu Lạc.
+
+<!-- chunk 259 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 12: VĂN MINH VĂN LANG – ÂU LẠC
+id_lesson: 12
+section_id: "7"
+section_name: Mục 1 Cơ sở hình thành
+sub_type: 
+sub_id: " "
+sub_name: Cơ sở xã hội
+has_table: false
+chunk_id: ls_259
+---
+[ Bài 12: VĂN MINH VĂN LANG – ÂU LẠC ]
+
+1.2. Cơ sở xã hội
+
+Nền kinh tế nông nghiệp chuyển từ dùng cuốc sang dùng cày đã góp phần làm tăng hiệu quả sản xuất, tạo ra nhiều của cải dư thừa, từ đó xuất hiện sự phân hoá giữa các tầng lớp xã hội: tầng lớp quý tộc, nông dân tự do, nô tì. Quý tộc là những người giàu, có thế lực. Nông dân tự do sinh sống trong các công xã nông thôn và chiếm đại đa số dân cư. Nô tì là tầng lớp thấp nhất trong xã hội, chủ yếu phục vụ trong gia đình quý tộc.
+
+Quá trình giao lưu, trao đổi sản phẩm đã hình thành mối liên kết giữa các cộng đồng cư dân Việt cổ. Cư dân đoàn kết chống ngoại xâm và đắp đê, trị thuỷ, khai hoang mở rộng địa bàn cư trú. Từ đó thúc đẩy sự ra đời của nền văn minh Văn Lang - Âu Lạc.
+
+[Hình ảnh các lưỡi cày đồng từ văn hoá Đông Sơn]
+Hình 12.2. Lưỡi cày đồng (văn hoá Đông Sơn)
+
+[Hình ảnh tượng đồng hình trâu có người cưỡi]
+Hình 12.3. Tượng đồng hình trâu có người cưỡi (văn hoá Đông Sơn)
+
+<!-- chunk 260 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 12: VĂN MINH VĂN LANG – ÂU LẠC
+id_lesson: 12
+section_id: "9"
+section_name: Mục 1 Cơ sở hình thành
+sub_type: 
+sub_id: " "
+sub_name: Cơ sở xã hội
+has_table: false
+chunk_id: ls_260
+---
+[ Bài 12: VĂN MINH VĂN LANG – ÂU LẠC ]
+
+Đọc thông tin và quan sát các hình 12.2, 12.3, hãy nêu cơ sở xã hội hình thành nền văn minh Văn Lang - Âu Lạc.
+
+<!-- chunk 261 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 12: VĂN MINH VĂN LANG – ÂU LẠC
+id_lesson: 12
+section_id: "10"
+section_name: Mục 2 Những thành tựu tiêu biểu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_261
+---
+[ Bài 12: VĂN MINH VĂN LANG – ÂU LẠC ]
+
+2. Những thành tựu tiêu biểu
+2.1. Đời sống vật chất
+
+Nguồn lương thực, thực phẩm chủ yếu của cư dân bao gồm: gạo nếp, gạo tẻ, các loại rau, củ, quả, gia súc, gia cầm (gà, vịt,...) và các loại thủy sản (cá, tôm, cua,...).
+
+[Hình 12.4. Hoa tiết hoa văn người giã gạo và mái nhà trên mặt trống đồng Ngọc Lũ (Hà Nam)]
+
+[Hình 12.5. Hoa tiết hoa văn thuyền trên thạp đồng Đào Thịnh (Yên Bái)]
+
+Về trang phục, nam thường đóng khố, nữ mặc áo váy và đều đi chân đất. Vào dịp lễ hội, trang phục có thêm đồ trang sức như vòng, nhẫn, khuyên tai, mũ gắn lông vũ,... Nhà ở phổ biến là kiểu nhà sàn làm bằng gỗ, tre, nứa, lá. Phương thức di chuyển trên sông nước chủ yếu là dùng thuyền, bè.
+
+<!-- chunk 262 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 12: VĂN MINH VĂN LANG – ÂU LẠC
+id_lesson: 12
+section_id: "11"
+section_name: Mục 2 Những thành tựu tiêu biểu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_262
+---
+[ Bài 12: VĂN MINH VĂN LANG – ÂU LẠC ]
+
+"... hồi quốc sơ, dân không đủ đồ dùng, phải lấy vỏ cây làm áo, dệt cỏ gianh làm chiếu, lấy cỏi gạo làm rượu, lấy cây quang lang, cây tung lư làm cơm, lấy cám thiu, cá, ba ba làm mắm, lấy rễ gừng làm muối, cây bàng dao, trồng bàng lửa. Đất sản được nhiều gạo nếp, lấy ống tre mà thổi cơm, bắc gỗ làm nhà để tránh hổ sói. Cắt tóc ngắn để dễ đi lại trong rừng rú".
+
+(Lĩnh Nam chích quái, Trần Thế Pháp)
+
+<!-- chunk 263 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 12: VĂN MINH VĂN LANG – ÂU LẠC
+id_lesson: 12
+section_id: "12"
+section_name: Mục 2 Những thành tựu tiêu biểu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_263
+---
+[ Bài 12: VĂN MINH VĂN LANG – ÂU LẠC ]
+
+Đọc thông tin, tư liệu và quan sát các hình 12.4, 12.5, hãy nêu thành tựu tiêu biểu về đời sống vật chất của cư dân Văn Lang - Âu Lạc.
+
+<!-- chunk 264 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 12: VĂN MINH VĂN LANG – ÂU LẠC
+id_lesson: 12
+section_id: "13"
+section_name: Mục 2 Những thành tựu tiêu biểu
+sub_type: 
+sub_id: " "
+sub_name: Đời sống tinh thần
+has_table: false
+chunk_id: ls_264
+---
+[ Bài 12: VĂN MINH VĂN LANG – ÂU LẠC ]
+
+2.2. Đời sống tinh thần
+
+Chủ nhân của nền văn minh Văn Lang - Âu Lạc đạt đến trình độ thẩm mĩ và tư duy khá cao, thể hiện qua nghệ thuật điêu khắc, kĩ thuật luyện kim, kĩ thuật làm đồ gốm. Hoa văn trang trí trên đồ đồng, đồ gốm phản ánh sinh động cuộc sống của người Việt cổ.
+
+Ca múa, âm nhạc có vị trí quan trọng trong đời sống tinh thần của cư dân với các hoạt động ca múa giao duyên nam nữ cùng với loại nhạc cụ như trống đồng, chiêng, cồng, chuông,...
+
+Tín ngưỡng sùng bái các lực lượng tự nhiên thể hiện qua các nghi thức như: thờ thần Mặt Trời, thần núi, thần sông; thờ cúng tổ tiên, anh hùng, thủ lĩnh; thực hành lễ nghi nông nghiệp cầu mong mưa màng bội thu. Trong các dịp lễ hội, cư dân thường tổ chức đua thuyền, đấu vật. Phong tục tập quán có những nét đặc sắc như rục ăn trầu, nhuộm răng, xăm mình,...
+
+<!-- chunk 265 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 12: VĂN MINH VĂN LANG – ÂU LẠC
+id_lesson: 12
+section_id: "14"
+section_name: Mục 2 Những thành tựu tiêu biểu
+sub_type: 
+sub_id: " "
+sub_name: Đời sống tinh thần
+has_table: false
+chunk_id: ls_265
+---
+[ Bài 12: VĂN MINH VĂN LANG – ÂU LẠC ]
+
+"Để con ra lấy là chuối lột cho nấm, có người chết thì giã cối làm lệnh, người lân cận nghe tiếng đến cưu. Chưa có trâu cau, việc hôn thú giữa nam và nữ lấy gói dài làm dấu sau đó mới giết trâu để làm đồ lễ, lấy cơm nếp để nhập phòng cùng ăn, sau đó mới thành thân...".
+
+(Lĩnh Nam chích quái, Trần Thế Pháp)
+
+<!-- chunk 266 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 12: VĂN MINH VĂN LANG – ÂU LẠC
+id_lesson: 12
+section_id: "15"
+section_name: Mục 2 Những thành tựu tiêu biểu
+sub_type: 
+sub_id: " "
+sub_name: Đời sống tinh thần
+has_table: false
+chunk_id: ls_266
+---
+[ Bài 12: VĂN MINH VĂN LANG – ÂU LẠC ]
+
+? Đọc thông tin, tư liệu và quan sát các hình 12.1, 12.4, 12.5, hãy nêu thành tựu tiêu biểu về đời sống tinh thần của cư dân nền văn minh Văn Lang – Âu Lạc.
+
+<!-- chunk 267 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 12: VĂN MINH VĂN LANG – ÂU LẠC
+id_lesson: 12
+section_id: "16"
+section_name: Mục 2 Những thành tựu tiêu biểu
+sub_type: 
+sub_id: " "
+sub_name: Tổ chức xã hội và nhà nước
+has_table: false
+chunk_id: ls_267
+---
+[ Bài 12: VĂN MINH VĂN LANG – ÂU LẠC ]
+
+2.3. Tổ chức xã hội và nhà nước
+
+Người Việt cổ quần tụ trong xóm, làng (chiềng, cha, mường, bản,...), gồm nhiều gia đình, dòng họ sinh sống trên cùng một khu vực.
+
+Nước Văn Lang ra đời vào khoảng thế kỉ VII TCN. Kinh đô đặt tại Phong Châu (Phú Thọ ngày nay). Tổ chức nhà nước còn đơn giản: đứng đầu là Vua Hùng, là người chỉ huy quân sự, giúp việc cho vua là các lạc hầu. Cả nước chia làm 15 bộ do lạc tướng cai quản, dưới bộ là các chiềng, cha do bồ chính phụ trách.
+
+[Hình minh họa tổ chức bộ máy Nhà nước Văn Lang, từ trên xuống dưới: Vua Hùng (lạc hầu giúp việc) -> Bộ (lạc tướng cai quản) -> Chiềng, cha (bồ chính phụ trách)]
+
+<!-- chunk 268 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 12: VĂN MINH VĂN LANG – ÂU LẠC
+id_lesson: 12
+section_id: "17"
+section_name: Mục 2 Những thành tựu tiêu biểu
+sub_type: 
+sub_id: " "
+sub_name: Tổ chức xã hội và nhà nước
+has_table: false
+chunk_id: ls_268
+---
+[ Bài 12: VĂN MINH VĂN LANG – ÂU LẠC ]
+
+"Dù ai đi ngược về xuôi,
+Nhớ ngày giỗ Tổ mùng mười tháng Ba".
+Lễ hội Đền Hùng tại Phú Thọ được tổ chức vào ngày 10 tháng Ba âm lịch hằng năm. Đây là dịp người dân Việt Nam tưởng nhớ công lao dựng nước của các Vua Hùng, thể hiện đạo lí truyền thống "Uống nước nhớ nguồn" và tinh thần đại đoàn kết. Năm 2012, UNESCO đã ghi danh "Tín ngưỡng thờ cúng Hùng Vương" là Di sản Văn hoá phi vật thể đại diện của nhân loại.
+
+"Con trai vua gọi là quan lang, con gái vua gọi là mỵ nương, trăm quan gọi là bồ chính, thần bốc, nữ lệ gọi là xáo xương [nô tì]. Bề tôi gọi là hôn, đời đời cha truyền con nối gọi là phụ đạo. Vua đời đời thế tập, gọi là Hùng Vương, không hề thay đổi".
+
+(Lĩnh Nam chích quái, Trần Thế Pháp)
+
+<!-- chunk 269 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 12: VĂN MINH VĂN LANG – ÂU LẠC
+id_lesson: 12
+section_id: "18"
+section_name: Mục 2 Những thành tựu tiêu biểu
+sub_type: 
+sub_id: " "
+sub_name: Tổ chức xã hội và nhà nước
+has_table: false
+chunk_id: ls_269
+---
+[ Bài 12: VĂN MINH VĂN LANG – ÂU LẠC ]
+
+Khoảng năm 208 TCN, nước Âu Lạc ra đời. Nước Âu Lạc tiếp tục kế thừa về tổ chức bộ máy chính quyền của nước Văn Lang. Nước Âu Lạc do An Dương Vương đứng đầu, giúp việc vẫn là các lạc hầu. Các đơn vị hành chính địa phương không có nhiều thay đổi so với nước Văn Lang.
+
+Nước Âu Lạc có bước phát triển hơn so với nước Văn Lang. Lãnh thổ mở rộng trên cơ sở hoà hợp và thống nhất giữa người Âu Việt và Lạc Việt. Cư dân Âu Lạc đã biết sử dụng nỏ có thể bắn nhiều mũi tên một lần. Thành Cổ Loa (Đông Anh, Hà Nội) vừa là kinh đô vừa là căn cứ quân sự vững chắc.
+
+[Hình minh họa cấu trúc tổ chức nhà nước Âu Lạc]
+An Dương Vương
+(lạc hầu giúp việc)
+↓
+Bố
+(lạc tướng cai quản)
+↓
+Chiêng, cha
+(bố chính phụ trách)
+
+Sơ đồ 12.2. Tổ chức bộ máy Nhà nước Âu Lạc
+
+<!-- chunk 270 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 12: VĂN MINH VĂN LANG – ÂU LẠC
+id_lesson: 12
+section_id: "19"
+section_name: Mục 2 Những thành tựu tiêu biểu
+sub_type: 
+sub_id: " "
+sub_name: Tổ chức xã hội và nhà nước
+has_table: false
+chunk_id: ls_270
+---
+[ Bài 12: VĂN MINH VĂN LANG – ÂU LẠC ]
+
+[Trích dẫn trong khung]
+"Thành Cổ Loa là một công trình quân sự vượt tầm thời đại về quy mô to lớn cũng như về kĩ thuật tinh xảo. Thành Cổ Loa là sự kết hợp nhuần nhuyễn của việc lợi dụng địa hình tự nhiên sông nước cùng với địa vật vốn có tại địa phương để tạo nên một quần thành với thế công thủ toàn diện".
+
+(Lịch sử Việt Nam, tập 1 - Từ khởi thủy đến thế kỉ X, Vũ Duy Mên (Chủ biên))
+
+[Hình 12.6. Khu di tích thành Cổ Loa (Hà Nội)]
+[Hình minh họa bản đồ khu di tích thành Cổ Loa với chú giải]
+
+<!-- chunk 271 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 12: VĂN MINH VĂN LANG – ÂU LẠC
+id_lesson: 12
+section_id: "20"
+section_name: Mục 2 Những thành tựu tiêu biểu
+sub_type: 
+sub_id: " "
+sub_name: Tổ chức xã hội và nhà nước
+has_table: false
+chunk_id: ls_271
+---
+[ Bài 12: VĂN MINH VĂN LANG – ÂU LẠC ]
+
+Đọc thông tin, tư liệu và quan sát các sơ đồ 12.1, 12.2, hình 12.6, hãy nêu những thành tựu tiêu biểu về tổ chức xã hội, nhà nước của nền văn minh Văn Lang - Âu Lạc.
+
+1. Hãy kể tên một số di chỉ, hiện vật khảo cổ tiêu biểu minh chứng cho sự tồn tại của nền văn minh Văn Lang - Âu Lạc.
+
+2. Hãy nêu những biểu hiện về sự kế thừa và phát triển của nước Âu Lạc so với nước Văn Lang.
+
+3. Sưu tầm tư liệu để giới thiệu với thầy cô và bạn học về lễ hội Đền Hùng.
+
+<!-- chunk 272 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "21"
+section_name: VĂN MINH PHÙ NAM, Mục tiêu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_272
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+Học xong bài này, em sẽ:
+- Nêu được cơ sở hình thành và trình bày được những thành tựu tiêu biểu của văn minh Chăm-pa, văn minh Phù Nam.
+- Biết vận dụng hiểu biết về các nền văn minh cổ nói trên để giới thiệu về đất nước, con người Việt Nam.
+- Nhận thức được giá trị trường tồn của các nền văn minh cổ trên đất nước Việt Nam.
+- Có ý thức trân trọng truyền thống lao động cần cù, sáng tạo của cộng đồng các dân tộc trên đất nước Việt Nam.
+- Có ý thức trách nhiệm trong việc góp phần bảo tồn các di sản văn hoá của dân tộc.
+
+<!-- chunk 273 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "22"
+section_name: VĂN MINH PHÙ NAM, Mô tả bài
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_273
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+Mộ chum và tượng thần Bra-ma là những hiện vật khảo cổ tiêu biểu cho nền văn minh Chăm-pa và nền văn minh Phù Nam. Mai táng người đã mất trong mộ chum là một nét đặc sắc trong nền văn minh Chăm-pa. Thần Bra-ma (thần Sáng tạo) là một trong ba vị thần của Hin-đu giáo được điêu khắc trên nhiều chất liệu thuộc nền văn minh Phù Nam.
+
+Vậy cơ sở nào dẫn đến sự hình thành nền văn minh Chăm-pa và nền văn minh Phù Nam? Thành tựu tiêu biểu của các nền văn minh đó là gì?
+
+[Hình ảnh mô tả hai hiện vật khảo cổ: một mộ chum và một tượng thần]
+
+Hình 13.1. Mộ chum Đồng Cườm (văn hóa Sa Huỳnh)
+Hình 13.2. Tượng thần Bra-ma (văn hóa Óc Eo)
+
+<!-- chunk 274 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "23"
+section_name: VĂN MINH PHÙ NAM, Mục 1 Văn minh Chăm-pa
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_274
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+1. Văn minh Chăm-pa
+1.1. Cơ sở hình thành
+
+Điều kiện tự nhiên
+
+Văn minh Chăm-pa hình thành trên vùng duyên hải và một phần cao nguyên miền Trung Việt Nam ngày nay, có địa hình dãn xen khu vực cao nguyên với đồng bằng nhỏ hẹp. Những cánh đồng màu mỡ ven sông Thu Bồn tạo điều kiện thuận lợi cho sự định cư và canh tác nông nghiệp của cư dân. Với đường bờ biển dài, Vương quốc Chăm-pa sớm trở thành nơi tiếp nhận nhiều luồng di cư, tiếp xúc và giao lưu văn hoá từ bên ngoài, đặc biệt là ảnh hưởng của văn hoá Ấn Độ.
+
+Sông Thu Bồn là một trong những con sông có lưu lượng nước lớn ở miền Trung Việt Nam. Tại lưu vực sông Thu Bồn dọc theo nhánh sông chính và các chi lưu đã phát hiện trên 40 địa điểm có dấu tích văn hoá Sa Huỳnh có niên đại 4 000 - 3 500 năm cách ngày nay. Văn hoá Sa Huỳnh có nhiều mối liên hệ gần gũi với văn minh Chăm-pa.
+
+Dân cư
+
+Cư dân bản địa sinh sống lâu đời ở vùng duyên hải và một phần cao nguyên miền Trung là những người nói tiếng Môn cổ. Bên cạnh đó còn có sự xuất hiện của bộ phận cư dân nói tiếng Mã Lai - Đa Đảo. Những nhóm cư dân này cộng cư với nhau và là chủ nhân đầu tiên của văn minh Chăm-pa.
+
+<!-- chunk 275 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "25"
+section_name: VĂN MINH PHÙ NAM, Mục 1 Văn minh Chăm-pa
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_275
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+Đọc thông tin và quan sát hình 13.3, hãy nêu cơ sở về điều kiện tự nhiên góp phần hình thành nên văn minh Chăm-pa.
+Đọc thông tin, hãy nêu cơ sở dân cư hình thành nên văn minh Chăm-pa.
+
+<!-- chunk 276 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "26"
+section_name: VĂN MINH PHÙ NAM, Mục 1 Văn minh Chăm-pa
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu tiêu biểu
+has_table: false
+chunk_id: ls_276
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+1.2. Những thành tựu tiêu biểu
+
+Đời sống vật chất
+
+Gạo nếp, gạo tẻ là nguồn lương thực chính của cư dân Chăm-pa, ngoài ra còn có các loại kê, đậu,... Nguồn hải sản đa dạng với các loại cá, tôm, ốc,... Trang phục của người dân đơn giản: nam, nữ thường quấn ngang tấm vải từ lưng trở xuống, tai đeo trang sức. Vua thường ở trong lâu cao, dân thường ở nhà sàn dựng bằng gỗ. Thuyền đi biển phổ biến là loại hai đầu nhọn, có cánh buồm, phần đầu lái và mũi thuyền đều uốn cong.
+
+Kĩ thuật làm đồ gốm và xây dựng đền tháp của cư dân Chăm-pa rất phát triển. Sản phẩm từ nghề gốm đa dạng như tượng phù điêu trang trí kiến trúc đền tháp, gốm tráng men, gốm gia dụng,... Cư dân Chăm-pa sử dụng chất nhựa từ thảo mộc trộn với bột gạch tạo thành chất kết dính giữa các viên gạch trong xây dựng đền tháp.
+
+[Hình ảnh: Một bức ảnh phong cảnh của quần thể tháp Chăm cổ nằm trên đồi xanh. Các tháp được xây bằng gạch đỏ, nổi bật trên nền cây cối xanh tươi và bầu trời xanh có mây.]
+
+Hình 13.4. Quần thể tháp Bánh Ít (Bình Định)
+
+<!-- chunk 277 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "28"
+section_name: VĂN MINH PHÙ NAM, Mục 1 Văn minh Chăm-pa
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu tiêu biểu
+has_table: false
+chunk_id: ls_277
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+? Đọc thông tin, tư liệu và quan sát hình 13.4, hãy trình bày những thành tựu tiêu biểu về đời sống vật chất của nền văn minh Chăm-pa.
+
+<!-- chunk 278 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "28"
+section_name: VĂN MINH PHÙ NAM, Mục 1 Văn minh Chăm-pa
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu tiêu biểu
+has_table: false
+chunk_id: ls_278
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+"Nơi gọi là bạch điện thì trồng lúa trắng, tháng bảy làm thì tháng mười hai lúa chín, nơi gọi là xích điền thì trồng lúa đỏ, tháng mười hai làm thì tháng tư lúa chín. Như thế gọi là lúa chín hai mùa".
+(Thuỷ kinh chú)
+
+"Những chiếc thuyền chèo tay để đi chơi qua lại khéo léo. Những con tàu đó, dài từ 15 đến 24 mét, làm khi chỉ độc có năm mảnh vẫn ghép lại, mỗi thanh dài suốt từ đầu nọ đến đầu kia, cạnh ghép bằng mộng, gắn khít khao chặt chẽm bằng chốt gỗ, buộc với nhau bằng lạt tre chứ không cần phải có xương hay khung gỗ nào khác".
+(Một chuyến du hành đến Đàng Trong, Giôn Ba-rầu)
+
+<!-- chunk 279 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "29"
+section_name: VĂN MINH PHÙ NAM, Mục 1 Văn minh Chăm-pa
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu tiêu biểu
+has_table: false
+chunk_id: ls_279
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+Đời sống tinh thần
+
+Chữ viết Chăm ra đời trên cơ sở tiếp thu chữ Phạn và dần được sử dụng phổ biến trên các văn bia. Văn học dân gian (thần thoại, truyền thuyết, văn bí kí, sử thi,...) và văn học viết (thơ, trường ca,...) cùng song hành tồn tại.
+
+Cư dân Chăm-pa có tục thờ cúng tổ tiên, chôn người chết trong các mộ chum. Chịu ảnh hưởng của tôn giáo Ấn Độ, cư dân Chăm-pa sùng bái các vị thần Hin-du giáo như thần Si-va, Vít-xnu, Bra-ma. Phật giáo cũng được truyền bá rộng rãi trong các tầng lớp xã hội. Tư duy thẩm mĩ và sự sáng tạo của cư dân Chăm-pa thể hiện rõ qua các công trình kiến trúc, điêu khắc, chế tác đồ trang sức,...
+
+Âm nhạc và ca múa đặc biệt phát triển với các loại nhạc cụ, như đàn cầm, trống, kèn,... cùng nhiều kiểu múa, như điệu múa Áp-sa-ra trong cung đình, ở đền miếu, trong những dịp lễ, hội.
+
+<!-- chunk 280 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "30"
+section_name: VĂN MINH PHÙ NAM, Mục 1 Văn minh Chăm-pa
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu tiêu biểu
+has_table: false
+chunk_id: ls_280
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+"Mỗi lần có việc kết hôn, sai người mai đem xuyến vàng bạc, hai hồ rượu, mấy con cá đến nhà gái, sau đó chọn ngày, nhà chồng hợp thân thuộc khách khứa, ca múa với nhau. Nhà gái mời một vị Bà-la-môn dẫn người con gái đến nhà trai. Người rể rửa tay, vị Bà-la-môn dẫn người con gái đến cho anh ta".
+(Tùy thư)
+
+<!-- chunk 281 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "30"
+section_name: VĂN MINH PHÙ NAM, Mục 1 Văn minh Chăm-pa
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu tiêu biểu
+has_table: false
+chunk_id: ls_281
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+? Đọc thông tin và tư liệu, hãy trình bày những thành tựu tiêu biểu về đời sống tinh thần trong nền văn minh Chăm-pa.
+
+<!-- chunk 282 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "31"
+section_name: VĂN MINH PHÙ NAM, Mục 1 Văn minh Chăm-pa
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu tiêu biểu
+has_table: false
+chunk_id: ls_282
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+Tổ chức xã hội và nhà nước
+
+Cư dân Chăm-pa chủ yếu sinh sống trong làng, duy trì quan hệ cộng đồng và thân tộc. Từng gia đình trong làng nhận ruộng đất cày cấy và thực hiện nghĩa vụ thuế khoá, lao dịch với nhà nước.
+
+Nhà nước Chăm-pa ra đời vào khoảng thế kỉ II, được tổ chức theo thể chế quân chủ chuyên chế. Nhà vua là chủ sở hữu tối cao về ruộng đất, là người có quyền quyết định duy nhất về việc ban tặng ruộng đất cho các đền miếu, ban cấp cho quan lại. Giúp việc cho vua là quan lại ở trung ương và địa phương, phân cấp thành ba hạng: tôn quan, thuộc quan và ngoại quan. Tôn quan là chức quan cao cấp nhất trong triều đình. Thuộc quan là những chức quan dưới quyền tôn quan. Ngoại quan là những quan trấn trị tại địa phương. Cả nước chia thành nhiều châu, dưới châu là huyện, dưới huyện là làng.
+
+[Hình ảnh minh họa cơ cấu tổ chức nhà nước Chăm-pa, từ trên xuống dưới: Vua -> Tôn quan -> Thuộc quan (quan văn, quan võ) -> Ngoại quan (cấp hành chính địa phương)]
+
+Sơ đồ 13. Tổ chức bộ máy Nhà nước Chăm-pa
+
+<!-- chunk 283 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "32"
+section_name: VĂN MINH PHÙ NAM, Mục 1 Văn minh Chăm-pa
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu tiêu biểu
+has_table: false
+chunk_id: ls_283
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+Quyền lực của nhà vua được tượng trưng bằng một cái lọng màu trắng, chỉ duy nhất nhà vua mới được dùng: "[Vua] đeo những dây vàng có đính ngọc trai và ngọc bích, giống như mặt trăng tròn đầy đặn, che một chiếc lọng trắng bao phủ cả bốn phương trời bởi vì lọng còn sâu hơn cả đại dương, thân thể [vua] trang sức phủ kín bởi vương miện, đai, vòng, hoa tai, những tràng hồng ngọc,... bằng vàng".
+
+(Bi kí tại tháp Pô Na-ga, Khánh Hoà)
+
+<!-- chunk 284 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "32"
+section_name: VĂN MINH PHÙ NAM, Mục 1 Văn minh Chăm-pa
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu tiêu biểu
+has_table: false
+chunk_id: ls_284
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+Đọc thông tin, tư liệu và quan sát sơ đồ 13, hãy trình bày những thành tựu tiêu biểu về tổ chức xã hội và nhà nước của nền văn minh Chăm-pa.
+
+<!-- chunk 285 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "33"
+section_name: VĂN MINH PHÙ NAM, Mục 2 Văn minh Phù Nam
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_285
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+2. Văn minh Phù Nam
+2.1. Cơ sở hình thành
+
+Điều kiện tự nhiên
+
+Văn minh Phù Nam hình thành trên lưu vực châu thổ sông Cửu Long với hệ thống sông ngòi, kênh rạch chằng chịt đổ ra biển. Địa hình khu vực thấp, nguồn nước dồi dào, thuận lợi cho canh tác nông nghiệp trồng lúa nước. Với vị trí địa lí tiếp giáp biển, có nhiều nơi thuận lợi cho việc tránh bão, neo đậu thuyền bè của các thương nhân nên cư dân Phù Nam sớm có điều kiện giao lưu với nền văn minh của nhiều quốc gia khác, đặc biệt là nền văn minh Ấn Độ.
+
+"Phía bắc lắm đồi núi, phía nam có sông ngòi, đầm hồ, khí hậu rất nóng, không sương tuyết".
+(Tuỳ thư)
+
+"Khí hậu ở đó luôn ẩm ấp, cây cỏ xanh tươi luôn".
+(Nam Tề thư)
+
+"Sản vật của họ có vàng, bạc, đồng, thiếc, trầm hương, mộc hương, voi, tê giác, lông trả, chim vẹt ngũ sắc".
+(Nam sử)
+
+Dân cư
+
+Chủ nhân của văn minh Phù Nam chủ yếu là cư dân bản địa (người Môn cổ) kết hợp với một bộ phận cư dân đến từ bên ngoài. Họ cùng nhau thiết lập quốc gia mới, làm chủ nền văn minh Phù Nam.
+
+<!-- chunk 286 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "34"
+section_name: VĂN MINH PHÙ NAM, Mục 2 Văn minh Phù Nam
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_286
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+Đọc thông tin và tư liệu, hãy nêu cơ sở về điều kiện tự nhiên hình thành nên văn minh Phù Nam.
+
+Đọc thông tin và tư liệu, hãy nêu cơ sở dân cư hình thành nên văn minh Phù Nam.
+
+<!-- chunk 287 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "35"
+section_name: VĂN MINH PHÙ NAM, Mục 2 Văn minh Phù Nam
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu tiêu biểu
+has_table: false
+chunk_id: ls_287
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+2.2. Những thành tựu tiêu biểu
+
+Đời sống vật chất
+
+Nguồn lương thực, thực phẩm chính của cư dân Phù Nam là lúa gạo và các loại rau, củ, quả. Thực phẩm được bổ sung thêm từ chăn nuôi gia súc, gia cầm, đánh bắt thuỷ hải sản.
+
+Trang phục tuỳ theo từng tầng lớp xã hội: dân nghèo dùng vải may quần áo, nhà giàu dùng tơ lụa, gấm. Trang phục phổ biến là mặc áo chui đầu hoặc ở trần, đùng vải quấn làm váy, người dân đi chân đất hoặc đi dép bằng gỗ cây bao hương, còn vua đi dép bằng ngà voi. Cư dân đặc biệt thích đeo đồ trang sức làm bằng đá quý, thuỷ tinh, vàng, bạc,...
+
+Cư dân Phù Nam sống chủ yếu trong các nhà sàn bằng gỗ. Việc đi chuyển đi lại giữa các khu vực chủ yếu bằng thuyền bè trên kênh rạch, sông, biển.
+
+[Hình ảnh mô tả một bông hoa bằng vàng với nhiều cánh hoa và chi tiết tinh xảo]
+Hình 13.5. Bông hoa bằng vàng (thuộc nền văn minh Phù Nam)
+
+[Hình ảnh mô tả một bức tượng Phật ngồi thiền bằng đá, có phong cách điêu khắc đặc trưng]
+Hình 13.6. Tượng Phật điêu khắc đá (thuộc nền văn minh Phù Nam)
+
+<!-- chunk 288 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "37"
+section_name: VĂN MINH PHÙ NAM, Mục 2 Văn minh Phù Nam
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu tiêu biểu
+has_table: false
+chunk_id: ls_288
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+"Con trai nhà giàu sang thì cắt gấm làm quần, con gái thì quấn tóc, người nghèo thì lấy vải mà che. Họ dựng vàng bạc để nạm khảm bát đĩa. Họ biết đẽo gỗ làm nhà. Vua họ ở gác nhiều tầng. Họ lấy gỗ ken làm thành. Bờ bể nước họ có một loại cây gọi là đại nhược, là dài tới 8, 9 thước. Người ta bện lại để lợp nhà. Dân thường cũng làm nhà gác để ở. Thuyền họ đóng dài tới 8, 9 trượng, lòng thuyền rộng 6, 7 thước, đầu và đuôi giống hình con cá. Vua nước ấy đi đâu thì cười vui, phu nữ cũng cười được vui".
+
+(Nam Tề thư)
+
+<!-- chunk 289 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "38"
+section_name: VĂN MINH PHÙ NAM, Mục 2 Văn minh Phù Nam
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu tiêu biểu
+has_table: false
+chunk_id: ls_289
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+Đọc thông tin, tư liệu và quan sát các hình 13.5,13.6, hãy nêu thành tựu tiêu biểu về đời sống vật chất của nền văn minh Phù Nam.
+
+<!-- chunk 290 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "39"
+section_name: VĂN MINH PHÙ NAM, Mục 2 Văn minh Phù Nam
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu tiêu biểu
+has_table: false
+chunk_id: ls_290
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+Đời sống tinh thần
+
+Cư dân Phù Nam đã sử dụng chữ viết từ sớm. Các loại văn tự có loại giống chữ Hán, chữ Phạn. Một số minh văn khắc trên bia đá, khắc trên vàng đã thể hiện trình độ học và trình độ uyên thâm của người viết.
+
+Cư dân Phù Nam có tư duy thẩm mĩ phát triển ở trình độ khá cao, thể hiện qua kĩ thuật chế tác đồ trang sức, kĩ thuật đệt vải, làm gốm, điêu khắc, kiến trúc. Về tín ngưỡng và tôn giáo, Hin-du giáo và Phật giáo được tôn sùng. Ba vị thần được thờ phổ biến là Bra-ma, Vit-xnu, Si-va. Dân gian còn có tín ngưỡng sùng bái núi thiêng và năng công chúa rắn.
+
+"Vị vua nước ấy cũng biết viết sách bằng chữ Phạn. Sách dài 3 000 chữ, nói về duyên do tức mệnh tương tự, như kinh Phật, trong đó bàn về việc thiện,... Họ [cư dân Phù Nam] thờ Thiên thần, đúng đồng mà đúc tượng thần. Thần hai mặt có bốn tay, bốn mặt có tám tay. Mỗi tay đều có cầm một vật gì đó, hoặc đứa bé con, hoặc chim thú, hoặc Mặt Trăng, Mặt Trời,... Tục nước ấy cư tang cắt hết râu tóc. Người chết có bốn kiểu táng: thủy táng thì đem quăng xác xuống sông, hỏa táng thì đem thiêu xác, thổ táng thì đào huyệt mà chôn, còn điểu táng thì vứt xác ra ngoài đồng".
+
+<!-- chunk 291 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "40"
+section_name: VĂN MINH PHÙ NAM, Mục 2 Văn minh Phù Nam
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu tiêu biểu
+has_table: false
+chunk_id: ls_291
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+Tổ chức xã hội và nhà nước
+
+Tổ chức xã hội của cư dân Phù Nam là các xóm làng (phum, sóc), gồm nhiều gia đình có cùng huyết thống, cùng sinh sống trên một khu vực. Xóm làng (phum, sóc) có quan hệ lỏng lẻo với nhau và bị chia cắt bởi rừng rậm, đầm lầy.
+
+Nhà nước Phù Nam ra đời vào khoảng thế kỉ I, được tổ chức theo thể chế quân chủ chuyên chế, vua là người đứng đầu có quyền lực tối cao. Nhà nước Phù Nam là tập hợp của nhiều tiểu quốc. Giúp việc cho vua là hệ thống quan lại, tăng lữ. Đầu thế kỉ III, Phạm Sư Mạn đã tiến hành chinh phục nhiều vương quốc, mở rộng cương vực bao gồm vùng hạ lưu sông Mê Công, sông Tống Lê Sáp,...
+
+<!-- chunk 292 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "41"
+section_name: VĂN MINH PHÙ NAM, Mục 2 Văn minh Phù Nam
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu tiêu biểu
+has_table: false
+chunk_id: ls_292
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+"Uy đức của nhà vua rất nghiêm. Ngựa trống phép tắc của đại quốc rất tự bị đại đô, thường xót dân đen. Bất phương lực hợp, không đâu không quy phụ".
+(Nam Tề thư)
+
+"Thường ngày vua [Phạm Tấn, thế kỉ XIII] tiếp khách 3, 4 lượt. Dân đem mía, rau và chim tới dâng cho ông ta".
+(Nam sử)
+
+<!-- chunk 293 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 13: VĂN MINH CHĂM-PA
+id_lesson: 13
+section_id: "42"
+section_name: VĂN MINH PHÙ NAM, Mục 2 Văn minh Phù Nam
+sub_type: 
+sub_id: " "
+sub_name: Những thành tựu tiêu biểu
+has_table: false
+chunk_id: ls_293
+---
+[ Bài 13: VĂN MINH CHĂM-PA ]
+
+Đọc thông tin và tư liệu, hãy trình bày những thành tựu tiêu biểu về tổ chức xã hội và nhà nước của nền văn minh Phù Nam.
+
+1. Lập bảng so sánh về cơ sở hình thành của nền văn minh Chăm-pa với nền văn minh Phù Nam theo mẫu dưới đây.
+
+[Bảng so sánh với các cột: Nội dung so sánh, Các nền văn minh, Văn minh Chăm-pa, Văn minh Phù Nam. Hàng 1: Tương đồng với dấu ? ở cột Văn minh Phù Nam. Hàng 2: Khác biệt với dấu ? ở cả hai cột Văn minh Chăm-pa và Văn minh Phù Nam.]
+
+2. Kể tên các thành tựu tiêu biểu về đời sống vật chất và đời sống tinh thần của nền văn minh Chăm-pa, nền văn minh Phù Nam.
+
+3. Hãy đóng vai hướng dẫn viên du lịch giới thiệu với bạn học về một di tích thuộc văn minh Chăm-pa hoặc văn minh Phù Nam còn tồn tại đến ngày nay.
+
+<!-- chunk 294 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 14
+section_id: "43"
+section_name: Mục tiêu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_294
+---
+[ Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT ]
+
+Học xong bài này, em sẽ:
+- Giải thích được khái niệm văn minh Đại Việt.
+- Phân tích được cơ sở hình thành văn minh Đại Việt.
+- Nêu được quá trình phát triển của văn minh Đại Việt trên trục thời gian.
+
+<!-- chunk 295 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 14
+section_id: "44"
+section_name: Mô tả bài
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_295
+---
+[ Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT ]
+
+Trong Bình Ngô đại cáo, thay lời Lê Lợi, Nguyễn Trãi đã viết:
+"Như nước Đại Việt ta từ trước
+Vốn xưng nền văn hiến đã lâu
+Núi sông bờ cõi đã chia
+Phong tục Bắc Nam cũng khác".
+
+Đó là lời khẳng định nền độc lập, tự chủ, truyền thống văn hiến và nền văn minh riêng của quốc gia Đại Việt.
+
+Vậy thế nào là văn minh Đại Việt? Văn minh Đại Việt được hình thành trên cơ sở nào? Quá trình phát triển của văn minh Đại Việt ra sao?
+
+<!-- chunk 296 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 14
+section_id: "45"
+section_name: Mục 1 Khái niệm văn minh Đại Việt
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_296
+---
+[ Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT ]
+
+1. Khái niệm văn minh Đại Việt
+
+Văn minh Đại Việt tồn tại và phát triển cùng quốc gia Đại Việt, trải dài gần 1 000 năm (từ thế kỉ X đến giữa thế kỉ XIX), gắn liền với chính quyền họ Khúc, họ Dương và các triều đại Ngô, Đinh, Tiền Lê, Lý, Trần, Hồ, Lê sơ, Mạc, Lê Trung hưng, Tây Sơn, Nguyễn.
+
+Văn minh Đại Việt được phát triển trong điều kiện độc lập, tự chủ của quốc gia Đại Việt với kinh đô chủ yếu ở Thăng Long (Hà Nội). Vì vậy, văn minh Đại Việt còn được gọi là văn minh Thăng Long.
+
+Năm 1054, vua Lý Thánh Tông đổi Quốc hiệu từ Đại Cồ Việt thành Đại Việt. Năm 1804, vua Gia Long đã đổi Quốc hiệu Đại Việt thành Việt Nam. Mặc dù bị gián đoạn 7 năm dưới thời Hồ và 20 năm thuộc Minh nhưng cho đến nay, Đại Việt vẫn là Quốc hiệu tồn tại lâu dài nhất của Việt Nam.
+
+<!-- chunk 297 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 14
+section_id: "46"
+section_name: Mục 1 Khái niệm văn minh Đại Việt
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_297
+---
+[ Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT ]
+
+Đọc thông tin, hãy giải thích khái niệm văn minh Đại Việt.
+
+<!-- chunk 298 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 14
+section_id: "47"
+section_name: Mục 2 Cơ sở hình thành văn minh Đại Việt
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_298
+---
+[ Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT ]
+
+2. Cơ sở hình thành văn minh Đại Việt
+
+Văn minh Đại Việt được hình thành và phát triển dựa trên cơ sở kế thừa nền văn minh Văn Lang - Âu Lạc; nền độc lập, tự chủ của quốc gia Đại Việt và tiếp thu có chọn lọc những thành tựu của văn minh bên ngoài.
+
+Kế thừa nền văn minh Văn Lang - Âu Lạc
+
+Văn minh Đại Việt có nguồn gốc sâu xa từ nền văn minh Văn Lang - Âu Lạc được bảo tồn qua hơn một nghìn năm Bắc thuộc. Những di sản và truyền thống của văn minh Văn Lang - Âu Lạc tiếp tục được phục hưng, phát triển trong thời kì độc lập, tự chủ.
+
+[Hình ảnh mô tả một trống đồng cổ màu xanh rêu, có hình dạng hình trụ với phần trên rộng hơn phần dưới. Trống có các hoa văn trang trí trên thân.]
+
+Hình 14.1. Trống đồng Đền Hùng (Phú Thọ)
+
+Dựa trên nền độc lập, tự chủ của quốc gia Đại Việt
+
+<!-- chunk 299 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 14
+section_id: "48"
+section_name: Mục 2 Cơ sở hình thành văn minh Đại Việt
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_299
+---
+[ Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT ]
+
+Độc lập, tự chủ là nhân tố quan trọng của việc hình thành và phát triển văn minh Đại Việt. Năm 905, Khúc Thừa Dụ dựng quyền tự chủ bước đầu. Năm 938, sau chiến thắng quân Nam Hán trên sông Bạch Đằng, Ngô Quyền xưng vương, mở ra thời kì độc lập, tự chủ lâu dài cho dân tộc. Năm 1009, nhà Lý thành lập. Năm 1010, Lý Công Uẩn dời đô từ Hoa Lư ra Đại La (sau đổi thành Thăng Long). Trải qua các triều đại khác nhau, nền độc lập, tự chủ quốc gia tiếp tục được củng cố vững chắc. Đó là điều kiện thuận lợi để xây dựng và phát triển một nền văn hoá với nhiều nét đặc sắc, tạo nên nền văn minh Đại Việt.
+
+<!-- chunk 300 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 14
+section_id: "49"
+section_name: Mục 2 Cơ sở hình thành văn minh Đại Việt
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_300
+---
+[ Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT ]
+
+Trong Chiếu dời đô, Lý Công Uẩn viết: "... thành Đại La, đô cũ của Cao Vương [tức Cao Biền], ở giữa khu vực trời đất, được thế rồng cuốn hổ ngồi, chính giữa nam bắc đông tây, tiện nghi núi sông sau trước. Vùng này mặt đất rộng mà bằng phẳng, thế đất cao mà sáng sủa, dân cư không khổ thấp trũng tối tăm, muôn vật hết sức tối tươi phồn thịnh. Xem khắp nước Việt, đó là nơi thắng địa, thực là chỗ tụ hội quan yếu của bốn phương. Đúng là nơi thượng đô kinh sư mãi muôn đời".
+
+(Đại Việt sử ký toàn thư, Ngô Sĩ Liên và các sử thần triều Hậu Lê)
+
+Tiếp thu có chọn lọc những thành tựu văn minh bên ngoài
+
+<!-- chunk 301 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 14
+section_id: "50"
+section_name: Mục 2 Cơ sở hình thành văn minh Đại Việt
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_301
+---
+[ Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT ]
+
+Trong quá trình hình thành và phát triển, ngoài việc kế thừa nền văn minh Văn Lang - Âu Lạc, người Việt đã tiếp thu có chọn lọc tinh hoa văn minh từ bên ngoài, đặc biệt là văn minh Trung Hoa (thể chế chính trị, luật pháp, chữ viết, tư tưởng Nho giáo, giáo dục, khoa cử,...), văn minh Ấn Độ (Phật giáo, nghệ thuật, kiến trúc,...), góp phần làm phong phú nền văn minh Đại Việt.
+
+[Hình ảnh 1: Một bức tượng trong một đền thờ với nhiều đồ cúng và trang trí màu đỏ và vàng]
+Hình 14.2. Tượng Khổng Tử tại Văn Miếu - Quốc Tử Giám (Hà Nội)
+
+[Hình ảnh 2: Một bài thơ chữ Hán viết trên nền vàng với hình vẽ cành tre]
+Hình 14.3. Bài thơ Nam quốc sơn hà (chữ Hán)
+
+Nhiều thành tựu của các nền văn minh bên ngoài khi du nhập vào Đại Việt đã được cải biến, điều chỉnh để phù hợp với thực tiễn.
+
+<!-- chunk 302 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 14
+section_id: "51"
+section_name: Mục 2 Cơ sở hình thành văn minh Đại Việt
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_302
+---
+[ Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT ]
+
+? Đọc thông tin, tư liệu và quan sát các hình từ 14.1 đến 14.3, hãy phân tích cơ sở hình thành nền văn minh Đại Việt. Theo em, cơ sở nào là quan trọng nhất? Vì sao?
+
+<!-- chunk 303 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 14
+section_id: "52"
+section_name: Mục 3 Quá trình phát triển của văn minh Đại Việt
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_303
+---
+[ Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT ]
+
+3. Quá trình phát triển của văn minh Đại Việt
+
+Từ thế kỉ X đến giữa thế kỉ XIX, văn minh Đại Việt phát triển qua nhiều giai đoạn:
+
+- Thế kỉ X, gắn liền với chính quyền họ Khúc, họ Dương và các vương triều Ngô, Đinh, Tiền Lê. Đây là giai đoạn văn minh Đại Việt bước đầu được định hình, thông qua công cuộc củng cố chính quyền, phát triển kinh tế và văn hoá.
+
+- Thế kỉ XI - đầu thế kỉ XV, gắn liền với sự tồn tại của các vương triều Lý, Trần, Hồ. Văn minh Đại Việt phát triển mạnh mẽ và toàn diện, tinh dân tộc được thể hiện rõ nét. Nho giáo, Phật giáo, Đạo giáo phát triển hài hoà.
+
+<!-- chunk 304 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 14
+section_id: "53"
+section_name: Mục 3 Quá trình phát triển của văn minh Đại Việt
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_304
+---
+[ Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT ]
+
+- Thế kỉ XV - thế kỉ XVII, gắn liền với vương triều Lê sơ, Mạc, Lê Trung hưng. Văn minh Đại Việt tiếp tục phát triển và đạt được nhiều thành tựu đặc sắc. Nho giáo có ảnh hưởng mạnh mẽ. Giáo dục, khoa cử có vai trò to lớn trong đời sống chính trị, văn hoá. Từ đầu thế kỉ XVI, một số yếu tố văn hoá phương Tây từng bước du nhập vào Đại Việt.
+
+- Đầu thế kỉ XVIII - giữa thế kỉ XIX, gắn liền với sự tồn tại của các vương triều Lê Trung hưng (giai đoạn hậu kì), Tây Sơn, Nguyễn. Quốc gia Đại Việt từng bước rơi vào khủng hoảng với nhiều biến động về chính trị. Văn minh Đại Việt có những dấu hiệu đình trệ và lạc hậu. Mặc dù vậy, một số lĩnh vực văn minh vẫn đạt được những thành tựu nổi bật.
+
+<!-- chunk 305 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 14
+section_id: "54"
+section_name: Mục 3 Quá trình phát triển của văn minh Đại Việt
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_305
+---
+[ Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT ]
+
+Từ giữa thế kỉ XIX, việc thực dân Pháp xâm lược Việt Nam và thiết lập chế độ cai trị đã chấm dứt thời kì phát triển của nền văn minh Đại Việt.
+
+Khu trung tâm Hoàng thành Thăng Long là quần thể di tích gắn với lịch sử kinh thành Thăng Long, bắt đầu từ thời kì tiền Thăng Long (An Nam đô hộ phủ, thế kỉ VII) qua thời Đinh, Tiền Lê, phát triển mạnh dưới thời Lý, Trần, Lê sơ. Đây là quần thể kiến trúc đồ sộ, được các triều đại xây dựng trong nhiều giai đoạn lịch sử, là minh chứng cho sự phát triển rực rỡ của văn minh Đại Việt trên các lĩnh vực chính trị, kinh tế, văn hoá, giáo dục. Năm 2010, Khu trung tâm Hoàng thành Thăng Long được UNESCO ghi danh là Di sản Văn hoá Thế giới.
+
+<!-- chunk 306 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 14
+section_id: "55"
+section_name: Mục 3 Quá trình phát triển của văn minh Đại Việt
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_306
+---
+[ Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT ]
+
+[Hình ảnh mô tả một phần của Hoàng thành Thăng Long. Có thể thấy một cổng lớn bằng đá với mái ngói kiểu truyền thống, được bao quanh bởi tường thành đá cao. Phía trên cổng là một tòa nhà nhỏ hơn cũng mang kiến trúc truyền thống. Xung quanh có nhiều cây xanh lớn và bầu trời xanh với mây trắng.]
+
+Hình 14.4. Di tích Đoan Môn - cổng phía nam Hoàng thành Thăng Long
+
+<!-- chunk 307 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 14
+section_id: "56"
+section_name: Mục 3 Quá trình phát triển của văn minh Đại Việt
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_307
+---
+[ Bài 14: CƠ SỞ HÌNH THÀNH VÀ QUÁ TRÌNH PHÁT TRIỂN CỦA VĂN MINH ĐẠI VIỆT ]
+
+Đọc thông tin và quan sát hình 14.4, hãy:
+- Trình bày quá trình phát triển của nền văn minh Đại Việt trên trục thời gian.
+- Nêu vị trí, vai trò của Hoàng thành Thăng Long trong tiến trình phát triển của nền văn minh Đại Việt.
+
+1. Vẽ sơ đồ tư duy về cơ sở hình thành và quá trình phát triển của nền văn minh Đại Việt.
+
+2. Sưu tầm và giới thiệu về một thành tựu tiêu biểu của nền văn minh Đại Việt mang dấu ấn của văn minh Văn Lang - Âu Lạc.
+
+<!-- chunk 308 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "57"
+section_name: Mục tiêu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_308
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+Học xong bài này, em sẽ
+- Nêu được một số thành tựu cơ bản của nền văn minh Đại Việt về kinh tế, chính trị, tư tưởng, tôn giáo, văn hoá, giáo dục, văn học, nghệ thuật,...
+- Phân tích được ý nghĩa của nền văn minh Đại Việt trong lịch sử dân tộc Việt Nam.
+- Đưa ra nhận xét về những ưu điểm và hạn chế của nền văn minh Đại Việt.
+- Biết cách sưu tầm và sử dụng tư liệu lịch sử để tìm hiểu về thành tựu của nền văn minh Đại Việt.
+- Trân trọng giá trị trường tồn của nền văn minh Đại Việt, vận dụng hiểu biết về nền văn minh Đại Việt để giới thiệu, quảng bá về đất nước, con người, di sản văn hoá Việt Nam.
+
+<!-- chunk 309 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "59"
+section_name: Mô tả bài
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_309
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+Chùa Một Cột có tên ban đầu là Liên Hoa Đài (Đài hoa sen), nằm trong quần thể chùa Diên Hựu được vua Lý Thái Tông cho khởi công xây dựng năm 1049. Đây là ngôi chùa có kiến trúc độc đáo bậc nhất châu Á, đồng thời là một trong những thành tựu tiêu biểu của văn minh Đại Việt.
+
+Vậy nền văn minh Đại Việt đã đạt được những thành tựu tiêu biểu gì? Nền văn minh Đại Việt có ý nghĩa như thế nào trong lịch sử dân tộc Việt Nam?
+
+[Hình 15.1. Chùa Một Cột (Hà Nội)]
+
+<!-- chunk 310 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "60"
+section_name: Mục 1 Chính trị
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_310
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+1. Chính trị
+1.1. Tổ chức bộ máy nhà nước
+Trải qua các triều đại, tổ chức bộ máy nhà nước của Đại Việt không ngừng được củng cố, hoàn thiện từ trung ương đến địa phương. Việc thành lập cơ quan hành chính, pháp lí, chuyên môn, giám sát,... thể hiện vai trò tổ chức, quản lí của nhà nước ngày càng chặt chẽ, tiêu biểu là tổ chức bộ máy nhà nước thời Lê sơ (đặc biệt là dưới triều vua Lê Thánh Tông).
+
+[Hình ảnh mô tả cấu trúc tổ chức bộ máy nhà nước thời vua Lê Thánh Tông, bao gồm hai phần chính: Trung ương và Địa phương. Phần Trung ương gồm Vua, Quan đại thần, và các cơ quan văn phòng, hành chính. Phần Địa phương gồm các cấp từ Đạo/Thừa tuyên xuống đến Xã, Phường, Sách.]
+
+Sơ đồ 15. Tổ chức bộ máy nhà nước thời vua Lê Thánh Tông
+
+<!-- chunk 311 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "61"
+section_name: Mục 1 Chính trị
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_311
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+? Đọc thông tin và quan sát sơ đồ 15, hãy nêu những thành tựu tiêu biểu về chính trị của nền văn minh Đại Việt.
+
+<!-- chunk 312 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "62"
+section_name: Mục 1 Chính trị
+sub_type: 
+sub_id: " "
+sub_name: Luật pháp
+has_table: false
+chunk_id: ls_312
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+1.2. Luật pháp
+
+Nhà nước tăng cường quản lí xã hội thông qua luật pháp. Năm 1002, nhà Tiền Lê định luật lệ. Năm 1042, vua Lý Thái Tông ban hành bộ Hình thư. Đây là bộ luật thành văn đầu tiên của Đại Việt, đánh dấu mốc quan trọng trong lịch sử pháp quyền Việt Nam và là bước tiến của văn minh Đại Việt. Năm 1230, vua Trần Thái Tông cho soạn bộ Hình luật. Năm 1483, với sự ra đời của bộ Quốc triều hình luật (Luật Hồng Đức) dưới thời Lê sơ, luật pháp trở thành hệ thống chuẩn mực nhằm duy trì và bảo vệ quyền lợi của tầng lớp thống trị cũng như trật tự xã hội. Năm 1811, vua Gia Long cho biên soạn bộ Hoàng Việt luật lệ (Luật Gia Long) và ban hành năm 1815, được thi hành trong suốt các triều vua nhà Nguyễn.
+
+<!-- chunk 313 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "63"
+section_name: Mục 1 Chính trị
+sub_type: 
+sub_id: " "
+sub_name: Luật pháp
+has_table: false
+chunk_id: ls_313
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+"Nhâm Ngọ, năm thứ tư [1042]... Ban sách Hình thư. Trước kia, trong nước việc kiện tụng phiền nhiễu, quan giữ việc hình cáu nể luật văn, cốt làm khắc nghiệt, thậm chí bị oan uổng. Vua lấy làm thương xót, sai Trung thư sửa định luật lệ, châm chước cho thích đáng với thời bấy giờ, chia ra môn loại, biên ra điều khoản, làm sách Hình luật của một triều đại, để cho người xem dễ hiểu. Sách làm xong, xuống chiếu ban hành, dân lấy làm tiện".
+
+(Đại Việt sử ký toàn thư, Ngô Sĩ Liên và các sử thần triều Hậu Lê)
+
+Nội dung chủ yếu của luật pháp qua các triều đại phong kiến Đại Việt là đề cao tính dân tộc và chủ quyền quốc gia; bảo vệ quyền lực của vua, quý tộc, quan lại; bảo vệ sức kéo trong nông nghiệp. Ngoài ra, còn bảo vệ quyền lợi của nhân dân, trong đó có quyền lợi của phụ nữ.
+
+<!-- chunk 314 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "64"
+section_name: Mục 1 Chính trị
+sub_type: 
+sub_id: " "
+sub_name: Luật pháp
+has_table: false
+chunk_id: ls_314
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+"Những người tự tiện giết trâu ngựa thì xử phạt 80 trượng và phải nộp tiền giá con trâu ngựa ấy vào công khố. Nếu là người ngoại quốc hay là kẻ nô lệ mà phạm tội trên thì người quản giám ngoại kiều và người chủ bị phạt 5 quan tiền. Thấy ai đem thịt ra chợ bán mà người coi chợ và xã quan sở tại không cấm thì đều xử phạt 80 trượng". (Điều 580)
+
+(Quốc triều hình luật, bản dịch của Viện Sử học Việt Nam)
+
+<!-- chunk 315 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "65"
+section_name: Mục 1 Chính trị
+sub_type: 
+sub_id: " "
+sub_name: Luật pháp
+has_table: false
+chunk_id: ls_315
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+Đọc thông tin, tư liệu, hãy nêu và phân tích vai trò của luật pháp đối với sự phát triển của nền văn minh Đại Việt.
+
+<!-- chunk 316 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "66"
+section_name: Mục 2 Kinh tế
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_316
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+2. Kinh tế
+2.1. Nông nghiệp
+
+Nhà nước thực hiện nhiều chính sách quan tâm, chăm lo phát triển sản xuất nông nghiệp, như đắp đê, tổ chức khai hoang, "quân điền", "ngụ binh ư nông", miễn giảm thuế, nghiêm cấm giết trâu bò,... Trong triều đình cũng hình thành những chức quan quản lí, giám sát và khuyến khích sản xuất nông nghiệp như Hà đê sứ, Khuyến nông sứ, Đồn điền sứ. Những chính sách của nhà nước tạo điều kiện cho nông dân có ruộng đất canh tác.
+
+"Mùa xuân, tháng 2 [năm 1038], vua ngự ra cửa Bố Hải cày ruộng Tịch điền. Sai Hữu ti đơn cỏ dặp dân. Vua thân tế Thần Nông, lễ xong tự cầm cày để làm lễ tự cày. Các quan tả hữu có người can rằng: Đó là công việc của nông phu, bệ hạ cần gì làm thế? Vua nói: Trẫm không tự cày thì lấy gì làm xôi cúng, lại lấy gì cho thiên hạ noi theo. Nói xong đẩy cày ba lần rồi thôi".
+
+<!-- chunk 317 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "67"
+section_name: Mục 2 Kinh tế
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_317
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+(Đại Việt sử ký toàn thư, Ngô Sĩ Liên và các sử thần triều Hậu Lê)
+
+Nông nghiệp là ngành kinh tế chủ đạo với cây trồng chính là lúa nước. Ngoài ra, người dân còn trồng nhiều cây lương thực như ngô, khoai, sắn,... Phương thức và kĩ thuật canh tác có những bước tiến mới. Việc sử dụng công cụ lao động bằng sắt, sử dụng sức kéo của trâu, bò và thâm canh hai, ba vụ lúa trong một năm trở nên phổ biến, góp phần tăng năng suất lao động, đảm bảo đời sống người dân.
+
+Công cuộc khai hoang, phục hoá, lấn biển làm tăng diện tích trồng trọt, lập thêm nhiều làng mới, góp phần mở rộng lãnh thổ và tăng cường khả năng phòng thủ đất nước.
+
+Nhà nước tăng cường vận động nhân dân tham gia đắp đê phòng lụt trên quy mô lớn, hình thành hệ thống đê điều, thủy lợi hoàn chỉnh trong cả nước.
+
+<!-- chunk 318 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "68"
+section_name: Mục 2 Kinh tế
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_318
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+"Tháng ba [năm 1248], lệnh các lộ đắp đê phòng lụt, gọi là đê quai vạc, từ đầu nguồn đến bờ biển, để ngăn nước lũ tràn ngập.
+
+Đặt chức Hà đê chánh phó sứ để quản đốc. Chỗ đắp thì đo xem mất bao nhiêu ruộng đất của dân, theo giá trả lại tiền. Đắp đê quai vạc là bắt đầu từ đó".
+
+(Đại Việt sử kí toàn thư, Ngô Sĩ Liên và các sử thần triều Hậu Lê)
+
+<!-- chunk 319 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "69"
+section_name: Mục 2 Kinh tế
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_319
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+? Đọc thông tin và tư liệu trên:
+- Nêu những thành tựu tiêu biểu về nông nghiệp của nền văn minh Đại Việt.
+- Phân tích tác động của những thành tựu trong lĩnh vực nông nghiệp đối với sự phát triển của nền văn minh Đại Việt.
+
+<!-- chunk 320 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "70"
+section_name: Mục 2 Kinh tế
+sub_type: 
+sub_id: " "
+sub_name: Thủ công nghiệp
+has_table: false
+chunk_id: ls_320
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+2.2. Thủ công nghiệp
+
+Thủ công nghiệp dân gian tiếp tục duy trì và phát triển ở các địa phương với nhiều ngành nghề (dệt lụa, làm đồ gốm, đồ trang sức, rèn sắt, đúc đồng, làm giấy, nhuộm,...). Nhiều nghề khác xuất hiện như làm tranh sơn mài, làm giấy, khắc bản in,...
+
+Hình 15.2. Đồ gốm hoa nâu thời Lý - Trần
+
+Thế kỉ XV đã có những làng, phường thủ công chuyên nghiệp bên cạnh những nghề phụ của nông dân như ở ấp Mao Điền (Hải Dương) có nghề dệt vải nhỏ, đẹp hơn lụa; phường Tăng Kiếm ở Thăng Long dệt vóng gấm trơn. Nghề nhuộm vải cũng phát triển với phường Hàng Đào nhuộm điều, làng Huê Cầu nhuộm chàm.
+
+(Dư địa chí, Nguyễn Trãi)
+
+Thế kỉ XVI - XVII, có nhiều làng nghề thủ công nổi tiếng cả nước, như dệt La Khê, gốm Bát Tràng (Hà Nội); gốm Chu Đậu (Hải Dương),... với sản phẩm phong phú, đa dạng và tinh xảo.
+
+<!-- chunk 321 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "71"
+section_name: Mục 2 Kinh tế
+sub_type: 
+sub_id: " "
+sub_name: Thủ công nghiệp
+has_table: false
+chunk_id: ls_321
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+Thủ công nghiệp nhà nước do triều đình trực tiếp quản lí được chú trọng. Cục Bách tác và các quan xưởng tại Thăng Long là nơi sản xuất đồ dùng phục vụ nhà nước, vua, quan trong triều đình. Các hoạt động sản xuất chủ yếu là đúc tiền kim loại, đóng thuyền lớn, sản xuất vũ khí cho quân đội,...
+
+Sự phát triển của thủ công nghiệp vừa đáp ứng nhu cầu của nhân dân trong nước, vừa tạo ra được những mặt hàng quan trọng để trao đổi với thương nhân nước ngoài.
+
+<!-- chunk 322 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "72"
+section_name: Mục 2 Kinh tế
+sub_type: 
+sub_id: " "
+sub_name: Thủ công nghiệp
+has_table: false
+chunk_id: ls_322
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+? Đọc thông tin và quan sát hình 15.2, hãy nêu những thành tựu tiêu biểu của thủ công nghiệp Đại Việt. Phân tích tác động của thủ công nghiệp đối với nền văn minh Đại Việt.
+
+<!-- chunk 323 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "73"
+section_name: Mục 2 Kinh tế
+sub_type: 
+sub_id: " "
+sub_name: Thương nghiệp
+has_table: false
+chunk_id: ls_323
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+2.3. Thương nghiệp
+
+Chợ làng, chợ huyện được hình thành và phát triển mạnh, hoạt động buôn bán giữa các làng, các vùng trong nước diễn ra nhộn nhịp. Kinh đô Thăng Long với 36 phố phường trở thành trung tâm buôn bán sầm uất dưới thời Lý, Trần, Lê sơ.
+
+Hoạt động trao đổi, buôn bán với nước ngoài (Gia-va, Xiêm, Ấn Độ, Trung Hoa,...) bước đầu phát triển với nhiều mặt hàng phong phú (lụa, vải, hương liệu, ngà voi, giấy, ngọc, vàng, bạc,...). Dưới thời Lý, Trần, Lê sơ, các địa điểm trao đổi hàng hoá với nước ngoài được hình thành như Vân Đồn (Quảng Ninh), Lạch Trường (Thanh Hoá),...
+Từ thế kỉ XVI, ngoài thương nhân phương Đông, thuyền buôn của phương Tây (Bồ Đào Nha, Hà Lan, Pháp,...) đã vào Đại Việt trao đổi, buôn bán. Việc giao thương với nước ngoài góp phần mở rộng thị trường trong nước và thúc đẩy sự hưng thịnh của các đô thị và cảng thị, tiêu biểu là Thăng Long (Hà Nội), Phố Hiến (Hưng Yên), Thanh Hà (Thừa Thiên Huế), Hội An (Quảng Nam), Gia Định (Thành phố Hồ Chí Minh),...
+
+<!-- chunk 324 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "75"
+section_name: Mục 2 Kinh tế
+sub_type: 
+sub_id: " "
+sub_name: Thương nghiệp
+has_table: false
+chunk_id: ls_324
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+Một số người phương Tây đến Đại Việt thời bấy giờ đã mô tả: Các phố Kẻ Chợ (Thăng Long) đều rộng, đẹp, nhiều phố lát gạch. Phố xá buôn bán nhộn nhịp, nhất là vào ngày mồng một và ngày rằm âm lịch. Mỗi phố bán một thứ hàng hoá. Nhờ con sông Cái (sông Hồng) chảy qua kinh thành, thuyền bè chở hàng hoá qua lại rất đông.
+
+Hình 15.3. Cảnh một góc Thăng Long thế kỉ XVII (tranh vẽ)
+
+[Hình ảnh mô tả một cảnh sông nước với nhiều thuyền bè và công trình kiến trúc ở bờ sông, có vẻ là một cảnh sinh hoạt buôn bán sầm uất của Thăng Long thời xưa]
+
+<!-- chunk 325 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "76"
+section_name: Mục 2 Kinh tế
+sub_type: 
+sub_id: " "
+sub_name: Thương nghiệp
+has_table: false
+chunk_id: ls_325
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+Đọc thông tin và quan sát hình 15.3, hãy:
+- Nêu những thành tựu tiêu biểu của thương nghiệp Đại Việt.
+- Nêu vai trò của đô thị đối với sự phát triển của nền văn minh Đại Việt.
+
+<!-- chunk 326 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "77"
+section_name: Mục 3 Văn hoá
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_326
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+3. Văn hoá
+3.1. Tư tưởng, tôn giáo, tín ngưỡng
+Tư tưởng
+Tư tưởng yêu nước, thương dân được xem là tiêu chuẩn đạo đức cao nhất để đánh giá con người và các hoạt động xã hội, được biểu hiện thông qua các chính sách của nhà nước trong việc quan tâm đến sản xuất và đời sống của nhân dân. Đó là cội nguồn của tư tưởng "lấy dân làm gốc".
+
+"...Khoan thư sức dân để làm kế sâu rễ bền gốc, đó là thượng sách để giữ nước".
+(Trần Hưng Đạo)
+
+Nho giáo phát triển gắn liền với hoạt động học tập, thi cử từ thời Lý, Trần. Đến thời Lê sơ, Nho giáo được nâng lên địa vị độc tôn, trở thành hệ tư tưởng chính thống của nhà nước quân chủ, góp phần quan trọng vào việc đào tạo đội ngũ trí thức, quan lại và bồi dưỡng những người hiền tài. Nho sĩ trở thành một lực lượng quan trọng trong triều đình.
+
+Tôn giáo
+
+<!-- chunk 327 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "78"
+section_name: Mục 3 Văn hoá
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_327
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+Phật giáo du nhập từ thời kì Bắc thuộc, phát triển mạnh trong buổi đầu độc lập và trở thành quốc giáo dưới thời Lý, Trần. Các vua kế tiếp nhau dựng chùa, đúc chuông, tạc tượng, in kinh Phật. Nhiều cao tăng tham gia triều chính. Ở các làng, chùa trở thành trung tâm sinh hoạt văn hoá, vừa là nơi dạy chữ, vừa là nơi tổ chức hội hè.
+
+[Hình ảnh một ngôi chùa cổ với mái ngói cong, cột đá và sân gạch đỏ, được bao quanh bởi cây cối và núi non. Phía dưới hình có chú thích: Hình 15.4. Chùa Hoa Yên, Yên Tử (Quảng Ninh)]
+
+Đạo giáo được duy trì, phát triển trong dân gian và được các triều đại phong kiến coi trọng, đặc biệt là thời Đinh, Tiền Lê, Lý. Trong các thế kỉ XIII - XVI, Hồi giáo, Công giáo du nhập vào Đại Việt.
+
+<!-- chunk 328 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "79"
+section_name: Mục 3 Văn hoá
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_328
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+Tín ngưỡng
+
+Tín ngưỡng thờ cúng tổ tiên của người Việt tiếp tục được duy trì. Tín ngưỡng thờ Thành hoàng (người có công với làng, nước) ngày càng phổ biến ở các làng xã. Ngoài ra, tín ngưỡng thờ Mẫu, thờ các anh hùng, tổ nghề,... cũng phát triển, tạo nên truyền thống văn hoá tốt đẹp trong cộng đồng.
+
+<!-- chunk 329 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "80"
+section_name: Mục 3 Văn hoá
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_329
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+Đọc thông tin và quan sát hình 15.4, hãy nêu những thành tựu tiêu biểu về tư tưởng, tôn giáo, tín ngưỡng của nền văn minh Đại Việt.
+
+<!-- chunk 330 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "81"
+section_name: Mục 3 Văn hoá
+sub_type: 
+sub_id: " "
+sub_name: Giáo dục
+has_table: false
+chunk_id: ls_330
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+3.2. Giáo dục
+
+Hệ thống giáo dục được mở rộng, chủ yếu nhằm đào tạo đội ngũ quan lại cho bộ máy chính quyền. Năm 1070, nhà Lý cho dựng Văn Miếu, tạc tượng Chu Công, Khổng Tử. Năm 1075, triều đình mở khoa thi đầu tiên để tuyển chọn nhân tài. Năm 1076, vua Lý cho mở Quốc Tử Giám để dạy học cho hoàng tử, công chúa.
+
+Từ thời Trần, triều đình lập Quốc học viện cho con em quan lại học tập. Bên cạnh trường học của nhà nước còn có lớp học tư nhân ở các làng xã. Từ thời Lê sơ, con em bình dân học giỏi cũng được đi học, đi thi; hệ thống trường học mở rộng trên cả nước. Nhà nước tăng cường khuyến khích nhân dân học tập, tiêu biểu như việc ban Chiếu khuyến học thời Tây Sơn.
+
+<!-- chunk 331 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "82"
+section_name: Mục 3 Văn hoá
+sub_type: 
+sub_id: " "
+sub_name: Giáo dục
+has_table: false
+chunk_id: ls_331
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+Về phương thức thi cử, tuyển chọn quan lại, nhà nước chính quy hoá việc thi cử để tuyển chọn người tài. Thể lệ thi cử được quy định chặt chẽ, các kì thi được tổ chức, hệ thống (thi Hương, thi Hội, thi Đình). Chế độ khoa cử từng bước trở thành phương thức tuyển chọn quan lại thường xuyên. Năm 1247, nhà Trần đặt danh hiệu Tam khôi dành cho những người đỗ đầu trong kì thi Đình, tiêu biểu như Nguyễn Hiền, Lê Văn Hưu, Mạc Đĩnh Chi,... Từ năm 1463, dưới thời Lê sơ, cứ ba năm triều đình lại tổ chức thi Hương tại địa phương, thi Hội tại kinh thành. Năm 1484, triều đình đặt lệ xướng danh và khắc tên các tiến sĩ vào bia đá ở Văn Miếu - Quốc Tử Giám.
+
+<!-- chunk 332 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "83"
+section_name: Mục 3 Văn hoá
+sub_type: 
+sub_id: " "
+sub_name: Giáo dục
+has_table: false
+chunk_id: ls_332
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+[Hình ảnh minh họa]
+Những người đỗ tiến sĩ trở lên được vua ban mũ áo, phẩm tước, được vinh quy bái tổ, khắc tên vào bia đá đặt ở Văn Miếu - Quốc Tử Giám, gọi là Bia Tiến sĩ.
+
+Hình 15.5. Bia Tiến sĩ tại Văn Miếu - Quốc Tử Giám (Hà Nội)
+
+"Khoa cử các đời thịnh nhất là đời Hồng Đức (thời vua Lê Thánh Tông). Cách lấy đỗ rộng rãi, cách chọn người công bằng, trong nước không để sót nhân tài, triều đình không dùng lầm người kém".
+(Lịch triều hiến chương loại chí, Phan Huy Chú)
+
+<!-- chunk 333 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "84"
+section_name: Mục 3 Văn hoá
+sub_type: 
+sub_id: " "
+sub_name: Giáo dục
+has_table: false
+chunk_id: ls_333
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+Đọc thông tin, tư liệu và quan sát hình 15.5, hãy:
+- Trình bày những thành tựu tiêu biểu về giáo dục của Đại Việt.
+- Nêu vai trò của Văn Miếu - Quốc Tử Giám đối với sự phát triển của văn minh Đại Việt.
+
+<!-- chunk 334 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "85"
+section_name: Mục 3 Văn hoá
+sub_type: 
+sub_id: " "
+sub_name: Chữ viết và văn học
+has_table: false
+chunk_id: ls_334
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+3.3. Chữ viết và văn học
+
+Về chữ viết, trên cơ sở tiếp thu chữ Hán của người Trung Hoa, người Việt đã sáng tạo ra chữ Nôm để ghi lại tiếng nói của dân tộc. Bên cạnh chữ Hán là văn tự chính thống dùng trong thi cử, một số triều đại đã có những chính sách khuyến khích và đề cao chữ Nôm (nhà Hồ, nhà Tây Sơn). Đến thế kỉ XVII, chữ Quốc ngữ được hình thành từ việc sử dụng, cải biên bảng chữ cái La-tinh để ghi âm tiếng Việt và từng bước phát triển, trở thành chữ viết chính thức của người Việt.
+
+<!-- chunk 335 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "86"
+section_name: Mục 3 Văn hoá
+sub_type: 
+sub_id: " "
+sub_name: Chữ viết và văn học
+has_table: false
+chunk_id: ls_335
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+Văn học chữ Hán phát triển mạnh, đạt nhiều thành tựu rực rỡ với nhiều tác phẩm tiêu biểu như Chiếu dời đô (Lý Thái Tổ), Nam quốc sơn hà (khuyết danh), Hịch tướng sĩ (Trần Quốc Tuấn), Bình Ngô đại cáo (Nguyễn Trãi),... Nội dung chủ yếu thể hiện tinh thần yêu nước, niềm tự hào dân tộc. Từ thế kỉ XVIII, văn xuôi chữ Hán phát triển với nhiều thể loại như tiểu thuyết chương hồi (Hoàng Lê nhất thống chí – Ngô gia văn phái), truyện kí (Thượng kinh kí sự – Lê Hữu Trác),...
+
+<!-- chunk 336 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "87"
+section_name: Mục 3 Văn hoá
+sub_type: 
+sub_id: " "
+sub_name: Chữ viết và văn học
+has_table: false
+chunk_id: ls_336
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+Văn học chữ Nôm xuất hiện từ khoảng thế kỉ XIII và phát triển mạnh từ thế kỉ XV, đặc biệt là trong các thế kỉ XVI – XIX. Nội dung chủ yếu là ca ngợi tình yêu quê hương, đất nước, con người; phê phán một bộ phận quan lại, cường hào; phản ánh những bất công trong xã hội và đề cao vẻ đẹp con người,... Tiêu biểu là tác phẩm Quốc âm thi tập của Nguyễn Trãi, các bài thơ sáng tác bằng chữ Nôm của Lê Thánh Tông, Bạch Vân quốc ngữ thi tập của Nguyễn Bỉnh Khiêm, Truyện Kiều của Nguyễn Du, Lục Vân Tiên của Nguyễn Đình Chiểu,...
+
+Văn học dân gian tiếp tục được duy trì và phát triển mạnh trong các thế kỉ XVI – XVIII. Nội dung chủ yếu là phản ánh tâm tư, tình cảm của con người, tình yêu quê hương, đất nước với nhiều thể loại phong phú như thơ ca, tục ngữ, hò vè, hát, truyện cổ tích,...
+
+<!-- chunk 337 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "88"
+section_name: Mục 3 Văn hoá
+sub_type: 
+sub_id: " "
+sub_name: Chữ viết và văn học
+has_table: false
+chunk_id: ls_337
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+? Đọc thông tin, hãy nêu những thành tựu tiêu biểu về văn học và chữ viết của nền văn minh Đại Việt.
+
+<!-- chunk 338 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "89"
+section_name: Mục 3 Văn hoá, kĩ thuật
+sub_type: 
+sub_id: " "
+sub_name: Khoa học
+has_table: false
+chunk_id: ls_338
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+3.4. Khoa học, kĩ thuật
+
+Bảng 15. Thành tựu tiêu biểu về khoa học, kĩ thuật
+
+LĨNH VỰC | THÀNH TỰU
+
+<!-- chunk 339 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "91"
+section_name: Mục 3 Văn hoá, kĩ thuật
+sub_type: 
+sub_id: " "
+sub_name: Khoa học
+has_table: false
+chunk_id: ls_339
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+? Đọc thông tin trong bảng 15, hãy nêu thành tựu tiêu biểu về khoa học, kĩ thuật của nền văn minh Đại Việt và rút ra nhận xét.
+
+<!-- chunk 340 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "92"
+section_name: Mục 3 Văn hoá
+sub_type: 
+sub_id: " "
+sub_name: Nghệ thuật
+has_table: false
+chunk_id: ls_340
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+3.5. Nghệ thuật
+
+Nghệ thuật kiến trúc phát triển mạnh mẽ. Hệ thống cung điện, chùa, tháp, thành quách được xây dựng ở nhiều nơi với quy mô lớn. Tiêu biểu là Hoàng thành Thăng Long, thành nhà Hồ, thành Lam Kinh, thành nhà Mạc, Đại nội Huế, thành Gia Định,... Nhiều ngôi chùa có kiến trúc độc đáo được xây dựng, nổi tiếng là chùa Một Cột, Sùng Thiên Diên Linh, chùa Trấn Quốc, chùa Phật Tích, chùa Thiên Mụ,... Bên cạnh đó, kiến trúc đình làng cũng phát triển mạnh, tiêu biểu như đình làng Thạch Lỗi (Hưng Yên), đình làng Đình Bảng (Bắc Ninh),...
+
+[Hình ảnh mô tả một cổng thành cổ với ba vòm cửa lớn bằng đá, được bao quanh bởi cỏ xanh và bầu trời xanh có mây trắng.]
+
+Hình 15.6. Di tích thành nhà Hồ (Thanh Hóa)
+
+"An Nam tứ đại khí" gồm bốn công trình nghệ thuật thời Lý, Trần: tượng Phật chùa Quỳnh Lâm, đỉnh tháp Báo Thiên, chuông Quy Điền và vạc Phổ Minh. Đây được coi là bốn quốc bảo của Đại Việt thời Lý, Trần.
+
+Nghệ thuật điêu khắc trên đá, gốm, gỗ thể hiện phong cách đặc sắc, tinh xảo với nhiều loại hình phong phú, như hoa văn trang trí, hình sông nước, hoa sen, hoa cúc, lá đề, hình rồng, tượng người, tượng phỏng,... Đặc biệt là hình tượng rồng qua các triều đại Lý, Trần, Lê sơ.
+
+<!-- chunk 341 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "94"
+section_name: Mục 3 Văn hoá
+sub_type: 
+sub_id: " "
+sub_name: Nghệ thuật
+has_table: false
+chunk_id: ls_341
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+Âm nhạc phát triển mạnh với nhiều thể loại (nhạc dân gian, nhạc cung đình,...) và nhạc cụ phong phú (trống, đàn bầu, sáo, tiêu, đàn tranh, đàn tỳ bà, đàn nguyệt, đàn thập lục,...). Từ thời Lê sơ, âm nhạc cung đình có vai trò quan trọng trong các sự kiện lớn của triều đình. Nghệ thuật sân khấu phát triển với nhiều loại hình, như hát chèo, hát tuồng, hát quan họ, hát ví, hát giặm, hát chèo thuyền, hát ả đào, hát xẩm,...
+
+Lễ hội là hình thức sinh hoạt văn hoá cộng đồng trong dân gian được duy trì và được tổ chức hằng năm với nhiều loại hình, như hội mùa, tết Nguyên đán, lễ Tịch điền, tết Thanh minh, tết Đoan Ngọ,... Cùng với lễ hội là những trò vui, như đấu vật, đua thuyền, múa rối nước,...
+
+[Hình ảnh mô tả một cảnh múa rối nước. Có nhiều con rối đang đứng trong nước, mặc trang phục truyền thống và cầm các dụng cụ khác nhau. Phía sau là một sân khấu với trang trí màu sắc rực rỡ.]
+
+Hình 15.7. Nghệ thuật múa rối nước
+
+<!-- chunk 342 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "96"
+section_name: Mục 3 Văn hoá
+sub_type: 
+sub_id: " "
+sub_name: Nghệ thuật
+has_table: false
+chunk_id: ls_342
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+Đọc thông tin và quan sát hình 15.7, hãy:
+- Trình bày những thành tựu tiêu biểu về nghệ thuật của nền văn minh Đại Việt.
+- Nêu giá trị của "An Nam tứ đại khí" đối với nền văn minh Đại Việt.
+
+<!-- chunk 343 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "97"
+section_name: Mục 4 Ý nghĩa của văn minh Đại Việt
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_343
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+4. Ý nghĩa của văn minh Đại Việt
+
+Ưu điểm
+
+Văn minh Đại Việt là nền văn minh nông nghiệp trồng lúa nước, hình thành dựa trên nền độc lập tự chủ của quốc gia, sự kế thừa nền văn minh Văn Lang - Âu Lạc, tiếp thu có chọn lọc những thành tựu của văn minh bên ngoài và phát triển rực rỡ, toàn diện trên mọi lĩnh vực của đời sống xã hội, cùng với sự tồn tại và phát triển của quốc gia Đại Việt. Yếu tố xuyên suốt quá trình phát triển của văn minh Đại Việt là truyền thống yêu nước, nhân ái, nhân văn và tinh cộng đồng sâu sắc.
+
+<!-- chunk 344 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "98"
+section_name: Mục 4 Ý nghĩa của văn minh Đại Việt
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_344
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+Hạn chế
+
+Do chính sách "trọng nông ức thương" của một số triều đại phong kiến nên kinh tế hàng hoá còn nhiều hạn chế. Lĩnh vực khoa học, kĩ thuật chưa thực sự phát triển. Kinh tế nông nghiệp, thiết chế làng xã và mô hình quân chủ chuyên chế cũng góp phần làm nảy sinh tính thụ động, tư tưởng quân bình, thiếu năng động, sáng tạo của cá nhân và xã hội. Bên cạnh đó, những hạn chế về tri thức khoa học khiến đời sống tinh thần của cư dân vẫn còn nhiều yếu tố duy tâm.
+
+<!-- chunk 345 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "99"
+section_name: Mục 4 Ý nghĩa của văn minh Đại Việt
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_345
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+Ý nghĩa
+
+Văn minh Đại Việt thể hiện sức sáng tạo và truyền thống lao động bền bỉ của các thế hệ người Việt. Sự phát triển vượt bậc về kinh tế, chính trị, văn hoá của văn minh Đại Việt là tiền đề và điều kiện quan trọng để tạo nên sức mạnh của dân tộc trong công cuộc đấu tranh bảo vệ độc lập, chủ quyền quốc gia; đồng thời góp phần bảo tồn, gìn giữ và phát huy những thành tựu và giá trị của văn minh Việt cổ. Văn minh Đại Việt có giá trị lớn đối với quốc gia, dân tộc Việt Nam. Một số thành tựu tiêu biểu của văn minh Đại Việt đã được UNESCO ghi danh.
+
+[Hình ảnh mô tả một bàn thờ gia tiên trong một gia đình người Việt hiện nay. Bàn thờ được trang trí bằng gỗ chạm khắc tinh xảo, có các bình hoa, đĩa trái cây, bát hương và các vật phẩm cúng bài trí trang trọng.]
+
+Hình 15.8. Bàn thờ gia tiên trong một gia đình người Việt hiện nay
+
+<!-- chunk 346 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 6
+chapter_name: CHỦ ĐỀ 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)
+lesson: Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT
+id_lesson: 15
+section_id: "101"
+section_name: Mục 4 Ý nghĩa của văn minh Đại Việt
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_346
+---
+[ Bài 15: MỘT SỐ THÀNH TỰU CỦA VĂN MINH ĐẠI VIỆT ]
+
+Đọc thông tin và quan sát hình 15.8, hãy nhận xét về ưu điểm, hạn chế và phân tích ý nghĩa của nền văn minh Đại Việt.
+
+1. Vẽ sơ đồ tư duy khái quát những thành tựu tiêu biểu của nền văn minh Đại Việt trên các lĩnh vực: chính trị, kinh tế, văn hoá.
+
+2. Kể tên những thành tựu của nền văn minh Đại Việt còn lưu giữ, tồn tại đến ngày nay mà em biết. Hãy nêu giá trị của các thành tựu đó.
+
+3. Hãy giới thiệu với du khách về một thành tựu tiêu biểu của nền văn minh Đại Việt.
+
+4. Sưu tầm tư liệu về một thành tựu của nền văn minh Đại Việt để thuyết trình với thầy cô và bạn học.
+
+<!-- chunk 347 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "1"
+section_name: Mục tiêu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_347
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Học xong bài này, em sẽ:
+- Nêu được thành phần dân tộc theo dân số.
+- Trình bày được khái niệm ngữ hệ và việc phân chia tộc người theo ngữ hệ.
+- Nêu được nét chính về đời sống vật chất và tinh thần của cộng đồng các dân tộc Việt Nam.
+
+<!-- chunk 348 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "2"
+section_name: Mô tả bài
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_348
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Năm 2005, nhân dịp kỉ niệm 60 năm Quốc khánh nước Cộng hoà xã hội chủ nghĩa Việt Nam, Bộ Bưu chính, Viễn thông (nay là Bộ Thông tin và Truyền thông) đã phát hành bộ tem "Cộng đồng các dân tộc Việt Nam". Tính đến thời điểm phát hành, đây là bộ tem có quy mô đồ sộ nhất, cũng là bộ tem phổ thông có nhiều mẫu nhất trong lịch sử tem bưu chính cách mạng Việt Nam với 54 mẫu, thể hiện hình ảnh đặc trưng của 54 dân tộc sinh sống trên lãnh thổ Việt Nam.
+
+Vậy cộng đồng 54 dân tộc anh em trên đất nước Việt Nam có những thành phần dân tộc theo dân số và theo ngữ hệ gì? Việc phân chia tộc người theo dân số và ngữ hệ được tiến hành như thế nào? Đời sống vật chất và tinh thần của cộng đồng các dân tộc ra sao?
+
+[Hình ảnh mô tả 6 mẫu tem bưu chính, mỗi mẫu thể hiện trang phục truyền thống và hoạt động đặc trưng của các dân tộc khác nhau tại Việt Nam. Các tem đều có giá 800 đồng và được ghi chú là "Việt Nam".]
+
+Hình 16.1. Một số mẫu tem trong bộ tem "Cộng đồng các dân tộc Việt Nam" phát hành năm 2005
+
+<!-- chunk 349 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "4"
+section_name: Mục 1 Thành phần dân tộc theo dân số
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_349
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+1. Thành phần dân tộc theo dân số
+
+Theo kết quả của cuộc Tổng điều tra dân số năm 2019, tổng số dân của Việt Nam là 96,2 triệu người. Trong đó, dân tộc Kinh chiếm khoảng 82,1 triệu người.
+
+Bảng 16. Thống kê quy mô dân số theo dân tộc (2019)
+
+Trong 53 dân tộc thiểu số, có 6 dân tộc có số dân trên 1 triệu người là: Tày, Thái, Mường, H'mông, Kho-me, Nùng. 11 dân tộc có số dân dưới 5 nghìn người. Các dân tộc cư trú phân tán và đan xen, đặc biệt ở miền núi phía bắc, các tỉnh Tây Nguyên và đồng bằng sông Cửu Long.
+
+[Hình tròn biểu diễn cơ cấu dân số theo dân tộc ở Việt Nam (2019) với 85,3% là dân tộc Kinh và 14,7% là các dân tộc khác]
+
+Hình 16.2. Cơ cấu dân số theo dân tộc ở Việt Nam (2019)
+
+<!-- chunk 352 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "7"
+section_name: Mục 1 Thành phần dân tộc theo dân số
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_352
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Đọc thông tin và quan sát bảng 16, các hình 16.1, 16.2, hãy:
+- Kể tên các dân tộc thiểu số ở Việt Nam có số dân trên 1 triệu người và những dân tộc thiểu số có số dân dưới 5 nghìn người.
+- Nhận xét về cơ cấu dân số theo dân tộc ở Việt Nam hiện nay.
+
+<!-- chunk 353 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "8"
+section_name: Mục 2 Ngữ hệ và phân chia tộc người theo ngữ hệ
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_353
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+2. Ngữ hệ và phân chia tộc người theo ngữ hệ
+
+Ngữ hệ là một nhóm các ngôn ngữ có cùng nguồn gốc với nhau. Quan hệ đó được xác định bởi những đặc điểm giống nhau về ngữ pháp, hệ thống từ vựng cơ bản, âm vị và thanh điệu. Ngữ hệ còn được gọi là dòng ngôn ngữ.
+
+Các dân tộc Việt Nam được xếp vào 8 nhóm ngôn ngữ tộc người, thuộc 5 ngữ hệ khác nhau.
+
+[Sơ đồ phân chia tộc người theo ngữ hệ, bao gồm:
+- Ngữ hệ Nam Á
+- Ngữ hệ Mông - Dao
+- Ngữ hệ Thái - Ka Đai
+- Ngữ hệ Nam Đảo
+- Ngữ hệ Hán - Tạng
+Mỗi ngữ hệ được chia thành các nhóm ngôn ngữ và các dân tộc cụ thể]
+
+Sơ đồ 16.1. Phân chia tộc người theo ngữ hệ
+
+<!-- chunk 354 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "9"
+section_name: Mục 2 Ngữ hệ và phân chia tộc người theo ngữ hệ
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_354
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Đọc thông tin và quan sát sơ đồ 16.1, hãy:
+- Trình bày khái niệm ngữ hệ.
+- Cho biết các dân tộc ở Việt Nam được phân chia như thế nào theo ngữ hệ.
+
+<!-- chunk 355 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "10"
+section_name: Mục 3 Hoạt động kinh tế, đời sống vật chất
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_355
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+3. Hoạt động kinh tế, đời sống vật chất
+
+Đời sống vật chất của cộng đồng các dân tộc Việt Nam mang đặc trưng của cư dân nông nghiệp trồng lúa nước ở vùng nhiệt đới ẩm gió mùa, được thể hiện trong mọi hoạt động từ sản xuất đến đời sống ăn, mặc, ở, đi lại,... Bên cạnh đó, mỗi dân tộc lại có những nét đặc trưng riêng.
+3.1. Nông nghiệp
+
+Hoạt động sản xuất nông nghiệp chủ yếu của cộng đồng các dân tộc Việt Nam là trồng trọt, chăn nuôi, nhưng có sự khác nhau về hình thức giữa đồng bằng và miền núi.
+
+Người Kinh tập trung chủ yếu ở vùng đồng bằng, trung du và duyên hải, kinh tế nông nghiệp trồng lúa nước đã được hình thành và phát triển từ rất sớm. Bên cạnh đó, chăn nuôi gia súc, gia cầm, nuôi trồng thủy sản,... cũng là những hoạt động kinh tế phổ biến. Hiện nay, với việc ứng dụng các thành tựu khoa học – kĩ thuật vào sản xuất nông nghiệp và thực hiện hiện đại hoá nông thôn, đời sống vật chất của người dân ở nông thôn ngày càng được nâng cao.
+
+Các dân tộc thiểu số phân lớn phân bố ở miền núi, trung du, cao nguyên. Trước đây, các dân tộc thiểu số chủ yếu làm nương rẫy theo hình thức du canh. Hiện nay, họ đã chuyển sang hình thức canh tác định canh, trồng nhiều loại cây như lúa, ngô, khoai xen canh với rau, lạc, vừng, đậu,... và các loại cây ăn quả.
+
+<!-- chunk 356 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "12"
+section_name: Mục 3 Hoạt động kinh tế, đời sống vật chất
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_356
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Sinh sống ở vùng địa hình cao, dốc, làm ruộng bậc thang là cách thích ứng với tự nhiên của các dân tộc thiểu số ở một số tỉnh miền núi phía bắc. Trên vùng núi cao ở Sa Pa (Lào Cai), Mù Cang Chải (Yên Bái), Hoàng Su Phì (Hà Giang), các dân tộc Nùng, Dao, H'mông, La Chí,... đã tạo nên những cảnh đồng ruộng bậc thang rộng hàng nghìn héc-ta, được ví như "bức tranh phong cảnh khổng lồ" hay "những bậc thang nối mặt đất với bầu trời".
+
+Hình 16.3. Ruộng bậc thang ở Sa Pa (Lào Cai)
+
+<!-- chunk 357 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "13"
+section_name: Mục 3 Hoạt động kinh tế, đời sống vật chất
+sub_type: 
+sub_id: " "
+sub_name: Thủ công nghiệp và thương nghiệp
+has_table: false
+chunk_id: ls_357
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+3.2. Thủ công nghiệp và thương nghiệp
+
+Người Kinh phát triển các nghề thủ công như nghề gốm, dệt, đúc đồng, rèn sắt, làm giấy,... từ sớm. Một số nghề đã đạt đến trình độ cao, nhiều làng nghề thủ công có truyền thống lâu đời và nổi tiếng trong cả nước như làng gốm Bát Tràng (Hà Nội), làng hương Thủy Xuân (Huế), làng nghề chăm nón lá Thới Tân (Cần Thơ), làng dệt chiếu Long Định (Đồng Tháp),...
+
+Các dân tộc thiểu số cũng có truyền thống làm các nghề thủ công từ sớm. Ở vùng Tây Bắc, ngoài nông nghiệp, người dân còn làm các nghề như dệt thổ cẩm, dệt lanh, chế tác đồ trang sức, làm mộc, nhúộm, đan lát,... Các dân tộc ở Tây Nguyên như Mnông, Gia Rai, Ê-đê phát triển các nghề dệt thổ cẩm, mây tre đan, điêu khắc tượng, làm rượu cần,... Ở vùng Tây Nam Bộ, các dân tộc Khơ-me, Chăm giỏi nghề dệt lụa, dệt chiếu, làm gốm,...
+
+<!-- chunk 358 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "14"
+section_name: Mục 3 Hoạt động kinh tế, đời sống vật chất
+sub_type: 
+sub_id: " "
+sub_name: Thủ công nghiệp và thương nghiệp
+has_table: false
+chunk_id: ls_358
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Dân tộc Chăm nổi tiếng với nghề dệt lụa tơ tằm và nghề làm gốm. Gốm Bàu Trúc của người Chăm (Ninh Thuận) không dùng bàn xoay mà được nặn hoàn toàn bằng tay. Các nghệ nhân sử dụng đôi bàn chân để làm bệ đỡ thay cho bàn xoay. Sản phẩm gốm Bàu Trúc không có màu sắc cầu kỳ, không dùng men, phổ biến là những bức phù điêu phụ nữ, các vị vua Chăm và những vật dụng trong đời sống.
+
+Hình 16.4. Nghề làm gốm của dân tộc Chăm (Ninh Thuận)
+
+[Hình ảnh mô tả một người thợ gốm đang làm việc trong một xưởng gốm với nhiều sản phẩm gốm xung quanh]
+
+Hình 16.5. Chợ nổi Cái Răng (Cần Thơ)
+
+[Hình ảnh mô tả một chợ nổi trên sông với nhiều thuyền chở đầy hàng hóa và người mua bán]
+
+<!-- chunk 359 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "15"
+section_name: Mục 3 Hoạt động kinh tế, đời sống vật chất
+sub_type: 
+sub_id: " "
+sub_name: Thủ công nghiệp và thương nghiệp
+has_table: false
+chunk_id: ls_359
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Trong đời sống vật chất của cộng đồng các dân tộc Việt Nam, chợ vừa là nơi trao đổi, buôn bán các mặt hàng, vừa là nơi giao lưu văn hoá và thể hiện tính cộng đồng.
+
+Người Kinh thường tổ chức các hình thức chợ làng, chợ huyện và cả chợ trong các khu phố, chợ đầu mối,... Cư dân Nam Bộ còn có hình thức họp chợ trên sông, hình thành các khu chợ nổi. Trong khi đó, các dân tộc vùng cao như H'mông, Dao, Tày, Nùng, Thái,... thường họp chợ phiên.
+
+"Ở quê thì cái chợ là nơi dân xung quanh họp nhau mỗi ngày hay mỗi phiên để đổi chác những đồ thổ sản hoặc về nông nghiệp hoặc về công nghiệp, cần dùng cho sự sinh hoạt hằng ngày. Ngoài những người nhà quê đến chợ để bán thổ sản, còn có ít nhiều người lái buôn chuyên như hàng vải, hàng xén, hàng cau, hàng thuốc, hàng thịt, hàng bánh, cứ gánh hàng đi chợ này chợ khác để bán rong,...".
+
+(Việt Nam văn hoá sử cương, Đào Duy Anh)
+
+Bên cạnh các hình thức chợ truyền thống, cùng với quá trình đô thị hoá đang diễn ra nhanh chóng, các cửa hàng tiện lợi, siêu thị, trung tâm thương mại,... đã xuất hiện trên khắp mọi miền đất nước.
+
+<!-- chunk 360 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "17"
+section_name: Mục 3 Hoạt động kinh tế, đời sống vật chất, mặc, ở
+sub_type: 
+sub_id: " "
+sub_name: Ăn
+has_table: false
+chunk_id: ls_360
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+3.3. Ăn, mặc, ở
+
+Ăn
+
+Cơm tẻ, nước chè là đồ ăn, thức uống cơ bản truyền thống hằng ngày của người Kinh ở miền Bắc. Trong bữa ăn hằng ngày thường có các món canh, rau,... Đặc biệt, họ ưa dùng nước mắm, các loại mắm (tôm, cá, tép, cáy,...) và các loại cà muối, dưa muối. Tương và các loại gia vị như ớt, tỏi, gừng,... cũng thường được sử dụng trong các bữa ăn. Món ăn của người Kinh ở miền Trung thường cay và mặn hơn ở các khu vực khác, trong khi ở miền Nam thường có nhiều món hơi ngọt và ít cay.
+
+Bữa ăn hằng ngày của các dân tộc ít người ở Tây Bắc thường có xôi, ngô. Một số dân tộc ở Tây Nguyên chủ yếu ăn cơm tẻ và không thể thiếu muối ớt trong bữa ăn. Các dân tộc ở Tây Bắc và Tây Nguyên cũng thường uống rượu cần như một hình thức sinh hoạt văn hoá chung.
+
+Người Thái ăn cơm tẻ, trên mâm cơm của họ phổ biến món ớt giã trộn muối, tỏi, có rau thơm, rau mùi, hành lá,... Người Tày có thói quen ăn các món ăn chế biến từ gạo nếp là chính và làm bánh chưng, bánh giầy hoặc xôi nhiều màu sắc vào những dịp quan trọng.
+
+Hình 16.6. Món xôi ngũ sắc của các dân tộc Tày, Nùng
+
+<!-- chunk 361 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "19"
+section_name: Mục 3 Hoạt động kinh tế, đời sống vật chất, mặc, ở
+sub_type: 
+sub_id: " "
+sub_name: Ăn
+has_table: false
+chunk_id: ls_361
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Mặc
+
+Trước đây, đàn ông người Kinh thường mặc quần áo nâu, đi chân trần. Phụ nữ người Kinh ngày thường mặc váy đen, yếm, áo cánh nâu, chít khăn mỏ quạ (Bắc Bộ), hoặc mặc áo bà ba, quần khăn rằn (Nam Bộ). Áo dài được sử dụng phổ biến từ đầu thế kỉ XX và trở thành trang phục truyền thống trong các dịp lễ tết của phụ nữ Việt Nam.
+
+Trang phục truyền thống của các dân tộc thiểu số được đặc trưng bởi hoa văn, chất liệu hoặc màu sắc riêng. Các dân tộc ở Tây Bắc thường chú trọng các họa tiết đa sắc với kĩ thuật thêu công phu, như người H'mông sử dụng chủ đạo bốn màu xanh, đỏ, tím, vàng tạo nên các hình hoa tiết nhiều màu, người Mường tạo điểm nhấn ở cạp váy với các đường nét hoa văn rực rỡ. Màu sắc, chất liệu và hoa văn trên trang phục của các dân tộc ít người ở vùng đồng bằng sông Cửu Long thường đơn giản, phù hợp với môi trường và cuộc sống vùng sông nước.
+
+<!-- chunk 362 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "20"
+section_name: Mục 3 Hoạt động kinh tế, đời sống vật chất, mặc, ở
+sub_type: 
+sub_id: " "
+sub_name: Ăn
+has_table: false
+chunk_id: ls_362
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Khăn Piêu là một trong những sản phẩm thổ cẩm nổi tiếng của dân tộc Thái. Khăn được dệt từ sợi bông, sau đó nhuộm chàm, đến khi vải khô, phụ nữ Thái thêu lên đó những hoa văn sắc sở. Khăn Piêu không chỉ là trang phục mà còn thể hiện sự khéo léo và trình độ thẩm mỹ của người Thái.
+
+Hình 16.7. Trang phục nữ của người Thái đen
+
+[Hình ảnh mô tả một nhóm phụ nữ dân tộc Thái mặc trang phục truyền thống đứng cạnh nhau. Họ mặc áo màu xanh và xanh lá cây, đeo khăn Piêu và các phụ kiện truyền thống khác.]
+
+<!-- chunk 363 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "21"
+section_name: Mục 3 Hoạt động kinh tế, đời sống vật chất, mặc, ở
+sub_type: 
+sub_id: " "
+sub_name: Ở
+has_table: false
+chunk_id: ls_363
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Ở
+
+Nhà ở truyền thống của người Kinh ở các vùng đồng bằng, duyên hải thường là nhà trệt. Trong khuôn viên thường được bố trí liền hoàn nhà – sân – vườn – ao. Ngôi nhà chính thường có kết cấu ba gian hoặc năm gian, trong đó gian giữa là gian trang trọng nhất, đặt bàn thờ tổ tiên. Ở nhiều tỉnh Nam Bộ, nhà bếp thường được làm sát kề hay nối kề với ngôi nhà chính. Trong đời sống hiện đại, nhà ở của người Kinh ở nông thôn hoặc thành thị đều được xây dựng kiên cố, chịu ảnh hưởng của kiến trúc phương Tây.
+
+Các dân tộc thiểu số thường sống tập trung trong các xóm, làng, bản ở chân núi, bên sườn đồi hoặc nơi đất thoải gần sông, suối,... với kiểu nhà phổ biến là nhà sàn để ở và có một ngôi nhà chung làm nơi sinh hoạt cộng đồng.
+
+<!-- chunk 364 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "22"
+section_name: Mục 3 Hoạt động kinh tế, đời sống vật chất, mặc, ở
+sub_type: 
+sub_id: " "
+sub_name: Ở
+has_table: false
+chunk_id: ls_364
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Nhà sàn của người Gia Rai (Tây Nguyên) thường có hai loại là nhà sàn dài và nhà sàn nhỏ. Bên cạnh nhà sàn, ở mỗi làng của người Gia Rai thường có một ngôi nhà chung của cộng đồng gọi là nhà rông. Nhà rông vừa là nơi nhân dân tụ tập sinh hoạt, hội họp, vừa là nơi diễn ra các sự kiện trọng đại của làng, đồng thời ngôi nhà này cũng đáp ứng nhu cầu thiết yếu của đời sống, như có chỗ ngủ, có bếp lửa, có nơi dành cho khách,...
+
+Hình 16.8. Nhà rông của dân tộc Gia Rai (Tây Nguyên)
+
+[Hình ảnh mô tả một ngôi nhà rông truyền thống của dân tộc Gia Rai với mái lá dốc cao. Phía trước nhà rông, một nhóm người mặc trang phục truyền thống đang đứng thành vòng tròn trên bãi cỏ xanh.]
+
+<!-- chunk 365 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "23"
+section_name: Mục 3 Hoạt động kinh tế, đời sống vật chất
+sub_type: 
+sub_id: " "
+sub_name: Phương tiện đi lại
+has_table: false
+chunk_id: ls_365
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+3.4. Phương tiện đi lại
+
+Sinh sống trên nhiều vùng địa hình khác nhau nên từ xa xưa, phương tiện vận chuyển, đi lại của cư dân các dân tộc Việt Nam rất đa dạng. Trong đó, phương tiện đi lại truyền thống của người Kinh trên đường bộ chủ yếu là ngựa, xe ngựa, xe kéo tay; trên đường thuỷ có thuyền, bè, mảng, ghe, tàu,... Mỗi loại phương tiện này lại có nhiều kiểu dáng, kích thước khác nhau.
+
+Ngựa thồ, xe ngựa là phương tiện vận chuyển, đi lại truyền thống phổ biến của nhiều dân tộc thiểu số các tỉnh vùng núi phía Bắc, họ cũng dùng mảng, bè để đi lại trên các sông, suối. Trước đây, các dân tộc Tây Nguyên thường sử dụng voi, ngựa để đi lại. Trong khi đó, người Khơ-me ở Nam Bộ thường sử dụng xe bò (cộ), xe lôi bánh gỗ hoặc bánh hơi, đi lại trên đường hoặc những chân ruộng khô, vận chuyển nông sản trong mùa thu hoạch.
+
+Trong xã hội hiện đại, xe đạp, xe máy và ô tô là phương tiện giao thông phổ biến. Tàu hỏa, máy bay được sử dụng ở Việt Nam từ khoảng cuối thế kỉ XIX - đầu thế kỉ XX, đến nay cũng trở thành phương tiện đi lại quen thuộc của người dân.
+
+[Hình ảnh minh họa sự phát triển của các phương tiện giao thông đường bộ qua ba giai đoạn: từ xe ngựa thô sơ, đến xe đạp trong thời kỳ đô thị hóa sớm, và cuối cùng là đường cao tốc hiện đại với xe buýt và ô tô.]
+
+Hình 16.9. Sự phát triển của các phương tiện giao thông đường bộ
+
+<!-- chunk 366 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "25"
+section_name: Mục 3 Hoạt động kinh tế, đời sống vật chất
+sub_type: 
+sub_id: " "
+sub_name: Phương tiện đi lại
+has_table: false
+chunk_id: ls_366
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+? Đọc thông tin và quan sát các hình từ 16.4 đến 16.9, hãy:
+- Trình bày những nét chính về hoạt động kinh tế và đời sống vật chất của cộng đồng các dân tộc Việt Nam.
+- Nêu những nét đặc sắc trong đời sống vật chất của một dân tộc mà em ấn tượng nhất.
+
+<!-- chunk 367 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "26"
+section_name: Mục 4 Đời sống tinh thần
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_367
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+4. Đời sống tinh thần
+
+Hình thành và phát triển trên nền tảng văn hóa nông nghiệp trồng lúa nước lâu đời và truyền thống văn hóa tộc người, đời sống tinh thần của cộng đồng các dân tộc Việt Nam rất đa dạng và có nhiều nét độc đáo, thể hiện trên nhiều phương diện, như tín ngưỡng, tôn giáo, phong tục, tập quán, lễ hội, nghệ thuật.
+4.1. Tín ngưỡng, tôn giáo
+
+Tín ngưỡng
+
+Các tộc người trong cộng đồng dân tộc Việt Nam có tín ngưỡng thờ cúng tổ tiên, thờ các vị thần tự nhiên, thực hiện nghi lễ liên quan đến sản xuất nông nghiệp... với những cách thức khác nhau.
+
+<!-- chunk 368 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "27"
+section_name: Mục 4 Đời sống tinh thần
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_368
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Các tín ngưỡng phổ biến trong đời sống tinh thần của người Kinh là thờ cúng tổ tiên, thờ người có công với cộng đồng, thờ Thành hoàng, thờ Mẫu, thờ tổ nghề... Trong đó, thờ cúng tổ tiên là tín ngưỡng quan trọng nhất. Bàn thờ tổ tiên trong gia đình người Kinh được đặt ở vị trí trang trọng nhất, việc cúng lễ được thực hiện vào các ngày giỗ, tết và các dịp tuần tiết trong năm. Tục thờ Thổ công, Táo quân, ông Địa phổ biến ở nhiều địa phương. Thành hoàng hoặc các vị phúc thần thường được thờ ở những nơi thờ tự của cộng đồng như đình, miếu.
+
+Bên cạnh việc thực hành tín ngưỡng thờ cúng tổ tiên, các dân tộc thiểu số còn thờ nhiều vị thần tự nhiên theo thuyết "vạn vật hữu linh", nhiều dân tộc thờ các vị thần nông nghiệp.
+
+<!-- chunk 369 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "28"
+section_name: Mục 4 Đời sống tinh thần
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_369
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Trên bàn thờ của người Sán Dìu ở vùng Đông Bắc thường đặt ba bát hương thờ tổ tiên, pháp sư và Tào quân, họ còn thờ Thổ thần tại miếu thờ Thành hoàng. Người La Hủ ở vùng Tây Bắc thờ cúng tổ tiên và những người thân đã mất vào các dịp mừng cơm mới hoặc khi gieo xong lúa nương, cưới xin, ma chay. Người Xơ Đăng (sinh sống dọc theo dãy Trường Sơn, Tây Nguyên) thờ các vị thần, như thần sấm sét, thần Mặt Trời, thần núi, thần lửa, thần nước,...
+
+<!-- chunk 370 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "29"
+section_name: Mục 4 Đời sống tinh thần
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_370
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Tôn giáo
+
+Ở Việt Nam có sự hiện diện của các tôn giáo lớn trên thế giới là Phật giáo, Đạo giáo, Hin-du giáo, Hồi giáo, Công giáo,... Mức độ đậm nhạt của các tôn giáo này khác nhau tuỳ theo tiến trình lịch sử, theo vùng miền và theo tộc người.
+Phật giáo được du nhập vào Việt Nam từ những thế kỉ tiếp giáp Công nguyên và dần trở thành tôn giáo có vị trí quan trọng trong đời sống tinh thần của các dân tộc. Phật giáo từng trở thành quốc giáo trong một số giai đoạn của thời kì quân chủ. Đến nay, phổ biến ở Việt Nam là Phật giáo Đại thừa.
+
+[Hình ảnh một ngôi chùa Phật giáo với mái ngói đỏ, tường vàng, có cầu thang dẫn lên và cây cọ xung quanh]
+
+Hình 16.10. Chùa Xiêm Cán của dân tộc Khơ-me (Bạc Liêu)
+
+Hin-du giáo được truyền bá vào Việt Nam từ những thế kỉ tiếp giáp Công nguyên và có ảnh hưởng đến nhiều lĩnh vực của đời sống xã hội. Hiện nay, phần lớn dân tộc Chăm cư trú ở Ninh Thuận và Bình Thuận theo Hin-du giáo, còn bộ phận người Chăm cư trú ở một số địa phương thuộc các tỉnh Tây Ninh, An Giang, Đồng Nai và Thành phố Hồ Chí Minh theo Hồi giáo.
+
+<!-- chunk 371 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "30"
+section_name: Mục 4 Đời sống tinh thần
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_371
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Công giáo được truyền bá vào Việt Nam từ thế kỉ XVI và dần trở thành một trong những tôn giáo phổ biến trong cộng đồng các dân tộc Việt Nam.
+
+"Đạo Gia tô, theo sách đã lục, thì tháng Ba năm đầu niên hiệu Nguyên Hoà đời vua Lê Trang Tôn (1533) có một giáo sĩ phương Tây là I-nê-khu đã đi đường biển để lên vào giảng đạo Gia tô ở Ninh Cường, Quán Anh thuộc huyện Nam Chân và làng Trà Lũ thuộc huyện Giao Thủy..."
+
+(Khâm định Việt sử thông giám cương mục, Quốc sử quán triều Nguyễn)
+
+<!-- chunk 372 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "31"
+section_name: Mục 4 Đời sống tinh thần, tập quán, lễ hội
+sub_type: 
+sub_id: " "
+sub_name: Phong tục
+has_table: false
+chunk_id: ls_372
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+4.2. Phong tục, tập quán, lễ hội
+
+Phong tục, tập quán truyền thống của cộng đồng các dân tộc Việt Nam được thể hiện trên các lĩnh vực của đời sống hằng ngày hoặc trong các dịp lễ.
+
+Từ xa xưa, người Kinh đã có tục ăn trầu, nhuộm răng, xăm mình,... Trong cưới xin, nghi lễ truyền thống thường trải qua các bước cơ bản như dạm, hỏi, cưới, lại mặt. Việc tổ chức tang ma của người Kinh cũng rất trang nghiêm, gồm nhiều nghi thức.
+
+<!-- chunk 373 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "32"
+section_name: Mục 4 Đời sống tinh thần, tập quán, lễ hội
+sub_type: 
+sub_id: " "
+sub_name: Phong tục
+has_table: false
+chunk_id: ls_373
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Các dân tộc thiểu số có phong tục, tập quán đa dạng. Một số tộc người ở Tây Nguyên tổ chức gia đình theo hình thức mẫu hệ (người Ê-đê, người Ba Na). Trong phong tục cưới hỏi, người phụ nữ chủ động nhờ mai mối. Trong nghi lễ ma chay, họ làm lễ bỏ mả và dựng nhà mồ để chôn người chết. Ở Nam Bộ, dân tộc Chăm cũng có truyền thống gia đình mẫu hệ, người phụ nữ đảm nhiệm việc lo sinh lễ trong lễ cưới. Nghi thức tang ma của người Chăm theo Hồi giáo thường bắt đầu với lễ cầu nguyện tại thánh đường.
+
+<!-- chunk 374 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "33"
+section_name: Mục 4 Đời sống tinh thần, tập quán, lễ hội
+sub_type: 
+sub_id: " "
+sub_name: Phong tục
+has_table: false
+chunk_id: ls_374
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Về lễ tết, tết Nguyên đán là tết lớn nhất trong năm của người Kinh. Ngoài ra còn có nhiều lễ, tết truyền thống khác như Rằm tháng Giêng, tết Thanh minh, tết Đoan Ngọ, tết Trung thu... Các tộc người ở Tây Bắc tổ chức tết năm mới vào các thời điểm khác nhau, người Lào theo Phật lịch và đón tết vào tháng Tư âm lịch (Bun Pi May), người Hà Nhì tổ chức tết năm mới vào đầu tháng Mười âm lịch. Các tộc người ở Tây Nguyên thường tổ chức tết vào mùa xuân với các tên gọi khác nhau, như lễ Mừng lúa mới của người Mạ, lễ Somok (ăn cơm mới) của người Ba Na. Các tộc người ở Nam Bộ như người Kho-me có Tết Chol Chnam Thmây.
+
+[Hình ảnh mô tả một ngôi nhà truyền thống với mái ngói, cột gỗ và sân vườn đầy hoa. Có một số người mặc trang phục truyền thống màu đỏ đang đứng trong sân. Xung quanh có nhiều chậu hoa vàng và đỏ.]
+
+<!-- chunk 375 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "34"
+section_name: Mục 4 Đời sống tinh thần, tập quán, lễ hội
+sub_type: 
+sub_id: " "
+sub_name: Phong tục
+has_table: false
+chunk_id: ls_375
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Hình 16.11. Tết Nguyên Đán của người Kinh
+
+Lễ hội là một nét văn hoá đặc sắc của cộng đồng các dân tộc Việt Nam, gồm các lễ hội nông nghiệp, tôn giáo, hoặc gắn với đời sống sinh hoạt cộng đồng.
+
+Người Kinh tổ chức nhiều lễ hội vào mùa xuân sau tết Nguyên đán. Lễ hội cũng là nơi diễn ra nhiều trò chơi dân gian. Các tộc người thiểu số ở Tây Bắc có lễ hội cầu mưa, lễ hội cầu an ở bản, lễ hội hát mùa giao duyên,... Các dân tộc ở Nam Bộ thường tổ chức lễ hội nông nghiệp và tôn giáo, như lễ Ok Om Bok của người Kho-me, lễ Ka-tê của người Chăm.
+
+<!-- chunk 376 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "35"
+section_name: Mục 4 Đời sống tinh thần
+sub_type: 
+sub_id: " "
+sub_name: Nghệ thuật
+has_table: false
+chunk_id: ls_376
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+4.3. Nghệ thuật
+
+Các loại hình nghệ thuật biểu diễn của dân tộc Kinh rất đa dạng, tiêu biểu như nghệ thuật múa Rối nước, Chèo, Tuồng, Đờn ca tài tử, ca Trù, hát Xoan, Dân ca quan họ,...
+
+Hát Xoan còn gọi là hát cửa đình hay "Khúc môn đình", là hình thức nghệ thuật kết hợp múa và hát. Hát Xoan gồm có ba chặng là hát nghi lễ, hát quả cách và hát giao duyên (hát hội). Năm 2017, hát Xoan đã được UNESCO ghi danh vào Danh mục Di sản văn hoá phi vật thể đại diện của nhân loại.
+
+Hình 16.12. Biểu diễn Hát Xoan (Phú Thọ)
+
+[Hình ảnh mô tả một buổi biểu diễn Hát Xoan. Có một người đàn ông mặc áo trắng ngồi trên sàn, đối diện với một nhóm người mặc áo đỏ đang đứng. Họ dường như đang biểu diễn trên một sân khấu ngoài trời.]
+
+<!-- chunk 377 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "36"
+section_name: Mục 4 Đời sống tinh thần
+sub_type: 
+sub_id: " "
+sub_name: Nghệ thuật
+has_table: false
+chunk_id: ls_377
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Mỗi dân tộc thiểu số lại có những làn điệu, điệu múa và nhạc cụ riêng. Người thiểu số vùng Tây Bắc ưa thích các làn điệu dân ca, múa, xoè; thổi các loại khèn, sáo, sử dụng trống và các bộ gõ bằng tre, nứa tự tạo. Các tộc người thiểu số ở Nam Bộ thường biểu diễn các điệu dân vũ với nhạc cụ gồm ba nhóm là bộ gõ (trống, chiêng,...), bộ dây (đàn) và bộ hơi (kèn, tù và),...
+
+Cồng chiêng là loại nhạc khí bằng hợp kim đồng, được sử dụng trong các sinh hoạt cộng đồng, lễ hội, tết,... Ngày 25-11-2005, Không gian văn hóa Cồng chiêng Tây Nguyên đã được UNESCO ghi danh là Kiệt tác truyền khẩu và Di sản văn hóa phi vật thể của nhân loại. Chủ nhân của Không gian văn hóa Cồng chiêng Tây Nguyên là các dân tộc sinh sống ở khu vực Tây Nguyên: Ba Na, Xơ Đăng, Mnông, Cơ Ho, Ê-đê,...
+
+Hình 16.13. Cồng chiêng của các dân tộc ở Tây Nguyên
+
+<!-- chunk 378 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "37"
+section_name: Mục 4 Đời sống tinh thần
+sub_type: 
+sub_id: " "
+sub_name: Nghệ thuật
+has_table: false
+chunk_id: ls_378
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+[Hình ảnh hiển thị một bộ cồng chiêng truyền thống của các dân tộc Tây Nguyên. Các cồng chiêng có kích thước khác nhau được treo trên một giá đỡ, sắp xếp theo thứ tự từ lớn đến nhỏ.]
+
+Trong tiến trình lịch sử, trên cơ sở các yếu tố văn hoá truyền thống, đời sống văn hoá vật chất và tinh thần của cộng đồng các dân tộc Việt Nam ngày càng đa dạng và phong phú hơn do sự giao lưu, tiếp biến các yếu tố văn hoá bên ngoài du nhập vào, như văn hoá Ấn Độ, Trung Hoa, phương Tây,... Bức tranh văn hoá vật chất và tinh thần của cộng đồng các dân tộc Việt Nam hiện nay vừa đa dạng vừa thống nhất, vừa truyền thống vừa mang đậm hơi thở cuộc sống hiện đại.
+
+<!-- chunk 379 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM
+id_lesson: 16
+section_id: "38"
+section_name: Mục 4 Đời sống tinh thần
+sub_type: 
+sub_id: " "
+sub_name: Nghệ thuật
+has_table: false
+chunk_id: ls_379
+---
+[ Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM ]
+
+Đọc thông tin và quan sát các hình từ 16.10 đến 16.13, hãy:
+- Trình bày những nét chính về đời sống tinh thần của cộng đồng các dân tộc Việt Nam.
+- Nêu những nét nổi bật trong đời sống tinh thần của một dân tộc mà em biết.
+
+1. Thành phần dân tộc theo dân số và phân chia tộc người theo ngữ hệ được thể hiện như thế nào?
+
+2. Trình bày những nét chính về đời sống vật chất, tinh thần của cộng đồng các dân tộc Việt Nam
+
+3. Sưu tầm tư liệu, giới thiệu về đời sống vật chất và tinh thần của một hoặc một số dân tộc trong cộng đồng các dân tộc Việt Nam.
+
+<!-- chunk 380 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "39"
+section_name: Mục tiêu
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_380
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+Học xong bài này, em sẽ:
+- Nêu được nét chính về sự hình thành khối đại đoàn kết dân tộc trong lịch sử Việt Nam.
+- Phân tích được vai trò, tầm quan trọng của khối đại đoàn kết dân tộc trong lịch sử dựng nước, giữ nước và trong sự nghiệp xây dựng, bảo vệ Tổ quốc hiện nay.
+- Nêu được quan điểm nhất quán của Đảng và Nhà nước về chính sách dân tộc.
+- Phân tích được nội dung cơ bản trong chính sách dân tộc của Đảng và Nhà nước hiện nay về phát triển kinh tế, văn hóa, xã hội, an ninh quốc phòng,...
+- Có ý thức trân trọng sự bình đẳng giữa các dân tộc, có hành động cụ thể góp phần tham gia vào việc giữ gìn khối đại đoàn kết dân tộc.
+
+<!-- chunk 381 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "40"
+section_name: Mô tả bài
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_381
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+Trong bức thư của Chủ tịch Hồ Chí Minh gửi Đại hội các dân tộc thiểu số miền Nam (họp tại Pleiku, ngày 19-4-1946) có đoạn viết:
+"Đồng bào Kinh hay Thổ, Mường hay Mán, Gia Rai hay Ê-đê, Xơ Đăng hay Ba Na và các dân tộc thiểu số khác, đều là con cháu Việt Nam, đều là anh em ruột thịt... Sông có thể cạn, núi có thể mòn, nhưng lòng đoàn kết của chúng ta không bao giờ giảm bớt...".
+
+[Hình ảnh mô tả Chủ tịch Hồ Chí Minh đứng cùng một nhóm người đại diện các dân tộc thiểu số, mặc trang phục truyền thống đa dạng]
+
+Vậy khối đại đoàn kết dân tộc đã được hình thành trong lịch sử Việt Nam như thế nào? Vai trò của khối đại đoàn kết dân tộc trong lịch sử dựng nước, giữ nước, xây dựng và bảo vệ Tổ quốc hiện nay được thể hiện trên những khía cạnh nào? Hiện nay, Đảng và Nhà nước có quan điểm và những chính sách dân tộc gì?
+
+<!-- chunk 382 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "41"
+section_name: Mục 1 Sự hình thành khối đại đoàn kết dân tộc
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_382
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+1. Sự hình thành khối đại đoàn kết dân tộc
+Đại đoàn kết dân tộc là di sản vô giá, truyền thống quý báu của dân tộc Việt Nam. Khối đại đoàn kết dân tộc được xây dựng trên nhiều cơ sở và hun đúc qua hàng nghìn năm dựng nước và giữ nước.
+
+Khối đại đoàn kết dân tộc được hình thành trước hết trên cơ sở tình cảm gia đình và tình yêu quê hương đất nước. Quá trình đoàn kết trong các cuộc đấu tranh xã hội, chống ngoại xâm và chinh phục thiên nhiên đã tạo nên truyền thống yêu nước, đoàn kết trong cộng đồng các dân tộc Việt Nam.
+
+<!-- chunk 383 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "42"
+section_name: Mục 1 Sự hình thành khối đại đoàn kết dân tộc
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_383
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+Thời kì cổ - trung đại, các vương triều luôn coi trọng việc đoàn kết chặt chẽ giữa các tầng lớp nhân dân và sự hoà thuận trong nội bộ triều đình để tạo dựng sức mạnh đoàn kết trong xây dựng và bảo vệ đất nước. Bên cạnh đó, các triều đại luôn đề cao mối quan hệ giữa các tộc người với cộng đồng quốc gia và có những chính sách thắt quân về việc đoàn kết giữa các dân tộc, các vùng miền.
+
+Vua Lý Thái Tổ ngay sau khi lên ngôi đã thực hiện chính sách rộng buộc hôn nhân giữa triều đình với các tù trưởng miền núi. Nhà Trần thực hiện sự đoàn kết cao độ trong nội bộ vương triều và quân dân cả nước trong cuộc kháng chiến chống quân Mông - Nguyên xâm lược. Lê Lợi ngay khi dựng cờ khởi nghĩa Lam Sơn đã giương cao ngọn cờ đại đoàn kết các dân tộc.
+
+<!-- chunk 384 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "43"
+section_name: Mục 1 Sự hình thành khối đại đoàn kết dân tộc
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_384
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+Thời kì cận - hiện đại, trải qua các cuộc kháng chiến chống thực dân Pháp, đế quốc Mỹ và trong thời kì đổi mới đất nước, khối đại đoàn kết dân tộc từng bước được xây dựng thành công, đưa cách mạng Việt Nam giành được nhiều thắng lợi to lớn. Đặc biệt, từ khi Đảng Cộng sản Việt Nam ra đời (1930), khối đại đoàn kết dân tộc được phát huy thông qua các hình thức mặt trận phù hợp với từng thời kì cách mạng.
+
+Được thành lập ngày 19-5-1941, Mặt trận Việt Nam Độc lập Đồng minh (gọi tắt là Mặt trận Việt Minh) chủ trương liên hiệp hết thảy các tầng lớp nhân dân không phân biệt tôn giáo, đảng phái, xu hướng chính trị nào, giai cấp nào, đoàn kết chiến đấu đánh đuổi Pháp - Nhật giành quyền độc lập cho xứ sở,... Sau khi đánh đuổi được đế quốc Pháp, Nhật sẽ thành lập một chính phủ nhân dân của Việt Nam Dân chủ Cộng hoà.
+
+Hình 17.2. Khẩu hiệu của Mặt trận Việt Minh kêu gọi đồng bào gia nhập Mặt trận Việt Minh, đánh đuổi Nhật - Pháp
+
+[Hình ảnh mô tả một áp phích tuyên truyền với nội dung: "ĐỒNG BÀO! Dịp tốt sắp đến! Mau đoàn kết lại! Gia nhập Việt - Minh! Việt nam độc lập đồng minh đánh đuổi Nhật Pháp! Liều trừ Việt gian! Việt Nam độc lập! VIỆT MINH"]
+
+<!-- chunk 385 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "45"
+section_name: Mục 1 Sự hình thành khối đại đoàn kết dân tộc
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_385
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+Ngày 20-12-1960, tại Tây Ninh, Mặt trận Dân tộc Giải phóng miền Nam Việt Nam được thành lập, bao gồm đại biểu các tầng lớp nhân dân, các dân tộc, các tôn giáo, các nhân sĩ yêu nước ở miền Nam, không phân biệt xu hướng chính trị. Dưới sự lãnh đạo của Đảng, Mặt trận Dân tộc Giải phóng miền Nam Việt Nam là ngọn cờ công khai đoàn kết, tập hợp, tổ chức, lãnh đạo các hoạt động đấu tranh trên cả ba mặt trận: quân sự, chính trị, ngoại giao, góp phần quan trọng vào sự nghiệp đấu tranh giải phóng miền Nam, thống nhất đất nước (1975).
+
+(Tạp chí Mặt trận, 2021)
+
+Hình 17.3. Nhân dân miền Nam chào mừng sự kiện Mặt trận Dân tộc Giải phóng miền Nam Việt Nam ra đời (1960)
+
+[Hình ảnh: Hai bức ảnh đen trắng cho thấy đám đông người biểu tình và một biểu ngữ được giơ cao]
+
+<!-- chunk 386 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "46"
+section_name: Mục 1 Sự hình thành khối đại đoàn kết dân tộc
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_386
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+Đọc thông tin, tư liệu và quan sát các hình 17.2, 17.3, hãy nêu khái quát quá trình hình thành khối đại đoàn kết dân tộc trong lịch sử Việt Nam.
+
+<!-- chunk 387 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "47"
+section_name: Mục 2 Vai trò, tầm quan trọng của khối đại đoàn kết dân tộc
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_387
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+2. Vai trò, tầm quan trọng của khối đại đoàn kết dân tộc
+2.1. Trong lịch sử dựng nước và giữ nước
+
+Người Việt cổ sớm tạo nên sự cố kết cộng đồng trong các hoạt động trị thủy, xây dựng các công trình công cộng, hình thành xóm làng,... Đây là một trong những cơ sở quan trọng cho sự ra đời của các nhà nước đầu tiên trên lãnh thổ Việt Nam. Quá trình dựng nước trên cơ sở đoàn kết để chinh phục thiên nhiên và nhu cầu chống ngoại xâm đã nhanh chóng phát triển thành sức mạnh đoàn kết toàn dân tộc, trở thành truyền thống trong suốt chiều dài lịch sử dựng nước và giữ nước.
+
+Trong các cuộc đấu tranh chống ngoại xâm, đại đoàn kết dân tộc tạo nên sức mạnh quyết định cho mọi thắng lợi bảo vệ vững chắc nền độc lập dân tộc. Sau các cuộc kháng chiến chống quân Mông – Nguyên (thế kỉ XIII), Hưng Đạo Vương Trần Quốc Tuấn đã tổng kết bài học thắng lợi: "Vua tôi đồng lòng, anh em hòa thuận, cả nước góp sức chiến đấu nên giặc phải bỏ tay".
+
+<!-- chunk 388 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "49"
+section_name: Mục 2 Vai trò, tầm quan trọng của khối đại đoàn kết dân tộc
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_388
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+[Khung thông tin]
+Năm 1284, Hội nghị Diên Hồng được tổ chức tại kinh thành Thăng Long. Thái Thượng hoàng Trần Thánh Tông triệu họp đại diện các bô lão trong cả nước về trước thềm điện Diên Hồng để hỏi ý kiến khi quân Mông – Nguyên sang xâm lược Đại Việt lần thứ hai. Thái Thượng hoàng đích thân ban yến và hỏi các vị bô lão là nên đánh hay nên hòa. Các bô lão đều đồng thanh hô "Đánh!", thể hiện ý chí của toàn dân quyết thắng quân xâm lược. Hội nghị Diên Hồng được xem như hội nghị dân chủ đầu tiên trong lịch sử Việt Nam. Ngày nay, "Diên Hồng" là tên được đặt cho phòng họp chính trong Tòa nhà Quốc hội, nơi thể hiện ý chí và nguyện vọng của nhân dân cả nước thông qua các kì họp thường niên.
+
+Hình 17.4. Phòng họp Diên Hồng trong Tòa nhà Quốc hội
+
+[Hình ảnh: Phòng họp Quốc hội với nhiều ghế ngồi và bục phát biểu]
+
+<!-- chunk 389 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "50"
+section_name: Mục 2 Vai trò, tầm quan trọng của khối đại đoàn kết dân tộc
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_389
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+Thắng lợi của Cách mạng tháng Tám năm 1945 là minh chứng sinh động về sức mạnh đồng thuận của cả dân tộc Việt Nam, khi có đường lối đúng đắn và được tổ chức, tập hợp với tinh thần tự lực, tự cường.
+
+Cuộc kháng chiến chống thực dân Pháp và đế quốc Mỹ (1945 - 1975) thắng lợi là thành quả vĩ đại của tinh thần đại đoàn kết dân tộc, quyết tâm thống nhất đất nước của nhân dân hai miền Nam - Bắc. Tại Hội nghị chính trị đặc biệt năm 1964, Chủ tịch Hồ Chí Minh đã kêu gọi: "Mỗi người làm việc bằng hai, vì miền Nam ruột thịt". Lời kêu gọi ấy đã nhanh chóng trở thành lời hiệu triệu cả miền Bắc hậu phương thi đua, tạo sức mạnh tổng hợp: "Tất cả cho tiền tuyến, tất cả để đánh thắng giặc Mỹ xâm lược".
+
+<!-- chunk 390 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "51"
+section_name: Mục 2 Vai trò, tầm quan trọng của khối đại đoàn kết dân tộc
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_390
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+[Hình ảnh 1: Một đám đông lớn tập trung trước một tòa nhà lớn có kiến trúc cổ điển]
+Hình 17.5. Tổng khởi nghĩa giành chính quyền tại Hà Nội (8-1945)
+
+[Hình ảnh 2: Một nhóm người mặc quân phục, đội mũ, cầm súng đang chỉ tay về phía trước]
+Hình 17.6. Bộ đội miền Bắc lên đường chi viện cho chiến trường miền Nam
+
+Trong thời kì hòa bình, đoàn kết dân tộc là nhân tố ổn định xã hội, tạo nền tảng xây dựng, phát triển đất nước.
+
+Trên cơ sở tư tưởng lấy dân làm gốc, với các chính sách nhằm phát triển sản xuất và ổn định đời sống nhân dân như thúc đẩy khai hoang, chăm lo đê điều, giảm bớt thuế khóa, lao dịch,... các vương triều Lý, Trần, Lê sơ đã từng bước đưa quốc gia Đại Việt phát triển phồn thịnh trong các thế kỉ XI - XV.
+
+<!-- chunk 391 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "52"
+section_name: Mục 2 Vai trò, tầm quan trọng của khối đại đoàn kết dân tộc
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_391
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+Năm 1300, Hưng Đạo Vương Trần Quốc Tuấn ốm nặng. Vua Trần Anh Tông đến thăm và hỏi: "Nếu chẳng may Vương mất, mà giặc phương Bắc lại sang thì làm thế nào?". Ông trả lời: "Thời bình khoan thu sức dân để làm kế sâu rễ bền gốc, đó là thượng sách giữ nước". Thế kỉ XV, sau cuộc khởi nghĩa chống quân Minh thắng lợi, Nguyễn Trãi đã tâu với vua hãy chăm lo cho dân "làm sao cho khắp thôn cùng xóm vắng không một tiếng oán sầu".
+
+Sau Cách mạng tháng Tám năm 1945, nước Việt Nam Dân chủ Cộng hòa đứng trước tình thế khó khăn "ngàn cân treo sợi tóc". Hưởng ứng lời kêu gọi của Chủ tịch Hồ Chí Minh, nhân dân Việt Nam trên mọi miền đất nước đã nhiệt tình ủng hộ "Tuần lễ vàng" với tinh thần "người có ít góp ít, người có nhiều góp nhiều", tạo nên "Quỹ Độc lập", góp phần thiết thực đưa công cuộc kháng chiến, kiến quốc đến thành công.
+
+<!-- chunk 392 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "53"
+section_name: Mục 2 Vai trò, tầm quan trọng của khối đại đoàn kết dân tộc
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_392
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+Sau thắng lợi của cuộc kháng chiến chống Mỹ, cứu nước (1975), đáp ứng nguyện vọng của nhân dân về một chính quyền thống nhất, cuộc Tổng tuyển cử bầu Quốc hội chung đã được tiến hành (ngày 25-4-1976). Thống nhất đất nước về mặt nhà nước là điều kiện cơ bản để phát huy sức mạnh khối đoàn kết toàn dân, tạo cơ sở để cả nước đi lên xây dựng chủ nghĩa xã hội và mở rộng quan hệ với các nước trên thế giới.
+
+[Hình ảnh mô tả: Một nhóm phụ nữ mặc đồng phục trắng đứng xung quanh một thùng phiếu có biểu tượng quốc huy Việt Nam. Phía sau có một bức tượng trắng và một ngôi sao lớn trên tường. Phía trên có dòng chữ "25.4.76".]
+
+Hình 17.7. Nhân dân bỏ phiếu bầu cử đại biểu Quốc hội khóa VI (1976)
+
+<!-- chunk 393 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "54"
+section_name: Mục 2 Vai trò, tầm quan trọng của khối đại đoàn kết dân tộc
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_393
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+Đọc thông tin và quan sát các hình từ 17.2 đến 17.7, hãy phân tích vai trò, tầm quan trọng của khối đại đoàn kết dân tộc trong lịch sử dựng nước, giữ nước.
+
+<!-- chunk 394 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "55"
+section_name: Mục 2 Vai trò, tầm quan trọng của khối đại đoàn kết dân tộc
+sub_type: 
+sub_id: " "
+sub_name: Trong sự nghiệp xây dựng và bảo vệ Tổ quốc hiện nay
+has_table: false
+chunk_id: ls_394
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+2.2. Trong sự nghiệp xây dựng và bảo vệ Tổ quốc hiện nay
+
+Đại đoàn kết dân tộc là vấn đề có ý nghĩa chiến lược, quyết định thành công của công cuộc xây dựng đất nước. Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIII (2021) của Đảng Cộng sản Việt Nam đã khẳng định: "Khơi dậy mạnh mẽ tinh thần yêu nước, ý chí tự cường dân tộc, sức mạnh đại đoàn kết toàn dân tộc và khát vọng phát triển đất nước phồn vinh, hạnh phúc,... thúc đẩy đổi mới sáng tạo, ứng dụng mạnh mẽ khoa học và công nghệ, nhất là những thành tựu của cuộc Cách mạng công nghiệp lần thứ tư, tạo động lực mạnh mẽ cho phát triển nhanh và bền vững".
+
+Đại đoàn kết dân tộc là sức mạnh nền tảng, tập hợp, phát huy sức mạnh của các tầng lớp nhân dân và cả cộng đồng người Việt ở nước ngoài tham gia vào sự nghiệp xây dựng và bảo vệ Tổ quốc.
+
+<!-- chunk 395 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "56"
+section_name: Mục 2 Vai trò, tầm quan trọng của khối đại đoàn kết dân tộc
+sub_type: 
+sub_id: " "
+sub_name: Trong sự nghiệp xây dựng và bảo vệ Tổ quốc hiện nay
+has_table: false
+chunk_id: ls_395
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+Nghị quyết Đại hội đại biểu toàn quốc lần thứ VIII của Đảng Cộng sản Việt Nam (1996) đề cập đến người Việt Nam định cư ở nước ngoài như một bộ phận không tách rời của cộng đồng dân tộc Việt Nam và khẳng định: "Đảng và Nhà nước chủ trương bảo hộ quyền lợi chính đáng, giúp đỡ nâng cao ý thức công dồng; tạo điều kiện để kiều bào về thăm quê hương, giúp đỡ gia đình và đóng góp ngày càng nhiều hơn vào sự nghiệp xây dựng đất nước...".
+
+Đại đoàn kết dân tộc là yếu tố đóng vai trò đặc biệt quan trọng khi các quốc gia và toàn nhân loại đang đứng trước những vấn đề lớn của thời đại, như biến đổi khí hậu, ô nhiễm môi trường, cạn kiệt tài nguyên, đại dịch,... Đặc biệt, trong sự nghiệp bảo vệ Tổ quốc hiện nay, đại đoàn kết dân tộc là yếu tố không tách rời với việc khẳng định chủ quyền biển giới, biển đảo của Việt Nam.
+
+<!-- chunk 396 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "57"
+section_name: Mục 2 Vai trò, tầm quan trọng của khối đại đoàn kết dân tộc
+sub_type: 
+sub_id: " "
+sub_name: Trong sự nghiệp xây dựng và bảo vệ Tổ quốc hiện nay
+has_table: false
+chunk_id: ls_396
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+"Trong bầu trời không gì quý bằng nhân dân. Trong thế giới không gì mạnh bằng lực lượng đoàn kết của nhân dân".
+(Hồ Chí Minh)
+
+Hình 17.8. Tranh cổ động "Quyết tâm bảo vệ biển đảo quê hương"
+
+[Hình ảnh mô tả: Một áp phích cổ động với nền màu đỏ và xanh dương. Phía trên có ngôi sao vàng. Ở giữa là hình ảnh ba cánh buồm màu đỏ có ngôi sao vàng, tượng trưng cho lá cờ Việt Nam. Phía dưới là hình ảnh sóng biển. Dòng chữ "ĐỘC LẬP DÂN TỘC - TOÀN VẸN LÃNH THỔ" được in nổi bật.]
+
+<!-- chunk 397 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "58"
+section_name: Mục 2 Vai trò, tầm quan trọng của khối đại đoàn kết dân tộc
+sub_type: 
+sub_id: " "
+sub_name: Trong sự nghiệp xây dựng và bảo vệ Tổ quốc hiện nay
+has_table: false
+chunk_id: ls_397
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+Đọc thông tin, tư liệu và quan sát các hình 17.7, 17.8, hãy nêu tầm quan trọng của khối đại đoàn kết dân tộc trong sự nghiệp xây dựng và bảo vệ Tổ quốc Việt Nam hiện nay.
+
+<!-- chunk 398 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "59"
+section_name: Mục 3 Chính sách dân tộc của Đảng và Nhà nước hiện nay
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_398
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+3. Chính sách dân tộc của Đảng và Nhà nước hiện nay
+3.1. Quan điểm của Đảng và Nhà nước về chính sách dân tộc
+
+Đảng Cộng sản Việt Nam và Nhà nước Việt Nam đặc biệt quan tâm đến chính sách dân tộc, coi đây là vấn đề chiến lược cơ bản, lâu dài, đồng thời cũng là vấn đề cấp bách hiện nay.
+
+Trong suốt quá trình phát triển, quan điểm của Đảng và Nhà nước Việt Nam về chính sách dân tộc là nhất quán theo nguyên tắc "Các dân tộc bình đẳng, đoàn kết, tương trợ nhau cùng phát triển". Đây cũng là nguyên tắc cơ bản, chỉ đạo việc xây dựng quan hệ giữa các dân tộc - tộc người trong quá trình phát triển đất nước.
+
+<!-- chunk 399 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "60"
+section_name: Mục 3 Chính sách dân tộc của Đảng và Nhà nước hiện nay
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_399
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+"Các dân tộc trong đại gia đình Việt Nam bình đẳng, đoàn kết, tương trợ, giúp nhau cùng phát triển, cùng nhau phấn đấu thực hiện thắng lợi sự nghiệp công nghiệp hoá, hiện đại hoá đất nước, xây dựng và bảo vệ Tổ quốc Việt Nam xã hội chủ nghĩa. Kiên quyết đấu tranh chống mọi âm mưu chia rẽ dân tộc".
+(Nghị quyết số 24-NQ/TW của Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam khoá IX về công tác dân tộc, ban hành ngày 12-3-2003)
+
+<!-- chunk 400 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "61"
+section_name: Mục 3 Chính sách dân tộc của Đảng và Nhà nước hiện nay
+sub_type: 
+sub_id: " "
+sub_name: 
+has_table: false
+chunk_id: ls_400
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+Đọc thông tin và tư liệu, hãy nêu và phân tích quan điểm nhất quán của Đảng và Nhà nước về chính sách dân tộc.
+
+<!-- chunk 401 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "62"
+section_name: Mục 3 Chính sách dân tộc của Đảng và Nhà nước hiện nay
+sub_type: 
+sub_id: " "
+sub_name: Nội dung cơ bản trong chính sách dân tộc của Đảng và Nhà nước
+has_table: false
+chunk_id: ls_401
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+3.2. Nội dung cơ bản trong chính sách dân tộc của Đảng và Nhà nước
+
+Với quan điểm cách mạng là sáng tạo không ngừng, trong thời kì đổi mới, chính sách dân tộc của Đảng và Nhà nước vừa bảo đảm tính nhất quán, vừa có sự điều chỉnh trước yêu cầu phát triển và hội nhập quốc tế nhằm giải quyết thành công vấn đề dân tộc hiện nay và trong tương lai.
+
+Chính sách về phát triển kinh tế vùng dân tộc thiểu số hướng đến phát huy tiềm năng, thế mạnh của vùng đồng bào các dân tộc, gắn với kế hoạch phát triển chung của cả nước, đưa vùng đồng bào các dân tộc thiểu số cùng cả nước tiến hành công nghiệp hoá, hiện đại hoá đất nước.
+
+Hình 17.9. Nông trường chè của đồng bào các dân tộc thiểu số ở Mộc Châu (Sơn La)
+
+[Hình ảnh mô tả một cánh đồng chè xanh mướt với nhiều người đang làm việc trên đó]
+
+<!-- chunk 402 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "63"
+section_name: Mục 3 Chính sách dân tộc của Đảng và Nhà nước hiện nay
+sub_type: 
+sub_id: " "
+sub_name: Nội dung cơ bản trong chính sách dân tộc của Đảng và Nhà nước
+has_table: false
+chunk_id: ls_402
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+Từ năm 2016 đến năm 2020, Nhà nước đã dành 998 000 tỉ đồng ngân sách nhằm phát triển kinh tế - xã hội vùng đồng bào dân tộc thiểu số và miền núi. Nguồn lực đó tập trung cho xây dựng các công trình kết cấu hạ tầng như đường giao thông, công trình thủy lợi, hệ thống điện, nước sạch, trường học, lớp học, trạm y tế, nhà văn hoá, trung tâm cụm xã,... Đời sống vật chất và tinh thần của người dân được cải thiện so với trước thời kì đổi mới, trên tất cả các phương diện: ăn, ở, mặc, đi lại, học hành, chăm sóc sức khoẻ, nghe, nhìn.
+
+(Tạp chí Cộng sản, 2021)
+
+<!-- chunk 403 -->
+---
+type: noi_dung
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "64"
+section_name: Mục 3 Chính sách dân tộc của Đảng và Nhà nước hiện nay
+sub_type: 
+sub_id: " "
+sub_name: Nội dung cơ bản trong chính sách dân tộc của Đảng và Nhà nước
+has_table: false
+chunk_id: ls_403
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+Chính sách xã hội tập trung vào các vấn đề giáo dục - đào tạo, văn hoá, y tế,... nhằm nâng cao năng lực, thực hiện quyền bình đẳng giữa các dân tộc, tạo tiền đề và cơ hội để các dân tộc có đầy đủ điều kiện tham gia quá trình phát triển, trên cơ sở đó không ngừng nâng cao đời sống vật chất và tinh thần của đồng bào.
+
+Chính sách liên quan đến quốc phòng - an ninh hướng đến củng cố các địa bàn chiến lược, giải quyết tốt vấn đề đoàn kết dân tộc và quan hệ dân tộc trong mối liên hệ tộc người, giữa các tộc người và liên quốc gia trong xu thế toàn cầu hoá.
+
+Nhìn chung, các chính sách dân tộc của Đảng và Nhà nước hướng tới khai thác mọi tiềm năng của đất nước để phục vụ đời sống nhân dân các dân tộc, thực hiện mục tiêu "dân giàu, nước mạnh, dân chủ, công bằng, văn minh".
+
+Hình 17.10. Đường vào bản của đồng bào dân tộc thiểu số ở xã Sùng Là, huyện Đồng Văn, tỉnh Hà Giang
+
+[Hình ảnh mô tả một con đường uốn lượn qua một vùng đồi núi, với những ngôi nhà nhỏ rải rác dọc theo đường]
+
+<!-- chunk 404 -->
+---
+type: cau_hoi
+subject: Lịch sử 10
+chapter_id: 7
+chapter_name: CHỦ ĐỀ 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM
+lesson: Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM
+id_lesson: 17
+section_id: "66"
+section_name: Mục 3 Chính sách dân tộc của Đảng và Nhà nước hiện nay
+sub_type: 
+sub_id: " "
+sub_name: Nội dung cơ bản trong chính sách dân tộc của Đảng và Nhà nước
+has_table: false
+chunk_id: ls_404
+---
+[ Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC TRONG LỊCH SỬ VIỆT NAM ]
+
+Đọc thông tin và quan sát các hình 17.9, 17.10, hãy phân tích những nội dung cơ bản trong chính sách dân tộc của Đảng và Nhà nước. Trình bày ý nghĩa của việc Đảng và Nhà nước ưu tiên thực hiện các chính sách đó đối với các dân tộc thiểu số trong giai đoạn hiện nay.
+
+1. Sức mạnh của khối đại đoàn kết dân tộc được thể hiện như thế nào trong quá trình xây dựng và bảo vệ Tổ quốc?
+
+2. Nêu những hành động mà một công dân có thể thực hiện để góp phần xây dựng khối đại đoàn kết dân tộc.
