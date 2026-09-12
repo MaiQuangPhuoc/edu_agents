@@ -261,17 +261,17 @@ if __name__ == "__main__":
 
     print("\n✅ Hoàn thành toàn bộ đánh giá Retriever")
 
-    print("cutt")
-    # Chrome
-    os.system("taskkill /F /IM chrome.exe")
+    # print("cutt")
+    # # Chrome
+    # os.system("taskkill /F /IM chrome.exe")
 
-    # Edge
-    os.system("taskkill /F /IM msedge.exe")
+    # # Edge
+    # os.system("taskkill /F /IM msedge.exe")
 
-    # Zalo
-    os.system("taskkill /F /IM Zalo.exe")
+    # # Zalo
+    # os.system("taskkill /F /IM Zalo.exe")
 
-    # VS Code
-    os.system("taskkill /F /IM Code.exe")
+    # # VS Code
+    # os.system("taskkill /F /IM Code.exe")
 
-    os.system("shutdown /s /t 300")
+    # os.system("shutdown /s /t 300")

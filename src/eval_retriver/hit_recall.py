@@ -5,7 +5,7 @@ subjects = ["toan", "ngu_van", "lich_su"]
 # subjects = ["lich_su"]
 
 OUTPUT_PATH = Path(
-    r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\documents\doc_git\eval\eval_retriver\metrix.md"
+    r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\documents\doc_git\eval\eval_retriver\metrix_v2_m3.md"
 )
 
 def compute_metrics(gold_chunks, result_chunks):
@@ -29,7 +29,7 @@ all_reports = []
 for subject in subjects:
 
     dataset_path = Path(
-        rf"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\documents\doc_git\eval\eval_retriver\{subject}\dataset_{subject}_eval_retriver_result_eval.md"
+        rf"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\documents\doc_git\eval\eval_retriver\{subject}\dataset_{subject}_eval_retriver_result_eval_v2_m3.md"
     )
 
     print(f"\nĐang xử lý: {dataset_path}")
