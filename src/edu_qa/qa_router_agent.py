@@ -1,33 +1,37 @@
 import sys, os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
-from langchain_core.messages import HumanMessage
 
+from src.edu_qa import state
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+from langchain_core.messages import HumanMessage 
+from datetime import datetime
 from src.clients.llm import LLMClient
 from src.edu_qa.state import QAState, RouterOutput
+from src.edu_qa.qa_memory import build_history_text
 from src.edu_qa.paths import PROMPT_DIR
 
 PROMPT_PATH = PROMPT_DIR / "qa_router_prompt.txt"
-MAX_HISTORY_TURNS = 5
+# MAX_HISTORY_TURNS = 5
 
 
-def _build_history_text(state: QAState) -> str:
-    recent = state.chat_history[-MAX_HISTORY_TURNS:]
-    if not recent:
-        return "Không có lịch sử, đây là câu hỏi đầu tiên."
+# def _build_history_text(state: QAState) -> str:
+#     recent = state.chat_history[-MAX_HISTORY_TURNS:]
+#     if not recent:
+#         return "Không có lịch sử, đây là câu hỏi đầu tiên."
 
-    parts = []
-    for i, turn in enumerate(recent, start=1):
-        parts.append(f"Lượt {i}:\nHọc sinh hỏi: {turn.user_query}\nHệ thống trả lời: {turn.final_answer}")
-    return "\n\n".join(parts)
+#     parts = []
+#     for i, turn in enumerate(recent, start=1):
+#         parts.append(f"Lượt {i}:\nHọc sinh hỏi: {turn.user_query}\nHệ thống trả lời: {turn.final_answer}")
+#     return "\n\n".join(parts)
 
 
 def _load_prompt(state: QAState) -> str:
     template = PROMPT_PATH.read_text(encoding="utf-8")
-    history_text = _build_history_text(state)
+    history_text = build_history_text(state)
     return template.format(chat_history_text=history_text, user_query=state.user_query)
 
 
 async def run_qa_router_agent(state: QAState, llm_client: LLMClient) -> QAState:
+    state.query_timestamp = datetime.now()
     prompt_text = _load_prompt(state)
     messages = [HumanMessage(content=prompt_text)]
 
@@ -39,9 +43,9 @@ async def run_qa_router_agent(state: QAState, llm_client: LLMClient) -> QAState:
 
     state.router_output = router_output
     print("============================ QA Router Agent Output ============================")
-    print(f"Router output: loai={router_output.loai}\nly_do={router_output.ly_do}\nsub_queries={router_output.sub_queries}\nclarify_question={router_output.clarify_question}")
+    print(f"Router output: valid={router_output.valid}\nsubject={router_output.subject}\nquery_type={router_output.query_type}\nly_do={router_output.ly_do}\nsub_queries={router_output.sub_queries}\nclarify_question={router_output.clarify_question}")
     print("============================ QA Router Agent Output ============================\n\n")
     
     return state
 
-print("qa_router_agent.py loaded successfully")
+print("✅  qa_router_agent.py loaded successfully ✅")

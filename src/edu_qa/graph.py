@@ -1,54 +1,59 @@
 import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
-
 from functools import partial
 from langgraph.graph import StateGraph, END
 
 from src.clients.llm import LLMClient
-from src.modules.rag.process_toan_10.retrievers2 import VectorStoreRetriever
 from src.edu_qa.state import QAState
 from src.edu_qa.qa_router_agent import run_qa_router_agent
-from src.edu_qa.qa_rag_agent import run_qa_rag_agent
+from src.edu_qa.qa_knowledge_agent import run_qa_knowledge_agent
 from src.edu_qa.qa_solve_agent import run_qa_solve_agent
-from src.edu_qa.qa_format_agent import run_qa_format_agent
+from src.edu_qa.qa_response_agent import run_qa_response_agent
+from src.edu_qa.qa_memory import append_chat_turn
 
- 
+
+async def run_clarify_node(state: QAState) -> QAState:
+    """valid=0 -> trả clarify_question, không qua Knowledge/Solve/Response."""
+    state.final_answer = state.router_output.clarify_question
+    state = append_chat_turn(state)
+    return state
+
 
 def route_after_router(state: QAState) -> str:
-    if state.router_output.loai == 1:
-        return "qa_format"
-    return "qa_rag"
+    if state.router_output.valid == 0:
+        return "clarify"
+    if state.router_output.query_type == "bai_tap":
+        return "solve"
+    return "knowledge"
 
 
-def route_after_rag(state: QAState) -> str:
-    if state.router_output.loai == 3:
-        return "qa_solve"
-    return "qa_format"
+def build_graph(retriever, llm_client: LLMClient):
+    graph = StateGraph(QAState)
 
+    graph.add_node("router", partial(run_qa_router_agent, llm_client=llm_client))
+    graph.add_node("knowledge", partial(run_qa_knowledge_agent, retriever=retriever, llm_client=llm_client))
+    graph.add_node("solve", partial(run_qa_solve_agent, retriever=retriever, llm_client=llm_client))
+    graph.add_node("response", partial(run_qa_response_agent, llm_client=llm_client))
+    graph.add_node("clarify", run_clarify_node)
 
-def build_qa_graph(llm_client: LLMClient, retriever: VectorStoreRetriever):
-    g = StateGraph(QAState)
+    graph.set_entry_point("router")
 
-    g.add_node("qa_router", partial(run_qa_router_agent, llm_client=llm_client))
-    g.add_node("qa_rag",    partial(run_qa_rag_agent, llm_client=llm_client, retriever=retriever))
-    g.add_node("qa_solve",  partial(run_qa_solve_agent, llm_client=llm_client))
-    g.add_node("qa_format", partial(run_qa_format_agent, llm_client=llm_client))
-    # g.add_node("qa_format", partial(run_qa_format_agent))
-
-
-    g.set_entry_point("qa_router")
-
-    g.add_conditional_edges(
-        "qa_router", route_after_router,
-        {"qa_format": "qa_format", "qa_rag": "qa_rag"},
+    graph.add_conditional_edges(
+        "router",
+        route_after_router,
+        {
+            "clarify": "clarify",
+            "solve": "solve",
+            "knowledge": "knowledge",
+        },
     )
-    g.add_conditional_edges(
-        "qa_rag", route_after_rag,
-        {"qa_solve": "qa_solve", "qa_format": "qa_format"},
-    )
-    g.add_edge("qa_solve", "qa_format")
-    g.add_edge("qa_format", END)
 
-    return g.compile()
+    graph.add_edge("knowledge", "response")
+    graph.add_edge("solve", "response")
+    graph.add_edge("response", END)
+    graph.add_edge("clarify", END)
 
-print("QA graph built successfully")
+    return graph.compile()
+
+
+print("✅ QA graph built successfully ✅")

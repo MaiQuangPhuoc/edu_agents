@@ -1,0 +1,157 @@
+{
+  "subject": "Toán 10",
+  "parts": [
+    {
+      "part_name": "Đại số",
+      "chapters": [
+        {
+          "chapter_id": "I",
+          "chapter_name": "Mệnh đề và tập hợp",
+          "start_page": 6,
+          "lessons": [
+            {
+              "lesson_id": 1,
+              "lesson_name": "Mệnh đề",
+              "page": 7
+            },
+            {
+              "lesson_id": 2,
+              "lesson_name": "Tập hợp",
+              "page": 16
+            },
+            {
+              "lesson_id": 3,
+              "lesson_name": "Các phép toán trên tập hợp",
+              "page": 21
+            }
+          ],
+          "exercise_page": 27
+        },
+        {
+          "chapter_id": "II",
+          "chapter_name": "Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
+          "start_page": 28,
+          "lessons": [
+            {
+              "lesson_id": 1,
+              "lesson_name": "Bất phương trình bậc nhất hai ẩn",
+              "page": 29
+            },
+            {
+              "lesson_id": 2,
+              "lesson_name": "Hệ bất phương trình bậc nhất hai ẩn",
+              "page": 33
+            }
+          ],
+          "exercise_page": 39
+        },
+        {
+          "chapter_id": "III",
+          "chapter_name": "Hàm số bậc hai và đồ thị",
+          "start_page": 40,
+          "lessons": [
+            {
+              "lesson_id": 1,
+              "lesson_name": "Hàm số và đồ thị",
+              "page": 41
+            },
+            {
+              "lesson_id": 2,
+              "lesson_name": "Hàm số bậc hai",
+              "page": 49
+            }
+          ],
+          "exercise_page": 59
+        }
+      ]
+    },
+    {
+      "part_name": "Hình học và đo lường",
+      "chapters": [
+        {
+          "chapter_id": "IV",
+          "chapter_name": "Hệ thức lượng trong tam giác",
+          "start_page": 60,
+          "lessons": [
+            {
+              "lesson_id": 1,
+              "lesson_name": "Giá trị lượng giác của một góc từ 0° đến 180°",
+              "page": 61
+            },
+            {
+              "lesson_id": 2,
+              "lesson_name": "Định lí cosin và định lí sin",
+              "page": 65
+            },
+            {
+              "lesson_id": 3,
+              "lesson_name": "Giải tam giác và ứng dụng thực tế",
+              "page": 74
+            }
+          ],
+          "exercise_page": 78
+        },
+        {
+          "chapter_id": "V",
+          "chapter_name": "Vectơ",
+          "start_page": 80,
+          "lessons": [
+            {
+              "lesson_id": 1,
+              "lesson_name": "Khái niệm vectơ",
+              "page": 81
+            },
+            {
+              "lesson_id": 2,
+              "lesson_name": "Tổng và hiệu của hai vectơ",
+              "page": 88
+            },
+            {
+              "lesson_id": 3,
+              "lesson_name": "Tích của một số với một vectơ",
+              "page": 94
+            },
+            {
+              "lesson_id": 4,
+              "lesson_name": "Tích vô hướng của hai vectơ",
+              "page": 97
+            }
+          ],
+          "exercise_page": 102
+        }
+      ]
+    },
+    {
+      "part_name": "Thống kê và xác suất",
+      "chapters": [
+        {
+          "chapter_id": "VI",
+          "chapter_name": "Thống kê",
+          "start_page": 104,
+          "lessons": [
+            {
+              "lesson_id": 1,
+              "lesson_name": "Số gần đúng và sai số",
+              "page": 105
+            },
+            {
+              "lesson_id": 2,
+              "lesson_name": "Mô tả và biểu diễn dữ liệu trên các bảng và biểu đồ",
+              "page": 109
+            },
+            {
+              "lesson_id": 3,
+              "lesson_name": "Các số đặc trưng đo xu thế trung tâm của mẫu số liệu",
+              "page": 112
+            },
+            {
+              "lesson_id": 4,
+              "lesson_name": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu",
+              "page": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
