@@ -16,7 +16,7 @@
 16. Tam giác ABC có a=10, b=7, c=6. Tính góc A | dinh_ly_cosin_tool
 17. Tam giác ABC có a=9, góc A=50°. Tính bán kính đường tròn ngoại tiếp | dinh_ly_sin_tool
 18. Giải tam giác ABC biết a=8, góc A=40°, góc B=70° | giai_tam_giac_tool
-19. Tính diện tích tam giác có 3 cạnh a=7, b=8, c=9 | dien_tich_tam_giac_tool
+19. Tính diện tích tam giác có 3 cạnh a=7, b=8, c=9 | dien_tich_tam_giac_tool   
 20. Cho vectơ a=(2,5), b=(-1,3). Tính a - b | tong_hieu_vecto_tool
 21. Cho vectơ a=(4,-2). Tính 5a | tich_so_voi_vecto_tool
 22. Cho vectơ a=(3,1), b=(2,-4). Tính tích vô hướng a·b | tich_vo_huong_vecto_tool

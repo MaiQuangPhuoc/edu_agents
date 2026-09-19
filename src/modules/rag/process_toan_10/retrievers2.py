@@ -1,7 +1,11 @@
 # src/modules/rag/retrievers.py
 import os
+import sys
+print("Python đang chạy:", sys.executable)
 # os.environ["FASTEMBED_CACHE_PATH"] = r"C:\Users\Phuoc\fastembed_cache"
 import logging
+import torch
+import time
 from langchain_qdrant import QdrantVectorStore, RetrievalMode, FastEmbedSparse
 from langchain_core.embeddings import Embeddings
 from langchain_core.documents import Document
@@ -84,11 +88,15 @@ class VectorStoreRetriever:
         self._colbert = LateInteractionTextEmbedding(colbert_model) if enable_colbert_prefilter else None
 
         # Reranker
-        self._reranker = CrossEncoder(reranker_model)
-        logger.info(f"Reranker loaded: {reranker_model}")
+        # self._reranker = CrossEncoder(reranker_model)
+        # logger.info(f"Reranker loaded: {reranker_model}")
 
-        logger.info(f"VectorStoreRetriever initialized | collection: {collection_name} | top_k: {top_k}")
-
+        # Reranker — tự động dùng GPU nếu có
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        self._reranker = CrossEncoder(reranker_model, device=device)
+        if device == "cuda":
+            self._reranker.model.half()
+        print(f"Using device: {device}")
 
     
 
@@ -165,22 +173,51 @@ class VectorStoreRetriever:
         return [d for _, d in ranked[:keep_top]]
 
     
+    # def rerank(self, query: str, docs: list, top_k: int = 3) -> list[Document]:
+    #     if not docs:
+    #         return []
+
+    #     if self.enable_colbert_prefilter:
+    #         before_count = len(docs)
+    #         docs = self.colbert_prefilter(query, docs, keep_top=max(top_k * 3, 10))
+    #         print(f" ========== ColBERT prefilter: {before_count} -> {len(docs)} docs ========== ")
+
+    #     pairs = [[query, doc.page_content] for doc in docs]
+    #     scores = self._reranker.predict(pairs)
+
+    #     ranked = sorted(zip(scores, docs), key=lambda x: x[0], reverse=True)
+
+    #     # logger.info(f"Rerank scores: {[round(float(s), 4) for s, _ in ranked]}")
+    #     print(f" ========== Rerank scores: {[round(float(s), 4) for s, _ in ranked]} ========== ")
+
+    #     top_docs = []
+    #     for score, doc in ranked[:top_k]:
+    #         doc.metadata["rerank_score"] = float(score)
+    #         top_docs.append(doc)
+    #     return top_docs
+
+
     def rerank(self, query: str, docs: list, top_k: int = 3) -> list[Document]:
         if not docs:
             return []
 
         if self.enable_colbert_prefilter:
             before_count = len(docs)
+            start = time.perf_counter()
             docs = self.colbert_prefilter(query, docs, keep_top=max(top_k * 3, 10))
-            print(f" ========== ColBERT prefilter: {before_count} -> {len(docs)} docs ========== ")
+            elapsed = time.perf_counter() - start
+            print(f" ========== ColBERT prefilter: {before_count} -> {len(docs)} docs -> {elapsed:.0f}s ========== ")
 
+        start = time.perf_counter()
         pairs = [[query, doc.page_content] for doc in docs]
-        scores = self._reranker.predict(pairs)
+        # scores = self._reranker.predict(pairs)
+        scores = self._reranker.predict(pairs, batch_size=1)
+        torch.cuda.empty_cache()
+        elapsed = time.perf_counter() - start
 
         ranked = sorted(zip(scores, docs), key=lambda x: x[0], reverse=True)
 
-        # logger.info(f"Rerank scores: {[round(float(s), 4) for s, _ in ranked]}")
-        print(f" ========== Rerank scores: {[round(float(s), 4) for s, _ in ranked]} ========== ")
+        print(f" ========== Rerank scores -> {elapsed:.0f}s: {[round(float(s), 4) for s, _ in ranked]} ========== ")
 
         top_docs = []
         for score, doc in ranked[:top_k]:

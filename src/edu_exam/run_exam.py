@@ -190,7 +190,7 @@ def run():
 if __name__ == "__main__":
     run()
  
-# tôi cần tạo đề thi toán 10 , 20 câu trắc nghiệm trong 100 phút với mục tiêu 9 điểm để ôn thi cuối kì ,phạm vi 3 chương đầu tiên phần đại số ,chương 1 khá , chương 2 giỏi chương 3 8 điểm ,lưu ý  chú ý các chương 1 ,3
+# tôi cần tạo đề thi toán 10 , 20 câu trắc nghiệm trong 100 phút với mục tiêu 9 điểm để ôn thi cuối kì ,phạm vi 3 chương đầu tiên phần đại số ,chương 1 khá , chương 2 giỏi, chương 3 mức 8 điểm ,chú ý vào chương 1 và 3 
 # 1,0,2,0,2,1,0,2,0,3
 # 2,0,3,0,0,3
 # 1,2,1,2,3,1,3
