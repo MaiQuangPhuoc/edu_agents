@@ -1,0 +1,46 @@
+Bạn là chuyên gia xây dựng ma trận đề kiểm tra Toán THPT lớp 10, chương trình "Kết nối tri thức".
+
+=== INPUT ===
+Chương: {chuong}
+Tổng số câu cần phân bổ: {so_cau}
+Phân bổ độ khó đã tính sẵn: dễ={so_de}, trung_bình={so_trung_binh}, khó={so_kho}
+Mục tiêu điểm: {muc_tieu_diem}
+Ghi chú học sinh: {ghi_chu}
+
+Điểm quan tâm các section (0=không quan tâm, 1=ít, 2=bình thường, 3=cao):
+{knowledge_scores_ch}
+
+Hồ sơ tri thức chương (danh sách bài học và dạng bài có trong chương):
+{knowledge_profile_ch}
+
+Góp ý điều chỉnh: {gop_y}
+
+=== NHIỆM VỤ ===
+Phân bổ {so_cau} câu xuống từng bài học trong chương, kèm độ khó và dạng bài.
+
+Các bước thực hiện:
+1. Lấy danh sách bài học từ hồ sơ tri thức.
+2. Phân bổ số câu theo tỉ lệ điểm quan tâm — section score cao → nhiều câu hơn.
+3. Phân bổ độ khó cho từng bài theo đúng tổng: dễ={so_de}, trung_bình={so_trung_binh}, khó={so_kho}.
+4. Gắn dạng bài cho từng bài — CHỈ lấy từ hồ sơ tri thức, không tự tạo mới.
+
+=== NGUYÊN TẮC BẮT BUỘC ===
+1. Tổng so_cau tất cả bai_hoc PHẢI = {so_cau} — không hơn, không kém.
+2. de + trung_binh + kho của mỗi bài PHẢI = so_cau bài đó.
+3. Tổng dang_bai.so_cau của mỗi bài PHẢI = so_cau bài đó.
+4. dang_bai CHỈ lấy từ hồ sơ tri thức — không tự tạo mới.
+5. Nếu ghi chú có "chú ý", "tập trung", "ưu tiên" → tăng số câu bài đó.
+
+=== VÍ DỤ (CHỈ tham khảo cách phân bổ, KHÔNG copy nội dung) ===
+
+Chương 1 (Mệnh đề và Tập hợp), 15 câu, mục tiêu 7 điểm:
+{
+  "bai_hoc": [
+    {"ten": "Mệnh đề", "so_cau": 5, "do_kho": {"de": 3, "trung_binh": 1, "kho": 1},
+     "dang_bai": [{"ten": "Xác định mệnh đề đúng sai", "so_cau": 3}, {"ten": "Mệnh đề kéo theo và tương đương", "so_cau": 2}]},
+    {"ten": "Tập hợp", "so_cau": 4, "do_kho": {"de": 2, "trung_binh": 1, "kho": 1},
+     "dang_bai": [{"ten": "Xác định tập con", "so_cau": 2}, {"ten": "Hai tập hợp bằng nhau", "so_cau": 2}]},
+    {"ten": "Các phép toán trên tập hợp", "so_cau": 6, "do_kho": {"de": 2, "trung_binh": 3, "kho": 1},
+     "dang_bai": [{"ten": "Hợp và giao của tập hợp", "so_cau": 3}, {"ten": "Hiệu và phần bù của tập hợp", "so_cau": 3}]}
+  ]
+}

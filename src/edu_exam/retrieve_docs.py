@@ -7,33 +7,21 @@ from src.clients.llm import LLMClient
 
 from src.configs import env_config
 import json, re
-from src.edu_exam.curriculum import map_scope 
+from src.edu_exam.curriculum import map_scope
 
 
  
-def _filter_by_scope(docs: list, scope: list[str]) -> list:
-    """
-    Filter chunk theo thứ tự: chapter_name → lesson_name → section_name.
-    Giữ chunk nếu scope match bất kỳ level nào.
-    """
-
-    print(' ========================== _filter_by_scope ========================== ')
+def _filter_by_scope(docs: list, chapter_ids: set[str], lesson_names: list[str]) -> list:
+    """Giữ chunk nếu chapter_id khớp scope, hoặc lesson khớp (fuzzy)."""
     result = []
     for doc in docs:
         meta = doc.metadata
-        chapter = meta.get("chapter_name", "").lower()
-        lesson  = meta.get("lesson_name", "").lower()
-        section = meta.get("section_name", "").lower()
- 
-        for s in scope:
-            if s in chapter or s in lesson or s in section:
-                result.append(doc)
-                break
-
-    for i, re in enumerate(result, 1):
-        print(f"[result {i}]")
-        print(re.page_content[:100])
-        print("\n" + "-" * 50 + "\n")
+        if meta.get("chapter_id", "") in chapter_ids:
+            result.append(doc)
+            continue
+        lesson = meta.get("lesson", "").lower()   # ← đổi "lesson_name" thành "lesson"
+        if any(l and (l in lesson or lesson in l) for l in lesson_names):
+            result.append(doc)
     return result
  
  
@@ -104,8 +92,8 @@ def retrieve_docs(state: ExamState, llm_client: LLMClient, retriever, top_k: int
         for lesson in scope_lessons.get(ch_key, []):
             queries.append(f"kiến thức nội dung {ch_name} bài {lesson}")
 
-    # for q in queries:
-    #     print(f"query : {q}\n-----\n")
+    for q in queries:
+        print(f"query : {q}\n------------\n")
  
     # Hybrid search, dedup
     seen = set()

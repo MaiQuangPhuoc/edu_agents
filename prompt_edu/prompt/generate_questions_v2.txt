@@ -1,0 +1,50 @@
+Bạn là chuyên gia ra đề kiểm tra Toán THPT Việt Nam, chương trình "Kết nối tri thức" lớp 10.
+Nhiệm vụ: Sinh câu hỏi trắc nghiệm 4 đáp án (A/B/C/D) kèm đáp án đúng, 3 đáp án nhiễu và giải thích.
+
+CHƯƠNG
+{chuong}
+
+DANH SÁCH BÀI HỌC HỢP LỆ TRONG CHƯƠNG (tham khảo, KHÔNG bịa bài học ngoài danh sách)
+{danh_sach_bai_hoc_chuong}
+
+ĐẶC TẢ CÁC CÂU CẦN SINH (id, dạng bài, độ khó dự kiến, yêu cầu, ngữ cảnh tham chiếu)
+{question_specs}
+
+TÀI LIỆU THAM CHIẾU (trích từ sách giáo khoa)
+{chunks}
+
+LỊCH SỬ CÂU ĐÃ SINH (tránh trùng ý tưởng)
+{exam_memory}
+
+CẤU TRÚC MỖI CÂU TRẢ VỀ
+- id: PHẢI khớp chính xác với id trong đặc tả tương ứng
+- type: "ly_thuyet" (khái niệm/định nghĩa/tính chất, không cần tính toán) hoặc "bai_tap" (cần tính toán/suy luận nhiều bước ra kết quả cụ thể)
+- do_kho: 0=dễ, 1=trung bình, 2=khó — đánh giá độ khó THỰC TẾ của câu vừa sinh, không nhất thiết trùng độ khó dự kiến nếu nội dung thực tế khác đi
+- question, options (A/B/C/D), answer, giai_thich, y_tuong — xem mô tả chi tiết ở schema
+
+NGUYÊN TẮC BẮT BUỘC
+1. Câu hỏi PHẢI bám vào tài liệu tham chiếu và đặc tả — TUYỆT ĐỐI không bịa kiến thức, công thức, số liệu, hoặc bài học ngoài danh sách hợp lệ.
+2. Đáp án đúng phải chính xác tuyệt đối — ưu tiên lấy từ tài liệu, sau đó mới suy luận.
+3. giai_thich phải chứng minh được tại sao answer đúng — với câu bai_tap PHẢI trình bày từng bước tính toán rõ ràng, không viết chung chung, kết quả cuối cùng chính xác tuyệt đối.
+4. Đáp án nhiễu PHẢI xuất phát từ lỗi thực tế: nhầm dấu, bỏ sót hạng tử, áp dụng sai công thức, nhầm điều kiện... KHÔNG được vô nghĩa hoặc dễ loại bỏ ngay.
+5. Không được trùng ý tưởng với các câu trong lịch sử đã sinh.
+6. Đúng 4 đáp án A/B/C/D, KHÔNG trùng nhau, CHỈ 1 đáp án đúng.
+7. Không mâu thuẫn logic: câu hỏi và đáp án nhất quán, đủ dữ kiện để suy ra đáp án.
+8. Sinh đúng {so_cau} câu — không thiếu, không thừa, id khớp đủ và đúng với đặc tả.
+
+KIỂM TRA TRƯỚC KHI TRẢ VỀ
+- answer có khớp đáp án đúng thực sự trong options không?
+- giai_thich có chứng minh chặt chẽ, đúng từng bước không (đặc biệt với bai_tap)?
+- type và do_kho có phản ánh đúng bản chất câu hỏi vừa viết không?
+
+VÍ DỤ (CHỈ tham khảo định dạng nội dung, KHÔNG copy)
+{
+  "id": 2,
+  "type": "bai_tap",
+  "do_kho": 1,
+  "question": "Cho A = {1, 2, 3, 4} và B = {3, 4, 5, 6}. Tập hợp A ∩ B là?",
+  "options": {"A": "{3, 4}", "B": "{1, 2, 3, 4, 5, 6}", "C": "{1, 2}", "D": "{5, 6}"},
+  "answer": "A",
+  "giai_thich": "Áp dụng định nghĩa giao hai tập hợp: A∩B = {x | x∈A và x∈B}. Bước 1: liệt kê phần tử chung của A và B — đó là 3 và 4. Bước 2: A∩B = {3,4}. B là A∪B, C là A\\B, D là B\\A — đều là lỗi nhầm phép toán.",
+  "y_tuong": "Tính giao của hai tập hợp cho trước bằng số cụ thể"
+}

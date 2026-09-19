@@ -16,3 +16,17 @@ QA_RESPONSE_PROMPT_PATH = PROMPT_DIR / "qa_response_prompt.txt"
 SOLVE_TOOL_SELECT_PROMPT_PATH = PROMPT_DIR / "qa_solve_tool_select_prompt.txt"
 CHAT_LOG_PATH = PROMPT_DIR / "logs" / "chat_log.md"
 SOLVE_LLM_FALLBACK_PROMPT_PATH = PROMPT_DIR / "qa_solve_llm_fallback_prompt.txt"
+
+# ------ edu_exam ---
+KNOWLEDGE_PROMPT_PATH = PROMPT_DIR / "build_knowledge_v2.txt"
+ANALYZE_PROMPT_PATH = PROMPT_DIR / "analyze_knowledge_v2.txt"
+COLLECT_INFO_PROMPT_PATH = PROMPT_DIR / "collect_info_v2.txt"
+BUILD_MATRIX_PROMPT_PATH = PROMPT_DIR / "build_matrix_v2.txt"
+BUILD_SPECS_PROMPT_PATH = PROMPT_DIR / "build_specs_v2.txt"
+GENERATE_QUESTIONS_PROMPT_PATH = PROMPT_DIR / "generate_questions_v2.txt"
+TEST_EXAM_PROMPT_PATH  = Path(r'D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\test_exam')
+
+
+
+
+

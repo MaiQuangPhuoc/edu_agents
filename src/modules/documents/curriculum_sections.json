@@ -1,103 +1,152 @@
 {
-  "chương 1": {
-    "Mệnh đề": [
-      "Mệnh đề",
-      "Mệnh đề chứa biến",
-      "Mệnh đề phủ định",
-      "Mệnh đề kéo theo",
-      "Mệnh đề đảo. Hai mệnh đề tương đương"
-    ],
-    "Tập hợp": [
-      "Nhắc lại về tập hợp",
-      "Tập con và hai tập hợp bằng nhau",
-      "Một số tập con của tập hợp số thực"
-    ],
-    "Các phép toán trên tập hợp": [
-      "Hợp và giao của các tập hợp",
-      "Hiệu của hai tập hợp, phần bù của tập con"
-    ]
+  "Toán 10": {
+    "1": {
+      "chapter_name": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "lessons": {
+        "Mệnh đề": ["Mệnh đề", "Mệnh đề chứa biến", "Mệnh đề phủ định", "Mệnh đề kéo theo", "Mệnh đề đảo. Hai mệnh đề tương đương"],
+        "Tập hợp": ["Nhắc lại về tập hợp", "Tập con và hai tập hợp bằng nhau", "Một số tập con của tập hợp số thực"],
+        "Các phép toán trên tập hợp": ["Hợp và giao của các tập hợp", "Hiệu của hai tập hợp, phần bù của tập con"]
+      }
+    },
+    "2": {
+      "chapter_name": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "lessons": {
+        "Bất phương trình bậc nhất hai ẩn": ["Khái niệm bất phương trình bậc nhất hai ẩn", "Nghiệm của bất phương trình bậc nhất hai ẩn", "Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn"],
+        "Hệ bất phương trình bậc nhất hai ẩn": ["Khái niệm hệ bất phương trình bậc nhất hai ẩn", "Biểu diễn miền nghiệm của hệ bất phương trình bậc nhất hai ẩn", "Tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của biểu thức F = ax + by trên một miền đa giác"]
+      }
+    },
+    "3": {
+      "chapter_name": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+      "lessons": {
+        "Hàm số và đồ thị": ["Hàm số. Tập xác định và tập giá trị của hàm số", "Đồ thị hàm số", "Hàm số đồng biến, hàm số nghịch biến"],
+        "Hàm số bậc hai": ["Hàm số bậc hai", "Đồ thị hàm số bậc hai", "Sự biến thiên của hàm số bậc hai", "Ứng dụng của hàm số bậc hai"]
+      }
+    },
+    "4": {
+      "chapter_name": "HỆ THỨC LƯỢNG TRONG TAM GIÁC",
+      "lessons": {
+        "Giá trị lượng giác của một góc từ 0° đến 180°": ["Giá trị lượng giác", "Quan hệ giữa các giá trị lượng giác của hai góc bù nhau", "Giá trị lượng giác của một số góc đặc biệt"],
+        "Định lí côsin và định lí sin": ["Định lí côsin trong tam giác", "Định lí sin trong tam giác", "Các công thức tính diện tích tam giác"],
+        "Giải tam giác và ứng dụng thực tế": ["Giải tam giác", "Áp dụng giải tam giác vào thực tế"]
+      }
+    },
+    "5": {
+      "chapter_name": "VECTƠ",
+      "lessons": {
+        "Khái niệm vectơ": ["Định nghĩa vectơ", "Hai vectơ cùng phương, cùng hướng", "Vector bằng nhau - Vector đối nhau", "Vecto-không"],
+        "Tổng và hiệu của hai vectơ": ["Tổng của hai vecto", "Tính chất của phép cộng các vecto", "Hiệu của hai vecto", "Tính chất vecto của trung điểm đoạn thẳng và trọng tâm tam giác"],
+        "Tích của một số với một vectơ": ["Tích của một số với một vector và các tính chất", "Điều kiện để hai vecto cùng phương"],
+        "Tích vô hướng của hai vectơ": ["Góc giữa hai vectơ", "Tích vô hướng của hai vecto", "Tính chất của tích vô hướng"]
+      }
+    },
+    "6": {
+      "chapter_name": "THỐNG KÊ",
+      "lessons": {
+        "Số gần đúng và sai số": ["Số gần đúng", "Sai số tuyệt đối và sai số tương đối"],
+        "Mô tả và biểu diễn dữ liệu trên các bảng và biểu đồ": ["Bảng số liệu", "Biểu đồ"],
+        "Các số đặc trưng đo xu thế trung tâm của mẫu số liệu": ["Số trung bình", "Trung vị và tứ phân vị", "Mốt"],
+        "Các số đặc trưng đo mức độ phân tán của mẫu số liệu": ["Khoảng biến thiên và khoảng tứ phân vị", "Phương sai và độ lệch chuẩn"]
+      }
+    }
   },
-  "chương 2": {
-    "Bất phương trình bậc nhất hai ẩn": [
-      "Khái niệm bất phương trình bậc nhất hai ẩn",
-      "Nghiệm của bất phương trình bậc nhất hai ẩn",
-      "Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn"
-    ],
-    "Hệ bất phương trình bậc nhất hai ẩn": [
-      "Khái niệm hệ bất phương trình bậc nhất hai ẩn",
-      "Biểu diễn miền nghiệm của hệ bất phương trình bậc nhất hai ẩn",
-      "Tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của biểu thức F = ax + by trên một miền đa giác"
-    ]
+  "Ngữ văn 10": {
+    "5": {
+      "chapter_name": "Bài 5: Thơ văn Nguyễn Trãi",
+      "lessons": {
+        "Đọc hiểu văn bản": ["Nguyễn Trãi – Cuộc đời và sự nghiệp", "Đại cáo bình Ngô (Nguyễn Trãi)"],
+        "Thực hành đọc hiểu": ["Gương báu khuyên rằn – bài 43 (Nguyễn Trãi)"],
+        "Thực hành tiếng Việt": ["Thực hành tiếng Việt"],
+        "Viết": ["Viết bài văn nghị luận về một vấn đề xã hội"],
+        "Nói và nghe": ["Thuyết trình và thảo luận về một vấn đề xã hội"],
+        "Tự đánh giá": ["Thư dụ Vương Thông lần nữa (Nguyễn Trãi)"]
+      }
+    },
+    "6": {
+      "chapter_name": "Bài 6: Tiểu thuyết và truyện ngắn",
+      "lessons": {
+        "Đọc hiểu văn bản": ["Kiêu binh nổi loạn (Ngô gia văn phái)", "Người ở bến sông Châu (Sương Nguyệt Minh)"],
+        "Thực hành đọc hiểu": ["Hồi trống Cổ Thành (La Quán Trung)"],
+        "Thực hành tiếng Việt": ["Thực hành tiếng Việt"],
+        "Viết": ["Viết bài văn nghị luận phân tích, đánh giá một tác phẩm truyện"],
+        "Nói và nghe": ["Giới thiệu, đánh giá về một tác phẩm truyện"],
+        "Tự đánh giá": ["Ngày cuối cùng của chiến tranh (Vũ Cao Phan)"]
+      }
+    },
+    "7": {
+      "chapter_name": "Bài 7: Thơ tự do",
+      "lessons": {
+        "Đọc hiểu văn bản": ["Đất nước (Nguyễn Đình Thi)", "Lính đảo hát tình ca trên đảo (Trần Đăng Khoa)"],
+        "Thực hành đọc hiểu": ["Đi trong hương tràm (Hoài Vũ)", "Mùa hoa mận (Chu Thùy Liên)"],
+        "Thực hành tiếng Việt": ["Thực hành tiếng Việt"],
+        "Viết": ["Viết bài văn nghị luận phân tích, đánh giá một tác phẩm thơ"],
+        "Nói và nghe": ["Giới thiệu, đánh giá về một tác phẩm thơ"],
+        "Tự đánh giá": ["Khoảng trời, hố bom (Lâm Thị Mỹ Dạ)"]
+      }
+    },
+    "8": {
+      "chapter_name": "Bài 8: Văn bản nghị luận",
+      "lessons": {
+        "Đọc hiểu văn bản": ["Bản sắc là hành trang (Nguyễn Sĩ Dũng)", "Gió thanh lay động cành cô trúc (Chu Văn Sơn)"],
+        "Thực hành đọc hiểu": ["Đừng gây tổn thương (Ca-ren Ca-xi)"],
+        "Thực hành tiếng Việt": ["Thực hành tiếng Việt"],
+        "Viết": ["Viết bài văn nghị luận phân tích, đánh giá một tác phẩm văn học"],
+        "Nói và nghe": ["Giới thiệu, đánh giá vẻ đẹp của tác phẩm văn học"],
+        "Tự đánh giá": ["\"Phép màu\" là điều có thật (Nguyễn Duy Bình)"]
+      }
+    }
   },
-  "chương 3": {
-    "Hàm số và đồ thị": [
-      "Hàm số. Tập xác định và tập giá trị của hàm số",
-      "Đồ thị hàm số",
-      "Hàm số đồng biến, hàm số nghịch biến"
-    ],
-    "Hàm số bậc hai": [
-      "Hàm số bậc hai",
-      "Đồ thị hàm số bậc hai",
-      "Sự biến thiên của hàm số bậc hai",
-      "Ứng dụng của hàm số bậc hai"
-    ]
-  },
-  "chương 4": {
-    "Giá trị lượng giác của một góc từ 0° đến 180°": [
-      "Giá trị lượng giác",
-      "Quan hệ giữa các giá trị lượng giác của hai góc bù nhau",
-      "Giá trị lượng giác của một số góc đặc biệt"
-    ],
-    "Định lí côsin và định lí sin": [
-      "Định lí côsin trong tam giác",
-      "Định lí sin trong tam giác",
-      "Các công thức tính diện tích tam giác"
-    ],
-    "Giải tam giác và ứng dụng thực tế": [
-      "Giải tam giác",
-      "Áp dụng giải tam giác vào thực tế"
-    ]
-  },
-  "chương 5": {
-    "Khái niệm vectơ": [
-      "Định nghĩa vectơ",
-      "Hai vectơ cùng phương, cùng hướng",
-      "Vector bằng nhau - Vector đối nhau",
-      "Vecto-không"
-    ],
-    "Tổng và hiệu của hai vecto": [
-      "Tổng của hai vecto",
-      "Tính chất của phép cộng các vecto",
-      "Hiệu của hai vecto",
-      "Tính chất vecto của trung điểm đoạn thẳng và trọng tâm tam giác"
-    ],
-    "Tích của một số với một vector": [
-      "Tích của một số với một vector và các tính chất",
-      "Điều kiện để hai vecto cùng phương"
-    ],
-    "Tích vô hướng của hai vecto": [
-      "Góc giữa hai vectơ",
-      "Tích vô hướng của hai vecto",
-      "Tính chất của tích vô hướng"
-    ]
-  },
-  "chương 6": {
-    "Số gần đúng và sai số": [
-      "Số gần đúng",
-      "Sai số tuyệt đối và sai số tương đối"
-    ],
-    "Mô tả và biểu diễn dữ liệu trên các bảng và biểu đồ": [
-      "Bảng số liệu",
-      "Biểu đồ"
-    ],
-    "Các số đặc trưng đo xu thế trung tâm của mẫu số liệu": [
-      "Số trung bình",
-      "Trung vị và tứ phân vị",
-      "Mốt"
-    ],
-    "Các số đặc trưng đo mức độ phân tán của mẫu số liệu": [
-      "Khoảng biến thiên và khoảng tứ phân vị",
-      "Phương sai và độ lệch chuẩn"
-    ]
+  "Lịch sử 10": {
+    "1": {
+      "chapter_name": "Chủ đề 1: LỊCH SỬ VÀ SỬ HỌC",
+      "lessons": {
+        "Bài 1: Hiện thực lịch sử và nhận thức lịch sử": ["Bài 1: Hiện thực lịch sử và nhận thức lịch sử"],
+        "Bài 2: Tri thức lịch sử và cuộc sống": ["Bài 2: Tri thức lịch sử và cuộc sống"]
+      }
+    },
+    "2": {
+      "chapter_name": "Chủ đề 2: VAI TRÒ CỦA SỬ HỌC",
+      "lessons": {
+        "Bài 3: Sử học với các lĩnh vực khoa học khác": ["Bài 3: Sử học với các lĩnh vực khoa học khác"],
+        "Bài 4: Sử học với một số lĩnh vực, ngành nghề hiện đại": ["Bài 4: Sử học với một số lĩnh vực, ngành nghề hiện đại"]
+      }
+    },
+    "3": {
+      "chapter_name": "Chủ đề 3: MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI KÌ CỔ – TRUNG ĐẠI",
+      "lessons": {
+        "Bài 5: Khái niệm văn minh": ["Bài 5: Khái niệm văn minh"],
+        "Bài 6: Một số nền văn minh phương Đông": ["Bài 6: Một số nền văn minh phương Đông"],
+        "Bài 7: Một số nền văn minh phương Tây": ["Bài 7: Một số nền văn minh phương Tây"]
+      }
+    },
+    "4": {
+      "chapter_name": "Chủ đề 4: CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI",
+      "lessons": {
+        "Bài 8: Cách mạng công nghiệp thời kì cận đại": ["Bài 8: Cách mạng công nghiệp thời kì cận đại"],
+        "Bài 9: Cách mạng công nghiệp thời kì hiện đại": ["Bài 9: Cách mạng công nghiệp thời kì hiện đại"]
+      }
+    },
+    "5": {
+      "chapter_name": "Chủ đề 5: VĂN MINH ĐÔNG NAM Á",
+      "lessons": {
+        "Bài 10: Cơ sở hình thành văn minh Đông Nam Á thời kì cổ – trung đại": ["Bài 10: Cơ sở hình thành văn minh Đông Nam Á thời kì cổ – trung đại"],
+        "Bài 11: Hành trình phát triển và thành tựu của văn minh Đông Nam Á thời kì cổ – trung đại": ["Bài 11: Hành trình phát triển và thành tựu của văn minh Đông Nam Á thời kì cổ – trung đại"]
+      }
+    },
+    "6": {
+      "chapter_name": "Chủ đề 6: MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)",
+      "lessons": {
+        "Bài 12: Văn minh Văn Lang – Âu Lạc": ["Bài 12: Văn minh Văn Lang – Âu Lạc"],
+        "Bài 13: Văn minh Chăm-pa, văn minh Phù Nam": ["Bài 13: Văn minh Chăm-pa, văn minh Phù Nam"],
+        "Bài 14: Cơ sở hình thành và quá trình phát triển của văn minh Đại Việt": ["Bài 14: Cơ sở hình thành và quá trình phát triển của văn minh Đại Việt"],
+        "Bài 15: Một số thành tựu của văn minh Đại Việt": ["Bài 15: Một số thành tựu của văn minh Đại Việt"]
+      }
+    },
+    "7": {
+      "chapter_name": "Chủ đề 7: CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM",
+      "lessons": {
+        "Bài 16: Các dân tộc trên đất nước Việt Nam": ["Bài 16: Các dân tộc trên đất nước Việt Nam"],
+        "Bài 17: Khối đại đoàn kết dân tộc trong lịch sử Việt Nam": ["Bài 17: Khối đại đoàn kết dân tộc trong lịch sử Việt Nam"]
+      }
+    }
   }
 }

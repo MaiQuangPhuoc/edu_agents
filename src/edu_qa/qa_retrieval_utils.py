@@ -6,8 +6,8 @@ from src.edu_qa.state import RetrievedChunk
 from src.edu_qa.tools.web_search_tool import web_search_edu
 
 # retriever's CrossEncoder trả score 0-1
-ROUND1_K, ROUND1_TOPK, ROUND1_SCORE = 15, 3, 0.7
-ROUND2_K, ROUND2_TOPK, ROUND2_SCORE = 30, 5, 0.6
+ROUND1_K, ROUND1_TOPK, ROUND1_SCORE = 10, 3, 0.6
+ROUND2_K, ROUND2_TOPK, ROUND2_SCORE = 15, 5, 0.6
 WEB_TOPK, WEB_SCORE = 3, 0.5
 
 TOOLS_TOP_K = 3

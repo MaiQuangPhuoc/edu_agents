@@ -29,7 +29,7 @@ async def run():
         collection_name="doc_final",
         tools_collection_name="tools",
         top_k=10,
-        enable_colbert_prefilter=True,
+        enable_colbert_prefilter=False,
         colbert_model="colbert-ir/colbertv2.0",
     )
 

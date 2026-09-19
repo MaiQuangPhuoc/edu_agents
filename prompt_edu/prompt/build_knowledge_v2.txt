@@ -1,0 +1,10 @@
+CHƯƠNG {chuong}
+{sections}
+
+Bạn vui lòng cho biết độ quan tâm đến các chủ đề trên 
+0=không quan tâm, 
+1=ít quan tâm, 
+2=bình thường, 
+3=quan tâm cao
+
+Bạn có thể nhập tên chủ đề kèm điểm, hoặc chỉ nhập điểm theo thứ tự, ví dụ: 0,1,2,0...

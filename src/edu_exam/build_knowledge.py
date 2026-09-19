@@ -11,7 +11,7 @@ from src.edu_exam.curriculum import normalize_chapter_key, CHAPTER_MAP
  
  
 PROMPT_PATH = Path(r'D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompt_edu\prompt\build_knowledge.txt')
-SECTIONS_PATH = Path(r'D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\documents\curriculum_sections.json')
+SECTIONS_PATH = Path(r'D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\documents\curriculum_sections ')
 CURRICULUM_SECTIONS = json.loads(SECTIONS_PATH.read_text(encoding="utf-8"))
  
  
@@ -47,16 +47,7 @@ def _parse_scores_chapter(answer: str, ch: str) -> dict:
             idx += 1
     return result
  
- 
-# CHAPTER_MAP = {
-#     "mệnh đề và tập hợp": "chương 1",
-#     "bất phương trình và hệ bất phương trình bậc nhất hai ẩn": "chương 2",
-#     "hàm số bậc hai và đồ thị": "chương 3",
-#     "hệ thức lượng trong tam giác": "chương 4",
-#     "vecto": "chương 5",
-#     "thống kê": "chương 6",
-# }
- 
+
 def _analyze_chapters(state: dict, llm_client: LLMClient) -> dict:
     """Giai đoạn 2: LLM phân tích từng chương → gộp thành knowledge_profile."""
     profile          = state.get("student_profile", {})
@@ -110,34 +101,6 @@ def _analyze_chapters(state: dict, llm_client: LLMClient) -> dict:
         # print("-"*30)
  
     return knowledge_profile
- 
- 
-def _build_queue(profile: dict) -> list:
-    """Tạo queue [chương] theo pham_vi_kiem_tra."""
-    return extract_chapter_keys(profile)
- 
- 
-def _build_chapter_section_text(ch: str) -> str:
-    """Liệt kê tất cả bài + section trong chương, không giải thích."""
-    lines = []
-    for i, (lesson, sections) in enumerate(CURRICULUM_SECTIONS[ch].items(), 1):
-        lines.append(f"Bài {i}: {lesson}")
-        for j, sec in enumerate(sections, 1):
-            lines.append(f"  {j}. {sec}")
-    return "\n".join(lines)
- 
- 
-def _parse_scores_chapter(answer: str, ch: str) -> dict:
-    """Parse câu trả lời user → {bài: {section: score}}."""
-    numbers = re.findall(r'[0-3]', answer)
-    result  = {}
-    idx     = 0
-    for lesson, sections in CURRICULUM_SECTIONS[ch].items():
-        result[lesson] = {}
-        for sec in sections:
-            result[lesson][sec] = int(numbers[idx]) if idx < len(numbers) else 0
-            idx += 1
-    return result
  
  
 def build_knowledge(state: ExamState, llm_client: LLMClient) -> dict:
