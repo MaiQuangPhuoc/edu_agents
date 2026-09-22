@@ -25,6 +25,8 @@ BUILD_MATRIX_PROMPT_PATH = PROMPT_DIR / "build_matrix_v2.txt"
 BUILD_SPECS_PROMPT_PATH = PROMPT_DIR / "build_specs_v2.txt"
 GENERATE_QUESTIONS_PROMPT_PATH = PROMPT_DIR / "generate_questions_v2.txt"
 TEST_EXAM_PROMPT_PATH  = Path(r'D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\test_exam')
+TOOL_SELECT_BATCH_PROMPT_PATH = PROMPT_DIR / "qa_solve_tool_select_batch_prompt.txt"
+
 
 
 

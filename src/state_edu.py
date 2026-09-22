@@ -35,16 +35,16 @@ class CollectInfoResponse(BaseModel):
     """Output của LLM ở bước collect_info — vừa trả lời hội thoại, vừa trích xuất field đã biết được tới thời điểm hiện tại."""
     reply: str = Field(description="Câu hỏi/phản hồi tự nhiên gửi cho học sinh, tiếng Việt")
     profile: StudentProfileSchema = Field(description="Các field đã trích xuất được từ toàn bộ hội thoại tính đến hiện tại")
+    is_confirmed: bool = Field(description="True CHỈ KHI học sinh vừa xác nhận đồng ý với bản tóm tắt (câu trả lời gần nhất chứa ý đồng ý/xác nhận). False nếu đây là lần đầu tóm tắt hoặc học sinh chưa phản hồi xác nhận.")
 
 # analysis knowledge
 class KnowledgeChapterProfile(BaseModel):
-    """Output có cấu trúc cho bước phân tích 1 chương — thay cho text tự do trước đây."""
     chuong: str = Field(description="Tên chương học, vd 'Chương 1: Mệnh đề và tập hợp'")
-    bai_hoc: List[str] = Field(description="Danh sách bài học trong chương, ví dụ ['Bài 1: Mệnh đề', 'Bài 2: Tập hợp']")
-    can_nam: str = Field(max_length=300, description="Nội dung cần nắm ở mức sơ khai vận dụng thấp mưc cơ bản và lý thuyết: khái niệm, hệ quả, tính chất dạng bài vân dụng thấp chưa mang tính suy luận cao ")
-    can_hieu: str = Field(max_length=300, description="Nội dung cần hiểu sâu mang tính suy luận áp dụng liên hệ các công thức vấn đề ý nghĩa, bản chất, vận dụng vào dạng bài nào, chủ đề hay lĩnh vực mang tự hiểu rõ")
-    quan_he_kien_thuc: str = Field(max_length=200, description="Quan hệ liên kết giữa các bài học/chủ đề/ dạng bài sự kết nối tương tác với nhau trong chương trình môn học chủ đề kiến thức")
-    quan_he_dang_bai: str = Field(max_length=200, description="Quan hệ bồi đắp giữa các dạng bài tập trong chương, khác với quan hệ kiến thức, ví dụ dạng bài 1 là tiền đề cho dạng bài 2, dạng bài 3 là mở rộng dạng bài 1, dạng bài 4 là tổng hợp dạng bài 2 và 3 ")
+    can_nam: str = Field(description="Nội dung cần nắm ở mức cơ bản: khái niệm, hệ quả, tính chất — viết súc tích")
+    can_hieu: str = Field(description="Nội dung cần hiểu sâu, bản chất, vận dụng vào dạng bài nào — viết súc tích")
+    bai_hoc: List[str] = Field(description="Danh sách bài học trong chương")
+    quan_he_kien_thuc: str = Field(description="Quan hệ liên kết giữa các bài học/chủ đề trong chương — viết súc tích")
+    quan_he_dang_bai: str = Field(description="Quan hệ bồi đắp giữa các dạng bài tập trong chương — viết súc tích")
 
 
 
@@ -180,3 +180,14 @@ class ExamState(TypedDict):
     # Meta
     current_step: str
     error: Optional[str]
+
+
+from typing import Dict, Any
+
+class ToolSelection(BaseModel):
+    id: int = Field(description="id câu hỏi tương ứng, PHẢI khớp đúng id trong danh sách câu hỏi đã cho")
+    tool_name: str = Field(description="Tên tool được chọn cho câu hỏi này — PHẢI đúng 1 trong các tool liệt kê ngay dưới câu hỏi đó, hoặc 'khong_co_tool_phu_hop' nếu không tool nào khớp")
+    tool_args: Dict[str, Any] = Field(default_factory=dict, description="Tham số truyền vào tool đã chọn, đúng tên tham số theo mô tả tool, lấy giá trị từ chính dữ kiện trong câu hỏi")
+
+class ToolSelectionBatch(BaseModel):
+    selections: List[ToolSelection]

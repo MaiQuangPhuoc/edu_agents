@@ -53,11 +53,13 @@ def _format_scores_ch(scores_ch: dict) -> str:
 
 
 def build_matrix(state: ExamState, llm_client: LLMClient) -> dict:
-    print(">>> [Node] build_matrix")
+    print(" ================================  file build_matrix  ================================\n"*2)
 
     if state.get("matrix_done", False):
+        print(" matrix xonggggggggg.")
         return {"current_step": "build_matrix"}
 
+    print("---------- chạy build_matrix với state hiện tại ---------- ")
     messages          = state.get("messages", [])
     profile           = state.get("student_profile", {})
     knowledge_scores  = state.get("knowledge_scores", {})
@@ -79,13 +81,14 @@ def build_matrix(state: ExamState, llm_client: LLMClient) -> dict:
 
     ch_dist = _calc_chapter_distribution(knowledge_scores, so_cau, muc_tieu)
     template = PROMPT_PATH.read_text(encoding="utf-8")
-    structured_llm = llm_client._llm.with_structured_output(ChapterMatrixResponse)
+    # structured_llm = llm_client._llm.with_structured_output(ChapterMatrixResponse)
 
     all_chuong = []
     for ch_id, dist in ch_dist.items():
         ch_raw     = get_chapter(subject, ch_id)["chapter_name"]
         scores_ch  = knowledge_scores.get(ch_id, {})
         profile_ch = format_knowledge_profile(knowledge_profile.get(ch_id, {}))
+        # print("\n==========\n profile_ch ", profile_ch, "\n ch_raw ", ch_raw, "\n scores_ch ", scores_ch, "\n==========\n")
 
         prompt = (template
                   .replace("{chuong}", ch_raw)
@@ -102,7 +105,8 @@ def build_matrix(state: ExamState, llm_client: LLMClient) -> dict:
         bai_hoc = []
         for attempt in range(3):
             try:
-                result: ChapterMatrixResponse = structured_llm.invoke([{"role": "user", "content": prompt}])
+                # result: ChapterMatrixResponse = structured_llm.invoke([{"role": "user", "content": prompt}])
+                result = llm_client.invoke_structured(ChapterMatrixResponse, [{"role": "user", "content": prompt}], max_tokens=3000)
                 total = sum(b.so_cau for b in result.bai_hoc)
                 if total == dist["so_cau"]:
                     bai_hoc = [b.model_dump() for b in result.bai_hoc]

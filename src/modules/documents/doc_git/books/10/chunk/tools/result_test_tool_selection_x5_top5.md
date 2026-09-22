@@ -824,7 +824,7 @@
 - Câu hỏi: Hai con tàu xuất phát từ cùng 1 điểm, tàu 1 đi 5km, tàu 2 đi 8km, góc giữa 2 hướng đi là 70°. Tính khoảng cách giữa hai tàu
 - Ground truth: `dinh_ly_cosin`
 - Candidate tools (thứ tự): goc_giua_hai_vecto, giai_tam_giac, dinh_ly_cosin, tich_vo_huong_vecto
-- LLM chọn: `dinh_ly_cosin`
+- LLM chọn: `dinh_ly_cosin`A
 - Lý do LLM: Cần tính cạnh giữa hai tàu khi biết hai cạnh và góc xen giữa, phù hợp với định lý cosin (tính cạnh).
 - Trạng thái: **llm_correct**
 ✅✅✅✅✅

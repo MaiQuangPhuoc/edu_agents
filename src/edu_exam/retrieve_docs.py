@@ -63,8 +63,7 @@ def _filter_by_scope(docs: list, chapter_ids: set[str], lesson_names: list[str])
  
  
 def retrieve_docs(state: ExamState, llm_client: LLMClient, retriever, top_k: int = 10) -> dict:
-    print(">>> [Node] retrieve_docs")
-    print(' ========================== retriver ========================== ')
+    print("=========================== retrieve_docs ==========================="*2)
 
     completed = state.get("retrieve_complete", {})
     if completed:
@@ -72,15 +71,18 @@ def retrieve_docs(state: ExamState, llm_client: LLMClient, retriever, top_k: int
 
         return { "current_step":     "retrieve_docs"}
 
+    print("=========================== run retrieve_docs ==========================="*2)
 
  
     profile = state.get("student_profile", {})
  
 
     scope_data = map_scope(profile)
+    print(f"scope_data in retrieve_docs")
     scope_chapters = scope_data["scope_chapters"]  # {"chương 1": "MỆNH ĐỀ VÀ TẬP HỢP", ...}
     scope_lessons  = scope_data["scope_lessons"]   # {"chương 1": ["Mệnh đề", ...], ...}
- 
+    print(f"scope_chapters: {scope_chapters}")
+    print(f"scope_lessons: {scope_lessons}")
     if not scope_chapters:
         print(">>> retrieve_docs: không map được phạm vi kiểm tra")
         return {"retrieved_chunks": [], "current_step": "retrieve_docs"}

@@ -68,7 +68,7 @@ def run():
     print("=" * 50)
     print("🎓 Hệ thống tạo đề kiểm tra thông minh")
     print("=" * 50)
-    print("Gõ 'quit' để thoát\n")
+    print("Gõ 'q' để thoát\n")
 
     llm_client = LLMClient(model=env_config.model, api_provider=env_config.api_provider)
 
@@ -87,7 +87,7 @@ def run():
 
     while True:
         user_input = input("Học sinh: ").strip()
-        if user_input.lower() == "quit":
+        if user_input.lower() == "q":
             break
         if not user_input:
             continue

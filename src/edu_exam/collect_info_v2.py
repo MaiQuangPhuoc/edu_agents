@@ -50,13 +50,14 @@ def _recent_history(messages: list, turn_limit: int) -> list:
 
 
 def collect_info(state: ExamState, llm_client: LLMClient) -> dict:
+    print("=========================== collect_info ===========================\n"*2)
+    profile_complete = state.get("profile_complete", False)
+    if profile_complete:
+        print("collect info xonggggg")
+        return {}
+    
     messages         = state.get("messages", [])
     student_profile  = state.get("student_profile", {})
-    profile_complete = state.get("profile_complete", False)
-
-    if profile_complete:
-        return {}
-
     recent = _recent_history(messages, HISTORY_TURN_LIMIT)
     history = [
         {"role": "user" if isinstance(m, HumanMessage) else "assistant", "content": m.content}
@@ -93,8 +94,11 @@ def collect_info(state: ExamState, llm_client: LLMClient) -> dict:
         }
 
     new_profile = _merge_profile(student_profile, result.profile)
-    complete = _is_complete(new_profile)
+    print(f"new_profile: {new_profile}")
+    all_fields_filled = _is_complete(new_profile)
+    complete = all_fields_filled and result.is_confirmed   # ← chỉ complete khi ĐỦ field VÀ đã xác nhận
 
+    print(f"complete: {complete}")
     return {
         "messages": [AIMessage(content=result.reply)],
         "student_profile": new_profile,

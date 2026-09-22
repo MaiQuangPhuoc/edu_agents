@@ -18,18 +18,43 @@ def get_chapter(subject: str, chapter_id: str) -> dict:
     return ch
 
 
+_ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
+
+def _to_roman(n: str) -> str | None:
+    try:
+        idx = int(n) - 1
+        return _ROMAN[idx] if 0 <= idx < len(_ROMAN) else None
+    except ValueError:
+        return None
+
+
 def extract_chapter_ids(profile: dict, subject: str) -> list[str]:
-    """Lấy list chapter_id hợp lệ từ pham_vi_kiem_tra, validate theo curriculum của môn."""
+    """Nhận diện chapter_id có mặt trong pham_vi_kiem_tra — chấp nhận cả số Ả Rập ("1") lẫn La Mã ("I", "III")."""
     raw = profile.get("pham_vi_kiem_tra") or profile.get("phạm_vi_kiểm_tra", "")
 
     if not raw:
         ho_so = profile.get("ho_so_kien_thuc") or profile.get("hồ_sơ_kiến_thức", [])
         raw = ", ".join(item.get("chu_de", "") for item in ho_so)
 
+    raw = str(raw)
     valid_ids = set(get_subject_curriculum(subject).keys())
-    numbers = re.findall(r'\d+', str(raw))
-    return [n for n in numbers if n in valid_ids]
 
+    found = set()
+
+    # Cách 1: chính valid_id (dù Ả Rập hay La Mã) xuất hiện dạng token riêng biệt trong raw
+    for vid in valid_ids:
+        if re.search(rf'\b{re.escape(vid)}\b', raw):
+            found.add(vid)
+
+    # Cách 2: raw có số Ả Rập nhưng môn dùng La Mã (hoặc ngược lại) → thử convert
+    for n in re.findall(r'\d+', raw):
+        if n in valid_ids:
+            found.add(n)
+        roman = _to_roman(n)
+        if roman and roman in valid_ids:
+            found.add(roman)
+
+    return sorted(found, key=lambda x: _ROMAN.index(x) if x in _ROMAN else int(x))
 
 def map_scope(profile: dict) -> dict:
     """Từ profile (có mon_hoc + pham_vi_kiem_tra) → scope_chapters, scope_lessons theo chapter_id."""
@@ -42,7 +67,7 @@ def map_scope(profile: dict) -> dict:
 
     print("------------------- mapping curriculum --------------")
     print(f"subject: {subject}\nscope_chapters: {scope_chapters}\nscope_lessons: {scope_lessons}")
-
+    print("=========================== end mapping ===========================\n"*2)
     return {"scope_chapters": scope_chapters, "scope_lessons": scope_lessons}
 
 

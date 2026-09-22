@@ -2,11 +2,16 @@ import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from pathlib import Path
 from langchain_core.messages import AIMessage
-from src.state_edu import ExamState
+from src.state_edu import ExamState, ToolSelection, ToolSelectionBatch
 from src.clients.llm import LLMClient
 from src.edu_qa.tools.math_tools_v2_2 import TOOL_MAP_V2   # ← chỉnh lại path thật của math_tools_v2_2.py trong project
+from src.edu_qa.paths import TOOL_SELECT_BATCH_PROMPT_PATH
+from typing import Dict, Any
 
-TOOL_SELECT_PROMPT_PATH = Path(r'D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\prompt_edu\prompt\qa_solve_tool_select_prompt.txt')
+TOOL_VERIFY_BATCH_SIZE = 5
+
+
+
 
 TOOLS_TOP_K            = 3
 TOOLS_SCORE_THRESHOLD_1 = 0.6
@@ -60,48 +65,35 @@ def _check_counts(state: ExamState) -> dict:
 # ── Nhiệm vụ 3: retrieval chọn tool + tính lại cho câu type=bai_tap ──────────
 # Tham khảo trực tiếp qa_solve_agent.py — cùng cơ chế rerank + cascade threshold
 
-def _select_candidate_tools(retriever, query: str) -> list:
-    docs     = retriever.hybrid_search_tools(query, k=10)
-    reranked = retriever.rerank(query, docs, top_k=TOOLS_TOP_K)
+
+
+
+# ── Nhiệm vụ 3: retrieval chọn tool (per-question) + LLM chọn tool THEO BATCH ──
+
+def _select_candidate_tool_names(retriever, question: str) -> list:
+    """Retrieval THUẦN (không LLM) — vẫn chạy riêng từng câu để giữ tool ứng viên sát đúng."""
+    docs     = retriever.hybrid_search_tools(question, k=10)
+    reranked = retriever.rerank(question, docs, top_k=TOOLS_TOP_K)
 
     filtered = [d for d in reranked if d.metadata.get("rerank_score", 0) >= TOOLS_SCORE_THRESHOLD_1]
     if not filtered:
         filtered = [d for d in reranked if d.metadata.get("rerank_score", 0) >= TOOLS_SCORE_THRESHOLD_2]
+    tools_name  = [d.metadata.get("tool_name") for d in filtered if d.metadata.get("tool_name") in TOOL_MAP_V2]
+    print("list tools name : " , tools_name ,"\n\n")
+    return tools_name
 
-    tool_names = [d.metadata.get("tool_name") for d in filtered]
-    return [TOOL_MAP_V2[name] for name in tool_names if name in TOOL_MAP_V2]
 
-
-def _select_and_call_tool(question: str, retriever, llm_client: LLMClient):
-    """Trả về (tool_name, tool_output) — output=None nếu không tool nào phù hợp/tính lỗi."""
-    candidate_tools = _select_candidate_tools(retriever, question)
-    if not candidate_tools:
-        return None, None
-
-    template    = TOOL_SELECT_PROMPT_PATH.read_text(encoding="utf-8")
-    prompt_text = template.format(question=question)
-
-    llm_with_tools = llm_client._llm.bind_tools(candidate_tools)
-    response = llm_with_tools.invoke([{"role": "user", "content": prompt_text}])
-
-    if not response.tool_calls:
-        return None, None
-
-    tool_call = response.tool_calls[0]
-    tool_fn   = TOOL_MAP_V2.get(tool_call["name"])
-    if not tool_fn:
-        return tool_call["name"], None
-
-    try:
-        output = tool_fn.invoke(tool_call["args"])
-    except Exception as e:
-        print(f"[tool_error] {tool_call['name']}: {e}")
-        return tool_call["name"], None
-
-    if isinstance(output, str) and output.startswith("LOI:"):
-        return tool_call["name"], None
-
-    return tool_call["name"], output
+def _format_questions_block(batch: list, candidate_map: dict) -> str:
+    """Câu hỏi 1: ...\ncác tool của câu hỏi 1\n\nCâu hỏi 2: ...\ncác tool của câu hỏi 2..."""
+    blocks = []
+    for q in batch:
+        tool_names = candidate_map.get(q["id"], [])
+        if tool_names:
+            tool_lines = "\n".join(f"  - {name}: {TOOL_MAP_V2[name].description}" for name in tool_names)
+        else:
+            tool_lines = "  (không có tool nào khớp)"
+        blocks.append(f"Câu hỏi {q['id']}: {q['question']}\nCác tool khả dụng cho câu hỏi này:\n{tool_lines}")
+    return "\n\n".join(blocks)
 
 
 def _check_mapping(tool_output: str, chosen_option_text: str) -> bool:
@@ -114,18 +106,52 @@ def _check_mapping(tool_output: str, chosen_option_text: str) -> bool:
 
 
 def _verify_bai_tap_with_tools(generated_exam: list, retriever, llm_client: LLMClient) -> None:
-    for q in generated_exam:
-        if q.get("type") != "bai_tap":
+    bai_tap_questions = [q for q in generated_exam if q.get("type") == "bai_tap"]
+    if not bai_tap_questions:
+        return
+
+    template = TOOL_SELECT_BATCH_PROMPT_PATH.read_text(encoding="utf-8")
+
+    for i in range(0, len(bai_tap_questions), TOOL_VERIFY_BATCH_SIZE):
+        batch = bai_tap_questions[i:i + TOOL_VERIFY_BATCH_SIZE]
+
+        # Retrieval riêng từng câu (không LLM) — rẻ, giữ tool ứng viên sát đúng theo từng câu
+        candidate_map = {q["id"]: _select_candidate_tool_names(retriever, q["question"]) for q in batch}
+
+        if not any(candidate_map.values()):
+            for q in batch:
+                q["tool_used"], q["answer_tools"], q["mapping"] = None, "Không tìm được tool phù hợp", "❌"
             continue
 
-        tool_name, tool_output = _select_and_call_tool(q.get("question", ""), retriever, llm_client)
+        prompt = template.replace("{questions_block}", _format_questions_block(batch, candidate_map))
 
-        q["tool_used"]    = tool_name
-        q["answer_tools"] = tool_output if tool_output is not None else "Không tìm được tool phù hợp / tính lỗi"
+        print(" ====================== prompt chọn tools ======================\n   \n")
+        print(prompt)
 
-        chosen_text = q.get("options", {}).get(q.get("answer", ""), "")
-        matched = _check_mapping(tool_output, chosen_text) if tool_output is not None else False
-        q["mapping"] = "✅" if matched else "❌"
+        result = llm_client.invoke_structured(ToolSelectionBatch, [{"role": "user", "content": prompt}], max_tokens=2000)
+        selections_by_id = {s.id: s for s in result.selections} if result else {}
+
+        for q in batch:
+            sel = selections_by_id.get(q["id"])
+            if not sel or sel.tool_name not in TOOL_MAP_V2:
+                q["tool_used"], q["answer_tools"], q["mapping"] = None, "LLM không chọn được tool hợp lệ", "❌"
+                continue
+
+            try:
+                output = TOOL_MAP_V2[sel.tool_name].invoke(sel.tool_args)
+            except Exception as e:
+                output = f"LOI: {e}"
+
+            q["tool_used"]    = sel.tool_name
+            q["answer_tools"] = output
+
+            print(f" >>> Câu {q['id']} tool {sel.tool_name} output: {output}")
+
+            if isinstance(output, str) and output.startswith("LOI:"):
+                q["mapping"] = "❌"
+            else:
+                chosen_text = q.get("options", {}).get(q.get("answer", ""), "")
+                q["mapping"] = "✅" if _check_mapping(output, chosen_text) else "❌"
 
 
 # ── Node chính ─────────────────────────────────────────────────────────────────
@@ -133,13 +159,19 @@ MAX_RETRY = 2   # tối đa 2 lần quay lại sinh bù, tránh loop vô hạn n
 
 
 def evaluate_exam(state: ExamState, llm_client: LLMClient, retriever) -> dict:
-    print(">>> [Node] evaluate_exam")
+    print(" ------------------------------ file evaluate_exam ------------------------------\n"*2)
 
     if state.get("evaluate_done", False):
         return {}
 
     generated_exam = state.get("generated_exam", [])
     retry_count    = state.get("evaluate_retry_count", 0)
+
+    print("\n----------\n xem các câu bài tập và kết quả tool tính lại:")
+    for q in generated_exam:
+        if q.get("type") == "bai_tap":
+            print(f"id={q['id']} | tool={q.get('tool_used')} | answer_tools={q.get('answer_tools')} | "
+                f"answer_LLM={q.get('answer')}={q['options'].get(q.get('answer'))} | mapping={q.get('mapping')}")
 
     # 1. Schema check
     for q in generated_exam:

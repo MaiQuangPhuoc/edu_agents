@@ -37,11 +37,12 @@ def _cascade_retrieve_chapter(retriever, query: str, ch_id: str, subject: str, s
 
 
 def retrieve_docs(state: ExamState, llm_client: LLMClient, retriever) -> dict:
-    print(">>> [Node] retrieve_docs")
+    print(" ---------------------- file retrieve_docs.py ---------------------- \n"*2)
 
     if state.get("retrieve_complete", False):
         return {"current_step": "retrieve_docs"}
 
+    print("=========================== run retrieve_docs ==========================="*2)
     profile = state.get("student_profile", {})
     subject = profile.get("mon_hoc", "")
 

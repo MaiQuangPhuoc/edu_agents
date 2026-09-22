@@ -29,12 +29,6 @@ NGUYÊN TẮC BẮT BUỘC
 5. Section score cao (2-3) → ưu tiên nhiều câu hơn, độ khó cao hơn. Score thấp (0-1) → ít câu, độ khó dễ/trung bình.
 6. Tổng số đặc tả PHẢI đúng {so_cau} — không thiếu, không thừa.
 
-VÍ DỤ (CHỈ tham khảo định dạng nội dung, KHÔNG copy)
-{
-  "bai": "Mệnh đề",
-  "dang_bai": "Xác định mệnh đề đúng sai",
-  "do_kho": "de",
-  "yeu_cau": "Học sinh nhận biết được một câu có phải mệnh đề hay không và xác định tính đúng sai của mệnh đề đó.",
-  "muc_dich": "Kiểm tra khả năng nhận biết định nghĩa mệnh đề và phân biệt mệnh đề đúng - sai.",
-  "ngu_canh": ["Định nghĩa mệnh đề: câu khẳng định đúng hoặc sai", "Ví dụ mệnh đề đúng: 2+2=4"]
-}
+VÍ DỤ CÁCH VIẾT ĐẶC TẢ (diễn giải bằng lời, không phải mẫu JSON)
+Với dạng bài "Xác định mệnh đề đúng sai" thuộc bài "Mệnh đề", độ khó "de": yeu_cau nên nêu rõ học sinh cần nhận biết một câu có phải mệnh đề hay không và xác định tính đúng sai của mệnh đề đó; 
+muc_dich là kiểm tra khả năng nhận biết định nghĩa mệnh đề và phân biệt mệnh đề đúng-sai; ngu_canh liệt kê đúng các khái niệm/ví dụ có thật trong tài liệu tham chiếu, ví dụ định nghĩa mệnh đề và 1-2 ví dụ minh hoạ đúng/sai.

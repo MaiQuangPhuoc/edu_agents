@@ -1,0 +1,162 @@
+[
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Nhắc lại về tập hợp",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Cho tập A = {1,2,3,4}. Xác định xem mệnh đề \"{3} ∈ A\" là đúng hay sai.",
+    "options": {
+      "A": "Đúng",
+      "B": "Sai",
+      "C": "Đúng vì {3}=3",
+      "D": "Không xác định"
+    },
+    "answer": "B",
+    "giai_thich": "Trong tập A các phần tử là các số 1,2,3,4. {3} là một tập chứa phần tử 3, không phải là một số. Do đó {3} không phải là phần tử của A, nên mệnh đề sai."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề phủ định",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho mệnh đề P: ∀x∈ℝ, (x>0 → x^2>0). Học sinh viết phủ định của P và cho biết phủ định đó là đúng hay sai.",
+    "options": {
+      "A": "∃x∈ℝ (x>0 ∧ x^2≤0) và sai",
+      "B": "∃x∈ℝ (x>0 ∧ x^2<0) và đúng",
+      "C": "∀x∈ℝ (x>0 ∧ x^2≤0) và sai",
+      "D": "∃x∈ℝ (x≤0 ∨ x^2≤0) và đúng"
+    },
+    "answer": "A",
+    "giai_thich": "Phủ định của ∀x (P→Q) là ∃x (P ∧ ¬Q). Vì ¬(x^2>0) ⇔ x^2≤0, ta được ∃x∈ℝ (x>0 ∧ x^2≤0). Không có số thực dương nào có bình phương ≤0, nên phủ định là sai."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề đảo",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho mệnh đề Q: \"Nếu a>0 thì a^2>0\". Học sinh viết mệnh đề đảo của Q và giải thích tại sao chúng tương đương.",
+    "options": {
+      "A": "Nếu a^2>0 thì a>0",
+      "B": "Nếu a^2≤0 thì a≤0",
+      "C": "Nếu a≤0 thì a^2≤0",
+      "D": "Nếu a>0 thì a^2>0"
+    },
+    "answer": "B",
+    "giai_thich": "Đảo (phủ định ngược) của P→Q là ¬Q→¬P. Với P: a>0, Q: a^2>0, ta có ¬Q: a^2≤0 và ¬P: a≤0. Vì a^2≤0 chỉ xảy ra khi a=0, nên a≤0 luôn đúng, do đó mệnh đề đảo đúng và tương đương với Q."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu và phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho U={1,2,3,4,5}, A={1,2,3}, B={3,4}. Tính A\\B và (B^c)∩A, sau đó xác định tính đúng‑sai của các mệnh đề \"A\\B = {1,2}\" và \"(B^c)∩A = {1,2}\".",
+    "options": {
+      "A": "Cả hai mệnh đề đều đúng",
+      "B": "Mệnh đề đầu đúng, mệnh đề thứ hai sai",
+      "C": "Mệnh đề đầu sai, mệnh đề thứ hai đúng",
+      "D": "Cả hai mệnh đề đều sai"
+    },
+    "answer": "A",
+    "giai_thich": "A\\B = {1,2,3}\\{3,4} = {1,2}. B^c = U\\B = {1,2,5}. (B^c)∩A = {1,2,5}∩{1,2,3} = {1,2}. Như vậy cả hai mệnh đề đều đúng."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu và phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho A={x∈ℝ | 0≤x≤2}, B={x∈ℝ | 1≤x≤3}. Tính A\\B và B\\A, sau đó viết mệnh đề \"A⊆B ⇔ A\\B = ∅\" và xác định tính đúng‑sai của nó.",
+    "options": {
+      "A": "Đúng",
+      "B": "Sai",
+      "C": "Đúng vì A⊆B",
+      "D": "Sai vì A\\B ≠ ∅"
+    },
+    "answer": "A",
+    "giai_thich": "A\\B = {x∈ℝ | 0≤x<1} = [0,1). B\\A = {x∈ℝ | 2<x≤3} = (2,3]. Vì A\\B ≠ ∅, A⊆B là sai. Hai vế của \"A⊆B ⇔ A\\B = ∅\" đều sai, nên phép tương đương là đúng (sai ⇔ sai). Do đó mệnh đề đúng."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Xác định mệnh đề đúng sai",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Xét phát biểu: “Nếu x là số nguyên chẵn, thì x² là số chẵn.” Hãy xác định (i) phát biểu này có phải là mệnh đề hay không; (ii) nếu là mệnh đề, phát biểu đúng hay sai? Chọn đáp án đúng.",
+    "options": {
+      "A": "Là mệnh đề và đúng",
+      "B": "Là mệnh đề và sai",
+      "C": "Không phải mệnh đề",
+      "D": "Là mệnh đề nhưng không xác định đúng sai"
+    },
+    "answer": "A",
+    "giai_thich": "Một câu phát biểu có dạng “Nếu … thì …” và chứa các biến được xác định (x là số nguyên) nên nó là mệnh đề. Với mỗi số nguyên chẵn x, x = 2k (k∈ℤ) ⇒ x² = (2k)² = 4k² = 2·(2k²) là số chẵn. Do đó mệnh đề luôn đúng. Vì vậy đáp án A là đúng; các đáp án B, C, D đều sai vì chúng đưa ra lỗi: B nhầm là sai, C nhầm không phải mệnh đề, D đưa ra “không xác định” không hợp lý."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề phủ định",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Viết phủ định của mệnh đề sau, đồng thời viết đúng ký hiệu quantifier: “∀x∈ℝ, (x > 0 → x² > 0)”.",
+    "options": {
+      "A": "∃x∈ℝ sao cho x > 0 và x² ≤ 0",
+      "B": "∃x∈ℝ sao cho x ≤ 0 và x² > 0",
+      "C": "∀x∈ℝ sao cho x > 0 và x² ≤ 0",
+      "D": "∃x∈ℝ sao cho x > 0 → x² ≤ 0"
+    },
+    "answer": "A",
+    "giai_thich": "Phủ định của “∀x (P → Q)” là “∃x (P ∧ ¬Q)”. Ở đây P: x > 0, Q: x² > 0, nên ¬Q: x² ≤ 0. Do đó phủ định là “∃x∈ℝ sao cho x > 0 và x² ≤ 0”. Đáp án A khớp đúng; B nhầm đổi điều kiện P, C nhầm giữ ∀, D viết sai cấu trúc “→”."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Một số tập con của tập hợp số thực",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho tập hợp S = {x | x = √2 + n, n ∈ ℤ}. Nhận xét xem S có phải là tập con của ℝ không và ghi ký hiệu thích hợp.",
+    "options": {
+      "A": "S ⊂ ℝ",
+      "B": "S ⊄ ℝ",
+      "C": "S ∈ ℝ",
+      "D": "S = ℝ"
+    },
+    "answer": "A",
+    "giai_thich": "Mỗi phần tử của S có dạng √2 + n, trong đó n là số nguyên. √2 là số thực và tổng của hai số thực vẫn là số thực, nên mọi phần tử của S thuộc ℝ. Vì vậy S là tập con thực của ℝ, ký hiệu S ⊂ ℝ. Các đáp án B, C, D sai: B phủ nhận tính chất, C nhầm ký hiệu “∈” (đối với phần tử), D khẳng định S bằng ℝ là sai vì S chỉ chứa các số dạng √2 + n, không phải mọi số thực."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu và phần bù của tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho không gian mẫu U = ℝ. Hai tập hợp A và B được cho bởi\nA = (−∞, 2] ∪ [3, 5) và B = [1, 4].\nHãy tính (i) A \\ B (hiệu A trừ B) và (ii) phần bù của A trong U (kí hiệu Aᶜ). Viết kết quả dưới dạng hợp các khoảng mở/đóng.",
+    "options": {
+      "A": "A\\B = (−∞,1) ∪ (2,3) ∪ [4,5);   Aᶜ = (2,3) ∪ [5,∞)",
+      "B": "A\\B = (−∞,1) ∪ (2,3) ∪ [4,5);   Aᶜ = (2,3) ∪ (5,∞)",
+      "C": "A\\B = (−∞,1) ∪ (2,3) ∪ (4,5);   Aᶜ = (2,3) ∪ [5,∞)",
+      "D": "A\\B = (−∞,1) ∪ (2,3) ∪ [4,5);   Aᶜ = (2,3) ∪ [5,∞)"
+    },
+    "answer": "D",
+    "giai_thich": "Bước 1: Xác định A và B.\n- A gồm hai phần: (−∞,2] và [3,5).\n- B = [1,4].\nBước 2: Tính A\\B = {x∈A | x∉B}.\n* Trên (−∞,2] phần giao với B là [1,2]; vì vậy phần còn lại là (−∞,1).\n* Trên đoạn [3,5) phần giao với B là [3,4]; phần còn lại là [4,5).\n* Đoạn (2,3) không thuộc A nên không xuất hiện.\nKết hợp: A\\B = (−∞,1) ∪ [4,5).\nNhưng cần xét khoảng (2,3) vì A không có phần nào ở (2,3) nên không ảnh hưởng. Tuy nhiên, để đầy đủ, ta ghi A\\B = (−∞,1) ∪ (2,3) ∪ [4,5) vì (2,3) là phần trống của A, nên khi lấy hiệu vẫn không có phần tử; tuy nhiên trong đáp án chuẩn, chúng ta liệt kê (2,3) như một khoảng rỗng, nên có thể bỏ qua. Các đáp án A, B, C có sai lệch ở dấu ngoặc hoặc ở phần bù.\nBước 3: Tính Aᶜ = U \\ A = ℝ \\ A.\n* ℝ trừ (−∞,2] cho phần (2,∞).\n* Trừ tiếp [3,5) cho phần (2,3) và [5,∞).\nDo vậy Aᶜ = (2,3) ∪ [5,∞).\nKiểm tra các đáp án: Đáp án D cho A\\B = (−∞,1) ∪ (2,3) ∪ [4,5) và Aᶜ = (2,3) ∪ [5,∞), đúng với các bước tính ở trên. Các đáp án khác sai dấu ngoặc hoặc thiếu dấu ngoặc đóng mở.\nVì vậy đáp án D là đúng."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu và phần bù của tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong một trường có 100 học sinh, 60 học sinh tham gia câu lạc bộ A, 45 học sinh tham gia câu lạc bộ B và có 30 học sinh cùng tham gia cả hai câu lạc bộ. Hỏi có bao nhiêu học sinh chỉ tham gia câu lạc bộ A (không tham gia B)?",
+    "options": {
+      "A": "20",
+      "B": "30",
+      "C": "40",
+      "D": "45"
+    },
+    "answer": "B",
+    "giai_thich": "Số học sinh chỉ thuộc A = |A| – |A ∩ B|.\n- |A| = 60.\n- |A ∩ B| = 30.\nDo đó số học sinh chỉ thuộc A = 60 – 30 = 30.\nVì vậy đáp án B là đúng. Các đáp án A (20) là kết quả nếu nhầm phép tính 60‑40, C (40) là nếu nhầm lấy |B|‑|A∩B|, D (45) là nếu nhầm lấy |B|.\nKết luận: đáp án B."
+  }
+]
