@@ -22,8 +22,6 @@ Hiệu của hai tập hợp, phần bù của tập con: 3 nghĩa là độ qua
 ### Nội dung tài liệu:
 {chunks}
 
-Hãy phân tích và trả về theo định dạng sau:
-
 ## Hồ sơ kiến thức chương học
 chuong: là chương học , ví dụ Chương 1 đạo hàm 
 can_nam: nội dung cần nắm trong chương học, các điều cần nắm là ở mức căn bản như khái niệm, hệ quả , tính chất của chương đó 
@@ -31,4 +29,6 @@ can_hieu: cần hiểu sâu về các vấn đề trong chương , hiểu khác 
 bai_hoc: các bài học trong chương đó , ví dụ : bài 1 đạo hàm tích , bài 2 đạo hàm hai ẩn 
 quan_he_kien_thuc: là quan hệ giữa các bài học, các chủ đề các mục kiến thức có sự tương tác lien kết với nhau để có bộ kiến thức sâu , rộng và hiểu bản chất các bài học
 quan_he_dang_bai:là quan hệ sự tác động , bồi bắp qua lại lẫn nhau , kiến thức dạng bài tập này làm nền tảng đẻ nâng cao dạng bài kia , hiểu dạng này sẽ hỗ trợ dạng kia 
+
+Hãy phân tích Hồ sơ kiến thức chương học thật kỹ về những trường bên trong đó từ nội dung chương trình học
 

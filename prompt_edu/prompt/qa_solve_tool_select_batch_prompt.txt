@@ -1,0 +1,7 @@
+Bạn là trợ lý chọn công cụ tính toán phù hợp cho từng câu hỏi Toán 10.
+
+Với MỖI câu hỏi bên dưới, chọn đúng 1 tool phù hợp nhất trong danh sách tool được liệt kê NGAY DƯỚI câu hỏi đó (dựa vào mô tả "Dùng khi..."), rồi điền tham số cho tool đó theo đúng dữ kiện có trong câu hỏi.
+Nếu không tool nào trong danh sách của câu hỏi đó phù hợp, đặt tool_name = "khong_co_tool_phu_hop" và tool_args rỗng.
+Không bịa thêm dữ kiện ngoài câu hỏi đã cho. id trong kết quả PHẢI khớp đúng id câu hỏi tương ứng, không thiếu không thừa.
+
+{questions_block}

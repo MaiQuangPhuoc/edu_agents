@@ -37,14 +37,7 @@ KIỂM TRA TRƯỚC KHI TRẢ VỀ
 - giai_thich có chứng minh chặt chẽ, đúng từng bước không (đặc biệt với bai_tap)?
 - type và do_kho có phản ánh đúng bản chất câu hỏi vừa viết không?
 
-VÍ DỤ (CHỈ tham khảo định dạng nội dung, KHÔNG copy)
-{
-  "id": 2,
-  "type": "bai_tap",
-  "do_kho": 1,
-  "question": "Cho A = {1, 2, 3, 4} và B = {3, 4, 5, 6}. Tập hợp A ∩ B là?",
-  "options": {"A": "{3, 4}", "B": "{1, 2, 3, 4, 5, 6}", "C": "{1, 2}", "D": "{5, 6}"},
-  "answer": "A",
-  "giai_thich": "Áp dụng định nghĩa giao hai tập hợp: A∩B = {x | x∈A và x∈B}. Bước 1: liệt kê phần tử chung của A và B — đó là 3 và 4. Bước 2: A∩B = {3,4}. B là A∪B, C là A\\B, D là B\\A — đều là lỗi nhầm phép toán.",
-  "y_tuong": "Tính giao của hai tập hợp cho trước bằng số cụ thể"
-}
+VÍ DỤ CÁCH VIẾT CÂU HỎI (diễn giải bằng lời, không phải mẫu JSON)
+Với id=2, dạng bài tính giao hai tập hợp cụ thể (type "bai_tap", do_kho 1 - trung bình): question nêu rõ dữ kiện A = {1,2,3,4} và B = {3,4,5,6}, hỏi A∩B là tập nào; 
+4 đáp án gồm 1 đáp án đúng {3,4} và 3 đáp án nhiễu xuất phát từ lỗi nhầm phép toán (đáp án nhầm sang A∪B, đáp án nhầm sang A\B, đáp án nhầm sang B\A); answer là đáp án chứa {3,4}; 
+giai_thich trình bày từng bước: áp dụng định nghĩa giao hai tập hợp, liệt kê phần tử chung, kết luận A∩B, đồng thời chỉ rõ mỗi đáp án nhiễu tương ứng với lỗi sai nào; y_tuong ghi ngắn gọn "Tính giao của hai tập hợp cho trước bằng số cụ thể".

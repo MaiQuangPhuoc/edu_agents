@@ -63,6 +63,7 @@ def build_specs(state: ExamState, llm_client: LLMClient) -> dict:
     print(">>> [Node] build_specs")
 
     if state.get("specs_done", False):
+        print("build_specs xongggggggggggg")
         return {}
 
     exam_matrix       = state.get("exam_matrix", {})
@@ -71,7 +72,7 @@ def build_specs(state: ExamState, llm_client: LLMClient) -> dict:
     retrieved_chunks  = state.get("retrieved_chunks", [])
 
     template       = PROMPT_PATH.read_text(encoding="utf-8")
-    structured_llm = llm_client._llm.with_structured_output(QuestionSpecBatch)
+    # structured_llm = llm_client._llm.with_structured_output(QuestionSpecBatch)
     all_specs      = []
     id_counter     = 1
 
@@ -91,7 +92,7 @@ def build_specs(state: ExamState, llm_client: LLMClient) -> dict:
 
         remaining, batch_idx = so_cau, 0
         while remaining > 0:
-            batch_size = min(10, remaining)
+            batch_size = min(5, remaining)
             ratio = batch_size / so_cau if so_cau > 0 else 0
             b_de  = round(so_de * ratio)
             b_tb  = round(so_tb * ratio)
@@ -108,26 +109,29 @@ def build_specs(state: ExamState, llm_client: LLMClient) -> dict:
                       .replace("{so_trung_binh}", str(b_tb))
                       .replace("{so_kho}", str(b_kho)))
 
+            # (1)+(2) bỏ vòng retry lồng, chỉ retry khi sai số lượng
             success = False
-            for attempt in range(3):
-                try:
-                    result: QuestionSpecBatch = structured_llm.invoke([{"role": "user", "content": prompt}])
-                    if len(result.specs) != batch_size:
-                        print(f"[{ch_id}] batch {batch_idx} attempt {attempt}: {len(result.specs)}/{batch_size}, retry")
-                        continue
-                    for s in result.specs:
-                        spec = s.model_dump()
-                        spec["id"]              = id_counter
-                        spec["chuong"]           = ch_raw
-                        spec["chapter_id"]       = ch_id
-                        spec["validation_type"]  = _get_validation_type(spec["dang_bai"])
-                        id_counter += 1
-                        all_specs.append(spec)
-                    remaining -= len(result.specs)
-                    success = True
-                    break
-                except Exception as e:
-                    print(f"[{ch_id}] batch {batch_idx} attempt {attempt} lỗi: {e}")
+            for attempt in range(2):
+                result = llm_client.invoke_structured(
+                    QuestionSpecBatch, [{"role": "user", "content": prompt}], max_tokens=4096
+                )
+                if result is None:
+                    print(f"[{ch_id}] batch {batch_idx} attempt {attempt}: LLM trả None")
+                    continue
+                if len(result.specs) != batch_size:
+                    print(f"[{ch_id}] batch {batch_idx} attempt {attempt}: {len(result.specs)}/{batch_size}, retry")
+                    continue
+                for s in result.specs:
+                    spec = s.model_dump()
+                    spec["id"]              = id_counter
+                    spec["chuong"]          = ch_raw
+                    spec["chapter_id"]      = ch_id
+                    spec["validation_type"] = _get_validation_type(spec["dang_bai"])
+                    id_counter += 1
+                    all_specs.append(spec)
+                remaining -= len(result.specs)
+                success = True
+                break
 
             if not success:
                 print(f"[{ch_id}] batch {batch_idx} thất bại sau 3 lần, bỏ qua")

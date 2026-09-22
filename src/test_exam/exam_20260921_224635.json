@@ -1,0 +1,162 @@
+[
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề phủ định",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Cho mệnh đề P: “Nếu x > 0 thì x^2 > 0”. Viết phủ định của P (dùng ký hiệu ¬) và cho biết mệnh đề gốc P và mệnh đề phủ định ¬P là đúng hay sai (với x là số thực).",
+    "options": {
+      "A": "¬P: “Nếu x > 0 thì x^2 ≤ 0”. P đúng, ¬P sai.",
+      "B": "¬P: “Nếu x ≤ 0 thì x^2 > 0”. P sai, ¬P đúng.",
+      "C": "¬P: “Nếu x ≤ 0 thì x^2 ≤ 0”. P đúng, ¬P đúng.",
+      "D": "¬P: “Nếu x > 0 thì x^2 = 0”. P sai, ¬P đúng."
+    },
+    "answer": "A",
+    "giai_thich": "P: “Nếu x > 0 thì x^2 > 0”. Với mọi số thực x>0, x^2 luôn dương, nên P đúng. Phủ định của mệnh đề dạng “Nếu P thì Q” là “P và không Q”, ký hiệu ¬(P→Q) ≡ P ∧ ¬Q. Do đó ¬P: “x > 0 và x^2 ≤ 0”. Được viết lại dưới dạng “Nếu x > 0 thì x^2 ≤ 0”. Vì không tồn tại x>0 thỏa x^2 ≤ 0, ¬P luôn sai. Vì vậy đáp án A đúng; các đáp án B‑D sai vì chúng nhầm cách phủ định (đảo điều kiện, hoặc thay dấu bất đẳng thức)."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Hai mệnh đề tương đương",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho mệnh đề Q: “Nếu x = 2 thì x^2 = 4”. Viết mệnh đề đảo (contrapositive) của Q và chứng minh Q và mệnh đề đảo là tương đương.",
+    "options": {
+      "A": "Mệnh đề đảo: “Nếu x^2 ≠ 4 thì x ≠ 2”. Q và đảo đều đúng, do (P→Q) ⇔ (¬Q→¬P).",
+      "B": "Mệnh đề đảo: “Nếu x^2 = 4 thì x = 2”. Q đúng, đảo sai vì có x = -2 thỏa x^2 = 4.",
+      "C": "Mệnh đề đảo: “Nếu x ≠ 2 thì x^2 ≠ 4”. Q đúng, đảo sai vì x = -2 thỏa ¬P nhưng Q vẫn đúng.",
+      "D": "Mệnh đề đảo: “Nếu x = 2 thì x^2 ≠ 4”. Q sai, đảo đúng."
+    },
+    "answer": "A",
+    "giai_thich": "Đối với mệnh đề dạng P→Q, mệnh đề đảo (contrapositive) là ¬Q→¬P. Ở đây P: “x = 2”, Q: “x^2 = 4”. ¬Q là “x^2 ≠ 4”, ¬P là “x ≠ 2”. Vì vậy đảo là “Nếu x^2 ≠ 4 thì x ≠ 2”. Ta kiểm tra tính đúng: Nếu x^2 ≠ 4, chắc chắn x không thể bằng 2 (vì 2^2 = 4). Ngược lại, nếu x = 2 thì x^2 = 4, nên ¬Q không xảy ra. Do đó cả P→Q và ¬Q→¬P luôn đúng, chứng tỏ chúng tương đương. Các đáp án B‑D sai vì chúng nhầm định nghĩa mệnh đề đảo (đảo vị trí Q và P, hoặc đổi dấu bất đẳng thức)."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Một số tập con của tập hợp số thực",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Liệt kê ít nhất ba tập con của tập số thực ℝ và chỉ ra mối quan hệ bao hàm (⊂) giữa chúng.",
+    "options": {
+      "A": "ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ",
+      "B": "ℝ ⊂ ℚ ⊂ ℤ ⊂ ℕ",
+      "C": "ℤ ⊂ ℕ ⊂ ℚ ⊂ ℝ",
+      "D": "ℚ ⊂ ℝ ⊂ ℤ ⊂ ℕ"
+    },
+    "answer": "A",
+    "giai_thich": "Các tập hợp cơ bản: ℕ = {0,1,2,…}, ℤ = {...,-2,-1,0,1,2,…}, ℚ = các số hữu tỉ, ℝ = các số thực. Mỗi tập là tập con của tập kế tiếp: ℕ ⊂ ℤ (mỗi số tự nhiên là số nguyên), ℤ ⊂ ℚ (mỗi số nguyên là số hữu tỉ), ℚ ⊂ ℝ (mỗi số hữu tỉ là số thực). Do đó chuỗi quan hệ bao hàm đúng là A. Các đáp án B, C, D đảo ngược thứ tự hoặc đặt quan hệ sai (ví dụ ℤ ⊂ ℕ là sai vì ℤ chứa các số âm)."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho A = {1, 2, 3, 4, 5} và B = {4, 5, 6}. Xác định hiệu A\\B và tính số phần tử |A\\B|.",
+    "options": {
+      "A": "A\\B = {1, 2, 3}, |A\\B| = 3",
+      "B": "A\\B = {4, 5}, |A\\B| = 2",
+      "C": "A\\B = {1, 2, 3, 4, 5}, |A\\B| = 5",
+      "D": "A\\B = ∅, |A\\B| = 0"
+    },
+    "answer": "A",
+    "giai_thich": "Hiệu A\\B gồm các phần tử thuộc A nhưng không thuộc B. Kiểm tra từng phần tử của A: 1∉B → giữ lại, 2∉B → giữ lại, 3∉B → giữ lại, 4∈B → loại, 5∈B → loại. Do đó A\\B = {1,2,3}. Đếm phần tử: |A\\B| = 3. Các đáp án B‑D sai vì: B nhầm lấy giao (A∩B), C nhầm lấy A, D nhầm cho rằng A⊆B (không đúng)."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong vũ trụ U = {1, 2, 3, 4, 5, 6}, tập con A = {2, 4, 6}. Xác định phần bù A^c và liệt kê các phần tử của A^c.",
+    "options": {
+      "A": "A^c = {1, 3, 5}",
+      "B": "A^c = {2, 4, 6}",
+      "C": "A^c = {1, 2, 3, 4, 5, 6}",
+      "D": "A^c = {1, 2, 3, 4, 5}"
+    },
+    "answer": "A",
+    "giai_thich": "Phần bù A^c trong U gồm các phần tử thuộc U nhưng không thuộc A. Lập danh sách U: {1,2,3,4,5,6}. Loại bỏ các phần tử của A: 2,4,6. Các phần tử còn lại là {1,3,5}. Vì vậy A^c = {1,3,5}. Các đáp án B‑D sai vì: B nhầm cho rằng phần bù bằng A, C nhầm cho rằng phần bù bằng toàn bộ U, D bỏ sót phần tử 6."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Trong các phát biểu sau, phát biểu nào là một mệnh đề và đồng thời đúng?",
+    "options": {
+      "A": "2 + 2 = 4",
+      "B": "x + 1 = 2 (với x chưa xác định)",
+      "C": "5 < 3",
+      "D": "Tập {1,2} có ba phần tử"
+    },
+    "answer": "A",
+    "giai_thich": "Mệnh đề là phát biểu có giá trị đúng hoặc sai. \\n- A: 2+2=4 là một phát biểu có giá trị đúng → là mệnh đề đúng.\\n- B: x+1=2 chưa xác định giá trị của x, vì vậy không phải mệnh đề.\\n- C: 5<3 là một phát biểu đúng sai, giá trị sai → là mệnh đề sai.\\n- D: \"Tập {1,2} có ba phần tử\" là một phát biểu đúng sai, giá trị sai → là mệnh đề sai.\\nVì chỉ có A thỏa mãn cả hai điều kiện (là mệnh đề và đúng), đáp án đúng là A."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề phủ định",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho mệnh đề P: \"∃x∈ℝ, x^2 = -1\". Đâu là phủ định đúng của P và đánh giá tính đúng‑sai của P và phủ định?",
+    "options": {
+      "A": "Phủ định: ∀x∈ℝ, x^2 = -1; P đúng.",
+      "B": "Phủ định: ∀x∈ℝ, x^2 ≠ -1; P sai.",
+      "C": "Phủ định: ∃x∈ℝ, x^2 ≠ -1; P sai.",
+      "D": "Phủ định: ∃x∈ℝ, x^2 ≠ -1; P đúng."
+    },
+    "answer": "B",
+    "giai_thich": "P: \"∃x∈ℝ, x^2 = -1\". Trên tập số thực không có số nào có bình phương âm, nên P sai.\\nPhủ định của ∃ là ∀ với biểu thức phủ định: ¬(∃x, Q) ≡ ∀x, ¬Q. Do đó ¬P là \"∀x∈ℝ, x^2 ≠ -1\". Vì P sai, ¬P đúng.\\nTrong các đáp án, chỉ B đưa đúng phủ định và đúng đánh giá tính đúng‑sai của P và ¬P."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Một số tập con của tập hợp số thực",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Trong các khẳng định sau, khẳng định nào diễn đạt đúng việc một tập hợp là tập con của tập số thực ℝ?",
+    "options": {
+      "A": "A = {π, -√2, 0} ⊂ ℝ",
+      "B": "B = {…, -2, -1, 0, 1, 2, …} ⊂ ℤ",
+      "C": "C = {1/3, 0.5, 2} ⊂ ℚ",
+      "D": "D = {a, b, c} ⊂ ℝ"
+    },
+    "answer": "A",
+    "giai_thich": "Ta cần một tập hợp các phần tử thuộc ℝ và ký hiệu đúng \"⊂ ℝ\".\\n- A: các phần tử π, -√2, 0 đều là số thực, vì vậy A ⊂ ℝ đúng.\\n- B: ký hiệu \"⊂ ℤ\" không phải là tập con của ℝ (mặc dù ℤ ⊂ ℝ, nhưng khẳng định sai về ký hiệu).\\n- C: ký hiệu \"⊂ ℚ\" không phải là tập con của ℝ theo yêu cầu, mặc dù ℚ ⊂ ℝ.\\n- D: chứa các ký hiệu chữ cái không phải là số, không phải là phần tử của ℝ.\\nVì vậy chỉ A là khẳng định đúng."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho tập A = {‑3, ‑1, 0, 2, 5} và tập B = {‑1, 1, 2, 4}. Tập hiệu A\\B là tập nào?",
+    "options": {
+      "A": "{‑3, 0, 5}",
+      "B": "{‑1, 2}",
+      "C": "{‑3, ‑1, 0, 2, 5, 1, 4}",
+      "D": "{1, 4}"
+    },
+    "answer": "A",
+    "giai_thich": "Định nghĩa: A\\B = {x | x∈A và x∉B}.\\n- Kiểm tra từng phần tử của A: \\n   * ‑3 ∉ B → giữ lại.\\n   * ‑1 ∈ B → loại bỏ.\\n   * 0 ∉ B → giữ lại.\\n   * 2 ∈ B → loại bỏ.\\n   * 5 ∉ B → giữ lại.\\nDo đó A\\B = {‑3, 0, 5}.\\nCác đáp án B, C, D là các lỗi thường gặp: B là giao, C là hợp, D là B\\A. Vì vậy đáp án đúng là A."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong không gian mẫu U = {1,2,3,4,5,6,7,8,9,10}, cho tập con A = {2,4,6,8}. Hãy viết tập phần bù A^c và tính số phần tử của A^c.",
+    "options": {
+      "A": "A^c = {1,3,5,7,9,10}, |A^c| = 6",
+      "B": "A^c = {2,4,6,8}, |A^c| = 4",
+      "C": "A^c = {1,2,3,4,5,6,7,8,9,10}, |A^c| = 10",
+      "D": "A^c = {0,11}, |A^c| = 2"
+    },
+    "answer": "A",
+    "giai_thich": "Phần bù A^c = {x∈U | x∉A}.\\nU có 10 phần tử, A có 4 phần tử {2,4,6,8}.\\nLoại bỏ các phần tử của A khỏi U, còn lại {1,3,5,7,9,10}.\\nVì |U| = 10 và |A| = 4, theo công thức |A^c| = |U| - |A| = 10 - 4 = 6, khớp với tập đã liệt kê.\\nCác đáp án B, C, D là các nhầm lẫn thường gặp: B viết lại A, C nhầm thành toàn bộ U, D đưa phần tử không thuộc U. Do đó đáp án đúng là A."
+  }
+]

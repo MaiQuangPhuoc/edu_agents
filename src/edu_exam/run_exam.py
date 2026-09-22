@@ -190,7 +190,140 @@ def run():
 if __name__ == "__main__":
     run()
  
-# tôi cần tạo đề thi toán 10 , 20 câu trắc nghiệm trong 100 phút với mục tiêu 9 điểm để ôn thi cuối kì ,phạm vi 3 chương đầu tiên phần đại số ,chương 1 khá , chương 2 giỏi, chương 3 mức 8 điểm ,chú ý vào chương 1 và 3 
+# tôi cần tạo đề thi toán 10 , 10 câu trắc nghiệm trong 40 phút với mục tiêu 9 điểm để ôn thi cuối kì ,phạm vi 3 chương đầu tiên phần đại số ,chương 1 khá , chương 2 giỏi, chương 3 mức 8 điểm ,chú ý vào chương 1 và 3 , tôi xác nhận đúng
 # 1,0,2,0,2,1,0,2,0,3
 # 2,0,3,0,0,3
 # 1,2,1,2,3,1,3
+
+
+# Đồng ý, batch là đúng hướng — 50 lần gọi LLM riêng lẻ chỉ để chọn tool là quá lãng phí. Nhưng có 1 ràng buộc kỹ thuật cần nói rõ trước:
+
+# **Vấn đề:** cách cũ (`llm_with_tools = llm_client._llm.bind_tools(candidate_tools); response.tool_calls`) là cơ chế **function-calling gốc của LangChain** — chỉ thiết kế cho **1 câu hỏi → 1 lần gọi tool** trong 1 lượt invoke, không hỗ trợ "chọn N tool khác nhau cho N câu khác nhau trong cùng 1 lần gọi". Muốn batch, phải **đổi cơ chế**: không dùng `bind_tools` nữa, mà dùng `with_structured_output` — LLM chỉ trả về **dữ liệu** (chọn tool nào, tham số gì) cho từng câu, còn việc **thực thi tool thật sự** thì code Python tự làm sau (không qua LangChain tool-call).
+
+# Đây là điểm khác với `qa_solve_agent.py` bạn từng bảo tham khảo (file đó xử lý per-question nên dùng `bind_tools` được) — giờ đổi kiến trúc để batch được.
+
+# ### File: `state_edu.py` (thêm schema)
+
+# ```python
+# from typing import Any
+
+# class ToolSelection(BaseModel):
+#     id: int = Field(description="id câu hỏi tương ứng, PHẢI khớp đúng id trong danh sách câu hỏi đã cho")
+#     tool_name: str = Field(description="Tên tool được chọn — PHẢI đúng 1 trong danh sách tool khả dụng, hoặc 'khong_co_tool_phu_hop' nếu không tool nào khớp dạng bài")
+#     tool_args: Dict[str, Any] = Field(default_factory=dict, description="Tham số truyền vào tool đã chọn, đúng tên tham số theo mô tả tool, lấy giá trị từ chính dữ kiện trong câu hỏi")
+
+# class ToolSelectionBatch(BaseModel):
+#     selections: List[ToolSelection]
+# ```
+
+# ---
+
+# ### File: `qa_solve_tool_select_batch_prompt.txt` (mới — thay cho việc dùng `bind_tools`)
+
+# ```
+# Bạn là trợ lý chọn công cụ tính toán phù hợp cho từng câu hỏi Toán 10.
+
+# DANH SÁCH TOOL KHẢ DỤNG (tên và mô tả "Dùng khi...")
+# {tool_reference}
+
+# DANH SÁCH CÂU HỎI CẦN CHỌN TOOL
+# {questions}
+
+# NHIỆM VỤ
+# Với MỖI câu hỏi, chọn đúng 1 tool phù hợp nhất trong danh sách trên, dựa vào mô tả "Dùng khi..." của từng tool, rồi điền tham số cho tool đó dựa theo đúng dữ kiện có trong câu hỏi.
+# Nếu không tool nào trong danh sách phù hợp với câu hỏi, đặt tool_name = "khong_co_tool_phu_hop" và tool_args rỗng.
+# Không bịa thêm dữ kiện ngoài câu hỏi đã cho. id trong kết quả PHẢI khớp đúng id câu hỏi tương ứng, không thiếu không thừa.
+# ```
+
+# ---
+
+# ### File: `evaluate_exam.py` (thay `_verify_bai_tap_with_tools` + hàm phụ)
+
+# ```python
+# from typing import Any
+# from src.state_edu import ToolSelection, ToolSelectionBatch
+
+# TOOL_VERIFY_BATCH_SIZE  = 8
+# TOOL_SELECT_BATCH_PROMPT_PATH = Path(r'...\qa_solve_tool_select_batch_prompt.txt')
+
+
+# def _select_candidate_tools_for(retriever, question: str) -> list:
+#     """Retrieval THUẦN (không LLM) — lấy tool ứng viên cho 1 câu, cascade threshold 0.6/0.4."""
+#     docs     = retriever.hybrid_search_tools(question, k=15)
+#     reranked = retriever.rerank(question, docs, top_k=TOOLS_TOP_K)
+#     filtered = [d for d in reranked if d.metadata.get("rerank_score", 0) >= TOOLS_SCORE_THRESHOLD_1]
+#     if not filtered:
+#         filtered = [d for d in reranked if d.metadata.get("rerank_score", 0) >= TOOLS_SCORE_THRESHOLD_2]
+#     return [d.metadata.get("tool_name") for d in filtered if d.metadata.get("tool_name") in TOOL_MAP_V2]
+
+
+# def _format_tool_reference(tool_names: set) -> str:
+#     return "\n".join(f"- {name}: {TOOL_MAP_V2[name].description}" for name in sorted(tool_names))
+
+
+# def _format_questions_for_tool_batch(questions: list) -> str:
+#     return "\n".join(f"id={q['id']} | question: {q['question']}" for q in questions)
+
+
+# def _verify_bai_tap_with_tools(generated_exam: list, retriever, llm_client: LLMClient) -> None:
+#     bai_tap_questions = [q for q in generated_exam if q.get("type") == "bai_tap"]
+#     if not bai_tap_questions:
+#         return
+
+#     template = TOOL_SELECT_BATCH_PROMPT_PATH.read_text(encoding="utf-8")
+
+#     for i in range(0, len(bai_tap_questions), TOOL_VERIFY_BATCH_SIZE):
+#         batch = bai_tap_questions[i:i + TOOL_VERIFY_BATCH_SIZE]
+
+#         # Retrieval từng câu (không LLM) → gộp tool ứng viên của cả batch
+#         candidate_per_q = {q["id"]: _select_candidate_tools_for(retriever, q["question"]) for q in batch}
+#         union_tools = set(t for tools in candidate_per_q.values() for t in tools)
+
+#         if not union_tools:
+#             for q in batch:
+#                 q["tool_used"], q["answer_tools"], q["mapping"] = None, "Không tìm được tool phù hợp", "❌"
+#             continue
+
+#         prompt = (template
+#                   .replace("{tool_reference}", _format_tool_reference(union_tools))
+#                   .replace("{questions}", _format_questions_for_tool_batch(batch)))
+
+#         result = llm_client.invoke_structured(ToolSelectionBatch, [{"role": "user", "content": prompt}])
+#         selections_by_id = {s.id: s for s in result.selections} if result else {}
+
+#         for q in batch:
+#             sel = selections_by_id.get(q["id"])
+#             if not sel or sel.tool_name not in TOOL_MAP_V2:
+#                 q["tool_used"], q["answer_tools"], q["mapping"] = None, "LLM không chọn được tool hợp lệ", "❌"
+#                 continue
+
+#             try:
+#                 output = TOOL_MAP_V2[sel.tool_name].invoke(sel.tool_args)
+#             except Exception as e:
+#                 output = f"LOI: {e}"
+
+#             q["tool_used"]    = sel.tool_name
+#             q["answer_tools"] = output
+
+#             if isinstance(output, str) and output.startswith("LOI:"):
+#                 q["mapping"] = "❌"
+#             else:
+#                 chosen_text = q.get("options", {}).get(q.get("answer", ""), "")
+#                 q["mapping"] = "✅" if _check_mapping(output, chosen_text) else "❌"
+# ```
+
+# Bỏ hẳn `_select_and_call_tool` (bản `bind_tools` cũ) — không dùng nữa.
+
+# ---
+
+# **Kết quả với ví dụ 50 câu `bai_tap`, `TOOL_VERIFY_BATCH_SIZE=8`:**
+
+# ```
+# ceil(50/8) = 7 lần gọi LLM   (thay vì 50 lần)
+# ```
+
+# Retrieval (`hybrid_search_tools`+`rerank`) vẫn chạy **50 lần** (không đổi, vì đây không phải LLM call, chỉ là embedding+cross-encoder — rẻ hơn nhiều) để đảm bảo mỗi câu vẫn có candidate tool riêng sát đúng, gộp lại mới đưa vào 1 batch.
+
+# **Đánh đổi cần biết:** prompt mỗi batch giờ lớn hơn (liệt kê union tool + 8 câu hỏi cùng lúc thay vì 1 câu), nhưng tổng token vẫn giảm mạnh so với 50 lần gọi riêng (mỗi lần đều phải trả phí "khởi động" system prompt/tool schema).
+
+# Bạn thấy `TOOL_VERIFY_BATCH_SIZE=8` ổn không, hay muốn chỉnh con số khác (batch lớn hơn = ít call hơn nhưng rủi ro model nhầm lẫn giữa các câu tăng)?

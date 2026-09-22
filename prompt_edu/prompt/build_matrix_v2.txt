@@ -31,16 +31,9 @@ Các bước thực hiện:
 4. dang_bai CHỈ lấy từ hồ sơ tri thức — không tự tạo mới.
 5. Nếu ghi chú có "chú ý", "tập trung", "ưu tiên" → tăng số câu bài đó.
 
-=== VÍ DỤ (CHỈ tham khảo cách phân bổ, KHÔNG copy nội dung) ===
-
-Chương 1 (Mệnh đề và Tập hợp), 15 câu, mục tiêu 7 điểm:
-{
-  "bai_hoc": [
-    {"ten": "Mệnh đề", "so_cau": 5, "do_kho": {"de": 3, "trung_binh": 1, "kho": 1},
-     "dang_bai": [{"ten": "Xác định mệnh đề đúng sai", "so_cau": 3}, {"ten": "Mệnh đề kéo theo và tương đương", "so_cau": 2}]},
-    {"ten": "Tập hợp", "so_cau": 4, "do_kho": {"de": 2, "trung_binh": 1, "kho": 1},
-     "dang_bai": [{"ten": "Xác định tập con", "so_cau": 2}, {"ten": "Hai tập hợp bằng nhau", "so_cau": 2}]},
-    {"ten": "Các phép toán trên tập hợp", "so_cau": 6, "do_kho": {"de": 2, "trung_binh": 3, "kho": 1},
-     "dang_bai": [{"ten": "Hợp và giao của tập hợp", "so_cau": 3}, {"ten": "Hiệu và phần bù của tập hợp", "so_cau": 3}]}
-  ]
-}
+=== VÍ DỤ CÁCH PHÂN BỔ (diễn giải bằng lời, không phải mẫu JSON) ===
+Ví dụ chương có 15 câu, mục tiêu 7 điểm, 3 bài học (Mệnh đề, Tập hợp, Các phép toán trên tập hợp), điểm quan tâm: Mệnh đề cao nhất, Tập hợp trung bình, Các phép toán trên tập hợp trung bình-cao:
+- Bài "Mệnh đề" được 5 câu (nhiều nhất vì điểm quan tâm cao nhất): chia 3 dễ, 1 trung bình, 1 khó; dạng "Xác định mệnh đề đúng sai" 3 câu, dạng "Mệnh đề kéo theo và tương đương" 2 câu.
+- Bài "Tập hợp" được 4 câu: chia 2 dễ, 1 trung bình, 1 khó; dạng "Xác định tập con" 2 câu, dạng "Hai tập hợp bằng nhau" 2 câu.
+- Bài "Các phép toán trên tập hợp" được 6 câu: chia 2 dễ, 3 trung bình, 1 khó; dạng "Hợp và giao của tập hợp" 3 câu, dạng "Hiệu và phần bù của tập hợp" 3 câu.
+Tổng: 5+4+6=15 câu — đúng bằng số câu yêu cầu, mỗi bài có de+trung_binh+kho và tổng dang_bai.so_cau đều khớp đúng so_cau của bài đó.

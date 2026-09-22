@@ -1,6 +1,6 @@
 {
   "Toán 10": {
-    "1": {
+    "I": {
       "chapter_name": "MỆNH ĐỀ VÀ TẬP HỢP",
       "lessons": {
         "Mệnh đề": ["Mệnh đề", "Mệnh đề chứa biến", "Mệnh đề phủ định", "Mệnh đề kéo theo", "Mệnh đề đảo. Hai mệnh đề tương đương"],
@@ -8,21 +8,21 @@
         "Các phép toán trên tập hợp": ["Hợp và giao của các tập hợp", "Hiệu của hai tập hợp, phần bù của tập con"]
       }
     },
-    "2": {
+    "II": {
       "chapter_name": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
       "lessons": {
         "Bất phương trình bậc nhất hai ẩn": ["Khái niệm bất phương trình bậc nhất hai ẩn", "Nghiệm của bất phương trình bậc nhất hai ẩn", "Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn"],
         "Hệ bất phương trình bậc nhất hai ẩn": ["Khái niệm hệ bất phương trình bậc nhất hai ẩn", "Biểu diễn miền nghiệm của hệ bất phương trình bậc nhất hai ẩn", "Tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của biểu thức F = ax + by trên một miền đa giác"]
       }
     },
-    "3": {
+    "III": {
       "chapter_name": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
       "lessons": {
         "Hàm số và đồ thị": ["Hàm số. Tập xác định và tập giá trị của hàm số", "Đồ thị hàm số", "Hàm số đồng biến, hàm số nghịch biến"],
         "Hàm số bậc hai": ["Hàm số bậc hai", "Đồ thị hàm số bậc hai", "Sự biến thiên của hàm số bậc hai", "Ứng dụng của hàm số bậc hai"]
       }
     },
-    "4": {
+    "IV": {
       "chapter_name": "HỆ THỨC LƯỢNG TRONG TAM GIÁC",
       "lessons": {
         "Giá trị lượng giác của một góc từ 0° đến 180°": ["Giá trị lượng giác", "Quan hệ giữa các giá trị lượng giác của hai góc bù nhau", "Giá trị lượng giác của một số góc đặc biệt"],
@@ -30,7 +30,7 @@
         "Giải tam giác và ứng dụng thực tế": ["Giải tam giác", "Áp dụng giải tam giác vào thực tế"]
       }
     },
-    "5": {
+    "V": {
       "chapter_name": "VECTƠ",
       "lessons": {
         "Khái niệm vectơ": ["Định nghĩa vectơ", "Hai vectơ cùng phương, cùng hướng", "Vector bằng nhau - Vector đối nhau", "Vecto-không"],
@@ -39,7 +39,7 @@
         "Tích vô hướng của hai vectơ": ["Góc giữa hai vectơ", "Tích vô hướng của hai vecto", "Tính chất của tích vô hướng"]
       }
     },
-    "6": {
+    "VI": {
       "chapter_name": "THỐNG KÊ",
       "lessons": {
         "Số gần đúng và sai số": ["Số gần đúng", "Sai số tuyệt đối và sai số tương đối"],

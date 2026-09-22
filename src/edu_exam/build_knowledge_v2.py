@@ -60,7 +60,8 @@ def _analyze_chapters(state: dict, llm_client: LLMClient) -> dict:
 
     template          = ANALYZE_PROMPT_PATH.read_text(encoding="utf-8")
     knowledge_profile = {}
-    structured_llm    = llm_client._llm.with_structured_output(KnowledgeChapterProfile)   # ← thêm
+    failed_chapters   = []   
+    # structured_llm    = llm_client._llm.with_structured_output(KnowledgeChapterProfile)   # ← thêm
 
     for ch_id, ch_scores in knowledge_scores.items():
         chunks_ch = [
@@ -82,16 +83,32 @@ def _analyze_chapters(state: dict, llm_client: LLMClient) -> dict:
                   .replace("{scores}",  scores_text)
                   .replace("{chunks}",  chunks_text))
 
-        result: KnowledgeChapterProfile = structured_llm.invoke([{"role": "user", "content": prompt}])
-        knowledge_profile[ch_id] = result.model_dump()          # ← lưu dict có cấu trúc, không phải text thô
+        result = None
+        for attempt in range(3):
+            try:
+                # result = structured_llm.invoke([{"role": "user", "content": prompt}])
+                result = llm_client.invoke_structured(KnowledgeChapterProfile, [{"role": "user", "content": prompt}], max_tokens=2000)
+                break
+            except Exception as e:
+                print(f"[build_knowledge] chương {ch_id} attempt {attempt} lỗi: {e}")
 
-    return knowledge_profile
+        if result is None:
+            print(f"[build_knowledge] ❌ chương {ch_id} THẤT BẠI sau 3 lần — dùng profile rỗng")
+            knowledge_profile[ch_id] = {"chuong": ch_id, "can_nam": "", "can_hieu": "", "bai_hoc": [], "quan_he_kien_thuc": "", "quan_he_dang_bai": ""}
+            failed_chapters.append(ch_id)                          # ← thêm: track lại
+        else:
+            print(f"[build_knowledge] ✅ chương {ch_id} phân tích thành công")   # ← thêm: log rõ ràng khi OK
+            knowledge_profile[ch_id] = result.model_dump()
+
+    return knowledge_profile, failed_chapters
 
 
 def build_knowledge(state: ExamState, llm_client: LLMClient) -> dict:
-    print(">>> [Node] build_knowledge")
+    print(" ================================  final build_knowledge  ================================\n"*2)
+
 
     if state.get("completed_build_knowlege", False):
+        print("build_knowledge xongggggggg")
         return {"current_step": "build_knowledge"}
 
     messages          = state.get("messages", [])
@@ -163,13 +180,18 @@ def build_knowledge(state: ExamState, llm_client: LLMClient) -> dict:
         knowledge_scores[ch_id][lesson][sec] = 1
 
     # ── Phase 2: phân tích (LLM DUY NHẤT, 1 lần/chương) ─────────────────────
-    knowledge_profile = _analyze_chapters(
+    knowledge_profile, failed_chapters = _analyze_chapters(
         {**state, "knowledge_scores": knowledge_scores}, llm_client
     )
+
+    warning_msg = ""
+    if failed_chapters:
+        warning_msg = f"\n⚠️ Lưu ý: {len(failed_chapters)} chương phân tích thất bại (chương {', '.join(failed_chapters)}), đề thi có thể thiếu chiều sâu ở các chương này."
 
     return {
         "knowledge_scores":         knowledge_scores,
         "knowledge_profile":        knowledge_profile,
+        "knowledge_analysis_failed": failed_chapters,   # ← thêm vào state, để evaluate_exam hoặc UI sau này đọc được
         "knowledge_queue":          [],
         "knowledge_pending":        None,
         "knowledge_retried":        knowledge_retried,

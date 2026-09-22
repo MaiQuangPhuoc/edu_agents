@@ -1,5 +1,7 @@
 import json
 import sys, os
+
+from click import prompt
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from datetime import datetime
 from pathlib import Path
@@ -100,7 +102,7 @@ def generate_questions(state: ExamState, llm_client: LLMClient) -> dict:
         specs_to_process = question_specs
 
     template       = PROMPT_PATH.read_text(encoding="utf-8")
-    structured_llm = llm_client._llm.with_structured_output(GeneratedQuestionBatch)
+    # structured_llm = llm_client._llm.with_structured_output(GeneratedQuestionBatch)
 
     specs_by_chapter = {}
     for s in specs_to_process:
@@ -134,7 +136,8 @@ def generate_questions(state: ExamState, llm_client: LLMClient) -> dict:
 
             for attempt in range(3):
                 try:
-                    result: GeneratedQuestionBatch = structured_llm.invoke([{"role": "user", "content": prompt}])
+                    # result: GeneratedQuestionBatch = structured_llm.invoke([{"role": "user", "content": prompt}])
+                    result = llm_client.invoke_structured(GeneratedQuestionBatch, [{"role": "user", "content": prompt}], max_tokens=4000)
                     if len(result.questions) == len(batch_specs):
                         questions_batch = result.questions
                         break
