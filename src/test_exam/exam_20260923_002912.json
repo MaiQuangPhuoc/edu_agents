@@ -1,0 +1,322 @@
+[
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Xác định đúng‑sai của mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Xét phát biểu: “Nếu x là số nguyên dương thì x^2 > 0”. Hỏi phát biểu này (i) có phải là mệnh đề hay không, (ii) nếu là mệnh đề thì đúng hay sai, (iii) loại mệnh đề là gì? ",
+    "options": {
+      "A": "Là mệnh đề, đúng, và là mệnh đề kéo theo (→).",
+      "B": "Là mệnh đề, sai, và là mệnh đề kéo theo (→).",
+      "C": "Là mệnh đề, đúng, và là mệnh đề đảo (←).",
+      "D": "Là mệnh đề, đúng, và là mệnh đề phủ định."
+    },
+    "answer": "A",
+    "giai_thich": "Đầu tiên, phát biểu có dạng “Nếu … thì …” với một điều kiện duy nhất, vì vậy nó là mệnh đề. Với mọi số nguyên dương x, x^2 luôn dương, nên x^2 > 0 luôn đúng → phát biểu đúng. Định dạng “Nếu P thì Q” là mệnh đề kéo theo, ký hiệu P → Q. Do đó đáp án A là đúng; các đáp án còn lại sai vì: B cho rằng phát biểu sai; C nhầm loại (đảo) và D nhầm loại (phủ định)."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Xác định tập con",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Cho các tập hợp A = {2, 4, 6, 8} và B = {1, 2, 3, 4, 5, 6, 7, 8, 9}. Hỏi: A ⊂ B ?",
+    "options": {
+      "A": "Có, A là tập con của B.",
+      "B": "Không, A không phải tập con của B.",
+      "C": "Có, A = B.",
+      "D": "Không, A là tập rỗng."
+    },
+    "answer": "A",
+    "giai_thich": "Theo định nghĩa, A là tập con của B (A ⊂ B) khi mọi phần tử của A đều thuộc B. Kiểm tra từng phần tử của A: 2∈B, 4∈B, 6∈B, 8∈B. Tất cả đều thuộc B, nên A ⊂ B đúng. Do đó đáp án A là đúng. Các đáp án B, C, D sai vì: B phủ nhận đúng tính chất, C nhầm thành bằng nhau, D sai vì A không rỗng."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu và phần bù của tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong không gian mẫu U = {1,2,3,4,5,6,7,8,9,10}, cho A = {1,2,3,4,5} và B = {4,5,6,7}. Tính (i) A \\ B (hiệu của A và B) và (ii) A^c (phần bù của A trong U).",
+    "options": {
+      "A": "A\\B = {1,2,3,4,5}; A^c = {6,7,8,9,10}",
+      "B": "A\\B = {4,5}; A^c = {1,2,3,4,5}",
+      "C": "A\\B = {1,2,3}; A^c = {6,7,8,9,10}",
+      "D": "A\\B = {6,7}; A^c = {1,2,3,4,5}"
+    },
+    "answer": "C",
+    "giai_thich": "① Tính A\\B: A\\B = {x∈A | x∉B}. Các phần tử A là {1,2,3,4,5}; trong đó 4 và 5 thuộc B, các phần tử còn lại (1,2,3) không thuộc B. Vì vậy A\\B = {1,2,3}. \n② Tính A^c: A^c = U\\A = {x∈U | x∉A}. U = {1,2,3,4,5,6,7,8,9,10}, A = {1,2,3,4,5}. Loại bỏ các phần tử của A, còn lại {6,7,8,9,10}. Do đó A^c = {6,7,8,9,10}. \nKết quả (i) {1,2,3} và (ii) {6,7,8,9,10} khớp với đáp án C. Các đáp án A, B, D sai vì: A nhầm hiệu thành A (không trừ B) và phần bù sai; B nhầm hiệu thành B∩A và phần bù thành A; D nhầm hiệu thành B\\A và phần bù thành A."
+  },
+  {
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Khái niệm bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Dạng tổng quát ax + by + c > 0",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Cho bất phương trình 3x - 2y + 5 > 0. Viết lại bất phương trình ở dạng chuẩn ax + by + c > 0, xác định dấu bất đẳng thức và cho biết miền nghiệm nằm phía nào của đường thẳng biên 3x - 2y + 5 = 0 (trên, dưới, hoặc trên/đúng theo dấu).",
+    "options": {
+      "A": "Miền nghiệm nằm phía trên đường thẳng, tức là các điểm (x,y) thỏa mãn 3x - 2y + 5 > 0.",
+      "B": "Miền nghiệm nằm phía dưới đường thẳng, tức là các điểm (x,y) thỏa mãn 3x - 2y + 5 < 0.",
+      "C": "Miền nghiệm nằm trên đường thẳng, tức là các điểm (x,y) thỏa mãn 3x - 2y + 5 = 0.",
+      "D": "Miền nghiệm nằm cả hai phía của đường thẳng, bao gồm cả đường thẳng."
+    },
+    "answer": "A",
+    "giai_thich": "Bất phương trình đã ở dạng chuẩn ax + by + c > 0 với a=3, b=-2, c=5. Dấu bất đẳng thức là '>'. Để xác định miền nghiệm, xét một điểm kiểm tra, ví dụ gốc tọa độ (0,0): 3·0-2·0+5=5>0 nên (0,0) thỏa mãn bất phương trình. Vì (0,0) nằm phía trên (hoặc phía mà biểu thức dương) của đường thẳng 3x-2y+5=0, nên toàn bộ miền nghiệm là phía trên đường thẳng, tức là các điểm mà 3x-2y+5>0. Các đáp án B, C, D đều sai vì chúng nhầm dấu, nhầm miền hoặc cho rằng miền nằm trên đường thẳng bằng 0 hoặc cả hai phía."
+  },
+  {
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Biểu diễn miền nghiệm và tối ưu hoá",
+    "dang_bai": "Biểu diễn miền nghiệm",  
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Xét hệ bất phương trình: 1) x + y ≤ 4; 2) x ≥ 0; 3) y ≥ 0. Xác định các đỉnh của miền nghiệm (đa giác), tính giá trị của biểu thức F = 2x + 3y tại mỗi đỉnh và chọn giá trị lớn nhất.",
+    "options": {
+      "A": "Giá trị lớn nhất là 8, đạt tại (4,0).",
+      "B": "Giá trị lớn nhất là 12, đạt tại (0,4).",
+      "C": "Giá trị lớn nhất là 10, đạt tại (2,2).",
+      "D": "Giá trị lớn nhất là 14, đạt tại (4,2)."
+    },
+    "answer": "B",
+    "giai_thich": "Các bất phương trình tạo nên một miền đa giác giới hạn bởi các đường: x + y = 4, x = 0 và y = 0. Các giao điểm: - Giao của x = 0 và y = 0 cho đỉnh (0,0). - Giao của x = 0 và x + y = 4 cho đỉnh (0,4). - Giao của y = 0 và x + y = 4 cho đỉnh (4,0). Đó là ba đỉnh của miền. Tính F = 2x + 3y tại mỗi đỉnh: • (0,0): F = 0 • (4,0): F = 2·4 + 3·0 = 8 • (0,4): F = 2·0 + 3·4 = 12. Giá trị lớn nhất là 12 tại đỉnh (0,4). Các đáp án A, C, D sai vì chúng đưa ra giá trị không phải là cực đại hoặc vị trí không thuộc các đỉnh của miền."
+  },
+  {
+    "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Khái niệm hàm số: quan hệ một‑một giữa tập xác định D và tập giá trị R, ký hiệu y = f(x).",
+    "dang_bai": "Nhận diện hàm số, xác định D,R",
+    "type": "bai_tap",
+    "do_kho": 0,
+    "question": "Cho hàm số $y = f(x) = 2x^{2} - 3x + 1$. Xác định tập xác định $D$ và tập giá trị $R$ của hàm số này.",
+    "options": {
+      "A": "$D = \\mathbb{R},\\; R = \\{ y \\mid y \\ge -\\frac{1}{8} \\}$",
+      "B": "$D = \\mathbb{R},\\; R = \\{ y \\mid y \\le -\\frac{1}{8} \\}$",
+      "C": "$D = \\{ x \\mid x \\ge 0 \\},\\; R = \\mathbb{R}$",
+      "D": "$D = \\mathbb{R},\\; R = \\mathbb{R}$"
+    },
+    "answer": "A",
+    "giai_thich": "Hàm số bậc hai $y = 2x^{2}-3x+1$ có đa thức bậc hai nên được xác định trên mọi số thực, do đó $D=\\mathbb{R}$. Để tìm tập giá trị, tính đỉnh parabola: $a=2>0$ nên hàm mở lên và có giá trị nhỏ nhất tại $x_{0}= -\\frac{b}{2a}= -\\frac{-3}{2\\cdot2}=\\frac{3}{4}$. Thay $x_{0}$ vào hàm: $y_{0}=2\\left(\\frac34\\right)^{2}-3\\left(\\frac34\\right)+1 = 2\\cdot\\frac{9}{16}-\\frac{9}{4}+1 = \\frac{9}{8}-\\frac{9}{4}+1 = \\frac{9}{8}-\\frac{18}{8}+\\frac{8}{8}= -\\frac{1}{8}$. Vì parabola mở lên, giá trị $y$ luôn lớn hơn hoặc bằng $y_{0}$, nên $R=\\{ y\\mid y\\ge -\\frac{1}{8}\\}$. Do đó đáp án A là đúng."
+  },
+  {
+    "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Hàm số bậc hai có dạng y = ax² + bx + c (a ≠ 0).",
+    "dang_bai": "Định dạng hàm số bậc hai, tính đỉnh, Δ",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Viết hàm số $y = -x^{2}+4x-3$ ở dạng chuẩn (hoàn thiện bình phương) và tính $x_{0}= -\\frac{b}{2a}$, $y_{0}=f(x_{0})$, đồng thời tính $\\Delta = b^{2}-4ac$.",
+    "options": {
+      "A": "Dạng chuẩn: $y=-(x-2)^{2}+1$, $x_{0}=2$, $y_{0}=1$, $\\Delta =4$",
+      "B": "Dạng chuẩn: $y=-(x-2)^{2}-1$, $x_{0}=2$, $y_{0}=-1$, $\\Delta =0$",
+      "C": "Dạng chuẩn: $y=-(x+2)^{2}+1$, $x_{0}=-2$, $y_{0}=1$, $\\Delta =4$",
+      "D": "Dạng chuẩn: $y=-(x-2)^{2}+5$, $x_{0}=2$, $y_{0}=5$, $\\Delta =-4$"
+    },
+    "answer": "A",
+    "giai_thich": "1. Hoàn thiện bình phương: $y = -x^{2}+4x-3 = -(x^{2}-4x) -3 = -(x^{2}-4x+4) +4 -3 = -(x-2)^{2}+1$. \n2. Với $a=-1$, $b=4$, $c=-3$: $x_{0}= -\\frac{b}{2a}= -\\frac{4}{2(-1)} = 2$. \n3. Thay $x_{0}=2$ vào hàm: $y_{0}= -2^{2}+4\\cdot2-3 = -4+8-3 =1$. \n4. $\\Delta = b^{2}-4ac = 4^{2}-4(-1)(-3) = 16-12 =4$. \nCác kết quả khớp với đáp án A, các đáp án còn lại có lỗi: B sai dấu hằng số, C sai dấu $b$, D sai $\\Delta$ và hằng số trong dạng chuẩn."
+  },
+  {
+    "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Đồ thị hàm số bậc hai là parabol, có các tính chất cơ bản: đỉnh (x₀, y₀), trục đối xứng x = x₀, hướng mở lên (a>0) hoặc xuống (a<0).",
+    "dang_bai": "Xác định đúng đồ thị dựa trên các tính chất (đỉnh, trục đối xứng, hướng mở, vị trí cắt trục)",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Hàm số $y = 3x^{2}-12x+7$ có các tính chất sau: đỉnh $A$, trục đối xứng, hướng mở, và các điểm cắt trục Ox và Oy. Dựa trên các tính chất này, đồ thị nào sau đây là đúng? (Hình vẽ được mô tả ngắn gọn trong các lựa chọn).",
+    "options": {
+      "A": "Parabol mở lên, đỉnh tại $(2, -5)$, trục đối xứng $x=2$, cắt trục Oy tại $(0,7)$, cắt trục Ox tại $x=\\frac{12\\pm\\sqrt{48}}{6}$.",
+      "B": "Parabol mở xuống, đỉnh tại $(2, -5)$, trục đối xứng $x=2$, cắt trục Oy tại $(0,7)$, không có điểm cắt trục Ox.",
+      "C": "Parabol mở lên, đỉnh tại $( -2, -5)$, trục đối xứng $x=-2$, cắt trục Oy tại $(0,7)$, cắt trục Ox tại $x=\\frac{12\\pm\\sqrt{48}}{6}$.",
+      "D": "Parabol mở lên, đỉnh tại $(2,5)$, trục đối xứng $x=2$, cắt trục Oy tại $(0,-7)$, cắt trục Ox tại $x=\\frac{-12\\pm\\sqrt{48}}{6}$."
+    },
+    "answer": "A",
+    "giai_thich": "Với $a=3>0$ nên parabol mở lên. Đỉnh: $x_{0}= -\\frac{b}{2a}= -\\frac{-12}{2\\cdot3}=2$. Thay vào hàm: $y_{0}=3\\cdot2^{2}-12\\cdot2+7 = 12-24+7 = -5$, nên đỉnh $(2,-5)$. Trục đối xứng $x=2$. Cắt trục Oy tại $x=0$: $y=7$ → điểm $(0,7)$. Định thức $\\Delta = b^{2}-4ac = (-12)^{2}-4\\cdot3\\cdot7 =144-84=60>0$, vì vậy có 2 nghiệm thực. Nghiệm $x=\\frac{-b\\pm\\sqrt{\\Delta}}{2a}=\\frac{12\\pm\\sqrt{60}}{6}=\\frac{12\\pm 2\\sqrt{15}}{6}=\\frac{12\\pm\\sqrt{48}}{6}$. Các thông tin này khớp với đáp án A. Các đáp án B, C, D sai về hướng mở, tọa độ đỉnh, hoặc giá trị cắt trục Oy."
+  },
+  {
+    "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Ứng dụng thực tiễn: tối thiểu hoá chi phí, tối đa hoá lợi nhuận, mô hình chuyển động, v.v.",
+    "dang_bai": "Tìm tham số m để hàm số đạt giá trị cực tiểu/đạt giá trị cho trước.",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Tìm giá trị tham số $m$ sao cho hàm số $y = x^{2} - 4x + m$ đạt giá trị cực tiểu bằng $5$.",
+    "options": {
+      "A": "$m = 9$",
+      "B": "$m = 5$",
+      "C": "$m = 1$",
+      "D": "$m = 0$"
+    },
+    "answer": "A",
+    "giai_thich": "Với hàm số $y = x^{2} - 4x + m$, $a=1>0$ nên có cực tiểu. Đỉnh tại $x_{0}= -\\frac{b}{2a}= -\\frac{-4}{2}=2$. Giá trị cực tiểu $y_{0}= f(2)= 2^{2} -4\\cdot2 + m = 4 -8 + m = m -4$. Yêu cầu $y_{0}=5$ ⇒ $m -4 =5$ ⇒ $m =9$. Do đó đáp án A đúng. Các đáp án B, C, D tương ứng với việc quên cộng $-4$ hoặc nhầm dấu."
+  },
+  {
+    "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Đồ thị hàm số bậc hai là parabol, có các tính chất cơ bản: đỉnh (x₀, y₀), trục đối xứng x = x₀, hướng mở lên (a>0) hoặc xuống (a<0).",
+    "dang_bai": "Từ hình ảnh (đồ thị) khôi phục phương trình hàm số",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho đồ thị của một hàm số bậc hai có các đặc điểm: đỉnh $A( -1, 3)$, trục đối xứng $x = -1$, mở lên, và cắt trục Oy tại điểm $B(0, 5)$. Viết lại phương trình hàm số dưới dạng $y = ax^{2} + bx + c$.",
+    "options": {
+      "A": "$y = 2x^{2} + 4x + 5$",
+      "B": "$y = x^{2} + 2x + 5$",
+      "C": "$y = 2x^{2} + 4x + 3$",
+      "D": "$y = x^{2} + 2x + 3$"
+    },
+    "answer": "B",
+    "giai_thich": "Dạng chuẩn: $y = a(x - x_{0})^{2} + y_{0}$ với $(x_{0},y_{0}) = (-1,3)$. Vì mở lên nên $a>0$. Thay cột $B(0,5)$ để xác định $a$: $5 = a(0+1)^{2} + 3 \\Rightarrow 5 = a + 3 \\Rightarrow a = 2$. Do đó dạng chuẩn: $y = 2(x+1)^{2} + 3$. Mở rộng: $y = 2(x^{2}+2x+1)+3 = 2x^{2}+4x+2+3 = 2x^{2}+4x+5$. Tuy nhiên, đây không khớp với các đáp án, vì chúng ta đã tính sai: kiểm tra lại: Thực tế, nếu $a=1$, ta có $y = (x+1)^{2}+3 = x^{2}+2x+1+3 = x^{2}+2x+4$, nhưng cắt Oy tại $y=4$, không phải 5. Vì $B(0,5)$ cho $a=2$ đúng, nên phương trình chuẩn là $y = 2(x+1)^{2}+3 = 2x^{2}+4x+5$. Đáp án A khớp, nhưng đáp án A đã có $c=5$ và $a=2$, đúng với tính toán. Do đó đáp án A là đúng. \n*Lưu ý*: Khi chuyển sang dạng tổng quát $y = ax^{2}+bx+c$, ta thu được $a=2$, $b=4$, $c=5$. Vì vậy đáp án A là chính xác. (Sửa lại: đáp án A đúng, các đáp án còn lại sai về hệ số $a$ hoặc $c$)."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Xét phát biểu: “Nếu x là số nguyên dương, thì x^2 > 0”. Hãy cho biết đây là mệnh đề hay không và phát biểu đúng hay sai.",
+    "options": {
+      "A": "Là mệnh đề, đúng",
+      "B": "Là mệnh đề, sai",
+      "C": "Không phải mệnh đề, vì có biến chưa xác định",
+      "D": "Là mệnh đề, nhưng không thể xác định đúng sai"
+    },
+    "answer": "A",
+    "giai_thich": "Một câu phát biểu có dạng “Nếu … thì …” với biến x được xác định (số nguyên dương) là mệnh đề. Với mọi x>0, x^2 luôn dương, vì vậy x^2>0 luôn đúng. Do đó phát biểu là mệnh đề và đúng. Các đáp án B, C, D là các suy nghĩ sai: B cho rằng sai, C cho rằng không phải mệnh đề, D cho rằng không xác định."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề phủ định",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho mệnh đề: “∀x∈ℝ, x^2 ≥ 0”. Viết phủ định đúng của mệnh đề này.",
+    "options": {
+      "A": "∃x∈ℝ, x^2 < 0",
+      "B": "∃x∈ℝ, x^2 ≤ 0",
+      "C": "∀x∈ℝ, x^2 < 0",
+      "D": "∃x∈ℝ, x^2 > 0"
+    },
+    "answer": "A",
+    "giai_thich": "Định lý phủ định: ¬(∀x∈ℝ, P(x)) ⇔ ∃x∈ℝ, ¬P(x). Ở đây P(x) là “x^2 ≥ 0”, nên ¬P(x) là “x^2 < 0”. Vì vậy phủ định đúng là “∃x∈ℝ, x^2 < 0”. Các đáp án B, C, D sai vì chúng thay đổi bất đẳng thức hoặc không đổi quantifier đúng cách."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Một số tập con của tập hợp số thực",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Viết tập con của ℝ thỏa điều kiện x^2 ≤ 4 và chỉ ra quan hệ bao hàm giữa tập này và ℝ.",
+    "options": {
+      "A": "{x∈ℝ | -2 ≤ x ≤ 2}",
+      "B": "{x∈ℝ | x > 2}",
+      "C": "{x∈ℝ | x < -2}",
+      "D": "∅"
+    },
+    "answer": "A",
+    "giai_thich": "Giải bất phương trình x^2 ≤ 4 ⇒ -2 ≤ x ≤ 2. Do đó tập con là {x∈ℝ | -2 ≤ x ≤ 2}. Rõ ràng tập này chứa trong ℝ, ký hiệu A ⊂ ℝ. Các đáp án B, C mô tả các tập không thỏa điều kiện, D là tập rỗng (mặc dù đúng là tập con, nhưng không phải tập con yêu cầu)."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho A={-1,0,2,5} và B={0,3,5,7}. Tập hiệu A\\B là tập nào?",
+    "options": {
+      "A": "{-1,2}",
+      "B": "{0,5}",
+      "C": "{-1,0,2,5}",
+      "D": "{3,7}"
+    },
+    "answer": "A",
+    "giai_thich": "A\\B = {x | x∈A và x∉B}. Kiểm tra từng phần tử A: -1∈A và -1∉B → giữ lại; 0∈A nhưng 0∈B → loại; 2∈A và 2∉B → giữ; 5∈A nhưng 5∈B → loại. Vì vậy A\\B = {-1,2}. Đáp án B là nhầm lẫn giữa hiệu và giao, C là toàn bộ A, D là phần tử của B không liên quan."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong không gian mẫu U={a,b,c,d,e}, cho A={b,d}. Tập bù Aᶜ trong U là gì?",
+    "options": {
+      "A": "{a,c,e}",
+      "B": "{b,d}",
+      "C": "{a,b,c,d,e}",
+      "D": "∅"
+    },
+    "answer": "A",
+    "giai_thich": "Phần bù Aᶜ = {x∈U | x∉A}. Loại bỏ các phần tử b và d khỏi U, còn lại {a,c,e}. Do đó đáp án A đúng. Đáp án B là tập gốc A, C là toàn bộ U, D là tập rỗng, đều sai trong ngữ cảnh phần bù."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Câu sau có phải là một mệnh đề hay không? \"Hãy mở cửa sổ để đón gió.\"",
+    "options": {
+      "A": "Là một mệnh đề",
+      "B": "Không phải là một mệnh đề",
+      "C": "Không thể xác định vì phụ thuộc vào ngữ cảnh",
+      "D": "Là mệnh đề nhưng chưa biết đúng hay sai"
+    },
+    "answer": "B",
+    "giai_thich": "Một mệnh đề là phát biểu luôn đúng hoặc luôn sai. \"Hãy mở cửa sổ để đón gió\" là câu mệnh lệnh, không khẳng định một giá trị đúng/sai, do đó không phải là mệnh đề. Các đáp án A, D đều suy luận sai rằng câu này là mệnh đề; đáp án C nhầm lẫn với câu có thể phụ thuộc ngữ cảnh, nhưng bản chất của mệnh đề không phụ thuộc vào ngữ cảnh. Vì vậy đáp án đúng là B."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề phủ định",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Viết phủ định của mệnh đề sau: \"Mọi số nguyên dương đều chia hết cho 2.\" (Sử dụng ký hiệu ¬ hoặc ngôn ngữ tự nhiên)",
+    "options": {
+      "A": "¬(∀n∈ℕ⁺, n chia hết cho 2)",
+      "B": "Có tồn tại một số nguyên dương không chia hết cho 2.",
+      "C": "Mọi số nguyên dương đều không chia hết cho 2.",
+      "D": "Không (∀n∈ℕ⁺, n chia hết cho 2)."
+    },
+    "answer": "B",
+    "giai_thich": "Phủ định của \"∀x, P(x)\" là \"∃x, ¬P(x)\". Do đó phủ định của \"Mọi số nguyên dương đều chia hết cho 2\" là \"Có tồn tại một số nguyên dương không chia hết cho 2\". Đáp án A chỉ viết lại ký hiệu phủ định mà chưa chuyển thành câu tự nhiên, đáp án C sai vì nó khẳng định mọi số đều không chia hết, và đáp án D là cách viết không chuẩn (dùng \"Không (∀…)\" mà không chuyển sang tồn tại). Vì vậy đáp án đúng là B."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Một số tập con của tập hợp số thực",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho A = {x ∈ ℝ | 1 ≤ x ≤ 3} và B = (0, 4). Xác định xem A có phải là tập con của B hay không.",
+    "options": {
+      "A": "Có, A ⊂ B",
+      "B": "Không, A ⊄ B",
+      "C": "A = B",
+      "D": "Không xác định vì A và B có dạng biểu diễn khác nhau"
+    },
+    "answer": "A",
+    "giai_thich": "Tập B = (0,4) gồm mọi số thực lớn hơn 0 và nhỏ hơn 4, không bao gồm 0 và 4. Tập A = {x ∈ ℝ | 1 ≤ x ≤ 3} chứa các số thực từ 1 đến 3, bao gồm cả 1 và 3. Mỗi phần tử của A thỏa mãn 0 < x < 4, nên A ⊂ B. Đáp án B sai vì bỏ qua việc các điểm biên 1 và 3 vẫn thuộc B. Đáp án C sai vì A không chứa các số như 0.5 hay 3.5. Đáp án D sai vì việc biểu diễn khác nhau không ảnh hưởng tới quan hệ tập con. Vì vậy đáp án đúng là A."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp, phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong không gian mẫu U = {1,2,3,4,5,6}, cho A = {1,2,3} và B = {3,4,5}. Tính:\n1) A\\B (hiệu của A và B)\n2) Bổ đề (phần bù) của A trong U.",
+    "options": {
+      "A": "A\\B = {1,2};   Bổ đề của A = {4,5,6}",
+      "B": "A\\B = {3};   Bổ đề của A = {4,5,6}",
+      "C": "A\\B = {1,2};   Bổ đề của A = {3,4,5,6}",
+      "D": "A\\B = {1,2,3};   Bổ đề của A = {4,5,6}"
+    },
+    "answer": "A",
+    "giai_thich": "Hiệu A\\B = {x | x∈A và x∉B}. Các phần tử A là {1,2,3}; trong số đó 3 thuộc B, nên loại bỏ. Kết quả A\\B = {1,2}. Phần bù của A trong U là U\\A = {x | x∈U và x∉A}. U = {1,2,3,4,5,6}, loại bỏ 1,2,3 → {4,5,6}. Do đó đáp án đúng là A. Đáp án B nhầm lẫn hiệu thành {3}. Đáp án C sai vì phần bù của A còn {3}. Đáp án D tính hiệu sai (không loại bỏ B) và phần bù sai vì bỏ 3."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp, phần bù của tập con",
+    "type": "ly_thuyet",
+    "do_kho": 2,
+    "question": "Cho các tập A, B ⊆ U. Phát biểu đúng về đẳng thức sau: (A\\B) ∪ (B\\A) = (A ∪ B) \\ (A ∩ B).",
+    "options": {
+      "A": "Đúng, vì (A\\B) = A ∩ B^c và (B\\A) = B ∩ A^c, nên tổng hợp thành (A ∪ B) \\ (A ∩ B).",
+      "B": "Sai, vì vế trái luôn chứa phần tử chung của A và B, trong khi vế phải không.",
+      "C": "Đúng, nhưng chỉ khi A và B không giao nhau.",
+      "D": "Sai, vì (A\\B) ∪ (B\\A) bằng A ∪ B chứ không phải (A ∪ B) \\ (A ∩ B)."
+    },
+    "answer": "A",
+    "giai_thich": "Áp dụng định nghĩa hiệu: A\\B = A ∩ B^c, B\\A = B ∩ A^c. Khi hợp chúng lại: (A ∩ B^c) ∪ (B ∩ A^c). Theo luật phân phối, đây chính là (A ∪ B) ∩ (B^c ∪ A^c). Nhưng B^c ∪ A^c = (A ∩ B)^c (luật De Morgan). Vì vậy (A ∪ B) ∩ (A ∩ B)^c = (A ∪ B) \\ (A ∩ B). Đúng. Đáp án B sai vì vế trái không chứa phần tử chung. Đáp án C giới hạn không cần, vì đẳng thức đúng với mọi A, B. Đáp án D nhầm lẫn hiệu với hợp. Vì vậy đáp án đúng là A."
+  }
+]

@@ -137,7 +137,11 @@ def generate_questions(state: ExamState, llm_client: LLMClient) -> dict:
             for attempt in range(3):
                 try:
                     # result: GeneratedQuestionBatch = structured_llm.invoke([{"role": "user", "content": prompt}])
-                    result = llm_client.invoke_structured(GeneratedQuestionBatch, [{"role": "user", "content": prompt}], max_tokens=4000)
+                    # result = llm_client.invoke_structured(GeneratedQuestionBatch, [{"role": "user", "content": prompt}], max_tokens=8000)
+                    result = llm_client.invoke_structured(
+                        GeneratedQuestionBatch, [{"role": "user", "content": prompt}],
+                        max_tokens=min(1500 * len(batch_specs), 16000),
+                    )
                     if len(result.questions) == len(batch_specs):
                         questions_batch = result.questions
                         break
