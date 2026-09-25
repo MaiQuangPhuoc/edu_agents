@@ -36,6 +36,65 @@ def _recover_from_failed(failed: str, output_model):
         except Exception:
             return None
 
+from pydantic import BaseModel, ValidationError
+
+
+def _extract_failed(e) -> str:
+    body = getattr(e, "body", None)
+    if isinstance(body, dict):
+        return body.get("failed_generation") or (body.get("error") or {}).get("failed_generation") or ""
+    return ""
+
+
+def _extract_json_block(text: str) -> dict | None:
+    """Tìm khối JSON trong text tự do (kể cả lẫn markdown/giải thích), sửa backslash lỗi, parse."""
+    if not text:
+        return None
+    m = re.search(r'\{.*\}', text, re.DOTALL)
+    if not m:
+        return None
+    raw = re.sub(r'\\(?!["\\/bfnrtu])', r'\\\\', m.group())
+    try:
+        data = json.loads(raw)
+    except Exception:
+        return None
+    if isinstance(data, dict) and "arguments" in data and "name" in data:
+        data = data["arguments"]   # dạng tool-call thô {"name":..., "arguments": {...}}
+    return data if isinstance(data, dict) else None
+
+
+def _coerce_to_schema(data: dict, output_model) -> dict:
+    """Ép mềm dict thô về đúng shape schema trước khi validate lại — vá lỗi model sinh gần đúng
+    nhưng lệch kiểu/thiếu field, thay vì raise ngay và bỏ hẳn kết quả đó."""
+    fixed = dict(data)
+    for name, info in output_model.model_fields.items():
+        if name not in fixed:
+            continue
+        val, ann = fixed[name], info.annotation
+
+        if ann is str and isinstance(val, (list, dict)):
+            fixed[name] = json.dumps(val, ensure_ascii=False) if isinstance(val, dict) else ", ".join(str(v) for v in val)
+        elif getattr(ann, "__origin__", None) is list and isinstance(val, str):
+            fixed[name] = [val]
+        elif ann is int and isinstance(val, str) and val.strip().lstrip("-").isdigit():
+            fixed[name] = int(val)
+
+    return fixed
+
+
+def _recover_from_failed(failed: str, output_model):
+    data = _extract_json_block(failed)
+    if data is None:
+        return None
+    try:
+        return output_model.model_validate(data)
+    except ValidationError:
+        try:
+            return output_model.model_validate(_coerce_to_schema(data, output_model))   # ← thêm bước ép mềm
+        except Exception:
+            return None
+
+
 class LLMClient:
     """LLM client hỗ trợ groq / openai / openrouter, bật/tắt bằng cách
     đổi api_provider trong .env, không cần sửa code."""
@@ -121,67 +180,49 @@ class LLMClient:
                     raise
                 logger.info(f"Đang thử lại... ({attempt + 2}/{num_retries})")
 
-    # def invoke_structured(self, output_model: BaseModel, messages: list,
-    #                        max_retries: int = 3, max_tokens: int = 4096, fallback=None):
-    #     """Giống hệt cách dùng cũ (_llm.with_structured_output(...).invoke(...)),
-    #     chỉ thêm max_tokens và chờ (backoff) khi retry."""
-    #     structured_llm = self._llm.bind(max_tokens=max_tokens).with_structured_output(output_model)
-
-    #     for attempt in range(max_retries):
-    #         try:
-    #             result = structured_llm.invoke(messages)
-    #             return result
-    #         except Exception as e:
-    #             err_str = str(e)
-    #             print(f"[invoke_structured] {output_model.__name__} attempt {attempt + 1} lỗi: {e}")
-
-    #             if "invalid_api_key" in err_str.lower() or "expired_api_key" in err_str.lower():
-    #                 raise
-
-    #             if attempt < max_retries - 1:
-    #                 m = re.search(r'try again in ([\d.]+)s', err_str)
-    #                 wait = float(m.group(1)) + 1 if m else 2
-    #                 print(f"[invoke_structured] chờ {wait:.1f}s trước khi retry")
-    #                 time.sleep(wait)
-
-    #     return fallback
-
-
-
-
     def invoke_structured(self, output_model, messages: list,
-                        max_retries: int = 3, max_tokens: int = 4096, fallback=None):
-        base = self._llm.bind(max_tokens=max_tokens)
+                           max_retries: int = 3, max_tokens: int = 4096, fallback=None):
+        """3 lớp, tăng dần độ 'ép buộc':
+        1) Tool-calling structured output (chuẩn nhất)
+        2) json_mode + nhét thẳng JSON schema vào prompt
+        3) Vớt raw text lỗi -> tách JSON -> ép mềm về schema -> validate lại
+        Hết max_retries vẫn fail thì trả `fallback`, không crash graph."""
+        base     = self._llm.bind(max_tokens=max_tokens)
         tool_llm = base.with_structured_output(output_model)
         json_llm = base.with_structured_output(output_model, method="json_mode")
         json_messages = messages + [{
             "role": "user",
-            "content": "Trả về DUY NHẤT một JSON object đúng schema sau, không markdown:\n"
-                    + json.dumps(output_model.model_json_schema(), ensure_ascii=False),
+            "content": "Trả về DUY NHẤT một JSON object đúng schema sau, không markdown, không giải thích:\n"
+                        + json.dumps(output_model.model_json_schema(), ensure_ascii=False),
         }]
 
         for attempt in range(max_retries):
-            use_json_mode = attempt >= 1          # lần 1: tool calling, lần 2+: json_mode
+            use_json_mode = attempt >= 1
             llm  = json_llm if use_json_mode else tool_llm
             msgs = json_messages if use_json_mode else messages
+            method_name = "json_mode" if use_json_mode else "tool_calling"
+
             try:
-                return llm.invoke(msgs)
+                result = llm.invoke(msgs)
+                logger.info(f"invoke_structured [{output_model.__name__}] OK qua {method_name}, lần {attempt + 1}")
+                return result
             except Exception as e:
                 err_str = str(e)
-                print(f"[invoke_structured] {output_model.__name__} attempt {attempt + 1} lỗi: {err_str[:200]}")
+                print(f"[invoke_structured] {output_model.__name__} attempt {attempt + 1} ({method_name}) lỗi: {err_str[:200]}")
 
                 if "invalid_api_key" in err_str.lower() or "expired_api_key" in err_str.lower():
                     raise
 
                 recovered = _recover_from_failed(_extract_failed(e), output_model)
                 if recovered is not None:
-                    print("[invoke_structured] đã vớt được từ failed_generation")
+                    print(f"[invoke_structured] {output_model.__name__} vớt được từ failed_generation (coerce schema)")
                     return recovered
 
                 if attempt < max_retries - 1:
                     m = re.search(r'try again in ([\d.]+)s', err_str)
                     time.sleep(float(m.group(1)) + 1 if m else 1)
 
+        logger.error(f"invoke_structured [{output_model.__name__}] thất bại sau {max_retries} lần, dùng fallback")
         return fallback
     
 # Global client — comment dòng dưới nếu không muốn auto-init lúc import

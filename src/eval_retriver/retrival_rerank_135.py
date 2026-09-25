@@ -14,7 +14,7 @@ from src.clients.embedding import embeddings_qa
 from src.modules.rag.process_toan_10.retrievers2 import VectorStoreRetriever
 
 INPUT_PATH = Path(r"D:/VKU/Nam_3/thuc_tap_doanh_nghiep_he_eSTI/EDUAGENT/src/modules/documents/doc_git/books/10/chunk/tools/queries_test_tools_x5.md")
-OUTPUT_PATH = INPUT_PATH.with_name(INPUT_PATH.stem + "_result_retrival_tool.md")
+OUTPUT_PATH = INPUT_PATH.with_name(INPUT_PATH.stem + "_result_retrival_tool1.md")
 
 TOP_K = 5
 BATCH_SIZE = 20
