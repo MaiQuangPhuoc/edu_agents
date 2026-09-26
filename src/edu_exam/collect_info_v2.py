@@ -9,10 +9,7 @@ from src.edu_qa.paths import COLLECT_INFO_PROMPT_PATH
 
 SYSTEM_PROMPT = COLLECT_INFO_PROMPT_PATH.read_text(encoding="utf-8")
 
-REQUIRED_FIELDS = [
-    "mon_hoc", "khoi_lop", "pham_vi_kiem_tra", "muc_dich", "loai_de",
-    "so_cau_hoi", "thoi_gian_lam_bai", "muc_tieu_diem", "ho_so_kien_thuc", "ghi_chu",
-]
+REQUIRED_FIELDS = ["mon_hoc", "khoi_lop", "pham_vi_kiem_tra"]
 
 HISTORY_TURN_LIMIT = 5   # chỉ giữ 5 lượt hỏi-đáp gần nhất, đủ mạch hội thoại mà không phình prompt
 

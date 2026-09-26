@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Làm bài kiểm tra</title>
+<link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+<div class="exam-shell">
+  <div class="exam-header">
+    <button class="btn-ghost" onclick="window.location.href='/'">← Quay lại</button>
+    <span id="score-badge" class="score-badge" style="display:none;"></span>
+  </div>
+
+  <div id="intro-view">
+    <h2>Đề kiểm tra</h2>
+    <p style="color:var(--ink-soft)">Đề đã sẵn sàng — bấm bắt đầu khi bạn sẵn sàng làm bài.</p>
+    <button class="btn-primary" onclick="beginExam()">Làm bài</button>
+  </div>
+
+  <div id="question-list" style="display:none;"></div>
+
+  <div id="submit-bar" style="display:none; margin-top:10px;">
+    <button class="btn-primary" onclick="submitExam()">Nộp bài</button>
+  </div>
+</div>
+<script>const EXAM_ID = "{{ exam_id }}";</script>
+<script src="/static/js/exam.js"></script>
+</body>
+</html>

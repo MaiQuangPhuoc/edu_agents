@@ -135,7 +135,7 @@ def build_matrix(state: ExamState, llm_client: LLMClient) -> dict:
     ai_message = AIMessage(content=(
         f"Ma trận đề đã được xây dựng:\n```json\n"
         f"{json.dumps(matrix, ensure_ascii=False, indent=2)}\n```\n"
-        f"Bạn có góp ý gì không? (gõ 'ok' để tiếp tục)"
+        f"Bạn có góp ý gì không? (không thì 'xác nhận' để tiếp tục)"
     ))
 
     return {

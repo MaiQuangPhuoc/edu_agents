@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Xét câu phát biểu: “Nếu x > 0 thì x² > 0”, trong đó x là một số thực bất kì. Hỏi câu này có phải là một mệnh đề hay không?",
+    "options": {
+      "A": "Có, vì câu là một khẳng định có thể xác định đúng hay sai.",
+      "B": "Không, vì câu chứa biến số nên không thể xác định được giá trị đúng/sai.",
+      "C": "Không, vì câu chỉ là một suy luận chứ không phải một khẳng định.",
+      "D": "Không, vì câu không có dấu chấm câu cuối nên không được coi là mệnh đề."
+    },
+    "answer": "A",
+    "giai_thich": "Theo định nghĩa, một mệnh đề là câu phát biểu có giá trị đúng hoặc sai. Câu “Nếu x > 0 thì x² > 0” là câu khẳng định dạng P ⇒ Q, trong đó P và Q đều là những phát biểu có thể xác định giá trị đúng/sai (đúng với mọi x > 0, sai nếu x ≤ 0). Do đó câu này thỏa mãn điều kiện là một mệnh đề. Các đáp án B, C, D sai vì chúng dựa trên việc nhầm lẫn biến số hoặc hình thức câu, không phải là tiêu chí xác định mệnh đề.",
+    "y_tuong": "Kiểm tra xem một câu khai báo có đáp ứng định nghĩa mệnh đề hay không."
+  },
+  {
+    "id": 2,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề phủ định",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho mệnh đề: “Tất cả các số nguyên dương đều là số chẵn”. Viết phủ định của mệnh đề này và cho biết phủ định là đúng hay sai.",
+    "options": {
+      "A": "Phủ định: “Có tồn tại số nguyên dương không phải số chẵn”. Phủ định là đúng.",
+      "B": "Phủ định: “Mọi số nguyên dương đều là số lẻ”. Phủ định là sai.",
+      "C": "Phủ định: “Không có số nguyên dương nào là số chẵn”. Phủ định là sai.",
+      "D": "Phủ định: “Tất cả các số nguyên dương đều là số lẻ”. Phủ định là sai."
+    },
+    "answer": "A",
+    "giai_thich": "Mệnh đề gốc có dạng ∀x∈ℕ⁺, P(x) với P(x): “x là số chẵn”. Phủ định của một mệnh đề toàn phần là ∃x∈ℕ⁺ sao cho ¬P(x), tức là “Có tồn tại số nguyên dương không phải số chẵn”. Vì trong thực tế có số nguyên dương lẻ (ví dụ x = 1), nên phủ định này đúng. Các đáp án B, C, D viết sai quy tắc phủ định (chúng vẫn là mệnh đề toàn phần) và do đó sai.",
+    "y_tuong": "Viết phủ định của mệnh đề toàn phần và xác định tính đúng/sai của phủ định."
+  },
+  {
+    "id": 3,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Cho hai tập hợp A = {1, 2, 3, 4, 5} và B = {4, 5, 6}. Tính hiệu A\\B (các phần tử thuộc A nhưng không thuộc B).",
+    "options": {
+      "A": "{1, 2, 3}",
+      "B": "{4, 5}",
+      "C": "{1, 2, 3, 4, 5, 6}",
+      "D": "{6}"
+    },
+    "answer": "A",
+    "giai_thich": "Định nghĩa hiệu A\\B = {x | x∈A và x∉B}. Kiểm tra từng phần tử của A: 1∈A và 1∉B → giữ lại; 2∈A và 2∉B → giữ lại; 3∈A và 3∉B → giữ lại; 4∈A nhưng 4∈B → loại; 5∈A nhưng 5∈B → loại. Vì vậy A\\B = {1,2,3}. Đáp án B là giao (A∩B), C là hợp (A∪B), D là phần tử chỉ có trong B, nên chúng là các lỗi thường gặp.",
+    "y_tuong": "Tính hiệu của hai tập hợp hữu hạn."
+  },
+  {
+    "id": 4,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề đảo. Hai mệnh đề tương đương",
+    "type": "ly_thuyet",
+    "do_kho": 2,
+    "question": "Cho mệnh đề suy diễn: “Nếu một số nguyên n chia hết cho 6 thì n chia hết cho 3”.\n(a) Viết dạng đảo (phủ định của mệnh đề suy diễn). \n(b) Chứng minh (hoặc phản bác) rằng dạng đảo vừa viết tương đương với mệnh đề gốc.",
+    "options": {
+      "A": "Dạng đảo: “Nếu n không chia hết cho 3 thì n không chia hết cho 6”. Đây là mệnh đề tương đương.",
+      "B": "Dạng đảo: “Nếu n chia hết cho 3 thì n chia hết cho 6”. Đây là mệnh đề tương đương.",
+      "C": "Dạng đảo: “Nếu n không chia hết cho 6 thì n không chia hết cho 3”. Đây là mệnh đề tương đương.",
+      "D": "Dạng đảo: “Nếu n chia hết cho 6 thì n chia hết cho 3”. Đây là mệnh đề tương đương."
+    },
+    "answer": "A",
+    "giai_thich": "Mệnh đề gốc có dạng P ⇒ Q với P: “n chia hết cho 6”, Q: “n chia hết cho 3”. Dạng đảo (phủ định của mệnh đề suy diễn) là ¬Q ⇒ ¬P, tức là “Nếu n không chia hết cho 3 thì n không chia hết cho 6”. Theo định lý tương đương P ⇒ Q ⇔ ¬Q ⇒ ¬P, hai mệnh đề này luôn có cùng giá trị đúng/sai, vì mỗi khi P đúng thì Q cũng đúng, và nếu Q sai thì P cũng sai. Do đó đáp án A đúng. Đáp án B nhầm thành “nếu Q thì P” (đảo ngược, không phải đảo). Đáp án C đảo sai thứ tự ¬P ⇒ ¬Q. Đáp án D chỉ lặp lại mệnh đề gốc, không phải dạng đảo.",
+    "y_tuong": "Viết và chứng minh tính tương đương của mệnh đề đảo."
+  },
+  {
+    "id": 5,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong không gian mẫu U = {1,2,3,4,5,6,7,8}, cho tập A = {2,4,6}. \n(a) Tìm phần bù A' của A trong U. \n(b) Tính (A ∪ {1,3})' và cho kết quả dưới dạng tập hợp. (Sử dụng định lý De Morgan).",
+    "options": {
+      "A": "{5,7,8}",
+      "B": "{1,3,5,7,8}",
+      "C": "{2,4,6,1,3}",
+      "D": "{5,8}"
+    },
+    "answer": "A",
+    "giai_thich": "Bước (a): Phần bù A' = U \\ A = {1,2,3,4,5,6,7,8} \\ {2,4,6} = {1,3,5,7,8}. \nBước (b): Đầu tiên tính A ∪ {1,3} = {2,4,6} ∪ {1,3} = {1,2,3,4,6}. Áp dụng định lý De Morgan: (A ∪ {1,3})' = U \\ (A ∪ {1,3}) = {1,2,3,4,5,6,7,8} \\ {1,2,3,4,6} = {5,7,8}. Do đó đáp án đúng là {5,7,8}. \nCác đáp án sai: B là phần bù A' (sai vì yêu cầu (A ∪ {1,3})'), C là hợp A ∪ {1,3} (sai vì chưa lấy phần bù), D bỏ sót phần tử 7 (lỗi quên một phần tử).",
+    "y_tuong": "Áp dụng định lý De Morgan để tính phần bù của hợp hai tập hợp."
+  }
+]

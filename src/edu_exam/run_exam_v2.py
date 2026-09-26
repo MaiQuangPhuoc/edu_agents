@@ -52,6 +52,7 @@ def build_initial_state() -> dict:
         "generated_exam": [],
         "exam_memory": [],
         "generate_done": False,
+        "exam_id": "",
 
         # evaluate_exam
         "exam_review": {},

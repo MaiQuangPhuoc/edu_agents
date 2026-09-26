@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}EDUAGENT - Trang chủ{% endblock %}
+{% block content %}
+<div class="grid gap-6 sm:grid-cols-2">
+  <a href="/chat" class="block p-6 bg-white rounded-xl border hover:border-blue-400 hover:shadow transition">
+    <h2 class="text-xl font-semibold mb-2">💬 Hỏi đáp</h2>
+    <p class="text-slate-600 text-sm">Đặt câu hỏi Toán - Văn - Sử lớp 10, nhận giải đáp tức thì.</p>
+  </a>
+  <a href="/exam" class="block p-6 bg-white rounded-xl border hover:border-blue-400 hover:shadow transition">
+    <h2 class="text-xl font-semibold mb-2">📝 Tạo đề kiểm tra</h2>
+    <p class="text-slate-600 text-sm">Sinh đề kiểm tra cá nhân hóa dựa trên hồ sơ và năng lực học sinh.</p>
+  </a>
+</div>
+{% endblock %}

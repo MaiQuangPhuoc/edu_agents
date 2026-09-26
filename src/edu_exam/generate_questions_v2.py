@@ -23,6 +23,7 @@ def _save_exam_json(generated_exam: list) -> Path:
 
     exam_clean = [
         {
+            "id":         q.get("id"),
             "chuong":     q.get("chuong", ""),
             "bai":        q.get("bai", ""),
             "dang_bai":   q.get("dang_bai", ""),
@@ -32,6 +33,7 @@ def _save_exam_json(generated_exam: list) -> Path:
             "options":    q.get("options", {}),
             "answer":     q.get("answer", ""),
             "giai_thich": q.get("giai_thich", ""),
+            "y_tuong":    q.get("y_tuong", ""),
         }
         for q in generated_exam
     ]
@@ -140,7 +142,7 @@ def generate_questions(state: ExamState, llm_client: LLMClient) -> dict:
                     # result = llm_client.invoke_structured(GeneratedQuestionBatch, [{"role": "user", "content": prompt}], max_tokens=8000)
                     result = llm_client.invoke_structured(
                         GeneratedQuestionBatch, [{"role": "user", "content": prompt}],
-                        max_tokens=min(1500 * len(batch_specs), 16000),
+                        max_tokens=min(1500 * len(batch_specs), 16000), list_field="questions"
                     )
                     if len(result.questions) == len(batch_specs):
                         questions_batch = result.questions
@@ -176,7 +178,7 @@ def generate_questions(state: ExamState, llm_client: LLMClient) -> dict:
         print(f"[{ch_id}] hoàn tất — tổng: {len(generated_exam)} câu")
 
     exam_json = json.dumps(generated_exam, ensure_ascii=False, indent=2)
-    _save_exam_json(generated_exam)
+    exam_path = _save_exam_json(generated_exam)
 
     print(f"\n>>> generate_questions hoàn tất: {len(generated_exam)} câu")
 
@@ -184,7 +186,8 @@ def generate_questions(state: ExamState, llm_client: LLMClient) -> dict:
         "messages":       [AIMessage(content=exam_json)],
         "generated_exam": generated_exam,
         "exam_memory":    exam_memory,
-        "regenerate_ids": [],   # ← reset, evaluate_exam sẽ set lại nếu vòng sau vẫn còn lỗi
+        "exam_id":        exam_path.stem,   # "exam_20260925_124128" — key mới, thêm vào ExamState nếu cần typed
+        "regenerate_ids": [],
         "generate_done":  True,
         "current_step":   "generate_questions",
     }

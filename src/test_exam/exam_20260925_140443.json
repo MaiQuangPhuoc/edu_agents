@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Xác định đúng/sai mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Cho câu sau: “Nếu x là số nguyên dương thì x^2 > 0”. Học sinh cần xác định câu này có phải là mệnh đề hay không, và nếu là mệnh đề, cho biết đúng hay sai.",
+    "options": {
+      "A": "Là mệnh đề đúng",
+      "B": "Là mệnh đề sai",
+      "C": "Không phải mệnh đề",
+      "D": "Là mệnh đề nhưng không xác định giá trị đúng/sai"
+    },
+    "answer": "A",
+    "giai_thich": "Câu đề bài có dạng \"Nếu P thì Q\" với P và Q luôn xác định cho mọi x nguyên dương. Vì mỗi số nguyên dương x luôn thỏa mãn x^2>0, nên câu này là một mệnh đề và giá trị đúng của nó là đúng. Do đó đáp án A là đúng; các đáp án B, C, D đều sai vì chúng nhầm lẫn giữa tính đúng/sai và việc câu có phải là mệnh đề hay không.",
+    "y_tuong": "Xác định tính đúng/sai của một câu mệnh đề dạng điều kiện.",
+    "answer_tools": "",
+    "check": ""
+  },
+  {
+    "id": 2,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Bài tập về phủ định",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Cho mệnh đề: ∀x∈ℝ, (x^2 ≥ 0). Viết phủ định của mệnh đề này.",
+    "options": {
+      "A": "∃x∈ℝ, (x^2 < 0)",
+      "B": "∃x∈ℝ, (x^2 ≤ 0)",
+      "C": "∀x∈ℝ, (x^2 < 0)",
+      "D": "∃x∈ℝ, (x^2 > 0)"
+    },
+    "answer": "A",
+    "giai_thich": "Theo quy tắc phủ định của lượng tử, ¬(∀x P(x)) ≡ ∃x ¬P(x). Ở đây P(x): x^2 ≥ 0, nên ¬P(x) là x^2 < 0. Vì vậy phủ định là ∃x∈ℝ, (x^2 < 0). Đáp án A đúng; B sai vì dùng ≤ thay vì <; C sai vì vẫn giữ ∀; D sai vì đổi dấu bất đẳng thức sang > thay vì <.",
+    "y_tuong": "Viết phủ định của mệnh đề có lượng tử toàn phần.",
+    "answer_tools": "",
+    "check": "N/A"
+  },
+  {
+    "id": 3,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Bài tập hiệu và phần bù",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Cho tập hợp V={1,2,3,4,5,6,7,8,9,10}, A={1,2,3,4,5}, B={4,5,6,7}. Tính hiệu A\\B.",
+    "options": {
+      "A": "{1,2,3}",
+      "B": "{4,5}",
+      "C": "{1,2,3,4,5}",
+      "D": "{6,7,8,9,10}"
+    },
+    "answer": "A",
+    "giai_thich": "Hiệu A\\B = {x∈A | x∉B}. Các phần tử A là 1,2,3,4,5; trong B có 4,5. Loại bỏ 4 và 5, còn lại {1,2,3}. Vì vậy đáp án A đúng. Các đáp án B, C, D là các lỗi thường gặp: B nhầm lấy các phần tử chung, C quên loại bỏ phần tử chung, D đưa ra phần bù của A thay vì hiệu.",
+    "y_tuong": "Tính hiệu hai tập hợp cụ thể.",
+    "answer_tools": "{1, 2, 3}",
+    "check": "❌"
+  },
+  {
+    "id": 4,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Bài tập hiệu và phần bù",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho V={1,2,3,4,5,6,7,8,9,10}, A={1,2,3,4}, B={3,4,5}, C={2,5,6}, D={1,6}. Rút gọn biểu thức ¯[(A\\B) ∪ (C\\¯D)].",
+    "options": {
+      "A": "{3,4,5,7,8,9,10}",
+      "B": "{3,4,5,6,7,8,9,10}",
+      "C": "{3,4,5,7,8,9,10}",
+      "D": "{3,4,5,7,8,9,10}"
+    },
+    "answer": "A",
+    "giai_thich": "Bước 1: A\\B = A ∩ ¯B. B={3,4,5} → ¯B=V\\B={1,2,6,7,8,9,10}. A∩¯B={1,2}. \nBước 2: ¯D = V\\D = {2,3,4,5,7,8,9,10}. C\\¯D = C ∩ D (vì C\\¯D = C ∩ ¯(¯D)=C ∩ D) = {2,5,6} ∩ {1,6} = {6}. \nBước 3: (A\\B) ∪ (C\\¯D) = {1,2} ∪ {6} = {1,2,6}. \nBước 4: Lấy phần bù: ¯{1,2,6}= V\\{1,2,6}= {3,4,5,7,8,9,10}. Đáp án A khớp kết quả. Các đáp án B, C, D sai do tính sai bước 2 (nhầm C\\¯D thành C∩¯D) hoặc quên loại bỏ phần tử 6 trong bước cuối.",
+    "y_tuong": "Rút gọn biểu thức tập hợp phức tạp bằng các luật De Morgan và định nghĩa hiệu.",
+    "answer_tools": "",
+    "check": "N/A"
+  },
+  {
+    "id": 5,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Bài Venn đa tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong Venn ba tập A, B, C cho biết: |A|=20, |B|=15, |C|=18, |A∩B|=8, |A∩C|=7, |B∩C|=6, |A∩B∩C|=3. Hỏi có bao nhiêu phần tử thuộc đúng hai trong ba tập?",
+    "options": {
+      "A": "12",
+      "B": "9",
+      "C": "15",
+      "D": "6"
+    },
+    "answer": "A",
+    "giai_thich": "Số phần tử thuộc đúng hai tập = (|A∩B|+|A∩C|+|B∩C|) - 3·|A∩B∩C|. Thay số: (8+7+6) - 3·3 = 21 - 9 = 12. Vì vậy đáp án A là đúng. Các đáp án B, C, D là các sai lầm thường gặp: B trừ 2·|A∩B∩C|, C cộng thêm |A∩B∩C|, D chỉ lấy tổng các giao nhau mà không trừ phần ba lần đếm.",
+    "y_tuong": "Đếm phần tử thuộc đúng hai trong ba tập dựa trên số liệu đã cho.",
+    "answer_tools": "",
+    "check": "N/A"
+  },
+  {
+    "id": 6,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Bài tập hiệu và phần bù",
+    "type": "bai_tap",
+    "do_kho": 0,
+    "question": "Cho vũ trụ U={1,2,3,4,5,6,7,8}, tập A={2,4,6}, tập B={1,2,5,7}. Hãy viết tập hiệu A\\B và tập phần bù của A trong U.",
+    "options": {
+      "A": "A\\B={4,6}; \\overline{A}={1,3,5,7,8}",
+      "B": "A\\B={2,4,6}; \\overline{A}={1,3,5,7,8}",
+      "C": "A\\B={4,6}; \\overline{A}={1,2,3,5,8}",
+      "D": "A\\B={2,4,6}; \\overline{A}={1,2,3,5,8}"
+    },
+    "answer": "A",
+    "giai_thich": "A\\B là các phần tử thuộc A nhưng không thuộc B. Trong A={2,4,6} chỉ 2 thuộc B, nên A\\B={4,6}. Phần bù \\overline{A}=U\\A={1,3,5,7,8}. Các đáp án B, C, D sai vì: B để 2 trong A\\B; C và D đưa thêm 2 vào phần bù hoặc bỏ 6.",
+    "y_tuong": "Tính hiệu và phần bù của hai tập cho trước bằng liệt kê.",
+    "answer_tools": "",
+    "check": "N/A"
+  },
+  {
+    "id": 7,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Bài tập về phủ định",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Cho mệnh đề P: “∀x∈ℝ, x^2 ≥ 0”. Viết phủ định của P và cho biết giá trị đúng/sai của mệnh đề phủ định đó.",
+    "options": {
+      "A": "∃x∈ℝ sao cho x^2 < 0 (đúng là phủ định, tuy nhiên sai vì không tồn tại)",
+      "B": "∃x∈ℝ sao cho x^2 ≤ 0 (sai: không phải phủ định đúng)",
+      "C": "∀x∈ℝ, x^2 < 0 (sai: không phải phủ định)",
+      "D": "∃x∈ℝ sao cho x^2 > 0 (sai: không phải phủ định)"
+    },
+    "answer": "A",
+    "giai_thich": "Phủ định của “∀x, x^2 ≥ 0” là “∃x sao cho ¬(x^2 ≥ 0)”, tức “∃x sao cho x^2 < 0”. Vì không có số thực nào có bình phương âm, mệnh đề này sai. Các đáp án B, C, D sai vì chúng không đúng theo quy tắc phủ định (B đổi dấu ≥ thành ≤, C vẫn là ∀, D đổi thành >).",
+    "y_tuong": "Viết phủ định của mệnh đề có lượng tử toàn phần và xác định tính đúng sai.",
+    "answer_tools": "",
+    "check": "N/A"
+  },
+  {
+    "id": 8,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Bài tập về tập con, bằng nhau",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Cho A={x∈ℝ | 0<x≤2} và B={x∈ℝ | x^2<4}. Xác định mối quan hệ giữa A và B.",
+    "options": {
+      "A": "A⊂B",
+      "B": "B⊂A",
+      "C": "A=B",
+      "D": "Không có quan hệ nào trong ba loại trên"
+    },
+    "answer": "A",
+    "giai_thich": "B tương đương với -2<x<2. Vì mọi x thỏa 0<x≤2 đều nằm trong (-2,2), nên A⊂B. B không nằm hoàn toàn trong A vì có các số âm, do đó B⊂A sai. A≠B vì A không chứa các số âm và không chứa 0. Vì vậy đáp án A đúng, các đáp án còn lại sai.",
+    "y_tuong": "Kiểm tra quan hệ chứa, bằng nhau giữa hai tập xác định bằng bất đẳng thức.",
+    "answer_tools": "",
+    "check": "N/A"
+  },
+  {
+    "id": 9,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Bài tập hiệu và phần bù",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho U={1,2,3,4,5,6}, A={1,2,3}, B={3,4,5}. Tính (A∪B)\\(A∩B) và chọn đáp án tương đương đúng.",
+    "options": {
+      "A": "{1,2,4,5}",
+      "B": "{3,4,5,6}",
+      "C": "{1,2}",
+      "D": "{4,5}"
+    },
+    "answer": "A",
+    "giai_thich": "A∪B={1,2,3,4,5}; A∩B={3}; hiệu (A∪B)\\(A∩B)={1,2,4,5}. Đáp án B là phần bù của A\\B, C là A\\B, D là B\\A; chỉ A khớp với yêu cầu tính toán.",
+    "y_tuong": "Tính hiệu tập hợp và nhận dạng kết quả trong các lựa chọn.",
+    "answer_tools": "{1, 2, 4, 5}",
+    "check": "❌"
+  },
+  {
+    "id": 10,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Bài tập về đảo, tương đương",
+    "type": "ly_thuyet",
+    "do_kho": 2,
+    "question": "Cho mệnh đề Q: “Nếu x>2 thì x^2>4”. Phát biểu mệnh đề phản đề (contrapositive) của Q.",
+    "options": {
+      "A": "Nếu x^2>4 thì x>2",
+      "B": "Nếu x≤2 thì x^2≤4",
+      "C": "Nếu x^2≤4 thì x≤2",
+      "D": "Nếu x>2 thì x^2>4"
+    },
+    "answer": "C",
+    "giai_thich": "Phản đề của “P⇒Q” là “¬Q⇒¬P”. Ở đây P: x>2, Q: x^2>4. ¬Q: x^2≤4, ¬P: x≤2. Vì vậy phản đề là “Nếu x^2≤4 thì x≤2”, đáp án C. Đáp án A là đảo (converse), B là nghịch đảo (inverse), D là mệnh đề gốc.",
+    "y_tuong": "Viết phản đề của một mệnh đề kéo theo và phân biệt với nghịch đảo, đảo.",
+    "answer_tools": "",
+    "check": ""
+  }
+]

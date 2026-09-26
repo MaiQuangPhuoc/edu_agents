@@ -171,6 +171,7 @@ class ExamState(TypedDict):
     generated_exam: list[dict]
     exam_memory: list[dict]
     generate_done:  bool
+    exam_id: str
 
     # Bước 7
     exam_review: dict

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EDUAGENT</title>
+<link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+<div class="chat-layout">
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="logo">EDUAGENT</div>
+      <select id="mode-select">
+        <option value="qa">Hỏi đáp</option>
+        <option value="exam">Tạo bài kiểm tra</option>
+        <option value="plan">Tạo lộ trình học</option>
+      </select>
+      <button class="btn-ghost" onclick="startNewSession()">+ Cuộc trò chuyện mới</button>
+    </div>
+    <div class="history" id="history-list"></div>
+  </aside>
+
+  <main class="chat-main">
+    <div class="messages" id="messages"></div>
+    <div class="input-bar">
+      <div class="input-row">
+        <textarea id="input-box" placeholder="Nhập câu hỏi hoặc yêu cầu..."></textarea>
+        <button class="btn-primary" onclick="sendMessage()">Gửi</button>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="/static/js/chat.js"></script>
+</body>
+</html>
