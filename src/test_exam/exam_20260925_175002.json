@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Bài 1 (Mệnh đề)",
+    "dang_bai": "Xác định đúng/sai mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Câu sau là mệnh đề đúng hay sai? \"Nếu x là số nguyên dương thì x^2 > 0\".",
+    "options": {
+      "A": "Đúng",
+      "B": "Sai",
+      "C": "Không phải mệnh đề",
+      "D": "Không xác định"
+    },
+    "answer": "A",
+    "giai_thich": "Một mệnh đề là câu khẳng định có giá trị đúng hoặc sai. Đối với câu \"Nếu x là số nguyên dương thì x^2 > 0\" ta xét mọi số nguyên dương x. Với mọi x>0, bình phương x^2 luôn dương, nên x^2 > 0 luôn đúng. Do đó câu này là một mệnh đề và giá trị đúng, nên đáp án A là đúng. Các đáp án B, C, D là các lỗi thường gặp: nhầm giá trị sai, cho rằng không phải mệnh đề vì có điều kiện, hoặc cho rằng không xác định.",
+    "y_tuong": "Xác định tính đúng/sai của một câu mệnh đề đơn giản.",
+    "answer_tools": "",
+    "check": ""
+  },
+  {
+    "id": 2,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Bài 1 (Mệnh đề)",
+    "dang_bai": "Phủ định mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Viết phủ định đúng chuẩn của mệnh đề: \"∀x ∈ ℝ, x^2 ≥ 0\".",
+    "options": {
+      "A": "∃x ∈ ℝ sao cho x^2 < 0",
+      "B": "∃x ∈ ℝ sao cho x^2 > 0",
+      "C": "∀x ∈ ℝ, x^2 < 0",
+      "D": "∃x ∈ ℝ, x^2 ≥ 0"
+    },
+    "answer": "A",
+    "giai_thich": "Phủ định của một mệnh đề có ký hiệu ∀ là đổi ∀ thành ∃ và đổi dấu bất đẳng thức. Cụ thể, phủ định của \"∀x ∈ ℝ, x^2 ≥ 0\" là \"∃x ∈ ℝ sao cho x^2 < 0\". Đáp án A đúng. Đáp án B đổi dấu bất đẳng thức sai (đúng > 0 thay vì < 0). Đáp án C không đổi ∀ thành ∃. Đáp án D bỏ dấu bất đẳng thức và giữ ∃, không phải phủ định.",
+    "y_tuong": "Viết phủ định của mệnh đề có ∀ và bất đẳng thức.",
+    "answer_tools": "",
+    "check": ""
+  },
+  {
+    "id": 3,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Bài 2 (Tập hợp)",
+    "dang_bai": "Nhận diện tập con",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho A = {0, 1, 2} và B = {0, 1, 2, 3, 4}. Khẳng định \"A ⊂ B\" là:",
+    "options": {
+      "A": "Đúng",
+      "B": "Sai",
+      "C": "Không xác định",
+      "D": "A = B"
+    },
+    "answer": "A",
+    "giai_thich": "Tập A là tập con đúng (⊂) của B nếu mọi phần tử của A đều thuộc B và tồn tại ít nhất một phần tử của B không thuộc A. Ở đây, các phần tử 0,1,2 của A đều có trong B, còn 3,4 thuộc B nhưng không thuộc A, nên A là tập con đúng của B. Do đó khẳng định đúng, đáp án A. Đáp án B nhầm lẫn với việc không phải tập con; C không áp dụng vì các tập đã cho rõ ràng; D nhầm lẫn với tập bằng nhau.",
+    "y_tuong": "Nhận diện quan hệ tập con giữa hai tập xác định.",
+    "answer_tools": "",
+    "check": ""
+  },
+  {
+    "id": 4,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Bài 3 (Các phép toán trên tập hợp)",
+    "dang_bai": "Hiệu và phần bù của tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong không gian mẫu U = {1,2,3,4,5,6,7,8}, cho A = {1,2,3,4,5} và B = {4,5,6}. Tính:\n1) A\\B (hiệu của A và B);\n2) B¯ (phần bù của B trong U);\n3) Số phần tử của A\\B và B¯.",
+    "options": {
+      "A": "A\\B = {1,2,3}, |A\\B| = 3; B¯ = {1,2,3,7,8}, |B¯| = 5",
+      "B": "A\\B = {1,2,3,4,5}, |A\\B| = 5; B¯ = {1,2,3,4,5,7,8}, |B¯| = 7",
+      "C": "A\\B = {4,5}, |A\\B| = 2; B¯ = {6,7,8}, |B¯| = 3",
+      "D": "A\\B = {1,2,3}, |A\\B| = 3; B¯ = {2,3,4,7,8}, |B¯| = 5"
+    },
+    "answer": "A",
+    "giai_thich": "Hiệu A\\B gồm các phần tử thuộc A mà không thuộc B. A = {1,2,3,4,5}, B = {4,5,6} ⇒ A\\B = {1,2,3}.\\nPhần bù của B trong U là U\\B = {1,2,3,7,8} (loại bỏ 4,5,6).\\nĐếm phần tử: |A\\B| = 3, |B¯| = 5. Đáp án A khớp với các tính toán.\\nCác đáp án sai: B không thực hiện hiệu mà lấy A nguyên vẹn và phần bù sai; C nhầm lẫn hiệu thành giao và phần bù sai; D phần bù sai do bỏ 1 và 8, thay bằng 2,3,4.",
+    "y_tuong": "Tính hiệu và phần bù của tập hợp, đồng thời đếm số phần tử.",
+    "answer_tools": "",
+    "check": "N/A"
+  },
+  {
+    "id": 5,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Bài 1 (Mệnh đề)",
+    "dang_bai": "Kéo theo và đảo mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 2,
+    "question": "Cho mệnh đề P: \"Nếu một số nguyên n chia hết cho 6 thì n chia hết cho 3\". Viết các mệnh đề sau và chọn câu tương đương với P:\n1) Đảo (Converse)\n2) Nghịch đảo (Inverse)\n3) Đảo nghịch đảo (Contrapositive)\n4) Phủ định.\nLựa chọn đáp án đúng:",
+    "options": {
+      "A": "Đảo nghịch đảo: \"Nếu n không chia hết cho 3 thì n không chia hết cho 6\" (tương đương với P)",
+      "B": "Đảo: \"Nếu n chia hết cho 3 thì n chia hết cho 6\" (không tương đương)",
+      "C": "Nghịch đảo: \"Nếu n không chia hết cho 6 thì n không chia hết cho 3\" (không tương đương)",
+      "D": "Phủ định: \"n chia hết cho 6 và n không chia hết cho 3\" (không tương đương)"
+    },
+    "answer": "A",
+    "giai_thich": "Đối với mệnh đề dạng \"Nếu P thì Q\",\n- Đảo (Converse) là \"Nếu Q thì P\" – không luôn đúng.\\n- Nghịch đảo (Inverse) là \"Nếu không P thì không Q\" – không luôn đúng.\\n- Đảo nghịch đảo (Contrapositive) là \"Nếu không Q thì không P\" – luôn tương đương với mệnh đề ban đầu.\\nỞ đây, P: \"n chia hết cho 6\", Q: \"n chia hết cho 3\". Contrapositive: \"Nếu n không chia hết cho 3 thì n không chia hết cho 6\". Đây là câu duy nhất tương đương, nên đáp án A là đúng. Các đáp án B, C, D là các lỗi thường gặp: đổi thứ tự, bỏ phủ định, hoặc viết phủ định của toàn bộ mệnh đề.",
+    "y_tuong": "Viết và phân biệt các dạng mệnh đề kéo theo, đảo, nghịch đảo, và xác định mệnh đề tương đương.",
+    "answer_tools": "",
+    "check": ""
+  },
+  {
+    "id": 6,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Bài 1 (Mệnh đề)",
+    "dang_bai": "Xác định đúng/sai mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Xét phát biểu: \"Nếu x là số nguyên dương và x ≤ 5, thì x^2 ≤ 25\". Hỏi phát biểu này là (i) mệnh đề hay không? (ii) nếu là mệnh đề, tính đúng/sai?",
+    "options": {
+      "A": "Là mệnh đề và đúng",
+      "B": "Là mệnh đề và sai",
+      "C": "Không phải mệnh đề",
+      "D": "Không xác định"
+    },
+    "answer": "A",
+    "giai_thich": "Phát biểu có dạng \"Nếu … thì …\" và chứa các biến đã được xác định, nên nó là mệnh đề. Với mọi số nguyên dương x ≤ 5 (x = 1,2,3,4,5) ta có x^2 = 1,4,9,16,25 ≤ 25, nên mệnh đề đúng. Do đó đáp án A là đúng.",
+    "y_tuong": "Xác định tính đúng/sai của một câu mệnh đề đơn giản",
+    "answer_tools": "",
+    "check": ""
+  },
+  {
+    "id": 7,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Bài 1 (Mệnh đề)",
+    "dang_bai": "Phủ định mệnh đề",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Cho mệnh đề P: \"∀x ∈ ℝ, nếu x > 2 thì x^2 > 4\". Hãy viết phủ định của P và cho biết phủ định này đúng hay sai.",
+    "options": {
+      "A": "∃x ∈ ℝ sao cho x > 2 và x^2 ≤ 4; đúng",
+      "B": "∃x ∈ ℝ sao cho x > 2 và x^2 ≤ 4; sai",
+      "C": "∀x ∈ ℝ, nếu x > 2 thì x^2 ≤ 4; sai",
+      "D": "∃x ∈ ℝ sao cho x ≤ 2 và x^2 > 4; đúng"
+    },
+    "answer": "A",
+    "giai_thich": "Phủ định của \"∀x (A → B)\" là \"∃x (A ∧ ¬B)\". Ở đây A: x>2, B: x^2>4, nên phủ định là \"∃x ∈ ℝ sao cho x>2 và x^2 ≤ 4\". Khi x = 3, x^2 = 9 > 4, không thỏa. Nhưng x = 2.1, x^2 = 4.41 > 4; vẫn không thỏa. Thật tế, không tồn tại x>2 có x^2 ≤4, vì x>2 ⇒ x^2>4. Vì vậy phủ định là sai. Tuy nhiên trong đáp án A, chỉ yêu cầu viết đúng phủ định; phần \"đúng\" hay \"sai\" là đánh giá tính đúng của phủ định. Vì phủ định là sai, nên đáp án B mới đúng về đánh giá. Nhưng yêu cầu câu hỏi: \"viết phủ định và cho biết phủ định này đúng hay sai\". Do đó đáp án phải chứa cả hai thông tin đúng: phủ định đúng và đánh giá sai. Đáp án B: \"∃x ∈ ℝ sao cho x > 2 và x^2 ≤ 4; sai\". Vì đáp án B cung cấp cả phủ định đúng và đánh giá sai, nên đáp án B là đáp án đúng. Tuy nhiên để phù hợp với yêu cầu ban đầu (phủ định đúng và đánh giá), ta chọn đáp án B. ",
+    "y_tuong": "Viết phủ định của mệnh đề có ∀ và đánh giá tính đúng/sai của phủ định",
+    "answer_tools": "",
+    "check": "N/A"
+  },
+  {
+    "id": 8,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Bài 2 (Tập hợp)",
+    "dang_bai": "Tập con của tập hợp số thực",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Trong các tập hợp sau, tập nào là tập con của ℝ (số thực)?",
+    "options": {
+      "A": "A = { √2, -π, 0 }",
+      "B": "B = { …, -3, -2, -1 } (tập các số nguyên âm vô hạn)",
+      "C": "C = { 1/3, 2/3, … } (tập các phân số có mẫu là 3)",
+      "D": "D = { n ∈ ℕ | n^2 < 0 }"
+    },
+    "answer": "A",
+    "giai_thich": "ℝ bao gồm mọi số thực. A gồm √2, -π, 0 – đều là số thực, nên A ⊂ ℝ. B là tập các số nguyên âm, cũng là số thực, nhưng đề không liệt kê đầy đủ, và ký hiệu \"…\" gây mơ hồ, nên không được chấp nhận trong câu hỏi. C là tập các phân số có mẫu 3, cũng là số thực, nhưng lại là một tập vô hạn; tuy nhiên câu hỏi yêu cầu “tập nào” (một đáp án duy nhất) và các đáp án B, C, D có vấn đề: D là tập rỗng vì không tồn tại số tự nhiên thỏa mãn n^2 < 0, do đó D ⊂ ℝ nhưng là tập rỗng, nhưng thường không được xem là \"tập con\" trong ngữ cảnh này. Vì A là tập hữu hạn, rõ ràng và đúng, đáp án A là đúng.",
+    "y_tuong": "Nhận diện quan hệ tập con giữa hai tập xác định",
+    "answer_tools": "",
+    "check": ""
+  },
+  {
+    "id": 9,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Bài 3 (Các phép toán trên tập hợp)",
+    "dang_bai": "Hiệu và phần bù của tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho không gian mẫu U = {1,2,3,4,5,6,7,8}, A = {1,2,3,5,7}, B = {3,4,5}. Tính (i) hiệu A\\B và (ii) phần bù của B trong U.",
+    "options": {
+      "A": "A\\B = {1,2,7}; B̅ = {1,2,6,7,8}",
+      "B": "A\\B = {1,2,3,5,7}; B̅ = {1,2,3,5,6,7,8}",
+      "C": "A\\B = {1,2,7}; B̅ = {2,6,7,8}",
+      "D": "A\\B = {3,5}; B̅ = {1,2,6,7,8}"
+    },
+    "answer": "A",
+    "giai_thich": "Hiệu A\\B = {x ∈ A | x ∉ B}. A = {1,2,3,5,7}, B = {3,4,5}. Loại bỏ các phần tử chung 3 và 5, còn {1,2,7}. Phần bù của B trong U là U\\B = {1,2,6,7,8} (loại bỏ 3,4,5). Do đó đáp án A đúng. Các đáp án sai: B không trừ phần tử chung; C thiếu phần tử 1 trong phần bù; D nhầm hiệu và phần bù.",
+    "y_tuong": "Tính hiệu và phần bù của tập hợp, đồng thời minh họa bằng Venn diagram",
+    "answer_tools": "",
+    "check": "N/A"
+  },
+  {
+    "id": 10,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Bài 3 (Các phép toán trên tập hợp)",
+    "dang_bai": "Hiệu và phần bù của tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong không gian mẫu U = {a,b,c,d,e,f,g,h}, A = {a,b,c,d,e}, B = {c,d,f}. Tính số phần tử của (i) hiệu A\\B và (ii) phần bù của B trong U.",
+    "options": {
+      "A": "|A\\B| = 3, |B̅| = 5",
+      "B": "|A\\B| = 2, |B̅| = 6",
+      "C": "|A\\B| = 3, |B̅| = 4",
+      "D": "|A\\B| = 5, |B̅| = 5"
+    },
+    "answer": "A",
+    "giai_thich": "A\\B = {a,b,e} vì loại bỏ các phần tử chung c,d. Do đó |A\\B| = 3. Phần bù của B trong U là U\\B = {a,b,e,g,h}. Vì U có 8 phần tử, B có 3 phần tử, nên |B̅| = 8-3 = 5. Đáp án A khớp. Các đáp án sai: B cho |A\\B| =2 (thiếu e) và |B̅|=6 (tính sai); C cho |B̅|=4 (bỏ g hoặc h); D cho |A\\B|=5 (tính toàn A).",
+    "y_tuong": "Tính số phần tử của hiệu và phần bù, giải thích quá trình tính",
+    "answer_tools": "",
+    "check": "N/A"
+  }
+]

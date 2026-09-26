@@ -94,6 +94,40 @@ def _recover_from_failed(failed: str, output_model):
         except Exception:
             return None
 
+def _salvage_partial_array(failed: str, output_model, list_field: str):
+    """Khi JSON bị cắt giữa chừng (hết token), tách các object ĐÃ ĐÓNG hoàn chỉnh
+    trong mảng list_field, bỏ object dở dang cuối, dựng lại output_model với phần còn lại."""
+    if not failed:
+        return None
+    start = failed.find(f'"{list_field}"')
+    if start == -1:
+        return None
+    arr_start = failed.find('[', start)
+    if arr_start == -1:
+        return None
+
+    items, depth, obj_start = [], 0, None
+    for i, ch in enumerate(failed[arr_start:], start=arr_start):
+        if ch == '{':
+            if depth == 0:
+                obj_start = i
+            depth += 1
+        elif ch == '}':
+            depth -= 1
+            if depth == 0 and obj_start is not None:
+                raw = re.sub(r'\\(?!["\\/bfnrtu])', r'\\\\', failed[obj_start:i + 1])
+                try:
+                    items.append(json.loads(raw))
+                except Exception:
+                    pass
+                obj_start = None
+
+    if not items:
+        return None
+    try:
+        return output_model.model_validate({list_field: items})
+    except ValidationError:
+        return None
 
 class LLMClient:
     """LLM client hỗ trợ groq / openai / openrouter, bật/tắt bằng cách
@@ -181,7 +215,7 @@ class LLMClient:
                 logger.info(f"Đang thử lại... ({attempt + 2}/{num_retries})")
 
     def invoke_structured(self, output_model, messages: list,
-                           max_retries: int = 3, max_tokens: int = 4096, fallback=None):
+                        max_retries: int = 3, max_tokens: int = 4096, fallback=None, list_field: str = None):
         """3 lớp, tăng dần độ 'ép buộc':
         1) Tool-calling structured output (chuẩn nhất)
         2) json_mode + nhét thẳng JSON schema vào prompt
@@ -214,9 +248,10 @@ class LLMClient:
                     raise
 
                 recovered = _recover_from_failed(_extract_failed(e), output_model)
-                if recovered is not None:
-                    print(f"[invoke_structured] {output_model.__name__} vớt được từ failed_generation (coerce schema)")
-                    return recovered
+                if recovered is None and list_field:
+                    recovered = _salvage_partial_array(_extract_failed(e), output_model, list_field)
+                    if recovered is not None:
+                        print(f"[invoke_structured] {output_model.__name__} vớt được {len(getattr(recovered, list_field))} phần tử từ mảng bị cắt")
 
                 if attempt < max_retries - 1:
                     m = re.search(r'try again in ([\d.]+)s', err_str)

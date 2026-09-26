@@ -170,14 +170,29 @@ def _verify_bai_tap_with_tools(generated_exam: list, retriever, llm_client: LLMC
         # print(" ----- end prmpt =-------------")
 
         result = llm_client.invoke_structured(ToolSelectionBatch, [{"role": "user", "content": prompt}], max_tokens=2000)
+        print(f"  [DEBUG] raw result: {result}")
+        if result is None:
+            print("  [DEBUG] invoke_structured trả None — cả 3 lớp (tool_calling/json_mode/vớt) đều fail")
+        else:
+            print(f"  [DEBUG] số selections trả về: {len(result.selections)} / batch size {len(batch)}")
+            print(f"  [DEBUG] các id trong selections: {[s.id for s in result.selections]}")
+            print(f"  [DEBUG] các id trong batch     : {[q['id'] for q in batch]}")
+        selections_by_id = {s.id: s for s in result.selections} if result else {}
         selections_by_id = {s.id: s for s in result.selections} if result else {}
 
         for q in batch:
             sel = selections_by_id.get(q["id"])
+
             if not sel:
                 q["tool_used"], q["answer_tools"], q["check"] = None, "", "❌"
+                continue
+
+            if sel.tool_name == NO_TOOL_NAME:
+                q["tool_used"], q["answer_tools"], q["check"] = None, "", "N/A"
+                continue
+
             if sel.tool_name not in TOOL_MAP_V2:
-                q["tool_used"], q["answer_tools"], q["mapping"] = None, f"LLM trả tên tool không tồn tại: {sel.tool_name}", "❌"
+                q["tool_used"], q["answer_tools"], q["check"] = None, f"LLM trả tên tool không tồn tại: {sel.tool_name}", "❌"
                 continue
 
             try:
@@ -199,6 +214,7 @@ def _verify_bai_tap_with_tools(generated_exam: list, retriever, llm_client: LLMC
 # thêm 2 trường answer-tools và check vào json đề kiểm tra 
 def _update_exam_json_with_tool_check(generated_exam: list) -> None:
     """Lấy file exam_*.json mới nhất trong TEST_EXAM_PROMPT_PATH, ghi answer_tools + check theo id."""
+    print(f"---------------------- hàm thêm 2 trường check và answer_tools --------------------- \n")
     files = sorted(TEST_EXAM_PROMPT_PATH.glob("exam_*.json"))
     if not files:
         print("  ⚠ không tìm thấy file exam_*.json để cập nhật")
@@ -220,13 +236,14 @@ def _update_exam_json_with_tool_check(generated_exam: list) -> None:
     path.write_text(json.dumps(exam_on_disk, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f">>> đã cập nhật {updated}/{len(exam_on_disk)} câu vào {path.name}")
 
-
 # ── Node chính ─────────────────────────────────────────────────────────────────
 MAX_RETRY = 2   # tối đa 2 lần quay lại sinh bù, tránh loop vô hạn nếu LLM cứ lỗi mãi
 
 
 def evaluate_exam(state: ExamState, llm_client: LLMClient, retriever) -> dict:
     print(" ------------------------------ file evaluate_exam ------------------------------\n"*2)
+
+
 
     if state.get("evaluate_done", False):
         return {}
@@ -238,7 +255,7 @@ def evaluate_exam(state: ExamState, llm_client: LLMClient, retriever) -> dict:
     for q in generated_exam:
         if q.get("type") == "bai_tap":
             print(f"id={q['id']} | tool={q.get('tool_used')} | answer_tools={q.get('answer_tools')} | "
-                f"answer_LLM={q.get('answer')}={q['options'].get(q.get('answer'))} | mapping={q.get('mapping')}")
+                    f"answer_LLM={q.get('answer')}={q['options'].get(q.get('answer'))} | check={q.get('check')}")
 
     # 1. Schema check
     for q in generated_exam:
@@ -276,9 +293,9 @@ def evaluate_exam(state: ExamState, llm_client: LLMClient, retriever) -> dict:
 
     n_invalid    = len(regenerate_ids)
     n_bai_tap    = sum(1 for q in generated_exam if q.get("type") == "bai_tap")
-    n_ok    = sum(1 for q in generated_exam if q.get("mapping") == "✅")
-    n_wrong = sum(1 for q in generated_exam if q.get("mapping") == "❌")
-    n_na    = sum(1 for q in generated_exam if q.get("mapping") == "N/A")
+    n_ok    = sum(1 for q in generated_exam if q.get("check") == "✅")
+    n_wrong = sum(1 for q in generated_exam if q.get("check") == "❌")
+    n_na    = sum(1 for q in generated_exam if q.get("check") == "N/A")
 
     summary = (
         f"✅ Kiểm tra hoàn tất.\n"

@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Câu sau có phải là mệnh đề không và nếu có, xác định tính đúng sai: \"2+2=4\".",
+    "options": {
+      "A": "Là mệnh đề và đúng",
+      "B": "Là mệnh đề và sai",
+      "C": "Không phải là mệnh đề",
+      "D": "Không xác định"
+    },
+    "answer": "A",
+    "giai_thich": "Theo định nghĩa, mệnh đề là phát biểu có giá trị đúng hoặc sai. \"2+2=4\" là một phát biểu có giá trị đúng, vì phép cộng 2+2 cho kết quả 4. Do đó câu này là mệnh đề và đúng, nên đáp án A là đúng.",
+    "y_tuong": "Kiểm tra tính chất mệnh đề và xác định đúng sai của câu cho trước.",
+    "answer_tools": "",
+    "check": ""
+  },
+  {
+    "id": 2,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề phủ định",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Viết phủ định của mệnh đề P: \"a > 0\" (a là số thực).",
+    "options": {
+      "A": "a < 0",
+      "B": "a \\le 0",
+      "C": "a \\ge 0",
+      "D": "a \\neq 0"
+    },
+    "answer": "B",
+    "giai_thich": "Phủ định của \"a > 0\" là \"a \\le 0\" vì phủ định phải bao gồm mọi trường hợp mà P không đúng, tức là a không lớn hơn 0, nghĩa là a bằng 0 hoặc a nhỏ hơn 0. Do đó đáp án B là đúng.",
+    "y_tuong": "Viết phủ định của một mệnh đề bất đẳng thức đơn.",
+    "answer_tools": "",
+    "check": ""
+  },
+  {
+    "id": 3,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Một số tập con của tập hợp số thực",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho tập A = {x \\in \\mathbb{R}\\mid 0 \\le x \\le 1}. Tập A có phải là tập con của tập số thực \\mathbb{R} không?",
+    "options": {
+      "A": "Có",
+      "B": "Không",
+      "C": "Không xác định vì chứa ký hiệu điều kiện",
+      "D": "Sai, vì A chứa các phần tử không thuộc \\mathbb{R}"
+    },
+    "answer": "A",
+    "giai_thich": "Tập \\mathbb{R} chứa tất cả các số thực. Mỗi phần tử x của A thỏa mãn 0 \\le x \\le 1, do đó x là số thực. Vì mọi phần tử của A đều thuộc \\mathbb{R}, A \\subset \\mathbb{R}. Vì vậy đáp án A là đúng.",
+    "y_tuong": "Xác định tính chất tập con của một tập được mô tả bằng điều kiện.",
+    "answer_tools": "",
+    "check": ""
+  },
+  {
+    "id": 4,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp, phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho A = {1,2,3,4,5} và B = {3,4,6}. Tính hiệu A \\setminus B và diễn giải kết quả bằng lời.",
+    "options": {
+      "A": "{1,2,5}",
+      "B": "{3,4}",
+      "C": "{1,2,3,4,5,6}",
+      "D": "{6}"
+    },
+    "answer": "A",
+    "giai_thich": "Hiệu A \\setminus B gồm các phần tử thuộc A mà không thuộc B. Kiểm tra từng phần tử của A: 1 \\notin B, 2 \\notin B, 3 \\in B (bỏ), 4 \\in B (bỏ), 5 \\notin B. Do đó A \\setminus B = {1,2,5}. Các đáp án B, C, D là các lỗi thường gặp: B là giao, C là hợp, D là phần tử duy nhất của B không thuộc A. Vì vậy đáp án A là đúng.",
+    "y_tuong": "Tính hiệu hai tập hợp và nêu ý nghĩa của kết quả.",
+    "answer_tools": "",
+    "check": "❌"
+  },
+  {
+    "id": 5,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp, phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong vũ trụ U = {1,2,3,4,5,6}, cho tập con A = {2,4,6}. Xác định phần bù A^{c} của A trong U và giải thích ý nghĩa của nó.",
+    "options": {
+      "A": "{1,3,5}",
+      "B": "{2,4,6}",
+      "C": "{1,2,3,4,5,6}",
+      "D": "\\emptyset"
+    },
+    "answer": "A",
+    "giai_thich": "Phần bù A^{c} = U \\setminus A, tức là các phần tử của U không thuộc A. Loại bỏ 2,4,6 khỏi U, còn lại {1,3,5}. Vì vậy A^{c} = {1,3,5}. Các đáp án sai: B là chính A, C là toàn bộ vũ trụ, D là tập rỗng. Đáp án A là đúng.",
+    "y_tuong": "Tính phần bù của một tập con trong vũ trụ cho trước.",
+    "answer_tools": "",
+    "check": "❌"
+  },
+  {
+    "id": 6,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Xét câu: “Mọi số nguyên dương đều lớn hơn 0.” Hãy xác định câu này có phải là mệnh đề hay không và nếu đúng, giá trị đúng/sai của nó là gì?",
+    "options": {
+      "A": "Là mệnh đề đúng",
+      "B": "Là mệnh đề sai",
+      "C": "Không phải mệnh đề",
+      "D": "Câu không xác định"
+    },
+    "answer": "A",
+    "giai_thich": "Câu phát biểu “Mọi số nguyên dương đều lớn hơn 0” khẳng định một tính chất của mọi số nguyên dương, do đó nó là một câu có giá trị đúng hoặc sai, tức là một mệnh đề. Vì mỗi số nguyên dương (1,2,3,…) luôn lớn hơn 0, nên phát biểu này luôn đúng. Vì vậy đáp án đúng là A – là mệnh đề đúng.",
+    "y_tuong": "Xác định tính chất mệnh đề và giá trị đúng/sai của câu cho trước.",
+    "answer_tools": "",
+    "check": ""
+  },
+  {
+    "id": 7,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề phủ định",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho mệnh đề p: “Tất cả các số chẵn đều chia hết cho 4.” Viết phủ định ¬p và xác định tính đúng/sai của ¬p.",
+    "options": {
+      "A": "¬p: “Mọi số chẵn đều không chia hết cho 4”.",
+      "B": "¬p: “Có ít nhất một số chẵn không chia hết cho 4”.",
+      "C": "¬p: “Không có số chẵn nào chia hết cho 4”.",
+      "D": "¬p: “Tất cả số chẵn chia hết cho 4”."
+    },
+    "answer": "B",
+    "giai_thich": "Mệnh đề p là sai vì ví dụ 2 là số chẵn nhưng không chia hết cho 4. Phủ định của p theo quy tắc ¬(∀x P(x)) ≡ ∃x ¬P(x) là: “Có ít nhất một số chẵn không chia hết cho 4”. Đối với ví dụ x=2, phủ định này đúng. Do đó đáp án B là đúng, các đáp án còn lại là các diễn đạt sai của phủ định.",
+    "y_tuong": "Viết phủ định của một mệnh đề và xác định tính đúng/sai của phủ định.",
+    "answer_tools": "",
+    "check": ""
+  },
+  {
+    "id": 8,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề đảo. Hai mệnh đề tương đương",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho mệnh đề: “Nếu x là số nguyên chẵn thì x^2 là số chẵn.” Xác định mệnh đề đảo (phản đề) của nó và cho biết hai mệnh đề có tương đương hay không.",
+    "options": {
+      "A": "Phản đề: “Nếu x^2 không chẵn thì x không chẵn”. Hai mệnh đề tương đương.",
+      "B": "Phản đề: “Nếu x không chẵn thì x^2 không chẵn”. Hai mệnh đề không tương đương.",
+      "C": "Phản đề: “Nếu x^2 chẵn thì x chẵn”. Hai mệnh đề không tương đương.",
+      "D": "Không có phản đề cho mệnh đề đã cho."
+    },
+    "answer": "A",
+    "giai_thich": "Mệnh đề dạng p→q với p: “x là số nguyên chẵn”, q: “x^2 là số chẵn”. Phản đề (đảo) là ¬q→¬p, tức “Nếu x^2 không chẵn thì x không chẵn”. Đối với số nguyên, nếu x^2 là lẻ thì x cũng lẻ, nên phản đề đúng và đồng thời tương đương với mệnh đề gốc (p↔q). Vì vậy đáp án A là đúng; các đáp án B, C, D đều sai.",
+    "y_tuong": "Xác định mệnh đề đảo và kiểm tra tính tương đương giữa chúng.",
+    "answer_tools": "",
+    "check": ""
+  },
+  {
+    "id": 9,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho A={1,3,5,7} và B={5,6}. (a) Viết biểu thức hiệu A\\B và liệt kê các phần tử của A\\B. (b) Đánh giá tính đúng sai của phát biểu: “5 thuộc A\\B”.",
+    "options": {
+      "A": "A\\B={1,3,7}, 5 ∈ A\\B (đúng)",
+      "B": "A\\B={1,3,5,7}, 5 ∈ A\\B (đúng)",
+      "C": "A\\B={1,3,7}, 5 ∉ A\\B (đúng)",
+      "D": "A\\B={5}, 5 ∈ A\\B (đúng)"
+    },
+    "answer": "C",
+    "giai_thich": "Hiệu A\\B gồm các phần tử thuộc A nhưng không thuộc B. Từ A={1,3,5,7} và B={5,6} ta loại bỏ 5 (có trong B), được A\\B={1,3,7}. Vì 5 đã bị loại, nên phát biểu “5 thuộc A\\B” là sai. Do đó đáp án C (A\\B={1,3,7}, 5 ∉ A\\B) là đúng. Các đáp án A, B, D đưa ra kết quả sai về tập hiệu hoặc về thuộc tính của 5.",
+    "y_tuong": "Cho hai tập hợp, viết hiệu, mô tả phần tử và kiểm tra một phát biểu liên quan đến hiệu.",
+    "answer_tools": "",
+    "check": "❌"
+  },
+  {
+    "id": 10,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong không gian mẫu U={1,2,3,4,5,6} và tập con A={1,2,3}, (a) Viết phần bù A^c và (b) Tính số phần tử của A^c. Sau đó, xác định tính đúng sai của câu: “A^c có 3 phần tử”.",
+    "options": {
+      "A": "A^c={4,5,6}, |A^c|=3 (đúng)",
+      "B": "A^c={1,2,3}, |A^c|=3 (sai)",
+      "C": "A^c={4,5}, |A^c|=2 (sai)",
+      "D": "A^c={4,5,6,7}, |A^c|=4 (sai)"
+    },
+    "answer": "A",
+    "giai_thich": "Phần bù A^c gồm các phần tử của U không thuộc A. Với U={1,2,3,4,5,6} và A={1,2,3}, ta có A^c={4,5,6}. Số phần tử |A^c|=3, nên câu “A^c có 3 phần tử” là đúng. Do đó đáp án A là đúng; các đáp án còn lại đưa ra tập bù hoặc số phần tử sai.",
+    "y_tuong": "Xác định phần bù của một tập con, tính số phần tử và kiểm tra một phát biểu về phần bù.",
+    "answer_tools": "",
+    "check": "❌"
+  }
+]

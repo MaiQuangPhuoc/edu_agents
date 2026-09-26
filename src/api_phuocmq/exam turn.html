@@ -1,0 +1,12 @@
+<div class="flex justify-end">
+  <div class="bg-blue-600 text-white rounded-lg px-3 py-2 text-sm max-w-[80%]">{{ user_message }}</div>
+</div>
+<div class="flex justify-start">
+  <div class="bg-slate-100 rounded-lg px-3 py-2 text-sm max-w-[80%] whitespace-pre-wrap">{{ ai_message }}</div>
+</div>
+
+{% if evaluate_done and final_exam %}
+<div id="exam-panel" hx-swap-oob="true">
+  {% include "_exam_result.html" %}
+</div>
+{% endif %}

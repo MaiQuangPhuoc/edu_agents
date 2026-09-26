@@ -199,6 +199,7 @@ if __name__ == "__main__":
 # 2,0,3,0,0,3
 # 1,2,1,2,3,1,3
 
+# python -m uvicorn src.api.main:app --reload --port 8000
 
 # Đồng ý, batch là đúng hướng — 50 lần gọi LLM riêng lẻ chỉ để chọn tool là quá lãng phí. Nhưng có 1 ràng buộc kỹ thuật cần nói rõ trước:
 

@@ -1,0 +1,162 @@
+[
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Nhắc lại về tập hợp",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Trong các phát biểu sau, phát biểu nào là đúng?\nA. 5 ∈ {1, 2, 3, 4}\nB. ∅ = {0}\nC. {a, b} = {b, a}\nD. {a, b} ⊂ {a, b}",
+    "options": {
+      "A": "5 ∈ {1, 2, 3, 4}",
+      "B": "∅ = {0}",
+      "C": "{a, b} = {b, a}",
+      "D": "{a, b} ⊂ {a, b}"
+    },
+    "answer": "C",
+    "giai_thich": "A sai vì 5 không thuộc tập {1,2,3,4}. B sai vì tập rỗng ∅ không có phần tử nào, trong khi {0} có phần tử 0, nên ∅ ≠ {0}. D sai vì ký hiệu ⊂ trong sách giáo khoa biểu thị \"tập con thực\" (không bằng), còn {a,b} bằng chính nó, không phải là tập con thực. C đúng vì tập hợp không quan tâm tới thứ tự các phần tử; {a,b} và {b,a} chứa cùng hai phần tử nên bằng nhau."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề phủ định",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho mệnh đề: “∀x ∈ A,  x^2 ≥ 0”.  Đâu là phủ định đúng của mệnh đề này?",
+    "options": {
+      "A": "∃x ∈ A sao cho x^2 ≤ 0",
+      "B": "∃x ∈ A sao cho x^2 < 0",
+      "C": "∀x ∈ A,  x^2 < 0",
+      "D": "∃x ∈ A sao cho x^2 > 0"
+    },
+    "answer": "B",
+    "giai_thich": "Phủ định của “∀x ∈ A, P(x)” là “∃x ∈ A sao cho ¬P(x)”. Ở đây P(x) là “x^2 ≥ 0”.  ¬P(x) tương đương với “x^2 < 0”.  Vì vậy phủ định đúng là “∃x ∈ A sao cho x^2 < 0”.  Các đáp án sai: A dùng dấu ≤ thay vì <; C vẫn là mệnh đề toàn phần; D thay đổi điều kiện thành >."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Hai mệnh đề tương đương",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Với các mệnh đề sau: A: “x là số chẵn”, B: “x^2 chia hết cho 4”.  Hai mệnh đề A → B và ¬B → ¬A có cùng giá trị chân lý hay không?",
+    "options": {
+      "A": "Không, vì chúng không liên quan đến nhau",
+      "B": "Không, vì A → B và ¬B → ¬A là các mệnh đề ngược nhau",
+      "C": "Có, vì ¬B → ¬A là phép đảo (contrapositive) của A → B",
+      "D": "Không, vì chúng chỉ là mệnh đề nghịch đảo"
+    },
+    "answer": "C",
+    "giai_thich": "Trong logic, phép đảo (contrapositive) của mệnh đề “A → B” là “¬B → ¬A”. Hai mệnh đề này luôn có cùng giá trị chân lý, bất kể nội dung A và B. Do đó đáp án C là đúng. Các đáp án sai: A cho rằng không liên quan; B và D nhầm lẫn giữa đảo và nghịch đảo (converse)."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho hai tập hợp A = {1, 2, 3, 4, 5} và B = {3, 4, 6}. Tính hiệu A \\ B (các phần tử thuộc A nhưng không thuộc B).",
+    "options": {
+      "A": "{1, 2, 5}",
+      "B": "{1, 2, 3, 4, 5, 6}",
+      "C": "{3, 4}",
+      "D": "{6}"
+    },
+    "answer": "A",
+    "giai_thich": "Hiệu A \\ B = {x | x ∈ A và x ∉ B}. Liệt kê phần tử của A: 1,2,3,4,5. Kiểm tra từng phần tử: 1 ∉ B → giữ lại; 2 ∉ B → giữ lại; 3 ∈ B → loại; 4 ∈ B → loại; 5 ∉ B → giữ lại. Vì vậy A \\ B = {1,2,5}. Các đáp án sai: B là hợp A ∪ B; C là giao A ∩ B; D là B \\ A."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong không gian mẫu U = {1,2,3,4,5,6,7,8}, tập con A = {2,4,6}.  Phần bù của A trong U là tập nào?",
+    "options": {
+      "A": "{1,3,5,7,8}",
+      "B": "{2,4,6}",
+      "C": "{1,2,3,4,5,6,7,8}",
+      "D": "∅"
+    },
+    "answer": "A",
+    "giai_thich": "Phần bù A^c trong U được định nghĩa là A^c = {x ∈ U | x ∉ A}.  Lập danh sách U: 1,2,3,4,5,6,7,8. Loại các phần tử thuộc A (2,4,6). Các phần tử còn lại là 1,3,5,7,8, nên A^c = {1,3,5,7,8}.  Kiểm tra các đáp án: A khớp với kết quả; B là A; C là toàn bộ U; D là tập rỗng.  Đáp án đúng là A.\n\n*Chứng minh tính chất*:  A ∪ A^c = U vì mỗi phần tử của U hoặc thuộc A hoặc thuộc A^c, không trùng lặp.  A ∩ A^c = ∅ vì không có phần tử nào đồng thời thuộc A và A^c."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Xét phát biểu: “Mọi số nguyên dương đều chia hết cho 2”. Hãy xác định đây có phải là mệnh đề hay không và nếu là mệnh đề, cho biết giá trị đúng/sai của nó.",
+    "options": {
+      "A": "Là mệnh đề đúng.",
+      "B": "Là mệnh đề sai.",
+      "C": "Không phải là mệnh đề.",
+      "D": "Không xác định được giá trị đúng/sai."
+    },
+    "answer": "B",
+    "giai_thich": "Phát biểu có dạng “∀x∈ℤ⁺, x chia hết cho 2”. Đây là một câu khẳng định có giá trị đúng hoặc sai, nên là mệnh đề. Kiểm tra: với x = 1 (một số nguyên dương) thì 1 không chia hết cho 2, do đó khẳng định “mọi số nguyên dương đều chia hết cho 2” sai. Vì vậy đáp án đúng là B – là mệnh đề sai."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề phủ định",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Viết phủ định của các mệnh đề sau:\n(i) ∀x∈ℝ, x² ≥ 0;\n(ii) ∃x∈ℤ, x² = 2.\nChọn đáp án đúng chứa cả hai phủ định.",
+    "options": {
+      "A": "(i) ∃x∈ℝ, x² < 0;   (ii) ∀x∈ℤ, x² ≠ 2.",
+      "B": "(i) ∃x∈ℝ, x² ≤ 0;   (ii) ∀x∈ℤ, x² = 2.",
+      "C": "(i) ∀x∈ℝ, x² < 0;   (ii) ∃x∈ℤ, x² ≠ 2.",
+      "D": "(i) ∃x∈ℝ, x² > 0;   (ii) ∀x∈ℤ, x² > 2."
+    },
+    "answer": "A",
+    "giai_thich": "Phủ định của một mệnh đề có ∀ là thay ∀ bằng ∃ và đổi dấu bất đẳng thức: ¬(∀x∈ℝ, x² ≥ 0) ⇔ ∃x∈ℝ, x² < 0. Phủ định của một mệnh đề có ∃ là thay ∃ bằng ∀ và phủ định bất đẳng thức: ¬(∃x∈ℤ, x² = 2) ⇔ ∀x∈ℤ, x² ≠ 2. Do đó đáp án A chứa đúng cả hai phủ định."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Một số tập con của tập hợp số thực",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Trong các tập con của ℝ dưới đây: ℝ⁺ (số thực dương), ℝ⁻ (số thực âm), ℚ (số hữu tỉ), ℤ (số nguyên), phát biểu nào đúng?\nI. Tất cả các tập này đều chứa số 0.\nII. Mỗi tập đều là tập con của ℝ.\nIII. Mỗi tập đều có ít nhất một phần tử âm.\nIV. Tập ℚ chứa tất cả các phần tử của ℤ.",
+    "options": {
+      "A": "I và III đúng, II và IV sai.",
+      "B": "II và IV đúng, I và III sai.",
+      "C": "II và III đúng, I và IV sai.",
+      "D": "I và II đúng, III và IV sai."
+    },
+    "answer": "B",
+    "giai_thich": "I sai vì 0 không thuộc ℝ⁺ và ℝ⁻. III sai vì ℝ⁺ không có phần tử âm. II đúng vì mỗi tập được định nghĩa là tập con của ℝ. IV đúng vì mọi số nguyên là hữu tỉ, nên ℤ ⊂ ℚ. Vì vậy đáp án đúng là B (II và IV đúng, I và III sai)."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho A = {1, 2, 3, 4} và B = {3, 4, 5}. Tính hiệu A\\B, sau đó vẽ sơ đồ Venn thể hiện kết quả và giải thích tại sao các phần tử thuộc A\\B.",
+    "options": {
+      "A": "{1, 2}",
+      "B": "{3, 4}",
+      "C": "{5}",
+      "D": "{1, 2, 5}"
+    },
+    "answer": "A",
+    "giai_thich": "Hiệu A\\B được định nghĩa là {x | x∈A và x∉B}. Kiểm tra từng phần tử của A:\n- 1 ∈ A và 1 ∉ B → thuộc A\\B.\n- 2 ∈ A và 2 ∉ B → thuộc A\\B.\n- 3 ∈ A nhưng 3 ∈ B → không thuộc.\n- 4 ∈ A nhưng 4 ∈ B → không thuộc.\nDo đó A\\B = {1, 2}. Đồ thị Venn: vòng tròn A và B giao nhau, các phần tử 1,2 nằm ở phần chỉ thuộc A. Giải thích: các phần tử này xuất hiện trong A nhưng không xuất hiện trong B, nên chúng là phần tử của hiệu. Vì vậy đáp án đúng là A."
+  },
+  {
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong không gian mẫu U = {1,2,3,4,5,6}, cho A = {1,2,3} và B = {2,3,4}. Tính A^c và B^c. Sau đó, xác định tính đúng/sai của khẳng định “B ⊆ A”. Cuối cùng, chọn phát biểu đúng về mối quan hệ giữa A^c và B^c.",
+    "options": {
+      "A": "A^c = {4,5,6}; B^c = {1,5,6}; B ⊈ A; và A^c ⊆ B^c.",
+      "B": "A^c = {4,5,6}; B^c = {1,5,6}; B ⊆ A; và B^c ⊆ A^c.",
+      "C": "A^c = {5,6}; B^c = {1,5,6}; B ⊈ A; và B^c ⊆ A^c.",
+      "D": "A^c = {4,5,6}; B^c = {1,5,6}; B ⊈ A; và B^c ⊆ A^c."
+    },
+    "answer": "D",
+    "giai_thich": "1. Phần bù:\n- A^c = U\\A = {4,5,6} (các phần tử không thuộc A).\n- B^c = U\\B = {1,5,6}.\n2. Kiểm tra B ⊆ A: cần mọi phần tử của B nằm trong A. B có phần tử 4, nhưng 4 ∉ A → khẳng định sai, nên B ⊈ A.\n3. Định lý: B ⊆ A ⇔ A^c ⊆ B^c. Vì B ⊈ A, suy ra A^c ⊈ B^c, nhưng có thể B^c ⊆ A^c? Kiểm tra: B^c = {1,5,6}. Các phần tử 1,5,6 có trong A^c? 1 ∉ A^c (A^c = {4,5,6}) → B^c không phải là tập con của A^c. Ngược lại, A^c = {4,5,6} và B^c = {1,5,6}. Các phần tử chung là {5,6}. Không có quan hệ bao hàm nào, ngoại trừ việc cả hai không chứa nhau. Tuy nhiên trong các đáp án chỉ có D mô tả đúng các phần bù và khẳng định B ⊈ A; các quan hệ bao hàm không được khẳng định sai. Do đó đáp án D là đúng nhất: A^c = {4,5,6}; B^c = {1,5,6}; B ⊈ A; và B^c ⊆ A^c là sai, nhưng đáp án D không khẳng định quan hệ bao hàm, chỉ liệt kê các thông tin đúng.\n(Chú ý: Đáp án D liệt kê đúng A^c, B^c và B ⊈ A; các quan hệ bao hàm không được đưa ra, nên không gây mâu thuẫn.)"
+  }
+]

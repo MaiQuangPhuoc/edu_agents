@@ -1,0 +1,21 @@
+<div class="flex justify-end">
+  <div class="bg-blue-600 text-white rounded-lg px-3 py-2 text-sm max-w-[80%]">{{ user_message }}</div>
+</div>
+<div class="flex justify-start">
+  <div class="bg-slate-100 rounded-lg px-3 py-2 text-sm max-w-[80%] whitespace-pre-wrap">{{ final_answer }}</div>
+</div>
+
+{% if suggestions %}
+<div class="flex flex-wrap gap-2 pl-1">
+  {% for s in suggestions %}
+  <button
+    class="text-xs border border-blue-300 text-blue-600 rounded-full px-3 py-1 hover:bg-blue-50"
+    hx-post="/chat/{{ session_id }}/message"
+    hx-target="#chat-log"
+    hx-swap="beforeend"
+    hx-vals='{"message": {{ s|tojson }}}'>
+    {{ s }}
+  </button>
+  {% endfor %}
+</div>
+{% endif %}

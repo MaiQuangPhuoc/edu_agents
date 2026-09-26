@@ -31,6 +31,7 @@ NGUYÊN TẮC BẮT BUỘC
 6. Đúng 4 đáp án A/B/C/D, KHÔNG trùng nhau, CHỈ 1 đáp án đúng.
 7. Không mâu thuẫn logic: câu hỏi và đáp án nhất quán, đủ dữ kiện để suy ra đáp án.
 8. Sinh đúng {so_cau} câu — không thiếu, không thừa, id khớp đủ và đúng với đặc tả.
+9. answer phải được dựa vào phần giải thích sau đó suy luận rồi mới chọn đáp án cho trường answer
 
 KIỂM TRA TRƯỚC KHI TRẢ VỀ
 - answer có khớp đáp án đúng thực sự trong options không?

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}EDUAGENT{% endblock %}</title>
+  <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen">
+  <header class="bg-white border-b px-6 py-4 flex items-center justify-between">
+    <a href="/" class="font-semibold text-lg">🎓 EDUAGENT</a>
+    <nav class="space-x-4 text-sm">
+      <a href="/chat" class="hover:text-blue-600">Hỏi đáp</a>
+      <a href="/exam" class="hover:text-blue-600">Tạo đề</a>
+    </nav>
+  </header>
+  <main class="max-w-3xl mx-auto p-6">
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>
