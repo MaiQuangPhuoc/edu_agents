@@ -37,7 +37,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="EDUAGENT API", lifespan=lifespan)
 app.state.templates = templates
 
-from src.api.routers import exam, chat, ui   # noqa: E402 (import sau khi app đã định nghĩa, tránh vòng lặp import)
+from src.api_phuocmq.routers import exam, chat, ui   # noqa: E402 (import sau khi app đã định nghĩa, tránh vòng lặp import)
 app.include_router(exam.router)
 app.include_router(chat.router)
 app.include_router(ui.router)

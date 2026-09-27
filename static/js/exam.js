@@ -56,6 +56,7 @@ async function submitExam() {
   data.detail.forEach(d => detailById[d.id] = d);
 
   document.getElementById("submit-bar").style.display = "none";
+  document.getElementById("page-title").style.display = "inline-block";
   const badge = document.getElementById("score-badge");
   badge.style.display = "inline-block";
   badge.innerText = `${data.score}/${data.total} điểm`;

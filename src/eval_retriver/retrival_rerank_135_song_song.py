@@ -14,16 +14,53 @@ from src.clients.embedding import embeddings_qa
 from src.modules.rag.process_toan_10.retrievers2 import VectorStoreRetriever
 
 INPUT_PATH = Path(r"D:/VKU/Nam_3/thuc_tap_doanh_nghiep_he_eSTI/EDUAGENT/src/modules/documents/doc_git/books/10/chunk/tools/queries_test_tools_x5_50.md")
-OUTPUT_PATH = INPUT_PATH.with_name(INPUT_PATH.stem + "_result_retrival_tool_run_song_tuan_tu_50.md")
+OUTPUT_PATH = INPUT_PATH.with_name(INPUT_PATH.stem + "_result_retrival_tool_run_song_song.md")
+
+
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
 
 TOP_K = 5
 BATCH_SIZE = 5
+
 from datetime import datetime
-import time
+import time 
+
+
 
 SUBJECT_FILTER = "Toán 10"
  
- 
+
+def process_query(idx, item, retriever):
+    query_text = item["query_text"]
+    query_text = query_text.split(')', 1)[1].strip()
+
+    try:
+        docs = retriever.hybrid_search_tools(query_text, k=15)
+        docs = filter_by_subject(docs, SUBJECT_FILTER)
+        top_docs = retriever.rerank(query_text, docs, top_k=TOP_K)
+
+        section = [
+            f"## Query {idx}",
+            f"**Full:** {item['full_line']}",
+            ""
+        ]
+
+        if not top_docs:
+            section.append("_Không tìm được chunk nào._\n")
+        else:
+            for rank, doc in enumerate(top_docs, start=1):
+                section.append(format_chunk_md(rank, doc))
+
+        return idx, "\n".join(section)
+
+    except Exception as e:
+        return idx, "\n".join([
+            f"## Query {idx}",
+            f"**Full:** {item['full_line']}",
+            "",
+            f"_LOI: {e}_\n"
+        ])
  
 def filter_by_subject(docs: list, subject: str) -> list:
     """Chỉ giữ chunk có metadata['subject'] == subject."""
@@ -88,6 +125,7 @@ def main():
         top_k=10,
     )
 
+    # Xóa file cũ
     OUTPUT_PATH.write_text("", encoding="utf-8")
 
     # =========================
@@ -105,81 +143,37 @@ def main():
             f"| Start: {batch_begin_dt.strftime('%H:%M:%S')} ==="
         )
 
-        out_parts = []
+        out_parts = [None] * len(batch)
 
-        for offset, item in enumerate(batch):
+        with ThreadPoolExecutor(max_workers=3) as executor:
 
-            i = batch_start + offset + 1
+            futures = {
+                executor.submit(
+                    process_query,
+                    batch_start + offset + 1,
+                    item,
+                    retriever
+                ): offset
+                for offset, item in enumerate(batch)
+            }
 
-            query_text = item["query_text"]
-            query_text = query_text.split(")", 1)[1].strip()
+            for future in as_completed(futures):
 
-            print(
-                f"[{i}/{len(items)}] Retrieving: {query_text[:60]}..."
-            )
+                offset = futures[future]
 
-            try:
+                try:
+                    idx, result = future.result()
 
-                docs = retriever.hybrid_search_tools(
-                    query_text,
-                    k=15
-                )
+                    out_parts[offset] = result
 
-                docs = filter_by_subject(
-                    docs,
-                    SUBJECT_FILTER
-                )
-
-                top_docs = retriever.rerank(
-                    query_text,
-                    docs,
-                    top_k=TOP_K
-                )
-
-            except Exception as e:
-
-                print(
-                    f"  Lỗi query {i}: {e}"
-                )
-
-                section = [
-                    f"## Query {i}",
-                    f"**Full:** {item['full_line']}",
-                    "",
-                    f"_LOI: {e}_\n"
-                ]
-
-                out_parts.append(
-                    "\n".join(section)
-                )
-
-                continue
-
-            section = [
-                f"## Query {i}",
-                f"**Full:** {item['full_line']}",
-                ""
-            ]
-
-            if not top_docs:
-
-                section.append(
-                    "_Không tìm được chunk nào._\n"
-                )
-
-            else:
-
-                for rank, doc in enumerate(
-                    top_docs,
-                    start=1
-                ):
-                    section.append(
-                        format_chunk_md(rank, doc)
+                    print(
+                        f"[DONE] Query {idx}/{len(items)}"
                     )
 
-            out_parts.append(
-                "\n".join(section)
-            )
+                except Exception as e:
+                    print(
+                        f"[ERROR] Query {batch_start + offset + 1}: {e}"
+                    )
 
         # =========================
         # Batch finished
@@ -200,16 +194,13 @@ def main():
             f"- Duration: {batch_elapsed:.2f}s\n\n"
         )
 
-        with open(
-            OUTPUT_PATH,
-            "a",
-            encoding="utf-8"
-        ) as f:
-
+        with open(OUTPUT_PATH, "a", encoding="utf-8") as f:
             f.write(batch_header)
 
             f.write(
-                "\n\n---\n\n".join(out_parts)
+                "\n\n---\n\n".join(
+                    part for part in out_parts if part is not None
+                )
             )
 
             f.write(
@@ -222,12 +213,7 @@ def main():
     program_end_dt = datetime.now()
     program_elapsed = time.perf_counter() - program_begin
 
-    with open(
-        OUTPUT_PATH,
-        "a",
-        encoding="utf-8"
-    ) as f:
-
+    with open(OUTPUT_PATH, "a", encoding="utf-8") as f:
         f.write(
             "\n\n# SUMMARY\n\n"
             f"- Start: {program_begin_dt.strftime('%Y-%m-%d %H:%M:%S')}\n"
@@ -246,6 +232,7 @@ def main():
     print(
         f"\nĐã lưu kết quả vào {OUTPUT_PATH}"
     )
+
 
 if __name__ == "__main__":
     main()

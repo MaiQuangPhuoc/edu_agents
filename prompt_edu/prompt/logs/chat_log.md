@@ -94,3 +94,9 @@ Hệ thống: Điều kiện tự nhiên, đặc biệt là vị trí địa lý
 
 ---
 
+Người dùng: Quốc gia Văn Lang ra đời vào khoảng thời gian nào?  và Vai trò của các cuộc khởi nghĩa Bắc thuộc đối với lịch sử dân tộc là gì? (08:28:10 26/09/2026)
+
+Hệ thống: Theo thông tin từ internet, quốc gia Văn Lang được cho là ra đời vào khoảng thế kỷ VII trước Công nguyên, tức khoảng năm 208 TCN. \n\nCác cuộc khởi nghĩa trong thời kỳ Bắc thuộc có vai trò rất quan trọng đối với lịch sử dân tộc. Chúng thể hiện tinh thần yêu nước, ý chí tự chủ và khát vọng độc lập của nhân dân Việt Nam, đồng thời là những bước đệm quan trọng trong quá trình giành lại chủ quyền và xây dựng nhà nước tự chủ. Những cuộc khởi nghĩa tiêu biểu như Khởi nghĩa Hai Bà Trưng (năm 40‑43), Khởi nghĩa Phùng Hưng (khoảng 776‑794), Khởi nghĩa Khúc Thừa Dụ (năm 905), Khởi nghĩa Lam Sơn (1418‑1427) và các phong trào khác đã đánh đập các triều đại phong kiến phương Bắc, tạo ra những thời kỳ tự chủ ngắn hạn và cuối cùng dẫn đến việc lật đổ các thế lực ngoại xâm, bảo vệ nền độc lập và chủ quyền lãnh thổ của Tổ quốc. (08:29:33 26/09/2026) - Chênh lệch: 1p23s
+
+---
+

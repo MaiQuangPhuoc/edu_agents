@@ -48,3 +48,13 @@ Vì sao tác giả thường sử dụng hình ảnh giàu tính biểu tượng
 Tổng hợp
 Một văn bản nghị luận thuyết phục người đọc bằng những yếu tố nào?
 Khi phân tích một bài thơ, cần kết hợp những phương diện nào để làm rõ giá trị nội dung và nghệ thuật?
+
+
+
+# tôi cần tạo đề thi toán 10 , 10 câu trắc nghiệm trong 40 phút với mục tiêu 9 điểm để ôn thi cuối kì ,phạm vi 1 chương đầu tiên phần đại số ,chương 1 khá ,chú ý vào chương 1 , tôi xác nhận đúng
+
+ 
+# tôi cần tạo đề thi toán 10 , 10 câu trắc nghiệm trong 40 phút với mục tiêu 9 điểm để ôn thi cuối kì ,phạm vi 3 chương đầu tiên phần đại số ,chương 1 khá , chương 2 giỏi, chương 3 mức 8 điểm ,chú ý vào chương 1 và 3 , tôi xác nhận đúng
+# 1,0,2,0,2,1,0,2,0,3
+# 2,0,3,0,0,3
+# 1,2,1,2,3,1,3
