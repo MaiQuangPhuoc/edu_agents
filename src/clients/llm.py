@@ -280,7 +280,7 @@ except Exception as e:
 #     response = llm_client._llm.invoke([
 
 
-#         HumanMessage(content="Hà Nội là thủ đô của Việt Nam là mệnh đề đúng hay sai")
+#         HumanMessage(content="dùng python viết chương trình để in ra các số nguyên tố từ 3 đến 75 sau đó thêm các số đó vào 1 list bà in terminal dạng số thứ i : số nguyên đó trong list, haytx viết chương trình python")
 #     ])
 
 

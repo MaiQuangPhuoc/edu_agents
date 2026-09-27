@@ -13,12 +13,13 @@ from src.configs import env_config
 from src.clients.embedding import embeddings_qa
 from src.modules.rag.process_toan_10.retrievers2 import VectorStoreRetriever
 
-INPUT_PATH = Path(r"D:/VKU/Nam_3/thuc_tap_doanh_nghiep_he_eSTI/EDUAGENT/src/modules/documents/doc_git/books/10/chunk/tools/queries_test_tools_x5.md")
-OUTPUT_PATH = INPUT_PATH.with_name(INPUT_PATH.stem + "_result_retrival_tool1.md")
+INPUT_PATH = Path(r"D:/VKU/Nam_3/thuc_tap_doanh_nghiep_he_eSTI/EDUAGENT/src/modules/documents/doc_git/books/10/chunk/tools/queries_test_tools_x5_50.md")
+OUTPUT_PATH = INPUT_PATH.with_name(INPUT_PATH.stem + "_result_retrival_tool_run_song_tuan_tu_50.md")
 
 TOP_K = 5
-BATCH_SIZE = 20
-
+BATCH_SIZE = 5
+from datetime import datetime
+import time
 
 SUBJECT_FILTER = "Toán 10"
  
@@ -64,9 +65,20 @@ def format_chunk_md(rank: int, doc) -> str:
  
  
 def main():
+
+    # =========================
+    # Program start
+    # =========================
+    program_begin_dt = datetime.now()
+    program_begin = time.perf_counter()
+
+    print(
+        f"\nSTART: {program_begin_dt.strftime('%Y-%m-%d %H:%M:%S')}"
+    )
+
     items = load_queries(INPUT_PATH)
     print(f"Đọc được {len(items)} query từ {INPUT_PATH}")
- 
+
     retriever = VectorStoreRetriever(
         url=env_config.qdrant_url,
         api_key=env_config.qdrant_api_key,
@@ -75,44 +87,165 @@ def main():
         tools_collection_name="tools",
         top_k=10,
     )
- 
-    # Ghi đè file output rỗng trước khi bắt đầu (mode "w"), sau đó các batch sẽ append
+
     OUTPUT_PATH.write_text("", encoding="utf-8")
- 
+
+    # =========================
+    # Process batches
+    # =========================
     for batch_start in range(0, len(items), BATCH_SIZE):
+
+        batch_begin_dt = datetime.now()
+        batch_begin = time.perf_counter()
+
         batch = items[batch_start:batch_start + BATCH_SIZE]
-        print(f"\n=== Batch {batch_start + 1}-{batch_start + len(batch)}/{len(items)} ===")
- 
+
+        print(
+            f"\n=== Batch {batch_start + 1}-{batch_start + len(batch)}/{len(items)} "
+            f"| Start: {batch_begin_dt.strftime('%H:%M:%S')} ==="
+        )
+
         out_parts = []
+
         for offset, item in enumerate(batch):
+
             i = batch_start + offset + 1
+
             query_text = item["query_text"]
-            query_text = query_text.split(')', 1)[1].strip()
-            print(f"[{i}/{len(items)}] Retrieving: {query_text[:60]}...")
- 
+            query_text = query_text.split(")", 1)[1].strip()
+
+            print(
+                f"[{i}/{len(items)}] Retrieving: {query_text[:60]}..."
+            )
+
             try:
-                docs = retriever.hybrid_search_tools(query_text, k=15)
-                docs = filter_by_subject(docs, SUBJECT_FILTER)
-                top_docs = retriever.rerank(query_text, docs, top_k=TOP_K)
+
+                docs = retriever.hybrid_search_tools(
+                    query_text,
+                    k=15
+                )
+
+                docs = filter_by_subject(
+                    docs,
+                    SUBJECT_FILTER
+                )
+
+                top_docs = retriever.rerank(
+                    query_text,
+                    docs,
+                    top_k=TOP_K
+                )
+
             except Exception as e:
-                print(f"  Lỗi query {i}: {e} -> bỏ qua, giữ nguyên kết quả đã chạy")
-                section = [f"## Query {i}", f"**Full:** {item['full_line']}", "", f"_LOI: {e}_\n"]
-                out_parts.append("\n".join(section))
+
+                print(
+                    f"  Lỗi query {i}: {e}"
+                )
+
+                section = [
+                    f"## Query {i}",
+                    f"**Full:** {item['full_line']}",
+                    "",
+                    f"_LOI: {e}_\n"
+                ]
+
+                out_parts.append(
+                    "\n".join(section)
+                )
+
                 continue
- 
-            section = [f"## Query {i}", f"**Full:** {item['full_line']}", ""]
+
+            section = [
+                f"## Query {i}",
+                f"**Full:** {item['full_line']}",
+                ""
+            ]
+
             if not top_docs:
-                section.append("_Không tìm được chunk nào._\n")
+
+                section.append(
+                    "_Không tìm được chunk nào._\n"
+                )
+
             else:
-                for rank, doc in enumerate(top_docs, start=1):
-                    section.append(format_chunk_md(rank, doc))
-            out_parts.append("\n".join(section))
- 
-        # Append kết quả của batch này ngay, không đợi hết 135 câu
-        with open(OUTPUT_PATH, "a", encoding="utf-8") as f:
-            f.write("\n\n---\n\n".join(out_parts) + "\n\n---\n\n")
- 
-    print(f"\nĐã lưu kết quả vào {OUTPUT_PATH}")
+
+                for rank, doc in enumerate(
+                    top_docs,
+                    start=1
+                ):
+                    section.append(
+                        format_chunk_md(rank, doc)
+                    )
+
+            out_parts.append(
+                "\n".join(section)
+            )
+
+        # =========================
+        # Batch finished
+        # =========================
+        batch_end_dt = datetime.now()
+        batch_elapsed = time.perf_counter() - batch_begin
+
+        print(
+            f"=== Batch {batch_start + 1}-{batch_start + len(batch)}/{len(items)} "
+            f"| End: {batch_end_dt.strftime('%H:%M:%S')} "
+            f"| ({batch_elapsed:.2f}s) ==="
+        )
+
+        batch_header = (
+            f"# Batch {batch_start + 1}-{batch_start + len(batch)}\n\n"
+            f"- Start: {batch_begin_dt.strftime('%Y-%m-%d %H:%M:%S')}\n"
+            f"- End: {batch_end_dt.strftime('%Y-%m-%d %H:%M:%S')}\n"
+            f"- Duration: {batch_elapsed:.2f}s\n\n"
+        )
+
+        with open(
+            OUTPUT_PATH,
+            "a",
+            encoding="utf-8"
+        ) as f:
+
+            f.write(batch_header)
+
+            f.write(
+                "\n\n---\n\n".join(out_parts)
+            )
+
+            f.write(
+                "\n\n==================================================\n\n"
+            )
+
+    # =========================
+    # Program end
+    # =========================
+    program_end_dt = datetime.now()
+    program_elapsed = time.perf_counter() - program_begin
+
+    with open(
+        OUTPUT_PATH,
+        "a",
+        encoding="utf-8"
+    ) as f:
+
+        f.write(
+            "\n\n# SUMMARY\n\n"
+            f"- Start: {program_begin_dt.strftime('%Y-%m-%d %H:%M:%S')}\n"
+            f"- End: {program_end_dt.strftime('%Y-%m-%d %H:%M:%S')}\n"
+            f"- Duration: {program_elapsed:.2f}s\n"
+        )
+
+    print(
+        f"\nEND: {program_end_dt.strftime('%Y-%m-%d %H:%M:%S')}"
+    )
+
+    print(
+        f"TOTAL TIME: {program_elapsed:.2f}s"
+    )
+
+    print(
+        f"\nĐã lưu kết quả vào {OUTPUT_PATH}"
+    )
 
 if __name__ == "__main__":
     main()

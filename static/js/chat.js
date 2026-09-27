@@ -70,6 +70,49 @@ function quickSend(text) {
   sendMessage();
 }
 
+function cleanText(text) {
+  if (!text) return "";
+  return text.replace(/\\n/g, "\n").replace(/\n{3,}/g, "\n\n").trim();
+}
+
+function jsonToReadable(obj, depth = 0) {
+  const pad = "  ".repeat(depth);
+  if (Array.isArray(obj)) {
+    return obj.map(v => typeof v === "object"
+      ? `${pad}-\n${jsonToReadable(v, depth + 1)}` : `${pad}- ${v}`).join("\n");
+  }
+  if (obj && typeof obj === "object") {
+    return Object.entries(obj).map(([k, v]) => typeof v === "object"
+      ? `${pad}${k}:\n${jsonToReadable(v, depth + 1)}` : `${pad}${k}: ${v}`).join("\n");
+  }
+  return `${pad}${obj}`;
+}
+
+function formatSystemText(raw) {
+  let text = cleanText(raw);
+  if (text.startsWith("✅ Kiểm tra hoàn tất.")) {
+    return "Cảm ơn bạn đã kiên nhẫn, đề bài kiểm tra theo yêu cầu của bạn đã hoàn thành, chúc bạn làm tốt.";
+  }
+  text = text.replace(/```json\s*([\s\S]*?)```/g, (m, jsonStr) => {
+    try { return "\n" + jsonToReadable(JSON.parse(jsonStr)); }
+    catch (e) { return jsonStr; }
+  });
+  return cleanText(text);
+}
+
+function showTyping() {
+  const el = document.createElement("div");
+  el.className = "bubble system"; el.id = "typing-indicator";
+  el.innerHTML = `<span class="typing"><span></span><span></span><span></span></span>`;
+  document.getElementById("messages").appendChild(el);
+  el.scrollIntoView({ behavior: "smooth" });
+}
+function hideTyping() {
+  const el = document.getElementById("typing-indicator");
+  if (el) el.remove();
+}
+
+
 async function sendMessage() {
   const box = document.getElementById("input-box");
   const text = box.value.trim();
@@ -90,22 +133,30 @@ async function sendMessage() {
     ? `/api/chat/session/${currentSessionId}/message`
     : `/api/exam/session/${currentSessionId}/message`;
 
-  const res = await fetch(endpoint, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ message: text }),
-  });
-  const data = await res.json();
+  showTyping();
+  let data;
+  try {
+    const res = await fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: text }),
+    });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    data = await res.json();
+  } catch (e) {
+    hideTyping();
+    addBubble("system", "Hệ thống không phản hồi. Vui lòng gửi lại tin nhắn.");
+    return;
+  }
+  hideTyping();
 
   if (currentMode === "qa") {
-    addBubble("system", data.final_answer || "");
+    addBubble("system", formatSystemText(data.final_answer || ""));
     addSuggestions(data.suggestions);
     saveSessionMeta(currentSessionId, "qa", text.slice(0, 30));
   } else {
-    addBubble("system", data.ai_message || "");
-    if (data.flags && data.flags.evaluate_done && data.exam_id) {
-      addExamCard(data.exam_id);
-    }
+    addBubble("system", formatSystemText(data.ai_message || ""));
+    if (data.flags && data.flags.evaluate_done && data.exam_id) addExamCard(data.exam_id);
     saveSessionMeta(currentSessionId, "exam", text.slice(0, 30));
   }
 }
