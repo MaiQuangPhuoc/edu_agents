@@ -197,7 +197,7 @@ class VectorStoreRetriever:
     #     return top_docs
 
 
-    def rerank(self, query: str, docs: list, top_k: int = 3) -> list[Document]:
+    def rerank(self, query: str, docs: list, top_k: int = 3, batch_size: int = 32) -> list[Document]:
         if not docs:
             return []
 
@@ -210,20 +210,68 @@ class VectorStoreRetriever:
 
         start = time.perf_counter()
         pairs = [[query, doc.page_content] for doc in docs]
-        # scores = self._reranker.predict(pairs)
-        scores = self._reranker.predict(pairs, batch_size=1)
-        torch.cuda.empty_cache()
+        # batch_size=1 ép model chạy từng cặp 1 -> rất chậm (không tận dụng GPU).
+        # Gộp cả list pairs thành các mini-batch batch_size để GPU tính song song thật.
+        scores = self._reranker.predict(pairs, batch_size=batch_size)
         elapsed = time.perf_counter() - start
 
         ranked = sorted(zip(scores, docs), key=lambda x: x[0], reverse=True)
 
-        print(f" ========== Rerank scores -> {elapsed:.0f}s: {[round(float(s), 4) for s, _ in ranked]} ========== ")
+        print(f" ========== Rerank scores -> {elapsed:.1f}s: {[round(float(s), 4) for s, _ in ranked]} ========== ")
 
         top_docs = []
         for score, doc in ranked[:top_k]:
             doc.metadata["rerank_score"] = float(score)
             top_docs.append(doc)
         return top_docs
+
+    def rerank_batch(
+        self,
+        queries: list[str],
+        docs_list: list[list[Document]],
+        top_k: int = 3,
+        batch_size: int = 32,
+    ) -> list[list[Document]]:
+        """Rerank NHIỀU query trong 1 lần gọi predict() duy nhất.
+
+        queries: list query text.
+        docs_list: song song với queries — mỗi phần tử là list docs ứng viên của query đó.
+        Trả về: list song song — mỗi phần tử là top_k docs đã rerank cho query tương ứng.
+
+        Lý do dùng hàm này thay vì gọi rerank() từng query: CrossEncoder chạy trên 1 GPU
+        duy nhất, gọi predict() nhiều lần nhỏ lẻ (mỗi lần vài pairs) rất lãng phí do overhead
+        launch kernel/transfer dữ liệu lặp lại. Gộp hết pairs của cả batch thành 1 list lớn rồi
+        gọi predict() 1 lần giúp GPU xử lý theo mini-batch hiệu quả hơn nhiều.
+        """
+        all_pairs = []
+        pair_owner = []  # (query_index, doc) song song với all_pairs
+
+        for qi, (query, docs) in enumerate(zip(queries, docs_list)):
+            for doc in docs:
+                all_pairs.append([query, doc.page_content])
+                pair_owner.append((qi, doc))
+
+        if not all_pairs:
+            return [[] for _ in queries]
+
+        start = time.perf_counter()
+        scores = self._reranker.predict(all_pairs, batch_size=batch_size)
+        elapsed = time.perf_counter() - start
+        print(f" ========== Rerank batch: {len(all_pairs)} pairs ({len(queries)} query) -> {elapsed:.1f}s ========== ")
+
+        scored_by_query: list[list[tuple[float, Document]]] = [[] for _ in queries]
+        for score, (qi, doc) in zip(scores, pair_owner):
+            scored_by_query[qi].append((score, doc))
+
+        results = []
+        for scored in scored_by_query:
+            ranked = sorted(scored, key=lambda x: x[0], reverse=True)
+            top_docs = []
+            for score, doc in ranked[:top_k]:
+                doc.metadata["rerank_score"] = float(score)
+                top_docs.append(doc)
+            results.append(top_docs)
+        return results
 
 
     # def rerank(self, query: str, docs: list, top_k: int = 3) -> list[Document]:
@@ -244,4 +292,3 @@ class VectorStoreRetriever:
     #         doc.metadata["rerank_score"] = float(score)
     #         top_docs.append(doc)
     #     return top_docs
-    

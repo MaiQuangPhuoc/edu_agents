@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Xác định mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Xác định câu sau có phải là mệnh đề hay không và cho biết tính đúng‑sai của nó: \"Nếu a > 0 thì a^2 > 0\".",
+    "options": {
+      "A": "Là mệnh đề đúng",
+      "B": "Là mệnh đề sai",
+      "C": "Không phải mệnh đề vì có biến chưa xác định",
+      "D": "Không phải mệnh đề vì không có dấu ="
+    },
+    "answer": "A",
+    "giai_thich": "Câu \"Nếu a > 0 thì a^2 > 0\" là một câu khẳng định dạng điều kiện, có thể gán giá trị đúng hoặc sai cho mọi giá trị thực của a. Khi a > 0, a^2 luôn dương nên câu luôn đúng; vì vậy nó là một mệnh đề và giá trị của nó là đúng.",
+    "y_tuong": "Xác định tính đúng‑sai của một câu điều kiện đơn giản.",
+    "answer_tools": "",
+    "check": ""
+  },
+  {
+    "id": 2,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề phủ định",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Viết phủ định của mệnh đề: \"∀x∈ℝ, x^2 ≥ 0\" và cho biết phủ định đó đúng hay sai.",
+    "options": {
+      "A": "∃x∈ℝ, x^2 < 0",
+      "B": "∀x∈ℝ, x^2 < 0",
+      "C": "∃x∈ℝ, x^2 ≥ 0",
+      "D": "¬(∀x∈ℝ, x^2 ≥ 0)"
+    },
+    "answer": "A",
+    "giai_thich": "Phủ định của một mệnh đề toàn phần \"∀x, P(x)\" là \"∃x, ¬P(x)\". Do đó phủ định của \"∀x∈ℝ, x^2 ≥ 0\" là \"∃x∈ℝ, x^2 < 0\". Vì không tồn tại số thực nào có bình phương âm, mệnh đề phủ định là sai.",
+    "y_tuong": "Viết phủ định của mệnh đề có ký hiệu ∀ và xác định tính đúng‑sai.",
+    "answer_tools": "",
+    "check": ""
+  },
+  {
+    "id": 3,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Một số tập con của tập hợp số thực",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Trong các tập hợp sau, tập nào là tập con của ℝ?",
+    "options": {
+      "A": "(0,1)",
+      "B": "{a,b}",
+      "C": "ℝ^2",
+      "D": "{π, e, i}"
+    },
+    "answer": "A",
+    "giai_thich": "Tập (0,1) chứa mọi số thực x thỏa mãn 0 < x < 1, do đó mọi phần tử đều thuộc ℝ nên (0,1) ⊂ ℝ. Các đáp án B, C, D chứa ký hiệu không phải số thực (a,b là ký tự, ℝ^2 là các cặp số, i là số ảo) nên không phải tập con của ℝ.",
+    "y_tuong": "Kiểm tra tính là tập con của ℝ đối với các tập hợp khác nhau.",
+    "answer_tools": "",
+    "check": ""
+  },
+  {
+    "id": 4,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho A = {2,4,6,8,10} và B = {5,6,7,8,9}. Tính hiệu A\\B (các phần tử thuộc A nhưng không thuộc B).",
+    "options": {
+      "A": "{2,4,10}",
+      "B": "{5,7,9}",
+      "C": "{6,8}",
+      "D": "{2,4,5,7,9,10}"
+    },
+    "answer": "A",
+    "giai_thich": "Hiệu A\\B = {x | x∈A và x∉B}. Kiểm tra từng phần tử của A: 2∉B → giữ lại, 4∉B → giữ lại, 6∈B → bỏ, 8∈B → bỏ, 10∉B → giữ lại. Vậy A\\B = {2,4,10}. Các đáp án B, C, D là các lỗi thường gặp: B là B\\A, C là A∩B, D là (A∪B)\\(A∩B).",
+    "y_tuong": "Tính hiệu của hai tập hợp cho trước.",
+    "answer_tools": "A",
+    "check": "✅"
+  },
+  {
+    "id": 5,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong không gian mẫu U = {1,2,3,4,5,6}, nếu A = {2,4,6} thì viết phần bù của A trong U và liệt kê các phần tử.",
+    "options": {
+      "A": "{1,3,5}",
+      "B": "{2,4,6}",
+      "C": "{1,2,3,4,5,6}",
+      "D": "∅"
+    },
+    "answer": "A",
+    "giai_thich": "Phần bù A^c trong U được định nghĩa A^c = {x∈U | x∉A}. Loại bỏ các phần tử 2,4,6 khỏi U, còn lại {1,3,5}. Do đó A^c = {1,3,5}. Các đáp án B, C, D là các sai lầm thường gặp: B là A chứ không phải phần bù, C là toàn bộ không gian mẫu, D là tập rỗng (phần bù của ∅).",
+    "y_tuong": "Xác định phần bù của một tập con trong không gian mẫu cho trước.",
+    "answer_tools": "A",
+    "check": "✅"
+  },
+  {
+    "id": 6,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Nhắc lại về tập hợp",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Câu nào sau đây mô tả đúng khái niệm tập hợp?",
+    "options": {
+      "A": "Tập hợp là một tập hợp các đối tượng riêng biệt, mỗi đối tượng gọi là phần tử.",
+      "B": "Tập hợp là một dãy có thứ tự các số nguyên.",
+      "C": "Tập hợp có thể chứa các phần tử trùng nhau.",
+      "D": "Tập hợp luôn phải vô hạn."
+    },
+    "answer": "A",
+    "giai_thich": "Theo định nghĩa trong sách giáo khoa, tập hợp là một tập hợp các đối tượng (phần tử) khác nhau; không yêu cầu thứ tự, không cho phép trùng lặp và có thể hữu hạn hoặc vô hạn. Vì vậy chỉ đáp án A mô tả đúng, các đáp án B, C, D sai vì chúng vi phạm tính không thứ tự, không cho phép trùng lặp và không bắt buộc vô hạn.",
+    "y_tuong": "Nhận biết định nghĩa cơ bản của tập hợp.",
+    "answer_tools": "",
+    "check": ""
+  },
+  {
+    "id": 7,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề phủ định",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Viết mệnh đề phủ định của mệnh đề: “Nếu x > 0 thì x^2 > 0”.",
+    "options": {
+      "A": "Nếu x ≤ 0 thì x^2 ≤ 0",
+      "B": "x > 0 và x^2 ≤ 0",
+      "C": "Nếu x ≤ 0 thì x^2 > 0",
+      "D": "x ≤ 0 hoặc x^2 > 0"
+    },
+    "answer": "B",
+    "giai_thich": "Mệnh đề gốc là P → Q với P: x > 0, Q: x^2 > 0. Phủ định của P → Q là P ∧ ¬Q. Vì ¬Q là x^2 ≤ 0, nên phủ định là “x > 0 và x^2 ≤ 0”. Đáp án B đúng; các đáp án còn lại là các sai lầm thường gặp (đảo điều kiện, nhầm phép phủ định, dùng hoặc thay vì và).",
+    "y_tuong": "Viết phủ định của một mệnh đề điều kiện đơn.",
+    "answer_tools": "B",
+    "check": "✅"
+  },
+  {
+    "id": 8,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề đảo và tương đương",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho mệnh đề: “Nếu x > 2 thì x^2 > 4”. Đâu là mệnh đề đảo (converse) của nó?",
+    "options": {
+      "A": "Nếu x^2 > 4 thì x > 2",
+      "B": "Nếu x ≤ 2 thì x^2 ≤ 4",
+      "C": "Nếu x^2 ≤ 4 thì x ≤ 2",
+      "D": "Nếu x > 2 thì x^2 > 4"
+    },
+    "answer": "A",
+    "giai_thich": "Mệnh đề đảo được tạo bằng cách hoán đổi vị trí của giả thiết và kết luận: từ P → Q thành Q → P. Ở đây P: x > 2, Q: x^2 > 4, nên đảo là “Nếu x^2 > 4 thì x > 2”. Đáp án A đúng; B là mệnh đề nghịch (inverse), C là phủ định của nghịch (contrapositive), D là mệnh đề gốc.",
+    "y_tuong": "Xác định mệnh đề đảo của một mệnh đề điều kiện.",
+    "answer_tools": "",
+    "check": ""
+  },
+  {
+    "id": 9,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho A = {1,2,3,4,5} và B = {3,5,7}. Tính hiệu A\\B và số phần tử của A\\B.",
+    "options": {
+      "A": "{1,2,4}, |A\\B| = 3",
+      "B": "{3,5}, |A\\B| = 2",
+      "C": "{1,2,3,4,5}, |A\\B| = 5",
+      "D": "{7}, |A\\B| = 1"
+    },
+    "answer": "A",
+    "giai_thich": "Hiệu A\\B gồm các phần tử thuộc A mà không thuộc B. Loại bỏ 3 và 5 (có trong B) khỏi A, còn lại {1,2,4}. Đếm được 3 phần tử, nên |A\\B| = 3. Đáp án A đúng; B nhầm lấy giao, C nhầm lấy A, D nhầm lấy B\\A.",
+    "y_tuong": "Tính hiệu của hai tập hợp và đếm số phần tử.",
+    "answer_tools": "A",
+    "check": "✅"
+  },
+  {
+    "id": 10,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong không gian mẫu U = {1,2,3,4,5,6,7,8}, nếu A = {2,4,6} thì phần bù của A trong U là gì và có bao nhiêu phần tử?",
+    "options": {
+      "A": "{1,3,5,7,8}, |A^c| = 5",
+      "B": "{2,4,6}, |A^c| = 3",
+      "C": "{1,2,3,4,5,6,7,8}, |A^c| = 8",
+      "D": "∅, |A^c| = 0"
+    },
+    "answer": "A",
+    "giai_thich": "Phần bù A^c = U  A, loại bỏ các phần tử 2,4,6 khỏi U, còn lại {1,3,5,7,8}. Đếm được 5 phần tử, nên |A^c| = 5. Đáp án A đúng; B nhầm lấy A, C nhầm cho rằng phần bù bằng toàn bộ U, D nhầm cho rằng phần bù rỗng.",
+    "y_tuong": "Xác định phần bù của một tập con và đếm số phần tử.",
+    "answer_tools": "A",
+    "check": "✅"
+  }
+]

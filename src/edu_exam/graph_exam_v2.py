@@ -27,7 +27,7 @@ def create_graph(llm_client: LLMClient, retriever) -> StateGraph:
     g.add_node("build_matrix",       partial(_build_matrix,       llm_client=llm_client))
     g.add_node("build_specs",        partial(_build_specs,        llm_client=llm_client))
     g.add_node("generate_questions", partial(_generate_questions, llm_client=llm_client))
-    g.add_node("evaluate_exam", partial(_evaluate_exam, llm_client=llm_client, retriever=retriever))
+    g.add_node("evaluate_exam", partial(_evaluate_exam, llm_client=llm_client))
 
     g.set_entry_point("collect_info")
 

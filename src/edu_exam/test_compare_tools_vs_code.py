@@ -95,31 +95,25 @@ Với MỖI câu, viết code Python:
 1. Tự tính kết quả từ dữ kiện đề bài bằng phép tính thật (KHÔNG suy luận bằng lời rồi gán thẳng đáp án).
 2. BẮT BUỘC print() từng giá trị trung gian trước khi kết luận.
 3. So sánh bằng GIÁ TRỊ SỐ/TOÁN HỌC, không so chuỗi text nguyên văn của option:
-   - Nếu option chứa số/tọa độ/biểu thức: dùng regex hoặc sympy.sympify để tách số ra từ chuỗi option,
-     rồi so bằng dấu == hoặc sympy.simplify(a - b) == 0 (chấp nhận sai số nhỏ nếu là số thực).
-   - Nếu option là tọa độ/cặp giá trị (x, y): so từng thành phần riêng (vd abs(x1-x2)<1e-6 and abs(y1-y2)<1e-6),
-     KHÔNG trừ trực tiếp 2 tuple, KHÔNG so chuỗi text có bọc chữ như "I(...)" hay "Đỉnh...".
+   - Nếu option chứa số/tọa độ/biểu thức: tách số ra từ chuỗi option rồi so bằng == hoặc sympy.simplify(a-b)==0.
+   - Nếu option là tọa độ/cặp giá trị (x, y): so từng thành phần riêng, KHÔNG trừ trực tiếp 2 tuple,
+     KHÔNG so chuỗi text có bọc chữ như "I(...)" hay "Đỉnh...".
    - Nếu option là tập hợp: parse thành set/FiniteSet rồi so bằng ==, không so chuỗi.
-   - Nếu option là khoảng nghiệm/tập nghiệm bất phương trình: dựng lại đối tượng Interval/Union tương ứng
-     từ nội dung option rồi so sánh bằng == hoặc .equals() với kết quả tính được — KHÔNG tự đặt biến
-     boolean diễn giải bằng lời như "is_A (f>0 khi x<2 hoặc x>3)" rồi bỏ trống, phải thực sự so 2 object.
-   - Khi so 2 giá trị số (kể cả phân số/thập phân), LUÔN ép về float trước khi so:
-     abs(float(a) - float(b)) < 1e-6, KHÔNG dùng == trực tiếp giữa Rational và Float
-     vì có thể cho kết quả sai dù giá trị toán học bằng nhau.
+   - Nếu option là khoảng nghiệm: dựng lại Interval/Union từ option rồi so == hoặc .equals().
+   - Khi so 2 giá trị số, LUÔN ép về float trước khi so: abs(float(a) - float(b)) < 1e-6,
+     KHÔNG dùng == trực tiếp giữa Rational và Float.
 4. Gán is_A, is_B, is_C, is_D từ kết quả so sánh giá trị ở bước 3.
-5. Dòng cuối: ans = "A" if is_A else "B" if is_B else "C" if is_C else "D" if is_D else "NONE"
+5. Ngay trước khi kết luận, in ra: print("KET_QUA:", <giá trị cuối cùng đã tính được, dạng dễ đọc
+   như số, tập hợp, tọa độ — đây là giá trị THẬT, không phải chữ cái A/B/C/D>).
+6. Dòng cuối: ans = "A" if is_A else "B" if is_B else "C" if is_C else "D" if is_D else "NONE"
    print("ANSWER:", ans)
-   Chỉ NONE khi đã so sánh giá trị thật mà không khớp option nào, không phải vì định dạng lệch.
-6. Với bài toán đơn giản (bậc nhất, tuyến tính), ưu tiên tự suy luận đại số trực tiếp
-   (cộng/trừ/nhân/chia, so sánh dấu) thay vì gọi các hàm giải bất phương trình phức tạp
-   như solve_univariate_inequality — hàm này có thể báo NotImplementedError với biểu thức đơn giản.
-7. Khai báo đầy đủ MỌI biến trước khi dùng — không dùng biến chưa gán giá trị.
-8. Nếu option có NHIỀU điều kiện gộp lại (ví dụ vừa có giá trị số vừa có kết luận định tính như
-   "vuông góc", "cùng phương", "song song", "cắt nhau"...), phải kiểm tra ĐỦ TẤT CẢ các phần trong
-   option đó đều đúng thì is_X mới được True — không chỉ so đúng phần số rồi bỏ qua phần còn lại.
-   Ví dụ: option "a·b = 0, vuông góc" chỉ đúng khi CẢ 2 điều: (a·b tính được đúng bằng 0) VÀ
-   (a·b == 0 có nghĩa là vuông góc — đây là định lý cần áp dụng, không phải chỉ so số).
-Đã có sẵn: from sympy import *, biến x,y,z,t,m,n,k. Không import thêm ngoài re nếu cần xử lý chuỗi.
+   Chỉ NONE khi đã so sánh giá trị thật mà không khớp option nào.
+7. Với bài toán đơn giản, ưu tiên tự suy luận đại số trực tiếp thay vì gọi hàm giải bất phương trình phức tạp.
+8. Khai báo đầy đủ MỌI biến trước khi dùng.
+9. Nếu option có NHIỀU điều kiện gộp lại (số + kết luận định tính như "vuông góc", "cùng phương"...),
+   phải kiểm tra ĐỦ TẤT CẢ các phần đều đúng thì is_X mới True.
+
+Đã có sẵn: from sympy import *, biến x,y,z,t,m,n,k. Không import thêm ngoài re nếu cần.
 Với tập hợp dùng set/FiniteSet. Câu nhiều ý thì mọi ý phải khớp trong cùng 1 option.
 
 {questions_block}
@@ -142,6 +136,18 @@ Với MỖI câu bên dưới, code cũ đã chạy nhưng gặp lỗi hoặc ch
 
 {questions_block}
 """
+
+MAX_MISMATCH_RETRY = 2   # số lần giải bằng cách khác khi answer_code lệch answer đề
+
+DIVERSIFY_HINTS = [
+    "Hãy giải theo cách khác với lần trước: dùng phương pháp đại số trực tiếp (biến đổi tay), "
+    "không gọi các hàm giải tự động như solve()/solveset().",
+    "Hãy giải bằng cách thử trực tiếp: thay giá trị/tọa độ của TỪNG option vào điều kiện đề bài "
+    "để kiểm tra option nào thỏa mãn, thay vì tự suy luận ra kết quả trước rồi mới so.",
+    "Hãy giải lại từ đầu bằng một hướng tiếp cận khác, và kiểm tra chéo bằng ít nhất 2 cách tính "
+    "khác nhau trong cùng đoạn code trước khi kết luận.",
+]
+
 
 def _format_code_block(batch: list) -> str:
     blocks = []
@@ -167,58 +173,99 @@ def _format_fix_block(batch: list, prev_code: dict, prev_error: dict) -> str:
 
 
 def _run_code_once(batch: list, prompt: str, llm_client) -> dict:
-    """Chạy 1 lượt LLM (viết mới hoặc sửa) + chạy sandbox cho từng câu.
-    Trả về {id: {"code": str, "status": str, "answer": str|None, "error": str}}."""
-    result = llm_client.invoke_structured(CodeSolutionBatch, [{"role": "user", "content": prompt}], max_tokens=min(1200 * len(batch), 8000))
+    result = llm_client.invoke_structured(CodeSolutionBatch, [{"role": "user", "content": prompt}],
+                                           max_tokens=min(1200 * len(batch), 8000))
     by_id = {s.id: s for s in result.solutions} if result else {}
 
     out = {}
     for q in batch:
         sol = by_id.get(q["id"])
         if not sol:
-            out[q["id"]] = {"code": "", "status": "no_response", "answer": None, "error": "LLM không trả code cho câu này"}
+            out[q["id"]] = {"code": "", "status": "no_response", "answer": None, "raw_value": "",
+                             "error": "LLM không trả code cho câu này"}
             continue
 
         status, raw = run_sympy_code(sol.code)
-        m = re.search(r"ANSWER:\s*([ABCD]|NONE)", raw or "")
+        m_ans = re.findall(r"ANSWER:\s*([ABCD]|NONE)", raw or "")
+        m_val = re.findall(r"KET_QUA:\s*(.+)", raw or "")
+        answer_letter = m_ans[-1] if m_ans else None
+        raw_value = m_val[-1].strip() if m_val else ""
 
         if status != "ok":
-            out[q["id"]] = {"code": sol.code, "status": status, "answer": None, "error": raw or status}
-        elif not m or m.group(1) == "NONE":
-            out[q["id"]] = {"code": sol.code, "status": "no_answer", "answer": None,
+            out[q["id"]] = {"code": sol.code, "status": status, "answer": None, "raw_value": "", "error": raw or status}
+        elif not answer_letter or answer_letter == "NONE":
+            out[q["id"]] = {"code": sol.code, "status": "no_answer", "answer": None, "raw_value": raw_value,
                              "error": f"Code chạy được nhưng không kết luận được option (output: {raw.strip()[:300]})"}
         else:
-            out[q["id"]] = {"code": sol.code, "status": "ok", "answer": m.group(1), "error": ""}
+            out[q["id"]] = {"code": sol.code, "status": "ok", "answer": answer_letter, "raw_value": raw_value, "error": ""}
     return out
 
+def _majority_vote(letters: list) -> tuple:
+    from collections import Counter
+    counts = Counter(letters)
+    if not counts:
+        return None, {}
+    top_letter, _ = counts.most_common(1)[0]
+    return top_letter, dict(counts)
 
 def run_code_flow(batch: list, llm_client) -> dict:
     prompt = CODE_PROMPT_TEMPLATE.replace("{questions_block}", _format_code_block(batch))
     state = _run_code_once(batch, prompt, llm_client)
 
+    # ── Lượt sửa lỗi: chỉ cho câu KHÔNG ra được kết quả (lỗi/timeout/NONE) ──
     for attempt in range(MAX_FIX_RETRY):
         need_fix = [q for q in batch if state[q["id"]]["answer"] is None]
         if not need_fix:
             break
-
-        print(f"  [retry {attempt + 1}/{MAX_FIX_RETRY}] {len(need_fix)} câu cần sửa: {[q['id'] for q in need_fix]}")
-
+        print(f"  [fix {attempt + 1}/{MAX_FIX_RETRY}] {len(need_fix)} câu chưa ra kết quả: {[q['id'] for q in need_fix]}")
         prev_code  = {q["id"]: state[q["id"]]["code"] for q in need_fix}
         prev_error = {q["id"]: state[q["id"]]["error"] for q in need_fix}
         fix_prompt = FIX_PROMPT_TEMPLATE.replace("{questions_block}", _format_fix_block(need_fix, prev_code, prev_error))
+        state.update(_run_code_once(need_fix, fix_prompt, llm_client))
 
-        fixed_state = _run_code_once(need_fix, fix_prompt, llm_client)
-        state.update(fixed_state)
+    votes = {q["id"]: [] for q in batch}
+    raws  = {q["id"]: [] for q in batch}
+    for q in batch:
+        s = state[q["id"]]
+        if s["answer"] is not None:
+            votes[q["id"]].append(s["answer"])
+            raws[q["id"]].append(s.get("raw_value", ""))
+
+    # ── Lượt đa dạng hóa: chỉ cho câu ĐÃ ra kết quả nhưng LỆCH answer đề ──
+    for round_idx in range(MAX_MISMATCH_RETRY):
+        mismatched = [q for q in batch
+                      if votes[q["id"]] and q.get("answer") and votes[q["id"]][-1] != q["answer"]]
+        if not mismatched:
+            break
+        hint = DIVERSIFY_HINTS[round_idx % len(DIVERSIFY_HINTS)]
+        print(f"  [diversify {round_idx + 1}/{MAX_MISMATCH_RETRY}] {len(mismatched)} câu lệch đề, thử cách khác: {[q['id'] for q in mismatched]}")
+        div_prompt = CODE_PROMPT_TEMPLATE.replace("{questions_block}", _format_code_block(mismatched)) + f"\n\nYêu cầu thêm: {hint}"
+        div_state = _run_code_once(mismatched, div_prompt, llm_client)
+        for q in mismatched:
+            s = div_state[q["id"]]
+            if s["answer"] is not None:
+                votes[q["id"]].append(s["answer"])
+                raws[q["id"]].append(s.get("raw_value", ""))
 
     out = {}
     for q in batch:
-        s = state[q["id"]]
-        if s["answer"] is None:
-            out[q["id"]] = (f"[{s['status']}] {s['error']}", "N/A")
-        elif q.get("answer"):
-            out[q["id"]] = (s["answer"], "✅" if s["answer"] == q["answer"] else "❌")
+        letters = votes[q["id"]]
+        if not letters:
+            out[q["id"]] = {"answer_code": "", "check": "N/A", "detail": "không lần nào ra kết quả hợp lệ"}
+            continue
+
+        top_letter, counts = _majority_vote(letters)
+        raw_val = raws[q["id"]][-1] if raws[q["id"]] else ""
+        total = sum(counts.values())
+
+        if not q.get("answer"):
+            out[q["id"]] = {"answer_code": raw_val, "check": "?", "detail": f"votes={counts}"}
+        elif top_letter == q["answer"]:
+            out[q["id"]] = {"answer_code": raw_val, "check": "✅", "detail": f"votes={counts}"}
+        elif counts.get(top_letter, 0) > total / 2:
+            out[q["id"]] = {"answer_code": raw_val, "check": "⚠️ nghi ngờ đề sai", "detail": f"votes={counts}"}
         else:
-            out[q["id"]] = (s["answer"], "?")
+            out[q["id"]] = {"answer_code": raw_val, "check": "N/A (không đồng thuận)", "detail": f"votes={counts}"}
     return out
 
 
@@ -234,13 +281,13 @@ def main():
         batch = questions[i:i + BATCH_SIZE]
         code_result.update(run_code_flow(batch, llm_client))
 
-    print(f"\n{'id':<4}{'đề':<8}{'CODE':<10}")
+    print(f"\n{'id':<4}{'đề':<8}{'CHECK':<24}")
     n_code_ok = 0
     for q in questions:
-        c_val, c_chk = code_result.get(q["id"], ("", "?"))
-        n_code_ok += int(c_chk == "✅")
-        print(f"{q['id']:<4}{q.get('answer',''):<8}{c_chk:<10}")
-        print(f"     code : {c_val}")
+        r = code_result.get(q["id"], {"answer_code": "", "check": "?", "detail": ""})
+        n_code_ok += int(r["check"] == "✅")
+        print(f"{q['id']:<4}{q.get('answer',''):<8}{r['check']:<24}")
+        print(f"     answer_code: {r['answer_code']}  |  {r['detail']}")
 
     print(f"\n===== TỔNG KẾT (batch={BATCH_SIZE}) =====")
     print(f"CODE : {n_code_ok}/{len(questions)} đúng")
