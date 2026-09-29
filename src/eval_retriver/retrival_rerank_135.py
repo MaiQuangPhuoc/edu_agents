@@ -17,7 +17,7 @@ INPUT_PATH = Path(r"D:/VKU/Nam_3/thuc_tap_doanh_nghiep_he_eSTI/EDUAGENT/src/modu
 OUTPUT_PATH = INPUT_PATH.with_name(INPUT_PATH.stem + "_result_retrival_tool_run_song_tuan_tu_50.md")
 
 TOP_K = 5
-BATCH_SIZE = 5
+BATCH_SIZE = 10
 from datetime import datetime
 import time
 
