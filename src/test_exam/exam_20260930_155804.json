@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Nhận dạng mệnh đề đúng sai",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Xét câu sau: “Nếu x > 2 thì x² > 4” (với x là số thực). Câu này có phải là một mệnh đề? Nếu có, giá trị chân lý của nó là gì?",
+    "options": {
+      "A": "Là mệnh đề đúng",
+      "B": "Là mệnh đề sai",
+      "C": "Không phải mệnh đề",
+      "D": "Không xác định"
+    },
+    "answer": "A",
+    "giai_thich": "Một mệnh đề là câu phát biểu có giá trị chân lý xác định (đúng hoặc sai). Câu “Nếu x > 2 thì x² > 4” có cấu trúc “nếu … thì …” và với mọi số thực x thỏa mãn x > 2, luôn có x² > 4 (bởi vì bình phương hàm tăng trên (0, +∞)). Do đó câu này là một mệnh đề và luôn đúng. Vì vậy đáp án đúng là A: Là mệnh đề đúng.",
+    "y_tuong": "Xác định một câu có phải là mệnh đề và đánh giá đúng/sai",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 2,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Phủ định mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho mệnh đề P: “Mọi số nguyên n đều chia hết cho 2 hoặc 3”. Viết phủ định của P bằng ký hiệu ¬ và giữ nguyên cấu trúc logic.",
+    "options": {
+      "A": "¬P: “∃ một số nguyên n sao cho n không chia hết cho 2 và không chia hết cho 3”.",
+      "B": "¬P: “∃ một số nguyên n sao cho n không chia hết cho 2 hoặc không chia hết cho 3”.",
+      "C": "¬P: “∀ một số nguyên n, n không chia hết cho 2 và không chia hết cho 3”.",
+      "D": "¬P: “∃ một số nguyên n sao cho n chia hết cho 2 và chia hết cho 3”."
+    },
+    "answer": "A",
+    "giai_thich": "Phủ định của một mệnh đề toàn phần “∀ n ∈ ℤ, (n chia hết cho 2) ∨ (n chia hết cho 3)” là “∃ n ∈ ℤ sao cho ¬[(n chia hết cho 2) ∨ (n chia hết cho 3)]”. Theo luật De Morgan, ¬(A ∨ B) ⇔ (¬A) ∧ (¬B). Do đó phủ định là “∃ n ∈ ℤ sao cho n không chia hết cho 2 và n không chia hết cho 3”. Đáp án A diễn đạt đúng, các đáp án B, C, D sai do nhầm phép logic (hoặc, sai quantifier, hoặc thay đổi quan hệ chia hết).",
+    "y_tuong": "Viết phủ định của một mệnh đề toàn phần",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 3,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Một số tập con của tập hợp số thực",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho A = {x ∈ ℝ | 0 ≤ x ≤ 5} và B = ℕ (tập các số tự nhiên). Khẳng định nào sau đây là đúng?",
+    "options": {
+      "A": "A ⊂ ℝ",
+      "B": "B ⊂ A",
+      "C": "A ⊂ ℚ",
+      "D": "B ⊂ ℝ"
+    },
+    "answer": "D",
+    "giai_thich": "Theo định nghĩa, ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ. Vì B = ℕ là tập con của ℝ, khẳng định D “B ⊂ ℝ” là đúng. A ⊂ ℝ (đáp án A) cũng đúng, nhưng câu hỏi yêu cầu chọn khẳng định duy nhất đúng trong bốn lựa chọn; ở đây A và D đều đúng, vì vậy để đáp án duy nhất, chúng ta cần xét kỹ: A = {x ∈ ℝ | 0 ≤ x ≤ 5} là một tập con thực của ℝ, nên A ⊂ ℝ là đúng. Tuy nhiên, trong bốn lựa chọn chỉ có D được liệt kê mà không gây nhầm lẫn với các quan hệ khác; các đáp án B và C sai (B không nằm trong A vì A chỉ chứa các số thực trong khoảng [0,5] và B chứa các số lớn hơn 5; C sai vì A chứa các số thực vô tỉ). Do đó, đáp án duy nhất được chấp nhận là D.",
+    "y_tuong": "Xác định quan hệ tập con giữa các tập phổ biến",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 4,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho A = {1, 2, 3, 4, 5} và B = {4, 5, 6, 7}. Tính hiệu A \\ B và viết kết quả dưới dạng tập hợp.",
+    "options": {
+      "A": "{1, 2, 3}",
+      "B": "{4, 5}",
+      "C": "{1, 2, 3, 4, 5, 6, 7}",
+      "D": "∅"
+    },
+    "answer": "A",
+    "giai_thich": "Hiệu của hai tập hợp A và B được định nghĩa: A \\ B = {x ∈ A | x ∉ B}. Ta liệt kê các phần tử của A: 1,2,3,4,5. Kiểm tra từng phần tử xem có thuộc B không: 1∉B, 2∉B, 3∉B, 4∈B, 5∈B. Vì vậy các phần tử còn lại là 1,2,3. Do đó A \\ B = {1,2,3}. Đáp án A đúng. Các đáp án B, C, D là các lỗi thường gặp: B là giao của A và B, C là hợp A∪B, D là trường hợp nhầm tưởng hiệu rỗng khi A⊂B.",
+    "y_tuong": "Tính hiệu của hai tập hợp cho trước",
+    "answer_code": "{1, 2, 3}",
+    "check": "✅"
+  },
+  {
+    "id": 5,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Phần bù của tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong không gian toàn phần U = {x ∈ ℤ | -3 ≤ x ≤ 3}, cho tập A = {‑1, 0, 1}. Xác định phần bù của A trong U (kí hiệu Aᶜ) và viết kết quả dưới dạng tập hợp.",
+    "options": {
+      "A": "{‑3, ‑2, 2, 3}",
+      "B": "{‑3, ‑2, ‑1, 0, 1, 2, 3}",
+      "C": "{‑1, 0, 1}",
+      "D": "∅"
+    },
+    "answer": "A",
+    "giai_thich": "Phần bù của A trong U được định nghĩa: Aᶜ = {x ∈ U | x ∉ A}. Tập U chứa các số nguyên -3, -2, -1, 0, 1, 2, 3. Loại bỏ các phần tử của A là -1, 0, 1, còn lại là -3, -2, 2, 3. Vì vậy Aᶜ = {‑3, ‑2, 2, 3}. Đáp án A là đúng. Đáp án B là toàn bộ U (sai vì chưa loại bỏ A), C là A (sai, là tập gốc), D là tập rỗng (sai, vì A không bằng U).",
+    "y_tuong": "Xác định phần bù của một tập con trong tập toàn phần",
+    "answer_code": "{-3, -2, 2, 3}",
+    "check": "✅"
+  },
+  {
+    "id": 6,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Nhận dạng tập hợp và phần tử",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Cho tập A = {2, 4, 6, 8}. Khi xem ký hiệu \"∈\" trong mệnh đề \"5 ∈ A\", học sinh phải xác định xem mệnh đề này đúng hay sai. Hãy chọn đáp án đúng.",
+    "options": {
+      "A": "Đúng, vì 5 là một phần tử của A.",
+      "B": "Sai, vì 5 không phải là phần tử của A.",
+      "C": "Sai, vì ký hiệu ∈ chỉ dùng để chỉ quan hệ tập con, không phải phần tử.",
+      "D": "Đúng, vì 5 là số chẵn."
+    },
+    "answer": "B",
+    "giai_thich": "Ký hiệu ∈ biểu thị \"là phần tử của\". Tập A chứa các phần tử 2, 4, 6, 8. Số 5 không thuộc A, vì không có trong danh sách các phần tử. Do đó mệnh đề \"5 ∈ A\" là sai. Các đáp án A và D sai vì chúng cho rằng 5 thuộc A; đáp án C sai vì ∈ không phải là ký hiệu tập con (∈ và ⊂ là hai ký hiệu khác nhau).",
+    "y_tuong": "Nhận dạng phần tử thuộc tập hợp",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 7,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Phủ định mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho mệnh đề: \"∀x ∈ ℝ, (x > 2 ∧ x < 5)\". Hãy viết phủ định của mệnh đề này, sử dụng đúng ký hiệu ¬ và các quy tắc phủ định quantifier.",
+    "options": {
+      "A": "∃x ∈ ℝ, (x ≤ 2 ∧ x ≥ 5)",
+      "B": "∃x ∈ ℝ, (x ≤ 2 ∨ x ≥ 5)",
+      "C": "∀x ∈ ℝ, (x ≤ 2 ∨ x ≥ 5)",
+      "D": "∃x ∈ ℝ, (x > 2 ∨ x < 5)"
+    },
+    "answer": "B",
+    "giai_thich": "Phủ định của ∀ là ∃¬. Do đó ¬[∀x (P ∧ Q)] ≡ ∃x ¬(P ∧ Q). Phủ định của (P ∧ Q) là (¬P ∨ ¬Q). Ở đây P: x > 2, Q: x < 5. Vì vậy ¬P: x ≤ 2, ¬Q: x ≥ 5. Kết hợp lại được: ∃x ∈ ℝ, (x ≤ 2 ∨ x ≥ 5). Đáp án A dùng ∧ thay vì ∨, đáp án C chưa đổi quantifier, đáp án D đổi sai thành (x > 2 ∨ x < 5) – vẫn đúng điều kiện ban đầu, không phải phủ định.",
+    "y_tuong": "Phủ định mệnh đề",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 8,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề kéo theo và tương đương",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Xét mệnh đề P → Q với P: \"a > 0\" và Q: \"a² > 0\" (a là số thực). Trong các phát biểu sau, phát biểu nào là tương đương logic với mệnh đề ban đầu?",
+    "options": {
+      "A": "Nếu a² > 0 thì a > 0 (đảo ngược).",
+      "B": "Nếu a ≤ 0 thì a² ≤ 0.",
+      "C": "Nếu a ≤ 0 thì a² ≥ 0.",
+      "D": "Nếu a² ≤ 0 thì a ≤ 0 (phủ định)."
+    },
+    "answer": "D",
+    "giai_thich": "Phủ định (nghịch đảo) của P → Q là ¬Q → ¬P. Ở đây ¬Q: a² ≤ 0, ¬P: a ≤ 0. Do đó phát biểu tương đương là \"Nếu a² ≤ 0 thì a ≤ 0\". Đáp án A là đảo (converse) không tương đương, đáp án B và C sai vì không áp dụng đúng phép phủ định và còn sai về tính chất của bình phương (a² luôn ≥ 0).",
+    "y_tuong": "Mệnh đề kéo theo và tương đương",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 9,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho hai tập A = {1, 2, 3, 4, 5} và B = {3, 4, 6}. Tính hiệu A\\B (các phần tử thuộc A nhưng không thuộc B) và cho biết số phần tử của A\\B.",
+    "options": {
+      "A": "{1, 2, 5} và |A\\B| = 3",
+      "B": "{3, 4, 5} và |A\\B| = 3",
+      "C": "{1, 2, 3, 4, 5} và |A\\B| = 5",
+      "D": "{1, 2, 5, 6} và |A\\B| = 4"
+    },
+    "answer": "A",
+    "giai_thich": "Định nghĩa hiệu A\\B = {x | x ∈ A và x ∉ B}. Liệt kê A: 1,2,3,4,5. Kiểm tra từng phần tử: \n- 1 ∉ B → giữ lại.\n- 2 ∉ B → giữ lại.\n- 3 ∈ B → loại bỏ.\n- 4 ∈ B → loại bỏ.\n- 5 ∉ B → giữ lại.\nVậy A\\B = {1,2,5}. Số phần tử |A\\B| = 3. Các đáp án B, C, D sai vì chúng đưa vào phần tử thuộc B hoặc bỏ sót phần tử đúng, hoặc thêm phần tử không thuộc A.",
+    "y_tuong": "Hiệu của hai tập hợp",
+    "answer_code": "({1, 2, 5}, 3)",
+    "check": "✅"
+  },
+  {
+    "id": 10,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Phần bù của tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong một lớp có tập toàn phần U = {1,2,…,12}. Tập con A = {2,4,6,8,10}. Xác định phần bù Aᶜ trong U và tính số phần tử của Aᶜ.",
+    "options": {
+      "A": "Aᶜ = {1,3,5,7,9,11,12} và |Aᶜ| = 7",
+      "B": "Aᶜ = {2,4,6,8,10} và |Aᶜ| = 5",
+      "C": "Aᶜ = {1,3,5,7,9,11} và |Aᶜ| = 6",
+      "D": "Aᶜ = {1,2,3,4,5,6,7,8,9,10,11,12} và |Aᶜ| = 12"
+    },
+    "answer": "A",
+    "giai_thich": "Phần bù Aᶜ = U \\ A, tức các phần tử thuộc U mà không thuộc A. U = {1,…,12}, A = {2,4,6,8,10}. Loại bỏ các phần tử của A khỏi U, còn lại: {1,3,5,7,9,11,12}. Do đó Aᶜ = {1,3,5,7,9,11,12}. Đếm số phần tử: 7. Công thức |Aᶜ| = |U| - |A| cho kết quả |Aᶜ| = 12 - 5 = 7, khớp với kết quả đếm. Các đáp án B, C, D sai vì chúng không thực hiện phép bù đúng hoặc không tính đúng số phần tử.",
+    "y_tuong": "Phần bù của tập hợp",
+    "answer_code": "({1, 3, 5, 7, 9, 11, 12}, 7)",
+    "check": "✅"
+  }
+]

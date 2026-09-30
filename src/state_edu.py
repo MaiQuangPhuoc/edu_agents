@@ -118,8 +118,7 @@ class GeneratedQuestion(BaseModel):
         description="Độ khó THỰC TẾ của câu hỏi vừa sinh: 0=dễ (nhận biết), 1=trung bình (thông hiểu/vận dụng), 2=khó (vận dụng cao)"
     )
     question: str = Field(description="Nội dung câu hỏi, đủ dữ kiện để học sinh làm bài, không mơ hồ, không thiếu thông tin")
-    options: QuestionOptions = Field(description="Đúng 4 đáp án, chỉ 1 đáp án đúng, 3 đáp án nhiễu xuất phát từ lỗi sai thực tế của học sinh, không được trùng nhau")
-    answer: Literal["A", "B", "C", "D"] = Field(description="Đáp án đúng duy nhất, phải khớp với options")
+    options: QuestionOptions = Field(description="Đúng 4 đáp án, chỉ 1 đáp án đúng, 3 đáp án nhiễu xuất phát từ lỗi sai thực tế của học sinh, không được trùng nhau, lưu ý nhắc lại chỉ một đáp án đúng không dược có hơn 1 đáp án đúng")
     giai_thich: str = Field(
         description=(
             "Giải thích CHẶT CHẼ, suy luận và tính toán từng bước chính xác nhất để chứng minh answer đúng. "
@@ -127,6 +126,8 @@ class GeneratedQuestion(BaseModel):
             "Câu bài tập: trình bày đầy đủ từng bước biến đổi/tính toán, ghi rõ công thức áp dụng ở mỗi bước, không bỏ qua bước trung gian."
         )
     )
+    answer: Literal["A", "B", "C", "D"] = Field(description="Đáp án đúng duy nhất, phải khớp với duy nhất options, lưu ý chọn sau khi đã giải thích xong, phải khớp kết luận của giai_thich")
+
     y_tuong: str = Field(description="Mô tả ngắn gọn ý tưởng/cách ra câu hỏi, dùng để đối chiếu tránh trùng lặp ý tưởng ở các câu sau")
 
 

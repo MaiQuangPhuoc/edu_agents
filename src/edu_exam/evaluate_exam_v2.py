@@ -1,35 +1,39 @@
-import sys, os, re , json 
+import sys, os, re , json , builtins, io, contextlib, warnings ,  textwrap
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from pathlib import Path
 from langchain_core.messages import AIMessage
-# from src.state_edu import ExamState, ToolSelection, ToolSelectionBatch
 from src.state_edu import ExamState
 
 from src.clients.llm import LLMClient
-# from src.edu_qa.tools.math_tools_v2_2 import TOOL_MAP_V2   # ← chỉnh lại path thật của math_tools_v2_2.py trong project
 from src.edu_qa.paths import TEST_EXAM_PROMPT_PATH
 from typing import Dict, Any
 TOOL_VERIFY_BATCH_SIZE = 5
 
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeoutError
+from typing import List
+from pydantic import BaseModel, Field
+warnings.filterwarnings("ignore", category=SyntaxWarning)
 
+CODE_VERIFY_BATCH_SIZE = 4
+MAX_FIX_RETRY = 2
 
+_PRELUDE = "from sympy import *\nx, y, z, t, m, n, k = symbols('x y z t m n k')\n"
+_BLOCKED_NAMES = {"open", "compile", "input", "help", "exit", "quit"}
 
-# TOOLS_TOP_K            = 4
-# TOOLS_SCORE_THRESHOLD_1 = 0.5
-# TOOLS_SCORE_THRESHOLD_2 = 0.3
+MAX_MISMATCH_RETRY = 3
 
-# NO_TOOL_NAME = "khong_co_tool_phu_hop"   # phải trùng với chuỗi trong schema ToolSelection và prompt
+DIVERSIFY_HINTS = [
+    "Hãy giải theo cách khác với lần trước: dùng phương pháp đại số trực tiếp (biến đổi tay), "
+    "không gọi các hàm giải tự động như solve()/solveset().",
+    "Hãy giải bằng cách thử trực tiếp: thay giá trị/tọa độ của TỪNG option vào điều kiện đề bài "
+    "để kiểm tra option nào thỏa mãn, thay vì tự suy luận ra kết quả trước rồi mới so.",
+    "Hãy giải lại từ đầu bằng một hướng tiếp cận khác, và kiểm tra chéo bằng ít nhất 2 cách tính "
+    "khác nhau trong cùng đoạn code trước khi kết luận.",
+]
 
-
-# def _norm_chapter(s: str) -> str:
-#     s = (s or "").lower().strip()
-#     s = re.sub(r"^chương\s*[ivx\d]+\s*[:\-–.]?\s*", "", s)
-#     return re.sub(r"\s+", " ", s)
-
-
-# def _chapter_match(a: str, b: str) -> bool:
-#     a, b = _norm_chapter(a), _norm_chapter(b)
-#     return bool(a and b and (a == b or a in b or b in a))
+import multiprocessing as mp
+from src.configs import env_config
+from src.state_edu import ToolSelectionBatch
 
 
 
@@ -78,85 +82,6 @@ def _check_counts(state: ExamState) -> dict:
     }
 
 
-# ── Nhiệm vụ 3: retrieval chọn tool + tính lại cho câu type=bai_tap ──────────
-# Tham khảo trực tiếp qa_solve_agent.py — cùng cơ chế rerank + cascade threshold
-
-
-
-
-# ── Nhiệm vụ 3: retrieval chọn tool (per-question) + LLM chọn tool THEO BATCH ──
-
-# def _select_candidate_tool_names(retriever, q: dict) -> list:
-#     """Lọc cứng theo chương rồi đưa toàn bộ tool của chương cho LLM chọn (chương chỉ có 3-7 tool)."""
-#     query = f"{q.get('dang_bai', '')}: {q['question']}"
-#     print("="*30)
-
-#     print(f"query : {query}")
-#     print("="*30)
-
-#     docs  = retriever.hybrid_search_tools(query, k=15)   # collection tools nhỏ nên k=50 lấy hết
-
-#     ch_docs = [d for d in docs if _chapter_match(d.metadata.get("chapter_name", ""), q.get("chuong", ""))]
-
-#     # ── Dự phòng: chương không khớp thì rerank top-K trên toàn bộ kết quả ──
-#     if not ch_docs:
-#         print(f"  ⚠ không khớp chương '{q.get('chuong')}', dùng rerank top-{TOOLS_TOP_K}")
-#         ch_docs = retriever.rerank(query, docs, top_k=TOOLS_TOP_K)
-
-#     # ── Rerank + ngưỡng trong chương (ĐANG TẮT, cần thì mở 6 dòng dưới) ──
-#     # reranked = retriever.rerank(query, ch_docs, top_k=TOOLS_TOP_K)
-#     # filtered = [d for d in reranked if d.metadata.get("rerank_score", 0) >= TOOLS_SCORE_THRESHOLD_1]
-#     # if not filtered:
-#     #     filtered = [d for d in reranked if d.metadata.get("rerank_score", 0) >= TOOLS_SCORE_THRESHOLD_2]
-#     # ch_docs = filtered
-
-#     tools_name = list(dict.fromkeys(   # khử trùng, giữ thứ tự
-#         d.metadata.get("tool_name") for d in ch_docs if d.metadata.get("tool_name") in TOOL_MAP_V2
-#     ))
-#     print("="*30)
-#     print("list tools name : ", tools_name, "\n\n")
-#     print("="*30)
-
-#     return tools_name
-
-
-# def _format_questions_block(batch: list, candidate_map: dict) -> str:
-#     """Câu hỏi 1: ...\ncác tool của câu hỏi 1\n\nCâu hỏi 2: ...\ncác tool của câu hỏi 2..."""
-#     blocks = []
-#     for q in batch:
-#         tool_names = candidate_map.get(q["id"], [])
-#         if tool_names:
-#             tool_lines = "\n".join(f"  - {name}: {TOOL_MAP_V2[name].description}" for name in tool_names)
-#         else:
-#             tool_lines = f"  (không có tool nào khớp, trả tool_name = {NO_TOOL_NAME})"
-#         blocks.append(f"Câu hỏi {q['id']}: {q['question']}\nCác tool khả dụng cho câu hỏi này:\n{tool_lines}")
-
-#     print("=" * 80)
-#     print(blocks)
-#     print("=" * 80)
-#     return "\n\n".join(blocks)
-
-
-# def _check_mapping(tool_output: str, chosen_option_text: str) -> bool:
-#     """So khớp thô giữa kết quả tool và nội dung đáp án LLM đã chọn — substring 2 chiều, bỏ khoảng trắng/hoa-thường."""
-#     if not tool_output or not chosen_option_text:
-#         return False
-#     a = str(tool_output).strip().lower()
-#     b = str(chosen_option_text).strip().lower()
-#     return b in a or a in b
-
-import builtins, io, contextlib, textwrap, warnings
-from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeoutError
-from typing import List
-from pydantic import BaseModel, Field
-warnings.filterwarnings("ignore", category=SyntaxWarning)
-
-CODE_VERIFY_BATCH_SIZE = 4
-MAX_FIX_RETRY = 2
-
-_PRELUDE = "from sympy import *\nx, y, z, t, m, n, k = symbols('x y z t m n k')\n"
-_BLOCKED_NAMES = {"open", "compile", "input", "help", "exit", "quit"}
-
 
 def _safe_import(name, *args, **kwargs):
     allowed_roots = {"sympy", "math", "itertools", "fractions", "decimal", "collections", "re"}
@@ -201,21 +126,22 @@ Với MỖI câu, viết code Python:
 1. Tự tính kết quả từ dữ kiện đề bài bằng phép tính thật (KHÔNG suy luận bằng lời rồi gán thẳng đáp án).
 2. BẮT BUỘC print() từng giá trị trung gian trước khi kết luận.
 3. So sánh bằng GIÁ TRỊ SỐ/TOÁN HỌC, không so chuỗi text nguyên văn của option:
-   - Nếu option chứa số/tọa độ/biểu thức: dùng regex hoặc sympy.sympify để tách số ra từ chuỗi option,
-     rồi so bằng dấu == hoặc sympy.simplify(a - b) == 0.
+   - Nếu option chứa số/tọa độ/biểu thức: tách số ra từ chuỗi option rồi so bằng == hoặc sympy.simplify(a-b)==0.
    - Nếu option là tọa độ/cặp giá trị (x, y): so từng thành phần riêng, KHÔNG trừ trực tiếp 2 tuple,
      KHÔNG so chuỗi text có bọc chữ như "I(...)" hay "Đỉnh...".
    - Nếu option là tập hợp: parse thành set/FiniteSet rồi so bằng ==, không so chuỗi.
-   - Nếu option là khoảng nghiệm: dựng lại Interval/Union từ option rồi so == hoặc .equals(),
-     KHÔNG tự đặt biến boolean diễn giải bằng lời rồi bỏ trống.
+   - Nếu option là khoảng nghiệm: dựng lại Interval/Union từ option rồi so == hoặc .equals().
    - Khi so 2 giá trị số, LUÔN ép về float trước khi so: abs(float(a) - float(b)) < 1e-6,
      KHÔNG dùng == trực tiếp giữa Rational và Float.
 4. Gán is_A, is_B, is_C, is_D từ kết quả so sánh giá trị ở bước 3.
-5. Dòng cuối: ans = "A" if is_A else "B" if is_B else "C" if is_C else "D" if is_D else "NONE"
+5. Ngay trước khi kết luận, in ra: print("KET_QUA:", <giá trị cuối cùng đã tính được, dạng dễ đọc
+   như số, tập hợp, tọa độ — đây là giá trị THẬT, không phải chữ cái A/B/C/D>).
+6. Dòng cuối: ans = "A" if is_A else "B" if is_B else "C" if is_C else "D" if is_D else "NONE"
    print("ANSWER:", ans)
-6. Với bài toán đơn giản, ưu tiên tự suy luận đại số trực tiếp thay vì gọi hàm giải bất phương trình phức tạp.
-7. Khai báo đầy đủ MỌI biến trước khi dùng.
-8. Nếu option có NHIỀU điều kiện gộp lại (số + kết luận định tính như "vuông góc", "cùng phương"...),
+   Chỉ NONE khi đã so sánh giá trị thật mà không khớp option nào.
+7. Với bài toán đơn giản, ưu tiên tự suy luận đại số trực tiếp thay vì gọi hàm giải bất phương trình phức tạp.
+8. Khai báo đầy đủ MỌI biến trước khi dùng.
+9. Nếu option có NHIỀU điều kiện gộp lại (số + kết luận định tính như "vuông góc", "cùng phương"...),
    phải kiểm tra ĐỦ TẤT CẢ các phần đều đúng thì is_X mới True.
 
 Đã có sẵn: from sympy import *, biến x,y,z,t,m,n,k. Không import thêm ngoài re nếu cần.
@@ -271,18 +197,33 @@ def _run_code_once(batch: list, prompt: str, llm_client: LLMClient) -> dict:
     for q in batch:
         sol = by_id.get(q["id"])
         if not sol:
-            out[q["id"]] = {"code": "", "status": "no_response", "answer": None, "error": "LLM không trả code cho câu này"}
+            out[q["id"]] = {"code": "", "status": "no_response", "answer": None, "raw_value": "",
+                             "error": "LLM không trả code cho câu này"}
             continue
+
         status, raw = run_sympy_code(sol.code)
-        m = re.search(r"ANSWER:\s*([ABCD]|NONE)", raw or "")
+        m_ans = re.findall(r"ANSWER:\s*([ABCD]|NONE)", raw or "")
+        m_val = re.findall(r"KET_QUA:\s*(.+)", raw or "")
+        answer_letter = m_ans[-1] if m_ans else None
+        raw_value = m_val[-1].strip() if m_val else ""
+
         if status != "ok":
-            out[q["id"]] = {"code": sol.code, "status": status, "answer": None, "error": raw or status}
-        elif not m or m.group(1) == "NONE":
-            out[q["id"]] = {"code": sol.code, "status": "no_answer", "answer": None,
+            out[q["id"]] = {"code": sol.code, "status": status, "answer": None, "raw_value": "", "error": raw or status}
+        elif not answer_letter or answer_letter == "NONE":
+            out[q["id"]] = {"code": sol.code, "status": "no_answer", "answer": None, "raw_value": raw_value,
                              "error": f"Code chạy được nhưng không kết luận được option (output: {raw.strip()[:300]})"}
         else:
-            out[q["id"]] = {"code": sol.code, "status": "ok", "answer": m.group(1), "error": ""}
+            out[q["id"]] = {"code": sol.code, "status": "ok", "answer": answer_letter, "raw_value": raw_value, "error": ""}
     return out
+
+
+def _majority_vote(letters: list) -> tuple:
+    from collections import Counter
+    counts = Counter(letters)
+    if not counts:
+        return None, {}
+    top_letter, _ = counts.most_common(1)[0]
+    return top_letter, dict(counts)
 
 
 
@@ -301,20 +242,57 @@ def _verify_bai_tap_with_code(generated_exam: list, llm_client: LLMClient) -> No
             need_fix = [q for q in batch if state[q["id"]]["answer"] is None]
             if not need_fix:
                 break
-            print(f"  [retry {attempt + 1}/{MAX_FIX_RETRY}] {len(need_fix)} câu cần sửa: {[q['id'] for q in need_fix]}")
+            print(f"  [fix {attempt + 1}/{MAX_FIX_RETRY}] {len(need_fix)} câu chưa ra kết quả: {[q['id'] for q in need_fix]}")
             prev_code  = {q["id"]: state[q["id"]]["code"] for q in need_fix}
             prev_error = {q["id"]: state[q["id"]]["error"] for q in need_fix}
             fix_prompt = FIX_PROMPT_TEMPLATE.replace("{questions_block}", _format_fix_block(need_fix, prev_code, prev_error))
             state.update(_run_code_once(need_fix, fix_prompt, llm_client))
 
+        votes = {q["id"]: [] for q in batch}
+        raws  = {q["id"]: [] for q in batch}
         for q in batch:
             s = state[q["id"]]
+            if s["answer"] is not None:
+                votes[q["id"]].append(s["answer"])
+                raws[q["id"]].append(s.get("raw_value", ""))
+
+        for round_idx in range(MAX_MISMATCH_RETRY):
+            mismatched = [q for q in batch
+                          if votes[q["id"]] and q.get("answer") and votes[q["id"]][-1] != q["answer"]]
+            if not mismatched:
+                break
+            hint = DIVERSIFY_HINTS[round_idx % len(DIVERSIFY_HINTS)]
+            print(f"  [diversify {round_idx + 1}/{MAX_MISMATCH_RETRY}] {len(mismatched)} câu lệch đề: {[q['id'] for q in mismatched]}")
+            div_prompt = CODE_PROMPT_TEMPLATE.replace("{questions_block}", _format_code_block(mismatched)) + f"\n\nYêu cầu thêm: {hint}"
+            div_state = _run_code_once(mismatched, div_prompt, llm_client)
+            for q in mismatched:
+                s = div_state[q["id"]]
+                if s["answer"] is not None:
+                    votes[q["id"]].append(s["answer"])
+                    raws[q["id"]].append(s.get("raw_value", ""))
+
+        for q in batch:
+            letters = votes[q["id"]]
             q["tool_used"] = "code"
-            if s["answer"] is None:
-                q["answer_tools"], q["check"] = "", "N/A"
+
+            if not letters:
+                q["answer_code"], q["check"] = "", "N/A"
+                continue
+
+            top_letter, counts = _majority_vote(letters)
+            raw_val = raws[q["id"]][-1] if raws[q["id"]] else ""
+            total = sum(counts.values())
+
+            q["answer_code"] = raw_val
+
+            if not q.get("answer"):
+                q["check"] = "?"
+            elif top_letter == q["answer"]:
+                q["check"] = "✅"
+            elif counts.get(top_letter, 0) > total / 2:
+                q["check"] = "⚠️ nghi ngờ đề sai"
             else:
-                q["answer_tools"] = s["answer"]
-                q["check"] = "✅" if s["answer"] == q.get("answer") else "❌"
+                q["check"] = "N/A (không đồng thuận)"
 
 # thêm 2 trường answer-tools và check vào json đề kiểm tra 
 def _update_exam_json_with_tool_check(generated_exam: list) -> None:
@@ -334,8 +312,8 @@ def _update_exam_json_with_tool_check(generated_exam: list) -> None:
         src = by_id.get(q.get("id"))
         if src is None:
             continue
-        q["answer_tools"] = src.get("answer_tools", "")
-        q["check"]        = src.get("check", "")
+        q["answer_code"] = src.get("answer_code", "")
+        q["check"]       = src.get("check", "")
         updated += 1
 
     path.write_text(json.dumps(exam_on_disk, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -359,8 +337,8 @@ def evaluate_exam(state: ExamState, llm_client: LLMClient) -> dict:
     # print("\n----------\n xem các câu bài tập và kết quả tool tính lại:")
     # for q in generated_exam:
     #     if q.get("type") == "bai_tap":
-    #         print(f"id={q['id']} | tool={q.get('tool_used')} | answer_tools={q.get('answer_tools')} | "
-    #             f"answer_LLM={q.get('answer')}={q['options'].get(q.get('answer'))} | check={q.get('check')}")
+    #         print(f"id={q['id']} | answer_code={q.get('answer_code')} | "
+    #               f"answer_LLM={q.get('answer')}={q['options'].get(q.get('answer'))} | check={q.get('check')}")
 
     # 1. Schema check
     for q in generated_exam:
@@ -398,9 +376,9 @@ def evaluate_exam(state: ExamState, llm_client: LLMClient) -> dict:
 
     n_invalid    = len(regenerate_ids)
     n_bai_tap    = sum(1 for q in generated_exam if q.get("type") == "bai_tap")
-    n_ok    = sum(1 for q in generated_exam if q.get("check") == "✅")
-    n_wrong = sum(1 for q in generated_exam if q.get("check") == "❌")
-    n_na    = sum(1 for q in generated_exam if q.get("check") == "N/A")
+    n_ok   = sum(1 for q in generated_exam if q.get("check") == "✅")
+    n_flag = sum(1 for q in generated_exam if q.get("check") == "⚠️ nghi ngờ đề sai")
+    n_na   = sum(1 for q in generated_exam if str(q.get("check", "")).startswith("N/A"))
 
     summary = (
         f"✅ Kiểm tra hoàn tất.\n"
@@ -408,7 +386,7 @@ def evaluate_exam(state: ExamState, llm_client: LLMClient) -> dict:
         f" ({n_invalid} câu còn lỗi sau {retry_count} lần retry)\n"
         f"- Số câu: {'ĐỦ' if count_result['count_match'] else 'THIẾU'}"
         f" ({count_result['actual_total']}/{count_result['expected_total']})\n"
-        f"- Đối chiếu tool ({n_bai_tap} câu bài_tập): khớp {n_ok} | sai {n_wrong}"
+        f"- Đối chiếu code ({n_bai_tap} câu bài_tập): khớp {n_ok} | nghi ngờ đề sai {n_flag} | không kết luận {n_na}"
     )
     print(summary)
 
