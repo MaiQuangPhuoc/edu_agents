@@ -87,7 +87,7 @@ def _analyze_chapters(state: dict, llm_client: LLMClient) -> dict:
                   .replace("{scores}",  scores_text)
                   .replace("{chunks}",  chunks_text))
 
-        print("======================= prompt build knowledge ------------------\n {prompt} \n--------------------------\n")
+        # print("======================= prompt build knowledge ------------------\n {prompt} \n--------------------------\n")
         result = None
         for attempt in range(3):
             try:

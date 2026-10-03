@@ -39,6 +39,8 @@ NGUYÊN TẮC
 3. Nếu tài liệu không có nội dung cho khung nào, dùng phần "Cần nắm" trong hồ sơ, ghi ngắn gọn, không bịa ví dụ.
 4. Các khung cùng dạng bài phải khác nhau về đối tượng, số liệu hoặc kiểu hỏi. Không lặp ý.
 5. yeu_cau và ngu_canh phải khớp dang_bai của khung đó.
+6. Câu hỏi sẽ ở dạng trắc nghiệm: yeu_cau nên nêu rõ kết quả cuối để chọn (một số, biểu thức, tập hợp, mệnh đề...).
+   Học sinh được làm nháp nên bài nhiều bước vẫn được. Dữ kiện đưa bằng lời/công thức, không dựa vào hình vẽ đi kèm.
 
 VÍ DỤ MỘT MỤC (chỉ minh họa cách viết, không sao chép nội dung)
 {"id": 3, "yeu_cau": "Cho hai tập hợp bằng cách liệt kê, học sinh tìm hiệu A \\ B rồi phần bù của kết quả trong tập E.",

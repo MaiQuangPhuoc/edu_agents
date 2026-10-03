@@ -3,7 +3,7 @@ import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from pathlib import Path
 from langchain_core.messages import AIMessage, HumanMessage
-from src.state_edu import ExamState, ChapterMatrixResponse , ExamMatrixResponse
+from src.state_edu import ExamState, ExamMatrixResponse
 from src.clients.llm import LLMClient
 from src.edu_exam.curriculum import get_chapter, format_knowledge_profile
 from src.edu_qa.paths import BUILD_MATRIX_PROMPT_PATH
@@ -51,18 +51,41 @@ def _format_scores_ch(scores_ch: dict) -> str:
             lines.append(f"  - {sec}: {score} ({label})")
     return "\n".join(lines)
 
-def check_matrix(m, so_cau, so_de, so_tb, so_kho):
-    tot = sum(b.so_cau for b in m.bai_hoc)
-    de = sum(b.do_kho.de for b in m.bai_hoc)
-    tb = sum(b.do_kho.trung_binh for b in m.bai_hoc)
-    kho = sum(b.do_kho.kho for b in m.bai_hoc)
+def _total_difficulty(so_cau: int, muc_tieu: float) -> dict:
+    """Đề xuất tổng dễ/tb/khó cho CẢ ĐỀ (tính một lần, tổng luôn = so_cau)."""
+    ratio = DIFFICULTY_RATIO[min(max(int(muc_tieu), 5), 10)]
+    keys  = ["de", "trung_binh", "kho"]
+    raw   = {k: so_cau * ratio[k] for k in keys}
+    base  = {k: int(raw[k] + 1e-9) for k in keys}
+    left  = so_cau - sum(base.values())
+    for k in sorted(keys, key=lambda k: raw[k] - base[k], reverse=True)[:left]:
+        base[k] += 1
+    return base
+
+
+def check_matrix(res, so_cau: int, tot: dict, valid_ids: list, tol: int = 1) -> list:
+    """Chỉ kiểm tra. Ràng buộc cứng: tổng số câu, đủ chương. Độ khó cho lệch ±tol."""
+    bai  = [b for ch in res.chuong for b in ch.bai_hoc]
     errs = []
-    if tot != so_cau:
-        errs.append(f"Tổng số câu = {tot}, cần {so_cau}: {'giảm' if tot > so_cau else 'tăng'} {abs(tot - so_cau)} câu.")
-    for name, got, need in [("dễ", de, so_de), ("trung bình", tb, so_tb), ("khó", kho, so_kho)]:
-        if got != need:
-            errs.append(f"Số câu {name} = {got}, cần {need}: {'giảm' if got > need else 'tăng'} {abs(got - need)}.")
-    return errs  # rỗng = đạt
+    for ch in res.chuong:
+        for b in ch.bai_hoc:
+            dk = b.do_kho.de + b.do_kho.trung_binh + b.do_kho.kho
+            if dk != b.so_cau:
+                errs.append(f"Bài '{b.ten}': de+trung_binh+kho={dk} khác so_cau={b.so_cau}.")
+            ds = sum(d.so_cau for d in b.dang_bai)
+            if ds != b.so_cau:
+                errs.append(f"Bài '{b.ten}': tổng dang_bai.so_cau={ds} khác so_cau={b.so_cau}.")
+    n = sum(b.so_cau for b in bai)
+    if n != so_cau:
+        errs.append(f"Tổng số câu = {n}, cần {so_cau}: {'giảm' if n > so_cau else 'tăng'} {abs(n - so_cau)} câu.")
+    got_ids = [ch.chapter_id for ch in res.chuong]
+    if sorted(got_ids) != sorted(valid_ids):
+        errs.append(f"chapter_id trả về {got_ids}, cần đúng {valid_ids} (mỗi chương một khối).")
+    for name, key in [("dễ", "de"), ("trung bình", "trung_binh"), ("khó", "kho")]:
+        got = sum(getattr(b.do_kho, key) for b in bai)
+        if abs(got - tot[key]) > tol:
+            errs.append(f"Số câu {name} = {got}, đề xuất {tot[key]} (lệch quá {tol}): {'giảm' if got > tot[key] else 'tăng'}.")
+    return errs
 
 # đề xuất lượng câu hỏi theo score section 
 def _format_quota(scores_ch: dict, so_cau_ch: int) -> str:
@@ -113,61 +136,73 @@ def build_matrix(state: ExamState, llm_client: LLMClient) -> dict:
     muc_tieu = profile.get("muc_tieu_diem", 7)
     ghi_chu  = str(profile.get("ghi_chu", ""))
 
-    ch_dist = _calc_chapter_distribution(knowledge_scores, so_cau, muc_tieu)
-    template = PROMPT_PATH.read_text(encoding="utf-8")
-    # structured_llm = llm_client._llm.with_structured_output(ChapterMatrixResponse)
+    ch_dist = _calc_chapter_distribution(knowledge_scores, so_cau, muc_tieu)   # chỉ lấy ["so_cau"] làm đề xuất
+    tot     = _total_difficulty(so_cau, muc_tieu)
 
-    all_chuong = []
+    quota_blocks, profile_blocks = [], []
     for ch_id, dist in ch_dist.items():
-        ch_raw     = get_chapter(subject, ch_id)["chapter_name"]
-        scores_ch  = knowledge_scores.get(ch_id, {})
-        profile_ch = format_knowledge_profile(knowledge_profile.get(ch_id, {}))
-        # print("\n==========\n profile_ch ", profile_ch, "\n ch_raw ", ch_raw, "\n scores_ch ", scores_ch, "\n==========\n")
+        ch_raw    = get_chapter(subject, ch_id)["chapter_name"]
+        scores_ch = knowledge_scores.get(ch_id, {})
+        quota_blocks.append(
+            f"CHƯƠNG chapter_id={ch_id}: {ch_raw} (đề xuất {dist['so_cau']} câu)\n"
+            + _format_quota(scores_ch, dist["so_cau"])
+        )
+        profile_blocks.append(
+            f"[chapter_id={ch_id}] {ch_raw}\n" + format_knowledge_profile(knowledge_profile.get(ch_id, {}))
+        )
 
-        quota_text = _format_quota(scores_ch, dist["so_cau"])
+    template = PROMPT_PATH.read_text(encoding="utf-8")
+    prompt = (template
+              .replace("{so_cau}", str(so_cau))
+              .replace("{muc_tieu_diem}", str(muc_tieu))
+              .replace("{ghi_chu}", ghi_chu or "không có")
+              .replace("{gop_y}", gop_y or "không có")
+              .replace("{tong_do_kho_de_xuat}", f"dễ={tot['de']}, trung_bình={tot['trung_binh']}, khó={tot['kho']}")
+              .replace("{de_xuat_so_cau}", "\n\n".join(quota_blocks))
+              .replace("{knowledge_profile}", "\n\n".join(profile_blocks)))
 
+    print(f"====================== PROMPT build_matrix ========================\n{prompt}\n=========================\n")
+    result, errs = None, []
+    for attempt in range(3):
+        p = prompt if not errs else (
+            prompt + "\n\nMA TRẬN LẦN TRƯỚC CÒN LỖI, HÃY SỬA CÁC LỖI SAU (giữ nguyên phần đúng):\n- " + "\n- ".join(errs)
+        )
+        try:
+            res = llm_client.invoke_structured(ExamMatrixResponse, [{"role": "user", "content": p}], max_tokens=10000)
+        except Exception as e:
+            errs = [f"Output không hợp lệ: {e}"]
+            print(f"[matrix] attempt {attempt} lỗi: {e}")
+            continue
+        if res is None:
+            errs = ["Output trước không parse được. Trả JSON ngắn gọn, đủ mọi chương, không bỏ dở giữa chừng."]
+            print(f"[matrix] attempt {attempt}: invoke_structured trả None")
+            continue
+        result = res
+        errs = check_matrix(res, so_cau, tot, list(ch_dist.keys()))
+        if not errs:
+            break
+        print(f"[matrix] attempt {attempt} còn lỗi: {errs}")
 
-        prompt = (template
-                  .replace("{chuong}", ch_raw)
-                  .replace("{so_cau}", str(dist["so_cau"]))
-                  .replace("{so_de}", str(dist["de"]))
-                  .replace("{so_trung_binh}", str(dist["trung_binh"]))
-                  .replace("{so_kho}", str(dist["kho"]))
-                  .replace("{de_xuat_so_cau}", quota_text)
-                  .replace("{muc_tieu_diem}", str(muc_tieu))
-                  .replace("{ghi_chu}", ghi_chu)
-                  .replace("{knowledge_scores_ch}", _format_scores_ch(scores_ch))
-                  .replace("{knowledge_profile_ch}", profile_ch)
-                  .replace("{gop_y}", gop_y or "không có"))
-
-        bai_hoc = []
-        for attempt in range(3):
-            try:
-                # result: ChapterMatrixResponse = structured_llm.invoke([{"role": "user", "content": prompt}])
-                result = llm_client.invoke_structured(ChapterMatrixResponse, [{"role": "user", "content": prompt}], max_tokens=3000)
-                total = sum(b.so_cau for b in result.bai_hoc)
-                if total == dist["so_cau"]:
-                    bai_hoc = [b.model_dump() for b in result.bai_hoc]
-                    break
-                print(f"[{ch_id}] attempt {attempt}: tổng {total} != {dist['so_cau']}, retry")
-            except Exception as e:
-                print(f"[{ch_id}] attempt {attempt} lỗi: {e}")
-
-        all_chuong.append({
-            "chapter_id": ch_id,
-            "ten":        ch_raw,
-            "so_cau":     dist["so_cau"],
-            "bai_hoc":    bai_hoc,
-        })
+    chuong = []
+    if result:
+        for ch in result.chuong:
+            chuong.append({
+                "chapter_id": ch.chapter_id,
+                "ten":        ch.ten,
+                "so_cau":     sum(b.so_cau for b in ch.bai_hoc),
+                "bai_hoc":    [b.model_dump() for b in ch.bai_hoc],
+            })
+    else:
+        print("[matrix] ❌ thất bại cả 3 lần, ma trận rỗng")
 
     matrix = {
         "tong_so_cau": so_cau,
         "tong_do_kho": {
-            "de":         sum(d["de"] for d in ch_dist.values()),
-            "trung_binh": sum(d["trung_binh"] for d in ch_dist.values()),
-            "kho":        sum(d["kho"] for d in ch_dist.values()),
+            "de":         sum(b["do_kho"]["de"] for c in chuong for b in c["bai_hoc"]),
+            "trung_binh": sum(b["do_kho"]["trung_binh"] for c in chuong for b in c["bai_hoc"]),
+            "kho":        sum(b["do_kho"]["kho"] for c in chuong for b in c["bai_hoc"]),
         },
-        "chuong": all_chuong,
+        "chuong": chuong,
     }
 
     ai_message = AIMessage(content=(

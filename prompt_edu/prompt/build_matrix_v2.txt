@@ -1,40 +1,51 @@
-Bạn là chuyên gia xây dựng ma trận đề kiểm tra Toán THPT lớp 10, chương trình "Kết nối tri thức" va có khả năng suy luận liên
-kết các yêu cầu INPUT để sinh ma trận đề kiểm tra 
+Bạn là chuyên gia xây dựng ma trận đề kiểm tra Toán 10, chương trình "Chân trời sáng tạo".
 
-=== INPUT ===
-Chương: {chuong}
-Tổng số câu cần phân bổ: {so_cau}
-Phân bổ độ khó đã tính sẵn: dễ={so_de}, trung_bình={so_trung_binh}, khó={so_kho}
-Đề xuất số câu theo từng section (bài | section | mức quan tâm | số câu đề xuất):
-{de_xuat_so_cau}
+Hãy đọc và phân tích những dữ liệu được cung cấp sau dây : 
+
+Tổng số câu toàn đề: {so_cau}
 Mục tiêu điểm: {muc_tieu_diem}
 Ghi chú học sinh: {ghi_chu}
-
-Điểm quan tâm các section (0=không quan tâm, 1=ít, 2=bình thường, 3=cao):
-{knowledge_scores_ch}
-
-Hồ sơ tri thức chương (danh sách bài học và dạng bài có trong chương):
-{knowledge_profile_ch}
-
 Góp ý điều chỉnh: {gop_y}
 
-=== NHIỆM VỤ ===
-Phân bổ {so_cau} câu xuống từng bài học trong chương, kèm độ khó và dạng bài.
+Đề xuất tổng độ khó toàn đề: {tong_do_kho_de_xuat}
 
-Các bước thực hiện:
-1. Lấy danh sách bài học từ hồ sơ tri thức.
-2. Dùng số câu đề xuất ở trên làm số câu mỗi bài (cộng các section cùng bài).
-   Mặc định giữ nguyên đề xuất. Chỉ được điều chỉnh khi "Góp ý điều chỉnh" hoặc "Ghi chú học sinh"
-   nêu rõ yêu cầu (ví dụ: muốn thêm vài câu cho section không quan tâm).
-   Khi điều chỉnh: lấy bớt từ section điểm thấp hơn, tổng số câu vẫn phải bằng {so_cau}.
-3. Phân bổ độ khó cho từng bài theo đúng tổng: dễ={so_de}, trung_bình={so_trung_binh}, khó={so_kho}.
-4. Gắn dạng bài cho từng bài — CHỈ lấy từ hồ sơ tri thức, không tự tạo mới.
+Đề xuất số câu theo từng chương và section (bài | section | mức quan tâm | số câu đề xuất):
+{de_xuat_so_cau}
 
-=== NGUYÊN TẮC BẮT BUỘC ===
-1. Tổng so_cau tất cả bai_hoc PHẢI = {so_cau} — không hơn, không kém.
-2. de + trung_binh + kho của mỗi bài PHẢI = so_cau bài đó.
-3. Tổng dang_bai.so_cau của mỗi bài PHẢI = so_cau bài đó.
-4. dang_bai CHỈ lấy từ hồ sơ tri thức — không tự tạo mới.
-5. Nếu ghi chú có "chú ý", "tập trung", "ưu tiên" → tăng số câu bài đó.
-6. Section/chủ đề nào đề xuất 0 câu thì KHÔNG được có câu nào, trừ khi góp ý/ghi chú yêu cầu rõ.
+Hồ sơ tri thức các chương (dạng bài theo section):
+{knowledge_profile}
 
+NHỮNG LƯU Ý VỀ CÁC ĐỀ XUẤT:
+- "Đề xuất số câu" và "đề xuất tổng độ khó" chỉ để THAM KHẢO, không phải luôn luôn hay bắt buộc.
+  Bạn được điều chỉnh khi ghi chú, góp ý hoặc mục tiêu điểm cho thấy cần thiết
+  (ví dụ: học sinh muốn chú ý chương nào, muốn có câu ở section ít quan tâm).
+- Bạn nhìn thấy toàn bộ các chương cùng lúc, hãy cân đối chung: chương/bài nào cần nhiều câu hơn,
+  độ khó phân bổ hợp lý giữa các chương theo mục tiêu điểm.
+- Mặc định bám sát đề xuất. Section đề xuất 0 câu thì không ra câu, trừ khi ghi chú/góp ý yêu cầu rõ.
+  Khi tăng ở nơi này thì giảm ở nơi khác để tổng không đổi.
+
+DỰA VÀO CÁC NGỮ CẢNH BÊN TRÊN THỰC HIỆN NHIỆM VỤ SAU ĐÂY:
+Lập ma trận cho TOÀN ĐỀ trong một lần, bao gồm mọi chương học
+1. Mỗi chương có đúng một khối: chapter_id (chép đúng giá trị sau "chapter_id="), ten, bai_hoc.
+2. Mỗi bài có câu thì tạo một mục: ten, so_cau, do_kho (de, trung_binh, kho), dang_bai.
+3. Mỗi dang_bai gồm: ten, section, so_cau.
+   - section: chép nguyên văn từ danh sách đề xuất.
+   - ten: là DẠNG BÀI cụ thể lấy từ hồ sơ tri thức, nằm trong đúng section đó.
+     ten KHÔNG ĐƯỢC trùng với tên section (tên section chỉ là chủ đề, dạng bài là kiểu bài học sinh phải làm).
+     Ví dụ: section "Mệnh đề phủ định" -> ten "Viết phủ định của một mệnh đề".
+   - Section có từ 2 câu trở lên thì ưu tiên dùng các dạng bài khác nhau.
+4. Quang trọng dựa vào yêu cầu của học sinh mà tối ưu số câu, độ khó vào các chương học, bài học sao cho hợp lý
+
+RÀNG BUỘC BẮT BUỘC 
+1. Tổng so_cau của tất cả các bài trong toàn đề = {so_cau}.
+2. Với mỗi bài: de + trung_binh + kho = so_cau của bài.
+3. Với mỗi bài: tổng so_cau của các dang_bai = so_cau của bài.
+4. Tổng dễ/trung bình/khó toàn đề nên gần đề xuất (lệch tối đa 1 câu mỗi loại).
+5. Chỉ làm việc với các chương, bài, section được nhắc trong đề xuất và hồ sơ tri thức.
+   Nội dung không được nhắc đến thì coi như không tồn tại.
+6. KHÔNG được quyết định hay ghi loại câu hỏi (lý thuyết / bài tập). Việc đó thuộc bước sau.
+7. Hãy tạo ma trận toàn đề sau đó đọc và xem xét lại ma trận vừa tạo có đảm bảo các yếu tố lưu ý hay ràng buộc đã đề cập chưa
+nếu đề đã đáp ứng đủ thì dừng nếu chưa đạt thì rà soát lại và cập nhật sửa lỗi, thệ quá thì bắt buộc sinh lại bản khác sao cho tốt hơn bản bị lỗi vừa sinh
+8. Đề là trắc nghiệm A/B/C/D, học sinh được làm nháp nên dạng bài tính toán nhiều bước vẫn dùng được.
+   Chọn dang_bai có kết quả cuối chọn được trong 4 đáp án; dạng bài cần hình vẽ thì dùng cách diễn đạt bằng lời/công thức.
+9. ten của dang_bai không được trùng tên section.
