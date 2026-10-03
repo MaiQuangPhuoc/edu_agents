@@ -38,6 +38,13 @@ class CollectInfoResponse(BaseModel):
     is_confirmed: bool = Field(description="True CHỈ KHI học sinh vừa xác nhận đồng ý với bản tóm tắt (câu trả lời gần nhất chứa ý đồng ý/xác nhận). False nếu đây là lần đầu tóm tắt hoặc học sinh chưa phản hồi xác nhận.")
 
 # analysis knowledge
+class DangBaiProfile(BaseModel):
+    ten: str = Field(description="Tên dạng bài, ngắn gọn, suy ra từ nội dung tài liệu (vd 'Xác định tính đúng sai của mệnh đề')")
+    section: str = Field(description="Section mà dạng bài này thuộc về, PHẢI chép đúng nguyên văn một section trong danh sách đã cho")
+    cach_giai: str = Field(description="Hướng giải cốt lõi của dạng bài, 1 câu")
+
+
+
 class KnowledgeChapterProfile(BaseModel):
     chuong: str = Field(description="Tên chương học, vd 'Chương 1: Mệnh đề và tập hợp'")
     can_nam: str = Field(description="Nội dung cần nắm ở mức cơ bản: khái niệm, hệ quả, tính chất — viết súc tích")
@@ -45,6 +52,7 @@ class KnowledgeChapterProfile(BaseModel):
     bai_hoc: List[str] = Field(description="Danh sách bài học trong chương")
     quan_he_kien_thuc: str = Field(description="Quan hệ liên kết giữa các bài học/chủ đề trong chương — viết súc tích")
     quan_he_dang_bai: str = Field(description="Quan hệ bồi đắp giữa các dạng bài tập trong chương — viết súc tích")
+    dang_bai: List[DangBaiProfile] = Field(description="Các dạng bài trong chương, mỗi dạng gắn với 1 section")
 
 
 
@@ -61,12 +69,31 @@ class DoKho(BaseModel):
 class DangBaiItem(BaseModel):
     ten: str = Field(description="Tên dạng bài, CHỈ lấy từ hồ sơ tri thức chương, không tự tạo mới")
     so_cau: int = Field(ge=0)
+    section: str = Field(description="Section chứa dạng bài này, chép đúng từ kế hoạch")
 
 class BaiHocMatrix(BaseModel):
     ten: str = Field(description="Tên bài học, lấy từ hồ sơ tri thức chương")
     so_cau: int = Field(ge=0)
     do_kho: DoKho
     dang_bai: List[DangBaiItem]
+
+class ChapterBlock(BaseModel):
+    chapter_id: str
+    ten: str
+    bai_hoc: List[BaiHocMatrix]
+
+class ExamMatrixResponse(BaseModel):
+    chuong: List[ChapterBlock]
+
+    @model_validator(mode="after")
+    def check_consistency(self):
+        for ch in self.chuong:
+            for b in ch.bai_hoc:
+                if b.do_kho.de + b.do_kho.trung_binh + b.do_kho.kho != b.so_cau:
+                    raise ValueError(f"Bài '{b.ten}': tổng độ khó != so_cau")
+                if sum(d.so_cau for d in b.dang_bai) != b.so_cau:
+                    raise ValueError(f"Bài '{b.ten}': tổng dang_bai != so_cau")
+        return self
 
 class ChapterMatrixResponse(BaseModel):
     bai_hoc: List[BaiHocMatrix]
@@ -97,6 +124,18 @@ class QuestionSpec(BaseModel):
 class QuestionSpecBatch(BaseModel):
     specs: List[QuestionSpec]
 
+
+class SpecContent(BaseModel):
+    id: int = Field(description="Chép đúng id của khung câu được giao")
+    yeu_cau: str = Field(description="Học sinh cần làm gì cụ thể, phù hợp độ khó của khung")
+    muc_dich: str = Field(description="Đánh giá năng lực gì của học sinh")
+    ngu_canh: List[str] = Field(description="2-4 ý CỤ THỂ trích từ tài liệu (định nghĩa, công thức, ví dụ có số liệu) để làm nguyên liệu sinh câu hỏi")
+
+class SpecContentBatch(BaseModel):
+    specs: List[SpecContent]
+
+
+    
 # schema for generated exam
 class QuestionOptions(BaseModel):
     A: str = Field(description="Nội dung đáp án A")
@@ -121,12 +160,15 @@ class GeneratedQuestion(BaseModel):
     options: QuestionOptions = Field(description="Đúng 4 đáp án, chỉ 1 đáp án đúng, 3 đáp án nhiễu xuất phát từ lỗi sai thực tế của học sinh, không được trùng nhau, lưu ý nhắc lại chỉ một đáp án đúng không dược có hơn 1 đáp án đúng")
     giai_thich: str = Field(
         description=(
-            "Giải thích CHẶT CHẼ, suy luận và tính toán từng bước chính xác nhất để chứng minh answer đúng. "
-            "Câu lý thuyết: trích đúng khái niệm/định nghĩa từ tài liệu tham chiếu. "
-            "Câu bài tập: trình bày đầy đủ từng bước biến đổi/tính toán, ghi rõ công thức áp dụng ở mỗi bước, không bỏ qua bước trung gian."
+            "Giải quyết vấn đề và suy luận từng bước TRƯỚC khi chọn đáp án. Với bai_tap: ghi công thức, từng bước tính, kết quả cuối, ban hãy viết ra tools tính toán bài đó sau đó áp dụng công hức hay tools viết ra để tính thật chính xác. "
+            "sau khi giải xong nếu cảm thấy đáp án chưa đủ căn cứ thì giải lại nhưng theo hướng khác thật rõ ràng một lần nữa hoặc giải xong bạn suy luận ngược từ đáp án đã chon ra đề bài lại đó là cách để kiểm chứng đúng hay là sai"
+            "Sau đó đối chiếu kết quả với từng đáp án A/B/C/D, nêu đáp án nào đúng và vì sao 3 đáp án còn lại sai. "
+            "Với ly_thuyet: trích đúng khái niệm/định nghĩa từ tài liệu."
         )
     )
-    answer: Literal["A", "B", "C", "D"] = Field(description="Đáp án đúng duy nhất, phải khớp với duy nhất options, lưu ý chọn sau khi đã giải thích xong, phải khớp kết luận của giai_thich")
+    answer: Literal["A", "B", "C", "D"] = Field(
+        description="Chọn SAU khi giải xong, phải khớp kết luận cuối của giai_thich"
+    )
 
     y_tuong: str = Field(description="Mô tả ngắn gọn ý tưởng/cách ra câu hỏi, dùng để đối chiếu tránh trùng lặp ý tưởng ở các câu sau")
 

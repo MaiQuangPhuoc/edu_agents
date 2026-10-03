@@ -3,7 +3,7 @@ import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from pathlib import Path
 from langchain_core.messages import AIMessage, HumanMessage
-from src.state_edu import ExamState, ChapterMatrixResponse
+from src.state_edu import ExamState, ChapterMatrixResponse , ExamMatrixResponse
 from src.clients.llm import LLMClient
 from src.edu_exam.curriculum import get_chapter, format_knowledge_profile
 from src.edu_qa.paths import BUILD_MATRIX_PROMPT_PATH
@@ -51,6 +51,40 @@ def _format_scores_ch(scores_ch: dict) -> str:
             lines.append(f"  - {sec}: {score} ({label})")
     return "\n".join(lines)
 
+def check_matrix(m, so_cau, so_de, so_tb, so_kho):
+    tot = sum(b.so_cau for b in m.bai_hoc)
+    de = sum(b.do_kho.de for b in m.bai_hoc)
+    tb = sum(b.do_kho.trung_binh for b in m.bai_hoc)
+    kho = sum(b.do_kho.kho for b in m.bai_hoc)
+    errs = []
+    if tot != so_cau:
+        errs.append(f"Tổng số câu = {tot}, cần {so_cau}: {'giảm' if tot > so_cau else 'tăng'} {abs(tot - so_cau)} câu.")
+    for name, got, need in [("dễ", de, so_de), ("trung bình", tb, so_tb), ("khó", kho, so_kho)]:
+        if got != need:
+            errs.append(f"Số câu {name} = {got}, cần {need}: {'giảm' if got > need else 'tăng'} {abs(got - need)}.")
+    return errs  # rỗng = đạt
+
+# đề xuất lượng câu hỏi theo score section 
+def _format_quota(scores_ch: dict, so_cau_ch: int) -> str:
+    """Tính số câu đề xuất theo điểm từng section, trả về text cho prompt."""
+    keys    = [(l, s) for l, secs in scores_ch.items() for s in secs]
+    weights = {k: scores_ch[k[0]][k[1]] for k in keys}
+    total_w = sum(weights.values()) or 1
+
+    raw  = {k: so_cau_ch * w / total_w for k, w in weights.items()}
+    base = {k: int(v) for k, v in raw.items()}
+    left = so_cau_ch - sum(base.values())
+    for k in sorted(raw, key=lambda k: raw[k] - base[k], reverse=True)[:left]:
+        base[k] += 1
+
+    label = ["không quan tâm", "ít quan tâm", "bình thường", "quan tâm cao"]
+    count_question =  "\n".join(
+        f"{lesson} | {sec} | {label[weights[(lesson, sec)]]} | đề xuất {base[(lesson, sec)]} câu"
+        for lesson, sec in keys
+    )
+    print(f"====================== số câu đề xuất ========================\n {count_question} \n =========================\n")
+
+    return count_question
 
 def build_matrix(state: ExamState, llm_client: LLMClient) -> dict:
     print(" ================================  file build_matrix  ================================\n"*2)
@@ -90,12 +124,16 @@ def build_matrix(state: ExamState, llm_client: LLMClient) -> dict:
         profile_ch = format_knowledge_profile(knowledge_profile.get(ch_id, {}))
         # print("\n==========\n profile_ch ", profile_ch, "\n ch_raw ", ch_raw, "\n scores_ch ", scores_ch, "\n==========\n")
 
+        quota_text = _format_quota(scores_ch, dist["so_cau"])
+
+
         prompt = (template
                   .replace("{chuong}", ch_raw)
                   .replace("{so_cau}", str(dist["so_cau"]))
                   .replace("{so_de}", str(dist["de"]))
                   .replace("{so_trung_binh}", str(dist["trung_binh"]))
                   .replace("{so_kho}", str(dist["kho"]))
+                  .replace("{de_xuat_so_cau}", quota_text)
                   .replace("{muc_tieu_diem}", str(muc_tieu))
                   .replace("{ghi_chu}", ghi_chu)
                   .replace("{knowledge_scores_ch}", _format_scores_ch(scores_ch))

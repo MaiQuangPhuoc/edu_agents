@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Nhắc lại về tập hợp",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Cho tập hợp A = {2, 4, 6, 8}. Câu nào sau đây mô tả đúng quan hệ giữa một phần tử và tập hợp A?",
+    "options": {
+      "A": "2 ∈ A",
+      "B": "A ∈ 2",
+      "C": "2 ⊂ A",
+      "D": "A ⊂ {2, 4, 6, 8}"
+    },
+    "answer": "A",
+    "giai_thich": "Ký hiệu “∈” được dùng để chỉ phần tử thuộc tập hợp. Vì 2 là một phần tử của A, nên 2 ∈ A là đúng. Ở đáp án B ký hiệu bị đảo ngược (tập hợp không thể là phần tử của một số). Đáp án C dùng ký hiệu “⊂” (tập con) sai vì 2 không phải là một tập hợp. Đáp án D nói A là tập con của {2,4,6,8}, tuy đúng về mặt tập con nhưng không mô tả mối quan hệ \"phần tử thuộc\" được yêu cầu, nên không phù hợp.",
+    "y_tuong": "Nhận dạng ký hiệu ∈, ⊂, và cách viết đúng quan hệ phần tử‑tập hợp",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 2,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề phủ định",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Viết phủ định của mệnh đề: “∀x ∈ ℝ, (x > 1 → x² > 1)”.",
+    "options": {
+      "A": "∃x ∈ ℝ sao cho x > 1 và x² ≤ 1",
+      "B": "∃x ∈ ℝ sao cho x ≤ 1 hoặc x² > 1",
+      "C": "∀x ∈ ℝ, x > 1 và x² ≤ 1",
+      "D": "∃x ∈ ℝ sao cho x ≤ 1 → x² > 1"
+    },
+    "answer": "A",
+    "giai_thich": "Phủ định của một mệnh đề toàn phần “∀x, P(x)” là “∃x sao cho ¬P(x)”. Đối với mệnh đề điều kiện “x > 1 → x² > 1”, phủ định là “x > 1 và x² ≤ 1”. Vì vậy phủ định đầy đủ là: ∃x ∈ ℝ sao cho x > 1 ∧ x² ≤ 1, tương đương đáp án A. Các đáp án B, C, D sai vì: B dùng “hoặc” thay vì “và”; C vẫn là toàn phần; D đảo ngược cấu trúc điều kiện.",
+    "y_tuong": "Áp dụng quy tắc phủ định cho mệnh đề toàn phần và mệnh đề điều kiện",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 3,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề đảo. Hai mệnh đề tương đương",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Xét các mệnh đề sau, với a, b ≥ 0:\nP: “Nếu a > b thì a² > b²”.\nQ: “Nếu a² > b² thì a > b”.\nLiệu Q có phải là mệnh đề đảo của P và hai mệnh đề có tương đương nhau không?",
+    "options": {
+      "A": "Là mệnh đề đảo nhau và đồng thời tương đương",
+      "B": "Là mệnh đề đảo nhau nhưng không tương đương",
+      "C": "Không phải mệnh đề đảo nhau nhưng tương đương",
+      "D": "Không phải mệnh đề đảo và không tương đương"
+    },
+    "answer": "A",
+    "giai_thich": "Mệnh đề Q được tạo ra bằng cách đổi vị trí của giả thiết và kết luận của P, nên Q là mệnh đề đảo (converse) của P. Khi a, b ≥ 0, hàm bình phương là hàm tăng, do đó a > b ⇔ a² > b². Vì vậy cả P và Q đều luôn đúng và ngược nhau, nên chúng tương đương. Do đó đáp án A là đúng. Các đáp án còn lại không phản ánh đúng khái niệm mệnh đề đảo và tính tương đương trong trường hợp a, b không âm.",
+    "y_tuong": "Kiểm tra mệnh đề đảo và tính tương đương của các mệnh đề có điều kiện",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 4,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp, phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho tập toàn thể U = {1,2,3,4,5,6,7,8}, A = {1,2,3,4,5}, B = {4,5,6}. Tính hiệu A \\ B và diễn giải ý nghĩa của tập kết quả.",
+    "options": {
+      "A": "{1,2,3}",
+      "B": "{4,5,6}",
+      "C": "{1,2,3,4,5}",
+      "D": "{6,7,8}"
+    },
+    "answer": "A",
+    "giai_thich": "Hiệu A \\ B được định nghĩa là các phần tử thuộc A nhưng không thuộc B. \n- A = {1,2,3,4,5}\n- B = {4,5,6}\nLoại bỏ các phần tử chung {4,5} khỏi A, còn lại {1,2,3}. Vì vậy A \\ B = {1,2,3}. \nÝ nghĩa: tập {1,2,3} chứa những phần tử chỉ có trong A, không xuất hiện trong B. \nCác đáp án sai: B là B \\ A, C là A nguyên vẹn, D là phần tử của U không liên quan.",
+    "y_tuong": "Tính hiệu hai tập hợp và giải thích ý nghĩa thực tế của kết quả",
+    "answer_code": "{1, 2, 3}",
+    "check": "✅"
+  },
+  {
+    "id": 5,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp, phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong tập toàn thể U = {1,2,3,4,5,6,7,8,9,10}, cho tập C = {2,4,6,8}. Tìm phần bù Cᶜ trong U và số phần tử của Cᶜ.",
+    "options": {
+      "A": "Cᶜ = {1,3,5,7,9,10}, |Cᶜ| = 6",
+      "B": "Cᶜ = {1,3,5,7,9}, |Cᶜ| = 5",
+      "C": "Cᶜ = {2,4,6,8,10}, |Cᶜ| = 5",
+      "D": "Cᶜ = {1,2,3,4,5,6,7,8,9,10}, |Cᶜ| = 10"
+    },
+    "answer": "A",
+    "giai_thich": "Phần bù của C trong U là các phần tử của U không thuộc C.\nU = {1,2,3,4,5,6,7,8,9,10}\nC = {2,4,6,8}\nLoại bỏ 2,4,6,8 khỏi U, còn lại {1,3,5,7,9,10}. Do đó Cᶜ = {1,3,5,7,9,10}. \nSố phần tử |Cᶜ| = 6 (đếm được 6 phần tử). \nCác đáp án B, C, D sai vì: B bỏ sót 10; C nhầm lẫn phần bù với tập hợp C; D cho toàn thể U mà không loại bỏ phần tử của C.",
+    "y_tuong": "Tính phần bù của tập con và đếm số phần tử",
+    "answer_code": "{1, 3, 5, 7, 9, 10} |C_comp| = 6",
+    "check": "✅"
+  },
+  {
+    "id": 6,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Một số tập con của tập hợp số thực",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Cho tập hợp S = {…, -2, -1, 0, 1, 2, …}. Hỏi tập S là tập con của tập nào trong các tập con đặc trưng của ℝ: ℤ, ℚ, ℕ?",
+    "options": {
+      "A": "ℤ",
+      "B": "ℚ",
+      "C": "ℕ",
+      "D": "Không thuộc bất kỳ tập nào trong ℤ, ℚ, ℕ"
+    },
+    "answer": "A",
+    "giai_thich": "S chứa mọi số nguyên âm, 0 và dương, tức là tập các số nguyên. Theo định nghĩa, ℤ = {..., -2, -1, 0, 1, 2, ...}. Vì mọi phần tử của S đều thuộc ℤ và ngược lại, S = ℤ, nên S là tập con (thực tế là bằng) ℤ. S không phải là tập con của ℚ hay ℕ vì ℚ chứa các phân số không nguyên và ℕ chỉ bao gồm các số nguyên không âm. Do đó đáp án đúng là A.",
+    "y_tuong": "Xác định tập con đặc trưng (ℤ, ℚ, ℕ) mà một tập hợp cho trước thuộc",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 7,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề phủ định",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho mệnh đề: \"∀x∈ℝ, x² ≥ 0\". Viết phủ định của mệnh đề này.",
+    "options": {
+      "A": "∀x∈ℝ, x² < 0",
+      "B": "∃x∈ℝ sao cho x² < 0",
+      "C": "∃x∈ℝ sao cho x² ≥ 0",
+      "D": "¬(∀x∈ℝ, x² ≥ 0)"
+    },
+    "answer": "B",
+    "giai_thich": "Phủ định của một mệnh đề toàn phần \"∀x∈ℝ, P(x)\" là \"∃x∈ℝ sao cho ¬P(x)\". Ở đây P(x) là \"x² ≥ 0\"; do đó ¬P(x) là \"x² < 0\". Vì vậy phủ định là \"∃x∈ℝ sao cho x² < 0\". Đáp án B là đúng. Các đáp án A và C thay đổi sai loại quantifier hoặc dấu bất đẳng thức; D là dạng ký hiệu chung nhưng không đưa ra mệnh đề cụ thể, không đáp ứng yêu cầu viết đầy đủ.",
+    "y_tuong": "Viết phủ định của mệnh đề toàn phần có ký hiệu ∀",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 8,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề đảo. Hai mệnh đề tương đương",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho hai mệnh đề: (1) \"Nếu a > 0 thì a² > 0\" và (2) \"Nếu a² ≤ 0 thì a ≤ 0\". Xác định (2) là mệnh đề gì của (1) và chúng có tương đương hay không?",
+    "options": {
+      "A": "(2) là mệnh đề đảo của (1) và chúng không tương đương",
+      "B": "(2) là mệnh đề đảo của (1) và chúng tương đương",
+      "C": "(2) là mệnh đề nghịch đảo (contrapositive) của (1) và chúng tương đương",
+      "D": "(2) không liên quan tới (1)"
+    },
+    "answer": "C",
+    "giai_thich": "Đối với mệnh đề dạng \"Nếu P thì Q\", mệnh đề nghịch đảo (contrapositive) là \"Nếu ¬Q thì ¬P\" và luôn tương đương với mệnh đề gốc. Ở (1), P: a > 0, Q: a² > 0. Khi viết ¬Q: a² ≤ 0 và ¬P: a ≤ 0, ta thu được mệnh đề \"Nếu a² ≤ 0 thì a ≤ 0\" – chính là (2). Do đó (2) là contrapositive của (1) và hai mệnh đề tương đương. Đáp án C là đúng. Các đáp án A và B nhầm lẫn giữa \"đảo\" (converse) và \"nghịch đảo\"; D không đúng.",
+    "y_tuong": "Nhận biết mệnh đề nghịch đảo và kiểm tra tính tương đương",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 9,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho A = {1,2,3,4,5} và B = {3,4,6}. Tính A\\B (hiệu của A và B) và cho biết số phần tử của A\\B.",
+    "options": {
+      "A": "A\\B = {1,2,5}, |A\\B| = 3",
+      "B": "A\\B = {1,2,3,4,5}, |A\\B| = 5",
+      "C": "A\\B = {3,4}, |A\\B| = 2",
+      "D": "A\\B = {1,2,5,6}, |A\\B| = 4"
+    },
+    "answer": "A",
+    "giai_thich": "Hiệu A\\B được định nghĩa là các phần tử thuộc A nhưng không thuộc B.\n- Các phần tử của A: 1,2,3,4,5.\n- Các phần tử của B: 3,4,6.\nLoại bỏ các phần tử chung (3 và 4) khỏi A, còn lại {1,2,5}. Do đó A\\B = {1,2,5}. Số phần tử của tập này là 3. Đáp án A khớp với kết quả vừa tìm. Các đáp án B, C, D sai vì: B chưa loại bỏ phần tử chung; C liệt kê các phần tử chung thay vì phần tử chỉ thuộc A; D thêm phần tử 6 không thuộc A.",
+    "y_tuong": "Tính hiệu của hai tập hợp hữu hạn và đếm số phần tử",
+    "answer_code": "{1, 2, 5} |A_minus_B| = 3",
+    "check": "✅"
+  },
+  {
+    "id": 10,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho A = {x∈ℝ | 0 ≤ x ≤ 1}. Xác định phần bù Aᶜ trong ℝ và viết mô tả tập bù dưới dạng bất đẳng thức.",
+    "options": {
+      "A": "{x∈ℝ | x < 0 hoặc x > 1}",
+      "B": "{x∈ℝ | 0 < x < 1}",
+      "C": "{x∈ℝ | x ≤ 0 hoặc x ≥ 1}",
+      "D": "{x∈ℝ | x ≤ 0 và x ≥ 1}"
+    },
+    "answer": "A",
+    "giai_thich": "Phần bù Aᶜ trong ℝ gồm tất cả các số thực không thuộc A. A chứa các x thỏa mãn 0 ≤ x ≤ 1. Vì vậy, các x không thỏa mãn điều kiện này là: x < 0 hoặc x > 1. Do đó Aᶜ = {x∈ℝ | x < 0 hoặc x > 1}. Đáp án A đúng. Đáp án B là mô tả A chứ không phải bù; C dùng dấu ≤, ≥ gây nhầm lẫn vì x = 0 và x = 1 thuộc A; D mô tả giao của hai bất đẳng thức, không tồn tại phần tử nào.",
+    "y_tuong": "Xác định phần bù của một tập con trên ℝ và diễn đạt bằng bất đẳng thức",
+    "answer_code": "",
+    "check": "✅"
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Nhận biết mệnh đề đúng hay sai",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Trong các mệnh đề sau, mệnh đề nào là sai?\n a) {a} ∈ {a, b, c, d}\n b) ∅ = {0}\n c) {a, b, c, d} = {b, a, d, c}\n d) {a, b} ⊂ {a, b, c}",
+    "options": {
+      "A": "a) {a} ∈ {a, b, c, d}",
+      "B": "b) ∅ = {0}",
+      "C": "c) {a, b, c, d} = {b, a, d, c}",
+      "D": "d) {a, b} ⊂ {a, b, c}"
+    },
+    "answer": "B",
+    "giai_thich": "a) đúng vì a là một phần tử của tập {a, b, c, d}.\\nb) sai vì tập rỗng ∅ không có phần tử nào, trong khi {0} có phần tử 0, nên ∅ ≠ {0}.\\nc) đúng vì hai tập hợp có cùng các phần tử, chỉ khác thứ tự liệt kê.\\nd) đúng vì mọi phần tử của {a, b} đều thuộc {a, b, c} và {a, b} không bằng {a, b, c} (đây là quan hệ tập con thực). Do đó chỉ có mệnh đề b) là sai.",
+    "y_tuong": "Nhận biết đúng sai của các mệnh đề liên quan đến ký hiệu ∈, =, ⊂ và tập rỗng",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 2,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Viết phủ định của một mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Viết phủ định của mệnh đề: “Nếu 2a - 1 > 0 thì a > 0” (a là số thực).",
+    "options": {
+      "A": "2a - 1 > 0 và a ≤ 0",
+      "B": "2a - 1 ≤ 0 hoặc a > 0",
+      "C": "2a - 1 > 0 hoặc a ≤ 0",
+      "D": "2a - 1 ≤ 0 và a > 0"
+    },
+    "answer": "A",
+    "giai_thich": "Mệnh đề dạng “Nếu P thì Q” có phủ định là “P và không Q”.\\nỞ đây P: 2a - 1 > 0, Q: a > 0.\\nDo đó phủ định là “2a - 1 > 0 và a ≤ 0”. Đây là đáp án A.",
+    "y_tuong": "Viết phủ định của mệnh đề điều kiện",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 3,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Kiểm tra tính đúng của mệnh đề phủ định",
+    "type": "ly_thuyet",
+    "do_kho": 2,
+    "question": "Mệnh đề phủ định “2a - 1 > 0 và a ≤ 0” (với a ∈ ℝ) là đúng hay sai?",
+    "options": {
+      "A": "Đúng",
+      "B": "Sai",
+      "C": "Không xác định",
+      "D": "Phải kiểm tra thêm"
+    },
+    "answer": "B",
+    "giai_thich": "Để mệnh đề “2a - 1 > 0 và a ≤ 0” đúng, phải tồn tại a thỏa mãn đồng thời 2a - 1 > 0 và a ≤ 0.\\nNếu a ≤ 0 thì 2a ≤ 0 ⇒ 2a - 1 ≤ -1 < 0, mâu thuẫn với 2a - 1 > 0.\\nVì không có giá trị a nào thỏa mãn cả hai bất đẳng thức, mệnh đề phủ định là luôn sai. Do đó đáp án B.",
+    "y_tuong": "Kiểm tra tính đúng sai của một mệnh đề phủ định",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 4,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Nhận biết ký hiệu và thuộc tính của tập hợp; Liệt kê phần tử của tập hợp cho trước",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Cho tập A = {x ∈ ℝ | x² = 4}. Các phần tử của A là:",
+    "options": {
+      "A": "{-2, 2}",
+      "B": "{4}",
+      "C": "{-4, 4}",
+      "D": "{0, 4}"
+    },
+    "answer": "A",
+    "giai_thich": "Phương trình x² = 4 có hai nghiệm thực: x = 2 và x = -2. Do đó tập A gồm đúng hai phần tử -2 và 2, tức A = {‑2, 2}. Đây là đáp án A.",
+    "y_tuong": "Liệt kê phần tử của tập được mô tả bằng điều kiện",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 5,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Nhận biết ký hiệu và thuộc tính của tập hợp; Liệt kê phần tử của tập hợp cho trước",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Tập G được mô tả bởi G = {x ∈ ℤ | 1 ≤ x ≤ 5}. Các phần tử của G là:",
+    "options": {
+      "A": "{1, 2, 3, 4, 5}",
+      "B": "{0, 1, 2, 3, 4, 5}",
+      "C": "{1, 2, 3, 4}",
+      "D": "{2, 3, 4, 5}"
+    },
+    "answer": "A",
+    "giai_thich": "Điều kiện 1 ≤ x ≤ 5 và x thuộc ℤ (số nguyên) cho các giá trị x = 1, 2, 3, 4, 5. Vì vậy G = {1, 2, 3, 4, 5}. Đây là đáp án A.",
+    "y_tuong": "Xác định các phần tử của một tập nguyên dựa trên bất đẳng thức",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 6,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Nhận biết ký hiệu và thuộc tính của tập hợp; Liệt kê phần tử của tập hợp cho trước",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho tập A = {2,4,6,8}. Ký hiệu nào sau đây mô tả đúng quan hệ giữa phần tử 4 và tập A?",
+    "options": {
+      "A": "4 ∈ A",
+      "B": "4 ⊂ A",
+      "C": "∅ ∈ A",
+      "D": "A ⊂ 4"
+    },
+    "answer": "A",
+    "giai_thich": "Theo định nghĩa, ký hiệu a ∈ A nghĩa a là phần tử của tập A. Vì 4 thuộc tập A nên \"4 ∈ A\" là đúng. Các ký hiệu còn lại sai: \"4 ⊂ A\" không có nghĩa vì ⊂ chỉ dùng cho tập con, không cho phần tử; \"∅ ∈ A\" sai vì tập rỗng không phải là phần tử của A; \"A ⊂ 4\" sai vì A là tập, 4 là số, không thể so sánh theo ⊂.",
+    "y_tuong": "Nhận biết ký hiệu ∈, ⊂, ∅ và áp dụng vào một tập cụ thể",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 7,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Xác định tập con của ℝ theo điều kiện",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Viết tập con của ℝ thỏa mãn bất đẳng thức 2x - 1 > 0 dưới dạng {x ∈ ℝ | …}.",
+    "options": {
+      "A": "{x ∈ ℝ | x > 1/2}",
+      "B": "{x ∈ ℝ | x > 2}",
+      "C": "{x ∈ ℝ | x < 1/2}",
+      "D": "{x ∈ ℝ | x ≥ 1/2}"
+    },
+    "answer": "A",
+    "giai_thich": "Giải bất đẳng thức: 2x - 1 > 0 ⇒ 2x > 1 ⇒ x > 1/2. Do đó tập con cần viết là {x ∈ ℝ | x > 1/2}. Các đáp án B, C, D sai vì chúng mô tả các điều kiện không tương đương với bất đẳng thức đã cho.",
+    "y_tuong": "Xác định tập con của ℝ theo điều kiện 2a-1>0",
+    "answer_code": "",
+    "check": "✅"
+  },
+  {
+    "id": 8,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Xác định tập con của ℝ theo điều kiện",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho b = 3. Viết tập con của ℝ các số a thỏa mãn a - 2 > b dưới dạng {x ∈ ℝ | …}.",
+    "options": {
+      "A": "{a ∈ ℝ | a > 5}",
+      "B": "{a ∈ ℝ | a > 1}",
+      "C": "{a ∈ ℝ | a > 2}",
+      "D": "{a ∈ ℝ | a > 3}"
+    },
+    "answer": "A",
+    "giai_thich": "Với b = 3, bất đẳng thức a - 2 > b trở thành a - 2 > 3 ⇒ a > 5. Vì a là số thực, tập con được viết là {a ∈ ℝ | a > 5}. Các đáp án B, C, D tương ứng với các giá trị sai (a > 1, a > 2, a > 3) không thỏa mãn bất đẳng thức gốc.",
+    "y_tuong": "Xác định tập con của ℝ theo điều kiện a-2>b với b cho trước",
+    "answer_code": "",
+    "check": "✅"
+  },
+  {
+    "id": 9,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp, phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho không gian mẫu U = {1,2,3,4,5,6}, A = {1,2,3,4}, B = {3,4,5}. Tính A \\ B và phần bù của B trong U.",
+    "options": {
+      "A": "A\\B = {1,2} và B^c = {1,2,6}",
+      "B": "A\\B = {3,4} và B^c = {1,2,6}",
+      "C": "A\\B = {1,2,3,4} và B^c = {6}",
+      "D": "A\\B = {5,6} và B^c = {1,2,3,4}"
+    },
+    "answer": "A",
+    "giai_thich": "Hiệu A\\B = {x | x ∈ A và x ∉ B}. Các phần tử A là {1,2,3,4}; loại bỏ các phần tử thuộc B ({3,4,5}) được còn {1,2}. Phần bù của B trong U là U\\B = {x ∈ U | x ∉ B} = {1,2,6}. Vì vậy đáp án A đúng. Các đáp án B, C, D chứa ít nhất một sai lầm: B nhầm phần tử hiệu, C đưa toàn bộ A và sai phần bù, D sai cả hai kết quả.",
+    "y_tuong": "Hiệu của hai tập hợp và phần bù của tập con trong không gian mẫu",
+    "answer_code": "({1, 2}, {1, 2, 6})",
+    "check": "✅"
+  },
+  {
+    "id": 10,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp, phần bù của tập con",
+    "type": "ly_thuyet",
+    "do_kho": 2,
+    "question": "Cho không gian mẫu U = {‑2,‑1,0,1,2} và tập C = {‑1,0,1}. Phần bù của C trong U là gì?",
+    "options": {
+      "A": "{‑2,2}",
+      "B": "{‑2,‑1,0,1,2}",
+      "C": "{‑1,0,1}",
+      "D": "{‑2,‑1,0,1,2,3}"
+    },
+    "answer": "A",
+    "giai_thich": "Phần bù của C trong U được định nghĩa là U\\C = {x ∈ U | x ∉ C}. Loại bỏ các phần tử của C ({‑1,0,1}) khỏi U ({‑2,‑1,0,1,2}) còn lại {‑2,2}. Do đó đáp án A đúng. Các đáp án B, C, D không loại bỏ đúng các phần tử của C hoặc chứa phần tử không thuộc U.",
+    "y_tuong": "Xác định phần bù của một tập con trong không gian mẫu",
+    "answer_code": "",
+    "check": ""
+  }
+]

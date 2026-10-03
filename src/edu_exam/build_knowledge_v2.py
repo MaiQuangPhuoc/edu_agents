@@ -64,6 +64,9 @@ def _analyze_chapters(state: dict, llm_client: LLMClient) -> dict:
     # structured_llm    = llm_client._llm.with_structured_output(KnowledgeChapterProfile)   # ← thêm
 
     for ch_id, ch_scores in knowledge_scores.items():
+        chapter        = get_chapter(subject, ch_id)
+        valid_sections = [s for secs in chapter["lessons"].values() for s in secs]
+        cau_truc       = "\n".join(f"- {l}: {'; '.join(secs)}" for l, secs in chapter["lessons"].items())
         chunks_ch = [
             c["content"]
             for c in retrieved_chunks
@@ -79,15 +82,17 @@ def _analyze_chapters(state: dict, llm_client: LLMClient) -> dict:
         prompt = (template
                   .replace("{chuong}",  get_chapter(subject, ch_id)["chapter_name"])
                   .replace("{pham_vi}", str(pham_vi))
+                  .replace("{cau_truc}", cau_truc)
                   .replace("{ghi_chu}", str(ghi_chu))
                   .replace("{scores}",  scores_text)
                   .replace("{chunks}",  chunks_text))
 
+        print("======================= prompt build knowledge ------------------\n {prompt} \n--------------------------\n")
         result = None
         for attempt in range(3):
             try:
                 # result = structured_llm.invoke([{"role": "user", "content": prompt}])
-                result = llm_client.invoke_structured(KnowledgeChapterProfile, [{"role": "user", "content": prompt}], max_tokens=2000)
+                result = llm_client.invoke_structured(KnowledgeChapterProfile, [{"role": "user", "content": prompt}], max_tokens=3500)
                 break
             except Exception as e:
                 print(f"[build_knowledge] chương {ch_id} attempt {attempt} lỗi: {e}")
@@ -98,7 +103,16 @@ def _analyze_chapters(state: dict, llm_client: LLMClient) -> dict:
             failed_chapters.append(ch_id)                          # ← thêm: track lại
         else:
             print(f"[build_knowledge] ✅ chương {ch_id} phân tích thành công")   # ← thêm: log rõ ràng khi OK
-            knowledge_profile[ch_id] = result.model_dump()
+            # knowledge_profile[ch_id] = result.model_dump()
+            prof = result.model_dump()
+            prof["chuong"]   = chapter["chapter_name"]            # code ghi đè, không tin LLM
+            prof["bai_hoc"]  = list(chapter["lessons"].keys())    # lấy từ curriculum
+            prof["dang_bai"] = [d for d in prof["dang_bai"] if d["section"] in valid_sections]
+            missing = set(valid_sections) - {d["section"] for d in prof["dang_bai"]}
+            if missing:
+                print(f"[build_knowledge] chương {ch_id} thiếu dạng bài cho: {missing}")
+            knowledge_profile[ch_id] = prof
+            print(f"\n============ knowldge chapter =====================\n {prof} \n ============================\n")
 
     return knowledge_profile, failed_chapters
 
