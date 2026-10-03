@@ -39,6 +39,10 @@ Nội dung tài liệu:
    Nếu tài liệu chưa đủ cho một section, dùng dạng bài trực tiếp từ tên section, không suy diễn thêm.
 5. Tên dạng bài ngắn, nói rõ việc học sinh phải làm. Không trùng nhau giữa các dạng bài.
 6. Ghi chú học sinh (nếu có) chỉ dùng để ưu tiên dạng bài, không được thêm kiến thức ngoài tài liệu.
+7. Đề thi là trắc nghiệm 4 đáp án A/B/C/D. Học sinh được làm nháp, nên dạng bài tính toán/biến đổi nhiều bước vẫn dùng được.
+  + Diễn đạt dạng bài theo hướng có kết quả cuối cụ thể để chọn (một số, biểu thức, tập hợp, khoảng, mệnh đề đúng/sai).
+  + Dạng bài cần hình vẽ hoặc hình cho sẵn thì diễn đạt lại bằng lời/công thức (ví dụ "vẽ đồ thị hàm số bậc hai" -> "xác định đỉnh, trục đối xứng, giao điểm của đồ thị hàm số bậc hai").
+  + Tên dạng bài không trùng tên section; mỗi dạng bài nên là một kiểu bài rõ ràng.Thay bằng: nhận dạng, xác định, tính, tìm, so sánh, kiểm tra tính đúng sai, đọc thông tin từ hàm số/phương trình/tập hợp cho bằng chữ.
 
 ## LƯU Ý
 Viết súc tích, không lặp ý giữa các trường dữ liệu

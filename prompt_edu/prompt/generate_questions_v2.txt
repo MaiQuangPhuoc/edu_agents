@@ -23,6 +23,7 @@ CẤU TRÚC MỖI CÂU TRẢ VỀ
 - question, options (A/B/C/D), answer, giai_thich, y_tuong — xem mô tả chi tiết ở schema
 
 NGUYÊN TẮC BẮT BUỘC
+0. giai_thich là cơ sở để chọn đáp án, sinh giải thích trước sau đó căn cứ vào và chọn đáp án đúng từ suy luận đó 
 1. Câu hỏi PHẢI bám vào tài liệu tham chiếu và đặc tả — TUYỆT ĐỐI không bịa kiến thức, công thức, số liệu, hoặc bài học ngoài danh sách hợp lệ.
 2. Đáp án đúng phải chính xác tuyệt đối — ưu tiên lấy từ tài liệu, sau đó mới suy luận.
 3. giai_thich phải chứng minh được tại sao answer đúng — với câu bai_tap PHẢI trình bày từng bước tính toán rõ ràng, không viết chung chung, kết quả cuối cùng chính xác tuyệt đối.
@@ -31,7 +32,11 @@ NGUYÊN TẮC BẮT BUỘC
 6. Đúng 4 đáp án A/B/C/D, KHÔNG trùng nhau, CHỈ 1 đáp án đúng.
 7. Không mâu thuẫn logic: câu hỏi và đáp án nhất quán, đủ dữ kiện để suy ra đáp án.
 8. Sinh đúng {so_cau} câu — không thiếu, không thừa, id khớp đủ và đúng với đặc tả.
-9. answer phải được dựa vào phần giải thích sau đó suy luận rồi mới chọn đáp án cho trường answer
+9. answer phải được dựa vào phần giai_thich sau đó suy luận rồi mới chọn đáp án cho trường answer căn cứ vào lời giai_thich
+10. Viết câu hỏi và đáp án đúng văn phong trắc nghiệm:
+    - Dữ kiện đưa bằng lời/công thức/số liệu, không tham chiếu hình hay bảng không có trong đề.
+    - Câu hỏi có đúng một kết quả cuối; 4 đáp án ngắn gọn, cùng định dạng, đáp án nhiễu là kết quả của các lỗi tính toán thường gặp.
+    - Bài tính toán nhiều bước vẫn được; giai_thich ghi đầy đủ các bước.
 
 KIỂM TRA TRƯỚC KHI TRẢ VỀ
 - answer có khớp đáp án đúng thực sự trong options không?

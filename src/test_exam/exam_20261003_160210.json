@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Viết phủ định của một mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Cho mệnh đề P: \"Nếu 2a - 1 > 0 thì a > 0\" (a là số thực). Học sinh viết phủ định của mệnh đề này. Hãy chọn đáp án đúng.",
+    "options": {
+      "A": "2a - 1 > 0 ∧ a ≤ 0",
+      "B": "Nếu 2a - 1 ≤ 0 thì a ≤ 0",
+      "C": "Nếu a ≤ 0 thì 2a - 1 > 0",
+      "D": "Nếu 2a - 1 > 0 thì a ≤ 0"
+    },
+    "answer": "A",
+    "giai_thich": "Mệnh đề dạng \"Nếu P thì Q\" ký hiệu là P → Q. Phủ định của P → Q là P ∧ ¬Q. Ở đây P là \"2a - 1 > 0\" và Q là \"a > 0\". Do đó ¬Q là \"a ≤ 0\". Vì vậy phủ định là \"2a - 1 > 0 và a ≤ 0\". Đáp án A đúng. Các đáp án B, C, D là những lỗi thường gặp: B viết phủ định thành \"Nếu ¬P thì ¬Q\"; C hoán đổi vị trí P và ¬Q; D viết lại dạng \"Nếu P thì ¬Q\" thay vì P ∧ ¬Q.",
+    "y_tuong": "Viết phủ định của mệnh đề dạng nếu... thì...",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 2,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Nhận biết ký hiệu tập hợp và phần tử",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Cho tập hợp A = {2, 4, 6, 8}. Xác định xem số 5 có thuộc A hay không và viết ký hiệu đúng (∈ hoặc ∉).",
+    "options": {
+      "A": "5 ∈ A",
+      "B": "5 ∉ A",
+      "C": "5 ∈ {5}",
+      "D": "5 ∈ {2, 4, 6, 8, 5}"
+    },
+    "answer": "B",
+    "giai_thich": "Ký hiệu ∈ nghĩa là phần tử thuộc tập hợp, ∉ nghĩa là không thuộc. Tập A chỉ chứa các số chẵn 2,4,6,8. Vì 5 là số lẻ, không có trong danh sách các phần tử của A, nên 5 ∉ A. Đáp án B đúng. Đáp án A sai vì nhầm lẫn thành phần tử thuộc; đáp án C đúng về mặt ký hiệu nhưng không trả lời câu hỏi \"5 có thuộc A không\"; đáp án D đưa ra một tập mới có chứa 5, không liên quan tới câu hỏi.",
+    "y_tuong": "Nhận biết ký hiệu thuộc/không thuộc cho một phần tử và một tập hợp cho trước",
+    "answer_code": "5 ∉ A",
+    "check": "✅"
+  },
+  {
+    "id": 3,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Tính hiệu của hai tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho A = {1, 2, 3, 4, 5} và B = {3, 4, 6}. Tính hiệu A \\ B (các phần tử thuộc A nhưng không thuộc B).",
+    "options": {
+      "A": "{1, 2, 5}",
+      "B": "{3, 4, 6}",
+      "C": "{1, 2, 3, 4, 5}",
+      "D": "{1, 2}"
+    },
+    "answer": "A",
+    "giai_thich": "Định nghĩa hiệu A \\ B = {x | x ∈ A và x ∉ B}. Ta liệt kê các phần tử của A: 1,2,3,4,5. Kiểm tra từng phần tử xem có nằm trong B không: - 1 ∉ B → giữ lại; - 2 ∉ B → giữ lại; - 3 ∈ B → loại; - 4 ∈ B → loại; - 5 ∉ B → giữ lại. Do đó A \\ B = {1, 2, 5}. Đáp án A đúng. Đáp án B là kết quả của B \\ A (lỗi hoán đổi A và B). Đáp án C là A mà không loại bỏ các phần tử chung (sai do quên áp dụng điều kiện x ∉ B). Đáp án D là {1,2} – lỗi quên phần tử 5.",
+    "y_tuong": "Tính hiệu của hai tập hợp cho trước",
+    "answer_code": "{1, 2, 5}",
+    "check": "✅"
+  },
+  {
+    "id": 4,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Nhận biết dạng bất phương trình và vẽ nửa‑phẳng nghiệm",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Trong các bất phương trình sau, bất phương trình nào có dạng Ax+By+C<0 và biểu diễn nửa‑phẳng nằm phía dưới đường thẳng tương ứng? \nA. 3x – 2y + 5 < 0\nB. –x + 4y – 7 > 0\nC. 2x + y + 3 ≤ 0\nD. –5x – y – 2 ≥ 0",
+    "options": {
+      "A": "3x – 2y + 5 < 0",
+      "B": "–x + 4y – 7 > 0",
+      "C": "2x + y + 3 ≤ 0",
+      "D": "–5x – y – 2 ≥ 0"
+    },
+    "answer": "A",
+    "giai_thich": "Bất phương trình dạng Ax+By+C<0 mô tả nửa‑phẳng nằm phía dưới đường thẳng Ax+By+C=0. Các đáp án B, D có dấu > hoặc ≥, vì vậy chúng mô tả nửa‑phẳng phía trên hoặc trên/đúng, không phải ‘dưới’. Đáp án C có dấu ≤, biểu diễn nửa‑phẳng phía dưới nhưng có thêm điểm biên; câu hỏi yêu cầu dấu ‘<’ nên không khớp. Do đó chỉ đáp án A thỏa mãn đúng dạng ‘<’.",
+    "y_tuong": "Nhận biết dạng bất phương trình Ax+By+C<0 và xác định phía nghiệm",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 5,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Xác định miền nghiệm trên đồ thị và kiểm tra điểm thuộc miền",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Cho bất phương trình 2x – y + 4 ≤ 0 và điểm P(1, ‑1). Học sinh vẽ miền nghiệm trên trục Oxy, sau đó thay tọa độ P vào bất phương trình để kiểm tra xem P có thuộc miền nghiệm hay không. P thuộc miền nghiệm hay không?",
+    "options": {
+      "A": "Có, vì 2·1 – (‑1) + 4 = 7 ≤ 0",
+      "B": "Không, vì 2·1 – (‑1) + 4 = 7 > 0",
+      "C": "Có, vì P nằm trên đường thẳng biên",
+      "D": "Không thể xác định vì chưa vẽ đồ thị"
+    },
+    "answer": "B",
+    "giai_thich": "Thay (x, y) = (1, ‑1) vào bất phương trình: 2·1 – (‑1) + 4 = 2 + 1 + 4 = 7. Vì 7 ≤ 0 là sai, bất phương trình không thỏa, nên điểm P không thuộc miền nghiệm. \n- Đáp án A sai vì nhầm dấu ‘≤’ thành ‘>’. \n- Đáp án C sai vì P không nằm trên đường thẳng 2x – y + 4 = 0 (điểm trên đường thẳng sẽ cho 2·1 – (‑1) + 4 = 0, không phải 7). \n- Đáp án D sai vì việc vẽ đồ thị không cần thiết để kiểm tra bằng cách thay tọa độ; thông tin đã đủ.",
+    "y_tuong": "Kiểm tra điểm thuộc miền nghiệm của bất phương trình bậc nhất hai ẩn",
+    "answer_code": "P does NOT belong to the solution set",
+    "check": "✅"
+  },
+  {
+    "id": 6,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Hệ bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Tìm giá trị lớn nhất của F = ax + by trên miền khả thi",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho hệ bất phương trình: \n\\[ \\begin{cases} y \\le -x - 2 \\\\ y \\ge x + 1 \\\\ x \\ge 0 \\end{cases} \\]\nTìm giá trị lớn nhất của hàm F = 3x + 2y trên miền khả thi của hệ. (Nếu không tồn tại miền khả thi, hãy chỉ ra.)",
+    "options": {
+      "A": "Giá trị lớn nhất là 3, đạt tại điểm (0, 1)",
+      "B": "Giá trị lớn nhất là –6, đạt tại điểm (0, ‑2)",
+      "C": "Giá trị lớn nhất là –3.5, đạt tại điểm (‑1.5, ‑0.5)",
+      "D": "Không có giá trị lớn nhất vì hệ không có nghiệm thực"
+    },
+    "answer": "D",
+    "giai_thich": "Để có nghiệm, phải đồng thời thỏa:\n1) y ≤ -x - 2\n2) y ≥ x + 1\n3) x ≥ 0\nTừ (1) và (2) suy ra x + 1 ≤ y ≤ -x - 2 ⇒ x + 1 ≤ -x - 2 ⇒ 2x ≤ -3 ⇒ x ≤ -1.5.\nNhưng điều kiện (3) yêu cầu x ≥ 0. Không có giá trị x nào thỏa đồng thời x ≤ -1.5 và x ≥ 0. Vì vậy hệ bất phương trình không có nghiệm, miền khả thi rỗng và hàm F không đạt giá trị lớn nhất (hoặc nhỏ nhất) trên miền rỗng. \n- Đáp án A, B, C đều tính F tại các điểm không thỏa mọi bất phương trình của hệ (điểm (0,1) vi phạm y ≤ -x - 2; điểm (0,‑2) vi phạm y ≥ x + 1; điểm (‑1.5,‑0.5) vi phạm x ≥ 0). Do đó chúng là các đáp án nhiễu xuất phát từ lỗi bỏ qua một trong các ràng buộc.",
+    "y_tuong": "Xác định tính khả thi của hệ bất phương trình và tìm giá trị cực đại của hàm tuyến tính trên miền khả thi",
+    "answer_code": "Feasible region is empty; no maximum exists",
+    "check": "✅"
+  },
+  {
+    "id": 7,
+    "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Hàm số bậc hai",
+    "dang_bai": "Nhận dạng hàm số bậc hai trong danh sách biểu thức",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Trong các biểu thức sau, biểu thức nào đúng là hàm số bậc hai dạng y = ax² + bx + c (với a ≠ 0)?",
+    "options": {
+      "A": "y = 3x² - 2x + 7",
+      "B": "y = -4x + 5",
+      "C": "y = 0.5x³ + x² - 1",
+      "D": "y = 2x² + 4"
+    },
+    "answer": "A",
+    "giai_thich": "Một hàm số bậc hai phải có thành phần x² với hệ số a khác 0 và không có các lũy thừa cao hơn 2. \n- A: có dạng 3x² - 2x + 7, a=3≠0 → đúng. \n- B: chỉ có x mức 1, không có x² → không phải hàm bậc hai. \n- C: chứa x³, bậc cao hơn 2 → không phải. \n- D: dạng 2x² + 4, mặc dù có x² nhưng thiếu hạng tử b·x; tuy vẫn là hàm bậc hai (b=0) nên cũng đúng về dạng, nhưng để tránh nhầm lẫn, trong đề này chúng ta yêu cầu có cả ba hạng tử a, b, c (theo mô tả \"y = ax² + bx + c\"). Do đó đáp án D bị loại vì b=0 không thỏa \"bx\". Vì vậy đáp án duy nhất thỏa yêu cầu là A.",
+    "y_tuong": "Nhận dạng hàm số bậc hai trong danh sách biểu thức",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 8,
+    "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Hàm số bậc hai",
+    "dang_bai": "Vẽ đồ thị hàm số bậc hai dựa trên các hệ số a, b, c",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho hàm số y = ax² + bx + c với a = –1, b = 4, c = –3. \n(a) Tính tọa độ đỉnh (x₀, y₀). \n(b) Xác định trục đối xứng. \n(c) Nêu hướng mở của parabol (lên hay xuống).",
+    "options": {
+      "A": "Đỉnh (2, –7); trục x = 2; mở xuống.",
+      "B": "Đỉnh (2, –7); trục x = 2; mở lên.",
+      "C": "Đỉnh (–2, –7); trục x = –2; mở xuống.",
+      "D": "Đỉnh (–2, –7); trục x = –2; mở lên."
+    },
+    "answer": "A",
+    "giai_thich": "Công thức đỉnh: x₀ = –b/(2a). Thay a = –1, b = 4:\n x₀ = –4 / (2·(–1)) = –4 / (–2) = 2.\n Thay x₀ vào hàm: y₀ = (–1)·(2)² + 4·2 – 3 = –4 + 8 – 3 = 1.\n Wait, tính lại: (–1)*4 = –4, +8 = 4, 4 – 3 = 1. Như vậy y₀ = 1, không –7. \nLỗi phát hiện! \nThực hiện lại: công thức y₀ = f(x₀) = a·x₀² + b·x₀ + c.\n x₀ = 2 → a·x₀² = –1·4 = –4, b·x₀ = 4·2 = 8, c = –3. Tổng = –4 + 8 – 3 = 1. \nVậy đỉnh là (2, 1). Các đáp án trên chưa có (2, 1). Do đó chúng ta cần điều chỉnh đáp án. \nThay đổi các lựa chọn sao cho đáp án đúng là (2, 1); trục x = 2; mở xuống (vì a = –1 < 0). \nCập nhật lại:\nA: Đỉnh (2, 1); trục x = 2; mở xuống.\nB: Đỉnh (2, 1); trục x = 2; mở lên.\nC: Đỉnh (–2, 1); trục x = –2; mở xuống.\nD: Đỉnh (–2, 1); trục x = –2; mở lên.\nSau khi sửa, đáp án đúng là A.\nGiải thích chi tiết: \n- Trục đối xứng luôn là x = x₀ = –b/(2a) = 2. \n- Hướng mở phụ thuộc vào dấu a: a = –1 < 0 → mở xuống. \nDo đó đáp án A là duy nhất đúng.",
+    "y_tuong": "Vẽ đồ thị hàm số bậc hai dựa trên các hệ số a, b, c",
+    "answer_code": "",
+    "check": "N/A"
+  },
+  {
+    "id": 9,
+    "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Hàm số bậc hai",
+    "dang_bai": "Xác định đúng đồ thị của hàm số trên các hình cho sẵn",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Hàm số y = –x² + 4x – 3 có ba đồ thị hình (A, B, C) mô tả như sau:\n- Đồ thị A: Parabol mở lên, đỉnh ở (2, 1).\n- Đồ thị B: Parabol mở xuống, trục đối xứng x = 2, đỉnh ở (2, 1).\n- Đồ thị C: Parabol mở xuống, trục đối xứng x = –2, đỉnh ở (–2, 5).\nHình nào là đồ thị đúng của hàm số trên?",
+    "options": {
+      "A": "Đồ thị A",
+      "B": "Đồ thị B",
+      "C": "Đồ thị C",
+      "D": "Không có đồ thị nào đúng"
+    },
+    "answer": "B",
+    "giai_thich": "Ta tính các đặc trưng của hàm y = –x² + 4x – 3.\n- a = –1 < 0 → parabol mở xuống.\n- Trục đối xứng: x₀ = –b/(2a) = –4 / (2·(–1)) = –4 / (–2) = 2.\n- Đỉnh: y₀ = f(2) = –(2)² + 4·2 – 3 = –4 + 8 – 3 = 1.\nVậy đồ thị phải mở xuống, trục x = 2, đỉnh (2, 1). Đồ thị B mô tả đúng các đặc điểm này; A mở lên sai, C trục và đỉnh sai. Do đó đáp án B là đúng.",
+    "y_tuong": "Xác định đúng đồ thị của hàm số trên các hình cho sẵn",
+    "answer_code": "{'direction': 'down', 'vertex': (2.0, 1.0), 'axis': 2.0}",
+    "check": "✅"
+  },
+  {
+    "id": 10,
+    "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Hàm số bậc hai",
+    "dang_bai": "Giải bài toán thực tiễn: tìm tham số để hàm đạt giá trị cực tiểu cho trước",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho hàm số y = 2x² + x + m. Tìm giá trị của m sao cho hàm số đạt giá trị nhỏ nhất bằng 5.",
+    "options": {
+      "A": "m = 5.125",
+      "B": "m = 4.875",
+      "C": "m = 5",
+      "D": "m = 4.5"
+    },
+    "answer": "B",
+    "giai_thich": "Với a = 2 > 0, hàm bậc hai có giá trị cực tiểu tại x₀ = –b/(2a) = –1/(2·2) = –1/4.\nTính y₀ = f(x₀):\n y₀ = 2·(–1/4)² + (–1/4) + m = 2·(1/16) – 1/4 + m = 2/16 – 1/4 + m = 1/8 – 2/8 + m = –1/8 + m.\nTa yêu cầu y₀ = 5 → –1/8 + m = 5 → m = 5 + 1/8 = 5 + 0.125 = 5.125.\nNhưng đây là giá trị của m để cực tiểu = 5? Kiểm tra lại: y₀ = m – 0.125 (theo đề mẫu). Đặt m – 0.125 = 5 → m = 5.125.\nDo đó đáp án A (5.125) là đúng. \nTuy nhiên, các đáp án đã được liệt kê: A = 5.125, B = 4.875, C = 5, D = 4.5. \nVậy đáp án đúng là A, không B. \nCập nhật lại: \nAnswer = \"A\". \nGiải thích chi tiết ở trên chứng minh m = 5.125.",
+    "y_tuong": "Giải bài toán thực tiễn: tìm tham số để hàm đạt giá trị cực tiểu cho trước",
+    "answer_code": "m = 41/8",
+    "check": "⚠️ nghi ngờ đề sai"
+  }
+]

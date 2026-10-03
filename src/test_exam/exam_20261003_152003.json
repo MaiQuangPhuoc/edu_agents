@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề phủ định",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Cho mệnh đề P: {a} ∈ {a, b, c, d}. Xác định tính đúng – sai của mệnh đề phủ định ¬P.",
+    "options": {
+      "A": "Đúng",
+      "B": "Sai",
+      "C": "Không xác định",
+      "D": "Không thể xác định vì thiếu thông tin"
+    },
+    "answer": "B",
+    "giai_thich": "P là mệnh đề đúng vì a là một phần tử của tập {a, b, c, d}. Mệnh đề phủ định ¬P là \"{a} ∉ {a, b, c, d}\". Vì {a} thực sự thuộc tập, biểu thức ¬P sai. Do đó đáp án đúng là B – Sai. Các đáp án A, C, D là các lỗi thường gặp: A nhầm thành đúng, C cho rằng không đủ thông tin, D cho rằng cần thêm dữ liệu, trong khi tập đã được cho đầy đủ.",
+    "y_tuong": "Xác định đúng sai của mệnh đề phủ định liên quan đến ký hiệu ∈",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 2,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Nhắc lại về tập hợp",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Mô tả bằng lời: “Tập hợp các số nguyên dương nhỏ hơn 5 và chia hết cho 2”. Viết ký hiệu tập hợp và liệt kê đầy đủ các phần tử của nó.",
+    "options": {
+      "A": "{2, 4}",
+      "B": "{1, 3, 5}",
+      "C": "∅",
+      "D": "{2, 4, 6}"
+    },
+    "answer": "A",
+    "giai_thich": "Các số nguyên dương < 5 là {1,2,3,4}. Trong số này, chỉ có 2 và 4 chia hết cho 2. Do đó tập cần viết là {2, 4}. Đáp án A khớp. Đáp án B liệt kê các số lẻ (sai nhầm tính chia hết). Đáp án C cho rằng tập rỗng (sai vì tồn tại phần tử thỏa mãn). Đáp án D thêm 6, vượt quá giới hạn <5 (sai vì không thỏa điều kiện).",
+    "y_tuong": "Viết ký hiệu tập hợp từ mô tả bằng lời",
+    "answer_code": "{2, 4}",
+    "check": "✅"
+  },
+  {
+    "id": 3,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp, phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho tập A = {1, 2, 3, 4, 5}, tập B = {3, 5, 7} và tập toàn thể E = {1, 2, 3, 4, 5, 6, 7, 8}. Tính (i) A \\ B và (ii) phần bù của (A \\ B) trong E.",
+    "options": {
+      "A": "{1, 2, 4} và {3, 5, 6, 7, 8}",
+      "B": "{3, 5, 7} và {1, 2, 4, 6, 8}",
+      "C": "{1, 2, 4, 5} và {3, 6, 7, 8}",
+      "D": "{1, 2, 3, 4, 5} và {6, 7, 8}"
+    },
+    "answer": "A",
+    "giai_thich": "Hiệu A \\ B gồm các phần tử thuộc A mà không thuộc B: A = {1,2,3,4,5}, B = {3,5,7} → A \\ B = {1,2,4}.\\nPhần bù của C = A \\ B trong E là E \\ C = {1,2,3,4,5,6,7,8} \\ {1,2,4} = {3,5,6,7,8}.\\nDo đó đáp án đúng là A: \"{1, 2, 4} và {3, 5, 6, 7, 8}\".\\nCác đáp án sai: B nhầm lấy B thay vì A\\B; C thêm 5 vào hiệu và bỏ 5 khỏi phần bù; D tính hiệu A (không trừ B) và phần bù của A, sai hoàn toàn.",
+    "y_tuong": "Tính hiệu và phần bù của tập hợp trong một tập toàn thể",
+    "answer_code": "({1, 2, 4}, {3, 5, 6, 7, 8})",
+    "check": "✅"
+  },
+  {
+    "id": 4,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Khái niệm bất phương trình bậc nhất hai ẩn",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Hãy nêu định nghĩa bất phương trình bậc nhất hai ẩn và viết dạng tổng quát của nó.",
+    "options": {
+      "A": "Bất phương trình bậc nhất hai ẩn là bất đẳng thức có dạng ax + by < c (hoặc ≤, >, ≥) trong đó a, b, c là hằng số, a và b không đồng thời bằng 0; nghiệm là tập các cặp (x, y) thỏa mãn bất đẳng thức này.",
+      "B": "Bất phương trình bậc nhất hai ẩn là phương trình có dạng ax + by = c, trong đó a, b, c là hằng số.",
+      "C": "Bất phương trình bậc nhất hai ẩn là bất đẳng thức bậc hai dạng ax^2 + by^2 < c.",
+      "D": "Bất phương trình bậc nhất hai ẩn là bất đẳng thức có ba ẩn dạng ax + by + cz < d."
+    },
+    "answer": "A",
+    "giai_thich": "Theo tài liệu, bất phương trình bậc nhất hai ẩn có dạng ax + by < c (hoặc ≤, >, ≥) với a, b, c là hằng số, a và b không đồng thời bằng 0. Định nghĩa này nêu rõ rằng bất đẳng thức chỉ chứa các hạng tử bậc nhất của x và y. Vì vậy đáp án A mô tả đúng, các đáp án còn lại sai vì chúng đưa vào dấu =, bậc hai hoặc thêm biến thứ ba, không phù hợp với định nghĩa yêu cầu.",
+    "y_tuong": "Yêu cầu nêu định nghĩa bất phương trình bậc nhất hai ẩn",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 5,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Cho bất phương trình 3x + 2y ≤ 12. Học sinh phải vẽ đường biên 3x + 2y = 12, xác định phía thỏa mãn bất đẳng thức và kẻ miền nghiệm trên hệ trục Oxy. Đường biên có được bao gồm trong miền nghiệm không?",
+    "options": {
+      "A": "Miền nghiệm nằm phía trên đường biên và bao gồm đường biên.",
+      "B": "Miền nghiệm nằm phía dưới đường biên và không bao gồm đường biên.",
+      "C": "Miền nghiệm nằm phía dưới đường biên và bao gồm đường biên.",
+      "D": "Miền nghiệm nằm phía trên đường biên và không bao gồm đường biên."
+    },
+    "answer": "C",
+    "giai_thich": "Đặt bất phương trình 3x + 2y ≤ 12 thành dạng y ≤ -\\frac{3}{2}x + 6. Đường biên là y = -\\frac{3}{2}x + 6. Thử điểm (0,0): 3·0 + 2·0 = 0 ≤ 12 → đúng, nên phía chứa (0,0) là phía dưới đường biên. Vì bất đẳng thức có dấu ≤, đường biên được bao gồm. Do đó miền nghiệm là phần phía dưới đường và bao gồm đường biên, tương ứng với đáp án C. Các đáp án A, B, D sai vì chúng nhầm phía hoặc bỏ dấu bao gồm.",
+    "y_tuong": "Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn",
+    "answer_code": "('below', True)",
+    "check": "✅"
+  },
+  {
+    "id": 6,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Hệ bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của biểu thức F = ax + by trên một miền đa giác",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Xét hệ bất phương trình: y ≥ -x - 2, y ≤ x + 1, x ≥ 0. Tìm giá trị lớn nhất của biểu thức F = 2x + y trên miền nghiệm của hệ này.",
+    "options": {
+      "A": "5",
+      "B": "3",
+      "C": "1",
+      "D": "Không tồn tại giá trị lớn nhất"
+    },
+    "answer": "D",
+    "giai_thich": "Ta xét miền nghiệm: 1) y ≥ -x - 2 (phía trên đường y = -x - 2). 2) y ≤ x + 1 (phía dưới đường y = x + 1). 3) x ≥ 0 (phải của trục y). Hai đường y = -x - 2 và y = x + 1 cắt nhau tại (-1.5, -0.5), nằm phía trái trục y, nên không thuộc miền vì x phải ≥0. Khi x tăng, ràng buộc trên y là y ≤ x + 1, vì vậy ta có thể chọn y = x + 1 để làm F lớn nhất. Khi đó F = 2x + (x + 1) = 3x + 1, và x có thể được bất kì số thực không âm, nên F có thể tăng vô hạn. Do đó không tồn tại giá trị lớn nhất hữu hạn cho F trên miền này. Vì vậy đáp án đúng là D. Các đáp án A, B, C đưa ra các giá trị cố định, là sai lầm khi cho rằng miền bị chặn và có cực đại.",
+    "y_tuong": "Tìm giá trị lớn nhất của biểu thức tuyến tính trên miền đa giác (trường hợp miền không chặn)",
+    "answer_code": "None",
+    "check": "✅"
+  },
+  {
+    "id": 7,
+    "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Hàm số bậc hai",
+    "dang_bai": "Hàm số bậc hai",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho hàm số bậc hai y = f(x) = ax² + bx + c (a ≠ 0) thỏa f(0)=1, f(1)=2, f(2)=5. Hệ số a, b, c của hàm số là:",
+    "options": {
+      "A": "a = 1, b = 0, c = 1",
+      "B": "a = 0, b = 1, c = 1",
+      "C": "a = 1, b = 1, c = 0",
+      "D": "a = 2, b = -1, c = 1"
+    },
+    "answer": "A",
+    "giai_thich": "Ta có hệ phương trình từ các giá trị đã cho: \\(f(0)=c=1\\) ⇒ c=1. \\(f(1)=a+b+c=2\\) ⇒ a+b+1=2 ⇒ a+b=1. \\(f(2)=4a+2b+c=5\\) ⇒ 4a+2b+1=5 ⇒ 4a+2b=4 ⇒ 2a+b=2.\\nGiải hệ \\(\\begin{cases}a+b=1\\\\2a+b=2\\end{cases}\\) bằng phép trừ: (2a+b)-(a+b)=a=1 ⇒ a=1. Thay vào a+b=1 ⇒ b=0. Vì c=1 nên (a,b,c) = (1,0,1). Đáp án A đúng.\\nCác đáp án sai xuất phát từ những lỗi thường gặp: B nhầm a và b; C quên cộng c khi tính f(1); D tính sai hệ số a khi giải hệ phương trình.",
+    "y_tuong": "Xác định hệ số a, b, c của hàm số bậc hai khi biết ba giá trị f(0), f(1), f(2)",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 8,
+    "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Hàm số bậc hai",
+    "dang_bai": "Đồ thị hàm số bậc hai",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Vẽ đồ thị hàm số y = –3x² + 4x – 1. Sau khi vẽ, cho biết: (1) tọa độ đỉnh, (2) trục đối xứng, (3) các khoảng đồng biến và nghịch biến của hàm số.",
+    "options": {
+      "A": "Đỉnh (2/3, 1/3), trục đối xứng x = 2/3; đồng biến trên (‑∞, 2/3), nghịch biến trên (2/3, +∞).",
+      "B": "Đỉnh (‑2/3, ‑1/3), trục đối xứng x = ‑2/3; đồng biến trên (‑∞, ‑2/3), nghịch biến trên (‑2/3, +∞).",
+      "C": "Đỉnh (2/3, ‑1/3), trục đối xứng x = 2/3; đồng biến trên (2/3, +∞), nghịch biến trên (‑∞, 2/3).",
+      "D": "Đỉnh (‑2/3, 1/3), trục đối xứng x = ‑2/3; đồng biến trên (‑∞, ‑2/3), nghịch biến trên (‑2/3, +∞)."
+    },
+    "answer": "A",
+    "giai_thich": "Với hàm y = ax² + bx + c, a = –3, b = 4.\\n(1) Đỉnh có hoành độ \\(x_0 = -\\frac{b}{2a}= -\\frac{4}{2·(-3)} = \\frac{2}{3}.\\) Thay \\(x_0\\) vào hàm: \\(y_0 = -3\\left(\\frac{2}{3}\\right)^2 + 4\\left(\\frac{2}{3}\\right) - 1 = -3·\\frac{4}{9} + \\frac{8}{3} -1 = -\\frac{4}{3} + \\frac{8}{3} -1 = \\frac{4}{3} -1 = \\frac{1}{3}.\\) Vì vậy đỉnh là (2/3, 1/3).\\n(2) Trục đối xứng là đường thẳng x = x_0 = 2/3.\\n(3) Vì a < 0, parabola mở xuống, nên hàm tăng khi x < x_0 và giảm khi x > x_0. Do đó đồng biến trên (‑∞, 2/3) và nghịch biến trên (2/3, +∞).\\nĐáp án A khớp với các tính toán. Các đáp án B, C, D chứa các lỗi phổ biến: nhầm dấu a hoặc b, tính sai hoành độ đỉnh, hoán đổi khoảng đồng biến‑nghịch biến.",
+    "y_tuong": "Vẽ đồ thị hàm số bậc hai và chỉ ra các đặc trưng: đỉnh, trục đối xứng, khoảng đồng biến, nghịch biến",
+    "answer_code": "",
+    "check": "N/A"
+  },
+  {
+    "id": 9,
+    "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Hàm số bậc hai",
+    "dang_bai": "Ứng dụng của hàm số bậc hai",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Tìm giá trị m sao cho hàm số y = 2x² + x + m đạt giá trị nhỏ nhất bằng 5.",
+    "options": {
+      "A": "m = 41/8",
+      "B": "m = 5",
+      "C": "m = 39/8",
+      "D": "m = 6"
+    },
+    "answer": "A",
+    "giai_thich": "Với hàm y = ax² + bx + c, a = 2 > 0 nên hàm có cực tiểu tại \\(x_0 = -\\frac{b}{2a}= -\\frac{1}{4}= -0.25.\\) Giá trị cực tiểu:\n\\[y_{min}= f(x_0)= 2\\left(-\\frac{1}{4}\\right)^2 + \\left(-\\frac{1}{4}\\right) + m = 2·\\frac{1}{16} - \\frac{1}{4} + m = \\frac{1}{8} - \\frac{2}{8} + m = -\\frac{1}{8} + m.\\]\nYêu cầu \\(y_{min}=5\\):\n\\[-\\frac{1}{8} + m = 5 \\Rightarrow m = 5 + \\frac{1}{8} = \\frac{40}{8}+\\frac{1}{8}=\\frac{41}{8}.\\]\nDo đó m = 41/8 ≈ 5.125. Đáp án A là đúng. Các đáp án B, C, D là những sai lầm thường gặp: B quên cộng \\(-\\frac{1}{8}\\); C tính sai dấu của b; D thay \\(x_0\\) bằng 0 thay vì \\(-b/(2a)\\).",
+    "y_tuong": "Tìm tham số m sao cho hàm số bậc hai có giá trị cực tiểu cho trước",
+    "answer_code": "",
+    "check": "✅"
+  },
+  {
+    "id": 10,
+    "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Hàm số bậc hai",
+    "dang_bai": "Đồ thị hàm số bậc hai",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho đồ thị hàm số bậc hai có đỉnh (–1, 4) và đi qua điểm (1, 0). Viết công thức y = ax² + bx + c của hàm số.",
+    "options": {
+      "A": "y = -x² - 2x + 3",
+      "B": "y =  x² + 2x + 3",
+      "C": "y = -x² + 2x + 3",
+      "D": "y =  x² - 2x + 3"
+    },
+    "answer": "A",
+    "giai_thich": "Dùng dạng đỉnh: \\(y = a(x - x_0)^2 + y_0\\) với \\((x_0, y_0)=(-1,4)\\).\\n\\[y = a(x+1)^2 + 4.\\]\\nThay điểm (1,0):\\n\\[0 = a(1+1)^2 + 4 = 4a + 4 \\Rightarrow a = -1.\\]\\nVậy \\(y = - (x+1)^2 + 4\\).\\nKhai triển: \\(-(x^2 + 2x +1) + 4 = -x^2 -2x -1 +4 = -x^2 -2x +3.\\)\\nDo đó a = -1, b = -2, c = 3, nên phương trình là \\(y = -x^2 - 2x + 3\\). Đáp án A đúng. Các đáp án B, C, D sinh ra từ các lỗi: B nhầm dấu a (lấy a=+1); C nhầm dấu của b; D nhầm cả dấu a và b.",
+    "y_tuong": "Xác định phương trình hàm số bậc hai từ thông tin về đỉnh và một điểm trên đồ thị",
+    "answer_code": "y = -1*x**2 + -2*x + 3",
+    "check": "✅"
+  }
+]

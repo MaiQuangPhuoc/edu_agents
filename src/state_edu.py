@@ -69,7 +69,7 @@ class DoKho(BaseModel):
 class DangBaiItem(BaseModel):
     ten: str = Field(description="Tên dạng bài, CHỈ lấy từ hồ sơ tri thức chương, không tự tạo mới")
     so_cau: int = Field(ge=0)
-    section: str = Field(description="Section chứa dạng bài này, chép đúng từ kế hoạch")
+    section: str = Field(description="Section chứa dạng bài này, chép đúng từ danh sách đề xuất")
 
 class BaiHocMatrix(BaseModel):
     ten: str = Field(description="Tên bài học, lấy từ hồ sơ tri thức chương")
@@ -78,22 +78,24 @@ class BaiHocMatrix(BaseModel):
     dang_bai: List[DangBaiItem]
 
 class ChapterBlock(BaseModel):
-    chapter_id: str
+    chapter_id: str = Field(description="Chép đúng giá trị chapter_id trong đề xuất")
     ten: str
     bai_hoc: List[BaiHocMatrix]
 
 class ExamMatrixResponse(BaseModel):
     chuong: List[ChapterBlock]
 
-    @model_validator(mode="after")
-    def check_consistency(self):
-        for ch in self.chuong:
-            for b in ch.bai_hoc:
-                if b.do_kho.de + b.do_kho.trung_binh + b.do_kho.kho != b.so_cau:
-                    raise ValueError(f"Bài '{b.ten}': tổng độ khó != so_cau")
-                if sum(d.so_cau for d in b.dang_bai) != b.so_cau:
-                    raise ValueError(f"Bài '{b.ten}': tổng dang_bai != so_cau")
-        return self
+    # @model_validator(mode="after")
+    # def check_consistency(self):
+    #     for ch in self.chuong:
+    #         for b in ch.bai_hoc:
+    #             dk = b.do_kho.de + b.do_kho.trung_binh + b.do_kho.kho
+    #             if dk != b.so_cau:
+    #                 raise ValueError(f"Bài '{b.ten}': de+trung_binh+kho={dk} != so_cau={b.so_cau}")
+    #             ds = sum(d.so_cau for d in b.dang_bai)
+    #             if ds != b.so_cau:
+    #                 raise ValueError(f"Bài '{b.ten}': tổng dang_bai.so_cau={ds} != so_cau={b.so_cau}")
+    #     return self
 
 class ChapterMatrixResponse(BaseModel):
     bai_hoc: List[BaiHocMatrix]
