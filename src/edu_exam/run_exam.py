@@ -5,6 +5,6 @@
 # 1,0,2,0,0,3,0,0,0,3
 # 3,0,3,0,0,3
 # 0,0,0,2,3,0,3
-  
+
 # python -m uvicorn src.api.main:app --reload --port 8000
 
