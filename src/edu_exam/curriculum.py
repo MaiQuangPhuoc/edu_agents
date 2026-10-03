@@ -72,12 +72,17 @@ def map_scope(profile: dict) -> dict:
 
 
 def format_knowledge_profile(profile_ch: dict) -> str:
-    """Format KnowledgeChapterProfile (dict) thành text ngắn gọn cho prompt, thay str(dict) thô."""
     if not profile_ch:
         return "Chưa có phân tích."
+    dang = {}
+    for d in profile_ch.get("dang_bai", []):
+        dang.setdefault(d["section"], []).append(d["ten"])
+    dang_txt = "\n".join(f"  - {s}:\n" + "\n".join(f"      • {t}" for t in v) for s, v in dang.items()) or "  (chưa có)"
     return (
-        f"Cần nắm: {profile_ch.get('can_nam','')}\n"
-        f"Cần hiểu: {profile_ch.get('can_hieu','')}\n"
-        f"Quan hệ kiến thức: {profile_ch.get('quan_he_kien_thuc','')}\n"
-        f"Quan hệ dạng bài: {profile_ch.get('quan_he_dang_bai','')}"
-    ) 
+        f"Bài học: {', '.join(profile_ch.get('bai_hoc', []))}\n"
+        f"Dạng bài theo section:\n{dang_txt}\n"
+        f"Cần nắm: {profile_ch.get('can_nam','')[:400]}\n"
+        f"Cần hiểu: {profile_ch.get('can_hieu','')[:400]}\n"
+        f"Quan hệ kiến thức: {profile_ch.get('quan_he_kien_thuc','')[:300]}\n"
+        f"Quan hệ dạng bài: {profile_ch.get('quan_he_dang_bai','')[:300]}"
+    )

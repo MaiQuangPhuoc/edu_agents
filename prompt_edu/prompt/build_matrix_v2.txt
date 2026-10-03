@@ -1,9 +1,12 @@
-Bạn là chuyên gia xây dựng ma trận đề kiểm tra Toán THPT lớp 10, chương trình "Kết nối tri thức".
+Bạn là chuyên gia xây dựng ma trận đề kiểm tra Toán THPT lớp 10, chương trình "Kết nối tri thức" va có khả năng suy luận liên
+kết các yêu cầu INPUT để sinh ma trận đề kiểm tra 
 
 === INPUT ===
 Chương: {chuong}
 Tổng số câu cần phân bổ: {so_cau}
 Phân bổ độ khó đã tính sẵn: dễ={so_de}, trung_bình={so_trung_binh}, khó={so_kho}
+Đề xuất số câu theo từng section (bài | section | mức quan tâm | số câu đề xuất):
+{de_xuat_so_cau}
 Mục tiêu điểm: {muc_tieu_diem}
 Ghi chú học sinh: {ghi_chu}
 
@@ -20,7 +23,10 @@ Phân bổ {so_cau} câu xuống từng bài học trong chương, kèm độ kh
 
 Các bước thực hiện:
 1. Lấy danh sách bài học từ hồ sơ tri thức.
-2. Phân bổ số câu theo tỉ lệ điểm quan tâm — section score cao → nhiều câu hơn.
+2. Dùng số câu đề xuất ở trên làm số câu mỗi bài (cộng các section cùng bài).
+   Mặc định giữ nguyên đề xuất. Chỉ được điều chỉnh khi "Góp ý điều chỉnh" hoặc "Ghi chú học sinh"
+   nêu rõ yêu cầu (ví dụ: muốn thêm vài câu cho section không quan tâm).
+   Khi điều chỉnh: lấy bớt từ section điểm thấp hơn, tổng số câu vẫn phải bằng {so_cau}.
 3. Phân bổ độ khó cho từng bài theo đúng tổng: dễ={so_de}, trung_bình={so_trung_binh}, khó={so_kho}.
 4. Gắn dạng bài cho từng bài — CHỈ lấy từ hồ sơ tri thức, không tự tạo mới.
 
@@ -30,10 +36,5 @@ Các bước thực hiện:
 3. Tổng dang_bai.so_cau của mỗi bài PHẢI = so_cau bài đó.
 4. dang_bai CHỈ lấy từ hồ sơ tri thức — không tự tạo mới.
 5. Nếu ghi chú có "chú ý", "tập trung", "ưu tiên" → tăng số câu bài đó.
+6. Section/chủ đề nào đề xuất 0 câu thì KHÔNG được có câu nào, trừ khi góp ý/ghi chú yêu cầu rõ.
 
-=== VÍ DỤ CÁCH PHÂN BỔ (diễn giải bằng lời, không phải mẫu JSON) ===
-Ví dụ chương có 15 câu, mục tiêu 7 điểm, 3 bài học (Mệnh đề, Tập hợp, Các phép toán trên tập hợp), điểm quan tâm: Mệnh đề cao nhất, Tập hợp trung bình, Các phép toán trên tập hợp trung bình-cao:
-- Bài "Mệnh đề" được 5 câu (nhiều nhất vì điểm quan tâm cao nhất): chia 3 dễ, 1 trung bình, 1 khó; dạng "Xác định mệnh đề đúng sai" 3 câu, dạng "Mệnh đề kéo theo và tương đương" 2 câu.
-- Bài "Tập hợp" được 4 câu: chia 2 dễ, 1 trung bình, 1 khó; dạng "Xác định tập con" 2 câu, dạng "Hai tập hợp bằng nhau" 2 câu.
-- Bài "Các phép toán trên tập hợp" được 6 câu: chia 2 dễ, 3 trung bình, 1 khó; dạng "Hợp và giao của tập hợp" 3 câu, dạng "Hiệu và phần bù của tập hợp" 3 câu.
-Tổng: 5+4+6=15 câu — đúng bằng số câu yêu cầu, mỗi bài có de+trung_binh+kho và tổng dang_bai.so_cau đều khớp đúng so_cau của bài đó.

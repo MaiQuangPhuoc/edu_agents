@@ -1,7 +1,6 @@
 import json
 import sys, os
 
-from click import prompt
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from datetime import datetime
 from pathlib import Path
@@ -52,6 +51,10 @@ def _get_chunks_for_batch(retrieved_chunks: list, ch_id: str, bai_names: set) ->
         if c["metadata"].get("chapter_id", "") == ch_id
         and any(b in c["metadata"].get("lesson", "").lower() or c["metadata"].get("lesson", "").lower() in b for b in bai_lower)
     ]
+    if len(matched) < 3:
+        ch = [c["content"] for c in retrieved_chunks if c["metadata"].get("chapter_id", "") == ch_id]
+        matched += [c for c in ch if c not in matched][:3 - len(matched)]
+    matched = [c[:800] for c in matched[:6]]
     print(f"[{ch_id}] bai_names={bai_lower} → {len(matched)} chunk khớp lesson")   # ← thêm dòng này
     return "\n---\n".join(matched)
 
@@ -66,8 +69,10 @@ def _format_specs(specs: list) -> str:
     lines = []
     for s in specs:
         lines.append(
-            f"id={s['id']} | dang_bai={s['dang_bai']} | do_kho_du_kien={s['do_kho']} | "
-            f"yeu_cau={s['yeu_cau']} | ngu_canh={', '.join(s.get('ngu_canh', []))}"
+            f"id={s['id']} | bai={s['bai']} | dang_bai={s['dang_bai']} | "
+            f"type={s['type']} | do_kho_du_kien={s['do_kho']}\n"
+            f"  yeu_cau: {s['yeu_cau']}\n"
+            f"  ngu_canh: {' / '.join(s.get('ngu_canh', []))}"
         )
     return "\n".join(lines)
 
@@ -123,6 +128,7 @@ def generate_questions(state: ExamState, llm_client: LLMClient) -> dict:
             batch_idx   = i // BATCH_SIZE
 
             bai_names_batch = {s.get("bai", "") for s in batch_specs}          # ← lấy 'bai' thay vì 'dang_bai'
+            print(f"bai_names_batch : {bai_names_batch}")
             chunks_batch    = _get_chunks_for_batch(retrieved_chunks, ch_id, bai_names_batch)   # ← hàm mới
 
             prompt = (template
@@ -136,18 +142,20 @@ def generate_questions(state: ExamState, llm_client: LLMClient) -> dict:
             specs_by_id     = {s["id"]: s for s in batch_specs}
             questions_batch: list[GeneratedQuestion] = []
 
+            print(f"prompt : {prompt}")
+
             for attempt in range(3):
                 try:
-                    # result: GeneratedQuestionBatch = structured_llm.invoke([{"role": "user", "content": prompt}])
-                    # result = llm_client.invoke_structured(GeneratedQuestionBatch, [{"role": "user", "content": prompt}], max_tokens=8000)
                     result = llm_client.invoke_structured(
                         GeneratedQuestionBatch, [{"role": "user", "content": prompt}],
                         max_tokens=min(1500 * len(batch_specs), 16000), list_field="questions"
                     )
-                    if len(result.questions) == len(batch_specs):
-                        questions_batch = result.questions
+                    got = [q for q in result.questions if q.id in specs_by_id]
+                    if len(got) > len(questions_batch):
+                        questions_batch = got
+                    if len(got) == len(batch_specs):
                         break
-                    print(f"[{ch_id}] batch {batch_idx} attempt {attempt}: {len(result.questions)}/{len(batch_specs)}, retry")
+                    print(f"[{ch_id}] batch {batch_idx} attempt {attempt}: {len(got)}/{len(batch_specs)}, retry")
                 except Exception as e:
                     print(f"[{ch_id}] batch {batch_idx} attempt {attempt} lỗi: {e}")
 
@@ -158,6 +166,7 @@ def generate_questions(state: ExamState, llm_client: LLMClient) -> dict:
                     continue
 
                 q = gq.model_dump()
+                q["type"] = spec["type"] 
                 q["chuong"]          = ch_raw
                 q["bai"]             = spec.get("bai", "")
                 q["dang_bai"]        = spec.get("dang_bai", "")

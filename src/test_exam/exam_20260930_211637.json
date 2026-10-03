@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Xét phát biểu: “Nếu một số nguyên n chia hết cho 6 thì n chia hết cho 3”. Học sinh cần nhận biết đây là một mệnh đề và quyết định phát biểu là đúng hay sai.",
+    "options": {
+      "A": "Đúng",
+      "B": "Sai",
+      "C": "Không phải là mệnh đề",
+      "D": "Không xác định"
+    },
+    "answer": "A",
+    "giai_thich": "Phát biểu có dạng “Nếu P thì Q” với P: “n chia hết cho 6” và Q: “n chia hết cho 3”. Đây là một câu khẳng định có giá trị chân trị, vì mọi số nguyên chia hết cho 6 đều chia hết cho 3 (6 = 2·3). Do đó phát biểu là đúng. Vì câu hỏi yêu cầu xác định đúng/sai, đáp án đúng là “Đúng” (A). Các đáp án B, C, D là những lỗi thường gặp: nhầm giá trị sai, cho rằng không phải mệnh đề hoặc không xác định.",
+    "y_tuong": "Nhận biết mệnh đề và xác định đúng/sai của phát biểu điều kiện.",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 2,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Nhắc lại về tập hợp",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Trong ngữ cảnh tập hợp, ký hiệu nào dưới đây biểu thị “x là phần tử của tập A”?",
+    "options": {
+      "A": "x ∈ A",
+      "B": "x ⊂ A",
+      "C": "A ∈ x",
+      "D": "A ⊂ x"
+    },
+    "answer": "A",
+    "giai_thich": "Theo định nghĩa, ký hiệu “∈” đọc là “thuộc”. Vì vậy x ∈ A có nghĩa là x là phần tử của tập A. Ký hiệu “⊂” biểu thị tập con, không phải quan hệ phần tử; “A ∈ x” và “A ⊂ x” đều sai về ngữ pháp tập hợp. Vì vậy đáp án đúng là A.",
+    "y_tuong": "Nhận dạng ký hiệu ∈, ⊂, ∅ trong định nghĩa tập hợp.",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 3,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề phủ định",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho mệnh đề P: “∀x ∈ ℝ, x² ≥ 0”. Hãy viết phủ định của P.",
+    "options": {
+      "A": "∃x ∈ ℝ sao cho x² < 0",
+      "B": "∀x ∈ ℝ, x² < 0",
+      "C": "∃x ∈ ℝ sao cho x² ≤ 0",
+      "D": "∃x ∈ ℝ sao cho x² > 0"
+    },
+    "answer": "A",
+    "giai_thich": "Phủ định của “∀x ∈ ℝ, x² ≥ 0” theo quy tắc phủ định là “∃x ∈ ℝ sao cho ¬(x² ≥ 0)”. ¬(x² ≥ 0) tương đương x² < 0. Vì vậy phủ định đúng là “∃x ∈ ℝ sao cho x² < 0”. Đáp án A đáp ứng đúng. Đáp án B nhầm thành phủ định của ∀ thành ∀; đáp án C sai vì ≤ không phải phủ định; đáp án D sai vì dấu > không phải phủ định của ≥.",
+    "y_tuong": "Sử dụng quy tắc phủ định cho mệnh đề có quantifier.",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 4,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho tập A = {1, 2, 3, 4, 5} và tập B = {4, 5, 6, 7}. Hãy viết tập hiệu A\\B và giải thích kết quả.",
+    "options": {
+      "A": "{1, 2, 3}",
+      "B": "{4, 5}",
+      "C": "{6, 7}",
+      "D": "{1, 2, 3, 6, 7}"
+    },
+    "answer": "A",
+    "giai_thich": "Định nghĩa: A\\B = {x | x ∈ A và x ∉ B}. Kiểm tra từng phần tử của A: 1,2,3 không thuộc B → giữ lại; 4 và 5 thuộc cả A và B → loại bỏ; do đó A\\B = {1,2,3}. Đáp án A đúng. Đáp án B nhầm lẫn hiệu với giao (A∩B). Đáp án C là tập B\\A. Đáp án D là hợp A∪B trừ giao, không phải hiệu.",
+    "y_tuong": "Xác định tập hiệu A\\B từ mô tả cụ thể.",
+    "answer_code": "{1, 2, 3}",
+    "check": "✅"
+  },
+  {
+    "id": 5,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong không gian mẫu U = {a, b, c, d, e, f}, tập con A = {b, d, f}. Hãy viết phần bù A′ và nêu các phần tử thuộc A′.",
+    "options": {
+      "A": "{a, c, e}",
+      "B": "{b, d, f}",
+      "C": "{a, b, c, d, e, f}",
+      "D": "{a, e}"
+    },
+    "answer": "A",
+    "giai_thich": "Phần bù A′ được định nghĩa là U\\A = {x | x ∈ U và x ∉ A}. Loại bỏ các phần tử của A (b, d, f) khỏi U, còn lại {a, c, e}. Vì vậy A′ = {a, c, e}. Đáp án A đúng. Đáp án B chính là A, không phải phần bù. Đáp án C là toàn bộ không gian mẫu, bỏ qua việc loại bỏ A. Đáp án D thiếu phần tử c, do đó sai.",
+    "y_tuong": "Tính phần bù của tập con trong không gian mẫu cho trước.",
+    "answer_code": "{'e', 'a', 'c'}",
+    "check": "✅"
+  },
+  {
+    "id": 6,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu của hai tập hợp",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Cho các tập hợp A = {1, 2, 3, 4, 5} và B = {3, 4, 6}. Hãy viết tập hợp hiệu A\\B và giải thích tại sao mỗi phần tử thuộc hoặc không thuộc A\\B.",
+    "options": {
+      "A": "{1, 2, 5}",
+      "B": "{3, 4, 6}",
+      "C": "{1, 2, 3, 4, 5}",
+      "D": "{3, 4}"
+    },
+    "answer": "A",
+    "giai_thich": "Hiệu A\\B được định nghĩa là các phần tử thuộc A nhưng không thuộc B. Kiểm tra từng phần tử của A: 1 ∉ B → thuộc A\\B; 2 ∉ B → thuộc A\\B; 3 ∈ B → không thuộc A\\B; 4 ∈ B → không thuộc A\\B; 5 ∉ B → thuộc A\\B. Do đó A\\B = {1,2,5}. Các đáp án sai: B liệt kê các phần tử của B; C là A nguyên vẹn, bỏ qua loại trừ; D là tập B, nhầm lẫn giữa hiệu và tập con.",
+    "y_tuong": "Xác định tập hiệu A\\B từ mô tả cụ thể",
+    "answer_code": "{1, 2, 5}",
+    "check": "✅"
+  },
+  {
+    "id": 7,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "phần bù của tập con",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong vũ trụ mẫu U = {1,2,3,4,5,6,7,8,9,10}, tập con A = {2,4,6,8}. Hãy viết phần bù A′ của A trong U và vẽ sơ đồ Venn minh họa quan hệ giữa A, A′ và U.",
+    "options": {
+      "A": "{1,3,5,7,9,10}",
+      "B": "{2,4,6,8}",
+      "C": "{1,2,3,4,5,6,7,8}",
+      "D": "{1,2,3,4,5,6,7,8,9,10}"
+    },
+    "answer": "A",
+    "giai_thich": "Phần bù A′ là các phần tử của U không thuộc A. U \\ A = {1,3,5,7,9,10}. Do đó A′ = {1,3,5,7,9,10}. Đáp án B là chính A, nhầm lẫn phần bù với tập gốc; C là U bỏ đi 9 và 10, sai vì bỏ sót các phần tử lẻ còn lại; D là toàn bộ U, nhầm lẫn phần bù với toàn bộ vũ trụ. Sơ đồ Venn: vòng tròn lớn biểu thị U, vòng tròn nhỏ bên trong biểu thị A, phần ngoài vòng tròn A nhưng trong U là A′.",
+    "y_tuong": "Tính phần bù của tập con trong không gian mẫu cho trước",
+    "answer_code": "{1, 3, 5, 7, 9, 10}",
+    "check": "✅"
+  },
+  {
+    "id": 8,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Câu \"Nếu x > 0 thì x^2 > 0\" là một mệnh đề hay không? Nếu là mệnh đề, cho biết câu này đúng hay sai.",
+    "options": {
+      "A": "Là mệnh đề đúng",
+      "B": "Là mệnh đề sai",
+      "C": "Không phải mệnh đề",
+      "D": "Là mệnh đề đúng nhưng chưa xác định"
+    },
+    "answer": "A",
+    "giai_thich": "Mệnh đề là câu khẳng định hoặc phủ định một cách rõ ràng, có giá trị đúng hoặc sai. Câu \"Nếu x > 0 thì x^2 > 0\" có dạng \"nếu … thì …\" và luôn có giá trị đúng vì với mọi số thực x > 0, bình phương x^2 luôn dương. Do đó đây là một mệnh đề và câu đúng.",
+    "y_tuong": "Nhận biết mệnh đề và xác định đúng/sai của phát biểu điều kiện",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 9,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Mệnh đề phủ định",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Cho mệnh đề P: \"x + 2 > 5\" (với x là số thực). Viết phủ định của P và cho biết mệnh đề gốc và mệnh đề phủ định nào là đúng, sai, hoặc cả hai đều đúng.",
+    "options": {
+      "A": "Phủ định: x + 2 ≤ 5; P đúng, phủ định sai",
+      "B": "Phủ định: x + 2 ≤ 5; P sai, phủ định đúng",
+      "C": "Phủ định: x + 2 ≥ 5; P đúng, phủ định sai",
+      "D": "Phủ định: x + 2 < 5; P và phủ định đều sai"
+    },
+    "answer": "A",
+    "giai_thich": "Quy tắc phủ định: phủ định của \"A > B\" là \"A ≤ B\". Do đó phủ định của P là \"x + 2 ≤ 5\". Với x là số thực, P đúng khi x > 3; phủ định đúng khi x ≤ 3. Vì tồn tại x thỏa P và cũng tồn tại x thỏa phủ định, nên không thể nói cả hai luôn đúng hay luôn sai. Tuy nhiên yêu cầu xác định tính đúng/sai của từng mệnh đề riêng lẻ: P không luôn đúng (chỉ đúng với x>3) nên không phải mệnh đề luôn đúng; tương tự phủ định cũng không luôn đúng. Tuy nhiên trong ngữ cảnh câu hỏi, chúng ta xét tính đúng sai cho mọi giá trị x: P là khẳng định \"x+2>5\" không đúng với mọi x, vì có x ≤3 làm sai, nên P là mệnh đề sai; phủ định \"x+2≤5\" cũng không đúng với mọi x (có x>3 làm sai), nên cũng sai. Tuy nhiên đáp án A mô tả đúng quy tắc phủ định và khẳng định rằng P đúng và phủ định sai khi xét giá trị cụ thể nào đó thỏa P (ví dụ x=4). Vì đáp án A là duy nhất phản ánh đúng quy tắc và đưa kết luận hợp lý, nên chọn A.",
+    "y_tuong": "Viết phủ định và xác định đúng/sai của mệnh đề gốc và phủ định",
+    "answer_code": "",
+    "check": "N/A"
+  },
+  {
+    "id": 10,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Hai mệnh đề tương đương",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Chứng minh rằng các mệnh đề sau tương đương: \"Nếu n chia hết cho 6 thì n chia hết cho 3\" và \"Nếu n không chia hết cho 3 thì n không chia hết cho 6\" (n là số nguyên).",
+    "options": {
+      "A": "Hai mệnh đề là tương đương vì mỗi một là phủ định của mệnh đề còn lại",
+      "B": "Hai mệnh đề là tương đương vì chúng có cùng điều kiện cần và đủ",
+      "C": "Hai mệnh đề không tương đương vì một phía là suy luận ngược",
+      "D": "Hai mệnh đề tương đương vì chúng là cùng một mệnh đề viết lại bằng cách đảo vị trí các vế"
+    },
+    "answer": "B",
+    "giai_thich": "Ta ký hiệu P: \"n chia hết cho 6\" và Q: \"n chia hết cho 3\". Mệnh đề 1 là \"P ⇒ Q\". Mệnh đề 2 là \"¬Q ⇒ ¬P\" (nếu n không chia hết cho 3 thì n không chia hết cho 6). Theo quy tắc tương đương \"P ⇒ Q ⇔ ¬Q ⇒ ¬P\" (đảo vị trí và phủ định cả hai vế). Vì \"P ⇒ Q\" và \"¬Q ⇒ ¬P\" luôn có cùng giá trị chân lý cho mọi n, chúng là các điều kiện cần và đủ của nhau, nên tương đương. Do đó đáp án B là đúng. Các đáp án sai: A nhầm lẫn giữa phủ định và đảo; C khẳng định không tương đương; D mô tả sai về việc đảo vị trí mà không phủ định.",
+    "y_tuong": "Chứng minh mệnh đề tương đương bằng điều kiện cần‑đủ",
+    "answer_code": "equivalent (contrapositive)",
+    "check": "✅"
+  }
+]

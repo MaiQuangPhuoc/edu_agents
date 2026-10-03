@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Xác định đúng sai của mệnh đề đơn giản",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Cho mệnh đề P: \"Nếu a ∈ ℝ và a > 0 thì a² > 0\". Học sinh cần xác định P là đúng hay sai.",
+    "options": {
+      "A": "Đúng",
+      "B": "Sai",
+      "C": "Đúng nếu a ≠ 0",
+      "D": "Sai nếu a = 0"
+    },
+    "answer": "A",
+    "giai_thich": "Với mọi a ∈ ℝ, nếu a > 0 thì a là số dương. Bình phương của một số dương luôn dương: a² > 0. Vì điều kiện a > 0 luôn dẫn tới a² > 0, mệnh đề P luôn đúng. Do đó đáp án A là đúng. Các đáp án sai: B phủ nhận đúng; C chỉ xét trường hợp a ≠ 0 (đúng nhưng không cần thiết, gây nhầm lẫn); D đưa ra trường hợp a = 0, nhưng điều kiện \"a > 0\" loại trừ a = 0, nên không ảnh hưởng tới tính đúng của mệnh đề.",
+    "y_tuong": "Xác định đúng sai của mệnh đề đơn giản liên quan tới bất đẳng thức",
+    "answer_code": "True",
+    "check": "✅"
+  },
+  {
+    "id": 2,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Liệt kê khái niệm và ký hiệu tập hợp",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Trong các phát biểu sau, phát biểu nào liệt kê đúng các khái niệm cơ bản về tập hợp và ký hiệu liên quan?",
+    "options": {
+      "A": "Phần tử (∈), Tập con (⊂), Tập chứa (⊃), Tập rỗng (∅), Tập số thực (ℝ)",
+      "B": "Phần tử (⊂), Tập con (∈), Tập rỗng (ℝ), Tập số tự nhiên (∅), Tập chứa (⊃)",
+      "C": "Phần tử (∈), Tập con (⊃), Tập rỗng (∅), Tập số nguyên (ℤ), Tập chứa (⊂)",
+      "D": "Phần tử (∈), Tập con (⊂), Tập rỗng (∅), Tập số phức (ℂ), Tập chứa (⊃)"
+    },
+    "answer": "A",
+    "giai_thich": "Các ký hiệu chuẩn: ∈ dùng để chỉ phần tử thuộc tập; ⊂ biểu thị tập con thực tế; ⊃ biểu thị tập chứa; ∅ là tập rỗng; ℝ là tập các số thực. Phát biểu A liệt kê đúng các khái niệm và ký hiệu. Các đáp án B, C, D nhầm lẫn ký hiệu (ví dụ ∈ và ⊂ hoán đổi) hoặc đưa ký hiệu không thuộc nội dung chương (ℂ, ℤ) hoặc hoán đổi vị trí ký hiệu, vì vậy chúng sai.",
+    "y_tuong": "Liệt kê khái niệm và ký hiệu cơ bản của tập hợp",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 3,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Xác định một số tập con của tập hợp số thực",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho tập A = {x ∈ ℝ | -2 ≤ x ≤ 3}. Học sinh xác định các tập con đặc biệt của ℝ (ℕ, ℤ, ℚ, ℝ⁺) nằm hoàn toàn trong A.",
+    "options": {
+      "A": "ℕ là tập con của A",
+      "B": "ℤ là tập con của A",
+      "C": "ℚ là tập con của A",
+      "D": "Không có tập nào trong số trên là tập con của A"
+    },
+    "answer": "D",
+    "giai_thich": "A chứa tất cả các số thực từ -2 đến 3. \n- ℕ = {0,1,2,3,4,…} có các phần tử ≥4 nằm ngoài A, nên ℕ không phải tập con. \n- ℤ = {...,-3,-2,-1,0,1,2,3,4,…} chứa các số nguyên ≤ -3 và ≥4, cũng không nằm trong A. \n- ℚ là tập các số hữu tỉ, bao gồm vô hạn số ngoài khoảng [-2,3], nên không phải tập con. \n- ℝ⁺ = {x ∈ ℝ | x > 0} chứa các số dương lớn hơn 3 (ví dụ 4), không thuộc A. \nDo vậy, không có tập nào trong bốn tập trên là tập con của A. Đáp án D là đúng, các đáp án A‑C là các suy luận sai do nhầm tưởng rằng các tập vô hạn có thể nằm trong một khoảng hữu hạn.",
+    "y_tuong": "Xác định tập con đặc biệt của một khoảng thực",
+    "answer_code": "Không có tập nào trong số trên là tập con của A",
+    "check": "✅"
+  },
+  {
+    "id": 4,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Xác định hiệu của hai tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho A = {1,2,3,4,5}, B = {4,5,6,7} và U = {1,2,3,4,5,6,7}. Học sinh tính (i) hiệu A \\ B và (ii) phần bù của A \\ B trong U.",
+    "options": {
+      "A": "A \\ B = {1,2,3};   (A \\ B)^c_U = {4,5,6,7}",
+      "B": "A \\ B = {4,5,6,7};   (A \\ B)^c_U = {1,2,3}",
+      "C": "A \\ B = {1,2,3,4,5};   (A \\ B)^c_U = ∅",
+      "D": "A \\ B = ∅;   (A \\ B)^c_U = {1,2,3,4,5,6,7}"
+    },
+    "answer": "A",
+    "giai_thich": "Hiệu A \\ B = {x ∈ A | x ∉ B}. Các phần tử A là {1,2,3,4,5}; trong đó 4,5 thuộc B, nên loại bỏ. Kết quả A \\ B = {1,2,3}. \nPhần bù trong U: (A \\ B)^c_U = U \\ (A \\ B) = {1,2,3,4,5,6,7} \\ {1,2,3} = {4,5,6,7}. \nDo đó đáp án A đúng. \nCác đáp án sai: B hoán đổi hiệu và bù; C cho hiệu bằng A (bỏ quên loại bỏ phần chung) và bù rỗng; D cho hiệu rỗng (sai vì A và B không bằng nhau).",
+    "y_tuong": "Xác định hiệu và phần bù của hai tập hợp cho trước",
+    "answer_code": "({1, 2, 3}, {4, 5, 6, 7})",
+    "check": "✅"
+  },
+  {
+    "id": 5,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Nhận biết bất phương trình bậc nhất hai ẩn",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Cho biểu thức bất phương trình 4x - 5y ≥ 7. Học sinh phải xác định đây có phải là bất phương trình bậc nhất hai ẩn hay không.",
+    "options": {
+      "A": "Đúng, vì biểu thức có dạng ax + by ≥ c với a, b, c là hằng số và có đúng hai ẩn x, y.",
+      "B": "Sai, vì có số mũ lớn hơn 1 trên các biến.",
+      "C": "Sai, vì có tích của hai ẩn xy trong biểu thức.",
+      "D": "Sai, vì dấu bất phương trình phải là = chứ không phải ≥."
+    },
+    "answer": "A",
+    "giai_thich": "Biểu thức 4x - 5y ≥ 7 có dạng tổng của các hạng tử bậc nhất (ax + by) so sánh với một hằng số c. Các hệ số a = 4, b = -5, c = 7 đều là hằng số, và chỉ có hai ẩn x, y xuất hiện, không có lũy thừa hoặc tích giữa chúng. Do đó đây là bất phương trình bậc nhất hai ẩn. Các đáp án B, C, D dựa trên những lỗi thường gặp: nhầm lũy thừa, nhầm dạng tích xy, hoặc nhầm dấu bằng với dấu bất phương trình.",
+    "y_tuong": "Nhận biết bất phương trình bậc nhất hai ẩn",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 6,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Vẽ đồ thị miền nghiệm trên hệ trục tọa độ",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Cho bất phương trình 2x + y > 3. Học sinh cần vẽ đường thẳng biên 2x + y = 3 trên hệ trục Oxy và chỉ ra miền nghiệm của bất phương trình. Miền nào dưới đây mô tả đúng miền nghiệm?",
+    "options": {
+      "A": "Tất cả các điểm nằm phía trên đường thẳng 2x + y = 3.",
+      "B": "Tất cả các điểm nằm phía dưới đường thẳng 2x + y = 3.",
+      "C": "Chỉ các điểm nằm trên đường thẳng 2x + y = 3.",
+      "D": "Tất cả các điểm nằm phía trái của đường thẳng 2x + y = 3."
+    },
+    "answer": "A",
+    "giai_thich": "Bất phương trình 2x + y > 3 có dấu ‘>’, nghĩa là nghiệm là các điểm (x, y) sao cho giá trị của biểu thức 2x + y lớn hơn 3. Khi vẽ đường thẳng biên 2x + y = 3, ta xét một điểm kiểm tra, ví dụ (0,0): 2·0 + 0 = 0 < 3 → điểm (0,0) không thỏa mãn bất phương trình, vì nó nằm phía dưới đường thẳng. Do đó miền nghiệm là phía mà giá trị 2x + y > 3, tức là phía trên đường thẳng. Vì vậy đáp án A là đúng. Các đáp án B, C, D là các lỗi thường gặp: nhầm phía dưới (B), nhầm việc chỉ xét đường thẳng (C), hoặc nhầm hướng theo trục hoành (D).",
+    "y_tuong": "Vẽ đồ thị miền nghiệm bất phương trình",
+    "answer_code": "Phía trên đường thẳng 2x + y = 3",
+    "check": "✅"
+  },
+  {
+    "id": 7,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Hệ bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Xác định đỉnh đa giác và tính F tại các đỉnh",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho hệ bất phương trình: \\(\\begin{cases} x + y \\le 4 \\\\ x \\ge 0 \\\\ y \\ge 0 \\end{cases}\\).\\\nHọc sinh phải (i) xác định các đỉnh của đa giác nghiệm và (ii) tính giá trị của hàm \\(F = 3x + 2y\\) tại mỗi đỉnh, sau đó chỉ ra giá trị lớn nhất của \\(F\\).",
+    "options": {
+      "A": "Các đỉnh là (0,0), (4,0), (0,4); giá trị lớn nhất của F là 12 tại (4,0).",
+      "B": "Các đỉnh là (0,0), (2,2), (4,0); giá trị lớn nhất của F là 10 tại (2,2).",
+      "C": "Các đỉnh là (0,0), (0,4), (4,0); giá trị lớn nhất của F là 8 tại (0,4).",
+      "D": "Hệ không tạo đa giác đóng, nên không có giá trị lớn nhất."
+    },
+    "answer": "A",
+    "giai_thich": "1. Xác định các đường biên:\n   - Đường thẳng 1: x + y = 4.\n   - Đường thẳng 2: x = 0 (trục Oy).\n   - Đường thẳng 3: y = 0 (trục Ox).\n   Các bất phương trình yêu cầu x ≥ 0 và y ≥ 0, vì vậy miền nghiệm nằm trong góc phần tư thứ nhất và dưới/điểm trên đường x + y = 4.\n2. Tìm giao điểm các đường biên:\n   - Giao điểm của x = 0 và y = 0 → (0,0).\n   - Giao điểm của x = 0 và x + y = 4 → (0,4).\n   - Giao điểm của y = 0 và x + y = 4 → (4,0).\n   Không có giao điểm khác vì các đường còn lại song song với các trục.\n   Vì các bất phương trình đều là ‘≤’ hoặc ‘≥’, các điểm trên biên đều thuộc miền, nên các đỉnh của đa giác nghiệm là (0,0), (4,0), (0,4).\n3. Tính F = 3x + 2y tại từng đỉnh:\n   - Tại (0,0): F = 3·0 + 2·0 = 0.\n   - Tại (4,0): F = 3·4 + 2·0 = 12.\n   - Tại (0,4): F = 3·0 + 2·4 = 8.\n4. So sánh các giá trị: 0, 12, 8 → giá trị lớn nhất là 12, đạt tại đỉnh (4,0).\nDo đó đáp án A là đúng. \nCác đáp án sai:\n- B: Nhầm giao điểm (2,2) – không phải giao điểm của các đường biên, do đó tính sai.\n- C: Đúng các đỉnh nhưng đưa giá trị lớn nhất sai (8 thay vì 12).\n- D: Khẳng định không có đa giác đóng là sai vì ba bất phương trình tạo ra một tam giác đóng.\n",
+    "y_tuong": "Xác định đỉnh đa giác và giá trị cực trị của hàm tuyến tính",
+    "answer_code": "12 (4, 0)",
+    "check": "✅"
+  },
+  {
+    "id": 8,
+    "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Hàm số và đồ thị",
+    "dang_bai": "Vẽ đồ thị hàm số bậc hai",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Khi vẽ đồ thị hàm số bậc hai y = ax² + bx + c (a ≠ 0), công thức nào sau đây là đúng để xác định tọa độ đỉnh (x₀, y₀) và trục đối xứng của parabol?",
+    "options": {
+      "A": "x₀ = -b/2a, y₀ = f(x₀); trục đối xứng là x = -b/2a",
+      "B": "x₀ = -b/2a, y₀ = f(x₀); trục đối xứng là x = x₀",
+      "C": "x₀ = b/2a, y₀ = f(x₀); trục đối xứng là x = x₀",
+      "D": "x₀ = -b/2a, y₀ = -f(x₀); trục đối xứng là x = x₀"
+    },
+    "answer": "B",
+    "giai_thich": "Đối với hàm số bậc hai y = ax² + bx + c, tọa độ đỉnh được tính bằng x₀ = -b/(2a) và y₀ = f(x₀). Trục đối xứng của parabol là đường thẳng dọc qua đỉnh, nên có phương trình x = x₀. Vì vậy đáp án B mô tả đúng cả công thức tính x₀, y₀ và phương trình trục đối xứng. \n- Đáp án A nhầm phương trình trục đối xứng (đúng là x = x₀, không phải x = -b/2a). \n- Đáp án C sai dấu trong công thức x₀ (phải là -b/2a). \n- Đáp án D sai công thức tính y₀ (không có dấu âm trước f(x₀)).",
+    "y_tuong": "Công thức tính đỉnh và trục đối xứng của hàm số bậc hai",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 9,
+    "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Hàm số bậc hai",
+    "dang_bai": "Vẽ đồ thị parabol và xác định đỉnh, trục đối xứng",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Cho hàm số y = -3x² + 6x - 2. \n(a) Xác định tọa độ đỉnh của parabol. \n(b) Viết phương trình của trục đối xứng.",
+    "options": {
+      "A": "Đỉnh (1, 1); trục đối xứng x = 1",
+      "B": "Đỉnh (‑1, ‑1); trục đối xứng x = ‑1",
+      "C": "Đỉnh (1, ‑1); trục đối xứng x = 1",
+      "D": "Đỉnh (‑1, 1); trục đối xứng x = ‑1"
+    },
+    "answer": "A",
+    "giai_thich": "Với a = ‑3, b = 6, c = ‑2:\n- Tọa độ x của đỉnh: x₀ = -b/(2a) = -6/(2·‑3) = -6/‑6 = 1.\n- Thay x₀ vào hàm số để tính y₀: y₀ = -3·1² + 6·1 - 2 = -3 + 6 - 2 = 1.\nVì vậy đỉnh là (1, 1).\n- Trục đối xứng là đường thẳng x = x₀, nên x = 1.\nDo đó đáp án A là đúng.\nCác đáp án còn lại sai do: \n• B: đổi dấu cả x₀ và y₀. \n• C: giữ x₀ đúng nhưng tính y₀ sai (quên dấu +6x hoặc nhầm dấu của a). \n• D: đổi dấu x₀ và y₀ đồng thời.",
+    "y_tuong": "Tìm đỉnh và trục đối xứng của hàm số bậc hai đã cho",
+    "answer_code": "(1, 1) axis = 1",
+    "check": "✅"
+  },
+  {
+    "id": 10,
+    "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Hàm số bậc hai",
+    "dang_bai": "Giải bài toán thực tế tối ưu bằng hàm bậc hai",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho hàm số y = 2x² + x + m (a = 2 > 0). Xác định giá trị của tham số m sao cho hàm số đạt giá trị nhỏ nhất bằng 5.",
+    "options": {
+      "A": "m = 41/8",
+      "B": "m = 5",
+      "C": "m = 9/2",
+      "D": "m = 13/4"
+    },
+    "answer": "A",
+    "giai_thich": "Với a > 0, hàm số bậc hai có giá trị nhỏ nhất tại x₀ = -b/(2a).\n- Tính x₀: x₀ = -1/(2·2) = -1/4.\n- Tính giá trị tại x₀: \n  y_min = 2·(-1/4)² + (-1/4) + m\n         = 2·(1/16) - 1/4 + m\n         = 2/16 - 1/4 + m\n         = 1/8 - 2/8 + m\n         = -1/8 + m.\n- Yêu cầu y_min = 5 ⇒ -1/8 + m = 5 ⇒ m = 5 + 1/8 = 40/8 + 1/8 = 41/8.\nDo đó đáp án đúng là A.\nCác đáp án sai: \n- B: quên cộng 1/8 vào 5. \n- C: tính x₀ sai (lấy x₀ = -1/2) rồi tính y_min. \n- D: nhầm công thức y_min = f(x₀) thành y_max = f(x₀) hoặc nhầm dấu của b trong x₀.",
+    "y_tuong": "Xác định tham số để hàm số bậc hai đạt giá trị cực tiểu cho trước",
+    "answer_code": "41/8",
+    "check": "✅"
+  }
+]

@@ -1,34 +1,44 @@
 ## VAI TRÒ
-Bạn là chuyên gia nghiên cứu và hiểu các vấn đề trong chương trình toán học 10 và có nhiều kinmh nghiệm nhiều năm nghiên cứu.
+Bạn là chuyên gia nghiên cứu và hiểu các vấn đề trong chương trình toán học 10 và có nhiều kinh nghiệm nhiều năm nghiên cứu.
 
 ## NHIỆM VỤ
-Nhận ## TÀI LIỆU NGỮ CẢNH sau đó suy luận từng bước phân tích để tra về các nội dung mang hướng suy luận của chương trình học
-Nhiệm vụ này rất phức tạp đòi hỏi bạn phải nắm được các nội dung sau đó tổng hợp suy luận và phân tích và trả về nội dung sâu sắc theo đinh dạng ## Hồ sơ kiến thức chương học
+Dụa vào TÀI LIỆU NGỮ CẢNH sau đó suy luận từng bước phân tích để tra về các nội dung mang hướng suy luận của chương trình học
+Nhiệm vụ này rất phức tạp đòi hỏi bạn phải nắm được các nội dung sau đó tổng hợp suy luận và 
+lập "Hồ sơ kiến thức chương học". Hồ sơ này được dùng để xây ma trận đề và
+đặc tả câu hỏi, nên phải cụ thể và bám tài liệu.
 
 ## TÀI LIỆU NGỮ CẢNH
-- tài liệu bao gôm 2 thành phần là ### Chương trình học và ### Nội dung tài liệu
-### Chương trình học
-Chương học: {chuong}
-
+Chương: {chuong}
 Phạm vi kiểm tra: {pham_vi}
-
 Ghi chú học sinh: {ghi_chu}
 
-Mức độ quan tâm từng section (0=không quan tâm, 1= ít quan tâm, 2=quan tâm bình thường, 3= rất quan tâm ):
-ví dụ : Mệnh đề: 1 có nghĩa là chủ đề Mệnh đề có độ quan tâm trong trọng ở mức thấp, ít quan tâm
-Hiệu của hai tập hợp, phần bù của tập con: 3 nghĩa là độ quan trọng/ quan tâm chủ đề này rất cao
+Cấu trúc chương (bài: các section):
+{cau_truc}
+
+Mức độ quan tâm từng section (0=không quan tâm, 1=ít, 2=bình thường, 3=rất quan tâm):
 {scores}
 
-### Nội dung tài liệu:
+Nội dung tài liệu:
 {chunks}
 
-## Hồ sơ kiến thức chương học
-chuong: là chương học , ví dụ Chương 1 đạo hàm 
-can_nam: nội dung cần nắm trong chương học, các điều cần nắm là ở mức căn bản như khái niệm, hệ quả , tính chất của chương đó 
-can_hieu: cần hiểu sâu về các vấn đề trong chương , hiểu khác cần nắm , hiểu là mức hiểu bản chất hiểu vấn đề này nói gì vận dụng áp dụng vào các trường hợp , dạng toán nào là tối ưu 
-bai_hoc: các bài học trong chương đó , ví dụ : bài 1 đạo hàm tích , bài 2 đạo hàm hai ẩn 
-quan_he_kien_thuc: là quan hệ giữa các bài học, các chủ đề các mục kiến thức có sự tương tác lien kết với nhau để có bộ kiến thức sâu , rộng và hiểu bản chất các bài học
-quan_he_dang_bai:là quan hệ sự tác động , bồi bắp qua lại lẫn nhau , kiến thức dạng bài tập này làm nền tảng đẻ nâng cao dạng bài kia , hiểu dạng này sẽ hỗ trợ dạng kia 
+## YÊU CẦU CÁC TRƯỜNG
+- chuong: tên chương.
+- can_nam: khái niệm, tính chất, công thức cơ bản cần nhớ.
+- can_hieu: điều cần hiểu bản chất và vận dụng; nêu rõ vận dụng vào dạng bài nào.
+- bai_hoc: danh sách bài học trong chương.
+- quan_he_kien_thuc: các bài/chủ đề liên kết nhau thế nào.
+- quan_he_dang_bai: dạng bài nào là nền tảng để làm dạng bài nào.
+- dang_bai: danh sách dạng bài, mỗi dạng gồm ten, section, cach_giai.
 
-Hãy phân tích Hồ sơ kiến thức chương học thật kỹ về những trường bên trong đó từ nội dung chương trình học
+## QUY TẮC CHO dang_bai
+1. Mỗi dạng bài thuộc đúng 1 section, chép nguyên văn tên section từ "Cấu trúc chương".
+2. Mỗi section có ít nhất 1 dạng bài, kể cả section điểm 0 (người học có thể đổi ý sau).
+3. Section điểm 2-3 nên có 2-4 dạng bài, chia theo mức độ (nhận biết, tính toán, vận dụng thực tế).
+   Section điểm 0-1 chỉ cần 1-2 dạng bài.
+4. Dạng bài phải là kiểu bài học sinh thật sự gặp, có căn cứ từ tài liệu. Không bịa kiến thức ngoài tài liệu.
+   Nếu tài liệu chưa đủ cho một section, dùng dạng bài trực tiếp từ tên section, không suy diễn thêm.
+5. Tên dạng bài ngắn, nói rõ việc học sinh phải làm. Không trùng nhau giữa các dạng bài.
+6. Ghi chú học sinh (nếu có) chỉ dùng để ưu tiên dạng bài, không được thêm kiến thức ngoài tài liệu.
 
+## LƯU Ý
+Viết súc tích, không lặp ý giữa các trường dữ liệu

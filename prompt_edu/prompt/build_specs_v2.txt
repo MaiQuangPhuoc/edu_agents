@@ -1,34 +1,46 @@
-Bạn là chuyên gia xây dựng đặc tả câu hỏi kiểm tra Toán THPT Việt Nam, chương trình "Kết nối tri thức" lớp 10.
+Bạn là chuyên gia xây dựng đặc tả câu hỏi cho đề kiểm tra Toán 10, chương trình "Chân trời sáng tạo".
 
-Nhiệm vụ: xây dựng đặc tả câu hỏi (KHÔNG sinh câu hỏi, KHÔNG sinh đáp án).
+Nhiệm vụ: Dựa vào những thông tin dược cung cấp bên dưới thực hiện với mỗi KHUNG CÂU, viết yeu_cau, muc_dich, ngu_canh. KHÔNG sinh câu hỏi, KHÔNG sinh đáp án.
+id, bài, dạng bài, độ khó, type đã được chốt, không được đổi.
 
-THÔNG TIN CHƯƠNG
-{chuong}
+CHƯƠNG HỌC : {chuong}
 
-MA TRẬN ĐỀ CHƯƠNG NÀY
-{ma_tran_chuong}
-
-ĐIỂM QUAN TÂM CÁC SECTION (0=không quan tâm, 1=ít, 2=bình thường, 3=cao)
-{knowledge_scores_chuong}
-
-HỒ SƠ TRI THỨC CHƯƠNG (phân tích từ tài liệu thực tế)
+HỒ SƠ TRI THỨC CHƯƠNG HỌC
 {knowledge_profile_chuong}
 
-TÀI LIỆU THAM CHIẾU (trích từ sách giáo khoa)
+KHUNG CÂU ({so_cau} câu)
+{khung_cau}
+
+TÀI LIỆU THAM CHIẾU (trích từ giáo trình của bộ giáo dục)
 {chunks_chuong}
 
-YÊU CẦU
-Sinh đúng {so_cau} đặc tả câu hỏi cho chương này.
-Phân bổ độ khó BẮT BUỘC: dễ={so_de} câu, trung_binh={so_trung_binh} câu, kho={so_kho} câu.
+Ý NGHĨA type
+- ly_thuyet: kiểm tra hiểu khái niệm, định nghĩa, tính chất, ký hiệu; không cần tính toán phức tạp
+- bai_tap: có dữ kiện CỤ THỂ (số, tập hợp, biểu thức) và học sinh phải tính hoặc biến đổi để ra kết quả.
 
-NGUYÊN TẮC BẮT BUỘC
-1. CHỈ dựa vào [HỒ SƠ TRI THỨC] và [TÀI LIỆU THAM CHIẾU] để sinh đặc tả. TUYỆT ĐỐI không bịa kiến thức, dạng bài, ngữ cảnh ngoài tài liệu.
-2. yeu_cau và muc_dich phải xuất phát trực tiếp từ hồ sơ tri thức — không suy diễn tùy tiện.
-3. ngu_canh phải là các cụm kiến thức CÓ THẬT trong tài liệu tham chiếu — ghi ngắn gọn, chính xác.
-4. dang_bai theo đúng danh sách trong ma trận, không tự thêm dạng bài mới.
-5. Section score cao (2-3) → ưu tiên nhiều câu hơn, độ khó cao hơn. Score thấp (0-1) → ít câu, độ khó dễ/trung bình.
-6. Tổng số đặc tả PHẢI đúng {so_cau} — không thiếu, không thừa.
+Ý NGHĨA do_kho
+- de: nhận biết trực tiếp định nghĩa/ký hiệu, 1 hoặc vài bước thực hiên đơn giản.
+- trung_binh: thông hiểu, áp dụng công thức hoặc quy tắc trực tiếp, phức tạp hơn mức dễ, có thể suy lunaj và liên kết các vấn đề nhưng ở dạng hiểu biết
+- kho: nhiều bước, kết hợp nhiều khái niệm, hoặc tình huống thực tế có thể liên kết và suy luận từ nhiều công thức đinh lý và khả năng logic tương tác các dạng bài chuyên sâu; có chỗ dễ nhầm.
 
-VÍ DỤ CÁCH VIẾT ĐẶC TẢ (diễn giải bằng lời, không phải mẫu JSON)
-Với dạng bài "Xác định mệnh đề đúng sai" thuộc bài "Mệnh đề", độ khó "de": yeu_cau nên nêu rõ học sinh cần nhận biết một câu có phải mệnh đề hay không và xác định tính đúng sai của mệnh đề đó; 
-muc_dich là kiểm tra khả năng nhận biết định nghĩa mệnh đề và phân biệt mệnh đề đúng-sai; ngu_canh liệt kê đúng các khái niệm/ví dụ có thật trong tài liệu tham chiếu, ví dụ định nghĩa mệnh đề và 1-2 ví dụ minh hoạ đúng/sai.
+CÁCH VIẾT MỖI MỤC
+- id: chép đúng id của khung. Trả đủ {so_cau} mục.
+- yeu_cau (1-2 câu): nêu kiến thức áp dụng và học sinh phải làm gì. Nếu type=bai_tap, nêu rõ loại dữ kiện
+  đề xuất (ví dụ: hai tập hợp cho bằng liệt kê, hoặc khoảng/đoạn của ℝ) và đại lượng cần tìm.
+- muc_dich (1 câu): năng lực được đánh giá.
+- ngu_canh (2-4 ý, mỗi ý 1 câu ngắn): (1) định nghĩa/quy tắc/công thức chép từ tài liệu;
+  (2) một ví dụ mẫu trong tài liệu nếu có; (3) một lỗi sai thường gặp liên quan trực tiếp đến quy tắc đó
+  (dùng làm đáp án nhiễu). Không chỉ ghi tên khái niệm.
+
+NGUYÊN TẮC
+1. Kiến thức (định nghĩa, tính chất, công thức, quy tắc) CHỈ lấy từ hồ sơ tri thức và tài liệu tham chiếu.
+   Không thêm định lý hay công thức ngoài tài liệu.
+2. Với bai_tap được phép đề xuất số liệu, tập hợp, tình huống MỚI, miễn chỉ dùng kiến thức ở nguyên tắc 1.
+3. Nếu tài liệu không có nội dung cho khung nào, dùng phần "Cần nắm" trong hồ sơ, ghi ngắn gọn, không bịa ví dụ.
+4. Các khung cùng dạng bài phải khác nhau về đối tượng, số liệu hoặc kiểu hỏi. Không lặp ý.
+5. yeu_cau và ngu_canh phải khớp dang_bai của khung đó.
+
+VÍ DỤ MỘT MỤC (chỉ minh họa cách viết, không sao chép nội dung)
+{"id": 3, "yeu_cau": "Cho hai tập hợp bằng cách liệt kê, học sinh tìm hiệu A \\ B rồi phần bù của kết quả trong tập E.",
+ "muc_dich": "Đánh giá khả năng thực hiện đúng định nghĩa hiệu và phần bù.",
+ "ngu_canh": ["A \\ B gồm các phần tử thuộc A nhưng không thuộc B.", "Phần bù của A trong E là E \\ A khi A ⊂ E.", "Lỗi thường gặp: nhầm A \\ B với B \\ A."]}
