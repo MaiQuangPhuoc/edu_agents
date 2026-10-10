@@ -28,6 +28,11 @@ TEST_EXAM_PROMPT_PATH  = Path(r'D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAG
 TOOL_SELECT_BATCH_PROMPT_PATH = PROMPT_DIR / "qa_solve_tool_select_batch_prompt.txt"
 
 
+# planing
+COLLECT_STUDENT_MODEL_PROMPT_PATH = PROMPT_DIR / "collect_student_model.txt"
+PLANNING_PROMPT_PATH = PROMPT_DIR / "planning_agent.txt"
+
+
 
 
 
