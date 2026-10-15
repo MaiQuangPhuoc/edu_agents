@@ -24,12 +24,15 @@ class NangLucMonHoc(BaseModel):
     diem_hien_tai: Optional[float] = None
     diem_manh: list[str] = []
     diem_yeu: list[str] = []
+    da_test_dau_vao: bool = Field(True, description="TẠM THỜI luôn True; sẽ cập nhật khi có bài test đầu vào")
     chu_de: list[NangLucChuDe] = []
 
 class MucTieu(BaseModel):
     mon_hoc: str
     muc_tieu_diem: Optional[float] = None
     han_chot: Optional[str] = None            # ví dụ "thi học kì 2"
+    ngay_ket_thuc: Optional[str] = Field(None, description="Ngày cụ thể, định dạng YYYY-MM-DD")
+    so_tuan_con_lai: Optional[int] = Field(None, description="Còn khoảng mấy tuần; dùng khi học sinh không nêu ngày")
     # uu_tien: Literal["diem_so", "hieu_ban_chat", "ca_hai"] = "ca_hai"
     uu_tien: Optional[Literal["diem_so", "hieu_ban_chat", "ca_hai"]] = None
     dang_bai_can_giu: list[str] = []          # dạng toán muốn tập trung
@@ -68,6 +71,36 @@ class CollectTurn(BaseModel):
     tin_nhan: str
     hoan_tat: bool = False
 
+class GuardResult(BaseModel):
+    hop_le: bool
+    tra_loi: str = ""
+
+class ProfilePatch(BaseModel):
+    muc_tieu: Optional[list[MucTieu]] = None
+    lich_hoc: Optional[LichHoc] = None
+    nang_luc: Optional[list[NangLucMonHoc]] = None
+    so_thich_hoc: Optional[SoThichHoc] = None
+    ca_nhan: Optional[ThongTinCaNhan] = None
+
+class CollectPatchTurn(BaseModel):
+    patch: ProfilePatch
+    tin_nhan: str
+    hoan_tat: bool = False
+
+class SearchQuery(BaseModel):
+    query: str
+    subject: str
+    chapter_id: Optional[str] = None
+    nguon: Literal["sgk", "web", "video"] = "sgk"
+
+class QueryPlan(BaseModel):
+    queries: list[SearchQuery]
+
+class TaiNguyenGoiY(BaseModel):
+    loai: Literal["tai_lieu", "video", "giao_trinh"]
+    tieu_de: str
+    url: Optional[str] = None
+    ghi_chu: str = Field("", description="Một câu: tài nguyên này giúp gì cho giai đoạn")
 
 class ChuongKeHoach(BaseModel):
     chapter_id: str = Field(description="PHẢI lấy từ cấu trúc chương trình đã cho")
@@ -81,33 +114,166 @@ class GiaiDoan(BaseModel):
     muc_tieu: str
     chapters: list[ChuongKeHoach]
     tieu_chi_hoan_thanh: str
+    tai_nguyen: list[TaiNguyenGoiY] = Field(default=[], description="Tối đa 3 gợi ý, chỉ lấy từ kết quả tra cứu")
 
 class MasterRoadmap(BaseModel):
     muc_tieu_tong: str
     chien_luoc: str = Field(description="Chiến lược ngắn gọn để đạt mục tiêu")
     giai_doan: list[GiaiDoan]
     gia_dinh: list[str] = Field(default=[], description="Các điểm là đề xuất/giả định vì chưa có tài liệu xác nhận")
+
+
+
+
+
 # ───────── 2. TIN NHẮN A2A ─────────
 
-class AgentMessage(BaseModel):
-    sender: Literal["student_model", "planning", "roadmap", "progress", "report", "exam"]
-    receiver: str
-    type: Literal["request", "result", "replan", "reassess"]
+# class AgentMessage(BaseModel):
+#     sender: Literal["student_model", "planning", "roadmap", "progress", "report", "exam"]
+#     receiver: str
+#     type: Literal["request", "result", "replan", "reassess"]
+#     payload: dict = {}
+#     created_at: datetime = Field(default_factory=datetime.now)
+
+class HandoffMessage(BaseModel):
+    sender: Literal["collect", "planning", "roadmap", "progress", "report", "exam"]
+    receiver: Literal["collect", "planning", "roadmap", "progress", "report", "exam"]
+    type: Literal["request", "result", "update_profile", "profile_updated", "revise_roadmap"]
     payload: dict = {}
     created_at: datetime = Field(default_factory=datetime.now)
+
+
+
+# ───────── LEARNING PATH ─────────
+
+Difficulty = Literal["easy", "medium", "hard"]
+
+
+class Task(BaseModel):
+    id: str
+    goal: str                       # mục tiêu của bước, ví dụ "Chuẩn bị tài nguyên cho chương I"
+    depends_on: list[str] = []
+    origin: Literal["fixed", "generated"] = "generated"
+
+
+class TaskPlan(BaseModel):
+    tasks: list[Task]
+
+
+class Resource(BaseModel):
+    type: Literal["document", "video", "curriculum"]
+    title: str
+    url: Optional[str] = None
+    note: str = ""
+
+
+class LinkedLesson(BaseModel):
+    chapter_id: str
+    lesson: str
+    relation: str
+
+class LessonKnowledge(BaseModel):
+    lesson: str
+    key_points: list[str] = []
+    must_know: list[str] = []
+    must_understand: list[str] = []
+    problem_types: list[str] = []
+    related: list[LinkedLesson] = []
+
+
+class ChapterKnowledge(BaseModel):
+    chapter_id: str = ""
+    lessons: list[LessonKnowledge]
+
+class Activity(BaseModel):
+    type: Literal["lecture", "reading", "video", "exercise", "summary", "review"]
+    content: str
+    minutes: int
+    difficulty: Difficulty = "easy"
+    problem_type: str = ""
+
+
+class Assessment(BaseModel):
+    chapter_ids: list[str]
+    num_questions: int
+
+
+class Session(BaseModel):
+    date: str                                   # YYYY-MM-DD
+    start_time: str                             # HH:MM
+    minutes: int
+    type: Literal["lesson", "review", "assessment"] = "lesson"
+    chapter_id: str
+    lesson: str
+    key_points: list[str] = []
+    must_know: list[str] = []
+    must_understand: list[str] = []
+    related: list[LinkedLesson] = []
+    difficulty: Difficulty = "easy"
+    activities: list[Activity] = []
+    resources: list[Resource] = []
+    assessment: Optional[Assessment] = None     # only for type == "assessment"
+
+
+class Week(BaseModel):
+    week_no: int
+    start_date: str
+    end_date: str
+    goal: str
+    sessions: list[Session] = []                # empty = outline-only week
+
+
+class Schedule(BaseModel):
+    start_date: str
+    end_date: Optional[str] = None
+    total_weeks: int
+    sessions_per_week: int
+    minutes_per_session: int
+
+
+class LearningPath(BaseModel):
+    current_phase: int
+    schedule: Schedule
+    weeks: list[Week]
+    assumptions: list[str] = []
+
+
 
 # ───────── 3. STATE CHUNG ─────────
 
 class PlanState(TypedDict, total=False):
     messages: Annotated[list, add_messages]
-    plan_messages: Annotated[list, add_messages]   # vòng ReAct của Planning Agent
+    # plan_messages: Annotated[list, add_messages]   # vòng ReAct của Planning Agent
+    plan_messages: list
     student_id: str
     student_model: dict           # StudentModel.model_dump()
     master_roadmap: dict          # Planning Agent ghi
     weekly_plan: dict             # Roadmap Agent ghi
-    a2a_inbox: list[dict]         # AgentMessage.model_dump(), tin chờ xử lý
+    # a2a_inbox: list[dict]         # AgentMessage.model_dump(), tin chờ xử lý
+    inbox: list[dict]             # HandoffMessage.model_dump(), tin chờ xử lý
+    roadmap_status: str           # "draft" | "awaiting_feedback" | "approved"
+    feedback: str                 # góp ý mới nhất của học sinh
+    revision_count: int           # số lần đã sửa sườn, để chặn lặp vô hạn
+    update_request: dict          # Planning → collect: {"fields": [...], "ly_do": "..."}
+
+    guard_ok: bool
+    student_model_prev: dict
+    roadmap_prev: dict
+    search_queries: list[dict]
+
+    decision: str                 # tool Planning Agent chọn ở handle_feedback
+    decision_args: dict
+
     replan_reason: str
     model_done: bool              # cờ *_done giống ExamState
     master_done: bool
     weekly_done: bool
     current_step: str
+
+
+    lp_tasks: list[dict]          # thay cho dòng lp_plan
+    lp_issues: dict               # thay cho lp_issues: list[str]; dạng {"week_no": [lỗi]}
+    lp_window: dict
+    lp_revision_count: int
+    learning_path: dict
+

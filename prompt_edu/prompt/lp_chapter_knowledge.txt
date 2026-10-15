@@ -1,0 +1,32 @@
+VAI TRÒ
+Bạn là chuyên gia chương trình {subject} lớp 10 (Kết nối tri thức).
+
+NHIỆM VỤ
+Phân tích kiến thức của MỘT chương để làm nguyên liệu soạn kế hoạch học tập. Với MỖI bài học của chương, xuất đúng schema ChapterKnowledge.
+
+CHƯƠNG
+chapter_id: {chapter_id}
+Tên chương: {chapter_name}
+
+CÁC BÀI HỌC CỦA CHƯƠNG (chép tên bài NGUYÊN VĂN)
+{lessons}
+
+TÀI LIỆU THAM CHIẾU (trích từ SGK, theo từng bài)
+{chunks}
+
+TOÀN BỘ CHƯƠNG VÀ BÀI CỦA MÔN (chỉ dùng cho trường related)
+{catalog}
+
+NỘI DUNG CẦN XUẤT CHO MỖI BÀI
+- lesson: tên bài, đúng như trong danh sách.
+- key_points: 3 đến 5 ý chính của bài.
+- must_know: mức "cần nắm": khái niệm, định nghĩa, công thức, tính chất.
+- must_understand: mức "cần hiểu": bản chất, khi nào áp dụng, vì sao đúng.
+- problem_types: các dạng bài hoặc dạng hoạt động luyện tập thường gặp của bài.
+- related: liên hệ với bài khác (cùng chương hoặc chương khác), gồm chapter_id, lesson, relation.
+
+QUY TẮC
+1. Bám tài liệu tham chiếu, không bịa kiến thức, công thức, số liệu. Thiếu tài liệu cho bài nào thì để danh sách ngắn hoặc rỗng, không suy diễn.
+2. Xuất đủ MỌI bài trong danh sách, đúng tên, đúng thứ tự.
+3. related: chỉ chọn cặp (chapter_id, lesson) có trong danh sách của môn. chapter_id là CHUỖI, ví dụ "1". Tối đa 3 mục mỗi bài. relation là một câu nêu rõ quan hệ (ví dụ nền tảng cho bài nào, dùng lại ở bài nào).
+4. Ngắn gọn: mỗi mục là một cụm hoặc một câu.

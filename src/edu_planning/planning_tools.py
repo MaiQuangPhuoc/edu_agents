@@ -1,10 +1,14 @@
 from typing import Optional
 from langchain_core.tools import tool
+import json, sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
+from src.edu_qa.tools.web_search_tool import web_search_edu
+from src.edu_qa.tools.tools_search_media import search_youtube_lecture
 FETCH_K = 40
 
 
-def make_planning_tools(retriever):
+def make_planning_tools(retriever, llm_client=None):
     def _filter(docs, chapter_id, lesson):
         if chapter_id:
             docs = [d for d in docs if d.metadata.get("chapter_id") == chapter_id]
@@ -69,4 +73,41 @@ def make_planning_tools(retriever):
         docs = _filter(retriever.hybrid_search_qa(query, k=FETCH_K, subject=subject), chapter_id, lesson)
         return _fmt(retriever.rerank(query, docs, top_k=top_k))
 
-    return [search_documents, search_documents_reranked]
+    @tool
+    def search_web_documents(query: str, subject: str, top_k: int = 3) -> list[dict]:
+        """Tìm tài liệu học tập trên web (trang giáo dục uy tín: đề cương, bài giảng, bài tập).
+
+        Dùng khi:
+        - Cần gợi ý tài liệu tham khảo cho một giai đoạn/chương trọng tâm.
+        Chỉ dùng khi học sinh có dùng tài liệu (so_thich_hoc.dung_tai_lieu khác False).
+        Mỗi lần tra một chương hoặc một ý.
+
+        Args:
+            query: từ khóa, nên có tên chương/bài.
+            subject: "Toán 10" | "Ngữ văn 10" | "Lịch sử 10".
+            top_k: số kết quả tối đa.
+        """
+        res = web_search_edu.func(query=query, subject=subject, max_results=top_k)
+        return [{"loai": "tai_lieu", "tieu_de": r["title"], "url": r["url"], "tom_tat": r["content"][:300]}
+                for r in res]
+
+    @tool
+    def search_videos(query: str, subject: str, top_k: int = 2) -> list[dict]:
+        """Tìm video bài giảng trên YouTube (chỉ lấy video dài, đã lọc theo tiêu đề liên quan).
+
+        Dùng khi:
+        - Cần gợi ý video học cho một giai đoạn/chương trọng tâm.
+        Chỉ dùng khi học sinh có dùng video (so_thich_hoc.dung_video là True hoặc học sinh nêu rõ).
+        Mỗi lần tra một chương hoặc một ý.
+
+        Args:
+            query: từ khóa, nên có tên chương/bài.
+            subject: "Toán 10" | "Ngữ văn 10" | "Lịch sử 10".
+            top_k: số video tối đa.
+        """
+        res = search_youtube_lecture.func(query=f"{subject} {query}", llm_client=llm_client, max_results=top_k)
+        if res and "error" in res[0]:
+            return [{"loi": "Không tra được video lúc này"}]
+        return [{"loai": "video", "tieu_de": r["title"], "url": r["url"], "kenh": r["channel"]} for r in res]
+
+    return [search_documents, search_documents_reranked, search_web_documents, search_videos]

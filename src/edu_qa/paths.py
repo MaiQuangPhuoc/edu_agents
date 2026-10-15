@@ -31,6 +31,12 @@ TOOL_SELECT_BATCH_PROMPT_PATH = PROMPT_DIR / "qa_solve_tool_select_batch_prompt.
 # planing
 COLLECT_STUDENT_MODEL_PROMPT_PATH = PROMPT_DIR / "collect_student_model.txt"
 PLANNING_PROMPT_PATH = PROMPT_DIR / "planning_agent.txt"
+PLANNING_FINALIZE_PROMPT_PATH = PROMPT_DIR / "planning_finalize.txt"
+PLANNING_FEEDBACK_PROMPT_PATH = PROMPT_DIR / "planning_feedback.txt"
+GUARD_PROMPT_PATH = PROMPT_DIR / "guard.txt"
+COLLECT_UPDATE_PROMPT_PATH = PROMPT_DIR / "collect_student_model_update.txt"
+QUERY_TRANSFORM_PROMPT_PATH = PROMPT_DIR / "query_transform.txt"
+LP_CHAPTER_KNOWLEDGE_PROMPT_PATH = PROMPT_DIR / "lp_chapter_knowledge.txt"
 
 
 

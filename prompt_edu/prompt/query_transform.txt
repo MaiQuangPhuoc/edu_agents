@@ -1,0 +1,15 @@
+Từ hồ sơ học sinh và hội thoại, tạo các truy vấn tra cứu cho tác nhân tạo lộ trình học tập
+
+HỒ SƠ
+{student_model}
+
+HỘI THOẠI GẦN ĐÂY
+{history}
+
+QUY TẮC
+1. Mỗi truy vấn MỘT ý: một môn và một chương/chủ đề (điểm yếu, mục tiêu hoặc dạng bài cần tập trung).
+2. Hồ sơ phức tạp (nhiều môn, nhiều điểm yếu): tách thành nhiều truy vấn nhỏ, tối đa 6.
+3. Viết thành câu tìm kiếm rõ nghĩa, dùng từ khóa của chương trình SGK; không dùng đại từ hay câu lửng.
+4. subject đúng như trong hồ sơ. chapter_id là số chương nếu xác định được, không thì để trống.
+5. nguon: "sgk" cho kiến thức trong sách; "web" hoặc "video" CHỈ khi học sinh nêu rõ muốn.
+6. Không bịa thông tin ngoài hồ sơ và hội thoại.
