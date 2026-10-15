@@ -7,6 +7,7 @@ from src.clients.llm import LLMClient
 from src.edu_qa.paths import GUARD_PROMPT_PATH
 from src.edu_planning.collect_student_model import collect_student_model
 from src.edu_planning.planning_agent import make_planning_graph
+from src.edu_planning.learning_path_graph import make_learning_path_graph
 
 def _history_text(messages: list) -> str:
     lines = [f"{'Học sinh' if isinstance(m, HumanMessage) else 'Trợ lý'}: {m.content}" for m in messages[-12:]]
@@ -14,6 +15,7 @@ def _history_text(messages: list) -> str:
 
 def make_roadmap_graph(retriever, llm_client: LLMClient, checkpointer=None):
     planning = make_planning_graph(retriever, llm_client)   # graph con, dùng chung PlanState
+    learning_path = make_learning_path_graph(retriever, llm_client)
 
     def guard(state: PlanState) -> dict:
         last = next((m.content for m in reversed(state.get("messages", [])) if isinstance(m, HumanMessage)), "")
@@ -31,7 +33,7 @@ def make_roadmap_graph(retriever, llm_client: LLMClient, checkpointer=None):
         return collect_student_model(state, llm_client)
 
     def after_guard(state: PlanState) -> str:
-        if not state.get("guard_ok", True) or state.get("roadmap_status") == "approved":
+        if not state.get("guard_ok", True) or state.get("roadmap_status") in ("approved", "path_ready"):
             return END
         if state.get("roadmap_status") == "updating_profile" or not state.get("model_done"):
             return "collect"
@@ -45,14 +47,20 @@ def make_roadmap_graph(retriever, llm_client: LLMClient, checkpointer=None):
         return "planning" if state.get("model_done") else END
 
     def after_planning(state: PlanState) -> str:
-        return "collect" if state.get("roadmap_status") == "updating_profile" else END
+        status = state.get("roadmap_status")
+        if status == "updating_profile":
+            return "collect"
+        return "learning_path" if status == "approved" else END
 
     g = StateGraph(PlanState)
     g.add_node("guard", guard)
     g.add_node("collect", collect)
     g.add_node("planning", planning)
+    g.add_node("learning_path", learning_path)
     g.add_edge(START, "guard")
     g.add_conditional_edges("guard", after_guard, {"collect": "collect", "planning": "planning", END: END})
     g.add_conditional_edges("collect", after_collect, {"planning": "planning", END: END})
-    g.add_conditional_edges("planning", after_planning, {"collect": "collect", END: END})
+    g.add_conditional_edges("planning", after_planning,
+                            {"collect": "collect", "learning_path": "learning_path", END: END})
+    g.add_edge("learning_path", END)
     return g.compile(checkpointer=checkpointer)

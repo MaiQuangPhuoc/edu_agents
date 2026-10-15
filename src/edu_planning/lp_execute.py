@@ -1,3 +1,6 @@
+import json, sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+
 from concurrent.futures import ThreadPoolExecutor
 from langchain.agents import create_agent
 from langchain_core.messages import HumanMessage, ToolMessage

@@ -1,4 +1,5 @@
-import json
+import json, sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from src.state_plan import PlanState, TaskPlan
 from src.clients.llm import LLMClient
 from src.edu_exam.curriculum import get_subject_curriculum
