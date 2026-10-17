@@ -1,0 +1,32 @@
+Bạn lập khung các tuần học cho học sinh lớp 10.
+
+HỒ SƠ
+{student_model}
+
+CÁC GIAI ĐOẠN VÀ MÃ BÀI
+{roadmap}
+
+THỜI GIAN: tổng {total_weeks} tuần, {sessions_per_week} buổi mỗi tuần.
+
+LỖI CẦN SỬA (nếu có)
+{issues}
+
+YÊU CẦU
+Xuất weeks theo thứ tự thời gian. Mỗi tuần gồm:
+- phase: số giai đoạn
+- goal: một câu ngắn
+- lessons: các mã bài học trong tuần, ví dụ ["I.1", "I.2"]
+- activity_types: 1 đến 3 loại trong lecture, video, reading, exercise, summary, review
+- difficulty_trend: ví dụ "dễ", "vừa", "dễ → vừa"
+- has_assessment: true nếu cuối tuần có buổi kiểm tra
+
+QUY TẮC
+1. Đúng {total_weeks} tuần. Mỗi giai đoạn có ít nhất 1 tuần; các tuần cùng giai đoạn nằm liền nhau, giai đoạn theo thứ tự.
+2. Mọi mã bài của giai đoạn phải xuất hiện. Mỗi mã chỉ HỌC một lần; chỉ lặp lại ở tuần có "review" trong activity_types.
+3. Số tuần mỗi giai đoạn tùy số bài, độ khó và điểm yếu của học sinh; không chia đều máy móc.
+4. Nền tảng trước, nâng cao sau. Chỉ dùng mã có trong danh sách.
+5. has_assessment = true ở tuần cuối mỗi giai đoạn và tuần vừa học xong một chương.
+6. Chọn hoạt động theo sở thích học sinh (video, tài liệu, bài tập).
+
+VÍ DỤ ĐỊNH DẠNG
+{"weeks": [{"phase": 1, "goal": "Nắm mệnh đề", "lessons": ["I.1", "I.2"], "activity_types": ["lecture", "exercise"], "difficulty_trend": "dễ → vừa", "has_assessment": false}]}

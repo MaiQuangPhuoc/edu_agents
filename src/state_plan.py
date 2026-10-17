@@ -222,6 +222,63 @@ class Week(BaseModel):
     goal: str
     sessions: list[Session] = []                # empty = outline-only week
 
+class LessonRef(BaseModel):
+    chapter_id: str
+    lesson: str
+
+
+class BriefWeek(BaseModel):
+    """Mức vừa: dùng cho mọi tuần của mọi giai đoạn (LLM sinh)."""
+    week_no: int                                # đánh số liên tục qua các giai đoạn
+    goal: str
+    lessons: list[LessonRef]
+    activity_types: list[str] = []
+    difficulty_trend: str = ""                  # ví dụ "dễ → vừa"
+    total_hours: float = 0
+    has_assessment: bool = False                # tuần có buổi kiểm tra định kỳ
+
+
+class PhaseOutline(BaseModel):
+    phase: int
+    weeks: list[BriefWeek]
+
+
+class OutlineWeek(BaseModel):            # LLM sinh, phẳng
+    phase: int
+    goal: str
+    lessons: list[str]                   # mã bài, ví dụ "I.1"
+    activity_types: list[str] = []
+    difficulty_trend: str = ""
+    has_assessment: bool = False
+
+class OutlinePlan(BaseModel):
+    weeks: list[OutlineWeek]
+
+class ActivityDraft(BaseModel):
+    type: Literal["lecture", "reading", "video", "exercise", "summary", "review"]
+    content: str
+    minutes: int
+
+class SessionDraft(BaseModel):
+    lesson: str                          # mã bài
+    type: Literal["lesson", "review", "assessment"] = "lesson"
+    activities: list[ActivityDraft]
+    resources: list[Resource] = []
+
+class WeekDraft(BaseModel):
+    goal: str
+    sessions: list[SessionDraft]
+
+class ReviewIssue(BaseModel):
+    week_no: int = 0
+    problem: str
+
+class ReviewResult(BaseModel):           # rỗng = ổn
+    issues: list[ReviewIssue] = []
+
+
+
+
 
 class Schedule(BaseModel):
     start_date: str
@@ -230,11 +287,11 @@ class Schedule(BaseModel):
     sessions_per_week: int
     minutes_per_session: int
 
-
 class LearningPath(BaseModel):
     current_phase: int
     schedule: Schedule
-    weeks: list[Week]
+    outline: list[PhaseOutline] = []     # THÊM: tuần mức vừa của mọi giai đoạn
+    weeks: list[Week]                    # giữ nguyên: tuần chi tiết của giai đoạn hiện tại
     assumptions: list[str] = []
 
 
@@ -273,6 +330,11 @@ class PlanState(TypedDict, total=False):
     lp_window: dict
     lp_tasks: list[dict]
     lp_results: dict
+
+    lp_outline: list[dict]        # kết quả outline của mọi giai đoạn (PhaseOutline.model_dump())
+    lp_slots: dict                # lịch buổi học tính một lần (sửa lỗi #3)
+
+
     lp_replan_count: int
     lp_draft: dict
     lp_issues: dict                              # {"week_no": [lỗi]}

@@ -2,7 +2,7 @@ from typing import Optional
 from langchain_core.tools import tool
 import json, sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
-
+from src.edu_planning.chapter_utils import normalize_chapter_id
 from src.edu_qa.tools.web_search_tool import web_search_edu
 from src.edu_qa.tools.tools_search_media import search_youtube_lecture
 FETCH_K = 40
@@ -44,10 +44,11 @@ def make_planning_tools(retriever, llm_client=None):
         Args:
             query: từ khóa/câu cần tìm.
             subject: "Toán 10" | "Ngữ văn 10" | "Lịch sử 10".
-            chapter_id: số chương, ví dụ "3" (tùy chọn).
+            chapter_id: số chương, "I" (Toán) hoặc "5" (Ngữ văn, Lịch sử).
             lesson: tên bài (tùy chọn).
             top_k: số kết quả tối đa.
         """
+        chapter_id = (normalize_chapter_id(subject, chapter_id) or chapter_id) if chapter_id else None
         docs = retriever.hybrid_search_qa(query, k=FETCH_K, subject=subject)
         return _fmt(_filter(docs, chapter_id, lesson)[:top_k])
 
@@ -66,10 +67,11 @@ def make_planning_tools(retriever, llm_client=None):
         Args:
             query: từ khóa/câu cần tìm.
             subject: "Toán 10" | "Ngữ văn 10" | "Lịch sử 10".
-            chapter_id: số chương, ví dụ "3" (tùy chọn).
+            chapter_id: số chương, "I" (Toán) hoặc "5" (Ngữ văn, Lịch sử).
             lesson: tên bài (tùy chọn).
             top_k: số kết quả sau rerank.
         """
+        chapter_id = (normalize_chapter_id(subject, chapter_id) or chapter_id) if chapter_id else None
         docs = _filter(retriever.hybrid_search_qa(query, k=FETCH_K, subject=subject), chapter_id, lesson)
         return _fmt(retriever.rerank(query, docs, top_k=top_k))
 

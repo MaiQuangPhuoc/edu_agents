@@ -28,5 +28,5 @@ NỘI DUNG CẦN XUẤT CHO MỖI BÀI
 QUY TẮC
 1. Bám tài liệu tham chiếu, không bịa kiến thức, công thức, số liệu. Thiếu tài liệu cho bài nào thì để danh sách ngắn hoặc rỗng, không suy diễn.
 2. Xuất đủ MỌI bài trong danh sách, đúng tên, đúng thứ tự.
-3. related: chỉ chọn cặp (chapter_id, lesson) có trong danh sách của môn. chapter_id là CHUỖI, ví dụ "1". Tối đa 3 mục mỗi bài. relation là một câu nêu rõ quan hệ (ví dụ nền tảng cho bài nào, dùng lại ở bài nào).
+3. related: chỉ chọn cặp (chapter_id, lesson) có trong danh sách của môn. chapter_id là CHUỖI, ví dụ "I" (Toán) hoặc "5" (Ngữ văn, Lịch sử). Tối đa 3 mục mỗi bài. relation là một câu nêu rõ quan hệ (ví dụ nền tảng cho bài nào, dùng lại ở bài nào).
 4. Ngắn gọn: mỗi mục là một cụm hoặc một câu.

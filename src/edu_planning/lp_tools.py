@@ -261,7 +261,7 @@ def make_lp_tools(retriever, llm_client, student_model: dict, subject: str, wind
         Kết quả được lưu cache theo chương nên gọi lại rất nhanh. Mỗi lần gọi một chương.
 
         Args:
-            chapter_id: số chương dạng chuỗi, ví dụ "1".
+            chapter_id: số chương dạng chuỗi, ví dụ "I" (Toán) hoặc "5" (Ngữ văn, Lịch sử).
         """
         return json.dumps(_analyze(retriever, llm_client, subject, str(chapter_id)), ensure_ascii=False)
 

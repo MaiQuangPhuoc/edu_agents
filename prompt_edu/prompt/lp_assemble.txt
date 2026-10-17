@@ -1,29 +1,35 @@
-VAI TRÒ
-Bạn là chuyên gia soạn kế hoạch học tập chi tiết cho học sinh lớp 10 (chương trình Kết nối tri thức).
+Bạn soạn kế hoạch cho MỘT tuần học lớp 10 (tuần {week_no}).
 
-NHIỆM VỤ
-Soạn kế hoạch chi tiết cho MỘT tuần: tuần số {week_no}. Xuất đúng schema Week.
-
-HỒ SƠ HỌC SINH
+HỒ SƠ
 {student_model}
 
-GIAI ĐOẠN HIỆN TẠI VÀ CỬA SỔ CHI TIẾT
-{window}
+KHUNG TUẦN
+{week_outline}
 
-KẾT QUẢ THỰC THI (nguồn dữ liệu duy nhất cho kiến thức, buổi học, độ khó, tài nguyên)
-{results}
+BÀI CỦA TUẦN (mã: tên, kiến thức chính)
+{lessons_info}
+
+TÀI NGUYÊN TÌM ĐƯỢC
+{resources}
+
+CÁC BUỔI TRONG TUẦN (theo thứ tự)
+{slots}
 
 LỖI CẦN SỬA (nếu có)
 {issues}
 
+YÊU CẦU
+Xuất goal (một câu) và sessions: ĐÚNG số buổi ở trên, đúng thứ tự. Mỗi buổi gồm:
+- lesson: mã bài
+- type: "lesson" hoặc "review"
+- activities: 2 đến 4 mục, mỗi mục có type, content (một câu, nêu việc cụ thể), minutes (bội số của 5)
+- resources: tối đa 2
+
 QUY TẮC
-1. Buổi học: dùng ĐÚNG các buổi (date, start_time, minutes) trong kết quả quy hoạch cho tuần này. Không thêm, bớt hay đổi giờ.
-2. Mỗi buổi chọn một chương và một bài; thứ tự nền tảng trước, nâng cao sau, bám giai đoạn hiện tại. chapter_id và lesson chỉ lấy từ kết quả phân tích kiến thức.
-3. key_points, must_know, must_understand, related (chapter_id, lesson, relation) và problem_type chỉ lấy từ kết quả phân tích kiến thức; không bịa.
-4. activities: danh sách có thứ tự (ví dụ lecture → video hoặc reading → exercise → summary). Tổng minutes của activities BẰNG minutes của buổi. Chọn loại hoạt động theo so_thich_hoc (có bài tập sau buổi không, có tóm tắt cuối buổi không, thích tài liệu hay video).
-5. difficulty của buổi và của từng hoạt động theo kết quả độ khó (easy, medium, hard). Chủ đề học sinh yếu bắt đầu dễ rồi tăng dần; chủ đề mạnh vào độ khó cao sớm hơn.
-6. resources: chỉ lấy từ kết quả tìm tài nguyên, chép url nguyên văn; mỗi buổi tối đa 3. Không có thì để trống.
-7. Buổi cuối của tuần đặt type = "assessment" kèm assessment (chapter_ids là các chương học trong tuần, num_questions từ 5 đến 10 theo thời lượng). Các buổi khác type = "lesson" hoặc "review".
-8. Dữ liệu có đánh dấu "THIẾU": bỏ phần đó, không tự điền.
-9. Nếu có LỖI CẦN SỬA: sửa đúng các lỗi đó, giữ nguyên phần còn lại.
-10. goal của tuần: một câu nêu mục tiêu của tuần.
+1. lesson chỉ lấy từ BÀI CỦA TUẦN. Mọi bài phải được học; bài dài có thể chiếm nhiều buổi.
+2. Tổng minutes các hoạt động gần bằng thời lượng buổi (hệ thống sẽ tự chỉnh nếu lệch).
+3. Nếu khung có has_assessment = true: buổi CUỐI có type "assessment", activities gồm một "exercise" làm bài test và một "review" xem lại lỗi sai.
+4. Hoạt động theo activity_types của khung và sở thích học sinh.
+5. resources chỉ chọn từ TÀI NGUYÊN TÌM ĐƯỢC, chép nguyên văn url. Không có thì để rỗng.
+6. Chỗ ghi "THIẾU" thì bỏ qua, không tự điền.
+7. Có LỖI CẦN SỬA: sửa đúng chỗ đó, giữ phần còn lại.

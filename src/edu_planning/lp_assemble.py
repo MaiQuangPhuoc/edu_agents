@@ -6,7 +6,7 @@ from src.clients.llm import LLMClient
 from src.edu_qa.paths import LP_ASSEMBLE_PROMPT_PATH
 from src.edu_planning.lp_plan import window_text, student_text
 from src.edu_planning.lp_tools import _build_schedule
-
+from src.edu_planning.chapter_utils import normalize_chapter_id
 
 def _results_text(results: dict, sched_week: dict) -> str:
     body = "\n\n".join(f"[{tid}] {r['goal']}\n{r['text']}" for tid, r in results.items())
@@ -27,6 +27,9 @@ def _assemble_week(state: PlanState, llm_client: LLMClient, sw: dict, issues: li
         print(f"[lp_assemble] tuần {sw['week_no']} lỗi: {e}")
         week = None
     data = week.model_dump() if week else {"goal": "", "sessions": []}
+    subject = state["lp_window"]["subject"]
+    for s in data["sessions"]:
+        s["chapter_id"] = normalize_chapter_id(subject, s["chapter_id"]) or s["chapter_id"]
     data.update(week_no=sw["week_no"], start_date=sw["start_date"], end_date=sw["end_date"])
     return data
 
