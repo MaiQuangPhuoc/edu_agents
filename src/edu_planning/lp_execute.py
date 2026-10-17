@@ -8,7 +8,7 @@ from langgraph.errors import GraphRecursionError
 from src.state_plan import PlanState
 from src.clients.llm import LLMClient
 from src.edu_qa.paths import LP_EXECUTOR_PROMPT_PATH
-from src.edu_planning.lp_tools import make_lp_tools
+from src.edu_planning.lp_tools import make_lp_tools, _load_cache
 from src.edu_planning.planning_tools import make_planning_tools
 from src.edu_planning.lp_plan import window_text, student_text
 
@@ -60,4 +60,5 @@ def execute_node(state: PlanState, retriever, llm_client: LLMClient) -> dict:
             for tid, r in list(ex.map(lambda t: _run_task(t, tools, state, llm_client, results), ready)):
                 results[tid] = r
         pending = [t for t in pending if t["id"] not in results]
-    return {"lp_results": results, "current_step": "learning_path"}
+    knowledge = {c: k for c in w["chapter_ids"] if (k := _load_cache(w["subject"], c))}     # cache -> state, một lần
+    return {"lp_results": results, "lp_knowledge": knowledge, "current_step": "learning_path"}

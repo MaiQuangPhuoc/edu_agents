@@ -5,22 +5,36 @@ from src.clients.llm import LLMClient
 from src.edu_exam.curriculum import get_subject_curriculum
 from src.edu_qa.paths import LP_PLANNER_PROMPT_PATH
 from src.edu_planning.lp_tools import _build_schedule
+from src.edu_planning.chapter_utils import normalize_chapter_id
 
 MAX_WINDOW_CHAPTERS = 2      # số chương tối đa trong cửa sổ chi tiết (quy tắc tự đặt)
 MAX_GENERATED = 3
 
 
-def build_window(state: PlanState) -> dict:
+def phases_in_scope(state: PlanState) -> list[dict]:
+    """Giai đoạn hiện tại và các giai đoạn sau, cùng môn."""
     phases = state.get("master_roadmap", {}).get("giai_doan", [])
     order = state.get("vi_tri_hien_tai") or 1
-    phase = next((p for p in phases if p["thu_tu"] == order), phases[0] if phases else {})
-    chapters = phase.get("chapters", [])[:MAX_WINDOW_CHAPTERS]
+    cur = next((p for p in phases if p["thu_tu"] == order), phases[0] if phases else None)
+    if not cur:
+        return []
+    return [p for p in phases if p["thu_tu"] >= cur["thu_tu"] and p.get("mon_hoc") == cur.get("mon_hoc")]
+
+
+def build_window(state: PlanState) -> dict:
+    """Cửa sổ chi tiết = TOÀN BỘ giai đoạn hiện tại (số tuần lấy từ outline)."""
+    phase = phases_in_scope(state)[0]
+    subject = phase["mon_hoc"]
+    weeks = next(o["weeks"] for o in state["lp_outline"] if o["phase"] == phase["thu_tu"])
+    lessons = {}
+    for c in phase.get("chapters", []):
+        cid = normalize_chapter_id(subject, c["chapter_id"]) or str(c["chapter_id"])
+        lessons.setdefault(cid, []).extend(c["lessons"])
     return {
-        "start_date": None, "num_weeks": 1, "first_week_no": 1,
-        "phase": phase.get("thu_tu", order), "phase_name": phase.get("ten", ""),
-        "phase_goal": phase.get("muc_tieu", ""), "subject": phase.get("mon_hoc", ""),
-        "chapter_ids": [c["chapter_id"] for c in chapters],
-        "chapter_lessons": {c["chapter_id"]: c["lessons"] for c in chapters},
+        "start_date": None, "num_weeks": len(weeks), "first_week_no": weeks[0]["week_no"],
+        "phase": phase["thu_tu"], "phase_name": phase.get("ten", ""),
+        "phase_goal": phase.get("muc_tieu", ""), "subject": subject,
+        "chapter_ids": list(lessons), "chapter_lessons": lessons,
     }
 
 
@@ -34,7 +48,8 @@ def window_text(w: dict) -> str:
 
 
 def student_text(sm: dict) -> str:
-    return json.dumps({k: v for k, v in sm.items() if k != "tien_do"}, ensure_ascii=False, indent=2)
+    keep = {k: v for k, v in sm.items() if k != "tien_do" and v not in (None, "", [], {})}
+    return json.dumps(keep, ensure_ascii=False, separators=(",", ":"))
 
 
 def fixed_tasks(w: dict) -> list[dict]:
@@ -43,7 +58,7 @@ def fixed_tasks(w: dict) -> list[dict]:
         {"id": "F1", "origin": "fixed", "depends_on": [],
          "goal": f"Nắm kiến thức cần dạy của các chương {ids} (kiến thức chính, cần nắm, cần hiểu, dạng bài, liên hệ giữa các bài)."},
         {"id": "F2", "origin": "fixed", "depends_on": [],
-         "goal": "Xác định các buổi học cụ thể trong tuần và độ khó phù hợp theo mục tiêu điểm."},
+         "goal": "Xác định các buổi học cụ thể trong các tuần của giai đoạn và độ khó phù hợp theo mục tiêu điểm."},
     ]
 
 
@@ -76,18 +91,18 @@ def _generate(state: PlanState, llm_client: LLMClient, existing: list[dict], rep
 def find_gaps(state: PlanState) -> list[str]:
     gaps = [f"{tid} ({r['goal']}): {r['text'][:200]}"
             for tid, r in state.get("lp_results", {}).items() if "THIẾU" in r["text"]]
-    w = state["lp_window"]
-    sched = _build_schedule(state["student_model"], w["subject"], w)
-    if "error" in sched:
-        gaps.append("Lịch học: " + sched["error"])
-    else:
-        gaps += [f"Lịch học: {x}" for x in sched["warnings"] if "chỉ xếp được" in x or "vượt quá" in x]
+    
     return gaps
 
 
 def plan_node(state: PlanState, llm_client: LLMClient) -> dict:
     print(">>> [LP] plan")
     window = build_window(state)
+
+    sched = _build_schedule(state["student_model"], window["subject"], window)
+    if "error" in sched:
+        return {"lp_draft": {"error": sched["error"]}}
+    window["slots"] = sched                      # đóng băng lịch: các bước sau chỉ đọc lại, không tính lại
     tasks = fixed_tasks(window)
     tasks += _generate({**state, "lp_window": window}, llm_client, tasks, "(không có)")
     return {"lp_window": window, "lp_tasks": tasks, "lp_results": {}, "lp_replan_count": 0,

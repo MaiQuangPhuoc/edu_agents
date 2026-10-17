@@ -332,11 +332,15 @@ class PlanState(TypedDict, total=False):
     lp_results: dict
 
     lp_outline: list[dict]        # kết quả outline của mọi giai đoạn (PhaseOutline.model_dump())
-    lp_slots: dict                # lịch buổi học tính một lần (sửa lỗi #3)
+
+    lp_codes: dict                # mã bài -> {phase, chapter_id, lesson}
+    lp_knowledge: dict            # {chapter_id: ChapterKnowledge dict}, nạp từ cache một lần
 
 
     lp_replan_count: int
     lp_draft: dict
     lp_issues: dict                              # {"week_no": [lỗi]}
     lp_revision_count: int
+    lp_reviewed: bool                            # LLM review chỉ chạy một lần
+    
     learning_path: dict

@@ -187,6 +187,9 @@ def _week_sessions(free: dict, block_start: date, per_week: int, minutes: int, n
 
 
 def _build_schedule(sm: dict, subject: str, window: dict) -> dict:
+    if window.get("slots"):                      # lịch đã đóng băng ở plan_node
+        return window["slots"]
+    
     lich, sthich = sm.get("lich_hoc") or {}, sm.get("so_thich_hoc") or {}
     per_week, minutes = lich.get("so_buoi_tuan"), sthich.get("thoi_luong_buoi_phut")
     missing = [n for n, v in [("so_buoi_tuan", per_week), ("thoi_luong_buoi_phut", minutes),

@@ -8,6 +8,7 @@ from src.edu_planning.lp_plan import plan_node, replan_node, find_gaps
 from src.edu_planning.lp_execute import execute_node
 from src.edu_planning.lp_assemble import assemble_node
 from src.edu_planning.lp_critic import critic_node
+from src.edu_planning.lp_outline import outline_node
 
 
 def _format_path(lp: dict, issues: dict) -> str:
@@ -45,6 +46,9 @@ def present_node(state: PlanState) -> dict:
     return {"messages": [AIMessage(content=msg)], "learning_path": draft, "roadmap_status": "path_ready"}
 
 
+def _next_or_present(nxt: str):
+    return lambda s: "present" if (s.get("lp_draft") or {}).get("error") else nxt
+
 def route_after_execute(state: PlanState) -> str:
     return "replan" if find_gaps(state) and state.get("lp_replan_count", 0) < 1 else "assemble"
 
@@ -55,15 +59,17 @@ def route_after_critic(state: PlanState) -> str:
 
 def make_learning_path_graph(retriever, llm_client: LLMClient, checkpointer=None):
     g = StateGraph(PlanState)
+    g.add_node("outline", lambda s: outline_node(s, llm_client))
     g.add_node("plan", lambda s: plan_node(s, llm_client))
     g.add_node("execute", lambda s: execute_node(s, retriever, llm_client))
     g.add_node("replan", lambda s: replan_node(s, llm_client))
     g.add_node("assemble", lambda s: assemble_node(s, llm_client))
-    g.add_node("critic", critic_node)
+    g.add_node("critic", lambda s: critic_node(s, llm_client))
     g.add_node("present", present_node)
 
-    g.add_edge(START, "plan")
-    g.add_edge("plan", "execute")
+    g.add_edge(START, "outline")
+    g.add_conditional_edges("outline", _next_or_present("plan"), {"plan": "plan", "present": "present"})
+    g.add_conditional_edges("plan", _next_or_present("execute"), {"execute": "execute", "present": "present"})
     g.add_conditional_edges("execute", route_after_execute, {"replan": "replan", "assemble": "assemble"})
     g.add_edge("replan", "execute")
     g.add_edge("assemble", "critic")
