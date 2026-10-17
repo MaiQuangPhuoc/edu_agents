@@ -35,6 +35,8 @@ def make_roadmap_graph(retriever, llm_client: LLMClient, checkpointer=None):
     def after_guard(state: PlanState) -> str:
         if not state.get("guard_ok", True) or state.get("roadmap_status") in ("approved", "path_ready"):
             return END
+        if state.get("roadmap_status") == "path_failed":          # soạn lộ trình lỗi: tin nhắn tiếp theo = thử lại
+            return "learning_path"
         if state.get("roadmap_status") == "updating_profile" or not state.get("model_done"):
             return "collect"
         return "planning"
@@ -58,7 +60,7 @@ def make_roadmap_graph(retriever, llm_client: LLMClient, checkpointer=None):
     g.add_node("planning", planning)
     g.add_node("learning_path", learning_path)
     g.add_edge(START, "guard")
-    g.add_conditional_edges("guard", after_guard, {"collect": "collect", "planning": "planning", END: END})
+    g.add_conditional_edges("guard", after_guard, {"collect": "collect", "planning": "planning", "learning_path": "learning_path", END: END})
     g.add_conditional_edges("collect", after_collect, {"planning": "planning", END: END})
     g.add_conditional_edges("planning", after_planning,
                             {"collect": "collect", "learning_path": "learning_path", END: END})

@@ -2,49 +2,32 @@ from langchain_core.messages import AIMessage
 import json, sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from langgraph.graph import StateGraph, START, END
-from src.state_plan import PlanState
+from src.state_plan import PlanState, LearningPath
 from src.clients.llm import LLMClient
 from src.edu_planning.lp_plan import plan_node, replan_node, find_gaps
 from src.edu_planning.lp_execute import execute_node
 from src.edu_planning.lp_assemble import assemble_node
 from src.edu_planning.lp_critic import critic_node
 from src.edu_planning.lp_outline import outline_node
-
-
-def _format_path(lp: dict, issues: dict) -> str:
-    sc = lp["schedule"]
-    lines = [f"**Kế hoạch học chi tiết (giai đoạn {lp['current_phase']})**",
-             f"{sc['sessions_per_week']} buổi/tuần, mỗi buổi {sc['minutes_per_session']} phút, bắt đầu {sc['start_date']}."]
-    for wk in lp["weeks"]:
-        lines.append(f"\n**Tuần {wk['week_no']}** ({wk['start_date']} → {wk['end_date']}): {wk['goal']}")
-        for s in wk["sessions"]:
-            lines.append(f"\n- **{s['date']} {s['start_time']}** ({s['minutes']} phút, {s['type']}, độ khó {s['difficulty']}): "
-                         f"chương {s['chapter_id']} — {s['lesson']}")
-            if s["must_know"]:
-                lines.append("  - Cần nắm: " + "; ".join(s["must_know"]))
-            if s["must_understand"]:
-                lines.append("  - Cần hiểu: " + "; ".join(s["must_understand"]))
-            if s["related"]:
-                lines.append("  - Liên hệ: " + "; ".join(f"{r['lesson']} ({r['relation']})" for r in s["related"]))
-            lines += [f"  - {a['type']} ({a['minutes']} phút, {a['difficulty']}): {a['content']}" for a in s["activities"]]
-            lines += [f"  - {r['type']}: {r['title']} ({r.get('url', '')})" for r in s["resources"]]
-            if s.get("assessment"):
-                a = s["assessment"]
-                lines.append(f"  - Bài test: {a['num_questions']} câu, chương {', '.join(a['chapter_ids'])}")
-    if issues:
-        lines.append("\n*Một số chỗ chưa khớp hoàn toàn quy tắc, mình ghi nhận để chỉnh sau.*")
-    lines.append("\nBạn thấy kế hoạch này thế nào?")
-    return "\n".join(lines)
+from src.edu_planning.path_store import save_learning_path
 
 
 def present_node(state: PlanState) -> dict:
-    draft = state.get("lp_draft", {})
-    if not draft or "error" in draft:
-        msg = "Mình chưa soạn được kế hoạch chi tiết" + (f": {draft['error']}" if draft.get("error") else ".")
-    else:
-        msg = _format_path(draft, state.get("lp_issues", {}))
-    return {"messages": [AIMessage(content=msg)], "learning_path": draft, "roadmap_status": "path_ready"}
-
+    draft = dict(state.get("lp_draft") or {})
+    try:
+        if not draft or "error" in draft:
+            raise ValueError(draft.get("error", ""))
+        draft["assumptions"] = list(draft.get("assumptions", [])) + [
+            f"Chưa khớp (tuần {n}): {x}" for n, found in (state.get("lp_issues") or {}).items() for x in found]
+        lp = LearningPath.model_validate(draft).model_dump(mode="json")      # đảm bảo đúng schema trước khi lưu
+        sid = state.get("student_id") or state["student_model"].get("student_id", "unknown")
+        path = save_learning_path(sid, lp)
+    except Exception as e:
+        msg = "Mình chưa soạn được lộ trình chi tiết" + (f": {str(e)[:200]}" if str(e) else ".") + " Bạn nhắn \"thử lại\" để mình làm lại nhé."
+        return {"messages": [AIMessage(content=msg)], "roadmap_status": "path_failed"}
+    msg = AIMessage(content="Mình đã soạn xong lộ trình học chi tiết. Bạn bấm nút bên dưới để xem nhé.",
+                    additional_kwargs={"action": {"type": "open_learning_path", "student_id": sid, "file": str(path)}})
+    return {"messages": [msg], "learning_path": lp, "lp_file": str(path), "roadmap_status": "path_ready"}
 
 def _next_or_present(nxt: str):
     return lambda s: "present" if (s.get("lp_draft") or {}).get("error") else nxt
@@ -54,7 +37,7 @@ def route_after_execute(state: PlanState) -> str:
 
 
 def route_after_critic(state: PlanState) -> str:
-    return "assemble" if state.get("lp_issues") and state.get("lp_revision_count", 0) < 2 else "present"
+    return "assemble" if state.get("lp_issues") and state.get("lp_revision_count", 0) < 3 else "present"
 
 
 def make_learning_path_graph(retriever, llm_client: LLMClient, checkpointer=None):

@@ -342,5 +342,6 @@ class PlanState(TypedDict, total=False):
     lp_issues: dict                              # {"week_no": [lỗi]}
     lp_revision_count: int
     lp_reviewed: bool                            # LLM review chỉ chạy một lần
-    
+
     learning_path: dict
+    lp_file: str                                 # đường dẫn file JSON lộ trình (UI mở bằng nút)

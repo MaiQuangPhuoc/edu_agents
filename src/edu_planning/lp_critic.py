@@ -1,52 +1,64 @@
-
-import json, sys, os
+import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
-from src.edu_exam.curriculum import get_subject_curriculum
-from src.edu_planning.lp_tools import _build_schedule
 from src.state_plan import PlanState
+from src.clients.llm import LLMClient
+from src.edu_planning.lp_assemble import phase_weeks
+from src.edu_planning.lp_review import review
+from src.edu_planning.lp_tools import _build_schedule
 
-def _slots(sessions: list[dict]) -> set:
-    return {(s["date"], s["start_time"], s["minutes"]) for s in sessions}
 
-
-def check_week(week: dict, sched_week: dict, w: dict) -> list[str]:
-    issues = []
-    sessions = sorted(week.get("sessions", []), key=lambda s: (s["date"], s["start_time"]))
-    if _slots(sessions) != _slots(sched_week["sessions"]):
-        issues.append(f"Buổi học không khớp lịch chính xác. Cần: {sorted(_slots(sched_week['sessions']))}. "
-                      f"Đang có: {sorted(_slots(sessions))}")
-    cur = get_subject_curriculum(w["subject"])
-    for s in sessions:
+def check_week(week: dict, brief: dict, n_slots: int) -> list[str]:
+    """Kiểm tra bằng code: số buổi, bài hợp lệ, phủ đủ bài, buổi kiểm tra."""
+    ss, issues = week.get("sessions", []), []
+    if len(ss) != n_slots:
+        issues.append(f"Cần đúng {n_slots} buổi, đang có {len(ss)}")
+    want = {(l["chapter_id"], l["lesson"]) for l in brief["lessons"]}
+    for s in ss:
         tag = f"{s['date']} {s['start_time']}"
-        if s["chapter_id"] not in w["chapter_ids"]:
-            issues.append(f"{tag}: chapter_id {s['chapter_id']} nằm ngoài cửa sổ")
-        elif s["lesson"] not in cur[s["chapter_id"]]["lessons"]:
-            issues.append(f"{tag}: bài '{s['lesson']}' không có trong chương {s['chapter_id']}")
-        total = sum(a["minutes"] for a in s["activities"])
-        if total != s["minutes"]:
-            issues.append(f"{tag}: tổng thời lượng hoạt động {total} phút, cần {s['minutes']} phút")
-    if sessions and sessions[-1]["type"] != "assessment":
-        issues.append("Buổi cuối tuần phải có type = assessment")
+        if not s["chapter_id"]:
+            issues.append(f"{tag}: mã bài '{s['lesson']}' không hợp lệ")
+        elif s["type"] == "lesson" and (s["chapter_id"], s["lesson"]) not in want:
+            issues.append(f"{tag}: bài {s['chapter_id']} - {s['lesson']} không thuộc khung của tuần")
+        if not s["activities"]:
+            issues.append(f"{tag}: chưa có hoạt động")
+    n_learn = n_slots - (1 if brief["has_assessment"] else 0)
+    got = {(s["chapter_id"], s["lesson"]) for s in ss if s["type"] != "assessment"}
+    if want and len(want) <= n_learn and want - got:       # đủ buổi mà vẫn thiếu bài thì mới báo
+        issues.append("Chưa có buổi học các bài: " + ", ".join(sorted(l for _, l in want - got)))
+    last_is_test = bool(ss) and ss[-1]["type"] == "assessment"
+    if brief["has_assessment"] and ss and not last_is_test:
+        issues.append("Buổi cuối tuần phải là assessment")
+    if not brief["has_assessment"] and any(s["type"] == "assessment" for s in ss):
+        issues.append("Tuần này không có kiểm tra, không được dùng assessment")
     return issues
 
 
-def critic_node(state: PlanState) -> dict:
+def critic_node(state: PlanState, llm_client: LLMClient) -> dict:
     print(">>> [LP] critic")
     draft, w = state.get("lp_draft", {}), state["lp_window"]
     if not draft or "error" in draft:
         return {"lp_issues": {}}
 
     sched = _build_schedule(state["student_model"], w["subject"], w)
-    by_week = {sw["week_no"]: sw for sw in sched["weeks"]}
+    slots = {sw["week_no"]: len(sw["sessions"]) for sw in sched["weeks"]}
+    briefs = {b["week_no"]: b for b in phase_weeks(state)}
     evidence = "\n".join(r["evidence"] for r in state["lp_results"].values())
 
     issues = {}
     for wk in draft["weeks"]:
-        for s in wk.get("sessions", []):                   # bỏ tài nguyên có url không xuất hiện trong kết quả tra cứu
+        for s in wk["sessions"]:                        # bỏ tài nguyên có url không xuất hiện trong kết quả tra cứu
             s["resources"] = [r for r in s["resources"] if r.get("url") and r["url"] in evidence]
-        found = check_week(wk, by_week[wk["week_no"]], w)
+        found = check_week(wk, briefs[wk["week_no"]], slots[wk["week_no"]])
         if found:
             issues[str(wk["week_no"])] = found
 
-    count = state.get("lp_revision_count", 0) + (1 if issues else 0)
-    return {"lp_draft": draft, "lp_issues": issues, "lp_revision_count": count}
+    revision, reviewed = state.get("lp_revision_count", 0), state.get("lp_reviewed", False)
+    if not issues and not reviewed:                     # lớp 2: LLM đối chiếu hồ sơ, chỉ chạy một lần
+        reviewed = True
+        for week_no, problem in review(state, draft, llm_client):
+            if week_no in briefs:
+                issues.setdefault(str(week_no), []).append(problem)
+            else:
+                draft["assumptions"].append("Cần xem lại: " + problem)
+    return {"lp_draft": draft, "lp_issues": issues, "lp_reviewed": reviewed,
+            "lp_revision_count": revision + (1 if issues else 0)}
