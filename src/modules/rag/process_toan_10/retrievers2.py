@@ -26,7 +26,7 @@ class VectorStoreRetriever:
         collection_name: str = "tools",
         tools_collection_name: str | None = None,
         top_k: int = 10,
-        reranker_model = "BAAI/bge-reranker-v2-m3",
+        reranker_model = "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
         enable_colbert_prefilter: bool = False,
         colbert_model: str = "colbert-ir/colbertv2.0",
     ):

@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Nhận dạng mệnh đề đúng/sai",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Cho phát biểu “Tất cả các số chẵn đều chia hết cho 4”. Học sinh xác định đây có phải là mệnh đề và cho biết phát biểu là đúng hay sai.",
+    "options": {
+      "A": "Là mệnh đề, đúng",
+      "B": "Là mệnh đề, sai",
+      "C": "Không phải mệnh đề, đúng",
+      "D": "Không phải mệnh đề, sai"
+    },
+    "answer": "B",
+    "giai_thich": "Phát biểu có dạng khẳng định toàn bộ các phần tử của một tập (tất cả các số chẵn) thỏa một điều kiện (chia hết cho 4). Do đó nó là một mệnh đề vì có giá trị đúng hoặc sai. Kiểm tra tính đúng: số chẵn 2 không chia hết cho 4, nên phát biểu sai. Vì vậy đáp án đúng là “Là mệnh đề, sai”. Các đáp án còn lại sai vì: A cho rằng phát biểu đúng; C và D cho rằng không phải mệnh đề, nhưng thực tế nó là mệnh đề.",
+    "y_tuong": "Nhận dạng mệnh đề và đánh giá đúng/sai",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 2,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Viết phủ định của mệnh đề",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho mệnh đề: “∃n∈ℕ sao cho n^2 = 2”. Học sinh viết phủ định của mệnh đề này.",
+    "options": {
+      "A": "∀n∈ℕ, n^2 = 2",
+      "B": "∀n∈ℕ, n^2 ≠ 2",
+      "C": "∃n∈ℕ, n^2 ≠ 2",
+      "D": "∃n∈ℕ, n^2 > 2"
+    },
+    "answer": "B",
+    "giai_thich": "Phủ định của một mệnh đề tồn tại (∃) là một mệnh đề mọi (∀) với phủ định của biểu thức bên trong: ¬(∃n∈ℕ, P(n)) ≡ ∀n∈ℕ, ¬P(n). Ở đây P(n): n^2 = 2, nên ¬P(n): n^2 ≠ 2. Do đó phủ định là “∀n∈ℕ, n^2 ≠ 2”. Đáp án A giữ nguyên dấu ∃ → sai; C giữ nguyên ∃ và chỉ đổi bất đẳng thức → sai; D thay đổi cả quantifier và bất đẳng thức → sai.",
+    "y_tuong": "Viết phủ định của mệnh đề tồn tại",
+    "answer_code": "negation is ∀n∈ℕ, n^2 ≠ 2",
+    "check": "✅"
+  },
+  {
+    "id": 3,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Kiểm tra đúng sai của mệnh đề và phủ định",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho mệnh đề B: “Mọi số nguyên dương n đều thỏa mãn n + 1 > n”. Học sinh kiểm tra tính đúng/sai của B và của phủ định B.",
+    "options": {
+      "A": "B đúng, phủ định B sai",
+      "B": "B sai, phủ định B đúng",
+      "C": "Cả B và phủ định B đều đúng",
+      "D": "Cả B và phủ định B đều sai"
+    },
+    "answer": "A",
+    "giai_thich": "Với mọi số nguyên dương n, luôn có n + 1 > n (cộng 1 luôn tăng giá trị). Vì vậy B là một mệnh đề đúng. Phủ định của B là “Tồn tại số nguyên dương n sao cho n + 1 ≤ n”. Không tồn tại n thỏa điều kiện này, nên phủ định là sai. Do đó chỉ đáp án A mô tả đúng tình trạng của B và phủ định.",
+    "y_tuong": "Kiểm tra đúng/sai của mệnh đề và phủ định",
+    "answer_code": "B_true = True , neg_B_true = False",
+    "check": "✅"
+  },
+  {
+    "id": 4,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Nhận dạng ký hiệu tập hợp và phần tử",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Xác định ý nghĩa của các ký hiệu sau: (i) 5 ∈ A, (ii) B ⊂ C, (iii) D = ∅.",
+    "options": {
+      "A": "(i) 5 là phần tử của A; (ii) B là tập con của C; (iii) D không có phần tử nào",
+      "B": "(i) 5 là tập con của A; (ii) B chứa C; (iii) D là tập hợp toàn bộ số nguyên",
+      "C": "(i) 5 không thuộc A; (ii) B và C bằng nhau; (iii) D là tập rỗng có một phần tử duy nhất",
+      "D": "(i) 5 là phần tử của A; (ii) B ⊂ C nghĩa là B chứa C; (iii) D = ∅ là ký hiệu của tập hợp vô hạn"
+    },
+    "answer": "A",
+    "giai_thich": "Ký hiệu ∈ biểu thị “là phần tử của”, vì vậy 5 ∈ A nghĩa là 5 thuộc tập A. Ký hiệu ⊂ biểu thị “là tập con (có thể bằng hoặc không bằng) của”, nên B ⊂ C nghĩa là mọi phần tử của B đều thuộc C. Ký hiệu ∅ là tập rỗng, không có phần tử nào, do đó D = ∅ nghĩa là D không có phần tử. Các đáp án B, C, D chứa các nhầm lẫn: A: 5 là tập con, B chứa C, D là tập vô hạn, … nên chỉ A là đúng.",
+    "y_tuong": "Nhận dạng ký hiệu tập hợp và phần tử",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 5,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Kiểm tra thuộc tính phần tử trong tập hợp",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Cho tập A = {x ∈ ℤ | -3 ≤ x < 5}. Học sinh xác định xem số 5 có thuộc A hay không.",
+    "options": {
+      "A": "5 thuộc A",
+      "B": "5 không thuộc A",
+      "C": "5 thuộc A nếu xét trong ℝ",
+      "D": "Không xác định vì A không được mô tả rõ ràng"
+    },
+    "answer": "B",
+    "giai_thich": "Tập A gồm các số nguyên x thỏa -3 ≤ x < 5. Điều kiện “x < 5” loại trừ mọi số bằng 5. Vì 5 không thỏa điều kiện này, nên 5 ∉ A. Do đó đáp án đúng là “5 không thuộc A”. Đáp án A sai vì nhầm dấu “<” thành “≤”. Đáp án C nhầm thành xét trong ℝ, nhưng A đã quy định x ∈ ℤ, nên không thay đổi. Đáp án D không có cơ sở vì mô tả của A đã đủ rõ ràng.",
+    "y_tuong": "Kiểm tra thuộc tính phần tử trong tập hợp",
+    "answer_code": "membership = False",
+    "check": "✅"
+  },
+  {
+    "id": 6,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "So sánh hai tập hợp bằng nhau",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Cho hai tập hợp A={1,2,3,4} và B={4,3,2,1}. Học sinh xác định xem A và B có bằng nhau hay không.",
+    "options": {
+      "A": "Bằng nhau",
+      "B": "Không bằng nhau",
+      "C": "Bằng nhau nếu xét thứ tự các phần tử",
+      "D": "Không bằng nhau vì A có 4 phần tử, B có 4 phần tử nhưng thứ tự khác"
+    },
+    "answer": "A",
+    "giai_thich": "Hai tập hợp được coi bằng nhau khi mỗi phần tử của A thuộc B và mỗi phần tử của B thuộc A (A⊆B và B⊆A). Ở đây A={1,2,3,4} và B={4,3,2,1} chứa đúng cùng các phần tử 1,2,3,4, không có phần tử nào thiếu hay thừa, và thứ tự không ảnh hưởng. Do đó A = B. Các đáp án B, C, D đều sai: B cho rằng không bằng nhau, C nhầm rằng thứ tự quan trọng, D nhầm rằng số phần tử khác nhau khi thực tế chúng bằng nhau.",
+    "y_tuong": "So sánh hai tập hợp bằng nhau",
+    "answer_code": "sets_equal = True",
+    "check": "✅"
+  },
+  {
+    "id": 7,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Tập hợp",
+    "dang_bai": "Nhận dạng ký hiệu tập hợp và phần tử",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho tập hợp B={x∈ℤ | -2≤x≤2} và phần tử k=0. Học sinh xác định ký hiệu đúng để biểu thị rằng k thuộc B và ký hiệu để biểu thị rằng 5 không thuộc B.",
+    "options": {
+      "A": "0∈B và 5∈B",
+      "B": "0∈B và 5∉B",
+      "C": "0⊂B và 5∉B",
+      "D": "0∈B và 5⊂B"
+    },
+    "answer": "B",
+    "giai_thich": "Ký hiệu “∈” chỉ phần tử thuộc tập hợp. Vì 0 nằm trong khoảng [-2,2] nên 0∈B là đúng. Số 5 không thỏa mãn điều kiện -2≤x≤2, vì vậy 5∉B. Các đáp án sai: A cho rằng 5∈B (sai), C dùng ký hiệu “⊂” (sai vì 0 không phải là tập hợp), D dùng “⊂” cho 5 (sai).",
+    "y_tuong": "Nhận dạng ký hiệu tập hợp và phần tử",
+    "answer_code": "(True, True)",
+    "check": "✅"
+  },
+  {
+    "id": 8,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Tính hiệu của hai tập hợp",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cho hai tập hợp A và B với |A|=12, |A∩B|=5. Học sinh viết công thức tính |A\\B| và tính giá trị cụ thể.",
+    "options": {
+      "A": "7",
+      "B": "17",
+      "C": "5",
+      "D": "12"
+    },
+    "answer": "A",
+    "giai_thich": "Hiệu A\\B gồm các phần tử thuộc A mà không thuộc B. Công thức: |A\\B| = |A| - |A∩B|. Thay số: |A\\B| = 12 - 5 = 7. Vì vậy đáp án đúng là 7. Các đáp án B (12+5), C (chỉ giao), D (chỉ |A|) là các lỗi thường gặp.",
+    "y_tuong": "Tính hiệu của hai tập hợp",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 9,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Xác định phần bù của một tập con trong tập vũ trụ",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong không gian vũ trụ U={1,2,3,4,5,6}, tập con C={2,4,6}. Học sinh xác định phần bù C′ trong U và liệt kê các phần tử của nó.",
+    "options": {
+      "A": "{1,3,5}",
+      "B": "{2,4,6}",
+      "C": "{1,2,3,4,5,6}",
+      "D": "∅"
+    },
+    "answer": "A",
+    "giai_thich": "Phần bù C′ trong U được định nghĩa là U\\C, tức các phần tử của U không thuộc C. U\\C = {1,2,3,4,5,6}\\{2,4,6} = {1,3,5}. Do đó đáp án A là đúng. Đáp án B là chính C, C là toàn bộ U, D là tập rỗng – các lỗi thường gặp khi nhầm lẫn giữa tập con và phần bù.",
+    "y_tuong": "Xác định phần bù của một tập con trong tập vũ trụ",
+    "answer_code": "{1, 3, 5}",
+    "check": "✅"
+  },
+  {
+    "id": 10,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Vẽ và đọc biểu đồ Venn cho các phép toán tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho ba tập hợp A={1,2}, B={2,3}, C={3,4}. Học sinh đọc biểu đồ Venn (không cần vẽ) và liệt kê các phần tử thuộc đúng hai trong ba tập hợp này.",
+    "options": {
+      "A": "{2,3}",
+      "B": "{1,2,3,4}",
+      "C": "{2}",
+      "D": "{3}"
+    },
+    "answer": "A",
+    "giai_thich": "“Thuộc đúng hai tập” nghĩa là phần tử nằm trong giao của hai tập nhưng không nằm trong tập thứ ba. • Giao A∩B = {2}, không thuộc C → {2}. • Giao B∩C = {3}, không thuộc A → {3}. • Giao A∩C = ∅. Vì vậy tập các phần tử thuộc đúng hai tập là {2,3}. Đáp án A đúng. Đáp án B liệt kê toàn bộ phần tử (sai), C chỉ {2} (bỏ {3}), D chỉ {3} (bỏ {2}).",
+    "y_tuong": "Vẽ và đọc biểu đồ Venn cho các phép toán tập hợp",
+    "answer_code": "{2, 3}",
+    "check": "✅"
+  }
+]
