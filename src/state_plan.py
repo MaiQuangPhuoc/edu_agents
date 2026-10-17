@@ -242,38 +242,39 @@ class LearningPath(BaseModel):
 # ───────── 3. STATE CHUNG ─────────
 
 class PlanState(TypedDict, total=False):
-    messages: Annotated[list, add_messages]
-    # plan_messages: Annotated[list, add_messages]   # vòng ReAct của Planning Agent
-    plan_messages: list
+    # chung
+    messages: Annotated[list, add_messages]      # hội thoại với học sinh
     student_id: str
-    student_model: dict           # StudentModel.model_dump()
-    master_roadmap: dict          # Planning Agent ghi
-    weekly_plan: dict             # Roadmap Agent ghi
-    # a2a_inbox: list[dict]         # AgentMessage.model_dump(), tin chờ xử lý
-    inbox: list[dict]             # HandoffMessage.model_dump(), tin chờ xử lý
-    roadmap_status: str           # "draft" | "awaiting_feedback" | "approved"
-    feedback: str                 # góp ý mới nhất của học sinh
-    revision_count: int           # số lần đã sửa sườn, để chặn lặp vô hạn
-    update_request: dict          # Planning → collect: {"fields": [...], "ly_do": "..."}
-
     guard_ok: bool
-    student_model_prev: dict
-    roadmap_prev: dict
-    search_queries: list[dict]
-
-    decision: str                 # tool Planning Agent chọn ở handle_feedback
-    decision_args: dict
-
-    replan_reason: str
-    model_done: bool              # cờ *_done giống ExamState
-    master_done: bool
-    weekly_done: bool
     current_step: str
 
+    # collect
+    student_model: dict
+    student_model_prev: dict
+    search_queries: list[dict]
+    model_done: bool
+    update_request: dict                         # Planning -> collect: {"fields": [...], "ly_do": "..."}
 
-    lp_tasks: list[dict]          # thay cho dòng lp_plan
-    lp_issues: dict               # thay cho lp_issues: list[str]; dạng {"week_no": [lỗi]}
+    # planning (sườn lộ trình)
+    plan_messages: list                          # vòng ReAct của planner, ghi đè mỗi lần chạy lại
+    master_roadmap: dict
+    roadmap_prev: dict
+    master_done: bool
+    roadmap_status: str                          # draft | awaiting_feedback | revising | updating_profile
+                                                 # | profile_changed | approved | path_ready
+    feedback: str
+    revision_count: int
+    decision: str
+    decision_args: dict
+    inbox: list[dict]                            # nhật ký chuyển giao (HandoffMessage)
+
+    # learning path (kế hoạch chi tiết)
+    vi_tri_hien_tai: int
     lp_window: dict
+    lp_tasks: list[dict]
+    lp_results: dict
+    lp_replan_count: int
+    lp_draft: dict
+    lp_issues: dict                              # {"week_no": [lỗi]}
     lp_revision_count: int
     learning_path: dict
-

@@ -3,7 +3,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 import json, sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
-
+from src.edu_planning.chapter_utils import normalize_chapter_id
 from langchain_core.tools import tool
 from src.state_plan import ChapterKnowledge
 from src.edu_exam.curriculum import get_subject_curriculum
@@ -43,6 +43,7 @@ def _save_cache(subject: str, chapter_id: str, data: dict) -> None:
 
 def _analyze(retriever, llm_client, subject: str, chapter_id: str) -> dict:
     cur = get_subject_curriculum(subject)
+    chapter_id = normalize_chapter_id(subject, chapter_id) or chapter_id
     chapter = cur.get(chapter_id)
     if not chapter:
         return {"error": f"Không có chương {chapter_id} trong {subject}"}
@@ -94,7 +95,11 @@ def _analyze(retriever, llm_client, subject: str, chapter_id: str) -> dict:
     data["chapter_id"] = chapter_id
     data["lessons"] = [ls for ls in data["lessons"] if ls["lesson"] in lessons]       # bỏ bài không có trong chương trình
     for ls in data["lessons"]:
+
+        for r in ls["related"]:
+            r["chapter_id"] = normalize_chapter_id(subject, r["chapter_id"]) or r["chapter_id"]
         ls["related"] = [r for r in ls["related"] if (r["chapter_id"], r["lesson"]) in valid_pairs]
+        
     if not data["lessons"]:
         return {"error": f"Kết quả phân tích chương {chapter_id} không khớp tên bài trong chương trình"}
 
