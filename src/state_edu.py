@@ -223,6 +223,16 @@ class ExamState(TypedDict):
     final_exam: list[dict]
     evaluate_done: bool
 
+    # Khóa các node v2 đã dùng nhưng trước đây chưa khai báo (TypedDict: khóa lạ bị LangGraph bỏ)
+    knowledge_retried: bool
+    knowledge_analysis_failed: list
+    regenerate_ids: Optional[list]
+    evaluate_retry_count: int
+    count_check: dict
+
+    # Chế độ tự động (agent khác gọi): bỏ qua bước hỏi học sinh
+    auto_mode: bool
+
     # Meta
     current_step: str
     error: Optional[str]

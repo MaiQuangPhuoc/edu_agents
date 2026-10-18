@@ -215,6 +215,7 @@ def build_matrix(state: ExamState, llm_client: LLMClient) -> dict:
         "messages":     [ai_message],
         "exam_matrix":  matrix,
         "gop_y_matrix": "",
-        "matrix_done":  False,
+        # "matrix_done":  False,
+        "matrix_done":  bool(state.get("auto_mode") and chuong),   # auto: không hỏi góp ý; ma trận rỗng thì không đi tiếp
         "current_step": "build_matrix",
     }
