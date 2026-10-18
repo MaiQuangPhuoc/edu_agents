@@ -23,3 +23,23 @@ def normalize_chapter_id(subject: str, chapter_id) -> str | None:
         if cand in valid:
             return cand
     return None
+
+def fix_chapters(roadmap: dict) -> list[str]:
+    """Chuẩn hóa sườn theo chương trình: sửa chapter_id, bỏ bài không có thật,
+    chương trống bài thì điền đủ bài của chương. Trả về danh sách ghi chú."""
+    notes = []
+    for gd in roadmap["giai_doan"]:
+        curriculum, kept = get_subject_curriculum(gd["mon_hoc"]), []
+        for ch in gd["chapters"]:
+            cid = normalize_chapter_id(gd["mon_hoc"], ch["chapter_id"])
+            if not cid:
+                notes.append(f"Giai đoạn {gd['thu_tu']}: bỏ chương '{ch['chapter_id']}' vì không có trong chương trình")
+                continue
+            valid = list(curriculum[cid]["lessons"])
+            lessons = [x for x in ch["lessons"] if x in valid]
+            if not lessons:
+                lessons = valid
+                notes.append(f"Giai đoạn {gd['thu_tu']}, chương {cid}: chưa chọn bài, hệ thống lấy toàn bộ {len(valid)} bài của chương")
+            kept.append({**ch, "chapter_id": cid, "lessons": lessons})
+        gd["chapters"] = kept
+    return notes

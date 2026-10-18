@@ -3,20 +3,84 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".
 from datetime import datetime
 from langchain_core.messages import AIMessage, HumanMessage
 from src.clients.llm import LLMClient
-
+from src.edu_exam.curriculum import CURRICULUM
 from src.edu_planning.student_store import save_student_model
 from src.state_plan import PlanState, StudentModel, CollectTurn, CollectPatchTurn, QueryPlan
 from src.edu_qa.paths import (COLLECT_STUDENT_MODEL_PROMPT_PATH, COLLECT_UPDATE_PROMPT_PATH,
                               QUERY_TRANSFORM_PROMPT_PATH)
+from difflib import SequenceMatcher
+
+
+MAX_HISTORY = 6        # số tin nhắn gần nhất đưa vào prompt
+MAX_BOT_CHARS = 250    # tin cũ của bot cắt còn chừng này ký tự (tin cuối giữ nguyên)
 
 def _history_text(messages: list) -> str:
-    lines = [f"{'Học sinh' if isinstance(m, HumanMessage) else 'Trợ lý'}: {m.content}" for m in messages[-12:]]
+    recent, lines = messages[-MAX_HISTORY:], []
+    for i, m in enumerate(recent):
+        text = str(m.content)
+        if isinstance(m, HumanMessage):
+            lines.append(f"Học sinh: {text}")
+        else:
+            if i < len(recent) - 1 and len(text) > MAX_BOT_CHARS:
+                text = text[:MAX_BOT_CHARS].rstrip() + "…"
+            lines.append(f"Trợ lý: {text}")
     return "\n".join(lines) or "(chưa có)"
+
+def _compact(model: dict) -> str:
+    """Hồ sơ dạng JSON gọn: bỏ trường rỗng, không thụt dòng."""
+    def clean(x):
+        if isinstance(x, dict):
+            x = {k: clean(v) for k, v in x.items()}
+            return {k: v for k, v in x.items() if v not in (None, "", [], {})}
+        if isinstance(x, list):
+            return [v for v in map(clean, x) if v not in (None, "", [], {})]
+        return x
+    return json.dumps(clean(model), ensure_ascii=False, separators=(",", ":"))
+
+def _canon_subject(name: str) -> str:
+    """"toán" -> "Toán 10": khớp không phân biệt hoa thường với tên môn trong chương trình."""
+    n = (name or "").strip().lower()
+    return next((k for k in CURRICULUM if n and k.lower().startswith(n)), name)
+
+def _curriculum_info() -> str:
+    return "\n".join(f"- {s}: " + ", ".join(f"{cid} ({ch['chapter_name']})" for cid, ch in chs.items())
+                     for s, chs in CURRICULUM.items())
+
+NO_MISSING = "(không còn thiếu)"
+def _missing(m: dict) -> str:
+    nl, mt = (m.get("nang_luc") or [{}])[0], (m.get("muc_tieu") or [{}])[0]
+    lich, st = m.get("lich_hoc") or {}, m.get("so_thich_hoc") or {}
+    checks = [
+        ("môn học", mt.get("mon_hoc") or nl.get("mon_hoc")),
+        ("mục tiêu điểm (thang 10)", mt.get("muc_tieu_diem")),
+        ("thời hạn (ngày kết thúc hoặc số tuần còn lại)", mt.get("ngay_ket_thuc") or mt.get("so_tuan_con_lai")),
+        ("ưu tiên (điểm số / hiểu bản chất / cả hai)", mt.get("uu_tien")),
+        ("số buổi học mỗi tuần", lich.get("so_buoi_tuan")),
+        ("thời lượng mỗi buổi (phút)", st.get("thoi_luong_buoi_phut")),
+        ("điểm hiện tại", nl.get("diem_hien_tai")),
+        ("chương mạnh hoặc yếu", nl.get("diem_manh") or nl.get("diem_yeu")),
+    ]
+    lack = [name for name, v in checks if v in (None, "", [], {})]
+    return "; ".join(lack) or NO_MISSING
+
+SIM_LIMIT = 0.5          # giống nhau từ ngưỡng này trở lên thì coi là lặp lại tin trước
+MAX_REPLY_CHARS = 400    # tin hỏi thêm không dài hơn mức này (tin tóm tắt hồ sơ không bị giới hạn)
+
+def _last_bot(messages: list) -> str:
+    return next((str(m.content) for m in reversed(messages) if isinstance(m, AIMessage)), "")
+
+def _bad_reply(text: str, prev: str, lack: str) -> str:
+    """Trả về lý do nếu tin nhắn lặp tin trước hoặc quá dài; rỗng nếu ổn."""
+    if prev and SequenceMatcher(None, text, prev).ratio() >= SIM_LIMIT:
+        return "trùng với tin nhắn trước"
+    if lack != NO_MISSING and len(text) > MAX_REPLY_CHARS:
+        return f"quá dài (tối đa {MAX_REPLY_CHARS} ký tự)"
+    return ""
 
 def _make_queries(model: dict, state: PlanState, llm_client: LLMClient) -> list[dict]:
     shown = {k: v for k, v in model.items() if k != "tien_do"}
     prompt = (QUERY_TRANSFORM_PROMPT_PATH.read_text(encoding="utf-8")
-              .replace("{student_model}", json.dumps(shown, ensure_ascii=False, indent=2))
+              .replace("{student_model}", _compact(shown))
               .replace("{history}", _history_text(state.get("messages", []))))
     res = llm_client.invoke_structured(QueryPlan, [{"role": "user", "content": prompt}], max_tokens=1500)
     return [q.model_dump() for q in res.queries] if res else []
@@ -31,7 +95,7 @@ def _update_mode(state: PlanState, llm_client: LLMClient) -> dict:
     prompt = (COLLECT_UPDATE_PROMPT_PATH.read_text(encoding="utf-8")
               .replace("{fields}", ", ".join(fields))
               .replace("{ly_do}", req.get("ly_do", ""))
-              .replace("{student_model}", json.dumps(shown, ensure_ascii=False, indent=2))
+              .replace("{student_model}", _compact(shown))
               .replace("{history}", _history_text(state.get("messages", []))))
 
     turn = llm_client.invoke_structured(CollectPatchTurn, [{"role": "user", "content": prompt}], max_tokens=3000)
@@ -75,14 +139,30 @@ def collect_student_model(state: PlanState, llm_client: LLMClient) -> dict:
     current = state.get("student_model") or StudentModel(student_id=student_id).model_dump(mode="json")
 
     prompt = (COLLECT_STUDENT_MODEL_PROMPT_PATH.read_text(encoding="utf-8")
-              .replace("{thong_tin_da_co}", json.dumps(current, ensure_ascii=False, indent=2))
+              .replace("{thong_tin_da_co}", _compact(current))
+              .replace("{con_thieu}", _missing(current))
+              .replace("{chuong_co_tai_lieu}", _curriculum_info())
               .replace("{history}", _history_text(state.get("messages", []))))
 
     turn = llm_client.invoke_structured(CollectTurn, [{"role": "user", "content": prompt}], max_tokens=3000)
     if turn is None:
         return {"messages": [AIMessage(content="Bạn nhắc lại giúp mình nhé?")], "current_step": "collect_student_model"}
+    
+    prev = _last_bot(state.get("messages", []))
+    lack = _missing(turn.student_model.model_dump(mode="json"))
+    why = _bad_reply(turn.tin_nhan, prev, lack)
+    if why:
+        note = f"\n\nLƯU Ý: tin_nhan lần trước {why}. Viết lại ngắn gọn, không lặp câu cũ."
+        again = llm_client.invoke_structured(CollectTurn, [{"role": "user", "content": prompt + note}], max_tokens=3000)
+        if again and not _bad_reply(again.tin_nhan, prev, lack):
+            turn = again
+        elif lack != NO_MISSING:
+            turn.tin_nhan = f"Mình cần thêm thông tin: {lack}. Bạn bổ sung giúp mình nhé?"
 
     model = turn.student_model.model_dump(mode="json")
+    for k in ("nang_luc", "muc_tieu"):
+        for x in model.get(k, []):
+            x["mon_hoc"] = _canon_subject(x["mon_hoc"])
     model["student_id"] = student_id
     model["tien_do"] = current.get("tien_do", {})      # phần của Progress Agent, không để LLM ghi đè
     model["updated_at"] = datetime.now().isoformat()

@@ -6,6 +6,7 @@ from langgraph.prebuilt import ToolNode
 from src.state_plan import PlanState, MasterRoadmap, HandoffMessage
 from src.edu_qa.paths import PLANNING_PROMPT_PATH, PLANNING_FINALIZE_PROMPT_PATH, PLANNING_FEEDBACK_PROMPT_PATH
 from src.edu_planning.feedback_tools import FEEDBACK_TOOLS
+from src.edu_planning.chapter_utils import fix_chapters
 
 from src.clients.llm import LLMClient
 
@@ -143,6 +144,8 @@ def make_planning_graph(retriever, llm_client: LLMClient, checkpointer=None):
             return {"master_done": False, "roadmap_status": "draft", "current_step": "planning"}
 
         roadmap = result.model_dump()
+        notes = fix_chapters(roadmap)
+        roadmap["gia_dinh"] = list(roadmap.get("gia_dinh", [])) + notes
         for gd in roadmap["giai_doan"]:     # bỏ tài nguyên có url không xuất hiện trong kết quả tra cứu
             gd["tai_nguyen"] = [t for t in gd.get("tai_nguyen", []) if t.get("url") and t["url"] in transcript]
 
