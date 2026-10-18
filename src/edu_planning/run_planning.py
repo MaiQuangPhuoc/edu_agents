@@ -1,3 +1,5 @@
+# from xxlimited import new
+
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -11,8 +13,25 @@ from src.clients.llm import LLMClient
 from src.configs import env_config
 from src.edu_planning.collect_student_model import collect_student_model
 
+
+from pathlib import Path
+from datetime import datetime
+
+
 MODE = "collect"      # "collect": chỉ thử agent thu thập (không cần retriever) | "full": cả luồng
 STUDENT_ID = "hs_001"
+
+
+CHAT_START = datetime.now()
+CHAT_FILE = Path(__file__).resolve().parent / (
+    f"{CHAT_START:%Y-%m-%d_%H-%M-%S}.md"
+)
+
+def log_chat(role: str, message: str):
+    timestamp = datetime.now().strftime("%M:%S")
+
+    with CHAT_FILE.open("a", encoding="utf-8") as f:
+        f.write(f"### [{timestamp}] {role}\n\n{message}\n\n")
 
 
 def show_new_bot_messages(out):
@@ -21,23 +40,47 @@ def show_new_bot_messages(out):
     for m in msgs[last_human + 1:]:
         if isinstance(m, AIMessage):
             print("\nBot:", m.content)
+            log_chat("Bot", m.content)
 
 
 def run_collect(llm_client):
-    state = {"student_id": STUDENT_ID, "messages": []}
+    state = {
+        "student_id": STUDENT_ID,
+        "messages": []
+    }
+
     while not state.get("model_done"):
+        # Bot xử lý và phản hồi
         out = collect_student_model(state, llm_client)
-        new = out.pop("messages")
-        state["messages"] = state["messages"] + new
+        new_messages = out.pop("messages", [])
+
+        state["messages"].extend(new_messages)
         state.update(out)
-        print("\nBot:", new[-1].content)
+
+        # Hiển thị và lưu tin nhắn Bot
+        for msg in new_messages:
+            if isinstance(msg, AIMessage):
+                print("\nBot:", msg.content)
+                log_chat("Bot", msg.content)
+
         if state.get("model_done"):
             break
-        state["messages"] = state["messages"] + [HumanMessage(content=input("\nBạn: "))]
+
+        # Nhận và lưu tin nhắn học sinh
+        user_input = input("\nBạn: ").strip()
+
+        if not user_input:
+            continue
+
+        log_chat("Học sinh", user_input)
+        state["messages"].append(
+            HumanMessage(content=user_input)
+        )
+
     print("\n>>> Hồ sơ đã lưu. Truy vấn tra cứu:")
+
     for q in state.get("search_queries", []):
         print("  -", q)
-
 
 def run_full(llm_client):
     # import trong hàm để chế độ collect không phải nạp mô hình embedding/reranker

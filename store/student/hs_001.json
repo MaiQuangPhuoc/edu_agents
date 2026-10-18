@@ -8,70 +8,51 @@
   },
   "nang_luc": [
     {
-      "mon_hoc": "Toán",
+      "mon_hoc": "toán",
       "diem_hien_tai": 8.0,
       "diem_manh": [
-        "Vectơ"
+        "Chương I",
+        "Chương II",
+        "Chương VII"
       ],
       "diem_yeu": [
-        "Mệnh đề và hàm số bậc hai"
+        "Chương III"
       ],
       "da_test_dau_vao": true,
-      "chu_de": [
-        {
-          "chapter_id": "II",
-          "lesson": "Mệnh đề và tập hợp",
-          "muc_nam": null,
-          "do_tin_cay": 0.0,
-          "nguon": "tu_danh_gia",
-          "cap_nhat": null
-        },
-        {
-          "chapter_id": "III",
-          "lesson": "Vectơ",
-          "muc_nam": null,
-          "do_tin_cay": 0.0,
-          "nguon": "tu_danh_gia",
-          "cap_nhat": null
-        }
-      ]
+      "chu_de": []
     }
   ],
   "muc_tieu": [
     {
-      "mon_hoc": "Toán",
+      "mon_hoc": "toán",
       "muc_tieu_diem": 8.0,
-      "han_chot": null,
-      "ngay_ket_thuc": "2026-12-20",
-      "so_tuan_con_lai": null,
+      "han_chot": "4 tuần",
+      "ngay_ket_thuc": "2026-11-15",
+      "so_tuan_con_lai": 4,
       "uu_tien": "hieu_ban_chat",
       "dang_bai_can_giu": [
-        "Trắc nghiệm",
-        "Ôn tập"
+        "trắc nghiệm"
       ]
     }
   ],
   "so_thich_hoc": {
     "dung_tai_lieu": true,
     "dung_video": true,
-    "bai_tap_sau_buoi": true,
-    "tom_tat_cuoi_buoi": true,
+    "bai_tap_sau_buoi": null,
+    "tom_tat_cuoi_buoi": null,
     "thoi_luong_buoi_phut": 90
   },
   "lich_hoc": {
     "so_buoi_tuan": 3,
     "khung_gio_ranh": {
-      "Chủ nhật": [
-        "08:00-11:00"
+      "Mon": [
+        "19:00-20:30"
       ],
-      "Thứ 2": [
-        "19:00-21:00"
+      "Sun": [
+        "05:00-06:30"
       ],
-      "Thứ 4": [
-        "19:00-21:00"
-      ],
-      "Thứ 7": [
-        "14:00-17:00"
+      "Tue": [
+        "19:00-20:30"
       ]
     },
     "lich_ban": []
@@ -83,5 +64,5 @@
     "tin_hieu_dong_luc": null
   },
   "version": 1,
-  "updated_at": "2026-10-18T09:37:04.209513"
+  "updated_at": "2026-10-18T10:09:15.305152"
 }

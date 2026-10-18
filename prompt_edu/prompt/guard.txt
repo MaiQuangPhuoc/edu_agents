@@ -11,6 +11,7 @@ TIN NHẮN CỦA NGƯỜI HỌC:
 Người học: {message}
 
 QUY TẮC QUYẾT ĐỊNH :
+- Tin nhắn bao hàm nhiều ý con (vừa có phần học tập, vừa có phần ngoài lề như ăn uống, giải trí): vẫn hop_le = true vì phần học tập cần được xử lý; phần ngoài lề sẽ do bước sau từ chối.
 - Dựa vào các thông tin được cung cấp ở trên để thực hiện suy luận không bịa đặt thông tin không có thật và không suy luận không có logic sự kiểm chứng đây là bắt buộc
 - bạn sẽ tổng hợp lien kết sâu chuỗi cá thông tin được cung cấp sau đó tiến hành quan sát suy luận
 - Suy luận cho trường tra_loi trước sau đó đựa vào nội dung đã suy luận và quyết định cho trường hop_le

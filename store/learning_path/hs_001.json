@@ -1,0 +1,189 @@
+{
+  "current_phase": 1,
+  "schedule": {
+    "start_date": "2026-10-18",
+    "end_date": "2026-11-15",
+    "total_weeks": 4,
+    "sessions_per_week": 3,
+    "minutes_per_session": 90
+  },
+  "outline": [
+    {
+      "phase": 1,
+      "weeks": [
+        {
+          "week_no": 1,
+          "goal": "Đánh giá nhanh năng lực và củng cố nền tảng",
+          "lessons": [],
+          "activity_types": [
+            "lecture",
+            "review"
+          ],
+          "difficulty_trend": "dễ",
+          "total_hours": 4.5,
+          "has_assessment": true
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "weeks": [
+        {
+          "week_no": 2,
+          "goal": "Nắm vững hàm số bậc hai và đồ thị",
+          "lessons": [
+            {
+              "chapter_id": "III",
+              "lesson": "Hàm số bậc hai"
+            },
+            {
+              "chapter_id": "III",
+              "lesson": "Hàm số và đồ thị"
+            }
+          ],
+          "activity_types": [
+            "video",
+            "exercise"
+          ],
+          "difficulty_trend": "dễ → vừa",
+          "total_hours": 4.5,
+          "has_assessment": true
+        }
+      ]
+    },
+    {
+      "phase": 3,
+      "weeks": [
+        {
+          "week_no": 3,
+          "goal": "Tổng hợp kiến thức và luyện đề toàn đề",
+          "lessons": [
+            {
+              "chapter_id": "III",
+              "lesson": "Hàm số bậc hai"
+            }
+          ],
+          "activity_types": [
+            "lecture",
+            "exercise",
+            "summary"
+          ],
+          "difficulty_trend": "vừa → khó",
+          "total_hours": 4.5,
+          "has_assessment": true
+        }
+      ]
+    },
+    {
+      "phase": 4,
+      "weeks": [
+        {
+          "week_no": 4,
+          "goal": "Kiểm tra cuối kỳ và đánh giá lại",
+          "lessons": [
+            {
+              "chapter_id": "III",
+              "lesson": "Hàm số bậc hai"
+            }
+          ],
+          "activity_types": [
+            "review",
+            "exercise"
+          ],
+          "difficulty_trend": "khó",
+          "total_hours": 4.5,
+          "has_assessment": true
+        }
+      ]
+    }
+  ],
+  "weeks": [
+    {
+      "week_no": 1,
+      "start_date": "2026-10-18",
+      "end_date": "2026-10-24",
+      "goal": "Đánh giá nhanh năng lực và củng cố nền tảng Toán lớp 10 trong tuần đầu tiên.",
+      "sessions": [
+        {
+          "date": "2026-10-19",
+          "start_time": "19:00",
+          "minutes": 90,
+          "type": "lesson",
+          "chapter_id": "",
+          "lesson": "L001",
+          "key_points": [],
+          "must_know": [],
+          "must_understand": [],
+          "related": [],
+          "difficulty": "easy",
+          "activities": [
+            {
+              "type": "lecture",
+              "content": "Giới thiệu nội dung chương I Toán lớp 10",
+              "minutes": 30,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "video",
+              "content": "Video giải thích các khái niệm chính của chương I",
+              "minutes": 30,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "exercise",
+              "content": "Bài tập thực hành chương I",
+              "minutes": 30,
+              "difficulty": "easy",
+              "problem_type": ""
+            }
+          ],
+          "resources": [],
+          "assessment": null
+        },
+        {
+          "date": "2026-10-20",
+          "start_time": "19:00",
+          "minutes": 90,
+          "type": "assessment",
+          "chapter_id": "",
+          "lesson": "L001",
+          "key_points": [],
+          "must_know": [],
+          "must_understand": [],
+          "related": [],
+          "difficulty": "easy",
+          "activities": [
+            {
+              "type": "exercise",
+              "content": "Làm bài test nhanh cuối tuần",
+              "minutes": 45,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "review",
+              "content": "Xem lại lỗi sai và giải thích chi tiết",
+              "minutes": 45,
+              "difficulty": "easy",
+              "problem_type": ""
+            }
+          ],
+          "resources": [],
+          "assessment": {
+            "chapter_ids": [
+              ""
+            ],
+            "num_questions": 9
+          }
+        }
+      ]
+    }
+  ],
+  "assumptions": [
+    "Tuần 1: chỉ xếp được 2/3 buổi theo khung giờ rảnh",
+    "Chưa khớp (tuần 1): 2026-10-19 19:00: mã bài 'L001' không hợp lệ",
+    "Chưa khớp (tuần 1): 2026-10-20 19:00: mã bài 'L001' không hợp lệ"
+  ]
+}
