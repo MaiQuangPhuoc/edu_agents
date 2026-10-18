@@ -6,7 +6,7 @@ from src.clients.llm import LLMClient
 from src.edu_qa.paths import LP_OUTLINE_PROMPT_PATH
 from src.edu_planning.chapter_utils import normalize_chapter_id
 from src.edu_planning.lp_plan import phases_in_scope, student_text
-from src.edu_planning.lp_tools import _pick_goal, _deadline
+from src.edu_planning.lp_tools import _pick_goal, _deadline, _DIFFICULTY_RATIO, DEFAULT_TARGET_SCORE
 
 MAX_TRIES = 3
 
@@ -37,6 +37,13 @@ def _time_facts(sm: dict, subject: str):
     per_week, minutes = lich.get("so_buoi_tuan"), st.get("thoi_luong_buoi_phut")
     return (int(weeks), int(per_week), int(minutes)) if weeks and per_week and minutes else None
 
+def _difficulty_text(sm: dict, subject: str) -> str:
+    """Tỉ lệ độ khó mục tiêu theo điểm mục tiêu (bảng cố định trong lp_tools)."""
+    score, note = _pick_goal(sm, subject).get("muc_tieu_diem"), ""
+    if score is None:
+        score, note = DEFAULT_TARGET_SCORE, " (hồ sơ chưa có điểm mục tiêu, tạm dùng mức này)"
+    e, m, h = _DIFFICULTY_RATIO[min(max(int(round(score)), 5), 10)]
+    return f"mục tiêu {score} điểm: dễ {e:.0%}, vừa {m:.0%}, khó {h:.0%}{note}"
 
 def validate(weeks: list, codes: dict, phases: list[dict], total: int) -> list[str]:
     issues, order = [], [p["thu_tu"] for p in phases]
@@ -99,6 +106,7 @@ def outline_node(state: PlanState, llm_client: LLMClient) -> dict:
                   .replace("{student_model}", student_text(sm))
                   .replace("{roadmap}", roadmap_text(phases, codes))
                   .replace("{total_weeks}", str(total)).replace("{sessions_per_week}", str(per_week))
+                  .replace("{difficulty}", _difficulty_text(sm, subject))
                   .replace("{issues}", "\n".join(f"- {i}" for i in issues) or "(không có)"))
         try:
             plan = llm_client.invoke_structured(OutlinePlan, [{"role": "user", "content": prompt}], max_tokens=4000)

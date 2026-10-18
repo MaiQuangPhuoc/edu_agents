@@ -13,7 +13,7 @@ from src.edu_planning.planning_tools import make_planning_tools
 from src.edu_planning.lp_plan import window_text, student_text
 
 MAX_WORKERS = 3
-ALLOWED = {"F1": ["analyze_chapter_knowledge"], "F2": ["compute_schedule", "compute_difficulty_ratio"]}
+ALLOWED = {"F1": ["analyze_chapter_knowledge"]}
 
 
 def _run_task(task: dict, tools: dict, state: PlanState, llm_client: LLMClient, results: dict):

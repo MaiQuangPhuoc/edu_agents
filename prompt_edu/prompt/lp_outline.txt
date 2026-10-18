@@ -8,6 +8,9 @@ CÁC GIAI ĐOẠN VÀ MÃ BÀI
 
 THỜI GIAN: tổng {total_weeks} tuần, {sessions_per_week} buổi mỗi tuần.
 
+TỈ LỆ ĐỘ KHÓ MỤC TIÊU (cộng toàn bộ các tuần)
+{difficulty}
+
 LỖI CẦN SỬA (nếu có)
 {issues}
 
@@ -27,6 +30,7 @@ QUY TẮC
 4. Nền tảng trước, nâng cao sau. Chỉ dùng mã có trong danh sách.
 5. has_assessment = true ở tuần cuối mỗi giai đoạn và tuần vừa học xong một chương.
 6. Chọn hoạt động theo sở thích học sinh (video, tài liệu, bài tập).
+7. difficulty_trend của tất cả các tuần cộng lại xấp xỉ TỈ LỆ ĐỘ KHÓ MỤC TIÊU. Chủ đề học sinh yếu bắt đầu dễ rồi tăng dần; chủ đề mạnh vào độ khó cao sớm hơn.
 
 VÍ DỤ ĐỊNH DẠNG
 {"weeks": [{"phase": 1, "goal": "Nắm mệnh đề", "lessons": ["I.1", "I.2"], "activity_types": ["lecture", "exercise"], "difficulty_trend": "dễ → vừa", "has_assessment": false}]}

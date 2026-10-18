@@ -25,7 +25,7 @@ CHỖ CÒN THIẾU TỪ LẦN THỰC THI TRƯỚC (nếu có)
 
 QUY TẮC
 1. Chỉ thêm bước khi hồ sơ thật sự cần. Không cần thì trả danh sách rỗng.
-2. KHÔNG thêm bước tính buổi học, thời gian hay độ khó (đã có bước cố định). KHÔNG lặp lại bước cố định.
+2. KHÔNG thêm bước tính buổi học, thời gian hay độ khó (hệ thống đã tính sẵn). KHÔNG lặp lại bước cố định.
 3. Mỗi bước một mục tiêu rõ, nêu cụ thể chương hoặc chủ đề.
 4. Tài nguyên: chỉ thêm bước tìm tài nguyên cho chương/chủ đề học sinh YẾU hoặc là trọng tâm; chương học sinh mạnh thì bỏ qua. Chỉ tìm video khi so_thich_hoc.dung_video không phải False; chỉ tìm tài liệu khi so_thich_hoc.dung_tai_lieu không phải False.
 5. Không thêm bước cần dữ liệu hệ thống chưa có (tiến độ thật của học sinh, giáo trình của giáo viên).

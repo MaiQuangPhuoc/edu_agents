@@ -56,9 +56,7 @@ def fixed_tasks(w: dict) -> list[dict]:
     ids = ", ".join(w["chapter_ids"])
     return [
         {"id": "F1", "origin": "fixed", "depends_on": [],
-         "goal": f"Nắm kiến thức cần dạy của các chương {ids} (kiến thức chính, cần nắm, cần hiểu, dạng bài, liên hệ giữa các bài)."},
-        {"id": "F2", "origin": "fixed", "depends_on": [],
-         "goal": "Xác định các buổi học cụ thể trong các tuần của giai đoạn và độ khó phù hợp theo mục tiêu điểm."},
+         "goal": f"Nắm kiến thức cần dạy của các chương {ids} (kiến thức chính, cần nắm, cần hiểu, dạng bài, liên hệ giữa các bài)."}
     ]
 
 

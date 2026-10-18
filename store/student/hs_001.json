@@ -1,0 +1,87 @@
+{
+  "student_id": "hs_001",
+  "ca_nhan": {
+    "ho_ten": "",
+    "khoi_lop": 10,
+    "so_thich": [],
+    "hoat_dong_ngoai_khoa": []
+  },
+  "nang_luc": [
+    {
+      "mon_hoc": "Toán",
+      "diem_hien_tai": 8.0,
+      "diem_manh": [
+        "Vectơ"
+      ],
+      "diem_yeu": [
+        "Mệnh đề và hàm số bậc hai"
+      ],
+      "da_test_dau_vao": true,
+      "chu_de": [
+        {
+          "chapter_id": "II",
+          "lesson": "Mệnh đề và tập hợp",
+          "muc_nam": null,
+          "do_tin_cay": 0.0,
+          "nguon": "tu_danh_gia",
+          "cap_nhat": null
+        },
+        {
+          "chapter_id": "III",
+          "lesson": "Vectơ",
+          "muc_nam": null,
+          "do_tin_cay": 0.0,
+          "nguon": "tu_danh_gia",
+          "cap_nhat": null
+        }
+      ]
+    }
+  ],
+  "muc_tieu": [
+    {
+      "mon_hoc": "Toán",
+      "muc_tieu_diem": 8.0,
+      "han_chot": null,
+      "ngay_ket_thuc": "2026-12-20",
+      "so_tuan_con_lai": null,
+      "uu_tien": "hieu_ban_chat",
+      "dang_bai_can_giu": [
+        "Trắc nghiệm",
+        "Ôn tập"
+      ]
+    }
+  ],
+  "so_thich_hoc": {
+    "dung_tai_lieu": true,
+    "dung_video": true,
+    "bai_tap_sau_buoi": true,
+    "tom_tat_cuoi_buoi": true,
+    "thoi_luong_buoi_phut": 90
+  },
+  "lich_hoc": {
+    "so_buoi_tuan": 3,
+    "khung_gio_ranh": {
+      "Chủ nhật": [
+        "08:00-11:00"
+      ],
+      "Thứ 2": [
+        "19:00-21:00"
+      ],
+      "Thứ 4": [
+        "19:00-21:00"
+      ],
+      "Thứ 7": [
+        "14:00-17:00"
+      ]
+    },
+    "lich_ban": []
+  },
+  "tien_do": {
+    "ti_le_hoan_thanh": null,
+    "so_ngay_lien_tiep": 0,
+    "lan_hoat_dong_cuoi": null,
+    "tin_hieu_dong_luc": null
+  },
+  "version": 1,
+  "updated_at": "2026-10-18T09:37:04.209513"
+}
