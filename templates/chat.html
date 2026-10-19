@@ -1,35 +1,129 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-theme="light">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EDUAGENT</title>
-<link rel="stylesheet" href="/static/css/app.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f4">
+  <title>EDUAGENT — Trợ lý học tập</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/app.css">
 </head>
-<body>
-<div class="chat-layout">
-  <aside class="sidebar">
-    <div class="sidebar-top">
-      <div class="logo">EDUAGENT</div>
-      <select id="mode-select">
-        <option value="qa">Hỏi đáp</option>
-        <option value="exam">Tạo bài kiểm tra</option>
-        <option value="plan">Tạo lộ trình học</option>
-      </select>
-      <button class="btn-ghost" onclick="startNewSession()">+ Cuộc trò chuyện mới</button>
-    </div>
-    <div class="history" id="history-list"></div>
-  </aside>
+<body class="chat-page">
+  <div class="chat-layout">
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="EDUAGENT trang chủ">
+        <span class="brand-mark" aria-hidden="true">e</span>
+        <span class="brand-name">eduagent<span class="brand-period">.</span></span>
+      </a>
 
-  <main class="chat-main">
-    <div class="messages" id="messages"></div>
-    <div class="input-bar">
-      <div class="input-row">
-        <textarea id="input-box" placeholder="Nhập câu hỏi hoặc yêu cầu..."></textarea>
-        <button class="btn-primary" onclick="sendMessage()">Gửi</button>
+      <button class="new-chat-button" id="new-chat-button" type="button">
+        <span class="plus-icon" aria-hidden="true">+</span>
+        Cuộc trò chuyện mới
+        <span class="shortcut">⌘ K</span>
+      </button>
+
+      <div class="sidebar-section">
+        <label class="section-label" for="mode-select">KHÔNG GIAN HỌC TẬP</label>
+        <div class="select-wrap">
+          <span class="subject-icon" aria-hidden="true">✳</span>
+          <select id="mode-select" aria-label="Chọn chế độ">
+            <option value="qa">Hỏi đáp kiến thức</option>
+            <option value="exam">Tạo đề kiểm tra</option>
+            <option value="plan">Lộ trình học tập</option>
+          </select>
+          <span class="select-chevron" aria-hidden="true">⌄</span>
+        </div>
       </div>
-    </div>
-  </main>
-</div>
-<script src="/static/js/chat.js"></script>
+
+      <div class="history-section">
+        <div class="history-heading">
+          <span class="section-label">GẦN ĐÂY</span>
+          <span class="history-count" id="history-count">0</span>
+        </div>
+        <div class="history" id="history-list" aria-live="polite"></div>
+        <p class="history-empty" id="history-empty">Các cuộc trò chuyện sẽ xuất hiện ở đây.</p>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="profile-avatar" aria-hidden="true">H</div>
+        <div class="profile-copy">
+          <strong>Góc học tập</strong>
+          <span>Học sinh</span>
+        </div>
+        <span class="online-indicator" title="Đang trực tuyến"></span>
+      </div>
+    </aside>
+
+    <main class="chat-main">
+      <header class="topbar">
+        <div class="topbar-context">
+          <span class="topbar-label">Trợ lý học tập</span>
+          <span class="topbar-divider">/</span>
+          <span class="topbar-current" id="mode-title">Hỏi đáp kiến thức</span>
+        </div>
+        <div class="topbar-actions">
+          <span class="model-status"><span class="status-dot"></span> AI sẵn sàng</span>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Chuyển sang giao diện tối" title="Đổi giao diện">
+            <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8 8.5 8.5 0 1 0 20.2 15.1Z"></path></svg>
+          </button>
+        </div>
+      </header>
+
+      <section class="conversation" aria-label="Cuộc trò chuyện">
+        <div class="messages" id="messages" aria-live="polite">
+          <div class="welcome" id="welcome">
+            <div class="welcome-art" aria-hidden="true">
+              <span class="art-orbit orbit-one"></span>
+              <span class="art-orbit orbit-two"></span>
+              <span class="art-spark spark-one">✳</span>
+              <span class="art-spark spark-two">✦</span>
+              <span class="art-core">e</span>
+            </div>
+            <span class="welcome-eyebrow">KHÔNG GIAN CỦA BẠN</span>
+            <h1>Mỗi câu hỏi là<br>một bước tiến <span>✨</span></h1>
+            <p>Xin chào! Mình là trợ lý học tập của bạn.<br>Cùng khám phá điều bạn đang tò mò nhé.</p>
+            <div class="starter-prompts" id="starter-prompts">
+              <button class="starter-card" type="button" data-prompt="Giải thích giúp mình định lý Pythagore nhé">
+                <span class="starter-icon lavender">∑</span>
+                <span><strong>Giải thích một khái niệm</strong><small>Ví dụ: Định lý Pythagore</small></span>
+                <span class="starter-arrow">↗</span>
+              </button>
+              <button class="starter-card" type="button" data-prompt="Hướng dẫn mình giải phương trình bậc hai">
+                <span class="starter-icon peach">✎</span>
+                <span><strong>Cùng giải một bài tập</strong><small>Đi từng bước, thật dễ hiểu</small></span>
+                <span class="starter-arrow">↗</span>
+              </button>
+              <button class="starter-card" type="button" data-prompt="Gợi ý cách ôn tập hiệu quả môn Toán">
+                <span class="starter-icon mint">⌁</span>
+                <span><strong>Tìm cách học hiệu quả</strong><small>Mẹo ôn tập phù hợp với bạn</small></span>
+                <span class="starter-arrow">↗</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="composer-area">
+          <form class="composer" id="chat-form">
+            <textarea id="input-box" rows="1" maxlength="4000" placeholder="Hỏi bất cứ điều gì bạn muốn học..." aria-label="Tin nhắn của bạn"></textarea>
+            <div class="composer-bottom">
+              <span class="composer-hint"><span class="hint-spark">✦</span> AI có thể mắc lỗi. Hãy kiểm tra thông tin quan trọng.</span>
+              <div class="composer-actions">
+                <span class="char-count" id="char-count">0 / 4000</span>
+                <button class="send-button" id="send-button" type="submit" aria-label="Gửi tin nhắn">
+                  <span>Gửi</span>
+                  <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 10h12m-5-5 5 5-5 5"></path></svg>
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="composer-caption">Được tạo để đồng hành cùng hành trình học tập của bạn</div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="/static/js/chat.js"></script>
 </body>
 </html>

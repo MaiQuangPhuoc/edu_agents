@@ -100,3 +100,9 @@ Hệ thống: Theo thông tin từ internet, quốc gia Văn Lang được cho l
 
 ---
 
+Người dùng: Hướng dẫn mình giải phương trình bậc hai (22:12:53 19/10/2026)
+
+Hệ thống: Phương trình bậc hai là phương trình có dạng \(ax^2+bx+c=0\) với \(a, b, c\) là các số thực và \(a\neq0\). Trong tài liệu mình đã có phần mô tả hàm số bậc hai: \(y = f(x) = ax^2 + bx + c\) và tập xác định của nó là \(\mathbb{R}\).\n\nTài liệu còn đưa ra một số ví dụ để nhận biết hàm số bậc hai, như \(y = 2x^2 + x\) và \(y = -3x^2 - 1\) đều là hàm số bậc hai, trong khi các hàm \(y = x^3 + x + 1\), \(y = x+1\{x+2\}\) và \(y = \sqrt{5-2x}\) không phải.\n\nTuy nhiên, trong các đoạn trích mà mình cung cấp không có hướng dẫn chi tiết về cách giải phương trình bậc hai (ví dụ: cách sử dụng công thức nghiệm, phương pháp hoàn thành bình phương, hoặc phân tích thành nhân tử). Vì vậy, dựa trên tài liệu hiện có, mình chỉ có thể cung cấp định nghĩa và cách nhận dạng hàm số bậc hai, còn phần giải phương trình chưa được đề cập. (22:13:03 19/10/2026) - Chênh lệch: 10s
+
+---
+

@@ -19,7 +19,7 @@ from datetime import datetime
 
 
 MODE = "collect"      # "collect": chỉ thử agent thu thập (không cần retriever) | "full": cả luồng
-STUDENT_ID = "hs_001"
+STUDENT_ID = "hs_002"
 
 
 CHAT_START = datetime.now()

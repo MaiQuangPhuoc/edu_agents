@@ -253,7 +253,14 @@ Trong [`run_planning.py`](src/edu_planning/run_planning.py), biến `MODE` mặc
 
 ### API / giao diện
 
-Repository có entrypoint FastAPI tại `src/api/main.py` và `src/api_phuocmq/main.py`, cùng các router chat/exam và tài nguyên giao diện. Đây là các **nhánh giao diện thử nghiệm**; cấu hình đường dẫn static/template và các phụ thuộc cần được rà soát theo môi trường triển khai. Không nên coi các lệnh chạy server là quy trình deploy production đã được xác thực.
+Để chạy giao diện chat thử nghiệm bằng FastAPI, cấu hình API key và Qdrant trong `src/.env`, cài dependencies của môi trường, rồi chạy từ thư mục gốc repository:
+
+```powershell
+poetry install
+poetry run uvicorn src.api.main:app --reload --port 8000
+```
+
+Mở [http://127.0.0.1:8000](http://127.0.0.1:8000). Chat hỏi đáp kết nối tới graph `edu_qa`; API cũng giữ các router thử nghiệm cho tạo đề. Trạng thái phiên chat được lưu trong bộ nhớ của tiến trình, nên sẽ mất khi khởi động lại server. Các lệnh trên dành cho phát triển/thử nghiệm, không phải cấu hình production.
 
 ## Chi tiết pipeline
 

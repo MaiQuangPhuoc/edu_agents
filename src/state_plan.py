@@ -24,7 +24,7 @@ class NangLucMonHoc(BaseModel):
     diem_hien_tai: Optional[float] = None
     diem_manh: list[str] = []
     diem_yeu: list[str] = []
-    da_test_dau_vao: bool = Field(True, description="TẠM THỜI luôn True; sẽ cập nhật khi có bài test đầu vào")
+    da_test_dau_vao: bool = Field(False, description="True sau khi học sinh làm bài test đầu vào và hệ thống chấm xong")
     chu_de: list[NangLucChuDe] = []
 
 class MucTieu(BaseModel):

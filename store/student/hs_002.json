@@ -1,0 +1,80 @@
+{
+  "student_id": "hs_002",
+  "ca_nhan": {
+    "ho_ten": "",
+    "khoi_lop": 10,
+    "so_thich": [],
+    "hoat_dong_ngoai_khoa": []
+  },
+  "nang_luc": [
+    {
+      "mon_hoc": "Toán 10",
+      "diem_hien_tai": 7.0,
+      "diem_manh": [],
+      "diem_yeu": [
+        "I",
+        "II"
+      ],
+      "da_test_dau_vao": false,
+      "chu_de": [
+        {
+          "chapter_id": "I",
+          "lesson": "",
+          "muc_nam": null,
+          "do_tin_cay": 0.0,
+          "nguon": "tu_danh_gia",
+          "cap_nhat": null
+        },
+        {
+          "chapter_id": "II",
+          "lesson": "",
+          "muc_nam": null,
+          "do_tin_cay": 0.0,
+          "nguon": "tu_danh_gia",
+          "cap_nhat": null
+        }
+      ]
+    }
+  ],
+  "muc_tieu": [
+    {
+      "mon_hoc": "Toán 10",
+      "muc_tieu_diem": 9.0,
+      "han_chot": null,
+      "ngay_ket_thuc": "2026-11-16",
+      "so_tuan_con_lai": 4,
+      "uu_tien": "diem_so",
+      "dang_bai_can_giu": []
+    }
+  ],
+  "so_thich_hoc": {
+    "dung_tai_lieu": true,
+    "dung_video": true,
+    "bai_tap_sau_buoi": true,
+    "tom_tat_cuoi_buoi": null,
+    "thoi_luong_buoi_phut": 110
+  },
+  "lich_hoc": {
+    "so_buoi_tuan": 3,
+    "khung_gio_ranh": {
+      "Mon": [
+        "19:00-20:30"
+      ],
+      "Sun": [
+        "19:00-20:30"
+      ],
+      "Tue": [
+        "19:00-20:30"
+      ]
+    },
+    "lich_ban": []
+  },
+  "tien_do": {
+    "ti_le_hoan_thanh": null,
+    "so_ngay_lien_tiep": 0,
+    "lan_hoat_dong_cuoi": null,
+    "tin_hieu_dong_luc": null
+  },
+  "version": 1,
+  "updated_at": "2026-10-19T21:31:31.091622"
+}

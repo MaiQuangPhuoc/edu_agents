@@ -1,6 +1,7 @@
 import json, sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
-from datetime import datetime
+import copy
+from datetime import datetime, timedelta
 from langchain_core.messages import AIMessage, HumanMessage
 from src.clients.llm import LLMClient
 from src.edu_exam.curriculum import CURRICULUM
@@ -27,7 +28,10 @@ def _history_text(messages: list) -> str:
     return "\n".join(lines) or "(chưa có)"
 
 def _compact(model: dict) -> str:
-    """Hồ sơ dạng JSON gọn: bỏ trường rỗng, không thụt dòng."""
+    """Hồ sơ dạng JSON gọn: bỏ trường rỗng, version, tien_do; thời gian cập nhật chỉ giữ HH:MM."""
+    model = {k: v for k, v in model.items() if k not in ("version", "tien_do")}
+    if model.get("updated_at"):
+        model["cap_nhat_luc"] = str(model.pop("updated_at"))[11:16]
     def clean(x):
         if isinstance(x, dict):
             x = {k: clean(v) for k, v in x.items()}
@@ -42,9 +46,15 @@ def _canon_subject(name: str) -> str:
     n = (name or "").strip().lower()
     return next((k for k in CURRICULUM if n and k.lower().startswith(n)), name)
 
-def _curriculum_info() -> str:
-    return "\n".join(f"- {s}: " + ", ".join(f"{cid} ({ch['chapter_name']})" for cid, ch in chs.items())
-                     for s, chs in CURRICULUM.items())
+def _subjects_in(text: str) -> list[str]:
+    t = text.lower()
+    return [k for k in CURRICULUM if k.rsplit(" ", 1)[0].lower() in t]
+
+def _curriculum_info(subjects: list[str]) -> str:
+    if not subjects:      # chưa biết môn: chỉ liệt kê tên môn, chưa đưa chương
+        return "Môn có tài liệu: " + ", ".join(CURRICULUM)
+    return "\n".join(f"- {s}: " + ", ".join(f"{cid} ({ch['chapter_name']})" for cid, ch in CURRICULUM[s].items())
+                     for s in subjects)
 
 NO_MISSING = "(không còn thiếu)"
 def _missing(m: dict) -> str:
@@ -53,7 +63,7 @@ def _missing(m: dict) -> str:
     checks = [
         ("môn học", mt.get("mon_hoc") or nl.get("mon_hoc")),
         ("mục tiêu điểm (thang 10)", mt.get("muc_tieu_diem")),
-        ("thời hạn (ngày kết thúc hoặc số tuần còn lại)", mt.get("ngay_ket_thuc") or mt.get("so_tuan_con_lai")),
+        ("thời hạn (ngày kết thúc hoặc số tuần còn lại)", mt.get("han_chot") or mt.get("ngay_ket_thuc") or mt.get("so_tuan_con_lai")),
         ("ưu tiên (điểm số / hiểu bản chất / cả hai)", mt.get("uu_tien")),
         ("số buổi học mỗi tuần", lich.get("so_buoi_tuan")),
         ("thời lượng mỗi buổi (phút)", st.get("thoi_luong_buoi_phut")),
@@ -76,6 +86,32 @@ def _bad_reply(text: str, prev: str, lack: str) -> str:
     if lack != NO_MISSING and len(text) > MAX_REPLY_CHARS:
         return f"quá dài (tối đa {MAX_REPLY_CHARS} ký tự)"
     return ""
+
+def _fill_deadline(model: dict) -> None:
+    """Có số tuần mà chưa có ngày kết thúc thì tính ngày bằng code."""
+    for mt in model.get("muc_tieu", []):
+        if mt.get("so_tuan_con_lai") and not mt.get("ngay_ket_thuc"):
+            mt["ngay_ket_thuc"] = (datetime.now() + timedelta(weeks=mt["so_tuan_con_lai"])).strftime("%Y-%m-%d")
+
+def _prefill(model: dict, prev: str, last_user: str) -> None:
+    """Bot vừa hỏi 'ưu tiên' và học sinh trả lời rõ thì code điền luôn, tránh hỏi lại."""
+    if "ưu tiên" not in prev.lower():
+        return
+    t = last_user.lower()
+    d, b = ("điểm số" in t or "điểm cao" in t), ("bản chất" in t or "hiểu sâu" in t)
+    val = "ca_hai" if ("cả hai" in t or "cả 2" in t or (d and b)) else "diem_so" if d else "hieu_ban_chat" if b else ""
+    for mt in model.get("muc_tieu", []):
+        if val and not mt.get("uu_tien"):
+            mt["uu_tien"] = val
+
+def _dump(turn, prev: str, last_user: str) -> dict:
+    model = turn.student_model.model_dump(mode="json")
+    for k in ("nang_luc", "muc_tieu"):
+        for x in model.get(k, []):
+            x["mon_hoc"] = _canon_subject(x["mon_hoc"])
+    _fill_deadline(model)
+    _prefill(model, prev, last_user)
+    return model
 
 def _make_queries(model: dict, state: PlanState, llm_client: LLMClient) -> list[dict]:
     shown = {k: v for k, v in model.items() if k != "tien_do"}
@@ -136,20 +172,28 @@ def collect_student_model(state: PlanState, llm_client: LLMClient) -> dict:
         return {"current_step": "collect_student_model"}
 
     student_id = state.get("student_id", "")
-    current = state.get("student_model") or StudentModel(student_id=student_id).model_dump(mode="json")
+    msgs = state.get("messages", [])
+    prev = _last_bot(msgs)
+    last_user = next((str(m.content) for m in reversed(msgs) if isinstance(m, HumanMessage)), "")
+    current = copy.deepcopy(state.get("student_model") or StudentModel(student_id=student_id).model_dump(mode="json"))
+    _fill_deadline(current)
+    _prefill(current, prev, last_user)
+    known = [x["mon_hoc"] for k in ("muc_tieu", "nang_luc") for x in current.get(k, [])]
+    subjects = [s for s in dict.fromkeys(_canon_subject(n) for n in known) if s in CURRICULUM] or _subjects_in(last_user)
 
     prompt = (COLLECT_STUDENT_MODEL_PROMPT_PATH.read_text(encoding="utf-8")
               .replace("{thong_tin_da_co}", _compact(current))
               .replace("{con_thieu}", _missing(current))
-              .replace("{chuong_co_tai_lieu}", _curriculum_info())
-              .replace("{history}", _history_text(state.get("messages", []))))
+              .replace("{chuong_co_tai_lieu}", _curriculum_info(subjects))
+              .replace("{history}", _history_text(msgs)))
+
+    print(f"\n---\n[DEBUG] Prompt collect student model to LLM:\n{prompt}\n---\n")
 
     turn = llm_client.invoke_structured(CollectTurn, [{"role": "user", "content": prompt}], max_tokens=3000)
     if turn is None:
         return {"messages": [AIMessage(content="Bạn nhắc lại giúp mình nhé?")], "current_step": "collect_student_model"}
     
-    prev = _last_bot(state.get("messages", []))
-    lack = _missing(turn.student_model.model_dump(mode="json"))
+    lack = _missing(_dump(turn, prev, last_user))
     why = _bad_reply(turn.tin_nhan, prev, lack)
     if why:
         note = f"\n\nLƯU Ý: tin_nhan lần trước {why}. Viết lại ngắn gọn, không lặp câu cũ."
@@ -159,10 +203,13 @@ def collect_student_model(state: PlanState, llm_client: LLMClient) -> dict:
         elif lack != NO_MISSING:
             turn.tin_nhan = f"Mình cần thêm thông tin: {lack}. Bạn bổ sung giúp mình nhé?"
 
-    model = turn.student_model.model_dump(mode="json")
-    for k in ("nang_luc", "muc_tieu"):
-        for x in model.get(k, []):
-            x["mon_hoc"] = _canon_subject(x["mon_hoc"])
+    model = _dump(turn, prev, last_user)
+
+    for nl in model.get("nang_luc", []):
+        # chu_de do code dựng từ điểm mạnh/yếu: chưa có số đo nên muc_nam = None, do_tin_cay = 0
+        ids = list(dict.fromkeys(nl.get("diem_yeu", []) + nl.get("diem_manh", [])))
+        nl["chu_de"] = [{"chapter_id": c, "lesson": "", "muc_nam": None, "do_tin_cay": 0.0,
+                         "nguon": "tu_danh_gia", "cap_nhat": None} for c in ids]
     model["student_id"] = student_id
     model["tien_do"] = current.get("tien_do", {})      # phần của Progress Agent, không để LLM ghi đè
     model["updated_at"] = datetime.now().isoformat()
