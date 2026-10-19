@@ -9,29 +9,65 @@
   "nang_luc": [
     {
       "mon_hoc": "Toán 10",
-      "diem_hien_tai": 7.0,
-      "diem_manh": [],
-      "diem_yeu": [
+      "diem_hien_tai": 8.0,
+      "diem_manh": [
+        "V",
         "I",
+        "IV",
+        "III",
+        "VI",
         "II"
       ],
-      "da_test_dau_vao": false,
+      "diem_yeu": [],
+      "da_test_dau_vao": true,
       "chu_de": [
+        {
+          "chapter_id": "V",
+          "lesson": "",
+          "muc_nam": 1.0,
+          "do_tin_cay": 0.6,
+          "nguon": "bai_kiem_tra",
+          "cap_nhat": "2026-10-19T23:20:56.620040"
+        },
         {
           "chapter_id": "I",
           "lesson": "",
-          "muc_nam": null,
-          "do_tin_cay": 0.0,
-          "nguon": "tu_danh_gia",
-          "cap_nhat": null
+          "muc_nam": 1.0,
+          "do_tin_cay": 1.0,
+          "nguon": "bai_kiem_tra",
+          "cap_nhat": "2026-10-19T23:20:56.620040"
+        },
+        {
+          "chapter_id": "IV",
+          "lesson": "",
+          "muc_nam": 1.0,
+          "do_tin_cay": 0.6,
+          "nguon": "bai_kiem_tra",
+          "cap_nhat": "2026-10-19T23:20:56.620040"
+        },
+        {
+          "chapter_id": "III",
+          "lesson": "",
+          "muc_nam": 1.0,
+          "do_tin_cay": 0.6,
+          "nguon": "bai_kiem_tra",
+          "cap_nhat": "2026-10-19T23:20:56.620040"
+        },
+        {
+          "chapter_id": "VI",
+          "lesson": "",
+          "muc_nam": 1.0,
+          "do_tin_cay": 0.6,
+          "nguon": "bai_kiem_tra",
+          "cap_nhat": "2026-10-19T23:20:56.620040"
         },
         {
           "chapter_id": "II",
           "lesson": "",
-          "muc_nam": null,
-          "do_tin_cay": 0.0,
-          "nguon": "tu_danh_gia",
-          "cap_nhat": null
+          "muc_nam": 1.0,
+          "do_tin_cay": 0.6,
+          "nguon": "bai_kiem_tra",
+          "cap_nhat": "2026-10-19T23:20:56.620040"
         }
       ]
     }
@@ -43,28 +79,28 @@
       "han_chot": null,
       "ngay_ket_thuc": "2026-11-16",
       "so_tuan_con_lai": 4,
-      "uu_tien": "diem_so",
+      "uu_tien": "hieu_ban_chat",
       "dang_bai_can_giu": []
     }
   ],
   "so_thich_hoc": {
-    "dung_tai_lieu": true,
-    "dung_video": true,
-    "bai_tap_sau_buoi": true,
+    "dung_tai_lieu": null,
+    "dung_video": null,
+    "bai_tap_sau_buoi": null,
     "tom_tat_cuoi_buoi": null,
-    "thoi_luong_buoi_phut": 110
+    "thoi_luong_buoi_phut": 100
   },
   "lich_hoc": {
     "so_buoi_tuan": 3,
     "khung_gio_ranh": {
       "Mon": [
-        "19:00-20:30"
+        "19:00-20:40"
       ],
       "Sun": [
-        "19:00-20:30"
+        "19:00-20:40"
       ],
       "Tue": [
-        "19:00-20:30"
+        "19:00-20:40"
       ]
     },
     "lich_ban": []
@@ -76,5 +112,5 @@
     "tin_hieu_dong_luc": null
   },
   "version": 1,
-  "updated_at": "2026-10-19T21:31:31.091622"
+  "updated_at": "2026-10-19T23:20:56.620040"
 }

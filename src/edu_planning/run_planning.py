@@ -8,7 +8,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".
 
 from langchain_core.messages import AIMessage, HumanMessage
 from langgraph.checkpoint.memory import MemorySaver
-
+from src.edu_planning.entry_test import run_entry_test
 from src.clients.llm import LLMClient
 from src.configs import env_config
 from src.edu_planning.collect_student_model import collect_student_model
@@ -76,7 +76,9 @@ def run_collect(llm_client):
         state["messages"].append(
             HumanMessage(content=user_input)
         )
-
+    state["student_model"], result = run_entry_test(
+        state["student_model"]
+    )
     print("\n>>> Hồ sơ đã lưu. Truy vấn tra cứu:")
 
     for q in state.get("search_queries", []):
