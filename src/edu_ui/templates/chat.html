@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EDUAGENT — Trợ lý học tập</title>
+  <link rel="stylesheet" href="/ui-static/css/chat.css">
+  <script src="/ui-static/js/chat.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Chức năng">
+      <div class="brand">EDUAGENT <small>Trợ lý học tập lớp 10</small></div>
+      <nav class="nav">
+        <a class="active" href="/">Trợ lý AI</a>
+        <button id="new-chat" type="button">Cuộc trò chuyện mới</button>
+        <a href="#" data-soon="Nạp tài liệu">Nạp tài liệu</a>
+        <a href="#" data-soon="Làm bài test">Làm bài test</a>
+        <a href="#" data-soon="Lộ trình học">Lộ trình học</a>
+        <a href="#" data-soon="Lịch học">Lịch học &amp; Buổi học</a>
+        <a href="#" data-soon="Tiến độ">Tiến độ học tập</a>
+        <a href="#" data-soon="Hồ sơ">Hồ sơ học sinh</a>
+      </nav>
+      <p class="sidebar-note">Toán 10 · Ngữ văn 10 · Lịch sử 10</p>
+    </aside>
+
+    <main class="chat-panel">
+      <header class="chat-header"><div><strong>Trợ lý AI</strong><span>Đặt câu hỏi hoặc trao đổi về việc học</span></div><div id="connection" class="connection">Sẵn sàng</div></header>
+      <section id="messages" class="messages" aria-label="Hội thoại" aria-live="polite">
+        <div class="welcome">Chào bạn! Bạn muốn tìm hiểu kiến thức nào hôm nay?</div>
+      </section>
+      <form id="chat-form" class="composer">
+        <label class="sr-only" for="chat-input">Nhập tin nhắn</label>
+        <textarea id="chat-input" rows="2" placeholder="Nhập câu hỏi của bạn..." required></textarea>
+        <div class="composer-bottom"><span>Enter để gửi · Shift+Enter để xuống dòng</span><button id="send" type="submit">Gửi</button></div>
+      </form>
+    </main>
+
+    <aside class="sources-panel" aria-label="Nguồn tài liệu tham khảo">
+      <div class="sources-title"><strong>Nguồn tài liệu</strong><span>Các đoạn được truy xuất khi trả lời</span></div>
+      <div id="sources" class="sources-list"><p class="sources-empty">Chưa có nguồn tài liệu. Nguồn retrieval sẽ xuất hiện ở đây khi backend trả về dữ liệu.</p></div>
+    </aside>
+  </div>
+  <div id="notice" class="notice" role="status" hidden></div>
+</body>
+</html>
