@@ -6,7 +6,7 @@
   <title>EDUAGENT — Trợ lý học tập</title>
   <link rel="stylesheet" href="/ui-static/css/chat.css">
   <script src="/ui-static/js/chat.js" defer></script>
-</head>
+<link rel="stylesheet" href="/ui-static/css/theme.css"><script defer src="/ui-static/js/theme.js"></script></head>
 <body>
   <div class="app-shell">
     <aside class="sidebar" aria-label="Chức năng">
@@ -15,7 +15,7 @@
         <a class="active" href="/">Trợ lý AI</a>
         <button id="new-chat" type="button">Cuộc trò chuyện mới</button>
         <a href="/documents">Nạp tài liệu</a>
-        <a href="#" data-soon="Làm bài test">Làm bài test</a>
+        <a href="/exams">Làm bài test</a>
         <a href="#" data-soon="Lộ trình học">Lộ trình học</a>
         <a href="#" data-soon="Lịch học">Lịch học &amp; Buổi học</a>
         <a href="#" data-soon="Tiến độ">Tiến độ học tập</a>
@@ -25,7 +25,7 @@
     </aside>
 
     <main class="chat-panel">
-      <header class="chat-header"><div><strong>Trợ lý AI</strong><span>Đặt câu hỏi hoặc trao đổi về việc học</span></div><div id="connection" class="connection">Sẵn sàng</div></header>
+      <header class="chat-header"><div><strong>Trợ lý AI</strong><span>Đặt câu hỏi hoặc trao đổi về việc học</span></div><div class="header-actions"><div id="connection" class="connection">Sẵn sàng</div><button type="button" class="theme-toggle" data-theme-toggle aria-label="Chuyển sang giao diện tối" title="Chuyển sang giao diện tối"><svg class="theme-icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"/></svg><svg class="theme-icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button></div></header>
       <section id="messages" class="messages" aria-label="Hội thoại" aria-live="polite">
         <div class="welcome">Chào bạn! Bạn muốn tìm hiểu kiến thức nào hôm nay?</div>
       </section>

@@ -62,3 +62,11 @@ app.include_router(book_router)
 @app.get("/documents", response_class=HTMLResponse)
 def documents_page(request: Request):
     return templates.TemplateResponse(request=request, name="documents.html", context={})
+
+# Exams UI and data endpoints
+from src.edu_ui.exam_api import router as exam_router
+app.include_router(exam_router)
+
+@app.get("/exams", response_class=HTMLResponse)
+def exams_page(request: Request):
+    return templates.TemplateResponse(request=request, name="exams.html", context={})
