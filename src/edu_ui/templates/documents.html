@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EDUAGENT — Nạp tài liệu</title><link rel="stylesheet" href="/ui-static/css/documents.css">
+<script defer src="/ui-static/js/documents.js"></script></head>
+<body><div class="shell">
+<aside class="sidebar"><div class="brand">EDUAGENT<small>Trợ lý học tập</small></div><nav>
+<a href="/">Trợ lý AI</a><a href="/documents" class="active">Nạp tài liệu</a>
+<a href="#" class="soon">Làm bài test</a><a href="#" class="soon">Lộ trình học</a>
+<a href="#" class="soon">Lịch học &amp; Buổi học</a><a href="#" class="soon">Tiến độ học tập</a>
+<a href="#" class="soon">Hồ sơ học sinh</a></nav></aside>
+<main class="main">
+<header><h1>Nạp tài liệu</h1><p>Thêm sách giáo khoa hoặc chọn tài liệu học tập của riêng bạn.</p></header>
+<div class="tabs"><button class="active" id="tab-book" type="button">Sách giáo khoa</button>
+<button id="tab-private" type="button">Tài liệu riêng</button></div>
+<section id="book-panel" class="layout">
+<div class="card"><h2>Thông tin sách</h2>
+<form id="book-form">
+<label for="series">Bộ sách</label>
+<select id="series"><option value="ket_noi">Kết nối tri thức với cuộc sống</option>
+<option value="chan_troi">Chân trời sáng tạo</option><option value="canh_dieu">Cánh Diều</option>
+<option value="khac">Khác</option></select>
+<label for="book-subject">Môn học</label><select id="book-subject"></select>
+<label for="book-name">Tên sách <span class="req">*</span></label>
+<input id="book-name" list="book-suggestions" maxlength="200" required placeholder="VD: Toán 10 - Tập 1">
+<datalist id="book-suggestions"></datalist>
+<label for="display-name">Tên tài liệu (không bắt buộc)</label>
+<input id="display-name" maxlength="150" placeholder="Để trống sẽ dùng tên sách">
+<label for="description">Mô tả (không bắt buộc)</label>
+<textarea id="description" maxlength="1000" rows="3" placeholder="Không có"></textarea>
+<button class="primary" type="submit" id="confirm-book">Xác nhận sách</button>
+</form></div>
+<div class="card"><h2>Sách đã xác nhận</h2>
+<div id="book-preview" class="empty">Hãy nhập thông tin rồi nhấn “Xác nhận sách” để xem bìa và phần chọn PDF.</div>
+<div id="confirmed-book" hidden>
+<div class="book-preview">
+<div class="cover" id="book-cover"><img id="cover-image" alt="Bìa sách" hidden><div id="cover-fallback"><small>EDUAGENT</small><strong id="cover-title"></strong><span id="cover-series"></span></div></div>
+<div class="book-details"><h3 id="preview-title"></h3><p id="preview-meta"></p>
+<p id="preview-note" class="muted"></p><span class="tag" id="preview-rag"></span></div></div>
+<label class="field-title">PDF của sách (tùy chọn)</label>
+<div class="dropzone" id="book-drop" tabindex="0" role="button" aria-label="Chọn PDF của sách">
+<strong>Nhấn để chọn hoặc kéo thả PDF vào đây</strong><span>Chấp nhận .pdf, tối đa 30 MB</span>
+<input type="file" id="book-file" accept=".pdf,application/pdf" hidden></div>
+<div id="book-file-info" class="chosen"></div>
+<p class="notice">PDF mới chỉ được chọn và xem trước trên trình duyệt, chưa tải lên backend.</p>
+</div></div>
+</section>
+<section id="private-panel" class="card private" hidden>
+<h2>Tài liệu riêng</h2><p class="muted">Có thể chọn tài liệu cho mọi môn học, không giới hạn ba môn.</p>
+<label for="private-subject">Môn học</label><select id="private-subject"></select>
+<div id="custom-subject-wrap" hidden><label for="custom-subject">Tên môn khác</label>
+<input id="custom-subject" maxlength="100" placeholder="Nhập tên môn học"></div>
+<label for="private-name">Tên tài liệu (không bắt buộc)</label><input id="private-name" maxlength="150" placeholder="Tự lấy tên file nếu để trống">
+<label for="private-description">Mô tả (không bắt buộc)</label>
+<textarea id="private-description" maxlength="1000" rows="3" placeholder="Không có"></textarea>
+<label class="field-title">Chọn tài liệu</label>
+<div class="dropzone" id="private-drop" tabindex="0" role="button" aria-label="Chọn file tài liệu riêng">
+<strong>Nhấn để chọn hoặc kéo thả tài liệu vào đây</strong><span>PDF, DOCX, TXT, JPG, PNG — tối đa 30 MB mỗi file</span>
+<input type="file" id="private-file" multiple accept=".pdf,.docx,.txt,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png" hidden></div>
+<div class="chosen" id="private-file-info"></div>
+<p class="notice">Chức năng upload và lập chỉ mục RAG cho file riêng đang phát triển. File chưa được gửi lên máy chủ.</p>
+</section>
+<section class="card list"><div class="list-header"><h2>Sách đã thêm vào hệ thống</h2><button type="button" id="refresh">Làm mới</button></div>
+<div id="my-books">Đang tải...</div></section>
+<p id="status" role="status" aria-live="polite"></p>
+</main></div></body></html>

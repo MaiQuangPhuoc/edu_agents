@@ -53,3 +53,12 @@ async def chat(body: ChatInput):
 @app.get("/api/ui/health")
 def health():
     return {"status": "ok", "qa_backend": QA_URL}
+
+
+# Book-name registration endpoints (without RAG ingestion)
+from src.edu_ui.book_api import router as book_router
+app.include_router(book_router)
+
+@app.get("/documents", response_class=HTMLResponse)
+def documents_page(request: Request):
+    return templates.TemplateResponse(request=request, name="documents.html", context={})
