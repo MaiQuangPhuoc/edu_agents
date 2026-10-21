@@ -15,6 +15,7 @@
   </script>
   <link rel="stylesheet" href="/ui-static/css/app.css">
   {% block page_styles %}{% endblock %}
+  <link rel="stylesheet" href="/ui-static/css/site-theme.css">
   <link rel="stylesheet" href="/ui-static/css/sidebar.css">
   <script defer src="/ui-static/js/theme.js"></script>
   <script defer src="/ui-static/js/sidebar.js"></script>
@@ -31,6 +32,9 @@
       <section class="sidebar-history" aria-labelledby="history-heading">
         <div class="sidebar-section-heading history-heading">
           <h2 id="history-heading">LỊCH SỬ TRÒ CHUYỆN</h2>
+          <button id="sidebar-toggle" class="panel-toggle sidebar-toggle" type="button" aria-label="Thu gọn thanh điều hướng" title="Thu gọn thanh điều hướng" aria-expanded="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M9 4v16M5.5 7h1M5.5 10h1M5.5 13h1"/></svg>
+          </button>
           <button id="new-chat" class="new-chat-button" type="button" aria-label="Tạo cuộc trò chuyện mới" title="Tạo cuộc trò chuyện mới">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
           </button>
@@ -42,9 +46,6 @@
       <section class="sidebar-menu" aria-label="Các chức năng học tập">
       <div class="sidebar-section-heading menu-heading">
         <div class="nav-label">KHÔNG GIAN HỌC TẬP</div>
-        <button id="sidebar-toggle" class="panel-toggle sidebar-toggle" type="button" aria-label="Thu gọn thanh điều hướng" title="Thu gọn thanh điều hướng" aria-expanded="true">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M9 4v16M5.5 7h1M5.5 10h1M5.5 13h1"/></svg>
-        </button>
       </div>
       <nav class="navigation">
         <a href="/" {% if active_page == "chat" %}class="active" aria-current="page"{% endif %}>
@@ -77,10 +78,6 @@
         </a>
       </nav>
       </section>
-      <div class="sidebar-footer">
-        <span class="small-label">EDUAGENT · LỚP 10</span>
-        <p>Mỗi ngày một bước tiến.</p>
-      </div>
     </aside>
     <main class="main-content {% block main_class %}{% endblock %}">
       <header class="topbar {% block header_class %}{% endblock %}">
@@ -99,7 +96,6 @@
       <div class="page-content {% block content_class %}{% endblock %}">
         {% block content %}{% endblock %}
       </div>
-      <footer class="app-footer"><strong>EDUAGENT</strong><span>Học thông minh, tiến bộ theo cách của bạn.</span>{% block footer_actions %}{% endblock %}</footer>
     </main>
     {% block app_panel %}{% endblock %}
   </div>

@@ -55,7 +55,7 @@
   let activeConversationId = null;
 
   function resizeComposer() {
-    const maxHeight = 160;
+    const maxHeight = 112;
     input.style.height = 'auto';
     const nextHeight = Math.min(input.scrollHeight, maxHeight);
     input.style.height = `${nextHeight}px`;
@@ -536,8 +536,7 @@
     const classByName = {
       sidebar: 'sidebar-hidden',
       sources: 'sources-hidden',
-      header: 'chat-header-hidden',
-      footer: 'chat-footer-hidden'
+      header: 'chat-header-hidden'
     };
     const buttons = document.querySelectorAll(`[data-toggle-view="${name}"]`);
     if (!classByName[name] || buttons.length === 0) return;
@@ -562,8 +561,7 @@
     const label = {
       sidebar: 'thanh điều hướng',
       sources: 'tài liệu tham khảo',
-      header: 'đầu trang',
-      footer: 'chân trang'
+      header: 'đầu trang'
     }[name];
 
     buttons.forEach((button) => {
@@ -580,8 +578,7 @@
     const hiddenClasses = {
       sidebar: 'sidebar-hidden',
       sources: 'sources-hidden',
-      header: 'chat-header-hidden',
-      footer: 'chat-footer-hidden'
+      header: 'chat-header-hidden'
     };
     return !document.body.classList.contains(hiddenClasses[name]);
   }

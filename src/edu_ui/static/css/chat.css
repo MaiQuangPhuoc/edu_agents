@@ -475,11 +475,10 @@
 /* Chat panels are sibling grid tracks; none of them overlays another. */
 .chat-body .app-shell {
   --chat-source-width: 300px;
-  --chat-header-row: 70px;
-  --chat-footer-row: 52px;
+  --chat-header-row: 60px;
   display: grid;
   grid-template-columns: var(--chat-sidebar-width) minmax(0, 1fr) var(--chat-source-width);
-  grid-template-rows: minmax(var(--chat-header-row), auto) minmax(0, 1fr) minmax(var(--chat-footer-row), auto);
+  grid-template-rows: minmax(var(--chat-header-row), auto) minmax(0, 1fr);
   height: 100dvh;
   min-height: 0;
   overflow: hidden;
@@ -500,8 +499,22 @@
   grid-column: 2;
   grid-row: 1;
   min-width: 0;
+  min-height: 60px;
+  align-items: center;
   padding-right: 20px;
   transition: min-height 180ms ease, padding 180ms ease;
+}
+
+.chat-page .header-copy {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.chat-page .page-subtitle {
+  margin: 0;
 }
 
 .chat-page .page-content.chat-content {
@@ -513,19 +526,12 @@
   padding: 0;
 }
 
-.chat-page .app-footer {
-  grid-column: 2;
-  grid-row: 3;
-  min-width: 0;
-  margin: 0;
-}
-
 .chat-body .sources-panel {
   position: relative;
   inset: auto;
   z-index: 1;
   grid-column: 3;
-  grid-row: 1 / 4;
+  grid-row: 1 / 3;
   display: block;
   min-width: 0;
   min-height: 0;
@@ -543,9 +549,10 @@
 }
 
 .chat-content .composer {
-  width: calc(100% - 24px);
-  max-width: none;
-  margin: 8px 12px 12px;
+  width: min(calc(100% - 40px), 900px);
+  max-width: 900px;
+  align-self: center;
+  margin: 8px auto 12px;
 }
 
 .panel-toggle {
@@ -581,12 +588,7 @@
   margin-left: 4px;
 }
 
-.footer-toggle {
-  margin-left: auto;
-}
-
-.header-actions,
-.app-footer {
+.header-actions {
   display: flex;
   align-items: center;
 }
@@ -652,23 +654,6 @@
   margin-left: auto;
 }
 
-.chat-body.chat-footer-hidden .app-shell {
-  --chat-footer-row: 40px;
-}
-
-.chat-body.chat-footer-hidden .app-footer {
-  display: flex;
-  height: 40px;
-  min-height: 40px;
-  justify-content: flex-end;
-  padding: 3px 12px;
-}
-
-.chat-body.chat-footer-hidden .app-footer > strong,
-.chat-body.chat-footer-hidden .app-footer > span {
-  display: none;
-}
-
 @media (max-width: 1050px) {
   .chat-body .app-shell {
     --chat-source-width: 260px;
@@ -729,7 +714,7 @@
   }
 
   .chat-body .chat-header {
-    padding: 10px 12px;
+    padding: 7px 12px;
   }
 
   .chat-page .page-subtitle {
@@ -741,37 +726,20 @@
   }
 
   .chat-content .composer {
-    width: calc(100% - 16px);
-    margin: 7px 8px 9px;
-    padding: 10px;
+    width: min(calc(100% - 24px), 900px);
+    margin: 7px auto 9px;
+    padding: 7px 9px;
   }
 }
 
 @media (max-width: 420px) {
   .chat-body .app-shell {
-    --chat-header-row: 60px;
-    --chat-footer-row: 44px;
-  }
-
-  .chat-page .app-footer {
-    height: 44px;
-    min-height: 44px;
-    overflow: hidden;
-    padding: 4px 8px;
-  }
-
-  .chat-page .app-footer > span {
-    display: none;
-  }
-
-  .chat-body.chat-footer-hidden .app-footer {
-    height: 40px;
-    min-height: 40px;
+    --chat-header-row: 54px;
   }
 
   .chat-page .chat-header {
-    min-height: 60px;
-    padding: 8px;
+    min-height: 54px;
+    padding: 6px 8px;
   }
 
   .chat-page .breadcrumb {
@@ -794,8 +762,7 @@
 
 /* Keep a visible reopen control in each collapsed panel. */
 .chat-body.sources-hidden .sources-panel,
-.chat-body.chat-header-hidden .chat-page .chat-header,
-.chat-body.chat-footer-hidden .app-footer {
+.chat-body.chat-header-hidden .chat-page .chat-header {
   display: flex;
 }
 
@@ -838,7 +805,7 @@
 .chat-content .composer textarea {
   min-width: 0;
   min-height: 24px;
-  max-height: 160px;
+  max-height: 112px;
   flex: 1 1 auto;
   align-self: center;
   overflow-x: hidden;
@@ -885,8 +852,7 @@
   }
 
   .source-toggle,
-  .header-toggle,
-  .footer-toggle {
+  .header-toggle {
     width: 31px;
     height: 31px;
     flex-basis: 31px;

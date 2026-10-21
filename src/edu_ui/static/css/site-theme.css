@@ -1,0 +1,99 @@
+:root {
+  --bg: var(--app-bg);
+  --panel: var(--app-panel);
+  --paper: var(--app-panel);
+  --text: var(--app-text);
+  --ink: var(--app-text);
+  --muted: var(--app-muted);
+  --line: var(--app-line);
+  --accent: var(--app-green);
+  --soft: var(--app-green-soft);
+  --card2: color-mix(in srgb, var(--app-panel) 82%, var(--app-bg));
+}
+
+body {
+  background-color: var(--app-bg);
+  color: var(--app-text);
+}
+
+.main,
+.main-content {
+  color: var(--app-text);
+}
+
+.documents-page .card,
+.card:not(.exam-card),
+.list-header button,
+.tabs button,
+.actions button,
+.section-header button,
+#back,
+input:not([type="file"]),
+select,
+textarea {
+  border-color: var(--app-line);
+  background-color: var(--app-panel);
+  color: var(--app-text);
+}
+
+.dropzone,
+.empty,
+.book-dropzone.has-file,
+.confirmed-file-item {
+  border-color: var(--app-line);
+  background-color: var(--card2);
+  color: var(--app-text);
+}
+
+.tag,
+.summary {
+  border-color: var(--app-line);
+  background-color: var(--app-green-soft);
+  color: var(--app-green);
+}
+
+.saved-book,
+.section-header,
+.book-form-heading {
+  border-color: var(--app-line);
+}
+
+.hero .ring {
+  border-color: color-mix(in srgb, var(--app-pink) 38%, transparent);
+}
+
+html[data-theme="dark"] .documents-page .card,
+html[data-theme="dark"] .card:not(.exam-card),
+html[data-theme="dark"] .list-header button,
+html[data-theme="dark"] .tabs button,
+html[data-theme="dark"] .actions button,
+html[data-theme="dark"] .section-header button,
+html[data-theme="dark"] #back,
+html[data-theme="dark"] input:not([type="file"]),
+html[data-theme="dark"] select,
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] .dropzone,
+html[data-theme="dark"] .empty,
+html[data-theme="dark"] .confirmed-file-item {
+  border-color: var(--app-line);
+  background-color: var(--app-panel);
+  color: var(--app-text);
+}
+
+html[data-theme="dark"] .book-dropzone.has-file,
+html[data-theme="dark"] .tag,
+html[data-theme="dark"] .summary {
+  background-color: var(--app-green-soft);
+  color: var(--app-text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

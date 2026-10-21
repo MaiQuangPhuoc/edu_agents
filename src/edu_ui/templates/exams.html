@@ -1,25 +1,85 @@
 {% extends "base.html" %}
-{% block document_title %}EDUAGENT — Làm bài test{% endblock %}
+{% block document_title %}EDUAGENT — Bài kiểm tra{% endblock %}
 {% block page_styles %}<link rel="stylesheet" href="/ui-static/css/exams.css">{% endblock %}
 {% block page_scripts %}<script defer src="/ui-static/js/exams.js"></script>{% endblock %}
-{% block page_title %}Làm bài test{% endblock %}
-{% block page_description %}Chọn bài kiểm tra, làm bài và xem lại kết quả.{% endblock %}
+{% block page_title %}Bài kiểm tra{% endblock %}
+{% block page_description %}Luyện tập theo chủ đề và theo dõi kết quả của bạn.{% endblock %}
+{% block body_class %}exam-body{% endblock %}
+{% block content_class %}exam-content{% endblock %}
 {% block content %}
-<section id="list-view">
-  <p id="demo-banner" class="demo-banner" role="note" hidden>Đang hiển thị dữ liệu minh họa. Kết quả và bài làm chưa phải dữ liệu học sinh thật.</p>
-  <div class="filters">
-    <label>Môn học<select id="subject"><option value="">Tất cả môn</option></select></label>
-    <label>Trạng thái<select id="status-filter"><option value="">Tất cả</option><option value="done">Đã làm</option><option value="pending">Chưa làm</option></select></label>
-    <label>Sắp xếp<select id="sort"><option value="recent">Gần đây nhất</option><option value="subject">Theo môn học</option></select></label>
+<section id="list-view" class="exam-library">
+  <header class="library-heading">
+    <div>
+      <p class="exam-eyebrow">GÓC LUYỆN TẬP</p>
+      <h1>Bài kiểm tra</h1>
+      <p class="library-description">Chọn một đề, tập trung làm bài và xem lại lời giải sau khi nộp.</p>
+    </div>
+    <button id="refresh" class="refresh-button" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M5.5 9a7 7 0 0 1 11.8-2L20 12M4 12l2.7 5a7 7 0 0 0 11.8-2"/></svg>
+      Làm mới
+    </button>
+  </header>
+
+  <div id="demo-banner" class="demo-banner" hidden>
+    <span aria-hidden="true">i</span>
+    Dữ liệu đang ở chế độ xem thử. Các đề được tải từ thư viện bài tập hiện có.
   </div>
-  <section class="card">
-    <div class="section-header"><h2>Danh sách đề kiểm tra</h2><button type="button" id="refresh">Làm mới</button></div>
-    <div id="exam-list" aria-live="polite">Đang tải danh sách...</div>
+
+  <section class="exam-overview" aria-label="Tổng quan bài luyện tập">
+    <div><strong id="total-count">—</strong><span>Tổng số đề</span></div>
+    <span class="overview-divider" aria-hidden="true"></span>
+    <div><strong id="pending-count">—</strong><span>Chưa hoàn thành</span></div>
+    <span class="overview-divider" aria-hidden="true"></span>
+    <div><strong id="completed-count">—</strong><span>Đã hoàn thành</span></div>
+  </section>
+
+  <div class="exam-toolbar">
+    <label class="search-field">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+      <span class="sr-only">Tìm bài kiểm tra</span>
+      <input id="search" type="search" placeholder="Tìm theo tên đề hoặc chủ đề">
+    </label>
+    <label class="filter-field">
+      <span class="sr-only">Lọc theo môn học</span>
+      <select id="subject"><option value="">Tất cả môn</option></select>
+    </label>
+    <label class="filter-field">
+      <span class="sr-only">Lọc theo trạng thái</span>
+      <select id="status-filter">
+        <option value="">Mọi trạng thái</option>
+        <option value="pending">Chưa hoàn thành</option>
+        <option value="done">Đã hoàn thành</option>
+      </select>
+    </label>
+    <label class="filter-field sort-field">
+      <span class="sr-only">Sắp xếp bài kiểm tra</span>
+      <select id="sort">
+        <option value="recent">Mới cập nhật</option>
+        <option value="subject">Theo môn học</option>
+      </select>
+    </label>
+  </div>
+
+  <section class="exam-catalog" aria-labelledby="catalog-heading">
+    <div class="catalog-heading">
+      <div>
+        <h2 id="catalog-heading">Danh sách đề</h2>
+        <p id="library-caption">Đang tải danh sách bài luyện tập…</p>
+      </div>
+      <span class="catalog-label">THƯ VIỆN BÀI TẬP</span>
+    </div>
+    <div id="exam-list" class="exam-list" aria-live="polite"></div>
   </section>
 </section>
-<section id="detail-view" class="card" hidden>
-  <button type="button" id="back" class="back-link">← Quay lại danh sách</button>
-  <div id="exam-detail"></div>
+
+<section id="detail-view" class="exam-detail-view" hidden>
+  <div class="detail-toolbar">
+    <button id="back" class="back-button" type="button">
+      <span aria-hidden="true">←</span> Danh sách đề
+    </button>
+    <span class="detail-context">GÓC LUYỆN TẬP</span>
+  </div>
+  <div id="exam-detail" class="exam-detail"></div>
 </section>
-<p id="message" role="status" aria-live="polite"></p>
+<p id="message" class="exam-message" role="status" aria-live="polite"></p>
 {% endblock %}
