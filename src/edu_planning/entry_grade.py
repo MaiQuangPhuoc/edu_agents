@@ -1,7 +1,10 @@
 """Chấm bài trắc nghiệm và cập nhật năng lực theo chương."""
-import re
+import re, json, copy
 from datetime import datetime
-
+from pathlib import Path
+from langchain_core.messages import AIMessage, HumanMessage
+from src.edu_planning.student_store import save_student_model
+from src.edu_planning.collect_student_model import _make_queries
 
 def parse_answers(text: str) -> dict[int, str]:
     """'1-A, 2 - C, 3.b' -> {1: 'A', 2: 'C', 3: 'B'}."""
@@ -43,3 +46,23 @@ def update_profile(student_model: dict, subject: str, result: dict) -> dict:
         nl["da_test_dau_vao"] = True
     student_model["updated_at"] = now
     return student_model
+
+def entry_grade_node(state, llm_client) -> dict:
+    print(">>> [TEST] entry_grade")
+    et = state["entry_test"]
+    last = next((str(m.content) for m in reversed(state.get("messages", [])) if isinstance(m, HumanMessage)), "")
+    answers = parse_answers(last)
+    key = json.loads(Path(et["key_file"]).read_text(encoding="utf-8"))["questions"]
+    missing = sorted({q["no"] for q in key} - set(answers))
+    if missing:                                   # thiếu câu: hỏi lại toàn bộ
+        return {"roadmap_status": "awaiting_test_answers", "messages": [AIMessage(
+            content=f"Cần đủ {len(key)} câu, còn thiếu: {missing}. Bạn gửi lại toàn bộ đáp án theo dạng 1-a, 2-b, ... nhé.")]}
+
+    result = grade(key, answers)
+    model = update_profile(copy.deepcopy(state["student_model"]), et["subject"], result)
+    save_student_model(model)
+    lines = [f"Chương {c}: {i['correct']}/{i['total']} - {i['level']}" for c, i in sorted(result["chapters"].items())]
+    text = f"Kết quả: {result['correct']}/{result['total']} câu đúng.\n" + "\n".join(lines)
+    return {"student_model": model, "entry_test": {**et, "result": result}, "entry_done": True,
+            "search_queries": _make_queries(model, state, llm_client),     # tạo lại query theo hồ sơ sau test
+            "roadmap_status": "", "messages": [AIMessage(content=text)]}

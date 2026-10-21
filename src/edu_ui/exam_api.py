@@ -32,10 +32,23 @@ def read_json(path: Path, default):
         raise HTTPException(500, f"Không đọc được dữ liệu: {path.name}") from exc
 
 def catalog():
-    exams = read_json(DATA / "catalog.json", [])
+    demo_file = Path(__file__).resolve().parent / "demo_data" / "exams.json"
+    exams = read_json(DATA / "catalog.json", None)
+    if exams is None:
+        exams = read_json(demo_file, [])
     if not isinstance(exams, list):
         raise HTTPException(500, "catalog.json phải là danh sách đề")
     return exams
+
+def load_attempts(student_id: str):
+    path = student_file(student_id)
+    if path.is_file():
+        return read_json(path, {})
+    # Dữ liệu demo chỉ dành cho tài khoản thử nghiệm, không áp dụng cho học sinh thật.
+    if student_id == "hs_002" and not (DATA / "catalog.json").exists():
+        example = Path(__file__).resolve().parent / "demo_data" / "attempts.json"
+        return read_json(example, {})
+    return {}
 
 def find_exam(exam_id):
     match = next((e for e in catalog() if e.get("exam_id") == exam_id), None)
@@ -54,7 +67,7 @@ def save(path, obj):
 
 @router.get("")
 def list_exams(student_id: str):
-    attempts = read_json(student_file(student_id), {})
+    attempts = load_attempts(student_id)
     out = []
     for exam in catalog():
         eid = exam["exam_id"]
@@ -64,12 +77,12 @@ def list_exams(student_id: str):
                     "created_at": exam.get("created_at"),
                     "last_activity": attempt.get("submitted_at") if attempt else exam.get("created_at"),
                     "question_count": len(exam.get("questions", [])), "completed": bool(attempt)})
-    return {"exams": out}
+    return {"exams": out, "demo": not (DATA / "catalog.json").exists()}
 
 @router.get("/{exam_id}")
 def get_exam(exam_id: str, student_id: str):
     exam = find_exam(exam_id)
-    attempt = read_json(student_file(student_id), {}).get(exam_id)
+    attempt = load_attempts(student_id).get(exam_id)
     data = {"exam_id": exam_id, "title": exam.get("title", exam_id),
             "subject": exam.get("subject", "Khác"),
             "questions": questions_public(exam), "completed": bool(attempt)}
@@ -98,7 +111,7 @@ def submit(exam_id: str, student_id: str, body: Answers):
               "percent": round(correct * 100 / len(questions), 1),
               "submitted_at": datetime.now(timezone.utc).isoformat()}
     with LOCK:
-        attempts = read_json(path, {})
+        attempts = load_attempts(student_id)
         if exam_id in attempts:
             raise HTTPException(409, "Bài này đã được nộp")
         attempts[exam_id] = result

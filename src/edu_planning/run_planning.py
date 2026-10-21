@@ -8,7 +8,8 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".
 
 from langchain_core.messages import AIMessage, HumanMessage
 from langgraph.checkpoint.memory import MemorySaver
-from src.edu_planning.entry_test import run_entry_test
+from src.edu_planning.entry_test import entry_test_node
+from src.edu_planning.entry_grade import entry_grade_node
 from src.clients.llm import LLMClient
 from src.configs import env_config
 from src.edu_planning.collect_student_model import collect_student_model
@@ -19,7 +20,7 @@ from datetime import datetime
 
 
 MODE = "collect"      # "collect": chỉ thử agent thu thập (không cần retriever) | "full": cả luồng
-STUDENT_ID = "hs_002"
+STUDENT_ID = "hs_003"
 
 
 CHAT_START = datetime.now()
@@ -42,6 +43,23 @@ def show_new_bot_messages(out):
             print("\nBot:", m.content)
             log_chat("Bot", m.content)
 
+def _apply(state, out):
+    msgs = out.pop("messages", [])
+    state["messages"].extend(msgs)
+    state.update(out)
+    for m in msgs:
+        print("\nBot:", m.content)
+        log_chat("Bot", m.content)
+
+
+def run_entry(state, llm_client):
+    _apply(state, entry_test_node(state))
+    while state.get("roadmap_status") == "awaiting_test_answers":
+        text = input("\nĐáp án của bạn: ").strip()
+        log_chat("Học sinh", text)
+        state["messages"].append(HumanMessage(content=text))
+        _apply(state, entry_grade_node(state, llm_client))
+        
 
 def run_collect(llm_client):
     state = {
@@ -76,9 +94,7 @@ def run_collect(llm_client):
         state["messages"].append(
             HumanMessage(content=user_input)
         )
-    state["student_model"], result = run_entry_test(
-        state["student_model"]
-    )
+    run_entry(state, llm_client)
     print("\n>>> Hồ sơ đã lưu. Truy vấn tra cứu:")
 
     for q in state.get("search_queries", []):

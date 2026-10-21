@@ -217,8 +217,8 @@ def collect_student_model(state: PlanState, llm_client: LLMClient) -> dict:
     if turn.hoan_tat:
         save_student_model(model)
     
-    queries = _make_queries(model, state, llm_client) if turn.hoan_tat else state.get("search_queries", [])
-    
+    # queries = _make_queries(model, state, llm_client) if turn.hoan_tat else state.get("search_queries", [])
+    queries = state.get("search_queries", [])      # query tạo sau bài test (entry_grade_node)
     return {
         "messages":      [AIMessage(content=turn.tin_nhan)],
         "student_model": model,

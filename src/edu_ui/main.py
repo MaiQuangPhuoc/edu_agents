@@ -70,3 +70,11 @@ app.include_router(exam_router)
 @app.get("/exams", response_class=HTMLResponse)
 def exams_page(request: Request):
     return templates.TemplateResponse(request=request, name="exams.html", context={})
+
+# Roadmap UI (read-only until Planning Agent persistence is connected)
+from src.edu_ui.roadmap_api import router as roadmap_router
+app.include_router(roadmap_router)
+
+@app.get("/roadmap", response_class=HTMLResponse)
+def roadmap_page(request: Request):
+    return templates.TemplateResponse(request=request, name="roadmap.html", context={})

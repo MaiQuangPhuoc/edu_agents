@@ -323,7 +323,10 @@ class PlanState(TypedDict, total=False):
     revision_count: int
     decision: str
     decision_args: dict
-    inbox: list[dict]                            # nhật ký chuyển giao (HandoffMessage)
+    inbox: list[dict]         
+    
+    entry_test: dict                             # {subject, key_file, result}; roadmap_status thêm: awaiting_test_answers | entry_test_failed
+    entry_done: bool                             # đã chấm xong bài test đầu vào                   # nhật ký chuyển giao (HandoffMessage)
 
     # learning path (kế hoạch chi tiết)
     vi_tri_hien_tai: int

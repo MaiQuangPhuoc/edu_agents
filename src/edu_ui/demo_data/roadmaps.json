@@ -1,0 +1,343 @@
+{
+  "roadmaps": [
+    {
+      "id": "demo-roadmap-1",
+      "subject": "Toán 10",
+      "title": "Hành trình chinh phục Toán 10",
+      "target": "8.5+",
+      "updated_at": "2026-10-20T12:00:00",
+      "phases": [
+        {
+          "title": "Mệnh đề và tập hợp",
+          "description": "Chặng 1: nắm vững kiến thức và luyện tập theo từng mức độ.",
+          "duration_weeks": 1,
+          "objectives": [
+            "Nhận biết các khái niệm cơ bản về mệnh đề và tập hợp",
+            "Vận dụng kiến thức mệnh đề và tập hợp để giải quyết câu hỏi"
+          ],
+          "sessions": [
+            {
+              "title": "Khởi động: Mệnh đề và tập hợp",
+              "duration_minutes": 45,
+              "status": "completed"
+            },
+            {
+              "title": "Tìm hiểu trọng tâm: Mệnh đề và tập hợp",
+              "duration_minutes": 45,
+              "status": "completed"
+            },
+            {
+              "title": "Luyện tập và vận dụng: Mệnh đề và tập hợp",
+              "duration_minutes": 45,
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "title": "Bất phương trình bậc nhất hai ẩn",
+          "description": "Chặng 2: nắm vững kiến thức và luyện tập theo từng mức độ.",
+          "duration_weeks": 1,
+          "objectives": [
+            "Nhận biết các khái niệm cơ bản về bất phương trình bậc nhất hai ẩn",
+            "Vận dụng kiến thức bất phương trình bậc nhất hai ẩn để giải quyết câu hỏi"
+          ],
+          "sessions": [
+            {
+              "title": "Khởi động: Bất phương trình bậc nhất hai ẩn",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Tìm hiểu trọng tâm: Bất phương trình bậc nhất hai ẩn",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Luyện tập và vận dụng: Bất phương trình bậc nhất hai ẩn",
+              "duration_minutes": 45,
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "title": "Hàm số bậc hai",
+          "description": "Chặng 3: nắm vững kiến thức và luyện tập theo từng mức độ.",
+          "duration_weeks": 1,
+          "objectives": [
+            "Nhận biết các khái niệm cơ bản về hàm số bậc hai",
+            "Vận dụng kiến thức hàm số bậc hai để giải quyết câu hỏi"
+          ],
+          "sessions": [
+            {
+              "title": "Khởi động: Hàm số bậc hai",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Tìm hiểu trọng tâm: Hàm số bậc hai",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Luyện tập và vận dụng: Hàm số bậc hai",
+              "duration_minutes": 45,
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "title": "Vectơ và ứng dụng",
+          "description": "Chặng 4: nắm vững kiến thức và luyện tập theo từng mức độ.",
+          "duration_weeks": 1,
+          "objectives": [
+            "Nhận biết các khái niệm cơ bản về vectơ và ứng dụng",
+            "Vận dụng kiến thức vectơ và ứng dụng để giải quyết câu hỏi"
+          ],
+          "sessions": [
+            {
+              "title": "Khởi động: Vectơ và ứng dụng",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Tìm hiểu trọng tâm: Vectơ và ứng dụng",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Luyện tập và vận dụng: Vectơ và ứng dụng",
+              "duration_minutes": 45,
+              "status": "pending"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-roadmap-2",
+      "subject": "Ngữ văn 10",
+      "title": "Hành trình chinh phục Ngữ văn 10",
+      "target": "8.0+",
+      "updated_at": "2026-10-20T12:00:00",
+      "phases": [
+        {
+          "title": "Đọc hiểu văn bản",
+          "description": "Chặng 1: nắm vững kiến thức và luyện tập theo từng mức độ.",
+          "duration_weeks": 1,
+          "objectives": [
+            "Nhận biết các khái niệm cơ bản về đọc hiểu văn bản",
+            "Vận dụng kiến thức đọc hiểu văn bản để giải quyết câu hỏi"
+          ],
+          "sessions": [
+            {
+              "title": "Khởi động: Đọc hiểu văn bản",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Tìm hiểu trọng tâm: Đọc hiểu văn bản",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Luyện tập và vận dụng: Đọc hiểu văn bản",
+              "duration_minutes": 45,
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "title": "Phân tích tác phẩm",
+          "description": "Chặng 2: nắm vững kiến thức và luyện tập theo từng mức độ.",
+          "duration_weeks": 1,
+          "objectives": [
+            "Nhận biết các khái niệm cơ bản về phân tích tác phẩm",
+            "Vận dụng kiến thức phân tích tác phẩm để giải quyết câu hỏi"
+          ],
+          "sessions": [
+            {
+              "title": "Khởi động: Phân tích tác phẩm",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Tìm hiểu trọng tâm: Phân tích tác phẩm",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Luyện tập và vận dụng: Phân tích tác phẩm",
+              "duration_minutes": 45,
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "title": "Viết đoạn văn nghị luận",
+          "description": "Chặng 3: nắm vững kiến thức và luyện tập theo từng mức độ.",
+          "duration_weeks": 1,
+          "objectives": [
+            "Nhận biết các khái niệm cơ bản về viết đoạn văn nghị luận",
+            "Vận dụng kiến thức viết đoạn văn nghị luận để giải quyết câu hỏi"
+          ],
+          "sessions": [
+            {
+              "title": "Khởi động: Viết đoạn văn nghị luận",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Tìm hiểu trọng tâm: Viết đoạn văn nghị luận",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Luyện tập và vận dụng: Viết đoạn văn nghị luận",
+              "duration_minutes": 45,
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "title": "Luyện đề tổng hợp",
+          "description": "Chặng 4: nắm vững kiến thức và luyện tập theo từng mức độ.",
+          "duration_weeks": 1,
+          "objectives": [
+            "Nhận biết các khái niệm cơ bản về luyện đề tổng hợp",
+            "Vận dụng kiến thức luyện đề tổng hợp để giải quyết câu hỏi"
+          ],
+          "sessions": [
+            {
+              "title": "Khởi động: Luyện đề tổng hợp",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Tìm hiểu trọng tâm: Luyện đề tổng hợp",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Luyện tập và vận dụng: Luyện đề tổng hợp",
+              "duration_minutes": 45,
+              "status": "pending"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-roadmap-3",
+      "subject": "Lịch sử 10",
+      "title": "Hành trình chinh phục Lịch sử 10",
+      "target": "8.5+",
+      "updated_at": "2026-10-20T12:00:00",
+      "phases": [
+        {
+          "title": "Tư liệu và sử liệu",
+          "description": "Chặng 1: nắm vững kiến thức và luyện tập theo từng mức độ.",
+          "duration_weeks": 1,
+          "objectives": [
+            "Nhận biết các khái niệm cơ bản về tư liệu và sử liệu",
+            "Vận dụng kiến thức tư liệu và sử liệu để giải quyết câu hỏi"
+          ],
+          "sessions": [
+            {
+              "title": "Khởi động: Tư liệu và sử liệu",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Tìm hiểu trọng tâm: Tư liệu và sử liệu",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Luyện tập và vận dụng: Tư liệu và sử liệu",
+              "duration_minutes": 45,
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "title": "Các nền văn minh cổ đại",
+          "description": "Chặng 2: nắm vững kiến thức và luyện tập theo từng mức độ.",
+          "duration_weeks": 1,
+          "objectives": [
+            "Nhận biết các khái niệm cơ bản về các nền văn minh cổ đại",
+            "Vận dụng kiến thức các nền văn minh cổ đại để giải quyết câu hỏi"
+          ],
+          "sessions": [
+            {
+              "title": "Khởi động: Các nền văn minh cổ đại",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Tìm hiểu trọng tâm: Các nền văn minh cổ đại",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Luyện tập và vận dụng: Các nền văn minh cổ đại",
+              "duration_minutes": 45,
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "title": "Văn minh Đông Nam Á",
+          "description": "Chặng 3: nắm vững kiến thức và luyện tập theo từng mức độ.",
+          "duration_weeks": 1,
+          "objectives": [
+            "Nhận biết các khái niệm cơ bản về văn minh đông nam á",
+            "Vận dụng kiến thức văn minh đông nam á để giải quyết câu hỏi"
+          ],
+          "sessions": [
+            {
+              "title": "Khởi động: Văn minh Đông Nam Á",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Tìm hiểu trọng tâm: Văn minh Đông Nam Á",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Luyện tập và vận dụng: Văn minh Đông Nam Á",
+              "duration_minutes": 45,
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "title": "Ôn tập và vận dụng",
+          "description": "Chặng 4: nắm vững kiến thức và luyện tập theo từng mức độ.",
+          "duration_weeks": 1,
+          "objectives": [
+            "Nhận biết các khái niệm cơ bản về ôn tập và vận dụng",
+            "Vận dụng kiến thức ôn tập và vận dụng để giải quyết câu hỏi"
+          ],
+          "sessions": [
+            {
+              "title": "Khởi động: Ôn tập và vận dụng",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Tìm hiểu trọng tâm: Ôn tập và vận dụng",
+              "duration_minutes": 45,
+              "status": "pending"
+            },
+            {
+              "title": "Luyện tập và vận dụng: Ôn tập và vận dụng",
+              "duration_minutes": 45,
+              "status": "pending"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
