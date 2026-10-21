@@ -1,0 +1,34 @@
+{
+  "demo-exam-3": {
+    "answers": {
+      "q1": "B",
+      "q2": "A",
+      "q3": "C"
+    },
+    "correct_answers": {
+      "q1": "B",
+      "q2": "A",
+      "q3": "B"
+    },
+    "correct": 2,
+    "total": 3,
+    "percent": 66.7,
+    "submitted_at": "2026-10-19T10:00:00Z"
+  },
+  "demo-exam-1": {
+    "answers": {
+      "q1": "C",
+      "q2": "B",
+      "q3": "B"
+    },
+    "correct_answers": {
+      "q1": "B",
+      "q2": "C",
+      "q3": "B"
+    },
+    "correct": 1,
+    "total": 3,
+    "percent": 33.3,
+    "submitted_at": "2026-10-21T10:09:53.836835+00:00"
+  }
+}

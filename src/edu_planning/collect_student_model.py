@@ -56,6 +56,13 @@ def _curriculum_info(subjects: list[str]) -> str:
     return "\n".join(f"- {s}: " + ", ".join(f"{cid} ({ch['chapter_name']})" for cid, ch in CURRICULUM[s].items())
                      for s in subjects)
 
+def _curriculum_lessons(subjects: list[str]) -> str:
+    """Tên chương và tên các bài, để prompt query chỉ dùng tên có thật."""
+    return "\n".join(
+        f"- {s}:\n" + "\n".join(f"  {cid} ({ch['chapter_name']}): " + "; ".join(ch["lessons"])
+                                for cid, ch in CURRICULUM[s].items())
+        for s in subjects) or "(chưa rõ môn)"
+
 NO_MISSING = "(không còn thiếu)"
 def _missing(m: dict) -> str:
     nl, mt = (m.get("nang_luc") or [{}])[0], (m.get("muc_tieu") or [{}])[0]
@@ -119,7 +126,7 @@ def _make_queries(model: dict, state: PlanState, llm_client: LLMClient) -> list[
     subjects = [s for s in dict.fromkeys(_canon_subject(n) for n in names) if s in CURRICULUM]
     prompt = (QUERY_TRANSFORM_PROMPT_PATH.read_text(encoding="utf-8")
               .replace("{student_model}", _compact(shown))
-              .replace("{chuong}", _curriculum_info(subjects))
+              .replace("{chuong}", _curriculum_lessons(subjects))
               .replace("{history}", _history_text(state.get("messages", []))))
     res = llm_client.invoke_structured(QueryPlan, [{"role": "user", "content": prompt}], max_tokens=1500)
     return [q.model_dump() for q in res.queries] if res else []

@@ -1,65 +1,84 @@
-<!doctype html>
-<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>EDUAGENT — Nạp tài liệu</title><link rel="stylesheet" href="/ui-static/css/documents.css">
-<script defer src="/ui-static/js/documents.js"></script><link rel="stylesheet" href="/ui-static/css/theme.css"><script defer src="/ui-static/js/theme.js"></script></head>
-<body><div class="shell">
-<aside class="sidebar"><div class="brand">EDUAGENT<small>Trợ lý học tập</small></div><nav aria-label="Chức năng">
-<a href="/">Trợ lý AI</a><a href="/documents" class="active" aria-current="page">Nạp tài liệu</a>
-<a href="/exams">Làm bài test</a><a href="/roadmap">Lộ trình học</a>
-<a href="#" class="soon">Lịch học &amp; Buổi học</a><a href="#" class="soon">Tiến độ học tập</a>
-<a href="#" class="soon">Hồ sơ học sinh</a></nav></aside>
-<main class="main">
-<header><div class="page-heading"><h1>Nạp tài liệu</h1><p>Thêm sách giáo khoa hoặc chọn tài liệu học tập của riêng bạn.</p></div><div class="header-actions"><button type="button" class="theme-toggle" data-theme-toggle aria-label="Chuyển sang giao diện tối" title="Chuyển sang giao diện tối"><svg class="theme-icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"/></svg><svg class="theme-icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button></div></header>
-<div class="tabs"><button class="active" id="tab-book" type="button">Sách giáo khoa</button>
-<button id="tab-private" type="button">Tài liệu riêng</button></div>
+{% extends "base.html" %}
+{% block document_title %}EDUAGENT — Nạp tài liệu{% endblock %}
+{% block page_styles %}<link rel="stylesheet" href="/ui-static/css/documents.css">{% endblock %}
+{% block page_scripts %}<script defer src="/ui-static/js/documents.js"></script>{% endblock %}
+{% block page_title %}Nạp tài liệu{% endblock %}
+{% block page_description %}Thêm sách giáo khoa hoặc chọn tài liệu học tập của riêng bạn.{% endblock %}
+{% block content %}
+<div class="tabs" role="tablist" aria-label="Loại tài liệu">
+  <button class="active" id="tab-book" type="button" role="tab" aria-selected="true">Sách giáo khoa</button>
+  <button id="tab-private" type="button" role="tab" aria-selected="false">Tài liệu riêng</button>
+</div>
 <section id="book-panel" class="layout">
-<div class="card"><h2>Thông tin sách</h2>
-<form id="book-form">
-<label for="series">Bộ sách</label>
-<select id="series"><option value="ket_noi">Kết nối tri thức với cuộc sống</option>
-<option value="chan_troi">Chân trời sáng tạo</option><option value="canh_dieu">Cánh Diều</option>
-<option value="khac">Khác</option></select>
-<label for="book-subject">Môn học</label><select id="book-subject"></select>
-<label for="book-name">Tên sách <span class="req">*</span></label>
-<input id="book-name" list="book-suggestions" maxlength="200" required placeholder="VD: Toán 10 - Tập 1">
-<datalist id="book-suggestions"></datalist>
-<label for="display-name">Tên tài liệu (không bắt buộc)</label>
-<input id="display-name" maxlength="150" placeholder="Để trống sẽ dùng tên sách">
-<label for="description">Mô tả (không bắt buộc)</label>
-<textarea id="description" maxlength="1000" rows="3" placeholder="Không có"></textarea>
-<button class="primary" type="submit" id="confirm-book">Xác nhận sách</button>
-</form></div>
-<div class="card"><h2>Sách đã xác nhận</h2>
-<div id="book-preview" class="empty">Hãy nhập thông tin rồi nhấn “Xác nhận sách” để xem bìa và phần chọn PDF.</div>
-<div id="confirmed-book" hidden>
-<div class="book-preview">
-<div class="cover" id="book-cover"><img id="cover-image" alt="Bìa sách" hidden><div id="cover-fallback"><small>EDUAGENT</small><strong id="cover-title"></strong><span id="cover-series"></span></div></div>
-<div class="book-details"><h3 id="preview-title"></h3><p id="preview-meta"></p>
-<p id="preview-note" class="muted"></p><span class="tag" id="preview-rag"></span></div></div>
-<label class="field-title">PDF của sách (tùy chọn)</label>
-<div class="dropzone" id="book-drop" tabindex="0" role="button" aria-label="Chọn PDF của sách">
-<strong>Nhấn để chọn hoặc kéo thả PDF vào đây</strong><span>Chấp nhận .pdf, tối đa 30 MB</span>
-<input type="file" id="book-file" accept=".pdf,application/pdf" hidden></div>
-<div id="book-file-info" class="chosen"></div>
-<p class="notice">PDF mới chỉ được chọn và xem trước trên trình duyệt, chưa tải lên backend.</p>
-</div></div>
+  <div class="card">
+    <h2>Thêm sách giáo khoa</h2>
+    <label class="field-title" for="book-file">Tệp PDF của sách</label>
+    <div class="dropzone book-dropzone" id="book-drop" tabindex="0" role="button" aria-label="Chọn hoặc kéo thả PDF sách giáo khoa">
+      <svg class="upload-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M4 15.5v3A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5v-3"/></svg>
+      <strong>Chọn sách hoặc kéo thả tệp vào đây</strong>
+      <span>PDF, tối đa 30 MB</span>
+      <input type="file" id="book-file" accept=".pdf,application/pdf" hidden>
+    </div>
+    <div id="book-file-info" class="chosen" aria-live="polite"></div>
+    <p class="notice upload-notice">Tệp hiện chỉ được chọn để xem trước, chưa tải lên máy chủ.</p>
+    <h3 class="book-form-heading">Thông tin sách</h3>
+    <form id="book-form">
+      <label for="series">Bộ sách</label>
+      <select id="series">
+        <option value="ket_noi">Kết nối tri thức với cuộc sống</option>
+        <option value="chan_troi">Chân trời sáng tạo</option>
+        <option value="canh_dieu">Cánh Diều</option>
+        <option value="khac">Khác</option>
+      </select>
+      <label for="book-subject">Môn học</label><select id="book-subject"></select>
+      <label for="book-name">Tên sách <span class="req">*</span></label>
+      <input id="book-name" list="book-suggestions" maxlength="200" required placeholder="VD: Toán 10 - Tập 1">
+      <datalist id="book-suggestions"></datalist>
+      <label for="display-name">Tên tài liệu (không bắt buộc)</label>
+      <input id="display-name" maxlength="150" placeholder="Để trống sẽ dùng tên sách">
+      <label for="description">Mô tả (không bắt buộc)</label>
+      <textarea id="description" maxlength="1000" rows="3" placeholder="Không có"></textarea>
+      <button class="primary" type="submit" id="confirm-book">Xác nhận sách</button>
+      <button class="secondary" type="button" id="cancel-edit-book" hidden>Hủy chỉnh sửa</button>
+    </form>
+  </div>
+  <div class="card">
+    <h2>Sách đã xác nhận</h2>
+    <div id="book-preview" class="empty">Nhập thông tin rồi nhấn “Xác nhận sách” để xem trước.</div>
+    <div id="confirmed-book" hidden>
+      <div class="book-preview">
+        <div class="cover" id="book-cover">
+          <img id="cover-image" alt="Bìa sách" hidden>
+          <div id="cover-fallback"><small>EDUAGENT</small><strong id="cover-title"></strong><span id="cover-series"></span></div>
+        </div>
+        <div class="book-details">
+          <h3 id="preview-title"></h3><p id="preview-meta"></p>
+          <p id="preview-note" class="muted"></p><span class="tag" id="preview-rag"></span>
+        </div>
+      </div>
+      <div id="book-confirmed-file-info" class="confirmed-file" aria-live="polite"></div>
+    </div>
+  </div>
 </section>
 <section id="private-panel" class="card private" hidden>
-<h2>Tài liệu riêng</h2><p class="muted">Có thể chọn tài liệu cho mọi môn học, không giới hạn ba môn.</p>
-<label for="private-subject">Môn học</label><select id="private-subject"></select>
-<div id="custom-subject-wrap" hidden><label for="custom-subject">Tên môn khác</label>
-<input id="custom-subject" maxlength="100" placeholder="Nhập tên môn học"></div>
-<label for="private-name">Tên tài liệu (không bắt buộc)</label><input id="private-name" maxlength="150" placeholder="Tự lấy tên file nếu để trống">
-<label for="private-description">Mô tả (không bắt buộc)</label>
-<textarea id="private-description" maxlength="1000" rows="3" placeholder="Không có"></textarea>
-<label class="field-title">Chọn tài liệu</label>
-<div class="dropzone" id="private-drop" tabindex="0" role="button" aria-label="Chọn file tài liệu riêng">
-<strong>Nhấn để chọn hoặc kéo thả tài liệu vào đây</strong><span>PDF, DOCX, TXT, JPG, PNG — tối đa 30 MB mỗi file</span>
-<input type="file" id="private-file" multiple accept=".pdf,.docx,.txt,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png" hidden></div>
-<div class="chosen" id="private-file-info"></div>
-<p class="notice">Chức năng upload và lập chỉ mục RAG cho file riêng đang phát triển. File chưa được gửi lên máy chủ.</p>
+  <h2>Tài liệu riêng</h2>
+  <p class="muted">Chọn tài liệu cho môn học bất kỳ. Chức năng tải file đang phát triển.</p>
+  <label for="private-subject">Môn học</label><select id="private-subject"></select>
+  <div id="custom-subject-wrap" hidden><label for="custom-subject">Tên môn khác</label><input id="custom-subject" maxlength="100" placeholder="Nhập tên môn học"></div>
+  <label for="private-name">Tên tài liệu (không bắt buộc)</label><input id="private-name" maxlength="150" placeholder="Tự lấy tên file nếu để trống">
+  <label for="private-description">Mô tả (không bắt buộc)</label><textarea id="private-description" maxlength="1000" rows="3" placeholder="Không có"></textarea>
+  <label class="field-title" for="private-file">Chọn tài liệu</label>
+  <div class="dropzone" id="private-drop" tabindex="0" role="button" aria-label="Chọn file tài liệu riêng">
+    <strong>Nhấn để chọn hoặc kéo thả tài liệu vào đây</strong>
+    <span>PDF, DOCX, TXT, JPG, PNG — tối đa 30 MB mỗi file</span>
+    <input type="file" id="private-file" multiple accept=".pdf,.docx,.txt,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png" hidden>
+  </div>
+  <div class="chosen" id="private-file-info"></div>
+  <p class="notice">File hiện chưa được gửi lên máy chủ hoặc lập chỉ mục RAG.</p>
 </section>
-<section class="card list"><div class="list-header"><h2>Sách đã thêm vào hệ thống</h2><button type="button" id="refresh">Làm mới</button></div>
-<div id="my-books">Đang tải...</div></section>
+<section class="card list">
+  <div class="list-header"><h2>Sách đã thêm</h2><button type="button" id="refresh">Làm mới</button></div>
+  <div id="my-books">Đang tải...</div>
+</section>
 <p id="status" role="status" aria-live="polite"></p>
-</main></div></body></html>
+{% endblock %}

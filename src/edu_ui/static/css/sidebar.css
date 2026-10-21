@@ -1,0 +1,619 @@
+.app-shell > .sidebar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  width: auto;
+  min-width: 0;
+  height: 100dvh;
+  min-height: 0;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  overflow: hidden;
+  border-right: 1px solid var(--app-line);
+  background:
+    radial-gradient(ellipse at 0 0, rgb(233 243 238 / 75%), transparent 55%),
+    var(--app-panel);
+  padding: 22px 15px 16px;
+}
+
+.app-shell > .sidebar .brand {
+  min-height: 41px;
+  flex: 0 0 auto;
+  padding: 0 9px;
+  font: 800 15px/1.3 Manrope, "DM Sans", sans-serif;
+}
+
+.app-shell > .sidebar .brand-symbol {
+  width: 41px;
+  height: 41px;
+  flex-basis: 41px;
+}
+
+.app-shell > .sidebar .brand small {
+  display: block;
+  margin-top: 4px;
+  font: 700 9px/1.4 "DM Sans", sans-serif;
+}
+
+.app-shell > .sidebar .sidebar-history {
+  display: flex;
+  min-height: 0;
+  flex: 0 1 38%;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.app-shell > .sidebar .sidebar-menu {
+  display: flex;
+  min-height: 0;
+  flex: 1 1 auto;
+  flex-direction: column;
+  margin-top: 18px;
+}
+
+.app-shell > .sidebar .sidebar-section-heading {
+  display: flex;
+  min-width: 0;
+  height: 34px;
+  min-height: 34px;
+  flex: 0 0 34px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.app-shell > .sidebar .sidebar-section-heading h2,
+.app-shell > .sidebar .sidebar-section-heading .nav-label {
+  min-width: 0;
+  margin: 0;
+  color: var(--app-muted);
+  font: 800 9px/1.3 "DM Sans", sans-serif;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+}
+
+.app-shell > .sidebar .nav-label {
+  flex: 1 1 auto;
+}
+
+.app-shell > .sidebar .sidebar-toggle {
+  display: grid;
+  width: 31px;
+  height: 31px;
+  flex: 0 0 31px;
+  place-items: center;
+  margin: 0;
+  border: 1px solid var(--app-line);
+  border-radius: 10px;
+  background: var(--app-panel);
+  color: var(--app-green);
+  padding: 0;
+  line-height: 1;
+  transition: transform 160ms ease, background-color 160ms ease;
+}
+
+.app-shell > .sidebar .sidebar-toggle:hover {
+  transform: translateY(-1px);
+  background: var(--app-pink-soft);
+}
+
+.app-shell > .sidebar .sidebar-toggle svg,
+.app-shell > .sidebar .new-chat-button svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.app-shell > .sidebar .new-chat-button {
+  display: grid;
+  width: 31px;
+  height: 31px;
+  flex: 0 0 31px;
+  place-items: center;
+  border: 1px solid var(--app-line);
+  border-radius: 10px;
+  background: var(--app-pink-soft);
+  color: #a15c78;
+  transition: transform 160ms ease, background-color 160ms ease;
+}
+
+.app-shell > .sidebar .new-chat-button:hover {
+  transform: translateY(-1px);
+  background: color-mix(in srgb, var(--app-pink-soft) 70%, var(--app-pink));
+}
+
+.app-shell > .sidebar .conversation-history {
+  display: flex;
+  min-height: 0;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 3px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-top: 7px;
+  padding: 2px 1px 4px;
+  scrollbar-width: thin;
+}
+
+.app-shell > .sidebar .history-empty {
+  margin: 6px 5px;
+  color: var(--app-muted);
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.app-shell > .sidebar .history-item {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: var(--app-muted);
+  padding: 7px 9px;
+  font: 500 11px/1.45 "DM Sans", sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: border-color 150ms ease, background-color 150ms ease, color 150ms ease;
+}
+
+.app-shell > .sidebar .history-item:hover {
+  border-color: var(--app-line);
+  background: var(--app-pink-soft);
+  color: var(--app-text);
+}
+
+.app-shell > .sidebar .history-item[aria-current="page"] {
+  border-color: color-mix(in srgb, var(--app-green) 22%, var(--app-line));
+  background: var(--app-green-soft);
+  color: var(--app-green);
+  font-weight: 700;
+}
+
+.app-shell > .sidebar .sidebar-menu .navigation {
+  display: grid;
+  min-height: 0;
+  flex: 1 1 auto;
+  gap: 4px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-top: 7px;
+  scrollbar-width: thin;
+}
+
+.app-shell > .sidebar .sidebar-menu .navigation a {
+  display: flex;
+  min-width: 0;
+  min-height: 40px;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 10px;
+  border-radius: 11px;
+  padding: 8px 10px;
+  font: 600 11px/1.4 "DM Sans", sans-serif;
+}
+
+.app-shell > .sidebar .sidebar-menu .navigation a:hover {
+  transform: none;
+}
+
+.app-shell > .sidebar .sidebar-menu .navigation a.active {
+  font-weight: 800;
+}
+
+.app-shell > .sidebar .sidebar-menu .navigation a span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.app-shell > .sidebar .sidebar-menu .navigation svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+}
+
+.app-shell > .sidebar .sidebar-menu .navigation .coming-soon small {
+  flex: 0 0 auto;
+  margin-left: auto;
+  font-size: 8px;
+}
+
+.app-shell > .sidebar .sidebar-footer {
+  flex: 0 0 auto;
+  margin: 12px 8px 0;
+  padding-top: 12px;
+}
+
+.app-shell > .sidebar .sidebar-resizer {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  bottom: 0;
+  z-index: 8;
+  width: 9px;
+  cursor: col-resize;
+  touch-action: none;
+}
+
+.app-shell > .sidebar .sidebar-resizer::after {
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  width: 3px;
+  height: 44px;
+  border-radius: 5px;
+  background: color-mix(in srgb, var(--app-green) 35%, var(--app-line));
+  content: "";
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: opacity 140ms ease, height 140ms ease, background-color 140ms ease;
+}
+
+.app-shell > .sidebar .sidebar-resizer:hover::after,
+.app-shell > .sidebar .sidebar-resizer:focus-visible::after,
+.app-shell > .sidebar .sidebar-resizer.is-dragging::after {
+  height: 68px;
+  background: var(--app-pink);
+  opacity: 1;
+}
+
+.app-shell > .sidebar .sidebar-resizer:focus-visible {
+  outline: 0;
+}
+
+.panel-resizer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 8;
+  width: 9px;
+  cursor: col-resize;
+  touch-action: none;
+}
+
+.panel-resizer::after {
+  position: absolute;
+  top: 50%;
+  width: 3px;
+  height: 44px;
+  border-radius: 5px;
+  background: color-mix(in srgb, var(--app-green) 35%, var(--app-line));
+  content: "";
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: opacity 140ms ease, height 140ms ease, background-color 140ms ease;
+}
+
+.sidebar-resizer {
+  right: 0;
+}
+
+.sidebar-resizer::after {
+  right: 2px;
+}
+
+.sources-resizer {
+  left: 0;
+}
+
+.sources-resizer::after {
+  left: 2px;
+}
+
+.panel-resizer:hover::after,
+.panel-resizer:focus-visible::after,
+.panel-resizer.is-dragging::after {
+  height: 68px;
+  background: var(--app-pink);
+  opacity: 1;
+}
+
+.panel-resizer:focus-visible {
+  outline: 0;
+}
+
+.app-shell > .sidebar .sidebar-resizer[hidden] {
+  display: none !important;
+}
+
+.sidebar-hidden:not(.chat-body) .app-shell {
+  grid-template-columns: 58px minmax(0, 1fr);
+}
+
+.sidebar-hidden:not(.chat-body) .app-shell > .sidebar {
+  align-items: center;
+  padding: 18px 7px;
+}
+
+.sidebar-hidden:not(.chat-body) .app-shell > .sidebar .brand,
+.sidebar-hidden:not(.chat-body) .app-shell > .sidebar .sidebar-history,
+.sidebar-hidden:not(.chat-body) .app-shell > .sidebar .nav-label,
+.sidebar-hidden:not(.chat-body) .app-shell > .sidebar .navigation,
+.sidebar-hidden:not(.chat-body) .app-shell > .sidebar .sidebar-footer,
+.sidebar-hidden:not(.chat-body) .app-shell > .sidebar .new-chat-button {
+  display: none;
+}
+
+.sidebar-hidden:not(.chat-body) .app-shell > .sidebar .sidebar-menu {
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+.sidebar-hidden:not(.chat-body) .app-shell > .sidebar .menu-heading {
+  justify-content: center;
+}
+
+.sidebar-hidden:not(.chat-body) .app-shell > .sidebar .sidebar-resizer {
+  display: none;
+}
+
+.chat-body .app-shell > .sidebar {
+  position: relative;
+  inset: auto;
+  z-index: 1;
+  grid-column: 1;
+  grid-row: 1 / 4;
+  width: auto;
+  min-width: 0;
+  height: auto;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-right: 1px solid var(--app-line);
+  border-bottom: 0;
+}
+
+.chat-body .app-shell {
+  --chat-sidebar-width: 252px;
+}
+
+.chat-body.sidebar-hidden .app-shell {
+  --chat-sidebar-width: 58px;
+}
+
+.chat-body.sidebar-hidden .app-shell > .sidebar {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 14px 8px;
+}
+
+.chat-body.sidebar-hidden .app-shell > .sidebar .brand,
+.chat-body.sidebar-hidden .app-shell > .sidebar .sidebar-history,
+.chat-body.sidebar-hidden .app-shell > .sidebar .nav-label,
+.chat-body.sidebar-hidden .app-shell > .sidebar .navigation,
+.chat-body.sidebar-hidden .app-shell > .sidebar .sidebar-footer,
+.chat-body.sidebar-hidden .app-shell > .sidebar .new-chat-button {
+  display: none;
+}
+
+.chat-body.sidebar-hidden .app-shell > .sidebar .sidebar-menu {
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+.chat-body.sidebar-hidden .app-shell > .sidebar .menu-heading {
+  justify-content: center;
+}
+
+.chat-body.sidebar-hidden .app-shell > .sidebar .sidebar-toggle {
+  align-self: center;
+  margin: 0;
+}
+
+.chat-body.sidebar-hidden .app-shell > .sidebar .sidebar-resizer {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .app-shell > .sidebar {
+    position: relative;
+    top: auto;
+    z-index: 5;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    align-items: stretch;
+    border-right: 0;
+    border-bottom: 1px solid var(--app-line);
+    padding: 12px 15px 10px;
+  }
+
+  .app-shell > .sidebar .sidebar-history {
+    max-height: 100px;
+    flex: 0 1 auto;
+    margin-top: 10px;
+  }
+
+  .app-shell > .sidebar .conversation-history {
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .app-shell > .sidebar .history-item {
+    max-width: min(240px, 55vw);
+    flex: 0 0 auto;
+  }
+
+  .app-shell > .sidebar .sidebar-menu {
+    flex: 0 0 auto;
+    margin-top: 7px;
+  }
+
+  .app-shell > .sidebar .sidebar-menu .navigation {
+    display: flex;
+    flex: 0 0 auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .app-shell > .sidebar .sidebar-menu .navigation a {
+    width: auto;
+    min-height: 38px;
+    flex: 0 0 auto;
+  }
+
+  .app-shell > .sidebar .sidebar-menu .navigation a span {
+    max-width: 160px;
+  }
+
+  .app-shell > .sidebar .sidebar-footer {
+    display: none;
+  }
+
+  .sidebar-hidden:not(.chat-body) .app-shell {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sidebar-hidden:not(.chat-body) .app-shell > .sidebar {
+    min-height: 54px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+  }
+
+  .sidebar-hidden:not(.chat-body) .app-shell > .sidebar .brand {
+    display: flex;
+  }
+
+  .sidebar-hidden:not(.chat-body) .app-shell > .sidebar .sidebar-menu {
+    margin: 0;
+  }
+
+  .sidebar-hidden:not(.chat-body) .app-shell > .sidebar .menu-heading {
+    min-height: 0;
+  }
+
+  .sidebar-hidden:not(.chat-body) .app-shell > .sidebar .sidebar-resizer {
+    display: none;
+  }
+}
+
+@media (max-width: 1050px) {
+  .chat-body .app-shell {
+    --chat-sidebar-width: 220px;
+  }
+}
+
+@media (max-width: 760px) {
+  .panel-resizer {
+    width: 10px;
+  }
+
+  .sidebar-hidden:not(.chat-body) .app-shell {
+    grid-template-columns: 64px minmax(0, 1fr);
+  }
+
+  .sidebar-hidden:not(.chat-body) .app-shell > .sidebar {
+    position: sticky;
+    top: 0;
+    width: auto;
+    height: 100dvh;
+    min-height: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    border-right: 1px solid var(--app-line);
+    border-bottom: 0;
+    padding: 12px 7px;
+  }
+
+  .sidebar-hidden:not(.chat-body) .app-shell > .sidebar .brand {
+    display: none;
+  }
+
+  .chat-body .app-shell {
+    --chat-sidebar-width: clamp(120px, calc(100vw - 270px), 190px);
+  }
+
+  .chat-body.sidebar-hidden .app-shell {
+    --chat-sidebar-width: 64px;
+  }
+
+  .chat-body.sidebar-hidden .app-shell > .sidebar {
+    padding: 12px 7px;
+  }
+
+  .chat-body .app-shell > .sidebar {
+    width: auto;
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+    border-right: 1px solid var(--app-line);
+    border-bottom: 0;
+    overflow: auto;
+    padding: 12px 7px;
+  }
+
+  .chat-body:not(.sidebar-hidden) .app-shell > .sidebar {
+    align-items: stretch;
+    padding: 18px 12px;
+  }
+
+  .chat-body:not(.sidebar-hidden) .app-shell > .sidebar .nav-label,
+  .chat-body:not(.sidebar-hidden) .app-shell > .sidebar .sidebar-footer {
+    display: block;
+  }
+
+  .chat-body:not(.sidebar-hidden) .app-shell > .sidebar .sidebar-menu .navigation {
+    display: grid;
+    flex: 1 1 auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .chat-body:not(.sidebar-hidden) .app-shell > .sidebar .sidebar-menu .navigation a {
+    width: 100%;
+    min-width: 0;
+    min-height: 42px;
+    flex: 0 0 auto;
+    padding: 8px;
+    white-space: normal;
+  }
+
+  .chat-body:not(.sidebar-hidden) .app-shell > .sidebar .sidebar-menu .navigation a span {
+    overflow-wrap: anywhere;
+  }
+
+  .chat-body.sidebar-hidden .app-shell > .sidebar .brand,
+  .chat-body.sidebar-hidden .app-shell > .sidebar .sidebar-history,
+  .chat-body.sidebar-hidden .app-shell > .sidebar .nav-label,
+  .chat-body.sidebar-hidden .app-shell > .sidebar .sidebar-menu .navigation,
+  .chat-body.sidebar-hidden .app-shell > .sidebar .sidebar-footer,
+  .chat-body.sidebar-hidden .app-shell > .sidebar .new-chat-button {
+    display: none;
+  }
+
+  .chat-body.sidebar-hidden .app-shell > .sidebar .sidebar-toggle {
+    align-self: center;
+    margin: 0;
+  }
+
+  .chat-body:not(.sidebar-hidden) .app-shell > .sidebar .sidebar-resizer::after {
+    opacity: 0.55;
+  }
+
+  .sidebar-hidden:not(.chat-body) .app-shell > .sidebar .sidebar-toggle {
+    align-self: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-shell > .sidebar *,
+  .app-shell > .sidebar *::before,
+  .app-shell > .sidebar *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

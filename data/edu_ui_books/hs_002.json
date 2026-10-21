@@ -1,0 +1,14 @@
+[
+  {
+    "book_id": "canh_dieu_1",
+    "series": "canh_dieu",
+    "subject": "Toán",
+    "title": "Toán 10",
+    "grade": 10,
+    "rag_ready": false,
+    "cover_url": null,
+    "document_id": "4c29e52f-0634-4ec4-aba6-f63f15476a27",
+    "display_name": "sách toán 10 cánh diều",
+    "description": "sách giáo khoa chuẩn của bộ giáo dục"
+  }
+]

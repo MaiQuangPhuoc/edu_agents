@@ -86,6 +86,56 @@ def attach_book(body: AttachBook):
         write_items(path, items)
     return item
 
+@router.put('/mine/{document_id}')
+def update_book(document_id: str, body: AttachBook):
+    if body.series not in SERIES or body.subject not in SUBJECTS:
+        raise HTTPException(422, 'Bộ sách hoặc môn học không hợp lệ')
+    title = body.title.strip()
+    display_name = body.display_name.strip()
+    if not title or not display_name:
+        raise HTTPException(422, 'Tên sách và tên tài liệu không được để trống')
+    found = next((b for b in CATALOG if b['book_id'] == body.book_id), None)
+    if found and (found['series'] != body.series or found['subject'] != body.subject or found['title'] != title):
+        raise HTTPException(422, 'Tên sách không khớp danh mục')
+
+    path = storage(body.student_id)
+    with LOCK:
+        items = read_items(path)
+        index = next(
+            (i for i, item in enumerate(items) if item.get('document_id') == document_id),
+            None,
+        )
+        if index is None:
+            raise HTTPException(404, 'Không thấy tài liệu')
+        if any(
+            i != index
+            and item['title'].casefold() == title.casefold()
+            and item['subject'] == body.subject
+            and item['series'] == body.series
+            for i, item in enumerate(items)
+        ):
+            raise HTTPException(409, 'Sách này đã được thêm trước đó')
+
+        previous = items[index]
+        book = found or {
+            'book_id': previous.get('book_id', str(uuid.uuid4())),
+            'title': title,
+            'series': body.series,
+            'subject': body.subject,
+            'grade': previous.get('grade', 10),
+            'rag_ready': previous.get('rag_ready', False),
+            'cover_url': previous.get('cover_url'),
+        }
+        updated = {
+            **book,
+            'document_id': document_id,
+            'display_name': display_name,
+            'description': body.description.strip(),
+        }
+        items[index] = updated
+        write_items(path, items)
+    return updated
+
 @router.delete('/mine/{document_id}')
 def delete_book(document_id: str, student_id: str):
     path = storage(student_id)

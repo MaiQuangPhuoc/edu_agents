@@ -15,10 +15,16 @@
   const sendButton = $('#send');
   const sourcesList = $('#sources');
   const connection = $('#connection');
-  const notice = $('#notice');
-  const newChatButton = $('#new-chat');
+  const notice = $('#toast');
   const sourcePanel = $('.sources-panel');
   const chatHeader = $('.chat-header');
+  const actionMenu = $('#action-menu');
+  const actionToggle = $('#action-toggle');
+  const voiceButton = $('#voice-input');
+  const demoMarkup = $('.chat-demo')?.cloneNode(true);
+  const demoSourcesMarkup = sourcesList?.cloneNode(true);
+  const appShell = $('.app-shell');
+  const historyKey = 'eduagent-chat-history';
 
   if (
     ![
@@ -28,7 +34,10 @@
       sendButton,
       sourcesList,
       connection,
-      newChatButton
+      actionMenu,
+      actionToggle,
+      voiceButton,
+      appShell
     ].every(Boolean)
   ) {
     console.error(
@@ -41,6 +50,119 @@
   let activeController = null;
   let requestId = 0;
   let noticeTimeout;
+  let recognition = null;
+  const panelWidths = { sidebar: null, sources: null };
+  let activeConversationId = null;
+
+  function resizeComposer() {
+    const maxHeight = 160;
+    input.style.height = 'auto';
+    const nextHeight = Math.min(input.scrollHeight, maxHeight);
+    input.style.height = `${nextHeight}px`;
+    input.style.overflowY = input.scrollHeight > maxHeight ? 'auto' : 'hidden';
+  }
+
+  function getPanelWidthBounds(name) {
+    const compact = window.matchMedia('(max-width: 760px)').matches;
+    const oppositeName = name === 'sidebar' ? 'sources' : 'sidebar';
+    const oppositeVariable = oppositeName === 'sidebar'
+      ? '--chat-sidebar-width'
+      : '--chat-source-width';
+    const oppositeWidth = Number.parseFloat(
+      getComputedStyle(appShell).getPropertyValue(oppositeVariable)
+    );
+    const minimumPanelWidth = compact ? 120 : 180;
+    const minimumChatWidth = compact ? 180 : 320;
+    const maximumPanelWidth = Math.max(
+      minimumPanelWidth,
+      Math.min(
+        compact ? 280 : 480,
+        window.innerWidth - oppositeWidth - minimumChatWidth
+      )
+    );
+    return { minimumPanelWidth, maximumPanelWidth };
+  }
+
+  function setPanelWidth(name, requestedWidth) {
+    const variable = name === 'sidebar'
+      ? '--chat-sidebar-width'
+      : '--chat-source-width';
+    const { minimumPanelWidth, maximumPanelWidth } = getPanelWidthBounds(name);
+    const width = Math.round(
+      Math.min(maximumPanelWidth, Math.max(minimumPanelWidth, requestedWidth))
+    );
+
+    panelWidths[name] = width;
+    appShell.style.setProperty(variable, `${width}px`);
+
+    const separator = document.querySelector(`[data-resize-panel="${name}"]`);
+    if (separator) {
+      separator.setAttribute('aria-valuemin', String(minimumPanelWidth));
+      separator.setAttribute('aria-valuemax', String(maximumPanelWidth));
+      separator.setAttribute('aria-valuenow', String(width));
+    }
+  }
+
+  function initializePanelResize() {
+    const separators = document.querySelectorAll('[data-resize-panel="sources"]');
+
+    separators.forEach((separator) => {
+      const name = separator.dataset.resizePanel;
+      const variable = name === 'sidebar'
+        ? '--chat-sidebar-width'
+        : '--chat-source-width';
+      const { minimumPanelWidth, maximumPanelWidth } = getPanelWidthBounds(name);
+      separator.setAttribute('aria-valuemin', String(minimumPanelWidth));
+      separator.setAttribute('aria-valuemax', String(maximumPanelWidth));
+      separator.setAttribute(
+        'aria-valuenow',
+        String(Math.round(Number.parseFloat(
+          getComputedStyle(appShell).getPropertyValue(variable)
+        )))
+      );
+
+      separator.addEventListener('pointerdown', (event) => {
+        if (event.button !== 0) return;
+        event.preventDefault();
+        separator.classList.add('is-dragging');
+
+        const updateWidth = (pointerEvent) => {
+          const requestedWidth = name === 'sidebar'
+            ? pointerEvent.clientX
+            : window.innerWidth - pointerEvent.clientX;
+          setPanelWidth(name, requestedWidth);
+        };
+        const finishResize = () => {
+          separator.classList.remove('is-dragging');
+          window.removeEventListener('pointermove', updateWidth);
+          window.removeEventListener('pointerup', finishResize);
+          window.removeEventListener('pointercancel', finishResize);
+        };
+
+        updateWidth(event);
+        window.addEventListener('pointermove', updateWidth);
+        window.addEventListener('pointerup', finishResize, { once: true });
+        window.addEventListener('pointercancel', finishResize, { once: true });
+      });
+
+      separator.addEventListener('keydown', (event) => {
+        if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+        event.preventDefault();
+        const variable = name === 'sidebar'
+          ? '--chat-sidebar-width'
+          : '--chat-source-width';
+        const currentWidth = panelWidths[name] ?? Number.parseFloat(
+          getComputedStyle(appShell).getPropertyValue(variable)
+        );
+        const direction = event.key === 'ArrowRight' ? 1 : -1;
+        setPanelWidth(name, currentWidth + direction * (event.shiftKey ? 32 : 12));
+      });
+    });
+  }
+
+  input.addEventListener('input', resizeComposer);
+  initializePanelResize();
+  resizeComposer();
 
   // ==========================================
   // 1. CUỘN XUỐNG TIN NHẮN MỚI NHẤT
@@ -202,7 +324,7 @@
       empty.className = 'sources-empty';
 
       empty.textContent =
-        'Chưa có nguồn được backend trả về cho câu trả lời này.';
+        'Câu trả lời vừa rồi chưa có nguồn tài liệu được backend trả về.';
 
       sourcesList.appendChild(empty);
       return;
@@ -254,7 +376,7 @@
       }
 
       // Nội dung chunk
-      const snippet = document.createElement('div');
+      const snippet = document.createElement('p');
       snippet.className = 'chunk';
 
       snippet.textContent = String(
@@ -269,17 +391,25 @@
       // Liên kết tài liệu nếu có
       if (
         typeof source.url === 'string' &&
-        /^https?:\/\//i.test(source.url)
+        /^(https?:\/\/|\/)/i.test(source.url)
       ) {
         const link = document.createElement('a');
 
         link.href = source.url;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
+        if (/^https?:\/\//i.test(source.url)) {
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+        }
+        link.className = 'source-link';
 
-        link.textContent = 'Xem nguồn tài liệu';
+        link.textContent = 'Mở tài liệu gốc ↗';
 
         card.appendChild(link);
+      } else {
+        const unavailable = document.createElement('p');
+        unavailable.className = 'source-disclaimer';
+        unavailable.textContent = 'Backend chưa cung cấp liên kết tài liệu gốc.';
+        card.appendChild(unavailable);
       }
 
       sourcesList.appendChild(card);
@@ -300,8 +430,253 @@
 
     noticeTimeout = setTimeout(() => {
       notice.hidden = true;
-    }, 3000);
+    }, 3500);
   }
+
+  function readConversations() {
+    try {
+      const stored = localStorage.getItem(historyKey);
+      const conversations = stored ? JSON.parse(stored) : [];
+      return Array.isArray(conversations) ? conversations : [];
+    } catch (error) {
+      console.error('EDUAGENT: Không thể đọc lịch sử trò chuyện.', error);
+      showNotice('Không thể đọc lịch sử trò chuyện đã lưu.');
+      return [];
+    }
+  }
+
+  function writeConversations(conversations) {
+    try {
+      localStorage.setItem(historyKey, JSON.stringify(conversations));
+      document.dispatchEvent(new CustomEvent('eduagent:history-updated'));
+    } catch (error) {
+      console.error('EDUAGENT: Không thể lưu lịch sử trò chuyện.', error);
+      showNotice('Không thể lưu cuộc trò chuyện trên thiết bị này.');
+    }
+  }
+
+  function getActiveConversation() {
+    return readConversations().find(
+      (conversation) => conversation.id === activeConversationId
+    );
+  }
+
+  function ensureActiveConversation(title) {
+    if (activeConversationId) {
+      const current = getActiveConversation();
+      if (current) return current;
+    }
+
+    const conversations = readConversations();
+    const conversation = {
+      id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+      title: title.slice(0, 64),
+      session_id: sessionId,
+      messages: [],
+      sources: []
+    };
+    activeConversationId = conversation.id;
+    conversations.unshift(conversation);
+    writeConversations(conversations.slice(0, 30));
+    window.history.replaceState(
+      null,
+      '',
+      `/?conversation=${encodeURIComponent(conversation.id)}`
+    );
+    return conversation;
+  }
+
+  function saveConversationMessage(role, content, sources) {
+    const conversations = readConversations();
+    const conversation = conversations.find(
+      (item) => item.id === activeConversationId
+    );
+    if (!conversation) return;
+
+    conversation.messages.push({ role, content });
+    if (sources) conversation.sources = sources;
+    conversation.session_id = sessionId;
+    conversation.updated_at = Date.now();
+    conversations.sort(
+      (first, second) => (second.updated_at || 0) - (first.updated_at || 0)
+    );
+    writeConversations(conversations);
+  }
+
+  function restoreConversationFromUrl() {
+    const conversationId = new URLSearchParams(window.location.search)
+      .get('conversation');
+    if (!conversationId) return;
+
+    const conversation = readConversations().find(
+      (item) => item.id === conversationId
+    );
+    if (!conversation || !Array.isArray(conversation.messages)) {
+      showNotice('Không tìm thấy cuộc trò chuyện đã lưu.');
+      return;
+    }
+
+    activeConversationId = conversation.id;
+    sessionId = conversation.session_id || null;
+    messages.replaceChildren();
+    for (const message of conversation.messages) {
+      if (
+        message &&
+        (message.role === 'user' || message.role === 'bot') &&
+        typeof message.content === 'string'
+      ) {
+        appendMessage(message.role, message.content);
+      }
+    }
+    renderSources(conversation.sources);
+  }
+
+  function setPanelVisible(name, visible) {
+    const body = document.body;
+    const classByName = {
+      sidebar: 'sidebar-hidden',
+      sources: 'sources-hidden',
+      header: 'chat-header-hidden',
+      footer: 'chat-footer-hidden'
+    };
+    const buttons = document.querySelectorAll(`[data-toggle-view="${name}"]`);
+    if (!classByName[name] || buttons.length === 0) return;
+
+    const isCompact = window.matchMedia('(max-width: 760px)').matches;
+    if (visible && isCompact && name === 'sidebar') {
+      setPanelVisible('sources', false);
+    } else if (visible && isCompact && name === 'sources') {
+      setPanelVisible('sidebar', false);
+    }
+    body.classList.toggle(classByName[name], !visible);
+    if (name === 'sidebar' || name === 'sources') {
+      const variable = name === 'sidebar'
+        ? '--chat-sidebar-width'
+        : '--chat-source-width';
+      if (!visible) {
+        appShell.style.removeProperty(variable);
+      } else if (panelWidths[name] !== null) {
+        setPanelWidth(name, panelWidths[name]);
+      }
+    }
+    const label = {
+      sidebar: 'thanh điều hướng',
+      sources: 'tài liệu tham khảo',
+      header: 'đầu trang',
+      footer: 'chân trang'
+    }[name];
+
+    buttons.forEach((button) => {
+      button.setAttribute(
+        'aria-label',
+        `${visible ? 'Thu gọn' : 'Mở rộng'} ${label}`
+      );
+      button.setAttribute('title', `${visible ? 'Thu gọn' : 'Mở rộng'} ${label}`);
+      button.setAttribute('aria-expanded', String(visible));
+    });
+  }
+
+  function isPanelVisible(name) {
+    const hiddenClasses = {
+      sidebar: 'sidebar-hidden',
+      sources: 'sources-hidden',
+      header: 'chat-header-hidden',
+      footer: 'chat-footer-hidden'
+    };
+    return !document.body.classList.contains(hiddenClasses[name]);
+  }
+
+  document.querySelectorAll('[data-toggle-view]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const name = button.dataset.toggleView;
+      setPanelVisible(name, !isPanelVisible(name));
+    });
+  });
+
+  const compactPanels = window.matchMedia('(max-width: 760px)');
+  compactPanels.addEventListener('change', (event) => {
+    if (event.matches) {
+      setPanelVisible('sidebar', false);
+      setPanelVisible('sources', false);
+    }
+  });
+
+  actionToggle.addEventListener('click', () => {
+    const isOpen = actionMenu.hidden;
+    actionMenu.hidden = !isOpen;
+    actionToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  document.addEventListener('click', (event) => {
+    const target = event.target;
+    if (!(target instanceof Element)) return;
+
+    const promptButton = target.closest('[data-action-prompt], [data-prompt]');
+    if (promptButton) {
+      input.value =
+        promptButton.dataset.actionPrompt || promptButton.dataset.prompt || '';
+      actionMenu.hidden = true;
+      actionToggle.setAttribute('aria-expanded', 'false');
+      input.focus();
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+      return;
+    }
+
+    if (target.closest('[data-demo-source]')) {
+      showNotice('Tài liệu này chỉ là minh họa; hiện chưa có tệp gốc để mở.');
+      return;
+    }
+
+    if (!actionMenu.hidden && !target.closest('.composer')) {
+      actionMenu.hidden = true;
+      actionToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  voiceButton.addEventListener('click', () => {
+    const SpeechRecognition =
+      window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      showNotice('Trình duyệt này chưa hỗ trợ nhập bằng giọng nói.');
+      return;
+    }
+
+    if (recognition) {
+      recognition.stop();
+      return;
+    }
+
+    recognition = new SpeechRecognition();
+    recognition.lang = 'vi-VN';
+    recognition.interimResults = true;
+    voiceButton.classList.add('voice-input-active');
+    voiceButton.setAttribute('aria-label', 'Dừng nhập bằng giọng nói');
+
+    recognition.addEventListener('result', (event) => {
+      const transcript = Array.from(event.results)
+        .map((result) => result[0].transcript)
+        .join('');
+      input.value = transcript;
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+    });
+    recognition.addEventListener('error', (event) => {
+      showNotice(`Không thể nhận giọng nói: ${event.error}`);
+    });
+    recognition.addEventListener('end', () => {
+      recognition = null;
+      voiceButton.classList.remove('voice-input-active');
+      voiceButton.setAttribute('aria-label', 'Nhập bằng giọng nói');
+      input.focus();
+    });
+    try {
+      recognition.start();
+    } catch (error) {
+      recognition = null;
+      voiceButton.classList.remove('voice-input-active');
+      voiceButton.setAttribute('aria-label', 'Nhập bằng giọng nói');
+      showNotice(`Không thể bắt đầu nhập giọng nói: ${error.message}`);
+    }
+  });
 
   // ==========================================
   // 7. GỬI TIN NHẮN ĐẾN FASTAPI
@@ -320,11 +695,14 @@
     const text = input.value.trim();
 
     input.value = '';
+    resizeComposer();
 
-    $('.welcome')?.remove();
+    ensureActiveConversation(text);
+    $('.chat-demo')?.remove();
 
     // Tin nhắn học sinh nằm bên trái.
     appendMessage('user', text);
+    saveConversationMessage('user', text);
 
     sendButton.disabled = true;
     input.disabled = true;
@@ -389,6 +767,11 @@
 
       // Hiển thị nguồn tài liệu bên phải.
       renderSources(payload.sources);
+      saveConversationMessage(
+        'bot',
+        String(payload.answer || 'Trợ lý chưa có phản hồi.'),
+        Array.isArray(payload.sources) ? payload.sources : []
+      );
 
     } catch (error) {
       waiting.stop();
@@ -445,7 +828,7 @@
   // 9. TẠO CUỘC TRÒ CHUYỆN MỚI
   // ==========================================
 
-  newChatButton.addEventListener('click', () => {
+  document.addEventListener('eduagent:new-chat', () => {
     // Vô hiệu hóa kết quả request cũ.
     requestId += 1;
 
@@ -454,12 +837,21 @@
 
     // Reset session.
     sessionId = null;
+    activeConversationId = null;
+    window.history.replaceState(null, '', '/');
+    document.dispatchEvent(new CustomEvent('eduagent:history-updated'));
 
     // Xóa hội thoại.
     messages.replaceChildren();
+    if (demoMarkup) messages.append(demoMarkup.cloneNode(true));
 
     // Xóa nguồn tài liệu.
     renderSources([]);
+    if (demoSourcesMarkup) {
+      sourcesList.replaceChildren(
+        ...Array.from(demoSourcesMarkup.childNodes, (node) => node.cloneNode(true))
+      );
+    }
 
     connection.textContent = 'Sẵn sàng';
 
@@ -467,6 +859,7 @@
     input.disabled = false;
 
     input.value = '';
+    resizeComposer();
     input.focus();
 
     showNotice(
@@ -474,50 +867,27 @@
     );
   });
 
-  // ==========================================
-  // 10. CÁC CHỨC NĂNG CHƯA TRIỂN KHAI
-  // ==========================================
-
-  document
-    .querySelectorAll('[data-soon]')
-    .forEach((element) => {
-      element.addEventListener('click', (event) => {
-        event.preventDefault();
-
-        showNotice(
-          `${element.dataset.soon}: chức năng đang được phát triển.`
-        );
-      });
-    });
-
-  // ==========================================
-  // 11. HIỂN THỊ CỘT NGUỒN TRÊN MOBILE
-  // ==========================================
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      actionMenu.hidden = true;
+      actionToggle.setAttribute('aria-expanded', 'false');
+      if (window.matchMedia('(max-width: 760px)').matches) {
+        setPanelVisible('sidebar', false);
+        setPanelVisible('sources', false);
+      }
+    }
+  });
 
   if (sourcePanel && chatHeader) {
-    const toggle = document.createElement('button');
-
-    toggle.type = 'button';
-    toggle.className = 'sources-toggle';
-
-    toggle.textContent = 'Nguồn tài liệu';
-
-    toggle.setAttribute(
-      'aria-expanded',
-      'false'
-    );
-
-    chatHeader.appendChild(toggle);
-
-    toggle.addEventListener('click', () => {
-      const visible =
-        sourcePanel.classList.toggle('is-open');
-
-      toggle.setAttribute(
-        'aria-expanded',
-        String(visible)
-      );
+    const isCompact = compactPanels.matches;
+    document.querySelectorAll('[data-toggle-view]').forEach((button) => {
+      const name = button.dataset.toggleView;
+      const shouldCollapse = isCompact &&
+        (name === 'sidebar' || name === 'sources');
+      setPanelVisible(name, shouldCollapse ? false : isPanelVisible(name));
     });
   }
+
+  restoreConversationFromUrl();
 
 })();

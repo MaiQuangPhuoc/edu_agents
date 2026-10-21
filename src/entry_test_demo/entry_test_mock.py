@@ -19,16 +19,14 @@ def create_mock_test(student_model: dict, count: int = 20, seed: int = 42, outpu
         raise ValueError('StudentModel chưa có nang_luc môn Toán 10')
 
     weak = set(nl.get('diem_yeu') or []) & set(CHAPTERS)
-    strong = set(nl.get('diem_manh') or []) & set(CHAPTERS)
-    known = weak | strong
-    selected_chapters = [c for c in CHAPTERS if c in known] or list(CHAPTERS)
+    selected_chapters = list(CHAPTERS)      # test mọi chương; chương yếu được lấy nhiều câu hơn
     if count < len(selected_chapters):
         raise ValueError('Số câu không đủ để đánh giá ít nhất 1 câu/chương')
 
     questions_by_ch = {ch: [x for x in data['questions'] if x['chapter_id'] == ch] for ch in selected_chapters}
     rng = random.Random(seed)
     # Ưu tiên tối thiểu 3 câu/chương nếu đủ; các câu còn lại ưu tiên chương yếu.
-    minimum = min(3, count // len(selected_chapters))
+    minimum = min(2, count // len(selected_chapters))
     allocation = {ch: minimum for ch in selected_chapters}
     for _ in range(count-minimum*len(selected_chapters)):
         available = [ch for ch in selected_chapters if allocation[ch] < len(questions_by_ch[ch])]

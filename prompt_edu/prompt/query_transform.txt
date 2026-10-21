@@ -9,16 +9,36 @@ CHƯƠNG TRÌNH (chỉ dùng tên chương và tên bài trong danh sách này)
 HỘI THOẠI GẦN ĐÂY
 {history}
 
+LƯU Ý QUAN TRỌNG
+- Không ảo giác, không bịa đặt, không sáng tạo nội dung không có thật.
+- Mọi tên chương, tên bài và kiến thức trong truy vấn phải lấy từ mục CHƯƠNG TRÌNH hoặc hồ sơ. Không chắc thì chỉ ghi tên chương, không tự thêm nội dung.
+- Không đủ thông tin để viết một truy vấn thì bỏ truy vấn đó, không đoán.
+
 QUY TẮC
-1. Mỗi truy vấn MỘT ý: một môn và một chương.
-2. Tối đa 6 truy vấn, làm theo thứ tự ưu tiên:
-   a. Mỗi chương YẾU (nằm trong diem_yeu, hoặc muc_nam dưới 0.5) một truy vấn nguon "sgk". Làm trước, không được bỏ sót chương yếu nào. Nếu có hơn 6 chương yếu thì chọn 6 chương có muc_nam thấp nhất.
-   b. Còn chỗ thì thêm truy vấn video hoặc web cho chương yếu.
-   c. Còn chỗ nữa mới thêm chương mạnh.
-3. Mức độ theo chương: chương yếu viết về kiến thức cơ bản, khái niệm, ví dụ đơn giản (KHÔNG dùng chữ "nâng cao"). Chương mạnh viết về ôn tập ngắn hoặc bài tập nâng cao.
-4. Viết thành câu tìm kiếm rõ nghĩa, dùng từ khóa của chương trình SGK; không dùng đại từ hay câu lửng.
-5. subject đúng như trong hồ sơ. chapter_id là số La Mã của chương, không xác định được thì để trống.
-6. nguon: mặc định "sgk". Chỉ dùng "video" khi so_thich_hoc có dung_video là true. Chỉ dùng "web" khi hội thoại nhắc rõ muốn tìm trên web.
-7. Chỉ dùng thông tin có trong hồ sơ và hội thoại. KHÔNG thêm con số hay điều kiện khác vào truy vấn (ví dụ thời lượng, số câu, số tuần).
-8. Các truy vấn không lặp cùng một mẫu câu; mỗi truy vấn nhắm một điểm khác nhau (khái niệm, dạng bài, ví dụ minh họa).
-9. Nội dung truy vấn chỉ dùng tên chương hoặc tên bài trong mục CHƯƠNG TRÌNH. Không tự nêu kiến thức cụ thể khác.
+1. Số lượng truy vấn tùy hồ sơ, ít nhất 1, không cần đủ cho mọi chương. Chương yếu được ưu tiên và tách riêng; chương mạnh gộp thành một truy vấn hoặc bỏ.
+2. Mỗi truy vấn MỘT mục đích rõ ràng, bám hồ sơ: lấp chỗ yếu, luyện vận dụng cho mục tiêu điểm, đúng loại nguồn học sinh thích, hoặc ôn nhanh phần mạnh.
+3. Viết thành cụm từ khóa ngắn (dưới 20 từ) như gõ vào ô tìm kiếm. Không viết như câu mệnh lệnh (không dùng "cung cấp", "tạo", "đưa ra").
+4. Chỉ dùng tên chương và tên bài trong mục CHƯƠNG TRÌNH. Không tự nêu kiến thức khác.
+5. Không thêm con số, ngày tháng hay điều kiện khác (thời lượng, số câu, số tuần).
+6. Chỉ tạo truy vấn để TÌM nội dung học (SGK, video, web). Không tạo truy vấn về việc tạo đề thi, lập lịch hay đánh giá.
+7. Chương yếu: kiến thức cơ bản và ví dụ đơn giản, KHÔNG dùng chữ "nâng cao". Chương mạnh: ôn nhanh hoặc nâng cao.
+8. Truy vấn nhắm đúng một chương thì ghi chapter_id của chương đó; nhiều chương thì để trống. subject đúng như trong hồ sơ.
+9. nguon: mặc định "sgk". Chỉ dùng "video" khi so_thich_hoc có dung_video là true. Chỉ dùng "web" khi hội thoại nhắc rõ muốn tìm trên web.
+10. Các truy vấn không lặp cùng một mẫu câu.
+
+VÍ DỤ (môn khác, chỉ để học cách viết, không chép nội dung)
+Hồ sơ: Lịch sử 10, chương 3 và 4 yếu, chương 1 mạnh, dung_video là true.
+
+ĐÚNG (cùng cấu trúc với dữ liệu cần trả về):
+{"query": "khái niệm văn minh và một số nền văn minh phương Đông, ví dụ cơ bản", "subject": "Lịch sử 10", "chapter_id": "3", "nguon": "sgk"}
+{"query": "cách mạng công nghiệp thời kì cận đại: khái niệm và tóm tắt", "subject": "Lịch sử 10", "chapter_id": "4", "nguon": "sgk"}
+{"query": "video bài giảng cách mạng công nghiệp thời kì cận đại và hiện đại", "subject": "Lịch sử 10", "chapter_id": "4", "nguon": "video"}
+{"query": "ôn nhanh lịch sử và sử học", "subject": "Lịch sử 10", "chapter_id": "1", "nguon": "sgk"}
+
+SAI (chỉ để tránh, không dùng làm mẫu):
+- câu mệnh lệnh, dùng "nâng cao" cho chương yếu: "Cung cấp bài tập nâng cao về văn minh cho học sinh"
+- không phải tìm tài liệu, có con số và ngày: "Tạo đề thi Lịch sử 10 gồm 20 câu trước ngày 18/11"
+- kiến thức không có trong CHƯƠNG TRÌNH: "chiến tranh thế giới thứ nhất và thứ hai"
+- liệt kê máy móc từng bài: "chương 3 bài 5", "chương 3 bài 6", "chương 3 bài 7"
+
+Luôn trả kết quả đúng theo cấu trúc dữ liệu được yêu cầu (gọi công cụ), không viết danh sách văn bản.

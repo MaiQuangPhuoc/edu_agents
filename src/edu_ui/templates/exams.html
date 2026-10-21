@@ -1,1 +1,25 @@
-<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EDUAGENT — Làm bài test</title><link rel="stylesheet" href="/ui-static/css/exams.css"><link rel="stylesheet" href="/ui-static/css/theme.css"><script defer src="/ui-static/js/theme.js"></script><script defer src="/ui-static/js/exams.js"></script></head><body><div class="shell"><aside class="sidebar"><div class="brand">EDUAGENT<small>Trợ lý học tập</small></div><nav aria-label="Chức năng"><a href="/">Trợ lý AI</a><a href="/documents">Nạp tài liệu</a><a class="active" href="/exams" aria-current="page">Làm bài test</a><a href="/roadmap">Lộ trình học</a><a href="#" class="soon">Lịch học &amp; Buổi học</a><a href="#" class="soon">Tiến độ học tập</a><a href="#" class="soon">Hồ sơ học sinh</a></nav></aside><main class="main"><header><div><h1>Làm bài test</h1><p>Chọn bài kiểm tra, làm bài và xem lại kết quả.</p></div><div class="header-actions"><button type="button" class="theme-toggle" data-theme-toggle aria-label="Chuyển sang giao diện tối" title="Chuyển sang giao diện tối"><svg class="theme-icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"/></svg><svg class="theme-icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l-1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button></div></header><section id="list-view"><p id="demo-banner" class="demo-banner" role="note" hidden>Đang hiển thị dữ liệu minh họa. Kết quả và bài làm chưa phải dữ liệu học sinh thật.</p><div class="filters"><label>Môn học<select id="subject"><option value="">Tất cả môn</option></select></label><label>Trạng thái<select id="status-filter"><option value="">Tất cả</option><option value="done">Đã làm</option><option value="pending">Chưa làm</option></select></label><label>Sắp xếp<select id="sort"><option value="recent">Gần đây nhất</option><option value="subject">Theo môn học</option></select></label></div><section class="card"><div class="section-header"><h2>Danh sách đề kiểm tra</h2><button type="button" id="refresh">Làm mới</button></div><div id="exam-list" aria-live="polite">Đang tải danh sách...</div></section></section><section id="detail-view" class="card" hidden><button type="button" id="back">Quay lại danh sách</button><div id="exam-detail"></div></section><p id="message" role="status" aria-live="polite"></p></main></div></body></html>
+{% extends "base.html" %}
+{% block document_title %}EDUAGENT — Làm bài test{% endblock %}
+{% block page_styles %}<link rel="stylesheet" href="/ui-static/css/exams.css">{% endblock %}
+{% block page_scripts %}<script defer src="/ui-static/js/exams.js"></script>{% endblock %}
+{% block page_title %}Làm bài test{% endblock %}
+{% block page_description %}Chọn bài kiểm tra, làm bài và xem lại kết quả.{% endblock %}
+{% block content %}
+<section id="list-view">
+  <p id="demo-banner" class="demo-banner" role="note" hidden>Đang hiển thị dữ liệu minh họa. Kết quả và bài làm chưa phải dữ liệu học sinh thật.</p>
+  <div class="filters">
+    <label>Môn học<select id="subject"><option value="">Tất cả môn</option></select></label>
+    <label>Trạng thái<select id="status-filter"><option value="">Tất cả</option><option value="done">Đã làm</option><option value="pending">Chưa làm</option></select></label>
+    <label>Sắp xếp<select id="sort"><option value="recent">Gần đây nhất</option><option value="subject">Theo môn học</option></select></label>
+  </div>
+  <section class="card">
+    <div class="section-header"><h2>Danh sách đề kiểm tra</h2><button type="button" id="refresh">Làm mới</button></div>
+    <div id="exam-list" aria-live="polite">Đang tải danh sách...</div>
+  </section>
+</section>
+<section id="detail-view" class="card" hidden>
+  <button type="button" id="back" class="back-link">← Quay lại danh sách</button>
+  <div id="exam-detail"></div>
+</section>
+<p id="message" role="status" aria-live="polite"></p>
+{% endblock %}

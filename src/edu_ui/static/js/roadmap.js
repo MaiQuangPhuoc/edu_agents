@@ -346,15 +346,6 @@
     show("#lesson-view");
   }
 
-  function updateThemeButton() {
-    const dark = document.documentElement.dataset.theme === "dark";
-    $("#theme-toggle").setAttribute("aria-pressed", String(dark));
-    $("#theme-toggle").setAttribute(
-      "aria-label",
-      dark ? "Chuyển sang giao diện sáng" : "Chuyển sang giao diện tối"
-    );
-  }
-
   async function loadRoadmaps() {
     const refresh = $("#refresh");
     refresh.disabled = true;
@@ -429,24 +420,5 @@
   $("#back-to-roadmap").addEventListener("click", () => {
     if (state.selectedRoadmap) openRoadmap(state.selectedRoadmap);
   });
-  $("#theme-toggle").addEventListener("click", () => {
-    const next =
-      document.documentElement.dataset.theme === "dark" ? "light" : "dark";
-    document.documentElement.dataset.theme = next;
-    try {
-      localStorage.setItem("eduagent-theme", next);
-    } catch {
-      toast("Không thể lưu lựa chọn giao diện trên trình duyệt này.");
-    }
-    updateThemeButton();
-  });
-  document.querySelectorAll("[data-soon]").forEach((link) => {
-    link.addEventListener("click", (event) => {
-      event.preventDefault();
-      toast("Chức năng đang được phát triển.");
-    });
-  });
-
-  updateThemeButton();
   loadRoadmaps();
 })();

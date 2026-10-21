@@ -24,7 +24,9 @@ class ChatInput(BaseModel):
 
 @app.get("/", response_class=HTMLResponse)
 def home(request: Request):
-    return templates.TemplateResponse(request=request, name="chat.html", context={})
+    return templates.TemplateResponse(
+        request=request, name="chat.html", context={"active_page": "chat"}
+    )
 
 @app.post("/api/ui/chat")
 async def chat(body: ChatInput):
@@ -61,7 +63,9 @@ app.include_router(book_router)
 
 @app.get("/documents", response_class=HTMLResponse)
 def documents_page(request: Request):
-    return templates.TemplateResponse(request=request, name="documents.html", context={})
+    return templates.TemplateResponse(
+        request=request, name="documents.html", context={"active_page": "documents"}
+    )
 
 # Exams UI and data endpoints
 from src.edu_ui.exam_api import router as exam_router
@@ -69,7 +73,9 @@ app.include_router(exam_router)
 
 @app.get("/exams", response_class=HTMLResponse)
 def exams_page(request: Request):
-    return templates.TemplateResponse(request=request, name="exams.html", context={})
+    return templates.TemplateResponse(
+        request=request, name="exams.html", context={"active_page": "exams"}
+    )
 
 # Roadmap UI (read-only until Planning Agent persistence is connected)
 from src.edu_ui.roadmap_api import router as roadmap_router
@@ -77,4 +83,6 @@ app.include_router(roadmap_router)
 
 @app.get("/roadmap", response_class=HTMLResponse)
 def roadmap_page(request: Request):
-    return templates.TemplateResponse(request=request, name="roadmap.html", context={})
+    return templates.TemplateResponse(
+        request=request, name="roadmap.html", context={"active_page": "roadmap"}
+    )
