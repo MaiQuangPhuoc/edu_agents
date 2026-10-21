@@ -1,16 +1,452 @@
 (() => {
   "use strict";
-  const $ = q => document.querySelector(q);
-  const toast = text => { const t=$("#toast"); t.textContent=text; t.hidden=false; clearTimeout(toast.timer); toast.timer=setTimeout(()=>t.hidden=true,3400); };
-  const element = (tag, className, text) => { const x=document.createElement(tag); if(className) x.className=className; if(text!==undefined) x.textContent=String(text); return x; };
-  const format = n => Number.isFinite(+n) ? String(n) : "—";
-  const state={roadmaps:[], current:null, selected:0};
-  $("#today").textContent = new Intl.DateTimeFormat("vi-VN", {day:"2-digit",month:"long",year:"numeric"}).format(new Date());
-  document.querySelectorAll(".soon").forEach(a => a.addEventListener("click", e => {e.preventDefault(); toast("Trang này đang được phát triển.");}));
-  const pick = () => { const s=$("#subject-filter").value; return state.roadmaps.filter(r => !s || r.subject===s).sort((a,b)=>String(b.updated_at||"").localeCompare(String(a.updated_at||"")))[0] || null; };
-  function resetDetails(){ $("#detail-index").textContent="CHƯA CHỌN"; $("#detail-title").textContent="Khám phá từng bước"; $("#detail-desc").textContent="Chọn một giai đoạn trên timeline để xem mục tiêu, chủ đề và từng buổi học tương ứng."; $("#detail-info").replaceChildren(); const box=element("div","illustration"); for(const cls of ["line long","line","line medium"]) box.append(element("span",cls)); box.append(element("span","outline-dot")); $("#detail-info").append(box); }
-  function detail(index){ const phase=state.current?.phases?.[index]; if(!phase) return resetDetails(); state.selected=index; $("#detail-index").textContent=`CHẶNG ${String(index+1).padStart(2,"0")}`; $("#detail-title").textContent=phase.title || `Giai đoạn ${index+1}`; $("#detail-desc").textContent=phase.description || "Các nội dung học tập trong giai đoạn này."; const body=$("#detail-info"); body.replaceChildren(); const objectives=phase.objectives||[]; if(objectives.length){body.append(element("div","detail-section-title","Mục tiêu giai đoạn")); const ul=element("ul","detail-points"); objectives.forEach(o=>ul.append(element("li","",o))); body.append(ul);} const sessions=phase.sessions||[]; body.append(element("div","detail-section-title",`Buổi học · ${sessions.length}`)); if(!sessions.length) body.append(element("p","phase-description","Chưa có thông tin chi tiết các buổi học.")); const list=element("div","sessions"); sessions.forEach((s,i)=>{const item=element("div","session",s.title||`Buổi ${i+1}`); const meta=[s.duration_minutes ? `${s.duration_minutes} phút` : null, s.status==="completed" ? "Đã hoàn thành" : "Chưa hoàn thành"].filter(Boolean).join(" · ");item.append(element("small","",meta));list.append(item);});body.append(list); document.querySelectorAll(".phase").forEach((n,i)=>n.classList.toggle("is-active",i===index)); }
-  function render(){const r=state.current=pick(); const phases=r?.phases||[]; const sessions=phases.flatMap(p=>p.sessions||[]); const completed=sessions.filter(s=>s.status==="completed").length; const percent=sessions.length?Math.round(completed/sessions.length*100):0; $("#metric-phases").textContent=r?format(phases.length):"—"; $("#metric-sessions").textContent=r?format(sessions.length):"—"; $("#metric-completed").textContent=r?format(completed):"—"; $("#metric-percent").textContent=r?format(percent):"—"; $("#progress-fill").style.width=`${percent}%`; $("#phase-count").textContent=`${phases.length} giai đoạn`; $("#hero-title").replaceChildren(); if(r){ $("#hero-title").append(document.createTextNode(r.title||"Lộ trình học của bạn")); $("#hero-sub").textContent=[r.subject,r.target?`Mục tiêu: ${r.target}`:null].filter(Boolean).join(" · ") || "Lộ trình học được tạo bởi Planning Agent."; $("#hero-cta").textContent="Trao đổi với AI ↗"; $("#hero-hint").textContent=r.updated_at?`Cập nhật ${r.updated_at.slice(0,10)}`:"Được cá nhân hóa"; }else{ $("#hero-title").innerHTML="Một bước nhỏ hôm nay.<br><i>Một bước tiến dài ngày mai.</i>"; $("#hero-sub").textContent="Lộ trình cá nhân hóa sẽ xuất hiện tại đây khi Planning Agent hoàn thành."; $("#hero-hint").textContent="Thiết kế riêng cho bạn"; }const tl=$("#timeline");tl.replaceChildren(); if(!r||!phases.length){const empty=element("div","empty-state");const art=element("div","empty-graphic");["01","02","03"].forEach(n=>art.append(element("span","",n)));empty.append(art,element("h3","","Lộ trình đang chờ được tạo"),element("p","","Khi Planning Agent tạo lộ trình, các giai đoạn và buổi học sẽ xuất hiện ở đây."));const a=element("a","","Bắt đầu cùng trợ lý AI →");a.href="/";empty.append(a);tl.append(empty);resetDetails();return;}phases.forEach((p,i)=>{const item=element("div","phase");const marker=element("span","phase-marker",String(i+1).padStart(2,"0"));const btn=element("button","phase-body");btn.type="button";btn.append(element("span","phase-meta",`GIAI ĐOẠN ${i+1} / ${phases.length}`),element("span","phase-title",p.title||`Giai đoạn ${i+1}`),element("span","phase-description",p.description||"Nhấn để xem chi tiết"));const tags=element("div","phase-tags");tags.append(element("span","phase-tag",`${(p.sessions||[]).length} buổi học`));if(p.duration_weeks)tags.append(element("span","phase-tag",`${p.duration_weeks} tuần`));btn.append(tags);btn.addEventListener("click",()=>detail(i));item.append(marker,btn);tl.append(item);});detail(Math.min(state.selected,phases.length-1)); }
-  async function load(){ $("#refresh").disabled=true;try{const res=await fetch("/api/ui/roadmaps",{headers:{Accept:"application/json"}});if(!res.ok)throw Error(`API ${res.status}`);const data=await res.json();state.roadmaps=Array.isArray(data.roadmaps)?data.roadmaps:[];const sel=$("#subject-filter");const old=sel.value;sel.replaceChildren(new Option("Tất cả môn",""));[...new Set(state.roadmaps.map(r=>r.subject).filter(Boolean))].sort().forEach(s=>sel.add(new Option(s,s)));sel.value=[...sel.options].some(o=>o.value===old)?old:"";render();}catch(err){state.roadmaps=[];render();toast(`Không thể lấy lộ trình: ${err.message}`);}finally{$("#refresh").disabled=false;}}
-  $("#subject-filter").addEventListener("change",()=>{state.selected=0;render();});$("#refresh").addEventListener("click",load);load();
+
+  const $ = (selector) => document.querySelector(selector);
+  const state = { roadmaps: [], connected: false, selectedRoadmap: null };
+  let toastTimer;
+
+  const element = (tag, className, text) => {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined) node.textContent = String(text);
+    return node;
+  };
+
+  function show(view) {
+    ["#overview-view", "#roadmap-view", "#lesson-view"].forEach((selector) => {
+      $(selector).hidden = selector !== view;
+    });
+    window.scrollTo(0, 0);
+  }
+
+  function toast(message) {
+    const notice = $("#toast");
+    notice.textContent = message;
+    notice.hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      notice.hidden = true;
+    }, 3500);
+  }
+
+  function showEmpty(message) {
+    const grid = $("#roadmap-grid");
+    const empty = element("div", "roadmap-empty");
+    empty.append(
+      element("strong", "", "Chưa có lộ trình"),
+      element("p", "", message)
+    );
+    grid.replaceChildren(empty);
+  }
+
+  function renderStats() {
+    const roadmaps = state.roadmaps;
+    const sessions = roadmaps.flatMap((roadmap) =>
+      (Array.isArray(roadmap.phases) ? roadmap.phases : []).flatMap((phase) =>
+        Array.isArray(phase.sessions) ? phase.sessions : []
+      )
+    );
+    const completed = sessions.filter(
+      (session) => session.status === "completed"
+    ).length;
+    const percent = sessions.length
+      ? Math.round((completed / sessions.length) * 100)
+      : 0;
+
+    $("#roadmap-count").textContent = String(roadmaps.length);
+    $("#roadmap-count-mark").textContent = "Planning Agent";
+    $("#roadmap-bar").style.width = roadmaps.length ? "100%" : "0%";
+    $("#roadmap-caption").textContent = roadmaps.length
+      ? "Lộ trình được tải từ dữ liệu đã kết nối."
+      : "Chưa có dữ liệu lộ trình.";
+
+    $("#completed-count").textContent = String(completed);
+    $("#session-count-mark").textContent = `${completed} / ${sessions.length}`;
+    $("#completed-bar").style.width = `${percent}%`;
+    $("#session-caption").textContent = `${completed} / ${sessions.length} buổi học`;
+
+    $("#progress-percent").replaceChildren(
+      document.createTextNode(String(percent)),
+      element("span", "percent", "%")
+    );
+    $("#progress-bar").style.width = `${percent}%`;
+  }
+
+  function renderGrid() {
+    const grid = $("#roadmap-grid");
+    const subject = $("#subject-filter").value;
+    const roadmaps = state.roadmaps.filter(
+      (roadmap) => !subject || roadmap.subject === subject
+    );
+    grid.replaceChildren();
+
+    if (!roadmaps.length) {
+      showEmpty(
+        state.roadmaps.length
+          ? "Không có lộ trình cho môn học đã chọn."
+          : "Khi có dữ liệu Planning Agent, lộ trình sẽ xuất hiện tại đây."
+      );
+      return;
+    }
+
+    roadmaps.forEach((roadmap, index) => {
+      const phases = Array.isArray(roadmap.phases) ? roadmap.phases : [];
+      const sessionCount = phases.reduce(
+        (total, phase) =>
+          total + (Array.isArray(phase.sessions) ? phase.sessions.length : 0),
+        0
+      );
+      const card = element("button", "roadmap-card");
+      card.type = "button";
+      card.setAttribute(
+        "aria-label",
+        `Xem lộ trình ${roadmap.title || roadmap.subject || `số ${index + 1}`}`
+      );
+
+      const cover = element("div", "roadmap-cover");
+      cover.append(
+        element(
+          "span",
+          "cover-subject",
+          roadmap.subject || "LỘ TRÌNH HỌC"
+        ),
+        element("span", "cover-num", String(index + 1).padStart(2, "0"))
+      );
+      const body = element("div", "card-body");
+      body.append(
+        element("h3", "", roadmap.title || roadmap.subject || "Lộ trình học"),
+        element(
+          "p",
+          "",
+          roadmap.description || roadmap.target
+            ? [roadmap.description, roadmap.target && `Mục tiêu: ${roadmap.target}`]
+                .filter(Boolean)
+                .join(" · ")
+            : "Chọn để xem các giai đoạn và buổi học."
+        )
+      );
+      const footer = element("div", "card-foot");
+      footer.append(
+        element(
+          "span",
+          "",
+          `${phases.length} giai đoạn · ${sessionCount} buổi học`
+        ),
+        element("b", "", "Xem lộ trình →")
+      );
+      body.append(footer);
+      card.append(cover, body);
+      card.addEventListener("click", () => openRoadmap(roadmap));
+      grid.append(card);
+    });
+  }
+
+  function renderObjectives(container, objectives) {
+    if (!Array.isArray(objectives) || !objectives.length) return;
+    container.append(element("h4", "detail-subheading", "Mục tiêu"));
+    const list = element("ul", "objective-list");
+    objectives.forEach((objective) => list.append(element("li", "", objective)));
+    container.append(list);
+  }
+
+  function openRoadmap(roadmap) {
+    state.selectedRoadmap = roadmap;
+    const container = $("#roadmap-detail");
+    const phases = Array.isArray(roadmap.phases) ? roadmap.phases : [];
+    container.replaceChildren();
+
+    const hero = element("section", "detail-hero");
+    hero.append(
+      element(
+        "div",
+        "detail-meta",
+        `${roadmap.subject || "Lộ trình học"} · DỮ LIỆU ĐÃ KẾT NỐI`
+      ),
+      element("h1", "", roadmap.title || roadmap.subject || "Lộ trình học"),
+      element(
+        "p",
+        "",
+        [roadmap.description, roadmap.target && `Mục tiêu: ${roadmap.target}`]
+          .filter(Boolean)
+          .join(" · ") || "Các giai đoạn và buổi học trong lộ trình."
+      )
+    );
+    container.append(hero);
+
+    const layout = element("div", "detail-main");
+    const phasePanel = element("section", "panel");
+    phasePanel.append(
+      element("div", "overline", "LỘ TRÌNH"),
+      element("h2", "", "Các giai đoạn")
+    );
+
+    if (!phases.length) {
+      phasePanel.append(
+        element("p", "empty-copy", "Lộ trình này chưa có giai đoạn.")
+      );
+    }
+
+    phases.forEach((phase, phaseIndex) => {
+      const phaseNode = element("section", "phase");
+      const heading = element("div", "phase-title");
+      heading.append(
+        element(
+          "span",
+          "phase-index",
+          String(phaseIndex + 1).padStart(2, "0")
+        ),
+        element("h3", "", phase.title || `Giai đoạn ${phaseIndex + 1}`)
+      );
+      phaseNode.append(heading);
+      if (phase.description) {
+        phaseNode.append(element("p", "phase-description", phase.description));
+      }
+      renderObjectives(phaseNode, phase.objectives);
+
+      const sessions = Array.isArray(phase.sessions) ? phase.sessions : [];
+      if (!sessions.length) {
+        phaseNode.append(
+          element("p", "empty-copy", "Chưa có buổi học trong giai đoạn này.")
+        );
+      }
+
+      sessions.forEach((session, sessionIndex) => {
+        const button = element("button", "lesson-row");
+        button.type = "button";
+        const number = element(
+          "span",
+          "lesson-number",
+          String(sessionIndex + 1).padStart(2, "0")
+        );
+        const info = element("span", "lesson-info");
+        info.append(
+          element("strong", "", session.title || `Buổi ${sessionIndex + 1}`),
+          element(
+            "small",
+            "",
+            [
+              session.duration_minutes &&
+                `${session.duration_minutes} phút`,
+              session.status === "completed"
+                ? "Đã hoàn thành"
+                : "Chưa hoàn thành"
+            ]
+              .filter(Boolean)
+              .join(" · ")
+          )
+        );
+        button.append(number, info, element("span", "lesson-arrow", "→"));
+        button.addEventListener("click", () =>
+          openLesson(roadmap, phase, session, phaseIndex, sessionIndex)
+        );
+        phaseNode.append(button);
+      });
+      phasePanel.append(phaseNode);
+    });
+
+    const summary = element("aside", "panel");
+    summary.append(
+      element("div", "overline", "TỔNG QUAN"),
+      element("h2", "", "Thông tin lộ trình")
+    );
+    const summaryItems = [
+      ["Môn học", roadmap.subject || "—"],
+      ["Giai đoạn", phases.length],
+      [
+        "Buổi học",
+        phases.reduce(
+          (total, phase) =>
+            total + (Array.isArray(phase.sessions) ? phase.sessions.length : 0),
+          0
+        )
+      ],
+      ["Mục tiêu", roadmap.target || "—"]
+    ];
+    summaryItems.forEach(([label, value]) => {
+      const row = element("div", "summary-item");
+      row.append(element("span", "", label), element("b", "", value));
+      summary.append(row);
+    });
+
+    layout.append(phasePanel, summary);
+    container.append(layout);
+    show("#roadmap-view");
+  }
+
+  function openLesson(roadmap, phase, session, phaseIndex, sessionIndex) {
+    const container = $("#lesson-detail");
+    container.replaceChildren();
+
+    const hero = element("section", "detail-hero");
+    hero.append(
+      element(
+        "div",
+        "detail-meta",
+        `${roadmap.subject || "Lộ trình"} · ${
+          phase.title || `Giai đoạn ${phaseIndex + 1}`
+        } · BUỔI ${sessionIndex + 1}`
+      ),
+      element("h1", "", session.title || `Buổi ${sessionIndex + 1}`),
+      element(
+        "p",
+        "",
+        [
+          session.duration_minutes &&
+            `Thời lượng: ${session.duration_minutes} phút`,
+          session.status === "completed" ? "Đã hoàn thành" : "Chưa hoàn thành"
+        ]
+          .filter(Boolean)
+          .join(" · ")
+      )
+    );
+    container.append(hero);
+
+    const layout = element("div", "lesson-layout");
+    const content = element("article", "panel lesson-content");
+    content.append(
+      element("div", "overline", "NỘI DUNG BUỔI HỌC"),
+      element("h2", "", session.title || `Buổi ${sessionIndex + 1}`)
+    );
+    if (session.description) {
+      content.append(element("p", "lead", session.description));
+    } else {
+      content.append(
+        element(
+          "p",
+          "lead",
+          "Dữ liệu lộ trình hiện chưa cung cấp nội dung chi tiết cho buổi học này."
+        )
+      );
+    }
+    renderObjectives(content, session.objectives || phase.objectives);
+    if (session.content) {
+      content.append(element("div", "session-content", session.content));
+    }
+
+    const aside = element("aside", "panel");
+    aside.append(element("div", "overline", "TỔNG QUAN"), element("h2", "", "Buổi học"));
+    [
+      ["Môn học", roadmap.subject || "—"],
+      ["Giai đoạn", phase.title || `Giai đoạn ${phaseIndex + 1}`],
+      [
+        "Thời lượng",
+        session.duration_minutes ? `${session.duration_minutes} phút` : "—"
+      ],
+      [
+        "Trạng thái",
+        session.status === "completed" ? "Đã hoàn thành" : "Chưa hoàn thành"
+      ]
+    ].forEach(([label, value]) => {
+      const row = element("div", "summary-item");
+      row.append(element("span", "", label), element("b", "", value));
+      aside.append(row);
+    });
+    layout.append(content, aside);
+    container.append(layout);
+    show("#lesson-view");
+  }
+
+  function updateThemeButton() {
+    const dark = document.documentElement.dataset.theme === "dark";
+    $("#theme-toggle").setAttribute("aria-pressed", String(dark));
+    $("#theme-toggle").setAttribute(
+      "aria-label",
+      dark ? "Chuyển sang giao diện sáng" : "Chuyển sang giao diện tối"
+    );
+  }
+
+  async function loadRoadmaps() {
+    const refresh = $("#refresh");
+    refresh.disabled = true;
+    $("#data-status").textContent = "ĐANG TẢI DỮ LIỆU";
+
+    try {
+      const response = await fetch("/api/ui/roadmaps", {
+        headers: { Accept: "application/json" }
+      });
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        throw new Error(data.detail || `HTTP ${response.status}`);
+      }
+
+      state.roadmaps = Array.isArray(data.roadmaps) ? data.roadmaps : [];
+      state.connected = Boolean(data.connected);
+      $("#data-status").textContent = data.demo
+        ? "DỮ LIỆU MINH HỌA"
+        : state.connected
+          ? "DỮ LIỆU ĐÃ NẠP"
+          : "CHƯA KẾT NỐI";
+      $("#data-status").dataset.state = data.demo
+        ? "demo"
+        : state.connected
+          ? "connected"
+          : "disconnected";
+
+      const filter = $("#subject-filter");
+      const previousSubject = filter.value;
+      filter.replaceChildren(new Option("Tất cả môn học", ""));
+      [...new Set(state.roadmaps.map((roadmap) => roadmap.subject).filter(Boolean))]
+        .sort((a, b) => a.localeCompare(b, "vi"))
+        .forEach((subject) => filter.add(new Option(subject, subject)));
+      filter.value = [...filter.options].some(
+        (option) => option.value === previousSubject
+      )
+        ? previousSubject
+        : "";
+
+      $("#roadmap-caption-detail").textContent = state.connected
+        ? data.demo
+          ? "Đang dùng dữ liệu demo để xem trước giao diện."
+          : "Chọn một lộ trình để xem các giai đoạn và buổi học."
+        : "Chưa cấu hình nguồn dữ liệu lộ trình Planning Agent.";
+      renderStats();
+      renderGrid();
+      if (!state.connected) {
+        toast("Chưa có nguồn dữ liệu roadmap. Hãy cấu hình EDU_UI_ROADMAPS_JSON.");
+      }
+    } catch (error) {
+      state.roadmaps = [];
+      state.connected = false;
+      $("#data-status").textContent = "LỖI KẾT NỐI";
+      $("#data-status").dataset.state = "error";
+      $("#roadmap-caption-detail").textContent =
+        "Không thể tải dữ liệu lộ trình.";
+      renderStats();
+      showEmpty("Hãy kiểm tra backend và cấu hình nguồn dữ liệu lộ trình.");
+      toast(
+        `Không thể tải lộ trình: ${
+          error instanceof Error ? error.message : String(error)
+        }`
+      );
+    } finally {
+      refresh.disabled = false;
+    }
+  }
+
+  $("#subject-filter").addEventListener("change", renderGrid);
+  $("#refresh").addEventListener("click", loadRoadmaps);
+  $("#back-to-overview").addEventListener("click", () => show("#overview-view"));
+  $("#back-to-roadmap").addEventListener("click", () => {
+    if (state.selectedRoadmap) openRoadmap(state.selectedRoadmap);
+  });
+  $("#theme-toggle").addEventListener("click", () => {
+    const next =
+      document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = next;
+    try {
+      localStorage.setItem("eduagent-theme", next);
+    } catch {
+      toast("Không thể lưu lựa chọn giao diện trên trình duyệt này.");
+    }
+    updateThemeButton();
+  });
+  document.querySelectorAll("[data-soon]").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      toast("Chức năng đang được phát triển.");
+    });
+  });
+
+  updateThemeButton();
+  loadRoadmaps();
 })();

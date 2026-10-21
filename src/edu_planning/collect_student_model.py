@@ -115,8 +115,11 @@ def _dump(turn, prev: str, last_user: str) -> dict:
 
 def _make_queries(model: dict, state: PlanState, llm_client: LLMClient) -> list[dict]:
     shown = {k: v for k, v in model.items() if k != "tien_do"}
+    names = [x.get("mon_hoc") for k in ("muc_tieu", "nang_luc") for x in model.get(k, [])]
+    subjects = [s for s in dict.fromkeys(_canon_subject(n) for n in names) if s in CURRICULUM]
     prompt = (QUERY_TRANSFORM_PROMPT_PATH.read_text(encoding="utf-8")
               .replace("{student_model}", _compact(shown))
+              .replace("{chuong}", _curriculum_info(subjects))
               .replace("{history}", _history_text(state.get("messages", []))))
     res = llm_client.invoke_structured(QueryPlan, [{"role": "user", "content": prompt}], max_tokens=1500)
     return [q.model_dump() for q in res.queries] if res else []

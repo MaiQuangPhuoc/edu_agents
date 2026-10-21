@@ -3,13 +3,13 @@
 <title>EDUAGENT — Nạp tài liệu</title><link rel="stylesheet" href="/ui-static/css/documents.css">
 <script defer src="/ui-static/js/documents.js"></script><link rel="stylesheet" href="/ui-static/css/theme.css"><script defer src="/ui-static/js/theme.js"></script></head>
 <body><div class="shell">
-<aside class="sidebar"><div class="brand">EDUAGENT<small>Trợ lý học tập</small></div><nav>
-<a href="/">Trợ lý AI</a><a href="/documents" class="active">Nạp tài liệu</a>
-<a href="/exams">Làm bài test</a><a href="#" class="soon">Lộ trình học</a>
+<aside class="sidebar"><div class="brand">EDUAGENT<small>Trợ lý học tập</small></div><nav aria-label="Chức năng">
+<a href="/">Trợ lý AI</a><a href="/documents" class="active" aria-current="page">Nạp tài liệu</a>
+<a href="/exams">Làm bài test</a><a href="/roadmap">Lộ trình học</a>
 <a href="#" class="soon">Lịch học &amp; Buổi học</a><a href="#" class="soon">Tiến độ học tập</a>
 <a href="#" class="soon">Hồ sơ học sinh</a></nav></aside>
 <main class="main">
-<header><h1>Nạp tài liệu</h1><p>Thêm sách giáo khoa hoặc chọn tài liệu học tập của riêng bạn.</p><div class="header-actions"><button type="button" class="theme-toggle" data-theme-toggle aria-label="Chuyển sang giao diện tối" title="Chuyển sang giao diện tối"><svg class="theme-icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"/></svg><svg class="theme-icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button></div></header>
+<header><div class="page-heading"><h1>Nạp tài liệu</h1><p>Thêm sách giáo khoa hoặc chọn tài liệu học tập của riêng bạn.</p></div><div class="header-actions"><button type="button" class="theme-toggle" data-theme-toggle aria-label="Chuyển sang giao diện tối" title="Chuyển sang giao diện tối"><svg class="theme-icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"/></svg><svg class="theme-icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button></div></header>
 <div class="tabs"><button class="active" id="tab-book" type="button">Sách giáo khoa</button>
 <button id="tab-private" type="button">Tài liệu riêng</button></div>
 <section id="book-panel" class="layout">

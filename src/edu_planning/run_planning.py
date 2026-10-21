@@ -13,7 +13,10 @@ from src.edu_planning.entry_grade import entry_grade_node
 from src.clients.llm import LLMClient
 from src.configs import env_config
 from src.edu_planning.collect_student_model import collect_student_model
-
+# import trong hàm để chế độ collect không phải nạp mô hình embedding/reranker
+from src.clients.embedding import embeddings_qa
+from src.modules.rag.process_toan_10.retrievers2 import VectorStoreRetriever
+from src.edu_planning.roadmap_graph import make_roadmap_graph
 
 from pathlib import Path
 from datetime import datetime
@@ -101,10 +104,7 @@ def run_collect(llm_client):
         print("  -", q)
 
 def run_full(llm_client):
-    # import trong hàm để chế độ collect không phải nạp mô hình embedding/reranker
-    from src.clients.embedding import embeddings_qa
-    from src.modules.rag.process_toan_10.retrievers2 import VectorStoreRetriever
-    from src.edu_planning.roadmap_graph import make_roadmap_graph
+
 
     print(">>> 1. tạo retriever")
     retriever = VectorStoreRetriever(

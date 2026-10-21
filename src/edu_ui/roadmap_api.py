@@ -14,7 +14,7 @@ router = APIRouter(prefix="/api/ui/roadmaps", tags=["roadmap"])
 def list_roadmaps():
     source = os.getenv("EDU_UI_ROADMAPS_JSON", "").strip()
     if not source:
-        return {"roadmaps": [], "connected": False}
+        return {"roadmaps": [], "connected": False, "demo": False}
     path = Path(source)
     if not path.is_file():
         raise HTTPException(status_code=503, detail="Chưa tìm thấy file dữ liệu lộ trình")
@@ -24,4 +24,6 @@ def list_roadmaps():
         raise HTTPException(status_code=503, detail="Không đọc được dữ liệu lộ trình") from exc
     if not isinstance(data, dict) or not isinstance(data.get("roadmaps"), list):
         raise HTTPException(status_code=503, detail="Dữ liệu lộ trình phải có trường roadmaps là danh sách")
-    return {"roadmaps": data["roadmaps"], "connected": True}
+    demo_file = Path(__file__).resolve().parent / "demo_data" / "roadmaps.json"
+    is_demo = path.resolve() == demo_file.resolve()
+    return {"roadmaps": data["roadmaps"], "connected": True, "demo": is_demo}

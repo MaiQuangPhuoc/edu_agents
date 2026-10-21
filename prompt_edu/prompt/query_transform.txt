@@ -3,13 +3,22 @@ Từ hồ sơ học sinh và hội thoại, tạo các truy vấn tra cứu cho 
 HỒ SƠ
 {student_model}
 
+CHƯƠNG TRÌNH (chỉ dùng tên chương và tên bài trong danh sách này)
+{chuong}
+
 HỘI THOẠI GẦN ĐÂY
 {history}
 
 QUY TẮC
-1. Mỗi truy vấn MỘT ý: một môn và một chương/chủ đề (điểm yếu, mục tiêu hoặc dạng bài cần tập trung).
-2. Hồ sơ phức tạp (nhiều môn, nhiều điểm yếu): tách thành nhiều truy vấn nhỏ, tối đa 6.
-3. Viết thành câu tìm kiếm rõ nghĩa, dùng từ khóa của chương trình SGK; không dùng đại từ hay câu lửng.
-4. subject đúng như trong hồ sơ. chapter_id là số chương nếu xác định được, không thì để trống.
-5. nguon: "sgk" cho kiến thức trong sách; "web" hoặc "video" CHỈ khi học sinh nêu rõ muốn.
-6. Không bịa thông tin ngoài hồ sơ và hội thoại.
+1. Mỗi truy vấn MỘT ý: một môn và một chương.
+2. Tối đa 6 truy vấn, làm theo thứ tự ưu tiên:
+   a. Mỗi chương YẾU (nằm trong diem_yeu, hoặc muc_nam dưới 0.5) một truy vấn nguon "sgk". Làm trước, không được bỏ sót chương yếu nào. Nếu có hơn 6 chương yếu thì chọn 6 chương có muc_nam thấp nhất.
+   b. Còn chỗ thì thêm truy vấn video hoặc web cho chương yếu.
+   c. Còn chỗ nữa mới thêm chương mạnh.
+3. Mức độ theo chương: chương yếu viết về kiến thức cơ bản, khái niệm, ví dụ đơn giản (KHÔNG dùng chữ "nâng cao"). Chương mạnh viết về ôn tập ngắn hoặc bài tập nâng cao.
+4. Viết thành câu tìm kiếm rõ nghĩa, dùng từ khóa của chương trình SGK; không dùng đại từ hay câu lửng.
+5. subject đúng như trong hồ sơ. chapter_id là số La Mã của chương, không xác định được thì để trống.
+6. nguon: mặc định "sgk". Chỉ dùng "video" khi so_thich_hoc có dung_video là true. Chỉ dùng "web" khi hội thoại nhắc rõ muốn tìm trên web.
+7. Chỉ dùng thông tin có trong hồ sơ và hội thoại. KHÔNG thêm con số hay điều kiện khác vào truy vấn (ví dụ thời lượng, số câu, số tuần).
+8. Các truy vấn không lặp cùng một mẫu câu; mỗi truy vấn nhắm một điểm khác nhau (khái niệm, dạng bài, ví dụ minh họa).
+9. Nội dung truy vấn chỉ dùng tên chương hoặc tên bài trong mục CHƯƠNG TRÌNH. Không tự nêu kiến thức cụ thể khác.

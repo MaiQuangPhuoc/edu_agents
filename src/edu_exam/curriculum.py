@@ -1,7 +1,7 @@
 import json, re
 from pathlib import Path
 
-SECTIONS_PATH = Path(r'D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\documents\curriculum_sections.json')
+SECTIONS_PATH = Path(__file__).resolve().parent.parent / "modules" / "documents" / "curriculum_sections.json"
 CURRICULUM = json.loads(SECTIONS_PATH.read_text(encoding="utf-8"))
 # CURRICULUM[subject][chapter_id] = {"chapter_name": str, "lessons": {lesson_name: [section, ...]}}
 

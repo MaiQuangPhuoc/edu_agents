@@ -3,83 +3,6 @@
   "questions": [
     {
       "no": 1,
-      "chapter_id": "VI",
-      "question": "Khoảng biến thiên của dãy 1,4,7 là:",
-      "options": {
-        "A": "3",
-        "B": "4",
-        "C": "6",
-        "D": "7"
-      }
-    },
-    {
-      "no": 2,
-      "chapter_id": "VI",
-      "question": "Dữ liệu nào sau đây là dữ liệu định tính?",
-      "options": {
-        "A": "Chiều cao",
-        "B": "Cân nặng",
-        "C": "Màu mắt",
-        "D": "Tuổi"
-      }
-    },
-    {
-      "no": 3,
-      "chapter_id": "III",
-      "question": "Đồ thị y=x² và y=x²+3 khác nhau thế nào?",
-      "options": {
-        "A": "Dịch lên 3 đơn vị",
-        "B": "Dịch xuống 3 đơn vị",
-        "C": "Dịch phải 3 đơn vị",
-        "D": "Đối xứng qua Oy"
-      }
-    },
-    {
-      "no": 4,
-      "chapter_id": "IV",
-      "question": "sin 30° bằng:",
-      "options": {
-        "A": "1",
-        "B": "1/2",
-        "C": "√2/2",
-        "D": "√3/2"
-      }
-    },
-    {
-      "no": 5,
-      "chapter_id": "IV",
-      "question": "Trong tam giác, tổng ba góc trong bằng:",
-      "options": {
-        "A": "90°",
-        "B": "180°",
-        "C": "270°",
-        "D": "360°"
-      }
-    },
-    {
-      "no": 6,
-      "chapter_id": "III",
-      "question": "Giá trị f(2) của f(x)=x²-3x+1 là:",
-      "options": {
-        "A": "-1",
-        "B": "1",
-        "C": "3",
-        "D": "-3"
-      }
-    },
-    {
-      "no": 7,
-      "chapter_id": "V",
-      "question": "Với a=(2,-1), 3a bằng:",
-      "options": {
-        "A": "(6,-3)",
-        "B": "(5,2)",
-        "C": "(6,3)",
-        "D": "(2,-3)"
-      }
-    },
-    {
-      "no": 8,
       "chapter_id": "I",
       "question": "Cho A={1,2} và B={2,3}. A ∪ B bằng:",
       "options": {
@@ -90,29 +13,51 @@
       }
     },
     {
-      "no": 9,
-      "chapter_id": "IV",
-      "question": "Giá trị cos 120° là:",
+      "no": 2,
+      "chapter_id": "II",
+      "question": "Điểm (0,0) có thỏa x+y>1?",
       "options": {
-        "A": "1/2",
-        "B": "-1/2",
-        "C": "√3/2",
-        "D": "-1"
+        "A": "Có",
+        "B": "Không",
+        "C": "Chỉ khi x=y",
+        "D": "Không xác định"
       }
     },
     {
-      "no": 10,
+      "no": 3,
       "chapter_id": "I",
-      "question": "Phủ định của mệnh đề “5 > 3” là gì?",
+      "question": "Phủ định của “Mọi học sinh đều thích Toán” là:",
       "options": {
-        "A": "5 < 3",
-        "B": "5 ≤ 3",
-        "C": "5 ≥ 3",
-        "D": "5 = 3"
+        "A": "Không học sinh nào thích Toán",
+        "B": "Có ít nhất một học sinh không thích Toán",
+        "C": "Mọi học sinh đều không thích Toán",
+        "D": "Có ít nhất một học sinh thích Toán"
       }
     },
     {
-      "no": 11,
+      "no": 4,
+      "chapter_id": "II",
+      "question": "Điểm nào thỏa x≥0 và y≥0?",
+      "options": {
+        "A": "(-1,2)",
+        "B": "(2,-1)",
+        "C": "(1,3)",
+        "D": "(-2,-3)"
+      }
+    },
+    {
+      "no": 5,
+      "chapter_id": "II",
+      "question": "Miền nghiệm của x≤2 là nửa mặt phẳng nào?",
+      "options": {
+        "A": "Bên phải đường x=2, kể cả biên",
+        "B": "Bên trái đường x=2, kể cả biên",
+        "C": "Phía trên y=2",
+        "D": "Phía dưới y=2"
+      }
+    },
+    {
+      "no": 6,
       "chapter_id": "I",
       "question": "Khoảng (1;5) chứa số nào sau đây?",
       "options": {
@@ -123,62 +68,51 @@
       }
     },
     {
-      "no": 12,
+      "no": 7,
       "chapter_id": "II",
-      "question": "Đường biên của miền nghiệm 2x+y>3 là:",
+      "question": "Điểm (2,1) có thỏa hệ x+y≥3 và x-y≥1?",
       "options": {
-        "A": "2x+y=3",
-        "B": "2x-y=3",
-        "C": "x+2y=3",
-        "D": "2x+y=0"
+        "A": "Có",
+        "B": "Không vì điều kiện đầu",
+        "C": "Không vì điều kiện sau",
+        "D": "Không vì cả hai"
       }
     },
     {
-      "no": 13,
-      "chapter_id": "V",
-      "question": "Vectơ AB có điểm đầu là:",
-      "options": {
-        "A": "A",
-        "B": "B",
-        "C": "Trung điểm AB",
-        "D": "Gốc tọa độ"
-      }
-    },
-    {
-      "no": 14,
+      "no": 8,
       "chapter_id": "II",
-      "question": "Hệ x≥0, y≥0, x+y≤2 có điểm nào là nghiệm?",
+      "question": "Cặp (x,y)=(1,2) có thỏa x+y≤4 không?",
       "options": {
-        "A": "(2,2)",
-        "B": "(-1,1)",
-        "C": "(1,1)",
-        "D": "(3,0)"
+        "A": "Có",
+        "B": "Không",
+        "C": "Chỉ khi x=0",
+        "D": "Không xác định"
       }
     },
     {
-      "no": 15,
-      "chapter_id": "IV",
-      "question": "cos 60° bằng:",
+      "no": 9,
+      "chapter_id": "I",
+      "question": "Cho A={1,2,3} và B={3,4}. A ∩ B bằng:",
       "options": {
-        "A": "1/2",
-        "B": "0",
-        "C": "√3/2",
-        "D": "1"
+        "A": "{1,2,3,4}",
+        "B": "{1,2}",
+        "C": "{3}",
+        "D": "{4}"
       }
     },
     {
-      "no": 16,
-      "chapter_id": "II",
-      "question": "Điểm (1,1) thỏa bất phương trình nào?",
+      "no": 10,
+      "chapter_id": "I",
+      "question": "Tập rỗng được ký hiệu bằng:",
       "options": {
-        "A": "x+y<1",
-        "B": "x+y>3",
-        "C": "2x+y≤3",
-        "D": "x-y>1"
+        "A": "∅",
+        "B": "∈",
+        "C": "⊂",
+        "D": "∪"
       }
     },
     {
-      "no": 17,
+      "no": 11,
       "chapter_id": "I",
       "question": "Số phần tử của tập {x∈Z | 0≤x<4} là:",
       "options": {
@@ -189,36 +123,102 @@
       }
     },
     {
-      "no": 18,
-      "chapter_id": "III",
-      "question": "Giao điểm của y=x²-1 với trục Oy có tung độ:",
+      "no": 12,
+      "chapter_id": "II",
+      "question": "Điểm nào nằm trên đường thẳng x+2y=6?",
       "options": {
-        "A": "1",
-        "B": "-1",
-        "C": "0",
-        "D": "2"
+        "A": "(0,2)",
+        "B": "(2,2)",
+        "C": "(1,1)",
+        "D": "(3,2)"
+      }
+    },
+    {
+      "no": 13,
+      "chapter_id": "II",
+      "question": "Đường biên của miền nghiệm 2x+y>3 là:",
+      "options": {
+        "A": "2x+y=3",
+        "B": "2x-y=3",
+        "C": "x+2y=3",
+        "D": "2x+y=0"
+      }
+    },
+    {
+      "no": 14,
+      "chapter_id": "I",
+      "question": "Trong các câu sau, câu nào là mệnh đề?",
+      "options": {
+        "A": "Hãy mở sách.",
+        "B": "Số 4 là số chẵn.",
+        "C": "Bạn tên gì?",
+        "D": "Ôi đẹp quá!"
+      }
+    },
+    {
+      "no": 15,
+      "chapter_id": "II",
+      "question": "Hệ x≥0, y≥0, x+y≤2 có điểm nào là nghiệm?",
+      "options": {
+        "A": "(2,2)",
+        "B": "(-1,1)",
+        "C": "(1,1)",
+        "D": "(3,0)"
+      }
+    },
+    {
+      "no": 16,
+      "chapter_id": "I",
+      "question": "Cho A={1,2,3}, B={2,4}. A\\B bằng:",
+      "options": {
+        "A": "{2}",
+        "B": "{1,3}",
+        "C": "{1,2,3,4}",
+        "D": "{4}"
+      }
+    },
+    {
+      "no": 17,
+      "chapter_id": "II",
+      "question": "Điểm (1,1) thỏa bất phương trình nào?",
+      "options": {
+        "A": "x+y<1",
+        "B": "x+y>3",
+        "C": "2x+y≤3",
+        "D": "x-y>1"
+      }
+    },
+    {
+      "no": 18,
+      "chapter_id": "I",
+      "question": "Mệnh đề “Nếu số nguyên n chia hết cho 4 thì n chia hết cho 2” là:",
+      "options": {
+        "A": "Đúng",
+        "B": "Sai",
+        "C": "Không xác định",
+        "D": "Không phải mệnh đề"
       }
     },
     {
       "no": 19,
-      "chapter_id": "VI",
-      "question": "Sai số tuyệt đối của giá trị gần đúng 3.1 so với 3.0 là:",
+      "chapter_id": "I",
+      "question": "Phủ định của mệnh đề “5 > 3” là gì?",
       "options": {
-        "A": "0.01",
-        "B": "0.1",
-        "C": "1",
-        "D": "3.1"
+        "A": "5 < 3",
+        "B": "5 ≤ 3",
+        "C": "5 ≥ 3",
+        "D": "5 = 3"
       }
     },
     {
       "no": 20,
-      "chapter_id": "V",
-      "question": "Nếu a=(2,4) thì vectơ cùng phương với a là:",
+      "chapter_id": "II",
+      "question": "Bất phương trình nào là bậc nhất hai ẩn?",
       "options": {
-        "A": "(1,2)",
-        "B": "(2,1)",
-        "C": "(1,-2)",
-        "D": "(0,1)"
+        "A": "x²+y>1",
+        "B": "2x-3y≤5",
+        "C": "xy<2",
+        "D": "x/y>1"
       }
     }
   ]
