@@ -17,12 +17,13 @@ from src.edu_planning.collect_student_model import collect_student_model
 from src.clients.embedding import embeddings_qa
 from src.modules.rag.process_toan_10.retrievers2 import VectorStoreRetriever
 from src.edu_planning.roadmap_graph import make_roadmap_graph
-
+from src.edu_planning.student_store import load_student_model
+from src.edu_planning.query_builder import build_queries
 from pathlib import Path
 from datetime import datetime
 
-
-MODE = "collect"      # "collect": chỉ thử agent thu thập (không cần retriever) | "full": cả luồng
+MODE = "plan" 
+# MODE = "collect"      # "collect": chỉ thử agent thu thập (không cần retriever) | "full": cả luồng
 STUDENT_ID = "hs_003"
 
 
@@ -103,6 +104,37 @@ def run_collect(llm_client):
     for q in state.get("search_queries", []):
         print("  -", q)
 
+def run_plan(llm_client):
+    model = load_student_model(STUDENT_ID)
+    if not model:
+        print(f"Chưa có hồ sơ {STUDENT_ID}. Hãy chạy MODE='collect' trước.")
+        return
+    queries = build_queries(model)
+    print(">>> Truy vấn tham khảo:")
+    for q in queries:
+        print("  -", q)
+
+    retriever = VectorStoreRetriever(
+        url=env_config.qdrant_url,
+        api_key=env_config.qdrant_api_key,
+        embeddings=embeddings_qa,
+        collection_name="doc_final",
+        top_k=10,
+    )
+    graph = make_roadmap_graph(retriever, llm_client, checkpointer=MemorySaver())
+    cfg = {"configurable": {"thread_id": STUDENT_ID}}
+
+    # bỏ qua collect + bài test: nạp sẵn hồ sơ, đánh dấu đã xong
+    out = graph.invoke({
+        "student_id": STUDENT_ID, "messages": [],
+        "student_model": model, "model_done": True,
+        "entry_done": True, "search_queries": queries,
+    }, cfg)
+    show_new_bot_messages(out)
+    while out.get("roadmap_status") not in ("approved", "path_ready", "path_failed"):
+        out = graph.invoke({"messages": [HumanMessage(content=input("\nBạn: "))]}, cfg)
+        show_new_bot_messages(out)
+
 def run_full(llm_client):
 
 
@@ -130,4 +162,5 @@ def run_full(llm_client):
 if __name__ == "__main__":
     llm_client = LLMClient(model=env_config.model, api_provider=env_config.api_provider)
     print(">>> LLMClient xong")
-    run_collect(llm_client) if MODE == "collect" else run_full(llm_client)
+    # run_collect(llm_client) if MODE == "collect" else run_full(llm_client)
+    {"collect": run_collect, "plan": run_plan, "full": run_full}[MODE](llm_client)
