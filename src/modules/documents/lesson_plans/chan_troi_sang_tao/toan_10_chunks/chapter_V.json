@@ -1,0 +1,1192 @@
+{
+  "document_metadata": {
+    "schema_version": "1.0",
+    "document_id": "CTST_T10_CH_V",
+    "document_type": "lesson_plan",
+    "subject": "Toán 10",
+    "grade": 10,
+    "textbook_series": "chan_troi_sang_tao",
+    "volume": 1,
+    "curriculum_version": "GDPT_2018",
+    "chapter_id": "V",
+    "chapter_title": "Vectơ",
+    "content_types": [
+      "summary",
+      "detail"
+    ],
+    "verification_status": "review_required",
+    "official_periods": null,
+    "suggested_sessions": 9,
+    "minutes_per_session": 45,
+    "source_ids": [
+      "SRC_V_01",
+      "SRC_V_02",
+      "SRC_V_03"
+    ],
+    "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức."
+  },
+  "source_file": "chapter_V.md",
+  "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c",
+  "max_chars_soft_limit": 2400,
+  "total_chunks": 25,
+  "chunks": [
+    {
+      "content": "Vectơ > A.1. Mục tiêu chương\n\n- Nhận biết vectơ là đoạn thẳng có hướng; xác định điểm đầu, điểm cuối, phương, hướng và độ dài của vectơ.\n- Nhận biết hai vectơ cùng phương, cùng hướng, bằng nhau, vectơ đối và vectơ-không.\n- Hiểu, thực hiện và vận dụng phép cộng, trừ hai vectơ, phép nhân vectơ với một số thực.\n- Nhận biết góc giữa hai vectơ và tích vô hướng; vận dụng công thức liên hệ tích vô hướng với độ dài và góc.\n- Sử dụng các tính chất vectơ để mô tả, biến đổi và giải quyết những bài toán hình học phù hợp.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 9,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "content_type": "summary",
+        "lesson_id": null,
+        "lesson_title": null,
+        "section_types": [
+          "chapter_objectives"
+        ],
+        "time_scope": "chapter",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_001",
+        "chunk_index": 1,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "A.1. Mục tiêu chương"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > A.2. Danh sách bài học\n\n1. **Bài 1. Khái niệm vectơ** — mã nội bộ `V.1`.\n2. **Bài 2. Tổng và hiệu của hai vectơ** — mã nội bộ `V.2`.\n3. **Bài 3. Tích của một số với một vectơ** — mã nội bộ `V.3`.\n4. **Bài 4. Tích vô hướng của hai vectơ** — mã nội bộ `V.4`.\n5. **Bài tập cuối chương V** — phần ôn tập; mã nội bộ `V.REVIEW`.\n\nTên bài và thứ tự trên được đối chiếu từ danh mục Toán 10 – Chân trời sáng tạo (xem nguồn cuối chương). Các mã `V.1`–`V.4`, `V.REVIEW` là quy ước dữ liệu của EDUAGENT.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 9,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "content_type": "summary",
+        "lesson_id": null,
+        "lesson_title": null,
+        "section_types": [
+          "lesson_list"
+        ],
+        "time_scope": "chapter",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_002",
+        "chunk_index": 2,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "A.2. Danh sách bài học"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > A.3. Kiến thức trọng tâm\n\n- **Khái niệm:** $\\overrightarrow{AB}$, vectơ-không $\\vec 0$, độ dài $|\\vec a|$, vectơ cùng phương, cùng hướng, bằng nhau và đối nhau.\n- **Phép cộng:** Quy tắc ba điểm $\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}$ và quy tắc hình bình hành khi hai vectơ có chung điểm đầu.\n- **Phép trừ:** $\\vec a-\\vec b=\\vec a+(-\\vec b)$; với các điểm $A,B,C$, $\\overrightarrow{AB}-\\overrightarrow{AC}=\\overrightarrow{CB}$.\n- **Nhân với số:** Độ dài $|k\\vec a|=|k|\\,|\\vec a|$; hướng của $k\\vec a$ phụ thuộc vào dấu của $k$ khi $\\vec a\\ne\\vec 0$ và $k\\ne0$.\n- **Tích vô hướng:** $\\vec a\\cdot\\vec b=|\\vec a|\\,|\\vec b|\\cos\\theta$ với hai vectơ khác $\\vec 0$ và $\\theta$ là góc giữa chúng; $\\vec a\\cdot\\vec a=|\\vec a|^2$.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 9,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "content_type": "summary",
+        "lesson_id": null,
+        "lesson_title": null,
+        "section_types": [
+          "key_knowledge"
+        ],
+        "time_scope": "chapter",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_003",
+        "chunk_index": 3,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "A.3. Kiến thức trọng tâm"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > A.4. Kiến thức tiên quyết và quan hệ giữa các bài\n\n- Cần ôn: đoạn thẳng, độ dài, góc, tam giác, hình bình hành và kiến thức lượng giác góc từ $0^\\circ$ đến $180^\\circ$ (Chương IV).\n- **Bài 1 → Bài 2:** Hiểu phương, hướng và vectơ đối để thực hiện phép cộng, trừ.\n- **Bài 2 → Bài 3:** Sử dụng tính chất phép cộng khi học nhân vectơ với số thực và biến đổi biểu thức vectơ.\n- **Bài 1 và Bài 3 → Bài 4:** Dùng khái niệm vectơ, độ dài, góc và phép toán để hiểu tích vô hướng; vận dụng kiến thức lượng giác Chương IV.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 9,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "content_type": "summary",
+        "lesson_id": null,
+        "lesson_title": null,
+        "section_types": [
+          "prerequisites"
+        ],
+        "time_scope": "chapter",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_004",
+        "chunk_index": 4,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "A.4. Kiến thức tiên quyết và quan hệ giữa các bài"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > A.5. Phân bổ thời gian tự học đề xuất\n\n| Nội dung | Số buổi đề xuất | Thời lượng/buổi |\n|---|---:|---:|\n| Bài 1. Khái niệm vectơ | 2 | 45 phút |\n| Bài 2. Tổng và hiệu của hai vectơ | 2 | 45 phút |\n| Bài 3. Tích của một số với một vectơ | 2 | 45 phút |\n| Bài 4. Tích vô hướng của hai vectơ | 2 | 45 phút |\n| Ôn tập và đánh giá cuối chương | 1 | 45 phút |\n| **Tổng đề xuất** | **9** | **405 phút** |\n\nSố buổi trên là **giả định sư phạm cho hệ thống tự học**. Learning Path Agent phải điều chỉnh theo năng lực, mục tiêu và thời gian của học sinh; không được coi đây là phân phối chương trình chính thức.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 9,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "content_type": "summary",
+        "lesson_id": null,
+        "lesson_title": null,
+        "section_types": [
+          "time_plan"
+        ],
+        "time_scope": "chapter",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_005",
+        "chunk_index": 5,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "A.5. Phân bổ thời gian tự học đề xuất"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI 1. KHÁI NIỆM VECTƠ > 1. Thông tin bài học + 2. Mục tiêu học tập\n\n1. Thông tin bài học\n\n- `lesson_id`: `V.1`\n- Số tiết chính thức: chưa xác minh (`null`).\n- Số buổi tự học đề xuất: **2**; thời lượng: **45 phút/buổi**.\n\n2. Mục tiêu học tập\n\n- Phân biệt đại lượng vô hướng và đại lượng có hướng trong các tình huống quen thuộc.\n- Xác định đúng vectơ $\\overrightarrow{AB}$ và $\\overrightarrow{BA}$; chỉ ra điểm đầu và điểm cuối.\n- Nhận biết vectơ cùng phương, cùng hướng, ngược hướng, bằng nhau và vectơ-không; so sánh độ dài vectơ.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.1",
+        "lesson_title": "KHÁI NIỆM VECTƠ",
+        "content_type": "detail",
+        "section_types": [
+          "lesson_info",
+          "objectives"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_006",
+        "chunk_index": 6,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI 1. KHÁI NIỆM VECTƠ",
+          "1. Thông tin bài học + 2. Mục tiêu học tập"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI 1. KHÁI NIỆM VECTƠ > 3. Kiến thức cần nắm\n\n3. Kiến thức cần nắm\n\n- **Vectơ** là một đoạn thẳng có hướng, được ký hiệu $\\overrightarrow{AB}$ (điểm đầu $A$, điểm cuối $B$) hoặc $\\vec a$.\n- Hai vectơ **cùng phương** nếu các đường thẳng chứa giá của chúng song song hoặc trùng nhau. Với hai vectơ khác vectơ-không và cùng phương, có thể xác định chúng cùng hướng hoặc ngược hướng.\n- Hai vectơ **bằng nhau** khi có cùng hướng và cùng độ dài; hai vectơ **đối nhau** khi ngược hướng và có cùng độ dài.\n- Độ dài vectơ $\\overrightarrow{AB}$ là độ dài đoạn $AB$: $|\\overrightarrow{AB}|=AB$.\n- $\\overrightarrow{AA}=\\vec0$, có độ dài bằng $0$. Các phát biểu về hướng của vectơ-không cần theo quy ước trong tài liệu đang sử dụng; không suy diễn nó có một hướng xác định.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.1",
+        "lesson_title": "KHÁI NIỆM VECTƠ",
+        "content_type": "detail",
+        "section_types": [
+          "must_know"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_007",
+        "chunk_index": 7,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI 1. KHÁI NIỆM VECTƠ",
+          "3. Kiến thức cần nắm"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI 1. KHÁI NIỆM VECTƠ > 4. Kiến thức cần hiểu\n\n4. Kiến thức cần hiểu\n\n- Thứ tự hai điểm ảnh hưởng tới hướng: $\\overrightarrow{AB}=-\\overrightarrow{BA}$.\n- Vectơ bằng nhau không bắt buộc có cùng điểm đầu; có thể tịnh tiến vectơ mà vẫn giữ hướng và độ dài.\n- Chỉ có độ dài bằng nhau chưa đủ kết luận hai vectơ bằng nhau; cần kiểm tra hướng.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.1",
+        "lesson_title": "KHÁI NIỆM VECTƠ",
+        "content_type": "detail",
+        "section_types": [
+          "must_understand"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_008",
+        "chunk_index": 8,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI 1. KHÁI NIỆM VECTƠ",
+          "4. Kiến thức cần hiểu"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI 1. KHÁI NIỆM VECTƠ > 5. Hoạt động học tập + 6. Dạng bài tập và đánh giá\n\n5. Hoạt động học tập\n\nĐọc lý thuyết, quan sát hình minh họa trong tài liệu, xem video nếu có và luyện bài nhận diện vectơ, phương, hướng, độ dài.\n\n6. Dạng bài tập và đánh giá\n\n- Nhận biết vectơ và xác định điểm đầu, điểm cuối; đọc đúng ký hiệu.\n- Phân loại các cặp vectơ cùng phương, cùng hướng, ngược hướng, bằng nhau hoặc đối nhau trên hình.\n- Xác định vectơ bằng nhau trên hình bình hành hoặc các hình đơn giản.\n- **Đạt mục tiêu khi:** phân biệt đúng bằng nhau với cùng phương; giải thích được vì sao đổi thứ tự hai điểm sẽ đổi hướng vectơ.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.1",
+        "lesson_title": "KHÁI NIỆM VECTƠ",
+        "content_type": "detail",
+        "section_types": [
+          "activity",
+          "assessment"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_009",
+        "chunk_index": 9,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI 1. KHÁI NIỆM VECTƠ",
+          "5. Hoạt động học tập + 6. Dạng bài tập và đánh giá"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI 2. TỔNG VÀ HIỆU CỦA HAI VECTƠ > 1. Thông tin bài học + 2. Mục tiêu học tập\n\n1. Thông tin bài học\n\n- `lesson_id`: `V.2`\n- Số tiết chính thức: chưa xác minh (`null`).\n- Số buổi tự học đề xuất: **2**; thời lượng: **45 phút/buổi**.\n\n2. Mục tiêu học tập\n\n- Xây dựng và thực hiện phép cộng hai vectơ bằng quy tắc ba điểm và quy tắc hình bình hành.\n- Nhận biết vectơ đối và thực hiện phép trừ hai vectơ.\n- Vận dụng tính chất của phép cộng vectơ để rút gọn các biểu thức hình học cơ bản.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.2",
+        "lesson_title": "TỔNG VÀ HIỆU CỦA HAI VECTƠ",
+        "content_type": "detail",
+        "section_types": [
+          "lesson_info",
+          "objectives"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_010",
+        "chunk_index": 10,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI 2. TỔNG VÀ HIỆU CỦA HAI VECTƠ",
+          "1. Thông tin bài học + 2. Mục tiêu học tập"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI 2. TỔNG VÀ HIỆU CỦA HAI VECTƠ > 3. Kiến thức cần nắm\n\n3. Kiến thức cần nắm\n\n- **Quy tắc ba điểm:** $\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}$.\n- **Quy tắc hình bình hành:** nếu $ABCD$ là hình bình hành thì $\\overrightarrow{AB}+\\overrightarrow{AD}=\\overrightarrow{AC}$.\n- Phép cộng có tính giao hoán và kết hợp: $\\vec a+\\vec b=\\vec b+\\vec a$; $(\\vec a+\\vec b)+\\vec c=\\vec a+(\\vec b+\\vec c)$.\n- Vectơ-không là phần tử trung hòa: $\\vec a+\\vec0=\\vec a$; $\\vec a+(-\\vec a)=\\vec0$.\n- **Hiệu hai vectơ:** $\\vec a-\\vec b=\\vec a+(-\\vec b)$; $\\overrightarrow{AB}-\\overrightarrow{AC}=\\overrightarrow{CB}$.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.2",
+        "lesson_title": "TỔNG VÀ HIỆU CỦA HAI VECTƠ",
+        "content_type": "detail",
+        "section_types": [
+          "must_know"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_011",
+        "chunk_index": 11,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI 2. TỔNG VÀ HIỆU CỦA HAI VECTƠ",
+          "3. Kiến thức cần nắm"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI 2. TỔNG VÀ HIỆU CỦA HAI VECTƠ > 4. Kiến thức cần hiểu\n\n4. Kiến thức cần hiểu\n\n- Khi cộng theo quy tắc ba điểm, điểm cuối vectơ thứ nhất phải trùng điểm đầu vectơ thứ hai, hoặc được biểu diễn tương đương bằng tịnh tiến.\n- Phép trừ vectơ không phải phép trừ độ dài; phải chuyển thành cộng với vectơ đối.\n- Có thể kiểm chứng phép biến đổi bằng cách vẽ hình đúng quy tắc.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.2",
+        "lesson_title": "TỔNG VÀ HIỆU CỦA HAI VECTƠ",
+        "content_type": "detail",
+        "section_types": [
+          "must_understand"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_012",
+        "chunk_index": 12,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI 2. TỔNG VÀ HIỆU CỦA HAI VECTƠ",
+          "4. Kiến thức cần hiểu"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI 2. TỔNG VÀ HIỆU CỦA HAI VECTƠ > 5. Hoạt động học tập + 6. Dạng bài tập và đánh giá\n\n5. Hoạt động học tập\n\nĐọc lý thuyết, quan sát sơ đồ quy tắc cộng–trừ vectơ, xem video nếu có và luyện bài rút gọn biểu thức vectơ.\n\n6. Dạng bài tập và đánh giá\n\n- Dựng tổng vectơ qua quy tắc ba điểm và hình bình hành.\n- Rút gọn tổng, hiệu của các vectơ có chung điểm đầu hoặc điểm cuối.\n- Chứng minh đẳng thức vectơ dựa trên các quy tắc đã học.\n- **Đạt mục tiêu khi:** chọn đúng quy tắc cộng, trừ và giải thích được các phép biến đổi mà không nhầm với độ dài đoạn thẳng.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.2",
+        "lesson_title": "TỔNG VÀ HIỆU CỦA HAI VECTƠ",
+        "content_type": "detail",
+        "section_types": [
+          "activity",
+          "assessment"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_013",
+        "chunk_index": 13,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI 2. TỔNG VÀ HIỆU CỦA HAI VECTƠ",
+          "5. Hoạt động học tập + 6. Dạng bài tập và đánh giá"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI 3. TÍCH CỦA MỘT SỐ VỚI MỘT VECTƠ > 1. Thông tin bài học + 2. Mục tiêu học tập\n\n1. Thông tin bài học\n\n- `lesson_id`: `V.3`\n- Số tiết chính thức: chưa xác minh (`null`).\n- Số buổi tự học đề xuất: **2**; thời lượng: **45 phút/buổi**.\n\n2. Mục tiêu học tập\n\n- Hiểu ý nghĩa hình học của phép nhân một vectơ với số thực.\n- Nhận biết phương, hướng và độ dài của $k\\vec a$ theo dấu và giá trị tuyệt đối của $k$.\n- Vận dụng các tính chất phép nhân với số vào biến đổi biểu thức vectơ và quan hệ thẳng hàng.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.3",
+        "lesson_title": "TÍCH CỦA MỘT SỐ VỚI MỘT VECTƠ",
+        "content_type": "detail",
+        "section_types": [
+          "lesson_info",
+          "objectives"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_014",
+        "chunk_index": 14,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI 3. TÍCH CỦA MỘT SỐ VỚI MỘT VECTƠ",
+          "1. Thông tin bài học + 2. Mục tiêu học tập"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI 3. TÍCH CỦA MỘT SỐ VỚI MỘT VECTƠ > 3. Kiến thức cần nắm\n\n3. Kiến thức cần nắm\n\n- Với số thực $k$ và vectơ $\\vec a$, $k\\vec a$ có độ dài $|k\\vec a|=|k|\\,|\\vec a|$.\n- Nếu $k>0$ và $\\vec a\\ne\\vec0$, $k\\vec a$ cùng hướng với $\\vec a$; nếu $k<0$, chúng ngược hướng. Nếu $k=0$ hoặc $\\vec a=\\vec0$ thì $k\\vec a=\\vec0$.\n- Các tính chất: $k(\\vec a+\\vec b)=k\\vec a+k\\vec b$; $(k+m)\\vec a=k\\vec a+m\\vec a$; $k(m\\vec a)=(km)\\vec a$.\n- Với $\\vec a\\ne\\vec0$, hai vectơ $\\vec a$ và $\\vec b$ cùng phương khi và chỉ khi tồn tại số thực $k$ sao cho $\\vec b=k\\vec a$.\n- Ba điểm phân biệt $A,B,C$ thẳng hàng khi và chỉ khi $\\overrightarrow{AB}$ và $\\overrightarrow{AC}$ cùng phương.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.3",
+        "lesson_title": "TÍCH CỦA MỘT SỐ VỚI MỘT VECTƠ",
+        "content_type": "detail",
+        "section_types": [
+          "must_know"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_015",
+        "chunk_index": 15,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI 3. TÍCH CỦA MỘT SỐ VỚI MỘT VECTƠ",
+          "3. Kiến thức cần nắm"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI 3. TÍCH CỦA MỘT SỐ VỚI MỘT VECTƠ > 4. Kiến thức cần hiểu\n\n4. Kiến thức cần hiểu\n\n- Nhân với số âm làm đổi hướng vectơ; nhân với số có trị tuyệt đối lớn hơn $1$ làm tăng độ dài theo tỉ lệ đó.\n- Cần kiểm tra giả thiết vectơ khác $\\vec0$ khi dùng điều kiện cùng phương dạng $\\vec b=k\\vec a$.\n- Phân tích một vectơ thành tổ hợp các vectơ đã biết là cách diễn đạt quan hệ hình học bằng đại số vectơ.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.3",
+        "lesson_title": "TÍCH CỦA MỘT SỐ VỚI MỘT VECTƠ",
+        "content_type": "detail",
+        "section_types": [
+          "must_understand"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_016",
+        "chunk_index": 16,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI 3. TÍCH CỦA MỘT SỐ VỚI MỘT VECTƠ",
+          "4. Kiến thức cần hiểu"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI 3. TÍCH CỦA MỘT SỐ VỚI MỘT VECTƠ > 5. Hoạt động học tập + 6. Dạng bài tập và đánh giá\n\n5. Hoạt động học tập\n\nĐọc lý thuyết, xem sơ đồ phép nhân vectơ với số, xem video nếu có và làm bài biến đổi vectơ, chứng minh thẳng hàng.\n\n6. Dạng bài tập và đánh giá\n\n- Xác định hướng, phương, độ dài của $k\\vec a$.\n- Thu gọn biểu thức chứa tích của vectơ với số.\n- Chứng minh quan hệ thẳng hàng, cùng phương; xác định các hệ số trong đẳng thức vectơ đơn giản.\n- **Đạt mục tiêu khi:** sử dụng đúng các tính chất phân phối, xử lý đúng trường hợp số âm và trường hợp vectơ-không.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.3",
+        "lesson_title": "TÍCH CỦA MỘT SỐ VỚI MỘT VECTƠ",
+        "content_type": "detail",
+        "section_types": [
+          "activity",
+          "assessment"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_017",
+        "chunk_index": 17,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI 3. TÍCH CỦA MỘT SỐ VỚI MỘT VECTƠ",
+          "5. Hoạt động học tập + 6. Dạng bài tập và đánh giá"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI 4. TÍCH VÔ HƯỚNG CỦA HAI VECTƠ > 1. Thông tin bài học + 2. Mục tiêu học tập\n\n1. Thông tin bài học\n\n- `lesson_id`: `V.4`\n- Số tiết chính thức: chưa xác minh (`null`).\n- Số buổi tự học đề xuất: **2**; thời lượng: **45 phút/buổi**.\n\n2. Mục tiêu học tập\n\n- Nhận biết góc giữa hai vectơ khác vectơ-không.\n- Tính tích vô hướng thông qua độ dài và góc giữa các vectơ.\n- Sử dụng tích vô hướng để xét vuông góc, tính độ dài hoặc tính góc trong những bài toán phù hợp.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.4",
+        "lesson_title": "TÍCH VÔ HƯỚNG CỦA HAI VECTƠ",
+        "content_type": "detail",
+        "section_types": [
+          "lesson_info",
+          "objectives"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_018",
+        "chunk_index": 18,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI 4. TÍCH VÔ HƯỚNG CỦA HAI VECTƠ",
+          "1. Thông tin bài học + 2. Mục tiêu học tập"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI 4. TÍCH VÔ HƯỚNG CỦA HAI VECTƠ > 3. Kiến thức cần nắm\n\n3. Kiến thức cần nắm\n\n- Góc giữa hai vectơ khác $\\vec0$ nằm trong khoảng từ $0^\\circ$ đến $180^\\circ$, xác định khi đặt hai vectơ cùng điểm đầu.\n- Với $\\vec a,\\vec b\\ne\\vec0$, $\\vec a\\cdot\\vec b=|\\vec a|\\,|\\vec b|\\cos(\\vec a,\\vec b)$.\n- Tích vô hướng là **một số thực**, không phải vectơ.\n- $\\vec a\\cdot\\vec a=|\\vec a|^2$; hai vectơ khác $\\vec0$ vuông góc khi và chỉ khi $\\vec a\\cdot\\vec b=0$.\n- Các tính chất: $\\vec a\\cdot\\vec b=\\vec b\\cdot\\vec a$; $\\vec a\\cdot(\\vec b+\\vec c)=\\vec a\\cdot\\vec b+\\vec a\\cdot\\vec c$; $(k\\vec a)\\cdot\\vec b=k(\\vec a\\cdot\\vec b)$.\n- Hằng đẳng thức: $|\\vec a+\\vec b|^2=|\\vec a|^2+2\\vec a\\cdot\\vec b+|\\vec b|^2$.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.4",
+        "lesson_title": "TÍCH VÔ HƯỚNG CỦA HAI VECTƠ",
+        "content_type": "detail",
+        "section_types": [
+          "must_know"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_019",
+        "chunk_index": 19,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI 4. TÍCH VÔ HƯỚNG CỦA HAI VECTƠ",
+          "3. Kiến thức cần nắm"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI 4. TÍCH VÔ HƯỚNG CỦA HAI VECTƠ > 4. Kiến thức cần hiểu\n\n4. Kiến thức cần hiểu\n\n- Tích vô hướng phụ thuộc đồng thời vào độ dài của hai vectơ và góc giữa chúng.\n- Nếu góc nhọn thì tích vô hướng dương, góc vuông thì bằng $0$, góc tù thì âm (khi hai vectơ đều khác $\\vec0$).\n- Không được nhầm tích vô hướng với tích độ dài; hệ số $\\cos\\theta$ là thành phần bắt buộc.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.4",
+        "lesson_title": "TÍCH VÔ HƯỚNG CỦA HAI VECTƠ",
+        "content_type": "detail",
+        "section_types": [
+          "must_understand"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_020",
+        "chunk_index": 20,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI 4. TÍCH VÔ HƯỚNG CỦA HAI VECTƠ",
+          "4. Kiến thức cần hiểu"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI 4. TÍCH VÔ HƯỚNG CỦA HAI VECTƠ > 5. Hoạt động học tập + 6. Dạng bài tập và đánh giá\n\n5. Hoạt động học tập\n\nĐọc lý thuyết, ôn hệ thức lượng, xem video nếu có và luyện bài tính tích vô hướng, góc, độ dài, vuông góc.\n\n6. Dạng bài tập và đánh giá\n\n- Xác định góc giữa hai vectơ qua hình vẽ.\n- Tính tích vô hướng khi biết độ dài và góc giữa hai vectơ.\n- Chứng minh vuông góc hoặc tính độ dài bằng các tính chất tích vô hướng.\n- **Đạt mục tiêu khi:** xác định đúng góc, sử dụng đúng công thức và kiểm tra được dấu của kết quả.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.4",
+        "lesson_title": "TÍCH VÔ HƯỚNG CỦA HAI VECTƠ",
+        "content_type": "detail",
+        "section_types": [
+          "activity",
+          "assessment"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_021",
+        "chunk_index": 21,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI 4. TÍCH VÔ HƯỚNG CỦA HAI VECTƠ",
+          "5. Hoạt động học tập + 6. Dạng bài tập và đánh giá"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI TẬP CUỐI CHƯƠNG V — ÔN TẬP VÀ ĐÁNH GIÁ > 1. Thông tin bài học + 2. Mục tiêu học tập\n\n1. Thông tin bài học\n\n- `lesson_id`: `V.REVIEW`\n- Số tiết chính thức: chưa xác minh (`null`).\n- Số buổi tự học đề xuất: **1**; thời lượng: **45 phút**.\n\n2. Mục tiêu học tập\n\n- Hệ thống hóa khái niệm vectơ, các phép toán và tích vô hướng.\n- Lựa chọn công cụ vectơ thích hợp cho từng dạng bài và phát hiện các sai lầm thường gặp.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 1,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.REVIEW",
+        "lesson_title": "BÀI TẬP CUỐI CHƯƠNG V — ÔN TẬP VÀ ĐÁNH GIÁ",
+        "content_type": "detail",
+        "section_types": [
+          "lesson_info",
+          "objectives"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_022",
+        "chunk_index": 22,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI TẬP CUỐI CHƯƠNG V — ÔN TẬP VÀ ĐÁNH GIÁ",
+          "1. Thông tin bài học + 2. Mục tiêu học tập"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI TẬP CUỐI CHƯƠNG V — ÔN TẬP VÀ ĐÁNH GIÁ > 3. Kiến thức cần nắm\n\n3. Kiến thức cần nắm\n\n- Quy tắc ba điểm, hình bình hành, phép trừ và phép nhân với số.\n- Quan hệ cùng phương, bằng nhau, đối nhau; công thức tích vô hướng và điều kiện vuông góc.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 1,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.REVIEW",
+        "lesson_title": "BÀI TẬP CUỐI CHƯƠNG V — ÔN TẬP VÀ ĐÁNH GIÁ",
+        "content_type": "detail",
+        "section_types": [
+          "must_know"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_023",
+        "chunk_index": 23,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI TẬP CUỐI CHƯƠNG V — ÔN TẬP VÀ ĐÁNH GIÁ",
+          "3. Kiến thức cần nắm"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI TẬP CUỐI CHƯƠNG V — ÔN TẬP VÀ ĐÁNH GIÁ > 4. Kiến thức cần hiểu\n\n4. Kiến thức cần hiểu\n\n- Phân biệt đại lượng vectơ với đại lượng vô hướng.\n- Nhận diện trường hợp cần dựng hình, biến đổi vectơ hoặc sử dụng góc và độ dài.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 1,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.REVIEW",
+        "lesson_title": "BÀI TẬP CUỐI CHƯƠNG V — ÔN TẬP VÀ ĐÁNH GIÁ",
+        "content_type": "detail",
+        "section_types": [
+          "must_understand"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_024",
+        "chunk_index": 24,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI TẬP CUỐI CHƯƠNG V — ÔN TẬP VÀ ĐÁNH GIÁ",
+          "4. Kiến thức cần hiểu"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    },
+    {
+      "content": "Vectơ > BÀI TẬP CUỐI CHƯƠNG V — ÔN TẬP VÀ ĐÁNH GIÁ > 5. Hoạt động học tập + 6. Dạng bài tập và đánh giá\n\n5. Hoạt động học tập\n\nĐọc bảng tóm tắt, hệ thống công thức, làm bài tập cuối chương và rà soát lỗi sai.\n\n6. Dạng bài tập và đánh giá\n\n- Nhận biết khái niệm, phương, hướng, vectơ bằng nhau.\n- Cộng, trừ, nhân vectơ với số và chứng minh đẳng thức vectơ.\n- Vận dụng tích vô hướng để xác định góc, độ dài hoặc tính vuông góc.\n- **Đạt mục tiêu khi:** giải thích được phương pháp chọn, trình bày đúng công thức và tự sửa lỗi.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_V",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "V",
+        "chapter_title": "Vectơ",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "verification_status": "review_required",
+        "official_periods": null,
+        "suggested_sessions": 1,
+        "minutes_per_session": 45,
+        "source_ids": [
+          "SRC_V_01",
+          "SRC_V_02",
+          "SRC_V_03"
+        ],
+        "notes": "Giáo án biên soạn mới để phục vụ EDUAGENT; 9 buổi là đề xuất tự học, không phải số tiết chính thức. Kiến thức và số buổi cần giáo viên kiểm duyệt trước khi triển khai chính thức.",
+        "lesson_id": "V.REVIEW",
+        "lesson_title": "BÀI TẬP CUỐI CHƯƠNG V — ÔN TẬP VÀ ĐÁNH GIÁ",
+        "content_type": "detail",
+        "section_types": [
+          "activity",
+          "assessment"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_V_lesson_plan_025",
+        "chunk_index": 25,
+        "part_index": 1,
+        "heading_path": [
+          "Vectơ",
+          "BÀI TẬP CUỐI CHƯƠNG V — ÔN TẬP VÀ ĐÁNH GIÁ",
+          "5. Hoạt động học tập + 6. Dạng bài tập và đánh giá"
+        ],
+        "source_file": "chapter_V.md",
+        "source_sha256": "8ae6b114334ab6c131ae62b4ea3a3904027e1c0f493f43aea6cd67592db8867c"
+      }
+    }
+  ],
+  "appendices": {
+    "NGUỒN THAM KHẢO VÀ KIỂM CHỨNG": "- **SRC_V_01 — Danh mục chương/bài Toán 10 – Chân trời sáng tạo:** https://www.vietjack.com/toan-10-ct/chuong-5-vecto.jsp (đối chiếu tên chương, bốn bài học và bài tập cuối chương).\n- **SRC_V_02 — Danh mục bài giảng Chương 5, HOC247:** https://hoc247.net/chuong-5-vecto-ct1925.html (đối chiếu cấu trúc chương và các chủ đề khái niệm).\n- **SRC_V_03 — Chuyên đề vectơ Toán 10 Chân trời sáng tạo, TOANMATH:** https://toanmath.com/2023/01/chuyen-de-vecto-toan-10-chan-troi-sang-tao.html (tham khảo các nhóm dạng bài; không sao chép nội dung chuyên đề).\n\n**Ghi chú kiểm chứng:** Tên chương và bài đã đối chiếu qua các danh mục công khai. Nội dung kiến thức là bản biên soạn mới theo toán học phổ thông; chưa được đối chiếu từng mệnh đề với toàn văn SGK hoặc thẩm định bởi giáo viên. Vì vậy toàn bộ tài liệu giữ `verification_status: review_required`. Các số buổi và thời lượng mang tính đề xuất tự học của EDUAGENT."
+  }
+}

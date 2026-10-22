@@ -23,7 +23,7 @@ class EnvConfig(BaseSettings):
     api_key_tavily: Optional[str] = None
     api_key_weather: Optional[str] = None
 
-
+    collect_name: str = ""
     # Gemini API
     # gemini_api_key: Optional[str] = None
     # gemini_model: str = "gemini-3.8-flash"

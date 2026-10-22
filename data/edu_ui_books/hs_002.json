@@ -10,5 +10,41 @@
     "document_id": "4c29e52f-0634-4ec4-aba6-f63f15476a27",
     "display_name": "sách toán 10 cánh diều",
     "description": "sách giáo khoa chuẩn của bộ giáo dục"
+  },
+  {
+    "book_id": "d2642028-0a87-4f98-9c10-4c36a6a03893",
+    "title": "data",
+    "series": "ket_noi",
+    "subject": "Toán",
+    "grade": 10,
+    "rag_ready": false,
+    "cover_url": null,
+    "document_id": "248313a7-7133-4b76-9f5d-0b150fec7a1a",
+    "display_name": "data",
+    "description": ""
+  },
+  {
+    "book_id": "3831c5be-9d9a-4fe6-928a-b1622ca686c8",
+    "title": "sachtoandataa",
+    "series": "ket_noi",
+    "subject": "Toán",
+    "grade": 10,
+    "rag_ready": false,
+    "cover_url": null,
+    "document_id": "aee63fd6-5de9-4fec-8fd6-6755256d737e",
+    "display_name": "TÊN  TÀ LIỆU",
+    "description": "mô tả"
+  },
+  {
+    "book_id": "fe41e2a1-f721-41e2-a5ec-456fd9695fcf",
+    "title": "datazz",
+    "series": "ket_noi",
+    "subject": "Toán",
+    "grade": 10,
+    "rag_ready": false,
+    "cover_url": null,
+    "document_id": "e644c39a-e115-450e-a0f2-88739b803b99",
+    "display_name": "zzz",
+    "description": "zzz"
   }
 ]

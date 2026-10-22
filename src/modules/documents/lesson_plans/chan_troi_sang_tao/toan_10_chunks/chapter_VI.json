@@ -1,0 +1,1426 @@
+{
+  "document_metadata": {
+    "schema_version": "1.0",
+    "document_id": "CTST_T10_CH_VI",
+    "document_type": "lesson_plan",
+    "subject": "Toán 10",
+    "grade": 10,
+    "textbook_series": "chan_troi_sang_tao",
+    "volume": 1,
+    "curriculum_version": "GDPT_2018",
+    "chapter_id": "VI",
+    "chapter_title": "Thống kê",
+    "content_types": [
+      "summary",
+      "detail"
+    ],
+    "lesson_ids": [
+      "VI.1",
+      "VI.2",
+      "VI.3",
+      "VI.4",
+      "VI.REVIEW"
+    ],
+    "official_periods": null,
+    "suggested_sessions": 9,
+    "minutes_per_session": 45,
+    "total_suggested_minutes": 405,
+    "verification_status": "review_required",
+    "source_ids": [
+      "SRC_VI_01",
+      "SRC_VI_02",
+      "SRC_VI_03",
+      "SRC_VI_04"
+    ],
+    "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức."
+  },
+  "source_file": "chapter_VI.md",
+  "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e",
+  "max_chars_soft_limit": 2400,
+  "total_chunks": 25,
+  "chunks": [
+    {
+      "content": "Thống kê > A.1. Mục tiêu chương\n\nSau khi học chương này, học sinh cần:\n- Hiểu vai trò của số gần đúng, sai số, độ chính xác và quy tròn trong đo lường, tính toán.\n- Đọc, mô tả, biểu diễn và nhận xét thông tin từ bảng số liệu, biểu đồ; nhận biết cách biểu diễn dễ gây hiểu nhầm.\n- Tính, xác định và diễn giải các số đặc trưng đo xu thế trung tâm của mẫu số liệu không ghép nhóm: số trung bình, trung vị, tứ phân vị, mốt.\n- Tính và diễn giải các số đặc trưng đo mức độ phân tán: khoảng biến thiên, khoảng tứ phân vị, phương sai, độ lệch chuẩn; nhận biết giá trị ngoại lệ theo quy tắc khoảng tứ phân vị.\n- So sánh hai mẫu số liệu phù hợp với bối cảnh, tránh kết luận chỉ từ một chỉ số.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 9,
+        "minutes_per_session": 45,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "content_type": "summary",
+        "lesson_id": null,
+        "lesson_title": null,
+        "section_types": [
+          "chapter_objectives"
+        ],
+        "time_scope": "chapter",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_001",
+        "chunk_index": 1,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "A.1. Mục tiêu chương"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > A.2. Danh sách bài học\n\n| Mã bài EDUAGENT | Tên bài theo danh mục SGK |\n|---|---|\n| VI.1 | Bài 1. Số gần đúng và sai số |\n| VI.2 | Bài 2. Mô tả và biểu diễn dữ liệu trên các bảng và biểu đồ |\n| VI.3 | Bài 3. Các số đặc trưng đo xu thế trung tâm của mẫu số liệu |\n| VI.4 | Bài 4. Các số đặc trưng đo mức độ phân tán của mẫu số liệu |\n| VI.REVIEW | Bài tập cuối chương VI (ôn tập) |\n\n**Lưu ý:** `VI.1`–`VI.REVIEW` là mã nội bộ EDUAGENT, không phải số hiệu do nhà xuất bản công bố.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 9,
+        "minutes_per_session": 45,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "content_type": "summary",
+        "lesson_id": null,
+        "lesson_title": null,
+        "section_types": [
+          "lesson_list"
+        ],
+        "time_scope": "chapter",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_002",
+        "chunk_index": 2,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "A.2. Danh sách bài học"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > A.3. Kiến thức trọng tâm\n\n- **Sai số:** Nếu giá trị đúng là \\(a\\), giá trị gần đúng là \\(\\widetilde a\\), thì sai số tuyệt đối là \\(\\Delta_a = |a-\\widetilde a|\\). Nếu \\(\\Delta_a\\le d\\), số \\(d\\) được dùng làm một độ chính xác của số gần đúng. Khi \\(a\\ne0\\), sai số tương đối là \\(\\delta_a=\\Delta_a/|a|\\); trong thực hành có thể dùng \\(d/|\\widetilde a|\\) để ước lượng khi phù hợp, không nhầm đó với giá trị sai số tương đối chính xác.\n- **Biểu diễn dữ liệu:** Bảng thống kê, tần số và các dạng biểu đồ thích hợp; chú ý nhãn, đơn vị đo, tỉ lệ trục và cách diễn giải.\n- **Xu thế trung tâm:** Số trung bình \\(\\overline x\\), trung vị \\(M_e\\), tứ phân vị \\(Q_1,Q_2,Q_3\\), mốt \\(M_o\\); biết chọn chỉ số phù hợp khi có giá trị bất thường.\n- **Độ phân tán:** \\(R=x_{\\max}-x_{\\min}\\); \\(\\Delta_Q=Q_3-Q_1\\); \\(s^2=\\frac1n\\sum_{i=1}^n(x_i-\\overline x)^2\\); \\(s=\\sqrt{s^2}\\). Giá trị nằm ngoài \\([Q_1-1{,}5\\Delta_Q,\\ Q_3+1{,}5\\Delta_Q]\\) được nhận diện là giá trị ngoại lệ theo quy tắc này.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 9,
+        "minutes_per_session": 45,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "content_type": "summary",
+        "lesson_id": null,
+        "lesson_title": null,
+        "section_types": [
+          "key_knowledge"
+        ],
+        "time_scope": "chapter",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_003",
+        "chunk_index": 3,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "A.3. Kiến thức trọng tâm"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > A.4. Kiến thức tiên quyết và quan hệ giữa các bài\n\n- Cần nắm phép tính số thực, số thập phân, phân số, phần trăm, căn bậc hai và thứ tự các số.\n- Bài VI.1 hỗ trợ đọc và báo cáo kết quả tính toán, đo lường với độ chính xác hợp lí.\n- Bài VI.2 hình thành kĩ năng đọc dữ liệu, làm nền để thực hiện VI.3 và VI.4.\n- Bài VI.3 giúp xác định vị trí và giá trị điển hình của mẫu; Bài VI.4 bổ sung góc nhìn về mức độ biến thiên.\n- Khi phân tích thực tế, có thể cần đồng thời chỉ số xu thế trung tâm, chỉ số phân tán và bối cảnh dữ liệu.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 9,
+        "minutes_per_session": 45,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "content_type": "summary",
+        "lesson_id": null,
+        "lesson_title": null,
+        "section_types": [
+          "prerequisites"
+        ],
+        "time_scope": "chapter",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_004",
+        "chunk_index": 4,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "A.4. Kiến thức tiên quyết và quan hệ giữa các bài"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > A.5. Phân bổ thời gian tự học đề xuất\n\n| Nội dung | Buổi đề xuất | Thời lượng đề xuất |\n|---|---:|---:|\n| Bài VI.1 | 2 | 90 phút |\n| Bài VI.2 | 1 | 45 phút |\n| Bài VI.3 | 2 | 90 phút |\n| Bài VI.4 | 3 | 135 phút |\n| Ôn tập chương | 1 | 45 phút |\n| **Tổng** | **9** | **405 phút** |\n\n**Quy ước:** Mỗi buổi 45 phút. Đây là phân bổ tự học do EDUAGENT đề xuất; Learning Path Agent có thể thay đổi theo trình độ, mục tiêu và lịch của học sinh. Không suy ra đây là phân phối số tiết chính thức.\n\n---",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 9,
+        "minutes_per_session": 45,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "content_type": "summary",
+        "lesson_id": null,
+        "lesson_title": null,
+        "section_types": [
+          "time_plan"
+        ],
+        "time_scope": "chapter",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_005",
+        "chunk_index": 5,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "A.5. Phân bổ thời gian tự học đề xuất"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI 1. SỐ GẦN ĐÚNG VÀ SAI SỐ > 1. Thông tin bài học + 2. Mục tiêu học tập\n\n1. Thông tin bài học\n\n- Mã bài: `VI.1`\n- Số tiết chính thức: chưa xác minh độc lập từ phân phối chương trình của trường.\n- Số buổi tự học đề xuất: **2 buổi**, mỗi buổi **45 phút**.\n- Kiến thức tiên quyết: giá trị tuyệt đối, so sánh số thực, làm tròn số.\n\n2. Mục tiêu học tập\n\n- Phân biệt số đúng và số gần đúng trong những tình huống cụ thể.\n- Hiểu sai số tuyệt đối, độ chính xác và sai số tương đối; biết sử dụng đúng các kí hiệu.\n- Thực hiện quy tròn số phù hợp với độ chính xác và bối cảnh thực tế.\n- Tránh trình bày kết quả đo với số chữ số vượt quá mức độ chính xác có căn cứ.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.1",
+        "lesson_title": "SỐ GẦN ĐÚNG VÀ SAI SỐ",
+        "content_type": "detail",
+        "section_types": [
+          "lesson_info",
+          "objectives"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_006",
+        "chunk_index": 6,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI 1. SỐ GẦN ĐÚNG VÀ SAI SỐ",
+          "1. Thông tin bài học + 2. Mục tiêu học tập"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI 1. SỐ GẦN ĐÚNG VÀ SAI SỐ > 3. Kiến thức cần nắm\n\n3. Kiến thức cần nắm\n\n**Số gần đúng.** Trong phép đo hoặc tính toán, khi không xác định được hoặc không sử dụng giá trị chính xác, ta dùng số gần đúng \\(\\widetilde a\\) thay cho giá trị đúng \\(a\\).\n\n**Sai số tuyệt đối.** \n\\[\n\\Delta_a=|a-\\widetilde a|.\n\\]\nSai số tuyệt đối không âm và có cùng đơn vị với đại lượng được đo. Nếu chưa biết \\(a\\), có thể chưa tính được \\(\\Delta_a\\) mà chỉ đánh giá chặn trên của nó.\n\n**Độ chính xác.** Nếu \\(\\Delta_a\\le d\\), ta nói số gần đúng \\(\\widetilde a\\) có độ chính xác \\(d\\). Khi đó:\n\\[\na\\in[\\widetilde a-d,\\widetilde a+d].\n\\]\nKhông nhầm \\(d\\) với sai số tuyệt đối thực tế.\n\n**Sai số tương đối.** Với \\(a\\ne 0\\):\n\\[\n\\delta_a=\\frac{\\Delta_a}{|a|}.\n\\]\nKhi biết giới hạn sai số tuyệt đối \\(d\\) và \\(|\\widetilde a|>d\\), có thể đánh giá an toàn:\n\\[\n\\delta_a \\le \\frac{d}{|\\widetilde a|-d}.\n\\]\nTrong một số bài toán, \\(\\frac{d}{|\\widetilde a|}\\) là cách ước lượng gần đúng; phải ghi rõ đây là ước lượng.\n\n**Quy tròn.** Xác định hàng cần quy tròn và quan sát chữ số ngay sau hàng đó: nhỏ hơn 5 thì giữ nguyên, từ 5 trở lên thì tăng 1 đơn vị tại hàng quy tròn (với quy tắc quy tròn thông thường ở trường phổ thông). Cần thống nhất hàng làm tròn với yêu cầu độ chính xác.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.1",
+        "lesson_title": "SỐ GẦN ĐÚNG VÀ SAI SỐ",
+        "content_type": "detail",
+        "section_types": [
+          "must_know"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_007",
+        "chunk_index": 7,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI 1. SỐ GẦN ĐÚNG VÀ SAI SỐ",
+          "3. Kiến thức cần nắm"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI 1. SỐ GẦN ĐÚNG VÀ SAI SỐ > 4. Kiến thức cần hiểu\n\n4. Kiến thức cần hiểu\n\n- Mỗi phép đo có giới hạn; tăng số chữ số viết ra không tự làm tăng độ chính xác.\n- Cùng một sai số tuyệt đối có thể đáng kể đối với đại lượng rất nhỏ nhưng ít đáng kể đối với đại lượng lớn; đó là lý do cần sai số tương đối.\n- Khi quy tròn, phải cân nhắc đơn vị, độ chính xác cho phép và ý nghĩa thực tế; không tự nhận kết quả đã đo chính xác hơn dữ liệu ban đầu.\n- Khoảng giá trị đúng có thể rộng hơn một điểm gần đúng, nên báo cáo kết quả cần phản ánh mức độ chắc chắn.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.1",
+        "lesson_title": "SỐ GẦN ĐÚNG VÀ SAI SỐ",
+        "content_type": "detail",
+        "section_types": [
+          "must_understand"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_008",
+        "chunk_index": 8,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI 1. SỐ GẦN ĐÚNG VÀ SAI SỐ",
+          "4. Kiến thức cần hiểu"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI 1. SỐ GẦN ĐÚNG VÀ SAI SỐ > 5. Hoạt động học tập + 6. Dạng bài tập và đánh giá\n\n5. Hoạt động học tập\n\nĐọc tài liệu lý thuyết, xem video bài giảng phù hợp (nếu có) và luyện tập tính sai số, xác định độ chính xác, quy tròn số.\n\n6. Dạng bài tập và đánh giá\n\n- **Nhận biết:** Phân loại số đúng/số gần đúng; nhận diện hàng quy tròn và đơn vị.\n- **Thông hiểu:** Giải thích sự khác nhau giữa sai số tuyệt đối, chặn sai số và sai số tương đối.\n- **Vận dụng:** Tính sai số khi biết số đúng; suy ra khoảng chứa giá trị đúng khi biết độ chính xác; báo cáo một kết quả đo.\n- **Đạt yêu cầu khi:** Nêu đúng ý nghĩa các đại lượng, dùng công thức có điều kiện phù hợp, trình bày giá trị xấp xỉ và sai số nhất quán.\n\n---",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.1",
+        "lesson_title": "SỐ GẦN ĐÚNG VÀ SAI SỐ",
+        "content_type": "detail",
+        "section_types": [
+          "activity",
+          "assessment"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_009",
+        "chunk_index": 9,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI 1. SỐ GẦN ĐÚNG VÀ SAI SỐ",
+          "5. Hoạt động học tập + 6. Dạng bài tập và đánh giá"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI 2. MÔ TẢ VÀ BIỂU DIỄN DỮ LIỆU TRÊN CÁC BẢNG VÀ BIỂU ĐỒ > 1. Thông tin bài học + 2. Mục tiêu học tập\n\n1. Thông tin bài học\n\n- Mã bài: `VI.2`\n- Số tiết chính thức: chưa xác minh độc lập từ phân phối chương trình của trường.\n- Số buổi tự học đề xuất: **1 buổi**, **45 phút**.\n- Kiến thức tiên quyết: phép tính số liệu, phần trăm, đọc trục tọa độ, các biểu đồ đã học.\n\n2. Mục tiêu học tập\n\n- Đọc thông tin từ bảng thống kê và các biểu đồ thông dụng.\n- Mô tả dữ liệu theo nhóm, thời điểm hoặc đặc điểm được khảo sát.\n- Chọn cách biểu diễn thích hợp với loại dữ liệu và mục đích so sánh.\n- Nhận biết một số cách trình bày dữ liệu có khả năng gây hiểu nhầm.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 1,
+        "minutes_per_session": null,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.2",
+        "lesson_title": "MÔ TẢ VÀ BIỂU DIỄN DỮ LIỆU TRÊN CÁC BẢNG VÀ BIỂU ĐỒ",
+        "content_type": "detail",
+        "section_types": [
+          "lesson_info",
+          "objectives"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_010",
+        "chunk_index": 10,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI 2. MÔ TẢ VÀ BIỂU DIỄN DỮ LIỆU TRÊN CÁC BẢNG VÀ BIỂU ĐỒ",
+          "1. Thông tin bài học + 2. Mục tiêu học tập"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI 2. MÔ TẢ VÀ BIỂU DIỄN DỮ LIỆU TRÊN CÁC BẢNG VÀ BIỂU ĐỒ > 3. Kiến thức cần nắm\n\n3. Kiến thức cần nắm\n\n**Bảng dữ liệu.** Bảng cần có tên đại lượng, đơn vị, các nhóm hoặc thời điểm và giá trị tương ứng. Số liệu phải được đối chiếu với mô tả của khảo sát trước khi kết luận.\n\n**Tần số và tỉ lệ.** Với tổng \\(n\\) quan sát, nếu một nhóm có tần số \\(n_i\\), tần suất tương ứng là:\n\\[\nf_i=\\frac{n_i}{n},\\qquad p_i=100\\%\\times f_i.\n\\]\nTổng các tần số bằng \\(n\\); tổng các tần suất bằng 1 (có thể lệch nhỏ do quy tròn).\n\n**Biểu đồ.**\n- Biểu đồ cột thích hợp để so sánh độ lớn giữa những nhóm hoặc thời điểm.\n- Biểu đồ đường thường dùng để quan sát sự biến đổi của đại lượng theo thời gian hoặc thứ tự.\n- Biểu đồ hình quạt tròn thường dùng biểu diễn cơ cấu các phần của một tổng thể; tổng tỉ lệ cần xấp xỉ 100%.\n- Khi sử dụng các dạng biểu đồ này cần ghi nhãn, đơn vị, chú giải và chọn tỉ lệ phù hợp.\n\n**Nhận diện cách biểu diễn gây hiểu nhầm.** Kiểm tra trục tung có bị cắt mốc hay không, hai trục có đơn vị phù hợp không, khoảng cách giữa các mốc có nhất quán không và dữ liệu so sánh có cùng điều kiện hay không.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 1,
+        "minutes_per_session": null,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.2",
+        "lesson_title": "MÔ TẢ VÀ BIỂU DIỄN DỮ LIỆU TRÊN CÁC BẢNG VÀ BIỂU ĐỒ",
+        "content_type": "detail",
+        "section_types": [
+          "must_know"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_011",
+        "chunk_index": 11,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI 2. MÔ TẢ VÀ BIỂU DIỄN DỮ LIỆU TRÊN CÁC BẢNG VÀ BIỂU ĐỒ",
+          "3. Kiến thức cần nắm"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI 2. MÔ TẢ VÀ BIỂU DIỄN DỮ LIỆU TRÊN CÁC BẢNG VÀ BIỂU ĐỒ > 4. Kiến thức cần hiểu\n\n4. Kiến thức cần hiểu\n\n- Một bảng dữ liệu có thể hỗ trợ nhiều cách diễn giải; cách chọn biểu đồ ảnh hưởng đến điều người xem chú ý.\n- Giá trị tuyệt đối và tỉ lệ phần trăm phản ánh hai góc nhìn khác nhau, cần ghi rõ mẫu số của tỉ lệ.\n- Trục biểu đồ bị rút ngắn không nhất thiết sai, nhưng có thể khiến chênh lệch trông lớn hơn thực tế; cần đọc nhãn trục và tỉ lệ.\n- Không suy ra quan hệ nguyên nhân – kết quả chỉ từ biến động đồng thời trên biểu đồ.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 1,
+        "minutes_per_session": null,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.2",
+        "lesson_title": "MÔ TẢ VÀ BIỂU DIỄN DỮ LIỆU TRÊN CÁC BẢNG VÀ BIỂU ĐỒ",
+        "content_type": "detail",
+        "section_types": [
+          "must_understand"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_012",
+        "chunk_index": 12,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI 2. MÔ TẢ VÀ BIỂU DIỄN DỮ LIỆU TRÊN CÁC BẢNG VÀ BIỂU ĐỒ",
+          "4. Kiến thức cần hiểu"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI 2. MÔ TẢ VÀ BIỂU DIỄN DỮ LIỆU TRÊN CÁC BẢNG VÀ BIỂU ĐỒ > 5. Hoạt động học tập + 6. Dạng bài tập và đánh giá\n\n5. Hoạt động học tập\n\nĐọc tài liệu, xem video hướng dẫn (nếu có), thực hành đọc bảng số liệu, chọn biểu đồ và nhận xét cách biểu diễn dữ liệu.\n\n6. Dạng bài tập và đánh giá\n\n- **Nhận biết:** Xác định dữ liệu, đơn vị, tần số, tần suất và thành phần của bảng/biểu đồ.\n- **Thông hiểu:** Giải thích việc chọn dạng biểu đồ, đọc tỉ lệ và so sánh các nhóm.\n- **Vận dụng:** Lập bảng đơn giản, chuyển số liệu sang biểu đồ và phát hiện cách biểu diễn có thể gây hiểu nhầm.\n- **Đạt yêu cầu khi:** Thông tin đọc đúng theo trục, nhãn, đơn vị; kết luận phù hợp dữ liệu và không vượt quá bằng chứng.\n\n---",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 1,
+        "minutes_per_session": null,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.2",
+        "lesson_title": "MÔ TẢ VÀ BIỂU DIỄN DỮ LIỆU TRÊN CÁC BẢNG VÀ BIỂU ĐỒ",
+        "content_type": "detail",
+        "section_types": [
+          "activity",
+          "assessment"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_013",
+        "chunk_index": 13,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI 2. MÔ TẢ VÀ BIỂU DIỄN DỮ LIỆU TRÊN CÁC BẢNG VÀ BIỂU ĐỒ",
+          "5. Hoạt động học tập + 6. Dạng bài tập và đánh giá"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI 3. CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM CỦA MẪU SỐ LIỆU > 1. Thông tin bài học + 2. Mục tiêu học tập\n\n1. Thông tin bài học\n\n- Mã bài: `VI.3`\n- Số tiết chính thức: chưa xác minh độc lập từ phân phối chương trình của trường.\n- Số buổi tự học đề xuất: **2 buổi**, mỗi buổi **45 phút**.\n- Kiến thức tiên quyết: phân số, trung bình cộng, sắp xếp số thực, bảng tần số.\n\n2. Mục tiêu học tập\n\n- Tính được số trung bình, xác định trung vị, tứ phân vị và mốt của mẫu số liệu không ghép nhóm.\n- Biết sắp xếp dữ liệu trước khi tìm trung vị và tứ phân vị.\n- Giải thích vai trò của từng số đặc trưng khi mô tả giá trị điển hình.\n- Biết lựa chọn chỉ số phù hợp với đặc điểm và mục đích phân tích dữ liệu.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.3",
+        "lesson_title": "CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM CỦA MẪU SỐ LIỆU",
+        "content_type": "detail",
+        "section_types": [
+          "lesson_info",
+          "objectives"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_014",
+        "chunk_index": 14,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI 3. CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM CỦA MẪU SỐ LIỆU",
+          "1. Thông tin bài học + 2. Mục tiêu học tập"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI 3. CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM CỦA MẪU SỐ LIỆU > 3. Kiến thức cần nắm\n\n3. Kiến thức cần nắm\n\n**Số trung bình cộng.** Với \\(n\\) quan sát \\(x_1,\\ldots,x_n\\):\n\\[\n\\overline x=\\frac{x_1+\\cdots+x_n}{n}.\n\\]\nKhi giá trị \\(a_i\\) xuất hiện \\(m_i\\) lần:\n\\[\n\\overline x=\\frac{\\sum_i m_i a_i}{\\sum_i m_i}.\n\\]\nSố trung bình chịu ảnh hưởng của các giá trị rất lớn hoặc rất nhỏ.\n\n**Trung vị \\(M_e\\).** Trước tiên sắp xếp dữ liệu tăng dần \\(x_{(1)}\\le\\cdots\\le x_{(n)}\\).\n- Nếu \\(n=2k+1\\), trung vị là \\(x_{(k+1)}\\).\n- Nếu \\(n=2k\\), trung vị là \\(\\frac{x_{(k)}+x_{(k+1)}}2\\).\n\n**Tứ phân vị.** \\(Q_2\\) là trung vị của toàn bộ mẫu. \\(Q_1\\) là trung vị của nửa dưới và \\(Q_3\\) là trung vị của nửa trên sau khi sắp xếp. Với mẫu có số phần tử lẻ, dùng quy tắc đang học theo SGK là loại trung vị chung trước khi lấy trung vị hai nửa; không trộn tùy tiện các quy ước tính tứ phân vị khác nhau từ phần mềm.\n\n**Mốt \\(M_o\\).** Giá trị có tần số xuất hiện lớn nhất trong mẫu; một mẫu có thể không có mốt duy nhất, chẳng hạn nhiều giá trị cùng đạt tần số lớn nhất. Khi tất cả giá trị xuất hiện một lần, mốt thường không mang nhiều ý nghĩa về giá trị điển hình.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.3",
+        "lesson_title": "CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM CỦA MẪU SỐ LIỆU",
+        "content_type": "detail",
+        "section_types": [
+          "must_know"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_015",
+        "chunk_index": 15,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI 3. CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM CỦA MẪU SỐ LIỆU",
+          "3. Kiến thức cần nắm"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI 3. CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM CỦA MẪU SỐ LIỆU > 4. Kiến thức cần hiểu\n\n4. Kiến thức cần hiểu\n\n- Số trung bình tận dụng toàn bộ giá trị nhưng nhạy với giá trị ngoại lệ; trung vị thường ổn định hơn trước các giá trị rất lớn/nhỏ.\n- Tứ phân vị chia dữ liệu đã sắp xếp thành các phần phục vụ mô tả vị trí; không được lấy tứ phân vị khi chưa thống nhất quy ước tính.\n- Mốt phản ánh giá trị xuất hiện nhiều, đặc biệt hữu ích khi quan tâm đến mức phổ biến.\n- Hai mẫu có cùng trung bình chưa chắc có cùng mức độ phân tán hoặc cùng trung vị.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.3",
+        "lesson_title": "CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM CỦA MẪU SỐ LIỆU",
+        "content_type": "detail",
+        "section_types": [
+          "must_understand"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_016",
+        "chunk_index": 16,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI 3. CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM CỦA MẪU SỐ LIỆU",
+          "4. Kiến thức cần hiểu"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI 3. CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM CỦA MẪU SỐ LIỆU > 5. Hoạt động học tập + 6. Dạng bài tập và đánh giá\n\n5. Hoạt động học tập\n\nĐọc lý thuyết, xem video hướng dẫn (nếu có) và làm bài tập tính số trung bình, trung vị, tứ phân vị, mốt từ dữ liệu và bảng tần số.\n\n6. Dạng bài tập và đánh giá\n\n- **Nhận biết:** Nêu tên, kí hiệu và cách xác định các số đặc trưng.\n- **Thông hiểu:** Giải thích sự khác nhau giữa trung bình, trung vị và mốt; xác định vai trò của tứ phân vị.\n- **Vận dụng:** Tính số đặc trưng với mẫu không ghép nhóm, bảng tần số; chọn chỉ số phù hợp để mô tả.\n- **Đạt yêu cầu khi:** Sắp xếp đúng dữ liệu, tính toán chính xác và giải thích hợp lí vì sao dùng chỉ số đó.\n\n---",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.3",
+        "lesson_title": "CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM CỦA MẪU SỐ LIỆU",
+        "content_type": "detail",
+        "section_types": [
+          "activity",
+          "assessment"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_017",
+        "chunk_index": 17,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI 3. CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM CỦA MẪU SỐ LIỆU",
+          "5. Hoạt động học tập + 6. Dạng bài tập và đánh giá"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI 4. CÁC SỐ ĐẶC TRƯNG ĐO MỨC ĐỘ PHÂN TÁN CỦA MẪU SỐ LIỆU > 1. Thông tin bài học + 2. Mục tiêu học tập\n\n1. Thông tin bài học\n\n- Mã bài: `VI.4`\n- Số tiết chính thức: chưa xác minh độc lập từ phân phối chương trình của trường.\n- Số buổi tự học đề xuất: **3 buổi**, mỗi buổi **45 phút**.\n- Kiến thức tiên quyết: trung bình cộng, tứ phân vị, bình phương và căn bậc hai.\n\n2. Mục tiêu học tập\n\n- Tính được khoảng biến thiên và khoảng tứ phân vị.\n- Tính được phương sai và độ lệch chuẩn của mẫu số liệu không ghép nhóm.\n- Nhận biết giá trị ngoại lệ theo quy tắc dựa vào khoảng tứ phân vị.\n- Giải thích ý nghĩa mức độ phân tán khi so sánh các mẫu số liệu có bối cảnh phù hợp.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 3,
+        "minutes_per_session": 45,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.4",
+        "lesson_title": "CÁC SỐ ĐẶC TRƯNG ĐO MỨC ĐỘ PHÂN TÁN CỦA MẪU SỐ LIỆU",
+        "content_type": "detail",
+        "section_types": [
+          "lesson_info",
+          "objectives"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_018",
+        "chunk_index": 18,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI 4. CÁC SỐ ĐẶC TRƯNG ĐO MỨC ĐỘ PHÂN TÁN CỦA MẪU SỐ LIỆU",
+          "1. Thông tin bài học + 2. Mục tiêu học tập"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI 4. CÁC SỐ ĐẶC TRƯNG ĐO MỨC ĐỘ PHÂN TÁN CỦA MẪU SỐ LIỆU > 3. Kiến thức cần nắm\n\n3. Kiến thức cần nắm\n\n**Khoảng biến thiên.**\n\\[\nR=x_{\\max}-x_{\\min}.\n\\]\nChỉ phụ thuộc hai giá trị biên của mẫu, nên nhạy với giá trị ngoại lệ.\n\n**Khoảng tứ phân vị.**\n\\[\n\\Delta_Q=Q_3-Q_1.\n\\]\nĐại lượng này đo độ trải rộng của phần dữ liệu ở giữa theo các tứ phân vị đã xác định.\n\n**Quy tắc nhận diện giá trị ngoại lệ.** Theo quy tắc \\(1{,}5\\) lần khoảng tứ phân vị, một quan sát \\(x\\) được xem là ngoại lệ khi:\n\\[\nx<Q_1-1{,}5\\Delta_Q\\quad \\text{hoặc}\\quad x>Q_3+1{,}5\\Delta_Q.\n\\]\nĐây là tiêu chí nhận diện thống kê theo quy tắc, không phải kết luận rằng dữ liệu đã nhập sai.\n\n**Phương sai.** Với mẫu \\(x_1,\\ldots,x_n\\):\n\\[\ns^2=\\frac1n\\sum_{i=1}^n(x_i-\\overline x)^2\n=\\frac1n\\sum_{i=1}^n x_i^2-\\overline x^2.\n\\]\nNếu dữ liệu được cho theo tần số \\(m_i\\) của giá trị \\(a_i\\), với \\(n=\\sum_i m_i\\):\n\\[\ns^2=\\frac1n\\sum_i m_i(a_i-\\overline x)^2.\n\\]\nGiữ quy ước mẫu số \\(n\\) được dùng trong kiến thức phổ thông ở bài này; không thay bằng công thức ước lượng mẫu số \\(n-1\\) khi giải bài theo SGK.\n\n**Độ lệch chuẩn.**\n\\[\ns=\\sqrt{s^2}.\n\\]\nĐộ lệch chuẩn không âm và có cùng đơn vị với dữ liệu; phương sai có đơn vị bình phương tương ứng.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 3,
+        "minutes_per_session": 45,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.4",
+        "lesson_title": "CÁC SỐ ĐẶC TRƯNG ĐO MỨC ĐỘ PHÂN TÁN CỦA MẪU SỐ LIỆU",
+        "content_type": "detail",
+        "section_types": [
+          "must_know"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_019",
+        "chunk_index": 19,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI 4. CÁC SỐ ĐẶC TRƯNG ĐO MỨC ĐỘ PHÂN TÁN CỦA MẪU SỐ LIỆU",
+          "3. Kiến thức cần nắm"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI 4. CÁC SỐ ĐẶC TRƯNG ĐO MỨC ĐỘ PHÂN TÁN CỦA MẪU SỐ LIỆU > 4. Kiến thức cần hiểu\n\n4. Kiến thức cần hiểu\n\n- Hai mẫu có cùng số trung bình vẫn có thể khác nhiều về khoảng biến thiên, phương sai và độ lệch chuẩn.\n- Khoảng biến thiên dễ bị chi phối bởi điểm cực trị; khoảng tứ phân vị thường ít nhạy hơn trước giá trị ở hai đầu.\n- Phương sai dùng bình phương sai lệch nên các quan sát cách xa trung bình có ảnh hưởng mạnh; độ lệch chuẩn thuận tiện hơn khi diễn giải bằng đơn vị gốc.\n- Không kết luận “mẫu tốt hơn” chỉ vì độ lệch chuẩn nhỏ; phải xét đại lượng đang đo, giá trị trung tâm và yêu cầu phân tích.\n- Nhận diện giá trị ngoại lệ là bước xem xét dữ liệu, không phải lí do tự động xóa quan sát đó.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 3,
+        "minutes_per_session": 45,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.4",
+        "lesson_title": "CÁC SỐ ĐẶC TRƯNG ĐO MỨC ĐỘ PHÂN TÁN CỦA MẪU SỐ LIỆU",
+        "content_type": "detail",
+        "section_types": [
+          "must_understand"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_020",
+        "chunk_index": 20,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI 4. CÁC SỐ ĐẶC TRƯNG ĐO MỨC ĐỘ PHÂN TÁN CỦA MẪU SỐ LIỆU",
+          "4. Kiến thức cần hiểu"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI 4. CÁC SỐ ĐẶC TRƯNG ĐO MỨC ĐỘ PHÂN TÁN CỦA MẪU SỐ LIỆU > 5. Hoạt động học tập + 6. Dạng bài tập và đánh giá\n\n5. Hoạt động học tập\n\nĐọc tài liệu, xem video phù hợp (nếu có) và luyện tập tính khoảng biến thiên, khoảng tứ phân vị, phương sai, độ lệch chuẩn, phát hiện ngoại lệ.\n\n6. Dạng bài tập và đánh giá\n\n- **Nhận biết:** Nêu công thức và ý nghĩa của từng chỉ số phân tán.\n- **Thông hiểu:** Giải thích sự khác nhau giữa khoảng biến thiên, khoảng tứ phân vị, phương sai và độ lệch chuẩn.\n- **Vận dụng:** Tính toán với mẫu số liệu hoặc bảng tần số; dùng tiêu chí ngoại lệ; so sánh hai mẫu có cùng đơn vị đo.\n- **Đạt yêu cầu khi:** Kết quả tính đúng quy ước, có đơn vị thích hợp và nhận xét không vượt quá bằng chứng.\n\n---",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 3,
+        "minutes_per_session": 45,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.4",
+        "lesson_title": "CÁC SỐ ĐẶC TRƯNG ĐO MỨC ĐỘ PHÂN TÁN CỦA MẪU SỐ LIỆU",
+        "content_type": "detail",
+        "section_types": [
+          "activity",
+          "assessment"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_021",
+        "chunk_index": 21,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI 4. CÁC SỐ ĐẶC TRƯNG ĐO MỨC ĐỘ PHÂN TÁN CỦA MẪU SỐ LIỆU",
+          "5. Hoạt động học tập + 6. Dạng bài tập và đánh giá"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI TẬP CUỐI CHƯƠNG VI. ÔN TẬP VÀ ĐÁNH GIÁ > 1. Thông tin bài học + 2. Mục tiêu học tập\n\n1. Thông tin bài học\n\n- Mã bài nội bộ: `VI.REVIEW`\n- Số buổi tự học đề xuất: **1 buổi**, **45 phút**.\n\n2. Mục tiêu học tập\n\n- Hệ thống hóa kiến thức về số gần đúng, cách mô tả dữ liệu, chỉ số xu thế trung tâm và mức độ phân tán.\n- Lựa chọn được phương pháp và chỉ số phù hợp khi phân tích dữ liệu.\n- Phát hiện lỗi quy tròn, sai công thức, không thống nhất quy ước tứ phân vị hoặc dùng sai đơn vị.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 1,
+        "minutes_per_session": null,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.REVIEW",
+        "lesson_title": "BÀI TẬP CUỐI CHƯƠNG VI. ÔN TẬP VÀ ĐÁNH GIÁ",
+        "content_type": "detail",
+        "section_types": [
+          "lesson_info",
+          "objectives"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_022",
+        "chunk_index": 22,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI TẬP CUỐI CHƯƠNG VI. ÔN TẬP VÀ ĐÁNH GIÁ",
+          "1. Thông tin bài học + 2. Mục tiêu học tập"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI TẬP CUỐI CHƯƠNG VI. ÔN TẬP VÀ ĐÁNH GIÁ > 3. Kiến thức cần nắm\n\n3. Kiến thức cần nắm\n\n- Sai số tuyệt đối, độ chính xác, quy tròn và cách báo cáo kết quả.\n- Đọc bảng, biểu đồ, tần số và tần suất.\n- Số trung bình, trung vị, tứ phân vị và mốt.\n- Khoảng biến thiên, khoảng tứ phân vị, phương sai, độ lệch chuẩn và quy tắc ngoại lệ.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 1,
+        "minutes_per_session": null,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.REVIEW",
+        "lesson_title": "BÀI TẬP CUỐI CHƯƠNG VI. ÔN TẬP VÀ ĐÁNH GIÁ",
+        "content_type": "detail",
+        "section_types": [
+          "must_know"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_023",
+        "chunk_index": 23,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI TẬP CUỐI CHƯƠNG VI. ÔN TẬP VÀ ĐÁNH GIÁ",
+          "3. Kiến thức cần nắm"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI TẬP CUỐI CHƯƠNG VI. ÔN TẬP VÀ ĐÁNH GIÁ > 4. Kiến thức cần hiểu\n\n4. Kiến thức cần hiểu\n\n- Cách chọn chỉ số phụ thuộc loại dữ liệu, mục đích khảo sát và sự hiện diện của giá trị bất thường.\n- Kết luận về dữ liệu cần dựa vào đồng thời các đặc trưng vị trí, độ phân tán và bối cảnh.\n- Báo cáo tính toán phải nhất quán về đơn vị đo, số gần đúng và độ chính xác.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 1,
+        "minutes_per_session": null,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.REVIEW",
+        "lesson_title": "BÀI TẬP CUỐI CHƯƠNG VI. ÔN TẬP VÀ ĐÁNH GIÁ",
+        "content_type": "detail",
+        "section_types": [
+          "must_understand"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_024",
+        "chunk_index": 24,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI TẬP CUỐI CHƯƠNG VI. ÔN TẬP VÀ ĐÁNH GIÁ",
+          "4. Kiến thức cần hiểu"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    },
+    {
+      "content": "Thống kê > BÀI TẬP CUỐI CHƯƠNG VI. ÔN TẬP VÀ ĐÁNH GIÁ > 5. Hoạt động học tập + 6. Dạng bài tập và đánh giá\n\n5. Hoạt động học tập\n\nĐọc lại lý thuyết, tổng hợp công thức và làm bài tập cuối chương, sau đó rà soát những câu sai.\n\n6. Dạng bài tập và đánh giá\n\n- **Nhận biết:** Công thức, kí hiệu, thuật ngữ và đặc trưng của từng chỉ số.\n- **Thông hiểu:** Lựa chọn chỉ số, so sánh ý nghĩa, đọc bảng và biểu đồ.\n- **Vận dụng:** Phân tích một mẫu số liệu hoàn chỉnh, tính các chỉ số và rút ra nhận xét có điều kiện.\n- **Đạt yêu cầu khi:** Chọn đúng phương pháp, tính toán đúng và diễn giải phù hợp với dữ liệu.\n\n---",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_VI",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "VI",
+        "chapter_title": "Thống kê",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "VI.1",
+          "VI.2",
+          "VI.3",
+          "VI.4",
+          "VI.REVIEW"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 1,
+        "minutes_per_session": null,
+        "total_suggested_minutes": 405,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_VI_01",
+          "SRC_VI_02",
+          "SRC_VI_03",
+          "SRC_VI_04"
+        ],
+        "authoring_note": "Giáo án tự biên soạn dựa trên nguồn tham khảo; không sao chép nguyên văn SGK. Thời lượng tự học chỉ là gợi ý và không phải số tiết chính thức.",
+        "lesson_id": "VI.REVIEW",
+        "lesson_title": "BÀI TẬP CUỐI CHƯƠNG VI. ÔN TẬP VÀ ĐÁNH GIÁ",
+        "content_type": "detail",
+        "section_types": [
+          "activity",
+          "assessment"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_VI_lesson_plan_025",
+        "chunk_index": 25,
+        "part_index": 1,
+        "heading_path": [
+          "Thống kê",
+          "BÀI TẬP CUỐI CHƯƠNG VI. ÔN TẬP VÀ ĐÁNH GIÁ",
+          "5. Hoạt động học tập + 6. Dạng bài tập và đánh giá"
+        ],
+        "source_file": "chapter_VI.md",
+        "source_sha256": "27a973bc37cbf6976b29281e88855d90b8330aebcf9e484ead1ca47928699e6e"
+      }
+    }
+  ],
+  "appendices": {
+    "NGUỒN THAM KHẢO VÀ KIỂM CHỨNG": "Các tài liệu dưới đây được dùng để **đối chiếu mục lục và phạm vi kiến thức**. Nội dung giáo án là bản biên soạn mới; không phải bản sao nguyên văn của những nguồn này.\n\n| source_id | Nguồn | URL | Phạm vi tham khảo |\n|---|---|---|---|\n| SRC_VI_01 | Lời Giải Hay – Chương VI, Thống kê, Toán 10 CTST | https://loigiaihay.com/chuong-vi-thong-ke-e26101.html | Mục lục, thứ tự các bài |\n| SRC_VI_02 | VietJack – Toán 10 Chân trời sáng tạo | https://www.vietjack.com/toan-10-ct/index.jsp | Đối chiếu bốn bài và bài tập cuối chương |\n| SRC_VI_03 | Lời Giải Hay – Lý thuyết các số đặc trưng đo mức độ phân tán | https://loigiaihay.com/ly-thuyet-cac-so-dac-trung-do-muc-do-phan-tan-cua-mau-so-lieu-sgk-toan-10-ctst-a109971.html | Công thức phân tán và giá trị ngoại lệ |\n| SRC_VI_04 | VnDoc – Lý thuyết Bài 3, Toán 10 CTST | https://vndoc.com/ly-thuyet-toan-10-bai-3-cac-so-dac-trung-do-xu-the-trung-tam-cua-mau-so-lieu-ctst-294095 | Phạm vi trung bình, trung vị, tứ phân vị, mốt |\n\n**Trạng thái xác minh:** `review_required`. Cấu trúc bốn bài được đối chiếu nhiều nguồn công khai; nội dung toán được biên soạn theo kiến thức phổ thông tương ứng nhưng chưa được giáo viên độc lập duyệt toàn bộ. Những thông số thời lượng chỉ là đề xuất tự học. Trước khi đưa vào Qdrant dùng cho sinh nội dung chính thức, cần kiểm tra lại bản SGK đang sử dụng và bộ quy tắc/tứ phân vị để đồng nhất với tài liệu gốc."
+  }
+}

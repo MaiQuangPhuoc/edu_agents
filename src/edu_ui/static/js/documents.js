@@ -3,11 +3,17 @@
   const $ = (id) => document.getElementById(id);
   const STUDENT_ID = 'hs_002'; // Chỉ để demo; production dùng phiên đăng nhập.
   const MAX_FILE_SIZE = 30 * 1024 * 1024;
+  const PRIVATE_DOCUMENTS_KEY = 'eduagent-private-documents';
   const subjects = ['Toán', 'Ngữ văn', 'Tiếng Anh', 'Vật lí', 'Hóa học', 'Sinh học', 'Lịch sử', 'Địa lí', 'Giáo dục kinh tế và pháp luật', 'Tin học', 'Công nghệ', 'Giáo dục quốc phòng và an ninh', 'Giáo dục thể chất', 'Âm nhạc', 'Mĩ thuật', 'Hoạt động trải nghiệm, hướng nghiệp', 'Khác'];
   const seriesLabels = {ket_noi:'Kết nối tri thức với cuộc sống', chan_troi:'Chân trời sáng tạo', canh_dieu:'Cánh Diều', khac:'Khác'};
   let catalog = [];
   let editingDocumentId = null;
   let selectedBookFile = null;
+  let selectedPrivateFiles = [];
+  let books = [];
+  let privateDocuments = [];
+  let selectedPrivateDocumentId = null;
+  let previewObjectUrl = null;
   const status = (message, error=false) => { $('status').textContent = message; $('status').className = error ? 'error' : 'success'; };
   const element = (tag, text, cls) => { const x=document.createElement(tag); if (text !== undefined) x.textContent=text; if(cls) x.className=cls; return x; };
   async function api(path, opts={}) { const r=await fetch(path,opts); const d=await r.json().catch(()=>({})); if(!r.ok) throw new Error(typeof d.detail==='string'?d.detail:`HTTP ${r.status}`); return d; }
@@ -17,7 +23,11 @@
   }
   fillSubjects('book-subject'); fillSubjects('private-subject');
   $('book-subject').value='Toán';
-  $('private-subject').addEventListener('change',()=>{ $('custom-subject-wrap').hidden=$('private-subject').value!=='Khác'; });
+  $('private-subject').addEventListener('change',()=>{
+    const custom=$('private-subject').value==='Khác';
+    $('custom-subject-wrap').hidden=!custom;
+    $('custom-subject').required=custom;
+  });
   function setTab(which){
     $('book-panel').hidden=which!=='book'; $('private-panel').hidden=which!=='private';
     $('tab-book').classList.toggle('active',which==='book'); $('tab-private').classList.toggle('active',which==='private');
@@ -63,6 +73,187 @@
       img.onerror=()=>{img.hidden=true;$('cover-fallback').hidden=false;};
       img.src=book.cover_url;
     }
+  }
+  function getPrivateDocuments(){
+    let stored;
+    try{
+      stored=JSON.parse(localStorage.getItem(PRIVATE_DOCUMENTS_KEY)||'[]');
+    }catch(error){
+      console.error('EDUAGENT: Không thể đọc tài liệu riêng đã lưu.',error);
+      throw new Error('Không thể đọc danh sách tài liệu riêng đã lưu.');
+    }
+    if(!Array.isArray(stored))throw new Error('Danh sách tài liệu riêng đã lưu không hợp lệ.');
+    return stored;
+  }
+  function savePrivateDocuments(){
+    try{
+      localStorage.setItem(PRIVATE_DOCUMENTS_KEY,JSON.stringify(privateDocuments));
+    }catch(error){
+      console.error('EDUAGENT: Không thể lưu tài liệu riêng.',error);
+      throw new Error('Không thể lưu tài liệu riêng trong trình duyệt.');
+    }
+  }
+  function createCover(title,kind,subject){
+    const cover=element('span',undefined,`document-cover ${kind==='private'?'private-cover':'book-cover'}`);
+    cover.append(element('span',kind==='private'?'TÀI LIỆU':'EDUAGENT','cover-brand'));
+    cover.append(element('strong',title,'cover-title'));
+    cover.append(element('span',subject,'cover-subject'));
+    return cover;
+  }
+  function showPrivateDetail(document){
+    selectedPrivateDocumentId=document.document_id;
+    const panel=$('private-detail');
+    panel.replaceChildren();
+    if(previewObjectUrl){
+      URL.revokeObjectURL(previewObjectUrl);
+      previewObjectUrl=null;
+    }
+    const detail=element('article',undefined,'document-detail');
+    const kind=document.kind==='private'?'private':'book';
+    const subject=document.subject||'Chưa phân loại';
+    const title=document.display_name||document.title||'Tài liệu';
+    const meta=kind==='private'
+      ?`Tài liệu riêng · ${subject}`
+      :`Lớp ${document.grade||10} · ${subject} · ${seriesLabels[document.series]||document.series}`;
+    const file=kind==='private'?selectedPrivateFilesById.get(document.document_id):null;
+    const preview=element('div',undefined,'document-preview');
+    if(file&&(file.type==='application/pdf'||/\.pdf$/i.test(file.name))){
+      previewObjectUrl=URL.createObjectURL(file);
+      const frame=element('iframe');
+      frame.title=`Bản xem trước ${title}`;
+      frame.src=previewObjectUrl;
+      preview.append(frame);
+    }else if(file&&(file.type.startsWith('image/')||/\.(jpg|jpeg|png)$/i.test(file.name))){
+      previewObjectUrl=URL.createObjectURL(file);
+      const image=element('img');
+      image.src=previewObjectUrl;
+      image.alt=`Bản xem trước ${title}`;
+      preview.append(image);
+    }else if(file&&/\.txt$/i.test(file.name)){
+      const textPreview=element('pre','Đang tải nội dung…','text-preview');
+      preview.append(textPreview);
+      file.text().then(text=>{
+        if(selectedPrivateDocumentId===document.document_id){
+          textPreview.textContent=text.slice(0,30000);
+          if(text.length>30000)textPreview.textContent+='\n\n… Nội dung xem trước đã được rút gọn.';
+        }
+      }).catch(error=>{
+        console.error('EDUAGENT: Không thể xem trước tệp văn bản.',error);
+        if(selectedPrivateDocumentId===document.document_id)textPreview.textContent='Không thể đọc nội dung tệp này.';
+      });
+    }else{
+      preview.append(createCover(title,kind,subject));
+      if(kind==='private'&&document.file){
+        preview.append(element('p',file
+          ?`Định dạng ${document.file.name.split('.').pop()?.toUpperCase()||'tài liệu'} chưa hỗ trợ xem trước trực tiếp.`
+          :'File gốc chưa được lưu trên máy chủ. Hãy chọn lại file để xem nội dung.','preview-note'));
+      }
+    }
+    const info=element('div',undefined,'document-detail-info');
+    info.append(element('span',kind==='private'?'TÀI LIỆU RIÊNG':'SÁCH GIÁO KHOA','small-label'));
+    info.append(element('h3',title));
+    info.append(element('p',meta,'muted'));
+    if(document.description)info.append(element('p',document.description,'detail-description'));
+    if(kind==='private'&&document.file){
+      info.append(element('p',`${document.file.name} · ${(document.file.size/1024/1024).toFixed(2)} MB`,'detail-file'));
+    }
+    if(kind==='book')info.append(element('p',`Tên sách: ${document.title}`,'detail-file'));
+    detail.append(preview,info);
+    panel.append(detail);
+  }
+  const selectedPrivateFilesById=new Map();
+  function showPrivateDetailEmpty(){
+    const empty=element('div',undefined,'detail-empty');
+    empty.append(element('span','▤','detail-empty-icon'));
+    empty.lastElementChild.setAttribute('aria-hidden','true');
+    empty.append(element('strong','Chọn một tài liệu để xem'));
+    empty.append(element('p','Tài liệu đã thêm sẽ hiển thị nội dung xem trước tại đây.'));
+    $('private-detail').replaceChildren(empty);
+  }
+  function renderLibrary(){
+    const box=$('my-books');
+    box.replaceChildren();
+    if(!books.length&&!privateDocuments.length){
+      box.append(element('p','Chưa có sách hoặc tài liệu nào.','library-empty'));
+      return;
+    }
+    const grid=element('div',undefined,'document-grid');
+    const records=[
+      ...books.map(book=>({record:book,kind:'book'})),
+      ...privateDocuments.map(document=>({record:document,kind:'private'})),
+    ];
+    for(const {record,kind} of records){
+      const id=record.document_id;
+      const card=element('article',undefined,`document-card${selectedPrivateDocumentId===id?' is-selected':''}`);
+      const open=element('button',undefined,'document-card-open');
+      open.type='button';
+      open.setAttribute('aria-label',`Xem ${record.display_name||record.title}`);
+      open.setAttribute('aria-pressed',String(selectedPrivateDocumentId===id));
+      open.append(createCover(record.display_name||record.title,kind,
+        kind==='private'?record.subject:`LỚP ${record.grade||10} · ${record.subject}`));
+      const copy=element('span',undefined,'document-card-copy');
+      copy.append(element('strong',record.display_name||record.title));
+      copy.append(element('span',kind==='private'
+        ?`Tài liệu riêng · ${record.subject}`
+        :`Lớp ${record.grade||10} · ${record.subject}`,'document-card-meta'));
+      open.append(copy);
+      open.addEventListener('click',()=>{
+        if(kind==='private'){
+          setTab('private');
+          showPrivateDetail(record);
+          renderLibrary();
+        }else{
+          setTab('book');
+          showPreview(record);
+          status(`Đang xem ${record.display_name||record.title}.`);
+        }
+      });
+      card.append(open);
+      if(kind==='book'){
+        const actions=element('div',undefined,'document-card-actions');
+        const edit=element('button','Sửa');
+        edit.type='button';
+        edit.addEventListener('click',()=>editBook(record).catch(error=>status(error.message,true)));
+        const remove=element('button','Gỡ');
+        remove.type='button';
+        remove.addEventListener('click',async()=>{
+          if(!confirm(`Gỡ sách "${record.display_name}"?`))return;
+          try{
+            await api(`/api/ui/books/mine/${encodeURIComponent(id)}?student_id=${encodeURIComponent(STUDENT_ID)}`,{method:'DELETE'});
+            await loadMine();
+            status('Đã gỡ sách.');
+          }catch(error){status(error.message,true);}
+        });
+        actions.append(edit,remove);
+        card.append(actions);
+      }else{
+        const actions=element('div',undefined,'document-card-actions');
+        const remove=element('button','Gỡ tài liệu');
+        remove.type='button';
+        remove.addEventListener('click',()=>{
+          if(!confirm(`Gỡ tài liệu "${record.display_name}"?`))return;
+          const previous=privateDocuments;
+          privateDocuments=privateDocuments.filter(item=>item.document_id!==id);
+          try{
+            savePrivateDocuments();
+            selectedPrivateFilesById.delete(id);
+            if(selectedPrivateDocumentId===id){
+              selectedPrivateDocumentId=null;
+              showPrivateDetailEmpty();
+            }
+            renderLibrary();
+            status('Đã gỡ tài liệu khỏi danh sách trên trình duyệt.');
+          }catch(error){
+            privateDocuments=previous;
+            status(error.message,true);
+          }
+        });
+        actions.append(remove);
+        card.append(actions);
+      }
+      grid.append(card);
+    }
+    box.append(grid);
   }
   function cancelEdit(){
     editingDocumentId=null;
@@ -153,23 +344,85 @@
       $('book-drop').classList.remove('has-file');
     }
   });
-  wireDrop('private-drop','private-file','private-file-info',['pdf','docx','txt','jpg','jpeg','png']);
+  wireDrop('private-drop','private-file','private-file-info',['pdf','docx','txt','jpg','jpeg','png'],files=>{
+    selectedPrivateFiles=files;
+    if(files.length===1&&!$('private-name').value.trim()){
+      $('private-name').value=files[0].name.replace(/\.[^.]+$/,'').replace(/[_-]+/g,' ').trim();
+    }
+  });
+  $('private-form').addEventListener('submit',event=>{
+    event.preventDefault();
+    const subject=$('private-subject').value==='Khác'
+      ?$('custom-subject').value.trim()
+      :$('private-subject').value;
+    const baseName=$('private-name').value.trim();
+    if(!subject){
+      status('Vui lòng nhập tên môn học.',true);
+      $('custom-subject').focus();
+      return;
+    }
+    if(!baseName&&!selectedPrivateFiles.length){
+      status('Vui lòng nhập tên tài liệu hoặc chọn file.',true);
+      $('private-name').focus();
+      return;
+    }
+    const files=selectedPrivateFiles.length?selectedPrivateFiles:[null];
+    const added=files.map(file=>({
+      document_id:`private-${Date.now()}-${Math.random().toString(36).slice(2)}`,
+      kind:'private',
+      display_name:file&&files.length>1
+        ?`${baseName?`${baseName} · `:''}${file.name.replace(/\.[^.]+$/,'').replace(/[_-]+/g,' ').trim()}`
+        :baseName||file.name.replace(/\.[^.]+$/,'').replace(/[_-]+/g,' ').trim(),
+      subject,
+      description:$('private-description').value.trim(),
+      file:file?{name:file.name,size:file.size,type:file.type,last_modified:file.lastModified}:null,
+      created_at:new Date().toISOString(),
+    }));
+    const previous=privateDocuments;
+    privateDocuments=[...privateDocuments,...added];
+    try{
+      savePrivateDocuments();
+    }catch(error){
+      privateDocuments=previous;
+      status(error.message,true);
+      return;
+    }
+    added.forEach((document,index)=>{
+      if(files[index])selectedPrivateFilesById.set(document.document_id,files[index]);
+    });
+    selectedPrivateDocumentId=added[0].document_id;
+    showPrivateDetail(added[0]);
+    renderLibrary();
+    $('private-form').reset();
+    $('private-subject').value='Toán';
+    $('custom-subject-wrap').hidden=true;
+    $('custom-subject').required=false;
+    $('private-file-info').replaceChildren();
+    $('private-drop').querySelector('strong').textContent='Nhấn để chọn hoặc kéo thả tài liệu vào đây';
+    selectedPrivateFiles=[];
+    status(added.length>1
+      ?`Đã xác nhận ${added.length} tài liệu. Các file vẫn chỉ được lưu trong trình duyệt.`
+      :'Đã xác nhận tài liệu. File vẫn chỉ được lưu trong trình duyệt.');
+  });
   async function loadMine(){
     const d=await api(`/api/ui/books/mine?student_id=${encodeURIComponent(STUDENT_ID)}`);
-    const box=$('my-books');box.replaceChildren();
-    if(!d.documents?.length){box.append(element('p','Chưa có sách nào.','muted'));return;}
-    for(const b of d.documents){
-      const card=element('article',undefined,'saved-book');card.append(element('strong',b.display_name));
-      card.append(element('p',`${b.title} · ${b.subject} · ${seriesLabels[b.series]||b.series}`,'muted'));
-      const actions=element('div',undefined,'actions');
-      const see=element('button','Xem sách');see.addEventListener('click',()=>{setTab('book');showPreview(b);});actions.append(see);
-      const edit=element('button','Sửa');edit.addEventListener('click',()=>editBook(b).catch(e=>status(e.message,true)));actions.append(edit);
-      const remove=element('button','Gỡ sách');remove.addEventListener('click',async()=>{
-        if(!confirm(`Gỡ sách "${b.display_name}"?`))return;
-        try{await api(`/api/ui/books/mine/${encodeURIComponent(b.document_id)}?student_id=${encodeURIComponent(STUDENT_ID)}`,{method:'DELETE'});await loadMine();status('Đã gỡ sách.');}catch(err){status(err.message,true);}
-      });actions.append(remove);card.append(actions);box.append(card);
+    books=d.documents||[];
+    privateDocuments=getPrivateDocuments();
+    renderLibrary();
+    if(selectedPrivateDocumentId){
+      const selected=privateDocuments.find(item=>item.document_id===selectedPrivateDocumentId);
+      if(selected)showPrivateDetail(selected);
+      else selectedPrivateDocumentId=null;
     }
   }
-  $('refresh').addEventListener('click',()=>loadMine().catch(e=>status(e.message,true)));
+  $('refresh').addEventListener('click',async()=>{
+    const button=$('refresh');
+    button.disabled=true;
+    try{
+      await loadMine();
+      status('Danh sách tài liệu đã được làm mới.');
+    }catch(error){status(error.message,true);}
+    finally{button.disabled=false;}
+  });
   Promise.all([loadCatalog(),loadMine()]).catch(e=>status(e.message,true));
 })();

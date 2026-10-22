@@ -188,31 +188,54 @@
   display: grid;
   min-height: 0;
   flex: 1 1 auto;
-  gap: 4px;
+  grid-auto-rows: min-content;
+  align-content: start;
+  gap: 5px;
   overflow-x: hidden;
   overflow-y: auto;
-  margin-top: 7px;
+  margin-top: 4px;
   scrollbar-width: thin;
 }
 
 .app-shell > .sidebar .sidebar-menu .navigation a {
   display: flex;
   min-width: 0;
-  min-height: 40px;
+  min-height: 38px;
   flex: 0 0 auto;
   align-items: center;
   gap: 10px;
   border-radius: 11px;
-  padding: 8px 10px;
+  background: color-mix(in srgb, var(--app-green-soft) 24%, var(--app-panel));
+  padding: 7px 10px;
   font: 600 11px/1.4 "DM Sans", sans-serif;
+  transition: background-color 150ms ease, color 150ms ease, transform 150ms ease;
 }
 
 .app-shell > .sidebar .sidebar-menu .navigation a:hover {
-  transform: none;
+  transform: translateX(2px);
+  background: var(--app-pink-soft);
+  color: var(--app-text);
 }
 
 .app-shell > .sidebar .sidebar-menu .navigation a.active {
+  background: var(--app-green-soft);
+  color: var(--app-green);
   font-weight: 800;
+}
+
+.app-shell > .sidebar .sidebar-menu .navigation a.active::before {
+  position: absolute;
+  top: 9px;
+  bottom: 9px;
+  left: 0;
+  width: 3px;
+  border-radius: 4px;
+  background: var(--app-pink);
+  content: "";
+}
+
+.app-shell > .sidebar .sidebar-menu .navigation a.coming-soon {
+  background: color-mix(in srgb, var(--app-pink-soft) 38%, var(--app-panel));
 }
 
 .app-shell > .sidebar .sidebar-menu .navigation a span {

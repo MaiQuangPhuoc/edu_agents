@@ -1,0 +1,910 @@
+{
+  "document_metadata": {
+    "schema_version": "1.0",
+    "document_id": "CTST_T10_CH_III",
+    "document_type": "lesson_plan",
+    "subject": "Toán 10",
+    "grade": 10,
+    "textbook_series": "chan_troi_sang_tao",
+    "volume": 1,
+    "curriculum_version": "GDPT_2018",
+    "chapter_id": "III",
+    "chapter_title": "Hàm số bậc hai và đồ thị",
+    "content_types": [
+      "summary",
+      "detail"
+    ],
+    "lesson_ids": [
+      "III.1",
+      "III.2"
+    ],
+    "official_periods": null,
+    "suggested_sessions": 5,
+    "minutes_per_session": 45,
+    "verification_status": "review_required",
+    "source_ids": [
+      "SRC_III_01",
+      "SRC_III_02",
+      "SRC_III_03"
+    ],
+    "source_type": "authored_lesson_plan",
+    "notes": "Giáo án tự biên soạn để tham khảo và phục vụ RAG; thời lượng tự học do EDUAGENT đề xuất, không phải phân phối tiết chính thức. Cần giáo viên kiểm duyệt trước khi dùng làm tài liệu đã xác minh."
+  },
+  "source_file": "chapter_III.md",
+  "source_sha256": "b54984a2465ace51d8b297bed4743cd50939b8b7b6e4e12fc3e87ab1b0c05e7e",
+  "max_chars_soft_limit": 2400,
+  "total_chunks": 17,
+  "chunks": [
+    {
+      "content": "Hàm số bậc hai và đồ thị > A.1. Mục tiêu chương\n\n- Nhận biết hàm số là sự phụ thuộc xác định giữa các đại lượng; xác định được tập xác định, tập giá trị của hàm số ở các tình huống phù hợp.\n- Đọc, biểu diễn và khai thác thông tin từ bảng giá trị, công thức và đồ thị hàm số; nhận biết khoảng đồng biến, nghịch biến.\n- Nhận biết hàm số bậc hai \\(y=ax^2+bx+c\\) với \\(a\\ne0\\); xác định đỉnh, trục đối xứng, chiều mở của parabol và khảo sát sự biến thiên.\n- Dùng kiến thức về hàm số bậc hai để mô tả và giải quyết một số tình huống toán học, thực tiễn phù hợp.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_III",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "III",
+        "chapter_title": "Hàm số bậc hai và đồ thị",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "III.1",
+          "III.2"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 5,
+        "minutes_per_session": 45,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_III_01",
+          "SRC_III_02",
+          "SRC_III_03"
+        ],
+        "source_type": "authored_lesson_plan",
+        "notes": "Giáo án tự biên soạn để tham khảo và phục vụ RAG; thời lượng tự học do EDUAGENT đề xuất, không phải phân phối tiết chính thức. Cần giáo viên kiểm duyệt trước khi dùng làm tài liệu đã xác minh.",
+        "content_type": "summary",
+        "lesson_id": null,
+        "lesson_title": null,
+        "section_types": [
+          "chapter_objectives"
+        ],
+        "time_scope": "chapter",
+        "chunk_id": "CTST_T10_CH_III_lesson_plan_001",
+        "chunk_index": 1,
+        "part_index": 1,
+        "heading_path": [
+          "Hàm số bậc hai và đồ thị",
+          "A.1. Mục tiêu chương"
+        ],
+        "source_file": "chapter_III.md",
+        "source_sha256": "b54984a2465ace51d8b297bed4743cd50939b8b7b6e4e12fc3e87ab1b0c05e7e"
+      }
+    },
+    {
+      "content": "Hàm số bậc hai và đồ thị > A.2. Danh sách bài học\n\n1. **Bài 1. Hàm số và đồ thị** (`lesson_id: III.1`).\n2. **Bài 2. Hàm số bậc hai** (`lesson_id: III.2`).\n3. **Bài tập cuối chương III** (ôn tập, không cấp `lesson_id` như một bài chính).",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_III",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "III",
+        "chapter_title": "Hàm số bậc hai và đồ thị",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "III.1",
+          "III.2"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 5,
+        "minutes_per_session": 45,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_III_01",
+          "SRC_III_02",
+          "SRC_III_03"
+        ],
+        "source_type": "authored_lesson_plan",
+        "notes": "Giáo án tự biên soạn để tham khảo và phục vụ RAG; thời lượng tự học do EDUAGENT đề xuất, không phải phân phối tiết chính thức. Cần giáo viên kiểm duyệt trước khi dùng làm tài liệu đã xác minh.",
+        "content_type": "summary",
+        "lesson_id": null,
+        "lesson_title": null,
+        "section_types": [
+          "lesson_list"
+        ],
+        "time_scope": "chapter",
+        "chunk_id": "CTST_T10_CH_III_lesson_plan_002",
+        "chunk_index": 2,
+        "part_index": 1,
+        "heading_path": [
+          "Hàm số bậc hai và đồ thị",
+          "A.2. Danh sách bài học"
+        ],
+        "source_file": "chapter_III.md",
+        "source_sha256": "b54984a2465ace51d8b297bed4743cd50939b8b7b6e4e12fc3e87ab1b0c05e7e"
+      }
+    },
+    {
+      "content": "Hàm số bậc hai và đồ thị > A.3. Kiến thức trọng tâm\n\n- Khái niệm hàm số, cách xác định giá trị hàm số; tập xác định và tập giá trị.\n- Đồ thị hàm số trong mặt phẳng tọa độ; tính đồng biến, nghịch biến trên một khoảng.\n- Hàm số bậc hai \\(y=ax^2+bx+c\\) (\\(a\\ne0\\)); parabol, tọa độ đỉnh, trục đối xứng.\n- Bảng biến thiên, giá trị nhỏ nhất/lớn nhất của hàm số bậc hai trên \\(\\mathbb R\\) và trên các khoảng/đoạn xác định khi có đủ điều kiện.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_III",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "III",
+        "chapter_title": "Hàm số bậc hai và đồ thị",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "III.1",
+          "III.2"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 5,
+        "minutes_per_session": 45,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_III_01",
+          "SRC_III_02",
+          "SRC_III_03"
+        ],
+        "source_type": "authored_lesson_plan",
+        "notes": "Giáo án tự biên soạn để tham khảo và phục vụ RAG; thời lượng tự học do EDUAGENT đề xuất, không phải phân phối tiết chính thức. Cần giáo viên kiểm duyệt trước khi dùng làm tài liệu đã xác minh.",
+        "content_type": "summary",
+        "lesson_id": null,
+        "lesson_title": null,
+        "section_types": [
+          "key_knowledge"
+        ],
+        "time_scope": "chapter",
+        "chunk_id": "CTST_T10_CH_III_lesson_plan_003",
+        "chunk_index": 3,
+        "part_index": 1,
+        "heading_path": [
+          "Hàm số bậc hai và đồ thị",
+          "A.3. Kiến thức trọng tâm"
+        ],
+        "source_file": "chapter_III.md",
+        "source_sha256": "b54984a2465ace51d8b297bed4743cd50939b8b7b6e4e12fc3e87ab1b0c05e7e"
+      }
+    },
+    {
+      "content": "Hàm số bậc hai và đồ thị > A.4. Kiến thức tiên quyết và quan hệ giữa các bài\n\n- Cần biết biểu thức đại số, tính giá trị biểu thức, giải phương trình đơn giản, hệ trục tọa độ và cách biểu diễn điểm.\n- Bài 1 tạo nền tảng về tập xác định, đồ thị, đồng biến–nghịch biến để học Bài 2.\n- Bài 2 sử dụng kiến thức đồ thị hàm số để đọc đặc trưng parabol và giải các bài toán tối ưu đơn giản.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_III",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "III",
+        "chapter_title": "Hàm số bậc hai và đồ thị",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "III.1",
+          "III.2"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 5,
+        "minutes_per_session": 45,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_III_01",
+          "SRC_III_02",
+          "SRC_III_03"
+        ],
+        "source_type": "authored_lesson_plan",
+        "notes": "Giáo án tự biên soạn để tham khảo và phục vụ RAG; thời lượng tự học do EDUAGENT đề xuất, không phải phân phối tiết chính thức. Cần giáo viên kiểm duyệt trước khi dùng làm tài liệu đã xác minh.",
+        "content_type": "summary",
+        "lesson_id": null,
+        "lesson_title": null,
+        "section_types": [
+          "prerequisites"
+        ],
+        "time_scope": "chapter",
+        "chunk_id": "CTST_T10_CH_III_lesson_plan_004",
+        "chunk_index": 4,
+        "part_index": 1,
+        "heading_path": [
+          "Hàm số bậc hai và đồ thị",
+          "A.4. Kiến thức tiên quyết và quan hệ giữa các bài"
+        ],
+        "source_file": "chapter_III.md",
+        "source_sha256": "b54984a2465ace51d8b297bed4743cd50939b8b7b6e4e12fc3e87ab1b0c05e7e"
+      }
+    },
+    {
+      "content": "Hàm số bậc hai và đồ thị > A.5. Phân bổ thời gian đề xuất\n\n| Nội dung | Buổi tự học đề xuất | Thời gian/buổi | Ghi chú |\n|---|---:|---:|---|\n| Bài 1. Hàm số và đồ thị | 2 | 45 phút | Khái niệm; đồ thị và sự biến thiên |\n| Bài 2. Hàm số bậc hai | 2 | 45 phút | Parabol; biến thiên và vận dụng |\n| Ôn tập cuối chương III | 1 | 45 phút | Hệ thống hóa và tự đánh giá |\n| **Tổng** | **5** | | **225 phút tự học đề xuất** |\n\nĐây là **gợi ý tự học**, không phải định mức tiết dạy được công bố của SGK. Learning Path Agent cần điều chỉnh theo năng lực, mục tiêu và lịch học của từng học sinh.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_III",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "III",
+        "chapter_title": "Hàm số bậc hai và đồ thị",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "III.1",
+          "III.2"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 5,
+        "minutes_per_session": 45,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_III_01",
+          "SRC_III_02",
+          "SRC_III_03"
+        ],
+        "source_type": "authored_lesson_plan",
+        "notes": "Giáo án tự biên soạn để tham khảo và phục vụ RAG; thời lượng tự học do EDUAGENT đề xuất, không phải phân phối tiết chính thức. Cần giáo viên kiểm duyệt trước khi dùng làm tài liệu đã xác minh.",
+        "content_type": "summary",
+        "lesson_id": null,
+        "lesson_title": null,
+        "section_types": [
+          "time_plan"
+        ],
+        "time_scope": "chapter",
+        "chunk_id": "CTST_T10_CH_III_lesson_plan_005",
+        "chunk_index": 5,
+        "part_index": 1,
+        "heading_path": [
+          "Hàm số bậc hai và đồ thị",
+          "A.5. Phân bổ thời gian đề xuất"
+        ],
+        "source_file": "chapter_III.md",
+        "source_sha256": "b54984a2465ace51d8b297bed4743cd50939b8b7b6e4e12fc3e87ab1b0c05e7e"
+      }
+    },
+    {
+      "content": "Hàm số bậc hai và đồ thị > BÀI 1. HÀM SỐ VÀ ĐỒ THỊ > 1. Thông tin bài học + 2. Mục tiêu học tập\n\n1. Thông tin bài học\n\n- `lesson_id`: `III.1`\n- Số tiết theo kế hoạch dạy học chính thức: **chưa xác minh** (`official_periods: null`).\n- Số buổi tự học đề xuất: **2** (`suggested_sessions: 2`).\n- Thời lượng mỗi buổi đề xuất: **45 phút** (`minutes_per_session: 45`).\n\n2. Mục tiêu học tập\n\n- Phát biểu được ý nghĩa của hàm số: mỗi giá trị \\(x\\) thuộc tập xác định ứng với đúng một giá trị \\(y\\).\n- Tìm được tập xác định của một số hàm số cơ bản cho bằng công thức; phân biệt tập xác định và tập giá trị.\n- Đọc và mô tả được đồ thị của hàm số; xác định tọa độ điểm thuộc đồ thị khi biết giá trị của biến.\n- Xác định được khoảng đồng biến và nghịch biến từ đồ thị hoặc từ các công thức đơn giản có đủ điều kiện.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_III",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "III",
+        "chapter_title": "Hàm số bậc hai và đồ thị",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "III.1",
+          "III.2"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_III_01",
+          "SRC_III_02",
+          "SRC_III_03"
+        ],
+        "source_type": "authored_lesson_plan",
+        "notes": "Giáo án tự biên soạn để tham khảo và phục vụ RAG; thời lượng tự học do EDUAGENT đề xuất, không phải phân phối tiết chính thức. Cần giáo viên kiểm duyệt trước khi dùng làm tài liệu đã xác minh.",
+        "lesson_id": "III.1",
+        "lesson_title": "HÀM SỐ VÀ ĐỒ THỊ",
+        "content_type": "detail",
+        "section_types": [
+          "lesson_info",
+          "objectives"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_III_lesson_plan_006",
+        "chunk_index": 6,
+        "part_index": 1,
+        "heading_path": [
+          "Hàm số bậc hai và đồ thị",
+          "BÀI 1. HÀM SỐ VÀ ĐỒ THỊ",
+          "1. Thông tin bài học + 2. Mục tiêu học tập"
+        ],
+        "source_file": "chapter_III.md",
+        "source_sha256": "b54984a2465ace51d8b297bed4743cd50939b8b7b6e4e12fc3e87ab1b0c05e7e"
+      }
+    },
+    {
+      "content": "Hàm số bậc hai và đồ thị > BÀI 1. HÀM SỐ VÀ ĐỒ THỊ > 3. Kiến thức cần nắm\n\n3. Kiến thức cần nắm\n\n**Khái niệm hàm số.** Cho tập \\(D\\subseteq\\mathbb R\\). Hàm số \\(y=f(x)\\) xác định trên \\(D\\) là một quy tắc gán cho mỗi \\(x\\in D\\) đúng một số thực \\(f(x)\\). Tập \\(D\\) là **tập xác định**; tập các giá trị thực sự nhận được \\(\\{f(x):x\\in D\\}\\) là **tập giá trị**.\n\n**Các cách cho hàm số.** Hàm số có thể được biểu diễn bằng công thức, bảng giá trị hoặc các mô tả/đồ thị phù hợp. Nếu cho bằng công thức, cần xét điều kiện để biểu thức có nghĩa trong tập số thực (chẳng hạn mẫu khác 0; biểu thức dưới căn bậc hai không âm).\n\n**Đồ thị.** Đồ thị của \\(y=f(x)\\) là tập hợp các điểm \\((x;f(x))\\) với \\(x\\in D\\) trên mặt phẳng tọa độ. Điểm \\((a;b)\\) thuộc đồ thị khi và chỉ khi \\(a\\in D\\) và \\(b=f(a)\\).\n\n**Sự biến thiên.** Hàm số **đồng biến** trên khoảng \\(K\\subseteq D\\) nếu với mọi \\(x_1,x_2\\in K\\), \\(x_1<x_2\\) thì \\(f(x_1)<f(x_2)\\). Hàm số **nghịch biến** nếu điều kiện tương ứng là \\(f(x_1)>f(x_2)\\). Cần phân biệt tính đồng biến/nghịch biến với dấu dương/âm của giá trị hàm số.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_III",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "III",
+        "chapter_title": "Hàm số bậc hai và đồ thị",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "III.1",
+          "III.2"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_III_01",
+          "SRC_III_02",
+          "SRC_III_03"
+        ],
+        "source_type": "authored_lesson_plan",
+        "notes": "Giáo án tự biên soạn để tham khảo và phục vụ RAG; thời lượng tự học do EDUAGENT đề xuất, không phải phân phối tiết chính thức. Cần giáo viên kiểm duyệt trước khi dùng làm tài liệu đã xác minh.",
+        "lesson_id": "III.1",
+        "lesson_title": "HÀM SỐ VÀ ĐỒ THỊ",
+        "content_type": "detail",
+        "section_types": [
+          "must_know"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_III_lesson_plan_007",
+        "chunk_index": 7,
+        "part_index": 1,
+        "heading_path": [
+          "Hàm số bậc hai và đồ thị",
+          "BÀI 1. HÀM SỐ VÀ ĐỒ THỊ",
+          "3. Kiến thức cần nắm"
+        ],
+        "source_file": "chapter_III.md",
+        "source_sha256": "b54984a2465ace51d8b297bed4743cd50939b8b7b6e4e12fc3e87ab1b0c05e7e"
+      }
+    },
+    {
+      "content": "Hàm số bậc hai và đồ thị > BÀI 1. HÀM SỐ VÀ ĐỒ THỊ > 4. Kiến thức cần hiểu\n\n4. Kiến thức cần hiểu\n\n- Vì sao một giá trị đầu vào không thể cho hai đầu ra khác nhau trong cùng một hàm số.\n- Vì sao xác định tập xác định trước khi tính giá trị, vẽ đồ thị hoặc xét sự biến thiên.\n- Tính đồng biến/nghịch biến phản ánh chiều thay đổi của \\(f(x)\\) khi \\(x\\) tăng, **không** khẳng định hàm số luôn dương hay luôn âm.\n- Khi chỉ có một số điểm của bảng giá trị, không được kết luận chắc chắn tính đơn điệu trên toàn khoảng nếu không có thêm căn cứ.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_III",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "III",
+        "chapter_title": "Hàm số bậc hai và đồ thị",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "III.1",
+          "III.2"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_III_01",
+          "SRC_III_02",
+          "SRC_III_03"
+        ],
+        "source_type": "authored_lesson_plan",
+        "notes": "Giáo án tự biên soạn để tham khảo và phục vụ RAG; thời lượng tự học do EDUAGENT đề xuất, không phải phân phối tiết chính thức. Cần giáo viên kiểm duyệt trước khi dùng làm tài liệu đã xác minh.",
+        "lesson_id": "III.1",
+        "lesson_title": "HÀM SỐ VÀ ĐỒ THỊ",
+        "content_type": "detail",
+        "section_types": [
+          "must_understand"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_III_lesson_plan_008",
+        "chunk_index": 8,
+        "part_index": 1,
+        "heading_path": [
+          "Hàm số bậc hai và đồ thị",
+          "BÀI 1. HÀM SỐ VÀ ĐỒ THỊ",
+          "4. Kiến thức cần hiểu"
+        ],
+        "source_file": "chapter_III.md",
+        "source_sha256": "b54984a2465ace51d8b297bed4743cd50939b8b7b6e4e12fc3e87ab1b0c05e7e"
+      }
+    },
+    {
+      "content": "Hàm số bậc hai và đồ thị > BÀI 1. HÀM SỐ VÀ ĐỒ THỊ > 5. Hoạt động học tập + 6. Dạng bài tập và đánh giá\n\n5. Hoạt động học tập\n\nĐọc lý thuyết và tài liệu SGK, xem video bài giảng phù hợp (nếu có), luyện đọc đồ thị và làm bài tập về tập xác định, tập giá trị, tính đồng biến–nghịch biến.\n\n6. Dạng bài tập và đánh giá\n\n- **Nhận biết:** Xác định một quan hệ có phải hàm số hay không; chỉ ra tập xác định từ mô tả hoặc công thức đơn giản.\n- **Thông hiểu:** Tính giá trị hàm số tại điểm đã cho; xét một điểm có thuộc đồ thị không; đọc khoảng biến thiên trên đồ thị.\n- **Vận dụng:** Xử lý bài toán biểu diễn mối quan hệ giữa hai đại lượng bằng bảng/công thức/đồ thị; giải thích ý nghĩa của khoảng đồng biến, nghịch biến.\n- **Tiêu chí hoàn thành:** Phân biệt đúng tập xác định và tập giá trị; đọc được đồ thị; nêu có căn cứ khoảng đồng biến, nghịch biến.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_III",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "III",
+        "chapter_title": "Hàm số bậc hai và đồ thị",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "III.1",
+          "III.2"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_III_01",
+          "SRC_III_02",
+          "SRC_III_03"
+        ],
+        "source_type": "authored_lesson_plan",
+        "notes": "Giáo án tự biên soạn để tham khảo và phục vụ RAG; thời lượng tự học do EDUAGENT đề xuất, không phải phân phối tiết chính thức. Cần giáo viên kiểm duyệt trước khi dùng làm tài liệu đã xác minh.",
+        "lesson_id": "III.1",
+        "lesson_title": "HÀM SỐ VÀ ĐỒ THỊ",
+        "content_type": "detail",
+        "section_types": [
+          "activity",
+          "assessment"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_III_lesson_plan_009",
+        "chunk_index": 9,
+        "part_index": 1,
+        "heading_path": [
+          "Hàm số bậc hai và đồ thị",
+          "BÀI 1. HÀM SỐ VÀ ĐỒ THỊ",
+          "5. Hoạt động học tập + 6. Dạng bài tập và đánh giá"
+        ],
+        "source_file": "chapter_III.md",
+        "source_sha256": "b54984a2465ace51d8b297bed4743cd50939b8b7b6e4e12fc3e87ab1b0c05e7e"
+      }
+    },
+    {
+      "content": "Hàm số bậc hai và đồ thị > BÀI 2. HÀM SỐ BẬC HAI > 1. Thông tin bài học + 2. Mục tiêu học tập\n\n1. Thông tin bài học\n\n- `lesson_id`: `III.2`\n- Số tiết theo kế hoạch dạy học chính thức: **chưa xác minh** (`official_periods: null`).\n- Số buổi tự học đề xuất: **2** (`suggested_sessions: 2`).\n- Thời lượng mỗi buổi đề xuất: **45 phút** (`minutes_per_session: 45`).\n\n2. Mục tiêu học tập\n\n- Nhận biết được hàm số bậc hai \\(y=ax^2+bx+c\\), trong đó \\(a\\ne0\\).\n- Xác định đúng tọa độ đỉnh, phương trình trục đối xứng và chiều mở của parabol.\n- Lập bảng biến thiên, nhận biết khoảng đồng biến/nghịch biến và cực trị của hàm số bậc hai trên \\(\\mathbb R\\).\n- Vẽ được phác họa đồ thị bằng những yếu tố đặc trưng và các điểm thích hợp; vận dụng vào bài toán có mô hình bậc hai khi các giả thiết được nêu đầy đủ.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_III",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "III",
+        "chapter_title": "Hàm số bậc hai và đồ thị",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "III.1",
+          "III.2"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_III_01",
+          "SRC_III_02",
+          "SRC_III_03"
+        ],
+        "source_type": "authored_lesson_plan",
+        "notes": "Giáo án tự biên soạn để tham khảo và phục vụ RAG; thời lượng tự học do EDUAGENT đề xuất, không phải phân phối tiết chính thức. Cần giáo viên kiểm duyệt trước khi dùng làm tài liệu đã xác minh.",
+        "lesson_id": "III.2",
+        "lesson_title": "HÀM SỐ BẬC HAI",
+        "content_type": "detail",
+        "section_types": [
+          "lesson_info",
+          "objectives"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_III_lesson_plan_010",
+        "chunk_index": 10,
+        "part_index": 1,
+        "heading_path": [
+          "Hàm số bậc hai và đồ thị",
+          "BÀI 2. HÀM SỐ BẬC HAI",
+          "1. Thông tin bài học + 2. Mục tiêu học tập"
+        ],
+        "source_file": "chapter_III.md",
+        "source_sha256": "b54984a2465ace51d8b297bed4743cd50939b8b7b6e4e12fc3e87ab1b0c05e7e"
+      }
+    },
+    {
+      "content": "Hàm số bậc hai và đồ thị > BÀI 2. HÀM SỐ BẬC HAI > 3. Kiến thức cần nắm\n\n3. Kiến thức cần nắm\n\n**Dạng tổng quát.** Hàm số bậc hai có dạng\n\n\\[\nf(x)=ax^2+bx+c,\\qquad a\\ne0.\n\\]\n\nTập xác định của hàm số này là \\(\\mathbb R\\). Đồ thị là một **parabol**.\n\n**Đỉnh và trục đối xứng.** Đặt \\(\\Delta=b^2-4ac\\), ta có đỉnh\n\n\\[\nI\\left(-\\frac{b}{2a};-\\frac{\\Delta}{4a}\\right),\n\\]\n\nvà trục đối xứng là đường thẳng \\(x=-\\frac{b}{2a}\\). Có thể dùng dạng hoàn thành bình phương\n\n\\[\nf(x)=a\\left(x+\\frac{b}{2a}\\right)^2-\\frac{\\Delta}{4a}.\n\\]\n\n**Chiều mở, biến thiên và giá trị cực trị.** Nếu \\(a>0\\), parabol mở lên, hàm số nghịch biến trên \\((-\\infty;-b/(2a))\\), đồng biến trên \\((-b/(2a);+\\infty)\\), có **giá trị nhỏ nhất** bằng \\(-\\Delta/(4a)\\). Nếu \\(a<0\\), parabol mở xuống, hàm số đồng biến rồi nghịch biến trên các khoảng tương ứng, có **giá trị lớn nhất** bằng \\(-\\Delta/(4a)\\).\n\n**Các điểm đặc trưng.** Đồ thị cắt trục tung tại \\((0;c)\\). Giao điểm với trục hoành (nếu có) ứng với các nghiệm thực của \\(ax^2+bx+c=0\\); có hai, một hoặc không có giao điểm theo dấu của \\(\\Delta\\).\n\n**Tập giá trị trên \\(\\mathbb R\\).** Với \\(a>0\\), tập giá trị là \\([ -\\Delta/(4a);+\\infty)\\); với \\(a<0\\), tập giá trị là \\((-\\infty;-\\Delta/(4a)]\\).",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_III",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "III",
+        "chapter_title": "Hàm số bậc hai và đồ thị",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "III.1",
+          "III.2"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_III_01",
+          "SRC_III_02",
+          "SRC_III_03"
+        ],
+        "source_type": "authored_lesson_plan",
+        "notes": "Giáo án tự biên soạn để tham khảo và phục vụ RAG; thời lượng tự học do EDUAGENT đề xuất, không phải phân phối tiết chính thức. Cần giáo viên kiểm duyệt trước khi dùng làm tài liệu đã xác minh.",
+        "lesson_id": "III.2",
+        "lesson_title": "HÀM SỐ BẬC HAI",
+        "content_type": "detail",
+        "section_types": [
+          "must_know"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_III_lesson_plan_011",
+        "chunk_index": 11,
+        "part_index": 1,
+        "heading_path": [
+          "Hàm số bậc hai và đồ thị",
+          "BÀI 2. HÀM SỐ BẬC HAI",
+          "3. Kiến thức cần nắm"
+        ],
+        "source_file": "chapter_III.md",
+        "source_sha256": "b54984a2465ace51d8b297bed4743cd50939b8b7b6e4e12fc3e87ab1b0c05e7e"
+      }
+    },
+    {
+      "content": "Hàm số bậc hai và đồ thị > BÀI 2. HÀM SỐ BẬC HAI > 4. Kiến thức cần hiểu\n\n4. Kiến thức cần hiểu\n\n- Tại sao dấu của \\(a\\) quyết định chiều mở và việc đỉnh là điểm cao nhất hay thấp nhất.\n- Vì sao trục đối xứng đi qua đỉnh và hai điểm có hoành độ đối xứng qua trục có cùng tung độ.\n- Vì sao cực trị trên toàn \\(\\mathbb R\\) chưa chắc là giá trị cực trị trên một miền xác định bị giới hạn; bài toán có điều kiện thực tế phải xét đúng miền giá trị của biến.\n- Phân biệt nghiệm của phương trình bậc hai với tọa độ đỉnh của parabol; không dùng \\(\\Delta\\) thay cho tọa độ tung độ của đỉnh.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_III",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "III",
+        "chapter_title": "Hàm số bậc hai và đồ thị",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "III.1",
+          "III.2"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_III_01",
+          "SRC_III_02",
+          "SRC_III_03"
+        ],
+        "source_type": "authored_lesson_plan",
+        "notes": "Giáo án tự biên soạn để tham khảo và phục vụ RAG; thời lượng tự học do EDUAGENT đề xuất, không phải phân phối tiết chính thức. Cần giáo viên kiểm duyệt trước khi dùng làm tài liệu đã xác minh.",
+        "lesson_id": "III.2",
+        "lesson_title": "HÀM SỐ BẬC HAI",
+        "content_type": "detail",
+        "section_types": [
+          "must_understand"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_III_lesson_plan_012",
+        "chunk_index": 12,
+        "part_index": 1,
+        "heading_path": [
+          "Hàm số bậc hai và đồ thị",
+          "BÀI 2. HÀM SỐ BẬC HAI",
+          "4. Kiến thức cần hiểu"
+        ],
+        "source_file": "chapter_III.md",
+        "source_sha256": "b54984a2465ace51d8b297bed4743cd50939b8b7b6e4e12fc3e87ab1b0c05e7e"
+      }
+    },
+    {
+      "content": "Hàm số bậc hai và đồ thị > BÀI 2. HÀM SỐ BẬC HAI > 5. Hoạt động học tập + 6. Dạng bài tập và đánh giá\n\n5. Hoạt động học tập\n\nĐọc lý thuyết và tài liệu SGK, xem video về đồ thị parabol (nếu có), luyện xác định đỉnh–trục đối xứng–bảng biến thiên và làm bài tập.\n\n6. Dạng bài tập và đánh giá\n\n- **Nhận biết:** Nhận diện hàm số bậc hai; xác định \\(a,b,c\\), chiều mở và trục đối xứng.\n- **Thông hiểu:** Tính tọa độ đỉnh, lập bảng biến thiên, nhận xét giá trị lớn nhất/nhỏ nhất và giao điểm với các trục.\n- **Vận dụng:** Vẽ phác họa parabol; xác định công thức hàm số bậc hai khi có đủ dữ kiện; xử lý các bài toán tối ưu có miền xác định rõ ràng.\n- **Tiêu chí hoàn thành:** Xác định đúng đỉnh, trục đối xứng, chiều biến thiên; giải thích được cực trị và đọc chính xác các đặc trưng đồ thị.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_III",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "III",
+        "chapter_title": "Hàm số bậc hai và đồ thị",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "III.1",
+          "III.2"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 2,
+        "minutes_per_session": 45,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_III_01",
+          "SRC_III_02",
+          "SRC_III_03"
+        ],
+        "source_type": "authored_lesson_plan",
+        "notes": "Giáo án tự biên soạn để tham khảo và phục vụ RAG; thời lượng tự học do EDUAGENT đề xuất, không phải phân phối tiết chính thức. Cần giáo viên kiểm duyệt trước khi dùng làm tài liệu đã xác minh.",
+        "lesson_id": "III.2",
+        "lesson_title": "HÀM SỐ BẬC HAI",
+        "content_type": "detail",
+        "section_types": [
+          "activity",
+          "assessment"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_III_lesson_plan_013",
+        "chunk_index": 13,
+        "part_index": 1,
+        "heading_path": [
+          "Hàm số bậc hai và đồ thị",
+          "BÀI 2. HÀM SỐ BẬC HAI",
+          "5. Hoạt động học tập + 6. Dạng bài tập và đánh giá"
+        ],
+        "source_file": "chapter_III.md",
+        "source_sha256": "b54984a2465ace51d8b297bed4743cd50939b8b7b6e4e12fc3e87ab1b0c05e7e"
+      }
+    },
+    {
+      "content": "Hàm số bậc hai và đồ thị > ÔN TẬP. BÀI TẬP CUỐI CHƯƠNG III > 1. Thông tin ôn tập + 2. Mục tiêu học tập\n\n1. Thông tin ôn tập\n\n- Nội dung: cả Bài 1 và Bài 2.\n- Số buổi tự học đề xuất: **1**.\n- Thời lượng đề xuất: **45 phút**.\n\n2. Mục tiêu học tập\n\n- Hệ thống hóa khái niệm hàm số và các đặc trưng cơ bản của đồ thị.\n- Kết nối việc xét tập xác định, tập giá trị, sự biến thiên với khảo sát hàm số bậc hai.\n- Tự xác định phần còn yếu để điều chỉnh lộ trình học cá nhân.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_III",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "III",
+        "chapter_title": "Hàm số bậc hai và đồ thị",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "III.1",
+          "III.2"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 1,
+        "minutes_per_session": 45,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_III_01",
+          "SRC_III_02",
+          "SRC_III_03"
+        ],
+        "source_type": "authored_lesson_plan",
+        "notes": "Giáo án tự biên soạn để tham khảo và phục vụ RAG; thời lượng tự học do EDUAGENT đề xuất, không phải phân phối tiết chính thức. Cần giáo viên kiểm duyệt trước khi dùng làm tài liệu đã xác minh.",
+        "lesson_id": null,
+        "lesson_title": "BÀI TẬP CUỐI CHƯƠNG III",
+        "content_type": "detail",
+        "section_types": [
+          "lesson_info",
+          "objectives"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_III_lesson_plan_014",
+        "chunk_index": 14,
+        "part_index": 1,
+        "heading_path": [
+          "Hàm số bậc hai và đồ thị",
+          "ÔN TẬP. BÀI TẬP CUỐI CHƯƠNG III",
+          "1. Thông tin ôn tập + 2. Mục tiêu học tập"
+        ],
+        "source_file": "chapter_III.md",
+        "source_sha256": "b54984a2465ace51d8b297bed4743cd50939b8b7b6e4e12fc3e87ab1b0c05e7e"
+      }
+    },
+    {
+      "content": "Hàm số bậc hai và đồ thị > ÔN TẬP. BÀI TẬP CUỐI CHƯƠNG III > 3. Kiến thức cần nắm\n\n3. Kiến thức cần nắm\n\n- Tập xác định, tập giá trị, giá trị hàm số, điểm thuộc đồ thị, đồng biến/nghịch biến.\n- Công thức đỉnh và trục đối xứng của parabol; bảng biến thiên; dấu của \\(a\\), dấu của \\(\\Delta\\) và ý nghĩa đồ thị tương ứng.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_III",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "III",
+        "chapter_title": "Hàm số bậc hai và đồ thị",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "III.1",
+          "III.2"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 1,
+        "minutes_per_session": 45,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_III_01",
+          "SRC_III_02",
+          "SRC_III_03"
+        ],
+        "source_type": "authored_lesson_plan",
+        "notes": "Giáo án tự biên soạn để tham khảo và phục vụ RAG; thời lượng tự học do EDUAGENT đề xuất, không phải phân phối tiết chính thức. Cần giáo viên kiểm duyệt trước khi dùng làm tài liệu đã xác minh.",
+        "lesson_id": null,
+        "lesson_title": "BÀI TẬP CUỐI CHƯƠNG III",
+        "content_type": "detail",
+        "section_types": [
+          "must_know"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_III_lesson_plan_015",
+        "chunk_index": 15,
+        "part_index": 1,
+        "heading_path": [
+          "Hàm số bậc hai và đồ thị",
+          "ÔN TẬP. BÀI TẬP CUỐI CHƯƠNG III",
+          "3. Kiến thức cần nắm"
+        ],
+        "source_file": "chapter_III.md",
+        "source_sha256": "b54984a2465ace51d8b297bed4743cd50939b8b7b6e4e12fc3e87ab1b0c05e7e"
+      }
+    },
+    {
+      "content": "Hàm số bậc hai và đồ thị > ÔN TẬP. BÀI TẬP CUỐI CHƯƠNG III > 4. Kiến thức cần hiểu\n\n4. Kiến thức cần hiểu\n\n- Mối quan hệ giữa công thức hàm số, hình dạng đồ thị và đặc điểm biến thiên.\n- Cách kiểm tra điều kiện của bài toán để chọn miền khảo sát phù hợp.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_III",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "III",
+        "chapter_title": "Hàm số bậc hai và đồ thị",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "III.1",
+          "III.2"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 1,
+        "minutes_per_session": 45,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_III_01",
+          "SRC_III_02",
+          "SRC_III_03"
+        ],
+        "source_type": "authored_lesson_plan",
+        "notes": "Giáo án tự biên soạn để tham khảo và phục vụ RAG; thời lượng tự học do EDUAGENT đề xuất, không phải phân phối tiết chính thức. Cần giáo viên kiểm duyệt trước khi dùng làm tài liệu đã xác minh.",
+        "lesson_id": null,
+        "lesson_title": "BÀI TẬP CUỐI CHƯƠNG III",
+        "content_type": "detail",
+        "section_types": [
+          "must_understand"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_III_lesson_plan_016",
+        "chunk_index": 16,
+        "part_index": 1,
+        "heading_path": [
+          "Hàm số bậc hai và đồ thị",
+          "ÔN TẬP. BÀI TẬP CUỐI CHƯƠNG III",
+          "4. Kiến thức cần hiểu"
+        ],
+        "source_file": "chapter_III.md",
+        "source_sha256": "b54984a2465ace51d8b297bed4743cd50939b8b7b6e4e12fc3e87ab1b0c05e7e"
+      }
+    },
+    {
+      "content": "Hàm số bậc hai và đồ thị > ÔN TẬP. BÀI TẬP CUỐI CHƯƠNG III > 5. Hoạt động học tập + 6. Dạng bài tập và đánh giá\n\n5. Hoạt động học tập\n\nĐọc lại tóm tắt kiến thức, xem tài liệu ôn tập nếu cần và làm bài tập tổng hợp của hai bài trong chương.\n\n6. Dạng bài tập và đánh giá\n\n- Bài nhận biết định nghĩa, tập xác định và đặc trưng parabol.\n- Bài thông hiểu yêu cầu đọc đồ thị, tính tọa độ đỉnh, lập bảng biến thiên.\n- Bài vận dụng yêu cầu giải thích hoặc tối ưu một tình huống có điều kiện xác định rõ.\n- Tiêu chí hoàn thành: Phân tích được lời giải, phát hiện và sửa lỗi nhầm lẫn về tập giá trị, khoảng biến thiên và cực trị.",
+      "metadata": {
+        "schema_version": "1.0",
+        "document_id": "CTST_T10_CH_III",
+        "document_type": "lesson_plan",
+        "subject": "Toán 10",
+        "grade": 10,
+        "textbook_series": "chan_troi_sang_tao",
+        "volume": 1,
+        "curriculum_version": "GDPT_2018",
+        "chapter_id": "III",
+        "chapter_title": "Hàm số bậc hai và đồ thị",
+        "content_types": [
+          "summary",
+          "detail"
+        ],
+        "lesson_ids": [
+          "III.1",
+          "III.2"
+        ],
+        "official_periods": null,
+        "suggested_sessions": 1,
+        "minutes_per_session": 45,
+        "verification_status": "review_required",
+        "source_ids": [
+          "SRC_III_01",
+          "SRC_III_02",
+          "SRC_III_03"
+        ],
+        "source_type": "authored_lesson_plan",
+        "notes": "Giáo án tự biên soạn để tham khảo và phục vụ RAG; thời lượng tự học do EDUAGENT đề xuất, không phải phân phối tiết chính thức. Cần giáo viên kiểm duyệt trước khi dùng làm tài liệu đã xác minh.",
+        "lesson_id": null,
+        "lesson_title": "BÀI TẬP CUỐI CHƯƠNG III",
+        "content_type": "detail",
+        "section_types": [
+          "activity",
+          "assessment"
+        ],
+        "time_scope": "lesson",
+        "chunk_id": "CTST_T10_CH_III_lesson_plan_017",
+        "chunk_index": 17,
+        "part_index": 1,
+        "heading_path": [
+          "Hàm số bậc hai và đồ thị",
+          "ÔN TẬP. BÀI TẬP CUỐI CHƯƠNG III",
+          "5. Hoạt động học tập + 6. Dạng bài tập và đánh giá"
+        ],
+        "source_file": "chapter_III.md",
+        "source_sha256": "b54984a2465ace51d8b297bed4743cd50939b8b7b6e4e12fc3e87ab1b0c05e7e"
+      }
+    }
+  ],
+  "appendices": {
+    "NGUỒN THAM KHẢO VÀ KIỂM CHỨNG": "> Các nguồn sau được dùng để **đối chiếu tên chương, tên bài và phạm vi kiến thức công khai**. Nội dung diễn đạt của giáo án do EDUAGENT tự biên soạn. Chưa kiểm chứng độc lập với bản SGK chính thức và chưa được giáo viên thẩm định; vì vậy toàn tài liệu giữ `verification_status: review_required`.\n\n- **SRC_III_01** — Loigiaihay, danh mục SGK Toán 10 CTST, Chương III (Bài 1, Bài 2, Bài tập cuối chương): https://loigiaihay.com/chuong-iii-ham-so-bac-hai-va-do-thi-e25925.html\n- **SRC_III_02** — VietJack, danh mục SGK Toán 10 CTST, Chương III: https://vietjack.com/toan-10-ct/chuong-3-ham-so-bac-hai-va-do-thi.jsp\n- **SRC_III_03** — Giáo án tham khảo Bài 1, mục tiêu kiến thức: https://giaoantronbo.com/giao-an-toan-lop-10-chan-troi-sang-tao-chuong-3-bai-1-ham-so-va-do-thi-1376/\n\n**Ghi chú chất lượng:** Số tiết chính thức của mỗi bài chưa được đối chiếu từ kế hoạch dạy học được phê duyệt. Không được sử dụng các giá trị `suggested_sessions` làm số tiết chính thức khi chuyển sang JSON hoặc gắn metadata cho Qdrant."
+  }
+}
