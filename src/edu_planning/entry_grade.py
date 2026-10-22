@@ -4,7 +4,8 @@ from datetime import datetime
 from pathlib import Path
 from langchain_core.messages import AIMessage, HumanMessage
 from src.edu_planning.student_store import save_student_model
-from src.edu_planning.collect_student_model import _make_queries
+# from src.edu_planning.collect_student_model import _make_queries
+from src.edu_planning.query_builder import build_queries
 
 def parse_answers(text: str) -> dict[int, str]:
     """'1-A, 2 - C, 3.b' -> {1: 'A', 2: 'C', 3: 'B'}."""
@@ -64,5 +65,5 @@ def entry_grade_node(state, llm_client) -> dict:
     lines = [f"Chương {c}: {i['correct']}/{i['total']} - {i['level']}" for c, i in sorted(result["chapters"].items())]
     text = f"Kết quả: {result['correct']}/{result['total']} câu đúng.\n" + "\n".join(lines)
     return {"student_model": model, "entry_test": {**et, "result": result}, "entry_done": True,
-            "search_queries": _make_queries(model, state, llm_client),     # tạo lại query theo hồ sơ sau test
+            "search_queries": build_queries(model),     # tạo lại query theo hồ sơ sau test (code, không LLM)
             "roadmap_status": "", "messages": [AIMessage(content=text)]}

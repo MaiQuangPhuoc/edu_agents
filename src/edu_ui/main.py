@@ -86,3 +86,13 @@ def roadmap_page(request: Request):
     return templates.TemplateResponse(
         request=request, name="roadmap.html", context={"active_page": "roadmap"}
     )
+
+# Student profile uses the canonical planning StudentModel schema.
+from src.edu_ui.profile_api import router as profile_router
+app.include_router(profile_router)
+
+@app.get("/profile", response_class=HTMLResponse)
+def profile_page(request: Request):
+    return templates.TemplateResponse(
+        request=request, name="profile.html", context={"active_page": "profile"}
+    )

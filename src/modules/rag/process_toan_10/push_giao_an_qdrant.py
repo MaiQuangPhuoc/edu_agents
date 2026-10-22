@@ -4,14 +4,16 @@ Không cần xuất hoặc đọc file JSON trung gian.
 """
 import sys
 from pathlib import Path
-from langchain_core.documents import Document
-from src.modules.rag.vectorstores2 import VectorStoreManager
+
 from src.configs import env_config
 
 
 ROOT_DIR = Path(__file__).resolve().parents[4]
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
+
+from langchain_core.documents import Document
+from src.modules.rag.vectorstores2 import VectorStoreManager
 
 # Chỉ sửa đường dẫn tương đối này nếu thư mục giáo án nằm nơi khác.
 LESSON_PLAN_DIR = (

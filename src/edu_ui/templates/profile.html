@@ -1,0 +1,175 @@
+{% extends "base.html" %}
+{% block document_title %}EDUAGENT — Hồ sơ học sinh{% endblock %}
+{% block page_styles %}<link rel="stylesheet" href="/ui-static/css/profile.css">{% endblock %}
+{% block page_scripts %}<script defer src="/ui-static/js/profile.js"></script>{% endblock %}
+{% block body_class %}profile-body{% endblock %}
+{% block page_title %}Hồ sơ học sinh{% endblock %}
+{% block page_description %}Quản lý thông tin học tập theo hồ sơ chuẩn của hệ thống.{% endblock %}
+{% block content_class %}profile-content{% endblock %}
+{% block content %}
+<header class="profile-heading">
+  <div>
+    <p class="profile-eyebrow">HỒ SƠ HỌC TẬP</p>
+    <h1>Hồ sơ học sinh</h1>
+    <p>Thông tin được lưu theo cấu trúc StudentModel và dùng chung với lộ trình học.</p>
+  </div>
+  <div class="profile-header-actions">
+    <label class="student-id-field" for="student-id">
+      <span>Mã học sinh</span>
+      <input id="student-id" name="student_id" value="hs_002" maxlength="80" required>
+    </label>
+    <button id="load-profile" class="button secondary-button" type="button">Tải hồ sơ</button>
+    <button class="button save-button" type="submit" form="profile-form">Lưu hồ sơ</button>
+  </div>
+</header>
+
+<div class="profile-notice" role="note">
+  <strong>Đầy đủ trường dữ liệu:</strong>
+  thông tin cá nhân, năng lực từng môn/chủ đề, mục tiêu, sở thích học, lịch học và tiến độ.
+  Trường phiên bản và thời điểm cập nhật do hệ thống quản lý.
+</div>
+
+<form id="profile-form" novalidate>
+  <section class="profile-section" aria-labelledby="personal-heading">
+    <header class="section-heading">
+      <span class="section-number">01</span>
+      <div><h2 id="personal-heading">Thông tin cá nhân</h2><p>Thông tin cơ bản và những điều bạn quan tâm.</p></div>
+    </header>
+    <div class="profile-card field-grid">
+      <label class="field wide-field" for="full-name"><span>Họ và tên</span><input id="full-name" name="ho_ten" maxlength="200"></label>
+      <label class="field" for="grade"><span>Khối lớp</span><input id="grade" name="khoi_lop" type="number" min="1" max="12" step="1" required></label>
+      <label class="field wide-field" for="interests"><span>Sở thích</span><textarea id="interests" name="so_thich" rows="3" placeholder="Mỗi dòng là một sở thích"></textarea></label>
+      <label class="field wide-field" for="activities"><span>Hoạt động ngoại khóa</span><textarea id="activities" name="hoat_dong_ngoai_khoa" rows="3" placeholder="Mỗi dòng là một hoạt động"></textarea></label>
+    </div>
+  </section>
+
+  <section class="profile-section" aria-labelledby="ability-heading">
+    <header class="section-heading">
+      <span class="section-number">02</span>
+      <div><h2 id="ability-heading">Năng lực theo môn học</h2><p>Điểm hiện tại, điểm mạnh/yếu, trạng thái kiểm tra và mức độ nắm từng chủ đề.</p></div>
+      <button class="button secondary-button add-button" id="add-ability" type="button">+ Thêm môn</button>
+    </header>
+    <div id="abilities-list" class="repeater-list"></div>
+  </section>
+
+  <section class="profile-section" aria-labelledby="goals-heading">
+    <header class="section-heading">
+      <span class="section-number">03</span>
+      <div><h2 id="goals-heading">Mục tiêu học tập</h2><p>Mục tiêu điểm, thời hạn, ưu tiên và dạng bài cần tập trung.</p></div>
+      <button class="button secondary-button add-button" id="add-goal" type="button">+ Thêm mục tiêu</button>
+    </header>
+    <div id="goals-list" class="repeater-list"></div>
+  </section>
+
+  <section class="profile-section" aria-labelledby="preferences-heading">
+    <header class="section-heading">
+      <span class="section-number">04</span>
+      <div><h2 id="preferences-heading">Sở thích học tập</h2><p>Chọn định dạng học và thời lượng buổi học phù hợp.</p></div>
+    </header>
+    <div class="profile-card field-grid">
+      <label class="field" for="pref-documents"><span>Dùng tài liệu</span><select id="pref-documents" name="dung_tai_lieu"><option value="">Chưa đặt</option><option value="true">Có</option><option value="false">Không</option></select></label>
+      <label class="field" for="pref-videos"><span>Dùng video</span><select id="pref-videos" name="dung_video"><option value="">Chưa đặt</option><option value="true">Có</option><option value="false">Không</option></select></label>
+      <label class="field" for="pref-exercises"><span>Bài tập sau buổi</span><select id="pref-exercises" name="bai_tap_sau_buoi"><option value="">Chưa đặt</option><option value="true">Có</option><option value="false">Không</option></select></label>
+      <label class="field" for="pref-summary"><span>Tóm tắt cuối buổi</span><select id="pref-summary" name="tom_tat_cuoi_buoi"><option value="">Chưa đặt</option><option value="true">Có</option><option value="false">Không</option></select></label>
+      <label class="field" for="session-minutes"><span>Thời lượng buổi học (phút)</span><input id="session-minutes" name="thoi_luong_buoi_phut" type="number" min="1" step="1"></label>
+    </div>
+  </section>
+
+  <section class="profile-section" aria-labelledby="schedule-heading">
+    <header class="section-heading">
+      <span class="section-number">05</span>
+      <div><h2 id="schedule-heading">Lịch học</h2><p>Số buổi mỗi tuần, khung giờ rảnh và lịch bận cố định.</p></div>
+      <button class="button secondary-button add-button" id="add-availability" type="button">+ Thêm khung giờ</button>
+    </header>
+    <div class="profile-card field-grid schedule-card">
+      <label class="field" for="sessions-per-week"><span>Số buổi mỗi tuần</span><input id="sessions-per-week" name="so_buoi_tuan" type="number" min="0" step="1"></label>
+      <div class="field wide-field">
+        <span class="field-label">Khung giờ rảnh</span>
+        <div id="availability-list" class="availability-list"></div>
+      </div>
+      <label class="field wide-field" for="busy-schedule"><span>Lịch bận cố định</span><textarea id="busy-schedule" name="lich_ban" rows="3" placeholder="Mỗi dòng là một lịch bận, ví dụ: Học thêm Toán tối thứ 3"></textarea></label>
+    </div>
+  </section>
+
+  <section class="profile-section" aria-labelledby="progress-heading">
+    <header class="section-heading">
+      <span class="section-number">06</span>
+      <div><h2 id="progress-heading">Tiến độ học tập</h2><p>Các trường tiến độ hiện có trong schema StudentModel.</p></div>
+    </header>
+    <div class="profile-card field-grid">
+      <label class="field" for="completion-rate"><span>Tỉ lệ hoàn thành (0–1)</span><input id="completion-rate" name="ti_le_hoan_thanh" type="number" min="0" max="1" step="0.01"></label>
+      <label class="field" for="streak-days"><span>Số ngày liên tiếp</span><input id="streak-days" name="so_ngay_lien_tiep" type="number" min="0" step="1" required></label>
+      <label class="field" for="last-active"><span>Lần hoạt động cuối</span><input id="last-active" name="lan_hoat_dong_cuoi" type="datetime-local"></label>
+      <label class="field wide-field" for="motivation-signal"><span>Tín hiệu động lực</span><textarea id="motivation-signal" name="tin_hieu_dong_luc" rows="2"></textarea></label>
+    </div>
+  </section>
+
+  <section class="profile-section" aria-labelledby="metadata-heading">
+    <header class="section-heading">
+      <span class="section-number">07</span>
+      <div><h2 id="metadata-heading">Thông tin hệ thống</h2><p>Giá trị được cập nhật tự động khi lưu hồ sơ.</p></div>
+    </header>
+    <div class="profile-card field-grid metadata-card">
+      <label class="field" for="profile-version"><span>Phiên bản</span><input id="profile-version" type="number" readonly></label>
+      <label class="field" for="profile-updated"><span>Cập nhật lúc</span><input id="profile-updated" readonly></label>
+    </div>
+  </section>
+
+  <div class="profile-submit-row">
+    <p id="profile-status" role="status" aria-live="polite"></p>
+    <button class="button save-button" type="submit">Lưu hồ sơ</button>
+  </div>
+</form>
+
+<template id="ability-template">
+  <article class="profile-card repeater-card ability-card" data-ability-item>
+    <header class="repeater-heading"><h3>Năng lực môn học</h3><button class="remove-button" type="button" data-remove-item aria-label="Xóa năng lực môn học">Xóa môn</button></header>
+    <div class="field-grid">
+      <label class="field" data-field-wrap="mon_hoc"><span>Môn học</span><input data-field="mon_hoc" required maxlength="100" placeholder="Ví dụ: Toán 10"></label>
+      <label class="field"><span>Điểm hiện tại</span><input data-field="diem_hien_tai" type="number" min="0" max="10" step="0.1"></label>
+      <label class="field checkbox-field"><input data-field="da_test_dau_vao" type="checkbox"><span>Đã kiểm tra đầu vào</span></label>
+      <label class="field wide-field"><span>Điểm mạnh</span><textarea data-list-field="diem_manh" rows="2" placeholder="Mỗi dòng là một điểm mạnh"></textarea></label>
+      <label class="field wide-field"><span>Điểm yếu</span><textarea data-list-field="diem_yeu" rows="2" placeholder="Mỗi dòng là một điểm cần cải thiện"></textarea></label>
+    </div>
+    <div class="nested-section">
+      <div class="nested-heading"><h4>Năng lực theo chủ đề</h4><button class="button text-button" type="button" data-add-topic>+ Thêm chủ đề</button></div>
+      <div class="topic-list" data-topic-list></div>
+    </div>
+  </article>
+</template>
+
+<template id="topic-template">
+  <div class="topic-item" data-topic-item>
+    <label class="field"><span>Mã chương / chủ đề</span><input data-field="chapter_id" required maxlength="120"></label>
+    <label class="field"><span>Bài học</span><input data-field="lesson" maxlength="200"></label>
+    <label class="field"><span>Mức độ nắm (0–1)</span><input data-field="muc_nam" type="number" min="0" max="1" step="0.01"></label>
+    <label class="field"><span>Độ tin cậy (0–1)</span><input data-field="do_tin_cay" type="number" min="0" max="1" step="0.01" value="0"></label>
+    <label class="field"><span>Nguồn đánh giá</span><select data-field="nguon"><option value="tu_danh_gia">Tự đánh giá</option><option value="bai_kiem_tra">Bài kiểm tra</option><option value="chat">Trò chuyện</option></select></label>
+    <label class="field"><span>Cập nhật lúc</span><input data-field="cap_nhat" type="datetime-local"></label>
+    <button class="remove-button topic-remove" type="button" data-remove-item>Xóa chủ đề</button>
+  </div>
+</template>
+
+<template id="goal-template">
+  <article class="profile-card repeater-card goal-card" data-goal-item>
+    <header class="repeater-heading"><h3>Mục tiêu môn học</h3><button class="remove-button" type="button" data-remove-item aria-label="Xóa mục tiêu">Xóa mục tiêu</button></header>
+    <div class="field-grid">
+      <label class="field"><span>Môn học</span><input data-field="mon_hoc" required maxlength="100" placeholder="Ví dụ: Toán 10"></label>
+      <label class="field"><span>Mục tiêu điểm (thang 10)</span><input data-field="muc_tieu_diem" type="number" min="0" max="10" step="0.1"></label>
+      <label class="field"><span>Hạn chót (mô tả)</span><input data-field="han_chot" maxlength="150" placeholder="Ví dụ: Thi học kì 2"></label>
+      <label class="field"><span>Ngày kết thúc</span><input data-field="ngay_ket_thuc" type="date"></label>
+      <label class="field"><span>Số tuần còn lại</span><input data-field="so_tuan_con_lai" type="number" min="0" step="1"></label>
+      <label class="field"><span>Ưu tiên</span><select data-field="uu_tien"><option value="">Chưa chọn</option><option value="diem_so">Điểm số</option><option value="hieu_ban_chat">Hiểu bản chất</option><option value="ca_hai">Cả hai</option></select></label>
+      <label class="field wide-field"><span>Dạng bài cần tập trung</span><textarea data-list-field="dang_bai_can_giu" rows="2" placeholder="Mỗi dòng là một dạng bài"></textarea></label>
+    </div>
+  </article>
+</template>
+
+<template id="availability-template">
+  <div class="availability-item" data-availability-item>
+    <label class="field"><span>Ngày trong tuần</span><input data-field="day" maxlength="30" placeholder="Mon / Thứ 2"></label>
+    <label class="field"><span>Khung giờ (mỗi dòng một khung)</span><textarea data-field="times" rows="2" placeholder="19:00-20:30"></textarea></label>
+    <button class="remove-button" type="button" data-remove-item>Xóa</button>
+  </div>
+</template>
+{% endblock %}

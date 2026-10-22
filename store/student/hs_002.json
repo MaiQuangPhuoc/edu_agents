@@ -27,7 +27,7 @@
           "muc_nam": 1.0,
           "do_tin_cay": 0.6,
           "nguon": "bai_kiem_tra",
-          "cap_nhat": "2026-10-19T23:20:56.620040"
+          "cap_nhat": "2026-10-20T07:20:00Z"
         },
         {
           "chapter_id": "I",
@@ -35,7 +35,7 @@
           "muc_nam": 1.0,
           "do_tin_cay": 1.0,
           "nguon": "bai_kiem_tra",
-          "cap_nhat": "2026-10-19T23:20:56.620040"
+          "cap_nhat": "2026-10-20T07:20:00Z"
         },
         {
           "chapter_id": "IV",
@@ -43,7 +43,7 @@
           "muc_nam": 1.0,
           "do_tin_cay": 0.6,
           "nguon": "bai_kiem_tra",
-          "cap_nhat": "2026-10-19T23:20:56.620040"
+          "cap_nhat": "2026-10-20T07:20:00Z"
         },
         {
           "chapter_id": "III",
@@ -51,7 +51,7 @@
           "muc_nam": 1.0,
           "do_tin_cay": 0.6,
           "nguon": "bai_kiem_tra",
-          "cap_nhat": "2026-10-19T23:20:56.620040"
+          "cap_nhat": "2026-10-20T07:20:00Z"
         },
         {
           "chapter_id": "VI",
@@ -59,7 +59,7 @@
           "muc_nam": 1.0,
           "do_tin_cay": 0.6,
           "nguon": "bai_kiem_tra",
-          "cap_nhat": "2026-10-19T23:20:56.620040"
+          "cap_nhat": "2026-10-20T07:20:00Z"
         },
         {
           "chapter_id": "II",
@@ -67,7 +67,7 @@
           "muc_nam": 1.0,
           "do_tin_cay": 0.6,
           "nguon": "bai_kiem_tra",
-          "cap_nhat": "2026-10-19T23:20:56.620040"
+          "cap_nhat": "2026-10-20T07:20:00Z"
         }
       ]
     }
@@ -111,6 +111,6 @@
     "lan_hoat_dong_cuoi": null,
     "tin_hieu_dong_luc": null
   },
-  "version": 1,
-  "updated_at": "2026-10-19T23:20:56.620040"
+  "version": 3,
+  "updated_at": "2026-10-22T08:32:42.501849Z"
 }

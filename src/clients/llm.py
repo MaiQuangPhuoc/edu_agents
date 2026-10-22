@@ -268,23 +268,23 @@ except Exception as e:
     llm_client = None
 
 
-# from langchain_core.messages import HumanMessage
+from langchain_core.messages import HumanMessage
 
-# try:
-#     llm_client = LLMClient(
-#         model=env_config.model,
-#         api_provider=env_config.api_provider
-#     )
-#     print("LLM phản hồi:")
-#     # Dùng trực tiếp llm bên trong LLMClient để test
-#     response = llm_client._llm.invoke([
-
-
-#         HumanMessage(content="năm 2022 ai là tổng thống nước mỹ")
-#     ])
+try:
+    llm_client = LLMClient(
+        model=env_config.model,
+        api_provider=env_config.api_provider
+    )
+    print("LLM phản hồi:")
+    # Dùng trực tiếp llm bên trong LLMClient để test
+    response = llm_client._llm.invoke([
 
 
-#     print(response.content)
+        HumanMessage(content="năm 2022 ai là tổng thống nước mỹ")
+    ])
 
-# except Exception as e:
-#     logger.error(f" Lỗi khởi tạo LLM client hoặc gọi LLM: {e}")
+
+    print(response.content)
+
+except Exception as e:
+    logger.error(f" Lỗi khởi tạo LLM client hoặc gọi LLM: {e}")

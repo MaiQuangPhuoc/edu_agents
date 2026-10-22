@@ -6,10 +6,10 @@ from langchain_core.messages import AIMessage, HumanMessage
 from src.clients.llm import LLMClient
 from src.edu_exam.curriculum import CURRICULUM
 from src.edu_planning.student_store import save_student_model
-from src.state_plan import PlanState, StudentModel, CollectTurn, CollectPatchTurn, QueryPlan
-from src.edu_qa.paths import (COLLECT_STUDENT_MODEL_PROMPT_PATH, COLLECT_UPDATE_PROMPT_PATH,
-                              QUERY_TRANSFORM_PROMPT_PATH)
+from src.state_plan import PlanState, StudentModel, CollectTurn, CollectPatchTurn
+from src.edu_qa.paths import (COLLECT_STUDENT_MODEL_PROMPT_PATH, COLLECT_UPDATE_PROMPT_PATH)
 from difflib import SequenceMatcher
+from src.edu_planning.query_builder import build_queries
 
 
 MAX_HISTORY = 6        # số tin nhắn gần nhất đưa vào prompt
@@ -120,18 +120,6 @@ def _dump(turn, prev: str, last_user: str) -> dict:
     _prefill(model, prev, last_user)
     return model
 
-def _make_queries(model: dict, state: PlanState, llm_client: LLMClient) -> list[dict]:
-    shown = {k: v for k, v in model.items() if k != "tien_do"}
-    names = [x.get("mon_hoc") for k in ("muc_tieu", "nang_luc") for x in model.get(k, [])]
-    subjects = [s for s in dict.fromkeys(_canon_subject(n) for n in names) if s in CURRICULUM]
-    prompt = (QUERY_TRANSFORM_PROMPT_PATH.read_text(encoding="utf-8")
-              .replace("{student_model}", _compact(shown))
-              .replace("{chuong}", _curriculum_lessons(subjects))
-              .replace("{history}", _history_text(state.get("messages", []))))
-    res = llm_client.invoke_structured(QueryPlan, [{"role": "user", "content": prompt}], max_tokens=1500)
-    return [q.model_dump() for q in res.queries] if res else []
-
-
 def _update_mode(state: PlanState, llm_client: LLMClient) -> dict:
     req = state["update_request"]
     fields = req.get("fields", [])
@@ -168,7 +156,7 @@ def _update_mode(state: PlanState, llm_client: LLMClient) -> dict:
         "student_model_prev": current,
         "student_model":      new,
         "roadmap_prev":       state.get("master_roadmap", {}),
-        "search_queries":     _make_queries(new, state, llm_client),
+        "search_queries":     build_queries(new),
         "update_request":     {},
         "roadmap_status":     "profile_changed",
     })
@@ -227,7 +215,6 @@ def collect_student_model(state: PlanState, llm_client: LLMClient) -> dict:
     if turn.hoan_tat:
         save_student_model(model)
     
-    # queries = _make_queries(model, state, llm_client) if turn.hoan_tat else state.get("search_queries", [])
     queries = state.get("search_queries", [])      # query tạo sau bài test (entry_grade_node)
     return {
         "messages":      [AIMessage(content=turn.tin_nhan)],
