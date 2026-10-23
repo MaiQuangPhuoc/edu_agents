@@ -162,6 +162,17 @@ class VectorStoreRetriever:
         results = self._tools_store.similarity_search(query, k=k or self.top_k)
         print(f" ========== tools search : {len(results)} ========== ")
         return results
+
+    def search_sgk(self, query: str, subject: str, chapter_id: str | None = None, k: int | None = None) -> list[Document]:
+        """Tìm lai trong SGK; lọc subject/chapter_id ngay trên Qdrant, loại chunk giáo án."""
+        must = [FieldCondition(key="metadata.subject", match=MatchValue(value=subject))]
+        if chapter_id:
+            must.append(FieldCondition(key="metadata.chapter_id", match=MatchValue(value=chapter_id)))
+        flt = Filter(must=must, must_not=[
+            FieldCondition(key="metadata.document_type", match=MatchValue(value="lesson_plan"))])
+        results = self._hybrid_store.similarity_search(query, k=k or self.top_k, filter=flt)
+        print(f" ========== search_sgk ({subject}, chương {chapter_id}) : {len(results)} ========== ")
+        return results
     
     # def lesson_plan_search(self, subject: str, chapter_id: str | None = None, limit: int = 1) -> list[Document]:
     #     """Lấy giáo án tóm tắt (content_type=summary) theo metadata, lọc ngay trên Qdrant, không dùng embedding."""

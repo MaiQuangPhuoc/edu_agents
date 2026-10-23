@@ -6,6 +6,7 @@ from src.edu_planning.lp_tools import _deadline, _pick_goal
 
 GIAO_AN_MAX_CHARS = 1200
 NEUTRAL = 0.6    
+_UU_TIEN = {"diem_so": "ưu tiên điểm số", "hieu_ban_chat": "ưu tiên hiểu bản chất", "ca_hai": "cân bằng điểm số và hiểu bản chất"}
 
 def _one(x) -> dict:
     if isinstance(x, dict):
@@ -102,3 +103,41 @@ def make_batches(sm: dict, size: int = 2) -> list[dict]:
         ids = sorted(get_subject_curriculum(s), key=lambda c: levels.get((s, c), NEUTRAL))   # sort ổn định
         out += [{"subject": s, "chapters": ids[i:i + size]} for i in range(0, len(ids), size)]
     return out
+
+def _yn(v) -> str:
+    return "chưa rõ" if v is None else "có" if v else "không"
+
+
+def profile_text(sm: dict) -> str:
+    """Hồ sơ dạng ngôn ngữ tự nhiên, chỉ giữ thông tin cần cho việc lập sườn."""
+    cn = sm.get("ca_nhan") or {}
+    lines = [f"- Học sinh lớp {cn.get('khoi_lop', 10)}."]
+    if cn.get("hoat_dong_ngoai_khoa"):
+        lines.append(f"- Hoạt động ngoài giờ: {_join(cn['hoat_dong_ngoai_khoa'])}.")
+    for nl in sm.get("nang_luc") or []:
+        parts = []
+        if nl.get("diem_hien_tai") is not None:
+            parts.append(f"điểm hiện tại {nl['diem_hien_tai']}")
+        if nl.get("diem_yeu"):
+            parts.append(f"tự nhận yếu: {_join(nl['diem_yeu'])}")
+        if nl.get("diem_manh"):
+            parts.append(f"tự nhận mạnh: {_join(nl['diem_manh'])}")
+        lines.append(f"- {nl.get('mon_hoc')}: " + ("; ".join(parts) or "chưa có thông tin năng lực") + ".")
+    for g in sm.get("muc_tieu") or []:
+        parts = []
+        if g.get("muc_tieu_diem") is not None:
+            parts.append(f"mục tiêu {g['muc_tieu_diem']} điểm")
+        if g.get("han_chot"):
+            parts.append(f"hạn chót: {g['han_chot']}")
+        if g.get("ngay_ket_thuc"):
+            parts.append(f"đến ngày {g['ngay_ket_thuc']}")
+        elif g.get("so_tuan_con_lai"):
+            parts.append(f"còn khoảng {g['so_tuan_con_lai']} tuần")
+        if g.get("uu_tien"):
+            parts.append(_UU_TIEN.get(g["uu_tien"], g["uu_tien"]))
+        if g.get("dang_bai_can_giu"):
+            parts.append(f"muốn tập trung dạng: {_join(g['dang_bai_can_giu'])}")
+        lines.append(f"- Mục tiêu {g.get('mon_hoc')}: " + ("; ".join(parts) or "chưa rõ") + ".")
+    st = _one(sm.get("so_thich_hoc"))
+    lines.append(f"- Cách học: dùng video: {_yn(st.get('dung_video'))}; dùng tài liệu: {_yn(st.get('dung_tai_lieu'))}.")
+    return "\n".join(lines)

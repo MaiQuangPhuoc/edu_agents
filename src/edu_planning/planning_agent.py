@@ -7,20 +7,22 @@ from src.edu_planning.feedback_tools import FEEDBACK_TOOLS
 from src.edu_planning.chapter_utils import fix_chapters
 
 
-from src.state_plan import PlanState, MasterRoadmap, HandoffMessage, BatchPlan, Overview
 from src.edu_qa.paths import PLANNING_PROMPT_PATH, PLANNING_FINALIZE_PROMPT_PATH, PLANNING_FEEDBACK_PROMPT_PATH, PLANNING_OVERVIEW_PROMPT_PATH
-from src.edu_planning.plan_context import time_text, levels_text, lesson_plan_text, make_batches
 
 from src.clients.llm import LLMClient
 
 from langchain.agents import create_agent
 from langgraph.errors import GraphRecursionError
 
+from src.state_plan import PlanState, MasterRoadmap, HandoffMessage, BatchPlan, Overview, ToolPlan
+from src.edu_planning.plan_context import time_text, levels_text, lesson_plan_text, make_batches, profile_text
+from src.edu_planning.plan_search import run_calls
+
 from src.edu_exam.curriculum import get_subject_curriculum
 from src.edu_qa.paths import PLANNING_PROMPT_PATH, PLANNING_FINALIZE_PROMPT_PATH
 from src.edu_planning.planning_tools import make_planning_tools
 
-MAX_STEPS = 3         # số lượt tool tối đa mỗi lô
+# MAX_STEPS = 3         # số lượt tool tối đa mỗi lô
 BATCH_SIZE = 2        # số chương mỗi lô
 DEBUG_PROMPT = True   # True: in prompt của từng lô để kiểm tra
 
@@ -87,7 +89,7 @@ def _context(prompt: str, sm: dict, retriever, batch=None, done=()) -> str:
 def _build_prompt(state: PlanState, retriever, batch=None, done=()) -> str:
     sm = state.get("student_model", {})
     return _context(PLANNING_PROMPT_PATH.read_text(encoding="utf-8")
-            .replace("{student_model}", json.dumps(sm, ensure_ascii=False, indent=2))
+            .replace("{student_model}", profile_text(sm))
             .replace("{curriculum}", _curriculum_text(sm, batch))
             .replace("{thay_doi}", _change_text(state))
             .replace("{queries}", _queries_text(state, batch)), sm, retriever, batch, done)
@@ -95,7 +97,7 @@ def _build_prompt(state: PlanState, retriever, batch=None, done=()) -> str:
 def _build_finalize_prompt(state, transcript, retriever, batch=None, done=()) -> str:
     sm = state.get("student_model", {})
     return _context(PLANNING_FINALIZE_PROMPT_PATH.read_text(encoding="utf-8")
-            .replace("{student_model}", json.dumps(sm, ensure_ascii=False, indent=2))
+            .replace("{student_model}", profile_text(sm))
             .replace("{curriculum}", _curriculum_text(sm, batch))
             .replace("{transcript}", transcript)
             .replace("{chinh_sua}", _change_text(state)), sm, retriever, batch, done)
@@ -138,8 +140,7 @@ def _format_roadmap(rm: dict) -> str:
     return "\n".join(lines)
 
 def make_planning_graph(retriever, llm_client: LLMClient, checkpointer=None):
-    tools = make_planning_tools(retriever, llm_client)
-    react = create_agent(llm_client._llm, tools)
+    tools = {t.name: t for t in make_planning_tools(retriever, llm_client)}
     llm_decide = llm_client._llm.bind_tools(FEEDBACK_TOOLS)
 
     def entry(state: PlanState) -> str:
@@ -151,21 +152,9 @@ def make_planning_graph(retriever, llm_client: LLMClient, checkpointer=None):
         for batch in make_batches(sm, BATCH_SIZE):
             print(f"[planning] lô: {batch['subject']} chương {batch['chapters']}")
             prompt = _build_prompt(state, retriever, batch, done)
-            _debug("PROMPT AGENT", prompt)
-            msgs = []
-            try:
-                for chunk in react.stream({"messages": [HumanMessage(content=prompt)]},
-                                          config={"recursion_limit": 2 * MAX_STEPS + 1},
-                                          stream_mode="values"):
-                    msgs = chunk["messages"]
-                    if isinstance(msgs[-1], AIMessage):
-                        for c in (msgs[-1].tool_calls or []):
-                            print(f"[planning] gọi tool: {c['name']} {c['args']}")
-            except GraphRecursionError:
-                print("[planning] vượt giới hạn vòng, dùng kết quả đã tra được")
-                
-            msgs = msgs or [HumanMessage(content=prompt)]
-            transcript = _transcript(msgs)
+            _debug("PROMPT LẬP KẾ HOẠCH TRA CỨU", prompt)
+            plan = llm_client.invoke_structured(ToolPlan, [{"role": "user", "content": prompt}], max_tokens=800)
+            transcript = run_calls(tools, plan.calls if plan else [], batch["subject"], batch["chapters"], sm)
             fprompt = _build_finalize_prompt(state, transcript, retriever, batch, done)
             _debug("PROMPT SINH SƯỜN", fprompt)
             res = llm_client.invoke_structured(BatchPlan, [{"role": "user", "content": fprompt}], max_tokens=3000)

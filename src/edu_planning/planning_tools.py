@@ -13,13 +13,13 @@ def _nonempty(res):
     return res or [{"thong_bao": "Không có kết quả phù hợp; hãy đổi từ khóa hoặc bỏ chapter_id/lesson."}]
 
 def make_planning_tools(retriever, llm_client=None):
-    def _filter(docs, chapter_id, lesson):
-        docs = [d for d in docs if d.metadata.get("document_type") != "lesson_plan"]   # SGK không lấy giáo án
-        if chapter_id:
-            docs = [d for d in docs if d.metadata.get("chapter_id") == chapter_id]
-        if lesson:
-            docs = [d for d in docs if lesson.lower() in d.metadata.get("lesson", "").lower()]
-        return docs
+    # def _filter(docs, chapter_id, lesson):
+    #     docs = [d for d in docs if d.metadata.get("document_type") != "lesson_plan"]   # SGK không lấy giáo án
+    #     if chapter_id:
+    #         docs = [d for d in docs if d.metadata.get("chapter_id") == chapter_id]
+    #     if lesson:
+    #         docs = [d for d in docs if lesson.lower() in d.metadata.get("lesson", "").lower()]
+    #     return docs
 
     def _fmt(docs):
         out = []
@@ -36,51 +36,35 @@ def make_planning_tools(retriever, llm_client=None):
         return out
 
     @tool
-    def search_documents(query: str, subject: str, chapter_id: Optional[str] = None,
-                         lesson: Optional[str] = None, top_k: int = 5) -> list[dict]:
+    def search_documents(query: str, subject: str, chapter_id: Optional[str] = None, top_k: int = 5) -> list[dict]:
         """Tìm nhanh tài liệu SGK (hybrid search), KHÔNG xếp hạng lại.
 
-        Dùng khi:
-        - Quét rộng xem chương/bài có những nội dung gì.
-        - Tra nhanh, chưa cần độ chính xác cao.
-
-        Kết quả không có điểm; thứ tự chỉ mang tính tham khảo.
-        Nếu trả rỗng: bỏ chapter_id/lesson hoặc đổi từ khóa.
+        Dùng để quét xem chương có nội dung gì. Nếu trả rỗng: bỏ chapter_id hoặc đổi từ khóa.
 
         Args:
-            query: từ khóa/câu cần tìm.
+            query: từ khóa ngắn (tên khái niệm), không chép nguyên tên bài.
             subject: "Toán 10" | "Ngữ văn 10" | "Lịch sử 10".
             chapter_id: số chương, "I" (Toán) hoặc "5" (Ngữ văn, Lịch sử).
-            lesson: tên bài (tùy chọn).
             top_k: số kết quả tối đa.
         """
         chapter_id = (normalize_chapter_id(subject, chapter_id) or chapter_id) if chapter_id else None
-        docs = retriever.hybrid_search_qa(query, k=FETCH_K, subject=subject)
-        return _nonempty(_fmt(_filter(docs, chapter_id, lesson)[:top_k]))
+        return _nonempty(_fmt(retriever.search_sgk(query, subject, chapter_id, k=top_k)))
 
     @tool
-    def search_documents_reranked(query: str, subject: str, chapter_id: Optional[str] = None,
-                                  lesson: Optional[str] = None, top_k: int = 3) -> list[dict]:
+    def search_documents_reranked(query: str, subject: str, chapter_id: Optional[str] = None, top_k: int = 3) -> list[dict]:
         """Tìm tài liệu SGK rồi xếp hạng lại bằng reranker (chính xác hơn, chậm hơn).
 
-        Dùng khi:
-        - Cần đoạn tài liệu chính xác làm căn cứ cho quyết định xếp thứ tự/chiến lược.
-        - Đã quét rộng và cần chọn đoạn liên quan nhất.
-
-        rerank_score >= 0.6: liên quan rõ; 0.4-0.6: tạm dùng; < 0.4: nên coi là không liên quan.
-        Không so điểm này với kết quả của search_documents.
+        rerank_score từ 0 đến 1: >= 0.6 liên quan rõ; 0.4-0.6 tạm dùng; < 0.4 coi là không liên quan.
 
         Args:
-            query: từ khóa/câu cần tìm.
+            query: từ khóa ngắn (tên khái niệm).
             subject: "Toán 10" | "Ngữ văn 10" | "Lịch sử 10".
             chapter_id: số chương, "I" (Toán) hoặc "5" (Ngữ văn, Lịch sử).
-            lesson: tên bài (tùy chọn).
             top_k: số kết quả sau rerank.
         """
         chapter_id = (normalize_chapter_id(subject, chapter_id) or chapter_id) if chapter_id else None
-        docs = _filter(retriever.hybrid_search_qa(query, k=FETCH_K, subject=subject), chapter_id, lesson)
+        docs = retriever.search_sgk(query, subject, chapter_id, k=FETCH_K)
         return _nonempty(_fmt(retriever.rerank(query, docs, top_k=top_k)))
-
     @tool
     def search_web_documents(query: str, subject: str, top_k: int = 3) -> list[dict]:
         """Tìm tài liệu học tập trên web (trang giáo dục uy tín: đề cương, bài giảng, bài tập).

@@ -16,7 +16,7 @@ class EnvConfig(BaseSettings):
     # ── API keys (để trống nếu không dùng, không bắt buộc) ──
     groq_api_key: Optional[str] = None
     openai_api_key: Optional[str] = None
-    # openrouter_api_key: Optional[str] = None
+    openrouter_api_key: Optional[str] = None
     # anthropic_api_key: Optional[str] = None
 
     # tavily/weather giữ optional luôn cho an toàn
@@ -29,7 +29,7 @@ class EnvConfig(BaseSettings):
     # gemini_model: str = "gemini-3.8-flash"
 
     # ── chọn provider đang dùng ──
-    api_provider: Literal["openai", "groq", "openrouter", "anthropic","gemini"] = "openai"
+    api_provider: Literal["openai", "groq", "openrouter", "anthropic","gemini"] = "groq"
 
     model: str = ""
     embedding_model: str = ""
@@ -46,7 +46,7 @@ class EnvConfig(BaseSettings):
 
 
     model_config = SettingsConfigDict(
-        env_file=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),".env"),
+        env_file=os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"),
         extra="ignore",
         env_ignore_empty=True,
     )
@@ -66,7 +66,7 @@ MAX_UPLOAD_MB = 20
 
 
 print("model",env_config.model)
-# print("api key:", env_config.groq_api_key)
+print("api key:", env_config.openrouter_api_key)
 # print("tavily api key:", env_config.api_key_tavily)
 # print("qdrant url:", env_config.qdrant_collection)
 # print("open api key:", env_config.openai_api_key)
