@@ -25,7 +25,7 @@ GIÁO ÁN THAM KHẢO (giáo án mẫu theo chương, chỉ để tham khảo, c
 CẤU TRÚC CHƯƠNG TRÌNH (chỉ được dùng chương/bài trong danh sách này)
 {curriculum}
 
-QUÁ TRÌNH TRA CỨU TÀI LIỆU
+TÀI LIỆU ĐÃ TRA (SGK tổng quan, tài liệu web, video).
 {transcript}
 
 CHỈNH SỬA (nếu có)
@@ -47,6 +47,9 @@ NGUYÊN TẮC
 12. Chỉ sinh giai_doan cho chương thuộc PHẠM VI. Mục "đã sinh trước" chỉ để biết tình trạng, không sinh lại chương đó. Thứ tự giai đoạn: nối tiếp các lô trước, hệ thống sẽ đánh lại số thứ_tự.
 13. Thời gian còn lại là của TOÀN BỘ lộ trình; lô này chỉ dùng một phần, hãy trừ phần các lô trước đã dùng.
 14. Nếu schema có trường tom_tat: mỗi chương trong PHẠM VI một dòng ngắn nêu ý chính (mức độ, trọng tâm, số buổi dự kiến nếu có căn cứ). Chỉ sinh trường nào schema có.
+15. Giáo án và SGK tổng quan chỉ cho khung chung của chương. Thứ tự, mức ưu tiên, số giai đoạn và nội dung từng giai đoạn phải bám vào hồ sơ học sinh: mức độ từng chương, điểm hiện tại và mục tiêu, thời gian còn lại, dạng bài muốn tập trung, ưu tiên điểm số hay hiểu bản chất.
+16. ly_do của mỗi chương phải nêu căn cứ cụ thể từ hồ sơ (mức độ, điểm, thời gian), không chỉ nhắc lại nội dung giáo án hoặc SGK.
+17. Mục SGK tổng quan ghi "chưa có đoạn đủ liên quan" thì chỉ dựa vào giáo án và cấu trúc chương trình, không tự bịa nội dung chương.
 
 ĐẦU RA
 Xuất MasterRoadmap đúng schema.

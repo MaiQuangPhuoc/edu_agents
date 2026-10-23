@@ -132,7 +132,7 @@ class Overview(BaseModel):
     chien_luoc: str = Field(description="Chiến lược ngắn gọn để đạt mục tiêu")
 
 class ToolCallPlan(BaseModel):
-    tool: Literal["search_documents", "search_documents_reranked", "search_web_documents", "search_videos"]
+    tool: Literal["search_web_documents", "search_videos"]
     query: str
     chapter_id: Optional[str] = None
 

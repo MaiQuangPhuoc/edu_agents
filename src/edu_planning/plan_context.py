@@ -1,8 +1,13 @@
-import sys, os
+import sys, os, math
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from datetime import date
 from src.edu_exam.curriculum import get_subject_curriculum
 from src.edu_planning.lp_tools import _deadline, _pick_goal
+
+OVERVIEW_K = 3
+OVERVIEW_MIN = 0.7          # xác suất sau sigmoid
+OVERVIEW_FETCH = 15
+OVERVIEW_MAX_CHARS = 700
 
 GIAO_AN_MAX_CHARS = 1200
 NEUTRAL = 0.6    
@@ -140,4 +145,32 @@ def profile_text(sm: dict) -> str:
         lines.append(f"- Mục tiêu {g.get('mon_hoc')}: " + ("; ".join(parts) or "chưa rõ") + ".")
     st = _one(sm.get("so_thich_hoc"))
     lines.append(f"- Cách học: dùng video: {_yn(st.get('dung_video'))}; dùng tài liệu: {_yn(st.get('dung_tai_lieu'))}.")
+    return "\n".join(lines)
+
+def _prob(logit: float) -> float:
+    return 1 / (1 + math.exp(-logit))
+
+
+def sgk_overview_text(retriever, batch: dict) -> str:
+    """SGK tổng quan mỗi chương: query dựng bằng code, lọc subject+chapter_id, rerank, giữ tối đa 3 chunk có điểm > 0.7."""
+    s = batch["subject"]
+    cur = get_subject_curriculum(s)
+    lines = []
+    for ch_id in batch["chapters"]:
+        name = cur.get(ch_id, {}).get("chapter_name", "")
+        query = f"{name}: mục tiêu, khái quát toàn chương và giới thiệu chương"
+        try:
+            docs = retriever.search_sgk(query, s, ch_id, k=OVERVIEW_FETCH)
+            ranked = retriever.rerank(query, docs, top_k=OVERVIEW_K)
+        except Exception as e:
+            print(f"[SGK tổng quan] lỗi {s} chương {ch_id}: {type(e).__name__} {str(e)[:150]}")
+            ranked = []
+        probs = [_prob(d.metadata["rerank_score"]) for d in ranked]
+        print(f"[SGK tổng quan] {s} chương {ch_id} | query: {query} | điểm: {[round(p, 2) for p in probs]}")
+        keep = [(p, d) for p, d in zip(probs, ranked) if p > OVERVIEW_MIN]
+        if not keep:
+            lines.append(f"- {s} chương {ch_id} ({name}): chưa có đoạn SGK tổng quan đủ liên quan")
+            continue
+        lines.append(f"- {s} chương {ch_id} ({name}):")
+        lines += [f"  [{p:.2f}] {d.page_content[:OVERVIEW_MAX_CHARS]}" for p, d in keep]
     return "\n".join(lines)

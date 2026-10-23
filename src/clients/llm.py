@@ -15,6 +15,35 @@ from src.configs import env_config
 
 logger = logging.getLogger(__name__)
 
+import itertools, threading
+
+_key_lock = threading.Lock()
+_key_counter = itertools.count()
+
+
+def _next_groq_key() -> str:
+    keys = env_config.groq_api_keys
+    with _key_lock:
+        return keys[next(_key_counter) % len(keys)]
+
+
+def _rotating_groq_clients():
+    """Client Groq đồng bộ + bất đồng bộ: mỗi request dùng key kế tiếp (vòng 1..N)."""
+    from groq import Groq, AsyncGroq
+
+    class _RotGroq(Groq):
+        @property
+        def auth_headers(self):
+            return {"Authorization": f"Bearer {_next_groq_key()}"}
+
+    class _RotAsyncGroq(AsyncGroq):
+        @property
+        def auth_headers(self):
+            return {"Authorization": f"Bearer {_next_groq_key()}"}
+
+    first = env_config.groq_api_keys[0]
+    return _RotGroq(api_key=first).chat.completions, _RotAsyncGroq(api_key=first).chat.completions
+
 def _extract_failed(e) -> str:
         body = getattr(e, "body", None)
         if isinstance(body, dict):
@@ -166,9 +195,12 @@ class LLMClient:
 
         if provider == "groq":
             from langchain_groq import ChatGroq
-            if not env_config.groq_api_key:
-                raise ValueError("Thiếu GROQ_API_KEY trong .env")
-            return ChatGroq(model=self.model, groq_api_key=env_config.groq_api_key)
+            if not env_config.groq_api_keys:
+                raise ValueError("Thiếu GROQ_API_KEY_1..6 (hoặc GROQ_API_KEY) trong .env")
+            client, async_client = _rotating_groq_clients()
+            extra = {"reasoning_effort": env_config.reasoning_effort} if env_config.reasoning_effort else {}
+            return ChatGroq(model=self.model, groq_api_key=env_config.groq_api_keys[0],
+                            client=client, async_client=async_client, **extra)
 
         elif provider == "openai":
             from langchain_openai import ChatOpenAI

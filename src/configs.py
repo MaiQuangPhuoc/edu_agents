@@ -19,6 +19,21 @@ class EnvConfig(BaseSettings):
     openrouter_api_key: Optional[str] = None
     # anthropic_api_key: Optional[str] = None
 
+    groq_api_key_1: Optional[str] = None
+    groq_api_key_2: Optional[str] = None
+    groq_api_key_3: Optional[str] = None
+    groq_api_key_4: Optional[str] = None
+    groq_api_key_5: Optional[str] = None
+    groq_api_key_6: Optional[str] = None
+    guard_model: str = "openai/gpt-oss-20b"      # model cho guard; đổi bằng GUARD_MODEL trong .env
+    reasoning_effort: Optional[Literal["low", "medium", "high"]] = None   # tùy chọn: REASONING_EFFORT=low để giảm token suy luận
+
+    @property
+    def groq_api_keys(self) -> list[str]:
+        keys = [getattr(self, f"groq_api_key_{i}") for i in range(1, 7)]
+        keys = [k for k in keys if k]
+        return keys or ([self.groq_api_key] if self.groq_api_key else [])
+    
     # tavily/weather giữ optional luôn cho an toàn
     api_key_tavily: Optional[str] = None
     api_key_weather: Optional[str] = None

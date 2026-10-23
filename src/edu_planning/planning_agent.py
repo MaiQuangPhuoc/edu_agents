@@ -15,8 +15,8 @@ from langchain.agents import create_agent
 from langgraph.errors import GraphRecursionError
 
 from src.state_plan import PlanState, MasterRoadmap, HandoffMessage, BatchPlan, Overview, ToolPlan
-from src.edu_planning.plan_context import time_text, levels_text, lesson_plan_text, make_batches, profile_text
-from src.edu_planning.plan_search import run_calls
+from src.edu_planning.plan_context import time_text, levels_text, lesson_plan_text, make_batches, profile_text , sgk_overview_text
+from src.edu_planning.plan_search import run_calls, wants_resources
 
 from src.edu_exam.curriculum import get_subject_curriculum
 from src.edu_qa.paths import PLANNING_PROMPT_PATH, PLANNING_FINALIZE_PROMPT_PATH
@@ -70,6 +70,7 @@ def _queries_text(state: PlanState, batch: dict | None = None) -> str:
     if batch:
         qs = [q for q in qs if q["subject"] == batch["subject"]
               and (not q.get("chapter_id") or q["chapter_id"] in batch["chapters"])]
+    qs = [q for q in qs if q["nguon"] != "sgk"]
     if not qs:
         return "(không có)"
     return "\n".join(
@@ -79,12 +80,11 @@ def _queries_text(state: PlanState, batch: dict | None = None) -> str:
 def _context(prompt: str, sm: dict, retriever, batch=None, done=()) -> str:
     pham_vi = (f"{batch['subject']}, chương {', '.join(batch['chapters'])}" if batch
                else "tất cả các chương trong cấu trúc chương trình")
-    return (prompt
-            .replace("{thoi_gian}", time_text(sm))
-            .replace("{muc_do}", levels_text(sm, batch))
-            .replace("{giao_an}", lesson_plan_text(retriever, sm, batch))
-            .replace("{pham_vi}", pham_vi)
-            .replace("{da_sinh}", "\n".join(f"- {t}" for t in done) or "Chưa có lô nào được sinh trước."))
+    out = prompt.replace("{thoi_gian}", time_text(sm)).replace("{muc_do}", levels_text(sm, batch))
+    if "{giao_an}" in out:
+        out = out.replace("{giao_an}", lesson_plan_text(retriever, sm, batch))
+    return (out.replace("{pham_vi}", pham_vi)
+               .replace("{da_sinh}", "\n".join(f"- {t}" for t in done) or "Chưa có lô nào được sinh trước."))
 
 def _build_prompt(state: PlanState, retriever, batch=None, done=()) -> str:
     sm = state.get("student_model", {})
@@ -151,10 +151,17 @@ def make_planning_graph(retriever, llm_client: LLMClient, checkpointer=None):
         done, giai_doan, gia_dinh, logs = [], [], [], []
         for batch in make_batches(sm, BATCH_SIZE):
             print(f"[planning] lô: {batch['subject']} chương {batch['chapters']}")
-            prompt = _build_prompt(state, retriever, batch, done)
-            _debug("PROMPT LẬP KẾ HOẠCH TRA CỨU", prompt)
-            plan = llm_client.invoke_structured(ToolPlan, [{"role": "user", "content": prompt}], max_tokens=800)
-            transcript = run_calls(tools, plan.calls if plan else [], batch["subject"], batch["chapters"], sm)
+            
+            overview = sgk_overview_text(retriever, batch)
+            _debug("SGK TỔNG QUAN", overview)
+            resources = ""
+            if wants_resources(sm):
+                prompt = _build_prompt(state, retriever, batch, done)
+                _debug("PROMPT LẬP KẾ HOẠCH TÀI NGUYÊN", prompt)
+                plan = llm_client.invoke_structured(ToolPlan, [{"role": "user", "content": prompt}], max_tokens=600)
+                resources = run_calls(tools, plan.calls if plan else [], batch["subject"], batch["chapters"], sm)
+            transcript = f"[SGK tổng quan]\n{overview}\n{resources}".strip()
+
             fprompt = _build_finalize_prompt(state, transcript, retriever, batch, done)
             _debug("PROMPT SINH SƯỜN", fprompt)
             res = llm_client.invoke_structured(BatchPlan, [{"role": "user", "content": fprompt}], max_tokens=3000)

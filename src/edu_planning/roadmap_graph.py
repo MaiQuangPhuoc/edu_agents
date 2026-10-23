@@ -10,6 +10,7 @@ from src.edu_planning.entry_test import entry_test_node
 from src.edu_planning.entry_grade import entry_grade_node
 from src.edu_planning.planning_agent import make_planning_graph
 from src.edu_planning.learning_path_graph import make_learning_path_graph
+from src.configs import env_config
 
 def _history_text(messages: list) -> str:
     lines = [f"{'Học sinh' if isinstance(m, HumanMessage) else 'Trợ lý'}: {m.content}" for m in messages[-12:]]
@@ -18,6 +19,7 @@ def _history_text(messages: list) -> str:
 def make_roadmap_graph(retriever, llm_client: LLMClient, checkpointer=None):
     planning = make_planning_graph(retriever, llm_client)   # graph con, dùng chung PlanState
     learning_path = make_learning_path_graph(retriever, llm_client)
+    guard_client = LLMClient(model=env_config.guard_model, api_provider=env_config.api_provider)
 
     def guard(state: PlanState) -> dict:
         if state.get("roadmap_status") == "awaiting_test_answers":    # tin nhắn là đáp án bài test, không cần lọc
@@ -30,11 +32,8 @@ def make_roadmap_graph(retriever, llm_client: LLMClient, checkpointer=None):
             "message": last,
         })
 
-        res = llm_client.invoke_structured(
-            GuardResult,
-            messages,
-            max_tokens=300,
-        )
+        res = guard_client.invoke_structured(GuardResult, messages, max_tokens=1000)
+
         if res is None or res.hop_le:          # lỗi thì cho qua
             return {"guard_ok": True}
         return {"guard_ok": False, "messages": [AIMessage(content=res.tra_loi)]}
