@@ -12,61 +12,26 @@
       "diem_hien_tai": 8.0,
       "diem_manh": [],
       "diem_yeu": [
-        "V",
-        "III",
-        "IV",
-        "II",
-        "I"
+        "chương I",
+        "chương II"
       ],
-      "da_test_dau_vao": true,
+      "da_test_dau_vao": false,
       "chu_de": [
         {
-          "chapter_id": "V",
+          "chapter_id": "chương I",
           "lesson": "",
-          "muc_nam": 0.0,
-          "do_tin_cay": 0.6,
-          "nguon": "bai_kiem_tra",
-          "cap_nhat": "2026-10-22T21:40:42.666761"
+          "muc_nam": null,
+          "do_tin_cay": 0.0,
+          "nguon": "tu_danh_gia",
+          "cap_nhat": null
         },
         {
-          "chapter_id": "III",
+          "chapter_id": "chương II",
           "lesson": "",
-          "muc_nam": 0.0,
-          "do_tin_cay": 0.8,
-          "nguon": "bai_kiem_tra",
-          "cap_nhat": "2026-10-22T21:40:42.666761"
-        },
-        {
-          "chapter_id": "VI",
-          "lesson": "",
-          "muc_nam": 0.5,
-          "do_tin_cay": 0.4,
-          "nguon": "bai_kiem_tra",
-          "cap_nhat": "2026-10-22T21:40:42.666761"
-        },
-        {
-          "chapter_id": "IV",
-          "lesson": "",
-          "muc_nam": 0.33,
-          "do_tin_cay": 0.6,
-          "nguon": "bai_kiem_tra",
-          "cap_nhat": "2026-10-22T21:40:42.666761"
-        },
-        {
-          "chapter_id": "II",
-          "lesson": "",
-          "muc_nam": 0.0,
-          "do_tin_cay": 0.4,
-          "nguon": "bai_kiem_tra",
-          "cap_nhat": "2026-10-22T21:40:42.666761"
-        },
-        {
-          "chapter_id": "I",
-          "lesson": "",
-          "muc_nam": 0.33,
-          "do_tin_cay": 1,
-          "nguon": "bai_kiem_tra",
-          "cap_nhat": "2026-10-22T21:40:42.666761"
+          "muc_nam": null,
+          "do_tin_cay": 0.0,
+          "nguon": "tu_danh_gia",
+          "cap_nhat": null
         }
       ]
     }
@@ -78,7 +43,7 @@
       "han_chot": null,
       "ngay_ket_thuc": "2026-11-19",
       "so_tuan_con_lai": 4,
-      "uu_tien": "diem_so",
+      "uu_tien": "hieu_ban_chat",
       "dang_bai_can_giu": []
     }
   ],
@@ -87,7 +52,7 @@
     "dung_video": true,
     "bai_tap_sau_buoi": true,
     "tom_tat_cuoi_buoi": null,
-    "thoi_luong_buoi_phut": 90
+    "thoi_luong_buoi_phut": 100
   },
   "lich_hoc": {
     "so_buoi_tuan": 3,
@@ -111,5 +76,5 @@
     "tin_hieu_dong_luc": null
   },
   "version": 1,
-  "updated_at": "2026-10-22T21:40:42.666761"
+  "updated_at": "2026-10-23T00:00:37.845803"
 }

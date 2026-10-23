@@ -7,6 +7,12 @@ KHÔNG chia lịch theo tuần hay buổi.
 HỒ SƠ HỌC SINH
 {student_model}
 
+PHẠM VI LÔ NÀY
+Chỉ sinh giai_doan cho: {pham_vi}
+
+CÁC LÔ ĐÃ SINH TRƯỚC (tóm tắt, chỉ để biết tình trạng sườn)
+{da_sinh}
+
 THỜI GIAN CÒN LẠI (đã tính bằng code, chính xác)
 {thoi_gian}
 
@@ -38,6 +44,9 @@ NGUYÊN TẮC
 9. Chương mức "Yếu" đặt sớm, nhiều giai đoạn; "Mạnh" ôn ngắn. do_tin_cay nhỏ hơn 1 thì ghi vào gia_dinh rằng mức độ chỉ là ước lượng.
 10. Số chương và giai đoạn phải vừa với thời gian còn lại. Chương bị lược thì ghi vào gia_dinh.
 11. Giáo án chỉ để tham khảo. Điều nào dựa vào giáo án (bài trọng tâm, thời lượng) phải ghi vào gia_dinh là "theo giáo án tham khảo, chưa xác minh".
-                    
+12. Chỉ sinh giai_doan cho chương thuộc PHẠM VI. Mục "đã sinh trước" chỉ để biết tình trạng, không sinh lại chương đó. Thứ tự giai đoạn: nối tiếp các lô trước, hệ thống sẽ đánh lại số thứ_tự.
+13. Thời gian còn lại là của TOÀN BỘ lộ trình; lô này chỉ dùng một phần, hãy trừ phần các lô trước đã dùng.
+14. Nếu schema có trường tom_tat: mỗi chương trong PHẠM VI một dòng ngắn nêu ý chính (mức độ, trọng tâm, số buổi dự kiến nếu có căn cứ). Chỉ sinh trường nào schema có.
+
 ĐẦU RA
 Xuất MasterRoadmap đúng schema.

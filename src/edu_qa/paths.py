@@ -47,6 +47,7 @@ LP_ASSEMBLE_PROMPT_PATH = PROMPT_DIR / "lp_assemble.txt"
 LP_OUTLINE_PROMPT_PATH = PROMPT_DIR / "lp_outline.txt"
 LP_REVIEW_PROMPT_PATH = PROMPT_DIR / "lp_review.txt"
 
+PLANNING_OVERVIEW_PROMPT_PATH = PROMPT_DIR / "planning_overview.txt"
 
 
 

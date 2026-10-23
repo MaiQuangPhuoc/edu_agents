@@ -17,6 +17,12 @@ MỨC ĐỘ THEO CHƯƠNG (tính từ bài kiểm tra đầu vào)
 GIÁO ÁN THAM KHẢO (giáo án mẫu theo chương, chỉ để tham khảo, không ép buộc phải theo giáo án)
 {giao_an}
 
+PHẠM VI LÔ NÀY
+Chỉ lập kế hoạch tra cứu cho: {pham_vi}
+
+CÁC LÔ ĐÃ SINH TRƯỚC (tóm tắt, chỉ để biết tình trạng sườn)
+{da_sinh}
+
 CẤU TRÚC CHƯƠNG TRÌNH (chỉ được dùng chương/bài trong danh sách này)
 {curriculum}
 

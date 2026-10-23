@@ -3,11 +3,13 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".
 from langchain_core.messages import AIMessage, HumanMessage, ToolMessage
 from langgraph.graph import StateGraph, START, END
 from langgraph.prebuilt import ToolNode
-from src.state_plan import PlanState, MasterRoadmap, HandoffMessage
-from src.edu_qa.paths import PLANNING_PROMPT_PATH, PLANNING_FINALIZE_PROMPT_PATH, PLANNING_FEEDBACK_PROMPT_PATH
 from src.edu_planning.feedback_tools import FEEDBACK_TOOLS
 from src.edu_planning.chapter_utils import fix_chapters
-from src.edu_planning.plan_context import time_text, levels_text, lesson_plan_text
+
+
+from src.state_plan import PlanState, MasterRoadmap, HandoffMessage, BatchPlan, Overview
+from src.edu_qa.paths import PLANNING_PROMPT_PATH, PLANNING_FINALIZE_PROMPT_PATH, PLANNING_FEEDBACK_PROMPT_PATH, PLANNING_OVERVIEW_PROMPT_PATH
+from src.edu_planning.plan_context import time_text, levels_text, lesson_plan_text, make_batches
 
 from src.clients.llm import LLMClient
 
@@ -18,17 +20,25 @@ from src.edu_exam.curriculum import get_subject_curriculum
 from src.edu_qa.paths import PLANNING_PROMPT_PATH, PLANNING_FINALIZE_PROMPT_PATH
 from src.edu_planning.planning_tools import make_planning_tools
 
-MAX_STEPS = 10
+MAX_STEPS = 3         # số lượt tool tối đa mỗi lô
+BATCH_SIZE = 2        # số chương mỗi lô
+DEBUG_PROMPT = True   # True: in prompt của từng lô để kiểm tra
+
+
 MAX_REVISION = 3
 
-def _curriculum_text(sm: dict) -> str:
+def _curriculum_text(sm: dict, batch: dict | None = None) -> str:
     items = (sm.get("nang_luc") or []) + (sm.get("muc_tieu") or [])
+    subjects = [batch["subject"]] if batch else sorted({x["mon_hoc"] for x in items if x.get("mon_hoc")})
     lines = []
-    for subject in sorted({x["mon_hoc"] for x in items if x.get("mon_hoc")}):
+    for subject in subjects:
         for ch_id, ch in get_subject_curriculum(subject).items():
+            if batch and ch_id not in batch["chapters"]:
+                continue
             lines.append(f"[{subject}] chapter_id={ch_id}: {ch['chapter_name']}")
             lines += [f"    - {lesson}" for lesson in ch["lessons"]]
     return "\n".join(lines)
+
 
 def _diff_text(old: dict, new: dict) -> str:
     lines = []
@@ -53,38 +63,46 @@ def _change_text(state: PlanState) -> str:
     return "Không có (lần lập đầu tiên)."
 
 
-def _queries_text(state: PlanState) -> str:
+def _queries_text(state: PlanState, batch: dict | None = None) -> str:
     qs = state.get("search_queries") or []
+    if batch:
+        qs = [q for q in qs if q["subject"] == batch["subject"]
+              and (not q.get("chapter_id") or q["chapter_id"] in batch["chapters"])]
     if not qs:
         return "(không có)"
     return "\n".join(
         f"- [{q['subject']}{' | chương ' + q['chapter_id'] if q.get('chapter_id') else ''} | {q['nguon']}] {q['query']}"
         for q in qs)
 
-
-def _context(prompt: str, sm: dict, retriever) -> str:
+def _context(prompt: str, sm: dict, retriever, batch=None, done=()) -> str:
+    pham_vi = (f"{batch['subject']}, chương {', '.join(batch['chapters'])}" if batch
+               else "tất cả các chương trong cấu trúc chương trình")
     return (prompt
             .replace("{thoi_gian}", time_text(sm))
-            .replace("{muc_do}", levels_text(sm))
-            .replace("{giao_an}", lesson_plan_text(retriever, sm)))
+            .replace("{muc_do}", levels_text(sm, batch))
+            .replace("{giao_an}", lesson_plan_text(retriever, sm, batch))
+            .replace("{pham_vi}", pham_vi)
+            .replace("{da_sinh}", "\n".join(f"- {t}" for t in done) or "Chưa có lô nào được sinh trước."))
 
-# prompt planing agent
-def _build_prompt(state: PlanState, retriever) -> str:
+def _build_prompt(state: PlanState, retriever, batch=None, done=()) -> str:
     sm = state.get("student_model", {})
     return _context(PLANNING_PROMPT_PATH.read_text(encoding="utf-8")
             .replace("{student_model}", json.dumps(sm, ensure_ascii=False, indent=2))
-            .replace("{curriculum}", _curriculum_text(sm))
+            .replace("{curriculum}", _curriculum_text(sm, batch))
             .replace("{thay_doi}", _change_text(state))
-            .replace("{queries}", _queries_text(state)), sm, retriever)
+            .replace("{queries}", _queries_text(state, batch)), sm, retriever, batch, done)
 
-# prompt finalize agent ( gen schema MasterRoadmap)
-def _build_finalize_prompt(state, transcript, retriever) -> str:
+def _build_finalize_prompt(state, transcript, retriever, batch=None, done=()) -> str:
     sm = state.get("student_model", {})
     return _context(PLANNING_FINALIZE_PROMPT_PATH.read_text(encoding="utf-8")
             .replace("{student_model}", json.dumps(sm, ensure_ascii=False, indent=2))
-            .replace("{curriculum}", _curriculum_text(sm))
+            .replace("{curriculum}", _curriculum_text(sm, batch))
             .replace("{transcript}", transcript)
-            .replace("{chinh_sua}", _change_text(state)), sm, retriever)
+            .replace("{chinh_sua}", _change_text(state)), sm, retriever, batch, done)
+
+def _debug(title: str, text: str):
+    if DEBUG_PROMPT:
+        print(f"\n===== {title} =====\n{text}\n===== hết {title} =====")
 
 def _transcript(msgs: list) -> str:
     lines = []
@@ -128,29 +146,76 @@ def make_planning_graph(retriever, llm_client: LLMClient, checkpointer=None):
         return "handle_feedback" if state.get("roadmap_status") == "awaiting_feedback" else "planner"
 
     def planner(state: PlanState) -> dict:
-        prompt = _build_prompt(state, retriever)
-        try:
-            res = react.invoke({"messages": [HumanMessage(content=prompt)]},
-                               config={"recursion_limit": 2 * MAX_STEPS + 1})
-            msgs = res["messages"]
-        except GraphRecursionError:
-            print("[planning] vượt giới hạn vòng")
-            msgs = [HumanMessage(content=prompt)]
-        return {"plan_messages": msgs}
+        sm = state.get("student_model", {})
+        done, giai_doan, gia_dinh, logs = [], [], [], []
+        for batch in make_batches(sm, BATCH_SIZE):
+            print(f"[planning] lô: {batch['subject']} chương {batch['chapters']}")
+            prompt = _build_prompt(state, retriever, batch, done)
+            _debug("PROMPT AGENT", prompt)
+            msgs = []
+            try:
+                for chunk in react.stream({"messages": [HumanMessage(content=prompt)]},
+                                          config={"recursion_limit": 2 * MAX_STEPS + 1},
+                                          stream_mode="values"):
+                    msgs = chunk["messages"]
+                    if isinstance(msgs[-1], AIMessage):
+                        for c in (msgs[-1].tool_calls or []):
+                            print(f"[planning] gọi tool: {c['name']} {c['args']}")
+            except GraphRecursionError:
+                print("[planning] vượt giới hạn vòng, dùng kết quả đã tra được")
+                
+            msgs = msgs or [HumanMessage(content=prompt)]
+            transcript = _transcript(msgs)
+            fprompt = _build_finalize_prompt(state, transcript, retriever, batch, done)
+            _debug("PROMPT SINH SƯỜN", fprompt)
+            res = llm_client.invoke_structured(BatchPlan, [{"role": "user", "content": fprompt}], max_tokens=3000)
+            if res is None:
+                return {"plan_draft": {}}
+            part = res.model_dump()
+            for gd in part["giai_doan"]:     # bỏ tài nguyên có url không xuất hiện trong kết quả tra cứu
+                gd["tai_nguyen"] = [t for t in gd.get("tai_nguyen", []) if t.get("url") and t["url"] in transcript]
+            giai_doan += part["giai_doan"]
+            gia_dinh += part["gia_dinh"]
+            done += part["tom_tat"]
+            logs.append(transcript)
+        return {"plan_draft": {"giai_doan": giai_doan, "gia_dinh": gia_dinh, "tom_tat": done},
+                "plan_transcript": "\n".join(logs)}
+
+    def _fail() -> dict:
+        return {"master_done": False, "roadmap_status": "draft", "current_step": "planning"}
 
     def finalize(state: PlanState) -> dict:
-        transcript = _transcript(state["plan_messages"])
-        prompt = _build_finalize_prompt(state, transcript,retriever)
-        result = llm_client.invoke_structured(MasterRoadmap, [{"role": "user", "content": prompt}], max_tokens=4000)
-        if result is None:
-            return {"master_done": False, "roadmap_status": "draft", "current_step": "planning"}
-
-        roadmap = result.model_dump()
+        sm = state.get("student_model", {})
+        if state.get("roadmap_status") == "revising":      # chỉnh sửa: sinh lại cả sườn một lần
+            transcript = state.get("plan_transcript", "")
+            prompt = _build_finalize_prompt(state, transcript, retriever)
+            _debug("PROMPT CHỈNH SỬA", prompt)
+            result = llm_client.invoke_structured(MasterRoadmap, [{"role": "user", "content": prompt}], max_tokens=4000)
+            if result is None:
+                return _fail()
+            roadmap = result.model_dump()
+            for gd in roadmap["giai_doan"]:
+                gd["tai_nguyen"] = [t for t in gd.get("tai_nguyen", []) if t.get("url") and t["url"] in transcript]
+        else:                                               # lập mới: ghép các lô + sinh 2 trường tổng
+            draft = state.get("plan_draft") or {}
+            if not draft.get("giai_doan"):
+                return _fail()
+            for i, gd in enumerate(draft["giai_doan"], 1):
+                gd["thu_tu"] = i
+            ds_gd = "\n".join(f"- Giai đoạn {gd['thu_tu']}: {gd['ten']} ({gd['mon_hoc']}; chương "
+                              f"{', '.join(c['chapter_id'] for c in gd['chapters'])})" for gd in draft["giai_doan"])
+            prompt = (PLANNING_OVERVIEW_PROMPT_PATH.read_text(encoding="utf-8")
+                      .replace("{student_model}", json.dumps(sm, ensure_ascii=False, indent=2))
+                      .replace("{thoi_gian}", time_text(sm))
+                      .replace("{giai_doan}", ds_gd)
+                      .replace("{tom_tat}", "\n".join(f"- {t}" for t in draft["tom_tat"])))
+            _debug("PROMPT TỔNG QUAN", prompt)
+            ov = llm_client.invoke_structured(Overview, [{"role": "user", "content": prompt}], max_tokens=800)
+            if ov is None:
+                return _fail()
+            roadmap = {**ov.model_dump(), "giai_doan": draft["giai_doan"], "gia_dinh": draft.get("gia_dinh", [])}
         notes = fix_chapters(roadmap)
         roadmap["gia_dinh"] = list(roadmap.get("gia_dinh", [])) + notes
-        for gd in roadmap["giai_doan"]:     # bỏ tài nguyên có url không xuất hiện trong kết quả tra cứu
-            gd["tai_nguyen"] = [t for t in gd.get("tai_nguyen", []) if t.get("url") and t["url"] in transcript]
-
         return {"master_roadmap": roadmap, "master_done": True,
                 "roadmap_status": "draft", "current_step": "planning"}
 

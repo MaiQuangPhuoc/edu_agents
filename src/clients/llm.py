@@ -129,6 +129,24 @@ def _salvage_partial_array(failed: str, output_model, list_field: str):
     except ValidationError:
         return None
 
+def build_prompt_messages(prompt_path, values: dict) -> list[dict]:
+    template = prompt_path.read_text(encoding="utf-8")
+    system, marker, user = template.partition(
+        "THÔNG TIN CHI TIẾT ĐƯỢC CUNG CẤP"
+    )
+
+    if not marker:
+        raise ValueError(f"Thiếu dòng phân cách trong {prompt_path.name}")
+
+    # Chỉ thay placeholder trong phần động.
+    for key, value in values.items():
+        user = user.replace("{" + key + "}", str(value))
+
+    return [
+        {"role": "system", "content": system.strip()},
+        {"role": "user", "content": user.strip()},
+    ]
+
 class LLMClient:
     """LLM client hỗ trợ groq / openai / openrouter, bật/tắt bằng cách
     đổi api_provider trong .env, không cần sửa code."""
@@ -222,8 +240,12 @@ class LLMClient:
         3) Vớt raw text lỗi -> tách JSON -> ép mềm về schema -> validate lại
         Hết max_retries vẫn fail thì trả `fallback`, không crash graph."""
         base     = self._llm.bind(max_tokens=max_tokens)
-        tool_llm = base.with_structured_output(output_model)
-        json_llm = base.with_structured_output(output_model, method="json_mode")
+        tool_llm = base.with_structured_output(
+            output_model, include_raw=True
+        )
+        json_llm = base.with_structured_output(
+            output_model, method="json_mode", include_raw=True
+        )
         json_messages = messages + [{
             "role": "user",
             "content": "Trả về DUY NHẤT một JSON object đúng schema sau, không markdown, không giải thích:\n"
@@ -238,6 +260,50 @@ class LLMClient:
 
             try:
                 result = llm.invoke(msgs)
+                raw = result["raw"]
+
+                print("USAGE_METADATA:", json.dumps(
+                    raw.usage_metadata or {},
+                    ensure_ascii=False,
+                ))
+
+                print("TOKEN_USAGE:", json.dumps(
+                    raw.response_metadata.get("token_usage") or {},
+                    ensure_ascii=False,
+                ))
+
+                usage = raw.usage_metadata or {}
+                token_usage = raw.response_metadata.get("token_usage") or {}
+
+                input_tokens = usage.get(
+                    "input_tokens", token_usage.get("prompt_tokens")
+                )
+
+                cached_tokens = (usage.get("input_token_details") or {}).get(
+                    "cache_read"
+                )
+                if cached_tokens is None:
+                    cached_tokens = (
+                        token_usage.get("prompt_tokens_details") or {}
+                    ).get("cached_tokens")
+
+                print(
+                    f"[{output_model.__name__}] "
+                    f"input={input_tokens}, cached={cached_tokens}"
+                )
+
+                if result.get("parsing_error") is not None:
+                    raise result["parsing_error"]
+
+                result = result["parsed"]
+                
+                if result is None:
+                    raise ValueError("Không có kết quả structured output")
+
+                if isinstance(result, BaseModel) and "tin_nhan" in type(result).model_fields:
+                    if not result.tin_nhan.strip():
+                        raise ValueError("Model trả về tin_nhan rỗng")
+                    
                 logger.info(f"invoke_structured [{output_model.__name__}] OK qua {method_name}, lần {attempt + 1}")
                 return result
             except Exception as e:
@@ -268,23 +334,23 @@ except Exception as e:
     llm_client = None
 
 
-from langchain_core.messages import HumanMessage
+# from langchain_core.messages import HumanMessage
 
-try:
-    llm_client = LLMClient(
-        model=env_config.model,
-        api_provider=env_config.api_provider
-    )
-    print("LLM phản hồi:")
-    # Dùng trực tiếp llm bên trong LLMClient để test
-    response = llm_client._llm.invoke([
-
-
-        HumanMessage(content="năm 2022 ai là tổng thống nước mỹ")
-    ])
+# try:
+#     llm_client = LLMClient(
+#         model=env_config.model,
+#         api_provider=env_config.api_provider
+#     )
+#     print("LLM phản hồi:")
+#     # Dùng trực tiếp llm bên trong LLMClient để test
+#     response = llm_client._llm.invoke([
 
 
-    print(response.content)
+#         HumanMessage(content="năm 2022 ai là tổng thống nước mỹ")
+#     ])
 
-except Exception as e:
-    logger.error(f" Lỗi khởi tạo LLM client hoặc gọi LLM: {e}")
+
+#     print(response.content)
+
+# except Exception as e:
+#     logger.error(f" Lỗi khởi tạo LLM client hoặc gọi LLM: {e}")

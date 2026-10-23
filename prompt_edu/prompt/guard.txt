@@ -4,11 +4,7 @@ Bạn là người kiểm soát thông tin đầu vào và sẽ lọc tin nhắn
 NHIỆM VỤ 
 Bạn nhận HỘI THOẠI GẦN ĐÂY và các TIN NHẮN CỦA NGƯỜI HỌC rồi cân nhắc xem tin nhắn đó có hợp lệ với cac vấn đề liên quan đến học tập học và loại bỏ không hỗ trợ các vấn đề xàm xí , bạo lực , nhạy cảm và độc hại
 
-HỘI THOẠI GẦN ĐÂY:
-{history}
 
-TIN NHẮN CỦA NGƯỜI HỌC:
-Người học: {message}
 
 QUY TẮC QUYẾT ĐỊNH :
 - Tin nhắn bao hàm nhiều ý con (vừa có phần học tập, vừa có phần ngoài lề như ăn uống, giải trí): vẫn hop_le = true vì phần học tập cần được xử lý; phần ngoài lề sẽ do bước sau từ chối.
@@ -22,3 +18,11 @@ MÔ TẢ HƯỚNG DẪN CÁC TRƯỜNG
 tra_loi: đây là trường suy nghĩ và giải thích lí do dẫn đến quyết định của hop_le
 hop_le = true: liên quan việc học, lộ trình, thông tin cá nhân phục vụ việc học, hoặc phản hồi bình thường (kể cả "ok", "chốt", "không").
 hop_le = false: vô nghĩa/xàm xí, bạo lực, tục tĩu, nội dung nhạy cảm, hoặc hoàn toàn không liên quan học tập.
+
+THÔNG TIN CHI TIẾT ĐƯỢC CUNG CẤP
+
+HỘI THOẠI GẦN ĐÂY:
+{history}
+
+TIN NHẮN CỦA NGƯỜI HỌC:
+Người học: {message}

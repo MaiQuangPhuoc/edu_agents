@@ -3,7 +3,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".
 from langchain_core.messages import AIMessage, HumanMessage
 from langgraph.graph import StateGraph, START, END
 from src.state_plan import PlanState, GuardResult
-from src.clients.llm import LLMClient
+from src.clients.llm import LLMClient, build_prompt_messages
 from src.edu_qa.paths import GUARD_PROMPT_PATH
 from src.edu_planning.collect_student_model import collect_student_model
 from src.edu_planning.entry_test import entry_test_node
@@ -25,10 +25,16 @@ def make_roadmap_graph(retriever, llm_client: LLMClient, checkpointer=None):
         last = next((m.content for m in reversed(state.get("messages", [])) if isinstance(m, HumanMessage)), "")
         if not last:
             return {"guard_ok": True}
-        prompt = (GUARD_PROMPT_PATH.read_text(encoding="utf-8")
-                  .replace("{message}", last)
-                  .replace("{history}", _history_text(state.get("messages", []))))
-        res = llm_client.invoke_structured(GuardResult, [{"role": "user", "content": prompt}], max_tokens=300)
+        messages = build_prompt_messages(GUARD_PROMPT_PATH, {
+            "history": _history_text(state.get("messages", [])),
+            "message": last,
+        })
+
+        res = llm_client.invoke_structured(
+            GuardResult,
+            messages,
+            max_tokens=300,
+        )
         if res is None or res.hop_le:          # lỗi thì cho qua
             return {"guard_ok": True}
         return {"guard_ok": False, "messages": [AIMessage(content=res.tra_loi)]}

@@ -3,7 +3,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".
 import copy
 from datetime import datetime, timedelta
 from langchain_core.messages import AIMessage, HumanMessage
-from src.clients.llm import LLMClient
+from src.clients.llm import LLMClient, build_prompt_messages
 from src.edu_exam.curriculum import CURRICULUM
 from src.edu_planning.student_store import save_student_model
 from src.state_plan import PlanState, StudentModel, CollectTurn, CollectPatchTurn
@@ -126,13 +126,21 @@ def _update_mode(state: PlanState, llm_client: LLMClient) -> dict:
     current = state.get("student_model", {})
     shown = {k: v for k, v in current.items() if k != "tien_do"}
 
-    prompt = (COLLECT_UPDATE_PROMPT_PATH.read_text(encoding="utf-8")
-              .replace("{fields}", ", ".join(fields))
-              .replace("{ly_do}", req.get("ly_do", ""))
-              .replace("{student_model}", _compact(shown))
-              .replace("{history}", _history_text(state.get("messages", []))))
+    messages = build_prompt_messages(
+        COLLECT_UPDATE_PROMPT_PATH,
+        {
+            "fields": ", ".join(fields),
+            "ly_do": req.get("ly_do", ""),
+            "student_model": _compact(shown),
+            "history": _history_text(state.get("messages", [])),
+        },
+    )
 
-    turn = llm_client.invoke_structured(CollectPatchTurn, [{"role": "user", "content": prompt}], max_tokens=3000)
+    turn = llm_client.invoke_structured(
+        CollectPatchTurn,
+        messages,
+        max_tokens=3000,
+    )
     if turn is None:
         return {"messages": [AIMessage(content="Bạn nhắc lại phần muốn đổi giúp mình nhé?")],
                 "current_step": "collect_student_model"}
@@ -179,15 +187,21 @@ def collect_student_model(state: PlanState, llm_client: LLMClient) -> dict:
     known = [x["mon_hoc"] for k in ("muc_tieu", "nang_luc") for x in current.get(k, [])]
     subjects = [s for s in dict.fromkeys(_canon_subject(n) for n in known) if s in CURRICULUM] or _subjects_in(last_user)
 
-    prompt = (COLLECT_STUDENT_MODEL_PROMPT_PATH.read_text(encoding="utf-8")
-              .replace("{thong_tin_da_co}", _compact(current))
-              .replace("{con_thieu}", _missing(current))
-              .replace("{chuong_co_tai_lieu}", _curriculum_info(subjects))
-              .replace("{history}", _history_text(msgs)))
+    messages = build_prompt_messages(
+        COLLECT_STUDENT_MODEL_PROMPT_PATH,
+        {
+            "thong_tin_da_co": _compact(current),
+            "con_thieu": _missing(current),
+            "chuong_co_tai_lieu": _curriculum_info(subjects),
+            "history": _history_text(msgs),
+        },
+    )
 
-    print(f"\n---\n[DEBUG] Prompt collect student model to LLM:\n{prompt}\n---\n")
-
-    turn = llm_client.invoke_structured(CollectTurn, [{"role": "user", "content": prompt}], max_tokens=3000)
+    turn = llm_client.invoke_structured(
+        CollectTurn,
+        messages,
+        max_tokens=3000,
+    )
     if turn is None:
         return {"messages": [AIMessage(content="Bạn nhắc lại giúp mình nhé?")], "current_step": "collect_student_model"}
     
@@ -195,7 +209,15 @@ def collect_student_model(state: PlanState, llm_client: LLMClient) -> dict:
     why = _bad_reply(turn.tin_nhan, prev, lack)
     if why:
         note = f"\n\nLƯU Ý: tin_nhan lần trước {why}. Viết lại ngắn gọn, không lặp câu cũ."
-        again = llm_client.invoke_structured(CollectTurn, [{"role": "user", "content": prompt + note}], max_tokens=3000)
+        retry_messages = messages + [
+            {"role": "user", "content": note}
+        ]
+
+        again = llm_client.invoke_structured(
+            CollectTurn,
+            retry_messages,
+            max_tokens=3000,
+        )
         if again and not _bad_reply(again.tin_nhan, prev, lack):
             turn = again
         elif lack != NO_MISSING:

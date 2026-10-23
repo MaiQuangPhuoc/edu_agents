@@ -122,8 +122,14 @@ class MasterRoadmap(BaseModel):
     giai_doan: list[GiaiDoan]
     gia_dinh: list[str] = Field(default=[], description="Các điểm là đề xuất/giả định vì chưa có tài liệu xác nhận")
 
+class BatchPlan(BaseModel):
+    giai_doan: list[GiaiDoan]
+    tom_tat: list[str] = Field(description="Mỗi chương trong phạm vi một dòng ý chính ngắn")
+    gia_dinh: list[str] = Field(default=[], description="Điểm là đề xuất/giả định vì chưa có tài liệu xác nhận")
 
-
+class Overview(BaseModel):
+    muc_tieu_tong: str
+    chien_luoc: str = Field(description="Chiến lược ngắn gọn để đạt mục tiêu")
 
 
 # ───────── 2. TIN NHẮN A2A ─────────
@@ -313,7 +319,10 @@ class PlanState(TypedDict, total=False):
     update_request: dict                         # Planning -> collect: {"fields": [...], "ly_do": "..."}
 
     # planning (sườn lộ trình)
-    plan_messages: list                          # vòng ReAct của planner, ghi đè mỗi lần chạy lại
+    plan_messages: list    
+    plan_draft: dict                             # {giai_doan, gia_dinh, tom_tat} ghép từ các lô
+    plan_transcript: str 
+                          # vòng ReAct của planner, ghi đè mỗi lần chạy lại
     master_roadmap: dict
     roadmap_prev: dict
     master_done: bool

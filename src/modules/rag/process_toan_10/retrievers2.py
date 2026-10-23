@@ -10,7 +10,7 @@ from langchain_qdrant import QdrantVectorStore, RetrievalMode, FastEmbedSparse
 from langchain_core.embeddings import Embeddings
 from langchain_core.documents import Document
 from qdrant_client import QdrantClient
-from qdrant_client.models import Filter, FieldCondition, MatchValue
+from qdrant_client.models import Filter, FieldCondition, MatchValue, MatchAny
 from sentence_transformers import CrossEncoder
 from fastembed import LateInteractionTextEmbedding
 # import numpy as np
@@ -27,6 +27,7 @@ class VectorStoreRetriever:
         tools_collection_name: str | None = None,
         top_k: int = 10,
         reranker_model = "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+        # reranker_model = "BAAI/bge-reranker-v2-m3",
         enable_colbert_prefilter: bool = False,
         colbert_model: str = "colbert-ir/colbertv2.0",
     ):
@@ -162,11 +163,28 @@ class VectorStoreRetriever:
         print(f" ========== tools search : {len(results)} ========== ")
         return results
     
-    def lesson_plan_search(self, subject: str, chapter_id: str | None = None, limit: int = 1) -> list[Document]:
-        """Lấy giáo án tóm tắt (content_type=summary) theo metadata, lọc ngay trên Qdrant, không dùng embedding."""
+    # def lesson_plan_search(self, subject: str, chapter_id: str | None = None, limit: int = 1) -> list[Document]:
+    #     """Lấy giáo án tóm tắt (content_type=summary) theo metadata, lọc ngay trên Qdrant, không dùng embedding."""
+    #     must = [
+    #         FieldCondition(key="metadata.document_type", match=MatchValue(value="lesson_plan")),
+    #         FieldCondition(key="metadata.content_type", match=MatchValue(value="summary")),
+    #         FieldCondition(key="metadata.subject", match=MatchValue(value=subject)),
+    #     ]
+    #     if chapter_id:
+    #         must.append(FieldCondition(key="metadata.chapter_id", match=MatchValue(value=chapter_id)))
+    #     points, _ = self._client.scroll(
+    #         collection_name=self._collection, scroll_filter=Filter(must=must),
+    #         limit=limit, with_payload=True, with_vectors=False,
+    #     )
+    #     return [Document(page_content=p.payload.get("page_content", ""), metadata=p.payload.get("metadata", {}))
+    #             for p in points]
+
+    def lesson_plan_search(self, subject: str, chapter_id: str | None = None, limit: int = 2,
+                           section_types: tuple = ("key_knowledge", "time_plan")) -> list[Document]:
+        """Lấy chunk giáo án theo metadata (không embedding): mặc định 2 chunk key_knowledge + time_plan của chương."""
         must = [
             FieldCondition(key="metadata.document_type", match=MatchValue(value="lesson_plan")),
-            FieldCondition(key="metadata.content_type", match=MatchValue(value="summary")),
+            FieldCondition(key="metadata.section_types", match=MatchAny(any=list(section_types))),
             FieldCondition(key="metadata.subject", match=MatchValue(value=subject)),
         ]
         if chapter_id:
@@ -175,8 +193,9 @@ class VectorStoreRetriever:
             collection_name=self._collection, scroll_filter=Filter(must=must),
             limit=limit, with_payload=True, with_vectors=False,
         )
-        return [Document(page_content=p.payload.get("page_content", ""), metadata=p.payload.get("metadata", {}))
+        docs = [Document(page_content=p.payload.get("page_content", ""), metadata=p.payload.get("metadata", {}))
                 for p in points]
+        return sorted(docs, key=lambda d: d.metadata.get("chunk_index", 0))
     
     #new methods for colbert prefilter and rerank
     # def colbert_prefilter(self, query: str, docs: list[Document], keep_top: int = 10) -> list[Document]:
