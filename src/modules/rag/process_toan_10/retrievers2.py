@@ -13,7 +13,7 @@ from qdrant_client import QdrantClient
 from qdrant_client.models import Filter, FieldCondition, MatchValue
 from sentence_transformers import CrossEncoder
 from fastembed import LateInteractionTextEmbedding
-import numpy as np
+# import numpy as np
 logger = logging.getLogger(__name__)
 
 
@@ -82,6 +82,7 @@ class VectorStoreRetriever:
             )
 
         self.top_k = top_k
+        self._collection = collection_name
 
 
         self.enable_colbert_prefilter = enable_colbert_prefilter
@@ -161,16 +162,32 @@ class VectorStoreRetriever:
         print(f" ========== tools search : {len(results)} ========== ")
         return results
     
+    def lesson_plan_search(self, subject: str, chapter_id: str | None = None, limit: int = 1) -> list[Document]:
+        """Lấy giáo án tóm tắt (content_type=summary) theo metadata, lọc ngay trên Qdrant, không dùng embedding."""
+        must = [
+            FieldCondition(key="metadata.document_type", match=MatchValue(value="lesson_plan")),
+            FieldCondition(key="metadata.content_type", match=MatchValue(value="summary")),
+            FieldCondition(key="metadata.subject", match=MatchValue(value=subject)),
+        ]
+        if chapter_id:
+            must.append(FieldCondition(key="metadata.chapter_id", match=MatchValue(value=chapter_id)))
+        points, _ = self._client.scroll(
+            collection_name=self._collection, scroll_filter=Filter(must=must),
+            limit=limit, with_payload=True, with_vectors=False,
+        )
+        return [Document(page_content=p.payload.get("page_content", ""), metadata=p.payload.get("metadata", {}))
+                for p in points]
+    
     #new methods for colbert prefilter and rerank
-    def colbert_prefilter(self, query: str, docs: list[Document], keep_top: int = 10) -> list[Document]:
-        """[THỬ NGHIỆM] Dùng ColBERT (late-interaction) lọc bớt docs trước khi vào CrossEncoder."""
-        if not self._colbert or not docs:
-            return docs
-        query_emb = list(self._colbert.query_embed(query))[0]
-        doc_embs = list(self._colbert.embed([d.page_content for d in docs]))
-        scores = [float(np.sum(np.max(np.matmul(query_emb, de.T), axis=1))) for de in doc_embs]
-        ranked = sorted(zip(scores, docs), key=lambda x: x[0], reverse=True)
-        return [d for _, d in ranked[:keep_top]]
+    # def colbert_prefilter(self, query: str, docs: list[Document], keep_top: int = 10) -> list[Document]:
+    #     """[THỬ NGHIỆM] Dùng ColBERT (late-interaction) lọc bớt docs trước khi vào CrossEncoder."""
+    #     if not self._colbert or not docs:
+    #         return docs
+    #     query_emb = list(self._colbert.query_embed(query))[0]
+    #     doc_embs = list(self._colbert.embed([d.page_content for d in docs]))
+    #     scores = [float(np.sum(np.max(np.matmul(query_emb, de.T), axis=1))) for de in doc_embs]
+    #     ranked = sorted(zip(scores, docs), key=lambda x: x[0], reverse=True)
+    #     return [d for _, d in ranked[:keep_top]]
 
     
     # def rerank(self, query: str, docs: list, top_k: int = 3) -> list[Document]:

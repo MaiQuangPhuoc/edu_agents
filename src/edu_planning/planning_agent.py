@@ -7,6 +7,7 @@ from src.state_plan import PlanState, MasterRoadmap, HandoffMessage
 from src.edu_qa.paths import PLANNING_PROMPT_PATH, PLANNING_FINALIZE_PROMPT_PATH, PLANNING_FEEDBACK_PROMPT_PATH
 from src.edu_planning.feedback_tools import FEEDBACK_TOOLS
 from src.edu_planning.chapter_utils import fix_chapters
+from src.edu_planning.plan_context import time_text, levels_text, lesson_plan_text
 
 from src.clients.llm import LLMClient
 
@@ -60,29 +61,30 @@ def _queries_text(state: PlanState) -> str:
         f"- [{q['subject']}{' | chương ' + q['chapter_id'] if q.get('chapter_id') else ''} | {q['nguon']}] {q['query']}"
         for q in qs)
 
+
+def _context(prompt: str, sm: dict, retriever) -> str:
+    return (prompt
+            .replace("{thoi_gian}", time_text(sm))
+            .replace("{muc_do}", levels_text(sm))
+            .replace("{giao_an}", lesson_plan_text(retriever, sm)))
+
 # prompt planing agent
-def _build_prompt(state: PlanState) -> str:
+def _build_prompt(state: PlanState, retriever) -> str:
     sm = state.get("student_model", {})
-    return (PLANNING_PROMPT_PATH.read_text(encoding="utf-8")
+    return _context(PLANNING_PROMPT_PATH.read_text(encoding="utf-8")
             .replace("{student_model}", json.dumps(sm, ensure_ascii=False, indent=2))
             .replace("{curriculum}", _curriculum_text(sm))
             .replace("{thay_doi}", _change_text(state))
-            .replace("{queries}", _queries_text(state))
-        )
+            .replace("{queries}", _queries_text(state)), sm, retriever)
 
 # prompt finalize agent ( gen schema MasterRoadmap)
-def _build_finalize_prompt(state: PlanState, transcript: str) -> str:
+def _build_finalize_prompt(state, transcript, retriever) -> str:
     sm = state.get("student_model", {})
-    # chinh_sua = "Không có (lần lập đầu tiên)."
-    # if state.get("roadmap_status") == "revising" and state.get("master_roadmap"):
-    #     chinh_sua = ("SƠ ĐỒ HIỆN TẠI:\n"
-    #                  + json.dumps(state["master_roadmap"], ensure_ascii=False, indent=2)
-    #                  + "\n\nYÊU CẦU CHỈNH SỬA CỦA HỌC SINH:\n" + state.get("feedback", ""))
-    return (PLANNING_FINALIZE_PROMPT_PATH.read_text(encoding="utf-8")
+    return _context(PLANNING_FINALIZE_PROMPT_PATH.read_text(encoding="utf-8")
             .replace("{student_model}", json.dumps(sm, ensure_ascii=False, indent=2))
             .replace("{curriculum}", _curriculum_text(sm))
             .replace("{transcript}", transcript)
-            .replace("{chinh_sua}", _change_text(state)))
+            .replace("{chinh_sua}", _change_text(state)), sm, retriever)
 
 def _transcript(msgs: list) -> str:
     lines = []
@@ -126,7 +128,7 @@ def make_planning_graph(retriever, llm_client: LLMClient, checkpointer=None):
         return "handle_feedback" if state.get("roadmap_status") == "awaiting_feedback" else "planner"
 
     def planner(state: PlanState) -> dict:
-        prompt = _build_prompt(state)
+        prompt = _build_prompt(state, retriever)
         try:
             res = react.invoke({"messages": [HumanMessage(content=prompt)]},
                                config={"recursion_limit": 2 * MAX_STEPS + 1})
@@ -138,7 +140,7 @@ def make_planning_graph(retriever, llm_client: LLMClient, checkpointer=None):
 
     def finalize(state: PlanState) -> dict:
         transcript = _transcript(state["plan_messages"])
-        prompt = _build_finalize_prompt(state, transcript)
+        prompt = _build_finalize_prompt(state, transcript,retriever)
         result = llm_client.invoke_structured(MasterRoadmap, [{"role": "user", "content": prompt}], max_tokens=4000)
         if result is None:
             return {"master_done": False, "roadmap_status": "draft", "current_step": "planning"}
