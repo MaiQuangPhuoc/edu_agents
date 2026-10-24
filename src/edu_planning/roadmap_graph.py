@@ -22,6 +22,7 @@ def make_roadmap_graph(retriever, llm_client: LLMClient, checkpointer=None):
     guard_client = LLMClient(model=env_config.guard_model, api_provider=env_config.api_provider)
 
     def guard(state: PlanState) -> dict:
+        print(f"model guard: {env_config.guard_model}, provider: {env_config.api_provider}")
         if state.get("roadmap_status") == "awaiting_test_answers":    # tin nhắn là đáp án bài test, không cần lọc
             return {"guard_ok": True}
         last = next((m.content for m in reversed(state.get("messages", [])) if isinstance(m, HumanMessage)), "")

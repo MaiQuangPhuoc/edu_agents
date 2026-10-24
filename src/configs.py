@@ -27,6 +27,13 @@ class EnvConfig(BaseSettings):
     groq_api_key_6: Optional[str] = None
     guard_model: str = "openai/gpt-oss-20b"      # model cho guard; đổi bằng GUARD_MODEL trong .env
     reasoning_effort: Optional[Literal["low", "medium", "high"]] = None   # tùy chọn: REASONING_EFFORT=low để giảm token suy luận
+    llm_timeout_seconds: float = 60.0
+    # Fixed is useful when measuring cache hits; round_robin preserves existing behavior.
+    groq_key_strategy: Literal["round_robin", "fixed"] = "round_robin"
+    openrouter_provider: Optional[str] = None
+    llm_cache_key: Optional[str] = None
+    # Enable only for reusable system/developer prefixes >= 1024 visible tokens.
+    llm_explicit_cache: bool = False
 
     @property
     def groq_api_keys(self) -> list[str]:
@@ -81,8 +88,9 @@ MAX_UPLOAD_MB = 20
 
 
 print("model",env_config.model)
-print("api key:", env_config.openrouter_api_key)
+# Never print API keys to logs.
 # print("tavily api key:", env_config.api_key_tavily)
 # print("qdrant url:", env_config.qdrant_collection)
 # print("open api key:", env_config.openai_api_key)
 # print("gemini model:", env_config.gemini_model)
+
