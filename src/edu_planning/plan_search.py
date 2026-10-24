@@ -24,6 +24,23 @@ def _call(tool, args: dict):
     except Exception as e:
         return [{"loi": f"{type(e).__name__}: {str(e)[:150]}"}]
 
+def _n(x):
+    return f"{x:,}" if isinstance(x, int) else "?"
+
+def _fmt_items(res) -> str:
+    if _empty(res):
+        return "(không có kết quả)"
+    out = []
+    for r in res:
+        if "loi" in r:
+            out.append(f"- lỗi: {r['loi']}")
+        elif r.get("loai") == "video":
+            out.append(f"- [video] {r['tieu_de']} | kênh {r['kenh']} ({_n(r.get('nguoi_dang_ky'))} đăng ký) | "
+                       f"{r['phut']} phút | {_n(r.get('luot_xem'))} xem, {_n(r.get('thich'))} thích | {r['url']}")
+        else:
+            extra = "".join(f" | {v}" for v in (f"{r['so_trang']} trang" if r.get("so_trang") else None, r.get("ngay")) if v)
+            out.append(f"- [tài liệu] {r['tieu_de']}{extra} | {r['url']}")
+    return "\n".join(out)
 
 def run_calls(tools: dict, calls: list, subject: str, allowed: list, sm: dict) -> str:
     """Chạy tuần tự các lần tra web/video do LLM lập. Trả về nhật ký tra cứu dạng text."""
@@ -40,6 +57,6 @@ def run_calls(tools: dict, calls: list, subject: str, allowed: list, sm: dict) -
         args = {"query": c.query, "subject": subject}
         res = _call(tools[c.tool], args)
         print(f"[planning] tra: {c.tool} {args} -> {0 if _empty(res) else len(res)} kết quả")
-        lines.append(f"[Tra cứu] {c.tool}({json.dumps(args, ensure_ascii=False)})\n"
-                     f"[Kết quả] {json.dumps(res, ensure_ascii=False)[:3000]}")
+        ch = f" (chương {c.chapter_id})" if c.chapter_id else ""
+        lines.append(f"[Tra cứu] {c.tool}{ch}: {c.query}\n{_fmt_items(res)}")
     return "\n".join(lines)

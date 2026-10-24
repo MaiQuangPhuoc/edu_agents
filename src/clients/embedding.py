@@ -28,8 +28,13 @@
 from langchain_huggingface import HuggingFaceEmbeddings
 
 # khởi tạo model embeddings (ví dụ dùng sentence-transformers)
+# embeddings_qa = HuggingFaceEmbeddings(
+#     model_name="bkai-foundation-models/vietnamese-bi-encoder"
+# )
+
 embeddings_qa = HuggingFaceEmbeddings(
-    model_name="bkai-foundation-models/vietnamese-bi-encoder"
+    model_name="bkai-foundation-models/vietnamese-bi-encoder",
+    model_kwargs={"device": "cpu"},
 )
 
 print('Embeddings model initialized successfully.')

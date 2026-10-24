@@ -22,9 +22,10 @@ from src.edu_planning.query_builder import build_queries
 from pathlib import Path
 from datetime import datetime
 
+MODE = "collect" 
 MODE = "plan" 
-# MODE = "collect"      # "collect": chỉ thử agent thu thập (không cần retriever) | "full": cả luồng
-STUDENT_ID = "hs_003"
+MODE = "full"   
+STUDENT_ID = "hs_005"
 
 
 CHAT_START = datetime.now()

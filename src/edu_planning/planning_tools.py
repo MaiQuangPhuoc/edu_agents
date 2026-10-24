@@ -1,6 +1,6 @@
 from typing import Optional
 from langchain_core.tools import tool
-import json, sys, os
+import json, sys, os , re
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from src.edu_planning.chapter_utils import normalize_chapter_id
 from src.edu_qa.tools.web_search_tool import web_search_edu
@@ -9,17 +9,20 @@ import math
 
 FETCH_K = 40
 
+
+_PAGES = re.compile(r"(\d{1,4})\s*trang", re.I)
+_DATE = re.compile(r"\b\d{1,2}/\d{1,2}/\d{4}\b")
+
+def _doc_item(r: dict) -> dict:
+    txt = f"{r['title']} {r['content']}"
+    m, d = _PAGES.search(txt), _DATE.search(txt)
+    return {"loai": "tai_lieu", "tieu_de": r["title"], "url": r["url"],
+            "so_trang": int(m.group(1)) if m else None, "ngay": d.group(0) if d else None}
+
 def _nonempty(res):
     return res or [{"thong_bao": "Không có kết quả phù hợp; hãy đổi từ khóa hoặc bỏ chapter_id/lesson."}]
 
 def make_planning_tools(retriever, llm_client=None):
-    # def _filter(docs, chapter_id, lesson):
-    #     docs = [d for d in docs if d.metadata.get("document_type") != "lesson_plan"]   # SGK không lấy giáo án
-    #     if chapter_id:
-    #         docs = [d for d in docs if d.metadata.get("chapter_id") == chapter_id]
-    #     if lesson:
-    #         docs = [d for d in docs if lesson.lower() in d.metadata.get("lesson", "").lower()]
-    #     return docs
 
     def _fmt(docs):
         out = []
@@ -31,7 +34,6 @@ def make_planning_tools(retriever, llm_client=None):
             }
             if "rerank_score" in d.metadata:
                 item["rerank_score"] = round(d.metadata["rerank_score"], 3)
-                item["rerank_score"] = round(1 / (1 + math.exp(-d.metadata["rerank_score"])), 3)   # logit -> 0..1 for mmarco-mMiniLMv2
             out.append(item)
         return out
 
@@ -80,7 +82,12 @@ def make_planning_tools(retriever, llm_client=None):
             top_k: số kết quả tối đa.
         """
         res = web_search_edu.func(query=query, subject=subject, max_results=top_k)
-        return _nonempty([{"loai": "tai_lieu", "tieu_de": r["title"], "url": r["url"], "tom_tat": r["content"][:300]} for r in res])
+        seen, items = set(), []
+        for r in res:
+            if r["url"] not in seen:
+                seen.add(r["url"])
+                items.append(_doc_item(r))
+        return _nonempty(items[:2])
 
     @tool
     def search_videos(query: str, subject: str, top_k: int = 2) -> list[dict]:
@@ -99,6 +106,8 @@ def make_planning_tools(retriever, llm_client=None):
         res = search_youtube_lecture.func(query=f"{subject} {query}", llm_client=llm_client, max_results=top_k)
         if res and "error" in res[0]:
             return [{"loi": "Không tra được video lúc này"}]
-        return _nonempty([{"loai": "video", "tieu_de": r["title"], "url": r["url"], "kenh": r["channel"]} for r in res])
+        return _nonempty([{"loai": "video", "tieu_de": r["title"], "url": r["url"], "kenh": r["channel"],
+                        "phut": round(r["duration_sec"] / 60), "luot_xem": r["views"],
+                        "thich": r["likes"], "nguoi_dang_ky": r["subscribers"]} for r in res])
 
     return [search_documents, search_documents_reranked, search_web_documents, search_videos]

@@ -5,7 +5,8 @@ from langgraph.graph import StateGraph, START, END
 from langgraph.prebuilt import ToolNode
 from src.edu_planning.feedback_tools import FEEDBACK_TOOLS
 from src.edu_planning.chapter_utils import fix_chapters
-
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import threading
 
 from src.edu_qa.paths import PLANNING_PROMPT_PATH, PLANNING_FINALIZE_PROMPT_PATH, PLANNING_FEEDBACK_PROMPT_PATH, PLANNING_OVERVIEW_PROMPT_PATH
 
@@ -24,8 +25,18 @@ from src.edu_planning.planning_tools import make_planning_tools
 
 # MAX_STEPS = 3         # số lượt tool tối đa mỗi lô
 BATCH_SIZE = 2        # số chương mỗi lô
+PREFETCH_WORKERS = 3
 DEBUG_PROMPT = True   # True: in prompt của từng lô để kiểm tra
+SPLIT_MARKER = "THÔNG TIN CHI TIẾT ĐƯỢC CUNG CẤP"
 
+_sgk_lock = threading.Lock()
+
+def _to_messages(prompt: str) -> list[dict]:
+    """Tách prompt thành system (cố định) + user (động) để tận dụng prompt cache."""
+    system, marker, user = prompt.partition(SPLIT_MARKER)
+    if not marker:
+        return [{"role": "user", "content": prompt}]
+    return [{"role": "system", "content": system.strip()}, {"role": "user", "content": user.strip()}]
 
 MAX_REVISION = 3
 
@@ -77,12 +88,12 @@ def _queries_text(state: PlanState, batch: dict | None = None) -> str:
         f"- [{q['subject']}{' | chương ' + q['chapter_id'] if q.get('chapter_id') else ''} | {q['nguon']}] {q['query']}"
         for q in qs)
 
-def _context(prompt: str, sm: dict, retriever, batch=None, done=()) -> str:
+def _context(prompt, sm, retriever, batch=None, done=(), giao_an=None) -> str:
     pham_vi = (f"{batch['subject']}, chương {', '.join(batch['chapters'])}" if batch
                else "tất cả các chương trong cấu trúc chương trình")
     out = prompt.replace("{thoi_gian}", time_text(sm)).replace("{muc_do}", levels_text(sm, batch))
     if "{giao_an}" in out:
-        out = out.replace("{giao_an}", lesson_plan_text(retriever, sm, batch))
+            out = out.replace("{giao_an}", giao_an if giao_an is not None else lesson_plan_text(retriever, sm, batch))
     return (out.replace("{pham_vi}", pham_vi)
                .replace("{da_sinh}", "\n".join(f"- {t}" for t in done) or "Chưa có lô nào được sinh trước."))
 
@@ -94,13 +105,22 @@ def _build_prompt(state: PlanState, retriever, batch=None, done=()) -> str:
             .replace("{thay_doi}", _change_text(state))
             .replace("{queries}", _queries_text(state, batch)), sm, retriever, batch, done)
 
-def _build_finalize_prompt(state, transcript, retriever, batch=None, done=()) -> str:
+def _build_finalize_prompt(state, transcript, retriever, batch=None, giao_an=None ,done=()) -> str:
     sm = state.get("student_model", {})
     return _context(PLANNING_FINALIZE_PROMPT_PATH.read_text(encoding="utf-8")
             .replace("{student_model}", profile_text(sm))
             .replace("{curriculum}", _curriculum_text(sm, batch))
             .replace("{transcript}", transcript)
-            .replace("{chinh_sua}", _change_text(state)), sm, retriever, batch, done)
+            .replace("{chinh_sua}", _change_text(state)), sm, retriever, batch, done, giao_an)
+
+
+def _to_messages(prompt: str) -> list[dict]:
+    """Tách prompt thành system (cố định) + user (động) để tận dụng prompt cache."""
+    system, marker, user = prompt.partition(SPLIT_MARKER)
+    if not marker:
+        return [{"role": "user", "content": prompt}]
+    return [{"role": "system", "content": system.strip()}, {"role": "user", "content": user.strip()}]
+
 
 def _debug(title: str, text: str):
     if DEBUG_PROMPT:
@@ -139,7 +159,8 @@ def _format_roadmap(rm: dict) -> str:
     lines.append("\nBạn thấy sườn này thế nào? Bạn có thể góp ý, hỏi lý do, đổi thông tin cá nhân, hoặc nói 'chốt' nếu đồng ý.")
     return "\n".join(lines)
 
-def make_planning_graph(retriever, llm_client: LLMClient, checkpointer=None):
+def make_planning_graph(retriever, llm_client: LLMClient, checkpointer=None, plan_client: LLMClient | None = None):
+    plan_client = plan_client or llm_client      # Luna cho sườn; không truyền thì dùng chung client chính
     tools = {t.name: t for t in make_planning_tools(retriever, llm_client)}
     llm_decide = llm_client._llm.bind_tools(FEEDBACK_TOOLS)
 
@@ -148,23 +169,45 @@ def make_planning_graph(retriever, llm_client: LLMClient, checkpointer=None):
 
     def planner(state: PlanState) -> dict:
         sm = state.get("student_model", {})
-        done, giai_doan, gia_dinh, logs = [], [], [], []
-        for batch in make_batches(sm, BATCH_SIZE):
-            print(f"[planning] lô: {batch['subject']} chương {batch['chapters']}")
+        # done, giai_doan, gia_dinh, logs = [], [], [], []
+        # for batch in make_batches(sm, BATCH_SIZE):
+        #     print(f"[planning] lô: {batch['subject']} chương {batch['chapters']}")
             
-            overview = sgk_overview_text(retriever, batch)
-            _debug("SGK TỔNG QUAN", overview)
+        #     overview = sgk_overview_text(retriever, batch)
+        #     _debug("SGK TỔNG QUAN", overview)
+        #     resources = ""
+        #     if wants_resources(sm):
+        #         prompt = _build_prompt(state, retriever, batch, done)
+        #         _debug("PROMPT LẬP KẾ HOẠCH TÀI NGUYÊN", prompt)
+        #         plan = llm_client.invoke_structured(ToolPlan, [{"role": "user", "content": prompt}], max_tokens=2000)
+        #         resources = run_calls(tools, plan.calls if plan else [], batch["subject"], batch["chapters"], sm)
+        #     transcript = f"[SGK tổng quan]\n{overview}\n{resources}".strip()
+        batches = make_batches(sm, BATCH_SIZE)
+
+        def prefetch(batch):                      # không phụ thuộc lô trước → chạy song song
+            tag = f"{batch['subject']} {batch['chapters']}"
+            with _sgk_lock:                       # embedding + rerank dùng chung 1 model
+                overview = sgk_overview_text(retriever, batch)
+            giao_an = lesson_plan_text(retriever, sm, batch)
             resources = ""
             if wants_resources(sm):
-                prompt = _build_prompt(state, retriever, batch, done)
-                _debug("PROMPT LẬP KẾ HOẠCH TÀI NGUYÊN", prompt)
-                plan = llm_client.invoke_structured(ToolPlan, [{"role": "user", "content": prompt}], max_tokens=600)
+                prompt = _build_prompt(state, retriever, batch)
+                plan = llm_client.invoke_structured(ToolPlan, [{"role": "user", "content": prompt}], max_tokens=2000)
                 resources = run_calls(tools, plan.calls if plan else [], batch["subject"], batch["chapters"], sm)
-            transcript = f"[SGK tổng quan]\n{overview}\n{resources}".strip()
+            print(f"[planning] đã tra xong lô {tag}")
+            return overview, giao_an, resources
 
-            fprompt = _build_finalize_prompt(state, transcript, retriever, batch, done)
-            _debug("PROMPT SINH SƯỜN", fprompt)
-            res = llm_client.invoke_structured(BatchPlan, [{"role": "user", "content": fprompt}], max_tokens=3000)
+        with ThreadPoolExecutor(PREFETCH_WORKERS) as ex:
+            pre = list(ex.map(prefetch, batches))
+
+        done, giai_doan, gia_dinh, logs = [], [], [], []
+        for batch, (overview, giao_an, resources) in zip(batches, pre):
+            print(f"[planning] sinh sườn lô: {batch['subject']} chương {batch['chapters']}")
+            transcript = f"[SGK tổng quan]\n{overview}\n{resources}".strip()
+            
+            fprompt = _build_finalize_prompt(state, transcript, retriever, batch, done, giao_an)
+            _debug("\n =================================== PROMPT SINH SƯỜN finalize =================================== \n", fprompt)
+            res = plan_client.invoke_structured(BatchPlan, _to_messages(fprompt), max_tokens=6000)
             if res is None:
                 return {"plan_draft": {}}
             part = res.model_dump()
@@ -185,8 +228,8 @@ def make_planning_graph(retriever, llm_client: LLMClient, checkpointer=None):
         if state.get("roadmap_status") == "revising":      # chỉnh sửa: sinh lại cả sườn một lần
             transcript = state.get("plan_transcript", "")
             prompt = _build_finalize_prompt(state, transcript, retriever)
-            _debug("PROMPT CHỈNH SỬA", prompt)
-            result = llm_client.invoke_structured(MasterRoadmap, [{"role": "user", "content": prompt}], max_tokens=4000)
+            _debug("\n =================================== PROMPT CHỈNH SỬA =================================== \n", prompt)
+            result = plan_client.invoke_structured(MasterRoadmap, _to_messages(prompt), max_tokens=8000)
             if result is None:
                 return _fail()
             roadmap = result.model_dump()
@@ -205,8 +248,8 @@ def make_planning_graph(retriever, llm_client: LLMClient, checkpointer=None):
                       .replace("{thoi_gian}", time_text(sm))
                       .replace("{giai_doan}", ds_gd)
                       .replace("{tom_tat}", "\n".join(f"- {t}" for t in draft["tom_tat"])))
-            _debug("PROMPT TỔNG QUAN", prompt)
-            ov = llm_client.invoke_structured(Overview, [{"role": "user", "content": prompt}], max_tokens=800)
+            _debug("\n =================================== PROMPT TỔNG QUAN =================================== \n", prompt)
+            ov = plan_client.invoke_structured(Overview, [{"role": "user", "content": prompt}], max_tokens=2000)
             if ov is None:
                 return _fail()
             roadmap = {**ov.model_dump(), "giai_doan": draft["giai_doan"], "gia_dinh": draft.get("gia_dinh", [])}

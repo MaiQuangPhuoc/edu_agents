@@ -1,17 +1,7 @@
 """Provider-aware LLM calls; public agent entry points remain compatible."""
 from __future__ import annotations
 
-import asyncio
-import copy
-import itertools
-import json
-import logging
-import os
-import random
-import re
-import sys
-import threading
-import time
+import asyncio, copy, itertools, json, logging, os, random, re, sys, threading, time
 from email.utils import parsedate_to_datetime
 from datetime import datetime, timezone
 from functools import lru_cache
@@ -24,6 +14,7 @@ from langchain_core.tools import BaseTool
 from langchain_core.runnables import RunnableLambda
 from pydantic import BaseModel, ValidationError
 from src.configs import env_config
+from src.clients.api_logger import ApiLogHandler
 
 logger = logging.getLogger(__name__)
 _key_lock = threading.Lock()
@@ -204,6 +195,33 @@ def _retry_delay(error, attempt):
         return float(match.group(1)) + 0.1
     return min(8.0, 2 ** attempt) + random.uniform(0, 0.25)
 
+@lru_cache(maxsize=None)
+def _retrying(base):
+    """Lớp con thử lại lỗi tạm thời (429/5xx/timeout/kết nối) cho lời gọi trực tiếp `_llm`.
+    `inner_retries=0` ở bản sao dùng cho invoke_structured/invoke_with_retries (chúng tự thử lại)."""
+    class Retrying(base):
+        inner_retries: int = 2
+
+        def _generate(self, *args, **kwargs):
+            for attempt in range(self.inner_retries + 1):
+                try:
+                    return super()._generate(*args, **kwargs)
+                except Exception as error:
+                    if attempt >= self.inner_retries or not _transient(error):
+                        raise
+                    time.sleep(_retry_delay(error, attempt))
+
+        async def _agenerate(self, *args, **kwargs):
+            for attempt in range(self.inner_retries + 1):
+                try:
+                    return await super()._agenerate(*args, **kwargs)
+                except Exception as error:
+                    if attempt >= self.inner_retries or not _transient(error):
+                        raise
+                    await asyncio.sleep(_retry_delay(error, attempt))
+
+    Retrying.__name__ = f"Retrying{base.__name__}"
+    return Retrying
 
 class LLMClient:
     def __init__(self, model: str, api_provider: str = None):
@@ -216,9 +234,11 @@ class LLMClient:
         return self.model.removeprefix("openai/") == "gpt-6-luna"
 
     def _initialize_llm(self):
-        common = dict(model=self.model, timeout=env_config.llm_timeout_seconds, max_retries=0)
+        common = dict(model=self.model, timeout=env_config.llm_timeout_seconds, max_retries=0,
+                      callbacks=[ApiLogHandler(self.api_provider, self.model)])
         if self.api_provider == "groq":
-            from langchain_groq import ChatGroq
+            from langchain_groq import ChatGroq as _ChatGroq
+            ChatGroq = _retrying(_ChatGroq)
             if not env_config.groq_api_keys:
                 raise ValueError("Thiếu GROQ_API_KEY trong src/.env")
             client, async_client = _rotating_groq_clients()
@@ -231,7 +251,8 @@ class LLMClient:
                             client=client, async_client=async_client, **extra)
         if self.api_provider not in ("openai", "openrouter"):
             raise ValueError(f"api_provider không hỗ trợ: {self.api_provider}")
-        from langchain_openai import ChatOpenAI
+        from langchain_openai import ChatOpenAI as _ChatOpenAI
+        ChatOpenAI = _retrying(_ChatOpenAI)
         key = (env_config.openrouter_api_key if self.api_provider == "openrouter"
                else env_config.openai_api_key)
         if not key:
@@ -261,7 +282,7 @@ class LLMClient:
 
     def _request_model(self, max_tokens, temperature=None, *, function_calling=False):
         # Model fields survive bind_tools/with_structured_output; bound kwargs may not.
-        update = {"max_tokens": max_tokens}
+        update = {"max_tokens": max_tokens, "inner_retries": 0}
         if temperature is not None and not self._luna:
             update["temperature"] = temperature
         if self._luna:

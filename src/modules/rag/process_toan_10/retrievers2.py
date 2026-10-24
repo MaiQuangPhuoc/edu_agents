@@ -26,8 +26,8 @@ class VectorStoreRetriever:
         collection_name: str = "tools",
         tools_collection_name: str | None = None,
         top_k: int = 10,
-        reranker_model = "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
-        # reranker_model = "BAAI/bge-reranker-v2-m3",
+        # reranker_model = "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+        reranker_model = "BAAI/bge-reranker-v2-m3",
         enable_colbert_prefilter: bool = False,
         colbert_model: str = "colbert-ir/colbertv2.0",
     ):
@@ -89,32 +89,25 @@ class VectorStoreRetriever:
         self.enable_colbert_prefilter = enable_colbert_prefilter
         self._colbert = LateInteractionTextEmbedding(colbert_model) if enable_colbert_prefilter else None
 
-        # Reranker
-        # self._reranker = CrossEncoder(reranker_model)
-        # logger.info(f"Reranker loaded: {reranker_model}")
-
-        # Reranker — tự động dùng GPU nếu có
+        # Reranker: thử GPU trước, lỗi (hết VRAM...) thì chuyển CPU
+        self._reranker_name = reranker_model
         device = "cuda" if torch.cuda.is_available() else "cpu"
-        self._reranker = CrossEncoder(reranker_model, device=device)
-        if device == "cuda":
-            self._reranker.model.half()
+        try:
+            self._reranker = CrossEncoder(reranker_model, device=device)
+            if device == "cuda":
+                self._reranker.model.half()
+        except Exception as e:
+            print(f"[reranker] {device} lỗi ({type(e).__name__}: {str(e)[:100]}) -> dùng CPU")
+            self._load_reranker_cpu()
+            device = "cpu"
         print(f"Using device: {device}")
 
-    
+    def _load_reranker_cpu(self):
+        self._reranker = None
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+        self._reranker = CrossEncoder(self._reranker_name, device="cpu")
 
-    # def filter_by_subject(docs: list, subject: str) -> list:
-    #     """Chỉ giữ chunk có metadata['subject'] == subject."""
-    #     return [d for d in docs if d.metadata.get("subject") == subject]
-
-    # def _build_filter(
-    #     self,
-    #     subject: str | None = None,
-    #     use_filter: bool = True,
-    # ) -> Filter | None:
-    #     """Build Qdrant filter theo subject. use_filter=False => tắt filter, trả None."""
-    #     if not use_filter or not subject:
-    #         return None
-    #     return Filter(must=[FieldCondition(key="metadata.subject", match=MatchValue(value=subject))])
 
     def filter_by_subject(self, docs: list, subject: str) -> list:
         """Chỉ giữ chunk có metadata['subject'] == subject."""
@@ -163,15 +156,18 @@ class VectorStoreRetriever:
         print(f" ========== tools search : {len(results)} ========== ")
         return results
 
-    def search_sgk(self, query: str, subject: str, chapter_id: str | None = None, k: int | None = None) -> list[Document]:
+    def search_sgk(self, query: str, subject: str, chapter_id: str | None = None, k: int | None = None,
+                   sub_type: str | None = None) -> list[Document]:
         """Tìm lai trong SGK; lọc subject/chapter_id ngay trên Qdrant, loại chunk giáo án."""
         must = [FieldCondition(key="metadata.subject", match=MatchValue(value=subject))]
         if chapter_id:
             must.append(FieldCondition(key="metadata.chapter_id", match=MatchValue(value=chapter_id)))
+        if sub_type:
+            must.append(FieldCondition(key="metadata.sub_type", match=MatchValue(value=sub_type)))
         flt = Filter(must=must, must_not=[
             FieldCondition(key="metadata.document_type", match=MatchValue(value="lesson_plan"))])
         results = self._hybrid_store.similarity_search(query, k=k or self.top_k, filter=flt)
-        print(f" ========== search_sgk ({subject}, chương {chapter_id}) : {len(results)} ========== ")
+        print(f" ========== search_sgk ({subject}, chương {chapter_id}, sub_type={sub_type}) : {len(results)} ========== ")
         return results
     
     # def lesson_plan_search(self, subject: str, chapter_id: str | None = None, limit: int = 1) -> list[Document]:
@@ -257,9 +253,14 @@ class VectorStoreRetriever:
 
         start = time.perf_counter()
         pairs = [[query, doc.page_content] for doc in docs]
-        # batch_size=1 ép model chạy từng cặp 1 -> rất chậm (không tận dụng GPU).
-        # Gộp cả list pairs thành các mini-batch batch_size để GPU tính song song thật.
-        scores = self._reranker.predict(pairs, batch_size=batch_size)
+        try:
+            scores = self._reranker.predict(pairs, batch_size=batch_size)
+        except RuntimeError as e:                 # CUDA out of memory khi chạy
+            if "out of memory" not in str(e).lower():
+                raise
+            print("[reranker] hết VRAM khi chạy -> chuyển CPU")
+            self._load_reranker_cpu()
+            scores = self._reranker.predict(pairs, batch_size=8)
         elapsed = time.perf_counter() - start
 
         ranked = sorted(zip(scores, docs), key=lambda x: x[0], reverse=True)

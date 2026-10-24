@@ -8,6 +8,7 @@ OVERVIEW_K = 3
 OVERVIEW_MIN = 0.7          # xác suất sau sigmoid
 OVERVIEW_FETCH = 15
 OVERVIEW_MAX_CHARS = 700
+OVERVIEW_SUBTYPE = {"Toán 10": "chapter"}      # môn nào có chunk tổng quan gắn sub_type; môn khác không lọc
 
 GIAO_AN_MAX_CHARS = 1200
 NEUTRAL = 0.6    
@@ -147,8 +148,8 @@ def profile_text(sm: dict) -> str:
     lines.append(f"- Cách học: dùng video: {_yn(st.get('dung_video'))}; dùng tài liệu: {_yn(st.get('dung_tai_lieu'))}.")
     return "\n".join(lines)
 
-def _prob(logit: float) -> float:
-    return 1 / (1 + math.exp(-logit))
+def _prob(score: float) -> float:
+    return float(score)      # bge-reranker-v2-m3 đã trả 0..1
 
 
 def sgk_overview_text(retriever, batch: dict) -> str:
@@ -160,13 +161,13 @@ def sgk_overview_text(retriever, batch: dict) -> str:
         name = cur.get(ch_id, {}).get("chapter_name", "")
         query = f"{name}: mục tiêu, khái quát toàn chương và giới thiệu chương"
         try:
-            docs = retriever.search_sgk(query, s, ch_id, k=OVERVIEW_FETCH)
+            docs = retriever.search_sgk(query, s, ch_id, k=OVERVIEW_FETCH, sub_type=OVERVIEW_SUBTYPE.get(s))
             ranked = retriever.rerank(query, docs, top_k=OVERVIEW_K)
         except Exception as e:
             print(f"[SGK tổng quan] lỗi {s} chương {ch_id}: {type(e).__name__} {str(e)[:150]}")
             ranked = []
         probs = [_prob(d.metadata["rerank_score"]) for d in ranked]
-        print(f"[SGK tổng quan] {s} chương {ch_id} | query: {query} | điểm: {[round(p, 2) for p in probs]}")
+        print(f"[SGK tổng quan] {s} chương {ch_id} | sub_type={OVERVIEW_SUBTYPE.get(s)} | query: {query} | điểm: {[round(p, 2) for p in probs]}")
         keep = [(p, d) for p, d in zip(probs, ranked) if p > OVERVIEW_MIN]
         if not keep:
             lines.append(f"- {s} chương {ch_id} ({name}): chưa có đoạn SGK tổng quan đủ liên quan")

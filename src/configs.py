@@ -26,6 +26,11 @@ class EnvConfig(BaseSettings):
     groq_api_key_5: Optional[str] = None
     groq_api_key_6: Optional[str] = None
     guard_model: str = "openai/gpt-oss-20b"      # model cho guard; đổi bằng GUARD_MODEL trong .env
+
+    plan_model: str = "openai/gpt-6-luna"          # model cho bước sinh sườn; đổi bằng PLAN_MODEL
+    plan_provider: Literal["openai", "groq", "openrouter"] = "openrouter"   # PLAN_PROVIDER
+
+
     reasoning_effort: Optional[Literal["low", "medium", "high"]] = None   # tùy chọn: REASONING_EFFORT=low để giảm token suy luận
     llm_timeout_seconds: float = 60.0
     # Fixed is useful when measuring cache hits; round_robin preserves existing behavior.
