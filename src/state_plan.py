@@ -56,7 +56,7 @@ class TienDo(BaseModel):                       # Progress Agent ghi, các agent 
     tin_hieu_dong_luc: Optional[str] = None    # chưa chốt cách đo
 
 class StudentModel(BaseModel):
-    student_id: str
+    student_id: str = ""   # code gán sau, LLM không cần điền
     ca_nhan: ThongTinCaNhan = ThongTinCaNhan()
     nang_luc: list[NangLucMonHoc] = []
     muc_tieu: list[MucTieu] = []

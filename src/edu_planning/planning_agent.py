@@ -105,7 +105,7 @@ def _build_prompt(state: PlanState, retriever, batch=None, done=()) -> str:
             .replace("{thay_doi}", _change_text(state))
             .replace("{queries}", _queries_text(state, batch)), sm, retriever, batch, done)
 
-def _build_finalize_prompt(state, transcript, retriever, batch=None, giao_an=None ,done=()) -> str:
+def _build_finalize_prompt(state, transcript, retriever, batch=None, done=(), giao_an=None) -> str:
     sm = state.get("student_model", {})
     return _context(PLANNING_FINALIZE_PROMPT_PATH.read_text(encoding="utf-8")
             .replace("{student_model}", profile_text(sm))

@@ -197,6 +197,17 @@ def collect_student_model(state: PlanState, llm_client: LLMClient) -> dict:
         },
     )
 
+    print("\n" + "=" * 70)
+    print("PROMPT collect_student_model")
+    print("=" * 70)
+
+    for message in messages:
+        print(f"\n[{message['role'].upper()}]")
+        print("-" * 70)
+        print(message["content"])
+
+    print("\n" + "=" * 70)
+
     turn = llm_client.invoke_structured(
         CollectTurn,
         messages,

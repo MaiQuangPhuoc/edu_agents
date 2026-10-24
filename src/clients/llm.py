@@ -21,15 +21,43 @@ _key_lock = threading.Lock()
 _key_counter = itertools.count()
 
 
+# def _next_groq_key() -> str:
+#     keys = env_config.groq_api_keys
+#     if not keys:
+#         raise ValueError("Thiếu GROQ_API_KEY trong src/.env")
+#     if getattr(env_config, "groq_key_strategy", "round_robin") == "fixed":
+#         return keys[0]
+#     with _key_lock:
+#         return keys[next(_key_counter) % len(keys)]
+
 def _next_groq_key() -> str:
     keys = env_config.groq_api_keys
     if not keys:
         raise ValueError("Thiếu GROQ_API_KEY trong src/.env")
-    if getattr(env_config, "groq_key_strategy", "round_robin") == "fixed":
-        return keys[0]
-    with _key_lock:
-        return keys[next(_key_counter) % len(keys)]
 
+    if getattr(env_config, "groq_key_strategy", "round_robin") == "fixed":
+        key = keys[0]
+    else:
+        with _key_lock:
+            key = keys[next(_key_counter) % len(keys)]
+
+    if key.endswith("Ps5"):
+        number = 1
+    elif key.endswith("Go"):
+        number = 2
+    elif key.endswith("WU5"):
+        number = 3
+    elif key.endswith("Nex"):
+        number = 4
+    elif key.endswith("Xjx"):
+        number = 5
+    elif key.endswith("Oy6"):
+        number = 6
+    else:
+        number = "không xác định"
+    print(f" strategy={getattr(env_config, 'groq_key_strategy', None)}, so_key={len(keys)}", flush=True)
+    print(f" 🔑🔑 API_KEY_RUNNING = {number}", flush=True)
+    return key
 
 def _rotating_groq_clients():
     from groq import Groq, AsyncGroq
@@ -460,10 +488,10 @@ class LLMClient:
                 if status in (401, 403) or (status is not None and not _transient(error)):
                     # A rejected native schema may use the less restrictive tool API.
                     text = str(error).lower()
-                    if status == 400 and method == "json_schema" and any(
-                        word in text for word in ("json_schema", "response_format", "schema", "structured output")
-                    ):
+                    if status == 400 and method == "json_schema" and any(...):
                         method = "function_calling"
+                    elif status == 400 and "tool_use_failed" in text:
+                        pass
                     else:
                         raise
                 elif (type(error).__name__ != "LengthFinishReasonError"

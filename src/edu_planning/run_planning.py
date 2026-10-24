@@ -2,7 +2,7 @@
 
 from dotenv import load_dotenv
 load_dotenv()
-
+import logging
 import os, sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
@@ -21,11 +21,13 @@ from src.edu_planning.student_store import load_student_model
 from src.edu_planning.query_builder import build_queries
 from pathlib import Path
 from datetime import datetime
+logging.basicConfig(level=logging.INFO)
 
-MODE = "collect" 
-MODE = "plan" 
+
+# MODE = "collect" 
+# MODE = "plan" 
 MODE = "full"   
-STUDENT_ID = "hs_005"
+STUDENT_ID = "hs_006"
 
 
 CHAT_START = datetime.now()
