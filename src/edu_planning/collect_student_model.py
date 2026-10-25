@@ -12,7 +12,7 @@ from difflib import SequenceMatcher
 from src.edu_planning.query_builder import build_queries
 
 
-MAX_HISTORY = 6        # số tin nhắn gần nhất đưa vào prompt
+MAX_HISTORY = 12        # số tin nhắn gần nhất đưa vào prompt
 MAX_BOT_CHARS = 250    # tin cũ của bot cắt còn chừng này ký tự (tin cuối giữ nguyên)
 
 def _history_text(messages: list) -> str:

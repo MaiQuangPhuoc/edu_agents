@@ -63,15 +63,21 @@ def _diff_text(old: dict, new: dict) -> str:
     return "\n".join(lines) or "(không có thay đổi)"
 
 
-def _change_text(state: PlanState) -> str:
+def _js(x) -> str:
+    return json.dumps(x, ensure_ascii=False, separators=(",", ":"))      # JSON một dòng
+
+
+def _change_text(state: PlanState, brief: bool = False) -> str:
     status = state.get("roadmap_status")
     if status == "profile_changed" and state.get("roadmap_prev"):
+        diff = "THÔNG TIN ĐÃ ĐỔI:\n" + _diff_text(state.get("student_model_prev", {}), state.get("student_model", {}))
+        if brief:                       # bước tra tài liệu/video chỉ cần biết hồ sơ đổi gì
+            return "Học sinh vừa đổi thông tin.\n" + diff
         return ("Học sinh vừa đổi thông tin. Sườn cũ được lập theo hồ sơ cũ nên có thể không còn phù hợp.\n"
-                "SƠ ĐỒ CŨ:\n" + json.dumps(state["roadmap_prev"], ensure_ascii=False, indent=2)
-                + "\n\nTHÔNG TIN ĐÃ ĐỔI:\n" + _diff_text(state.get("student_model_prev", {}), state.get("student_model", {}))
+                "SƠ ĐỒ CŨ:\n" + _js(state["roadmap_prev"]) + "\n\n" + diff
                 + "\n\nHãy lập lại sườn theo hồ sơ MỚI: giữ phần còn phù hợp, bỏ hoặc thay phần không còn phù hợp.")
     if status == "revising" and state.get("master_roadmap"):
-        return ("SƠ ĐỒ HIỆN TẠI:\n" + json.dumps(state["master_roadmap"], ensure_ascii=False, indent=2)
+        return ("SƠ ĐỒ HIỆN TẠI:\n" + _js(state["master_roadmap"])
                 + "\n\nYÊU CẦU CHỈNH SỬA CỦA HỌC SINH:\n" + state.get("feedback", ""))
     return "Không có (lần lập đầu tiên)."
 
@@ -106,7 +112,7 @@ def _build_prompt(state: PlanState, retriever, batch=None, done=()) -> str:
     return _context(PLANNING_PROMPT_PATH.read_text(encoding="utf-8")
             .replace("{student_model}", profile_text(sm))
             .replace("{curriculum}", _curriculum_text(sm, batch))
-            .replace("{thay_doi}", _change_text(state))
+            .replace("{thay_doi}", _change_text(state, brief=True))
             .replace("{queries}", _queries_text(state, batch)), sm, retriever, batch, done)
 
 def _build_finalize_prompt(state, transcript, retriever, batch=None, done=(), giao_an=None) -> str:

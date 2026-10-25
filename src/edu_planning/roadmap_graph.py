@@ -13,7 +13,15 @@ from src.edu_planning.learning_path_graph import make_learning_path_graph
 from src.configs import env_config
 
 def _history_text(messages: list) -> str:
-    lines = [f"{'Học sinh' if isinstance(m, HumanMessage) else 'Trợ lý'}: {m.content}" for m in messages[-12:]]
+    lines = []
+    for m in messages[-12:]:
+        text = str(m.content)
+        if isinstance(m, HumanMessage):
+            lines.append(f"Học sinh: {text}")
+        else:   # tin dài của Trợ lý (vd. cả sườn): giữ đầu + cuối (cuối thường là câu hỏi)
+            if len(text) > 300:
+                text = text[:150].rstrip() + " … " + text[-150:].lstrip()
+            lines.append(f"Trợ lý: {text}")
     return "\n".join(lines) or "(chưa có)"
 
 def make_roadmap_graph(retriever, llm_client: LLMClient, checkpointer=None):

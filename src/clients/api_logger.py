@@ -11,12 +11,14 @@ from langchain_core.callbacks import BaseCallbackHandler
 LOG_DIR = Path(os.getenv("EDU_API_LOG_DIR", str(Path(__file__).resolve().parents[2] / "logs" / "api_usage")))
 HEADER = ("| NO | Gửi | Provider | Model | Input | Cached | Output | Nhận | Tổng (s) | Server (s) | Mạng ≈ (s) | Lỗi |\n"
           "|---:|---|---|---|---:|---:|---:|---|---:|---:|---:|---|\n")
+S0, S1 = "<!-- SUMMARY -->", "<!-- /SUMMARY -->"
 _lock = threading.Lock()
 # Giá USD / 1 triệu token: (input chưa cache, input từ cache, output). Groq không tính tiền.
 PRICES = {"gpt-6-luna": (0.10, 0.01, 0.50)}
 
 def _write_row(sent: datetime, cells: list):
-    path = LOG_DIR / f"{sent:%Y-%m-%d}.md"
+    day = f"{sent:%Y-%m-%d}"
+    path = LOG_DIR / f"{day}.md"
     with _lock:
         LOG_DIR.mkdir(parents=True, exist_ok=True)
         new = not path.exists()
@@ -24,9 +26,28 @@ def _write_row(sent: datetime, cells: list):
                                    if l.startswith("| ") and l[2:3].isdigit())
         with path.open("a", encoding="utf-8") as f:
             if new:
-                f.write(f"# Nhật ký gọi API {sent:%Y-%m-%d}\n\n{HEADER}")
+                f.write(f"# Nhật ký gọi API {day}\n\n{S0}\n{S1}\n\n{HEADER}")
             f.write("| " + " | ".join(str(c).replace("|", "/").replace("\n", " ") for c in [no] + cells) + " |\n")
+        _refresh_summary(path, day)
 
+
+def _summary_md(s: dict) -> str:
+    lines = [f"## Thống kê ngày {s['day']}", "",
+             "| Model | Số lần | Input | Cached | Input chưa cache | Output | Chi phí (USD) |",
+             "|---|---:|---:|---:|---:|---:|---:|"]
+    for m, r in {**s["models"], "TỔNG": s["all"]}.items():
+        cost = f"{r['cost']:.4f}" if (m == "TỔNG" or _price(m)) else "-"
+        lines.append(f"| {m} | {r['calls']} | {r['input']} | {r['cached']} | {r['fresh']} | {r['output']} | {cost} |")
+    return "\n".join(lines)
+
+
+def _refresh_summary(path: Path, day: str):
+    text = path.read_text(encoding="utf-8")
+    a, b = text.find(S0), text.find(S1)
+    if a == -1 or b == -1:                    # file cũ chưa có khối thống kê
+        return
+    block = f"{S0}\n{_summary_md(usage_summary(day))}\n{S1}"
+    path.write_text(text[:a] + block + text[b + len(S1):], encoding="utf-8")
 
 class ApiLogHandler(BaseCallbackHandler):
     """Ghi mỗi lần gọi LLM thành một dòng bảng trong logs/api_usage/YYYY-MM-DD.md."""

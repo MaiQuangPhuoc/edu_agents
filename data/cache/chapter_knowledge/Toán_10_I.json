@@ -1,0 +1,133 @@
+{
+  "chapter_id": "I",
+  "lessons": [
+    {
+      "lesson": "Mệnh đề",
+      "key_points": [
+        "Định nghĩa mệnh đề, mệnh đề chứa biến và cách ký hiệu.",
+        "Mệnh đề phủ định, mệnh đề kéo theo (P ⇒ Q) và mệnh đề đảo (Q ⇒ P).",
+        "Khái niệm mệnh đề tương đương (P ⇔ Q) và cách kiểm tra tính đúng sai."
+      ],
+      "must_know": [
+        "Mệnh đề: câu có giá trị đúng hoặc sai, ký hiệu P, Q,…",
+        "Mệnh đề phủ định: ¬P, đổi vị trí “không”.",
+        "Mệnh đề kéo theo: P ⇒ Q, nghĩa là nếu P đúng thì Q cũng đúng.",
+        "Mệnh đề đảo: Q ⇒ P.",
+        "Mệnh đề tương đương: P ⇔ Q (cả P ⇒ Q và Q ⇒ P đều đúng)."
+      ],
+      "must_understand": [
+        "Tại sao mệnh đề đảo không nhất thiết đúng khi mệnh đề gốc đúng.",
+        "Cách xác định P và Q trong một câu điều kiện.",
+        "Lý do hai mệnh đề tương đương có cùng tập hợp nghiệm.",
+        "Vai trò của các ký hiệu ∀, ∃ trong mệnh đề chứa biến."
+      ],
+      "problem_types": [
+        "Xác định P, Q và kiểm tra tính đúng sai của P ⇒ Q.",
+        "Viết mệnh đề phủ định của một mệnh đề đã cho.",
+        "Tìm mệnh đề đảo và kiểm tra tính đúng sai.",
+        "Kiểm chứng tính tương đương của hai mệnh đề."
+      ],
+      "related": [
+        {
+          "chapter_id": "I",
+          "lesson": "Tập hợp",
+          "relation": "Cùng chương, nền tảng cho việc biểu diễn các tập hợp các nghiệm của mệnh đề."
+        },
+        {
+          "chapter_id": "I",
+          "lesson": "Các phép toán trên tập hợp",
+          "relation": "Sử dụng các phép toán (giao, hợp) để mô tả các tập hợp nghiệm của các mệnh đề."
+        },
+        {
+          "chapter_id": "II",
+          "lesson": "Bất phương trình bậc nhất hai ẩn",
+          "relation": "Áp dụng kiến thức mệnh đề kéo theo để giải bất phương trình."
+        }
+      ]
+    },
+    {
+      "lesson": "Tập hợp",
+      "key_points": [
+        "Khái niệm tập hợp, phần tử, ký hiệu ∈ và ⊂.",
+        "Hai tập hợp bằng nhau khi có cùng phần tử; khái niệm tập con.",
+        "Một số tập con quan trọng của ℝ (ℕ, ℤ, ℚ, ℝ⁺, ℝ⁻)."
+      ],
+      "must_know": [
+        "Ký hiệu: x ∈ A (x là phần tử của A), A ⊆ B (A là tập con của B).",
+        "Tập rỗng ∅ và tính chất ∅ ⊆ A cho mọi A.",
+        "Cách liệt kê phần tử và cách mô tả bằng tính chất đặc trưng.",
+        "Ký hiệu đoạn, nửa đoạn, khoảng và ý nghĩa đầu mút có/không lấy."
+      ],
+      "must_understand": [
+        "Tại sao thứ tự liệt kê và lặp lại phần tử không thay đổi tập hợp.",
+        "Cách xác định tập con và tập bằng nhau qua quan hệ phần tử.",
+        "Mối quan hệ giữa các tập con của ℝ và các phép toán trên tập hợp."
+      ],
+      "problem_types": [
+        "Viết tập hợp dưới dạng liệt kê hoặc tính chất đặc trưng.",
+        "Kiểm tra quan hệ tập con và bằng nhau giữa hai tập hợp.",
+        "Liệt kê toàn bộ tập con của một tập hợp hữu hạn.",
+        "Sử dụng ký hiệu đoạn, khoảng để mô tả các tập hợp thực."
+      ],
+      "related": [
+        {
+          "chapter_id": "I",
+          "lesson": "Mệnh đề",
+          "relation": "Mệnh đề thường được biểu diễn dưới dạng tập hợp các nghiệm."
+        },
+        {
+          "chapter_id": "I",
+          "lesson": "Các phép toán trên tập hợp",
+          "relation": "Cung cấp các phép toán cần thiết để thao tác với các tập hợp đã học."
+        },
+        {
+          "chapter_id": "III",
+          "lesson": "Hàm số và đồ thị",
+          "relation": "Tập hợp giá trị (range) và tập xác định (domain) của hàm số."
+        }
+      ]
+    },
+    {
+      "lesson": "Các phép toán trên tập hợp",
+      "key_points": [
+        "Phép hợp (A ∪ B), giao (A ∩ B), hiệu (A \\ B) và phần bù (C_U A).",
+        "Biểu diễn các phép toán bằng Venn diagram.",
+        "Ứng dụng các phép toán trong các bài toán thực tế (ví dụ: tuyển dụng)."
+      ],
+      "must_know": [
+        "Ký hiệu: A ∪ B = {x | x∈A hoặc x∈B}, A ∩ B = {x | x∈A và x∈B}.",
+        "Hiệu: A \\ B = {x | x∈A và x∉B}.",
+        "Phần bù trong vũ trụ U: C_U A = U \\ A.",
+        "Các tính chất cơ bản: giao‑phép‑hợp, luật De Morgan."
+      ],
+      "must_understand": [
+        "Cách sử dụng Venn diagram để trực quan hoá các phép toán.",
+        "Khi nào cần dùng hiệu vs phần bù trong giải quyết vấn đề.",
+        "Lý do các tính chất giao‑phép‑hợp giúp rút gọn biểu thức tập hợp."
+      ],
+      "problem_types": [
+        "Xác định A ∪ B, A ∩ B, A \\ B cho các tập hợp cho trước.",
+        "Tính phần bù của một tập hợp trong một vũ trụ U.",
+        "Giải các bài toán thực tế dựa trên mô hình tập hợp (ví dụ: tuyển dụng).",
+        "Sử dụng Venn diagram để chứng minh các đẳng thức tập hợp."
+      ],
+      "related": [
+        {
+          "chapter_id": "I",
+          "lesson": "Tập hợp",
+          "relation": "Cung cấp các khái niệm cơ bản cần thiết cho các phép toán."
+        },
+        {
+          "chapter_id": "II",
+          "lesson": "Bất phương trình bậc nhất hai ẩn",
+          "relation": "Giải bất phương trình thường dùng phép giao và hợp của các tập nghiệm."
+        },
+        {
+          "chapter_id": "III",
+          "lesson": "Hàm số bậc hai",
+          "relation": "Xác định miền xác định và miền giá trị của hàm số bằng phép giao và hợp."
+        }
+      ]
+    }
+  ]
+}

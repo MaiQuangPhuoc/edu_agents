@@ -18,7 +18,7 @@ from src.clients.api_logger import ApiLogHandler
 
 logger = logging.getLogger(__name__)
 _key_lock = threading.Lock()
-_key_counter = itertools.count()
+_key_counter = itertools.count(random.randrange(max(1, len(env_config.groq_api_keys))))
 
 
 # def _next_groq_key() -> str:
