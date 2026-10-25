@@ -4,12 +4,12 @@ from datetime import date
 from src.edu_exam.curriculum import get_subject_curriculum
 from src.edu_planning.lp_tools import _deadline, _pick_goal
 
-OVERVIEW_K = 3
-OVERVIEW_MIN = 0.7          # xác suất sau sigmoid
+OVERVIEW_K = 2
+OVERVIEW_MIN = 0.7          # ngưỡng điểm rerank cho các môn có rerank
 OVERVIEW_FETCH = 15
 OVERVIEW_MAX_CHARS = 700
 OVERVIEW_SUBTYPE = {"Toán 10": "chapter"}      # môn nào có chunk tổng quan gắn sub_type; môn khác không lọc
-
+NO_RERANK = {"Toán 10"}                        # môn lấy thẳng top retrieve, không rerank
 GIAO_AN_MAX_CHARS = 1200
 NEUTRAL = 0.6    
 _UU_TIEN = {"diem_so": "ưu tiên điểm số", "hieu_ban_chat": "ưu tiên hiểu bản chất", "ca_hai": "cân bằng điểm số và hiểu bản chất"}
@@ -110,6 +110,17 @@ def make_batches(sm: dict, size: int = 2) -> list[dict]:
         out += [{"subject": s, "chapters": ids[i:i + size]} for i in range(0, len(ids), size)]
     return out
 
+def add_phase_limits(sm: dict, batches: list[dict]) -> list[dict]:
+    """Gắn max_gd cho mỗi lô: ~1 giai đoạn/tuần của môn, chia đều theo số lô (tối thiểu 1)."""
+    for s in {b["subject"] for b in batches}:
+        group = [b for b in batches if b["subject"] == s]
+        goal = _pick_goal(sm, s)
+        _, weeks = _deadline(goal if goal.get("mon_hoc") == s else {}, date.today())
+        per = max(1, math.ceil((weeks or 2 * len(group)) / len(group)))
+        for b in group:
+            b["max_gd"] = per
+    return batches
+
 def _yn(v) -> str:
     return "chưa rõ" if v is None else "có" if v else "không"
 
@@ -152,26 +163,45 @@ def _prob(score: float) -> float:
     return float(score)      # bge-reranker-v2-m3 đã trả 0..1
 
 
-def sgk_overview_text(retriever, batch: dict) -> str:
-    """SGK tổng quan mỗi chương: query dựng bằng code, lọc subject+chapter_id, rerank, giữ tối đa 3 chunk có điểm > 0.7."""
+def _show(stage: str, docs: list, scores: list):
+    print(f"  [{stage}] {len(docs)} chunk")
+    for i, (d, s) in enumerate(zip(docs, scores), 1):
+        sc = f"{s:.3f}" if isinstance(s, (int, float)) else "-"
+        print(f"    chunk {i} [{sc}] {d.page_content[:200].replace(chr(10), ' ')}")
+
+
+def sgk_overview_text(retriever, batch: dict, min_score: float = OVERVIEW_MIN, verbose: bool = True) -> str:
+    """SGK tổng quan mỗi chương. Môn trong NO_RERANK: lấy OVERVIEW_K chunk điểm retrieve cao nhất.
+    Môn khác: rerank rồi giữ tối đa OVERVIEW_K chunk có điểm > min_score."""
     s = batch["subject"]
+    use_rerank = s not in NO_RERANK
     cur = get_subject_curriculum(s)
     lines = []
     for ch_id in batch["chapters"]:
         name = cur.get(ch_id, {}).get("chapter_name", "")
         query = f"{name}: mục tiêu, khái quát toàn chương và giới thiệu chương"
         try:
-            docs = retriever.search_sgk(query, s, ch_id, k=OVERVIEW_FETCH, sub_type=OVERVIEW_SUBTYPE.get(s))
-            ranked = retriever.rerank(query, docs, top_k=OVERVIEW_K)
+            docs = retriever.search_sgk(query, s, ch_id, k=OVERVIEW_FETCH if use_rerank else OVERVIEW_K,
+                                        sub_type=OVERVIEW_SUBTYPE.get(s))
+            ranked = retriever.rerank(query, docs, top_k=len(docs)) if use_rerank else docs
         except Exception as e:
             print(f"[SGK tổng quan] lỗi {s} chương {ch_id}: {type(e).__name__} {str(e)[:150]}")
-            ranked = []
-        probs = [_prob(d.metadata["rerank_score"]) for d in ranked]
-        print(f"[SGK tổng quan] {s} chương {ch_id} | sub_type={OVERVIEW_SUBTYPE.get(s)} | query: {query} | điểm: {[round(p, 2) for p in probs]}")
-        keep = [(p, d) for p, d in zip(probs, ranked) if p > OVERVIEW_MIN]
+            docs, ranked = [], []
+        if use_rerank:
+            keep = [d for d in ranked if _prob(d.metadata["rerank_score"]) > min_score][:OVERVIEW_K]
+        else:
+            keep = ranked[:OVERVIEW_K]
+        if verbose:
+            print(f"[SGK tổng quan] {s} chương {ch_id} | sub_type={OVERVIEW_SUBTYPE.get(s)} | rerank={use_rerank} | query: {query}")
+            _show("retrieve", docs, [d.metadata.get("retrieve_score") for d in docs])
+            if use_rerank:
+                _show("rerank", ranked, [_prob(d.metadata["rerank_score"]) for d in ranked])
+            print(f"  -> giữ {len(keep)} chunk" + (f" (ngưỡng > {min_score}, tối đa {OVERVIEW_K})" if use_rerank else f" (top {OVERVIEW_K} retrieve)"))
         if not keep:
             lines.append(f"- {s} chương {ch_id} ({name}): chưa có đoạn SGK tổng quan đủ liên quan")
             continue
         lines.append(f"- {s} chương {ch_id} ({name}):")
-        lines += [f"  [{p:.2f}] {d.page_content[:OVERVIEW_MAX_CHARS]}" for p, d in keep]
+        for d in keep:
+            tag = f"[{_prob(d.metadata['rerank_score']):.2f}] " if use_rerank else ""
+            lines.append(f"  {tag}{d.page_content[:OVERVIEW_MAX_CHARS]}")
     return "\n".join(lines)

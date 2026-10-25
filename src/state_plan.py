@@ -314,7 +314,7 @@ class LearningPath(BaseModel):
 class PlanState(TypedDict, total=False):
     # chung
     messages: Annotated[list, add_messages]      # hội thoại với học sinh
-    student_id: str
+    student_id: str = ""   # code gán sau, LLM không cần điền
     guard_ok: bool
     current_step: str
 

@@ -1,10 +1,12 @@
-from difflib import SequenceMatcher
+from dotenv import load_dotenv
+load_dotenv()
+import sys, os, re
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+from qdrant_client import QdrantClient
+from qdrant_client.models import PayloadSchemaType
+from src.configs import env_config
 
-text1 = "thứ 7 bệnh viên sẽ không hoạt dộng cho đến 15 giờ, bạn có thẻ khám lúc 17 giờ đến 20 giờ"
-text2 = "lúc 18 giờ vào thứ 7 phòng khám có phục vụ khám bênh bạn có thể đi vào buổi chiều"
-
-similarity = SequenceMatcher(
-    None, text1, text2
-).ratio()
-
-print(similarity)
+client = QdrantClient(url=env_config.qdrant_url, api_key=env_config.qdrant_api_key, check_compatibility=False)
+client.create_payload_index(collection_name="doc_final", field_name="metadata.sub_type",
+                            field_schema=PayloadSchemaType.KEYWORD)
+print("ok")

@@ -24,7 +24,7 @@ NGUYÊN TẮC
 15. Giáo án và SGK tổng quan chỉ cho khung chung của chương. Thứ tự, mức ưu tiên, số giai đoạn và nội dung từng giai đoạn phải bám vào hồ sơ học sinh: mức độ từng chương, điểm hiện tại và mục tiêu, thời gian còn lại, dạng bài muốn tập trung, ưu tiên điểm số hay hiểu bản chất.
 16. ly_do của mỗi chương phải nêu căn cứ cụ thể từ hồ sơ (mức độ, điểm, thời gian), không chỉ nhắc lại nội dung giáo án hoặc SGK.
 17. Mục SGK tổng quan ghi "chưa có đoạn đủ liên quan" thì chỉ dựa vào giáo án và cấu trúc chương trình, không tự bịa nội dung chương.
-
+18. không vượt số giai đoạn tối đa ở PHẠM VI.Chương yếu thì viết sâu và gộp ít chương hơn, chương đã ổn thì gộp chung thành một giai đoạn dài.
 ĐẦU RA
 Xuất đúng schema được yêu cầu.
 
@@ -36,8 +36,9 @@ HỒ SƠ HỌC SINH
 THỜI GIAN CÒN LẠI (đã tính bằng code, chính xác)
 {thoi_gian}
 
-PHẠM VI LÔ NÀY
+PHẠM VI
 Chỉ sinh giai_doan cho: {pham_vi}
+Số giai đoạn tối đa cho lô này: {so_giai_doan} ngay sau {pham_vi}.
 
 CÁC LÔ ĐÃ SINH TRƯỚC (tóm tắt, chỉ để biết tình trạng sườn)
 {da_sinh}

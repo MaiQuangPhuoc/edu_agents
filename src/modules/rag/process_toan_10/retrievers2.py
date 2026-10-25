@@ -166,7 +166,15 @@ class VectorStoreRetriever:
             must.append(FieldCondition(key="metadata.sub_type", match=MatchValue(value=sub_type)))
         flt = Filter(must=must, must_not=[
             FieldCondition(key="metadata.document_type", match=MatchValue(value="lesson_plan"))])
-        results = self._hybrid_store.similarity_search(query, k=k or self.top_k, filter=flt)
+        try:    # lấy kèm điểm của bước truy xuất (hybrid) để xem
+            pairs = self._hybrid_store.similarity_search_with_score(query, k=k or self.top_k, filter=flt)
+            results = []
+            for doc, score in pairs:
+                doc.metadata["retrieve_score"] = float(score)
+                results.append(doc)
+        except Exception as e:
+            print(f"[search_sgk] không lấy được điểm retrieve ({type(e).__name__}), dùng similarity_search")
+            results = self._hybrid_store.similarity_search(query, k=k or self.top_k, filter=flt)
         print(f" ========== search_sgk ({subject}, chương {chapter_id}, sub_type={sub_type}) : {len(results)} ========== ")
         return results
     

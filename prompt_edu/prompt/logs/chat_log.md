@@ -106,3 +106,17 @@ Hệ thống: Phương trình bậc hai là phương trình có dạng \(ax^2+bx
 
 ---
 
+Người dùng: chương mệnh đề toán học sẽ học về những gì và mệnh đề đúng và sai tồn tại trong cùng một mệnh đề được không? (09:00:51 25/10/2026)
+
+Hệ thống: Chương "Mệnh đề và tập hợp" trong sách Toán lớp 10 sẽ giới thiệu cho các em hai khái niệm cơ bản nhất của toán học: mệnh đề và tập hợp. Các em sẽ học cách nhận biết, đưa ra ví dụ và sử dụng đúng các loại mệnh đề (mệnh đề phủ định, kéo theo, đảo, tương đương) cũng như các ký hiệu logic như ∀ (với mọi) và ∃ (tồn tại). Bên cạnh đó, chương còn dạy các khái niệm về tập hợp (phần tử, tập con, tập rỗng, hai tập bằng nhau) và các ký hiệu ∈, ⊂, ⊃, ∅, cùng với các phép toán trên tập hợp (hợp, giao, hiệu, phần bù) và cách biểu diễn bằng biểu đồ Ven. Khi học xong, các em sẽ có khả năng xác định tính đúng sai của mệnh đề, thực hiện các phép toán trên tập hợp và áp dụng chúng vào các tình huống thực tế.
+
+Về câu hỏi "Mệnh đề đúng và sai có thể tồn tại trong cùng một mệnh đề được không?" – trong logic cổ điển, một mệnh đề là câu khẳng định luôn có giá trị chân lý duy nhất: hoặc đúng hoặc sai, không thể đồng thời cả hai. Khi mệnh đề chứa biến, giá trị đúng/sai phụ thuộc vào giá trị của biến và miền xét, nhưng mỗi lần gán giá trị cụ thể cho biến thì mệnh đề vẫn chỉ đúng hoặc sai. Các khái niệm như phủ định (¬P), kéo theo (P ⇒ Q), tương đương (P ⇔ Q) và các lượng từ ∀, ∃ đều dựa trên nguyên tắc này. (09:01:33 25/10/2026) - Chênh lệch: 41s
+
+---
+
+Người dùng: Chương I  mục tiêu, khái quát toàn chương và giới thiệu chương (09:03:29 25/10/2026)
+
+Hệ thống: Sau khi học chương I, các em sẽ có khả năng nhận biết được mệnh đề và mệnh đề chứa biến, cũng như các cấu trúc mệnh đề cơ bản; đánh giá tính đúng/sai của các mệnh đề khi có đủ dữ kiện. Các em sẽ sử dụng chính xác các khái niệm về tập hợp, phần tử, tập con, hai tập hợp bằng nhau và các tập hợp số thường gặp. Ngoài ra, các em sẽ thực hiện được các phép hợp, giao, hiệu và phần bù, biểu diễn tập hợp bằng cách liệt kê, mô tả tính chất, trục số hoặc biểu đồ Venn tùy theo tình huống. Cuối cùng, các em sẽ vận dụng kiến thức về mệnh đề và tập hợp để đọc các điều kiện toán học, diễn đạt kết luận và giải các bài toán tổng hợp cơ bản. (09:03:43 25/10/2026) - Chênh lệch: 14s
+
+---
+

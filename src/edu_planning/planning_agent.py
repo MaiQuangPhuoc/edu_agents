@@ -16,7 +16,7 @@ from langchain.agents import create_agent
 from langgraph.errors import GraphRecursionError
 
 from src.state_plan import PlanState, MasterRoadmap, HandoffMessage, BatchPlan, Overview, ToolPlan
-from src.edu_planning.plan_context import time_text, levels_text, lesson_plan_text, make_batches, profile_text , sgk_overview_text
+from src.edu_planning.plan_context import time_text, levels_text, lesson_plan_text, make_batches, profile_text , sgk_overview_text,add_phase_limits
 from src.edu_planning.plan_search import run_calls, wants_resources
 
 from src.edu_exam.curriculum import get_subject_curriculum
@@ -91,7 +91,11 @@ def _queries_text(state: PlanState, batch: dict | None = None) -> str:
 def _context(prompt, sm, retriever, batch=None, done=(), giao_an=None) -> str:
     pham_vi = (f"{batch['subject']}, chương {', '.join(batch['chapters'])}" if batch
                else "tất cả các chương trong cấu trúc chương trình")
-    out = prompt.replace("{thoi_gian}", time_text(sm)).replace("{muc_do}", levels_text(sm, batch))
+    out = (
+        prompt.replace("{thoi_gian}", time_text(sm))
+        .replace("{muc_do}", levels_text(sm, batch))
+        .replace("{so_giai_doan}", str(batch.get("max_gd", 3)) if batch else "3")
+    )
     if "{giao_an}" in out:
             out = out.replace("{giao_an}", giao_an if giao_an is not None else lesson_plan_text(retriever, sm, batch))
     return (out.replace("{pham_vi}", pham_vi)
@@ -159,6 +163,17 @@ def _format_roadmap(rm: dict) -> str:
     lines.append("\nBạn thấy sườn này thế nào? Bạn có thể góp ý, hỏi lý do, đổi thông tin cá nhân, hoặc nói 'chốt' nếu đồng ý.")
     return "\n".join(lines)
 
+def _roadmap_brief(rm: dict) -> str:
+    """Bản gọn của sơ đồ cho bước nhận phản hồi: bỏ URL, tài nguyên, tiêu chí."""
+    lines = [f"Mục tiêu tổng: {rm.get('muc_tieu_tong', '')}", f"Chiến lược: {rm.get('chien_luoc', '')}"]
+    for gd in rm.get("giai_doan", []):
+        lines.append(f"- Giai đoạn {gd['thu_tu']}: {gd['ten']} ({gd['mon_hoc']}) — mục tiêu: {gd['muc_tieu']}")
+        for c in gd["chapters"]:
+            lines.append(f"  + Chương {c['chapter_id']}: {', '.join(c['lessons'])} | ly_do: {c['ly_do']}")
+    if rm.get("gia_dinh"):
+        lines.append("gia_dinh: " + "; ".join(rm["gia_dinh"]))
+    return "\n".join(lines)
+
 def make_planning_graph(retriever, llm_client: LLMClient, checkpointer=None, plan_client: LLMClient | None = None):
     plan_client = plan_client or llm_client      # Luna cho sườn; không truyền thì dùng chung client chính
     tools = {t.name: t for t in make_planning_tools(retriever, llm_client)}
@@ -169,22 +184,10 @@ def make_planning_graph(retriever, llm_client: LLMClient, checkpointer=None, pla
 
     def planner(state: PlanState) -> dict:
         sm = state.get("student_model", {})
-        # done, giai_doan, gia_dinh, logs = [], [], [], []
-        # for batch in make_batches(sm, BATCH_SIZE):
-        #     print(f"[planning] lô: {batch['subject']} chương {batch['chapters']}")
-            
-        #     overview = sgk_overview_text(retriever, batch)
-        #     _debug("SGK TỔNG QUAN", overview)
-        #     resources = ""
-        #     if wants_resources(sm):
-        #         prompt = _build_prompt(state, retriever, batch, done)
-        #         _debug("PROMPT LẬP KẾ HOẠCH TÀI NGUYÊN", prompt)
-        #         plan = llm_client.invoke_structured(ToolPlan, [{"role": "user", "content": prompt}], max_tokens=2000)
-        #         resources = run_calls(tools, plan.calls if plan else [], batch["subject"], batch["chapters"], sm)
-        #     transcript = f"[SGK tổng quan]\n{overview}\n{resources}".strip()
-        batches = make_batches(sm, BATCH_SIZE)
+        batches = add_phase_limits(sm, make_batches(sm, BATCH_SIZE))
 
         def prefetch(batch):                      # không phụ thuộc lô trước → chạy song song
+            # verbose=False    # ẩn retrieval log, chỉ in log của planner
             tag = f"{batch['subject']} {batch['chapters']}"
             with _sgk_lock:                       # embedding + rerank dùng chung 1 model
                 overview = sgk_overview_text(retriever, batch)
@@ -244,7 +247,7 @@ def make_planning_graph(retriever, llm_client: LLMClient, checkpointer=None, pla
             ds_gd = "\n".join(f"- Giai đoạn {gd['thu_tu']}: {gd['ten']} ({gd['mon_hoc']}; chương "
                               f"{', '.join(c['chapter_id'] for c in gd['chapters'])})" for gd in draft["giai_doan"])
             prompt = (PLANNING_OVERVIEW_PROMPT_PATH.read_text(encoding="utf-8")
-                      .replace("{student_model}", json.dumps(sm, ensure_ascii=False, indent=2))
+                      .replace("{student_model}", profile_text(sm))
                       .replace("{thoi_gian}", time_text(sm))
                       .replace("{giai_doan}", ds_gd)
                       .replace("{tom_tat}", "\n".join(f"- {t}" for t in draft["tom_tat"])))
@@ -267,8 +270,8 @@ def make_planning_graph(retriever, llm_client: LLMClient, checkpointer=None, pla
     def handle_feedback(state: PlanState) -> dict:
         feedback = next((m.content for m in reversed(state.get("messages", [])) if isinstance(m, HumanMessage)), "")
         prompt = (PLANNING_FEEDBACK_PROMPT_PATH.read_text(encoding="utf-8")
-                  .replace("{student_model}", json.dumps(state.get("student_model", {}), ensure_ascii=False, indent=2))
-                  .replace("{roadmap}", json.dumps(state.get("master_roadmap", {}), ensure_ascii=False, indent=2))
+                  .replace("{student_model}", profile_text(state.get("student_model", {})))
+                  .replace("{roadmap}", _roadmap_brief(state.get("master_roadmap", {})))
                   .replace("{feedback}", feedback))
         resp = llm_decide.invoke([HumanMessage(content=prompt)])
         if not resp.tool_calls:
