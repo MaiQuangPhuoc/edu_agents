@@ -135,7 +135,12 @@ def run_plan(llm_client):
     }, cfg)
     show_new_bot_messages(out)
     while out.get("roadmap_status") not in ("approved", "path_ready", "path_failed"):
-        out = graph.invoke({"messages": [HumanMessage(content=input("\nBạn: "))]}, cfg)
+        text = input("\nBạn: ").strip()
+        if not text:
+            continue
+
+        log_chat("Học sinh", text)
+        out = graph.invoke({"messages": [HumanMessage(content=text)]}, cfg)
         show_new_bot_messages(out)
 
 def run_full(llm_client):
@@ -158,7 +163,12 @@ def run_full(llm_client):
     out = graph.invoke({"student_id": STUDENT_ID, "messages": []}, cfg)
     show_new_bot_messages(out)
     while out.get("roadmap_status") != "path_ready":
-        out = graph.invoke({"messages": [HumanMessage(content=input("\nBạn: "))]}, cfg)
+        text = input("\nBạn: ").strip()
+        if not text:
+            continue
+
+        log_chat("Học sinh", text)
+        out = graph.invoke({"messages": [HumanMessage(content=text)]}, cfg)
         show_new_bot_messages(out)
 
 

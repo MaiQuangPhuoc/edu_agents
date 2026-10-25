@@ -2,11 +2,12 @@ import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from datetime import date
 from src.state_plan import PlanState, OutlinePlan
-from src.clients.llm import LLMClient
+from src.clients.llm import LLMClient, build_prompt_messages
 from src.edu_qa.paths import LP_OUTLINE_PROMPT_PATH
 from src.edu_planning.chapter_utils import normalize_chapter_id
 from src.edu_planning.lp_plan import phases_in_scope, student_text
 from src.edu_planning.lp_tools import _pick_goal, _deadline, _DIFFICULTY_RATIO, DEFAULT_TARGET_SCORE
+from src.edu_planning.lp_time import time_facts_text
 
 MAX_TRIES = 3
 
@@ -83,7 +84,7 @@ def to_outline(weeks: list, codes: dict, per_week: int, minutes: int) -> list[di
     return [{"phase": p, "weeks": ws} for p, ws in out.items()]
 
 
-def outline_node(state: PlanState, llm_client: LLMClient) -> dict:
+def outline_node(state: PlanState, retriever, llm_client: LLMClient) -> dict:
     print(">>> [LP] outline")
     reset = {"lp_draft": {}, "lp_issues": {}, "lp_revision_count": 0, "lp_reviewed": False}      # xóa kết quả của lần chạy trước
     
@@ -101,15 +102,17 @@ def outline_node(state: PlanState, llm_client: LLMClient) -> dict:
         return fail(f"Chỉ còn {total} tuần, ít hơn số giai đoạn ({len(phases)})")
 
     codes, issues, plan = build_codes(subject, phases), [], None
-    for _ in range(MAX_TRIES):
-        prompt = (LP_OUTLINE_PROMPT_PATH.read_text(encoding="utf-8")
-                  .replace("{student_model}", student_text(sm))
-                  .replace("{roadmap}", roadmap_text(phases, codes))
-                  .replace("{total_weeks}", str(total)).replace("{sessions_per_week}", str(per_week))
-                  .replace("{difficulty}", _difficulty_text(sm, subject))
-                  .replace("{issues}", "\n".join(f"- {i}" for i in issues) or "(không có)"))
+    time_facts = time_facts_text(retriever, subject, phases, total, per_week, minutes)
+    for attempt in range(MAX_TRIES):
+        messages = build_prompt_messages(LP_OUTLINE_PROMPT_PATH, {
+            "student_model": student_text(sm),
+            "roadmap": roadmap_text(phases, codes),
+            "total_weeks": total, "sessions_per_week": per_week,
+            "difficulty": _difficulty_text(sm, subject),
+            "time_facts": time_facts,
+            "issues": "\n".join(f"- {i}" for i in issues) or "(không có)"})
         try:
-            plan = llm_client.invoke_structured(OutlinePlan, [{"role": "user", "content": prompt}], max_tokens=4000)
+            plan = llm_client.invoke_structured(OutlinePlan, messages, max_tokens=6000)
         except Exception as e:
             print(f"[lp_outline] lỗi: {e}")
             plan = None
@@ -117,6 +120,12 @@ def outline_node(state: PlanState, llm_client: LLMClient) -> dict:
             issues = ["Kết quả trước không đúng cấu trúc, hãy xuất lại đúng schema"]
             continue
         issues = validate(plan.weeks, codes, phases, total)
+        sc = plan.self_check
+        failed = [name for name, ok in (("đủ bài", sc.all_lessons_covered), ("giai đoạn liền nhau", sc.phases_contiguous),
+                                        ("tỉ lệ độ khó", sc.difficulty_ratio_ok), ("thời gian", sc.time_budget_ok)) if not ok]
+        if not issues and failed and attempt < MAX_TRIES - 1:       # mềm: tự kiểm tra báo chưa đạt thì cho làm lại
+            issues = [f"Tự kiểm tra chưa đạt ({', '.join(failed)}): " + "; ".join(sc.notes)]
+            continue
         if not issues:
             return {**reset, "lp_outline": to_outline(plan.weeks, codes, per_week, minutes), "lp_codes": codes}
     return fail("Không lập được khung tuần hợp lệ: " + "; ".join(issues))

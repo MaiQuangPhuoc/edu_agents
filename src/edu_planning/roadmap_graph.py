@@ -28,7 +28,7 @@ def make_roadmap_graph(retriever, llm_client: LLMClient, checkpointer=None):
     # planning = make_planning_graph(retriever, llm_client)   # graph con, dùng chung PlanState
     plan_client = LLMClient(model=env_config.plan_model, api_provider=env_config.plan_provider)   # Luna cho sườn
     planning = make_planning_graph(retriever, llm_client, plan_client=plan_client)   # graph con, dùng chung PlanState
-    learning_path = make_learning_path_graph(retriever, llm_client)
+    learning_path = make_learning_path_graph(retriever, llm_client, plan_client=plan_client)
     guard_client = LLMClient(model=env_config.guard_model, api_provider=env_config.api_provider)
 
     def guard(state: PlanState) -> dict:

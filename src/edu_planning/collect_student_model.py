@@ -1,5 +1,7 @@
 import json, sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+from src.edu_planning.chapter_utils import normalize_chapter_id
+
 import copy
 from datetime import datetime, timedelta
 from langchain_core.messages import AIMessage, HumanMessage
@@ -28,13 +30,11 @@ def _history_text(messages: list) -> str:
     return "\n".join(lines) or "(chưa có)"
 
 def _compact(model: dict) -> str:
-    """Hồ sơ dạng JSON gọn: bỏ trường rỗng, version, tien_do; thời gian cập nhật chỉ giữ HH:MM."""
-    model = {k: v for k, v in model.items() if k not in ("version", "tien_do")}
-    if model.get("updated_at"):
-        model["cap_nhat_luc"] = str(model.pop("updated_at"))[11:16]
+    """Hồ sơ dạng JSON gọn: bỏ trường rỗng, version, tien_do, student_id, updated_at, chu_de."""
+    model = {k: v for k, v in model.items() if k not in ("version", "tien_do", "student_id", "updated_at")}
     def clean(x):
         if isinstance(x, dict):
-            x = {k: clean(v) for k, v in x.items()}
+            x = {k: clean(v) for k, v in x.items() if k != "chu_de"}
             return {k: v for k, v in x.items() if v not in (None, "", [], {})}
         if isinstance(x, list):
             return [v for v in map(clean, x) if v not in (None, "", [], {})]
@@ -111,11 +111,33 @@ def _prefill(model: dict, prev: str, last_user: str) -> None:
         if val and not mt.get("uu_tien"):
             mt["uu_tien"] = val
 
-def _dump(turn, prev: str, last_user: str) -> dict:
+_EMPTY = (None, "", [], {})
+
+def _merge(old, new):
+    """Giá trị mới không rỗng thì ghi đè, rỗng thì giữ cũ. Danh sách nang_luc/muc_tieu gộp theo mon_hoc."""
+    if isinstance(old, dict) and isinstance(new, dict):
+        out = dict(old)
+        for k, v in new.items():
+            out[k] = _merge(old[k], v) if k in old else v
+        return out
+    if (isinstance(old, list) and isinstance(new, list) and old and new
+            and all(isinstance(x, dict) and x.get("mon_hoc") for x in old + new)):
+        by = {x["mon_hoc"]: x for x in old}
+        for x in new:
+            by[x["mon_hoc"]] = _merge(by.get(x["mon_hoc"], {}), x)
+        return list(by.values())
+    return old if new in _EMPTY else new
+
+def _dump(turn, prev: str, last_user: str, current: dict | None = None) -> dict:
     model = turn.student_model.model_dump(mode="json")
     for k in ("nang_luc", "muc_tieu"):
         for x in model.get(k, []):
             x["mon_hoc"] = _canon_subject(x["mon_hoc"])
+            if k == "nang_luc":
+                for f in ("diem_manh", "diem_yeu"):
+                    x[f] = [normalize_chapter_id(x["mon_hoc"], c) or c for c in x.get(f) or []]
+    if current:
+        model = _merge(current, model)
     _fill_deadline(model)
     _prefill(model, prev, last_user)
     return model
@@ -216,7 +238,7 @@ def collect_student_model(state: PlanState, llm_client: LLMClient) -> dict:
     if turn is None:
         return {"messages": [AIMessage(content="Bạn nhắc lại giúp mình nhé?")], "current_step": "collect_student_model"}
     
-    lack = _missing(_dump(turn, prev, last_user))
+    lack = _missing(_dump(turn, prev, last_user, current))
     why = _bad_reply(turn.tin_nhan, prev, lack)
     if why:
         note = f"\n\nLƯU Ý: tin_nhan lần trước {why}. Viết lại ngắn gọn, không lặp câu cũ."
@@ -234,7 +256,7 @@ def collect_student_model(state: PlanState, llm_client: LLMClient) -> dict:
         elif lack != NO_MISSING:
             turn.tin_nhan = f"Mình cần thêm thông tin: {lack}. Bạn bổ sung giúp mình nhé?"
 
-    model = _dump(turn, prev, last_user)
+    model = _dump(turn, prev, last_user, current)
 
     for nl in model.get("nang_luc", []):
         # chu_de do code dựng từ điểm mạnh/yếu: chưa có số đo nên muc_nam = None, do_tin_cay = 0

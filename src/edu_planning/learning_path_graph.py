@@ -40,13 +40,14 @@ def route_after_critic(state: PlanState) -> str:
     return "assemble" if state.get("lp_issues") and state.get("lp_revision_count", 0) < 3 else "present"
 
 
-def make_learning_path_graph(retriever, llm_client: LLMClient, checkpointer=None):
+def make_learning_path_graph(retriever, llm_client: LLMClient, plan_client: LLMClient | None = None, checkpointer=None):
+    plan_client = plan_client or llm_client          # Luna cho các bước dài; không truyền thì dùng chung 120b
     g = StateGraph(PlanState)
-    g.add_node("outline", lambda s: outline_node(s, llm_client))
+    g.add_node("outline", lambda s: outline_node(s, retriever, plan_client))
     g.add_node("plan", lambda s: plan_node(s, llm_client))
-    g.add_node("execute", lambda s: execute_node(s, retriever, llm_client))
+    g.add_node("execute", lambda s: execute_node(s, retriever, llm_client, plan_client))
     g.add_node("replan", lambda s: replan_node(s, llm_client))
-    g.add_node("assemble", lambda s: assemble_node(s, llm_client))
+    g.add_node("assemble", lambda s: assemble_node(s, plan_client))
     g.add_node("critic", lambda s: critic_node(s, llm_client))
     g.add_node("present", present_node)
 

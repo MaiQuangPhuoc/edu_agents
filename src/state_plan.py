@@ -264,13 +264,22 @@ class OutlineWeek(BaseModel):            # LLM sinh, phẳng
     difficulty_trend: str = ""
     has_assessment: bool = False
 
+class OutlineSelfCheck(BaseModel):
+    all_lessons_covered: bool
+    phases_contiguous: bool
+    difficulty_ratio_ok: bool
+    time_budget_ok: bool
+    notes: list[str] = Field(default=[], description="Điểm chưa đạt, mỗi mục một câu; rỗng nếu đạt hết")
+
 class OutlinePlan(BaseModel):
     weeks: list[OutlineWeek]
+    self_check: OutlineSelfCheck
 
 class ActivityDraft(BaseModel):
     type: Literal["lecture", "reading", "video", "exercise", "summary", "review"]
     content: str
     minutes: int
+    problem_type: str = Field(default="", description="Chỉ cho exercise: chép nguyên văn một mục problem_types của bài")
 
 class SessionDraft(BaseModel):
     lesson: str                          # mã bài
@@ -278,9 +287,18 @@ class SessionDraft(BaseModel):
     activities: list[ActivityDraft]
     resources: list[Resource] = []
 
+class WeekSelfCheck(BaseModel):
+    session_count_matches: bool
+    all_lessons_covered: bool
+    assessment_rule_ok: bool
+    only_given_resources: bool
+    activities_grounded: bool
+    notes: list[str] = Field(default=[], description="Điểm chưa đạt, mỗi mục một câu; rỗng nếu đạt hết")
+
 class WeekDraft(BaseModel):
     goal: str
     sessions: list[SessionDraft]
+    self_check: WeekSelfCheck
 
 class ReviewIssue(BaseModel):
     week_no: int = 0

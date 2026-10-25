@@ -15,6 +15,7 @@ S0, S1 = "<!-- SUMMARY -->", "<!-- /SUMMARY -->"
 _lock = threading.Lock()
 # Giá USD / 1 triệu token: (input chưa cache, input từ cache, output). Groq không tính tiền.
 PRICES = {"gpt-6-luna": (0.10, 0.01, 0.50)}
+USD_TO_VND = float(os.getenv("USD_TO_VND", "26000"))
 
 def _write_row(sent: datetime, cells: list):
     day = f"{sent:%Y-%m-%d}"
@@ -32,12 +33,41 @@ def _write_row(sent: datetime, cells: list):
 
 
 def _summary_md(s: dict) -> str:
-    lines = [f"## Thống kê ngày {s['day']}", "",
-             "| Model | Số lần | Input | Cached | Input chưa cache | Output | Chi phí (USD) |",
-             "|---|---:|---:|---:|---:|---:|---:|"]
-    for m, r in {**s["models"], "TỔNG": s["all"]}.items():
-        cost = f"{r['cost']:.4f}" if (m == "TỔNG" or _price(m)) else "-"
-        lines.append(f"| {m} | {r['calls']} | {r['input']} | {r['cached']} | {r['fresh']} | {r['output']} | {cost} |")
+    lines = [
+        f"## Thống kê ngày {s['day']}",
+        "",
+        f"Tỷ giá tham khảo: 1 USD = {USD_TO_VND:,.0f} VND.",
+        "",
+        "| Model | Số lần | Input | Cached | Input chưa cache | Output "
+        "| Phí input (USD) | Phí output (USD) "
+        "| Chi phí tổng (USD) | Tổng tiền (VND) |",
+        "| :--- | ---: | ---: | ---: | ---: | ---: "
+        "| ---: | ---: | ---: | ---: |",
+    ]
+
+    for model, r in {**s["models"], "TỔNG": s["all"]}.items():
+        if model == "TỔNG" or _price(model) is not None:
+            fees = (
+                f"{r['input_cost']:.7f}",
+                f"{r['output_cost']:.7f}",
+                f"{r['cost']:.7f}",
+                f"{r['cost_vnd']:,.2f}",
+            )
+        else:
+            fees = ("-", "-", "-", "-")
+
+        lines.append(
+            f"| {model} | {r['calls']} | {r['input']} "
+            f"| {r['cached']} | {r['fresh']} | {r['output']} "
+            f"| {' | '.join(fees)} |"
+        )
+
+    lines.extend([
+        "",
+        "Phí input gồm input chưa cache và input đọc từ cache. "
+        "Tổng tiền chỉ cộng các model có cấu hình trong PRICES; "
+        "chưa gồm phụ phí ghi cache, phí nạp tiền và chuyển đổi ngoại tệ.",
+    ])
     return "\n".join(lines)
 
 
@@ -107,7 +137,10 @@ def usage_summary(day: str | None = None) -> dict:
     """Thống kê theo model và cả ngày. day dạng 'YYYY-MM-DD', mặc định hôm nay."""
     day = day or f"{datetime.now():%Y-%m-%d}"
     path = LOG_DIR / f"{day}.md"
-    keys = ("calls", "input", "cached", "fresh", "output", "cost")
+    keys = (
+        "calls", "input", "cached", "fresh", "output",
+        "input_cost", "output_cost", "cost", "cost_vnd",
+    )
     per = defaultdict(lambda: dict.fromkeys(keys, 0))
     if path.exists():
         for line in path.read_text(encoding="utf-8").splitlines():
@@ -124,18 +157,30 @@ def usage_summary(day: str | None = None) -> dict:
             r["output"] += o
             p = _price(c[off + 2])
             if p:
-                r["cost"] += (max(i - ca, 0) * p[0] + ca * p[1] + o * p[2]) / 1_000_000
+                input_cost = (
+                    max(i - ca, 0) * p[0] + ca * p[1]
+                ) / 1_000_000
+                output_cost = o * p[2] / 1_000_000
+                cost = input_cost + output_cost
+
+                r["input_cost"] += input_cost
+                r["output_cost"] += output_cost
+                r["cost"] += cost
+                r["cost_vnd"] += cost * USD_TO_VND
     total = {k: sum(r[k] for r in per.values()) for k in keys}
     return {"day": day, "models": dict(per), "all": total}
 
 
 def print_usage_summary(day: str | None = None):
-    s = usage_summary(day)
-    print(f"Thống kê ngày {s['day']}")
-    for m, r in {**s["models"], "TỔNG": s["all"]}.items():
-        cost = f" | ${r['cost']:.4f}" if _price(m) else ""
-        print(f"- {m}: {r['calls']} lần | in {r['input']} (cache {r['cached']}, chưa cache {r['fresh']}) | out {r['output']}{cost}")
-    print(f"Tổng tiền (chỉ model có giá niêm yết): ${s['all']['cost']:.4f}")
+    print(_summary_md(usage_summary(day)))
+
 
 if __name__ == "__main__":
-    print_usage_summary(sys.argv[1] if len(sys.argv) > 1 else None)
+    day = sys.argv[1] if len(sys.argv) > 1 else f"{datetime.now():%Y-%m-%d}"
+    path = LOG_DIR / f"{day}.md"
+
+    if path.exists():
+        with _lock:
+            _refresh_summary(path, day)
+
+    print_usage_summary(day)

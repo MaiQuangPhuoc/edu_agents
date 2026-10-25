@@ -46,10 +46,10 @@ def _run_task(task: dict, tools: dict, state: PlanState, llm_client: LLMClient, 
     return task["id"], {"goal": task["goal"], "text": text, "evidence": evidence}
 
 
-def execute_node(state: PlanState, retriever, llm_client: LLMClient) -> dict:
+def execute_node(state: PlanState, retriever, llm_client: LLMClient, plan_client: LLMClient | None = None) -> dict:
     print(">>> [LP] execute")
     w = state["lp_window"]
-    tools = {t.name: t for t in make_lp_tools(retriever, llm_client, state["student_model"], w["subject"], w)
+    tools = {t.name: t for t in make_lp_tools(retriever, plan_client or llm_client, state["student_model"], w["subject"], w)
              + make_planning_tools(retriever, llm_client)}
     results = dict(state.get("lp_results", {}))
     pending = [t for t in state["lp_tasks"] if t["id"] not in results]

@@ -47,7 +47,10 @@ def build_week(draft, brief: dict, sw: dict, ctx: dict) -> dict:
         mins = rescale([a.minutes for a in ds.activities], slot["minutes"]) if ds.activities else []
         types, acts = kn.get("problem_types") or [], []
         for a, m in zip(ds.activities, mins):
-            pt = types[sum(x["type"] == "exercise" for x in acts) % len(types)] if types and a.type == "exercise" else ""
+            if a.type == "exercise" and types:
+                pt = a.problem_type if a.problem_type in types else types[sum(x["type"] == "exercise" for x in acts) % len(types)]
+            else:
+                pt = ""
             acts.append({"type": a.type, "content": a.content, "minutes": m, "difficulty": levels[i], "problem_type": pt})
         s = {"date": slot["date"], "start_time": slot["start_time"], "minutes": slot["minutes"], "type": ds.type,
              "chapter_id": info["chapter_id"], "lesson": info["lesson"],
