@@ -212,40 +212,16 @@ class VectorStoreRetriever:
                 for p in points]
         return sorted(docs, key=lambda d: d.metadata.get("chunk_index", 0))
     
-    #new methods for colbert prefilter and rerank
-    # def colbert_prefilter(self, query: str, docs: list[Document], keep_top: int = 10) -> list[Document]:
-    #     """[THỬ NGHIỆM] Dùng ColBERT (late-interaction) lọc bớt docs trước khi vào CrossEncoder."""
-    #     if not self._colbert or not docs:
-    #         return docs
-    #     query_emb = list(self._colbert.query_embed(query))[0]
-    #     doc_embs = list(self._colbert.embed([d.page_content for d in docs]))
-    #     scores = [float(np.sum(np.max(np.matmul(query_emb, de.T), axis=1))) for de in doc_embs]
-    #     ranked = sorted(zip(scores, docs), key=lambda x: x[0], reverse=True)
-    #     return [d for _, d in ranked[:keep_top]]
-
-    
-    # def rerank(self, query: str, docs: list, top_k: int = 3) -> list[Document]:
-    #     if not docs:
-    #         return []
-
-    #     if self.enable_colbert_prefilter:
-    #         before_count = len(docs)
-    #         docs = self.colbert_prefilter(query, docs, keep_top=max(top_k * 3, 10))
-    #         print(f" ========== ColBERT prefilter: {before_count} -> {len(docs)} docs ========== ")
-
-    #     pairs = [[query, doc.page_content] for doc in docs]
-    #     scores = self._reranker.predict(pairs)
-
-    #     ranked = sorted(zip(scores, docs), key=lambda x: x[0], reverse=True)
-
-    #     # logger.info(f"Rerank scores: {[round(float(s), 4) for s, _ in ranked]}")
-    #     print(f" ========== Rerank scores: {[round(float(s), 4) for s, _ in ranked]} ========== ")
-
-    #     top_docs = []
-    #     for score, doc in ranked[:top_k]:
-    #         doc.metadata["rerank_score"] = float(score)
-    #         top_docs.append(doc)
-    #     return top_docs
+    def lesson_plan_lessons(self, subject: str, chapter_id: str, limit: int = 80) -> dict:
+        """Chunk giáo án chi tiết của từng bài trong chương: {lesson_title: [Document, ...]} (không embedding)."""
+        docs = self.lesson_plan_search(subject, chapter_id, limit=limit, section_types=(
+            "lesson_info", "objectives", "must_know", "must_understand", "activity", "assessment"))
+        out = {}
+        for d in docs:
+            title = d.metadata.get("lesson_title")
+            if title:
+                out.setdefault(title, []).append(d)
+        return out
 
 
     def rerank(self, query: str, docs: list, top_k: int = 3, batch_size: int = 32) -> list[Document]:

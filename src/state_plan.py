@@ -301,10 +301,14 @@ class WeekDraft(BaseModel):
     self_check: WeekSelfCheck
 
 class ReviewIssue(BaseModel):
-    week_no: int = 0
-    problem: str
+    week_no: int = Field(default=0, description="Tuần có lỗi; 0 nếu lỗi chung hoặc tuần chưa có buổi chi tiết")
+    category: Literal["goal_deadline", "weak_first", "preferences", "assessment_cadence", "difficulty_progression", "weekly_load"]
+    severity: Literal["high", "medium", "low"]
+    evidence: str
+    fix: str
 
-class ReviewResult(BaseModel):           # rỗng = ổn
+class ReviewResult(BaseModel):           # pass + rỗng = ổn
+    verdict: Literal["pass", "revise"]
     issues: list[ReviewIssue] = []
 
 
