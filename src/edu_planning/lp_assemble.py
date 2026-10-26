@@ -90,6 +90,7 @@ def assemble_node(state: PlanState, llm_client: LLMClient) -> dict:
     weeks = [new.get(sw["week_no"]) or old[sw["week_no"]] for sw in sched["weeks"]]      # giữ tuần đã đạt
 
     notes = [a for a in state.get("lp_draft", {}).get("assumptions", []) if a.startswith("Cần xem lại")]   # ghi chú của review
+    notes += [f"Thiếu dữ liệu: {r['goal']}" for r in state.get("lp_results", {}).values() if "THIẾU" in r["text"]]
     schedule = {"start_date": sched["start_date"], "end_date": sched["deadline"],
                 "total_weeks": sched["weeks_remaining"] or w["num_weeks"],
                 "sessions_per_week": sched["sessions_per_week"], "minutes_per_session": sched["minutes_per_session"]}

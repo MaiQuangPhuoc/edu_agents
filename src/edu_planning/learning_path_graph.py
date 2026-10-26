@@ -4,7 +4,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".
 from langgraph.graph import StateGraph, START, END
 from src.state_plan import PlanState, LearningPath
 from src.clients.llm import LLMClient
-from src.edu_planning.lp_plan import plan_node, replan_node, find_gaps
+from src.edu_planning.lp_plan import plan_node
 from src.edu_planning.lp_execute import execute_node
 from src.edu_planning.lp_assemble import assemble_node
 from src.edu_planning.lp_critic import critic_node
@@ -31,11 +31,7 @@ def present_node(state: PlanState) -> dict:
 
 def _next_or_present(nxt: str):
     return lambda s: "present" if (s.get("lp_draft") or {}).get("error") else nxt
-
-def route_after_execute(state: PlanState) -> str:
-    return "replan" if find_gaps(state) and state.get("lp_replan_count", 0) < 1 else "assemble"
-
-
+ 
 def route_after_critic(state: PlanState) -> str:
     return "assemble" if state.get("lp_issues") and state.get("lp_revision_count", 0) < 3 else "present"
 
@@ -44,9 +40,8 @@ def make_learning_path_graph(retriever, llm_client: LLMClient, plan_client: LLMC
     plan_client = plan_client or llm_client          # Luna cho các bước dài; không truyền thì dùng chung 120b
     g = StateGraph(PlanState)
     g.add_node("outline", lambda s: outline_node(s, retriever, plan_client))
-    g.add_node("plan", lambda s: plan_node(s, llm_client))
+    g.add_node("plan", plan_node)
     g.add_node("execute", lambda s: execute_node(s, retriever, llm_client, plan_client))
-    g.add_node("replan", lambda s: replan_node(s, llm_client))
     g.add_node("assemble", lambda s: assemble_node(s, plan_client))
     g.add_node("critic", lambda s: critic_node(s, llm_client))
     g.add_node("present", present_node)
@@ -54,8 +49,7 @@ def make_learning_path_graph(retriever, llm_client: LLMClient, plan_client: LLMC
     g.add_edge(START, "outline")
     g.add_conditional_edges("outline", _next_or_present("plan"), {"plan": "plan", "present": "present"})
     g.add_conditional_edges("plan", _next_or_present("execute"), {"execute": "execute", "present": "present"})
-    g.add_conditional_edges("execute", route_after_execute, {"replan": "replan", "assemble": "assemble"})
-    g.add_edge("replan", "execute")
+    g.add_edge("execute", "assemble").
     g.add_edge("assemble", "critic")
     g.add_conditional_edges("critic", route_after_critic, {"assemble": "assemble", "present": "present"})
     g.add_edge("present", END)

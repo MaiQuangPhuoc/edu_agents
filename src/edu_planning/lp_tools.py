@@ -5,9 +5,7 @@ import json, sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from src.edu_planning.chapter_utils import normalize_chapter_id
 from langchain_core.tools import tool
-from src.state_plan import ChapterKnowledge
 from src.edu_exam.curriculum import get_subject_curriculum
-from src.edu_qa.paths import LP_CHAPTER_KNOWLEDGE_PROMPT_PATH
 
 CACHE_DIR = Path("data/cache/chapter_knowledge")    # đổi theo cấu trúc dự án
 DEFAULT_TARGET_SCORE = 7
@@ -52,57 +50,13 @@ def _analyze(retriever, llm_client, subject: str, chapter_id: str) -> dict:
     if cached:
         return cached
 
-    lessons = chapter["lessons"]                      # {lesson_name: [section, ...]}
-    names = list(lessons)
-    queries = []
-    for name in names:
-        secs = [s for s in lessons[name] if s != name][:4]
-        queries.append(f"{chapter['chapter_name']} {name} {'; '.join(secs)}".strip())
-
-    docs_list = []
-    for name, q in zip(names, queries):
-        docs = retriever.hybrid_search_qa(q, k=20, subject=subject)
-        docs = [d for d in docs if d.metadata.get("chapter_id") == chapter_id]
-        docs.sort(key=lambda d: d.metadata.get("lesson", "").lower() != name.lower())   # bài khớp lên trước
-        docs_list.append(docs[:6])
-    reranked = retriever.rerank_batch(queries, docs_list, top_k=3)
-
-    blocks = []
-    for name, docs in zip(names, reranked):
-        body = "\n".join(f"- {d.page_content[:600]}" for d in docs) or "- (không tìm thấy đoạn tài liệu)"
-        blocks.append(f"### {name}\nCác mục: {'; '.join(lessons[name])}\n{body}")
-
-    catalog = "\n".join(
-        f"chapter_id={cid} | {c['chapter_name']}: " + "; ".join(c["lessons"]) for cid, c in cur.items()
-    )
-    prompt = (LP_CHAPTER_KNOWLEDGE_PROMPT_PATH.read_text(encoding="utf-8")
-              .replace("{subject}", subject)
-              .replace("{chapter_id}", chapter_id)
-              .replace("{chapter_name}", chapter["chapter_name"])
-              .replace("{lessons}", "\n".join(f"- {n}" for n in names))
-              .replace("{chunks}", "\n\n".join(blocks))
-              .replace("{catalog}", catalog))
-
-    try:
-        result = llm_client.invoke_structured(ChapterKnowledge, [{"role": "user", "content": prompt}], max_tokens=4000)
-    except Exception as e:
-        return {"error": f"Phân tích chương {chapter_id} lỗi: {e}"}
-    if result is None:
+    from src.edu_planning.lp_knowledge import analyze_chapter     # import trong hàm để tránh vòng import
+    data, failed = analyze_chapter(retriever, llm_client, subject, chapter_id)
+    if len(failed) == len(data["lessons"]) or not any(ls["key_points"] for ls in data["lessons"]):
         return {"error": f"Không phân tích được chương {chapter_id}"}
-
-    valid_pairs = {(cid, l) for cid, c in cur.items() for l in c["lessons"]}
-    data = result.model_dump()
-    data["chapter_id"] = chapter_id
-    data["lessons"] = [ls for ls in data["lessons"] if ls["lesson"] in lessons]       # bỏ bài không có trong chương trình
-    for ls in data["lessons"]:
-
-        for r in ls["related"]:
-            r["chapter_id"] = normalize_chapter_id(subject, r["chapter_id"]) or r["chapter_id"]
-        ls["related"] = [r for r in ls["related"] if (r["chapter_id"], r["lesson"]) in valid_pairs]
-        
-    if not data["lessons"]:
-        return {"error": f"Kết quả phân tích chương {chapter_id} không khớp tên bài trong chương trình"}
-
+    if failed:                                  # lỗi một phần: trả kết quả nhưng không cache để lần sau thử lại
+        data["failed_lessons"] = failed
+        return data
     _save_cache(subject, chapter_id, data)
     return data
 

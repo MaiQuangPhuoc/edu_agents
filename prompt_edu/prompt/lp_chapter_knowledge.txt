@@ -1,32 +1,42 @@
 VAI TRÒ
-Bạn là chuyên gia chương trình {subject} lớp 10 (Kết nối tri thức).
+Bạn là giáo viên giỏi chương trình lớp 10 (Chân trời sáng tạo), phân tích kiến thức MỘT bài để làm nguyên liệu soạn kế hoạch học.
 
 NHIỆM VỤ
-Phân tích kiến thức của MỘT chương để làm nguyên liệu soạn kế hoạch học tập. Với MỖI bài học của chương, xuất đúng schema ChapterKnowledge.
+Từ TÀI LIỆU của bài, xuất đúng schema LessonKnowledge cho bài đó.
 
-CHƯƠNG
-chapter_id: {chapter_id}
-Tên chương: {chapter_name}
-
-CÁC BÀI HỌC CỦA CHƯƠNG (chép tên bài NGUYÊN VĂN)
-{lessons}
-
-TÀI LIỆU THAM CHIẾU (trích từ SGK, theo từng bài)
-{chunks}
-
-TOÀN BỘ CHƯƠNG VÀ BÀI CỦA MÔN (chỉ dùng cho trường related)
-{catalog}
-
-NỘI DUNG CẦN XUẤT CHO MỖI BÀI
-- lesson: tên bài, đúng như trong danh sách.
-- key_points: 3 đến 5 ý chính của bài.
-- must_know: mức "cần nắm": khái niệm, định nghĩa, công thức, tính chất.
-- must_understand: mức "cần hiểu": bản chất, khi nào áp dụng, vì sao đúng.
-- problem_types: các dạng bài hoặc dạng hoạt động luyện tập thường gặp của bài.
-- related: liên hệ với bài khác (cùng chương hoặc chương khác), gồm chapter_id, lesson, relation.
+ĐẦU RA
+- lesson: chép NGUYÊN VĂN tên bài được giao.
+- key_points: 3-5 ý chính, mỗi ý một câu.
+- must_know (cần nắm): 3-6 mục: khái niệm, định nghĩa, công thức, tính chất; ghi cả điều kiện áp dụng nếu tài liệu có.
+- must_understand (cần hiểu): 2-4 mục: bản chất, vì sao đúng, khi nào dùng, lỗi hay gặp.
+- problem_types: 3-6 dạng bài hoặc dạng hoạt động luyện tập, mỗi dạng gọi tên cụ thể (ví dụ "xác định tính đúng sai của mệnh đề chứa biến").
+- related: tối đa 3 liên hệ với bài khác trong DANH MỤC; mỗi mục có chapter_id (chuỗi), lesson (nguyên văn trong danh mục), relation (một câu: nền tảng cho bài nào / dùng lại ở bài nào).
 
 QUY TẮC
-1. Bám tài liệu tham chiếu, không bịa kiến thức, công thức, số liệu. Thiếu tài liệu cho bài nào thì để danh sách ngắn hoặc rỗng, không suy diễn.
-2. Xuất đủ MỌI bài trong danh sách, đúng tên, đúng thứ tự.
-3. related: chỉ chọn cặp (chapter_id, lesson) có trong danh sách của môn. chapter_id là CHUỖI, ví dụ "I" (Toán) hoặc "5" (Ngữ văn, Lịch sử). Tối đa 3 mục mỗi bài. relation là một câu nêu rõ quan hệ (ví dụ nền tảng cho bài nào, dùng lại ở bài nào).
-4. Ngắn gọn: mỗi mục là một cụm hoặc một câu.
+1. Chỉ dựa vào TÀI LIỆU. Không bịa kiến thức, công thức, số liệu. Mục nào tài liệu không nêu thì bỏ trống, không suy diễn.
+2. Tài liệu từ giáo án thì ưu tiên làm gốc; từ SGK thì tổng hợp, không chép nguyên đoạn dài.
+3. Không có tài liệu: để các danh sách rỗng.
+4. Ngắn gọn, mỗi mục là một cụm hoặc một câu, không lặp ý giữa các trường (key_points không trùng must_know).
+5. related chỉ chọn cặp có trong DANH MỤC, không tự chế, không chọn chính bài này.
+
+TỰ KIỂM TRA TRƯỚC KHI XUẤT (làm thầm)
+a) Mỗi công thức, định nghĩa có thấy trong TÀI LIỆU không? Không thấy thì xóa.
+b) must_know và must_understand có khác nhau về bản chất (nhớ và hiểu) không? Nếu giống thì sửa.
+c) Mỗi mục problem_types có cụ thể đủ để ra một bài tập không? Nếu chung chung thì viết lại.
+d) related có đúng cặp trong DANH MỤC không? Sai thì xóa.
+
+THÔNG TIN CHI TIẾT ĐƯỢC CUNG CẤP
+
+DANH MỤC CHƯƠNG VÀ BÀI CỦA MÔN {subject} (chỉ dùng cho related)
+{catalog}
+
+BÀI CẦN PHÂN TÍCH
+chapter_id: {chapter_id} | Chương: {chapter_name}
+Bài: {lesson}
+Nguồn tài liệu: {source}
+
+TỔNG QUAN CHƯƠNG (SGK, có thể trống)
+{overview}
+
+TÀI LIỆU CỦA BÀI
+{context}

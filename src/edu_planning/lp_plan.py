@@ -1,14 +1,12 @@
 import json, sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
-from src.state_plan import PlanState, TaskPlan
-from src.clients.llm import LLMClient
+from src.state_plan import PlanState
 from src.edu_exam.curriculum import get_subject_curriculum
-from src.edu_qa.paths import LP_PLANNER_PROMPT_PATH
+from src.edu_planning.plan_search import wants_resources
 from src.edu_planning.lp_tools import _build_schedule
 from src.edu_planning.chapter_utils import normalize_chapter_id
 
 MAX_WINDOW_CHAPTERS = 2      # số chương tối đa trong cửa sổ chi tiết (quy tắc tự đặt)
-MAX_GENERATED = 3
 
 
 def phases_in_scope(state: PlanState) -> list[dict]:
@@ -35,6 +33,7 @@ def build_window(state: PlanState) -> dict:
         "phase": phase["thu_tu"], "phase_name": phase.get("ten", ""),
         "phase_goal": phase.get("muc_tieu", ""), "subject": subject,
         "chapter_ids": list(lessons), "chapter_lessons": lessons,
+        "chapter_names": {c: get_subject_curriculum(subject).get(c, {}).get("chapter_name", "") for c in lessons},
     }
 
 
@@ -51,49 +50,19 @@ def student_text(sm: dict) -> str:
     keep = {k: v for k, v in sm.items() if k != "tien_do" and v not in (None, "", [], {})}
     return json.dumps(keep, ensure_ascii=False, separators=(",", ":"))
 
-
-def fixed_tasks(w: dict) -> list[dict]:
-    ids = ", ".join(w["chapter_ids"])
-    return [
-        {"id": "F1", "origin": "fixed", "depends_on": [],
-         "goal": f"Nắm kiến thức cần dạy của các chương {ids} (kiến thức chính, cần nắm, cần hiểu, dạng bài, liên hệ giữa các bài)."}
-    ]
-
-
-def _generate(state: PlanState, llm_client: LLMClient, existing: list[dict], replan: str) -> list[dict]:
-    w = state["lp_window"]
-    prompt = (LP_PLANNER_PROMPT_PATH.read_text(encoding="utf-8")
-              .replace("{student_model}", student_text(state["student_model"]))
-              .replace("{window}", window_text(w))
-              .replace("{fixed_tasks}", "\n".join(f"{t['id']}: {t['goal']}" for t in existing))
-              .replace("{replan}", replan))
-    try:
-        plan = llm_client.invoke_structured(TaskPlan, [{"role": "user", "content": prompt}], max_tokens=1500)
-    except Exception as e:
-        print(f"[lp_plan] lỗi: {e}")
-        plan = None
-    if plan is None:
-        return []
-
-    known = {t["id"] for t in existing}
-    start = sum(t["origin"] == "generated" for t in existing)
-    out = []
-    for i, t in enumerate(plan.tasks[:MAX_GENERATED], start + 1):
-        t = t.model_dump()
-        t.update(id=f"g{i}", origin="generated", depends_on=[d for d in t["depends_on"] if d in known])
-        known.add(t["id"])      # chỉ cho phép phụ thuộc bước đã có trước đó => không có vòng
-        out.append(t)
-    return out
+def make_tasks(w: dict, student_model: dict) -> list[dict]:
+    """Việc cần làm sinh bằng code: mỗi chương một việc kiến thức (k_), và một việc tài nguyên (g_) nếu học sinh dùng video/tài liệu."""
+    tasks = []
+    for cid in w["chapter_ids"]:
+        tasks.append({"id": f"k_{cid}", "kind": "knowledge", "chapter_id": cid, "depends_on": [],
+                      "goal": f"Phân tích kiến thức từng bài của chương {cid}"})
+        if wants_resources(student_model):
+            tasks.append({"id": f"g_{cid}", "kind": "resources", "chapter_id": cid, "depends_on": [],
+                          "goal": f"Tìm tài liệu và video cho chương {cid}"})
+    return tasks
 
 
-def find_gaps(state: PlanState) -> list[str]:
-    gaps = [f"{tid} ({r['goal']}): {r['text'][:200]}"
-            for tid, r in state.get("lp_results", {}).items() if "THIẾU" in r["text"]]
-    
-    return gaps
-
-
-def plan_node(state: PlanState, llm_client: LLMClient) -> dict:
+def plan_node(state: PlanState) -> dict:
     print(">>> [LP] plan")
     window = build_window(state)
 
@@ -101,13 +70,5 @@ def plan_node(state: PlanState, llm_client: LLMClient) -> dict:
     if "error" in sched:
         return {"lp_draft": {"error": sched["error"]}}
     window["slots"] = sched                      # đóng băng lịch: các bước sau chỉ đọc lại, không tính lại
-    tasks = fixed_tasks(window)
-    tasks += _generate({**state, "lp_window": window}, llm_client, tasks, "(không có)")
-    return {"lp_window": window, "lp_tasks": tasks, "lp_results": {}, "lp_replan_count": 0,
+    return {"lp_window": window, "lp_tasks": make_tasks(window, state["student_model"]), "lp_results": {},
             "lp_issues": {}, "lp_revision_count": 0, "current_step": "learning_path"}
-
-
-def replan_node(state: PlanState, llm_client: LLMClient) -> dict:
-    print(">>> [LP] replan")
-    new = _generate(state, llm_client, state["lp_tasks"], "\n".join(find_gaps(state)))
-    return {"lp_tasks": state["lp_tasks"] + new, "lp_replan_count": state.get("lp_replan_count", 0) + 1}

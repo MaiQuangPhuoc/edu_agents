@@ -39,8 +39,7 @@ QUERY_TRANSFORM_PROMPT_PATH = PROMPT_DIR / "query_transform.txt"
 LP_CHAPTER_KNOWLEDGE_PROMPT_PATH = PROMPT_DIR / "lp_chapter_knowledge.txt"
 
 
-LP_PLANNER_PROMPT_PATH = PROMPT_DIR / "lp_planner.txt"
-LP_EXECUTOR_PROMPT_PATH = PROMPT_DIR / "lp_executor.txt"
+LP_RESOURCES_PROMPT_PATH = PROMPT_DIR / "lp_resources.txt"
 LP_ASSEMBLE_PROMPT_PATH = PROMPT_DIR / "lp_assemble.txt"
 
 

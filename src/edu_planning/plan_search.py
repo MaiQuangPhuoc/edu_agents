@@ -1,5 +1,5 @@
 import json
-
+from concurrent.futures import ThreadPoolExecutor
 MAX_CALLS = 4
 
 
@@ -43,9 +43,9 @@ def _fmt_items(res) -> str:
     return "\n".join(out)
 
 def run_calls(tools: dict, calls: list, subject: str, allowed: list, sm: dict) -> str:
-    """Chạy tuần tự các lần tra web/video do LLM lập. Trả về nhật ký tra cứu dạng text."""
+    """Chạy các lần tra web/video do LLM lập (song song, giữ nguyên thứ tự). Trả về nhật ký tra cứu dạng text."""
     p = _pref(sm)
-    lines = []
+    todo = []
     for c in calls[:MAX_CALLS]:
         if c.tool == "search_videos" and not p.get("dung_video"):
             continue
@@ -54,9 +54,14 @@ def run_calls(tools: dict, calls: list, subject: str, allowed: list, sm: dict) -
         if c.chapter_id and c.chapter_id not in allowed:
             print(f"[planning] bỏ lần tra ngoài phạm vi: {c.tool} chương {c.chapter_id}")
             continue
+        todo.append(c)
+
+    def one(c):
         args = {"query": c.query, "subject": subject}
         res = _call(tools[c.tool], args)
         print(f"[planning] tra: {c.tool} {args} -> {0 if _empty(res) else len(res)} kết quả")
         ch = f" (chương {c.chapter_id})" if c.chapter_id else ""
-        lines.append(f"[Tra cứu] {c.tool}{ch}: {c.query}\n{_fmt_items(res)}")
-    return "\n".join(lines)
+        return f"[Tra cứu] {c.tool}{ch}: {c.query}\n{_fmt_items(res)}"
+
+    with ThreadPoolExecutor(max_workers=MAX_CALLS) as ex:
+        return "\n".join(ex.map(one, todo))
