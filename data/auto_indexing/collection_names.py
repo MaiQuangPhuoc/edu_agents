@@ -1,0 +1,16 @@
+# Tự động ghi; chỉ đọc bằng ast.literal_eval, không import/exec.
+COLLECTION_NAMES = {'lich_su_10': {'collection_name': 'lich_su_10',
+                'error': 'Chưa cấu hình QDRANT_URL.',
+                'job_id': '20261027T080705Z_e5f602db4e35',
+                'status': 'failed',
+                'updated_at': '2026-10-27T08:07:06.288798+00:00'},
+ 'toan 10': {'collection_name': 'toan 10',
+             'error': 'Chưa cấu hình QDRANT_URL.',
+             'job_id': '20261027T073957Z_22dc6b3ff66a',
+             'status': 'failed',
+             'updated_at': '2026-10-27T07:39:58.874296+00:00'},
+ 'toan10': {'collection_name': 'toan10',
+            'error': 'Chưa cấu hình QDRANT_URL.',
+            'job_id': '20261027T074829Z_8ed8fca555c8',
+            'status': 'failed',
+            'updated_at': '2026-10-27T07:48:30.527797+00:00'}}

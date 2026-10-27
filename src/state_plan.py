@@ -198,17 +198,25 @@ class ChapterKnowledge(BaseModel):
     chapter_id: str = ""
     lessons: list[LessonKnowledge]
 
-class FollowUp(BaseModel):
-    source: Literal["textbook", "web", "video"]
+class ResourceQuery(BaseModel):
+    purpose: Literal["theory", "review", "practice", "exam"]       # bài giảng, ôn tập, giải bài tập, đề ôn thi
+    tool: Literal["video", "web"]
     query: str
-    lesson: str = Field(default="", description="Bắt buộc khi source = textbook: tên bài chép nguyên văn")
 
 
-class VerifyResult(BaseModel):
-    sufficient: bool
-    missing: list[str] = []
-    irrelevant_urls: list[str] = []
-    follow_up_queries: list[FollowUp] = []
+class ResourceQueryPlan(BaseModel):
+    candidates: list[ResourceQuery]       # nhiều ứng viên
+    chosen: list[ResourceQuery]           # vài query tốt nhất, lọc từ candidates
+    
+class ItemVerdict(BaseModel):
+    id: int
+    keep: bool
+    lesson: str = Field(default="", description="Tên bài hợp nhất (chép nguyên văn); rỗng nếu dùng chung cả chương")
+    reason: str = ""
+
+
+class ResourceVerdict(BaseModel):
+    items: list[ItemVerdict]
     
 class Activity(BaseModel):
     type: Literal["lecture", "reading", "video", "exercise", "summary", "review"]
@@ -286,6 +294,18 @@ class OutlineSelfCheck(BaseModel):
 class OutlinePlan(BaseModel):
     weeks: list[OutlineWeek]
     self_check: OutlineSelfCheck
+
+class FollowUp(BaseModel):
+    source: Literal["textbook", "web", "video"]
+    query: str
+    lesson: str = Field(default="", description="Bắt buộc khi source = textbook: tên bài chép nguyên văn")
+
+
+class VerifyResult(BaseModel):
+    sufficient: bool
+    missing: list[str] = []
+    irrelevant_urls: list[str] = []
+    follow_up_queries: list[FollowUp] = []
 
 class ActivityDraft(BaseModel):
     type: Literal["lecture", "reading", "video", "exercise", "summary", "review"]

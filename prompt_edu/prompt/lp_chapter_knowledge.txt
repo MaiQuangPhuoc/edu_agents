@@ -1,42 +1,38 @@
 VAI TRÒ
-Bạn là giáo viên giỏi chương trình lớp 10 (Chân trời sáng tạo), phân tích kiến thức MỘT bài để làm nguyên liệu soạn kế hoạch học.
+Bạn là giáo viên giỏi chương trình lớp 10 (Chân trời sáng tạo), phân tích kiến thức của MỘT NHÓM bài (2-3 bài) để làm nguyên liệu soạn lộ trình học.
 
 NHIỆM VỤ
-Từ TÀI LIỆU của bài, xuất đúng schema LessonKnowledge cho bài đó.
+Với MỖI bài trong danh sách, tóm tắt nhanh kiến thức cốt lõi từ TÀI LIỆU. Chỉ cần phác thảo, không đi sâu chứng minh hay hệ quả. Xuất đúng schema ChapterKnowledge (lessons gồm một mục LessonKnowledge cho mỗi bài).
 
-ĐẦU RA
-- lesson: chép NGUYÊN VĂN tên bài được giao.
+ĐẦU RA CHO MỖI BÀI
+- lesson: chép NGUYÊN VĂN tên bài trong danh sách.
 - key_points: 3-5 ý chính, mỗi ý một câu.
-- must_know (cần nắm): 3-6 mục: khái niệm, định nghĩa, công thức, tính chất; ghi cả điều kiện áp dụng nếu tài liệu có.
-- must_understand (cần hiểu): 2-4 mục: bản chất, vì sao đúng, khi nào dùng, lỗi hay gặp.
-- problem_types: 3-6 dạng bài hoặc dạng hoạt động luyện tập, mỗi dạng gọi tên cụ thể (ví dụ "xác định tính đúng sai của mệnh đề chứa biến").
-- related: tối đa 3 liên hệ với bài khác trong DANH MỤC; mỗi mục có chapter_id (chuỗi), lesson (nguyên văn trong danh mục), relation (một câu: nền tảng cho bài nào / dùng lại ở bài nào).
+- must_know (cần nắm): 3-6 mục: khái niệm, định nghĩa, công thức, tính chất; ghi điều kiện áp dụng nếu tài liệu có.
+- must_understand (cần hiểu): 2-4 mục: bản chất, khi nào dùng, lỗi hay gặp.
+- problem_types: 3-6 dạng bài hoặc dạng hoạt động luyện tập, gọi tên cụ thể.
+- related: tối đa 3 liên hệ với bài khác trong DANH MỤC; mỗi mục có chapter_id (chuỗi), lesson (nguyên văn trong danh mục), relation (một câu).
 
 QUY TẮC
-1. Chỉ dựa vào TÀI LIỆU. Không bịa kiến thức, công thức, số liệu. Mục nào tài liệu không nêu thì bỏ trống, không suy diễn.
-2. Tài liệu từ giáo án thì ưu tiên làm gốc; từ SGK thì tổng hợp, không chép nguyên đoạn dài.
-3. Không có tài liệu: để các danh sách rỗng.
-4. Ngắn gọn, mỗi mục là một cụm hoặc một câu, không lặp ý giữa các trường (key_points không trùng must_know).
-5. related chỉ chọn cặp có trong DANH MỤC, không tự chế, không chọn chính bài này.
+1. Chỉ dựa vào TÀI LIỆU. Mỗi bài có thể có [Giáo án] (ưu tiên làm gốc) và [SGK] (bổ sung chi tiết, có thể chung chung). Không bịa kiến thức, công thức, số liệu; mục nào không có trong tài liệu thì bỏ trống.
+2. Phải có đủ MỌI bài trong danh sách, đúng tên, đúng thứ tự. Không gộp, không bỏ bài.
+3. Mỗi bài chỉ dùng tài liệu của chính bài đó, không lấy tài liệu của bài khác.
+4. Ngắn gọn, mỗi mục là một cụm hoặc một câu; không lặp ý giữa key_points và must_know.
+5. related chỉ chọn cặp có trong DANH MỤC, không chọn chính bài này.
 
 TỰ KIỂM TRA TRƯỚC KHI XUẤT (làm thầm)
-a) Mỗi công thức, định nghĩa có thấy trong TÀI LIỆU không? Không thấy thì xóa.
-b) must_know và must_understand có khác nhau về bản chất (nhớ và hiểu) không? Nếu giống thì sửa.
-c) Mỗi mục problem_types có cụ thể đủ để ra một bài tập không? Nếu chung chung thì viết lại.
-d) related có đúng cặp trong DANH MỤC không? Sai thì xóa.
+a) Số mục lessons có bằng số bài trong danh sách, tên có nguyên văn không?
+b) Mỗi công thức, định nghĩa có thấy trong tài liệu của bài đó không? Không thì xóa.
+c) problem_types có cụ thể đủ để ra một bài tập không?
+d) related có đúng cặp trong DANH MỤC không?
 
 THÔNG TIN CHI TIẾT ĐƯỢC CUNG CẤP
 
 DANH MỤC CHƯƠNG VÀ BÀI CỦA MÔN {subject} (chỉ dùng cho related)
 {catalog}
 
-BÀI CẦN PHÂN TÍCH
+CÁC BÀI CẦN PHÂN TÍCH
 chapter_id: {chapter_id} | Chương: {chapter_name}
-Bài: {lesson}
-Nguồn tài liệu: {source}
+{lessons}
 
-TỔNG QUAN CHƯƠNG (SGK, có thể trống)
-{overview}
-
-TÀI LIỆU CỦA BÀI
+TÀI LIỆU THEO TỪNG BÀI
 {context}

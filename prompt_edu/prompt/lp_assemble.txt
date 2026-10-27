@@ -21,8 +21,8 @@ A. Cấu trúc (bắt buộc)
 
 B. Nội dung một buổi
 6. Thứ tự gợi ý trong buổi lesson: nhắc nhanh kiến thức nền cần có (nếu bài cần), học lý thuyết (lecture, reading hoặc video), luyện tập (exercise) chiếm phần thời gian lớn nhất, tổng kết ngắn (summary).
-7. Bài thuộc chương học sinh yếu: dành nhiều thời gian cho lý thuyết và ví dụ mẫu trước khi luyện, bài tập từ dễ lên. Bài thuộc chương học sinh mạnh: giảm lý thuyết, tăng luyện tập và bài vận dụng.
-8. Nối các buổi liền nhau: nếu bài này là nền cho bài sau, buổi sau mở đầu bằng việc ôn nhanh ý chính bài trước.
+7. Theo mức nắm trong THÔNG TIN CHƯƠNG: bài thuộc chương Yếu thì dành nhiều thời gian cho lý thuyết và ví dụ mẫu trước khi luyện, bài tập từ dễ lên. Bài thuộc chương Mạnh thì giảm lý thuyết, tăng luyện tập và bài vận dụng. Chương Trung bình hoặc chưa có mức nắm thì cân bằng.
+8. Nối các buổi liền nhau: dựa vào dòng related của bài (bài nào là nền cho bài nào); nếu bài này là nền cho bài sau, buổi sau mở đầu bằng việc ôn nhanh ý chính bài trước. Lý do sườn xếp chương (trong THÔNG TIN CHƯƠNG) cho biết trọng tâm cần nhấn; chỉ dùng làm định hướng, không chép thành kiến thức.
 9. Hoạt động theo activity_types của khung tuần và sở thích học sinh, nhưng không vượt thời lượng buổi.
 10. content của hoạt động là MỘT câu nêu việc cụ thể (học sinh làm gì, với nội dung nào).
 
@@ -60,13 +60,16 @@ VÍ DỤ ĐỊNH DẠNG
 
 THÔNG TIN CHI TIẾT ĐƯỢC CUNG CẤP
 
-TUẦN SOẠN: tuần {week_no}
-
 HỒ SƠ HỌC SINH
 {student_model}
 
+TUẦN SOẠN: tuần {week_no}
+
 KHUNG TUẦN
 {week_outline}
+
+THÔNG TIN CHƯƠNG (mức nắm của học sinh, lý do xếp chương)
+{chapter_notes}
 
 BÀI CỦA TUẦN (mã bài, rồi kiến thức)
 {lessons_info}

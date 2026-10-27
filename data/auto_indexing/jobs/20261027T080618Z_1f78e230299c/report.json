@@ -1,0 +1,16 @@
+{
+  "job_id": "20261027T080618Z_1f78e230299c",
+  "uploaded_filename": "lich_su.pdf",
+  "uploaded_pdf_path": "D:\\PHUOC\\EDUAGENT\\data\\auto_indexing\\uploads\\004cb60737c64fb48761222e8176aba2.pdf",
+  "pdf_sha256": "dcbf021bd9f2727fadf452ef563df7f43b9a16478b50764097ad88ddbcc4a333",
+  "pdf_extracted": false,
+  "source_mode": "prepared_markdown",
+  "book_name": "lich_su_10",
+  "target_collection": "lich_su_10",
+  "report_path": "D:\\PHUOC\\EDUAGENT\\data\\auto_indexing\\jobs\\20261027T080618Z_1f78e230299c\\report.json",
+  "warnings": [],
+  "status": "failed",
+  "error": "Không có file .md trong thư mục giáo án đã chọn: D:\\PHUOC\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\canh_dieu\\lich_su_10",
+  "failed_stage": "selecting_prepared_markdown",
+  "qdrant_may_be_partial": false
+}

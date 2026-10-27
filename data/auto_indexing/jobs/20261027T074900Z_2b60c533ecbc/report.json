@@ -1,0 +1,28 @@
+{
+  "job_id": "20261027T074900Z_2b60c533ecbc",
+  "uploaded_filename": "toan_10.pdf",
+  "uploaded_pdf_path": "D:\\PHUOC\\EDUAGENT\\data\\auto_indexing\\uploads\\0cf5b52d615f4ffa9d5a9e5e30353850.pdf",
+  "pdf_sha256": "dcbf021bd9f2727fadf452ef563df7f43b9a16478b50764097ad88ddbcc4a333",
+  "pdf_extracted": false,
+  "source_mode": "prepared_markdown",
+  "book_name": "toan10",
+  "target_collection": "toan10",
+  "report_path": "D:\\PHUOC\\EDUAGENT\\data\\auto_indexing\\jobs\\20261027T074900Z_2b60c533ecbc\\report.json",
+  "warnings": [],
+  "status": "failed",
+  "subject": "toan_10",
+  "textbook_series": "chan_troi_sang_tao",
+  "total_chunks": 126,
+  "indexing_source_files": [
+    "D:\\PHUOC\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\toan_10\\chapter_I.md",
+    "D:\\PHUOC\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\toan_10\\chapter_II.md",
+    "D:\\PHUOC\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\toan_10\\chapter_III.md",
+    "D:\\PHUOC\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\toan_10\\chapter_IV.md",
+    "D:\\PHUOC\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\toan_10\\chapter_V.md",
+    "D:\\PHUOC\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\toan_10\\chapter_VI.md"
+  ],
+  "prepared_chunks_path": "D:\\PHUOC\\EDUAGENT\\data\\auto_indexing\\jobs\\20261027T074900Z_2b60c533ecbc\\prepared_chunks.json",
+  "error": "Collection \"toan10\" đã được sử dụng. Hãy nhập tên khác.",
+  "failed_stage": "chunking_prepared_markdown",
+  "qdrant_may_be_partial": false
+}

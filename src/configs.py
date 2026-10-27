@@ -67,7 +67,7 @@ class EnvConfig(BaseSettings):
     qdrant_api_key: Optional[str] = None
     qdrant_collection: str = ""
 
-    # ── kiểm tra kết quả tra cứu của lộ trình chi tiết (LP_VERIFY, LP_VERIFY_PARALLEL, LP_VERIFY_ROUNDS) ──
+    # ── lộ trình chi tiết: LLM kiểm ngữ nghĩa tài nguyên (UI có thể ghi đè bằng state['lp_verify']) ──
     lp_verify: bool = True
     lp_verify_parallel: bool = True
     lp_verify_rounds: int = 1

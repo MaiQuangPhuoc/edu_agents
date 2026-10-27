@@ -1,0 +1,9 @@
+# Install inside the project's existing virtual environment.
+pypdf>=5,<7
+PyYAML>=6,<7
+# Qdrant upload uses the project's langchain-qdrant, qdrant-client, fastembed,
+# langchain-huggingface and sentence-transformers installations.
+# Only needed when mounting router.py in FastAPI:
+python-multipart>=0.0.18,<1
+
+filelock>=3.16,<4

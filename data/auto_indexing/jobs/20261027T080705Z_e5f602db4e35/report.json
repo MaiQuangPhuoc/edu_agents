@@ -1,0 +1,30 @@
+{
+  "job_id": "20261027T080705Z_e5f602db4e35",
+  "uploaded_filename": "lich_su.pdf",
+  "uploaded_pdf_path": "D:\\PHUOC\\EDUAGENT\\data\\auto_indexing\\uploads\\6db0f211f90b4f81b9d38636323a98d4.pdf",
+  "pdf_sha256": "dcbf021bd9f2727fadf452ef563df7f43b9a16478b50764097ad88ddbcc4a333",
+  "pdf_extracted": false,
+  "source_mode": "prepared_markdown",
+  "book_name": "lich_su_10",
+  "target_collection": "lich_su_10",
+  "report_path": "D:\\PHUOC\\EDUAGENT\\data\\auto_indexing\\jobs\\20261027T080705Z_e5f602db4e35\\report.json",
+  "warnings": [],
+  "status": "failed",
+  "subject": "lich_su_10",
+  "textbook_series": "chan_troi_sang_tao",
+  "total_chunks": 103,
+  "indexing_source_files": [
+    "D:\\PHUOC\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\lich_su_10\\chapter_1.md",
+    "D:\\PHUOC\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\lich_su_10\\chapter_2.md",
+    "D:\\PHUOC\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\lich_su_10\\chapter_3.md",
+    "D:\\PHUOC\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\lich_su_10\\chapter_4.md",
+    "D:\\PHUOC\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\lich_su_10\\chapter_5.md",
+    "D:\\PHUOC\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\lich_su_10\\chapter_6.md",
+    "D:\\PHUOC\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\lich_su_10\\chapter_7.md"
+  ],
+  "prepared_chunks_path": "D:\\PHUOC\\EDUAGENT\\data\\auto_indexing\\jobs\\20261027T080705Z_e5f602db4e35\\prepared_chunks.json",
+  "collection_registry_path": "D:\\PHUOC\\EDUAGENT\\data\\auto_indexing\\collection_names.py",
+  "error": "Chưa cấu hình QDRANT_URL.",
+  "failed_stage": "creating_collection_and_uploading",
+  "qdrant_may_be_partial": true
+}

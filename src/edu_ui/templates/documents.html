@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block document_title %}EDUAGENT — Nạp tài liệu{% endblock %}
-{% block page_styles %}<link rel="stylesheet" href="/ui-static/css/documents.css">{% endblock %}
-{% block page_scripts %}<script defer src="/ui-static/js/documents.js"></script>{% endblock %}
+{% block page_styles %}<link rel="stylesheet" href="/ui-static/css/documents.css?v=viewer2">{% endblock %}
+{% block page_scripts %}<script defer src="/ui-static/js/documents.js?v=viewer2"></script>{% endblock %}
 {% block body_class %}documents-page{% endblock %}
 {% block page_title %}Nạp tài liệu{% endblock %}
 {% block page_description %}Thêm sách giáo khoa hoặc chọn tài liệu học tập của riêng bạn.{% endblock %}
@@ -21,7 +21,7 @@
       <input type="file" id="book-file" accept=".pdf,application/pdf" hidden>
     </div>
     <div id="book-file-info" class="chosen" aria-live="polite"></div>
-    <p class="notice upload-notice">Tệp hiện chỉ được chọn để xem trước, chưa tải lên máy chủ.</p>
+    <p class="notice upload-notice">Chọn PDF để lưu và xem. Tên sách được dùng làm tên bộ dữ liệu và không được trùng tên đã sử dụng.</p>
     <h3 class="book-form-heading">Thông tin sách</h3>
     <form id="book-form">
       <label for="series">Bộ sách</label>
@@ -60,6 +60,14 @@
       <div id="book-confirmed-file-info" class="confirmed-file" aria-live="polite"></div>
     </div>
   </div>
+    <section id="book-file-viewer" class="card uploaded-file-viewer" hidden aria-labelledby="book-file-viewer-title">
+      <div class="uploaded-file-heading">
+        <h3 id="book-file-viewer-title">Xem sách vừa tải</h3>
+        <a id="book-file-open" target="_blank" rel="noopener">Mở toàn màn hình</a>
+      </div>
+      <p id="book-file-viewer-name" class="muted"></p>
+      <iframe id="book-file-frame" title="Nội dung PDF vừa tải"></iframe>
+    </section>
 </section>
 <section id="private-panel" class="private-workspace" hidden>
   <section class="card private-form-card" aria-labelledby="private-heading">
@@ -77,7 +85,7 @@
         <input type="file" id="private-file" multiple accept=".pdf,.docx,.txt,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png" hidden>
       </div>
       <div class="chosen" id="private-file-info"></div>
-      <p class="notice">Tài liệu được lưu trong danh sách trên trình duyệt; file chưa được tải lên máy chủ hoặc lập chỉ mục RAG.</p>
+      <p class="notice">PDF được lưu để xem lại; tên tài liệu dùng làm tên bộ dữ liệu và phải khác tên đã sử dụng. Các định dạng khác chỉ được xem trước trong trình duyệt.</p>
       <button class="primary private-confirm" type="submit" id="confirm-private">Xác nhận tài liệu</button>
     </form>
   </section>
@@ -94,6 +102,11 @@
       </div>
     </div>
   </aside>
+  <section id="private-file-viewer" class="card uploaded-file-viewer" aria-labelledby="private-file-viewer-title">
+    <div class="uploaded-file-heading"><h3 id="private-file-viewer-title">Xem tài liệu vừa tải</h3></div>
+    <div id="private-preview-files" class="preview-file-tabs" aria-label="Các file đã chọn"></div>
+    <div id="private-file-content"><p class="viewer-placeholder">Chọn hoặc kéo thả file ở trên để xem nội dung tại đây.</p></div>
+  </section>
 </section>
 <section class="card list">
   <div class="list-header"><div><span class="small-label">THƯ VIỆN CÁ NHÂN</span><h2>Sách &amp; tài liệu đã thêm</h2></div><button type="button" id="refresh">Làm mới</button></div>
@@ -101,3 +114,4 @@
 </section>
 <p id="status" role="status" aria-live="polite"></p>
 {% endblock %}
+

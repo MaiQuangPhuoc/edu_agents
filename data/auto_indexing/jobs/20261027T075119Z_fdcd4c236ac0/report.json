@@ -1,0 +1,16 @@
+{
+  "job_id": "20261027T075119Z_fdcd4c236ac0",
+  "uploaded_filename": "lich_su.pdf",
+  "uploaded_pdf_path": "D:\\PHUOC\\EDUAGENT\\data\\auto_indexing\\uploads\\f57fedc9f4ba460a855f735db254122c.pdf",
+  "pdf_sha256": "dcbf021bd9f2727fadf452ef563df7f43b9a16478b50764097ad88ddbcc4a333",
+  "pdf_extracted": false,
+  "source_mode": "prepared_markdown",
+  "book_name": "ls10",
+  "target_collection": "ls10",
+  "report_path": "D:\\PHUOC\\EDUAGENT\\data\\auto_indexing\\jobs\\20261027T075119Z_fdcd4c236ac0\\report.json",
+  "warnings": [],
+  "status": "failed",
+  "error": "Chưa có Markdown giáo án gốc khớp 'Lịch sử 10 chan_troi_sang_tao.pdf' trong D:\\PHUOC\\EDUAGENT\\src\\modules\\documents\\lesson_plans.",
+  "failed_stage": "selecting_prepared_markdown",
+  "qdrant_may_be_partial": false
+}
