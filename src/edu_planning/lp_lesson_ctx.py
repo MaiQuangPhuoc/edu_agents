@@ -78,3 +78,16 @@ def chapter_contexts(retriever, subject: str, chapter_id: str) -> dict:
         else:
             lessons[n] = {"source": "none", "text": ""}
     return {"overview": overview, "lessons": lessons}
+
+
+def sgk_extra(retriever, subject: str, chapter_id: str, query: str) -> str:
+    """Tra thêm SGK theo một câu hỏi (dùng khi bước kiểm tra thấy thiếu kiến thức)."""
+    use_rerank = subject not in NO_RERANK
+    try:
+        docs = retriever.search_sgk(query, subject, chapter_id, k=SGK_FETCH if use_rerank else SGK_PER_LESSON)
+        if use_rerank:
+            docs = retriever.rerank(query, docs, top_k=SGK_PER_LESSON)
+    except Exception as e:
+        print(f"[ctx] lỗi tra thêm SGK {subject} chương {chapter_id}: {type(e).__name__} {str(e)[:150]}")
+        return ""
+    return "\n".join(f"- {d.page_content[:SGK_MAX_CHARS]}" for d in docs)

@@ -67,6 +67,11 @@ class EnvConfig(BaseSettings):
     qdrant_api_key: Optional[str] = None
     qdrant_collection: str = ""
 
+    # ── kiểm tra kết quả tra cứu của lộ trình chi tiết (LP_VERIFY, LP_VERIFY_PARALLEL, LP_VERIFY_ROUNDS) ──
+    lp_verify: bool = True
+    lp_verify_parallel: bool = True
+    lp_verify_rounds: int = 1
+    
     console_log_level: Literal["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"] = "INFO"
     file_log_format: str = "%(asctime)s %(levelname)s %(message)s"
     console_log_format: str = "%(levelname)s %(message)s"

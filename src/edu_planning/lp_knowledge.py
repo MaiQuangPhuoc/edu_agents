@@ -6,10 +6,14 @@ from src.clients.llm import build_prompt_messages
 from src.state_plan import LessonKnowledge
 from src.edu_exam.curriculum import get_subject_curriculum
 from src.edu_qa.paths import LP_CHAPTER_KNOWLEDGE_PROMPT_PATH
-from src.edu_planning.lp_lesson_ctx import chapter_contexts
+from src.edu_planning.lp_lesson_ctx import chapter_contexts, _lesson_plan_ctx, sgk_extra
 
 MAX_WORKERS = 3
 _ctx_lock = threading.Lock()       # embedding và rerank dùng chung 1 model, các chương chạy song song nên cần khóa
+
+def _catalog(cur: dict) -> tuple[str, set]:
+    text = "\n".join(f"chapter_id={cid} | {c['chapter_name']}: " + "; ".join(c["lessons"]) for cid, c in cur.items())
+    return text, {(cid, l) for cid, c in cur.items() for l in c["lessons"]}
 
 def _analyze_lesson(llm_client, subject, chapter_id, chapter, name, ctx, overview, catalog):
     """Trả (LessonKnowledge dict, lỗi hoặc None). Không có tài liệu thì không gọi LLM."""
@@ -38,8 +42,7 @@ def analyze_chapter(retriever, llm_client, subject: str, chapter_id: str) -> tup
     for n in names:
         c = ctxs["lessons"][n]
         print(f"[knowledge] {subject} chương {chapter_id} | {n} | nguồn={c['source']} | {len(c['text'])} ký tự")
-    catalog = "\n".join(f"chapter_id={cid} | {c['chapter_name']}: " + "; ".join(c["lessons"]) for cid, c in cur.items())
-    valid = {(cid, l) for cid, c in cur.items() for l in c["lessons"]}
+    catalog, valid = _catalog(cur)
 
     def run(n):
         return _analyze_lesson(llm_client, subject, chapter_id, chapter, n, ctxs["lessons"][n],
@@ -56,3 +59,21 @@ def analyze_chapter(retriever, llm_client, subject: str, chapter_id: str) -> tup
             failed.append(n)
             print(f"[knowledge] lỗi bài {n}: {err}")
     return {"chapter_id": chapter_id, "lessons": lessons}, failed
+
+def refine_lesson(retriever, llm_client, subject: str, chapter_id: str, name: str, query: str) -> dict | None:
+    """Phân tích lại MỘT bài với giáo án (nếu có) cộng SGK tra thêm theo query. Trả None nếu không có thêm gì hoặc lỗi."""
+    cur = get_subject_curriculum(subject)
+    catalog, valid = _catalog(cur)
+    with _ctx_lock:
+        plan = _lesson_plan_ctx(retriever, subject, chapter_id, [name]).get(name, "")
+        extra = sgk_extra(retriever, subject, chapter_id, query)
+    if not extra:
+        return None
+    ctx = {"source": "lesson_plan" if plan else "sgk", "text": "\n".join(x for x in (plan, extra) if x)}
+    ls, err = _analyze_lesson(llm_client, subject, chapter_id, cur[chapter_id], name, ctx, "", catalog)
+    if err:
+        print(f"[knowledge] refine lỗi bài {name}: {err}")
+        return None
+    ls["lesson"] = name
+    ls["related"] = [r for r in ls["related"] if (r["chapter_id"], r["lesson"]) in valid and r["lesson"] != name]
+    return ls

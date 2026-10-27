@@ -198,6 +198,18 @@ class ChapterKnowledge(BaseModel):
     chapter_id: str = ""
     lessons: list[LessonKnowledge]
 
+class FollowUp(BaseModel):
+    source: Literal["textbook", "web", "video"]
+    query: str
+    lesson: str = Field(default="", description="Bắt buộc khi source = textbook: tên bài chép nguyên văn")
+
+
+class VerifyResult(BaseModel):
+    sufficient: bool
+    missing: list[str] = []
+    irrelevant_urls: list[str] = []
+    follow_up_queries: list[FollowUp] = []
+    
 class Activity(BaseModel):
     type: Literal["lecture", "reading", "video", "exercise", "summary", "review"]
     content: str

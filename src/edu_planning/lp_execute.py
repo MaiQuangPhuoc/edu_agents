@@ -9,6 +9,7 @@ from src.edu_planning.lp_tools import _analyze
 from src.edu_planning.planning_tools import make_planning_tools
 from src.edu_planning.plan_search import run_calls
 from src.edu_planning.lp_plan import student_text
+from src.edu_planning.lp_verify import verify_all
 
 MAX_WORKERS = 3
 
@@ -53,4 +54,5 @@ def execute_node(state: PlanState, retriever, llm_client: LLMClient, plan_client
         outs = list(ex.map(run, state["lp_tasks"]))       # các việc độc lập nhau nên chạy song song
     results = {t["id"]: r for t, r, _ in outs}
     knowledge = {t["chapter_id"]: k for t, _, k in outs if k}
+    results, knowledge = verify_all(state, retriever, llm_client, plan_client, tools, results, knowledge)
     return {"lp_results": results, "lp_knowledge": knowledge, "current_step": "learning_path"}
