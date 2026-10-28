@@ -12,7 +12,7 @@ _yt_lock = threading.Lock()   # googleapiclient không thread-safe
 
 def _get_details(video_ids: list[str]) -> dict:
     yt = get_youtube_client()
-    resp = yt.videos().list(part="contentDetails,statistics", id=",".join(video_ids)).execute()
+    resp = yt.videos().list(part="contentDetails,statistics,snippet", id=",".join(video_ids)).execute()
     out = {}
     for it in resp.get("items", []):
         st = it.get("statistics", {})
@@ -20,6 +20,7 @@ def _get_details(video_ids: list[str]) -> dict:
             "duration": int(isodate.parse_duration(it["contentDetails"]["duration"]).total_seconds()),
             "views": int(st["viewCount"]) if "viewCount" in st else None,
             "likes": int(st["likeCount"]) if "likeCount" in st else None,
+            "description": it.get("snippet", {}).get("description", "")[:300],
         }
     return out
 
@@ -65,4 +66,5 @@ def search_youtube_lecture(query: str, llm_client=None, max_results: int = 2) ->
              "url": f"https://youtube.com/watch?v={it['video_id']}",
              "duration_sec": det[it["video_id"]]["duration"],
              "views": det[it["video_id"]]["views"], "likes": det[it["video_id"]]["likes"],
+             "description": det[it["video_id"]]["description"],
              "subscribers": subs.get(it["channel_id"])} for it in items]

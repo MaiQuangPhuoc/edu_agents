@@ -82,37 +82,5 @@
       "lesson_plan_id": "a9f58829-148b-5279-ae4f-ab302a2a863f"
     },
     "file_url": null
-  },
-  {
-    "kind": "private",
-    "server_saved": true,
-    "document_id": "b2505959-1e79-4586-9016-06e1ae355e95",
-    "book_id": "84c7dc10-8032-4c3c-a50a-946287c0a239",
-    "grade": 10,
-    "title": "lich su 10",
-    "subject": "Toán",
-    "series": "chan_troi",
-    "display_name": "lich su 10",
-    "description": "",
-    "cover_url": null,
-    "rag_ready": true,
-    "collection_name": "giao_an",
-    "indexing_status": "completed",
-    "uploaded_filename": "ngu_van_10.pdf",
-    "uploaded_pdf_path": "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\data\\auto_indexing\\uploads\\a96692c3e1304660ad299080ae763473.pdf",
-    "file": {
-      "name": "ngu_van_10.pdf",
-      "size": 613650,
-      "type": "application/pdf"
-    },
-    "indexing": {
-      "job_id": "20261027T151745Z_eeac57c98d82",
-      "report_path": "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\data\\auto_indexing\\jobs\\20261027T151745Z_eeac57c98d82\\report.json",
-      "total_chunks": 126,
-      "source_mode": "prepared_markdown",
-      "lesson_plan_name": "lich su 10",
-      "lesson_plan_id": "a68649e5-e90f-5e40-90d1-b7ac65dd14cc"
-    },
-    "file_url": "/api/ui/books/mine/b2505959-1e79-4586-9016-06e1ae355e95/file?student_id=hs_002"
   }
 ]

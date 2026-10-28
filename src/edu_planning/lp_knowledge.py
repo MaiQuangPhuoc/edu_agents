@@ -7,7 +7,7 @@ from src.clients.llm import build_prompt_messages
 from src.state_plan import ChapterKnowledge, LessonKnowledge
 from src.edu_exam.curriculum import get_subject_curriculum
 from src.edu_qa.paths import LP_CHAPTER_KNOWLEDGE_PROMPT_PATH
-from src.edu_planning.lp_lesson_ctx import chapter_contexts, _lesson_plan_ctx, sgk_extra
+from src.edu_planning.lp_lesson_ctx import chapter_contexts
 
 MAX_WORKERS = 3
 GROUP_SIZE = 3                  # tối đa số bài phân tích trong một lần gọi

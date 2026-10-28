@@ -34,7 +34,7 @@ def check_week(week: dict, brief: dict, n_slots: int) -> list[str]:
 
 
 def critic_node(state: PlanState, llm_client: LLMClient) -> dict:
-    print(">>> [LP] critic")
+    print(">>> =============================== [LP] critic ==============================="*2)
     draft, w = state.get("lp_draft", {}), state["lp_window"]
     if not draft or "error" in draft:
         return {"lp_issues": {}}

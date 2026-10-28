@@ -150,6 +150,31 @@ def llm_verify(items: list[dict], chapter_name: str, lessons: list[str], llm_cli
             continue
         out.append({**it, "lesson": v.lesson if v and v.lesson in lessons else ""})
     return out
+_HEAD = re.compile(r"^\[Tra cứu\] \S+ \(chương ([^)]+)\):")
+_ROW = re.compile(r"^- \[(video|tài liệu)\] (.+?) \|(?: (.+?) \|)? (https?://\S+)\s*$")
+
+
+def seed_items(transcript: str, chapter_id: str) -> list[dict]:
+    """Lấy lại kết quả tra tài nguyên mà bước lập sườn đã tìm (nhật ký plan_transcript) cho một chương."""
+    cur, out = None, []
+    for line in transcript.split("\n"):
+        m = _HEAD.match(line)
+        if m:
+            cur = m.group(1).strip()
+            continue
+        r = _ROW.match(line)
+        if r and cur == chapter_id:
+            kind = "video" if r.group(1) == "video" else "web"
+            extra = r.group(3) or ""
+            ch, mins = re.search(r"kênh (.+?) \(", extra), re.search(r"(\d+) phút", extra)
+            it = {"kind": kind, "purpose": "chung", "title": r.group(2), "url": r.group(4), "desc": "", "meta": "",
+                  "source": "sườn"}
+            if kind == "video":
+                it.update(channel=ch.group(1) if ch else "?", minutes=int(mins.group(1)) if mins else None,
+                          views=None, likes=None, subs=None)
+                it["meta"] = f"kênh {it['channel']} | {it['minutes']} phút"
+            out.append(it)
+    return out
 
 def items_text(items: list[dict]) -> str:
     return "\n".join(f"- [{i['kind']}|{i['purpose']}] {i['title']} | " + (f"{i['meta']} | " if i["meta"] else "") + i["url"]
@@ -166,6 +191,9 @@ def fetch_resources(task: dict, state, llm_client, tools: dict) -> dict:
         return {"goal": task["goal"], "text": f"THIẾU: lỗi lập query ({str(e)[:100]})", "evidence": ""}
     if not queries:
         return {"goal": task["goal"], "text": "THIẾU: không có query hợp lệ", "evidence": ""}
+    found = search_all(queries, w["subject"], tools) + seed_items(state.get("plan_transcript", ""), cid)   # thêm kết quả của sườn
+    items = top_per_group(code_check(found, name, lessons), PER_GROUP_FETCH)
+
     items = top_per_group(code_check(search_all(queries, w["subject"], tools), name, lessons), PER_GROUP_FETCH)
     if items and state.get("lp_verify", env_config.lp_verify):
         items = llm_verify(items, name, lessons, llm_client)

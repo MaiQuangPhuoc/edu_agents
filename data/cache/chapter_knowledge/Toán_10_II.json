@@ -1,0 +1,72 @@
+{
+  "chapter_id": "II",
+  "lessons": [
+    {
+      "lesson": "Bất phương trình bậc nhất hai ẩn",
+      "key_points": [
+        "Bất phương trình bậc nhất hai ẩn có dạng tuyến tính với hai ẩn và biểu diễn nghiệm bằng các điểm trên mặt phẳng tọa độ.",
+        "Kiểm tra một cặp số có là nghiệm hay không bằng cách thay trực tiếp vào bất phương trình.",
+        "Đường thẳng biên chia mặt phẳng thành hai nửa mặt phẳng; điểm thử giúp xác định nửa mặt phẳng nghiệm.",
+        "Miền nghiệm có lấy đường biên hay không phụ thuộc vào dấu của bất phương trình."
+      ],
+      "must_know": [
+        "Dạng tổng quát: ax+by<c, ax+by≤c, ax+by>c hoặc ax+by≥c; a,b,c là số thực và a,b không đồng thời bằng 0.",
+        "(x₀,y₀) là nghiệm nếu thay x=x₀, y=y₀ vào bất phương trình được mệnh đề đúng.",
+        "Đường biên là ax+by=c.",
+        "Dấu ≤ hoặc ≥ thì lấy đường biên; dấu < hoặc > thì không lấy đường biên."
+      ],
+      "must_understand": [
+        "Nghiệm là một cặp số, còn miền nghiệm là tập hợp các điểm biểu diễn mọi cặp nghiệm.",
+        "Chọn điểm thử không nằm trên đường biên; thường có thể chọn O(0,0) nếu O không thuộc đường biên."
+      ],
+      "problem_types": [
+        "Nhận dạng bất phương trình bậc nhất hai ẩn và phân biệt với phương trình hai ẩn hoặc bất phương trình bậc cao hơn.",
+        "Thay một cặp số vào bất phương trình để kiểm tra nghiệm.",
+        "Vẽ đường biên và biểu diễn nửa mặt phẳng nghiệm bằng điểm thử.",
+        "Xác định đường biên có được lấy hay không theo dấu bất phương trình."
+      ],
+      "related": [
+        {
+          "chapter_id": "II",
+          "lesson": "Hệ bất phương trình bậc nhất hai ẩn",
+          "relation": "Miền nghiệm của hệ được xác định từ miền nghiệm của từng bất phương trình thành phần."
+        }
+      ]
+    },
+    {
+      "lesson": "Hệ bất phương trình bậc nhất hai ẩn",
+      "key_points": [
+        "Hệ gồm từ hai bất phương trình bậc nhất hai ẩn trở lên cùng xét với hai ẩn x,y.",
+        "Nghiệm của hệ phải thỏa mãn đồng thời tất cả bất phương trình trong hệ.",
+        "Miền nghiệm của hệ là giao các miền nghiệm riêng, có xét việc lấy hay không lấy các đoạn biên.",
+        "Có thể dùng hệ để mô hình hóa điều kiện thực tiễn và tìm giá trị lớn nhất hoặc nhỏ nhất của biểu thức tuyến tính trên miền đa giác."
+      ],
+      "must_know": [
+        "Một cặp (x₀,y₀) là nghiệm của hệ nếu thỏa mãn đồng thời mọi bất phương trình trong hệ.",
+        "Biểu diễn miền nghiệm bằng cách vẽ các đường biên, xác định từng miền nghiệm riêng rồi lấy giao.",
+        "Nếu không có điểm nào thỏa đồng thời các bất phương trình thì hệ vô nghiệm và miền nghiệm là tập rỗng.",
+        "Với miền khả thi là đa giác khép kín, không rỗng và bị chặn, tìm tọa độ các đỉnh từ giao của các đường biên.",
+        "Để tối ưu F=ax+by trên miền đa giác nói trên, tính F tại từng đỉnh rồi so sánh; nếu F không đổi dọc cạnh tối ưu thì các điểm trên cạnh đó cũng đạt cùng giá trị."
+      ],
+      "must_understand": [
+        "Nghiệm của từng bất phương trình riêng lẻ chưa chắc là nghiệm của hệ; phải thỏa mãn tất cả điều kiện cùng lúc.",
+        "Khi biểu diễn miền nghiệm, cần lưu ý từng đoạn biên có được lấy hay không.",
+        "Tối ưu trên miền liên tục chưa đủ kết luận nghiệm tối ưu nếu đề bài yêu cầu số lượng nguyên."
+      ],
+      "problem_types": [
+        "Kiểm tra một điểm có thuộc miền nghiệm của hệ hay không.",
+        "Biểu diễn miền nghiệm của hệ bằng giao các nửa mặt phẳng trên cùng hệ trục tọa độ.",
+        "Xác định hệ vô nghiệm hoặc tìm các đỉnh của miền nghiệm đa giác.",
+        "Lập hệ bất phương trình từ các điều kiện ràng buộc trong bài toán thực tiễn.",
+        "Tìm giá trị lớn nhất hoặc nhỏ nhất của biểu thức F=ax+by trên miền đa giác khả thi."
+      ],
+      "related": [
+        {
+          "chapter_id": "II",
+          "lesson": "Bất phương trình bậc nhất hai ẩn",
+          "relation": "Cần xác định miền nghiệm của từng bất phương trình thành phần trước khi lấy giao để biểu diễn miền nghiệm của hệ."
+        }
+      ]
+    }
+  ]
+}

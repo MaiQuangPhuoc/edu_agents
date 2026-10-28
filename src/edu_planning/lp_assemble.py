@@ -96,7 +96,7 @@ def _draft_week(state: PlanState, llm_client: LLMClient, sw: dict, brief: dict, 
 
 
 def assemble_node(state: PlanState, llm_client: LLMClient) -> dict:
-    print(">>> [LP] assemble")
+    print(">>> ===============================  [LP] assemble =============================== "*2)
     w = state["lp_window"]
     sched = _build_schedule(state["student_model"], w["subject"], w)         # lịch đã đóng băng
     if "error" in sched:

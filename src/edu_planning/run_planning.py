@@ -146,7 +146,7 @@ def run_plan(llm_client):
 def run_full(llm_client):
 
 
-    print(">>> 1. tạo retriever")
+    print(">>> 1. =============================== tạo retriever =============================== ")
     retriever = VectorStoreRetriever(
         url=env_config.qdrant_url,
         api_key=env_config.qdrant_api_key,
@@ -155,11 +155,11 @@ def run_full(llm_client):
         top_k=10,
         # reranker_model="BAAI/bge-reranker-base",   # bỏ comment nếu chương trình dừng khi nạp reranker
     )
-    print(">>> 2. tạo graph")
+    print(">>> 2. =============================== tạo graph =============================== ")
     graph = make_roadmap_graph(retriever, llm_client, checkpointer=MemorySaver())
     cfg = {"configurable": {"thread_id": STUDENT_ID}}
 
-    print(">>> 3. bắt đầu hội thoại")
+    print(">>> 3. ===============================  bắt đầu hội thoại =============================== ")
     out = graph.invoke({"student_id": STUDENT_ID, "messages": []}, cfg)
     show_new_bot_messages(out)
     while out.get("roadmap_status") != "path_ready":
@@ -174,6 +174,6 @@ def run_full(llm_client):
 
 if __name__ == "__main__":
     llm_client = LLMClient(model=env_config.model, api_provider=env_config.api_provider)
-    print(">>> LLMClient xong")
+    print(">>> =============================== LLMClient xong  =============================== ")
     # run_collect(llm_client) if MODE == "collect" else run_full(llm_client)
     {"collect": run_collect, "plan": run_plan, "full": run_full}[MODE](llm_client)

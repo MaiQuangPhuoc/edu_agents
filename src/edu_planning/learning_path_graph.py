@@ -49,7 +49,7 @@ def make_learning_path_graph(retriever, llm_client: LLMClient, plan_client: LLMC
     g.add_edge(START, "outline")
     g.add_conditional_edges("outline", _next_or_present("plan"), {"plan": "plan", "present": "present"})
     g.add_conditional_edges("plan", _next_or_present("execute"), {"execute": "execute", "present": "present"})
-    g.add_edge("execute", "assemble").
+    g.add_edge("execute", "assemble")
     g.add_edge("assemble", "critic")
     g.add_conditional_edges("critic", route_after_critic, {"assemble": "assemble", "present": "present"})
     g.add_edge("present", END)

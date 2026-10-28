@@ -63,7 +63,7 @@ def make_tasks(w: dict, student_model: dict) -> list[dict]:
 
 
 def plan_node(state: PlanState) -> dict:
-    print(">>> [LP] plan")
+    print(">>> ===============================  [LP] plan =============================== "*2)
     window = build_window(state)
 
     sched = _build_schedule(state["student_model"], window["subject"], window)

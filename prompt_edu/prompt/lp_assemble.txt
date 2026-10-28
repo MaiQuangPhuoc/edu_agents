@@ -32,11 +32,12 @@ C. Bám dữ liệu (không bịa)
 13. Bài chưa có kiến thức (ghi THIẾU hoặc rỗng): không tự điền; viết hoạt động chung theo mục tiêu của khung tuần và để problem_type rỗng.
 
 D. Tài nguyên
-14. resources chỉ chọn từ TÀI NGUYÊN TÌM ĐƯỢC, chép NGUYÊN VĂN url, đúng bài của buổi, tối đa 2 mỗi buổi. Không có thì để rỗng. Không bịa tiêu đề hay url.
-15. Chỉ dùng hoạt động "video" khi buổi đó có video trong resources. Nếu không có video phù hợp, dùng lecture hoặc reading.
+14. resources chỉ chọn từ TÀI NGUYÊN TÌM ĐƯỢC, chép NGUYÊN VĂN url, tối đa 2 mỗi buổi. Không có thì để rỗng. Không bịa tiêu đề hay url. Dòng [video|...] có type "video", dòng [web|...] có type "document".
+15. Dùng nhãn mục đích trong dòng tài nguyên: theory cho buổi học lý thuyết; practice cho buổi có hoạt động exercise; review cho buổi review; exam cho buổi assessment hoặc buổi ôn trước kiểm tra; nhãn "chung" dùng như theory. Dòng có "| bài: X" chỉ dùng cho bài X; dòng không có thì dùng được cho cả chương.
+16. Chỉ dùng hoạt động "video" khi buổi đó có video trong resources. Nếu không có video phù hợp, dùng lecture hoặc reading.
 
 E. Hồ sơ
-16. Bám mục tiêu điểm, sở thích học (video, tài liệu, bài tập) và thời lượng buổi của học sinh; không dồn quá nhiều hoạt động vào một buổi ngắn.
+17. Bám mục tiêu điểm, sở thích học (video, tài liệu, bài tập) và thời lượng buổi của học sinh; không dồn quá nhiều hoạt động vào một buổi ngắn.
 
 THỨ TỰ ƯU TIÊN KHI CÁC QUY TẮC MÂU THUẪN
 1) Nhóm A (cấu trúc). 2) Nhóm C (không bịa). 3) Nhóm D (tài nguyên). 4) Nhóm B (nội dung buổi). 5) Nhóm E (hồ sơ).

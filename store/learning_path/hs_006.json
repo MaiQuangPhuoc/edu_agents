@@ -1,10 +1,10 @@
 {
   "current_phase": 1,
   "schedule": {
-    "start_date": "2026-10-25",
-    "end_date": "2026-11-29",
-    "total_weeks": 5,
-    "sessions_per_week": 4,
+    "start_date": "2026-10-27",
+    "end_date": "2026-11-17",
+    "total_weeks": 3,
+    "sessions_per_week": 3,
     "minutes_per_session": 120
   },
   "outline": [
@@ -13,7 +13,7 @@
       "weeks": [
         {
           "week_no": 1,
-          "goal": "Nắm vững mệnh đề và tập hợp",
+          "goal": "(tuần nén) Kiểm tra và củng cố nền tảng, giải được bài vận dụng cơ bản về mệnh đề, tập hợp và bất phương trình.",
           "lessons": [
             {
               "chapter_id": "I",
@@ -26,53 +26,7 @@
             {
               "chapter_id": "I",
               "lesson": "Các phép toán trên tập hợp"
-            }
-          ],
-          "activity_types": [
-            "video",
-            "reading",
-            "exercise"
-          ],
-          "difficulty_trend": "dễ",
-          "total_hours": 8.0,
-          "has_assessment": true
-        }
-      ]
-    },
-    {
-      "phase": 2,
-      "weeks": [
-        {
-          "week_no": 2,
-          "goal": "Hiểu và vẽ đồ thị hàm số bậc hai",
-          "lessons": [
-            {
-              "chapter_id": "III",
-              "lesson": "Hàm số và đồ thị"
             },
-            {
-              "chapter_id": "III",
-              "lesson": "Hàm số bậc hai"
-            }
-          ],
-          "activity_types": [
-            "lecture",
-            "video",
-            "exercise"
-          ],
-          "difficulty_trend": "vừa",
-          "total_hours": 8.0,
-          "has_assessment": true
-        }
-      ]
-    },
-    {
-      "phase": 3,
-      "weeks": [
-        {
-          "week_no": 3,
-          "goal": "Xác định nghiệm và miền nghiệm của bất phương trình",
-          "lessons": [
             {
               "chapter_id": "II",
               "lesson": "Bất phương trình bậc nhất hai ẩn"
@@ -83,23 +37,31 @@
             }
           ],
           "activity_types": [
-            "reading",
-            "exercise",
-            "summary"
+            "video",
+            "tài liệu",
+            "bài tập"
           ],
-          "difficulty_trend": "vừa",
-          "total_hours": 8.0,
+          "difficulty_trend": "dễ → khó",
+          "total_hours": 6.0,
           "has_assessment": true
         }
       ]
     },
     {
-      "phase": 4,
+      "phase": 2,
       "weeks": [
         {
-          "week_no": 4,
-          "goal": "Áp dụng định lý sin, cos và giải tam giác thực tế",
+          "week_no": 2,
+          "goal": "(tuần nén) Phân tích được đồ thị hàm số và vận dụng hệ thức lượng để giải tam giác, diễn giải kết quả.",
           "lessons": [
+            {
+              "chapter_id": "III",
+              "lesson": "Hàm số và đồ thị"
+            },
+            {
+              "chapter_id": "III",
+              "lesson": "Hàm số bậc hai"
+            },
             {
               "chapter_id": "IV",
               "lesson": "Giá trị lượng giác của một góc từ 0° đến 180°"
@@ -114,22 +76,22 @@
             }
           ],
           "activity_types": [
-            "lecture",
             "video",
-            "exercise"
+            "tài liệu",
+            "bài tập"
           ],
-          "difficulty_trend": "khó",
-          "total_hours": 8.0,
+          "difficulty_trend": "vừa → khó",
+          "total_hours": 6.0,
           "has_assessment": true
         }
       ]
     },
     {
-      "phase": 5,
+      "phase": 3,
       "weeks": [
         {
-          "week_no": 5,
-          "goal": "Củng cố vectơ và thống kê, chuẩn bị tổng hợp",
+          "week_no": 3,
+          "goal": "(tuần nén) Vận dụng được phép toán vectơ và phương pháp thống kê để xử lí, trình bày dữ liệu.",
           "lessons": [
             {
               "chapter_id": "V",
@@ -165,12 +127,12 @@
             }
           ],
           "activity_types": [
-            "reading",
-            "exercise",
-            "review"
+            "video",
+            "tài liệu",
+            "bài tập"
           ],
-          "difficulty_trend": "dễ",
-          "total_hours": 8.0,
+          "difficulty_trend": "vừa → khó",
+          "total_hours": 6.0,
           "has_assessment": true
         }
       ]
@@ -179,15 +141,15 @@
   "weeks": [
     {
       "week_no": 1,
-      "start_date": "2026-10-25",
-      "end_date": "2026-10-31",
-      "goal": "Nắm vững mệnh đề và tập hợp, đạt mức độ hiểu biết 8.0 giờ trong tuần đầu tiên.",
+      "start_date": "2026-10-27",
+      "end_date": "2026-11-02",
+      "goal": "Kiểm tra và củng cố nền tảng, giải được bài vận dụng cơ bản về mệnh đề, tập hợp và bất phương trình.",
       "sessions": [
         {
-          "date": "2026-10-26",
+          "date": "2026-11-02",
           "start_time": "07:00",
           "minutes": 120,
-          "type": "lesson",
+          "type": "assessment",
           "chapter_id": "I",
           "lesson": "Mệnh đề",
           "key_points": [
@@ -228,180 +190,41 @@
           "difficulty": "easy",
           "activities": [
             {
-              "type": "video",
-              "content": "Xem video giới thiệu khái niệm mệnh đề và ký hiệu",
-              "minutes": 30,
-              "difficulty": "easy",
-              "problem_type": ""
-            },
-            {
-              "type": "reading",
-              "content": "Đọc tài liệu tóm tắt về mệnh đề, phủ định và mệnh đề kéo theo",
-              "minutes": 30,
-              "difficulty": "easy",
-              "problem_type": ""
-            },
-            {
               "type": "exercise",
-              "content": "Làm bài tập kiểm tra hiểu biết về mệnh đề (P ⇒ Q, Q ⇒ P)",
-              "minutes": 60,
+              "content": "Làm bài kiểm tra tổng hợp về kiểm tra tính đúng sai của P ⇒ Q, viết tập hợp, xác định hợp và giao, biểu diễn nửa mặt phẳng nghiệm và tìm miền nghiệm của hệ.",
+              "minutes": 75,
               "difficulty": "easy",
               "problem_type": "Xác định P, Q và kiểm tra tính đúng sai của P ⇒ Q."
-            }
-          ],
-          "resources": [
-            {
-              "type": "video",
-              "title": "TOÁN 10 - 2022 - BÀI ÔN TẬP CHƯƠNG 1 - MỆNH ĐỀ VÀ TẬP HỢP - THẦY KENKA",
-              "url": "https://youtube.com/watch?v=4_KS_CMXFHE",
-              "note": "Video dài 28 phút, phù hợp với sở thích video của học sinh"
-            },
-            {
-              "type": "video",
-              "title": "Toán 10 Bài 1: Mệnh đề | Kết nối tri thức (DỄ HIỂU NHẤT)",
-              "url": "https://youtube.com/watch?v=edVegk01ZsA",
-              "note": "Video 33 phút, giải thích chi tiết về mệnh đề"
-            }
-          ],
-          "assessment": null
-        },
-        {
-          "date": "2026-10-27",
-          "start_time": "07:00",
-          "minutes": 120,
-          "type": "lesson",
-          "chapter_id": "I",
-          "lesson": "Tập hợp",
-          "key_points": [
-            "Khái niệm tập hợp, phần tử, ký hiệu ∈ và ⊂.",
-            "Hai tập hợp bằng nhau khi có cùng phần tử; khái niệm tập con.",
-            "Một số tập con quan trọng của ℝ (ℕ, ℤ, ℚ, ℝ⁺, ℝ⁻)."
-          ],
-          "must_know": [
-            "Ký hiệu: x ∈ A (x là phần tử của A), A ⊆ B (A là tập con của B).",
-            "Tập rỗng ∅ và tính chất ∅ ⊆ A cho mọi A.",
-            "Cách liệt kê phần tử và cách mô tả bằng tính chất đặc trưng.",
-            "Ký hiệu đoạn, nửa đoạn, khoảng và ý nghĩa đầu mút có/không lấy."
-          ],
-          "must_understand": [
-            "Tại sao thứ tự liệt kê và lặp lại phần tử không thay đổi tập hợp.",
-            "Cách xác định tập con và tập bằng nhau qua quan hệ phần tử.",
-            "Mối quan hệ giữa các tập con của ℝ và các phép toán trên tập hợp."
-          ],
-          "related": [
-            {
-              "chapter_id": "I",
-              "lesson": "Mệnh đề",
-              "relation": "Mệnh đề thường được biểu diễn dưới dạng tập hợp các nghiệm."
-            },
-            {
-              "chapter_id": "I",
-              "lesson": "Các phép toán trên tập hợp",
-              "relation": "Cung cấp các phép toán cần thiết để thao tác với các tập hợp đã học."
-            },
-            {
-              "chapter_id": "III",
-              "lesson": "Hàm số và đồ thị",
-              "relation": "Tập hợp giá trị (range) và tập xác định (domain) của hàm số."
-            }
-          ],
-          "difficulty": "easy",
-          "activities": [
-            {
-              "type": "video",
-              "content": "Xem video về khái niệm tập hợp và ký hiệu ∈, ⊂",
-              "minutes": 30,
-              "difficulty": "easy",
-              "problem_type": ""
-            },
-            {
-              "type": "reading",
-              "content": "Đọc tài liệu về tập hợp, tập con và các tập con quan trọng của ℝ",
-              "minutes": 30,
-              "difficulty": "easy",
-              "problem_type": ""
-            },
-            {
-              "type": "exercise",
-              "content": "Thực hành viết và nhận dạng tập hợp, tập con trong các ví dụ thực tế",
-              "minutes": 60,
-              "difficulty": "easy",
-              "problem_type": "Viết tập hợp dưới dạng liệt kê hoặc tính chất đặc trưng."
-            }
-          ],
-          "resources": [
-            {
-              "type": "video",
-              "title": "TOÁN 10 - CHƯƠNG TRÌNH MỚI 2022 - BÀI 1 - MỆNH ĐỀ - PHẦN 1 - THẦY KENKA",
-              "url": "https://youtube.com/watch?v=CQaxdekr6TQ",
-              "note": "Video 25 phút, phần mở đầu về mệnh đề và tập hợp"
-            }
-          ],
-          "assessment": null
-        },
-        {
-          "date": "2026-10-31",
-          "start_time": "07:00",
-          "minutes": 120,
-          "type": "assessment",
-          "chapter_id": "I",
-          "lesson": "Các phép toán trên tập hợp",
-          "key_points": [
-            "Phép hợp (A ∪ B), giao (A ∩ B), hiệu (A \\ B) và phần bù (C_U A).",
-            "Biểu diễn các phép toán bằng Venn diagram.",
-            "Ứng dụng các phép toán trong các bài toán thực tế (ví dụ: tuyển dụng)."
-          ],
-          "must_know": [
-            "Ký hiệu: A ∪ B = {x | x∈A hoặc x∈B}, A ∩ B = {x | x∈A và x∈B}.",
-            "Hiệu: A \\ B = {x | x∈A và x∉B}.",
-            "Phần bù trong vũ trụ U: C_U A = U \\ A.",
-            "Các tính chất cơ bản: giao‑phép‑hợp, luật De Morgan."
-          ],
-          "must_understand": [
-            "Cách sử dụng Venn diagram để trực quan hoá các phép toán.",
-            "Khi nào cần dùng hiệu vs phần bù trong giải quyết vấn đề.",
-            "Lý do các tính chất giao‑phép‑hợp giúp rút gọn biểu thức tập hợp."
-          ],
-          "related": [
-            {
-              "chapter_id": "I",
-              "lesson": "Tập hợp",
-              "relation": "Cung cấp các khái niệm cơ bản cần thiết cho các phép toán."
-            },
-            {
-              "chapter_id": "II",
-              "lesson": "Bất phương trình bậc nhất hai ẩn",
-              "relation": "Giải bất phương trình thường dùng phép giao và hợp của các tập nghiệm."
-            },
-            {
-              "chapter_id": "III",
-              "lesson": "Hàm số bậc hai",
-              "relation": "Xác định miền xác định và miền giá trị của hàm số bằng phép giao và hợp."
-            }
-          ],
-          "difficulty": "easy",
-          "activities": [
-            {
-              "type": "exercise",
-              "content": "Làm bài kiểm tra cuối tuần về mệnh đề và tập hợp",
-              "minutes": 60,
-              "difficulty": "easy",
-              "problem_type": "Xác định A ∪ B, A ∩ B, A \\ B cho các tập hợp cho trước."
             },
             {
               "type": "review",
-              "content": "Xem lại lỗi sai và giải thích chi tiết các đáp án",
-              "minutes": 60,
+              "content": "Đối chiếu bài làm, phân loại lỗi theo nội dung mệnh đề, tập hợp, các phép toán trên tập hợp, bất phương trình hai ẩn và hệ bất phương trình hai ẩn, rồi ghi lại điểm cần ôn.",
+              "minutes": 45,
               "difficulty": "easy",
               "problem_type": ""
             }
           ],
-          "resources": [],
+          "resources": [
+            {
+              "type": "document",
+              "title": "Bộ đề ôn tập môn Toán 10 chủ đề mệnh đề và tập hợp - TOANMATH.com",
+              "url": "https://toanmath.com/2025/07/bo-de-on-tap-mon-toan-10-chu-de-menh-de-va-tap-hop.html",
+              "note": "exam"
+            },
+            {
+              "type": "document",
+              "title": "Chuyên đề Toán 10 chương bất phương trình và hệ bất phương trình bậc nhất hai ẩn - TOANMATH.com",
+              "url": "https://toanmath.com/2025/08/chuyen-de-toan-10-chuong-bat-phuong-trinh-va-he-bat-phuong-trinh-bac-nhat-hai-an.html",
+              "note": "exam"
+            }
+          ],
           "assessment": {
             "chapter_ids": [
               "I",
               "I",
-              "I"
+              "I",
+              "II",
+              "II"
             ],
             "num_questions": 10
           }
@@ -410,9 +233,7 @@
     }
   ],
   "assumptions": [
-    "Tuần 1: chỉ xếp được 3/4 buổi theo khung giờ rảnh",
-    "Cần xem lại: Mức độ khó giảm trở lại ở tuần 5 (từ khó sang dễ) không phù hợp với việc tăng dần độ khó; nên duy trì hoặc giảm nhẹ so với tuần 4.",
-    "Cần xem lại: Nội dung tuần 5 bao gồm nhiều bài V và VI; VI đã là điểm mạnh nên không cần dành quá nhiều thời gian, gây lãng phí tài nguyên.",
-    "Cần xem lại: Khối lượng bài học ở tuần 5 (8 mục) quá tải cho 8 giờ học, có nguy cơ không hoàn thành và giảm hiệu quả."
+    "Tuần 1: chỉ xếp được 1/3 buổi theo khung giờ rảnh",
+    "Cần xem lại: Tăng tổng thời lượng học lên ít nhất 24h bằng cách thêm 30 phút tóm tắt và luyện tập cuối mỗi buổi (tổng cộng +1h mỗi tuần), hoặc bổ sung một buổi học ngắn thêm 1h mỗi tuần để đạt khoảng 8h/tuần. (căn cứ: Mục tiêu điểm 9.0, hạn chót 2026-11-17, chỉ còn 3 tuần và tổng thời lượng học 18h (6h/tuần) trong lộ trình.)"
   ]
 }

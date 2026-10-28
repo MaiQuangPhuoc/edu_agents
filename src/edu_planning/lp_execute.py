@@ -22,7 +22,7 @@ def _knowledge(task: dict, state: PlanState, retriever, plan_client: LLMClient) 
 
 
 def execute_node(state: PlanState, retriever, llm_client: LLMClient, plan_client: LLMClient | None = None) -> dict:
-    print(">>> [LP] execute")
+    print(">>> =============================== [LP] execute =============================== "*2)
     plan_client = plan_client or llm_client
     tools = {t.name: t for t in make_planning_tools(retriever, llm_client)}
 

@@ -1,0 +1,68 @@
+# EDUAGENT - Python 3.11 / 3.12 (Windows development: Python 3.12).
+# Install using the SAME interpreter that runs the app:
+#   .\.venv-1\Scripts\python.exe -m pip install -r requirements.txt
+# For CPU-only embedding, install the CPU build of torch FIRST:
+#   .\.venv-1\Scripts\python.exe -m pip install "torch>=2.6,<3" --index-url https://download.pytorch.org/whl/cpu
+# Version ranges are compatibility bounds, not a reproducible lock file.
+# Do not combine with `pip install .` until pyproject.toml's old Groq constraint
+# is updated: current source uses langchain.agents.create_agent (LangChain 1.x).
+
+# Configuration / validation
+python-dotenv>=1.0.1,<2
+pydantic>=2.10,<3
+pydantic-settings>=2.7,<3
+PyYAML>=6.0.2,<7
+typing-extensions>=4.12,<5
+filelock>=3.16,<4
+
+# LLM clients and agent graphs (one consistent LangChain 1.x family)
+langchain>=1.0,<2
+langchain-core>=1.0,<2
+langgraph>=1.0,<2
+langchain-groq>=1.0,<2
+langchain-openai>=1.0,<2
+langchain-huggingface>=1.0,<2
+langchain-qdrant>=1.0,<2
+langchain-community>=0.4,<0.5
+langchain-text-splitters>=1.0,<2
+groq>=0.30,<2
+openai>=1.100,<3
+
+# Vector search / local CPU embedding / reranking
+qdrant-client>=1.15,<2
+fastembed>=0.7,<1
+torch>=2.6,<3
+sentence-transformers>=3.4,<6
+transformers>=4.45,<6
+
+# Web search and YouTube
+# Python import `tavily` is provided by distribution `tavily-python`.
+tavily-python>=0.7,<1
+google-api-python-client>=2.150,<3
+isodate>=0.7,<1
+requests>=2.32,<3
+httpx>=0.28,<1
+
+# FastAPI backend and UI
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+jinja2>=3.1.5,<4
+python-multipart>=0.0.18,<1
+
+# Symbolic maths / text processing
+sympy>=1.13,<2
+underthesea>=6.8,<9
+
+# Document loaders and indexing scripts
+pypdf>=5,<7
+PyMuPDF>=1.25,<2
+pymupdf4llm>=0.0.17,<2
+python-docx>=1.1,<2
+docx2txt>=0.8,<1
+beautifulsoup4>=4.12,<5
+unstructured[md]>=0.16,<1
+matplotlib>=3.9,<4
+
+# Markdown, math rendering and UI fonts are loaded by the browser in exams.html;
+# they are JavaScript/CSS assets, not Python packages.
+# Developer-only test tools such as pytest/Playwright are intentionally excluded.

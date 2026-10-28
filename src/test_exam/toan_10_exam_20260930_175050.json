@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Xác định đúng sai mệnh đề",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Phát biểu sau là mệnh đề đúng hay sai?  \n\n{ x } ∈ { a , b , c }",
+    "options": {
+      "A": "Đúng",
+      "B": "Sai",
+      "C": "Không phải mệnh đề",
+      "D": "Không xác định"
+    },
+    "answer": "B",
+    "giai_thich": "Một mệnh đề là câu khẳng định đúng hoặc sai. Ở đây {x} là một phần tử ký hiệu x, còn {a,b,c} là tập gồm các phần tử a, b, c. Vì x không xuất hiện trong tập {a,b,c}, nên khẳng định \"{x} ∈ {a,b,c}\" là sai. Do đó đáp án đúng là B – Sai.",
+    "y_tuong": "Xác định đúng sai của một phát biểu về quan hệ thuộc tính",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 2,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Hiệu và phần bù của tập hợp",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Trong vũ trụ U = {1,2,3,4,5,6,7}, cho A = {2,4,6} và B = {4,5,6}. \n\nTính:  \n1) A \\ B (hiệu của A và B)  \n2) B' (phần bù của B trong U). \n\nKết quả nào dưới đây là đúng?",
+    "options": {
+      "A": "A\\B = {2},   B' = {1,2,3,7}",
+      "B": "A\\B = {2,4,6},   B' = {1,3,7}",
+      "C": "A\\B = {2},   B' = {1,3,7}",
+      "D": "A\\B = {4,6},   B' = {1,2,3,7}"
+    },
+    "answer": "A",
+    "giai_thich": "Hiệu A\\B gồm các phần tử thuộc A mà không thuộc B. Ở A có {2,4,6}, B có {4,5,6}. Loại bỏ 4 và 6, còn lại {2}. \n\nPhần bù B' = U \\ B = {1,2,3,4,5,6,7}\\{4,5,6} = {1,2,3,7}. \n\nDo đó đáp án A chứa đúng cả hai kết quả. Các đáp án sai do: B chưa loại bỏ 4,6; C thiếu phần tử 2 trong B'; D tính sai hiệu và phần bù.",
+    "y_tuong": "Tính hiệu và phần bù của các tập hợp cho trước",
+    "answer_code": "A\\B = {2} , B' = {1, 2, 3, 7}",
+    "check": "✅"
+  },
+  {
+    "id": 3,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Mệnh đề",
+    "dang_bai": "Chuyển đổi mệnh đề (đảo)",
+    "type": "ly_thuyet",
+    "do_kho": 2,
+    "question": "Viết mệnh đề đảo của phát biểu: \"Nếu n là số chẵn thì n² là số chẵn\" (n là số nguyên). Sau đó xác định mệnh đề đảo là đúng hay sai.",
+    "options": {
+      "A": "Mệnh đề đảo là đúng",
+      "B": "Mệnh đề đảo là sai",
+      "C": "Không phải là mệnh đề",
+      "D": "Không xác định"
+    },
+    "answer": "A",
+    "giai_thich": "Phát biểu gốc: P → Q, trong đó P: \"n là số chẵn\", Q: \"n² là số chẵn\". Mệnh đề đảo (converse) là Q → P: \"Nếu n² là số chẵn thì n là số chẵn\".\n\nVới số nguyên, nếu n² chia hết cho 2 thì n cũng chia hết cho 2 (vì nếu n lẻ thì n = 2k+1 ⇒ n² = 4k²+4k+1 = 2(2k²+2k)+1, lẻ). Vì vậy mệnh đề đảo luôn đúng. Do đó đáp án A là đúng.",
+    "y_tuong": "Viết và đánh giá tính đúng sai của mệnh đề đảo",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 4,
+    "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+    "bai": "Các phép toán trên tập hợp",
+    "dang_bai": "Vẽ biểu đồ Venn để chứng minh quan hệ tập hợp",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho vũ trụ U = {1,2,3,4,5,6}, A = {1,2,3}, B = {3,4,5}. Tính (A ∪ B)' và A' ∩ B'. Hai tập hợp này có bằng nhau không?",
+    "options": {
+      "A": "Có, (A ∪ B)' = A' ∩ B'",
+      "B": "Không, (A ∪ B)' ≠ A' ∩ B'",
+      "C": "Không xác định vì thiếu thông tin về U",
+      "D": "Cả hai tập đều là tập rỗng"
+    },
+    "answer": "A",
+    "giai_thich": "Đầu tiên tính A ∪ B = {1,2,3,4,5}. Phần bù của nó trong U là (A ∪ B)' = U \\ (A ∪ B) = {6}.\n\nTiếp theo, A' = U \\ A = {4,5,6}, B' = U \\ B = {1,2,6}. Giao A' ∩ B' = {6}.\n\nVì (A ∪ B)' = {6} và A' ∩ B' = {6}, hai tập bằng nhau. Đây là hệ quả của định lý De Morgan: (A ∪ B)' = A' ∩ B'. Do đó đáp án A là đúng.",
+    "y_tuong": "Áp dụng định lý De Morgan để chứng minh quan hệ tập hợp",
+    "answer_code": "(A ∪ B)' == A' ∩ B' ? True",
+    "check": "✅"
+  },
+  {
+    "id": 5,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Khái niệm bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Khái niệm bất phương trình bậc nhất hai ẩn",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Cho bất phương trình bậc nhất hai ẩn có dạng \\(ax + by + c \\;\\text{<}\\; 0\\) (hoặc \\(\\le\\), \\(>\\), \\(\\ge\\)).\nHãy nêu dạng tổng quát của bất phương trình này và viết phương trình đường biên tương ứng.",
+    "options": {
+      "A": "Dạng tổng quát: \\(ax + by + c \\;\\text{<}\\; 0\\) (hoặc \\(\\le\\), \\(>\\), \\(\\ge\\)). Đường biên: \\(ax + by + c = 0\\).",
+      "B": "Dạng tổng quát: \\(ax + by = c\\). Đường biên: \\(ax + by + c = 0\\).",
+      "C": "Dạng tổng quát: \\(ax + by + c \\;\\text{<}\\; 0\\) (hoặc \\(\\le\\), \\(>\\), \\(\\ge\\)). Đường biên: \\(ax + by = 0\\).",
+      "D": "Dạng tổng quát: \\(ax - by + c \\;\\text{<}\\; 0\\). Đường biên: \\(ax - by + c = 0\\)."
+    },
+    "answer": "A",
+    "giai_thich": "Bất phương trình bậc nhất hai ẩn luôn có dạng \\(ax + by + c \\;\\text{<}\\; 0\\) (hoặc \\(\\le\\), \\(>\\), \\(\\ge\\)), trong đó \\(a, b, c\\) là các hằng số, \\(x, y\\) là ẩn. Để xác định miền nghiệm, ta xét đường biên thu được khi đổi dấu bất phương trình thành dấu bằng, tức là \\(ax + by + c = 0\\). Đường này là một đường thẳng trên mặt phẳng tọa độ và miền nghiệm là một nửa mặt phẳng được xác định bởi dấu bất phương trình. Các đáp án B, C, D đều sai: B viết dạng sai thành \\(ax + by = c\\); C đưa đường biên sai thành \\(ax + by = 0\\) (đúng chỉ khi \\(c=0\\)); D thay đổi dấu của \\(b\\) thành \\(-b\\) gây sai công thức.",
+    "y_tuong": "Xác định dạng tổng quát và đường biên của bất phương trình bậc nhất hai ẩn",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 6,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Cho bất phương trình \\(y < -x - 2\\). Trên hệ trục tọa độ, vẽ đường biên và chỉ ra miền nghiệm của bất phương trình này.\nTrong các mô tả sau, đâu là mô tả đúng nhất về miền nghiệm?",
+    "options": {
+      "A": "Miền nghiệm là nửa mặt phẳng phía trên đường thẳng \\(y = -x - 2\\).",
+      "B": "Miền nghiệm là nửa mặt phẳng phía dưới đường thẳng \\(y = -x - 2\\), không bao gồm đường thẳng.",
+      "C": "Miền nghiệm là toàn bộ mặt phẳng vì bất phương trình luôn đúng.",
+      "D": "Miền nghiệm chỉ là các điểm nằm trên đường thẳng \\(y = -x - 2\\)."
+    },
+    "answer": "B",
+    "giai_thich": "Bước 1: Viết lại bất phương trình \\(y < -x - 2\\) dưới dạng \\(y = -x - 2\\) để xác định đường biên. Đường này là một đường thẳng có hệ số góc \\(-1\\) và cắt trục Oy tại \\(-2\\).\\nBước 2: Để biết miền nào là nghiệm, lấy một điểm mẫu không nằm trên đường biên, ví dụ điểm \\((0,0)\\). Thay vào bất phương trình: \\(0 < -0 - 2\\) tức \\(0 < -2\\) là sai. Vì vậy điểm \\((0,0)\\) không thuộc nghiệm, nên miền chứa điểm \\((0,0)\\) (phía trên đường thẳng) là sai. Do đó miền nghiệm là phía đối diện, tức là phía dưới đường thẳng.\\nBước 3: Vì dấu bất phương trình là \"<\", các điểm nằm trên đường thẳng không thỏa mãn, nên miền nghiệm không bao gồm đường biên.\\nDo đó mô tả B là đúng: \"Miền nghiệm là nửa mặt phẳng phía dưới đường thẳng y = -x - 2, không bao gồm đường thẳng\". Các đáp án sai: A nhầm chiều (phía trên); C sai vì bất phương trình không luôn đúng; D sai vì chỉ lấy đường biên mà bỏ dấu bất phương trình.",
+    "y_tuong": "Vẽ và mô tả miền nghiệm của bất phương trình bậc nhất hai ẩn",
+    "answer_code": "below the line y = -x - 2, not including the line",
+    "check": "✅"
+  },
+  {
+    "id": 7,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của biểu thức F = ax + by trên một miền đa giác",
+    "dang_bai": "Tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của biểu thức F = ax + by trên một miền đa giác",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Xét hệ bất phương trình sau xác định một đa giác đóng:\n\\[\\begin{cases}\n x \\ge 0,\\\\\n y \\ge 0,\\\\\n x + \\frac{4}{3}y \\le 4.\n\\end{cases}\\]\nHàm số cần tối ưu là \\(F = 2x + 3y\\).\nTìm giá trị lớn nhất của \\(F\\) trên miền khả thi.",
+    "options": {
+      "A": "Giá trị lớn nhất của \\(F\\) là 8, đạt tại điểm \\((4,0)\\).",
+      "B": "Giá trị lớn nhất của \\(F\\) là 9, đạt tại điểm \\((0,3)\\).",
+      "C": "Giá trị lớn nhất của \\(F\\) là 12, đạt tại điểm \\((4,3)\\).",
+      "D": "Giá trị lớn nhất của \\(F\\) là 0, đạt tại điểm \\((0,0)\\)."
+    },
+    "answer": "B",
+    "giai_thich": "1. **Xác định các đỉnh của đa giác**\\n   - Đường biên 1: \\(x = 0\\) (trục Oy).\\n   - Đường biên 2: \\(y = 0\\) (trục Ox).\\n   - Đường biên 3: \\(x + \\frac{4}{3}y = 4\\) ⇒ \\(x = 4 - \\frac{4}{3}y\\).\\n   Giao điểm các đường biên:\\n   • Giao \\(x=0\\) và \\(y=0\\) → \\((0,0)\\).\\n   • Giao \\(x=0\\) với \\(x + \\frac{4}{3}y = 4\\) → \\(0 + \\frac{4}{3}y = 4\\) ⇒ \\(y = 3\\) → \\((0,3)\\).\\n   • Giao \\(y=0\\) với \\(x + \\frac{4}{3}y = 4\\) → \\(x = 4\\) → \\((4,0)\\).\\n   Đa giác là tam giác có các đỉnh \\((0,0), (4,0), (0,3)\\).\\n2. **Áp dụng định lý cực trị**: Giá trị cực đại (hoặc cực tiểu) của hàm tuyến tính \\(F = 2x + 3y\\) trên một đa giác đóng đạt tại một trong các đỉnh.\\n3. **Tính \\(F\\) tại các đỉnh**\\n   - Tại \\((0,0)\\): \\(F = 2·0 + 3·0 = 0\\).\\n   - Tại \\((4,0)\\): \\(F = 2·4 + 3·0 = 8\\).\\n   - Tại \\((0,3)\\): \\(F = 2·0 + 3·3 = 9\\).\\n4. **Chọn giá trị lớn nhất**: \\(9 > 8 > 0\\), do đó giá trị lớn nhất của \\(F\\) là 9 và đạt tại đỉnh \\((0,3)\\).\\n\\nCác đáp án sai:\\n- A đưa giá trị 8 tại \\((4,0)\\) – là một giá trị đúng nhưng không phải lớn nhất.\\n- C tính sai vì điểm \\((4,3)\\) không thuộc miền (không thỏa \\(x + \\frac{4}{3}y \\le 4\\)).\\n- D đưa giá trị tối thiểu 0, không phải giá trị lớn nhất.",
+    "y_tuong": "Tính giá trị cực đại của hàm tuyến tính trên miền đa giác được xác định bởi hệ bất phương trình",
+    "answer_code": "maximum F = 9 at point (0, 3)",
+    "check": "✅"
+  },
+  {
+    "id": 8,
+    "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Đồ thị hàm số",
+    "dang_bai": "Nhận dạng đồ thị hàm số",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Trong 4 hình dưới đây: \nA: Đồ thị một parabol mở lên, \nB: Đồ thị một đường thẳng, \nC: Đồ thị một hàm bậc ba có dạng S, \nD: Đồ thị một hàm trị tuyệt đối (đồ thị hình V). \nHình nào là đồ thị của một hàm số bậc hai dạng y = ax² + bx + c (a ≠ 0) ?",
+    "options": {
+      "A": "Hình A – parabol",
+      "B": "Hình B – đường thẳng",
+      "C": "Hình C – hàm bậc ba",
+      "D": "Hình D – hàm trị tuyệt đối"
+    },
+    "answer": "A",
+    "giai_thich": "Hàm số bậc hai có dạng y = ax² + bx + c (a ≠ 0) và đồ thị luôn là một parabol. Parabol có tính chất: có đỉnh, trục đối xứng và mở lên (a>0) hoặc mở xuống (a<0). Các đồ thị còn lại không thỏa mãn dạng đa thức bậc hai: \n- Đường thẳng là hàm bậc nhất, \n- Hàm bậc ba có bậc cao hơn 2, \n- Hàm trị tuyệt đối có dạng |x|, không phải đa thức bậc hai. Vì vậy chỉ hình A là đồ thị của hàm số bậc hai.",
+    "y_tuong": "Nhận dạng đồ thị hàm số bậc hai",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 9,
+    "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Đồ thị hàm số bậc hai",
+    "dang_bai": "Vẽ và nhận dạng đồ thị hàm số bậc hai",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho hàm số y = -2x² + 4x – 1. \nYêu cầu: \n1) Vẽ đồ thị (không cần trình bày trong câu trả lời). \n2) Xác định toạ độ đỉnh, trục đối xứng, và chỉ ra các khoảng đồng biến và nghịch biến của hàm số.",
+    "options": {
+      "A": "Đỉnh (1; 1), trục đối xứng x = 1; hàm số đồng biến trên (-∞, 1) và nghịch biến trên (1, ∞).",
+      "B": "Đỉnh (-1; -7), trục đối xứng x = -1; đồng biến trên (-∞, -1) và nghịch biến trên (-1, ∞).",
+      "C": "Đỉnh (1; 1), trục đối xứng x = 1; đồng biến trên (1, ∞) và nghịch biến trên (-∞, 1).",
+      "D": "Đỉnh (2; 3), trục đối xứng x = 2; đồng biến trên (-∞, 2) và nghịch biến trên (2, ∞)."
+    },
+    "answer": "A",
+    "giai_thich": "Với hàm số y = ax² + bx + c, a = -2, b = 4. \n- Trục đối xứng: x = -b/(2a) = -4/(2·(-2)) = 1.\n- Đỉnh: x = 1 → y = -2·1² + 4·1 – 1 = -2 + 4 – 1 = 1, nên đỉnh là (1; 1).\n- Đạo hàm: y' = 2ax + b = 2·(-2)x + 4 = -4x + 4.\n  • y' > 0 ⇔ -4x + 4 > 0 ⇔ x < 1 → hàm số đồng biến trên (-∞, 1).\n  • y' < 0 ⇔ x > 1 → hàm số nghịch biến trên (1, ∞).\n- Vì a = -2 < 0, parabol mở xuống, phù hợp với các khoảng đồng biến/nghịch biến ở trên.\nCác đáp án B, C, D chứa lỗi: B tính sai dấu b và do đó sai trục, C hoán đổi khoảng đồng biến‑nghịch biến, D tính sai tọa độ đỉnh và trục.\nDo đó đáp án A là đúng.",
+    "y_tuong": "Vẽ và nhận dạng đồ thị hàm số bậc hai",
+    "answer_code": "",
+    "check": "N/A"
+  },
+  {
+    "id": 10,
+    "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+    "bai": "Ứng dụng của hàm số bậc hai",
+    "dang_bai": "Giải bài toán thực tế bằng hàm số bậc hai",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Một vật được ném lên theo mô hình chiều cao h(t) = -5t² + 20t + 2 (t tính bằng giây). Tính:\n1) Thời điểm đạt chiều cao tối đa.\n2) Giá trị chiều cao tối đa tại thời điểm đó.",
+    "options": {
+      "A": "Thời điểm t = 2 s, chiều cao tối đa h_max = 22 m.",
+      "B": "Thời điểm t = 2 s, chiều cao tối đa h_max = 20 m.",
+      "C": "Thời điểm t = 1 s, chiều cao tối đa h_max = 17 m.",
+      "D": "Thời điểm t = 3 s, chiều cao tối đa h_max = 23 m."
+    },
+    "answer": "A",
+    "giai_thich": "Hàm h(t) là một hàm bậc hai với a = -5, b = 20.\n- Thời điểm cực trị (đỉnh) của parabol: t_đỉnh = -b/(2a) = -20/(2·(-5)) = -20/(-10) = 2 s.\n- Thay t = 2 vào biểu thức: h(2) = -5·(2)² + 20·2 + 2 = -5·4 + 40 + 2 = -20 + 40 + 2 = 22 m.\nVì a < 0, hàm mở xuống nên giá trị tại đỉnh là giá trị lớn nhất (chiều cao tối đa).\nCác đáp án B, C, D sai do: B tính sai h_max, C nhầm thời điểm và giá trị, D nhầm thời điểm và giá trị.\nDo đó đáp án A là đúng.",
+    "y_tuong": "Giải bài toán thực tế bằng hàm số bậc hai",
+    "answer_code": "(2.0, 22.0)",
+    "check": "✅"
+  }
+]

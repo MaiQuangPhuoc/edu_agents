@@ -180,3 +180,21 @@ Hệ thống: Với ba điểm phân biệt M, N, P, ta có quan hệ vectơ \(\
 
 ---
 
+Người dùng: mệnh đè toán học nói lên điều gì (18:33:24 27/10/2026)
+
+Hệ thống: Mệnh đề trong toán học là một khẳng định có giá trị đúng hoặc sai, không thể vừa đúng vừa sai. Khi khẳng định đúng, nó gọi là mệnh đề đúng; khi sai, gọi là mệnh đề sai. Người ta thường dùng các chữ cái in hoa như P, Q, R để ký hiệu các mệnh đề. Một số câu trong thực tế như “3 là số lẻ” hay “1 + 2 > 3” là các mệnh đề, trong khi các câu hỏi không có câu trả lời xác định như “π là số vô tỉ phải không?” không phải là mệnh đề. Ngoài ra, trong toán học còn có các giả thuyết – những mệnh đề được tin là đúng nhưng chưa được chứng minh hoặc bác bỏ, ví dụ như Định lí lớn Fermat, một giả thuyết nổi tiếng đã được chứng minh sau gần bốn thế kỷ. (18:33:37 27/10/2026) - Chênh lệch: 12s
+
+---
+
+Người dùng: xác suất thông kê là học vè nhưng gì , giới thiệu , cho ví dụ (18:36:50 27/10/2026)
+
+Hệ thống: Xác suất thống kê là môn học nghiên cứu cách thu thập, xử lý và diễn giải dữ liệu để rút ra các kết luận về một hiện tượng nào đó. Khi thực hiện điều tra thống kê, chúng ta phải xác định trước tập hợp các đơn vị điều tra, dấu hiệu cần khảo sát và thu thập các số liệu liên quan, ví dụ như số liệu thống kê điểm kiểm tra môn toán của lớp 10A. Trong thống kê, nếu một dãy n số liệu có k giá trị khác nhau (k ≤ n), mỗi giá trị xi xuất hiện ni lần, thì ni được gọi là tần số của xi. Tần suất f i là tỉ lệ phần trăm của tần số so với tổng số, tính bằng f i = (n i / n) × 100%. Bảng phân bố tần số và tần suất giúp chúng ta nhìn rõ sự xuất hiện của các giá trị trong dữ liệu. Ngoài ra, một mẫu là tập con hữu hạn các đơn vị điều tra, kích thước mẫu là số phần tử của mẫu, và các giá trị thu được trên mẫu gọi là mẫu số liệu. (Theo thông tin từ internet) (18:37:25 27/10/2026) - Chênh lệch: 34s
+
+---
+
+Người dùng: mệnh đề toán học là gì giải thích (19:21:58 27/10/2026)
+
+Hệ thống: Mệnh đề toán học là một câu phát biểu trong toán học mà nó luôn có giá trị đúng hoặc sai, không vừa đúng vừa sai và không phụ thuộc vào cảm xúc hay quan điểm cá nhân. Ví dụ, "3 là số lẻ" là một mệnh đề đúng, "1 + 2 > 3" là một mệnh đề sai, còn "π là một số vô tỉ phải không?" chỉ là một câu hỏi nên không phải là mệnh đề. Một câu như "0,0001 là số rất bé" cũng không phải mệnh đề vì không có tiêu chuẩn xác định "rất bé". Khi một khẳng định chưa thể xác định được đúng hay sai nhưng vẫn có thể chỉ có một trong hai giá trị, như "Đến năm 2050, con người sẽ đặt chân lên Sao Hỏa", nó vẫn được coi là mệnh đề vì trong tương lai nó sẽ trở thành đúng hoặc sai. (19:22:31 27/10/2026) - Chênh lệch: 32s
+
+---
+

@@ -17,7 +17,7 @@ def _doc_item(r: dict) -> dict:
     txt = f"{r['title']} {r['content']}"
     m, d = _PAGES.search(txt), _DATE.search(txt)
     return {"loai": "tai_lieu", "tieu_de": r["title"], "url": r["url"],
-            "so_trang": int(m.group(1)) if m else None, "ngay": d.group(0) if d else None}
+            "so_trang": int(m.group(1)) if m else None, "ngay": d.group(0) if d else None,"mo_ta": r.get("content", "")[:300]}
 
 def _nonempty(res):
     return res or [{"thong_bao": "Không có kết quả phù hợp; hãy đổi từ khóa hoặc bỏ chapter_id/lesson."}]
@@ -108,6 +108,6 @@ def make_planning_tools(retriever, llm_client=None):
             return [{"loi": "Không tra được video lúc này"}]
         return _nonempty([{"loai": "video", "tieu_de": r["title"], "url": r["url"], "kenh": r["channel"],
                         "phut": round(r["duration_sec"] / 60), "luot_xem": r["views"],
-                        "thich": r["likes"], "nguoi_dang_ky": r["subscribers"]} for r in res])
+                        "thich": r["likes"], "nguoi_dang_ky": r["subscribers"], "mo_ta": r.get("description", "")} for r in res])
 
     return [search_documents, search_documents_reranked, search_web_documents, search_videos]

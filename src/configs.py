@@ -6,6 +6,12 @@ Cấu hình chung cho prototype RIKAI — dựa trên configs.py do Auditor cung
 2. env_file dùng đường dẫn tương đối (cùng thư mục với file này) thay vì
    đường dẫn Windows cứng, để chạy được trên mọi máy.
 """
+from pathlib import Path
+from dotenv import load_dotenv
+
+ENV_PATH = Path(__file__).resolve().parents[1] / ".env"
+
+load_dotenv(ENV_PATH, encoding="utf-8-sig", override=False)
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from typing import Literal, Optional
 import os
@@ -69,16 +75,15 @@ class EnvConfig(BaseSettings):
 
     # ── lộ trình chi tiết: LLM kiểm ngữ nghĩa tài nguyên (UI có thể ghi đè bằng state['lp_verify']) ──
     lp_verify: bool = True
-    lp_verify_parallel: bool = True
-    lp_verify_rounds: int = 1
-    
+
     console_log_level: Literal["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"] = "INFO"
     file_log_format: str = "%(asctime)s %(levelname)s %(message)s"
     console_log_format: str = "%(levelname)s %(message)s"
 
 
     model_config = SettingsConfigDict(
-        env_file=os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"),
+        env_file=ENV_PATH,
+        env_file_encoding="utf-8-sig",
         extra="ignore",
         env_ignore_empty=True,
     )
@@ -99,7 +104,7 @@ MAX_UPLOAD_MB = 20
 
 print("model",env_config.model)
 # Never print API keys to logs.
-# print("tavily api key:", env_config.api_key_tavily)
+# print("tavily api key:", env_config.api)
 # print("qdrant url:", env_config.qdrant_collection)
 # print("open api key:", env_config.openai_api_key)
 # print("gemini model:", env_config.gemini_model)

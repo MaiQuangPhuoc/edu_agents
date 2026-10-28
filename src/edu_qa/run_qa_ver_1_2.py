@@ -1,15 +1,26 @@
-import sys, os, asyncio
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+import sys
+import asyncio
+from pathlib import Path
 from dotenv import load_dotenv
 
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(PROJECT_ROOT))
+
+# File D:\PHUOC\EDUAGENT\.env
+ENV_PATH = PROJECT_ROOT / ".env"
+
+if not ENV_PATH.is_file():
+    raise FileNotFoundError(f"Không tìm thấy: {ENV_PATH}")
+
+load_dotenv(ENV_PATH, encoding="utf-8-sig", override=True)
+
+# Tất cả import src... đặt SAU đoạn trên.
 from src.clients.llm import LLMClient
 from src.configs import env_config
 from src.clients.embedding import embeddings_qa
 from src.modules.rag.process_toan_10.retrievers2 import VectorStoreRetriever
 from src.edu_qa.state import QAState
 from src.edu_qa.graph import build_graph
-
-load_dotenv()
 
 # lịch sử nước Việt Nam ai là vua đặt tên nước là Đại cồ việt
 # trong toán học mệnh đề có ý nghĩa gì , có các loại mệnh đề nào

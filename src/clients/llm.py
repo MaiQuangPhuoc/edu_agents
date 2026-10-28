@@ -55,8 +55,8 @@ def _next_groq_key() -> str:
         number = 6
     else:
         number = "không xác định"
-    print(f" strategy={getattr(env_config, 'groq_key_strategy', None)}, so_key={len(keys)}", flush=True)
-    print(f" 🔑🔑 API_KEY_RUNNING = {number}", flush=True)
+    # print(f" strategy={getattr(env_config, 'groq_key_strategy', None)}, so_key={len(keys)}", flush=True)
+    # print(f" 🔑🔑 API_KEY_RUNNING = {number}", flush=True)
     return key
 
 def _rotating_groq_clients():

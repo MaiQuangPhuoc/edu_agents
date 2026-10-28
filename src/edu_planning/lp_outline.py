@@ -85,7 +85,7 @@ def to_outline(weeks: list, codes: dict, per_week: int, minutes: int) -> list[di
 
 
 def outline_node(state: PlanState, retriever, llm_client: LLMClient) -> dict:
-    print(">>> [LP] outline")
+    print(">>> ===========================  [LP] outline =========================== "*2)
     reset = {"lp_draft": {}, "lp_issues": {}, "lp_revision_count": 0, "lp_reviewed": False}      # xóa kết quả của lần chạy trước
     
     fail = lambda msg: {**reset, "lp_draft": {"error": msg}}
