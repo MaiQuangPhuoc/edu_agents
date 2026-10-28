@@ -9,9 +9,9 @@ from pydantic import BaseModel, Field
 from starlette.concurrency import run_in_threadpool
 from fastapi.responses import FileResponse
 from src.modules.rag.auto_indexing.sources import DEFAULT_OUTPUT_ROOT
-from src.modules.rag.auto_indexing.name_registry import validate_name
+from src.modules.rag.auto_indexing.pipeline import validate_lesson_plan_name
 
-from src.modules.rag.auto_indexing.router import process_pdf_upload
+from src.modules.rag.auto_indexing.router import process_pdf_upload, stream_pdf_upload
 from src.modules.rag.auto_indexing.sources import SUBJECTS as INDEXING_SUBJECTS
 
 router = APIRouter(prefix='/api/ui/books', tags=['books'])
@@ -66,6 +66,25 @@ def list_catalog(series: str | None = None, subject: str | None = None):
     return {'books': [b for b in CATALOG if (not series or series == b['series'])
                       and (not subject or subject == b['subject'])]}
 
+# Only cover images are exposed; no access to other source files.
+IMAGE_ROOT = Path(__file__).resolve().parents[1] / 'modules' / 'documents' / 'image_sach'
+COVER_SERIES = {'chan_troi': 'chan_troi_sang_tao', 'ket_noi': 'ket_noi_tri_thuc', 'canh_dieu': 'canh_dieu'}
+
+
+@router.get('/covers/{series}/{subject_slug}')
+def book_cover(series: str, subject_slug: str):
+    canonical = COVER_SERIES.get(series)
+    if not canonical or not re.fullmatch(r'[a-z0-9_]{1,100}', subject_slug):
+        raise HTTPException(404, 'Chưa có ảnh bìa cho sách này.')
+    # Naming example: image_sach/chan_troi_sang_tao_toan_10.jpg
+    for suffix, media in (('.jpg', 'image/jpeg'), ('.jpeg', 'image/jpeg'),
+                          ('.png', 'image/png'), ('.webp', 'image/webp')):
+        image = IMAGE_ROOT / f'{canonical}_{subject_slug}{suffix}'
+        if image.is_file():
+            return FileResponse(image, media_type=media)
+    raise HTTPException(404, 'Chưa có ảnh bìa cho sách này.')
+
+
 @router.get('/mine')
 def my_books(student_id: str):
     with LOCK:
@@ -110,7 +129,7 @@ def save_indexed_book(student_id, document_id, display_name, description, result
                       if (item.get('document_id') == document_id if document_id else
                           item.get('title') == title and item.get('subject') == subject and item.get('series') == series)), None)
         if document_id and index is None:
-            raise HTTPException(404, 'Sách đã bị gỡ trong khi xử lý; collection mới vẫn được giữ.')
+            raise HTTPException(404, 'Sách đã bị gỡ trong khi xử lý; dữ liệu đã indexing vẫn được giữ.')
         previous = items[index] if index is not None else {}
         item = {
             **previous, 'kind': kind, 'server_saved': True, 'document_id': previous.get('document_id') or str(uuid.uuid4()),
@@ -118,14 +137,14 @@ def save_indexed_book(student_id, document_id, display_name, description, result
             'title': title, 'subject': subject, 'series': series,
             'display_name': display_name.strip() or title, 'description': description.strip(),
             'cover_url': None, 'rag_ready': True, 'collection_name': collection,
-            'indexing_status': 'completed', 'uploaded_filename': result['uploaded_filename'],
-            'uploaded_pdf_path': result['uploaded_pdf_path'],
-            'file': {'name': result['uploaded_filename'], 'size': Path(result['uploaded_pdf_path']).stat().st_size, 'type': 'application/pdf'},
+            'indexing_status': 'completed', 'uploaded_filename': result.get('uploaded_filename'),
+            'uploaded_pdf_path': result.get('uploaded_pdf_path'),
+            'file': ({'name': result['uploaded_filename'], 'size': Path(result['uploaded_pdf_path']).stat().st_size, 'type': 'application/pdf'} if result.get('uploaded_pdf_path') else None),
             'indexing': {'job_id': result['job_id'], 'report_path': result['report_path'],
                          'total_chunks': result['total_chunks'], 'source_mode': result['source_mode'],
-                         'template_collection': result['qdrant']['template_collection']},
+                         'lesson_plan_name': result['lesson_plan_name'], 'lesson_plan_id': result['lesson_plan_id']},
         }
-        item['file_url'] = f"/api/ui/books/mine/{item['document_id']}/file?student_id={student_id}"
+        item['file_url'] = (f"/api/ui/books/mine/{item['document_id']}/file?student_id={student_id}" if result.get('uploaded_pdf_path') else None)
         if index is None:
             items.append(item)
         else:
@@ -135,12 +154,12 @@ def save_indexed_book(student_id, document_id, display_name, description, result
 
 
 @router.post('/upload', status_code=201)
-async def upload_and_index_book(file: UploadFile = File(...), student_id: str = Form(...),
+async def upload_and_index_book(file: UploadFile | None = File(None), student_id: str = Form(...),
                                 title: str = Form(..., min_length=1, max_length=200),
                                 subject: str | None = Form(None), series: str | None = Form(None),
                                 display_name: str = Form('', max_length=150),
                                 description: str = Form('', max_length=1000),
-                                document_id: str | None = Form(None)):
+                                document_id: str | None = Form(None), stream: bool = False):
     # Validate the student/document before costly extraction or collection creation.
     path = storage(student_id)
     if document_id:
@@ -148,10 +167,15 @@ async def upload_and_index_book(file: UploadFile = File(...), student_id: str = 
             if not any(item.get('document_id') == document_id for item in read_items(path)):
                 raise HTTPException(404, 'Không thấy tài liệu')
     try:
-        name = validate_name(title)
+        name = validate_lesson_plan_name(title)
     except ValueError as exc:
         raise HTTPException(422, str(exc)) from exc
     source_series = {'chan_troi': 'chan_troi_sang_tao', 'ket_noi': 'ket_noi_tri_thuc', 'canh_dieu': 'canh_dieu'}.get(series)
+    if file is None and (subject not in SUBJECTS or not source_series):
+        raise HTTPException(422, 'Chọn môn học và bộ sách hợp lệ khi không tải PDF.')
+    if stream:
+        return await stream_pdf_upload(file, book_name=name, source_subject=subject, source_series=source_series,
+            complete=lambda result: save_indexed_book(student_id, document_id, display_name, description, result))
     result = await process_pdf_upload(file, book_name=name, source_subject=subject, source_series=source_series)
     if result.get('status') != 'completed':
         raise HTTPException(502, 'Indexing chưa hoàn thành; chưa đánh dấu tài liệu sẵn sàng.')
@@ -161,12 +185,15 @@ async def upload_and_index_book(file: UploadFile = File(...), student_id: str = 
 async def upload_private_pdf(file: UploadFile = File(...), student_id: str = Form(...),
                              name: str = Form(..., min_length=1, max_length=150),
                              subject: str | None = Form(None),
-                             description: str = Form('', max_length=1000)):
+                             description: str = Form('', max_length=1000), stream: bool = False):
     storage(student_id)
     try:
-        name = validate_name(name)
+        name = validate_lesson_plan_name(name)
     except ValueError as exc:
         raise HTTPException(422, str(exc)) from exc
+    if stream:
+        return await stream_pdf_upload(file, book_name=name, source_subject=subject,
+            complete=lambda result: save_indexed_book(student_id, None, name, description, result, 'private'))
     result = await process_pdf_upload(file, book_name=name, source_subject=subject)
     if result.get('status') != 'completed':
         raise HTTPException(502, 'Indexing chưa hoàn thành.')

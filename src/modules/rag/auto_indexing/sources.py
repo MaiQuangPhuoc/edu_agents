@@ -12,7 +12,7 @@ DEFAULT_OUTPUT_ROOT = PROJECT_ROOT / "data/auto_indexing"
 
 SUBJECTS = {
     "toan_10": ("Toán 10", ("toan",)),
-    "lich_su_10": ("Lịch sử 10", ("lich su", "su")),
+    "lich_su_10": ("Lịch sử 10", ("lich su", "suj")),
     "ngu_van_10": ("Ngữ văn 10", ("ngu van", "van")),
 }
 SERIES = {
@@ -62,40 +62,21 @@ def read_metadata(path: Path) -> dict | None:
     return data if isinstance(data, dict) else None
 
 
-def select_sources(filename: str, source_root: Path) -> tuple[str, str, list[Path]]:
-    """Read the selected subject/book folder directly; YAML is left to the old chunker."""
+def select_sources(filename: str, source_root: Path):
     subject = subject_from_name(filename)
-    requested_series = series_from_name(filename)
-    source_root = Path(source_root).resolve()
-    if not source_root.is_dir():
-        raise FileNotFoundError(f"Không có thư mục giáo án gốc: {source_root}")
-    # Folder location, not textbook_series/subject inside YAML, selects demo input.
-    folder_names = {
-        'chan_troi_sang_tao': ('chan_troi_sang_tao',),
-        'canh_dieu': ('canh_dieu',),
-        'ket_noi_tri_thuc': ('ket_noi_tri_thuc', 'ket_noi_tri_thuc_voi_cuoc_song'),
-    }
-    matches = []
-    searched = []
-    books = [requested_series] if requested_series else list(folder_names)
-    for book in books:
-        for book_folder in folder_names[book]:
-            folder = source_root / book_folder / subject
-            # Also support --source-root pointing straight at a subject folder.
-            if source_root.name == subject and source_root.parent.name == book_folder:
-                folder = source_root
-            searched.append(str(folder))
-            if not folder.is_dir():
-                continue
-            files = sorted(path.resolve() for path in folder.iterdir()
-                           if path.is_file() and path.suffix.lower() == '.md')
-            if files:
-                if any(not path.is_relative_to(source_root) for path in files):
-                    raise ValueError('Markdown gốc nằm ngoài source_root.')
-                matches.append((book, files))
-    if not matches:
-        raise ValueError('Không có file .md trong thư mục giáo án đã chọn: ' + '; '.join(searched))
-    if len(matches) > 1:
-        raise ValueError('Có nhiều bộ giáo án cho môn này; hãy chọn rõ bộ sách.')
-    book, files = matches[0]
-    return subject, book, files
+
+    # Cố định bộ sách, không lấy từ dropdown trên UI.
+    base = Path(
+        r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT"
+        r"\src\modules\documents\lesson_plans\chan_troi_sang_tao"
+    )
+
+    folder = base / subject
+    files = sorted(folder.glob("*.md"))
+
+    if not files:
+        raise ValueError(f"Không có file .md trong: {folder}")
+
+    return subject, "chan_troi_sang_tao", [
+        path.resolve() for path in files
+    ]

@@ -22,12 +22,131 @@
     if(!r.ok) throw new Error(typeof d.detail==='string'?d.detail:d.detail?.message||`HTTP ${r.status}`);
     return d;
   }
+  const INDEX_STEPS=[
+    ['Tiếp nhận sách','Nhận lựa chọn sách và lưu PDF nếu có.'],
+    ['Đọc giáo án','Tìm các file Markdown theo môn và bộ sách.'],
+    ['Chia nội dung','Tạo các chunk và giữ metadata giáo án.'],
+    ['Chuẩn bị chỉ mục','Kiểm tra Qdrant, collection và mô hình embedding.'],
+    ['Embedding và upload','Xử lý và ghi từng lô chunk vào Qdrant.'],
+    ['Lưu kết quả','Lưu thông tin tài liệu để xem và tìm lại.'],
+  ];
+  const INDEX_STAGE={file_saved:0,queued:0,selecting_prepared_markdown:1,
+    chunking_prepared_markdown:2,checking_qdrant_config:3,preparing_index:3,
+    uploading_prepared_markdown:4,saving_document:5};
+  function createIndexTracker(id,title){
+    const panel=$(id);panel.hidden=false;panel.replaceChildren();
+    panel.className=`indexing-progress ${id==='book-indexing-progress'?'indexing-horizontal ':''}is-running`;
+    const heading=element('div',undefined,'indexing-heading');
+    const left=element('div');left.append(element('span','ĐANG XỬ LÝ','indexing-eyebrow'),element('h3',title));
+    const clock=element('span','00:00','indexing-clock');heading.append(left,clock);
+    const note=element('p','Đang gửi thông tin sách tới máy chủ…','indexing-current');note.setAttribute('role','status');
+    const track=element('div',undefined,'indexing-track');track.setAttribute('role','progressbar');
+    track.setAttribute('aria-label','Các bước xử lý đã hoàn thành');track.setAttribute('aria-valuemin','0');track.setAttribute('aria-valuemax','6');
+    const fill=element('span');track.append(fill);
+    const counter=element('span','Bước 1 / 6','indexing-counter');
+    const list=element('ol',undefined,'indexing-steps');
+    const rows=INDEX_STEPS.map(([label,description],index)=>{
+      const row=element('li',undefined,'indexing-step');
+      const badge=element('span',String(index+1),'indexing-step-badge');badge.setAttribute('aria-hidden','true');
+      const copy=element('div');const small=element('p',description);
+      copy.append(element('strong',label),small);row.append(badge,copy);list.append(row);
+      return {row,badge,small};
+    });
+    const detail=element('details',undefined,'indexing-details');
+    detail.append(element('summary','Chi tiết xử lý'));
+    const feed=element('div',undefined,'indexing-feed');detail.append(feed);
+    panel.append(heading,note,track,counter,list,detail);
+    let stage=0,finished=false,fileSaved=false,lastMessage='',fraction=0;
+    const started=performance.now();
+    const time=()=>{const seconds=Math.floor((performance.now()-started)/1000);clock.textContent=`${String(Math.floor(seconds/60)).padStart(2,'0')}:${String(seconds%60).padStart(2,'0')}`;};
+    const timer=setInterval(time,1000);
+    function draw(){
+      rows.forEach(({row,badge},i)=>{
+        const done=i<stage||(i===0&&fileSaved)||finished;
+        row.className=`indexing-step ${done?'is-done':i===stage?'is-active':'is-pending'}`;
+        badge.textContent=done?'✓':String(i+1);
+      });
+      const complete=finished?6:stage+fraction;
+      fill.style.width=`${Math.min(100,complete/6*100)}%`;
+      track.setAttribute('aria-valuenow',String(complete));
+      counter.textContent=finished?'Hoàn thành 6 / 6 bước':`Bước ${stage+1} / 6`;
+    }
+    function log(message){
+      if(!message||message===lastMessage)return;
+      lastMessage=message;
+      const line=element('p');line.append(element('time',clock.textContent),element('span',message));feed.append(line);
+      while(feed.children.length>40)feed.firstElementChild.remove();
+      feed.scrollTop=feed.scrollHeight;
+    }
+    draw();
+    return {
+      update(event){
+        if(finished)return;
+        if(!(event.stage in INDEX_STAGE))return;
+        const next=INDEX_STAGE[event.stage];
+        if(next>stage){stage=next;fraction=0;}
+        if(event.stage==='file_saved'){fileSaved=true;fraction=1;}
+        if(event.stage==='queued')note.textContent='Đang chờ lượt xử lý trên máy chủ…';
+        else note.textContent=event.message||INDEX_STEPS[stage][0]+'…';
+        if(Number.isFinite(event.current)&&event.total>0&&next===stage){
+          fraction=Math.max(0,Math.min(1,event.current/event.total));
+          rows[stage].small.textContent=event.message||`${event.current} / ${event.total}`;
+        }else if(event.message)rows[stage].small.textContent=event.message;
+        log(event.message||INDEX_STEPS[stage][0]);draw();
+      },
+      finish(document){
+        finished=true;clearInterval(timer);time();draw();panel.classList.remove('is-running');panel.classList.add('is-complete');
+        left.firstElementChild.textContent='HOÀN TẤT';
+        note.textContent=`Đã lập chỉ mục ${document.indexing?.total_chunks||0} chunk. Tài liệu đã có trong thư viện.`;
+        log('Đã lưu kết quả và thông tin tài liệu.');
+      },
+      fail(message){
+        clearInterval(timer);time();panel.classList.remove('is-running');panel.classList.add('is-failed');
+        rows[stage].row.classList.remove('is-active');rows[stage].row.classList.add('is-error');
+        rows[stage].badge.textContent='!';left.firstElementChild.textContent='CẦN KIỂM TRA';
+        note.textContent=message;log(message);detail.open=true;
+      },
+    };
+  }
+  async function indexWithProgress(url,form,id,title){
+    const tracker=createIndexTracker(id,title);
+    try{
+      const response=await fetch(`${url}?stream=true`,{method:'POST',body:form});
+      if(!response.ok){
+        const error=await response.json().catch(()=>({}));
+        throw new Error(typeof error.detail==='string'?error.detail:error.detail?.message||`HTTP ${response.status}`);
+      }
+      if(!response.headers.get('content-type')?.includes('text/event-stream')){
+        const document=await response.json();tracker.finish(document);return document;
+      }
+      const reader=response.body.getReader(),decoder=new TextDecoder();
+      let buffer='';
+      try{
+        while(true){
+          const {value,done}=await reader.read();
+          if(done)throw new Error('Kết nối tiến trình đã đóng trước khi nhận kết quả. Hãy kiểm tra thư viện trước khi nạp lại.');
+          buffer+=decoder.decode(value,{stream:true});
+          let boundary;
+          while((boundary=buffer.indexOf('\n\n'))!==-1){
+            const frame=buffer.slice(0,boundary);buffer=buffer.slice(boundary+2);
+            const data=frame.split(/\r?\n/).filter(line=>line.startsWith('data:')).map(line=>line.slice(5).trim()).join('\n');
+            if(!data)continue;
+            const event=JSON.parse(data);
+            if(event.type==='error')throw new Error(event.message||'Xử lý thất bại.');
+            if(event.type==='result'){tracker.finish(event.document);return event.document;}
+            if(event.type==='progress')tracker.update(event);
+          }
+        }
+      }finally{reader.releaseLock();}
+    }catch(error){tracker.fail(error.message);throw error;}
+  }
   function fillSubjects(id) {
     const sel=$(id); sel.replaceChildren();
     for(const name of subjects){ const opt=document.createElement('option'); opt.value=name; opt.textContent=name; sel.append(opt); }
   }
   fillSubjects('book-subject'); fillSubjects('private-subject');
-  $('book-subject').value='Toán';
+  $('book-subject').prepend(new Option('Chọn môn học',''));
+  $('book-subject').value='';
   $('private-subject').addEventListener('change',()=>{
     const custom=$('private-subject').value==='Khác';
     $('custom-subject-wrap').hidden=!custom;
@@ -45,18 +164,77 @@
 
   async function loadCatalog(){
     const series=$('series').value; const subject=$('book-subject').value;
+    if(!series||!subject){catalog=[];$('book-suggestions').replaceChildren();return;}
     const d=await api(`/api/ui/books?${new URLSearchParams({series,subject})}`);
     catalog=d.books||[];
     const list=$('book-suggestions'); list.replaceChildren();
     catalog.forEach(book=>{ const option=document.createElement('option');option.value=book.title;list.append(option); });
   }
-  ['series','book-subject'].forEach(id=>$(id).addEventListener('change',()=>{ $('book-name').value='';loadCatalog().catch(e=>status(e.message,true)); }));
+  function coverUrls(book) {
+    const slug = (book.subject || '')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[đĐ]/g, 'd')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '_')
+      .replace(/^_|_$/g, '');
+
+    const base = `/api/ui/books/covers/${encodeURIComponent(book.series || '')}`;
+    const name = `${slug}_10`;
+
+    // Toán và Ngữ văn có hai tập.
+    return ['toan', 'ngu_van'].includes(slug)
+      ? [`${base}/${name}_1`, `${base}/${name}_2`]
+      : [`${base}/${name}`];
+  }
+
+  function renderBookCovers(host, book, onState = () => {}) {
+    host.querySelector('.volume-covers')?.remove();
+
+    const gallery = element('span', undefined, 'volume-covers');
+    gallery.hidden = true;
+    host.append(gallery);
+    onState(false);
+
+    const urls = coverUrls(book);
+
+    urls.forEach((url, index) => {
+      const image = element('img');
+      image.hidden = true;
+      image.alt = urls.length > 1
+        ? `${book.title} — Tập ${index + 1}`
+        : `Bìa ${book.title}`;
+
+      image.onload = () => {
+        // Bỏ qua kết quả của lựa chọn cũ.
+        if (!host.contains(gallery)) return;
+        image.hidden = false;
+        gallery.hidden = false;
+        onState(true);
+      };
+
+      image.onerror = () => image.remove();
+      gallery.append(image);
+      image.src = url;
+    });
+  }
+  function previewBookSelection(){
+    const subject=$('book-subject').value,series=$('series').value;
+    if(!subject||!series){$('confirmed-book').hidden=true;$('book-preview').hidden=false;showBookFile(selectedBookFile);return;}
+    const title=$('book-name').value.trim()||`${subject} 10`;
+    showPreview({title,display_name:$('display-name').value.trim()||title,subject,series,pending:true},selectedBookFile);
+  }
+  ['series','book-subject'].forEach(id=>$(id).addEventListener('change',()=>{
+    $('book-name').value=$('book-subject').value?`${$('book-subject').value} 10`:'';
+    previewBookSelection();loadCatalog().catch(e=>status(e.message,true));
+  }));
+  ['book-name','display-name'].forEach(id=>$(id).addEventListener('input',previewBookSelection));
   function showPreview(book, file=null){
     $('confirmed-book').hidden=false; $('book-preview').hidden=true;
     $('preview-title').textContent=book.display_name;
     $('preview-meta').textContent=`${book.subject} · ${seriesLabels[book.series]||book.series}`;
     $('preview-note').textContent=`Tên sách: ${book.title}`;
-    $('preview-rag').textContent=book.rag_ready?`Đã lập chỉ mục${book.indexing?.total_chunks?` · ${book.indexing.total_chunks} đoạn`:''}`:'Chưa có chỉ mục RAG';
+    $('preview-rag').textContent=book.pending?'Xem trước · Chưa xác nhận':book.rag_ready?`Đã lập chỉ mục${book.indexing?.total_chunks?` · ${book.indexing.total_chunks} đoạn`:''}`:'Chưa có chỉ mục RAG';
     const fileInfo=$('book-confirmed-file-info');
     fileInfo.replaceChildren();
     if(file){
@@ -73,26 +251,60 @@
     }
     $('cover-title').textContent=book.title;
     $('cover-series').textContent=seriesLabels[book.series]||book.series;
-    // Không tự lấy ảnh không xác thực; chỉ sử dụng URL bìa có trong danh mục.
-    const img=$('cover-image');img.hidden=true;img.removeAttribute('src');$('cover-fallback').hidden=false;
-    if (typeof book.cover_url==='string' && /^https:\/\//.test(book.cover_url)) {
-      img.onload=()=>{img.hidden=false;$('cover-fallback').hidden=true;};
-      img.onerror=()=>{img.hidden=true;$('cover-fallback').hidden=false;};
-      img.src=book.cover_url;
-    }
+    const img = $('cover-image');
+    img.hidden = true;
+    img.removeAttribute('src');
+
+    renderBookCovers($('book-cover'), book, loaded => {
+      $('cover-fallback').hidden = loaded;
+      $('book-cover').classList.toggle('has-volumes', loaded);
+    });
     showBookFile(file,book);
   }
-  function showBookFile(file,book=null){
-    if(bookObjectUrl){URL.revokeObjectURL(bookObjectUrl);bookObjectUrl=null;}
-    const url=file?(bookObjectUrl=URL.createObjectURL(file)):book?.file_url;
-    $('book-file-viewer').hidden=!url;
-    if(url){
-      $('book-file-frame').src=url;
-      $('book-file-open').href=url;
-      $('book-file-viewer-name').textContent=file?.name||book.uploaded_filename;
-    }else{
-      $('book-file-frame').removeAttribute('src');
-      $('book-file-open').removeAttribute('href');
+  function showBookFile(file, book = null) {
+    if (bookObjectUrl) {
+      URL.revokeObjectURL(bookObjectUrl);
+      bookObjectUrl = null;
+    }
+
+    const url = file
+      ? (bookObjectUrl = URL.createObjectURL(file))
+      : book?.file_url;
+
+    const viewer = $('book-file-viewer');
+    const frame = $('book-file-frame');
+    const note = $('book-viewer-note');
+
+    viewer.querySelector('.volume-covers')?.remove();
+    $('book-viewer-cover').hidden = true;
+    $('book-viewer-cover').removeAttribute('src');
+
+    viewer.hidden = !url && !book;
+    frame.hidden = !url;
+    note.hidden = true;
+    $('book-file-open').hidden = !url;
+
+    if (url) {
+      $('book-file-viewer-title').textContent = 'Xem sách vừa tải';
+      $('book-file-viewer-name').textContent =
+        file?.name || book.uploaded_filename;
+      frame.src = url;
+      $('book-file-open').href = url;
+      return;
+    }
+
+    frame.removeAttribute('src');
+    $('book-file-open').removeAttribute('href');
+    $('book-file-viewer-title').textContent = 'Xem sách đã chọn';
+    $('book-file-viewer-name').textContent = book?.title || '';
+
+    if (book) {
+      renderBookCovers(viewer, book, loaded => {
+        note.hidden = false;
+        note.textContent = loaded
+          ? 'Ảnh bìa sách. Chưa có PDF để xem nội dung.'
+          : 'Chưa tải được ảnh bìa. Bạn vẫn có thể xác nhận sách.';
+      });
     }
   }
   function getPrivateDocuments(){
@@ -114,11 +326,16 @@
       throw new Error('Không thể lưu tài liệu riêng trong trình duyệt.');
     }
   }
-  function createCover(title,kind,subject){
+  function createCover(title,kind,subject,book=null){
     const cover=element('span',undefined,`document-cover ${kind==='private'?'private-cover':'book-cover'}`);
     cover.append(element('span',kind==='private'?'TÀI LIỆU':'EDUAGENT','cover-brand'));
     cover.append(element('strong',title,'cover-title'));
     cover.append(element('span',subject,'cover-subject'));
+    if (kind === 'book' && book) {
+      renderBookCovers(cover, book, loaded => {
+        cover.classList.toggle('has-cover-image', loaded);
+      });
+    }
     return cover;
   }
   function showPrivateDetail(document){
@@ -247,7 +464,7 @@
       open.setAttribute('aria-label',`Xem ${record.display_name||record.title}`);
       open.setAttribute('aria-pressed',String(selectedPrivateDocumentId===id));
       open.append(createCover(record.display_name||record.title,kind,
-        kind==='private'?record.subject:`LỚP ${record.grade||10} · ${record.subject}`));
+        kind==='private'?record.subject:`LỚP ${record.grade||10} · ${record.subject}`,record));
       const copy=element('span',undefined,'document-card-copy');
       copy.append(element('strong',record.display_name||record.title));
       copy.append(element('span',kind==='private'
@@ -323,7 +540,7 @@
   function cancelEdit(){
     editingDocumentId=null;
     $('book-form').reset();
-    $('book-subject').value='Toán';
+    $('book-subject').value='';
     $('book-name').value='';
     $('confirm-book').textContent='Xác nhận sách';
     $('cancel-edit-book').hidden=true;
@@ -367,9 +584,9 @@
     try {
       const editing=Boolean(editingDocumentId);
       let book;
-      if(file){
+      if(file||!editing){
         const form=new FormData();
-        form.append('file',file,file.name);
+        if(file)form.append('file',file,file.name);
         form.append('student_id',STUDENT_ID);
         form.append('title',title);
         form.append('subject',body.subject);
@@ -378,16 +595,15 @@
         form.append('description',body.description);
         if(editing)form.append('document_id',editingDocumentId);
         btn.textContent='Đang xử lý…';
-        status('Đang lưu PDF và lập chỉ mục. Vui lòng chờ.');
-        // Subject/book are resolved by the server from the original filename.
-        book=await api('/api/ui/books/upload',{method:'POST',body:form});
+        status('Đang lập chỉ mục giáo án theo môn và bộ sách đã chọn.');
+        book=await indexWithProgress('/api/ui/books/upload',form,'book-indexing-progress',title);
       }else{
         const url=editing?`/api/ui/books/mine/${encodeURIComponent(editingDocumentId)}`:'/api/ui/books/attach';
         book=await api(url,{method:editing?'PUT':'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
       }
       cancelEdit();
       showPreview(book,file);await loadMine();
-      status(file?'Đã xử lý tài liệu và lập chỉ mục thành công.':editing?'Đã cập nhật thông tin sách.':'Đã xác nhận và lưu thông tin sách.');
+      status(book.rag_ready?'Đã xác nhận sách và lập chỉ mục thành công.':'Đã cập nhật thông tin sách.');
     }catch(err){status(err.message,true);}finally{
       controls.forEach(control=>control.disabled=false);
       $('series').disabled=false;
@@ -449,6 +665,7 @@
     if(selectedBookFile&&!$('book-name').value.trim()){
       $('book-name').value=selectedBookFile.name.replace(/\.pdf$/i,'').replace(/[_-]+/g,' ').trim();
     }
+    previewBookSelection();
     if(selectedBookFile){
       showBookFile(selectedBookFile);
       $('book-drop').classList.add('has-file');
@@ -484,7 +701,7 @@
           form.append('file',file,file.name);form.append('student_id',STUDENT_ID);
           form.append('name',name);form.append('subject',subject);form.append('description',description);
           status(`Đang lưu và lập chỉ mục ${name}…`);
-          record=await api('/api/ui/books/private/upload',{method:'POST',body:form});
+          record=await indexWithProgress('/api/ui/books/private/upload',form,'private-indexing-progress',name);
         }else{
           record={document_id:`private-${Date.now()}-${Math.random().toString(36).slice(2)}`,
             kind:'private',display_name:name,subject,description,

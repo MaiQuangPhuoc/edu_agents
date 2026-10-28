@@ -1,0 +1,18 @@
+{
+  "job_id": "20261027T140306Z_69c03fb82d0f",
+  "uploaded_filename": "toan-10.pdf",
+  "uploaded_pdf_path": "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\data\\auto_indexing\\uploads\\e31df2771a8d4f69a29b1a431e888b66.pdf",
+  "pdf_sha256": "2faafb4dc123452914637502050523aa8611677abb5868e8ec141d05eb582f2d",
+  "pdf_extracted": false,
+  "source_mode": "prepared_markdown",
+  "book_name": "toan 10",
+  "lesson_plan_name": "toan 10",
+  "lesson_plan_id": "d0698320-5bbf-558e-8e63-5a4bca888ee7",
+  "target_collection": "doc_final",
+  "report_path": "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\data\\auto_indexing\\jobs\\20261027T140306Z_69c03fb82d0f\\report.json",
+  "warnings": [],
+  "status": "failed",
+  "error": "Không có file .md trong thư mục giáo án đã chọn: D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\ket_noi_tri_thuc\\toan_10; D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\ket_noi_tri_thuc_voi_cuoc_song\\toan_10",
+  "failed_stage": "selecting_prepared_markdown",
+  "qdrant_may_be_partial": false
+}

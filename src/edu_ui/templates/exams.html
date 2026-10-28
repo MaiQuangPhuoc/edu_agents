@@ -1,12 +1,24 @@
 {% extends "base.html" %}
 {% block document_title %}EDUAGENT — Bài kiểm tra{% endblock %}
-{% block page_styles %}<link rel="stylesheet" href="/ui-static/css/exams.css">{% endblock %}
-{% block page_scripts %}<script defer src="/ui-static/js/exams.js"></script>{% endblock %}
+{% block page_styles %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<link rel="stylesheet" href="/ui-static/css/exams.css?v=subject-grid4">
+{% endblock %}
+{% block page_scripts %}
+<script defer src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+<script defer src="/ui-static/js/exams.js?v=subject-grid4"></script>
+{% endblock %}
 {% block page_title %}Bài kiểm tra{% endblock %}
 {% block page_description %}Luyện tập theo chủ đề và theo dõi kết quả của bạn.{% endblock %}
 {% block body_class %}exam-body{% endblock %}
 {% block content_class %}exam-content{% endblock %}
 {% block content %}
+<p id="render-notice" class="render-notice" role="status" hidden>Chưa tải được thư viện định dạng. Nội dung vẫn được giữ nguyên; kiểm tra kết nối mạng rồi tải lại trang để xem công thức và định dạng đầy đủ.</p>
 <section id="list-view" class="exam-library">
   <header class="library-heading">
     <div>
@@ -77,9 +89,10 @@
     <button id="back" class="back-button" type="button">
       <span aria-hidden="true">←</span> Danh sách đề
     </button>
-    <span class="detail-context">GÓC LUYỆN TẬP</span>
+    <span id="detail-context" class="detail-context">GÓC LUYỆN TẬP</span>
   </div>
   <div id="exam-detail" class="exam-detail"></div>
 </section>
 <p id="message" class="exam-message" role="status" aria-live="polite"></p>
 {% endblock %}
+

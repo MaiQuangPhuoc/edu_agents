@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block document_title %}EDUAGENT — Nạp tài liệu{% endblock %}
-{% block page_styles %}<link rel="stylesheet" href="/ui-static/css/documents.css?v=viewer2">{% endblock %}
-{% block page_scripts %}<script defer src="/ui-static/js/documents.js?v=viewer2"></script>{% endblock %}
+{% block page_styles %}<link rel="stylesheet" href="/ui-static/css/documents.css?v=covers4">{% endblock %}
+{% block page_scripts %}<script defer src="/ui-static/js/documents.js?v=covers4"></script>{% endblock %}
 {% block body_class %}documents-page{% endblock %}
 {% block page_title %}Nạp tài liệu{% endblock %}
 {% block page_description %}Thêm sách giáo khoa hoặc chọn tài liệu học tập của riêng bạn.{% endblock %}
@@ -13,6 +13,25 @@
 <section id="book-panel" class="layout">
   <div class="card">
     <h2>Thêm sách giáo khoa</h2>
+    <p class="muted">Chọn môn học và bộ sách để xem bìa ngay. Không cần có file PDF.</p>
+    <form id="book-form">
+      <label for="series">Tên sách / Bộ sách <span class="req">*</span></label>
+      <select id="series" required>
+        <option value="">Chọn bộ sách</option>
+        <option value="ket_noi">Kết nối tri thức với cuộc sống</option>
+        <option value="chan_troi">Chân trời sáng tạo</option>
+        <option value="canh_dieu">Cánh Diều</option>
+        <option value="khac">Khác</option>
+      </select>
+      <label for="book-subject">Môn học <span class="req">*</span></label><select id="book-subject" required></select>
+      <label for="book-name">Tên sách <span class="req">*</span></label>
+      <input id="book-name" list="book-suggestions" maxlength="200" required placeholder="VD: Toán 10 - Tập 1">
+      <datalist id="book-suggestions"></datalist>
+      <label for="display-name">Tên tài liệu (không bắt buộc)</label>
+      <input id="display-name" maxlength="150" placeholder="Để trống sẽ dùng tên sách">
+      <label for="description">Mô tả (không bắt buộc)</label>
+      <textarea id="description" maxlength="1000" rows="3" placeholder="Không có"></textarea>
+      <details class="optional-pdf"><summary>Tôi có file PDF (không bắt buộc)</summary>
     <label class="field-title" for="book-file">Tệp PDF của sách</label>
     <div class="dropzone book-dropzone" id="book-drop" tabindex="0" role="button" aria-label="Chọn hoặc kéo thả PDF sách giáo khoa">
       <svg class="upload-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M4 15.5v3A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5v-3"/></svg>
@@ -21,31 +40,15 @@
       <input type="file" id="book-file" accept=".pdf,application/pdf" hidden>
     </div>
     <div id="book-file-info" class="chosen" aria-live="polite"></div>
-    <p class="notice upload-notice">Chọn PDF để lưu và xem. Tên sách được dùng làm tên bộ dữ liệu và không được trùng tên đã sử dụng.</p>
-    <h3 class="book-form-heading">Thông tin sách</h3>
-    <form id="book-form">
-      <label for="series">Bộ sách</label>
-      <select id="series">
-        <option value="ket_noi">Kết nối tri thức với cuộc sống</option>
-        <option value="chan_troi">Chân trời sáng tạo</option>
-        <option value="canh_dieu">Cánh Diều</option>
-        <option value="khac">Khác</option>
-      </select>
-      <label for="book-subject">Môn học</label><select id="book-subject"></select>
-      <label for="book-name">Tên sách <span class="req">*</span></label>
-      <input id="book-name" list="book-suggestions" maxlength="200" required placeholder="VD: Toán 10 - Tập 1">
-      <datalist id="book-suggestions"></datalist>
-      <label for="display-name">Tên tài liệu (không bắt buộc)</label>
-      <input id="display-name" maxlength="150" placeholder="Để trống sẽ dùng tên sách">
-      <label for="description">Mô tả (không bắt buộc)</label>
-      <textarea id="description" maxlength="1000" rows="3" placeholder="Không có"></textarea>
+      </details>
       <button class="primary" type="submit" id="confirm-book">Xác nhận sách</button>
       <button class="secondary" type="button" id="cancel-edit-book" hidden>Hủy chỉnh sửa</button>
     </form>
   </div>
+  <div class="book-right-column">
   <div class="card">
     <h2>Sách đã xác nhận</h2>
-    <div id="book-preview" class="empty">Nhập thông tin rồi nhấn “Xác nhận sách” để xem trước.</div>
+    <div id="book-preview" class="empty">Chọn môn học và bộ sách để xem bìa. Nhấn “Xác nhận sách” khi đã sẵn sàng.</div>
     <div id="confirmed-book" hidden>
       <div class="book-preview">
         <div class="cover" id="book-cover">
@@ -67,7 +70,11 @@
       </div>
       <p id="book-file-viewer-name" class="muted"></p>
       <iframe id="book-file-frame" title="Nội dung PDF vừa tải"></iframe>
+      <img id="book-viewer-cover" alt="Bìa sách đã chọn" hidden>
+      <p id="book-viewer-note" class="muted" hidden></p>
     </section>
+  </div>
+  <section id="book-indexing-progress" class="indexing-progress indexing-horizontal" hidden aria-label="Tiến trình xử lý sách"></section>
 </section>
 <section id="private-panel" class="private-workspace" hidden>
   <section class="card private-form-card" aria-labelledby="private-heading">
@@ -85,9 +92,10 @@
         <input type="file" id="private-file" multiple accept=".pdf,.docx,.txt,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png" hidden>
       </div>
       <div class="chosen" id="private-file-info"></div>
-      <p class="notice">PDF được lưu để xem lại; tên tài liệu dùng làm tên bộ dữ liệu và phải khác tên đã sử dụng. Các định dạng khác chỉ được xem trước trong trình duyệt.</p>
+      <p class="notice">PDF được lưu để xem lại; tên tài liệu được lưu cùng giáo án để tìm theo tên. Các định dạng khác chỉ được xem trước trong trình duyệt.</p>
       <button class="primary private-confirm" type="submit" id="confirm-private">Xác nhận tài liệu</button>
     </form>
+    <section id="private-indexing-progress" class="indexing-progress" hidden aria-label="Tiến trình xử lý tài liệu riêng"></section>
   </section>
   <aside class="card private-detail-card" aria-labelledby="private-detail-heading">
     <div class="private-detail-heading">

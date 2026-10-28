@@ -1,12 +1,9 @@
-"""Exam catalog and persisted attempts for EDUAGENT UI.
-A configured data/edu_ui_exams/catalog.json takes precedence; otherwise valid
-question sets are discovered in src/test_exam and src/test_exam copy.
-Files without questions, options, and answer keys are not treated as exams.
-Correct answers are hidden until an attempt is submitted.
-Demo student_id query argument must be replaced by authenticated identity in production.
+"""Grade-10 exam library from src/test_exam only.
+Subject is determined by the filename prefix, never inferred by an LLM.
+Answer keys remain server-side until submission.
 """
 import json
-import hashlib
+import logging
 import re
 import threading
 from datetime import datetime, timezone
@@ -16,11 +13,27 @@ from pydantic import BaseModel, Field
 
 router = APIRouter(prefix="/api/ui/exams", tags=["ui-exams"])
 DATA = Path(__file__).resolve().parents[2] / "data" / "edu_ui_exams"
-SOURCE_DIRS = (
-    (Path(__file__).resolve().parents[1] / "test_exam", "test_exam"),
-    (Path(__file__).resolve().parents[1] / "test_exam copy", "test_exam-copy"),
-)
-DEMO_FILE = Path(__file__).resolve().parent / "demo_data" / "exams.json"
+SOURCE_DIR = Path(__file__).resolve().parents[1] / "test_exam"
+SUBJECT_PREFIXES = {
+    "toan": "Toán 10", "ngu_van": "Ngữ văn 10", "van": "Ngữ văn 10",
+    "lich_su": "Lịch sử 10", "tieng_anh": "Tiếng Anh 10", "anh": "Tiếng Anh 10",
+    "vat_li": "Vật lí 10", "vat_ly": "Vật lí 10", "hoa_hoc": "Hóa học 10",
+    "sinh_hoc": "Sinh học 10", "dia_li": "Địa lí 10", "dia_ly": "Địa lí 10",
+    "tin_hoc": "Tin học 10", "cong_nghe": "Công nghệ 10",
+    "gdktpl": "Giáo dục kinh tế và pháp luật 10", "gdqp": "Giáo dục quốc phòng và an ninh 10",
+    "gd_the_chat": "Giáo dục thể chất 10", "am_nhac": "Âm nhạc 10", "mi_thuat": "Mĩ thuật 10",
+}
+logger = logging.getLogger(__name__)
+
+
+def subject_from_filename(filename):
+    stem = Path(filename).stem.casefold()
+    for prefix in sorted(SUBJECT_PREFIXES, key=len, reverse=True):
+        if stem.startswith(prefix + "_"):
+            return SUBJECT_PREFIXES[prefix]
+    return None
+
+
 LOCK = threading.RLock()
 
 class Answers(BaseModel):
@@ -41,107 +54,59 @@ def read_json(path: Path, default):
 
 def source_exams():
     exams = []
-    seen_fingerprints = set()
-    for directory, source_name in SOURCE_DIRS:
-        if not directory.is_dir():
+    if not SOURCE_DIR.is_dir():
+        return exams
+    for path in sorted(SOURCE_DIR.glob("*.json")):
+        subject = subject_from_filename(path.name)
+        if not subject:
+            logger.warning("Bỏ qua %s: chưa có tiền tố môn học hợp lệ.", path.name)
             continue
-        for path in sorted(directory.glob("exam_*.json")):
+        try:
+            raw = json.loads(path.read_text(encoding="utf-8-sig"))
+        except (OSError, ValueError) as exc:
+            raise HTTPException(500, f"Không đọc được đề kiểm tra: {path.name}") from exc
+        questions = raw.get("questions") if isinstance(raw, dict) else raw
+        if not isinstance(questions, list) or not questions or any(
+            not isinstance(q, dict) or not isinstance(q.get("question"), str)
+            or not q["question"].strip() or not isinstance(q.get("options"), dict)
+            or len(q["options"]) < 2 or str(q.get("answer", "")) not in q["options"]
+            or any(not isinstance(value, str) for value in q["options"].values())
+            for q in questions
+        ):
+            logger.warning("Bỏ qua %s: thiếu câu hỏi, lựa chọn hoặc đáp án hợp lệ.", path.name)
+            continue
+        chapters = list(dict.fromkeys(str(q["chuong"]).strip() for q in questions if q.get("chuong")))
+        topics = list(dict.fromkeys(str(q["bai"]).strip() for q in questions if q.get("bai")))
+        created_at = None
+        date = re.search(r"(\d{8}_\d{6})$", path.stem)
+        if date:
             try:
-                raw = json.loads(path.read_text(encoding="utf-8-sig"))
-            except (OSError, ValueError) as exc:
-                raise HTTPException(
-                    500, f"Không đọc được đề kiểm tra: {path.name}"
-                ) from exc
-
-            questions = raw.get("questions") if isinstance(raw, dict) else raw
-            if not isinstance(questions, list) or not questions:
-                continue
-            if any(
-                not isinstance(question, dict)
-                or not isinstance(question.get("question"), str)
-                or not question["question"].strip()
-                or not isinstance(question.get("options"), dict)
-                or len(question["options"]) < 2
-                or str(question.get("answer", "")) not in question["options"]
-                for question in questions
-            ):
-                continue
-
-            fingerprint_data = [
-                {
-                    "question": question["question"].strip(),
-                    "options": question["options"],
-                    "answer": str(question["answer"]),
-                }
-                for question in questions
-            ]
-            fingerprint = hashlib.sha256(
-                json.dumps(
-                    fingerprint_data, ensure_ascii=False, sort_keys=True
-                ).encode("utf-8")
-            ).hexdigest()
-            if fingerprint in seen_fingerprints:
-                continue
-            seen_fingerprints.add(fingerprint)
-
-            chapters = list(dict.fromkeys(
-                str(question.get("chuong", "")).strip()
-                for question in questions
-                if question.get("chuong")
-            ))
-            topics = list(dict.fromkeys(
-                str(question.get("bai", "")).strip()
-                for question in questions
-                if question.get("bai")
-            ))
-            chapter_summary = " · ".join(chapters[:3])
-            exam_date = None
-            try:
-                exam_date = datetime.strptime(
-                    path.stem.removeprefix("exam_"), "%Y%m%d_%H%M%S"
-                ).replace(tzinfo=timezone.utc).isoformat()
+                created_at = datetime.strptime(date[1], "%Y%m%d_%H%M%S").replace(tzinfo=timezone.utc).isoformat()
             except ValueError:
                 pass
-
-            exams.append({
-                "exam_id": f"{source_name}--{path.stem}",
-                "title": f"Đề luyện tập {len(exams) + 1:02d}",
-                "subject": "Toán 10",
-                "chapter": chapter_summary or "Ôn tập tổng hợp",
-                "topics": topics,
-                "source_file": f"{source_name}/{path.name}",
-                "created_at": exam_date,
-                "questions": [
-                    {
-                        "id": f"q{index}",
-                        "text": question["question"].strip(),
-                        "options": question["options"],
-                        "answer": str(question["answer"]),
-                        "explanation": question.get("giai_thich", ""),
-                    }
-                    for index, question in enumerate(questions, start=1)
-                ],
-            })
+        default_title = path.stem.replace("_", " ")
+        title = raw.get("title") if isinstance(raw, dict) else None
+        exams.append({
+            "exam_id": f"test_exam--{path.stem}",
+            "title": title.strip() if isinstance(title, str) and title.strip() else default_title,
+            "subject": subject, "chapter": " · ".join(chapters[:3]) or "Ôn tập tổng hợp",
+            "topics": topics, "source_file": f"test_exam/{path.name}", "created_at": created_at,
+            "questions": [{"id": f"q{i}", "text": q["question"].strip(), "options": q["options"],
+                           "answer": str(q["answer"]), "explanation": q.get("giai_thich", "")}
+                          for i, q in enumerate(questions, 1)],
+        })
     return exams
 
 
 def catalog():
-    exams = read_json(DATA / "catalog.json", None)
-    if exams is None:
-        exams = source_exams()
-    if not isinstance(exams, list):
-        raise HTTPException(500, "catalog.json phải là danh sách đề")
-    if exams:
-        return exams, False
-    return read_json(DEMO_FILE, []), True
+    # The user's chosen folder is the sole source; no demo or copy-folder fallback.
+    return source_exams(), False
+
 
 def load_attempts(student_id: str, demo: bool):
     path = student_file(student_id)
     if path.is_file():
         return read_json(path, {})
-    if student_id == "hs_002" and demo:
-        example = Path(__file__).resolve().parent / "demo_data" / "attempts.json"
-        return read_json(example, {})
     return {}
 
 def find_exam(exam_id):
@@ -228,3 +193,4 @@ def submit(exam_id: str, student_id: str, body: Answers):
         attempts[exam_id] = result
         save(path, attempts)
     return {"result": result}
+

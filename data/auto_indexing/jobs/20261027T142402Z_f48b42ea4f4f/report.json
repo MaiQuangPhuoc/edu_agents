@@ -1,0 +1,30 @@
+{
+  "job_id": "20261027T142402Z_f48b42ea4f4f",
+  "uploaded_filename": "toan-10.pdf",
+  "uploaded_pdf_path": "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\data\\auto_indexing\\uploads\\fd7ff862792e43619ecb1b7c614634a0.pdf",
+  "pdf_sha256": "2faafb4dc123452914637502050523aa8611677abb5868e8ec141d05eb582f2d",
+  "pdf_extracted": false,
+  "source_mode": "prepared_markdown",
+  "book_name": "toan 10",
+  "lesson_plan_name": "toan 10",
+  "lesson_plan_id": "d0698320-5bbf-558e-8e63-5a4bca888ee7",
+  "target_collection": "giao_an",
+  "report_path": "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\data\\auto_indexing\\jobs\\20261027T142402Z_f48b42ea4f4f\\report.json",
+  "warnings": [],
+  "status": "failed",
+  "subject": "toan_10",
+  "textbook_series": "chan_troi_sang_tao",
+  "total_chunks": 126,
+  "indexing_source_files": [
+    "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\toan_10\\chapter_I.md",
+    "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\toan_10\\chapter_II.md",
+    "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\toan_10\\chapter_III.md",
+    "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\toan_10\\chapter_IV.md",
+    "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\toan_10\\chapter_V.md",
+    "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\toan_10\\chapter_VI.md"
+  ],
+  "prepared_chunks_path": "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\data\\auto_indexing\\jobs\\20261027T142402Z_f48b42ea4f4f\\prepared_chunks.json",
+  "error": "[Errno 11001] getaddrinfo failed",
+  "failed_stage": "preparing_index",
+  "qdrant_may_be_partial": true
+}

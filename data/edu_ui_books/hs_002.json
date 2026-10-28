@@ -12,18 +12,6 @@
     "description": "sách giáo khoa chuẩn của bộ giáo dục"
   },
   {
-    "book_id": "d2642028-0a87-4f98-9c10-4c36a6a03893",
-    "title": "data",
-    "series": "ket_noi",
-    "subject": "Toán",
-    "grade": 10,
-    "rag_ready": false,
-    "cover_url": null,
-    "document_id": "248313a7-7133-4b76-9f5d-0b150fec7a1a",
-    "display_name": "data",
-    "description": ""
-  },
-  {
     "book_id": "3831c5be-9d9a-4fe6-928a-b1622ca686c8",
     "title": "sachtoandataa",
     "series": "ket_noi",
@@ -36,15 +24,95 @@
     "description": "mô tả"
   },
   {
-    "book_id": "fe41e2a1-f721-41e2-a5ec-456fd9695fcf",
-    "title": "datazz",
-    "series": "ket_noi",
-    "subject": "Toán",
+    "kind": "book",
+    "server_saved": true,
+    "document_id": "965e1467-c737-4097-bfe6-6a367351044b",
+    "book_id": "f929c636-87f0-4742-964f-3c6610ae5ff5",
     "grade": 10,
-    "rag_ready": false,
+    "title": "toan 10",
+    "subject": "Toán",
+    "series": "chan_troi",
+    "display_name": "toan 10",
+    "description": "",
     "cover_url": null,
-    "document_id": "e644c39a-e115-450e-a0f2-88739b803b99",
-    "display_name": "zzz",
-    "description": "zzz"
+    "rag_ready": true,
+    "collection_name": "giao_an",
+    "indexing_status": "completed",
+    "uploaded_filename": "toan-10.pdf",
+    "uploaded_pdf_path": "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\data\\auto_indexing\\uploads\\47551ba609ae4729beaef202fdbbfc8c.pdf",
+    "file": {
+      "name": "toan-10.pdf",
+      "size": 613650,
+      "type": "application/pdf"
+    },
+    "indexing": {
+      "job_id": "20261027T140623Z_2aa936c38992",
+      "report_path": "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\data\\auto_indexing\\jobs\\20261027T140623Z_2aa936c38992\\report.json",
+      "total_chunks": 126,
+      "source_mode": "prepared_markdown",
+      "lesson_plan_name": "toan 10",
+      "lesson_plan_id": "d0698320-5bbf-558e-8e63-5a4bca888ee7"
+    },
+    "file_url": "/api/ui/books/mine/965e1467-c737-4097-bfe6-6a367351044b/file?student_id=hs_002"
+  },
+  {
+    "kind": "book",
+    "server_saved": true,
+    "document_id": "b68d3692-456c-4fe6-b211-7e93ab0a37a1",
+    "book_id": "b208e790-8615-482a-8694-2ff00598cced",
+    "grade": 10,
+    "title": "Ngữ văn 10",
+    "subject": "Ngữ văn",
+    "series": "chan_troi",
+    "display_name": "Ngữ văn 10",
+    "description": "",
+    "cover_url": null,
+    "rag_ready": true,
+    "collection_name": "giao_an",
+    "indexing_status": "completed",
+    "uploaded_filename": null,
+    "uploaded_pdf_path": null,
+    "file": null,
+    "indexing": {
+      "job_id": "20261027T151504Z_1561cccea549",
+      "report_path": "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\data\\auto_indexing\\jobs\\20261027T151504Z_1561cccea549\\report.json",
+      "total_chunks": 116,
+      "source_mode": "prepared_markdown",
+      "lesson_plan_name": "Ngữ văn 10",
+      "lesson_plan_id": "a9f58829-148b-5279-ae4f-ab302a2a863f"
+    },
+    "file_url": null
+  },
+  {
+    "kind": "private",
+    "server_saved": true,
+    "document_id": "b2505959-1e79-4586-9016-06e1ae355e95",
+    "book_id": "84c7dc10-8032-4c3c-a50a-946287c0a239",
+    "grade": 10,
+    "title": "lich su 10",
+    "subject": "Toán",
+    "series": "chan_troi",
+    "display_name": "lich su 10",
+    "description": "",
+    "cover_url": null,
+    "rag_ready": true,
+    "collection_name": "giao_an",
+    "indexing_status": "completed",
+    "uploaded_filename": "ngu_van_10.pdf",
+    "uploaded_pdf_path": "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\data\\auto_indexing\\uploads\\a96692c3e1304660ad299080ae763473.pdf",
+    "file": {
+      "name": "ngu_van_10.pdf",
+      "size": 613650,
+      "type": "application/pdf"
+    },
+    "indexing": {
+      "job_id": "20261027T151745Z_eeac57c98d82",
+      "report_path": "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\data\\auto_indexing\\jobs\\20261027T151745Z_eeac57c98d82\\report.json",
+      "total_chunks": 126,
+      "source_mode": "prepared_markdown",
+      "lesson_plan_name": "lich su 10",
+      "lesson_plan_id": "a68649e5-e90f-5e40-90d1-b7ac65dd14cc"
+    },
+    "file_url": "/api/ui/books/mine/b2505959-1e79-4586-9016-06e1ae355e95/file?student_id=hs_002"
   }
 ]

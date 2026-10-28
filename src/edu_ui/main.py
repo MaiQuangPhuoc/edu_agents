@@ -96,3 +96,4 @@ def profile_page(request: Request):
     return templates.TemplateResponse(
         request=request, name="profile.html", context={"active_page": "profile"}
     )
+
