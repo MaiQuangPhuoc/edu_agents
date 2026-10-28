@@ -1,0 +1,143 @@
+{
+  "chapter_id": "V",
+  "lessons": [
+    {
+      "lesson": "Khái niệm vectơ",
+      "key_points": [
+        "Vectơ biểu diễn một đại lượng có hướng và được xác định bởi điểm đầu, điểm cuối.",
+        "Hai vectơ cùng phương có giá song song hoặc trùng nhau; các vectơ cùng phương khác vectơ-không có thể cùng hướng hoặc ngược hướng.",
+        "Vectơ bằng nhau có cùng hướng và cùng độ dài; vectơ đối nhau ngược hướng và có cùng độ dài.",
+        "Vectơ-không có điểm đầu trùng điểm cuối và độ dài bằng 0."
+      ],
+      "must_know": [
+        "Kí hiệu vectơ: \\(\\overrightarrow{AB}\\) hoặc \\(\\vec a\\); với \\(\\overrightarrow{AB}\\), A là điểm đầu và B là điểm cuối.",
+        "Hai vectơ cùng phương khi các đường thẳng chứa giá của chúng song song hoặc trùng nhau.",
+        "\\(\\overrightarrow{AB}=-\\overrightarrow{BA}\\).",
+        "Hai vectơ bằng nhau khi cùng hướng và cùng độ dài; hai vectơ đối nhau khi ngược hướng và cùng độ dài.",
+        "\\(|\\overrightarrow{AB}|=AB\\); vectơ-không \\(\\overrightarrow{AA}=\\vec 0\\) có độ dài bằng 0."
+      ],
+      "must_understand": [
+        "Đổi thứ tự hai điểm đầu-cuối làm đổi hướng vectơ.",
+        "Vectơ bằng nhau không nhất thiết có cùng điểm đầu; chỉ có độ dài bằng nhau chưa đủ để kết luận hai vectơ bằng nhau.",
+        "Có thể tịnh tiến vectơ mà vẫn giữ nguyên hướng và độ dài."
+      ],
+      "problem_types": [
+        "Nhận diện vectơ và xác định điểm đầu, điểm cuối từ kí hiệu hoặc hình vẽ.",
+        "Phân loại các cặp vectơ cùng phương, cùng hướng hoặc ngược hướng trên hình.",
+        "So sánh độ dài và xác định các vectơ bằng nhau hoặc đối nhau.",
+        "Xác định vectơ bằng nhau trên hình bình hành hoặc các hình đơn giản."
+      ],
+      "related": [
+        {
+          "chapter_id": "V",
+          "lesson": "Tổng và hiệu của hai vectơ",
+          "relation": "Các phép cộng, trừ vectơ sử dụng khái niệm vectơ đối, vectơ-không và vectơ bằng nhau."
+        }
+      ]
+    },
+    {
+      "lesson": "Tổng và hiệu của hai vectơ",
+      "key_points": [
+        "Tổng hai vectơ có thể dựng bằng quy tắc ba điểm hoặc quy tắc hình bình hành.",
+        "Phép cộng vectơ có tính giao hoán và kết hợp.",
+        "Hiệu hai vectơ được thực hiện bằng cách cộng với vectơ đối của vectơ bị trừ.",
+        "Các quy tắc cộng, trừ vectơ được dùng để rút gọn biểu thức và chứng minh đẳng thức vectơ."
+      ],
+      "must_know": [
+        "Quy tắc ba điểm: \\(\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}\\).",
+        "Nếu \\(ABCD\\) là hình bình hành thì \\(\\overrightarrow{AB}+\\overrightarrow{AD}=\\overrightarrow{AC}\\).",
+        "Tính giao hoán: \\(\\vec a+\\vec b=\\vec b+\\vec a\\); tính kết hợp: \\((\\vec a+\\vec b)+\\vec c=\\vec a+(\\vec b+\\vec c)\\).",
+        "\\(\\vec a+\\vec 0=\\vec a\\) và \\(\\vec a+(-\\vec a)=\\vec 0\\).",
+        "\\(\\vec a-\\vec b=\\vec a+(-\\vec b)\\); \\(\\overrightarrow{AB}-\\overrightarrow{AC}=\\overrightarrow{CB}\\)."
+      ],
+      "must_understand": [
+        "Khi dùng quy tắc ba điểm, điểm cuối của vectơ thứ nhất phải trùng điểm đầu của vectơ thứ hai, hoặc cần biểu diễn tương đương bằng tịnh tiến.",
+        "Phép trừ vectơ là cộng với vectơ đối, không phải phép trừ độ dài.",
+        "Có thể kiểm tra các phép biến đổi bằng cách dựng hình theo quy tắc cộng, trừ."
+      ],
+      "problem_types": [
+        "Dựng tổng vectơ bằng quy tắc ba điểm.",
+        "Dựng tổng vectơ bằng quy tắc hình bình hành.",
+        "Rút gọn tổng, hiệu các vectơ có chung điểm đầu hoặc điểm cuối.",
+        "Chứng minh đẳng thức vectơ bằng các quy tắc cộng và trừ."
+      ],
+      "related": [
+        {
+          "chapter_id": "V",
+          "lesson": "Khái niệm vectơ",
+          "relation": "Bài này vận dụng các khái niệm vectơ đối, vectơ-không và vectơ bằng nhau đã học ở bài Khái niệm vectơ."
+        }
+      ]
+    },
+    {
+      "lesson": "Tích của một số với một vectơ",
+      "key_points": [
+        "Phép nhân một vectơ với số thực tạo ra một vectơ có hướng và độ dài phụ thuộc vào dấu, giá trị tuyệt đối của số nhân.",
+        "Phép nhân với số có các tính chất phân phối và kết hợp tương tự phép nhân đại số.",
+        "Điều kiện cùng phương của hai vectơ có thể biểu diễn bằng một vectơ là bội của vectơ kia.",
+        "Quan hệ thẳng hàng của ba điểm có thể được xét thông qua hai vectơ cùng phương."
+      ],
+      "must_know": [
+        "Với số thực k và vectơ a: |ka| = |k||a|.",
+        "Nếu k > 0 và a khác vectơ-không thì ka cùng hướng với a; nếu k < 0 thì ngược hướng.",
+        "Quy ước 0a = 0 và k0 = 0.",
+        "Các tính chất: k(a+b)=ka+kb; (k+m)a=ka+ma; k(ma)=(km)a.",
+        "Với a khác vectơ-không, a và b cùng phương khi và chỉ khi tồn tại số thực k sao cho b=ka.",
+        "Ba điểm phân biệt A, B, C thẳng hàng khi và chỉ khi AB và AC cùng phương."
+      ],
+      "must_understand": [
+        "Nhân với số âm làm đổi hướng; độ dài của vectơ mới thay đổi theo hệ số |k|.",
+        "Khi dùng điều kiện b=ka để xét cùng phương, cần kiểm tra giả thiết vectơ làm cơ sở khác vectơ-không.",
+        "Biểu diễn vectơ dưới dạng tổ hợp các vectơ đã biết giúp chuyển quan hệ hình học thành phép biến đổi đại số vectơ."
+      ],
+      "problem_types": [
+        "Xác định phương, hướng và độ dài của k a theo k và a.",
+        "Thu gọn biểu thức có tích của số với vectơ bằng các tính chất.",
+        "Tìm hệ số trong một đẳng thức vectơ đơn giản.",
+        "Chứng minh hai vectơ cùng phương hoặc ba điểm thẳng hàng."
+      ],
+      "related": [
+        {
+          "chapter_id": "V",
+          "lesson": "Tích vô hướng của hai vectơ",
+          "relation": "Các phép toán vectơ là công cụ chung để biểu diễn và xử lý quan hệ hình học."
+        }
+      ]
+    },
+    {
+      "lesson": "Tích vô hướng của hai vectơ",
+      "key_points": [
+        "Góc giữa hai vectơ khác vectơ-không được xác định khi đặt chúng cùng điểm đầu.",
+        "Tích vô hướng được tính từ độ dài hai vectơ và côsin góc giữa chúng, và kết quả là một số thực.",
+        "Tích vô hướng có thể dùng để xét vuông góc, tính độ dài hoặc tìm góc giữa các vectơ.",
+        "Dấu của tích vô hướng liên hệ với loại góc giữa hai vectơ."
+      ],
+      "must_know": [
+        "Góc giữa hai vectơ khác vectơ-không nằm trong khoảng từ 0° đến 180°.",
+        "Với a, b khác vectơ-không: a·b=|a||b|cos(a,b).",
+        "a·a=|a|²; hai vectơ khác vectơ-không vuông góc khi và chỉ khi a·b=0.",
+        "Các tính chất: a·b=b·a; a·(b+c)=a·b+a·c; (ka)·b=k(a·b).",
+        "|a+b|²=|a|²+2a·b+|b|²."
+      ],
+      "must_understand": [
+        "Tích vô hướng phụ thuộc đồng thời vào độ dài của hai vectơ và góc giữa chúng.",
+        "Với hai vectơ khác vectơ-không, tích vô hướng dương khi góc nhọn, bằng 0 khi góc vuông và âm khi góc tù.",
+        "Không nhầm tích vô hướng với tích hai độ dài; công thức cần có hệ số côsin của góc."
+      ],
+      "problem_types": [
+        "Xác định góc giữa hai vectơ từ hình vẽ.",
+        "Tính tích vô hướng khi biết độ dài hai vectơ và góc giữa chúng.",
+        "Chứng minh hai vectơ vuông góc bằng điều kiện tích vô hướng bằng 0.",
+        "Tính độ dài tổng hai vectơ bằng tính chất tích vô hướng.",
+        "Tìm góc giữa hai vectơ từ tích vô hướng và độ dài của chúng."
+      ],
+      "related": [
+        {
+          "chapter_id": "V",
+          "lesson": "Tích của một số với một vectơ",
+          "relation": "Tích của một số với một vectơ là phép toán được dùng cùng các tính chất tích vô hướng để biến đổi biểu thức vectơ."
+        }
+      ]
+    }
+  ]
+}

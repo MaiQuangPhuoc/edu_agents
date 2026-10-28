@@ -9,14 +9,64 @@
   "nang_luc": [
     {
       "mon_hoc": "Toán 10",
-      "diem_hien_tai": null,
+      "diem_hien_tai": 6.0,
       "diem_manh": [],
       "diem_yeu": [
-        "I",
+        "V",
+        "III",
         "II"
       ],
-      "da_test_dau_vao": false,
-      "chu_de": []
+      "da_test_dau_vao": true,
+      "chu_de": [
+        {
+          "chapter_id": "V",
+          "lesson": "",
+          "muc_nam": 0.0,
+          "do_tin_cay": 0.6,
+          "nguon": "bai_kiem_tra",
+          "cap_nhat": "2026-10-28T23:40:13.744498"
+        },
+        {
+          "chapter_id": "III",
+          "lesson": "",
+          "muc_nam": 0.25,
+          "do_tin_cay": 0.8,
+          "nguon": "bai_kiem_tra",
+          "cap_nhat": "2026-10-28T23:40:13.744498"
+        },
+        {
+          "chapter_id": "VI",
+          "lesson": "",
+          "muc_nam": 0.5,
+          "do_tin_cay": 0.4,
+          "nguon": "bai_kiem_tra",
+          "cap_nhat": "2026-10-28T23:40:13.744498"
+        },
+        {
+          "chapter_id": "IV",
+          "lesson": "",
+          "muc_nam": 0.67,
+          "do_tin_cay": 0.6,
+          "nguon": "bai_kiem_tra",
+          "cap_nhat": "2026-10-28T23:40:13.744498"
+        },
+        {
+          "chapter_id": "II",
+          "lesson": "",
+          "muc_nam": 0.0,
+          "do_tin_cay": 0.4,
+          "nguon": "bai_kiem_tra",
+          "cap_nhat": "2026-10-28T23:40:13.744498"
+        },
+        {
+          "chapter_id": "I",
+          "lesson": "",
+          "muc_nam": 0.67,
+          "do_tin_cay": 1,
+          "nguon": "bai_kiem_tra",
+          "cap_nhat": "2026-10-28T23:40:13.744498"
+        }
+      ]
     }
   ],
   "muc_tieu": [
@@ -24,15 +74,15 @@
       "mon_hoc": "Toán 10",
       "muc_tieu_diem": 9.0,
       "han_chot": null,
-      "ngay_ket_thuc": "2026-11-17",
+      "ngay_ket_thuc": "2026-11-18",
       "so_tuan_con_lai": 3,
       "uu_tien": "ca_hai",
       "dang_bai_can_giu": []
     }
   ],
   "so_thich_hoc": {
-    "dung_tai_lieu": null,
-    "dung_video": null,
+    "dung_tai_lieu": true,
+    "dung_video": true,
     "bai_tap_sau_buoi": null,
     "tom_tat_cuoi_buoi": null,
     "thoi_luong_buoi_phut": 120
@@ -41,7 +91,7 @@
     "so_buoi_tuan": 3,
     "khung_gio_ranh": {
       "Fri": [
-        "21:00-00:00"
+        "21:00-23:00"
       ],
       "Mon": [
         "07:00-09:00"
@@ -59,5 +109,5 @@
     "tin_hieu_dong_luc": null
   },
   "version": 1,
-  "updated_at": "2026-10-27T23:20:09.658147"
+  "updated_at": "2026-10-28T23:40:13.744498"
 }

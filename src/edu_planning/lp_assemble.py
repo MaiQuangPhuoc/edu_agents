@@ -81,7 +81,7 @@ def _draft_week(state: PlanState, llm_client: LLMClient, sw: dict, brief: dict, 
         try:
             draft = llm_client.invoke_structured(WeekDraft, messages, max_tokens=4000)
         except Exception as e:
-            print(f"[lp_assemble] tuần {sw['week_no']} lỗi: {e}")
+            print(f"[assemble T{sw['week_no']}] LỖI LLM: {e}")
             return None
         if draft is None:
             return None
@@ -89,6 +89,7 @@ def _draft_week(state: PlanState, llm_client: LLMClient, sw: dict, brief: dict, 
         failed = [name for name, ok in (("số buổi", sc.session_count_matches), ("đủ bài", sc.all_lessons_covered),
                                         ("buổi kiểm tra", sc.assessment_rule_ok), ("tài nguyên", sc.only_given_resources),
                                         ("bám dữ liệu", sc.activities_grounded)) if not ok]
+        print(f"[assemble T{sw['week_no']}] tự kiểm tra lần {attempt + 1}: " + ("đạt" if not failed else f"CHƯA ĐẠT {failed} - {sc.notes}"))
         if not failed or attempt == 1:
             return draft
         issues = list(issues) + [f"Tự kiểm tra chưa đạt ({', '.join(failed)}): " + "; ".join(sc.notes)]
@@ -110,12 +111,21 @@ def assemble_node(state: PlanState, llm_client: LLMClient) -> dict:
 
     def work(sw):
         n = sw["week_no"]
-        draft = _draft_week(state, llm_client, sw, briefs[n], issues.get(str(n), [])) if sw["sessions"] else None
-        return n, build_week(draft, briefs[n], sw, ctx)
+        b = briefs[n]
+        res = _resources_text(state.get("lp_results", {}), list(dict.fromkeys(l["chapter_id"] for l in b["lessons"])))
+        print(f"[assemble T{n}] soạn: {len(sw['sessions'])} buổi | bài: " + "; ".join(f"{l['chapter_id']}:{l['lesson']}" for l in b["lessons"])
+              + f" | kiểm tra: {b['has_assessment']} | tài nguyên đưa vào: {res.count(chr(10) + '- ') + res.startswith('- ')} mục"
+              + (f" | lỗi cần sửa: {issues.get(str(n))}" if issues.get(str(n)) else ""))
+        draft = _draft_week(state, llm_client, sw, b, issues.get(str(n), [])) if sw["sessions"] else None
+        built = build_week(draft, b, sw, ctx)
+        print(f"[assemble T{n}] xong: " + ("LLM không trả được -> dùng khung rỗng" if draft is None else
+              " | ".join(f"B{i} {s['type']} {s['lesson'][:30]} ({len(s['activities'])} hđ, {len(s['resources'])} tài nguyên)" for i, s in enumerate(built["sessions"], 1))))
+        return n, built
 
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
         new = dict(ex.map(work, todo))
     weeks = [new.get(sw["week_no"]) or old[sw["week_no"]] for sw in sched["weeks"]]      # giữ tuần đã đạt
+    print(f"[assemble] gộp {len(weeks)} tuần: soạn mới {sorted(new)} | giữ bản cũ {sorted(set(old) & {sw['week_no'] for sw in sched['weeks']} - set(new))}")
 
     notes = [a for a in state.get("lp_draft", {}).get("assumptions", []) if a.startswith("Cần xem lại")]   # ghi chú của review
     notes += [f"Thiếu dữ liệu: {r['goal']}" for r in state.get("lp_results", {}).values() if "THIẾU" in r["text"]]

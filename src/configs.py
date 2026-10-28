@@ -6,16 +6,18 @@ Cấu hình chung cho prototype RIKAI — dựa trên configs.py do Auditor cung
 2. env_file dùng đường dẫn tương đối (cùng thư mục với file này) thay vì
    đường dẫn Windows cứng, để chạy được trên mọi máy.
 """
+import os
 from pathlib import Path
-from dotenv import load_dotenv
+from typing import Literal, Optional
 
-ENV_PATH = Path(__file__).resolve().parents[1] / ".env"
+from dotenv import load_dotenv
+from pydantic_settings import BaseSettings, SettingsConfigDict
+
+# Đọc EDUAGENT/.env, không phụ thuộc vị trí đặt dự án.
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+ENV_PATH = PROJECT_ROOT / ".env"
 
 load_dotenv(ENV_PATH, encoding="utf-8-sig", override=False)
-from pydantic_settings import BaseSettings, SettingsConfigDict
-from typing import Literal, Optional
-import os
-
 
 
 class EnvConfig(BaseSettings):
@@ -89,7 +91,18 @@ class EnvConfig(BaseSettings):
     )
 
 env_config = EnvConfig()
+from dotenv import dotenv_values
 
+# Chỉ kiểm tra trạng thái, không in API key.
+values = dotenv_values(ENV_PATH, encoding="utf-8-sig")
+
+print("CONFIG_FILE:", Path(__file__).resolve())
+print("ENV_PATH:", ENV_PATH)
+print("ENV_EXISTS:", ENV_PATH.is_file())
+print("FILE_HAS_QDRANT_URL:", bool(values.get("QDRANT_URL")))
+print("CONFIG_HAS_QDRANT_URL:", bool(env_config.qdrant_url))
+print("FILE_HAS_MODEL:", bool(values.get("MODEL")))
+print("CONFIG_HAS_MODEL:", bool(env_config.model))
 
 # ---------------------------------------------------------------------------
 # Hằng số dùng chung ngoài phần LLM (đường dẫn lưu trữ local, giới hạn upload)
@@ -104,7 +117,7 @@ MAX_UPLOAD_MB = 20
 
 print("model",env_config.model)
 # Never print API keys to logs.
-# print("tavily api key:", env_config.api)
+print("tavily api key:", env_config.api_key_tavily is not None)
 # print("qdrant url:", env_config.qdrant_collection)
 # print("open api key:", env_config.openai_api_key)
 # print("gemini model:", env_config.gemini_model)

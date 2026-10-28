@@ -10,6 +10,7 @@ from src.edu_planning.lp_assemble import assemble_node
 from src.edu_planning.lp_critic import critic_node
 from src.edu_planning.lp_outline import outline_node
 from src.edu_planning.path_store import save_learning_path
+from src.edu_planning.lp_debug import traced
 
 
 def present_node(state: PlanState) -> dict:
@@ -39,12 +40,12 @@ def route_after_critic(state: PlanState) -> str:
 def make_learning_path_graph(retriever, llm_client: LLMClient, plan_client: LLMClient | None = None, checkpointer=None):
     plan_client = plan_client or llm_client          # Luna cho các bước dài; không truyền thì dùng chung 120b
     g = StateGraph(PlanState)
-    g.add_node("outline", lambda s: outline_node(s, retriever, plan_client))
-    g.add_node("plan", plan_node)
-    g.add_node("execute", lambda s: execute_node(s, retriever, llm_client, plan_client))
-    g.add_node("assemble", lambda s: assemble_node(s, plan_client))
-    g.add_node("critic", lambda s: critic_node(s, llm_client))
-    g.add_node("present", present_node)
+    g.add_node("outline", traced("outline", lambda s: outline_node(s, retriever, plan_client)))
+    g.add_node("plan", traced("plan", plan_node))
+    g.add_node("execute", traced("execute", lambda s: execute_node(s, retriever, llm_client, plan_client)))
+    g.add_node("assemble", traced("assemble", lambda s: assemble_node(s, plan_client)))
+    g.add_node("critic", traced("critic", lambda s: critic_node(s, llm_client)))
+    g.add_node("present", traced("present", present_node))
 
     g.add_edge(START, "outline")
     g.add_conditional_edges("outline", _next_or_present("plan"), {"plan": "plan", "present": "present"})

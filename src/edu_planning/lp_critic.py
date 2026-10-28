@@ -46,19 +46,26 @@ def critic_node(state: PlanState, llm_client: LLMClient) -> dict:
 
     issues = {}
     for wk in draft["weeks"]:
+        dropped = 0
         for s in wk["sessions"]:                        # bỏ tài nguyên có url không xuất hiện trong kết quả tra cứu
-            s["resources"] = [r for r in s["resources"] if r.get("url") and r["url"] in evidence]
+            keep = [r for r in s["resources"] if r.get("url") and r["url"] in evidence]
+            dropped += len(s["resources"]) - len(keep)
+            s["resources"] = keep
         found = check_week(wk, briefs[wk["week_no"]], slots[wk["week_no"]])
+        print(f"[critic T{wk['week_no']}] kiểm bằng code: " + ("ĐẠT" if not found else "LỖI " + " | ".join(found)) + f" | bỏ {dropped} tài nguyên không có trong kết quả tra")
         if found:
             issues[str(wk["week_no"])] = found
 
     revision, reviewed = state.get("lp_revision_count", 0), state.get("lp_reviewed", False)
     if not issues and not reviewed:                     # lớp 2: LLM đối chiếu hồ sơ, chỉ chạy một lần
         reviewed = True
-        for week_no, problem in review(state, draft, llm_client):
+        found_rv = review(state, draft, llm_client)
+        print(f"[critic] LLM review: {len(found_rv)} vấn đề" + "".join(f"\n      · tuần {n}: {p}" for n, p in found_rv))
+        for week_no, problem in found_rv:
             if week_no in briefs:
                 issues.setdefault(str(week_no), []).append(problem)
             else:
                 draft["assumptions"].append("Cần xem lại: " + problem)
+    print("[critic] kết luận: " + (f"soạn lại tuần {sorted(issues)} (lần {revision + 1}/3)" if issues else "đạt, chuyển sang present"))
     return {"lp_draft": draft, "lp_issues": issues, "lp_reviewed": reviewed,
             "lp_revision_count": revision + (1 if issues else 0)}

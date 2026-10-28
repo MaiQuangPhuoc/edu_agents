@@ -82,5 +82,33 @@
       "lesson_plan_id": "a9f58829-148b-5279-ae4f-ab302a2a863f"
     },
     "file_url": null
+  },
+  {
+    "kind": "book",
+    "server_saved": true,
+    "document_id": "89c7e135-42ae-4117-90a9-3c6a1e0bf47c",
+    "book_id": "18b95271-1903-4662-96af-0a3533079408",
+    "grade": 10,
+    "title": "Toán 10",
+    "subject": "Toán",
+    "series": "chan_troi",
+    "display_name": "Toán 10",
+    "description": "",
+    "cover_url": null,
+    "rag_ready": true,
+    "collection_name": "giao_an",
+    "indexing_status": "completed",
+    "uploaded_filename": null,
+    "uploaded_pdf_path": null,
+    "file": null,
+    "indexing": {
+      "job_id": "20261028T161153Z_ce7112f221ff",
+      "report_path": "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\data\\auto_indexing\\jobs\\20261028T161153Z_ce7112f221ff\\report.json",
+      "total_chunks": 126,
+      "source_mode": "prepared_markdown",
+      "lesson_plan_name": "Toán 10",
+      "lesson_plan_id": "2d28c7de-260b-5251-8d4c-c4b065bc4611"
+    },
+    "file_url": null
   }
 ]

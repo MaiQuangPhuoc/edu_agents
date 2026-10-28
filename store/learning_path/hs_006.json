@@ -1,8 +1,8 @@
 {
   "current_phase": 1,
   "schedule": {
-    "start_date": "2026-10-27",
-    "end_date": "2026-11-17",
+    "start_date": "2026-10-28",
+    "end_date": "2026-11-18",
     "total_weeks": 3,
     "sessions_per_week": 3,
     "minutes_per_session": 120
@@ -13,85 +13,7 @@
       "weeks": [
         {
           "week_no": 1,
-          "goal": "(tuần nén) Kiểm tra và củng cố nền tảng, giải được bài vận dụng cơ bản về mệnh đề, tập hợp và bất phương trình.",
-          "lessons": [
-            {
-              "chapter_id": "I",
-              "lesson": "Mệnh đề"
-            },
-            {
-              "chapter_id": "I",
-              "lesson": "Tập hợp"
-            },
-            {
-              "chapter_id": "I",
-              "lesson": "Các phép toán trên tập hợp"
-            },
-            {
-              "chapter_id": "II",
-              "lesson": "Bất phương trình bậc nhất hai ẩn"
-            },
-            {
-              "chapter_id": "II",
-              "lesson": "Hệ bất phương trình bậc nhất hai ẩn"
-            }
-          ],
-          "activity_types": [
-            "video",
-            "tài liệu",
-            "bài tập"
-          ],
-          "difficulty_trend": "dễ → khó",
-          "total_hours": 6.0,
-          "has_assessment": true
-        }
-      ]
-    },
-    {
-      "phase": 2,
-      "weeks": [
-        {
-          "week_no": 2,
-          "goal": "(tuần nén) Phân tích được đồ thị hàm số và vận dụng hệ thức lượng để giải tam giác, diễn giải kết quả.",
-          "lessons": [
-            {
-              "chapter_id": "III",
-              "lesson": "Hàm số và đồ thị"
-            },
-            {
-              "chapter_id": "III",
-              "lesson": "Hàm số bậc hai"
-            },
-            {
-              "chapter_id": "IV",
-              "lesson": "Giá trị lượng giác của một góc từ 0° đến 180°"
-            },
-            {
-              "chapter_id": "IV",
-              "lesson": "Định lí côsin và định lí sin"
-            },
-            {
-              "chapter_id": "IV",
-              "lesson": "Giải tam giác và ứng dụng thực tế"
-            }
-          ],
-          "activity_types": [
-            "video",
-            "tài liệu",
-            "bài tập"
-          ],
-          "difficulty_trend": "vừa → khó",
-          "total_hours": 6.0,
-          "has_assessment": true
-        }
-      ]
-    },
-    {
-      "phase": 3,
-      "weeks": [
-        {
-          "week_no": 3,
-          "goal": "(tuần nén) Vận dụng được phép toán vectơ và phương pháp thống kê để xử lí, trình bày dữ liệu.",
+          "goal": "(tuần nén) Nắm các phép toán vectơ cốt lõi và biểu diễn, giải hệ bất phương trình hai ẩn.",
           "lessons": [
             {
               "chapter_id": "V",
@@ -108,6 +30,41 @@
             {
               "chapter_id": "V",
               "lesson": "Tích vô hướng của hai vectơ"
+            },
+            {
+              "chapter_id": "II",
+              "lesson": "Bất phương trình bậc nhất hai ẩn"
+            },
+            {
+              "chapter_id": "II",
+              "lesson": "Hệ bất phương trình bậc nhất hai ẩn"
+            }
+          ],
+          "activity_types": [
+            "video",
+            "tài liệu",
+            "bài tập"
+          ],
+          "difficulty_trend": "dễ → vừa",
+          "total_hours": 6.0,
+          "has_assessment": true
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "weeks": [
+        {
+          "week_no": 2,
+          "goal": "(tuần nén) Đọc, phân tích đồ thị hàm số và xử lí dữ liệu bằng các số đặc trưng phù hợp.",
+          "lessons": [
+            {
+              "chapter_id": "III",
+              "lesson": "Hàm số và đồ thị"
+            },
+            {
+              "chapter_id": "III",
+              "lesson": "Hàm số bậc hai"
             },
             {
               "chapter_id": "VI",
@@ -136,93 +93,301 @@
           "has_assessment": true
         }
       ]
+    },
+    {
+      "phase": 3,
+      "weeks": [
+        {
+          "week_no": 3,
+          "goal": "(tuần nén) Vận dụng tập hợp và các hệ thức lượng để giải tam giác, xử lí bài toán thực tế.",
+          "lessons": [
+            {
+              "chapter_id": "I",
+              "lesson": "Mệnh đề"
+            },
+            {
+              "chapter_id": "I",
+              "lesson": "Tập hợp"
+            },
+            {
+              "chapter_id": "I",
+              "lesson": "Các phép toán trên tập hợp"
+            },
+            {
+              "chapter_id": "IV",
+              "lesson": "Giá trị lượng giác của một góc từ 0° đến 180°"
+            },
+            {
+              "chapter_id": "IV",
+              "lesson": "Định lí côsin và định lí sin"
+            },
+            {
+              "chapter_id": "IV",
+              "lesson": "Giải tam giác và ứng dụng thực tế"
+            }
+          ],
+          "activity_types": [
+            "video",
+            "tài liệu",
+            "bài tập"
+          ],
+          "difficulty_trend": "khó",
+          "total_hours": 6.0,
+          "has_assessment": true
+        }
+      ]
     }
   ],
   "weeks": [
     {
       "week_no": 1,
-      "start_date": "2026-10-27",
-      "end_date": "2026-11-02",
-      "goal": "Kiểm tra và củng cố nền tảng, giải được bài vận dụng cơ bản về mệnh đề, tập hợp và bất phương trình.",
+      "start_date": "2026-10-28",
+      "end_date": "2026-11-03",
+      "goal": "Củng cố các phép toán vectơ cốt lõi và luyện biểu diễn miền nghiệm của bất phương trình, hệ bất phương trình hai ẩn; cuối tuần tự kiểm tra và sửa lỗi.",
       "sessions": [
         {
-          "date": "2026-11-02",
-          "start_time": "07:00",
+          "date": "2026-10-30",
+          "start_time": "21:00",
           "minutes": 120,
-          "type": "assessment",
-          "chapter_id": "I",
-          "lesson": "Mệnh đề",
+          "type": "lesson",
+          "chapter_id": "V",
+          "lesson": "Khái niệm vectơ",
           "key_points": [
-            "Định nghĩa mệnh đề, mệnh đề chứa biến và cách ký hiệu.",
-            "Mệnh đề phủ định, mệnh đề kéo theo (P ⇒ Q) và mệnh đề đảo (Q ⇒ P).",
-            "Khái niệm mệnh đề tương đương (P ⇔ Q) và cách kiểm tra tính đúng sai."
+            "Vectơ biểu diễn một đại lượng có hướng và được xác định bởi điểm đầu, điểm cuối.",
+            "Hai vectơ cùng phương có giá song song hoặc trùng nhau; các vectơ cùng phương khác vectơ-không có thể cùng hướng hoặc ngược hướng.",
+            "Vectơ bằng nhau có cùng hướng và cùng độ dài; vectơ đối nhau ngược hướng và có cùng độ dài.",
+            "Vectơ-không có điểm đầu trùng điểm cuối và độ dài bằng 0."
           ],
           "must_know": [
-            "Mệnh đề: câu có giá trị đúng hoặc sai, ký hiệu P, Q,…",
-            "Mệnh đề phủ định: ¬P, đổi vị trí “không”.",
-            "Mệnh đề kéo theo: P ⇒ Q, nghĩa là nếu P đúng thì Q cũng đúng.",
-            "Mệnh đề đảo: Q ⇒ P.",
-            "Mệnh đề tương đương: P ⇔ Q (cả P ⇒ Q và Q ⇒ P đều đúng)."
+            "Kí hiệu vectơ: \\(\\overrightarrow{AB}\\) hoặc \\(\\vec a\\); với \\(\\overrightarrow{AB}\\), A là điểm đầu và B là điểm cuối.",
+            "Hai vectơ cùng phương khi các đường thẳng chứa giá của chúng song song hoặc trùng nhau.",
+            "\\(\\overrightarrow{AB}=-\\overrightarrow{BA}\\).",
+            "Hai vectơ bằng nhau khi cùng hướng và cùng độ dài; hai vectơ đối nhau khi ngược hướng và cùng độ dài.",
+            "\\(|\\overrightarrow{AB}|=AB\\); vectơ-không \\(\\overrightarrow{AA}=\\vec 0\\) có độ dài bằng 0."
           ],
           "must_understand": [
-            "Tại sao mệnh đề đảo không nhất thiết đúng khi mệnh đề gốc đúng.",
-            "Cách xác định P và Q trong một câu điều kiện.",
-            "Lý do hai mệnh đề tương đương có cùng tập hợp nghiệm.",
-            "Vai trò của các ký hiệu ∀, ∃ trong mệnh đề chứa biến."
+            "Đổi thứ tự hai điểm đầu-cuối làm đổi hướng vectơ.",
+            "Vectơ bằng nhau không nhất thiết có cùng điểm đầu; chỉ có độ dài bằng nhau chưa đủ để kết luận hai vectơ bằng nhau.",
+            "Có thể tịnh tiến vectơ mà vẫn giữ nguyên hướng và độ dài."
           ],
           "related": [
             {
-              "chapter_id": "I",
-              "lesson": "Tập hợp",
-              "relation": "Cùng chương, nền tảng cho việc biểu diễn các tập hợp các nghiệm của mệnh đề."
-            },
-            {
-              "chapter_id": "I",
-              "lesson": "Các phép toán trên tập hợp",
-              "relation": "Sử dụng các phép toán (giao, hợp) để mô tả các tập hợp nghiệm của các mệnh đề."
-            },
-            {
-              "chapter_id": "II",
-              "lesson": "Bất phương trình bậc nhất hai ẩn",
-              "relation": "Áp dụng kiến thức mệnh đề kéo theo để giải bất phương trình."
+              "chapter_id": "V",
+              "lesson": "Tổng và hiệu của hai vectơ",
+              "relation": "Các phép cộng, trừ vectơ sử dụng khái niệm vectơ đối, vectơ-không và vectơ bằng nhau."
             }
           ],
           "difficulty": "easy",
           "activities": [
             {
-              "type": "exercise",
-              "content": "Làm bài kiểm tra tổng hợp về kiểm tra tính đúng sai của P ⇒ Q, viết tập hợp, xác định hợp và giao, biểu diễn nửa mặt phẳng nghiệm và tìm miền nghiệm của hệ.",
-              "minutes": 75,
+              "type": "video",
+              "content": "Xem video để nhận diện vectơ, điểm đầu–điểm cuối, vectơ cùng phương, bằng nhau và đối nhau theo V.1.",
+              "minutes": 25,
               "difficulty": "easy",
-              "problem_type": "Xác định P, Q và kiểm tra tính đúng sai của P ⇒ Q."
+              "problem_type": ""
             },
             {
-              "type": "review",
-              "content": "Đối chiếu bài làm, phân loại lỗi theo nội dung mệnh đề, tập hợp, các phép toán trên tập hợp, bất phương trình hai ẩn và hệ bất phương trình hai ẩn, rồi ghi lại điểm cần ôn.",
-              "minutes": 45,
+              "type": "reading",
+              "content": "Đọc tài liệu về tổng và hiệu vectơ, tập trung vào quy tắc ba điểm và quy tắc hình bình hành của V.2.",
+              "minutes": 25,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "exercise",
+              "content": "Luyện nhận diện vectơ và xác định điểm đầu, điểm cuối, sau đó dựng tổng vectơ bằng quy tắc ba điểm theo V.1 và V.2.",
+              "minutes": 55,
+              "difficulty": "easy",
+              "problem_type": "Nhận diện vectơ và xác định điểm đầu, điểm cuối từ kí hiệu hoặc hình vẽ."
+            },
+            {
+              "type": "summary",
+              "content": "Tóm tắt cách nhận biết vectơ bằng nhau, vectơ đối nhau và cách nối các vectơ theo quy tắc ba điểm.",
+              "minutes": 15,
               "difficulty": "easy",
               "problem_type": ""
             }
           ],
           "resources": [
             {
-              "type": "document",
-              "title": "Bộ đề ôn tập môn Toán 10 chủ đề mệnh đề và tập hợp - TOANMATH.com",
-              "url": "https://toanmath.com/2025/07/bo-de-on-tap-mon-toan-10-chu-de-menh-de-va-tap-hop.html",
-              "note": "exam"
+              "type": "video",
+              "title": "TOÁN 10 - 2022- CHƯƠNG 5 - BÀI 1 - KHÁI NIỆM VECTƠ - PHẦN 1 - THẦY KENKA | kênh Học Toán Cùng Thầy Kenka - Tiến Sĩ Trần Hoan | 24 phút",
+              "url": "https://youtube.com/watch?v=L97nNDLhdQQ",
+              "note": "theory; bài Khái niệm vectơ"
             },
             {
               "type": "document",
-              "title": "Chuyên đề Toán 10 chương bất phương trình và hệ bất phương trình bậc nhất hai ẩn - TOANMATH.com",
+              "title": "Tổng và hiệu của hai vectơ lớp 10 (Lý thuyết Toán 10 Kết nối tri thức)",
+              "url": "https://www.vietjack.com/toan-10-kn/ly-thuyet-bai-8-tong-va-hieu-cua-hai-vecto.jsp",
+              "note": "theory; bài Tổng và hiệu của hai vectơ"
+            }
+          ],
+          "assessment": null
+        },
+        {
+          "date": "2026-11-02",
+          "start_time": "07:00",
+          "minutes": 120,
+          "type": "lesson",
+          "chapter_id": "V",
+          "lesson": "Tích của một số với một vectơ",
+          "key_points": [
+            "Phép nhân một vectơ với số thực tạo ra một vectơ có hướng và độ dài phụ thuộc vào dấu, giá trị tuyệt đối của số nhân.",
+            "Phép nhân với số có các tính chất phân phối và kết hợp tương tự phép nhân đại số.",
+            "Điều kiện cùng phương của hai vectơ có thể biểu diễn bằng một vectơ là bội của vectơ kia.",
+            "Quan hệ thẳng hàng của ba điểm có thể được xét thông qua hai vectơ cùng phương."
+          ],
+          "must_know": [
+            "Với số thực k và vectơ a: |ka| = |k||a|.",
+            "Nếu k > 0 và a khác vectơ-không thì ka cùng hướng với a; nếu k < 0 thì ngược hướng.",
+            "Quy ước 0a = 0 và k0 = 0.",
+            "Các tính chất: k(a+b)=ka+kb; (k+m)a=ka+ma; k(ma)=(km)a.",
+            "Với a khác vectơ-không, a và b cùng phương khi và chỉ khi tồn tại số thực k sao cho b=ka.",
+            "Ba điểm phân biệt A, B, C thẳng hàng khi và chỉ khi AB và AC cùng phương."
+          ],
+          "must_understand": [
+            "Nhân với số âm làm đổi hướng; độ dài của vectơ mới thay đổi theo hệ số |k|.",
+            "Khi dùng điều kiện b=ka để xét cùng phương, cần kiểm tra giả thiết vectơ làm cơ sở khác vectơ-không.",
+            "Biểu diễn vectơ dưới dạng tổ hợp các vectơ đã biết giúp chuyển quan hệ hình học thành phép biến đổi đại số vectơ."
+          ],
+          "related": [
+            {
+              "chapter_id": "V",
+              "lesson": "Tích vô hướng của hai vectơ",
+              "relation": "Các phép toán vectơ là công cụ chung để biểu diễn và xử lý quan hệ hình học."
+            }
+          ],
+          "difficulty": "easy",
+          "activities": [
+            {
+              "type": "review",
+              "content": "Ôn nhanh vectơ đối và quy tắc cộng, trừ từ V.1–V.2 làm nền để học tích của một số với vectơ ở V.3.",
+              "minutes": 15,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "video",
+              "content": "Xem phần phù hợp trong video chương II để nắm dạng bất phương trình hai ẩn, điểm thử và cách xác định nửa mặt phẳng nghiệm của II.1.",
+              "minutes": 25,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "lecture",
+              "content": "Học V.3 về hướng, độ dài của k a và điều kiện hai vectơ cùng phương; đối chiếu với V.4 về tích vô hướng và điều kiện vuông góc.",
+              "minutes": 30,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "exercise",
+              "content": "Luyện xác định hướng và độ dài của k a theo V.3, rồi vẽ đường biên và biểu diễn nửa mặt phẳng nghiệm bằng điểm thử theo II.1.",
+              "minutes": 40,
+              "difficulty": "easy",
+              "problem_type": "Xác định phương, hướng và độ dài của k a theo k và a."
+            },
+            {
+              "type": "summary",
+              "content": "Ghi lại các ý cần phân biệt khi nhân vectơ với số, xét tích vô hướng và xác định miền nghiệm của một bất phương trình.",
+              "minutes": 10,
+              "difficulty": "easy",
+              "problem_type": ""
+            }
+          ],
+          "resources": [
+            {
+              "type": "video",
+              "title": "Bài 1. Bất Phương Trình và Hệ BPT Bậc Nhất Hai Ẩn - Toán 10 (Sgk Mới) || Thầy Nguyễn Phan Tiến | kênh Thầy Nguyễn Phan Tiến | 151 phút",
+              "url": "https://youtube.com/watch?v=u0Oso1BelZc",
+              "note": "theory; chương II, dùng phần về bất phương trình bậc nhất hai ẩn"
+            }
+          ],
+          "assessment": null
+        },
+        {
+          "date": "2026-11-03",
+          "start_time": "07:00",
+          "minutes": 120,
+          "type": "assessment",
+          "chapter_id": "II",
+          "lesson": "Hệ bất phương trình bậc nhất hai ẩn",
+          "key_points": [
+            "Hệ gồm từ hai bất phương trình bậc nhất hai ẩn trở lên cùng xét với hai ẩn x,y.",
+            "Nghiệm của hệ phải thỏa mãn đồng thời tất cả bất phương trình trong hệ.",
+            "Miền nghiệm của hệ là giao các miền nghiệm riêng, có xét việc lấy hay không lấy các đoạn biên.",
+            "Có thể dùng hệ để mô hình hóa điều kiện thực tiễn và tìm giá trị lớn nhất hoặc nhỏ nhất của biểu thức tuyến tính trên miền đa giác."
+          ],
+          "must_know": [
+            "Một cặp (x₀,y₀) là nghiệm của hệ nếu thỏa mãn đồng thời mọi bất phương trình trong hệ.",
+            "Biểu diễn miền nghiệm bằng cách vẽ các đường biên, xác định từng miền nghiệm riêng rồi lấy giao.",
+            "Nếu không có điểm nào thỏa đồng thời các bất phương trình thì hệ vô nghiệm và miền nghiệm là tập rỗng.",
+            "Với miền khả thi là đa giác khép kín, không rỗng và bị chặn, tìm tọa độ các đỉnh từ giao của các đường biên.",
+            "Để tối ưu F=ax+by trên miền đa giác nói trên, tính F tại từng đỉnh rồi so sánh; nếu F không đổi dọc cạnh tối ưu thì các điểm trên cạnh đó cũng đạt cùng giá trị."
+          ],
+          "must_understand": [
+            "Nghiệm của từng bất phương trình riêng lẻ chưa chắc là nghiệm của hệ; phải thỏa mãn tất cả điều kiện cùng lúc.",
+            "Khi biểu diễn miền nghiệm, cần lưu ý từng đoạn biên có được lấy hay không.",
+            "Tối ưu trên miền liên tục chưa đủ kết luận nghiệm tối ưu nếu đề bài yêu cầu số lượng nguyên."
+          ],
+          "related": [
+            {
+              "chapter_id": "II",
+              "lesson": "Bất phương trình bậc nhất hai ẩn",
+              "relation": "Cần xác định miền nghiệm của từng bất phương trình thành phần trước khi lấy giao để biểu diễn miền nghiệm của hệ."
+            }
+          ],
+          "difficulty": "medium",
+          "activities": [
+            {
+              "type": "exercise",
+              "content": "Làm bài kiểm tra cuối tuần về biểu diễn miền nghiệm của hệ bằng giao các nửa mặt phẳng và xác định các đỉnh của miền nghiệm theo II.2.",
+              "minutes": 70,
+              "difficulty": "medium",
+              "problem_type": "Biểu diễn miền nghiệm của hệ bằng giao các nửa mặt phẳng trên cùng hệ trục tọa độ."
+            },
+            {
+              "type": "exercise",
+              "content": "Làm thêm câu kiểm tra về tích vô hướng, tập trung vào điều kiện dùng tích vô hướng để chứng minh hai vectơ vuông góc theo V.4.",
+              "minutes": 25,
+              "difficulty": "medium",
+              "problem_type": "Biểu diễn miền nghiệm của hệ bằng giao các nửa mặt phẳng trên cùng hệ trục tọa độ."
+            },
+            {
+              "type": "review",
+              "content": "Đối chiếu đáp án, đánh dấu lỗi khi lấy giao miền nghiệm của hệ và khi vận dụng điều kiện tích vô hướng bằng 0, rồi sửa lại từng lỗi.",
+              "minutes": 20,
+              "difficulty": "medium",
+              "problem_type": ""
+            },
+            {
+              "type": "summary",
+              "content": "Ghi lại một điểm cần củng cố sau bài kiểm tra về hệ bất phương trình hoặc các phép toán vectơ.",
+              "minutes": 5,
+              "difficulty": "medium",
+              "problem_type": ""
+            }
+          ],
+          "resources": [
+            {
+              "type": "document",
+              "title": "Chuyên đề Toán 10 chương bất phương trình và hệ bất phương trình bậc nhất hai ẩn - TOANMATH.com | 65 trang | 02/08/2025",
               "url": "https://toanmath.com/2025/08/chuyen-de-toan-10-chuong-bat-phuong-trinh-va-he-bat-phuong-trinh-bac-nhat-hai-an.html",
-              "note": "exam"
+              "note": "exam; chương II"
+            },
+            {
+              "type": "document",
+              "title": "Chuyên đề vectơ Toán 10 Kết Nối Tri Thức Với Cuộc Sống - TOANMATH.com",
+              "url": "https://toanmath.com/2023/01/chuyen-de-vecto-toan-10-ket-noi-tri-thuc-voi-cuoc-song.html",
+              "note": "exam; chương V"
             }
           ],
           "assessment": {
             "chapter_ids": [
-              "I",
-              "I",
-              "I",
+              "V",
+              "V",
+              "V",
+              "V",
               "II",
               "II"
             ],
@@ -233,7 +398,6 @@
     }
   ],
   "assumptions": [
-    "Tuần 1: chỉ xếp được 1/3 buổi theo khung giờ rảnh",
-    "Cần xem lại: Tăng tổng thời lượng học lên ít nhất 24h bằng cách thêm 30 phút tóm tắt và luyện tập cuối mỗi buổi (tổng cộng +1h mỗi tuần), hoặc bổ sung một buổi học ngắn thêm 1h mỗi tuần để đạt khoảng 8h/tuần. (căn cứ: Mục tiêu điểm 9.0, hạn chót 2026-11-17, chỉ còn 3 tuần và tổng thời lượng học 18h (6h/tuần) trong lộ trình.)"
+    "Cần xem lại: Thêm một buổi học bổ sung vào cuối tuần (ví dụ Thứ Bảy 10:00-12:00) trong tuần 3 để tăng tổng thời lượng lên khoảng 22h, tập trung vào luyện đề và review các chủ đề yếu. (căn cứ: Mục tiêu điểm 9.0 trong 3 tuần (tới 2026-11-18) với tổng thời lượng 18h (6h/tuần) có thể không đủ để nâng từ 6.0 lên 9.0.)"
   ]
 }

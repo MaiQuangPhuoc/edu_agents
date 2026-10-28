@@ -63,17 +63,19 @@ def _item(q, r: dict) -> dict | None:
     return it
 
 
-def search_all(queries: list, subject: str, tools: dict) -> list[dict]:
+def search_all(queries: list, subject: str, tools: dict, tag: str = "") -> list[dict]:
     """Tra song song; mỗi lần tra một công cụ. Lỗi một lần tra không làm hỏng các lần khác."""
     def one(q):
         text = q.query if subject.lower() in q.query.lower() else f"{subject} {q.query}"
         try:
             res = tools[_TOOL[q.tool]].invoke({"query": text, "subject": subject})
         except Exception as e:
-            print(f"[resources] lỗi {q.tool} '{q.query}': {type(e).__name__} {str(e)[:100]}")
+            print(f"[resources {tag}] lỗi {q.tool} '{q.query}': {type(e).__name__} {str(e)[:100]}")
             return []
         items = [i for i in (_item(q, r) for r in res or []) if i]
-        print(f"[resources] tra {q.tool}/{q.purpose}: {q.query} -> {len(items)} kết quả")
+        print(f"[resources {tag}] tra {q.tool}/{q.purpose}: \"{q.query}\" -> {len(items)} kết quả")
+        for i in items[:5]:
+            print(f"      · {i['title'][:70]} | {i['meta']}")
         return items
     with ThreadPoolExecutor(max_workers=MAX_QUERIES) as ex:
         return [i for part in ex.map(one, queries) for i in part]
@@ -146,7 +148,7 @@ def llm_verify(items: list[dict], chapter_name: str, lessons: list[str], llm_cli
     for i, it in enumerate(items):
         v = verdict.get(i)
         if v and not v.keep:
-            print(f"[resources] LLM bỏ: {it['title'][:60]} | {v.reason[:80]}")
+            print(f"[resources] LLM BỎ: {it['title'][:60]} | {v.reason[:80]}")
             continue
         out.append({**it, "lesson": v.lesson if v and v.lesson in lessons else ""})
     return out
@@ -191,10 +193,21 @@ def fetch_resources(task: dict, state, llm_client, tools: dict) -> dict:
         return {"goal": task["goal"], "text": f"THIẾU: lỗi lập query ({str(e)[:100]})", "evidence": ""}
     if not queries:
         return {"goal": task["goal"], "text": "THIẾU: không có query hợp lệ", "evidence": ""}
-    found = search_all(queries, w["subject"], tools) + seed_items(state.get("plan_transcript", ""), cid)   # thêm kết quả của sườn
-    items = top_per_group(code_check(found, name, lessons), PER_GROUP_FETCH)
-
-    items = top_per_group(code_check(search_all(queries, w["subject"], tools), name, lessons), PER_GROUP_FETCH)
+    tag = f"chương {cid}"
+    print(f"[resources {tag}] ===== {name} | {len(lessons)} bài: {'; '.join(lessons)}")
+    print(f"[resources {tag}] LLM chọn {len(queries)} query: " + " || ".join(f"{q.tool}/{q.purpose}: {q.query}" for q in queries))
+    seeds = seed_items(state.get("plan_transcript", ""), cid)
+    found = search_all(queries, w["subject"], tools, tag) + seeds                   # thêm kết quả của sườn
+    checked = code_check(found, name, lessons)
+    print(f"[resources {tag}] tìm {len(found) - len(seeds)} + {len(seeds)} từ sườn -> sau kiểm code còn {len(checked)}")
+    items = top_per_group(checked, PER_GROUP_FETCH)
+    use_llm = bool(items) and state.get("lp_verify", env_config.lp_verify)
+    if use_llm:
+        items = llm_verify(items, name, lessons, llm_client)
+    print(f"[resources {tag}] LLM kiểm: {'bật' if use_llm else 'tắt'} -> còn {len(items)}")
+    items = top_per_group(items, PER_GROUP)[:MAX_ITEMS]
+    for i in items:
+        print(f"[resources {tag}] GIỮ [{i['kind']}|{i['purpose']}] bài \"{i.get('lesson') or 'cả chương'}\": {i['title'][:70]} | {i['url']}")
     if items and state.get("lp_verify", env_config.lp_verify):
         items = llm_verify(items, name, lessons, llm_client)
     items = top_per_group(items, PER_GROUP)[:MAX_ITEMS]

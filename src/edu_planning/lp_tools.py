@@ -121,23 +121,29 @@ def _deadline(goal: dict, start: date):
 
 
 def _week_sessions(free: dict, block_start: date, per_week: int, minutes: int, now: datetime) -> list:
-    """Chọn tối đa per_week ngày trong khối 7 ngày, mỗi ngày một buổi, rải đều."""
-    cands, seen = [], set()
+    """Chọn per_week buổi trong khối 7 ngày. Ưu tiên mỗi ngày một buổi, rải đều; thiếu thì xếp thêm buổi
+    liền sau trong cùng khung rảnh (khung dài đủ nhiều buổi). Hôm nay: chỉ dùng phần khung còn lại."""
+    days = []                                              # [(ngày, [giờ bắt đầu các buổi có thể xếp])]
     for i in range(7):
         d = block_start + timedelta(days=i)
+        starts = []
         for s, e in sorted(free.get(d.weekday(), [])):
-            if e - s < minutes or d in seen:
-                continue
-            if d == now.date() and s <= now.hour * 60 + now.minute:
-                continue
-            cands.append((d, s))
-            seen.add(d)
-    n, k = len(cands), min(per_week, len(cands))
-    if k == 0:
+            if d == now.date():
+                s = max(s, -(-(now.hour * 60 + now.minute) // 5) * 5)    # làm tròn lên 5 phút
+            while e - s >= minutes:
+                starts.append(s)
+                s += minutes
+        if starts:
+            days.append((d, starts))
+    if not days:
         return []
-    idx = [0] if k == 1 else sorted({round(i * (n - 1) / (k - 1)) for i in range(k)})
-    return [{"date": cands[i][0].isoformat(), "start_time": f"{cands[i][1] // 60:02d}:{cands[i][1] % 60:02d}",
-             "minutes": minutes} for i in idx]
+    n, k = len(days), min(per_week, len(days))
+    pick = [0] if k == 1 else sorted({round(i * (n - 1) / (k - 1)) for i in range(k)})
+    chosen = [(days[i][0], days[i][1][0]) for i in pick]               # vòng 1: mỗi ngày một buổi
+    extra = [(d, s) for d, st in days for s in st[1:]]                 # vòng 2: buổi thêm trong ngày
+    extra.sort(key=lambda x: (x[0] not in {c[0] for c in chosen}, x[0], x[1]))
+    chosen = sorted(chosen + extra[:max(0, per_week - len(chosen))])
+    return [{"date": d.isoformat(), "start_time": f"{s // 60:02d}:{s % 60:02d}", "minutes": minutes} for d, s in chosen]
 
 
 def _build_schedule(sm: dict, subject: str, window: dict) -> dict:
