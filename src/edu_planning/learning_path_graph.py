@@ -20,6 +20,11 @@ def present_node(state: PlanState) -> dict:
             raise ValueError(draft.get("error", ""))
         draft["assumptions"] = list(draft.get("assumptions", [])) + [
             f"Chưa khớp (tuần {n}): {x}" for n, found in (state.get("lp_issues") or {}).items() for x in found]
+        
+        first = next((s for w in draft.get("weeks", []) for s in w.get("sessions", [])), None)
+        if first:
+            first["exam_enabled"] = True                    # mặc định chỉ buổi đầu tiên bật tạo bài ôn tập, các buổi còn lại false
+
         lp = LearningPath.model_validate(draft).model_dump(mode="json")      # đảm bảo đúng schema trước khi lưu
         sid = state.get("student_id") or state["student_model"].get("student_id", "unknown")
         path = save_learning_path(sid, lp)

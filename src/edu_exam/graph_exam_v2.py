@@ -15,18 +15,19 @@ from src.edu_exam.generate_questions_v2 import generate_questions as _generate_q
 from src.edu_exam.evaluate_exam_v2 import evaluate_exam as _evaluate_exam
 
 
-def create_graph(llm_client: LLMClient, retriever) -> StateGraph:
+def create_graph(llm_client: LLMClient, retriever, heavy_client: LLMClient | None = None) -> StateGraph:
     """Build LangGraph orchestration cho flow tạo đề thi.
     Lưu ý: graph.py chỉ orchestration, toàn bộ logic nằm trong từng file agent tương ứng.
     """
+    heavy = heavy_client or llm_client
     g = StateGraph(ExamState)
 
     g.add_node("collect_info",       partial(_collect_info,       llm_client=llm_client))
     g.add_node("retrieve_docs", partial(_retrieve_docs, llm_client=llm_client, retriever=retriever))   # ← bỏ top_k=5
-    g.add_node("build_knowledge",    partial(_build_knowledge,    llm_client=llm_client))
-    g.add_node("build_matrix",       partial(_build_matrix,       llm_client=llm_client))
-    g.add_node("build_specs",        partial(_build_specs,        llm_client=llm_client))
-    g.add_node("generate_questions", partial(_generate_questions, llm_client=llm_client))
+    g.add_node("build_knowledge",    partial(_build_knowledge,    llm_client=heavy))
+    g.add_node("build_matrix",       partial(_build_matrix,       llm_client=heavy))
+    g.add_node("build_specs",        partial(_build_specs,        llm_client=heavy))
+    g.add_node("generate_questions", partial(_generate_questions, llm_client=heavy))
     g.add_node("evaluate_exam", partial(_evaluate_exam, llm_client=llm_client))
 
     g.set_entry_point("collect_info")

@@ -246,6 +246,7 @@ class Session(BaseModel):
     activities: list[Activity] = []
     resources: list[Resource] = []
     assessment: Optional[Assessment] = None     # only for type == "assessment"
+    exam_enabled: bool = False                  # true: UI hiện nút "Tạo bài ôn tập" cho buổi này
 
 
 class Week(BaseModel):

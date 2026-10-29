@@ -46,9 +46,16 @@ def retrieve_docs(state: ExamState, llm_client: LLMClient, retriever) -> dict:
     profile = state.get("student_profile", {})
     subject = profile.get("mon_hoc", "")
 
-    scope_data = map_scope(profile)
-    scope_chapters = scope_data["scope_chapters"]
-    scope_lessons  = scope_data["scope_lessons"]
+    # scope_data = map_scope(profile)
+    # scope_chapters = scope_data["scope_chapters"]
+    # scope_lessons  = scope_data["scope_lessons"]
+
+    if state.get("scope_chapters"):                 # agent khác đã chốt phạm vi (vd. đúng 1 bài của buổi học)
+        scope_chapters, scope_lessons = state["scope_chapters"], state.get("scope_lessons", {})
+    else:
+        scope_data = map_scope(profile)
+        scope_chapters = scope_data["scope_chapters"]
+        scope_lessons  = scope_data["scope_lessons"]
 
     if not scope_chapters:
         print(">>> retrieve_docs: không map được phạm vi kiểm tra")

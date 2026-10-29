@@ -9,30 +9,29 @@
   "nang_luc": [
     {
       "mon_hoc": "Toán 10",
-      "diem_hien_tai": 6.0,
+      "diem_hien_tai": 7.0,
       "diem_manh": [],
       "diem_yeu": [
-        "V",
-        "III",
-        "II"
+        "II",
+        "I"
       ],
       "da_test_dau_vao": true,
       "chu_de": [
         {
           "chapter_id": "V",
           "lesson": "",
-          "muc_nam": 0.0,
+          "muc_nam": 0.67,
           "do_tin_cay": 0.6,
           "nguon": "bai_kiem_tra",
-          "cap_nhat": "2026-10-28T23:40:13.744498"
+          "cap_nhat": "2026-10-29T00:18:32.091474"
         },
         {
           "chapter_id": "III",
           "lesson": "",
-          "muc_nam": 0.25,
+          "muc_nam": 0.5,
           "do_tin_cay": 0.8,
           "nguon": "bai_kiem_tra",
-          "cap_nhat": "2026-10-28T23:40:13.744498"
+          "cap_nhat": "2026-10-29T00:18:32.091474"
         },
         {
           "chapter_id": "VI",
@@ -40,7 +39,7 @@
           "muc_nam": 0.5,
           "do_tin_cay": 0.4,
           "nguon": "bai_kiem_tra",
-          "cap_nhat": "2026-10-28T23:40:13.744498"
+          "cap_nhat": "2026-10-29T00:18:32.091474"
         },
         {
           "chapter_id": "IV",
@@ -48,7 +47,7 @@
           "muc_nam": 0.67,
           "do_tin_cay": 0.6,
           "nguon": "bai_kiem_tra",
-          "cap_nhat": "2026-10-28T23:40:13.744498"
+          "cap_nhat": "2026-10-29T00:18:32.091474"
         },
         {
           "chapter_id": "II",
@@ -56,15 +55,15 @@
           "muc_nam": 0.0,
           "do_tin_cay": 0.4,
           "nguon": "bai_kiem_tra",
-          "cap_nhat": "2026-10-28T23:40:13.744498"
+          "cap_nhat": "2026-10-29T00:18:32.091474"
         },
         {
           "chapter_id": "I",
           "lesson": "",
-          "muc_nam": 0.67,
+          "muc_nam": 0.33,
           "do_tin_cay": 1,
           "nguon": "bai_kiem_tra",
-          "cap_nhat": "2026-10-28T23:40:13.744498"
+          "cap_nhat": "2026-10-29T00:18:32.091474"
         }
       ]
     }
@@ -74,7 +73,7 @@
       "mon_hoc": "Toán 10",
       "muc_tieu_diem": 9.0,
       "han_chot": null,
-      "ngay_ket_thuc": "2026-11-18",
+      "ngay_ket_thuc": "2026-11-19",
       "so_tuan_con_lai": 3,
       "uu_tien": "ca_hai",
       "dang_bai_can_giu": []
@@ -109,5 +108,5 @@
     "tin_hieu_dong_luc": null
   },
   "version": 1,
-  "updated_at": "2026-10-28T23:40:13.744498"
+  "updated_at": "2026-10-29T00:18:32.091474"
 }

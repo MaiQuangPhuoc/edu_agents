@@ -37,7 +37,7 @@ class EnvConfig(BaseSettings):
 
     plan_model: str = "openai/gpt-6-luna"          # model cho bước sinh sườn; đổi bằng PLAN_MODEL
     plan_provider: Literal["openai", "groq", "openrouter"] = "openrouter"   # PLAN_PROVIDER
-
+    model_edu_exam: str = "openai/gpt-6-luna"      # MODEL_EDU_EXAM: model cho các bước nặng của edu_exam (cùng provider với plan_provider)
 
     reasoning_effort: Optional[Literal["low", "medium", "high"]] = None   # tùy chọn: REASONING_EFFORT=low để giảm token suy luận
     llm_timeout_seconds: float = 60.0
