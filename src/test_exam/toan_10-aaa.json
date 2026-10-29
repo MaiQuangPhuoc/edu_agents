@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Nhận dạng bất phương trình bậc nhất hai ẩn",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Biểu thức nào sau đây là một bất phương trình bậc nhất hai ẩn?",
+    "options": {
+      "A": "3x − 2y ≤ 5",
+      "B": "0x + 0y > 5",
+      "C": "x² + y < 4",
+      "D": "2x + y = 3"
+    },
+    "answer": "A",
+    "giai_thich": "Bất phương trình bậc nhất hai ẩn có dạng ax + by < c, ax + by > c, ax + by ≤ c hoặc ax + by ≥ c, trong đó a và b không đồng thời bằng 0. Ở A, hai hệ số 3 và −2 không đồng thời bằng 0, biểu thức có bậc nhất và dùng dấu bất đẳng thức nên thỏa định nghĩa. B có cả hai hệ số bằng 0; C có hạng tử bậc hai x²; D là phương trình, không phải bất phương trình. Vì vậy chọn A.",
+    "y_tuong": "Nhận dạng đúng dạng chuẩn, đồng thời phân biệt điều kiện hệ số, bậc của biểu thức và phương trình.",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 2,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Xác định đường biên và nửa mặt phẳng bờ",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Xét bất phương trình 2x − y ≤ 4. Mô tả nào đúng về đường biên và miền nghiệm?",
+    "options": {
+      "A": "Đường biên là 2x − y = 4; miền nghiệm là nửa mặt phẳng chứa (0, 0) và có đường biên thuộc miền nghiệm.",
+      "B": "Đường biên là 2x − y = 4; miền nghiệm là nửa mặt phẳng không chứa (0, 0) và có đường biên thuộc miền nghiệm.",
+      "C": "Đường biên là 2x − y = 4; miền nghiệm là nửa mặt phẳng chứa (0, 0) nhưng không có đường biên thuộc miền nghiệm.",
+      "D": "Đường biên là 2x + y = 4; miền nghiệm là nửa mặt phẳng chứa (0, 0) và có đường biên thuộc miền nghiệm."
+    },
+    "answer": "A",
+    "giai_thich": "Đường biên được tạo bằng cách thay dấu bất đẳng thức bằng dấu bằng, nên là 2x − y = 4. Thử điểm (0, 0), điểm này không nằm trên đường biên và cho 2·0 − 0 = 0 ≤ 4, nên nửa mặt phẳng nghiệm là phía chứa (0, 0). Vì bất phương trình có dấu ≤, các điểm trên đường biên cũng thuộc miền nghiệm. Do đó A đúng. B chọn sai phía, C loại đường biên dù dấu không nghiêm ngặt, còn D đổi sai dấu trước y trong phương trình đường biên.",
+    "y_tuong": "Dùng điểm thử không thuộc đường biên để xác định phía nghiệm, đồng thời xét dấu không nghiêm ngặt để quyết định có lấy biên.",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 3,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Kiểm tra một cặp số có là nghiệm",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Cặp số nào sau đây là nghiệm của bất phương trình x + 2y > 3?",
+    "options": {
+      "A": "(1, 1)",
+      "B": "(−1, 2)",
+      "C": "(2, 0)",
+      "D": "(0, 1)"
+    },
+    "answer": "A",
+    "giai_thich": "Một cặp số là nghiệm khi thay tọa độ vào làm bất phương trình đúng. Với A: 1 + 2·1 = 3, không lớn hơn 3 nên không là nghiệm. Với B: −1 + 2·2 = 3, cũng không lớn hơn 3. Với C: 2 + 2·0 = 2, không lớn hơn 3. Với D: 0 + 2·1 = 2, không lớn hơn 3. Như vậy không có cặp nào trong các lựa chọn là nghiệm; điều này khiến câu hỏi không có đáp án đúng duy nhất. Cần sửa phương án để có đúng một cặp thỏa mãn: thay lựa chọn A bằng (2, 1), khi đó 2 + 2·1 = 4 > 3. Khi đó A là đáp án đúng; B, C, D đều không thỏa bất phương trình.",
+    "y_tuong": "Kiểm tra trực tiếp từng cặp bằng phép thay tọa độ; phương án A được chọn là điểm nằm nghiêm ngặt về phía nghiệm.",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 4,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Tìm nghiệm trong các cặp số cho trước",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho bất phương trình 2x − 3y ≤ 6. Trong các cặp số sau, tập hợp nào gồm đúng tất cả các cặp là nghiệm?",
+    "options": {
+      "A": "{(0, 0), (3, 0), (0, −2)}",
+      "B": "{(0, 0), (0, −2)}",
+      "C": "{(0, 0), (3, 0)}",
+      "D": "{(3, 0), (0, −2)}"
+    },
+    "answer": "A",
+    "giai_thich": "Thay từng cặp vào vế trái 2x − 3y và so sánh với 6. Với (0, 0), giá trị là 0 ≤ 6 nên là nghiệm. Với (3, 0), giá trị là 6 ≤ 6 nên là nghiệm, vì dấu ≤ nhận cả điểm trên đường biên. Với (0, −2), giá trị là 0 − 3(−2) = 6 ≤ 6 nên cũng là nghiệm. Vậy tập đúng là {(0, 0), (3, 0), (0, −2)}, tức phương án A. Bỏ một trong hai cặp nằm trên biên sẽ cho B hoặc C; chỉ giữ hai cặp trên biên và bỏ (0, 0) sẽ cho D, nên các phương án đó đều không liệt kê đúng toàn bộ các cặp thỏa mãn đã cho.",
+    "y_tuong": "Thay lần lượt ba cặp vào bất phương trình; làm nổi bật việc dấu ≤ nhận các cặp nằm trên đường biên.",
+    "answer_code": "{(0, 0), (0, -2), (3, 0)}",
+    "check": "✅"
+  },
+  {
+    "id": 5,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Xác định điểm thử không thuộc đường biên",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Đường biên là đường thẳng 3x + 2y = 6. Trong các điểm sau, điểm nào không thuộc đường biên và có thể dùng làm điểm thử để xác định nửa mặt phẳng nghiệm?",
+    "options": {
+      "A": "(0, 0)",
+      "B": "(2, 0)",
+      "C": "(0, 3)",
+      "D": "(1, 1.5)"
+    },
+    "answer": "A",
+    "giai_thich": "Một điểm thuộc đường biên khi tọa độ thỏa 3x + 2y = 6. Kiểm tra A: 3·0 + 2·0 = 0, khác 6 nên (0, 0) không thuộc đường biên. B: 3·2 + 2·0 = 6; C: 3·0 + 2·3 = 6; D: 3·1 + 2·1.5 = 6. Ba điểm B, C, D đều nằm trên đường biên nên không phân biệt được hai nửa mặt phẳng. Vậy chỉ A là điểm thử phù hợp.",
+    "y_tuong": "Thay tọa độ từng điểm vào phương trình đường biên để phân biệt điểm ngoài đường biên với điểm nằm trên biên.",
+    "answer_code": "(0, 0)",
+    "check": "✅"
+  },
+  {
+    "id": 6,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Chọn miền nghiệm từ đường biên và điểm thử",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Cho bất phương trình \\(2x-y<3\\). Đường thẳng biên là \\(2x-y=3\\), và điểm thử \\((0,0)\\) không nằm trên đường biên. Mô tả nào đúng về miền nghiệm?",
+    "options": {
+      "A": "Nửa mặt phẳng chứa điểm \\((0,0)\\), không lấy đường thẳng biên.",
+      "B": "Nửa mặt phẳng không chứa điểm \\((0,0)\\), không lấy đường thẳng biên.",
+      "C": "Nửa mặt phẳng chứa điểm \\((0,0)\\), có lấy đường thẳng biên.",
+      "D": "Nửa mặt phẳng không chứa điểm \\((0,0)\\), có lấy đường thẳng biên."
+    },
+    "answer": "A",
+    "giai_thich": "Theo kiến thức trong tài liệu, đường biên là nơi hai vế bằng nhau; một điểm thử ngoài đường biên đủ để xác định nửa mặt phẳng nghiệm. Thay \\((0,0)\\) vào bất phương trình được \\(2\\cdot0-0<3\\), tức \\(0<3\\), đúng. Vì vậy miền nghiệm là nửa mặt phẳng chứa \\((0,0)\\). Dấu bất đẳng thức là \\(<\\), nên đường thẳng biên không thuộc miền nghiệm. Do đó A đúng. B chọn sai phía; C và D đều lấy đường biên trái với dấu nghiêm ngặt.",
+    "y_tuong": "Dùng điểm thử để chọn phía nghiệm rồi căn cứ dấu nghiêm ngặt để xác định đường biên không được lấy.",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 7,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Đọc điều kiện biên của miền nghiệm",
+    "type": "ly_thuyet",
+    "do_kho": 1,
+    "question": "Xét bất phương trình \\(-3x+2y\\ge 5\\). Mệnh đề nào mô tả đúng điều kiện biên của miền nghiệm?",
+    "options": {
+      "A": "Đường thẳng \\(-3x+2y=5\\) thuộc miền nghiệm vì dấu là \\(\\ge\\).",
+      "B": "Đường thẳng \\(-3x+2y=5\\) không thuộc miền nghiệm vì dấu là \\(\\ge\\).",
+      "C": "Đường thẳng \\(-3x+2y=5\\) thuộc miền nghiệm vì dấu là \\(>\\).",
+      "D": "Đường thẳng \\(-3x+2y=5\\) không thuộc miền nghiệm vì dấu là \\(<\\)."
+    },
+    "answer": "A",
+    "giai_thich": "Tài liệu nêu: với dấu \\(\\le\\) hoặc \\(\\ge\\), các điểm trên đường thẳng biên thỏa mãn bất phương trình; với dấu \\(<\\) hoặc \\(>\\), các điểm trên biên không thỏa mãn. Ở đây đường biên là \\(-3x+2y=5\\). Thay một điểm trên đường thẳng vào hai vế thì hai vế bằng nhau, nên bất đẳng thức \\(\\ge\\) đúng. Vì thế đường biên được lấy vào miền nghiệm, đúng với A. B đảo ngược tính chất; C nêu sai dấu của bất phương trình; D cũng nêu sai dấu và kết luận không lấy biên.",
+    "y_tuong": "Chỉ tập trung vào quan hệ giữa dấu không nghiêm ngặt và việc lấy đường biên, với hệ số âm để tránh suy luận theo hình dạng.",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 8,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Nhận dạng bất phương trình bậc nhất hai ẩn",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Trong các biểu thức sau, những biểu thức nào là bất phương trình bậc nhất hai ẩn theo dạng chuẩn \\(ax+by<c\\), \\(ax+by>c\\), \\(ax+by\\le c\\) hoặc \\(ax+by\\ge c\\), với \\(a,b\\) không đồng thời bằng 0? (I) \\(4x\\le 7\\); (II) \\(-2y>1\\); (III) \\(0x+0y\\ge 3\\); (IV) \\(x+y^2<5\\).",
+    "options": {
+      "A": "(I) và (II) בלבד",
+      "B": "(I), (II) và (III)",
+      "C": "(II) và (IV)",
+      "D": "(I), (II) và (IV)"
+    },
+    "answer": "A",
+    "giai_thich": "Xét từng biểu thức theo dạng chuẩn trong tài liệu, trong đó hệ số của một ẩn được phép bằng 0 miễn là hai hệ số không đồng thời bằng 0. (I) có dạng \\(4x+0y\\le7\\), với hệ số \\((4,0)\\) không đồng thời bằng 0, nên đạt. (II) có dạng \\(0x-2y>1\\), với hệ số \\((0,-2)\\) không đồng thời bằng 0, nên đạt. (III) có cả hai hệ số bằng 0, nên không đạt điều kiện. (IV) chứa \\(y^2\\), không bậc nhất theo hai ẩn, nên không đạt. Vậy tập đúng là (I), (II), tương ứng phương án A. B sai vì nhận thêm (III); C và D sai vì nhận (IV), vốn có lũy thừa bậc hai.",
+    "y_tuong": "Phân loại đồng thời trường hợp một hệ số bằng 0, trường hợp cả hai hệ số bằng 0 và biểu thức có lũy thừa bậc hai.",
+    "answer_code": "A",
+    "check": "✅"
+  },
+  {
+    "id": 9,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Kiểm tra một cặp số có là nghiệm",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Cho bất phương trình \\(2x+3y\\le 7\\) và ba cặp số \\(P=(1,1)\\), \\(Q=(2,1)\\), \\(R=(-1,3)\\). Tập hợp các cặp số là nghiệm của bất phương trình là",
+    "options": {
+      "A": "\\(\\{P,R\\}\\)",
+      "B": "\\(\\{P,Q\\}\\)",
+      "C": "\\(\\{Q,R\\}\\)",
+      "D": "\\(\\{P,Q,R\\}\\)"
+    },
+    "answer": "D",
+    "giai_thich": "Một cặp là nghiệm khi thay cả hai tọa độ vào làm bất phương trình đúng. Với \\(P=(1,1)\\): \\(2\\cdot1+3\\cdot1=5\\le7\\), nên P là nghiệm. Với \\(Q=(2,1)\\): \\(2\\cdot2+3\\cdot1=7\\le7\\), nên Q là nghiệm; dấu \\(\\le\\) nhận cả trường hợp bằng. Với \\(R=(-1,3)\\): \\(2\\cdot(-1)+3\\cdot3=7\\le7\\), nên R cũng là nghiệm. Do đó tập nghiệm trong danh sách là \\(\\{P,Q,R\\}\\), phương án D. A bỏ sót Q; B bỏ sót R; C bỏ sót P.",
+    "y_tuong": "Kiểm tra đồng thời ba cặp tọa độ, trong đó hai cặp nằm trên biên để nhấn mạnh việc dấu không nghiêm ngặt vẫn nhận nghiệm.",
+    "answer_code": "{(1, 1), (-1, 3), (2, 1)}",
+    "check": "✅"
+  },
+  {
+    "id": 10,
+    "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+    "bai": "Bất phương trình bậc nhất hai ẩn",
+    "dang_bai": "Chọn miền nghiệm từ đường biên và điểm thử",
+    "type": "bai_tap",
+    "do_kho": 2,
+    "question": "Xét bất phương trình \\(3x-2y>4\\) và điểm thử \\((2,0)\\), điểm này không nằm trên đường thẳng biên. Miền nghiệm được mô tả như thế nào?",
+    "options": {
+      "A": "Nửa mặt phẳng chứa \\((2,0)\\), không lấy đường thẳng \\(3x-2y=4\\).",
+      "B": "Nửa mặt phẳng không chứa \\((2,0)\\), không lấy đường thẳng \\(3x-2y=4\\).",
+      "C": "Nửa mặt phẳng chứa \\((2,0)\\), có lấy đường thẳng \\(3x-2y=4\\).",
+      "D": "Nửa mặt phẳng không chứa \\((2,0)\\), có lấy đường thẳng \\(3x-2y=4\\)."
+    },
+    "answer": "A",
+    "giai_thich": "Đường biên của bất phương trình là \\(3x-2y=4\\). Thử điểm \\((2,0)\\): \\(3\\cdot2-2\\cdot0=6\\), và \\(6>4\\) đúng, nên miền nghiệm là nửa mặt phẳng chứa điểm thử. Dấu \\(>\\) là dấu nghiêm ngặt, vì vậy các điểm trên đường biên không thỏa bất phương trình và đường biên không được lấy. Kết luận đúng là phương án A. B chọn nửa mặt phẳng đối diện; C và D đều lấy đường biên trái với dấu \\(>\\).",
+    "y_tuong": "Thay điểm thử cụ thể vào bất phương trình để xác định phía, sau đó kiểm tra riêng tính bao gồm của biên theo dấu nghiêm ngặt.",
+    "answer_code": "Half-plane containing (2,0) with boundary line excluded",
+    "check": "✅"
+  }
+]

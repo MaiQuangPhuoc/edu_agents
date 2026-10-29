@@ -198,3 +198,9 @@ Hệ thống: Mệnh đề toán học là một câu phát biểu trong toán h
 
 ---
 
+Người dùng: mệnh đề đúng là gì , mệnh đề vừa đúng vừa sai có tồn tại không (21:33:18 29/10/2026)
+
+Hệ thống: Trong logic cổ điển, **mệnh đề** là một câu khẳng định mà chúng ta có thể xác định được là đúng hoặc sai, nhưng không thể đồng thời vừa đúng vừa sai. Các câu hỏi hay câu mệnh lệnh không được xem là mệnh đề. Khi một mệnh đề chứa biến, giá trị đúng/sai phụ thuộc vào giá trị của biến và miền xét, nhưng nguyên tắc vẫn giữ rằng mỗi trường hợp cụ thể của mệnh đề sẽ có một giá trị chân lý duy nhất. Vì vậy, **một mệnh đề không thể vừa đúng vừa sai**; nếu một câu được cho là đúng, phủ định của nó sẽ sai, và ngược lại. Đây là quy tắc cơ bản trong toán học lớp 10 về mệnh đề logic. (21:33:57 29/10/2026) - Chênh lệch: 39s
+
+---
+
