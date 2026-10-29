@@ -488,7 +488,8 @@ class LLMClient:
                 if status in (401, 403) or (status is not None and not _transient(error)):
                     # A rejected native schema may use the less restrictive tool API.
                     text = str(error).lower()
-                    if status == 400 and method == "json_schema" and any(...):
+                    # if status == 400 and method == "json_schema" and any(...):
+                    if status == 400 and method == "json_schema" and any(k in text for k in ("schema", "response_format", "structured", "strict", "json")):
                         method = "function_calling"
                     elif status == 400 and "tool_use_failed" in text:
                         pass
@@ -510,8 +511,8 @@ class LLMClient:
                     if recovered is not None:
                         logger.warning("Returning explicitly requested partial array: %s", list_field)
                         return recovered
-                logger.warning("LLM failed provider=%s model=%s method=%s attempt=%d error_type=%s status=%s",
-                               self.api_provider, self.model, method, attempt + 1, type(error).__name__, status)
+                logger.warning("LLM failed provider=%s model=%s method=%s attempt=%d error_type=%s status=%s error=%s",
+                               self.api_provider, self.model, method, attempt + 1, type(error).__name__, status, str(error)[:300])
                 if attempt + 1 >= max(1, max_retries):
                     break
                 if _transient(error):

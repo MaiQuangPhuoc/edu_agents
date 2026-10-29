@@ -50,6 +50,8 @@ LP_VERIFY_PROMPT_PATH = PROMPT_DIR / "lp_verify.txt"
 
 PLANNING_OVERVIEW_PROMPT_PATH = PROMPT_DIR / "planning_overview.txt"
 
+EXAM_COLLECT_AUTO_PROMPT_PATH = PROMPT_DIR / "exam_collect_auto.txt"
+
 
 
 

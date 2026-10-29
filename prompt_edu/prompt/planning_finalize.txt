@@ -25,6 +25,8 @@ NGUYÊN TẮC
 16. ly_do của mỗi chương phải nêu căn cứ cụ thể từ hồ sơ (mức độ, điểm, thời gian), không chỉ nhắc lại nội dung giáo án hoặc SGK.
 17. Mục SGK tổng quan ghi "chưa có đoạn đủ liên quan" thì chỉ dựa vào giáo án và cấu trúc chương trình, không tự bịa nội dung chương.
 18. không vượt số giai đoạn tối đa ở PHẠM VI.Chương yếu thì viết sâu và gộp ít chương hơn, chương đã ổn thì gộp chung thành một giai đoạn dài.
+19. Mỗi giai đoạn gồm nhiều tuần; không chia mỗi tuần một giai đoạn. Toàn bộ lộ trình của một môn chỉ có 2 đến 5 giai đoạn.
+
 ĐẦU RA
 Xuất đúng schema được yêu cầu.
 

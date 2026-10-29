@@ -2,10 +2,10 @@
   "current_phase": 1,
   "schedule": {
     "start_date": "2026-10-29",
-    "end_date": "2026-11-19",
-    "total_weeks": 3,
+    "end_date": "2027-01-21",
+    "total_weeks": 12,
     "sessions_per_week": 3,
-    "minutes_per_session": 120
+    "minutes_per_session": 150
   },
   "outline": [
     {
@@ -13,20 +13,66 @@
       "weeks": [
         {
           "week_no": 1,
-          "goal": "(tuần nén) Giải và biểu diễn được bất phương trình, hệ bất phương trình; vận dụng chính xác kiến thức mệnh đề và tập hợp.",
+          "goal": "Vẽ và xác định được miền nghiệm của bất phương trình bậc nhất hai ẩn.",
           "lessons": [
             {
               "chapter_id": "II",
               "lesson": "Bất phương trình bậc nhất hai ẩn"
-            },
+            }
+          ],
+          "activity_types": [
+            "video",
+            "tài liệu",
+            "bài tập"
+          ],
+          "difficulty_trend": "dễ → vừa",
+          "total_hours": 7.5,
+          "has_assessment": false
+        },
+        {
+          "week_no": 2,
+          "goal": "Giải thích được miền nghiệm của hệ bất phương trình và vận dụng vào bài toán đơn giản.",
+          "lessons": [
             {
               "chapter_id": "II",
               "lesson": "Hệ bất phương trình bậc nhất hai ẩn"
-            },
+            }
+          ],
+          "activity_types": [
+            "video",
+            "bài tập"
+          ],
+          "difficulty_trend": "vừa → khó",
+          "total_hours": 7.5,
+          "has_assessment": true
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "weeks": [
+        {
+          "week_no": 3,
+          "goal": "Nhận biết mệnh đề, phủ định và xác định được tính đúng sai trong các ví dụ.",
+          "lessons": [
             {
               "chapter_id": "I",
               "lesson": "Mệnh đề"
-            },
+            }
+          ],
+          "activity_types": [
+            "video",
+            "tài liệu",
+            "bài tập"
+          ],
+          "difficulty_trend": "dễ → vừa",
+          "total_hours": 7.5,
+          "has_assessment": false
+        },
+        {
+          "week_no": 4,
+          "goal": "Thực hiện chính xác các phép toán tập hợp và diễn đạt kết quả bằng kí hiệu phù hợp.",
+          "lessons": [
             {
               "chapter_id": "I",
               "lesson": "Tập hợp"
@@ -37,55 +83,11 @@
             }
           ],
           "activity_types": [
-            "video",
-            "tài liệu",
-            "bài tập"
-          ],
-          "difficulty_trend": "dễ → khó",
-          "total_hours": 6.0,
-          "has_assessment": true
-        }
-      ]
-    },
-    {
-      "phase": 2,
-      "weeks": [
-        {
-          "week_no": 2,
-          "goal": "Phân tích được đồ thị hàm số và vận dụng các cách mô tả, đặc trưng dữ liệu để giải bài tập.",
-          "lessons": [
-            {
-              "chapter_id": "III",
-              "lesson": "Hàm số và đồ thị"
-            },
-            {
-              "chapter_id": "III",
-              "lesson": "Hàm số bậc hai"
-            },
-            {
-              "chapter_id": "VI",
-              "lesson": "Số gần đúng và sai số"
-            },
-            {
-              "chapter_id": "VI",
-              "lesson": "Mô tả và biểu diễn dữ liệu trên các bảng và biểu đồ"
-            },
-            {
-              "chapter_id": "VI",
-              "lesson": "Các số đặc trưng đo xu thế trung tâm của mẫu số liệu"
-            },
-            {
-              "chapter_id": "VI",
-              "lesson": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu"
-            }
-          ],
-          "activity_types": [
-            "video",
             "tài liệu",
             "bài tập"
           ],
           "difficulty_trend": "vừa → khó",
-          "total_hours": 6.0,
+          "total_hours": 7.5,
           "has_assessment": true
         }
       ]
@@ -94,8 +96,43 @@
       "phase": 3,
       "weeks": [
         {
-          "week_no": 3,
-          "goal": "Lựa chọn và vận dụng phù hợp các hệ thức lượng, phép toán vectơ để giải bài tập và tình huống thực tế.",
+          "week_no": 5,
+          "goal": "Đọc đồ thị và xác định được các đặc trưng cơ bản của hàm số.",
+          "lessons": [
+            {
+              "chapter_id": "III",
+              "lesson": "Hàm số và đồ thị"
+            }
+          ],
+          "activity_types": [
+            "video",
+            "tài liệu",
+            "bài tập"
+          ],
+          "difficulty_trend": "dễ → vừa",
+          "total_hours": 7.5,
+          "has_assessment": false
+        },
+        {
+          "week_no": 6,
+          "goal": "Phân tích được đồ thị hàm số bậc hai và vận dụng để giải bài tập.",
+          "lessons": [
+            {
+              "chapter_id": "III",
+              "lesson": "Hàm số bậc hai"
+            }
+          ],
+          "activity_types": [
+            "video",
+            "bài tập"
+          ],
+          "difficulty_trend": "vừa → khó",
+          "total_hours": 7.5,
+          "has_assessment": true
+        },
+        {
+          "week_no": 7,
+          "goal": "Tính giá trị lượng giác của góc và chọn định lí phù hợp để tìm cạnh, góc trong tam giác.",
           "lessons": [
             {
               "chapter_id": "IV",
@@ -104,11 +141,42 @@
             {
               "chapter_id": "IV",
               "lesson": "Định lí côsin và định lí sin"
-            },
+            }
+          ],
+          "activity_types": [
+            "tài liệu",
+            "bài tập"
+          ],
+          "difficulty_trend": "vừa → khó",
+          "total_hours": 7.5,
+          "has_assessment": false
+        },
+        {
+          "week_no": 8,
+          "goal": "Giải tam giác và diễn giải kết quả trong tình huống thực tế.",
+          "lessons": [
             {
               "chapter_id": "IV",
               "lesson": "Giải tam giác và ứng dụng thực tế"
-            },
+            }
+          ],
+          "activity_types": [
+            "video",
+            "bài tập"
+          ],
+          "difficulty_trend": "khó",
+          "total_hours": 7.5,
+          "has_assessment": true
+        }
+      ]
+    },
+    {
+      "phase": 4,
+      "weeks": [
+        {
+          "week_no": 9,
+          "goal": "Biểu diễn vectơ và thực hiện phép cộng, trừ vectơ trong các bài toán cơ bản.",
+          "lessons": [
             {
               "chapter_id": "V",
               "lesson": "Khái niệm vectơ"
@@ -116,7 +184,21 @@
             {
               "chapter_id": "V",
               "lesson": "Tổng và hiệu của hai vectơ"
-            },
+            }
+          ],
+          "activity_types": [
+            "video",
+            "tài liệu",
+            "bài tập"
+          ],
+          "difficulty_trend": "dễ → vừa",
+          "total_hours": 7.5,
+          "has_assessment": false
+        },
+        {
+          "week_no": 10,
+          "goal": "Vận dụng phép nhân vectơ với số và tích vô hướng để giải bài toán.",
+          "lessons": [
             {
               "chapter_id": "V",
               "lesson": "Tích của một số với một vectơ"
@@ -127,12 +209,54 @@
             }
           ],
           "activity_types": [
+            "tài liệu",
+            "bài tập"
+          ],
+          "difficulty_trend": "vừa → khó",
+          "total_hours": 7.5,
+          "has_assessment": true
+        },
+        {
+          "week_no": 11,
+          "goal": "Tính và giải thích sai số, đồng thời biểu diễn dữ liệu phù hợp.",
+          "lessons": [
+            {
+              "chapter_id": "VI",
+              "lesson": "Số gần đúng và sai số"
+            },
+            {
+              "chapter_id": "VI",
+              "lesson": "Mô tả và biểu diễn dữ liệu trên các bảng và biểu đồ"
+            }
+          ],
+          "activity_types": [
             "video",
             "tài liệu",
             "bài tập"
           ],
           "difficulty_trend": "vừa → khó",
-          "total_hours": 6.0,
+          "total_hours": 7.5,
+          "has_assessment": false
+        },
+        {
+          "week_no": 12,
+          "goal": "Tính các số đặc trưng của mẫu số liệu và diễn giải mức độ phân tán.",
+          "lessons": [
+            {
+              "chapter_id": "VI",
+              "lesson": "Các số đặc trưng đo xu thế trung tâm của mẫu số liệu"
+            },
+            {
+              "chapter_id": "VI",
+              "lesson": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu"
+            }
+          ],
+          "activity_types": [
+            "tài liệu",
+            "bài tập"
+          ],
+          "difficulty_trend": "khó",
+          "total_hours": 7.5,
           "has_assessment": true
         }
       ]
@@ -143,12 +267,12 @@
       "week_no": 1,
       "start_date": "2026-10-29",
       "end_date": "2026-11-04",
-      "goal": "Củng cố mệnh đề và tập hợp; giải, biểu diễn bất phương trình và hệ bất phương trình bậc nhất hai ẩn, rồi kiểm tra và sửa lỗi để tiến tới mục tiêu nâng điểm Toán.",
+      "goal": "Nắm được cách nhận biết nghiệm, vẽ đường biên và xác định miền nghiệm của bất phương trình bậc nhất hai ẩn.",
       "sessions": [
         {
           "date": "2026-10-30",
-          "start_time": "21:00",
-          "minutes": 120,
+          "start_time": "07:00",
+          "minutes": 150,
           "type": "lesson",
           "chapter_id": "II",
           "lesson": "Bất phương trình bậc nhất hai ẩn",
@@ -179,29 +303,29 @@
           "activities": [
             {
               "type": "reading",
-              "content": "Đọc về dạng bất phương trình bậc nhất hai ẩn, cách kiểm tra một cặp số là nghiệm và vai trò của đường biên theo key_points của II.1.",
-              "minutes": 25,
+              "content": "Đọc về dạng tổng quát của bất phương trình bậc nhất hai ẩn và cách nhận biết nghiệm theo key_points, must_know của bài.",
+              "minutes": 35,
               "difficulty": "easy",
               "problem_type": ""
             },
             {
               "type": "lecture",
-              "content": "Học cách dùng điểm thử xác định nửa mặt phẳng nghiệm và xác định đường biên có được lấy hay không theo dấu bất phương trình của II.1.",
-              "minutes": 30,
+              "content": "Học cách kiểm tra một cặp số bằng phép thay trực tiếp và phân biệt miền nghiệm với một nghiệm theo key_points của bài.",
+              "minutes": 35,
               "difficulty": "easy",
               "problem_type": ""
             },
             {
               "type": "exercise",
-              "content": "Luyện từ dễ đến khó: thay cặp số để kiểm tra nghiệm, rồi vẽ đường biên và biểu diễn nửa mặt phẳng nghiệm của II.1.",
-              "minutes": 50,
+              "content": "Luyện nhận dạng bất phương trình bậc nhất hai ẩn và phân biệt với phương trình hai ẩn hoặc bất phương trình bậc cao hơn.",
+              "minutes": 70,
               "difficulty": "easy",
-              "problem_type": "Vẽ đường biên và biểu diễn nửa mặt phẳng nghiệm bằng điểm thử."
+              "problem_type": "Nhận dạng bất phương trình bậc nhất hai ẩn và phân biệt với phương trình hai ẩn hoặc bất phương trình bậc cao hơn."
             },
             {
-              "type": "summary",
-              "content": "Tóm tắt cách kiểm tra nghiệm và cách xác định miền nghiệm có lấy đường biên hay không của II.1.",
-              "minutes": 15,
+              "type": "review",
+              "content": "Nhắc lại sự khác nhau giữa một cặp nghiệm và tập hợp các điểm biểu diễn mọi cặp nghiệm.",
+              "minutes": 10,
               "difficulty": "easy",
               "problem_type": ""
             }
@@ -209,9 +333,9 @@
           "resources": [
             {
               "type": "document",
-              "title": "Chuyên đề Toán 10 chương bất phương trình và hệ bất phương trình bậc nhất hai ẩn - TOANMATH.com | 65 trang | 02/08/2025",
-              "url": "https://toanmath.com/2025/08/chuyen-de-toan-10-chuong-bat-phuong-trinh-va-he-bat-phuong-trinh-bac-nhat-hai-an.html",
-              "note": "Tài liệu chương II để luyện tập."
+              "title": "Lý thuyết Bất phương trình bậc nhất hai ẩn - SGK Toán 10 Kết nối tri thức",
+              "url": "https://loigiaihay.com/ly-thuyet-bat-phuong-trinh-bac-nhat-hai-an-sgk-toan-10-ket-noi-tri-thuc-a109832.html",
+              "note": "Tài liệu lý thuyết cho bài Bất phương trình bậc nhất hai ẩn."
             }
           ],
           "assessment": null,
@@ -220,7 +344,165 @@
         {
           "date": "2026-11-02",
           "start_time": "07:00",
-          "minutes": 120,
+          "minutes": 150,
+          "type": "lesson",
+          "chapter_id": "II",
+          "lesson": "Bất phương trình bậc nhất hai ẩn",
+          "key_points": [
+            "Bất phương trình bậc nhất hai ẩn có dạng tuyến tính với hai ẩn và biểu diễn nghiệm bằng các điểm trên mặt phẳng tọa độ.",
+            "Kiểm tra một cặp số có là nghiệm hay không bằng cách thay trực tiếp vào bất phương trình.",
+            "Đường thẳng biên chia mặt phẳng thành hai nửa mặt phẳng; điểm thử giúp xác định nửa mặt phẳng nghiệm.",
+            "Miền nghiệm có lấy đường biên hay không phụ thuộc vào dấu của bất phương trình."
+          ],
+          "must_know": [
+            "Dạng tổng quát: ax+by<c, ax+by≤c, ax+by>c hoặc ax+by≥c; a,b,c là số thực và a,b không đồng thời bằng 0.",
+            "(x₀,y₀) là nghiệm nếu thay x=x₀, y=y₀ vào bất phương trình được mệnh đề đúng.",
+            "Đường biên là ax+by=c.",
+            "Dấu ≤ hoặc ≥ thì lấy đường biên; dấu < hoặc > thì không lấy đường biên."
+          ],
+          "must_understand": [
+            "Nghiệm là một cặp số, còn miền nghiệm là tập hợp các điểm biểu diễn mọi cặp nghiệm.",
+            "Chọn điểm thử không nằm trên đường biên; thường có thể chọn O(0,0) nếu O không thuộc đường biên."
+          ],
+          "related": [
+            {
+              "chapter_id": "II",
+              "lesson": "Hệ bất phương trình bậc nhất hai ẩn",
+              "relation": "Miền nghiệm của hệ được xác định từ miền nghiệm của từng bất phương trình thành phần."
+            }
+          ],
+          "difficulty": "easy",
+          "activities": [
+            {
+              "type": "review",
+              "content": "Ôn nhanh cách nhận biết nghiệm và thay một cặp số vào bất phương trình đã học ở buổi trước.",
+              "minutes": 15,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "lecture",
+              "content": "Học cách xác định đường biên, chọn điểm thử không nằm trên đường biên và tìm nửa mặt phẳng nghiệm theo key_points của bài.",
+              "minutes": 45,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "exercise",
+              "content": "Thay các cặp số vào bất phương trình để kiểm tra cặp nào là nghiệm.",
+              "minutes": 75,
+              "difficulty": "easy",
+              "problem_type": "Thay một cặp số vào bất phương trình để kiểm tra nghiệm."
+            },
+            {
+              "type": "summary",
+              "content": "Ghi lại các bước kiểm tra nghiệm và cách chọn điểm thử theo must_know, must_understand của bài.",
+              "minutes": 15,
+              "difficulty": "easy",
+              "problem_type": ""
+            }
+          ],
+          "resources": [
+            {
+              "type": "document",
+              "title": "Phân dạng và bài tập bất phương trình và hệ bất phương trình bậc nhất hai ẩn - TOANMATH.com",
+              "url": "https://toanmath.com/2023/08/phan-dang-va-bai-tap-bat-phuong-trinh-va-he-bat-phuong-trinh-bac-nhat-hai-an.html",
+              "note": "Tài liệu lý thuyết cho chương II."
+            },
+            {
+              "type": "document",
+              "title": "Chuyên đề Toán 10 chương bất phương trình và hệ bất phương trình bậc nhất hai ẩn - TOANMATH.com",
+              "url": "https://toanmath.com/2025/08/chuyen-de-toan-10-chuong-bat-phuong-trinh-va-he-bat-phuong-trinh-bac-nhat-hai-an.html",
+              "note": "Tài liệu luyện tập cho hoạt động exercise."
+            }
+          ],
+          "assessment": null,
+          "exam_enabled": false
+        },
+        {
+          "date": "2026-11-04",
+          "start_time": "07:00",
+          "minutes": 150,
+          "type": "lesson",
+          "chapter_id": "II",
+          "lesson": "Bất phương trình bậc nhất hai ẩn",
+          "key_points": [
+            "Bất phương trình bậc nhất hai ẩn có dạng tuyến tính với hai ẩn và biểu diễn nghiệm bằng các điểm trên mặt phẳng tọa độ.",
+            "Kiểm tra một cặp số có là nghiệm hay không bằng cách thay trực tiếp vào bất phương trình.",
+            "Đường thẳng biên chia mặt phẳng thành hai nửa mặt phẳng; điểm thử giúp xác định nửa mặt phẳng nghiệm.",
+            "Miền nghiệm có lấy đường biên hay không phụ thuộc vào dấu của bất phương trình."
+          ],
+          "must_know": [
+            "Dạng tổng quát: ax+by<c, ax+by≤c, ax+by>c hoặc ax+by≥c; a,b,c là số thực và a,b không đồng thời bằng 0.",
+            "(x₀,y₀) là nghiệm nếu thay x=x₀, y=y₀ vào bất phương trình được mệnh đề đúng.",
+            "Đường biên là ax+by=c.",
+            "Dấu ≤ hoặc ≥ thì lấy đường biên; dấu < hoặc > thì không lấy đường biên."
+          ],
+          "must_understand": [
+            "Nghiệm là một cặp số, còn miền nghiệm là tập hợp các điểm biểu diễn mọi cặp nghiệm.",
+            "Chọn điểm thử không nằm trên đường biên; thường có thể chọn O(0,0) nếu O không thuộc đường biên."
+          ],
+          "related": [
+            {
+              "chapter_id": "II",
+              "lesson": "Hệ bất phương trình bậc nhất hai ẩn",
+              "relation": "Miền nghiệm của hệ được xác định từ miền nghiệm của từng bất phương trình thành phần."
+            }
+          ],
+          "difficulty": "medium",
+          "activities": [
+            {
+              "type": "review",
+              "content": "Ôn lại cách xác định đường biên và chọn điểm thử không nằm trên đường biên từ buổi trước.",
+              "minutes": 15,
+              "difficulty": "medium",
+              "problem_type": ""
+            },
+            {
+              "type": "lecture",
+              "content": "Làm rõ cách dấu bất phương trình quyết định đường biên có được lấy hay không theo must_know của bài.",
+              "minutes": 35,
+              "difficulty": "medium",
+              "problem_type": ""
+            },
+            {
+              "type": "exercise",
+              "content": "Vẽ đường biên, dùng điểm thử để biểu diễn nửa mặt phẳng nghiệm và xác định đường biên có được lấy hay không theo dấu bất phương trình.",
+              "minutes": 85,
+              "difficulty": "medium",
+              "problem_type": "Vẽ đường biên và biểu diễn nửa mặt phẳng nghiệm bằng điểm thử."
+            },
+            {
+              "type": "exercise",
+              "content": "Luyện xác định đường biên có được lấy hay không theo dấu bất phương trình.",
+              "minutes": 15,
+              "difficulty": "medium",
+              "problem_type": "Xác định đường biên có được lấy hay không theo dấu bất phương trình."
+            }
+          ],
+          "resources": [
+            {
+              "type": "document",
+              "title": "Chuyên đề Toán 10 chương bất phương trình và hệ bất phương trình bậc nhất hai ẩn - TOANMATH.com",
+              "url": "https://toanmath.com/2025/08/chuyen-de-toan-10-chuong-bat-phuong-trinh-va-he-bat-phuong-trinh-bac-nhat-hai-an.html",
+              "note": "Tài liệu luyện tập cho hoạt động exercise."
+            }
+          ],
+          "assessment": null,
+          "exam_enabled": false
+        }
+      ]
+    },
+    {
+      "week_no": 2,
+      "start_date": "2026-11-05",
+      "end_date": "2026-11-11",
+      "goal": "Giải thích được miền nghiệm của hệ bất phương trình và vận dụng vào bài toán đơn giản, đồng thời củng cố kỹ năng biểu diễn miền nghiệm và giải bài toán thực tiễn.",
+      "sessions": [
+        {
+          "date": "2026-11-06",
+          "start_time": "07:00",
+          "minutes": 150,
           "type": "lesson",
           "chapter_id": "II",
           "lesson": "Hệ bất phương trình bậc nhất hai ẩn",
@@ -249,41 +531,34 @@
               "relation": "Cần xác định miền nghiệm của từng bất phương trình thành phần trước khi lấy giao để biểu diễn miền nghiệm của hệ."
             }
           ],
-          "difficulty": "easy",
+          "difficulty": "medium",
           "activities": [
             {
-              "type": "review",
-              "content": "Ôn nhanh cách xác định miền nghiệm của một bất phương trình thành phần từ buổi trước để chuẩn bị lấy giao các miền nghiệm trong II.2.",
-              "minutes": 10,
-              "difficulty": "easy",
-              "problem_type": ""
-            },
-            {
               "type": "reading",
-              "content": "Đọc về nghiệm của hệ, giao các miền nghiệm riêng và việc xét các đoạn biên trong II.2.",
-              "minutes": 25,
-              "difficulty": "easy",
+              "content": "Đọc về hệ bất phương trình bậc nhất hai ẩn và điều kiện một cặp là nghiệm khi thỏa mãn đồng thời mọi bất phương trình trong hệ.",
+              "minutes": 40,
+              "difficulty": "medium",
               "problem_type": ""
             },
             {
               "type": "lecture",
-              "content": "Học cách tìm đỉnh miền nghiệm đa giác và so sánh giá trị biểu thức tuyến tính tại các đỉnh theo must_know của II.2.",
-              "minutes": 25,
-              "difficulty": "easy",
+              "content": "Tìm hiểu cách biểu diễn miền nghiệm bằng cách vẽ các đường biên, xác định miền nghiệm riêng rồi lấy giao, chú ý việc lấy hay không lấy các đoạn biên.",
+              "minutes": 40,
+              "difficulty": "medium",
               "problem_type": ""
             },
             {
               "type": "exercise",
-              "content": "Biểu diễn giao các nửa mặt phẳng trên cùng hệ trục tọa độ, sau đó luyện xác định đỉnh miền nghiệm và tối ưu biểu thức tuyến tính trong II.2.",
-              "minutes": 50,
-              "difficulty": "easy",
-              "problem_type": "Tìm giá trị lớn nhất hoặc nhỏ nhất của biểu thức F=ax+by trên miền đa giác khả thi."
+              "content": "Luyện biểu diễn miền nghiệm của hệ bằng giao các nửa mặt phẳng trên cùng hệ trục tọa độ.",
+              "minutes": 60,
+              "difficulty": "medium",
+              "problem_type": "Biểu diễn miền nghiệm của hệ bằng giao các nửa mặt phẳng trên cùng hệ trục tọa độ."
             },
             {
               "type": "summary",
-              "content": "Tóm tắt quy trình lấy giao miền nghiệm và lưu ý phải thỏa mãn đồng thời mọi bất phương trình của II.2.",
+              "content": "Tóm tắt các bước xác định miền nghiệm của hệ và lưu ý rằng nghiệm phải thỏa mãn tất cả điều kiện cùng lúc.",
               "minutes": 10,
-              "difficulty": "easy",
+              "difficulty": "medium",
               "problem_type": ""
             }
           ],
@@ -292,72 +567,136 @@
               "type": "document",
               "title": "Hệ bất phương trình bậc nhất hai ẩn lớp 10 (Lý thuyết Toán 10 Chân trời sáng tạo)",
               "url": "https://www.vietjack.com/toan-10-ct/ly-thuyet-bai-2-he-bat-phuong-trinh-bac-nhat-hai-an.jsp",
-              "note": "Tài liệu lý thuyết cho bài II.2."
-            },
-            {
-              "type": "document",
-              "title": "Chuyên đề Toán 10 chương bất phương trình và hệ bất phương trình bậc nhất hai ẩn - TOANMATH.com | 65 trang | 02/08/2025",
-              "url": "https://toanmath.com/2025/08/chuyen-de-toan-10-chuong-bat-phuong-trinh-va-he-bat-phuong-trinh-bac-nhat-hai-an.html",
-              "note": "Tài liệu chương II để luyện tập."
+              "note": "Lý thuyết chung cho bài II.2."
             }
           ],
           "assessment": null,
           "exam_enabled": false
         },
         {
-          "date": "2026-11-03",
+          "date": "2026-11-09",
           "start_time": "07:00",
-          "minutes": 120,
-          "type": "assessment",
-          "chapter_id": "I",
-          "lesson": "Mệnh đề",
+          "minutes": 150,
+          "type": "lesson",
+          "chapter_id": "II",
+          "lesson": "Hệ bất phương trình bậc nhất hai ẩn",
           "key_points": [
-            "Định nghĩa mệnh đề, mệnh đề chứa biến và cách ký hiệu.",
-            "Mệnh đề phủ định, mệnh đề kéo theo (P ⇒ Q) và mệnh đề đảo (Q ⇒ P).",
-            "Khái niệm mệnh đề tương đương (P ⇔ Q) và cách kiểm tra tính đúng sai."
+            "Hệ gồm từ hai bất phương trình bậc nhất hai ẩn trở lên cùng xét với hai ẩn x,y.",
+            "Nghiệm của hệ phải thỏa mãn đồng thời tất cả bất phương trình trong hệ.",
+            "Miền nghiệm của hệ là giao các miền nghiệm riêng, có xét việc lấy hay không lấy các đoạn biên.",
+            "Có thể dùng hệ để mô hình hóa điều kiện thực tiễn và tìm giá trị lớn nhất hoặc nhỏ nhất của biểu thức tuyến tính trên miền đa giác."
           ],
           "must_know": [
-            "Mệnh đề: câu có giá trị đúng hoặc sai, ký hiệu P, Q,…",
-            "Mệnh đề phủ định: ¬P, đổi vị trí “không”.",
-            "Mệnh đề kéo theo: P ⇒ Q, nghĩa là nếu P đúng thì Q cũng đúng.",
-            "Mệnh đề đảo: Q ⇒ P.",
-            "Mệnh đề tương đương: P ⇔ Q (cả P ⇒ Q và Q ⇒ P đều đúng)."
+            "Một cặp (x₀,y₀) là nghiệm của hệ nếu thỏa mãn đồng thời mọi bất phương trình trong hệ.",
+            "Biểu diễn miền nghiệm bằng cách vẽ các đường biên, xác định từng miền nghiệm riêng rồi lấy giao.",
+            "Nếu không có điểm nào thỏa đồng thời các bất phương trình thì hệ vô nghiệm và miền nghiệm là tập rỗng.",
+            "Với miền khả thi là đa giác khép kín, không rỗng và bị chặn, tìm tọa độ các đỉnh từ giao của các đường biên.",
+            "Để tối ưu F=ax+by trên miền đa giác nói trên, tính F tại từng đỉnh rồi so sánh; nếu F không đổi dọc cạnh tối ưu thì các điểm trên cạnh đó cũng đạt cùng giá trị."
           ],
           "must_understand": [
-            "Tại sao mệnh đề đảo không nhất thiết đúng khi mệnh đề gốc đúng.",
-            "Cách xác định P và Q trong một câu điều kiện.",
-            "Lý do hai mệnh đề tương đương có cùng tập hợp nghiệm.",
-            "Vai trò của các ký hiệu ∀, ∃ trong mệnh đề chứa biến."
+            "Nghiệm của từng bất phương trình riêng lẻ chưa chắc là nghiệm của hệ; phải thỏa mãn tất cả điều kiện cùng lúc.",
+            "Khi biểu diễn miền nghiệm, cần lưu ý từng đoạn biên có được lấy hay không.",
+            "Tối ưu trên miền liên tục chưa đủ kết luận nghiệm tối ưu nếu đề bài yêu cầu số lượng nguyên."
           ],
           "related": [
             {
-              "chapter_id": "I",
-              "lesson": "Tập hợp",
-              "relation": "Cùng chương, nền tảng cho việc biểu diễn các tập hợp các nghiệm của mệnh đề."
+              "chapter_id": "II",
+              "lesson": "Bất phương trình bậc nhất hai ẩn",
+              "relation": "Cần xác định miền nghiệm của từng bất phương trình thành phần trước khi lấy giao để biểu diễn miền nghiệm của hệ."
+            }
+          ],
+          "difficulty": "medium",
+          "activities": [
+            {
+              "type": "review",
+              "content": "Ôn nhanh cách xác định miền nghiệm riêng và lấy giao các miền để biểu diễn miền nghiệm của hệ.",
+              "minutes": 20,
+              "difficulty": "medium",
+              "problem_type": ""
             },
             {
-              "chapter_id": "I",
-              "lesson": "Các phép toán trên tập hợp",
-              "relation": "Sử dụng các phép toán (giao, hợp) để mô tả các tập hợp nghiệm của các mệnh đề."
+              "type": "lecture",
+              "content": "Tìm hiểu trường hợp hệ vô nghiệm và cách tìm tọa độ các đỉnh của miền khả thi là đa giác khép kín, không rỗng và bị chặn.",
+              "minutes": 30,
+              "difficulty": "medium",
+              "problem_type": ""
             },
+            {
+              "type": "exercise",
+              "content": "Giải bài tập xác định hệ vô nghiệm hoặc tìm các đỉnh của miền nghiệm đa giác.",
+              "minutes": 70,
+              "difficulty": "medium",
+              "problem_type": "Xác định hệ vô nghiệm hoặc tìm các đỉnh của miền nghiệm đa giác."
+            },
+            {
+              "type": "exercise",
+              "content": "Lập hệ bất phương trình từ các điều kiện ràng buộc trong một bài toán thực tiễn.",
+              "minutes": 30,
+              "difficulty": "medium",
+              "problem_type": "Lập hệ bất phương trình từ các điều kiện ràng buộc trong bài toán thực tiễn."
+            }
+          ],
+          "resources": [
+            {
+              "type": "document",
+              "title": "Phân dạng và bài tập bất phương trình và hệ bất phương trình bậc nhất hai ẩn - TOANMATH.com | 77 trang | 01/08/2023",
+              "url": "https://toanmath.com/2023/08/phan-dang-va-bai-tap-bat-phuong-trinh-va-he-bat-phuong-trinh-bac-nhat-hai-an.html",
+              "note": "Tài liệu lý thuyết cho chương II."
+            },
+            {
+              "type": "document",
+              "title": "Chuyên đề Toán 10 chương bất phương trình và hệ bất phương trình bậc nhất hai ẩn - TOANMATH.com",
+              "url": "https://toanmath.com/2025/08/chuyen-de-toan-10-chuong-bat-phuong-trinh-va-he-bat-phuong-trinh-bac-nhat-hai-an.html",
+              "note": "Luyện tập cho bài II.2."
+            }
+          ],
+          "assessment": null,
+          "exam_enabled": false
+        },
+        {
+          "date": "2026-11-11",
+          "start_time": "07:00",
+          "minutes": 150,
+          "type": "assessment",
+          "chapter_id": "II",
+          "lesson": "Hệ bất phương trình bậc nhất hai ẩn",
+          "key_points": [
+            "Hệ gồm từ hai bất phương trình bậc nhất hai ẩn trở lên cùng xét với hai ẩn x,y.",
+            "Nghiệm của hệ phải thỏa mãn đồng thời tất cả bất phương trình trong hệ.",
+            "Miền nghiệm của hệ là giao các miền nghiệm riêng, có xét việc lấy hay không lấy các đoạn biên.",
+            "Có thể dùng hệ để mô hình hóa điều kiện thực tiễn và tìm giá trị lớn nhất hoặc nhỏ nhất của biểu thức tuyến tính trên miền đa giác."
+          ],
+          "must_know": [
+            "Một cặp (x₀,y₀) là nghiệm của hệ nếu thỏa mãn đồng thời mọi bất phương trình trong hệ.",
+            "Biểu diễn miền nghiệm bằng cách vẽ các đường biên, xác định từng miền nghiệm riêng rồi lấy giao.",
+            "Nếu không có điểm nào thỏa đồng thời các bất phương trình thì hệ vô nghiệm và miền nghiệm là tập rỗng.",
+            "Với miền khả thi là đa giác khép kín, không rỗng và bị chặn, tìm tọa độ các đỉnh từ giao của các đường biên.",
+            "Để tối ưu F=ax+by trên miền đa giác nói trên, tính F tại từng đỉnh rồi so sánh; nếu F không đổi dọc cạnh tối ưu thì các điểm trên cạnh đó cũng đạt cùng giá trị."
+          ],
+          "must_understand": [
+            "Nghiệm của từng bất phương trình riêng lẻ chưa chắc là nghiệm của hệ; phải thỏa mãn tất cả điều kiện cùng lúc.",
+            "Khi biểu diễn miền nghiệm, cần lưu ý từng đoạn biên có được lấy hay không.",
+            "Tối ưu trên miền liên tục chưa đủ kết luận nghiệm tối ưu nếu đề bài yêu cầu số lượng nguyên."
+          ],
+          "related": [
             {
               "chapter_id": "II",
               "lesson": "Bất phương trình bậc nhất hai ẩn",
-              "relation": "Áp dụng kiến thức mệnh đề kéo theo để giải bất phương trình."
+              "relation": "Cần xác định miền nghiệm của từng bất phương trình thành phần trước khi lấy giao để biểu diễn miền nghiệm của hệ."
             }
           ],
           "difficulty": "hard",
           "activities": [
             {
               "type": "exercise",
-              "content": "Làm bài kiểm tra tổng hợp, gồm biểu diễn miền nghiệm của hệ theo II.2 và các nội dung mệnh đề, tập hợp, phép toán trên tập hợp (I.1, I.2, I.3).",
-              "minutes": 90,
+              "content": "Làm bài kiểm tra gồm kiểm tra điểm thuộc miền nghiệm, biểu diễn miền nghiệm bằng giao, lập hệ từ điều kiện thực tiễn và tìm giá trị lớn nhất hoặc nhỏ nhất của biểu thức tuyến tính trên miền đa giác khả thi.",
+              "minutes": 120,
               "difficulty": "hard",
-              "problem_type": "Xác định P, Q và kiểm tra tính đúng sai của P ⇒ Q."
+              "problem_type": "Tìm giá trị lớn nhất hoặc nhỏ nhất của biểu thức F=ax+by trên miền đa giác khả thi."
             },
             {
               "type": "review",
-              "content": "Đối chiếu bài làm, phân loại và sửa lỗi về giao các miền nghiệm của hệ, mệnh đề kéo theo và phủ định, quan hệ tập hợp cùng các phép hợp, giao, hiệu và phần bù.",
+              "content": "Đối chiếu bài làm, phân loại lỗi về điều kiện nghiệm đồng thời, đoạn biên, tìm đỉnh và so sánh giá trị biểu thức tại các đỉnh.",
               "minutes": 30,
               "difficulty": "hard",
               "problem_type": ""
@@ -366,24 +705,14 @@
           "resources": [
             {
               "type": "document",
-              "title": "Chuyên đề Toán 10 chương bất phương trình và hệ bất phương trình bậc nhất hai ẩn - TOANMATH.com | 65 trang | 02/08/2025",
+              "title": "Chuyên đề Toán 10 chương bất phương trình và hệ bất phương trình bậc nhất hai ẩn - TOANMATH.com",
               "url": "https://toanmath.com/2025/08/chuyen-de-toan-10-chuong-bat-phuong-trinh-va-he-bat-phuong-trinh-bac-nhat-hai-an.html",
-              "note": "Tài liệu chương II dùng cho buổi kiểm tra."
-            },
-            {
-              "type": "document",
-              "title": "Đề cương học tập Toán 10 chủ đề mệnh đề và tập hợp - TOANMATH.com | 02/08/2025",
-              "url": "https://toanmath.com/2024/08/de-cuong-hoc-tap-toan-10-chu-de-menh-de-va-tap-hop.html",
-              "note": "Tài liệu chương I dùng cho buổi kiểm tra."
+              "note": "Tài liệu luyện tập dùng cho buổi kiểm tra."
             }
           ],
           "assessment": {
             "chapter_ids": [
-              "II",
-              "II",
-              "I",
-              "I",
-              "I"
+              "II"
             ],
             "num_questions": 10
           },
@@ -393,6 +722,6 @@
     }
   ],
   "assumptions": [
-    "Cần xem lại: Tăng thời lượng học mỗi tuần thêm 30 phút (ví dụ: kéo dài mỗi buổi lên 130 phút) và bổ sung một buổi ôn tập ngắn vào cuối tuần (30 phút) để đạt tổng 6.5h/tuần, giúp tăng thời gian tiếp cận kiến thức cần thiết. (căn cứ: Mục tiêu điểm 9.0, chỉ còn 3 tuần (Tuần 1‑3) với tổng thời lượng 18.0h (6.0h mỗi tuần) nhưng học sinh hiện tại điểm 7.0 và cần nâng cao đáng kể.)"
+    "Cần xem lại: Bớt phần \"summary\" trong Buổi 1 và Buổi 2, chuyển 15 phút cuối mỗi buổi thành \"exercise\" hoặc \"review\" để duy trì 150 phút. (căn cứ: Buổi 1 và Buổi 2 có mục \"summary\" (15p, 15p) nhưng học sinh không muốn có phần tóm tắt cuối buổi (\"tom_tat_cuoi_buoi\": false).)"
   ]
 }

@@ -13,7 +13,7 @@ NO_RERANK = {"Toán 10"}                        # môn lấy thẳng top retriev
 GIAO_AN_MAX_CHARS = 1200
 NEUTRAL = 0.6    
 _UU_TIEN = {"diem_so": "ưu tiên điểm số", "hieu_ban_chat": "ưu tiên hiểu bản chất", "ca_hai": "cân bằng điểm số và hiểu bản chất"}
-
+MIN_PHASES, MAX_PHASES = 2, 5
 def _one(x) -> dict:
     if isinstance(x, dict):
         return x
@@ -110,15 +110,17 @@ def make_batches(sm: dict, size: int = 2) -> list[dict]:
         out += [{"subject": s, "chapters": ids[i:i + size]} for i in range(0, len(ids), size)]
     return out
 
+
+
 def add_phase_limits(sm: dict, batches: list[dict]) -> list[dict]:
-    """Gắn max_gd cho mỗi lô: ~1 giai đoạn/tuần của môn, chia đều theo số lô (tối thiểu 1)."""
+    """Gắn max_gd cho mỗi lô: tổng giai đoạn của môn nằm trong 2-5 (~1 giai đoạn/3 tuần), chia đều theo số lô (tối thiểu 1)."""
     for s in {b["subject"] for b in batches}:
         group = [b for b in batches if b["subject"] == s]
         goal = _pick_goal(sm, s)
         _, weeks = _deadline(goal if goal.get("mon_hoc") == s else {}, date.today())
-        per = max(1, math.ceil((weeks or 2 * len(group)) / len(group)))
-        for b in group:
-            b["max_gd"] = per
+        total = min(MAX_PHASES, max(MIN_PHASES, round((weeks or 6) / 3)))      # tổng giai đoạn của môn: 2-5, ~1 giai đoạn/3 tuần
+        for i, b in enumerate(group):                                             # chia đều cho các lô, lô đầu nhận phần dư
+            b["max_gd"] = max(1, total // len(group) + (1 if i < total % len(group) else 0))
     return batches
 
 def _yn(v) -> str:

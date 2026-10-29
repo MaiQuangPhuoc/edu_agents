@@ -21,6 +21,8 @@ from src.edu_planning.student_store import load_student_model
 from src.edu_planning.query_builder import build_queries
 from pathlib import Path
 from datetime import datetime
+from src.edu_exam.exam_for_session import run_for_enabled_session
+
 logging.basicConfig(level=logging.INFO)
 
 
@@ -170,6 +172,9 @@ def run_full(llm_client):
         log_chat("Học sinh", text)
         out = graph.invoke({"messages": [HumanMessage(content=text)]}, cfg)
         show_new_bot_messages(out)
+    print(f" ================================ bài tập cho buổi chi tiết ================================ "*2)
+    print("\n\n")
+    run_for_enabled_session(out, llm_client, retriever)
 
 
 if __name__ == "__main__":
