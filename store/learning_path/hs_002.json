@@ -1,0 +1,749 @@
+{
+  "current_phase": 1,
+  "schedule": {
+    "start_date": "2026-10-29",
+    "end_date": "2026-12-03",
+    "total_weeks": 5,
+    "sessions_per_week": 4,
+    "minutes_per_session": 130
+  },
+  "outline": [
+    {
+      "phase": 1,
+      "weeks": [
+        {
+          "week_no": 1,
+          "goal": "Nhận biết nghiệm và biểu diễn được miền nghiệm, đồng thời xử lí được hệ bất phương trình cơ bản.",
+          "lessons": [
+            {
+              "chapter_id": "II",
+              "lesson": "Bất phương trình bậc nhất hai ẩn"
+            },
+            {
+              "chapter_id": "II",
+              "lesson": "Hệ bất phương trình bậc nhất hai ẩn"
+            }
+          ],
+          "activity_types": [
+            "video",
+            "tài liệu",
+            "bài tập"
+          ],
+          "difficulty_trend": "dễ → vừa",
+          "total_hours": 8.7,
+          "has_assessment": true
+        },
+        {
+          "week_no": 2,
+          "goal": "Phân biệt được mệnh đề, thao tác được với tập hợp và hạn chế lỗi tính toán thường gặp.",
+          "lessons": [
+            {
+              "chapter_id": "I",
+              "lesson": "Mệnh đề"
+            },
+            {
+              "chapter_id": "I",
+              "lesson": "Tập hợp"
+            },
+            {
+              "chapter_id": "I",
+              "lesson": "Các phép toán trên tập hợp"
+            }
+          ],
+          "activity_types": [
+            "video",
+            "tài liệu",
+            "bài tập"
+          ],
+          "difficulty_trend": "dễ → vừa",
+          "total_hours": 8.7,
+          "has_assessment": true
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "weeks": [
+        {
+          "week_no": 3,
+          "goal": "Đọc, biểu diễn và diễn giải được dữ liệu thống kê; vận dụng kiến thức hàm số và sai số vào bài tập trọng tâm.",
+          "lessons": [
+            {
+              "chapter_id": "III",
+              "lesson": "Hàm số và đồ thị"
+            },
+            {
+              "chapter_id": "III",
+              "lesson": "Hàm số bậc hai"
+            },
+            {
+              "chapter_id": "VI",
+              "lesson": "Số gần đúng và sai số"
+            },
+            {
+              "chapter_id": "VI",
+              "lesson": "Mô tả và biểu diễn dữ liệu trên các bảng và biểu đồ"
+            },
+            {
+              "chapter_id": "VI",
+              "lesson": "Các số đặc trưng đo xu thế trung tâm của mẫu số liệu"
+            },
+            {
+              "chapter_id": "VI",
+              "lesson": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu"
+            }
+          ],
+          "activity_types": [
+            "tài liệu",
+            "bài tập"
+          ],
+          "difficulty_trend": "vừa",
+          "total_hours": 8.7,
+          "has_assessment": true
+        }
+      ]
+    },
+    {
+      "phase": 3,
+      "weeks": [
+        {
+          "week_no": 4,
+          "goal": "Vận dụng được các hệ thức lượng để giải tam giác và xử lí một số tình huống thực tế.",
+          "lessons": [
+            {
+              "chapter_id": "IV",
+              "lesson": "Giá trị lượng giác của một góc từ 0° đến 180°"
+            },
+            {
+              "chapter_id": "IV",
+              "lesson": "Định lí côsin và định lí sin"
+            },
+            {
+              "chapter_id": "IV",
+              "lesson": "Giải tam giác và ứng dụng thực tế"
+            }
+          ],
+          "activity_types": [
+            "video",
+            "tài liệu",
+            "bài tập"
+          ],
+          "difficulty_trend": "vừa → khó",
+          "total_hours": 8.7,
+          "has_assessment": true
+        },
+        {
+          "week_no": 5,
+          "goal": "Thực hiện chính xác các phép toán vectơ và vận dụng tích vô hướng để giải bài tập tổng hợp.",
+          "lessons": [
+            {
+              "chapter_id": "V",
+              "lesson": "Khái niệm vectơ"
+            },
+            {
+              "chapter_id": "V",
+              "lesson": "Tổng và hiệu của hai vectơ"
+            },
+            {
+              "chapter_id": "V",
+              "lesson": "Tích của một số với một vectơ"
+            },
+            {
+              "chapter_id": "V",
+              "lesson": "Tích vô hướng của hai vectơ"
+            }
+          ],
+          "activity_types": [
+            "video",
+            "tài liệu",
+            "bài tập"
+          ],
+          "difficulty_trend": "vừa → khó",
+          "total_hours": 8.7,
+          "has_assessment": true
+        }
+      ]
+    }
+  ],
+  "weeks": [
+    {
+      "week_no": 1,
+      "start_date": "2026-10-29",
+      "end_date": "2026-11-04",
+      "goal": "Nhận biết nghiệm và biểu diễn được miền nghiệm, đồng thời xử lí được hệ bất phương trình cơ bản.",
+      "sessions": [
+        {
+          "date": "2026-10-31",
+          "start_time": "19:00",
+          "minutes": 130,
+          "type": "lesson",
+          "chapter_id": "II",
+          "lesson": "Bất phương trình bậc nhất hai ẩn",
+          "key_points": [
+            "Bất phương trình bậc nhất hai ẩn có dạng tuyến tính với hai ẩn và biểu diễn nghiệm bằng các điểm trên mặt phẳng tọa độ.",
+            "Kiểm tra một cặp số có là nghiệm hay không bằng cách thay trực tiếp vào bất phương trình.",
+            "Đường thẳng biên chia mặt phẳng thành hai nửa mặt phẳng; điểm thử giúp xác định nửa mặt phẳng nghiệm.",
+            "Miền nghiệm có lấy đường biên hay không phụ thuộc vào dấu của bất phương trình."
+          ],
+          "must_know": [
+            "Dạng tổng quát: ax+by<c, ax+by≤c, ax+by>c hoặc ax+by≥c; a,b,c là số thực và a,b không đồng thời bằng 0.",
+            "(x₀,y₀) là nghiệm nếu thay x=x₀, y=y₀ vào bất phương trình được mệnh đề đúng.",
+            "Đường biên là ax+by=c.",
+            "Dấu ≤ hoặc ≥ thì lấy đường biên; dấu < hoặc > thì không lấy đường biên."
+          ],
+          "must_understand": [
+            "Nghiệm là một cặp số, còn miền nghiệm là tập hợp các điểm biểu diễn mọi cặp nghiệm.",
+            "Chọn điểm thử không nằm trên đường biên; thường có thể chọn O(0,0) nếu O không thuộc đường biên."
+          ],
+          "related": [
+            {
+              "chapter_id": "II",
+              "lesson": "Hệ bất phương trình bậc nhất hai ẩn",
+              "relation": "Miền nghiệm của hệ được xác định từ miền nghiệm của từng bất phương trình thành phần."
+            }
+          ],
+          "difficulty": "easy",
+          "activities": [
+            {
+              "type": "lecture",
+              "content": "Học cách kiểm tra một cặp số có là nghiệm không, xác định đường biên và dùng điểm thử tìm nửa mặt phẳng nghiệm theo key_points của bài.",
+              "minutes": 40,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "exercise",
+              "content": "Luyện vẽ đường biên và biểu diễn nửa mặt phẳng nghiệm bằng điểm thử, đồng thời xác định đường biên có được lấy theo dấu bất phương trình.",
+              "minutes": 70,
+              "difficulty": "easy",
+              "problem_type": "Vẽ đường biên và biểu diễn nửa mặt phẳng nghiệm bằng điểm thử."
+            },
+            {
+              "type": "summary",
+              "content": "Tóm tắt cách kiểm tra một cặp số là nghiệm và cách xác định miền nghiệm có lấy đường biên hay không.",
+              "minutes": 20,
+              "difficulty": "easy",
+              "problem_type": ""
+            }
+          ],
+          "resources": [
+            {
+              "type": "document",
+              "title": "Toán 10 Chân trời sáng tạo Bài 1: Bất phương trình bậc nhất hai ẩn",
+              "url": "https://m.hoc247.net/toan-10/bai-1-bat-phuong-trinh-bac-nhat-hai-an-l13134.html",
+              "note": "Lý thuyết cho bài II.1."
+            },
+            {
+              "type": "document",
+              "title": "Chuyên đề Toán 10 chương bất phương trình và hệ bất phương trình bậc nhất hai ẩn - TOANMATH.com",
+              "url": "https://toanmath.com/2025/08/chuyen-de-toan-10-chuong-bat-phuong-trinh-va-he-bat-phuong-trinh-bac-nhat-hai-an.html",
+              "note": "Bài tập luyện tập."
+            }
+          ],
+          "assessment": null,
+          "exam_enabled": true
+        },
+        {
+          "date": "2026-11-02",
+          "start_time": "07:00",
+          "minutes": 130,
+          "type": "lesson",
+          "chapter_id": "II",
+          "lesson": "Hệ bất phương trình bậc nhất hai ẩn",
+          "key_points": [
+            "Hệ gồm từ hai bất phương trình bậc nhất hai ẩn trở lên cùng xét với hai ẩn x,y.",
+            "Nghiệm của hệ phải thỏa mãn đồng thời tất cả bất phương trình trong hệ.",
+            "Miền nghiệm của hệ là giao các miền nghiệm riêng, có xét việc lấy hay không lấy các đoạn biên.",
+            "Có thể dùng hệ để mô hình hóa điều kiện thực tiễn và tìm giá trị lớn nhất hoặc nhỏ nhất của biểu thức tuyến tính trên miền đa giác."
+          ],
+          "must_know": [
+            "Một cặp (x₀,y₀) là nghiệm của hệ nếu thỏa mãn đồng thời mọi bất phương trình trong hệ.",
+            "Biểu diễn miền nghiệm bằng cách vẽ các đường biên, xác định từng miền nghiệm riêng rồi lấy giao.",
+            "Nếu không có điểm nào thỏa đồng thời các bất phương trình thì hệ vô nghiệm và miền nghiệm là tập rỗng.",
+            "Với miền khả thi là đa giác khép kín, không rỗng và bị chặn, tìm tọa độ các đỉnh từ giao của các đường biên.",
+            "Để tối ưu F=ax+by trên miền đa giác nói trên, tính F tại từng đỉnh rồi so sánh; nếu F không đổi dọc cạnh tối ưu thì các điểm trên cạnh đó cũng đạt cùng giá trị."
+          ],
+          "must_understand": [
+            "Nghiệm của từng bất phương trình riêng lẻ chưa chắc là nghiệm của hệ; phải thỏa mãn tất cả điều kiện cùng lúc.",
+            "Khi biểu diễn miền nghiệm, cần lưu ý từng đoạn biên có được lấy hay không.",
+            "Tối ưu trên miền liên tục chưa đủ kết luận nghiệm tối ưu nếu đề bài yêu cầu số lượng nguyên."
+          ],
+          "related": [
+            {
+              "chapter_id": "II",
+              "lesson": "Bất phương trình bậc nhất hai ẩn",
+              "relation": "Cần xác định miền nghiệm của từng bất phương trình thành phần trước khi lấy giao để biểu diễn miền nghiệm của hệ."
+            }
+          ],
+          "difficulty": "easy",
+          "activities": [
+            {
+              "type": "review",
+              "content": "Ôn nhanh cách xác định miền nghiệm của từng bất phương trình thành phần để chuẩn bị lấy giao các miền nghiệm.",
+              "minutes": 15,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "lecture",
+              "content": "Học cách kiểm tra nghiệm của hệ, biểu diễn miền nghiệm bằng giao các miền nghiệm riêng và xác định các đỉnh của miền đa giác theo key_points của bài.",
+              "minutes": 35,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "exercise",
+              "content": "Thực hành biểu diễn miền nghiệm của hệ bằng giao các nửa mặt phẳng trên cùng hệ trục tọa độ.",
+              "minutes": 65,
+              "difficulty": "easy",
+              "problem_type": "Biểu diễn miền nghiệm của hệ bằng giao các nửa mặt phẳng trên cùng hệ trục tọa độ."
+            },
+            {
+              "type": "summary",
+              "content": "Tóm tắt điều kiện để một cặp số là nghiệm của hệ và cách hình thành miền nghiệm từ các miền riêng.",
+              "minutes": 15,
+              "difficulty": "easy",
+              "problem_type": ""
+            }
+          ],
+          "resources": [
+            {
+              "type": "document",
+              "title": "Chuyên đề Toán 10 chương bất phương trình và hệ bất phương trình bậc nhất hai ẩn - TOANMATH.com",
+              "url": "https://toanmath.com/2025/08/chuyen-de-toan-10-chuong-bat-phuong-trinh-va-he-bat-phuong-trinh-bac-nhat-hai-an.html",
+              "note": "Bài tập luyện tập cho chương II."
+            },
+            {
+              "type": "document",
+              "title": "Toán 10 Kết nối tri thức Bài 4: Hệ bất phương trình bậc nhất hai ẩn | Giải Toán 10 | 2 trang",
+              "url": "https://www.vietjack.com/toan-10-kn/bai-4-he-bat-phuong-trinh-bac-nhat-hai-an.jsp",
+              "note": "Tài liệu luyện tập cho bài II.2."
+            }
+          ],
+          "assessment": null,
+          "exam_enabled": false
+        },
+        {
+          "date": "2026-11-03",
+          "start_time": "19:00",
+          "minutes": 130,
+          "type": "assessment",
+          "chapter_id": "II",
+          "lesson": "Hệ bất phương trình bậc nhất hai ẩn",
+          "key_points": [
+            "Hệ gồm từ hai bất phương trình bậc nhất hai ẩn trở lên cùng xét với hai ẩn x,y.",
+            "Nghiệm của hệ phải thỏa mãn đồng thời tất cả bất phương trình trong hệ.",
+            "Miền nghiệm của hệ là giao các miền nghiệm riêng, có xét việc lấy hay không lấy các đoạn biên.",
+            "Có thể dùng hệ để mô hình hóa điều kiện thực tiễn và tìm giá trị lớn nhất hoặc nhỏ nhất của biểu thức tuyến tính trên miền đa giác."
+          ],
+          "must_know": [
+            "Một cặp (x₀,y₀) là nghiệm của hệ nếu thỏa mãn đồng thời mọi bất phương trình trong hệ.",
+            "Biểu diễn miền nghiệm bằng cách vẽ các đường biên, xác định từng miền nghiệm riêng rồi lấy giao.",
+            "Nếu không có điểm nào thỏa đồng thời các bất phương trình thì hệ vô nghiệm và miền nghiệm là tập rỗng.",
+            "Với miền khả thi là đa giác khép kín, không rỗng và bị chặn, tìm tọa độ các đỉnh từ giao của các đường biên.",
+            "Để tối ưu F=ax+by trên miền đa giác nói trên, tính F tại từng đỉnh rồi so sánh; nếu F không đổi dọc cạnh tối ưu thì các điểm trên cạnh đó cũng đạt cùng giá trị."
+          ],
+          "must_understand": [
+            "Nghiệm của từng bất phương trình riêng lẻ chưa chắc là nghiệm của hệ; phải thỏa mãn tất cả điều kiện cùng lúc.",
+            "Khi biểu diễn miền nghiệm, cần lưu ý từng đoạn biên có được lấy hay không.",
+            "Tối ưu trên miền liên tục chưa đủ kết luận nghiệm tối ưu nếu đề bài yêu cầu số lượng nguyên."
+          ],
+          "related": [
+            {
+              "chapter_id": "II",
+              "lesson": "Bất phương trình bậc nhất hai ẩn",
+              "relation": "Cần xác định miền nghiệm của từng bất phương trình thành phần trước khi lấy giao để biểu diễn miền nghiệm của hệ."
+            }
+          ],
+          "difficulty": "medium",
+          "activities": [
+            {
+              "type": "exercise",
+              "content": "Làm bài kiểm tra tổng hợp: kiểm tra một điểm thuộc miền nghiệm của hệ và biểu diễn miền nghiệm của hệ bằng giao các nửa mặt phẳng trên cùng hệ trục tọa độ.",
+              "minutes": 100,
+              "difficulty": "medium",
+              "problem_type": "Kiểm tra một điểm có thuộc miền nghiệm của hệ hay không."
+            },
+            {
+              "type": "review",
+              "content": "Xem lại các câu làm sai, đối chiếu điều kiện nghiệm của hệ với việc lấy giao các miền nghiệm và ghi lại nội dung cần củng cố.",
+              "minutes": 30,
+              "difficulty": "medium",
+              "problem_type": ""
+            }
+          ],
+          "resources": [
+            {
+              "type": "document",
+              "title": "18 Bài tập Hệ bất phương trình bậc nhất hai ẩn (có đáp án) | Kết nối tri thức Trắc nghiệm Toán 10",
+              "url": "https://vietjack.com/toan-10-kn/trac-nghiem-bai-4-he-bat-phuong-trinh-bac-nhat-hai-an.jsp",
+              "note": "Tài liệu ôn tập và kiểm tra cho bài II.2."
+            },
+            {
+              "type": "document",
+              "title": "Toán 10 Kết nối tri thức Bài 3: Bất phương trình bậc nhất hai ẩn | Giải Toán 10 | 1 trang",
+              "url": "https://www.vietjack.com/toan-10-kn/bai-3-bat-phuong-trinh-bac-nhat-hai-an.jsp",
+              "note": "Ôn tập trước kiểm tra cho bài II.1."
+            }
+          ],
+          "assessment": {
+            "chapter_ids": [
+              "II",
+              "II"
+            ],
+            "num_questions": 10
+          },
+          "exam_enabled": false
+        }
+      ]
+    },
+    {
+      "week_no": 2,
+      "start_date": "2026-11-05",
+      "end_date": "2026-11-11",
+      "goal": "Phân biệt được mệnh đề, thao tác với tập hợp và hạn chế lỗi tính toán thường gặp qua việc củng cố lý thuyết, luyện tập từ dễ đến vừa và làm bài kiểm tra cuối tuần.",
+      "sessions": [
+        {
+          "date": "2026-11-05",
+          "start_time": "07:00",
+          "minutes": 130,
+          "type": "lesson",
+          "chapter_id": "I",
+          "lesson": "Mệnh đề",
+          "key_points": [
+            "Định nghĩa mệnh đề, mệnh đề chứa biến và cách ký hiệu.",
+            "Mệnh đề phủ định, mệnh đề kéo theo (P ⇒ Q) và mệnh đề đảo (Q ⇒ P).",
+            "Khái niệm mệnh đề tương đương (P ⇔ Q) và cách kiểm tra tính đúng sai."
+          ],
+          "must_know": [
+            "Mệnh đề: câu có giá trị đúng hoặc sai, ký hiệu P, Q,…",
+            "Mệnh đề phủ định: ¬P, đổi vị trí “không”.",
+            "Mệnh đề kéo theo: P ⇒ Q, nghĩa là nếu P đúng thì Q cũng đúng.",
+            "Mệnh đề đảo: Q ⇒ P.",
+            "Mệnh đề tương đương: P ⇔ Q (cả P ⇒ Q và Q ⇒ P đều đúng)."
+          ],
+          "must_understand": [
+            "Tại sao mệnh đề đảo không nhất thiết đúng khi mệnh đề gốc đúng.",
+            "Cách xác định P và Q trong một câu điều kiện.",
+            "Lý do hai mệnh đề tương đương có cùng tập hợp nghiệm.",
+            "Vai trò của các ký hiệu ∀, ∃ trong mệnh đề chứa biến."
+          ],
+          "related": [
+            {
+              "chapter_id": "I",
+              "lesson": "Tập hợp",
+              "relation": "Cùng chương, nền tảng cho việc biểu diễn các tập hợp các nghiệm của mệnh đề."
+            },
+            {
+              "chapter_id": "I",
+              "lesson": "Các phép toán trên tập hợp",
+              "relation": "Sử dụng các phép toán (giao, hợp) để mô tả các tập hợp nghiệm của các mệnh đề."
+            },
+            {
+              "chapter_id": "II",
+              "lesson": "Bất phương trình bậc nhất hai ẩn",
+              "relation": "Áp dụng kiến thức mệnh đề kéo theo để giải bất phương trình."
+            }
+          ],
+          "difficulty": "easy",
+          "activities": [
+            {
+              "type": "reading",
+              "content": "Đọc và ghi lại định nghĩa mệnh đề, mệnh đề chứa biến và cách ký hiệu theo nội dung bài.",
+              "minutes": 35,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "lecture",
+              "content": "Phân tích mệnh đề phủ định, kéo theo (P ⇒ Q), mệnh đề đảo (Q ⇒ P) và tương đương (P ⇔ Q) theo key_points của bài.",
+              "minutes": 35,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "exercise",
+              "content": "Luyện xác định P, Q và kiểm tra tính đúng sai của P ⇒ Q qua các câu điều kiện.",
+              "minutes": 45,
+              "difficulty": "easy",
+              "problem_type": "Xác định P, Q và kiểm tra tính đúng sai của P ⇒ Q."
+            },
+            {
+              "type": "summary",
+              "content": "Tóm tắt cách nhận diện mệnh đề kéo theo, mệnh đề đảo và mệnh đề tương đương theo các ký hiệu của bài.",
+              "minutes": 15,
+              "difficulty": "easy",
+              "problem_type": ""
+            }
+          ],
+          "resources": [
+            {
+              "type": "document",
+              "title": "Lý thuyết Toán 10 Chương 1",
+              "url": "https://vietjack.com/toan-lop-10/tong-hop-ly-thuyet-chuong-menh-de-tap-hop.jsp",
+              "note": "Tài liệu lý thuyết cho bài I.1."
+            }
+          ],
+          "assessment": null,
+          "exam_enabled": false
+        },
+        {
+          "date": "2026-11-07",
+          "start_time": "19:00",
+          "minutes": 130,
+          "type": "lesson",
+          "chapter_id": "I",
+          "lesson": "Tập hợp",
+          "key_points": [
+            "Khái niệm tập hợp, phần tử, ký hiệu ∈ và ⊂.",
+            "Hai tập hợp bằng nhau khi có cùng phần tử; khái niệm tập con.",
+            "Một số tập con quan trọng của ℝ (ℕ, ℤ, ℚ, ℝ⁺, ℝ⁻)."
+          ],
+          "must_know": [
+            "Ký hiệu: x ∈ A (x là phần tử của A), A ⊆ B (A là tập con của B).",
+            "Tập rỗng ∅ và tính chất ∅ ⊆ A cho mọi A.",
+            "Cách liệt kê phần tử và cách mô tả bằng tính chất đặc trưng.",
+            "Ký hiệu đoạn, nửa đoạn, khoảng và ý nghĩa đầu mút có/không lấy."
+          ],
+          "must_understand": [
+            "Tại sao thứ tự liệt kê và lặp lại phần tử không thay đổi tập hợp.",
+            "Cách xác định tập con và tập bằng nhau qua quan hệ phần tử.",
+            "Mối quan hệ giữa các tập con của ℝ và các phép toán trên tập hợp."
+          ],
+          "related": [
+            {
+              "chapter_id": "I",
+              "lesson": "Mệnh đề",
+              "relation": "Mệnh đề thường được biểu diễn dưới dạng tập hợp các nghiệm."
+            },
+            {
+              "chapter_id": "I",
+              "lesson": "Các phép toán trên tập hợp",
+              "relation": "Cung cấp các phép toán cần thiết để thao tác với các tập hợp đã học."
+            },
+            {
+              "chapter_id": "III",
+              "lesson": "Hàm số và đồ thị",
+              "relation": "Tập hợp giá trị (range) và tập xác định (domain) của hàm số."
+            }
+          ],
+          "difficulty": "easy",
+          "activities": [
+            {
+              "type": "reading",
+              "content": "Đọc và phân biệt ký hiệu x ∈ A, A ⊆ B, tập rỗng ∅ và các cách mô tả tập hợp trong bài.",
+              "minutes": 35,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "lecture",
+              "content": "Ôn cách xác định tập con, tập bằng nhau và ký hiệu đoạn, nửa đoạn, khoảng theo key_points của bài.",
+              "minutes": 30,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "exercise",
+              "content": "Thực hành viết tập hợp dưới dạng liệt kê hoặc tính chất đặc trưng, rồi kiểm tra quan hệ tập con và bằng nhau.",
+              "minutes": 50,
+              "difficulty": "easy",
+              "problem_type": "Viết tập hợp dưới dạng liệt kê hoặc tính chất đặc trưng."
+            },
+            {
+              "type": "summary",
+              "content": "Ghi lại ý nghĩa các ký hiệu phần tử, tập con và đầu mút có hoặc không lấy trong ký hiệu khoảng.",
+              "minutes": 15,
+              "difficulty": "easy",
+              "problem_type": ""
+            }
+          ],
+          "resources": [
+            {
+              "type": "document",
+              "title": "Lý thuyết Toán 10 Chương 1",
+              "url": "https://vietjack.com/toan-lop-10/tong-hop-ly-thuyet-chuong-menh-de-tap-hop.jsp",
+              "note": "Tài liệu lý thuyết cho bài I.2."
+            },
+            {
+              "type": "document",
+              "title": "Bài tập Tập hợp và các phép toán trên tập hợp (chọn lọc, có lời giải)",
+              "url": "https://vietjack.com/toan-lop-10/bai-tap-tap-hop-va-cac-phep-toan-tren-tap-hop.jsp",
+              "note": "Luyện tập về tập hợp."
+            }
+          ],
+          "assessment": null,
+          "exam_enabled": false
+        },
+        {
+          "date": "2026-11-09",
+          "start_time": "07:00",
+          "minutes": 130,
+          "type": "lesson",
+          "chapter_id": "I",
+          "lesson": "Các phép toán trên tập hợp",
+          "key_points": [
+            "Phép hợp (A ∪ B), giao (A ∩ B), hiệu (A \\ B) và phần bù (C_U A).",
+            "Biểu diễn các phép toán bằng Venn diagram.",
+            "Ứng dụng các phép toán trong các bài toán thực tế (ví dụ: tuyển dụng)."
+          ],
+          "must_know": [
+            "Ký hiệu: A ∪ B = {x | x∈A hoặc x∈B}, A ∩ B = {x | x∈A và x∈B}.",
+            "Hiệu: A \\ B = {x | x∈A và x∉B}.",
+            "Phần bù trong vũ trụ U: C_U A = U \\ A.",
+            "Các tính chất cơ bản: giao‑phép‑hợp, luật De Morgan."
+          ],
+          "must_understand": [
+            "Cách sử dụng Venn diagram để trực quan hoá các phép toán.",
+            "Khi nào cần dùng hiệu vs phần bù trong giải quyết vấn đề.",
+            "Lý do các tính chất giao‑phép‑hợp giúp rút gọn biểu thức tập hợp."
+          ],
+          "related": [
+            {
+              "chapter_id": "I",
+              "lesson": "Tập hợp",
+              "relation": "Cung cấp các khái niệm cơ bản cần thiết cho các phép toán."
+            },
+            {
+              "chapter_id": "II",
+              "lesson": "Bất phương trình bậc nhất hai ẩn",
+              "relation": "Giải bất phương trình thường dùng phép giao và hợp của các tập nghiệm."
+            },
+            {
+              "chapter_id": "III",
+              "lesson": "Hàm số bậc hai",
+              "relation": "Xác định miền xác định và miền giá trị của hàm số bằng phép giao và hợp."
+            }
+          ],
+          "difficulty": "medium",
+          "activities": [
+            {
+              "type": "review",
+              "content": "Ôn nhanh ký hiệu tập hợp, tập con và cách mô tả tập hợp đã học ở bài I.2 trước khi vận dụng các phép toán.",
+              "minutes": 15,
+              "difficulty": "medium",
+              "problem_type": ""
+            },
+            {
+              "type": "reading",
+              "content": "Đọc và hệ thống hóa phép hợp, giao, hiệu, phần bù cùng cách biểu diễn bằng Venn diagram theo key_points của bài.",
+              "minutes": 30,
+              "difficulty": "medium",
+              "problem_type": ""
+            },
+            {
+              "type": "exercise",
+              "content": "Luyện xác định hợp, giao và hiệu của các tập hợp cho trước, đồng thời diễn giải kết quả bằng ký hiệu tập hợp.",
+              "minutes": 65,
+              "difficulty": "medium",
+              "problem_type": "Xác định A ∪ B, A ∩ B, A \\ B cho các tập hợp cho trước."
+            },
+            {
+              "type": "summary",
+              "content": "Tóm tắt sự khác nhau giữa phép hiệu và phần bù theo các ký hiệu và nội dung bài.",
+              "minutes": 20,
+              "difficulty": "medium",
+              "problem_type": ""
+            }
+          ],
+          "resources": [
+            {
+              "type": "document",
+              "title": "Bài tập Tập hợp và các phép toán trên tập hợp (chọn lọc, có lời giải)",
+              "url": "https://vietjack.com/toan-lop-10/bai-tap-tap-hop-va-cac-phep-toan-tren-tap-hop.jsp",
+              "note": "Luyện tập các phép toán trên tập hợp."
+            },
+            {
+              "type": "document",
+              "title": "Lý thuyết Toán 10 Chương 1",
+              "url": "https://vietjack.com/toan-lop-10/tong-hop-ly-thuyet-chuong-menh-de-tap-hop.jsp",
+              "note": "Tra cứu lý thuyết bài I.3."
+            }
+          ],
+          "assessment": null,
+          "exam_enabled": false
+        },
+        {
+          "date": "2026-11-10",
+          "start_time": "19:00",
+          "minutes": 130,
+          "type": "assessment",
+          "chapter_id": "I",
+          "lesson": "Các phép toán trên tập hợp",
+          "key_points": [
+            "Phép hợp (A ∪ B), giao (A ∩ B), hiệu (A \\ B) và phần bù (C_U A).",
+            "Biểu diễn các phép toán bằng Venn diagram.",
+            "Ứng dụng các phép toán trong các bài toán thực tế (ví dụ: tuyển dụng)."
+          ],
+          "must_know": [
+            "Ký hiệu: A ∪ B = {x | x∈A hoặc x∈B}, A ∩ B = {x | x∈A và x∈B}.",
+            "Hiệu: A \\ B = {x | x∈A và x∉B}.",
+            "Phần bù trong vũ trụ U: C_U A = U \\ A.",
+            "Các tính chất cơ bản: giao‑phép‑hợp, luật De Morgan."
+          ],
+          "must_understand": [
+            "Cách sử dụng Venn diagram để trực quan hoá các phép toán.",
+            "Khi nào cần dùng hiệu vs phần bù trong giải quyết vấn đề.",
+            "Lý do các tính chất giao‑phép‑hợp giúp rút gọn biểu thức tập hợp."
+          ],
+          "related": [
+            {
+              "chapter_id": "I",
+              "lesson": "Tập hợp",
+              "relation": "Cung cấp các khái niệm cơ bản cần thiết cho các phép toán."
+            },
+            {
+              "chapter_id": "II",
+              "lesson": "Bất phương trình bậc nhất hai ẩn",
+              "relation": "Giải bất phương trình thường dùng phép giao và hợp của các tập nghiệm."
+            },
+            {
+              "chapter_id": "III",
+              "lesson": "Hàm số bậc hai",
+              "relation": "Xác định miền xác định và miền giá trị của hàm số bằng phép giao và hợp."
+            }
+          ],
+          "difficulty": "medium",
+          "activities": [
+            {
+              "type": "exercise",
+              "content": "Làm bài kiểm tra về mệnh đề, tập hợp và các phép toán trên tập hợp, tập trung vào các dạng đã luyện trong tuần.",
+              "minutes": 100,
+              "difficulty": "medium",
+              "problem_type": "Sử dụng Venn diagram để chứng minh các đẳng thức tập hợp."
+            },
+            {
+              "type": "review",
+              "content": "Đối chiếu bài làm với lời giải, phân loại lỗi sai trong các câu về mệnh đề, tập hợp và phép toán trên tập hợp, rồi ghi lại nội dung cần ôn.",
+              "minutes": 30,
+              "difficulty": "medium",
+              "problem_type": ""
+            }
+          ],
+          "resources": [
+            {
+              "type": "document",
+              "title": "Đề kiểm tra theo bài học chủ đề mệnh đề và tập hợp - TOANMATH.com | 60 trang | 02/09/2025",
+              "url": "https://toanmath.com/2025/09/de-kiem-tra-theo-bai-hoc-chu-de-menh-de-va-tap-hop.html",
+              "note": "Tài liệu kiểm tra cuối tuần."
+            }
+          ],
+          "assessment": {
+            "chapter_ids": [
+              "I",
+              "I",
+              "I"
+            ],
+            "num_questions": 10
+          },
+          "exam_enabled": false
+        }
+      ]
+    }
+  ],
+  "assumptions": [
+    "Tuần 1: chỉ xếp được 3/4 buổi theo khung giờ rảnh",
+    "Cần xem lại: Thêm 10 phút video giải thích vào mỗi buổi lesson (ví dụ: Buổi 1: lecture 30p + video 10p) và cung cấp tài liệu PDF tương ứng. (căn cứ: Hồ sơ cho biết học sinh thích video và tài liệu; lộ trình chỉ liệt kê \"lecture\", \"reading\", \"exercise\" mà không có mục video.)"
+  ],
+  "subject": "Toán 10"
+}

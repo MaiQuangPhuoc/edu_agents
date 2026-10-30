@@ -1,5 +1,7 @@
 """Local EDUAGENT UI workflow jobs. Run one uvicorn worker (in-memory sessions)."""
 import asyncio
+import json
+from pathlib import Path
 import logging
 import os
 import re
@@ -171,6 +173,11 @@ def job_status(jid: str):
     return JOBS[jid]
 
 
+@router.get("/readiness")
+def readiness():
+    return {"status": engine.warm_status, "default_mode": "qa"}
+
+
 @router.get("/identity")
 def identity():
     return {"student_id": os.getenv("EDU_UI_STUDENT_ID", "hs_002")}
@@ -223,6 +230,18 @@ def entry_test(sid: str):
         raise HTTPException(409, "Phiên không chờ làm bài kiểm tra đầu vào.")
     entry = session["state"].get("entry_test") or {}
     questions = public_questions(entry.get("questions", []))
+    if not questions and entry.get("key_file"):
+        # Compatibility for sessions created by the old entry node. Read only the
+        # server-generated bank file; never pass its answers or path to the UI.
+        root = (Path(__file__).resolve().parents[1] / "entry_test_demo" / "output").resolve()
+        file = Path(entry["key_file"]).resolve()
+        if file.is_relative_to(root) and file.is_file() and file.suffix.lower() == ".json":
+            try:
+                data = json.loads(file.read_text(encoding="utf-8-sig"))
+                raw = data.get("questions", []) if isinstance(data, dict) else data
+                questions = public_questions(raw) if isinstance(raw, list) else []
+            except (OSError, ValueError, TypeError):
+                logger.exception("Cannot recover UI entry questions for session=%s", sid)
     if not questions:
         raise HTTPException(422, "Bài test thiếu dữ liệu UI. Kiểm tra bản cập nhật entry_test.py.")
     return {"subject": entry.get("subject"), "questions": questions, "revision": session["revision"]}

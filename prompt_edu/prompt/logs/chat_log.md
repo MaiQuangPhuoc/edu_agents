@@ -204,3 +204,170 @@ Hệ thống: Trong logic cổ điển, **mệnh đề** là một câu khẳng 
 
 ---
 
+Người dùng: Mình muốn ôn Toán 10, hãy giúp mình bắt đầu nhé. (17:40:31 29/10/2026)
+
+Hệ thống: Chưa đủ dữ kiện để trả lời được câu hỏi này. (17:41:02 29/10/2026) - Chênh lệch: 31s
+
+---
+
+Người dùng: mệnh đề toán học là gì và có các mệnh đề nào , cho ví dụ (17:42:14 29/10/2026)
+
+Hệ thống: Mệnh đề toán học là một khẳng định luôn đúng hoặc luôn sai, không thể vừa đúng vừa sai. Khi đúng, gọi là mệnh đề đúng; khi sai, gọi là mệnh đề sai. Thông thường, ta dùng các chữ cái in hoa như P, Q, R… để ký hiệu mệnh đề. Có hai dạng mệnh đề phổ biến khi liên quan tới biến và tập hợp: \(\forall x \in M, P(x)\) (mệnh đề toàn phần) và \(\exists x \in M, P(x)\) (mệnh đề tồn tại). Đầu tiên đúng nếu với mọi \(x\) trong tập \(M\) thì \(P(x)\) đúng; thứ hai đúng nếu tồn tại ít nhất một \(x\) trong \(M\) sao cho \(P(x)\) đúng.\n\nVí dụ về mệnh đề: \n- "3 là số lẻ" là một mệnh đề (đúng).\n- "1 + 2 > 3" là một mệnh đề (sai).\n- "π là số vô tỉ phải không?" không phải mệnh đề vì câu hỏi không đưa ra khẳng định.\n- "Đến năm 2050, con người sẽ đặt chân lên sao Hỏa" là một mệnh đề (có thể đúng hoặc sai, tùy thời điểm).\n\nVí dụ về mệnh đề có biến: \n- \(\forall x \in \mathbb{R}, x^2 + 2x + 2 > 0\) là một mệnh đề đúng.\n- \(\exists x \in \mathbb{R}, x^2 + 3x + 4 = 0\) là một mệnh đề sai vì phương trình vô nghiệm. (17:42:29 29/10/2026) - Chênh lệch: 14s
+
+---
+
+Người dùng: có mệnh đê vừa đúng vừa sai không , cho 3 ví dụ về mệnh đề đúng và sai (17:43:36 29/10/2026)
+
+Hệ thống: Trong logic học, một mệnh đề (câu khẳng định) chỉ có thể đúng hoặc sai, không thể vừa đúng vừa sai. Vì vậy không tồn tại mệnh đề vừa đúng vừa sai.\n\n**Ví dụ về mệnh đề đúng**:\n1. "3 là số lẻ" – Đây là một mệnh đề đúng vì 3 thực sự là số lẻ.\n2. "∀x ∈ ℝ, x² + 2x + 2 > 0" – Mệnh đề này đúng vì với mọi số thực x, biểu thức (x+1)² + 1 luôn dương.\n3. "1 + 1 = 2" – Một mệnh đề đúng trong toán học.\n\n**Ví dụ về mệnh đề sai**:\n1. "1 + 2 > 3" – Sai, vì 1 + 2 = 3 không lớn hơn 3.\n2. "∃x ∈ ℝ, x² + 3x + 4 = 0" – Sai, vì phương trình này không có nghiệm thực (Δ = 9‑16 < 0).\n3. "π là một số hữu tỉ" – Sai, vì π là số vô tỉ. (17:44:00 29/10/2026) - Chênh lệch: 24s
+
+---
+
+Người dùng: bạn sai rồi , thầy tôi nói mệnh đề có thể vừa đúng vừa sai , đó là trường hợp đặc biệt và sách giáo khoa đã nói một mệnh đề có thể vừa đúng vừa sai (17:46:24 29/10/2026)
+
+Hệ thống: Theo tài liệu, một mệnh đề là một khẳng định luôn có giá trị đúng hoặc sai. Nếu khẳng định đúng, ta gọi đó là mệnh đề đúng; nếu sai, ta gọi là mệnh đề sai. Vì vậy, một mệnh đề không thể vừa đúng vừa sai đồng thời. Trường hợp "một mệnh đề có thể vừa đúng vừa sai" không xuất hiện trong định nghĩa chuẩn của mệnh đề trong toán học lớp 10; có thể có sự nhầm lẫn với các khái niệm khác như câu mệnh đề mờ (fuzzy logic) hoặc các tình huống trong triết học, nhưng trong chương trình toán học, mệnh đề luôn mang tính quyết định duy nhất. (17:46:39 29/10/2026) - Chênh lệch: 15s
+
+---
+
+Người dùng: vè mệnh đề ta vừa nói đó , mệnh đề vừa đúng vừa sai , tôi nói đúng hay sai , 1 từ thôi (17:47:55 29/10/2026)
+
+Hệ thống: Sai (17:48:08 29/10/2026) - Chênh lệch: 13s
+
+---
+
+Người dùng: Làm thế nào xác định một mệnh đề là đúng hay sai? (17:48:18 29/10/2026)
+
+Hệ thống: Trong logic học, một mệnh đề là câu khẳng định có thể xác định được là đúng hoặc sai, nhưng không thể đồng thời vừa đúng vừa sai. Để xác định một mệnh đề là đúng hay sai, ta cần xem xét nội dung của nó:
+
+- Nếu mệnh đề là một câu khẳng định đơn giản (ví dụ: “3 là số lẻ”, “1 + 2 > 3”), ta kiểm tra tính đúng sai bằng cách tính toán hoặc dựa vào kiến thức đã biết. Nếu câu khẳng định đúng, đó là mệnh đề đúng; nếu sai, đó là mệnh đề sai.
+- Đối với mệnh đề chứa biến, ta phải xác định miền xét và kiểm tra tính đúng/sai của mệnh đề đối với mọi phần tử (đối với ∀) hoặc tồn tại một phần tử (đối với ∃). Ví dụ, mệnh đề “∀x ∈ ℝ, x² + 2x + 2 > 0” đúng vì với mọi số thực x, biểu thức luôn dương; mệnh đề “∃x ∈ ℝ, x² + 3x + 4 = 0” sai vì không tồn tại x thỏa mãn phương trình.
+- Khi có phủ định, ta dùng quy tắc ¬(∀x ∈ D, P(x)) ⇔ ∃x ∈ D, ¬P(x) và ¬(∃x ∈ D, P(x)) ⇔ ∀x ∈ D, ¬P(x) để chuyển đổi và kiểm tra lại.
+- Đối với mệnh đề kéo theo P ⇒ Q, mệnh đề này sai chỉ khi P đúng mà Q sai; trong các trường hợp còn lại (P sai hoặc Q đúng) nó được coi là đúng.
+- Hai mệnh đề tương đương P ⇔ Q đúng khi cả hai mệnh đề đều có cùng giá trị chân lý, có thể kiểm tra bằng cách xét cả hai chiều kéo theo.
+
+Tóm lại, để xác định một mệnh đề là đúng hay sai, ta cần phân loại nó (đơn, có biến, có lượng tử, kéo theo...), xác định các điều kiện và kiểm tra tính đúng sai dựa trên kiến thức toán học hoặc logic tương ứng. (17:48:33 29/10/2026) - Chênh lệch: 15s
+
+---
+
+Người dùng: mệnh để kéo theo khác với mệnh đề chứa biến sao , cho ví dụ của hai cái đó (17:50:14 29/10/2026)
+
+Hệ thống: Trong logic, **mệnh đề kéo theo** là dạng "Nếu P thì Q" (kí hiệu P ⇒ Q). Nó chỉ sai khi P đúng mà Q sai; trong mọi trường hợp còn lại nó được coi là đúng. Ví dụ: "Nếu một tam giác đều thì nó là tam giác cân" là một mệnh đề kéo theo, trong đó P = "tam giác đều" và Q = "tam giác cân". \n\n**Mệnh đề chứa biến** là một phát biểu có biến, giá trị đúng/sai phụ thuộc vào giá trị của biến và miền xét. Khi gán một giá trị cụ thể cho biến, mệnh đề sẽ trở thành một mệnh đề cụ thể (đúng hoặc sai). Ví dụ: P(x): "2x = 1" là mệnh đề chứa biến x. Khi x = 0.5, P(0.5) là đúng; khi x = 1, P(1) là sai. Tương tự, R(x, y): "2x + y = 3" là mệnh đề chứa hai biến; với (x, y) = (1, 1) nó đúng, còn (x, y) = (0, 0) thì sai. \n\nVì vậy, mệnh đề kéo theo liên quan đến quan hệ nguyên mẫu giữa hai mệnh đề (P và Q), còn mệnh đề chứa biến liên quan đến việc xác định giá trị đúng/sai của một phát biểu khi biến được gán giá trị cụ thể. (17:50:30 29/10/2026) - Chênh lệch: 15s
+
+---
+
+Người dùng: Làm thế nào để chứng minh một mệnh đề kéo theo là đúng? (17:51:39 29/10/2026)
+
+Hệ thống: Một mệnh đề dạng "Nếu P thì Q" được gọi là mệnh đề kéo theo và ký hiệu là P ⇒ Q. Để chứng minh mệnh đề này đúng, ta chỉ cần xét trường hợp P đúng: nếu khi P đúng thì Q cũng đúng, thì mệnh đề P ⇒ Q sẽ đúng. Ngược lại, mệnh đề P ⇒ Q chỉ sai khi P đúng mà Q sai. Vì vậy, trong quá trình chứng minh, chúng ta thường giả sử P đúng và sau đó chứng minh Q, tức là "từ P suy ra Q". Đây là quy tắc cơ bản khi chứng minh các định lý ở lớp 10. (17:51:51 29/10/2026) - Chênh lệch: 11s
+
+---
+
+Người dùng: sác xuất thống kê là chương bao nhiêu , chương đó học những bài , chủ đề gf (18:17:47 29/10/2026)
+
+Hệ thống: Xác suất thống kê nằm trong Chương 6 của sách Toán lớp 10. Trong chương này học các bài: Bài 1 – Số gần đúng; Bài 2 – Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu không ghép nhóm; Bài 3 – Các số liệu đặc trưng đo mức độ phân tán cho mẫu số liệu không ghép nhóm; Bài 4 – Xác suất của biến cố trong một số trò chơi đơn giản; Bài 5 – Xác suất của biến cố; cùng các bài tập cuối chương. Ngoài ra, kiến thức cần nắm trong chương còn bao gồm sai số tuyệt đối, độ chính xác, quy tròn và cách báo cáo kết quả; đọc bảng, biểu đồ, tần số và tần suất; số trung bình, trung vị, tứ phân vị và mốt; khoảng biến thiên, khoảng tứ phân vị, phương sai, độ lệch chuẩn và quy tắc ngoại lệ. (18:18:27 29/10/2026) - Chênh lệch: 40s
+
+---
+
+Người dùng: Làm thế nào để tính và diễn giải các số đặc trưng như trung vị, tứ phân vị và độ lệch chuẩn? (18:22:01 29/10/2026)
+
+Hệ thống: Để tính và diễn giải các số đặc trưng của một mẫu số liệu thống kê, ta thực hiện các bước sau:\n\n1. **Trung vị (Median)** – là giá trị nằm ở vị trí giữa khi các dữ liệu được sắp xếp tăng dần. Nếu số lượng quan sát lẻ, trung vị là giá trị thứ (n+1)/2; nếu chẵn, trung vị là trung bình của hai giá trị ở vị trí n/2 và n/2+1. Trong Excel, hàm MEDIAN(C4:C28) cho kết quả trung vị của cột điểm kiểm tra.\n\n2. **Tứ phân vị (Quartiles)** – chia dữ liệu thành bốn phần bằng nhau.\n   - Q1 (tứ phân vị thứ nhất) là giá trị tại vị trí 25% của dãy dữ liệu, tính bằng hàm QUARTILE.EXC(C4:C28,1).\n   - Q3 (tứ phân vị thứ ba) là giá trị tại vị trí 75%, tính bằng hàm QUARTILE.EXC(C4:C28,3).\n   - Khoảng tứ phân vị (IQR) được tính bằng IQR = Q3 – Q1, giúp đánh giá mức độ phân tán và phát hiện giá trị ngoại lệ.\n\n3. **Độ lệch chuẩn (Standard Deviation)** – đo mức độ phân tán của các quan sát quanh trung bình. Độ lệch chuẩn mẫu được tính bằng hàm STDEV.P(C4:C28) (đối với toàn bộ dân số) hoặc STDEV.S(C4:C28) (đối với mẫu). Phương sai (VAR.P) bằng bình phương của độ lệch chuẩn: VAR.P(C4:C28) = [STDEV.P(C4:C28)]².\n\n**Diễn giải**:\n- Trung vị cho biết điểm trung tâm của lớp, ít bị ảnh hưởng bởi các giá trị cực đoan.\n- Tứ phân vị cho phép ta biết 25% học sinh có điểm dưới Q1 và 25% học sinh có điểm trên Q3; IQR cho thấy độ rộng của phần dữ liệu trung tâm và giúp nhận diện các điểm ngoại lệ.\n- Độ lệch chuẩn cho biết mức độ dao động của điểm quanh trung bình; giá trị lớn đồng nghĩa với sự chênh lệch điểm lớn giữa các học sinh, giá trị nhỏ đồng nghĩa với điểm số đồng đều hơn. (18:22:16 29/10/2026) - Chênh lệch: 14s
+
+---
+
+Người dùng: Làm thế nào để xác định và loại bỏ các giá trị ngoại lệ dựa trên khoảng tứ phân vị? (18:25:04 29/10/2026)
+
+Hệ thống: Để xác định các giá trị ngoại lệ trong một mẫu dữ liệu bằng cách dùng khoảng tứ phân vị (IQR), ta thực hiện các bước sau: 1) Sắp xếp các quan sát theo thứ tự tăng dần và tìm Q1 (đại diện cho 25% dữ liệu) và Q3 (đại diện cho 75% dữ liệu). 2) Tính khoảng tứ phân vị \(\Delta_Q = Q_3 - Q_1\). 3) Áp dụng quy tắc 1,5 × IQR: một quan sát \(x\) được coi là ngoại lệ nếu \(x < Q_1 - 1,5\Delta_Q\) hoặc \(x > Q_3 + 1,5\Delta_Q\). 4) Các giá trị thỏa mãn điều kiện trên được xem là ngoại lệ và có thể loại bỏ (hoặc xem xét riêng) để tránh làm méo trung bình và phạm vi của mẫu. Khi mẫu có ngoại lệ, người ta thường dùng trung vị và khoảng tứ phân vị để mô tả mức độ tập trung và độ phân tán của phần lớn dữ liệu, vì chúng ít bị ảnh hưởng bởi các giá trị cực đoan. (18:25:20 29/10/2026) - Chênh lệch: 16s
+
+---
+
+Người dùng: mệnh đề toán học chứng minh điều gì và có những loại mệnh đề vào , ví dụ 3 đến 5 ví dụ (19:30:12 29/10/2026)
+
+Hệ thống: Mệnh đề trong toán học là một câu phát biểu có giá trị đúng hoặc sai. Khi chúng ta chứng minh một mệnh đề, chúng ta đang xác nhận rằng câu phát biểu đó luôn đúng (hoặc cho biết nó sai) dựa trên các giả thiết và quy tắc logic. Có hai loại mệnh đề cơ bản: \n1. **Mệnh đề toàn phần (∀ x ∈ M, P(x))** – đúng nếu với mọi phần tử x trong tập M, phát biểu P(x) luôn đúng. \n2. **Mệnh đề tồn tại (∃ x ∈ M, P(x))** – đúng nếu tồn tại ít nhất một phần tử x trong tập M sao cho P(x) đúng. \n**Ví dụ:** \n- (a) \(∀ x ∈ \mathbb{R}, x^2 + 2x + 2 > 0\) – đúng vì \(x^2 + 2x + 2 = (x+1)^2 + 1 > 0\) với mọi số thực x. \n- (b) \(∃ x ∈ \mathbb{R}, x^2 + 3x + 4 = 0\) – sai vì phương trình không có nghiệm thực. \n- (c) "Nếu tứ giác ABCD là hình chữ nhật thì hai đường chéo bằng nhau" là một định lí dạng P ⇒ Q, trong đó P (hình chữ nhật) là giả thiết và Q (đường chéo bằng nhau) là kết luận. Đây là ví dụ của mệnh đề toàn phần: mọi tứ giác hình chữ nhật đều có hai đường chéo bằng nhau. \n- (d) "Có một số nguyên dương n sao cho n^2 > 100" là một mệnh đề tồn tại, vì n = 11 thỏa mãn. \n- (e) "Mọi số chẵn đều chia hết cho 2" là một mệnh đề toàn phần, đúng với mọi số chẵn. (19:30:27 29/10/2026) - Chênh lệch: 14s
+
+---
+
+Người dùng: Có những cách nào để chứng minh một mệnh đề toàn phần hoặc một mệnh đề tồn tại? (19:31:33 29/10/2026)
+
+Hệ thống: Chưa đủ dữ kiện để trả lời được câu hỏi này. (19:31:46 29/10/2026) - Chênh lệch: 13s
+
+---
+
+Người dùng: như nào là mệnh đề đúng , khác sai sao , có vừa đúng vừa sai không, ví dụ (19:32:24 29/10/2026)
+
+Hệ thống: Mệnh đề trong toán học là một câu khẳng định mà chúng ta có thể xác định được là đúng hoặc sai, nhưng không thể vừa đúng vừa sai cùng một lúc. Nếu câu khẳng định đúng, ta gọi đó là mệnh đề đúng; nếu sai, ta gọi là mệnh đề sai. Các câu hỏi, câu mệnh lệnh hoặc những câu không đưa ra khẳng định rõ ràng không được coi là mệnh đề. Để ký hiệu mệnh đề thường dùng các chữ cái in hoa như P, Q, R… Khi mệnh đề chứa biến, ta dùng các lượng từ như “∀x ∈ M, P(x)” (đúng với mọi x trong tập M) hoặc “∃x ∈ M, P(x)” (tồn tại ít nhất một x trong M làm cho P(x) đúng). Ví dụ: a) “3 là số lẻ” là một mệnh đề đúng; b) “1 + 2 > 3” là một mệnh đề sai; c) “π là số vô tỉ phải không?” không phải mệnh đề vì nó là câu hỏi; d) “0,0001 là số rất bé” là mệnh đề đúng; e) “Đến năm 2050, con người sẽ đặt chân lên Sao Hỏa” là một mệnh đề, nhưng hiện chưa thể xác định đúng sai vì chưa có dữ kiện. Khi xét các mệnh đề có lượng từ, ví dụ a) “∀x ∈ ℝ, x² + 2x + 2 > 0” là mệnh đề đúng vì bất kỳ số thực nào x đều thỏa mãn; phủ định của nó là “∃x ∈ ℝ, x² + 2x + 2 ≤ 0”. Câu b) “∃x ∈ ℝ, x² + 3x + 4 = 0” là mệnh đề sai vì phương trình không có nghiệm thực. (19:32:39 29/10/2026) - Chênh lệch: 14s
+
+---
+
+Người dùng: Ví dụ nào về mệnh đề đúng và mệnh đề sai trong các bài toán thực tế? (19:34:25 29/10/2026)
+
+Hệ thống: Trong toán học, một mệnh đề là một khẳng định luôn đúng hoặc luôn sai. Ví dụ về mệnh đề đúng là “∀ x ∈ ℝ, x² + 2x + 2 > 0”, vì với mọi số thực x, biểu thức (x + 1)² + 1 luôn lớn hơn 0. Ví dụ về mệnh đề sai là “∃ x ∈ ℝ, x² + 3x + 4 = 0”, vì phương trình này không có nghiệm thực (Δ = 9 – 16 = -7 < 0). Ngoài ra, trong các câu hỏi thực tế, câu “3 là số lẻ” là một mệnh đề đúng, còn câu “1 + 2 > 3” là một mệnh đề sai. Các câu như “π là số vô tỉ phải không?” không phải là mệnh đề vì chúng là câu hỏi, và câu “0,0001 là số rất bé” không phải mệnh đề vì không có tiêu chuẩn rõ ràng để xác định đúng hay sai. (19:34:36 29/10/2026) - Chênh lệch: 11s
+
+---
+
+Người dùng: Cho mệnh đề $P(x)$: "$x^2 - 4 = 0$". Mệnh đề $\exists x \in \mathbb{N}, P(x)$ là đúng hay sai? (19:35:42 29/10/2026)
+
+Hệ thống: Phương trình \(x^2-4=0\) có nghiệm \(x=2\) và \(x=-2\). Trong tập số tự nhiên \(\mathbb{N}\) (thường được hiểu là các số nguyên không âm), chỉ có \(x=2\) thỏa mãn. Vì tồn tại ít nhất một số tự nhiên \(x\) sao cho \(P(x)\) đúng, mệnh đề \(\exists x\in\mathbb{N},\;P(x)\) là **đúng**. (19:35:57 29/10/2026) - Chênh lệch: 14s
+
+---
+
+Người dùng: trong chương BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN ta sẽ học và càn nắm những gì , gợi ý một số tài liệu học chương đó cho tối dược khong (19:37:30 29/10/2026)
+
+Hệ thống: Trong chương “Bất phương trình và hệ bất phương trình bậc nhất hai ẩn” các em cần nắm những kiến thức sau:\n\n1. **Khái niệm**:\n   - Bất phương trình bậc nhất hai ẩn có dạng ax+by < c, ax+by ≤ c, ax+by > c hoặc ax+by ≥ c (với a, b không đồng thời bằng 0).\n   - Hệ bất phương trình bậc nhất hai ẩn là tập hợp từ hai bất phương trình trở lên cùng xét với hai ẩn x, y. Một cặp (x₀, y₀) là nghiệm của hệ nếu thỏa đồng thời tất cả các bất phương trình.\n\n2. **Cách biểu diễn miền nghiệm**:\n   - Vẽ đường thẳng d: ax+by = c.\n   - Chọn một điểm thử không nằm trên d (thường dùng gốc O nếu O không thuộc d), thay vào bất phương trình để xác định nửa mặt phẳng nghiệm.\n   - Đối với dấu ≤ hoặc ≥, lấy cả đường biên; đối với < hoặc >, không lấy đường biên.\n   - Đối với hệ, vẽ từng đường biên trên cùng trục Oxy, xác định miền nghiệm riêng của mỗi bất phương trình, rồi lấy giao của các miền (có hoặc không có các đoạn biên). Nếu không có điểm chung thì hệ vô nghiệm.\n\n3. **Tối ưu hàm tuyến tính trên miền đa giác** (nếu đề bài yêu cầu):\n   - Thiết lập hệ ràng buộc và xác định miền khả thi (đa giác khép kín, không rỗng, bị chặn).\n   - Tìm các đỉnh của đa giác bằng giao của các đường biên, tính giá trị F = ax+by tại mỗi đỉnh, so sánh để chọn giá trị lớn nhất hoặc nhỏ nhất.\n   - Nếu yêu cầu nghiệm nguyên, cần kiểm tra thêm ràng buộc nguyên sau khi xác định miền liên tục. (19:37:46 29/10/2026) - Chênh lệch: 16s
+
+---
+
+Người dùng: Câu 1 (Dễ - Trắc nghiệm):
+Cho tập hợp 
+A={x∈R∣x 
+2
+ −4=0}. Khẳng định nào sau đây là đúng?
+A. 
+A={2}
+B. 
+A={−2}
+C. 
+A={−2;2}
+D.$A = \emptyset$ 
+
+đáp án đúng là ? (19:40:24 29/10/2026)
+
+Hệ thống: Phương trình x^2 – 4 = 0 có nghiệm x = 2 và x = –2, vì vậy tập hợp A gồm hai phần tử –2 và 2, tức là A = {‑2; 2}. Do đó đáp án đúng là C. (19:40:42 29/10/2026) - Chênh lệch: 18s
+
+---
+
+Người dùng: Nếu phương trình là x^2 + 4 = 0, tập hợp nghiệm sẽ như thế nào? (19:41:00 29/10/2026)
+
+Hệ thống: Phương trình x^2 + 4 = 0 có thể viết lại thành x^2 = -4. Vì không có số thực nào khi bình phương cho ra -4, nên nghiệm phải là các số phức. Lấy căn bậc hai của -4 được x = ±√(-4) = ±2i. Do đó tập hợp nghiệm của phương trình là {2i, -2i}.  (19:41:17 29/10/2026) - Chênh lệch: 17s
+
+---
+
+Người dùng: Miền nghiệm của hệ bất phương trình $\left\{ \begin{array}{l} x \ge 0 \\ y \ge 0 \\ x + y \le 4 \end{array} \right.$ trên mặt phẳng tọa độ $Oxy$ là một hình có diện tích bằng:
+A. $4$
+B. $8$
+C. $16$
+D. $2$
+
+đáp án đúng là câu nào (19:41:49 29/10/2026)
+
+Hệ thống: Miền nghiệm của hệ bất phương trình gồm ba điều kiện x ≥ 0, y ≥ 0 và x + y ≤ 4 tạo thành một tam giác vuông có các cạnh góc vuông dài 4 đơn vị trên trục x và trục y. Diện tích tam giác này tính bằng (1/2) × 4 × 4 = 8, vì vậy đáp án đúng là B. 8. (19:42:11 29/10/2026) - Chênh lệch: 21s
+
+---
+
+Người dùng: Tọa độ đỉnh $I$ của parabol $(P): y = x^2 - 4x + 3$ là:
+A. $I(2; -1)$
+B. $I(-2; 15)$
+C. $I(4; 3)$
+D. $I(-4; 35)$ (19:43:22 29/10/2026)
+
+Hệ thống: Đỉnh của parabol (P): y = x^2 - 4x + 3 nằm tại I(2, -1); trục đối xứng là x = 2 và đồ thị có bề lõm hướng lên vì a > 0. (19:43:31 29/10/2026) - Chênh lệch: 9s
+
+---
+
+Người dùng: Tìm tất cả các giá trị của $m$ để hàm số $y = -x^2 + 2(m-1)x + 3$ đồng biến trên khoảng $(-\infty; 1)$.
+A. $m \ge 2$
+B. $m \le 2$
+C. $m > 1$
+D. $m < 2$ (19:44:20 29/10/2026)
+
+Hệ thống: Để hàm số y = -x^2 + 2(m-1)x + 3 đồng biến trên khoảng (-∞; 1), ta xét đạo hàm y' = -2x + 2(m-1). Để hàm đồng biến cần y' ≥ 0 với mọi x < 1, tức là -2x + 2(m-1) ≥ 0 ⇔ m-1 ≥ x. Vì x có thể tiến tới 1 từ bên trái, điều kiện mạnh nhất là m-1 ≥ 1, nên m ≥ 2. Do đó đáp án đúng là A: m ≥ 2. (19:44:40 29/10/2026) - Chênh lệch: 19s
+
+---
+

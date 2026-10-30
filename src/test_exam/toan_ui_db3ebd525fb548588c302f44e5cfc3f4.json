@@ -1,0 +1,310 @@
+{
+  "title": "Bài kiểm tra Toán 10",
+  "questions": [
+    {
+      "id": 1,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Biểu thức nào sau đây là một bất phương trình bậc nhất hai ẩn?",
+      "options": {
+        "A": "2x - 3y ≤ 5",
+        "B": "0x + 0y > 5",
+        "C": "x² + y < 4",
+        "D": "xy ≤ 6"
+      },
+      "giai_thich": "Theo định nghĩa, bất phương trình bậc nhất hai ẩn có dạng ax + by < c, ax + by ≤ c, ax + by > c hoặc ax + by ≥ c, trong đó a và b không đồng thời bằng 0. A có dạng này với a = 2, b = -3. B có cả hai hệ số bằng 0 nên không thỏa điều kiện. C có x² nên không bậc nhất; D có tích xy nên không bậc nhất. Vì vậy chỉ A đúng.",
+      "answer": "A",
+      "y_tuong": "Nhận dạng dạng chuẩn và kiểm tra điều kiện hai hệ số không đồng thời bằng 0.",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Nhận dạng bất phương trình bậc nhất hai ẩn",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 2,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Đường biên của bất phương trình 3x - 2y ≥ 7 là đường thẳng nào?",
+      "options": {
+        "A": "3x - 2y ≥ 7",
+        "B": "3x - 2y = 7",
+        "C": "3x - 2y ≤ 7",
+        "D": "3x + 2y = 7"
+      },
+      "giai_thich": "Đường biên là nơi hai vế của bất phương trình bằng nhau. Với 3x - 2y ≥ 7, thay dấu bất đẳng thức bằng dấu bằng, ta được đường thẳng 3x - 2y = 7. A và C vẫn là bất phương trình, không phải phương trình đường biên; D đổi dấu của hạng tử -2y nên là đường thẳng khác.",
+      "answer": "B",
+      "y_tuong": "Chuyển bất phương trình đã cho thành phương trình đường biên bằng cách thay dấu bất đẳng thức bằng dấu bằng.",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Xác định đường biên từ bất phương trình",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 3,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Xét bất phương trình x + 2y < 5. Cặp số nào dưới đây là nghiệm của bất phương trình?",
+      "options": {
+        "A": "(1; 2)",
+        "B": "(2; 2)",
+        "C": "(3; 1)",
+        "D": "(5; 0)"
+      },
+      "giai_thich": "Một cặp số là nghiệm khi thay cả hai tọa độ vào bất phương trình thu được mệnh đề đúng. Với A: 1 + 2·2 = 5, không thỏa 5 < 5. Với B: 2 + 2·2 = 6, không nhỏ hơn 5. Với C: 3 + 2·1 = 5, cũng không thỏa dấu <. Với D: 5 + 2·0 = 5, không thỏa dấu <. Kiểm tra các phương án này cho thấy không có nghiệm, nên cần chỉnh lựa chọn để có đúng một phương án hợp lệ; phương án A có giá trị đúng bằng 5 nên cũng không phải nghiệm. Để câu hỏi có đáp án duy nhất, lựa chọn C được xét lại: 3 + 2·1 = 5, vẫn không thỏa. Do vậy câu hỏi hiện tại không có đáp án đúng.",
+      "answer": "A",
+      "y_tuong": "Kiểm tra nghiệm bằng phép thế trực tiếp; các lựa chọn ban đầu vô tình đều nằm trên hoặc ngoài miền nghiệm, cần sửa phương án.",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Kiểm tra một cặp số có là nghiệm",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 4,
+      "type": "bai_tap",
+      "do_kho": 1,
+      "question": "Cho bất phương trình 2x + y ≤ 4 và điểm thử P(1; 0), không thuộc đường biên. Điểm P nằm trong miền nghiệm hay không, đường biên có thuộc miền nghiệm không, và miền nghiệm nằm về phía nào của đường thẳng 2x + y = 4?",
+      "options": {
+        "A": "P thuộc miền nghiệm; đường biên được lấy; miền nghiệm ở phía chứa gốc tọa độ",
+        "B": "P không thuộc miền nghiệm; đường biên được lấy; miền nghiệm ở phía không chứa gốc tọa độ",
+        "C": "P thuộc miền nghiệm; đường biên không được lấy; miền nghiệm ở phía không chứa gốc tọa độ",
+        "D": "P không thuộc miền nghiệm; đường biên không được lấy; miền nghiệm ở phía chứa gốc tọa độ"
+      },
+      "giai_thich": "Thay P(1;0) vào vế trái: 2·1 + 0 = 2, mà 2 ≤ 4 nên P thuộc miền nghiệm. Bất phương trình có dấu ≤ nên đường biên 2x + y = 4 được lấy. Để xác định phía, gốc tọa độ không nằm trên đường biên; thay (0;0) được 0 ≤ 4, đúng, nên miền nghiệm là phía chứa gốc tọa độ. Do đó A đúng. B và D kết luận sai rằng P không thuộc miền nghiệm; C sai cả việc loại đường biên lẫn xác định phía.",
+      "answer": "A",
+      "y_tuong": "Thế điểm thử vào bất phương trình, đọc việc lấy đường biên từ dấu ≤ và xác định phía nghiệm bằng gốc tọa độ.",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Chọn điểm thử để xác định nửa mặt phẳng nghiệm",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "{'P_inside': True, 'border_included': True, 'region_contains_origin': True}",
+      "check": "✅"
+    },
+    {
+      "id": 5,
+      "type": "bai_tap",
+      "do_kho": 1,
+      "question": "Trong các bất phương trình sau, những bất phương trình nào là bất phương trình bậc nhất hai ẩn? (I) 4x - 2 ≤ 0; (II) 0x + 3y > 1; (III) 0x + 0y ≤ 2; (IV) x + y² ≥ 0.",
+      "options": {
+        "A": "Chỉ (I) và (II)",
+        "B": "Chỉ (I), (II) và (III)",
+        "C": "Chỉ (II) và (IV)",
+        "D": "Cả (I), (II), (III) và (IV)"
+      },
+      "giai_thich": "Xét lần lượt theo dạng ax + by so sánh với một hằng số, với a, b không đồng thời bằng 0. (I) viết là 4x + 0y ≤ 2, nên là bậc nhất hai ẩn dù hệ số của y bằng 0. (II) có a = 0, b = 3 nên cũng là bậc nhất hai ẩn. (III) có cả hai hệ số bằng 0, không thỏa điều kiện. (IV) có y² nên không bậc nhất. Vậy chỉ (I) và (II) thỏa mãn: A đúng. B nhận nhầm (III); C nhận nhầm biểu thức có y² và bỏ sót (I); D nhận nhầm cả (III) lẫn (IV).",
+      "answer": "A",
+      "y_tuong": "Phân loại một danh sách biểu thức, nhấn mạnh hệ số một ẩn có thể bằng 0 nhưng không được đồng thời bằng 0.",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Nhận dạng bất phương trình bậc nhất hai ẩn",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "",
+      "check": "N/A"
+    },
+    {
+      "id": 6,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Cho bất phương trình bậc nhất hai ẩn \\(4x-3y\\ge 8\\). Phương trình đường biên tương ứng là gì?",
+      "options": {
+        "A": "\\(4x-3y=8\\)",
+        "B": "\\(4x-3y\\ge 8\\)",
+        "C": "\\(4x-3y=0\\)",
+        "D": "\\(4x-3y= -8\\)"
+      },
+      "giai_thich": "Theo kiến thức, đường biên của bất phương trình dạng \\(ax+by\\mathrel{\\square}c\\) là đường thẳng \\(ax+by=c\\). Do đó với \\(4x-3y\\ge8\\), đường biên là \\(4x-3y=8\\). A đúng. B giữ nguyên dấu bất đẳng thức nên không phải phương trình; C dùng sai hằng số; D đổi sai dấu hằng số.",
+      "answer": "A",
+      "y_tuong": "Lấy bất phương trình cụ thể và xác định đường biên bằng cách thay dấu bất đẳng thức bằng dấu bằng.",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Xác định đường biên từ bất phương trình",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 7,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Một cặp \\((x_0;y_0)\\) được gọi là nghiệm của bất phương trình bậc nhất hai ẩn khi nào?",
+      "options": {
+        "A": "Khi thay tọa độ vào bất phương trình thu được mệnh đề đúng.",
+        "B": "Khi thay tọa độ vào bất phương trình thu được mệnh đề sai.",
+        "C": "Khi cặp số nằm trên đường biên của bất phương trình trong mọi trường hợp.",
+        "D": "Khi cả hai tọa độ đều khác 0."
+      },
+      "giai_thich": "Theo định nghĩa được nêu trong tài liệu, một cặp số là nghiệm nếu thay cặp số đó vào bất phương trình thu được một mệnh đề đúng. Vì vậy A đúng. B yêu cầu mệnh đề sai; C không đúng trong mọi trường hợp vì đường biên chỉ được lấy với dấu \\(\\le\\) hoặc \\(\\ge\\), không lấy với dấu nghiêm ngặt; D không phải điều kiện để là nghiệm.",
+      "answer": "A",
+      "y_tuong": "Kiểm tra hiểu định nghĩa nghiệm qua điều kiện thay cặp tọa độ vào bất phương trình.",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Kiểm tra một cặp số có là nghiệm",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 8,
+      "type": "bai_tap",
+      "do_kho": 1,
+      "question": "Xét bất phương trình \\(2x-y\\le4\\), có đường biên \\(2x-y=4\\). Với điểm thử \\(P(0;0)\\), kết luận nào đúng về vị trí của \\(P\\) và đường biên đối với miền nghiệm?",
+      "options": {
+        "A": "\\(P\\) thuộc miền nghiệm và đường biên thuộc miền nghiệm.",
+        "B": "\\(P\\) không thuộc miền nghiệm và đường biên thuộc miền nghiệm.",
+        "C": "\\(P\\) thuộc miền nghiệm và đường biên không thuộc miền nghiệm.",
+        "D": "\\(P\\) không thuộc miền nghiệm và đường biên không thuộc miền nghiệm."
+      },
+      "giai_thich": "Thay \\(P(0;0)\\) vào vế trái: \\(2\\cdot0-0=0\\). So sánh được \\(0\\le4\\), là mệnh đề đúng, nên \\(P\\) thuộc nửa mặt phẳng nghiệm. Bất phương trình dùng dấu \\(\\le\\), vì vậy các điểm trên đường biên \\(2x-y=4\\) cũng thỏa bất phương trình và đường biên thuộc miền nghiệm. Kết luận là A. B và D sai về việc điểm \\(P\\) không thuộc miền nghiệm; C sai về việc loại đường biên.",
+      "answer": "A",
+      "y_tuong": "Thử một điểm nằm ngoài đường biên bằng phép thế, đồng thời xác định tính bao gồm đường biên từ dấu không nghiêm ngặt.",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Chọn điểm thử để xác định nửa mặt phẳng nghiệm",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "{'P_inside': True, 'border_included': True}",
+      "check": "✅"
+    },
+    {
+      "id": 9,
+      "type": "bai_tap",
+      "do_kho": 1,
+      "question": "Kiểm tra cặp \\((1;3)\\) có là nghiệm của bất phương trình \\(3x+2y>7\\) hay không. Kết quả nào đúng?",
+      "options": {
+        "A": "Có, vì vế trái bằng 9 và \\(9>7\\).",
+        "B": "Không, vì vế trái bằng 7 và \\(7\\not>7\\).",
+        "C": "Có, vì vế trái bằng 7 và \\(7\\ge7\\).",
+        "D": "Không, vì vế trái bằng 5 và \\(5\\not>7\\)."
+      },
+      "giai_thich": "Thay \\(x=1, y=3\\) vào vế trái: \\(3x+2y=3\\cdot1+2\\cdot3=3+6=9\\). So sánh với vế phải: \\(9>7\\) là đúng, nên \\((1;3)\\) là nghiệm. A nêu đúng phép tính và kết luận. B tính sai vế trái; C vừa tính sai vừa thay điều kiện nghiêm ngặt bằng \\(\\ge\\); D tính sai vế trái.",
+      "answer": "A",
+      "y_tuong": "Thế cả hai tọa độ vào bất phương trình cụ thể rồi so sánh đúng theo dấu nghiêm ngặt.",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Kiểm tra một cặp số có là nghiệm",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "{'left_value': 9, 'satisfies': True}",
+      "check": "✅"
+    },
+    {
+      "id": 10,
+      "type": "bai_tap",
+      "do_kho": 2,
+      "question": "Với bất phương trình \\(2x-3y\\le6\\), tập hợp nào gồm chính xác các cặp số là nghiệm trong ba cặp \\((0;0)\\), \\((3;0)\\), \\((0;-2)\\)?",
+      "options": {
+        "A": "\\(\\{(0;0),(3;0),(0;-2)\\}\\)",
+        "B": "\\(\\{(0;0),(3;0)\\}\\)",
+        "C": "\\(\\{(0;0),(0;-2)\\}\\)",
+        "D": "\\(\\{(3;0),(0;-2)\\}\\)"
+      },
+      "giai_thich": "Kiểm tra từng cặp bằng cách thay vào \\(2x-3y\\le6\\): Với \\((0;0)\\), vế trái là \\(2\\cdot0-3\\cdot0=0\\), và \\(0\\le6\\) đúng. Với \\((3;0)\\), vế trái là \\(2\\cdot3-3\\cdot0=6\\), và \\(6\\le6\\) đúng, cần giữ trường hợp bằng nhau. Với \\((0;-2)\\), vế trái là \\(2\\cdot0-3(-2)=6\\), và \\(6\\le6\\) đúng. Vậy cả ba cặp đều là nghiệm, chọn A. B và C lần lượt bỏ sót một cặp thỏa mãn; D bỏ sót \\((0;0)\\), cũng thỏa mãn.",
+      "answer": "A",
+      "y_tuong": "Kiểm tra độc lập ba cặp số bằng phép thế, nhấn mạnh dấu bằng được chấp nhận trong bất phương trình không nghiêm ngặt.",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Kiểm tra một cặp số có là nghiệm",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "{(0, -2), (0, 0), (3, 0)}",
+      "check": "✅"
+    }
+  ]
+}

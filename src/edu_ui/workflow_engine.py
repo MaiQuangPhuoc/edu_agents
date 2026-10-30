@@ -1,11 +1,26 @@
 """Lazy graph integration; the existing terminal entrypoints remain usable."""
 import asyncio
+import logging
 
 class Engine:
     def __init__(self):
         self.graphs = {}
         self.lock = asyncio.Lock()
         self.llm = self.retriever = None
+        self.warm_status = "idle"
+
+    async def warmup(self):
+        self.warm_status = "loading"
+        try:
+            async with self.lock:
+                await self.graph("qa")
+            self.warm_status = "ready"
+        except asyncio.CancelledError:
+            self.warm_status = "idle"
+            raise
+        except Exception:
+            self.warm_status = "failed"
+            logging.getLogger(__name__).exception("QA startup initialization failed; a later request may retry")
 
     def _build(self, mode):
         from src.configs import env_config

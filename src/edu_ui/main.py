@@ -1,25 +1,36 @@
 """EDUAGENT UI standalone FastAPI entrypoint.
 Run at repository root: uvicorn src.edu_ui.main:app --reload --port 8001
 QA, Exam and Planning graphs are lazy-loaded by workflow_api.
-EDU_QA_API_URL is only for the legacy /api/ui/chat proxy.
+The retired QA-only endpoint reports stale browser bundles explicitly.
 """
-import os
 from pathlib import Path
+from contextlib import asynccontextmanager, suppress
+import asyncio
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi import Request
 from pydantic import BaseModel, Field
-import httpx
 
 from dotenv import load_dotenv
 BASE = Path(__file__).resolve().parent
 load_dotenv(BASE.parents[1] / ".env", encoding="utf-8-sig", override=False)
-app = FastAPI(title="EDUAGENT UI")
+@asynccontextmanager
+async def ui_lifespan(app):
+    from src.edu_ui.workflow_engine import engine
+    warmup = asyncio.create_task(engine.warmup())
+    try:
+        yield
+    finally:
+        if not warmup.done():
+            warmup.cancel()
+        with suppress(asyncio.CancelledError):
+            await warmup
+
+app = FastAPI(title="EDUAGENT UI", lifespan=ui_lifespan)
 app.mount("/ui-static", StaticFiles(directory=BASE / "static"), name="ui-static")
 templates = Jinja2Templates(directory=str(BASE / "templates"))
-QA_URL = os.getenv("EDU_QA_API_URL", "http://127.0.0.1:8000").rstrip("/")
 
 class ChatInput(BaseModel):
     session_id: str | None = None
@@ -32,32 +43,24 @@ def home(request: Request):
     )
 
 @app.post("/api/ui/chat")
-async def chat(body: ChatInput):
-    """Proxy for existing src.api QA endpoints. No invented RAG sources."""
-    try:
-        async with httpx.AsyncClient(timeout=180.0) as client:
-            sid = body.session_id
-            if not sid:
-                create = await client.post(f"{QA_URL}/api/chat/session")
-                create.raise_for_status()
-                sid = create.json()["session_id"]
-            res = await client.post(
-                f"{QA_URL}/api/chat/session/{sid}/message", json={"message": body.message}
-            )
-            res.raise_for_status()
-            result = res.json()
-            if result.get("error"):
-                raise HTTPException(status_code=422, detail=result["error"])
-            # Existing QA returns final_answer and suggestions; retrieval sources aren't exposed yet.
-            return {"session_id": sid, "answer": result.get("final_answer", ""),
-                    "suggestions": result.get("suggestions", []),
-                    "sources": result.get("sources", [])}
-    except httpx.HTTPError as ex:
-        raise HTTPException(status_code=503, detail="Backend QA chưa sẵn sàng. Hãy chạy src.api.main trước.") from ex
+async def legacy_chat(body: ChatInput):
+    # A stale browser bundle must not silently use the retired QA-only proxy.
+    raise HTTPException(status_code=409, detail=(
+        "Trình duyệt đang dùng giao diện chat cũ. Nhấn Ctrl+F5; nếu vẫn lỗi, "
+        "cập nhật đủ chat.html, chat.js và workflow.js trong src/edu_ui."
+    ))
 
 @app.get("/api/ui/health")
 def health():
-    return {"status": "ok", "qa_backend": QA_URL}
+    return {"status": "ok", "ui_version": "workflow-ui-3",
+            "workflow_api": "/api/ui/workflows", "project_root": str(BASE.parents[1])}
+
+@app.middleware("http")
+async def fresh_ui_assets(request: Request, call_next):
+    response = await call_next(request)
+    if request.url.path.startswith("/ui-static/") or response.headers.get("content-type", "").startswith("text/html"):
+        response.headers["Cache-Control"] = "no-store, max-age=0"
+    return response
 
 
 # Book-name registration endpoints (without RAG ingestion)

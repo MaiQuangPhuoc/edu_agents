@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block document_title %}EDUAGENT — Trợ lý học tập{% endblock %}
-{% block page_styles %}<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css"><link rel="stylesheet" href="/ui-static/css/workflow.css"><link rel="stylesheet" href="/ui-static/css/chat.css">{% endblock %}
-{% block page_scripts %}<script defer src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script><script defer src="/ui-static/js/workflow.js"></script><script defer src="/ui-static/js/chat.js"></script>{% endblock %}
+{% block page_styles %}<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="/ui-static/css/chat.css?v=workflow-ui-3"><link rel="stylesheet" href="/ui-static/css/workflow.css?v=workflow-ui-3">{% endblock %}
+{% block page_scripts %}<script async src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script><script async src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script><script async src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script><script defer src="/ui-static/js/workflow.js?v=workflow-ui-3"></script><script defer src="/ui-static/js/chat.js?v=workflow-ui-3"></script>{% endblock %}
 {% block page_title %}Trợ lý AI{% endblock %}
 {% block page_description %}Không gian trò chuyện và học tập của bạn.{% endblock %}
 {% block main_class %}chat-page{% endblock %}
@@ -9,7 +9,14 @@
 {% block content_class %}chat-content{% endblock %}
 {% block body_class %}chat-body{% endblock %}
 {% block header_actions %}
-<div id="connection" class="connection">Sẵn sàng</div>
+<div class="wf-header-state">
+  <div id="connection" class="connection">Đang chuẩn bị trợ lý…</div>
+  <label id="workflow-options" class="wf-options wf-header-option" hidden>
+    <input id="verify-resources" type="checkbox" role="switch">
+    <span class="wf-switch-track" aria-hidden="true"></span>
+    <span>Kiểm tra thêm độ phù hợp tài nguyên bằng AI</span>
+  </label>
+</div>
 <button class="panel-toggle header-toggle" type="button" data-toggle-view="header" aria-label="Thu gọn đầu trang" title="Thu gọn đầu trang">
   <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01M13 6.5h.01"/></svg>
 </button>
@@ -17,12 +24,10 @@
 {% block content %}
 <p id="render-notice" class="study-muted" hidden>Chưa tải được thư viện định dạng; nội dung được hiển thị dạng văn bản.</p>
 <section id="messages" class="messages" aria-label="Hội thoại" aria-live="polite">
-  <div class="chat-demo" aria-label="Ví dụ hội thoại">
-    <p class="demo-label"><span aria-hidden="true">✦</span> MỘT VÍ DỤ NHẸ</p>
-    <div class="message bot"><div class="bubble">Chào bạn 🌱 Hôm nay mình có thể cùng bạn học điều gì?</div></div>
-    <div class="message user"><div class="bubble">Mình muốn ôn Toán nhưng chưa biết bắt đầu từ đâu.</div></div>
-    <div class="message bot"><div class="bubble">Mình có thể giúp bạn chia nhỏ mục tiêu. Bạn đang học phần nào vậy?</div></div>
-    <button type="button" class="demo-prompt" data-prompt="Mình muốn ôn Toán 10, hãy giúp mình bắt đầu nhé.">Thử bắt đầu cuộc trò chuyện <span aria-hidden="true">↗</span></button>
+  <div class="chat-demo wf-welcome" aria-label="Lời chào của trợ lý">
+    <p class="demo-label">KHÔNG GIAN HỌC TẬP CỦA BẠN</p>
+    <div class="message bot"><div class="bubble"><div class="wf-welcome-text"><strong>Chào bạn!</strong><p>Mình có thể giải thích lý thuyết, cùng bạn giải bài tập hoặc tìm tài liệu học tập.</p><p>Hôm nay bạn muốn học điều gì?</p></div></div></div>
+    <button type="button" class="demo-prompt" data-start-chat>Thử bắt đầu cuộc trò chuyện <span aria-hidden="true">↗</span></button>
   </div>
 </section>
 <form id="chat-form" class="composer">
@@ -39,7 +44,6 @@
     </button>
   </div>
   <div id="workflow-chip" class="wf-chip" hidden><span></span><button type="button" aria-label="Bỏ chức năng">×</button></div>
-  <label id="workflow-options" class="wf-options" hidden><input id="verify-resources" type="checkbox"> Kiểm tra thêm độ phù hợp tài nguyên bằng AI</label>
   <div class="composer-row">
     <div class="composer-left">
       <button id="action-toggle" class="icon-button add-button" type="button" aria-label="Mở chức năng" title="Chức năng" aria-expanded="false">
@@ -69,21 +73,6 @@
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h8l4 4V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1Z"/><path d="M14 3.5V8h4M8 12h8M8 16h5"/></svg>
     </button>
   </div>
-  <div id="sources" class="sources-list">
-    <p class="sources-demo-note"><span aria-hidden="true">✦</span> TÀI LIỆU THAM KHẢO</p>
-    <article class="source source-demo">
-      <span class="source-type">TOÁN 10 · ĐẠI SỐ</span>
-      <strong>Mệnh đề và tập hợp</strong>
-      <p class="chunk">Khái niệm mệnh đề, phủ định của mệnh đề và các phép toán trên tập hợp.</p>
-      <button type="button" class="source-link" data-demo-source>Tài liệu tham khảo <span aria-hidden="true">↗</span></button>
-    </article>
-    <article class="source source-demo">
-      <span class="source-type">TOÁN 10 · HÌNH HỌC</span>
-      <strong>Vectơ và các phép toán</strong>
-      <p class="chunk">Tóm tắt quy tắc cộng, trừ vectơ và nhân vectơ với một số.</p>
-      <button type="button" class="source-link" data-demo-source>Tài liệu tham khảo <span aria-hidden="true">↗</span></button>
-    </article>
-    <p class="source-disclaimer">Một số mục là ví dụ giao diện; liên kết gốc chưa được cung cấp.</p>
-  </div>
+  <div id="sources" class="sources-list"><p class="sources-empty">Tài liệu liên quan sẽ xuất hiện ở đây khi bạn đặt câu hỏi.</p></div>
 </aside>
 {% endblock %}

@@ -1,5 +1,5 @@
 /* EDUAGENT chat: no avatars/icons, student left, assistant right.
-   API: POST /api/ui/chat
+   API: POST /api/ui/workflows
    Request:  {message, session_id}
    Response: {answer, session_id, sources?}
 */
@@ -46,6 +46,30 @@
     return;
   }
 
+  const F = window.EduFlow;
+  if (!F || !$('#workflow-chip') || !$('#workflow-options')) {
+    connection.textContent = 'Giao diện chưa đồng bộ';
+    const warning = $('#render-notice') || document.createElement('p');
+    warning.hidden = false;
+    warning.textContent = 'Thiếu file giao diện mới. Cập nhật chat.html, chat.js và workflow.js, sau đó nhấn Ctrl+F5.';
+    if (!warning.parentNode) form.before(warning);
+    return;
+  }
+  let mode = 'qa', revision = 0;
+  const chip = $('#workflow-chip');
+  const modeNames = {qa: 'Hỏi đáp & giải bài', exam: 'Tạo bài kiểm tra', planning: 'Lập lộ trình học'};
+  function showMode() {
+    chip.hidden = false; chip.dataset.mode = mode; chip.querySelector('span').textContent = modeNames[mode];
+    $('#workflow-options').hidden = mode !== 'planning';
+    const welcome = $('.wf-welcome-text');
+    if (welcome) {welcome.replaceChildren(F.rich('div', '', mode === 'planning' ? '**Chào bạn!**\n\nMình sẽ cùng bạn xác định mục tiêu, làm bài đầu vào và xây dựng lộ trình học phù hợp.\n\nBạn muốn cải thiện môn học nào?' : mode === 'exam' ? '**Chào bạn!**\n\nBạn muốn tạo bài kiểm tra môn nào? Mình sẽ giúp bạn chọn phạm vi, số câu và độ khó.' : '**Chào bạn!**\n\nMình có thể giải thích lý thuyết, cùng bạn giải bài tập hoặc tìm tài liệu học tập.\n\nHôm nay bạn muốn học điều gì?'));}
+  }
+  function chooseMode(next) {
+    if (activeController) {showNotice('Đang xử lý; chờ kết quả trước khi đổi chức năng.'); return;}
+    if (next !== mode && (sessionId || activeConversationId)) document.dispatchEvent(new CustomEvent('eduagent:new-chat'));
+    mode = next; showMode(); input.focus();
+  }
+  chip.querySelector('button').addEventListener('click', () => {chooseMode('qa'); if (!activeController) chip.hidden = true;});
   let sessionId = null;
   let activeController = null;
   let requestId = 0;
@@ -186,7 +210,8 @@
     bubble.className = 'bubble';
 
     // Dùng textContent để tránh HTML injection.
-    bubble.textContent = content;
+    if (role === 'bot') bubble.append(F.rich('div', '', content));
+    else bubble.textContent = content;
 
     wrap.appendChild(bubble);
     messages.appendChild(wrap);
@@ -203,21 +228,7 @@
   // 00:00 -> 00:89 -> 01:00
   // ==========================================
 
-  function formatEduTime(elapsedSeconds) {
-    const whole = Math.max(
-      0,
-      Math.floor(elapsedSeconds)
-    );
-
-    const minutes = Math.floor(whole / 90);
-    const seconds = whole % 90;
-
-    return (
-      String(minutes).padStart(2, '0') +
-      ':' +
-      String(seconds).padStart(2, '0')
-    );
-  }
+  const formatEduTime = F.formatEduTime;
 
   // ==========================================
   // 4. HIỆU ỨNG CHỜ BOT
@@ -229,74 +240,24 @@
 
   function startWaiting() {
     const startedAt = performance.now();
-
-    const waiting = appendMessage('bot');
-
-    const dots = document.createElement('span');
-    dots.className = 'typing-dots';
-
-    dots.setAttribute('role', 'status');
-    dots.setAttribute(
-      'aria-label',
-      'Trợ lý đang trả lời'
-    );
-
-    for (let i = 0; i < 3; i += 1) {
-      dots.appendChild(
-        document.createElement('span')
-      );
-    }
-
-    waiting.bubble.appendChild(dots);
-
-    connection.textContent = 'Đang trả lời...';
-
-    let stopped = false;
-    let elapsed = null;
-
-    // Sau 2 giây mới xuất hiện đồng hồ.
-    const showTimerTimeout = setTimeout(() => {
-      if (stopped) return;
-
-      elapsed = document.createElement('div');
-      elapsed.className = 'elapsed';
-
-      elapsed.setAttribute(
-        'aria-label',
-        'Thời gian chờ'
-      );
-
-      elapsed.textContent = formatEduTime(
-        (performance.now() - startedAt) / 1000
-      );
-
-      waiting.wrap.appendChild(elapsed);
-
-      scrollToLatest();
-    }, 2000);
-
-    // Cập nhật hiển thị mỗi 200 ms.
-    // Giá trị thời gian được làm tròn xuống theo giây.
-    const updateInterval = setInterval(() => {
-      if (stopped || !elapsed) return;
-
-      elapsed.textContent = formatEduTime(
-        (performance.now() - startedAt) / 1000
-      );
-    }, 200);
-
+    let deductions = 0, stopped = false;
+    const waiting = appendMessage('bot'); waiting.wrap.classList.add('wf-waiting');
+    const progress = document.createElement('div'); waiting.bubble.append(progress);
+    const elapsed = document.createElement('div'); elapsed.className = 'elapsed'; elapsed.hidden = true;
+    elapsed.setAttribute('aria-label', 'Thời gian hiển thị đã quy đổi');
+    elapsed.title = 'Đồng hồ giao diện: 90 giây thực = 1 phút hiển thị; giảm 2 giây khi chuyển bước.';
+    waiting.wrap.append(elapsed);
+    const stages = F.createProgress(progress, {minMs: 3000, onTransition: () => {deductions += 2; updateTime();}});
+    function updateTime() {elapsed.textContent = formatEduTime(Math.max(0, (performance.now() - startedAt) / 1000 - deductions));}
+    const show = setTimeout(() => {if (!stopped) {elapsed.hidden = false; updateTime();}}, 2000);
+    const clock = setInterval(updateTime, 200);
+    connection.textContent = 'Đang hỗ trợ bạn…';
     return {
+      progress: steps => stages.update(steps),
+      finish: () => stages.finish(),
       stop() {
-        if (stopped) return;
-
-        stopped = true;
-
-        clearTimeout(showTimerTimeout);
-        clearInterval(updateInterval);
-
-        waiting.wrap.remove();
-
-        connection.textContent = 'Sẵn sàng';
+        if (stopped) return; stopped = true; stages.stop(); clearTimeout(show); clearInterval(clock);
+        waiting.wrap.remove(); connection.textContent = 'Sẵn sàng';
       }
     };
   }
@@ -315,104 +276,26 @@
 
   function renderSources(sources) {
     sourcesList.replaceChildren();
-
-    if (
-      !Array.isArray(sources) ||
-      sources.length === 0
-    ) {
-      const empty = document.createElement('p');
-      empty.className = 'sources-empty';
-
-      empty.textContent =
-        'Câu trả lời vừa rồi chưa có nguồn tài liệu được backend trả về.';
-
-      sourcesList.appendChild(empty);
-      return;
+    if (!Array.isArray(sources) || !sources.length) {
+      sourcesList.append(F.element('p', 'sources-empty', 'Tài liệu liên quan sẽ xuất hiện ở đây khi câu trả lời có nguồn tham khảo.')); return;
     }
-
     for (const source of sources) {
-      if (
-        !source ||
-        typeof source !== 'object'
-      ) {
-        continue;
+      if (!source || typeof source !== 'object') continue;
+      const info = F.sourceInfo(source), card = F.element('article', 'source wf-source-card');
+      card.dataset.sourceKind = info.label;
+      card.append(F.element('strong', 'wf-source-kind', info.label));
+      if (info.title) card.append(F.element('p', 'wf-source-caption', info.title.slice(0, 90) + (info.title.length > 90 ? '…' : '')));
+      if (source.subject || source.page != null) card.append(F.element('p', 'meta', [source.subject, source.page != null ? `Trang ${source.page}` : ''].filter(Boolean).join(' · ')));
+      card.append(F.element('p', 'chunk', info.preview || 'Chưa có trích đoạn.'));
+      if (info.content.length > 180 || info.title.length > 90) {
+        const full = F.element('details', 'wf-source-full'); full.append(F.element('summary', '', 'Xem đầy đủ'));
+        if (info.title) full.append(F.element('p', 'wf-source-caption', info.title));
+        full.append(F.rich('div', '', info.content)); card.append(full);
       }
-
-      const card = document.createElement('article');
-      card.className = 'source';
-
-      // Tên tài liệu
-      const title = document.createElement('strong');
-
-      title.textContent = String(
-        source.title ||
-        source.document_name ||
-        source.source ||
-        'Tài liệu'
-      );
-
-      card.appendChild(title);
-
-      // Metadata
-      const metadata = [
-        source.subject,
-
-        source.chapter_id != null
-          ? `Chương ${source.chapter_id}`
-          : null,
-
-        source.page != null
-          ? `Trang ${source.page}`
-          : null
-      ].filter(Boolean);
-
-      if (metadata.length) {
-        const meta = document.createElement('div');
-        meta.className = 'meta';
-
-        meta.textContent = metadata.join(' · ');
-
-        card.appendChild(meta);
+      if (typeof source.url === 'string' && /^https?:\/\//i.test(source.url)) {
+        const link = F.element('a', 'source-link', 'Mở nguồn ↗'); link.href = source.url; link.target = '_blank'; link.rel = 'noopener noreferrer'; card.append(link);
       }
-
-      // Nội dung chunk
-      const snippet = document.createElement('p');
-      snippet.className = 'chunk';
-
-      snippet.textContent = String(
-        source.chunk ||
-        source.content ||
-        source.text ||
-        'Không có trích đoạn.'
-      );
-
-      card.appendChild(snippet);
-
-      // Liên kết tài liệu nếu có
-      if (
-        typeof source.url === 'string' &&
-        /^(https?:\/\/|\/)/i.test(source.url)
-      ) {
-        const link = document.createElement('a');
-
-        link.href = source.url;
-        if (/^https?:\/\//i.test(source.url)) {
-          link.target = '_blank';
-          link.rel = 'noopener noreferrer';
-        }
-        link.className = 'source-link';
-
-        link.textContent = 'Mở tài liệu gốc ↗';
-
-        card.appendChild(link);
-      } else {
-        const unavailable = document.createElement('p');
-        unavailable.className = 'source-disclaimer';
-        unavailable.textContent = 'Backend chưa cung cấp liên kết tài liệu gốc.';
-        card.appendChild(unavailable);
-      }
-
-      sourcesList.appendChild(card);
+      sourcesList.append(card);
     }
   }
 
@@ -471,7 +354,7 @@
     const conversation = {
       id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
       title: title.slice(0, 64),
-      session_id: sessionId,
+      session_id: sessionId, mode, revision,
       messages: [],
       sources: []
     };
@@ -486,14 +369,15 @@
     return conversation;
   }
 
-  function saveConversationMessage(role, content, sources) {
+  function saveConversationMessage(role, content, sources, payload = null) {
     const conversations = readConversations();
     const conversation = conversations.find(
       (item) => item.id === activeConversationId
     );
     if (!conversation) return;
 
-    conversation.messages.push({ role, content });
+    conversation.messages.push({ role, content, payload });
+    conversation.mode = mode; conversation.revision = revision; conversation.lp_verify = $('#verify-resources').checked;
     if (sources) conversation.sources = sources;
     conversation.session_id = sessionId;
     conversation.updated_at = Date.now();
@@ -504,8 +388,9 @@
   }
 
   function restoreConversationFromUrl() {
-    const conversationId = new URLSearchParams(window.location.search)
-      .get('conversation');
+    const params = new URLSearchParams(window.location.search);
+    const workflow = params.get('workflow');
+    const conversationId = params.get('conversation') || (workflow && readConversations().find(c => c.session_id === workflow)?.id);
     if (!conversationId) return;
 
     const conversation = readConversations().find(
@@ -518,6 +403,7 @@
 
     activeConversationId = conversation.id;
     sessionId = conversation.session_id || null;
+    mode = conversation.mode || 'qa'; revision = conversation.revision || 0; $('#verify-resources').checked = Boolean(conversation.lp_verify); showMode();
     messages.replaceChildren();
     for (const message of conversation.messages) {
       if (
@@ -525,10 +411,12 @@
         (message.role === 'user' || message.role === 'bot') &&
         typeof message.content === 'string'
       ) {
-        appendMessage(message.role, message.content);
+        const rendered = appendMessage(message.role, message.content);
+        if (message.payload) F.decorate(rendered.bubble, message.payload, actionSend);
       }
     }
     renderSources(conversation.sources);
+    void refreshSession();
   }
 
   function setPanelVisible(name, visible) {
@@ -608,6 +496,13 @@
     const target = event.target;
     if (!(target instanceof Element)) return;
 
+    if (target.closest('[data-start-chat]')) {
+      const text = mode === 'planning' ? 'tôi muốn tạo lộ trình học, hãy hỗ trợ tôi' : mode === 'exam' ? 'tôi muốn tạo bài kiểm tra, hãy hỗ trợ tôi' : 'Chào bạn, hãy hỗ trợ tôi học tập.';
+      actionSend(text, 'Thử bắt đầu cuộc trò chuyện', null); return;
+    }
+    const modeButton = target.closest('[data-mode]');
+    if (modeButton && modeButton.closest('#action-menu')) {chooseMode(modeButton.dataset.mode); actionMenu.hidden = true; actionToggle.setAttribute('aria-expanded', 'false'); return;}
+
     const promptButton = target.closest('[data-action-prompt], [data-prompt]');
     if (promptButton) {
       input.value =
@@ -678,122 +573,106 @@
   // ==========================================
   // 7. GỬI TIN NHẮN ĐẾN FASTAPI
   //
-  // POST /api/ui/chat
+  // POST /api/ui/workflows
   // ==========================================
 
-  async function sendMessage() {
-    if (
-      activeController ||
-      !input.value.trim()
-    ) {
-      return;
+  function actionSend(value, label, payload) {
+    if (activeController) return;
+    if (payload && (payload.session_id !== sessionId || payload.revision !== revision)) {
+      showNotice('Nút này thuộc bước cũ. Hãy dùng thao tác ở phản hồi mới nhất.'); return;
     }
-
-    const text = input.value.trim();
-
-    input.value = '';
-    resizeComposer();
-
-    ensureActiveConversation(text);
-    $('.chat-demo')?.remove();
-
-    // Tin nhắn học sinh nằm bên trái.
-    appendMessage('user', text);
-    saveConversationMessage('user', text);
-
-    sendButton.disabled = true;
-    input.disabled = true;
-
-    // Cho phép hủy request khi tạo chat mới.
-    const controller = new AbortController();
-
-    activeController = controller;
-
-    const currentRequest = ++requestId;
-
-    // Bắt đầu 3 dấu chấm và đồng hồ chờ.
-    const waiting = startWaiting();
-
+    input.value = value; void sendMessage(label);
+  }
+  function storeSubmission(body) {
+    const all = readConversations(), c = all.find(x => x.id === activeConversationId);
+    if (c) {c.pending_request = body; c.session_id = sessionId; c.mode = mode; c.revision = revision; writeConversations(all);}
+  }
+  function storePending(jobId) {
+    const all = readConversations(), c = all.find(x => x.id === activeConversationId);
+    if (c) {c.pending_request = null; c.pending_job = jobId; c.session_id = sessionId; c.mode = mode; c.revision = revision; writeConversations(all);}
+  }
+  function acceptResult(payload) {
+    sessionId = payload.session_id || sessionId; revision = payload.revision ?? revision;
+    const answer = String(payload.answer || 'Đã xử lý xong.');
+    const rendered = appendMessage('bot', answer);
+    F.decorate(rendered.bubble, payload, actionSend);
+    renderSources(payload.sources);
+    saveConversationMessage('bot', answer, payload.sources || [], payload);
+    storePending(null);
+  }
+  async function refreshSession() {
+    if (!sessionId || activeController) return;
+    const expected = sessionId;
     try {
-      const response = await fetch('/api/ui/chat', {
-        method: 'POST',
-
-        headers: {
-          'Content-Type': 'application/json'
-        },
-
-        body: JSON.stringify({
-          session_id: sessionId,
-          message: text
-        }),
-
-        signal: controller.signal
-      });
-
-      const payload = await response
-        .json()
-        .catch(() => ({}));
-
-      if (!response.ok) {
-        throw new Error(
-          payload.detail ||
-          `HTTP ${response.status}`
-        );
+      const pending = getActiveConversation()?.pending_request;
+      if (pending) {
+        const job = await F.api(`/api/ui/workflows/${sessionId}/messages`, pending);
+        if (sessionId !== expected || activeController) return;
+        storePending(job.job_id); await watchJob(job.job_id); return;
       }
-
-      // Không xử lý kết quả request đã bị thay thế.
-      if (currentRequest !== requestId) {
-        return;
+      const snapshot = await F.api(`/api/ui/workflows/${sessionId}`);
+      if (sessionId !== expected) return;
+      $('#verify-resources').checked = Boolean(snapshot.lp_verify);
+      if (snapshot.student_id) localStorage.setItem('eduagent-student-id', snapshot.student_id);
+      if (snapshot.busy || getActiveConversation()?.pending_job) {
+        const jid = snapshot.last_job || getActiveConversation()?.pending_job;
+        if (jid && !activeController) await watchJob(jid);
+      } else if (snapshot.revision > revision) acceptResult(snapshot);
+    } catch (e) {if (e.status) storeSubmission(null); showNotice(e.message);}
+  }
+  async function watchJob(jid) {
+    const controller = new AbortController(), current = ++requestId;
+    activeController = controller; sendButton.disabled = input.disabled = true;
+    const waiting = startWaiting();
+    try {
+      const result = await F.poll(jid, waiting.progress, controller.signal);
+      await waiting.finish();
+      if (current === requestId) acceptResult(result);
+    } catch (e) {
+      if (e.name !== 'AbortError' && current === requestId) {
+        showNotice(e.message); appendMessage('bot', e.message);
+        if (e.jobFailed) {storePending(null); const last = [...(getActiveConversation()?.messages || [])].reverse().find(m => m.role === 'user'); if (last) {input.value = last.content; resizeComposer();}}
+        // Keep the job id for reconnect; reloading can fetch its final state.
       }
-
-      // Cập nhật session.
-      sessionId =
-        payload.session_id || sessionId;
-
-      // Dừng hiệu ứng chờ.
-      waiting.stop();
-
-      // Tin nhắn Bot nằm bên phải.
-      appendMessage(
-        'bot',
-        String(
-          payload.answer ||
-          'Trợ lý chưa có phản hồi.'
-        )
-      );
-
-      // Hiển thị nguồn tài liệu bên phải.
-      renderSources(payload.sources);
-      saveConversationMessage(
-        'bot',
-        String(payload.answer || 'Trợ lý chưa có phản hồi.'),
-        Array.isArray(payload.sources) ? payload.sources : []
-      );
-
-    } catch (error) {
-      waiting.stop();
-
-      if (
-        error.name !== 'AbortError' &&
-        currentRequest === requestId
-      ) {
-        appendMessage(
-          'bot',
-          `Không thể nhận phản hồi: ${error.message}`
-        );
-      }
-
     } finally {
       waiting.stop();
-
-      if (currentRequest === requestId) {
-        activeController = null;
-
-        sendButton.disabled = false;
-        input.disabled = false;
-
-        input.focus();
+      if (current === requestId) {activeController = null; sendButton.disabled = input.disabled = false;}
+    }
+  }
+  async function sendMessage(displayLabel) {
+    if (activeController || !input.value.trim()) return;
+    if (getActiveConversation()?.pending_request) {showNotice('Đang khôi phục lượt gửi trước.'); void refreshSession(); return;}
+    const text = input.value.trim();
+    // Only explicit requests switch workflows; short follow-up answers stay in their branch.
+    const normalized = text.toLowerCase();
+    if (/^(tôi|mình|em) (muốn|cần) (tạo|lập) (một )?(bài (test|kiểm tra)|đề (thi|kiểm tra))/.test(normalized)) chooseMode('exam');
+    else if (/^(tôi|mình|em) (muốn|cần) (tạo|lập) (một )?lộ trình/.test(normalized)) chooseMode('planning');
+    input.value = ''; resizeComposer(); ensureActiveConversation(text); $('.chat-demo')?.remove();
+    appendMessage('user', displayLabel || text); saveConversationMessage('user', displayLabel || text);
+    const controller = new AbortController(), current = ++requestId;
+    activeController = controller; sendButton.disabled = input.disabled = true;
+    try {
+      if (!sessionId) {
+        const created = await F.api('/api/ui/workflows', {mode}, controller.signal);
+        if (current !== requestId) return;
+        sessionId = created.session_id; revision = created.revision;
+        localStorage.setItem('eduagent-student-id', created.student_id);
       }
+      const requestKey = F.id();
+      const body = {message: text, revision, request_id: requestKey, lp_verify: $('#verify-resources').checked};
+      storeSubmission(body);
+      const job = await F.api(`/api/ui/workflows/${sessionId}/messages`, body, controller.signal);
+      if (current !== requestId) return;
+      storePending(job.job_id);
+      activeController = null;
+      await watchJob(job.job_id);
+    } catch (e) {
+      if (e.name !== 'AbortError' && current === requestId) {
+        if (e.status) storeSubmission(null);
+        appendMessage('bot', `Không thể gửi: ${e.message}`); input.value = text; resizeComposer();
+      }
+    } finally {
+      if (current === requestId) {activeController = null; sendButton.disabled = input.disabled = false;}
     }
   }
 
@@ -833,7 +712,7 @@
     activeController = null;
 
     // Reset session.
-    sessionId = null;
+    sessionId = null; revision = 0; mode = 'qa'; showMode();
     activeConversationId = null;
     window.history.replaceState(null, '', '/');
     document.dispatchEvent(new CustomEvent('eduagent:history-updated'));
@@ -841,6 +720,7 @@
     // Xóa hội thoại.
     messages.replaceChildren();
     if (demoMarkup) messages.append(demoMarkup.cloneNode(true));
+    showMode();
 
     // Xóa nguồn tài liệu.
     renderSources([]);
@@ -885,6 +765,16 @@
     });
   }
 
+  showMode();
   restoreConversationFromUrl();
+  async function readiness() {
+    try {
+      const data = await F.api('/api/ui/workflows/readiness');
+      if (!activeController) connection.textContent = data.status === 'ready' ? 'Sẵn sàng' : data.status === 'failed' ? 'Chưa kết nối được AI' : 'Đang chuẩn bị trợ lý…';
+      if (data.status === 'loading' || data.status === 'idle') setTimeout(readiness, 1500);
+    } catch {if (!activeController) connection.textContent = 'Kiểm tra kết nối server';}
+  }
+  void readiness();
+  window.addEventListener('focus', () => {void refreshSession();});
 
 })();
