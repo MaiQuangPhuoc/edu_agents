@@ -80,7 +80,8 @@ def _new_archive(student_id):
     # Local server time; day directory prevents equal times on different days.
     now = datetime.now().astimezone()
     directory = PATH_DIR / 'library' / _student(student_id) / now.strftime('%Y-%m-%d')
-    stem = now.strftime('%H-%M-%S')
+    # stem = now.strftime('%H-%M-%S')
+    stem = now.strftime('%H_%M_%S')
     target = directory / (stem + '.json')
     counter = 2
     while target.exists():

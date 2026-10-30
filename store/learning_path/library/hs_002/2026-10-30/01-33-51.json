@@ -316,7 +316,7 @@
             }
           ],
           "assessment": null,
-          "exam_enabled": false,
+          "exam_enabled": true,
           "session_id": "2b5b7548-1aa9-5eb7-b577-b08e0f287195",
           "completed": false,
           "completed_at": null
@@ -397,7 +397,7 @@
             }
           ],
           "assessment": null,
-          "exam_enabled": false,
+          "exam_enabled": true,
           "session_id": "8b8fa710-ca27-5c4a-858d-303e79297273",
           "completed": false,
           "completed_at": null

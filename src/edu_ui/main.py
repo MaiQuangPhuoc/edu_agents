@@ -30,6 +30,8 @@ async def ui_lifespan(app):
 
 app = FastAPI(title="EDUAGENT UI", lifespan=ui_lifespan)
 app.mount("/ui-static", StaticFiles(directory=BASE / "static"), name="ui-static")
+# Read-only frontend fixtures. No new learning-data API.
+app.mount("/ui-demo", StaticFiles(directory=BASE / "demo_data"), name="ui-demo")
 templates = Jinja2Templates(directory=str(BASE / "templates"))
 
 class ChatInput(BaseModel):
@@ -52,7 +54,7 @@ async def legacy_chat(body: ChatInput):
 
 @app.get("/api/ui/health")
 def health():
-    return {"status": "ok", "ui_version": "workflow-ui-5",
+    return {"status": "ok", "ui_version": "student-ui-8",
             "workflow_api": "/api/ui/workflows", "project_root": str(BASE.parents[1])}
 
 @app.middleware("http")
@@ -115,3 +117,10 @@ def study_page(request: Request):
 @app.get("/schedule", response_class=HTMLResponse)
 def schedule_page(request: Request):
     return templates.TemplateResponse(request=request, name="schedule.html", context={"active_page": "schedule"})
+
+
+@app.get("/progress", response_class=HTMLResponse)
+def progress_page(request: Request):
+    return templates.TemplateResponse(
+        request=request, name="progress.html", context={"active_page": "progress"}
+    )

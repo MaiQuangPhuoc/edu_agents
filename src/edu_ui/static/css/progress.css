@@ -1,0 +1,14 @@
+.progress-ring { width:100px; height:100px; flex:0 0 100px; border-radius:50%; display:grid; place-items:center; background:conic-gradient(var(--app-green) var(--percent),var(--app-line) 0); }
+.progress-ring>span { display:grid; place-items:center; width:78px; height:78px; border-radius:50%; background:var(--app-panel); font-size:20px; font-weight:800; }
+.progress-subject { display:flex; align-items:center; gap:18px; margin:14px 0; }
+.progress-timeline { border-left:2px solid var(--app-line); margin-left:8px; padding-left:22px; }
+.progress-event { position:relative; padding:0 0 22px; }
+.progress-event:before { content:''; position:absolute; width:10px; height:10px; border-radius:50%; background:var(--app-green); left:-28px; top:6px; }
+.progress-event h3 { margin:6px 0; }
+.progress-trend { width:100%; height:auto; display:block; max-height:240px; color:var(--app-green); }
+.progress-trend text { fill:var(--app-muted); font-size:11px; }
+.progress-future { background:linear-gradient(135deg,var(--app-green-soft),var(--app-panel)); }
+.progress-preview summary { cursor:pointer; padding:12px 0; font-weight:700; font-size:13px; }
+
+.progress-future input[type="checkbox"], #panel-main input[role="switch"] { accent-color:var(--app-green); width:34px; height:19px; }
+#panel-main .profile-switch { display:flex; justify-content:space-between; align-items:center; gap:12px; font-size:13px; padding:12px 0; }
