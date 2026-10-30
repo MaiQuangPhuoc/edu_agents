@@ -1,0 +1,286 @@
+:root {
+  color-scheme: light;
+  --app-bg: #f5f8fc;
+  --app-panel: #fff;
+  --app-text: #1c2b43;
+  --app-muted: #748198;
+  --app-line: #e1e8f1;
+  --app-green: #178365;
+  --app-green-soft: #e7f4ef;
+  --app-pink: #df7197;
+  --app-pink-soft: #fff0f5;
+  --app-pink-strong: #a94e71;
+  --app-blue: #527caf;
+  --app-blue-soft: #edf4ff;
+  --app-shadow: 0 10px 28px rgb(34 58 91 / 7%);
+  --bg: var(--app-bg);
+  --panel: var(--app-panel);
+  --paper: var(--app-panel);
+  --text: var(--app-text);
+  --ink: var(--app-text);
+  --muted: var(--app-muted);
+  --line: var(--app-line);
+  --accent: var(--app-green);
+  --soft: var(--app-green-soft);
+  --sidebar: var(--app-panel);
+  --card2: #f2f6fb;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --app-bg: #111a16;
+  --app-panel: #19251f;
+  --app-text: #eaf2ed;
+  --app-muted: #a0b1a7;
+  --app-line: #304139;
+  --app-green: #8bcdaa;
+  --app-green-soft: #23392d;
+  --app-pink: #ef9db9;
+  --app-pink-soft: #3a2932;
+  --app-pink-strong: #f0a3ba;
+  --app-blue: #a3bfeb;
+  --app-blue-soft: #263345;
+  --app-shadow: 0 16px 38px rgb(0 0 0 / 23%);
+  --bg: var(--app-bg);
+  --panel: var(--app-panel);
+  --paper: var(--app-panel);
+  --text: var(--app-text);
+  --ink: var(--app-text);
+  --muted: var(--app-muted);
+  --line: var(--app-line);
+  --accent: var(--app-green);
+  --soft: var(--app-green-soft);
+  --sidebar: var(--app-panel);
+  --card2: #22332a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--app-bg);
+  color: var(--app-text);
+  font-family: Inter, "Be Vietnam Pro", "Segoe UI", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--app-green) 20%, transparent);
+  color: var(--app-text);
+}
+
+.app-shell > .sidebar {
+  border-right-color: var(--app-line);
+  background: var(--app-panel);
+}
+
+.brand-symbol {
+  background: linear-gradient(145deg, #14765e, #36a17b);
+  box-shadow: 0 7px 16px rgb(23 131 101 / 17%);
+}
+
+.brand-symbol span {
+  color: #ffd2e1;
+}
+
+.app-shell > .sidebar .sidebar-menu .navigation a {
+  min-height: 42px;
+  border: 1px solid transparent;
+  background: transparent;
+  font-size: 12px;
+}
+
+.app-shell > .sidebar .sidebar-menu .navigation a:hover {
+  border-color: #e0e9f5;
+  background: var(--app-blue-soft);
+  color: #3c659a;
+}
+
+.app-shell > .sidebar .sidebar-menu .navigation a.active {
+  border-color: #d4e4f6;
+  background: linear-gradient(100deg, #edf4ff, #edf7f3);
+  color: #27657b;
+}
+
+.app-shell > .sidebar .sidebar-menu .navigation a.active::before {
+  background: var(--app-pink);
+}
+
+.app-shell > .sidebar .history-item[aria-current="page"] {
+  border-color: #d4e4f6;
+  background: var(--app-blue-soft);
+  color: #3c659a;
+}
+
+.app-shell > .sidebar .new-chat-button {
+  border-color: #f1d2de;
+  background: var(--app-pink-soft);
+  color: #bd5b7f;
+}
+
+.topbar {
+  min-height: 72px;
+  border-bottom-color: var(--app-line);
+  background: color-mix(in srgb, var(--app-panel) 94%, transparent);
+  padding-block: 10px;
+  backdrop-filter: blur(14px);
+}
+
+.breadcrumb {
+  font-size: 12px;
+}
+
+.breadcrumb span {
+  color: var(--app-pink);
+}
+
+.breadcrumb strong {
+  font-weight: 750;
+}
+
+.page-subtitle {
+  font-size: 12px;
+}
+
+.page-content:not(.chat-content) {
+  padding-top: clamp(24px, 3vw, 38px);
+  padding-bottom: 48px;
+}
+
+.theme-toggle {
+  border-color: #dce7f5;
+  border-radius: 12px;
+  background: var(--app-blue-soft);
+  color: var(--app-blue);
+}
+
+.theme-toggle:hover {
+  background: color-mix(in srgb, var(--app-blue-soft) 72%, var(--app-panel));
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--app-blue) 36%, transparent);
+  outline-offset: 3px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #8a97aa;
+}
+
+.toast,
+.notice {
+  border-radius: 12px;
+  background: #177d62;
+  box-shadow: var(--app-shadow);
+}
+
+@media (max-width: 760px) {
+  .topbar {
+    min-height: 64px;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .page-content:not(.chat-content) {
+    padding: 22px 18px 34px;
+  }
+}
+
+html[data-theme="dark"] .app-shell > .sidebar .sidebar-menu .navigation a:hover {
+  border-color: var(--app-line);
+  background: var(--app-blue-soft);
+  color: var(--app-text);
+}
+
+html[data-theme="dark"] .app-shell > .sidebar .sidebar-menu .navigation a.active {
+  border-color: var(--app-line);
+  background: var(--app-green-soft);
+  color: var(--app-text);
+}
+
+html[data-theme="dark"] .app-shell > .sidebar .history-item[aria-current="page"] {
+  border-color: var(--app-line);
+  background: var(--app-blue-soft);
+  color: var(--app-text);
+}
+
+html[data-theme="dark"] .app-shell > .sidebar .new-chat-button {
+  border-color: var(--app-line);
+  background: var(--app-pink-soft);
+  color: var(--app-pink-strong);
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+  body:not(.chat-body) .app-shell {
+    grid-template-columns: minmax(190px, 220px) minmax(0, 1fr);
+  }
+
+  body:not(.chat-body) .app-shell > .sidebar {
+    position: sticky;
+    width: auto;
+    height: 100dvh;
+    overflow-y: auto;
+    border-right: 1px solid var(--app-line);
+    border-bottom: 0;
+    padding: 18px 10px 14px;
+  }
+
+  body:not(.chat-body) .app-shell > .sidebar .sidebar-menu .navigation {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    overflow: visible;
+    margin-top: 0;
+  }
+
+  body:not(.chat-body) .app-shell > .sidebar .sidebar-menu .navigation a {
+    flex: initial;
+    min-height: 40px;
+    padding: 8px;
+  }
+
+  .chat-body:not(.sidebar-hidden) .app-shell > .sidebar .sidebar-menu .navigation {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .chat-body:not(.sidebar-hidden) .app-shell > .sidebar .sidebar-menu .navigation a {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  body:not(.chat-body) .app-shell > .sidebar .sidebar-menu .navigation {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(170px, 100%), 1fr));
+    overflow: visible;
+  }
+
+  body:not(.chat-body) .app-shell > .sidebar .sidebar-menu .navigation a {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

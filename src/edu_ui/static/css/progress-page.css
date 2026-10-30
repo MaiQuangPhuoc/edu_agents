@@ -1,0 +1,109 @@
+body.progress-page .page-content {
+  width: min(100%, 1380px);
+  margin-inline: auto;
+}
+
+#progress-app .uk-banner {
+  border-color: #dce8f6;
+  border-radius: 15px;
+  background: linear-gradient(100deg, var(--app-blue-soft), var(--app-green-soft));
+  color: var(--app-text);
+}
+
+#progress-app .uk-heading {
+  margin-top: 30px;
+}
+
+#progress-app .uk-heading h1 {
+  color: var(--app-text);
+  letter-spacing: -.045em;
+}
+
+#progress-app .uk-eyebrow {
+  color: var(--app-blue);
+}
+
+#progress-app .uk-kpi,
+#progress-app .uk-card {
+  border-color: var(--app-line);
+  border-radius: 19px;
+  box-shadow: 0 8px 24px rgb(34 58 91 / 5%);
+}
+
+#progress-app .uk-kpi {
+  background: linear-gradient(145deg, var(--app-panel), color-mix(in srgb, var(--app-green-soft) 48%, var(--app-panel)));
+}
+
+#progress-app .uk-kpi:nth-child(even) {
+  background: linear-gradient(145deg, var(--app-panel), color-mix(in srgb, var(--app-blue-soft) 62%, var(--app-panel)));
+}
+
+#progress-app .uk-kpi strong {
+  color: var(--app-green);
+}
+
+#progress-app .uk-card > header {
+  border-bottom: 1px solid var(--app-line);
+  padding-bottom: 12px;
+}
+
+#progress-app .progress-ring {
+  background: conic-gradient(var(--app-green) var(--percent), var(--app-blue-soft) 0);
+  box-shadow: 0 0 0 7px color-mix(in srgb, var(--app-green-soft) 66%, transparent);
+}
+
+#progress-app .progress-ring > span {
+  color: var(--app-text);
+}
+
+#progress-app .progress-subject {
+  border-bottom: 1px solid var(--app-line);
+  padding: 13px 0;
+}
+
+#progress-app .progress-timeline {
+  border-left-color: color-mix(in srgb, var(--app-blue) 34%, var(--app-line));
+}
+
+#progress-app .progress-event::before {
+  background: var(--app-pink);
+  box-shadow: 0 0 0 4px var(--app-pink-soft);
+}
+
+#progress-app .progress-future {
+  border-color: color-mix(in srgb, var(--app-blue) 24%, var(--app-line));
+  background: linear-gradient(135deg, var(--app-blue-soft), var(--app-panel) 72%);
+}
+
+#progress-app .uk-meter progress.low::-webkit-progress-value,
+#progress-app .uk-meter progress.low::-moz-progress-bar {
+  background: var(--app-pink);
+}
+
+#progress-app .uk-chip.warm {
+  background: var(--app-pink-soft);
+  color: var(--app-pink-strong);
+}
+
+@media (max-width: 700px) {
+  #progress-app .uk-heading {
+    margin-top: 22px;
+  }
+
+  #progress-app .progress-subject {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  #progress-app .progress-ring {
+    width: 82px;
+    height: 82px;
+    flex-basis: 82px;
+  }
+
+  #progress-app .progress-ring > span {
+    width: 64px;
+    height: 64px;
+    font-size: 17px;
+  }
+}

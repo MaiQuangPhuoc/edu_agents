@@ -1,0 +1,146 @@
+{
+ "demo": true,
+ "as_of": "2026-10-30",
+ "streak": 3,
+ "subjects": [
+  {
+   "name": "Toán 10",
+   "completed": 5,
+   "total": 10,
+   "chapters": [
+    {
+     "ten": "Mệnh đề và tập hợp",
+     "muc_nam": 0.85
+    },
+    {
+     "ten": "Bất phương trình hai ẩn",
+     "muc_nam": 0.45
+    },
+    {
+     "ten": "Hàm số bậc hai",
+     "muc_nam": 0.55
+    }
+   ]
+  },
+  {
+   "name": "Ngữ văn 10",
+   "completed": 3,
+   "total": 6,
+   "chapters": [
+    {
+     "ten": "Thơ và cảm xúc",
+     "muc_nam": 0.8
+    },
+    {
+     "ten": "Văn bản nghị luận",
+     "muc_nam": 0.5
+    },
+    {
+     "ten": "Truyện và nhân vật",
+     "muc_nam": 0.7
+    }
+   ]
+  }
+ ],
+ "week": [
+  {
+   "date": "2026-10-26",
+   "time": "19:00",
+   "subject": "Toán 10",
+   "lesson": "Mệnh đề và tập hợp",
+   "completed": true
+  },
+  {
+   "date": "2026-10-28",
+   "time": "19:00",
+   "subject": "Ngữ văn 10",
+   "lesson": "Thơ và cảm xúc",
+   "completed": true
+  },
+  {
+   "date": "2026-11-01",
+   "time": "08:00",
+   "subject": "Toán 10",
+   "lesson": "Miền nghiệm",
+   "completed": false
+  }
+ ],
+ "attempts": [
+  {
+   "title": "Ôn tập mệnh đề",
+   "subject": "Toán 10",
+   "correct": 6,
+   "total": 10,
+   "percent": 60,
+   "submitted_at": "2026-10-20T19:30:00+07:00"
+  },
+  {
+   "title": "Đọc hiểu văn bản",
+   "subject": "Ngữ văn 10",
+   "correct": 7,
+   "total": 10,
+   "percent": 70,
+   "submitted_at": "2026-10-23T19:40:00+07:00"
+  },
+  {
+   "title": "Bất phương trình",
+   "subject": "Toán 10",
+   "correct": 8,
+   "total": 10,
+   "percent": 80,
+   "submitted_at": "2026-10-28T20:00:00+07:00"
+  }
+ ],
+ "mistakes": [
+  {
+   "topic": "Chọn nửa mặt phẳng nghiệm",
+   "subject": "Toán 10",
+   "count": 4
+  },
+  {
+   "topic": "Dẫn chứng trong lập luận",
+   "subject": "Ngữ văn 10",
+   "count": 3
+  }
+ ],
+ "activities": [
+  {
+   "type": "session",
+   "at": "2026-10-28T19:00:00+07:00",
+   "title": "Hoàn thành buổi Thơ và cảm xúc",
+   "detail": "Đã đọc và phân tích hình ảnh thơ."
+  },
+  {
+   "type": "exam",
+   "at": "2026-10-28T20:00:00+07:00",
+   "title": "Làm bài kiểm tra Bất phương trình",
+   "detail": "8/10 câu đúng."
+  },
+  {
+   "type": "qa",
+   "at": "2026-10-29T18:00:00+07:00",
+   "title": "Hỏi đáp về miền nghiệm",
+   "detail": "Trao đổi cách chọn điểm thử."
+  }
+ ],
+ "alerts": [
+  {
+   "title": "Nội dung nên ôn thêm",
+   "detail": "Miền nghiệm đang ở mức nắm 45% trong dữ liệu mẫu."
+  },
+  {
+   "title": "Giữ nhịp học đều",
+   "detail": "Ví dụ lời nhắc trước buổi học sắp tới."
+  }
+ ],
+ "reports": [
+  {
+   "title": "Báo cáo tuần minh họa",
+   "period": "26/10–01/11/2026",
+   "summary": "Đã hoàn thành 8/16 buổi trong bộ dữ liệu mẫu. Điểm trung bình của 3 lượt test là 7/10.",
+   "strengths": "Mệnh đề, tập hợp và đọc hiểu.",
+   "improve": "Chọn miền nghiệm; xây dựng luận điểm.",
+   "next": "Ôn điểm yếu và làm một bài kiểm tra ngắn."
+  }
+ ]
+}

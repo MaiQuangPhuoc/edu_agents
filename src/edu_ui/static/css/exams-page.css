@@ -1,0 +1,162 @@
+.exam-body .page-content {
+  max-width: 1580px;
+}
+
+.exam-body .library-heading {
+  padding: 4px 2px 10px;
+}
+
+.exam-body .exam-eyebrow,
+.exam-body .catalog-label {
+  color: var(--app-blue);
+}
+
+.exam-body .library-heading h1 {
+  color: var(--app-text);
+}
+
+.exam-body .refresh-button,
+.exam-body .back-button,
+.exam-body .rail-arrow {
+  border-color: #d9e5f4;
+  background: var(--app-blue-soft);
+  color: #456b9d;
+}
+
+.exam-body .refresh-button:hover,
+.exam-body .rail-arrow:hover {
+  border-color: var(--app-pink);
+  background: var(--app-pink-soft);
+  color: var(--app-pink-strong);
+}
+
+.exam-body .exam-overview > div {
+  border-radius: 17px;
+  box-shadow: var(--app-shadow);
+}
+
+.exam-body .exam-overview > div:nth-child(1) strong {
+  color: var(--app-green);
+}
+
+.exam-body .exam-overview > div:nth-child(3) strong {
+  color: var(--app-blue);
+}
+
+.exam-body .exam-overview > div:nth-child(5) strong {
+  color: var(--app-pink);
+}
+
+.exam-body .search-field,
+.exam-body .filter-field {
+  min-height: 48px;
+  border-radius: 12px;
+  border-color: var(--app-line);
+  background: var(--app-panel);
+}
+
+.exam-body .search-field:focus-within,
+.exam-body .filter-field:focus-within {
+  border-color: var(--app-blue);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--app-blue) 14%, transparent);
+}
+
+.exam-body .subject-section {
+  border-color: #dce7f3;
+  border-radius: 20px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--app-blue-soft) 46%, var(--app-panel)), var(--app-panel) 52%);
+  box-shadow: 0 7px 22px rgb(34 58 91 / 5%);
+}
+
+.exam-body .subject-section:nth-child(even) {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--app-green-soft) 55%, var(--app-panel)), var(--app-panel) 52%);
+}
+
+.exam-body .subject-intro::before {
+  background: linear-gradient(var(--app-blue), var(--app-pink));
+}
+
+.exam-body .subject-count {
+  border: 1px solid var(--app-line);
+  background: var(--app-panel);
+}
+
+.exam-body .exam-row {
+  border-color: var(--app-line);
+  border-radius: 16px;
+  box-shadow: 0 6px 17px rgb(34 58 91 / 6%);
+}
+
+.exam-body .exam-row-index {
+  background: var(--app-blue-soft);
+  color: var(--app-blue);
+}
+
+.exam-body .exam-row:nth-child(even) .exam-row-index {
+  background: var(--app-pink-soft);
+  color: var(--app-pink);
+}
+
+.exam-body .exam-row:hover {
+  border-color: color-mix(in srgb, var(--app-blue) 48%, var(--app-line));
+  box-shadow: 0 13px 28px rgb(34 58 91 / 11%);
+}
+
+.exam-body .exam-status {
+  border: 1px solid color-mix(in srgb, var(--app-pink) 18%, var(--app-line));
+}
+
+.exam-body .start-exam-button,
+.exam-body .submit-button {
+  background: linear-gradient(110deg, #16785d, #27936d);
+  box-shadow: 0 5px 13px rgb(23 131 101 / 15%);
+}
+
+.exam-body .start-exam-button:hover,
+.exam-body .submit-button:hover {
+  box-shadow: 0 8px 17px rgb(23 131 101 / 22%);
+}
+
+.exam-body .question-progress,
+.exam-body .question-nav-card {
+  border-radius: 16px;
+  box-shadow: var(--app-shadow);
+}
+
+.exam-body .taking-question-card,
+.exam-body .review-card {
+  border-radius: 18px;
+  box-shadow: 0 7px 24px rgb(34 58 91 / 5%);
+}
+
+.exam-body .answer-option:hover {
+  border-color: var(--app-blue);
+  background: color-mix(in srgb, var(--app-blue-soft) 48%, var(--app-panel));
+}
+
+.exam-body .answer-option.is-selected {
+  border-color: var(--app-green);
+  background: var(--app-green-soft);
+}
+
+.exam-body .taking-controls {
+  border-color: #dce7f3;
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--app-panel) 94%, var(--app-blue-soft));
+}
+
+@media (max-width: 700px) {
+  .exam-body .exam-overview {
+    gap: 8px;
+  }
+
+  .exam-body .exam-overview > div {
+    gap: 7px;
+    padding: 13px 10px;
+  }
+
+  .exam-body .subject-section {
+    border-radius: 16px;
+    padding: 14px;
+  }
+}

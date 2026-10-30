@@ -1,0 +1,310 @@
+{
+  "title": "Bài kiểm tra Toán 10",
+  "questions": [
+    {
+      "id": 1,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Biểu thức nào dưới đây xác định một hàm số bậc hai?",
+      "options": {
+        "A": "f(x)=3x²−2x+1",
+        "B": "f(x)=−4x+1",
+        "C": "f(x)=0x²+2x−5",
+        "D": "f(x)=2x³−x+1"
+      },
+      "giai_thich": "Theo định nghĩa, hàm số bậc hai có dạng f(x)=ax²+bx+c với a≠0. Ở A, hệ số của x² là 3 nên khác 0 và biểu thức đúng dạng. Ở B không có hạng tử bậc hai; ở C hệ số x² bằng 0 nên rút gọn thành hàm bậc nhất; ở D có bậc cao nhất là 3. Vì vậy chỉ A là hàm số bậc hai.",
+      "answer": "A",
+      "y_tuong": "Nhận dạng hàm số bậc hai bằng cách kiểm tra dạng biểu thức và hệ số x² khác 0.",
+      "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+      "bai": "Hàm số bậc hai",
+      "dang_bai": "Nhận dạng hàm số bậc hai",
+      "chapter_id": "III",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 2,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Cho hàm số f(x)=2x²−3x+1. Giá trị f(−2) bằng bao nhiêu?",
+      "options": {
+        "A": "15",
+        "B": "3",
+        "C": "11",
+        "D": "−13"
+      },
+      "giai_thich": "Thay x=−2 vào mọi hạng tử: f(−2)=2(−2)²−3(−2)+1. Vì (−2)²=4 nên f(−2)=2·4+6+1=8+6+1=15. Do đó A đúng. B là kết quả thường gặp khi bỏ hạng tử 2x²; C có thể do tính sai dấu của −3(−2); D do không bình phương đúng và nhầm dấu các hạng tử.",
+      "answer": "A",
+      "y_tuong": "Thay một giá trị âm vào hàm bậc hai, kiểm tra việc bình phương và xử lý dấu.",
+      "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+      "bai": "Hàm số bậc hai",
+      "dang_bai": "Tính giá trị hàm số bậc hai",
+      "chapter_id": "III",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 3,
+      "type": "bai_tap",
+      "do_kho": 1,
+      "question": "Cho hàm số f(x)=2x²−8x+3. Đỉnh I và trục đối xứng của parabol lần lượt là gì?",
+      "options": {
+        "A": "I(2;−5), x=2",
+        "B": "I(2;5), x=2",
+        "C": "I(−2;−5), x=−2",
+        "D": "I(4;3), x=4"
+      },
+      "giai_thich": "Với a=2, b=−8, c=3, ta có Δ=b²−4ac=(−8)²−4·2·3=64−24=40. Hoành độ đỉnh là −b/(2a)=−(−8)/(4)=2. Tung độ đỉnh là −Δ/(4a)=−40/8=−5. Trục đối xứng là x=−b/(2a)=2. Vậy I(2;−5), x=2, ứng với A. B nhầm dấu tung độ đỉnh; C bỏ sai dấu trong hoành độ; D không áp dụng công thức đỉnh.",
+      "answer": "A",
+      "y_tuong": "Dùng Δ và công thức tọa độ đỉnh, trục đối xứng; các nhiễu tập trung vào lỗi dấu.",
+      "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+      "bai": "Hàm số bậc hai",
+      "dang_bai": "Xác định đỉnh và trục đối xứng",
+      "chapter_id": "III",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "(2.0, -5.0)",
+      "check": "✅"
+    },
+    {
+      "id": 4,
+      "type": "bai_tap",
+      "do_kho": 2,
+      "question": "Đồ thị parabol y=x²−5x+6 cắt các trục tọa độ tại những điểm nào?",
+      "options": {
+        "A": "(0;6), (2;0), (3;0)",
+        "B": "(6;0), (2;0), (3;0)",
+        "C": "(0;6), (−2;0), (−3;0)",
+        "D": "(0;6), (2;0)"
+      },
+      "giai_thich": "Giao với trục tung có x=0, nên y=f(0)=6; điểm giao là (0;6). Giao với trục hoành có y=0, nên giải x²−5x+6=0. Phân tích thành (x−2)(x−3)=0, suy ra x=2 hoặc x=3; các điểm giao là (2;0) và (3;0). Tập hợp đầy đủ là (0;6), (2;0), (3;0), tức A. B nhầm tọa độ giao trục tung thành (6;0); C sai dấu hai nghiệm; D bỏ sót một giao điểm với trục hoành.",
+      "answer": "A",
+      "y_tuong": "Tìm đồng thời giao điểm trục tung bằng f(0) và giao điểm trục hoành bằng cách giải f(x)=0.",
+      "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+      "bai": "Hàm số bậc hai",
+      "dang_bai": "Tìm giao điểm của parabol với các trục tọa độ",
+      "chapter_id": "III",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "[(0, 6), (2, 0), (3, 0)]",
+      "check": "✅"
+    },
+    {
+      "id": 5,
+      "type": "bai_tap",
+      "do_kho": 2,
+      "question": "Cho g(x)=−2x²+8x−3. Parabol mở theo chiều nào và hàm số đồng biến, nghịch biến trên những khoảng nào?",
+      "options": {
+        "A": "Mở xuống; đồng biến trên (−∞;2), nghịch biến trên (2;+∞)",
+        "B": "Mở xuống; nghịch biến trên (−∞;2), đồng biến trên (2;+∞)",
+        "C": "Mở lên; đồng biến trên (−∞;2), nghịch biến trên (2;+∞)",
+        "D": "Mở xuống; đồng biến trên (−∞;−2), nghịch biến trên (−2;+∞)"
+      },
+      "giai_thich": "Ở đây a=−2<0 nên parabol mở xuống. Hoành độ đỉnh là −b/(2a)=−8/(2·(−2))=2. Với a<0, hàm số đồng biến ở bên trái hoành độ đỉnh và nghịch biến ở bên phải. Vì vậy hàm số đồng biến trên (−∞;2), nghịch biến trên (2;+∞), chọn A. B đảo ngược tính biến thiên; C sai chiều mở; D tính sai dấu hoành độ đỉnh.",
+      "answer": "A",
+      "y_tuong": "Kết hợp dấu hệ số bậc hai với hoành độ đỉnh để xác định chiều mở và hai khoảng biến thiên.",
+      "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+      "bai": "Hàm số bậc hai",
+      "dang_bai": "Xác định chiều mở và khoảng biến thiên",
+      "chapter_id": "III",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "",
+      "check": "N/A"
+    },
+    {
+      "id": 6,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Cho hàm số bậc hai có đồ thị là parabol mở lên và đỉnh có tung độ bằng 3. Hàm số đạt giá trị cực trị nào và có tập giá trị là gì?",
+      "options": {
+        "A": "Giá trị nhỏ nhất bằng 3; tập giá trị [3; +∞)",
+        "B": "Giá trị lớn nhất bằng 3; tập giá trị (−∞; 3]",
+        "C": "Giá trị nhỏ nhất bằng 3; tập giá trị (−∞; 3]",
+        "D": "Giá trị lớn nhất bằng 3; tập giá trị [3; +∞)"
+      },
+      "giai_thich": "Theo tính chất trong tài liệu, khi hệ số bậc hai a>0 thì parabol mở lên, hàm số đạt giá trị nhỏ nhất tại đỉnh. Tung độ đỉnh là 3 nên giá trị nhỏ nhất bằng 3. Mọi giá trị của hàm số lớn hơn hoặc bằng 3, do đó tập giá trị là [3; +∞). Vì vậy A đúng. B và D nhầm giá trị nhỏ nhất thành giá trị lớn nhất; C chọn đúng loại cực trị nhưng viết tập giá trị về phía ngược với chiều mở của parabol.",
+      "answer": "A",
+      "y_tuong": "Từ chiều mở lên và tung độ đỉnh suy ra giá trị nhỏ nhất cùng tập giá trị, kiểm tra lỗi đảo phía khoảng.",
+      "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+      "bai": "Hàm số bậc hai",
+      "dang_bai": "Tìm giá trị cực trị và tập giá trị",
+      "chapter_id": "III",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 7,
+      "type": "ly_thuyet",
+      "do_kho": 1,
+      "question": "Một thiết kế được mô hình hóa bởi hàm số bậc hai F(x)=−2(x−4)²+20, trong đó F(x) là hiệu quả và cần chọn x để hiệu quả lớn nhất. Nên chọn phương án nào?",
+      "options": {
+        "A": "Chọn x=4, hiệu quả lớn nhất là 20",
+        "B": "Chọn x=20, hiệu quả lớn nhất là 4",
+        "C": "Chọn x=4, hiệu quả lớn nhất là −20",
+        "D": "Chọn x=−4, hiệu quả lớn nhất là 20"
+      },
+      "giai_thich": "Viết hàm dưới dạng đỉnh F(x)=−2(x−4)²+20. Hệ số của bình phương là −2<0 nên parabol mở xuống và hàm số đạt giá trị lớn nhất tại đỉnh. Đỉnh có hoành độ x=4, tung độ 20; vậy phương án tối ưu là chọn x=4 và hiệu quả lớn nhất bằng 20. A đúng. B nhầm tung độ đỉnh với hoành độ cần chọn; C sai dấu tung độ; D sai dấu hoành độ đỉnh.",
+      "answer": "A",
+      "y_tuong": "Chọn phương án tối ưu từ dạng đỉnh của hàm bậc hai, phân biệt hoành độ đạt tối ưu và giá trị tối ưu.",
+      "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+      "bai": "Hàm số bậc hai",
+      "dang_bai": "Chọn phương án tối ưu từ giá trị cực trị",
+      "chapter_id": "III",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 8,
+      "type": "ly_thuyet",
+      "do_kho": 1,
+      "question": "Độ cao H(t) (m) của một vật theo thời gian t được cho bởi H(t)=−(t−3)²+16. Hỏi độ cao lớn nhất của vật là bao nhiêu?",
+      "options": {
+        "A": "16 m",
+        "B": "3 m",
+        "C": "−16 m",
+        "D": "19 m"
+      },
+      "giai_thich": "H(t)=−(t−3)²+16 là dạng đỉnh. Hệ số trước bình phương âm nên parabol mở xuống, vì thế giá trị lớn nhất là tung độ đỉnh. Đỉnh có tung độ 16, do đó độ cao lớn nhất là 16 m. A đúng. B là hoành độ đỉnh (thời điểm đạt cực đại), không phải độ cao; C nhầm dấu tung độ; D cộng nhầm 3 vào 16 dù hoành độ đỉnh không được cộng vào giá trị cực trị.",
+      "answer": "A",
+      "y_tuong": "Trong ngữ cảnh độ cao theo thời gian, yêu cầu giá trị tối ưu là tung độ đỉnh chứ không phải thời điểm đạt đỉnh.",
+      "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+      "bai": "Hàm số bậc hai",
+      "dang_bai": "Giải bài toán thực tế bằng hàm số bậc hai",
+      "chapter_id": "III",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 9,
+      "type": "bai_tap",
+      "do_kho": 2,
+      "question": "Cho hàm số f(x)=2x²−8x+5. Tọa độ đỉnh I và phương trình trục đối xứng của parabol là phương án nào?",
+      "options": {
+        "A": "I(2; −3), trục đối xứng x=2",
+        "B": "I(−2; −3), trục đối xứng x=−2",
+        "C": "I(2; 3), trục đối xứng x=2",
+        "D": "I(−2; 3), trục đối xứng x=−2"
+      },
+      "giai_thich": "Với a=2, b=−8, c=5, ta có Δ=b²−4ac=(−8)²−4·2·5=64−40=24. Hoành độ đỉnh là −b/(2a)=−(−8)/(2·2)=8/4=2. Tung độ đỉnh là −Δ/(4a)=−24/(4·2)=−24/8=−3. Trục đối xứng là x=−b/(2a)=2. Kết quả là I(2;−3), trục x=2, nên A đúng. B sai dấu hoành độ; C sai dấu tung độ; D sai dấu cả hoành độ lẫn tung độ.",
+      "answer": "A",
+      "y_tuong": "Tính Δ, áp dụng riêng công thức hoành độ, tung độ đỉnh và trục đối xứng để tránh nhầm dấu.",
+      "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+      "bai": "Hàm số bậc hai",
+      "dang_bai": "Xác định đỉnh và trục đối xứng",
+      "chapter_id": "III",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "(2.0, -3.0)",
+      "check": "✅"
+    },
+    {
+      "id": 10,
+      "type": "bai_tap",
+      "do_kho": 2,
+      "question": "Cho hàm số f(x)=−3x²+12x−7 trên ℝ. Parabol mở theo chiều nào và hàm số đồng biến, nghịch biến trên những khoảng nào?",
+      "options": {
+        "A": "Mở xuống; đồng biến trên (−∞; 2), nghịch biến trên (2; +∞)",
+        "B": "Mở xuống; nghịch biến trên (−∞; 2), đồng biến trên (2; +∞)",
+        "C": "Mở lên; đồng biến trên (−∞; 2), nghịch biến trên (2; +∞)",
+        "D": "Mở xuống; đồng biến trên (−∞; −2), nghịch biến trên (−2; +∞)"
+      },
+      "giai_thich": "Ở đây a=−3<0 nên parabol mở xuống. Hoành độ đỉnh là −b/(2a)=−12/(2·(−3))=−12/(−6)=2. Theo tính chất, khi a<0 hàm số đồng biến ở phía bên trái hoành độ đỉnh rồi nghịch biến ở phía bên phải. Vì vậy hàm số đồng biến trên (−∞;2), nghịch biến trên (2;+∞), chọn A. B đảo hai khoảng biến thiên; C xác định sai chiều mở; D dùng sai dấu hoành độ đỉnh.",
+      "answer": "A",
+      "y_tuong": "Từ dấu hệ số bậc hai và hoành độ đỉnh suy ra chiều mở, rồi phân chia hai khoảng biến thiên.",
+      "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+      "bai": "Hàm số bậc hai",
+      "dang_bai": "Xác định chiều mở và khoảng biến thiên",
+      "chapter_id": "III",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "",
+      "check": "N/A"
+    }
+  ]
+}

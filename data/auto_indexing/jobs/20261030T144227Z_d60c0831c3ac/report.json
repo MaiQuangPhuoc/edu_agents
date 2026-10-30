@@ -1,0 +1,30 @@
+{
+  "job_id": "20261030T144227Z_d60c0831c3ac",
+  "uploaded_filename": null,
+  "uploaded_pdf_path": null,
+  "pdf_sha256": null,
+  "pdf_extracted": false,
+  "source_mode": "prepared_markdown",
+  "book_name": "Toán 10",
+  "lesson_plan_name": "Toán 10",
+  "lesson_plan_id": "2d28c7de-260b-5251-8d4c-c4b065bc4611",
+  "target_collection": "giao_an",
+  "report_path": "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\data\\auto_indexing\\jobs\\20261030T144227Z_d60c0831c3ac\\report.json",
+  "warnings": [],
+  "status": "failed",
+  "subject": "toan_10",
+  "textbook_series": "chan_troi_sang_tao",
+  "total_chunks": 126,
+  "indexing_source_files": [
+    "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\toan_10\\chapter_I.md",
+    "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\toan_10\\chapter_II.md",
+    "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\toan_10\\chapter_III.md",
+    "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\toan_10\\chapter_IV.md",
+    "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\toan_10\\chapter_V.md",
+    "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\src\\modules\\documents\\lesson_plans\\chan_troi_sang_tao\\toan_10\\chapter_VI.md"
+  ],
+  "prepared_chunks_path": "D:\\VKU\\Nam_3\\thuc_tap_doanh_nghiep_he_eSTI\\EDUAGENT\\data\\auto_indexing\\jobs\\20261030T144227Z_d60c0831c3ac\\prepared_chunks.json",
+  "error": "_ssl.c:983: The handshake operation timed out",
+  "failed_stage": "preparing_index",
+  "qdrant_may_be_partial": true
+}

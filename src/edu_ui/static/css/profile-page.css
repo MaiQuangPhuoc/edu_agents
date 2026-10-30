@@ -1,0 +1,110 @@
+body.profile-page .page-content {
+  width: min(100%, 1380px);
+  margin-inline: auto;
+}
+
+#profile-app .uk-banner {
+  border-color: #dce8f6;
+  border-radius: 15px;
+  background: linear-gradient(100deg, var(--app-blue-soft), var(--app-green-soft));
+  color: var(--app-text);
+}
+
+#profile-app .uk-heading {
+  margin-top: 30px;
+}
+
+#profile-app .uk-heading h1 {
+  color: var(--app-text);
+  letter-spacing: -.045em;
+}
+
+#profile-app .uk-eyebrow {
+  color: var(--app-blue);
+}
+
+#profile-app .uk-kpi,
+#profile-app .uk-card {
+  border-color: var(--app-line);
+  border-radius: 19px;
+  box-shadow: 0 8px 24px rgb(34 58 91 / 5%);
+}
+
+#profile-app .uk-kpi {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, var(--app-panel), color-mix(in srgb, var(--app-blue-soft) 48%, var(--app-panel)));
+}
+
+#profile-app .uk-kpi::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--app-green);
+  content: "";
+}
+
+#profile-app .uk-kpi:nth-child(even)::before {
+  background: var(--app-pink);
+}
+
+#profile-app .uk-kpi strong {
+  color: var(--app-green);
+}
+
+#profile-app .uk-card > header {
+  border-bottom: 1px solid var(--app-line);
+  padding-bottom: 12px;
+}
+
+#profile-app .profile-avatar {
+  border: 1px solid color-mix(in srgb, var(--app-blue) 20%, var(--app-line));
+  border-radius: 22px;
+  background: linear-gradient(145deg, var(--app-blue-soft), var(--app-pink-soft));
+  color: var(--app-blue);
+}
+
+#profile-app .profile-day {
+  border-radius: 13px;
+  background: color-mix(in srgb, var(--app-blue-soft) 35%, var(--app-panel));
+  transition: border-color 150ms ease, background 150ms ease, transform 150ms ease;
+}
+
+#profile-app .profile-day:hover {
+  transform: translateY(-2px);
+  border-color: var(--app-blue);
+}
+
+#profile-app .profile-day.active {
+  border-color: var(--app-green);
+  background: var(--app-green-soft);
+}
+
+#profile-app .uk-button.primary {
+  background: linear-gradient(110deg, #16785d, #27936d);
+}
+
+#profile-app .uk-chip.warm {
+  background: var(--app-pink-soft);
+  color: var(--app-pink-strong);
+}
+
+@media (max-width: 700px) {
+  #profile-app .uk-heading {
+    margin-top: 22px;
+  }
+
+  #profile-app .profile-week {
+    min-width: 0;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 5px;
+  }
+
+  #profile-app .profile-day {
+    min-height: 84px;
+    padding: 10px 3px;
+    font-size: 10px;
+  }
+}

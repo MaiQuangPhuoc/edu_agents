@@ -1,0 +1,152 @@
+.chat-body {
+  --wf-accent: var(--app-green);
+  --wf-soft: var(--app-green-soft);
+  --wf-border: var(--app-line);
+  --wf-ink: var(--app-text);
+}
+
+.chat-body .wf-chip[data-mode="exam"] {
+  border-color: color-mix(in srgb, var(--app-blue) 30%, var(--app-line));
+  background: var(--app-blue-soft);
+  color: var(--app-blue);
+}
+
+.chat-body .wf-chip[data-mode="planning"] {
+  border-color: color-mix(in srgb, var(--app-blue) 30%, var(--app-line));
+  background: var(--app-blue-soft);
+  color: var(--app-blue);
+}
+
+.chat-body .wf-chip[data-mode="qa"] {
+  border-color: color-mix(in srgb, var(--app-green) 28%, var(--app-line));
+  background: var(--app-green-soft);
+  color: var(--app-green);
+}
+
+.chat-body .chat-content {
+  background:
+    radial-gradient(ellipse at 50% 12%, rgb(82 124 175 / 6%), transparent 34%),
+    var(--app-bg);
+}
+
+.chat-body .chat-demo.wf-welcome {
+  width: min(100%, 760px);
+  border: 1px solid color-mix(in srgb, var(--app-blue) 20%, var(--app-line));
+  border-radius: 23px;
+  background: linear-gradient(135deg, var(--app-panel), color-mix(in srgb, var(--app-blue-soft) 44%, var(--app-panel)));
+  box-shadow: var(--app-shadow);
+  padding: clamp(22px, 4vw, 34px);
+}
+
+.chat-body .wf-welcome .message {
+  max-width: 100%;
+}
+
+.chat-body .wf-welcome .bubble {
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+  padding: 8px 0;
+}
+
+.chat-body .wf-welcome-text strong {
+  color: var(--app-green);
+  font-size: clamp(22px, 3vw, 29px);
+  letter-spacing: -.035em;
+}
+
+.chat-body .wf-welcome-text p {
+  color: var(--app-muted);
+}
+
+.chat-body .demo-prompt {
+  border-color: color-mix(in srgb, var(--app-pink) 34%, var(--app-line));
+  background: var(--app-pink-soft);
+  color: var(--app-pink-strong);
+}
+
+.chat-body .demo-prompt:hover {
+  border-color: var(--app-pink);
+  box-shadow: 0 7px 18px rgb(223 113 151 / 12%);
+}
+
+.chat-body .message.user .bubble {
+  border-color: color-mix(in srgb, var(--app-blue) 22%, var(--app-line));
+  background: var(--app-blue-soft);
+}
+
+.chat-body .message.bot .bubble {
+  border-color: color-mix(in srgb, var(--app-green) 18%, var(--app-line));
+  background: color-mix(in srgb, var(--app-green-soft) 52%, var(--app-panel));
+}
+
+.chat-body .chat-content .composer {
+  border-color: color-mix(in srgb, var(--app-blue) 25%, var(--app-line));
+  border-radius: 20px;
+  background: var(--app-panel);
+  box-shadow: 0 10px 28px rgb(34 58 91 / 9%);
+}
+
+.chat-body .composer-row .icon-button {
+  border-color: transparent;
+  border-radius: 11px;
+  background: var(--app-blue-soft);
+  color: var(--app-blue);
+  transition: transform 150ms ease, background 150ms ease, color 150ms ease;
+}
+
+.chat-body .composer-row .icon-button:hover {
+  transform: translateY(-1px);
+  background: var(--app-pink-soft);
+  color: var(--app-pink-strong);
+}
+
+.chat-body .composer-row .add-button {
+  background: var(--app-pink-soft);
+  color: var(--app-pink-strong);
+}
+
+.chat-body .composer-row .send-button {
+  border-radius: 12px;
+  background: linear-gradient(145deg, #16785d, #27936d);
+  box-shadow: 0 5px 13px rgb(23 131 101 / 18%);
+  transition: transform 150ms ease, filter 150ms ease;
+}
+
+.chat-body .composer-row .send-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.chat-body .action-menu {
+  border: 1px solid var(--app-line);
+  border-radius: 16px;
+  background: var(--app-panel);
+  box-shadow: var(--app-shadow);
+}
+
+.chat-body .action-menu button:hover {
+  background: var(--app-blue-soft);
+}
+
+.chat-body .sources-panel {
+  background: color-mix(in srgb, var(--app-panel) 94%, var(--app-blue-soft));
+}
+
+.chat-body .source {
+  border-radius: 13px;
+  background: var(--app-panel);
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.chat-body .source:hover {
+  border-color: color-mix(in srgb, var(--app-blue) 42%, var(--app-line));
+  box-shadow: 0 6px 16px rgb(34 58 91 / 7%);
+}
+
+@media (max-width: 760px) {
+  .chat-body .chat-demo.wf-welcome {
+    border-radius: 18px;
+    padding: 20px;
+  }
+}

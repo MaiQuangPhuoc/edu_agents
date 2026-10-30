@@ -1,0 +1,128 @@
+{
+ "demo": true,
+ "as_of": "2026-10-30",
+ "student_id": "hs_002",
+ "version": 1,
+ "updated_at": "2026-10-30T08:00:00+07:00",
+ "ca_nhan": {
+  "ho_ten": "Minh Anh",
+  "khoi_lop": 10,
+  "so_thich": [
+   "Đọc sách",
+   "Học bằng ví dụ",
+   "Công nghệ"
+  ]
+ },
+ "nang_luc": [
+  {
+   "mon_hoc": "Toán 10",
+   "diem_hien_tai": 6.5,
+   "da_test_dau_vao": true,
+   "manh": [
+    "Mệnh đề",
+    "Tập hợp"
+   ],
+   "yeu": [
+    "Miền nghiệm",
+    "Hàm số bậc hai"
+   ],
+   "chu_de": [
+    {
+     "ten": "Mệnh đề và tập hợp",
+     "muc_nam": 0.85
+    },
+    {
+     "ten": "Bất phương trình hai ẩn",
+     "muc_nam": 0.45
+    },
+    {
+     "ten": "Hàm số bậc hai",
+     "muc_nam": 0.55
+    }
+   ]
+  },
+  {
+   "mon_hoc": "Ngữ văn 10",
+   "diem_hien_tai": 7,
+   "da_test_dau_vao": true,
+   "manh": [
+    "Đọc hiểu"
+   ],
+   "yeu": [
+    "Lập luận"
+   ],
+   "chu_de": [
+    {
+     "ten": "Thơ và cảm xúc",
+     "muc_nam": 0.8
+    },
+    {
+     "ten": "Văn bản nghị luận",
+     "muc_nam": 0.5
+    },
+    {
+     "ten": "Truyện và nhân vật",
+     "muc_nam": 0.7
+    }
+   ]
+  }
+ ],
+ "muc_tieu": [
+  {
+   "mon_hoc": "Toán 10",
+   "diem_muc_tieu": 9,
+   "han_chot": "2026-11-27",
+   "uu_tien": "Cao",
+   "dang_bai": "Miền nghiệm; bài toán vận dụng"
+  },
+  {
+   "mon_hoc": "Ngữ văn 10",
+   "diem_muc_tieu": 8,
+   "han_chot": "2026-12-11",
+   "uu_tien": "Vừa",
+   "dang_bai": "Đọc hiểu; nghị luận"
+  }
+ ],
+ "so_thich_hoc": {
+  "tai_lieu": true,
+  "video": true,
+  "bai_tap": true,
+  "tom_tat": false
+ },
+ "lich_hoc": {
+  "thoi_luong": 90,
+  "so_buoi": 3,
+  "slots": [
+   {
+    "day": 0,
+    "start": "19:00",
+    "end": "20:30"
+   },
+   {
+    "day": 2,
+    "start": "19:00",
+    "end": "20:30"
+   },
+   {
+    "day": 6,
+    "start": "08:00",
+    "end": "09:30"
+   }
+  ]
+ },
+ "tien_do": {
+  "completed": 8,
+  "total": 16,
+  "streak": 3
+ },
+ "badges": [
+  {
+   "title": "Bước khởi đầu",
+   "detail": "Hoàn thành buổi học đầu tiên"
+  },
+  {
+   "title": "Giữ nhịp học",
+   "detail": "Học liên tiếp 3 ngày"
+  }
+ ]
+}

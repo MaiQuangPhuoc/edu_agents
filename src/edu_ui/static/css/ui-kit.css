@@ -34,8 +34,8 @@
 .uk-meter progress::-webkit-progress-bar { background:var(--app-line); }
 .uk-meter progress::-webkit-progress-value { background:var(--app-green); border-radius:10px; }
 .uk-meter progress::-moz-progress-bar { background:var(--app-green); }
-.uk-meter progress.low::-webkit-progress-value { background:#d49954; }
-.uk-meter progress.low::-moz-progress-bar { background:#d49954; }
+.uk-meter progress.low::-webkit-progress-value { background:var(--app-pink); }
+.uk-meter progress.low::-moz-progress-bar { background:var(--app-pink); }
 .uk-empty { padding:22px; text-align:center; color:var(--app-muted); font-size:13px; }
 .uk-table-wrap { overflow-x:auto; }
 .uk-table { width:100%; border-collapse:collapse; text-align:left; font-size:12px; }

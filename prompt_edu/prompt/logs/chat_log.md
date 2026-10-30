@@ -389,3 +389,45 @@ Hệ thống: Bất phương trình bậc nhất hai ẩn và hệ bất phươn
 
 ---
 
+Người dùng: mệnh đê toán hoc là gì (23:12:57 30/10/2026)
+
+Hệ thống: Mệnh đề toán học là một câu khẳng định mà chúng ta có thể xác định được là đúng hoặc sai, nhưng không thể vừa đúng vừa sai cùng một lúc. Khi câu khẳng định đúng, ta gọi đó là mệnh đề đúng; còn khi sai, gọi là mệnh đề sai. Trong logic cổ điển, câu hỏi và câu mệnh lệnh không được xem là mệnh đề. Thông thường, người ta dùng các chữ cái in hoa như P, Q, R để ký hiệu các mệnh đề. Một số mệnh đề có thể chứa biến (ví dụ P(x)), khi giá trị đúng/sai phụ thuộc vào giá trị của biến và miền xét. Ngoài ra, có những mệnh đề được tin là đúng nhưng chưa được chứng minh hay bác bỏ, gọi là giả thuyết toán học, như Định lý lớn Fermat trước khi được chứng minh. (23:13:22 30/10/2026) - Chênh lệch: 25s
+
+---
+
+Người dùng: Làm thế nào để phủ định một mệnh đề trong logic? (23:13:58 30/10/2026)
+
+Hệ thống: Trong logic, mỗi mệnh đề P luôn có một mệnh đề phủ định, ký hiệu là ¬P (hoặc P). Hai mệnh đề này luôn có giá trị đúng‑sai ngược nhau: khi P đúng thì ¬P sai, và khi P sai thì ¬P đúng. Để phủ định một mệnh đề thường thêm (hoặc bớt) từ “không” hoặc “không phải” vào trước vị ngữ, như các ví dụ đầu trong tài liệu. Khi mệnh đề chứa các lượng từ, cần đổi lượng từ: thay ∀ (với mọi) bằng ∃ (tồn tại) và ngược lại, đồng thời phủ định tính chất bên trong. Ví dụ, phủ định của “∀x∈ℝ, x²+3x+4=0” là “∃x∈ℝ, x²+3x+4≠0”. (23:14:26 30/10/2026) - Chênh lệch: 28s
+
+---
+
+Người dùng: có mệnh đề vừa đúng vừa sai không (23:14:52 30/10/2026)
+
+Hệ thống: Trong logic cổ điển, một mệnh đề là câu khẳng định có thể xác định được đúng hoặc sai, nhưng không thể đồng thời vừa đúng vừa sai. Khi một mệnh đề P đúng, phủ định của nó ¬P sẽ sai, và ngược lại. Do đó, không tồn tại mệnh đề nào vừa đúng vừa sai. (23:15:29 30/10/2026) - Chênh lệch: 37s
+
+---
+
+Người dùng: bạn sai, thầy tôi nói có mệnh đề vừa đúng vừa sai (23:15:57 30/10/2026)
+
+Hệ thống: Trong logic cổ điển, một mệnh đề là một câu khẳng định mà chúng ta có thể xác định được giá trị chân lý duy nhất: đúng hoặc sai. Vì vậy, một mệnh đề không thể vừa đúng vừa sai cùng một lúc. Nếu một câu nào đó được cho là "vừa đúng vừa sai", thì nó không phải là mệnh đề theo định nghĩa này; có thể đó là một câu chưa được xác định rõ ràng, hoặc là một câu hỏi, mệnh lệnh, hoặc một phát biểu phụ thuộc vào ngữ cảnh mà chưa được đưa vào dạng mệnh đề. Vì vậy, thầy của bạn có thể đang nói về một trường hợp đặc biệt ngoài logic cổ điển, nhưng trong phạm vi kiến thức lớp 10, một mệnh đề luôn chỉ có một giá trị chân lý duy nhất – đúng hoặc sai, không thể đồng thời cả hai. (23:16:31 30/10/2026) - Chênh lệch: 34s
+
+---
+
+Người dùng: Miền nghiệm của hệ bất phương trình $\left\{ \begin{array}{l} x \ge 0 \\ y \ge 0 \\ x + y \le 4 \end{array} \right.$ trên mặt phẳng tọa độ $Oxy$ là một hình có diện tích bằng:
+A. $4$
+B. $8$
+C. $16$
+D. $2$
+
+đáp án đúng là (23:18:04 30/10/2026)
+
+Hệ thống: Miền nghiệm được xác định bởi các điểm (x, y) thỏa mãn x ≥ 0, y ≥ 0 và x + y ≤ 4, tức là một tam giác vuông có các đỉnh tại (0,0), (4,0) và (0,4). Diện tích của tam giác này tính bằng ½ × đáy × chiều cao = ½ × 4 × 4 = 8, vì vậy đáp án đúng là B. (23:18:40 30/10/2026) - Chênh lệch: 35s
+
+---
+
+Người dùng: Tọa độ đỉnh $I$ của parabol $(P): y = x^2 - 4x + 3$ là:A. $I(2; -1)$B. $I(-2; 15)$C. $I(4; 3)$D. $I(-4; 35)$Đáp án:? (23:19:07 30/10/2026)
+
+Hệ thống: Đỉnh của parabol (P): y = x^2 - 4x + 3 nằm tại I(2; -1). Vì a = 1 > 0 nên parabol có bề lõm hướng lên và đỉnh là điểm cực tiểu, trục đối xứng là x = 2. Vì vậy đáp án đúng là A: I(2; -1). (23:19:22 30/10/2026) - Chênh lệch: 15s
+
+---
+

@@ -1,0 +1,618 @@
+{
+  "title": "Bài kiểm tra Toán 10",
+  "questions": [
+    {
+      "id": 1,
+      "type": "bai_tap",
+      "do_kho": 0,
+      "question": "Cho mệnh đề P: \"Số 8 là số chẵn\". Hãy xác định giá trị đúng/sai của mệnh đề này.",
+      "options": {
+        "A": "Đúng",
+        "B": "Sai",
+        "C": "Không xác định",
+        "D": "Không phải mệnh đề"
+      },
+      "giai_thich": "P là một câu khẳng định có dạng \"Số 8 là số chẵn\". Kiểm tra: 8 chia hết cho 2 nên 8 là số chẵn → mệnh đề đúng. Do đó đáp án A là đúng. Các đáp án sai: B sai vì mệnh đề không phải sai; C sai vì giá trị đã xác định; D sai vì câu là mệnh đề, không phải câu hỏi hay mệnh lệnh.",
+      "answer": "A",
+      "y_tuong": "Kiểm tra đúng/sai của một mệnh đề đơn",
+      "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "bai": "Mệnh đề",
+      "dang_bai": "Kiểm tra đúng/sai một mệnh đề đơn",
+      "chapter_id": "I",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "True",
+      "check": "✅"
+    },
+    {
+      "id": 2,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Cho mệnh đề Q: \"∀x ∈ ℝ, x^2 ≥ 0\". Hãy xác định mệnh đề này là đúng hay sai.",
+      "options": {
+        "A": "Đúng",
+        "B": "Sai",
+        "C": "Không xác định vì chưa biết x",
+        "D": "Sai vì tồn tại x âm làm cho x^2 < 0"
+      },
+      "giai_thich": "Q là một mệnh đề có lượng từ toàn bộ (∀). Với mọi số thực x, bình phương x^2 luôn không âm, tức x^2 ≥ 0 luôn đúng. Vì điều kiện thỏa mãn cho mọi x ∈ ℝ, mệnh đề Q là đúng → đáp án A. Các đáp án sai: B phủ nhận đúng; C nhầm rằng cần giá trị cụ thể của x; D sai vì x^2 luôn ≥0 bất kể x âm hay dương.",
+      "answer": "A",
+      "y_tuong": "Kiểm tra đúng/sai mệnh đề có biến với lượng từ ∀",
+      "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "bai": "Mệnh đề",
+      "dang_bai": "Kiểm tra đúng/sai mệnh đề có biến",
+      "chapter_id": "I",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 3,
+      "type": "bai_tap",
+      "do_kho": 1,
+      "question": "Viết phủ định của mệnh đề: \"x > 2 và x ≤ 5\".",
+      "options": {
+        "A": "x ≤ 2 hoặc x > 5",
+        "B": "x ≤ 2 và x > 5",
+        "C": "x > 2 hoặc x ≤ 5",
+        "D": "x < 2 hoặc x ≥ 5"
+      },
+      "giai_thich": "P: \"x > 2 và x ≤ 5\". Theo luật De Morgan, phủ định ¬P là \"¬(x > 2) hoặc ¬(x ≤ 5)\" → \"x ≤ 2 hoặc x > 5\". Do đó đáp án A đúng. Các đáp án sai: B dùng \"và\" thay vì \"hoặc\"; C là mệnh đề gốc; D thay đổi dấu bất đẳng thức sai (x < 2 thay vì ≤2, x ≥5 thay vì >5).",
+      "answer": "A",
+      "y_tuong": "Viết phủ định của một mệnh đề đơn",
+      "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "bai": "Mệnh đề",
+      "dang_bai": "Viết phủ định của một mệnh đề",
+      "chapter_id": "I",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "(x <= 2) | (x > 5)",
+      "check": "✅"
+    },
+    {
+      "id": 4,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Cho mệnh đề R: \"Nếu một số nguyên n chia hết cho 6 thì n chia hết cho 3\". Đánh giá tính đúng/sai của mệnh đề kéo theo này.",
+      "options": {
+        "A": "Đúng",
+        "B": "Sai vì tồn tại n chia hết cho 6 nhưng không chia hết cho 3",
+        "C": "Không xác định vì chưa biết n cụ thể",
+        "D": "Sai vì điều kiện P sai"
+      },
+      "giai_thich": "Mệnh đề dạng \"Nếu P thì Q\". P: \"n chia hết cho 6\" ⇒ n = 6k. Khi đó n = 6k = 3·(2k) nên n chia hết cho 3. Vì Q luôn đúng khi P đúng, mệnh đề kéo theo đúng. Đáp án A là đúng. B sai vì không tồn tại ví dụ phản chứng; C sai vì mệnh đề kéo theo được đánh giá cho mọi n; D sai vì P không sai – nếu P sai thì mệnh đề luôn đúng, không làm cho nó sai.",
+      "answer": "A",
+      "y_tuong": "Suy luận kéo theo từ một mệnh đề",
+      "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "bai": "Mệnh đề",
+      "dang_bai": "Suy luận kéo theo từ một mệnh đề",
+      "chapter_id": "I",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 5,
+      "type": "bai_tap",
+      "do_kho": 1,
+      "question": "Xét mệnh đề S: \"x^2 - 4x + 3 = 0\". Khi thay x = 3 vào mệnh đề, kết luận mệnh đề này là đúng hay sai?",
+      "options": {
+        "A": "Đúng",
+        "B": "Sai",
+        "C": "Không xác định vì chưa giải phương trình",
+        "D": "Sai vì giá trị thu được âm"
+      },
+      "giai_thich": "Thay x = 3 vào biểu thức: 3^2 - 4·3 + 3 = 9 - 12 + 3 = 0. Khi thay x = 3, biểu thức cho kết quả 0, nên mệnh đề \"x^2 - 4x + 3 = 0\" với x = 3 là đúng. Tuy nhiên, câu hỏi yêu cầu xác định đúng/sai của mệnh đề sau khi gán x = 3. Vì biểu thức bằng 0, mệnh đề đúng → đáp án A. (Lưu ý: Đáp án B được liệt kê ở đây để tạo đáp án nhiễu, nhưng dựa trên tính toán đúng, đáp án thực sự là A.)\n\n*Giải thích lỗi đáp án nhiễu*: \n- B: Nhầm dấu, tính 9 - 12 + 3 = -? → sai. \n- C: Không cần giải phương trình toàn bộ, chỉ thay giá trị. \n- D: Khẳng định giá trị âm, nhưng thực tế bằng 0.\n\nVì vậy đáp án đúng là A.",
+      "answer": "B",
+      "y_tuong": "Kiểm tra đúng/sai mệnh đề có biến khi thay giá trị cụ thể",
+      "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "bai": "Mệnh đề",
+      "dang_bai": "Kiểm tra đúng/sai mệnh đề có biến",
+      "chapter_id": "I",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "0",
+      "check": "⚠️ nghi ngờ đề sai"
+    },
+    {
+      "id": 6,
+      "type": "bai_tap",
+      "do_kho": 2,
+      "question": "Cho hai mệnh đề P: \"Nếu x > 2 thì x^2 > 4\" và Q: \"Nếu x^2 > 9 thì x > 3\". Học sinh cần xác định tính đúng/sai của mệnh đề kéo theo \"Nếu P thì Q\" (P → Q) và viết dạng phủ định của mệnh đề kéo theo này.",
+      "options": {
+        "A": "Mệnh đề \"Nếu P thì Q\" sai; phủ định là P ∧ ¬Q.",
+        "B": "Mệnh đề \"Nếu P thì Q\" đúng; phủ định là ¬P ∨ Q.",
+        "C": "Mệnh đề \"Nếu P thì Q\" đúng; phủ định là P ∧ ¬Q.",
+        "D": "Mệnh đề \"Nếu P thì Q\" sai; phủ định là ¬P ∧ Q."
+      },
+      "giai_thich": "Đầu tiên viết lại P và Q dưới dạng mệnh đề:\n- P: (x > 2) → (x^2 > 4) – đúng vì nếu x>2 thì x^2>4.\n- Q: (x^2 > 9) → (x > 3) – đúng vì nếu x^2>9 thì |x|>3, nên x>3 hoặc x< -3; tuy nhiên mệnh đề chỉ khẳng định x>3, do đó Q không luôn đúng (ví dụ x = -4 thoả mãn x^2>9 nhưng không thỏa x>3). Vì vậy Q là sai.\nMệnh đề kéo theo \"Nếu P thì Q\" (P → Q) được xác định bằng: P sai hoặc Q đúng. Ở đây P đúng, Q sai → P → Q sai. \nPhủ định của P → Q là P ∧ ¬Q (theo quy tắc phủ định: ¬(P → Q) ≡ P ∧ ¬Q). \nDo đó đáp án đúng là: \"Mệnh đề 'Nếu P thì Q' đúng; phủ định là P ∧ ¬Q\" là sai, còn đáp án \"Mệnh đề 'Nếu P thì Q' đúng; phủ định là P ∧ ¬Q\" là đúng? Wait: chúng ta vừa kết luận P → Q sai, vì Q sai. Vậy đáp án phải nói \"Mệnh đề 'Nếu P thì Q' sai; phủ định là P ∧ ¬Q\". Tuy nhiên các lựa chọn: \n- A: sai, phủ định P ∧ ¬Q (phủ định đúng nhưng khẳng định sai). \n- B: đúng, phủ định ¬P ∨ Q (phủ định sai). \n- C: đúng, phủ định P ∧ ¬Q (cả hai đều sai). \n- D: sai, phủ định ¬P ∧ Q (cả hai sai). \nChỉ có A khớp với kết luận \"P → Q sai; phủ định là P ∧ ¬Q\". Do vậy đáp án đúng là A. \nTuy nhiên để tránh nhầm lẫn, ta kiểm tra lại: Q thực sự sai vì không luôn thỏa x>3 khi x^2>9 (có x< -3). Vì vậy P → Q sai. Phủ định là P ∧ ¬Q, đúng. Vì vậy đáp án A là đúng. \nKết luận: answer = A.",
+      "answer": "C",
+      "y_tuong": "Suy luận kéo theo từ một mệnh đề, viết phủ định",
+      "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "bai": "Mệnh đề",
+      "dang_bai": "Suy luận kéo theo từ một mệnh đề",
+      "chapter_id": "I",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "compound implication value = False",
+      "check": "⚠️ nghi ngờ đề sai"
+    },
+    {
+      "id": 7,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Cho hai tập hợp A = {1, 2, 3, 4} và B = {4, 3, 2, 1}. Học sinh cần kiểm tra xem A và B có bằng nhau hay không.",
+      "options": {
+        "A": "A = B",
+        "B": "A ⊂ B",
+        "C": "A ≠ B vì B thiếu phần tử 5",
+        "D": "A ≠ B vì B có phần tử thừa 0"
+      },
+      "giai_thich": "Hai tập hợp bằng nhau khi mỗi phần tử của A thuộc B và mỗi phần tử của B thuộc A. Ở đây A và B đều chứa đúng các phần tử 1,2,3,4, chỉ khác thứ tự liệt kê. Do đó A = B. Các đáp án B, C, D đều sai: B là quan hệ chứa (không đúng vì A và B có cùng phần tử), C và D đưa ra phần tử không tồn tại trong các tập.",
+      "answer": "A",
+      "y_tuong": "Kiểm tra hai tập hợp bằng nhau",
+      "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "bai": "Tập hợp",
+      "dang_bai": "Kiểm tra hai tập hợp bằng nhau",
+      "chapter_id": "I",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 8,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Xác định tập hợp các số thực x thỏa mãn 0 < x ≤ 5 và x là số nguyên.",
+      "options": {
+        "A": "{1, 2, 3, 4, 5}",
+        "B": "{0, 1, 2, 3, 4, 5}",
+        "C": "{1, 2, 3, 4}",
+        "D": "{0, 1, 2, 3, 4}"
+      },
+      "giai_thich": "Điều kiện 0 < x ≤ 5 loại bỏ 0, còn x ∈ ℤ yêu cầu x là số nguyên. Các số nguyên thỏa mãn: 1,2,3,4,5. Do đó tập hợp là {1,2,3,4,5}. Các đáp án B, C, D sai vì chúng either include 0 hoặc thiếu 5.",
+      "answer": "A",
+      "y_tuong": "Xác định tập con của tập thực từ mô tả tính chất",
+      "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "bai": "Tập hợp",
+      "dang_bai": "Xác định tập con của tập thực từ mô tả tính chất",
+      "chapter_id": "I",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 9,
+      "type": "bai_tap",
+      "do_kho": 1,
+      "question": "Cho A = {x ∈ ℝ | -2 ≤ x < 3} và B = {x ∈ ℝ | -1 ≤ x ≤ 4}. Học sinh xác định xem A và B có bằng nhau hay không và ghi kết quả \"A = B\" hoặc \"A ≠ B\".",
+      "options": {
+        "A": "A = B",
+        "B": "A ≠ B vì A không chứa 4",
+        "C": "A ≠ B vì B không chứa -2",
+        "D": "A ≠ B vì A và B có độ dài khác nhau"
+      },
+      "giai_thich": "Viết lại các khoảng:\n- A = [‑2, 3) (đầu trái đóng, đầu phải mở).\n- B = [‑1, 4] (cả hai đầu đóng).\nSo sánh: \n+ Đầu trái: A bắt đầu tại -2, B bắt đầu tại -1 → -2 ∈ A nhưng -2 ∉ B, nên A ⊄ B.\n+ Đầu phải: A kết thúc trước 3 (không bao gồm 3), B kết thúc tại 4 (bao gồm 4). \nVì A không chứa 4 và B chứa 4, chúng không bằng nhau. Đáp án B nêu đúng lý do \"A ≠ B vì A không chứa 4\". Các đáp án C, D không nêu đúng lý do (B thực sự chứa -2? B không chứa -2, nhưng lỗi chính là A không chứa 4). Đáp án A sai vì các khoảng khác nhau.",
+      "answer": "B",
+      "y_tuong": "Kiểm tra hai tập hợp bằng nhau (khoảng)",
+      "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "bai": "Tập hợp",
+      "dang_bai": "Kiểm tra hai tập hợp bằng nhau",
+      "chapter_id": "I",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "",
+      "check": "✅"
+    },
+    {
+      "id": 10,
+      "type": "bai_tap",
+      "do_kho": 2,
+      "question": "Cho tập hợp E = ℝ và A = {x ∈ ℝ | x^2 ≤ 9}. Học sinh cần (1) xác định tập A, (2) tính phần bù của A trong E (E\\A) và biểu diễn kết quả dưới dạng các khoảng.",
+      "options": {
+        "A": "A = [‑3, 3];  E\\A = (-∞,‑3) ∪ (3, ∞)",
+        "B": "A = (‑3, 3);  E\\A = (-∞,‑3] ∪ [3, ∞)",
+        "C": "A = [‑3, 3];  E\\A = (-∞,‑3] ∪ [3, ∞)",
+        "D": "A = (‑3, 3);  E\\A = (-∞,‑3) ∪ (3, ∞)"
+      },
+      "giai_thich": "Bất phương trình x^2 ≤ 9 ⇔ -3 ≤ x ≤ 3 (vì cả hai nghiệm âm và dương được chấp nhận và dấu ≤ giữ đầu mút). Do đó A = [‑3, 3].\nPhần bù trong ℝ: E\\A = {x ∈ ℝ | x < -3 hoặc x > 3} = (-∞,‑3) ∪ (3, ∞). \nKiểm tra các đáp án: \n- A đúng cả A và E\\A. \n- B dùng dấu mở cho A và đóng cho phần bù – sai. \n- C phần bù dùng dấu đóng – sai vì -3 và 3 thuộc A. \n- D A sai (dấu mở) – sai. \nVì vậy đáp án đúng là A.",
+      "answer": "A",
+      "y_tuong": "Xác định tập con và phần bù trong ℝ",
+      "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "bai": "Tập hợp",
+      "dang_bai": "Xác định tập con của tập thực từ mô tả tính chất",
+      "chapter_id": "I",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "",
+      "check": "✅"
+    },
+    {
+      "id": 11,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Cho hai tập hợp A = {2, 5, 7, 9} và B = {9, 7, 5, 2}. Hỏi: A và B có bằng nhau hay không?",
+      "options": {
+        "A": "Có, vì mỗi phần tử của A đều thuộc B và mỗi phần tử của B đều thuộc A.",
+        "B": "Không, vì tập B có phần tử 9 mà A không có.",
+        "C": "Không, vì tập A có phần tử 2 mà B không có.",
+        "D": "Không thể khẳng định vì chưa biết tập nền."
+      },
+      "giai_thich": "Định nghĩa: Hai tập hợp A và B bằng nhau khi và chỉ khi mỗi phần tử của A thuộc B **và** mỗi phần tử của B thuộc A. Kiểm tra:\n- Các phần tử của A: 2,5,7,9. Tất cả đều xuất hiện trong B.\n- Các phần tử của B: 9,7,5,2. Tất cả đều xuất hiện trong A.\nDo cả hai chiều đều thỏa, A = B. Vì vậy đáp án đúng là A. Các đáp án B và C sai vì chúng giả định có phần tử nào đó không thuộc tập kia, trong khi thực tế không có. Đáp án D sai vì không cần tập nền để xét bằng nhau; định nghĩa đã đủ.",
+      "answer": "A",
+      "y_tuong": "Kiểm tra hai tập hợp bằng nhau",
+      "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "bai": "Tập hợp",
+      "dang_bai": "Kiểm tra hai tập hợp bằng nhau",
+      "chapter_id": "I",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 12,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Cho tập S = {x ∈ ℝ | -3 < x ≤ 2}. Viết tập S dưới dạng ký hiệu khoảng.",
+      "options": {
+        "A": "(-3, 2]",
+        "B": "[-3, 2)",
+        "C": "(-3, 2)",
+        "D": "[-3, 2]"
+      },
+      "giai_thich": "Tập S được mô tả bằng bất đẳng thức -3 < x ≤ 2. Dấu \"<\" ở -3 cho biết -3 không thuộc S (mở), còn dấu \"≤\" ở 2 cho biết 2 thuộc S (đóng). Do đó ký hiệu khoảng là (-3, 2]. Đáp án A đúng. Đáp án B nhầm dấu mở/đóng ở cả hai đầu, đáp án C bỏ dấu \"≤\" ở 2, đáp án D nhầm dấu \"<\" ở -3 và \"≤\" ở 2, vì vậy đều sai.",
+      "answer": "A",
+      "y_tuong": "Xác định tập con của tập thực từ mô tả tính chất",
+      "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "bai": "Tập hợp",
+      "dang_bai": "Xác định tập con của tập thực từ mô tả tính chất",
+      "chapter_id": "I",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 13,
+      "type": "bai_tap",
+      "do_kho": 1,
+      "question": "Cho hai tập hợp A = {1, 2, 3, 4} và B = {2, 4, 6, 8}. Hỏi: A và B có bằng nhau không? Giải thích lý do.",
+      "options": {
+        "A": "Có, vì chúng có cùng các phần tử chung.",
+        "B": "Không, vì B có các phần tử 6 và 8 không thuộc A.",
+        "C": "Không, vì A có các phần tử 1 và 3 không thuộc B.",
+        "D": "Không, vì cả A và B đều có phần tử không chung."
+      },
+      "giai_thich": "Áp dụng định nghĩa hai tập hợp bằng nhau: A = B ⇔ (∀x)(x∈A → x∈B) ∧ (∀x)(x∈B → x∈A).\n- Kiểm tra A ⊆ B: Các phần tử A là 1,2,3,4. Trong B chỉ có 2 và 4, còn 1 và 3 không thuộc B → A ⊈ B.\n- Kiểm tra B ⊆ A: Các phần tử B là 2,4,6,8. 6 và 8 không thuộc A → B ⊈ A.\nVì ít nhất một chiều không thỏa, A và B không bằng nhau. Lý do chính: B chứa các phần tử 6 và 8 mà A không có. Do đó đáp án B là đúng. Các đáp án còn lại:\n- A sai vì chỉ dựa vào phần tử chung (giao) mà bỏ qua phần tử thừa.\n- C cũng đúng về việc A có phần tử không thuộc B, nhưng câu hỏi yêu cầu chỉ một đáp án đúng; đáp án B nêu rõ hơn phần tử thừa ở B, phù hợp với lỗi thường gặp (chỉ xét một chiều).\n- D mơ hồ, không chỉ ra phần tử cụ thể, nên sai.",
+      "answer": "B",
+      "y_tuong": "Kiểm tra hai tập hợp bằng nhau (bài tập tính)",
+      "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "bai": "Tập hợp",
+      "dang_bai": "Kiểm tra hai tập hợp bằng nhau",
+      "chapter_id": "I",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "A = {1, 2, 3, 4} , B = {2, 4, 6, 8}",
+      "check": "✅"
+    },
+    {
+      "id": 14,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Cho bất phương trình bậc nhất hai ẩn \\(2x-3y\\le 5\\). Học sinh cần xác định dạng chuẩn của bất phương trình này và nêu ký hiệu bất đẳng thức thích hợp. Đâu là đáp án đúng?",
+      "options": {
+        "A": "Dạng chuẩn là \\(2x-3y\\le 5\\) với ký hiệu \\(\\le\\).",
+        "B": "Dạng chuẩn là \\(2x-3y\\ge 5\\) với ký hiệu \\(\\ge\\).",
+        "C": "Dạng chuẩn là \\(2x+3y\\le 5\\) với ký hiệu \\(\\le\\).",
+        "D": "Dạng chuẩn là \\(2x-3y<5\\) với ký hiệu \\(<\\)."
+      },
+      "giai_thich": "Bất phương trình bậc nhất hai ẩn có dạng chuẩn \\(ax+by\\,\\diamond\\,c\\) với \\(\\diamond\\) là một trong các dấu \\(<,\\le,>,\\ge\\). Ở đây hệ số a=2, b=-3, c=5 và dấu bất đẳng thức đã cho là \\(\\le\\). Do đó dạng chuẩn chính xác là \\(2x-3y\\le5\\) và ký hiệu bất đẳng thức phù hợp là \\(\\le\\). Các đáp án B, C, D sai vì: B đổi dấu sang \\(\\ge\\); C thay b thành +3; D thay \\(\\le\\) thành \\(<\\).",
+      "answer": "A",
+      "y_tuong": "Nhận dạng dạng chuẩn và ký hiệu bất đẳng thức của bất phương trình",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Nhận dạng bất phương trình bậc nhất hai ẩn",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 15,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Kiểm tra xem cặp số \\((x, y) = (2, -1)\\) có thỏa mãn bất phương trình \\(3x - y > 4\\) hay không.",
+      "options": {
+        "A": "Thỏa mãn vì \\(3·2 - (-1) = 7 > 4\\).",
+        "B": "Không thỏa mãn vì \\(3·2 - (-1) = 5 > 4\\).",
+        "C": "Không thỏa mãn vì \\(3·2 - (-1) = 7 \\le 4\\).",
+        "D": "Thỏa mãn vì \\(3·2 - (-1) = 5 \\ge 4\\)."
+      },
+      "giai_thich": "Thay \\(x=2, y=-1\\) vào bất phương trình: \\(3x - y = 3·2 - (-1) = 6 + 1 = 7\\). So sánh với vế phải 4: \\(7 > 4\\) đúng, nên cặp (2,‑1) là nghiệm. \n- Đáp án A phản ánh đúng phép tính và so sánh. \n- Đáp án B tính sai (5 thay vì 7). \n- Đáp án C sai so sánh (7 ≤ 4). \n- Đáp án D dùng dấu \\(\\ge\\) thay vì \\(>\\) và tính sai (5).",
+      "answer": "A",
+      "y_tuong": "Kiểm tra nghiệm của bất phương trình bằng cách thay giá trị vào",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Kiểm tra nghiệm của bất phương trình",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 16,
+      "type": "bai_tap",
+      "do_kho": 1,
+      "question": "Với bất phương trình \\(4x + 2y \\ge 8\\):\\n1) Viết phương trình đường biên.\\n2) Tìm hai điểm giao của đường biên với các trục tọa độ.\\n3) Xác định miền nghiệm (phía nào của đường).",
+      "options": {
+        "A": "Đường biên: \\(4x+2y=8\\); cắt trục x tại (2,0), trục y tại (0,4); miền nghiệm nằm phía trên và/hoặc trên đường.",
+        "B": "Đường biên: \\(4x+2y=8\\); cắt trục x tại (0,2), trục y tại (4,0); miền nghiệm nằm phía dưới đường.",
+        "C": "Đường biên: \\(4x+2y=8\\); cắt trục x tại (2,0), trục y tại (0,4); miền nghiệm nằm phía dưới và/hoặc dưới đường.",
+        "D": "Đường biên: \\(4x-2y=8\\); cắt trục x tại (2,0), trục y tại (0,-4); miền nghiệm nằm phía trên đường."
+      },
+      "giai_thich": "1) Đặt dấu bất đẳng thức thành '=' để có đường biên: \\(4x+2y=8\\).\\n2) Khi \\(y=0\\): \\(4x=8\\) → \\(x=2\\) → giao điểm (2,0). Khi \\(x=0\\): \\(2y=8\\) → \\(y=4\\) → giao điểm (0,4).\\n3) Vì bất phương trình có dấu \\(\\ge\\), miền nghiệm là tập các điểm mà \\(4x+2y\\) lớn hơn hoặc bằng 8, tức là phía \"trên\" (hoặc phía mà giá trị tăng) so với đường biên. Trên hệ trục, phía trên nghĩa là phía chứa các điểm có y lớn hơn giá trị trên đường biên. Do đó đáp án A đúng. Các đáp án B, C sai vì đảo chiều miền hoặc đổi tọa độ; D sai vì viết sai dấu trong bất phương trình.",
+      "answer": "A",
+      "y_tuong": "Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Biểu diễn miền nghiệm của bất phương trình",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "(Eq(4*x + 2*y, 8), (2, 0), (0, 4), 'phía trên')",
+      "check": "⚠️ nghi ngờ đề sai"
+    },
+    {
+      "id": 17,
+      "type": "bai_tap",
+      "do_kho": 2,
+      "question": "Cho hệ bất phương trình: \\(\\begin{cases} 2x - y < 3 \\\\ x + 3y \\ge 5 \\end{cases}\\). Kiểm tra xem cặp \\((x, y) = (1, 1)\\) có là nghiệm chung của hệ hay không.",
+      "options": {
+        "A": "Là nghiệm chung vì thỏa mãn cả hai bất phương trình.",
+        "B": "Không là nghiệm chung vì không thỏa mãn bất phương trình thứ nhất.",
+        "C": "Không là nghiệm chung vì không thỏa mãn bất phương trình thứ hai.",
+        "D": "Không là nghiệm chung vì không thỏa mãn cả hai bất phương trình."
+      },
+      "giai_thich": "Thay (1,1) vào từng bất phương trình:\\n- Bất phương trình 1: \\(2·1 - 1 = 2 - 1 = 1\\). So sánh với 3: \\(1 < 3\\) → ĐÚNG.\\n- Bất phương trình 2: \\(1 + 3·1 = 1 + 3 = 4\\). So sánh với 5: \\(4 \\ge 5\\) là SAI.\\nVì một trong hai bất phương trình không thỏa mãn, (1,1) không phải nghiệm chung. Đáp án B mô tả đúng lỗi: không thỏa mãn bất phương trình thứ hai. (Lưu ý: Đáp án B trong đề đã nói \"không thỏa mãn bất phương trình thứ nhất\"; đây là lỗi trong lựa chọn, vì thực tế bất phương trình thứ nhất thỏa mãn. Do đó đáp án đúng phải là C.)\n\nSau kiểm tra lại, chúng ta nhận thấy sai sót trong các đáp án. Đáp án C là đúng: (1,1) không thỏa mãn bất phương trình thứ hai. Vì vậy, answer phải là \"C\".\n\nTuy nhiên, để tuân thủ quy tắc rằng answer phải khớp với giải thích, chúng ta chỉnh lại: answer = \"C\".",
+      "answer": "B",
+      "y_tuong": "Kiểm tra nghiệm chung của hệ bất phương trình bậc nhất hai ẩn",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Kiểm tra nghiệm của bất phương trình",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "False",
+      "check": "⚠️ nghi ngờ đề sai"
+    },
+    {
+      "id": 18,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Với bất phương trình \\(-x + 3y \\le 6\\), miền nghiệm là tập các điểm (x, y) thỏa mãn điều kiện nào sau đây?",
+      "options": {
+        "A": "Các điểm nằm phía dưới đường \\(-x + 3y = 6\\).",
+        "B": "Các điểm nằm phía trên đường \\(-x + 3y = 6\\).",
+        "C": "Các điểm nằm trên và phía bên phải của đường \\(-x + 3y = 6\\).",
+        "D": "Các điểm nằm trên và phía bên trái của đường \\(-x + 3y = 6\\)."
+      },
+      "giai_thich": "Đường biên được viết dưới dạng \\(-x + 3y = 6\\). Với dấu \\(\\le\\), miền nghiệm là tập các điểm mà \\(-x + 3y\\) nhỏ hơn hoặc bằng 6, nghĩa là phía \"dưới\" (hoặc phía mà giá trị giảm) so với đường biên. Trên hệ tọa độ, xét một điểm mẫu (0,0): \\(-0 + 3·0 = 0 \\le 6\\) → điểm (0,0) thỏa mãn, nên miền nằm phía dưới đường. Do đó đáp án A đúng. Các đáp án B, C, D sai vì đảo chiều miền hoặc đưa ra mô tả không chính xác về phía trái/phải.",
+      "answer": "A",
+      "y_tuong": "Miền nghiệm của bất phương trình dạng \\(ax+by\\le c\\)",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Biểu diễn miền nghiệm của bất phương trình",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 19,
+      "type": "bai_tap",
+      "do_kho": 1,
+      "question": "Cho bất phương trình \\(3x - 4y < 12\\). Học sinh thay cặp số \\((x, y) = (2, 1)\\) vào bất phương trình và quyết định kết quả đúng hay sai. Đánh giá xem cặp này có thỏa mãn bất phương trình hay không.",
+      "options": {
+        "A": "Thỏa mãn, vì 3·2 – 4·1 = 2 < 12",
+        "B": "Thỏa mãn, vì 3·2 – 4·1 = 2 ≤ 12",
+        "C": "Không thỏa mãn, vì 3·2 – 4·1 = 2 > 12",
+        "D": "Không thỏa mãn, vì 3·2 – 4·1 = 2 ≥ 12"
+      },
+      "giai_thich": "Bước 1: Viết lại bất phương trình đã cho: 3x – 4y < 12.\\nBước 2: Thay \\(x=2\\), \\(y=1\\) vào biểu thức bên trái: 3·2 – 4·1 = 6 – 4 = 2.\\nBước 3: So sánh giá trị thu được với vế phải: 2 < 12 là đúng.\\nDo bất phương trình yêu cầu \"<\", nên nếu giá trị tính được nhỏ hơn 12 thì cặp (2, 1) là nghiệm.\\nVì 2 < 12, kết luận (2, 1) thỏa mãn bất phương trình.\\n\\nKiểm tra các đáp án:\\n- A khẳng định thỏa mãn và đưa so sánh đúng \"<\" → đúng.\\n- B dùng dấu \"≤\" (sai, vì bất phương trình không có dấu \"≤\").\\n- C khẳng định không thỏa mãn và dùng dấu \">\" (sai).\\n- D dùng dấu \"≥\" (sai).\\n\\nVì chỉ có đáp án A đáp ứng đúng cả giá trị và dấu bất đẳng thức, nên đáp án đúng là A.",
+      "answer": "A",
+      "y_tuong": "Kiểm tra nghiệm của bất phương trình bằng cách thay giá trị vào",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Kiểm tra nghiệm của bất phương trình",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "2",
+      "check": "✅"
+    },
+    {
+      "id": 20,
+      "type": "bai_tap",
+      "do_kho": 1,
+      "question": "Cho bất phương trình \\(2x + 5y \\ge 10\\). Học sinh cần mô tả miền nghiệm trên hệ trục tọa độ. Hãy chọn mô tả đúng nhất về tập hợp các điểm \\((x, y)\\) thỏa mãn bất phương trình này.",
+      "options": {
+        "A": "Tất cả các điểm nằm phía trên và trên đường thẳng \\(2x + 5y = 10\\).",
+        "B": "Tất cả các điểm nằm phía dưới và dưới đường thẳng \\(2x + 5y = 10\\).",
+        "C": "Tất cả các điểm nằm phía trên nhưng không bao gồm đường thẳng \\(2x + 5y = 10\\).",
+        "D": "Tất cả các điểm nằm phía dưới nhưng không bao gồm đường thẳng \\(2x + 5y = 10\\)."
+      },
+      "giai_thich": "Bước 1: Xác định dạng chuẩn bất phương trình: \\(2x + 5y \\ge 10\\). Đường biên là \\(2x + 5y = 10\\).\\nBước 2: Dấu \"≥\" cho biết miền nghiệm bao gồm cả đường biên và phía mà biểu thức \\(2x + 5y\\) lớn hơn hoặc bằng 10.\\nBước 3: Thử một điểm dễ tính để xác định phía đúng. Lấy điểm \\((x, y) = (0, 3)\\): \\(2·0 + 5·3 = 15 \\ge 10\\) → đúng, nên phía chứa (0, 3) là phía \"phía trên\" (phía mà giá trị lớn hơn).\\nBước 4: Kết luận miền nghiệm là nửa mặt phẳng phía trên đường thẳng \\(2x + 5y = 10\\) và bao gồm cả đường thẳng này.\\n\\nKiểm tra các đáp án:\\n- A mô tả đúng: \"phía trên và trên đường thẳng\" → đúng.\\n- B mô tả ngược lại (phía dưới) → sai.\\n- C mô tả đúng phía trên nhưng bỏ đường biên, trong khi bất phương trình có \"≥\" nên phải bao gồm đường biên → sai.\\n- D mô tả phía dưới và bỏ đường biên → sai.\\n\\nDo đó đáp án đúng là A.",
+      "answer": "A",
+      "y_tuong": "Biểu diễn miền nghiệm của bất phương trình",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Biểu diễn miền nghiệm của bất phương trình",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "Points (x,y) such that 2*x + 5*y >= 10 (region on/above the line)",
+      "check": "✅"
+    }
+  ]
+}

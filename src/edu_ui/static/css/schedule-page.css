@@ -1,0 +1,143 @@
+.schedule-page {
+  --rl-green: var(--app-green);
+  --rl-soft: var(--app-green-soft);
+  --rl-warm: var(--app-pink-soft);
+  --rl-line: var(--app-line);
+  --rl-ink: var(--app-text);
+  --rl-panel: var(--app-panel);
+}
+
+.schedule-page .page-content {
+  width: min(100%, 1420px);
+  margin-inline: auto;
+}
+
+.schedule-page .rl-shell {
+  max-width: 1360px;
+  padding: 8px 0 42px;
+  color: var(--app-text);
+}
+
+.schedule-page .rl-heading {
+  border-bottom: 1px solid var(--app-line);
+  padding-bottom: 20px;
+}
+
+.schedule-page .rl-heading h1 {
+  letter-spacing: -.04em;
+}
+
+.schedule-page .rl-kicker {
+  color: var(--app-blue);
+}
+
+.schedule-page .rl-toolbar {
+  gap: 12px;
+  border: 1px solid var(--app-line);
+  border-radius: 16px;
+  background: var(--app-panel);
+  padding: 13px;
+  box-shadow: 0 6px 20px rgb(34 58 91 / 4%);
+}
+
+.schedule-page .rl-filter select,
+.schedule-page .rl-filter input,
+.schedule-page .rl-url,
+.schedule-page .rl-search {
+  border-color: var(--app-line);
+  border-radius: 10px;
+  background: var(--app-bg);
+  color: var(--app-text);
+}
+
+.schedule-page .rl-button {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: linear-gradient(110deg, #16785d, #27936d);
+  color: #fff;
+  box-shadow: 0 5px 13px rgb(23 131 101 / 14%);
+  transition: transform 150ms ease, filter 150ms ease, box-shadow 150ms ease;
+}
+
+.schedule-page .rl-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  filter: brightness(1.07);
+  box-shadow: 0 8px 17px rgb(23 131 101 / 20%);
+}
+
+.schedule-page .rl-button.rl-quiet {
+  border-color: color-mix(in srgb, var(--app-pink) 33%, var(--app-line));
+  background: var(--app-pink-soft);
+  color: var(--app-pink-strong);
+  box-shadow: none;
+}
+
+.schedule-page .rl-plan-card,
+.schedule-page .rl-card,
+.schedule-page .rl-session-card {
+  border-color: var(--app-line);
+  border-radius: 17px;
+  background: var(--app-panel);
+  box-shadow: 0 8px 23px rgb(34 58 91 / 5%);
+  transition: transform 170ms ease, border-color 170ms ease, box-shadow 170ms ease;
+}
+
+.schedule-page .rl-plan-card:hover,
+.schedule-page .rl-session-card:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--app-blue) 44%, var(--app-line));
+  box-shadow: 0 13px 28px rgb(34 58 91 / 9%);
+}
+
+.schedule-page .rl-card-top {
+  border-bottom-color: var(--app-line);
+}
+
+.schedule-page .rl-tag,
+.schedule-page .rl-mark {
+  border-color: color-mix(in srgb, var(--app-blue) 23%, var(--app-line));
+  background: var(--app-blue-soft);
+  color: var(--app-blue);
+}
+
+.schedule-page .rl-tag.rl-warm {
+  border-color: color-mix(in srgb, var(--app-pink) 23%, var(--app-line));
+  background: var(--app-pink-soft);
+  color: var(--app-pink-strong);
+}
+
+.schedule-page .rl-progress {
+  background: var(--app-blue-soft);
+}
+
+.schedule-page .rl-progress span {
+  background: linear-gradient(90deg, var(--app-green), #62b58e);
+}
+
+.schedule-page .rl-dialog {
+  border: 1px solid var(--app-line);
+  border-radius: 20px;
+  background: var(--app-panel);
+  color: var(--app-text);
+  box-shadow: var(--app-shadow);
+}
+
+.schedule-page .rl-dialog::backdrop {
+  background: rgb(25 41 59 / 42%);
+  backdrop-filter: blur(4px);
+}
+
+.schedule-page .rl-dialog-error {
+  color: #c4496f;
+}
+
+@media (max-width: 700px) {
+  .schedule-page .rl-shell {
+    padding: 0 0 28px;
+  }
+
+  .schedule-page .rl-toolbar {
+    border-radius: 13px;
+    padding: 10px;
+  }
+}

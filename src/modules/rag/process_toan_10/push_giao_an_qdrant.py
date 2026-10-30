@@ -3,7 +3,7 @@ from pathlib import Path
 import uuid
 
 ROOT_DIR = Path(__file__).resolve().parents[4]
-LESSON_PLAN_DIR = ROOT_DIR / 'src/modules/documents/lesson_plans/chan_troi_sang_tao/toan_10'
+LESSON_PLAN_DIR = ROOT_DIR / 'src/modules/documents/lesson_plans/chan_troi_sang_tao/lich_su_10'
 
 
 def build_all_chunks(folder=LESSON_PLAN_DIR, *, files=None, on_progress=None):

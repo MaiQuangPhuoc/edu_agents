@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#f8f4f7">
+  <link rel="icon" type="image/svg+xml" href="/ui-static/img/favicon.svg?v=eduagent-1">
+  <meta name="theme-color" content="#f5f8fc">
   <title>{% block document_title %}EDUAGENT{% endblock %}</title>
   <script>
     try {
@@ -14,9 +15,10 @@
     }
   </script>
   <link rel="stylesheet" href="/ui-static/css/app.css">
-  {% block page_styles %}{% endblock %}
   <link rel="stylesheet" href="/ui-static/css/site-theme.css">
   <link rel="stylesheet" href="/ui-static/css/sidebar.css?v=history-7">
+  <link rel="stylesheet" href="/ui-static/css/ui-polish.css?v=4">
+  {% block page_styles %}{% endblock %}
   <script defer src="/ui-static/js/theme.js"></script>
   <script defer src="/ui-static/js/sidebar.js?v=history-7"></script>
   {% block page_scripts %}{% endblock %}

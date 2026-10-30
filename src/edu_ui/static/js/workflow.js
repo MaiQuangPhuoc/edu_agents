@@ -342,16 +342,31 @@ window.EduFlow = (() => {
     }
     if (payload.matrix) bubble.append(matrix(payload.matrix));
     if (payload.interests?.length) {
-      const box = element('form', 'wf-interests');
+      const box = element('form', 'wf-interests'), ratingId = id();
       payload.interests.forEach((row, i) => {
-        const label = element('label', 'wf-interest');
+        const label = element('div', 'wf-interest');
         label.append(element('span', '', `${i + 1}. ${row.lesson} › ${row.section}`));
-        const select = element('select'); select.required = true; select.setAttribute('aria-label', row.section);
-        [['', 'Chưa chọn'], ['0', '0 · Không quan tâm'], ['1', '1 · Ít quan tâm'], ['2', '2 · Bình thường'], ['3', '3 · Quan tâm cao']].forEach(([value, text]) => {const op=element('option', '', text); op.value=value; select.append(op);});
-        label.append(select); box.append(label);
+        const choices = element('fieldset', 'wf-rating');
+        choices.setAttribute('aria-label', `Mức độ quan tâm: ${row.section}`);
+        choices.append(element('legend', '', 'Chọn mức độ quan tâm'));
+        [['0', 'Không quan tâm'], ['1', 'Ít quan tâm'], ['2', 'Bình thường'], ['3', 'Quan tâm cao']].forEach(([value, text]) => {
+          const option = element('label', `wf-rating-option tone-${value}`);
+          const input = element('input');
+          input.type = 'radio'; input.name = `${ratingId}-${i}`; input.value = value; input.required = true;
+          const number = element('span', 'wf-rating-number', value);
+          const description = element('span', 'wf-rating-label', text);
+          option.append(input, number, description);
+          choices.append(option);
+        });
+        label.append(choices); box.append(label);
       });
       const b = element('button', 'wf-primary', 'Gửi đánh giá'); b.type = 'submit'; box.append(b);
-      box.addEventListener('submit', e => {e.preventDefault(); const value = [...box.querySelectorAll('select')].map(s => s.value).join(','); send(value, `Đánh giá mức quan tâm: ${value}`, payload);}); bubble.append(box);
+      box.addEventListener('submit', e => {
+        e.preventDefault();
+        const value = [...box.querySelectorAll('.wf-rating')].map(group => group.querySelector('input:checked')?.value ?? '').join(',');
+        send(value, `Đánh giá mức quan tâm: ${value}`, payload);
+      });
+      bubble.append(box);
     }
     const actions = element('div', 'wf-actions');
     (payload.actions || []).forEach(a => {

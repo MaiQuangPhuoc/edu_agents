@@ -2,15 +2,17 @@
 {% block document_title %}EDUAGENT — Không gian học tập{% endblock %}
 {% block page_styles %}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="/ui-static/css/workflow.css?v=workflow-ui-4">
+<link rel="stylesheet" href="/ui-static/css/workflow.css?v=workflow-ui-8">
+<link rel="stylesheet" href="/ui-static/css/study-page.css?v=3">
 {% endblock %}
 {% block page_scripts %}
 <script async src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
 <script async src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
 <script async src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
-<script defer src="/ui-static/js/workflow.js?v=workflow-ui-4"></script>
+<script defer src="/ui-static/js/workflow.js?v=workflow-ui-7"></script>
 <script defer src="/ui-static/js/study.js?v=workflow-ui-4"></script>
 {% endblock %}
+{% block body_class %}study-page{% endblock %}
 {% block page_title %}Không gian học tập{% endblock %}
 {% block page_description %}Từ mục tiêu đến từng buổi học.{% endblock %}
 {% block content %}
