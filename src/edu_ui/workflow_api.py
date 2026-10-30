@@ -266,7 +266,8 @@ def path_data(sid: str):
     lp = session["state"].get("learning_path")
     if not lp:
         raise HTTPException(404, "Lộ trình chi tiết chưa sẵn sàng.")
-    return {"path": lp, "subject": (session["state"].get("lp_window") or {}).get("subject", ""),
+    public_lp = {key: value for key, value in lp.items() if key != "student_model_snapshot"}
+    return {"path": public_lp, "subject": (session["state"].get("lp_window") or {}).get("subject", ""),
             "student_id": session["student_id"], "revision": session["revision"]}
 
 

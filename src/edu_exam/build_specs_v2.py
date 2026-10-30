@@ -136,7 +136,7 @@ def build_specs(state: ExamState, llm_client: LLMClient) -> dict:
     print(f">>> build_specs hoàn tất: {len(all_specs)} specs")
 
     return {
-        "messages":       [AIMessage(content=specs_json)],
+        # "messages":       [AIMessage(content=specs_json)],
         "question_specs": all_specs,
         "specs_done":     len(all_specs) > 0,
         "current_step":   "build_specs",

@@ -19,9 +19,10 @@ TÓM TẮT TỪNG CHƯƠNG
 {tom_tat}
 
 NGUYÊN TẮC
-0. Chỉ dựa vào thông tin trên; không bịa chương, điểm số, thời gian.
-1. Không thêm hoặc sửa giai đoạn; chỉ mô tả.
-2. Điều chưa chắc chắn thì nói là dự kiến.
+1. Chỉ dựa vào thông tin trên; không bịa chương, điểm số, thời gian.
+2. Không thêm hoặc sửa giai đoạn; chỉ mô tả.
+3. Điều chưa chắc chắn thì nói là dự kiến.
+4. Viết bằng tiếng Việt tự nhiên cho học sinh đọc. Không dùng tên trường hay tên biến trong hồ sơ (ví dụ uu_tien, muc_nam, do_tin_cay, diem_hien_tai); diễn đạt bằng lời.
 
 ĐẦU RA
 Xuất đúng schema: muc_tieu_tong, chien_luoc.

@@ -412,7 +412,7 @@
         typeof message.content === 'string'
       ) {
         const rendered = appendMessage(message.role, message.content);
-        if (message.payload) F.decorate(rendered.bubble, message.payload, actionSend);
+        if (message.role === 'bot') F.decorate(rendered.bubble, message.payload || {answer: message.content}, actionSend);
       }
     }
     renderSources(conversation.sources);
@@ -576,6 +576,19 @@
   // POST /api/ui/workflows
   // ==========================================
 
+  document.addEventListener('eduagent:compose', e => {
+    if (activeController) return;
+    input.placeholder = e.detail?.placeholder || 'Nhập yêu cầu của bạn…'; input.focus();
+  });
+  function updateCurrentSkeleton(payload) {
+    const all = readConversations(), c = all.find(x => x.id === activeConversationId);
+    if (!c) return;
+    const last = [...c.messages].reverse().find(m => m.role === 'bot');
+    if (!last || last.payload?.skeleton) return;
+    last.content = payload.answer; last.payload = payload; writeConversations(all);
+    const bubble = [...messages.querySelectorAll('.message.bot .bubble')].pop();
+    if (bubble) {bubble.replaceChildren(F.rich('div', '', payload.answer)); F.decorate(bubble, payload, actionSend);}
+  }
   function actionSend(value, label, payload) {
     if (activeController) return;
     if (payload && (payload.session_id !== sessionId || payload.revision !== revision)) {
@@ -618,6 +631,7 @@
         const jid = snapshot.last_job || getActiveConversation()?.pending_job;
         if (jid && !activeController) await watchJob(jid);
       } else if (snapshot.revision > revision) acceptResult(snapshot);
+      else if (snapshot.revision === revision && snapshot.skeleton) updateCurrentSkeleton(snapshot);
     } catch (e) {if (e.status) storeSubmission(null); showNotice(e.message);}
   }
   async function watchJob(jid) {
@@ -767,6 +781,8 @@
 
   showMode();
   restoreConversationFromUrl();
+  const requestedMode = new URLSearchParams(location.search).get('mode');
+  if (!activeConversationId && ['qa', 'exam', 'planning'].includes(requestedMode)) chooseMode(requestedMode);
   async function readiness() {
     try {
       const data = await F.api('/api/ui/workflows/readiness');

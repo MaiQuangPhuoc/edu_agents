@@ -157,7 +157,7 @@ window.EduFlow = (() => {
   function refreshRich() {
     if (!window.marked || !window.DOMPurify) return;
     document.querySelectorAll('.rich-text[data-wf-raw]').forEach(node => {
-      const rendered = rich(node.tagName.toLowerCase(), node.className.replace(/\brich-text\b/g, '').trim(), node.dataset.wfRaw);
+      const rendered = (node.dataset.wfCompact ? compactRich : rich)(node.tagName.toLowerCase(), node.className.replace(/\brich-text\b/g, '').trim(), node.dataset.wfRaw);
       node.replaceWith(rendered);
     });
     if (window.katex) document.querySelector('#render-notice')?.setAttribute('hidden', '');
@@ -185,7 +185,161 @@ window.EduFlow = (() => {
       box.append(d);
     }); return box;
   }
+  function safeResourceURL(value) {
+    try {const u = new URL(value); return ['http:', 'https:'].includes(u.protocol) ? u.href : null;} catch {return null;}
+  }
+  function copyLinkButton(url) {
+    const b = element('button', 'wf-copy-link', 'Sao chép'); b.type = 'button'; b.setAttribute('aria-label', 'Sao chép liên kết');
+    b.addEventListener('click', async () => {
+      try {
+        if (!navigator.clipboard?.writeText) throw new Error('clipboard unavailable');
+        await navigator.clipboard.writeText(url); b.textContent = 'Đã sao chép';
+        setTimeout(() => b.textContent = 'Sao chép', 1800);
+      } catch {
+        let field = b.parentNode.querySelector('.wf-link-value');
+        if (!field) {field = element('input', 'wf-link-value'); field.readOnly = true; field.value = url; field.setAttribute('aria-label', 'Liên kết để sao chép'); b.parentNode.append(field);}
+        field.focus(); field.select(); b.textContent = 'Nhấn Ctrl+C';
+      }
+    }); return b;
+  }
+  function compactRich(tag, cls, text) {
+    const node = rich(tag, cls, text); node.dataset.wfCompact = 'true';
+    // The raw text remains available in its collapsed original version.
+    node.querySelectorAll('a[href]').forEach(a => {
+      const url = safeResourceURL(a.getAttribute('href'));
+      if (!url) {a.removeAttribute('href'); return;}
+      a.title = a.textContent;
+      a.textContent = /youtube|youtu\.be|vimeo|video/i.test(url + ' ' + a.title) ? 'Video' : 'Tài liệu';
+      a.classList.add('wf-short-link'); a.after(copyLinkButton(url));
+    });
+    return node;
+  }
+  function expandableText(title, text, max = 180) {
+    const box = element('section', 'wf-outline-summary'); box.append(element('h4', '', title));
+    const value = String(text || 'Chưa có thông tin.');
+    if (value.length <= max) box.append(compactRich('div', '', value));
+    else {
+      const preview = compactRich('div', 'wf-outline-preview', value); box.append(preview);
+      const details = element('details', 'wf-outline-more'), summary = element('summary', '', 'Xem đầy đủ');
+      details.append(summary, compactRich('div', '', value));
+      details.addEventListener('toggle', () => {preview.hidden = details.open; summary.textContent = details.open ? 'Thu gọn' : 'Xem đầy đủ';}); box.append(details);
+    } return box;
+  }
+  function legacyOutline(text) {
+    // Display-only compatibility for the exact headings emitted by _format_roadmap.
+    // Never reconstruct a backend planning state from this text.
+    const value = normalizeText(text);
+    const goal = value.match(/^\*\*Mục tiêu tổng:\*\*\s*(.*)$/m);
+    const strategy = value.match(/^\*\*Chiến lược:\*\*\s*(.*)$/m);
+    const matches = [...value.matchAll(/^\*\*Giai đoạn\s+(\d+):\s*(.*?)\*\*\s*(?:\(([^\n]*)\))?\s*$/gm)];
+    if (!goal || !strategy || !matches.length) return null;
+    const assumptionsAt = value.search(/^\*\*(?:Điểm mình đang giả định|Giả định)/m);
+    const endPrompt = value.search(/^Bạn thấy sườn này thế nào/m);
+    const end = Math.min(...[assumptionsAt, endPrompt, value.length].filter(x => x >= 0));
+    const phases = matches.map((m, index) => ({thu_tu: Number(m[1]), ten: m[2], mon_hoc: m[3] || '', body: value.slice(m.index + m[0].length, matches[index + 1]?.index ?? end).trim()}));
+    const assumptions = assumptionsAt >= 0 ? value.slice(assumptionsAt, endPrompt >= 0 ? endPrompt : value.length).split('\n').filter(line => /^-\s/.test(line)).map(line => line.replace(/^-\s+/, '')) : [];
+    const before = value.slice(0, goal.index).trim();
+    return {goal: goal[1], strategy: strategy[1], phases, assumptions, assessment: before ? {summary: before} : null, legacy: true};
+  }
+  function skeletonCard(data, fullText = '') {
+    const card = element('section', 'wf-skeleton'); card.setAttribute('aria-label', 'Sườn lộ trình học');
+    const phases = Array.isArray(data.phases) ? data.phases : [], assessment = data.assessment;
+    const header = element('header', 'wf-skeleton-heading'), titles = element('div');
+    titles.append(element('p', 'study-kicker', 'SƯỜN LỘ TRÌNH'), element('h3', '', 'Kế hoạch học tập đề xuất'));
+    header.append(titles, element('span', 'wf-outline-badge', `${phases.length} giai đoạn`)); card.append(header);
+    if (assessment) card.append(element('p', 'wf-outline-score', assessment.summary ? 'Kết quả đầu vào · xem trong tab bên dưới' : `Bài đầu vào: ${assessment.correct ?? '—'}/${assessment.total ?? '—'} câu đúng`));
+    if (data.legacy) card.append(element('p', 'study-muted', 'Bản xem từ nội dung hội thoại đã lưu.'));
+    const tabs = element('div', 'wf-outline-tabs'); tabs.setAttribute('role', 'tablist'); tabs.setAttribute('aria-label', 'Các mục của sườn lộ trình');
+    const panelArea = element('div'), panels = [], buttons = [], prefix = 'outline-' + id();
+    const sections = [['Tổng quan', 'overview'], ['Kết quả đầu vào', 'assessment'], ['Các giai đoạn', 'phases'], [`Giả định (${(data.assumptions || []).length})`, 'assumptions']];
+    function select(index, focus = false) {
+      panels.forEach((p, i) => {p.hidden = i !== index; buttons[i].setAttribute('aria-selected', String(i === index)); buttons[i].tabIndex = i === index ? 0 : -1;});
+      if (focus) buttons[index].focus();
+    }
+    sections.forEach(([title, key], index) => {
+      const button = element('button', '', title); button.type = 'button'; button.id = `${prefix}-tab-${key}`;
+      button.setAttribute('role', 'tab'); button.setAttribute('aria-controls', `${prefix}-${key}`);
+      button.addEventListener('click', () => select(index));
+      button.addEventListener('keydown', e => {
+        let next;
+        if (e.key === 'ArrowRight') next = (index + 1) % sections.length;
+        if (e.key === 'ArrowLeft') next = (index + sections.length - 1) % sections.length;
+        if (e.key === 'Home') next = 0;
+        if (e.key === 'End') next = sections.length - 1;
+        if (next !== undefined) {e.preventDefault(); select(next, true);}
+      });
+      tabs.append(button); buttons.push(button);
+      const panel = element('section', 'wf-outline-panel'); panel.id = `${prefix}-${key}`; panel.setAttribute('role', 'tabpanel'); panel.setAttribute('aria-labelledby', button.id);
+      panels.push(panel); panelArea.append(panel);
+    }); card.append(tabs, panelArea);
+    const overview = panels[0];
+    const summaryGrid = element('div', 'wf-outline-summary-grid');
+    summaryGrid.append(expandableText('Mục tiêu tổng', data.goal), expandableText('Chiến lược', data.strategy)); overview.append(summaryGrid);
+    const tableBox = table(['Giai đoạn', 'Môn học', 'Phạm vi', ''], phases.map(p => [p.ten, p.mon_hoc, (p.chapters || []).map(c => `Chương ${c.chapter_id}`).join(', ') || 'Xem chi tiết', '']));
+    tableBox.querySelectorAll('tbody tr').forEach((tr, index) => {
+      const b = element('button', 'wf-outline-view', 'Xem'); b.type = 'button'; b.setAttribute('aria-label', `Xem giai đoạn ${index + 1}`);
+      b.addEventListener('click', () => {phaseSelect.value = String(index); renderPhase(index); select(2, true);}); tr.lastElementChild.append(b);
+    }); overview.append(tableBox);
+    const results = panels[1];
+    if (!assessment) results.append(element('p', 'study-muted', 'Chưa có kết quả đầu vào được lưu trong phiên này.'));
+    else if (assessment.summary) results.append(compactRich('div', '', assessment.summary));
+    else {
+      results.append(element('h4', '', `${assessment.correct ?? '—'}/${assessment.total ?? '—'} câu đúng`));
+      results.append(table(['Chương', 'Đúng / tổng', 'Tỉ lệ', 'Đánh giá'], (assessment.chapters || []).map(c => [c.chapter_id, `${c.correct ?? '—'}/${c.total ?? '—'}`, Number.isFinite(c.ratio) ? `${Math.round(c.ratio * 100)}%` : '—', c.level || '—'])));
+      results.append(element('p', 'study-muted', 'Kết quả phản ánh các câu hỏi đã làm, được dùng để điều chỉnh trọng tâm học.'));
+    }
+    const phasePanel = panels[2], phaseLabel = element('label', 'wf-outline-select-label', 'Chọn giai đoạn'), phaseSelect = element('select', 'wf-outline-select'), phaseBody = element('div');
+    phaseSelect.setAttribute('aria-label', 'Chọn giai đoạn');
+    phases.forEach((p, index) => {const option = element('option', '', `${p.thu_tu ?? index + 1}. ${p.ten || 'Giai đoạn'}`); option.value = String(index); phaseSelect.append(option);});
+    phaseLabel.append(phaseSelect); phasePanel.append(phaseLabel, phaseBody);
+    function renderPhase(index) {
+      phaseBody.replaceChildren(); const p = phases[index]; if (!p) return;
+      phaseBody.append(element('h4', '', p.ten || `Giai đoạn ${index + 1}`));
+      if (p.body) {phaseBody.append(compactRich('div', 'wf-phase-legacy', p.body)); return;}
+      phaseBody.append(expandableText('Mục tiêu giai đoạn', p.muc_tieu));
+      (p.chapters || []).forEach(chapter => {
+        const d = element('details', 'wf-outline-chapter');
+        const lessons = Array.isArray(chapter.lessons) ? chapter.lessons : [];
+        d.append(element('summary', '', `Chương ${chapter.chapter_id} · ${lessons.length} bài học`));
+        const list = element('ul'); lessons.forEach(lesson => list.append(compactRich('li', '', lesson))); d.append(list);
+        if (chapter.ly_do) d.append(expandableText('Lý do phân bổ', chapter.ly_do)); phaseBody.append(d);
+      });
+      phaseBody.append(expandableText('Hoàn thành khi', p.tieu_chi_hoan_thanh));
+      if (p.resources?.length) {
+        const list = element('div', 'wf-outline-resources'); list.append(element('h4', '', 'Tài nguyên tham khảo'));
+        p.resources.forEach((r, index) => {
+          const row = element('div', 'wf-outline-resource'), url = safeResourceURL(r.url), label = r.loai === 'video' ? 'Video' : r.loai === 'giao_trinh' ? 'Giáo trình' : 'Tài liệu';
+          if (url) {
+            const a = element('a', 'wf-short-link', `${label} ${index + 1}`); a.href = url; a.title = r.tieu_de || label; a.target = '_blank'; a.rel = 'noopener noreferrer';
+            row.append(a, copyLinkButton(url));
+          } else row.append(element('span', '', `${label} ${index + 1} · chưa có liên kết`));
+          if (r.tieu_de) row.append(element('span', 'wf-resource-title', r.tieu_de));
+          if (r.ghi_chu) row.append(compactRich('p', 'study-muted', r.ghi_chu)); list.append(row);
+        }); phaseBody.append(list);
+      }
+    }
+    phaseSelect.addEventListener('change', () => renderPhase(Number(phaseSelect.value))); renderPhase(0);
+    const assumptions = panels[3];
+    if (!data.assumptions?.length) assumptions.append(element('p', 'study-muted', 'Không có giả định bổ sung.'));
+    (data.assumptions || []).forEach((text, i) => assumptions.append(expandableText(`Điểm cần kiểm chứng ${i + 1}`, text, 150)));
+    if (fullText) {
+      const raw = element('details', 'wf-outline-original'); raw.append(element('summary', '', 'Xem bản văn đầy đủ'), compactRich('div', '', fullText)); card.append(raw);
+    }
+    select(0); return card;
+  }
   function decorate(bubble, payload, send) {
+    if (!payload.skeleton) {
+      const original = payload.answer || bubble.querySelector('[data-wf-raw]')?.dataset.wfRaw || '';
+      const legacy = legacyOutline(original);
+      if (legacy) {
+        payload = {...payload, skeleton: legacy, full_text: original};
+        bubble.replaceChildren(rich('div', '', 'Sườn lộ trình · chọn mục bên dưới để xem chi tiết.'));
+      }
+    }
+    if (payload.skeleton) {
+      bubble.classList.add('wf-skeleton-bubble'); bubble.closest('.message')?.classList.add('wf-skeleton-message');
+      bubble.append(skeletonCard(payload.skeleton, payload.full_text));
+    }
     if (payload.matrix) bubble.append(matrix(payload.matrix));
     if (payload.interests?.length) {
       const box = element('form', 'wf-interests');
@@ -203,6 +357,9 @@ window.EduFlow = (() => {
     (payload.actions || []).forEach(a => {
       if (a.url && /^\/(study|roadmap|exams)\?/.test(a.url)) {
         const link = element('a', 'wf-primary', a.label); link.href = a.url; actions.append(link);
+      } else if (a.compose) {
+        const b = element('button', 'wf-primary wf-secondary', a.label); b.type = 'button';
+        b.addEventListener('click', () => document.dispatchEvent(new CustomEvent('eduagent:compose', {detail: {placeholder: 'Bạn muốn điều chỉnh mục nào trong sườn lộ trình?'}}))); actions.append(b);
       } else if (a.value) {
         const b = element('button', 'wf-primary', a.label); b.type='button';
         b.addEventListener('click', () => send(a.value, a.label, payload)); actions.append(b);
@@ -215,5 +372,5 @@ window.EduFlow = (() => {
     bubble.append(actions);
     bubble.dataset.revision = payload.revision ?? -1;
   }
-  return {element, rich, normalizeText, sourceInfo, formatEduTime, createProgress, api, id, poll, progress, table, matrix, decorate};
+  return {element, rich, skeletonCard, legacyOutline, normalizeText, sourceInfo, formatEduTime, createProgress, api, id, poll, progress, table, matrix, decorate};
 })();

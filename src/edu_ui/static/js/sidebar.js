@@ -47,6 +47,7 @@
   }
 
   function renderHistory() {
+    closeHistoryMenu();
     if (!historyList) return;
     const conversations = getHistory();
     const activeId = new URLSearchParams(window.location.search)
@@ -61,6 +62,8 @@
     }
 
     const links = conversations.map((conversation) => {
+      const row = document.createElement('div');
+      row.className = 'history-row';
       const link = document.createElement('a');
       link.className = 'history-item';
       link.href = `/?conversation=${encodeURIComponent(conversation.id)}`;
@@ -69,10 +72,110 @@
       if (conversation.id === activeId) {
         link.setAttribute('aria-current', 'page');
       }
-      return link;
+      const more = document.createElement('button');
+      more.type = 'button';
+      more.className = 'history-more';
+      more.dataset.historyMore = conversation.id;
+      more.textContent = '⋯';
+      more.title = 'Tùy chọn cuộc trò chuyện';
+      more.setAttribute('aria-label', `Tùy chọn: ${conversation.title}`);
+      more.setAttribute('aria-haspopup', 'true');
+      more.setAttribute('aria-expanded', 'false');
+      more.setAttribute('aria-controls', 'history-context-menu');
+      row.append(link, more);
+      return row;
     });
     historyList.replaceChildren(...links);
   }
+
+  // Attach to body so the menu isn't clipped by the scrolling history list.
+  const historyMenu = document.createElement('div');
+  historyMenu.id = 'history-context-menu';
+  historyMenu.className = 'history-context-menu';
+  historyMenu.hidden = true;
+  let menuTrigger = null;
+  for (const [action, label] of [['rename', 'Đổi tên'], ['delete', 'Xóa cuộc trò chuyện']]) {
+    const item = document.createElement('button');
+    item.type = 'button';
+    item.dataset.historyAction = action;
+    item.textContent = label;
+    historyMenu.append(item);
+  }
+  document.body.append(historyMenu);
+
+  function closeHistoryMenu(restoreFocus = false) {
+    if (!menuTrigger) return;
+    const previous = menuTrigger;
+    previous.setAttribute('aria-expanded', 'false');
+    historyMenu.hidden = true;
+    menuTrigger = null;
+    if (restoreFocus && previous.isConnected) previous.focus();
+  }
+
+  historyList?.addEventListener('click', (event) => {
+    const trigger = event.target.closest('[data-history-more]');
+    if (!trigger) return;
+    const alreadyOpen = menuTrigger === trigger;
+    closeHistoryMenu();
+    if (alreadyOpen) return;
+    menuTrigger = trigger;
+    trigger.setAttribute('aria-expanded', 'true');
+    historyMenu.querySelectorAll('button').forEach(button => {
+      button.dataset.conversationId = trigger.dataset.historyMore;
+    });
+    historyMenu.hidden = false;
+    const rect = trigger.getBoundingClientRect();
+    const box = historyMenu.getBoundingClientRect();
+    historyMenu.style.left = `${Math.max(8, Math.min(rect.right - box.width, innerWidth - box.width - 8))}px`;
+    historyMenu.style.top = `${Math.max(8, Math.min(rect.bottom + 5, innerHeight - box.height - 8))}px`;
+    historyMenu.querySelector('button').focus();
+  });
+  document.addEventListener('click', event => {
+    if (!historyMenu.contains(event.target) && !event.target.closest('[data-history-more]')) closeHistoryMenu();
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && menuTrigger) { event.preventDefault(); closeHistoryMenu(true); }
+  });
+  window.addEventListener('resize', () => closeHistoryMenu());
+  document.addEventListener('scroll', () => closeHistoryMenu(), true);
+
+  historyMenu.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-history-action]');
+    if (!button) return;
+    const id = button.dataset.conversationId;
+    const action = button.dataset.historyAction;
+    closeHistoryMenu(true);
+    const conversation = getHistory().find(item => item.id === id);
+    if (!conversation) return;
+    let title;
+    if (action === 'rename') {
+      title = window.prompt('Tên cuộc trò chuyện:', conversation.title);
+      if (title === null) return;
+      title = title.trim().slice(0, 120);
+      if (!title) { showNotice('Tên cuộc trò chuyện không được để trống.'); return; }
+    } else if (!window.confirm(`Xóa lịch sử “${conversation.title}” trên thiết bị này? Lộ trình và bài kiểm tra đã lưu vẫn được giữ.`)) {
+      return;
+    }
+    // Read again after the dialog to preserve any messages saved meanwhile.
+    const conversations = getHistory();
+    const current = conversations.find(item => item.id === id);
+    if (!current) return;
+    const updated = action === 'delete' ? conversations.filter(item => item.id !== id) : conversations;
+    if (action === 'rename') current.title = title;
+    try {
+      localStorage.setItem(historyKey, JSON.stringify(updated));
+    } catch {
+      showNotice('Không thể lưu thay đổi lịch sử trên thiết bị này.'); return;
+    }
+    if (action === 'delete' && new URLSearchParams(location.search).get('conversation') === id) {
+      document.dispatchEvent(new CustomEvent('eduagent:new-chat'));
+    }
+    document.dispatchEvent(new CustomEvent('eduagent:history-updated'));
+    showNotice(action === 'delete' ? 'Đã xóa cuộc trò chuyện.' : 'Đã đổi tên cuộc trò chuyện.');
+  });
+  window.addEventListener('storage', (event) => {
+    if (event.key === historyKey) renderHistory();
+  });
 
   function setCollapsed(collapsed) {
     const current = Number.parseFloat(

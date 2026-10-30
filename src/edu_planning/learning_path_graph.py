@@ -28,7 +28,12 @@ def present_node(state: PlanState) -> dict:
         lp = LearningPath.model_validate(draft).model_dump(mode="json")      # đảm bảo đúng schema trước khi lưu
         sid = state.get("student_id") or state["student_model"].get("student_id", "unknown")
         lp["subject"] = (state.get("lp_window") or {}).get("subject", "")
+        roadmap = state.get("master_roadmap") or {}
+        lp["overview"] = {k: roadmap.get(k) for k in ("muc_tieu_tong", "chien_luoc", "giai_doan", "gia_dinh")}
+        lp["student_model_snapshot"] = state.get("student_model") or {}
         path = save_learning_path(sid, lp)
+        lp = json.loads(path.read_text(encoding="utf-8"))
+        lp.pop("student_model_snapshot", None)
     except Exception as e:
         msg = "Mình chưa soạn được lộ trình chi tiết" + (f": {str(e)[:200]}" if str(e) else ".") + " Bạn nhắn \"thử lại\" để mình làm lại nhé."
         return {"messages": [AIMessage(content=msg)], "roadmap_status": "path_failed"}

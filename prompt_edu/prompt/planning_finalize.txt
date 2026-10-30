@@ -26,6 +26,7 @@ NGUYÊN TẮC
 17. Mục SGK tổng quan ghi "chưa có đoạn đủ liên quan" thì chỉ dựa vào giáo án và cấu trúc chương trình, không tự bịa nội dung chương.
 18. không vượt số giai đoạn tối đa ở PHẠM VI.Chương yếu thì viết sâu và gộp ít chương hơn, chương đã ổn thì gộp chung thành một giai đoạn dài.
 19. Mỗi giai đoạn gồm nhiều tuần; không chia mỗi tuần một giai đoạn. Toàn bộ lộ trình của một môn chỉ có 2 đến 5 giai đoạn.
+20. Mọi nội dung viết cho học sinh đọc (ly_do, gia_dinh, tom_tat, ghi_chu...) phải bằng tiếng Việt tự nhiên. Tuyệt đối không dùng tên trường hay tên biến trong hồ sơ (ví dụ uu_tien, muc_nam, do_tin_cay, diem_hien_tai, so_tuan_con_lai, dang_bai_can_giu, nguon); hãy diễn đạt bằng lời (ví dụ "ưu tiên", "mức nắm", "độ tin cậy", "điểm hiện tại").
 
 ĐẦU RA
 Xuất đúng schema được yêu cầu.

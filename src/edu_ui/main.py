@@ -52,7 +52,7 @@ async def legacy_chat(body: ChatInput):
 
 @app.get("/api/ui/health")
 def health():
-    return {"status": "ok", "ui_version": "workflow-ui-3",
+    return {"status": "ok", "ui_version": "workflow-ui-5",
             "workflow_api": "/api/ui/workflows", "project_root": str(BASE.parents[1])}
 
 @app.middleware("http")
@@ -83,14 +83,14 @@ def exams_page(request: Request):
         request=request, name="exams.html", context={"active_page": "exams"}
     )
 
-# Roadmap UI (read-only until Planning Agent persistence is connected)
+# Versioned roadmap library and persistent session completion
 from src.edu_ui.roadmap_api import router as roadmap_router
 app.include_router(roadmap_router)
 
 @app.get("/roadmap", response_class=HTMLResponse)
 def roadmap_page(request: Request):
     return templates.TemplateResponse(
-        request=request, name="study.html", context={"active_page": "roadmap"}
+        request=request, name="roadmap_library.html", context={"active_page": "roadmap"}
     )
 
 # Student profile uses the canonical planning StudentModel schema.
@@ -111,3 +111,7 @@ app.include_router(workflow_router)
 @app.get("/study", response_class=HTMLResponse)
 def study_page(request: Request):
     return templates.TemplateResponse(request=request, name="study.html", context={"active_page": "chat"})
+
+@app.get("/schedule", response_class=HTMLResponse)
+def schedule_page(request: Request):
+    return templates.TemplateResponse(request=request, name="schedule.html", context={"active_page": "schedule"})

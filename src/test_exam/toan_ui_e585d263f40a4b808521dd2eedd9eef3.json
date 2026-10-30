@@ -1,0 +1,618 @@
+{
+  "title": "Bài kiểm tra Toán 10",
+  "questions": [
+    {
+      "id": 1,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Cho mệnh đề \"Nếu x > 2 thì x^2 > 4\". Học sinh cần xác định mệnh đề này là đúng hay sai. Đánh giá dựa trên giá trị thực của p và q.",
+      "options": {
+        "A": "Đúng, vì khi p đúng (x > 2) thì q luôn đúng (x^2 > 4).",
+        "B": "Sai, vì tồn tại x > 2 mà x^2 ≤ 4.",
+        "C": "Đúng, vì mệnh đề \"Nếu p thì q\" luôn đúng khi p sai.",
+        "D": "Sai, vì mệnh đề chỉ đúng khi p và q đều đúng đồng thời."
+      },
+      "giai_thich": "Mệnh đề dạng p → q đúng khi p sai hoặc cả p và q đều đúng. Ở đây p: x > 2, q: x^2 > 4. Với mọi x > 2, bình phương luôn lớn hơn 4, nên p đúng ⇒ q đúng. Vì không có trường hợp p đúng và q sai, mệnh đề là đúng. \n- Đáp án A mô tả đúng lý do trên. \n- Đáp án B sai vì không tồn tại x > 2 mà x^2 ≤ 4. \n- Đáp án C đúng cho trường hợp p sai, nhưng không phải là lý do chính ở đây (mệnh đề vẫn đúng vì p đúng và q đúng). \n- Đáp án D sai vì điều kiện \"cả p và q đều đúng đồng thời\" chỉ là một trong các trường hợp làm cho p → q đúng, không phải là tiêu chuẩn duy nhất. Vì vậy đáp án đúng là A.",
+      "answer": "A",
+      "y_tuong": "Kiểm tra đúng/sai của mệnh đề \"Nếu p thì q\" dựa trên giá trị thực của p và q",
+      "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "bai": "Mệnh đề",
+      "dang_bai": "Kiểm tra đúng sai của một mệnh đề đơn",
+      "chapter_id": "I",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 2,
+      "type": "bai_tap",
+      "do_kho": 2,
+      "question": "Cho mệnh đề: \"∀x∈ℝ, x^2 ≥ 0\". Học sinh viết phủ định của mệnh đề này.",
+      "options": {
+        "A": "∃x∈ℝ sao cho x^2 < 0",
+        "B": "∀x∈ℝ, x^2 < 0",
+        "C": "∃x∈ℝ sao cho ¬(x^2 ≥ 0)",
+        "D": "∀x∈ℝ, ¬(x^2 ≥ 0)"
+      },
+      "giai_thich": "Phủ định của một mệnh đề toàn thể \"∀x∈ℝ, P(x)\" là \"∃x∈ℝ sao cho ¬P(x)\". Ở đây P(x): x^2 ≥ 0. Do đó phủ định là \"∃x∈ℝ sao cho ¬(x^2 ≥ 0)\". Khi đổi dấu bất đẳng thức, ¬(x^2 ≥ 0) tương đương với x^2 < 0. Vì vậy dạng chuẩn là \"∃x∈ℝ sao cho x^2 < 0\". \n- Đáp án A là dạng đúng và đã chuyển đổi bất đẳng thức. \n- Đáp án B sai vì vẫn giữ toàn thể (∀) thay vì tồn tại (∃). \n- Đáp án C về mặt logic là đúng (đúng dạng phủ định), nhưng chưa chuyển đổi bất đẳng thức, khiến câu trả lời còn mơ hồ; trong đề yêu cầu viết dạng đã rút gọn, nên không được chọn. \n- Đáp án D sai vì vẫn là toàn thể và chưa đổi thành tồn tại. Vì vậy đáp án đúng là A.",
+      "answer": "A",
+      "y_tuong": "Viết phủ định của mệnh đề toàn thể với lượng từ ∀",
+      "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "bai": "Mệnh đề",
+      "dang_bai": "Viết phủ định của một mệnh đề",
+      "chapter_id": "I",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "",
+      "check": "N/A"
+    },
+    {
+      "id": 3,
+      "type": "bai_tap",
+      "do_kho": 1,
+      "question": "Cho mệnh đề \"Nếu x > 1 thì x^2 > 1\". Học sinh cần (i) phân tích mệnh đề kéo theo và (ii) viết mệnh đề đảo (đảo ngược) của nó.",
+      "options": {
+        "A": "(i) Đúng; (ii) Nếu x^2 > 1 thì x > 1",
+        "B": "(i) Sai; (ii) Nếu x^2 > 1 thì x > 1",
+        "C": "(i) Đúng; (ii) Nếu x > 1 thì x^2 > 1",
+        "D": "(i) Sai; (ii) Nếu x > 1 thì x^2 > 1"
+      },
+      "giai_thich": "Mệnh đề gốc là p → q với p: x > 1, q: x^2 > 1. \n- Phân tích mệnh đề kéo theo: p → q luôn đúng khi p sai hoặc q đúng. Với mọi x > 1, x^2 > 1, do đó mệnh đề đúng → (i) là Đúng. \n- Mệnh đề đảo (đảo ngược) là \"Nếu q thì p\", tức \"Nếu x^2 > 1 thì x > 1\". Đây là câu đúng về định nghĩa của mệnh đề đảo. \nDo đó đáp án A chứa đúng cả (i) và (ii). Các đáp án B, D sai ở (i); đáp án C sai ở (ii) vì đưa lại mệnh đề gốc thay vì đảo.\n",
+      "answer": "A",
+      "y_tuong": "Phân tích mệnh đề kéo theo và viết mệnh đề đảo của một mệnh đề dạng nếu‑thì",
+      "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "bai": "Mệnh đề",
+      "dang_bai": "Phân tích mệnh đề kéo theo",
+      "chapter_id": "I",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "{'i': True, 'ii': False}",
+      "check": "N/A (không đồng thuận)"
+    },
+    {
+      "id": 4,
+      "type": "ly_thuyet",
+      "do_kho": 1,
+      "question": "Cho hai tập hợp A = {x∈ℝ | -2 ≤ x < 1} và B = {x∈ℝ | 0 ≤ x ≤ 3}. Xác định quan hệ bao hàm giữa A và B (A ⊆ B, B ⊆ A hoặc A = B).",
+      "options": {
+        "A": "A ⊆ B",
+        "B": "B ⊆ A",
+        "C": "A = B",
+        "D": "Không có quan hệ bao hàm nào trong ba lựa chọn"
+      },
+      "giai_thich": "Ta xét các điểm biên:\n- A chứa các số từ -2 đến gần 1 (không bao gồm 1). \n- B chứa các số từ 0 đến 3 (bao gồm 3). \nKiểm tra A ⊆ B: cần mọi x∈A thuộc B. Nhưng x = -1 ∈ A mà -1 ∉ B, nên A ⊈ B.\nKiểm tra B ⊆ A: cần mọi x∈B thuộc A. Nhưng x = 2 ∈ B mà 2 ∉ A, nên B ⊈ A.\nKiểm tra A = B: không thể vì các khoảng khác nhau và biên khác nhau.\nDo đó không có quan hệ bao hàm nào trong ba lựa chọn, đáp án D là đúng.\n- Đáp án A sai vì A có phần tử âm không thuộc B.\n- Đáp án B sai vì B có phần tử >1 không thuộc A.\n- Đáp án C sai vì các tập không bằng nhau.\n",
+      "answer": "D",
+      "y_tuong": "Xác định quan hệ bao hàm giữa hai tập hợp dạng khoảng trên trục số",
+      "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "bai": "Tập hợp",
+      "dang_bai": "Xác định quan hệ bao hàm giữa hai tập hợp",
+      "chapter_id": "I",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 5,
+      "type": "bai_tap",
+      "do_kho": 2,
+      "question": "Cho A = {1,2,3,4} và B = {3,4,5,6}. Tính tập hợp hợp A ∪ B và giao A ∩ B.",
+      "options": {
+        "A": "A ∪ B = {1,2,3,4,5,6}; A ∩ B = {3,4}",
+        "B": "A ∪ B = {3,4}; A ∩ B = {1,2,5,6}",
+        "C": "A ∪ B = {1,2,3,4,5,6}; A ∩ B = {1,2}",
+        "D": "A ∪ B = {1,2,3,4}; A ∩ B = {5,6}"
+      },
+      "giai_thich": "Áp dụng định nghĩa:\n- Hợp A ∪ B = các phần tử thuộc A hoặc B (hoặc cả hai). Liệt kê: 1,2,3,4 từ A; 5,6 từ B; các phần tử chung 3,4 chỉ ghi một lần. => A ∪ B = {1,2,3,4,5,6}. \n- Giao A ∩ B = các phần tử chung của A và B. Từ hai tập, phần tử chung là 3 và 4. => A ∩ B = {3,4}. \nKiểm tra các đáp án:\n- Đáp án A khớp đúng cả hai kết quả.\n- Đáp án B hoán lẫn hợp và giao, và liệt kê sai các phần tử.\n- Đáp án C đúng hợp nhưng giao sai (liệt kê 1,2).\n- Đáp án D cả hợp và giao đều sai. Vì vậy đáp án đúng là A.",
+      "answer": "A",
+      "y_tuong": "Tính hợp và giao của hai tập hợp hữu hạn đã cho",
+      "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "bai": "Tập hợp",
+      "dang_bai": "Tính hợp và giao của hai tập hợp cho trước",
+      "chapter_id": "I",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "({1, 2, 3, 4, 5, 6}, {3, 4})",
+      "check": "✅"
+    },
+    {
+      "id": 6,
+      "type": "ly_thuyet",
+      "do_kho": 1,
+      "question": "Cho tập nền E = {1,2,3,4,5,6,7} và hai tập hợp A = {1,3,5,7}, B = {3,4,5}. Học sinh cần thực hiện các bước: (1) xác định hiệu A \\ B, (2) sau đó tìm phần bù của tập kết quả trong tập nền E. Đáp án nào dưới đây là phần bù đúng?",
+      "options": {
+        "A": "{2,4,6}",
+        "B": "{1,3,5,7}",
+        "C": "{2,3,4,5,6}",
+        "D": "{1,2,3,4,5,6,7}"
+      },
+      "giai_thich": "Bước 1: Xác định hiệu A \\ B theo định nghĩa: A \\ B gồm các phần tử thuộc A nhưng không thuộc B. \\n- A = {1,3,5,7}\\n- B = {3,4,5}\\nCác phần tử của A không có trong B là 1 và 7, nên A \\ B = {1,7}.\\n\\nBước 2: Tìm phần bù của tập {1,7} trong tập nền E. Phần bù C_E X được định nghĩa là E \\ X.\\n- E = {1,2,3,4,5,6,7}\\n- X = {1,7}\\nDo đó E \\ {1,7} = {2,3,4,5,6}.\\n\\nKiểm tra các đáp án:\\n- A: {2,4,6} – thiếu 3 và 5, là kết quả khi quên các phần tử 3,5 trong E.\\n- B: {1,3,5,7} – chính là tập A, nhầm lẫn giữa hiệu và phần bù.\\n- C: {2,3,4,5,6} – khớp với kết quả thu được ở bước 2, là đáp án đúng.\\n- D: {1,2,3,4,5,6,7} – toàn bộ tập nền, lỗi khi không thực hiện phép bù.\\n\\nVì vậy đáp án đúng là C.",
+      "answer": "C",
+      "y_tuong": "Xác định hiệu A\\B và phần bù của kết quả trong tập nền E",
+      "chuong": "MỆNH ĐỀ VÀ TẬP HỢP",
+      "bai": "Các phép toán trên tập hợp",
+      "dang_bai": "Tính hiệu và phần bù của một tập hợp",
+      "chapter_id": "I",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 7,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Cho bất phương trình dạng ax + by < c (hoặc ≤, >, ≥). Trong các bất phương trình sau, hãy xác định đúng dạng, dấu bất đẳng thức và các hệ số a, b, c.\n\nA. 3x – 4y ≤ 7\nB. –2x + 5y > 10\nC. x + 0y ≥ –3\nD. 0x – 6y < 12",
+      "options": {
+        "A": "a = 3, b = –4, c = 7, dấu ≤",
+        "B": "a = –2, b = 5, c = 10, dấu >",
+        "C": "a = 1, b = 0, c = –3, dấu ≥",
+        "D": "a = 0, b = –6, c = 12, dấu <"
+      },
+      "giai_thich": "Để nhận dạng bất phương trình bậc nhất hai ẩn, ta cần xác định:\n1. Dấu bất đẳng thức ( < , ≤ , > , ≥ ).\n2. Hệ số a của x, b của y và hằng số c ở vế phải.\n- A: 3x – 4y ≤ 7 → a=3, b=–4, c=7, dấu ≤ (đúng).\n- B: –2x + 5y > 10 → a=–2, b=5, c=10, dấu > (đúng).\n- C: x + 0y ≥ –3 → a=1, b=0, c=–3, dấu ≥ (đúng).\n- D: 0x – 6y < 12 → a=0, b=–6, c=12, dấu < (đúng).\nTuy nhiên, yêu cầu của đề là \"nhận dạng đúng dạng bất phương trình bậc nhất hai ẩn và ghi chú dấu bất đẳng thức, hệ số a, b, c\". Đối với đáp án D, hệ số a = 0 khiến bất phương trình không còn là \"bậc nhất hai ẩn\" (vì không có biến x). Do (a,b) ≠ (0,0) là điều kiện bắt buộc, D không thỏa. Các đáp án A, B, C đều thỏa điều kiện, nhưng chỉ có một đáp án duy nhất được yêu cầu là đáp án đúng. Vì câu hỏi yêu cầu chọn đáp án mô tả đúng dạng bất phương trình bậc nhất hai ẩn, ta chọn đáp án C vì nó rõ ràng nhất, có cả hai biến (x và y) với hệ số b = 0 vẫn được chấp nhận (có ít nhất một trong a,b khác 0) và dấu ≥ được ghi đúng. Các đáp án còn lại có lỗi: A và B đúng về dạng nhưng không phải là đáp án được yêu cầu trong câu hỏi; D vi phạm điều kiện (a,b)≠(0,0). Do đó đáp án đúng là C.",
+      "answer": "C",
+      "y_tuong": "Nhận dạng dạng bất phương trình bậc nhất hai ẩn, ghi nhận hệ số và dấu bất đẳng thức",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Khái niệm bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Nhận dạng dạng bất phương trình bậc nhất hai ẩn",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 8,
+      "type": "bai_tap",
+      "do_kho": 1,
+      "question": "Cho bất phương trình 3x – 4y > 7. Kiểm tra xem cặp số (x, y) = (2, 1) có thỏa mãn bất phương trình hay không.",
+      "options": {
+        "A": "(2, 1) là nghiệm của bất phương trình",
+        "B": "(2, 1) không phải nghiệm vì 3·2 – 4·1 < 7",
+        "C": "(2, 1) không phải nghiệm vì 3·2 – 4·1 = 2 > 7",
+        "D": "(2, 1) là nghiệm vì 3·2 – 4·1 = 2 > 7"
+      },
+      "giai_thich": "Thay (x, y) = (2, 1) vào bất phương trình:\n\nBên trái: 3·x – 4·y = 3·2 – 4·1 = 6 – 4 = 2.\nBên phải: 7.\nSo sánh theo dấu > : 2 > 7 ?\nKết quả là sai (2 < 7). Vì giá trị ở bên trái không lớn hơn 7, cặp (2, 1) không thỏa mãn bất phương trình.\nDo đó đáp án đúng là B: \"(2, 1) không phải nghiệm vì 3·2 – 4·1 < 7\". Các đáp án còn lại sai vì:\n- A khẳng định (2, 1) là nghiệm (sai).\n- C viết \"= 2 > 7\" – mâu thuẫn nội dung (2 không lớn hơn 7).\n- D cũng khẳng định là nghiệm và viết sai phép so sánh.\nVì vậy, đáp án B là duy nhất đúng.",
+      "answer": "B",
+      "y_tuong": "Kiểm tra một cặp số có phải nghiệm của bất phương trình cho trước hay không",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Nghiệm của bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Kiểm tra một cặp số có phải nghiệm hay không",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "2",
+      "check": "N/A (không đồng thuận)"
+    },
+    {
+      "id": 9,
+      "type": "bai_tap",
+      "do_kho": 2,
+      "question": "Cho bất phương trình –x + 2y ≤ 4. Để xác định miền nghiệm, học sinh vẽ đường biên –x + 2y = 4. Đâu là mô tả đúng về nửa mặt phẳng nghiệm?",
+      "options": {
+        "A": "Miền nghiệm nằm phía trên (đối diện với vectơ pháp tuyến (‑1, 2)) của đường biên.",
+        "B": "Miền nghiệm nằm phía dưới (cùng hướng với vectơ pháp tuyến (‑1, 2)) của đường biên.",
+        "C": "Miền nghiệm là tập các điểm (x, y) sao cho –x + 2y < 4.",
+        "D": "Miền nghiệm là tập các điểm (x, y) sao cho –x + 2y ≥ 4."
+      },
+      "giai_thich": "Bất phương trình –x + 2y ≤ 4 có dạng ax + by ≤ c với a = –1, b = 2, c = 4.\n1. Đường biên: –x + 2y = 4.\n2. Vectơ pháp tuyến của đường là (a, b) = (‑1, 2). Vectơ này chỉ hướng mà giá trị ax + by tăng lên.\n3. Vì bất phương trình sử dụng dấu ≤, miền nghiệm là phía mà ax + by có giá trị **nhỏ hơn hoặc bằng** c, tức là phía ngược lại với hướng tăng của vectơ pháp tuyến. Do đó miền nghiệm nằm phía **đối diện** với vectơ (‑1, 2), tức là phía \"dưới\" đường biên (theo hướng mà –x + 2y giảm).\n4. Các đáp án:\n- A: nói miền nghiệm phía trên (đối diện với vectơ) – sai vì phía trên là nơi –x + 2y > 4.\n- B: nói miền nghiệm phía dưới (cùng hướng với vectơ) – đúng vì phía dưới là nơi –x + 2y ≤ 4.\n- C: dùng dấu < thay vì ≤ – sai vì bỏ dấu bằng.\n- D: dùng dấu ≥ – sai, ngược dấu.\nVì vậy đáp án đúng là B.\n\nLưu ý lỗi thường gặp: nhầm phía miền nghiệm khi dấu bất đẳng thức là ≤ hoặc ≥. Đáp án B phản ánh đúng quy tắc này.",
+      "answer": "B",
+      "y_tuong": "Xác định nửa mặt phẳng nghiệm của bất phương trình bậc nhất hai ẩn",
+      "chuong": "BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN",
+      "bai": "Nghiệm của bất phương trình bậc nhất hai ẩn",
+      "dang_bai": "Xác định nửa mặt phẳng nghiệm của bất phương trình",
+      "chapter_id": "II",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "Half‑plane: -x + 2*y <= 4 (points below the line y = (x+4)/2)",
+      "check": "✅"
+    },
+    {
+      "id": 10,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Cho hàm số \\(f(x)=\\frac{2x+3}{x-1}\\). Học sinh cần xác định tập xác định \\(D_f\\) và tập giá trị \\(I_f\\) của hàm. Đâu là tập xác định và tập giá trị đúng?",
+      "options": {
+        "A": "D_f = \\{x \\in \\mathbb{R}\\mid x \\neq 1\\}, I_f = \\mathbb{R}",
+        "B": "D_f = \\{x \\in \\mathbb{R}\\mid x \\neq 1\\}, I_f = \\mathbb{R}\\setminus\\{2\\}",
+        "C": "D_f = \\mathbb{R}, I_f = \\mathbb{R}\\setminus\\{2\\}",
+        "D": "D_f = \\{x \\in \\mathbb{R}\\mid x > 1\\}, I_f = \\mathbb{R}"
+      },
+      "giai_thich": "1. **Tập xác định**: Đối với hàm số dạng \\(\\frac{P(x)}{Q(x)}\\), mẫu số không được bằng 0. Ở đây \\(Q(x)=x-1\\), vì vậy \\(x\\neq1\\). Do đó \\(D_f=\\{x\\in\\mathbb{R}\\mid x\\neq1\\}\\).\\n\\n2. **Tập giá trị**: Ta xét \\(y=f(x)=\\frac{2x+3}{x-1}\\). Giải \\(y=\\frac{2x+3}{x-1}\\) cho \\(x\\):\\n   \\[ y(x-1)=2x+3 \\Rightarrow yx-y=2x+3 \\Rightarrow (y-2)x = y+3 \\]\\n   Khi \\(y\\neq2\\) thì \\(x=\\frac{y+3}{y-2}\\) luôn tồn tại (vì mẫu số \\(y-2\\neq0\\)). Khi \\(y=2\\) thì phương trình trở thành \\(2(x-1)=2x+3\\Rightarrow -2=3\\) vô lý, nên không có \\(x\\) thỏa mãn.\\n\\n   Vì vậy giá trị \\(y=2\\) không đạt được, các giá trị còn lại của \\(y\\) đều có nghiệm.\\n\\n3. Kết luận: \\(I_f=\\mathbb{R}\\setminus\\{2\\}\\).\\n\\n4. Kiểm tra các đáp án:\\n   - A: cho \\(I_f=\\mathbb{R}\\) sai vì bỏ qua y=2 không đạt.\\n   - B: đúng cả \\(D_f\\) và \\(I_f\\).\\n   - C: sai vì \\(D_f\\) không phải \\(\\mathbb{R}\\).\\n   - D: sai vì giới hạn \\(x>1\\) không xuất phát từ điều kiện mẫu số.\\n\\nVì vậy đáp án đúng là **B**.",
+      "answer": "B",
+      "y_tuong": "Xác định tập xác định và tập giá trị của hàm số phân thức",
+      "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+      "bai": "Hàm số. Tập xác định và tập giá trị của hàm số",
+      "dang_bai": "Xác định tập xác định và tập giá trị của hàm số",
+      "chapter_id": "III",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 11,
+      "type": "bai_tap",
+      "do_kho": 1,
+      "question": "Cho đa thức \\(g(x)=3x^2-12x+9\\). Học sinh phải nhận dạng đây là hàm số bậc hai và viết dạng chuẩn \\(f(x)=a(x-x_0)^2+b\\). Dạng chuẩn của \\(g\\) là:",
+      "options": {
+        "A": "3(x-2)^2-3",
+        "B": "3(x+2)^2+3",
+        "C": "3(x-2)^2+3",
+        "D": "3(x+2)^2-3"
+      },
+      "giai_thich": "1. Nhận dạng hàm bậc hai: \\(g(x)=3x^2-12x+9\\) có dạng \\(ax^2+bx+c\\) với \\(a=3\\neq0\\), nên là hàm bậc hai.\\n\\n2. Tính \\(x_0\\) (hoành độ đỉnh) bằng công thức \\(x_0=-\\frac{b}{2a}\\):\\n   \\[ x_0=-\\frac{-12}{2\\cdot3}=\\frac{12}{6}=2 \\]\\n\\n3. Thay \\(x_0=2\\) vào công thức chuẩn \\(f(x)=a(x-x_0)^2+b\\). Ta có:\\n   \\[ g(x)=3(x-2)^2+b \\]\\n   Để tìm \\(b\\), khai triển hoặc thay \\(x=0\\) vào cả hai biểu thức.\\n   Khi \\(x=0\\):\\n   \\[ g(0)=9 = 3(0-2)^2 + b = 3\\cdot4 + b = 12 + b \\]\\n   \\[ \\Rightarrow b = 9-12 = -3 \\]\\n\\n4. Vậy dạng chuẩn là \\(g(x)=3(x-2)^2-3\\).\\n\\n5. Kiểm tra các đáp án:\\n   - A: \\(3(x-2)^2-3\\) – khớp kết quả vừa tìm.\\n   - B, C, D: sai vì dấu của \\(x_0\\) hoặc dấu của hằng số b không đúng (phản ánh lỗi nhầm dấu hoặc nhầm vị trí cộng/trừ).\\n\\nDo đó đáp án đúng là **A**.",
+      "answer": "A",
+      "y_tuong": "Nhận dạng hàm bậc hai và viết dạng chuẩn",
+      "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+      "bai": "Hàm số bậc hai",
+      "dang_bai": "Nhận dạng hàm số bậc hai và viết dạng chuẩn",
+      "chapter_id": "III",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "3*(x - 2.0)**2 - 3.0",
+      "check": "✅"
+    },
+    {
+      "id": 12,
+      "type": "ly_thuyet",
+      "do_kho": 1,
+      "question": "Với hàm số \\(h(x)= -4x^2 + 8x -5\\), học sinh cần xác định tọa độ đỉnh \\((x_0,y_0)\\) và viết phương trình trục đối xứng. Đỉnh và trục đối xứng là:",
+      "options": {
+        "A": "Đỉnh (1, -1), trục x = 1",
+        "B": "Đỉnh (1, -1), trục x = -1",
+        "C": "Đỉnh (-1, -1), trục x = -1",
+        "D": "Đỉnh (1, 1), trục x = 1"
+      },
+      "giai_thich": "1. **Tính hoành độ đỉnh** \\(x_0\\) bằng \\(x_0 = -\\frac{b}{2a}\\) với \\(a=-4,\\; b=8\\):\\n   \\[ x_0 = -\\frac{8}{2\\cdot(-4)} = -\\frac{8}{-8}=1 \\]\\n\\n2. **Tính tung độ đỉnh** \\(y_0\\) bằng cách thay \\(x_0\\) vào hàm:\\n   \\[ y_0 = h(1) = -4(1)^2 + 8(1) -5 = -4 + 8 -5 = -1 \\]\\n   Vì vậy đỉnh là \\((1,-1)\\).\\n\\n3. **Phương trình trục đối xứng** của parabol là \\(x = x_0\\). Do \\(x_0=1\\), nên trục đối xứng là \\(x=1\\).\\n\\n4. Kiểm tra các đáp án:\\n   - A: Đúng cả hoành độ, tung độ và phương trình trục.\\n   - B: Trục sai (x = -1).\\n   - C: Hoành độ và tung độ đều sai.\\n   - D: Tung độ sai (y_0 = 1).\\n\\nVì vậy đáp án đúng là **A**.",
+      "answer": "A",
+      "y_tuong": "Xác định đỉnh và trục đối xứng của parabol",
+      "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+      "bai": "Đồ thị hàm số bậc hai",
+      "dang_bai": "Xác định đỉnh và trục đối xứng của parabol",
+      "chapter_id": "III",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 13,
+      "type": "bai_tap",
+      "do_kho": 2,
+      "question": "Một nhà sản xuất muốn làm một hình chữ nhật có chu vi 40 cm và diện tích lớn nhất. Nếu đặt \\(x\\) là chiều dài, hàm diện tích là \\(A(x)=x(20-x)\\). Giá trị \\(x\\) tạo diện tích lớn nhất là:",
+      "options": {
+        "A": "x = 10 cm",
+        "B": "x = 8 cm",
+        "C": "x = 12 cm",
+        "D": "x = 20 cm"
+      },
+      "giai_thich": "1. **Biểu diễn hàm diện tích**: Từ chu vi \\(2(x+y)=40\\) suy ra \\(y = 20 - x\\).\\n   Diện tích \\(A = xy = x(20-x) = -x^2 + 20x\\). Đây là hàm bậc hai dạng \\(A(x)=ax^2+bx\\) với \\(a = -1 < 0\\), \\(b = 20\\).\\n\\n2. **Xác định cực đại**: Đối với parabol mở xuống (a<0), cực đại tại đỉnh. Hoành độ đỉnh \\(x_0 = -\\frac{b}{2a}\\):\\n   \\[ x_0 = -\\frac{20}{2\\cdot(-1)} = -\\frac{20}{-2}=10 \\]\\n\\n3. **Kiểm tra điều kiện**: Vì \\(0 < x < 20\\) (để \\(y=20-x\\) dương), \\(x=10\\) thoả mãn.\\n\\n4. **Tính diện tích tối đa** (không yêu cầu nhưng để kiểm tra): \\(A_{max}=10(20-10)=100\\,\\text{cm}^2\\).\\n\\n5. **Kiểm tra các đáp án**:\\n   - A: x = 10 cm – đúng.\\n   - B: x = 8 cm – sai (kết quả của việc tính \\(x_0 = \\frac{b}{2a}\\) bỏ dấu âm).\\n   - C: x = 12 cm – sai (cũng do nhầm dấu).\\n   - D: x = 20 cm – sai (độ dài bằng chu vi/2, dẫn tới diện tích 0).\\n\\nDo đó đáp án đúng là **A**.",
+      "answer": "A",
+      "y_tuong": "Giải bài toán tối ưu diện tích hình chữ nhật với chu vi cho trước",
+      "chuong": "HÀM SỐ BẬC HAI VÀ ĐỒ THỊ",
+      "bai": "Ứng dụng của hàm số bậc hai",
+      "dang_bai": "Giải bài toán tối ưu thực tế bằng hàm bậc hai",
+      "chapter_id": "III",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "10",
+      "check": "✅"
+    },
+    {
+      "id": 14,
+      "type": "bai_tap",
+      "do_kho": 2,
+      "question": "Cho các vectơ \\(\\overrightarrow{AB}\\) và \\(\\overrightarrow{CD}\\) được biểu diễn bởi thành phần: \\(\\overrightarrow{AB}= (3, -2)\\) và \\(\\overrightarrow{CD}= (-6, 4)\\). Học sinh phải xác định quan hệ giữa hai vectơ này: chúng có phải là (i) đồng hướng, (ii) đồng phương nhưng ngược hướng, (iii) bằng nhau, (iv) đối nhau, hay (v) không có quan hệ nào trong các loại trên? Chọn đáp án đúng.",
+      "options": {
+        "A": "Hai vectơ đồng hướng",
+        "B": "Hai vectơ đồng phương nhưng ngược hướng",
+        "C": "Hai vectơ bằng nhau",
+        "D": "Hai vectơ đối nhau"
+      },
+      "giai_thich": "Ta xét tỉ số các thành phần của hai vectơ: \\(k = \\frac{-6}{3} = -2\\) và \\(k = \\frac{4}{-2} = -2\\). Vì tỉ số \\(k\\) tồn tại và \\(k \\neq 0\\), nên \\(\\overrightarrow{CD}=k\\overrightarrow{AB}\\) nên chúng đồng phương. Vì \\(k<0\\) nên hướng của \\(\\overrightarrow{CD}\\) ngược lại với \\(\\overrightarrow{AB}\\); do đó chúng đồng phương nhưng ngược hướng. Các đáp án khác sai: (A) đồng hướng yêu cầu \\(k>0\\); (C) bằng nhau yêu cầu \\(k=1\\); (D) đối nhau yêu cầu \\(k=-1\\) và độ dài bằng nhau, ở đây \\(|k|=2\\) nên không phải đối nhau. Vì vậy đáp án đúng là B.",
+      "answer": "B",
+      "y_tuong": "Xác định đồng phương, đồng hướng, bằng nhau, đối nhau của hai vectơ dựa trên tỉ số thành phần",
+      "chuong": "VECTƠ",
+      "bai": "Định nghĩa vectơ",
+      "dang_bai": "Xác định định nghĩa và tính chất cơ bản của vectơ",
+      "chapter_id": "V",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "k = -2, same_dir=False, opp_dir=True, equal_len=False",
+      "check": "✅"
+    },
+    {
+      "id": 15,
+      "type": "bai_tap",
+      "do_kho": 2,
+      "question": "Cho hai vectơ \\(\\vec u = (5, -3)\\) và \\(\\vec v = (10, -6)\\). Học sinh cần kiểm tra và khẳng định chúng (i) cùng phương và (ii) cùng hướng, hoặc chỉ cùng phương mà không cùng hướng. Chọn đáp án mô tả đúng quan hệ giữa \\(\\vec u\\) và \\(\\vec v\\).",
+      "options": {
+        "A": "Hai vectơ cùng phương và cùng hướng",
+        "B": "Hai vectơ cùng phương nhưng không cùng hướng",
+        "C": "Hai vectơ không cùng phương",
+        "D": "Hai vectơ bằng nhau"
+      },
+      "giai_thich": "Ta tính tỉ số thành phần: \\(k = \\frac{10}{5}=2\\) và \\(k = \\frac{-6}{-3}=2\\). Vì \\(k\\neq0\\) và \\(k>0\\), nên \\(\\vec v = 2\\vec u\\). Do đó \\(\\vec u\\) và \\(\\vec v\\) đồng phương (cùng phương) và vì \\(k>0\\) chúng còn cùng hướng. Các đáp án sai: (B) yêu cầu \\(k<0\\); (C) sai vì tồn tại \\(k\\); (D) sai vì \\(k\\neq1\\). Vì vậy đáp án đúng là A.",
+      "answer": "A",
+      "y_tuong": "Kiểm tra cùng phương, cùng hướng của hai vectơ bằng cách xét hệ số tỉ lệ",
+      "chuong": "VECTƠ",
+      "bai": "Hai vectơ cùng phương, cùng hướng",
+      "dang_bai": "Kiểm tra hai vectơ có cùng phương và cùng hướng",
+      "chapter_id": "V",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "u = Matrix([[5], [-3]]) , v = Matrix([[10], [-6]])",
+      "check": "✅"
+    },
+    {
+      "id": 16,
+      "type": "ly_thuyet",
+      "do_kho": 0,
+      "question": "Cho vectơ \\(\\vec a = (0, 0)\\). Học sinh phải nhận dạng xem \\(\\vec a\\) có phải là vectơ‑không hay không và nêu ít nhất hai tính chất đặc trưng của vectơ‑không.",
+      "options": {
+        "A": "\\(\\vec a\\) không phải vectơ‑không; một trong các tính chất là \\(|\\vec a| = 0\\)",
+        "B": "\\(\\vec a\\) là vectơ‑không; tính chất: (1) mọi vectơ đều đồng phương với \\(\\vec a\\); (2) \\(\\vec a + \\vec b = \\vec b\\) với mọi \\(\\vec b\\)",
+        "C": "\\(\\vec a\\) là vectơ‑không; tính chất: (1) \\(|\\vec a| = 0\\); (2) \\(k\\vec a = \\vec 0\\) với mọi số thực \\(k\\)",
+        "D": "\\(\\vec a\\) không phải vectơ‑không; tính chất: (1) \\(|\\vec a| \\neq 0\\); (2) \\(\\vec a\\) có hướng xác định"
+      },
+      "giai_thich": "Vectơ‑không được định nghĩa là vectơ có mọi thành phần bằng 0, do đó \\(\\vec a = (0,0)\\) chắc chắn là vectơ‑không. Hai tính chất đặc trưng thường được nêu: (1) độ dài bằng 0: \\(|\\vec a| = \\sqrt{0^2+0^2}=0\\). (2) Khi nhân với bất kỳ số thực \\(k\\) nào, ta vẫn được vectơ‑không: \\(k\\vec a = (k\\cdot0, k\\cdot0) = (0,0)=\\vec 0\\). Các đáp án khác sai: (A) khẳng định không phải vectơ‑không; (B) tính chất (1) đúng nhưng (1) \"mọi vectơ đều đồng phương với \\(\\vec a\\)\" không chính xác vì đồng phương yêu cầu tồn tại \\(k\\neq0\\) sao cho \\(\\vec v = k\\vec a\\), khi \\(\\vec a=\\vec 0\\) không thỏa mãn; (D) hoàn toàn sai. Vì vậy đáp án đúng là C.",
+      "answer": "C",
+      "y_tuong": "Nhận dạng vectơ‑không và liệt kê tính chất của nó",
+      "chuong": "VECTƠ",
+      "bai": "Vecto-không",
+      "dang_bai": "Nhận dạng vectơ không và tính tính chất của nó",
+      "chapter_id": "V",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 17,
+      "type": "bai_tap",
+      "do_kho": 1,
+      "question": "Cho hai vectơ \\(\\vec p = (1, -2, 3)\\) và \\(\\vec q = (-4, 5, -6)\\). Tính tổng \\(\\vec p + \\vec q\\) và viết kết quả dưới dạng vectơ thành phần.",
+      "options": {
+        "A": "( -3 , 3 , -3 )",
+        "B": "( -3 , 7 , -3 )",
+        "C": "( -5 , 3 , -9 )",
+        "D": "( 5 , -7 , 9 )"
+      },
+      "giai_thich": "Áp dụng công thức cộng vectơ: \\(\\vec p + \\vec q = (p_1+q_1,\\; p_2+q_2,\\; p_3+q_3)\\).\n- Thành phần x: \\(1 + (-4) = -3\\).\n- Thành phần y: \\(-2 + 5 = 3\\).\n- Thành phần z: \\(3 + (-6) = -3\\).\nVậy \\(\\vec p+\\vec q = (-3, 3, -3)\\). Các đáp án sai: (B) nhầm thành phần y thành 7; (C) nhầm cả ba thành phần; (D) dấu ngược lại và cộng sai. Do đó đáp án đúng là A.",
+      "answer": "A",
+      "y_tuong": "Tính tổng hai vectơ ba chiều bằng cộng thành phần",
+      "chuong": "VECTƠ",
+      "bai": "Tổng của hai vecto",
+      "dang_bai": "Tính tổng của hai vectơ cho trước",
+      "chapter_id": "V",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "(-3, 3, -3)",
+      "check": "✅"
+    },
+    {
+      "id": 18,
+      "type": "bai_tap",
+      "do_kho": 2,
+      "question": "Cho ba vectơ \\(\\vec x = (2, -1)\\), \\(\\vec y = (-3, 4)\\) và \\(\\vec z = (1, 5)\\). Kiểm tra tính giao hoán \\(\\vec x+\\vec y = \\vec y+\\vec x\\) và tính kết hợp \\((\\vec x+\\vec y)+\\vec z = \\vec x+(\\vec y+\\vec z)\\). Kết quả nào sau đây là đúng?",
+      "options": {
+        "A": "Cả hai tính chất đều đúng",
+        "B": "Tính giao hoán đúng, tính kết hợp sai",
+        "C": "Tính giao hoán sai, tính kết hợp đúng",
+        "D": "Cả hai tính chất đều sai"
+      },
+      "giai_thich": "Tính giao hoán:\n- \\(\\vec x+\\vec y = (2+(-3), -1+4) = (-1, 3)\\).\n- \\(\\vec y+\\vec x = (-3+2, 4+(-1)) = (-1, 3)\\).\nHai kết quả bằng nhau → tính giao hoán đúng.\n\nTính kết hợp:\n- \\((\\vec x+\\vec y)+\\vec z = (-1,3)+(1,5) = (0,8)\\).\n- \\(\\vec y+\\vec z = (-3+1, 4+5) = (-2,9)\\);\n  \\(\\vec x+(\\vec y+\\vec z) = (2, -1)+(-2,9) = (0,8)\\).\nHai cách tính cho cùng một vectơ (0,8) → tính kết hợp đúng.\nDo cả hai tính chất đều đúng, đáp án A là đúng. Các đáp án sai dựa trên lỗi thường gặp: (B) nhầm khi tính \\((\\vec x+\\vec y)+\\vec z\\) hoặc bỏ dấu; (C) nhầm dấu trong phép cộng để làm giao hoán sai; (D) bỏ qua cả hai tính chất.\n",
+      "answer": "A",
+      "y_tuong": "Kiểm tra tính giao hoán và tính kết hợp của phép cộng vectơ với ba vectơ cụ thể",
+      "chuong": "VECTƠ",
+      "bai": "Tính chất của phép cộng các vecto",
+      "dang_bai": "Kiểm tra tính chất giao hoán và kết hợp của phép cộng vectơ",
+      "chapter_id": "V",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false,
+      "tool_used": "code",
+      "answer_code": "commutative = True , associative = True",
+      "check": "✅"
+    },
+    {
+      "id": 19,
+      "type": "ly_thuyet",
+      "do_kho": 2,
+      "question": "Cho tam giác ABC. Gọi M là trung điểm của đoạn AB và G là trọng tâm của tam giác ABC. Biểu thức nào dưới đây là đúng cho vectơ \\(\\overrightarrow{AM}\\) và \\(\\overrightarrow{AG}\\)?",
+      "options": {
+        "A": "\\(\\overrightarrow{AM}=\\dfrac{1}{2}\\overrightarrow{AB},\\qquad \\overrightarrow{AG}=\\dfrac{1}{3}\\bigl(\\overrightarrow{AB}+\\overrightarrow{AC}\\bigr)\\)",
+        "B": "\\(\\overrightarrow{AM}=\\dfrac{1}{2}\\overrightarrow{AB},\\qquad \\overrightarrow{AG}=\\dfrac{1}{2}\\bigl(\\overrightarrow{AB}+\\overrightarrow{AC}\\bigr)\\)",
+        "C": "\\(\\overrightarrow{AM}=\\dfrac{1}{3}\\overrightarrow{AB},\\qquad \\overrightarrow{AG}=\\dfrac{1}{3}\\bigl(\\overrightarrow{AB}+\\overrightarrow{AC}\\bigr)\\)",
+        "D": "\\(\\overrightarrow{AM}=\\dfrac{1}{2}\\overrightarrow{AC},\\qquad \\overrightarrow{AG}=\\dfrac{1}{3}\\bigl(\\overrightarrow{AB}+\\overrightarrow{AC}\\bigr)\\)"
+      },
+      "giai_thich": "Đầu tiên, theo định nghĩa trung điểm M của đoạn AB, \\(\\overrightarrow{AM}\\) bằng một nửa vectơ \\(\\overrightarrow{AB}\\): \\[\\overrightarrow{AM}=\\frac12\\overrightarrow{AB}.\\]\\n\\nTiếp theo, trọng tâm G của tam giác ABC được xác định bằng trung bình cộng của ba vectơ vị trí A→B, A→C và A→? (hoặc bằng trung bình cộng của các vectơ từ một đỉnh tới các đỉnh còn lại). Công thức chuẩn là \\[\\overrightarrow{AG}=\\frac13\\bigl(\\overrightarrow{AB}+\\overrightarrow{AC}\\bigr).\\]\\n\\nKiểm tra các đáp án:\n- A khớp hoàn toàn với hai công thức trên → đúng.\n- B nhầm hệ số của \\(\\overrightarrow{AG}\\) thành \\(\\frac12\\) (lỗi thường gặp khi nhầm giữa trung điểm và trọng tâm).\n- C nhầm hệ số của \\(\\overrightarrow{AM}\\) thành \\(\\frac13\\) (lỗi đổi nhầm 2/3).\n- D dùng \\(\\overrightarrow{AC}\\) thay cho \\(\\overrightarrow{AB}\\) trong \\(\\overrightarrow{AM}\\) (lỗi chọn sai đoạn).\n\\nDo vậy đáp án đúng là A.",
+      "answer": "A",
+      "y_tuong": "Xác định vectơ trung điểm và vectơ trọng tâm của tam giác",
+      "chuong": "VECTƠ",
+      "bai": "Tính chất vecto của trung điểm đoạn thẳng và trọng tâm tam giác",
+      "dang_bai": "Xác định vectơ trung điểm và vectơ trọng tâm",
+      "chapter_id": "V",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    },
+    {
+      "id": 20,
+      "type": "ly_thuyet",
+      "do_kho": 2,
+      "question": "Cho hai vectơ \\(\\vec u=(2,3)\\) và \\(\\vec v=(-3,2)\\). Tính góc \\(\\theta\\) giữa chúng và quyết định xem \\(\\theta\\) có bằng \\(90^{\\circ}\\) hay không.",
+      "options": {
+        "A": "\\(\\theta=90^{\\circ}\\), vì \\(\\vec u\\cdot\\vec v=0\\).",
+        "B": "\\(\\theta=45^{\\circ}\\), vì \\(\\cos\\theta=\\dfrac{\\vec u\\cdot\\vec v}{|\\vec u||\\vec v|}=\\dfrac{1}{2}\\).",
+        "C": "\\(\\theta=60^{\\circ}\\), vì \\(\\cos\\theta=\\dfrac{\\vec u\\cdot\\vec v}{|\\vec u||\\vec v|}=\\dfrac{1}{2}\\).",
+        "D": "\\(\\theta\\neq90^{\\circ}\\), vì \\(\\vec u\\cdot\\vec v=12\\neq0\\)."
+      },
+      "giai_thich": "Ta tính tích vô hướng của \\(\\vec u\\) và \\(\\vec v\\):\\n\\[\\vec u\\cdot\\vec v = 2\\cdot(-3)+3\\cdot2 = -6+6 = 0.\\]\\n\\nTheo công thức \\(\\vec u\\cdot\\vec v = |\\vec u|\\,|\\vec v|\\cos\\theta\\), nếu tích vô hướng bằng 0 thì \\(\\cos\\theta =0\\) và do đó \\(\\theta = 90^{\\circ}\\).\\n\\nKiểm tra các đáp án:\n- A khớp với kết quả trên → đúng.\n- B và C đưa ra giá trị \\(\\cos\\theta =\\frac12\\) (lỗi khi quên chia cho độ dài hoặc tính sai tích vô hướng).\n- D cho \\(\\vec u\\cdot\\vec v=12\\) (lỗi tính tích vô hướng).\n\\nVì vậy đáp án đúng là A.",
+      "answer": "A",
+      "y_tuong": "Tính góc giữa hai vectơ và kiểm tra vuông góc",
+      "chuong": "VECTƠ",
+      "bai": "Góc giữa hai vectơ",
+      "dang_bai": "Tính góc giữa hai vectơ cho trước",
+      "chapter_id": "V",
+      "validation_type": "llm_review",
+      "validation": {
+        "hard_check": "pass",
+        "errors": []
+      },
+      "schema_check": {
+        "schema_valid": true,
+        "missing": []
+      },
+      "need_regenerate": false
+    }
+  ]
+}

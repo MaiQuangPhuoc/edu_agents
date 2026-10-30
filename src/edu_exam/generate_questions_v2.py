@@ -192,7 +192,7 @@ def generate_questions(state: ExamState, llm_client: LLMClient) -> dict:
     print(f"\n>>> generate_questions hoàn tất: {len(generated_exam)} câu")
 
     return {
-        "messages":       [AIMessage(content=exam_json)],
+        # "messages":       [AIMessage(content=exam_json)],
         "generated_exam": generated_exam,
         "exam_memory":    exam_memory,
         "exam_id":        exam_path.stem,   # "exam_20260925_124128" — key mới, thêm vào ExamState nếu cần typed

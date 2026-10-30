@@ -371,3 +371,21 @@ Hệ thống: Để hàm số y = -x^2 + 2(m-1)x + 3 đồng biến trên khoả
 
 ---
 
+Người dùng: các chương liên quan đến 1 2 3 và 5 không cần chương 4 (23:09:01 29/10/2026)
+
+Hệ thống: Các chương liên quan đến nội dung bạn cần học là chương 1, chương 2, chương 3 và chương 5; không bao gồm chương 4. Trong kế hoạch học tập đề xuất, các buổi học sẽ được sắp xếp theo các giai đoạn: Nền tảng (buổi 1‑2) với Bài I.1, Thiết lập ngôn ngữ tập hợp (buổi 3) với Bài I.2, Vận dụng (buổi 4‑5) với Bài I.3, và Củng cố (buổi 6) với bài tập cuối chương, nhưng lịch học có thể được điều chỉnh tùy theo hồ sơ và kết quả kiểm tra của từng học sinh. (23:09:25 29/10/2026) - Chênh lệch: 23s
+
+---
+
+Người dùng: bất phương trình bậc nhất hai ẩn có những điểm chú ý nào , khác gì với bất phương trình bậc nhất 1 ẩn (23:41:11 29/10/2026)
+
+Hệ thống: Bất phương trình bậc nhất hai ẩn có dạng ax+by<c, ax+by≤c, ax+by>c hoặc ax+by≥c (với a, b không đồng thời bằng 0) và nghiệm của nó là một cặp số (x, y), vì vậy miền nghiệm là tập hợp các điểm trên mặt phẳng. Để giải, ta vẽ đường thẳng d: ax+by=c, chọn một điểm thử không nằm trên d (thường dùng gốc O nếu O không thuộc d), thay tọa độ điểm thử vào bất phương trình để xác định nửa mặt phẳng thỏa mãn; nếu dấu là ≤ hoặc ≥ thì đường biên d cũng được bao gồm, còn nếu là < hoặc > thì không lấy d. Khi xét hệ bất phương trình hai ẩn, cần vẽ từng đường biên, xác định miền nghiệm riêng của mỗi bất phương trình và lấy giao của các miền này; nếu không có điểm chung thì hệ vô nghiệm. Lưu ý rằng hệ số của một ẩn có thể bằng 0 (đường biên có thể song song với trục), và khi xét các điều kiện thực tế không được bỏ qua ý nghĩa và đơn vị của các ẩn. (23:41:27 29/10/2026) - Chênh lệch: 15s
+
+---
+
+Người dùng: có của chương nào (23:42:03 29/10/2026)
+
+Hệ thống: Bất phương trình bậc nhất hai ẩn và hệ bất phương trình bậc nhất hai ẩn đều nằm trong chương II – “Bất phương trình và hệ bất phương trình bậc nhất hai ẩn” của sách Toán lớp 10. (23:42:14 29/10/2026) - Chênh lệch: 11s
+
+---
+

@@ -1,4 +1,3 @@
-
 (() => {
   'use strict';
   const F = window.EduFlow;
@@ -80,6 +79,7 @@
     try {localStorage.removeItem(`eduagent-entry-job-${sid}`);} catch {}
     root.replaceChildren(); header('KẾT QUẢ ĐẦU VÀO', 'Đã xử lý bài kiểm tra', 'Quay lại trò chuyện để xem và xác nhận sườn lộ trình.');
     const box = el('section', 'study-card'); box.append(rich('div', '', result.answer || 'Đã xử lý xong.'));
+    if (result.skeleton) F.decorate(box, {...result, actions: []}, () => {});
     box.append(backLink()); root.append(box); status('');
   }
   function list(title, items) {

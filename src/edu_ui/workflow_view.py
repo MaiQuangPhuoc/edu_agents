@@ -29,6 +29,30 @@ def interests(state, chapter_lookup):
             for lesson, sections in chapter["lessons"].items() for section in sections]
 
 
+def skeleton_data(state):
+    """Whitelist presentation fields from the structured roadmap, not from prose."""
+    roadmap = state.get("master_roadmap") or {}
+    if hasattr(roadmap, "model_dump"):
+        roadmap = roadmap.model_dump(mode="json")
+    phases = roadmap.get("giai_doan") if isinstance(roadmap, dict) else None
+    if not isinstance(phases, list) or not phases:
+        return None
+    result = (state.get("entry_test") or {}).get("result") or {}
+    assessment = None
+    if isinstance(result, dict) and "total" in result:
+        assessment = {k: result.get(k) for k in ("correct", "total")}
+        assessment["chapters"] = [{"chapter_id": str(cid), **{k: item.get(k) for k in ("correct", "total", "ratio", "level")}}
+                                  for cid, item in (result.get("chapters") or {}).items() if isinstance(item, dict)]
+    return {"goal": roadmap.get("muc_tieu_tong", ""), "strategy": roadmap.get("chien_luoc", ""),
+            "phases": [{k: phase.get(k) for k in ("thu_tu", "ten", "mon_hoc", "muc_tieu", "tieu_chi_hoan_thanh")}
+                       | {"chapters": [{k: chapter.get(k) for k in ("chapter_id", "lessons", "ly_do")}
+                                       for chapter in (phase.get("chapters") or []) if isinstance(chapter, dict)],
+                          "resources": [{k: resource.get(k) for k in ("loai", "tieu_de", "url", "ghi_chu")}
+                                        for resource in (phase.get("tai_nguyen") or []) if isinstance(resource, dict)]}
+                       for phase in phases if isinstance(phase, dict)],
+            "assumptions": roadmap.get("gia_dinh") or [], "assessment": assessment}
+
+
 def project(session, chapter_lookup=None):
     state, mode, sid = session["state"], session["mode"], session["id"]
     out = {"session_id": sid, "mode": mode, "revision": session["revision"],
@@ -45,7 +69,9 @@ def project(session, chapter_lookup=None):
                     continue
                 seen.add(key)
                 sources.append({"title": chunk.get("source", "Tài liệu"), "content": chunk.get("content", ""),
-                                "chapter_id": chunk.get("chapter")})
+                                "chapter_id": chunk.get("chapter"),
+                                "document_type": chunk.get("document_type") or (chunk.get("metadata") or {}).get("document_type", ""),
+                                "source_type": chunk.get("source_type", "")})
         for source in sources:
             if str(source["title"]).startswith(("https://", "http://")):
                 source["url"] = source["title"]
@@ -72,9 +98,16 @@ def project(session, chapter_lookup=None):
             out.update(answer="Bài kiểm tra đầu vào đã sẵn sàng. Hoàn thành bài để mình xây dựng lộ trình phù hợp.",
                        actions=[{"label": "Làm bài test", "url": f"/study?session={sid}&view=entry"}])
         elif status == "awaiting_feedback":
-            out["actions"] = [{"label": "Xác nhận sườn", "value": "chốt"}]
+            skeleton = skeleton_data(state)
+            if skeleton:
+                out["full_text"] = out["answer"]
+                out["skeleton"] = skeleton
+                out["answer"] = "Sườn lộ trình đã sẵn sàng. Bạn xem các mục bên dưới rồi xác nhận hoặc góp ý chỉnh sửa."
+            out["actions"] = [{"label": "Xác nhận sườn", "value": "chốt"},
+                              {"label": "Góp ý chỉnh sửa", "compose": True}]
         elif status == "path_ready":
-            out["actions"] = [{"label": "Xem lộ trình", "url": f"/roadmap?session={sid}"}]
+            plan_id = (state.get("learning_path") or {}).get("plan_id")
+            out["actions"] = [{"label": "Xem lộ trình", "url": f"/roadmap?plan={plan_id}" if plan_id else f"/roadmap?session={sid}"}]
         elif status in ("path_failed", "entry_test_failed"):
             out["actions"] = [{"label": "Thử lại", "value": "thử lại"}]
     return out

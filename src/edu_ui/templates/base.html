@@ -16,9 +16,9 @@
   <link rel="stylesheet" href="/ui-static/css/app.css">
   {% block page_styles %}{% endblock %}
   <link rel="stylesheet" href="/ui-static/css/site-theme.css">
-  <link rel="stylesheet" href="/ui-static/css/sidebar.css">
+  <link rel="stylesheet" href="/ui-static/css/sidebar.css?v=history-7">
   <script defer src="/ui-static/js/theme.js"></script>
-  <script defer src="/ui-static/js/sidebar.js"></script>
+  <script defer src="/ui-static/js/sidebar.js?v=history-7"></script>
   {% block page_scripts %}{% endblock %}
 </head>
 <body class="{% block body_class %}{% endblock %}">
@@ -64,9 +64,9 @@
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5m0 14h16"/><path d="m6 15 4-4 3 2 6-7"/><circle cx="10" cy="11" r="1"/><circle cx="13" cy="13" r="1"/><circle cx="19" cy="6" r="1"/></svg>
           <span>Lộ trình học</span>
         </a>
-        <a href="#" class="coming-soon" data-soon="Lịch học &amp; Buổi học">
+        <a href="/schedule" {% if active_page == "schedule" %}class="active" aria-current="page"{% endif %}>
           <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2"/><path d="M7 3v4m10-4v4M4 9h16m-12 4h3m-3 4h6"/></svg>
-          <span>Lịch học &amp; Buổi học</span><small>Sắp có</small>
+          <span>Lịch học &amp; Buổi học</span>
         </a>
         <a href="#" class="coming-soon" data-soon="Tiến độ học tập">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5m0 14h17"/><path d="M8 16v-4m4 4V8m4 8v-6m4 6V5"/></svg>

@@ -1,0 +1,79 @@
+{
+  "chapter_id": "III",
+  "lessons": [
+    {
+      "lesson": "Hàm số và đồ thị",
+      "key_points": [
+        "Hàm số có thể được biểu diễn bằng công thức, bảng giá trị hoặc đồ thị phù hợp.",
+        "Đồ thị giúp biểu diễn trực quan mối liên hệ giữa biến số và giá trị hàm số.",
+        "Có thể đọc và mô tả sự thay đổi của hàm số thông qua đồ thị.",
+        "Tính đồng biến, nghịch biến thể hiện chiều thay đổi của hàm số khi biến số tăng."
+      ],
+      "must_know": [
+        "Hàm số y = f(x) trên D gán cho mỗi x thuộc D đúng một số thực f(x).",
+        "Tập xác định là D; tập giá trị là tập các giá trị thực sự nhận được {f(x): x thuộc D}.",
+        "Khi hàm số cho bằng công thức, xét điều kiện để biểu thức có nghĩa trong tập số thực, chẳng hạn mẫu khác 0 và biểu thức dưới căn bậc hai không âm.",
+        "Đồ thị của y = f(x) gồm các điểm (x; f(x)) với x thuộc tập xác định; (a; b) thuộc đồ thị khi và chỉ khi a thuộc D và b = f(a).",
+        "Hàm số đồng biến trên K nếu x₁ < x₂ thì f(x₁) < f(x₂); nghịch biến nếu x₁ < x₂ thì f(x₁) > f(x₂), với mọi x₁, x₂ thuộc K."
+      ],
+      "must_understand": [
+        "Một đầu vào không thể cho hai đầu ra khác nhau trong cùng một hàm số.",
+        "Cần xác định tập xác định trước khi tính giá trị, vẽ đồ thị hoặc xét sự biến thiên.",
+        "Đồng biến, nghịch biến nói về chiều thay đổi của f(x), không khẳng định f(x) luôn dương hay luôn âm.",
+        "Một số điểm trong bảng giá trị chưa đủ để kết luận tính đơn điệu trên toàn khoảng nếu không có căn cứ khác."
+      ],
+      "problem_types": [
+        "Xác định tập xác định của hàm số cho bằng công thức.",
+        "Phân biệt tập xác định và tập giá trị của hàm số.",
+        "Kiểm tra một điểm có thuộc đồ thị hàm số hay không.",
+        "Đọc và mô tả đồ thị; xác định tọa độ điểm trên đồ thị khi biết giá trị của biến.",
+        "Xác định khoảng đồng biến, nghịch biến từ đồ thị hoặc từ công thức đơn giản có đủ điều kiện."
+      ],
+      "related": [
+        {
+          "chapter_id": "III",
+          "lesson": "Hàm số bậc hai",
+          "relation": "Hàm số bậc hai là một dạng hàm số cụ thể; các khái niệm tập xác định, đồ thị và sự biến thiên được dùng để khảo sát hàm số này."
+        }
+      ]
+    },
+    {
+      "lesson": "Hàm số bậc hai",
+      "key_points": [
+        "Đồ thị của hàm số bậc hai là một parabol.",
+        "Đỉnh và trục đối xứng là những yếu tố đặc trưng để phác họa parabol.",
+        "Dấu của hệ số bậc hai xác định chiều mở của parabol và dạng biến thiên của hàm số.",
+        "Có thể khảo sát giao điểm của parabol với các trục tọa độ và xác định tập giá trị trên R."
+      ],
+      "must_know": [
+        "Hàm số bậc hai có dạng f(x) = ax² + bx + c, với a khác 0; tập xác định là R.",
+        "Đặt Δ = b² − 4ac; đỉnh là I(−b/(2a); −Δ/(4a)) và trục đối xứng là x = −b/(2a).",
+        "Dạng hoàn thành bình phương: f(x) = a(x + b/(2a))² − Δ/(4a).",
+        "Nếu a > 0, parabol mở lên, hàm số nghịch biến rồi đồng biến và có giá trị nhỏ nhất −Δ/(4a); nếu a < 0, parabol mở xuống, hàm số đồng biến rồi nghịch biến và có giá trị lớn nhất −Δ/(4a).",
+        "Đồ thị cắt trục tung tại (0; c); giao điểm với trục hoành ứng với nghiệm thực của ax² + bx + c = 0, số giao điểm phụ thuộc vào dấu của Δ.",
+        "Trên R, tập giá trị là [−Δ/(4a); +∞) nếu a > 0 và (−∞; −Δ/(4a)] nếu a < 0."
+      ],
+      "must_understand": [
+        "Dấu của a quyết định chiều mở của parabol và việc đỉnh là điểm thấp nhất hay cao nhất.",
+        "Trục đối xứng đi qua đỉnh; hai điểm có hoành độ đối xứng qua trục có cùng tung độ.",
+        "Cực trị trên R không nhất thiết là cực trị trên miền biến bị giới hạn; bài toán thực tế cần xét đúng miền của biến.",
+        "Cần phân biệt nghiệm của phương trình bậc hai với giá trị cực trị của hàm số."
+      ],
+      "problem_types": [
+        "Nhận dạng hàm số bậc hai từ công thức sau khi khai triển và sắp xếp theo lũy thừa giảm dần.",
+        "Xác định đỉnh, trục đối xứng và chiều mở của parabol.",
+        "Lập bảng biến thiên, xác định khoảng đồng biến, nghịch biến và giá trị cực trị.",
+        "Phác họa đồ thị bằng đỉnh, trục đối xứng và các điểm đặc trưng.",
+        "Xác định giao điểm của đồ thị với trục tung, trục hoành và tập giá trị trên R.",
+        "Vận dụng mô hình bậc hai trong bài toán thực tế khi các giả thiết được nêu đầy đủ."
+      ],
+      "related": [
+        {
+          "chapter_id": "III",
+          "lesson": "Hàm số và đồ thị",
+          "relation": "Bài này vận dụng các khái niệm hàm số, đồ thị và sự biến thiên để khảo sát một loại hàm số cụ thể."
+        }
+      ]
+    }
+  ]
+}
