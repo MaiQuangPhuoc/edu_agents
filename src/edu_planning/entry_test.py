@@ -30,5 +30,5 @@ def entry_test_node(state: PlanState) -> dict:
         return {"inbox": inbox, "roadmap_status": "entry_test_failed", "messages": [AIMessage(
             content=f"Mình chưa tạo được bài test đầu vào ({p.get('error', 'lỗi không rõ')}). Bạn nhắn \"thử lại\" nhé.")]}
     return {"inbox": inbox, "roadmap_status": "awaiting_test_answers",
-            "entry_test": {"subject": p["subject"], "key_file": p["key_file"]},
+            "entry_test": {"subject": p["subject"], "key_file": p["key_file"], "questions": [{k: q[k] for k in ("no", "chapter_id", "question", "options") if k in q} for q in p["questions"]]},
             "messages": [AIMessage(content=_show(p["questions"]))]}

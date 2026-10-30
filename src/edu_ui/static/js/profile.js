@@ -302,5 +302,7 @@
   $("#load-profile").addEventListener("click", loadProfile);
   form.addEventListener("submit", saveProfile);
 
-  loadProfile();
+  fetch('/api/ui/workflows/identity').then(r => {if (!r.ok) throw new Error('Không tải được mã học sinh'); return r.json();})
+    .then(data => {$("#student-id").value = data.student_id; localStorage.setItem('eduagent-student-id', data.student_id); return loadProfile();})
+    .catch(error => status(error.message, "error"));
 })();

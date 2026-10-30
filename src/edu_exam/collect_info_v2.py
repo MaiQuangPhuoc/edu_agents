@@ -97,7 +97,7 @@ def collect_info(state: ExamState, llm_client: LLMClient) -> dict:
 
     print(f"complete: {complete}")
     return {
-        "messages": [AIMessage(content=result.reply)],
+        "messages": [AIMessage(content=result.reply, additional_kwargs={"ui_confirm": all_fields_filled and not complete})],
         "student_profile": new_profile,
         "profile_complete": complete,
         "current_step": "collect_info",

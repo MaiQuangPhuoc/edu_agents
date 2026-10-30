@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block document_title %}EDUAGENT — Trợ lý học tập{% endblock %}
-{% block page_styles %}<link rel="stylesheet" href="/ui-static/css/chat.css">{% endblock %}
-{% block page_scripts %}<script defer src="/ui-static/js/chat.js"></script>{% endblock %}
+{% block page_styles %}<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css"><link rel="stylesheet" href="/ui-static/css/workflow.css"><link rel="stylesheet" href="/ui-static/css/chat.css">{% endblock %}
+{% block page_scripts %}<script defer src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script><script defer src="/ui-static/js/workflow.js"></script><script defer src="/ui-static/js/chat.js"></script>{% endblock %}
 {% block page_title %}Trợ lý AI{% endblock %}
 {% block page_description %}Không gian trò chuyện và học tập của bạn.{% endblock %}
 {% block main_class %}chat-page{% endblock %}
@@ -15,6 +15,7 @@
 </button>
 {% endblock %}
 {% block content %}
+<p id="render-notice" class="study-muted" hidden>Chưa tải được thư viện định dạng; nội dung được hiển thị dạng văn bản.</p>
 <section id="messages" class="messages" aria-label="Hội thoại" aria-live="polite">
   <div class="chat-demo" aria-label="Ví dụ hội thoại">
     <p class="demo-label"><span aria-hidden="true">✦</span> MỘT VÍ DỤ NHẸ</p>
@@ -27,16 +28,18 @@
 <form id="chat-form" class="composer">
   <div id="action-menu" class="action-menu" hidden>
     <p>Chọn chức năng</p>
-    <button type="button" data-action-prompt="Hãy giúp mình tạo một bài kiểm tra. Hỏi mình môn học, phạm vi, số câu và thời lượng trước nhé.">
+    <button type="button" data-mode="exam">
       <span class="menu-icon" aria-hidden="true">✎</span><span><strong>Tạo bài kiểm tra</strong><small>Thiết kế đề theo mục tiêu ôn tập</small></span>
     </button>
-    <button type="button" data-action-prompt="Hãy giúp mình lập một lộ trình học phù hợp. Hỏi mình mục tiêu và thời gian học nhé.">
+    <button type="button" data-mode="planning">
       <span class="menu-icon" aria-hidden="true">⌁</span><span><strong>Lập lộ trình học</strong><small>Chia mục tiêu thành từng chặng</small></span>
     </button>
-    <button type="button" data-action-prompt="Giải thích giúp mình một kiến thức theo cách dễ hiểu, từng bước một.">
+    <button type="button" data-mode="qa">
       <span class="menu-icon" aria-hidden="true">◇</span><span><strong>Giải thích kiến thức</strong><small>Học từng bước, dễ theo dõi</small></span>
     </button>
   </div>
+  <div id="workflow-chip" class="wf-chip" hidden><span></span><button type="button" aria-label="Bỏ chức năng">×</button></div>
+  <label id="workflow-options" class="wf-options" hidden><input id="verify-resources" type="checkbox"> Kiểm tra thêm độ phù hợp tài nguyên bằng AI</label>
   <div class="composer-row">
     <div class="composer-left">
       <button id="action-toggle" class="icon-button add-button" type="button" aria-label="Mở chức năng" title="Chức năng" aria-expanded="false">

@@ -272,7 +272,7 @@ def collect_student_model(state: PlanState, llm_client: LLMClient) -> dict:
     
     queries = state.get("search_queries", [])      # query tạo sau bài test (entry_grade_node)
     return {
-        "messages":      [AIMessage(content=turn.tin_nhan)],
+        "messages":      [AIMessage(content=turn.tin_nhan, additional_kwargs={"ui_confirm": not turn.hoan_tat and _missing(model) == NO_MISSING})],
         "student_model": model,
         "search_queries": queries,
         "model_done":    turn.hoan_tat,

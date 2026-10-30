@@ -27,6 +27,7 @@ def present_node(state: PlanState) -> dict:
 
         lp = LearningPath.model_validate(draft).model_dump(mode="json")      # đảm bảo đúng schema trước khi lưu
         sid = state.get("student_id") or state["student_model"].get("student_id", "unknown")
+        lp["subject"] = (state.get("lp_window") or {}).get("subject", "")
         path = save_learning_path(sid, lp)
     except Exception as e:
         msg = "Mình chưa soạn được lộ trình chi tiết" + (f": {str(e)[:200]}" if str(e) else ".") + " Bạn nhắn \"thử lại\" để mình làm lại nhé."

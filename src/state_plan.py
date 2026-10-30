@@ -418,4 +418,5 @@ class PlanState(TypedDict, total=False):
     lp_reviewed: bool                            # LLM review chỉ chạy một lần
 
     learning_path: dict
+    lp_verify: bool                              # UI override for optional resource verification
     lp_file: str                                 # đường dẫn file JSON lộ trình (UI mở bằng nút)

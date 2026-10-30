@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const $ = selector => document.querySelector(selector);
-  const STUDENT_ID = 'hs_002';
+  let STUDENT_ID = new URLSearchParams(location.search).get('student_id') || localStorage.getItem('eduagent-student-id') || 'hs_002';
   const state = {exams: [], active: null, answers: {}, reminders: 0, submitting: false, request: 0};
   const memoryDrafts = new Map();
   const element = (tag, cls, text) => {
@@ -383,5 +383,5 @@
     if (id) openExam(id,null,false);
     else {state.request++;state.active=null;showDetail(false);message();renderCards();}
   });
-  loadExams().then(() => {const id = new URL(location.href).searchParams.get('exam');if (id) openExam(id,null,false);});
+  api('/api/ui/workflows/identity').then(data => {STUDENT_ID = data.student_id; localStorage.setItem('eduagent-student-id', STUDENT_ID); return loadExams();}).then(() => {const id = new URL(location.href).searchParams.get('exam');if (id) openExam(id,null,false);});
 })();

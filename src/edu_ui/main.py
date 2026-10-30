@@ -1,6 +1,7 @@
 """EDUAGENT UI standalone FastAPI entrypoint.
 Run at repository root: uvicorn src.edu_ui.main:app --reload --port 8001
-Optionally configure EDU_QA_API_URL to an existing QA FastAPI service.
+QA, Exam and Planning graphs are lazy-loaded by workflow_api.
+EDU_QA_API_URL is only for the legacy /api/ui/chat proxy.
 """
 import os
 from pathlib import Path
@@ -12,7 +13,9 @@ from fastapi import Request
 from pydantic import BaseModel, Field
 import httpx
 
+from dotenv import load_dotenv
 BASE = Path(__file__).resolve().parent
+load_dotenv(BASE.parents[1] / ".env", encoding="utf-8-sig", override=False)
 app = FastAPI(title="EDUAGENT UI")
 app.mount("/ui-static", StaticFiles(directory=BASE / "static"), name="ui-static")
 templates = Jinja2Templates(directory=str(BASE / "templates"))
@@ -84,7 +87,7 @@ app.include_router(roadmap_router)
 @app.get("/roadmap", response_class=HTMLResponse)
 def roadmap_page(request: Request):
     return templates.TemplateResponse(
-        request=request, name="roadmap.html", context={"active_page": "roadmap"}
+        request=request, name="study.html", context={"active_page": "roadmap"}
     )
 
 # Student profile uses the canonical planning StudentModel schema.
@@ -97,3 +100,11 @@ def profile_page(request: Request):
         request=request, name="profile.html", context={"active_page": "profile"}
     )
 
+
+# Real graph workflows are lazy-loaded; this UI needs only one server process.
+from src.edu_ui.workflow_api import router as workflow_router
+app.include_router(workflow_router)
+
+@app.get("/study", response_class=HTMLResponse)
+def study_page(request: Request):
+    return templates.TemplateResponse(request=request, name="study.html", context={"active_page": "chat"})
