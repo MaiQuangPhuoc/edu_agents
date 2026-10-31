@@ -70,21 +70,11 @@ window.EduFlow = (() => {
     return node;
   }
   async function api(url, body, signal) {
-    const timeout = new AbortController();
-    const abort = () => timeout.abort();
-    signal?.addEventListener('abort', abort, {once: true});
-    if (signal?.aborted) timeout.abort();
-    const timer = setTimeout(() => timeout.abort(), 25000);
-    try {
-      const r = await fetch(url, {method: body === undefined ? 'GET' : 'POST', signal: timeout.signal,
-        headers: {'Content-Type': 'application/json'}, ...(body === undefined ? {} : {body: JSON.stringify(body)})});
-      const data = await r.json().catch(() => ({}));
-      if (!r.ok) {const error = new Error(typeof data.detail === 'string' ? data.detail : `Yêu cầu không hợp lệ (${r.status})`); error.status = r.status; throw error;}
-      return data;
-    } catch (error) {
-      if (timeout.signal.aborted && !signal?.aborted) throw new Error('Server chưa trả dữ liệu sau 25 giây. Kiểm tra terminal rồi thử tải lại trang.');
-      throw error;
-    } finally {clearTimeout(timer); signal?.removeEventListener('abort', abort);}
+    const r = await fetch(url, {method: body === undefined ? 'GET' : 'POST', signal,
+      headers: {'Content-Type': 'application/json'}, ...(body === undefined ? {} : {body: JSON.stringify(body)})});
+    const data = await r.json().catch(() => ({}));
+    if (!r.ok) {const error = new Error(typeof data.detail === 'string' ? data.detail : `Yêu cầu không hợp lệ (${r.status})`); error.status = r.status; throw error;}
+    return data;
   }
   const id = () => window.crypto?.randomUUID?.() || [...window.crypto.getRandomValues(new Uint8Array(16))].map(n => n.toString(16).padStart(2, '0')).join('');
   async function poll(jid, onProgress, signal) {

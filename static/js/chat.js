@@ -226,6 +226,10 @@ function updateComposer() {
   document.getElementById("char-count").textContent = `${elements.input.value.length} / 4000`;
 }
 
+function focusComposer() {
+  requestAnimationFrame(() => elements.input.focus({ preventScroll: true }));
+}
+
 async function sendMessage() {
   if (isSending) return;
   const text = elements.input.value.trim();
@@ -235,6 +239,7 @@ async function sendMessage() {
     addMessage("assistant", "Chức năng tạo lộ trình học đang được phát triển.");
     elements.input.value = "";
     updateComposer();
+    focusComposer();
     return;
   }
 
@@ -279,7 +284,7 @@ async function sendMessage() {
   } finally {
     isSending = false;
     elements.sendButton.disabled = false;
-    elements.input.focus();
+    focusComposer();
   }
 }
 

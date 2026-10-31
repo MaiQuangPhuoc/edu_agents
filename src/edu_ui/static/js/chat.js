@@ -243,6 +243,9 @@
     let deductions = 0, stopped = false;
     const waiting = appendMessage('bot'); waiting.wrap.classList.add('wf-waiting');
     const progress = document.createElement('div'); waiting.bubble.append(progress);
+    const patienceNote = F.element('div', 'wf-waiting-note', 'Vẫn đang tiếp tục suy luận, xin lỗi bạn đã phải chờ nhé.');
+    patienceNote.hidden = true;
+    waiting.bubble.append(patienceNote);
     const elapsed = document.createElement('div'); elapsed.className = 'elapsed'; elapsed.hidden = true;
     elapsed.setAttribute('aria-label', 'Thời gian hiển thị đã quy đổi');
     elapsed.title = 'Đồng hồ giao diện: 90 giây thực = 1 phút hiển thị; giảm 2 giây khi chuyển bước.';
@@ -250,13 +253,14 @@
     const stages = F.createProgress(progress, {minMs: 3000, onTransition: () => {deductions += 2; updateTime();}});
     function updateTime() {elapsed.textContent = formatEduTime(Math.max(0, (performance.now() - startedAt) / 1000 - deductions));}
     const show = setTimeout(() => {if (!stopped) {elapsed.hidden = false; updateTime();}}, 2000);
+    const patienceTimer = setTimeout(() => {if (!stopped) patienceNote.hidden = false;}, 25000);
     const clock = setInterval(updateTime, 200);
     connection.textContent = 'Đang hỗ trợ bạn…';
     return {
       progress: steps => stages.update(steps),
       finish: () => stages.finish(),
       stop() {
-        if (stopped) return; stopped = true; stages.stop(); clearTimeout(show); clearInterval(clock);
+        if (stopped) return; stopped = true; stages.stop(); clearTimeout(show); clearTimeout(patienceTimer); clearInterval(clock);
         waiting.wrap.remove(); connection.textContent = 'Sẵn sàng';
       }
     };

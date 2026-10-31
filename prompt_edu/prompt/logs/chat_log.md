@@ -431,3 +431,59 @@ Hệ thống: Đỉnh của parabol (P): y = x^2 - 4x + 3 nằm tại I(2; -1). 
 
 ---
 
+Người dùng: nhà vua đàu tiên của lịch sử việt nam là ai , Đinh Tiên Hoàng sao , và giải thích vì sao Định Bộ Lĩnh nhất (06:28:52 31/10/2026)
+
+Hệ thống: Vua đầu tiên trong lịch sử Việt Nam là vua Hùng, người trị vì nước Văn Lang với kinh đô Bạch Hạc (Phú Thọ). Đinh Tiên Hoàng là danh hiệu của Đinh Bộ Lĩnh, người anh hùng dân tộc đã mở đầu và đặt nền thống nhất quốc gia, xây dựng nhà nước phong kiến trung ương tập quyền. Đinh Bộ Lĩnh được coi là người lãnh đạo nhất vì khi thời cơ chín muồi, ông đã lãnh đạo lực lượng của mình chinh chiến, trong vòng một năm dẹp loạn 12 sứ quân và thống nhất đất nước, được dân chúng kính trọng và tôn làm Vạn Thắng Vương. Hai năm sau, ông lên ngôi hoàng đế, đặt tên nước là Đại Cồ Việt và ban hành nhiều chính sách mới giúp đất nước phát triển mạnh mẽ, đời sống người dân ngày càng ấm no, nên được ca ngợi là một trong những trang vàng sáng nhất của lịch sử nước nhà. (06:31:25 31/10/2026) - Chênh lệch: 2p33s
+
+---
+
+Người dùng: trong lịch sử 10 có học vè 2 vị Vua đó không (06:33:36 31/10/2026)
+
+Hệ thống: Trong chương Trường học Lịch sử lớp 10, học sinh sẽ được học về Vua Hùng – vị vua đầu tiên của Việt Nam – và Đinh Bộ Lĩnh, người được phong là Đinh Tiên Hoàng. Đinh Bộ Lĩnh sinh năm 924 tại làng Đại Hoàng, từ nhỏ đã thể hiện khả năng lãnh đạo và trí thông minh qua các trò chơi đánh trận giả, được trẻ làng tôn sùng và gọi là "ông vua cờ lau". Khi đất nước chia thành mười hai cát cứ, ông tham gia đạo binh, nhanh chóng thăng chức và lãnh đạo sứ quân của Trần Lãm, dẹp loạn và thống nhất đất nước trong vòng một năm, được nhân dân tôn vinh là Vạn Thắng Vương. Năm 968, Đinh Bộ Lĩnh lên ngôi Hoàng đế, đặt quốc hiệu Đại Cồ Việt và thực hiện nhiều chính sách tiến bộ, góp phần nâng cao đời sống nhân dân. Vì vậy, hai vị vua này đều là nội dung quan trọng trong chương Lịch sử lớp 10. (06:34:50 31/10/2026) - Chênh lệch: 1p13s
+
+---
+
+Người dùng: Vai trò của Sử học
+
+Một trong những chức năng xã hội quan trọng nhất của Sử học là:
+• A. Dự báo chính xác 100% các sự kiện sẽ xảy ra trong tương lai gần.
+• B. Giúp con người đúc kết bài học kinh nghiệm từ quá khứ để giải quyết các vấn đề của hiện tại và tương lai.
+• C. Xóa bỏ hoàn toàn những quan điểm khác biệt về một sự kiện đã cũ.
+• D. Thay thế hoàn toàn cho các ngành khoa học xã hội khác.
+
+đáp án nào đúng (06:35:20 31/10/2026)
+
+Hệ thống: Chức năng xã hội quan trọng nhất của Sử học là giúp con người đúc kết các bài học kinh nghiệm từ quá khứ để giải quyết các vấn đề hiện tại và tương lai, vì vậy đáp án đúng là B. (06:35:38 31/10/2026) - Chênh lệch: 18s
+
+---
+
+Người dùng: Các nhiệm vụ chính của Sử học là gì? (06:36:54 31/10/2026)
+
+Hệ thống: Sử học có hai chức năng chính: chức năng khoa học, nhằm khôi phục hiện thực lịch sử một cách chính xác, khách quan; và chức năng xã hội, nhằm phục vụ cuộc sống hiện tại bằng cách rút ra những bài học kinh nghiệm từ quá khứ. Dựa trên hai chức năng này, nhiệm vụ của Sử học được chia thành hai phần: cung cấp tri thức khoa học về lịch sử và thực hiện giáo dục, nêu gương cho con người, giúp họ hiểu đúng quá khứ và phát triển những giá trị tốt đẹp. (06:37:08 31/10/2026) - Chênh lệch: 13s
+
+---
+
+Người dùng: hãy tóm tắt các kiến thức trong chương 1 (06:38:31 31/10/2026)
+
+Hệ thống: Chưa đủ dữ kiện để trả lời được câu hỏi này. (06:39:19 31/10/2026) - Chênh lệch: 48s
+
+---
+
+Người dùng: chương 1 học những bài nào (06:41:05 31/10/2026)
+
+Hệ thống: Chưa đủ dữ kiện để trả lời được câu hỏi này. (06:41:54 31/10/2026) - Chênh lệch: 48s
+
+---
+
+Người dùng: hệ bất thương trình hai ẩn bao gồm những nội dung học nào , có liên quan đến bất phương trình bậc nhất không (07:44:40 31/10/2026)
+
+Hệ thống: Hệ bất phương trình hai ẩn trong chương II của sách Toán lớp 10 bao gồm nội dung học về bất phương trình bậc nhất hai ẩn và hệ bất phương trình bậc nhất hai ẩn. Ở phần "Bất phương trình bậc nhất hai ẩn" học sinh cần nhận dạng được bất phương trình, phân biệt với phương trình, kiểm tra nghiệm bằng cách thay giá trị, vẽ đường biên \(ax+by=c\) và xác định nửa mặt phẳng nghiệm, đồng thời dùng đường biên liền hoặc nét đứt tùy theo dấu bất phương trình. Ở phần "Hệ bất phương trình bậc nhất hai ẩn" học sinh học khái niệm hệ, cách biểu diễn miền nghiệm chung của các bất phương trình, kiểm tra một điểm có thuộc miền nghiệm hay không, mô hình hoá các điều kiện thực tiễn bằng hệ bất phương trình tuyến tính đơn giản, xác định các đỉnh của miền đa giác khả thi và tìm giá trị lớn nhất hoặc nhỏ nhất của \(F=ax+by\) trên miền đó. Vì hệ bất phương trình được tạo thành từ các bất phương trình bậc nhất, nên chúng có quan hệ trực tiếp với bất phương trình bậc nhất. (07:45:10 31/10/2026) - Chênh lệch: 29s
+
+---
+
+Người dùng: mệnh đề toán học là gì (08:53:42 31/10/2026)
+
+Hệ thống: Mệnh đề trong toán học là một câu khẳng định mà chúng ta có thể xác định được là đúng hoặc sai, nhưng không thể đồng thời vừa đúng vừa sai. Khi câu khẳng định đúng, nó được gọi là mệnh đề đúng; khi sai, nó là mệnh đề sai. Thông thường, các mệnh đề được ký hiệu bằng các chữ cái in hoa như P, Q, R, …\n\nVí dụ, trong các câu: a) “3 là số lẻ”, b) “1 + 2 > 3”, c) “π là số vô tỉ phải không?”, d) “0,0001 là số rất bé”, e) “Đến năm 2050, con người sẽ đặt chân lên Sao Hỏa”, các câu a, b, d là mệnh đề vì chúng có giá trị đúng hoặc sai rõ ràng, trong khi c và e không phải mệnh đề vì chúng là câu hỏi hoặc dự đoán chưa xác định.\n\nCó những mệnh đề được tin là đúng nhưng chưa được chứng minh hay bác bỏ; chúng được gọi là giả thuyết toán học. Một ví dụ nổi tiếng là Định lý lớn của Fermat, được đưa ra vào năm 1630 và chỉ được chứng minh thành công vào năm 1994. (08:54:08 31/10/2026) - Chênh lệch: 25s
+
+---
+

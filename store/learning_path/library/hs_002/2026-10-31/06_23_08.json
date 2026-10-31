@@ -1,0 +1,701 @@
+{
+  "current_phase": 1,
+  "schedule": {
+    "start_date": "2026-10-31",
+    "end_date": "2026-11-28",
+    "total_weeks": 4,
+    "sessions_per_week": 3,
+    "minutes_per_session": 120
+  },
+  "outline": [
+    {
+      "phase": 1,
+      "weeks": [
+        {
+          "week_no": 1,
+          "goal": "Giải thích và vận dụng được các phép toán vectơ, đồng thời đọc và phân tích đồ thị hàm số bậc hai.",
+          "lessons": [
+            {
+              "chapter_id": "V",
+              "lesson": "Khái niệm vectơ"
+            },
+            {
+              "chapter_id": "V",
+              "lesson": "Tổng và hiệu của hai vectơ"
+            },
+            {
+              "chapter_id": "V",
+              "lesson": "Tích của một số với một vectơ"
+            },
+            {
+              "chapter_id": "V",
+              "lesson": "Tích vô hướng của hai vectơ"
+            },
+            {
+              "chapter_id": "III",
+              "lesson": "Hàm số và đồ thị"
+            },
+            {
+              "chapter_id": "III",
+              "lesson": "Hàm số bậc hai"
+            }
+          ],
+          "activity_types": [
+            "video",
+            "tài liệu",
+            "bài tập"
+          ],
+          "difficulty_trend": "dễ → vừa",
+          "total_hours": 6.0,
+          "has_assessment": true
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "weeks": [
+        {
+          "week_no": 2,
+          "goal": "Chọn và áp dụng được hệ thức lượng phù hợp, biểu diễn miền nghiệm và xác định nghiệm của hệ bất phương trình.",
+          "lessons": [
+            {
+              "chapter_id": "IV",
+              "lesson": "Giá trị lượng giác của một góc từ 0° đến 180°"
+            },
+            {
+              "chapter_id": "IV",
+              "lesson": "Định lí côsin và định lí sin"
+            },
+            {
+              "chapter_id": "IV",
+              "lesson": "Giải tam giác và ứng dụng thực tế"
+            },
+            {
+              "chapter_id": "II",
+              "lesson": "Bất phương trình bậc nhất hai ẩn"
+            },
+            {
+              "chapter_id": "II",
+              "lesson": "Hệ bất phương trình bậc nhất hai ẩn"
+            }
+          ],
+          "activity_types": [
+            "video",
+            "tài liệu",
+            "bài tập"
+          ],
+          "difficulty_trend": "vừa",
+          "total_hours": 6.0,
+          "has_assessment": true
+        }
+      ]
+    },
+    {
+      "phase": 3,
+      "weeks": [
+        {
+          "week_no": 3,
+          "goal": "Củng cố cách lập luận với mệnh đề và tập hợp, rồi đọc, tóm tắt và phân tích dữ liệu bằng các số đặc trưng.",
+          "lessons": [
+            {
+              "chapter_id": "I",
+              "lesson": "Mệnh đề"
+            },
+            {
+              "chapter_id": "I",
+              "lesson": "Tập hợp"
+            },
+            {
+              "chapter_id": "I",
+              "lesson": "Các phép toán trên tập hợp"
+            }
+          ],
+          "activity_types": [
+            "tài liệu",
+            "bài tập"
+          ],
+          "difficulty_trend": "dễ → vừa",
+          "total_hours": 6.0,
+          "has_assessment": true
+        },
+        {
+          "week_no": 4,
+          "goal": "Ước lượng sai số và phân tích dữ liệu qua bảng, biểu đồ cùng các số đặc trưng; tự rà soát lỗi còn lặp lại.",
+          "lessons": [
+            {
+              "chapter_id": "VI",
+              "lesson": "Số gần đúng và sai số"
+            },
+            {
+              "chapter_id": "VI",
+              "lesson": "Mô tả và biểu diễn dữ liệu trên các bảng và biểu đồ"
+            },
+            {
+              "chapter_id": "VI",
+              "lesson": "Các số đặc trưng đo xu thế trung tâm của mẫu số liệu"
+            },
+            {
+              "chapter_id": "VI",
+              "lesson": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu"
+            }
+          ],
+          "activity_types": [
+            "video",
+            "tài liệu",
+            "bài tập"
+          ],
+          "difficulty_trend": "vừa → khó",
+          "total_hours": 6.0,
+          "has_assessment": true
+        }
+      ]
+    }
+  ],
+  "weeks": [
+    {
+      "week_no": 1,
+      "start_date": "2026-10-31",
+      "end_date": "2026-11-06",
+      "goal": "Giải thích và vận dụng các phép toán vectơ, đồng thời đọc và phân tích đồ thị hàm số bậc hai; củng cố kiến thức bằng luyện tập và bài kiểm tra cuối tuần.",
+      "sessions": [
+        {
+          "date": "2026-10-31",
+          "start_time": "19:00",
+          "minutes": 120,
+          "type": "lesson",
+          "chapter_id": "V",
+          "lesson": "Khái niệm vectơ",
+          "key_points": [
+            "Vectơ biểu diễn một đại lượng có hướng và được xác định bởi điểm đầu, điểm cuối.",
+            "Hai vectơ cùng phương có giá song song hoặc trùng nhau; các vectơ cùng phương khác vectơ-không có thể cùng hướng hoặc ngược hướng.",
+            "Vectơ bằng nhau có cùng hướng và cùng độ dài; vectơ đối nhau ngược hướng và có cùng độ dài.",
+            "Vectơ-không có điểm đầu trùng điểm cuối và độ dài bằng 0."
+          ],
+          "must_know": [
+            "Kí hiệu vectơ: \\(\\overrightarrow{AB}\\) hoặc \\(\\vec a\\); với \\(\\overrightarrow{AB}\\), A là điểm đầu và B là điểm cuối.",
+            "Hai vectơ cùng phương khi các đường thẳng chứa giá của chúng song song hoặc trùng nhau.",
+            "\\(\\overrightarrow{AB}=-\\overrightarrow{BA}\\).",
+            "Hai vectơ bằng nhau khi cùng hướng và cùng độ dài; hai vectơ đối nhau khi ngược hướng và cùng độ dài.",
+            "\\(|\\overrightarrow{AB}|=AB\\); vectơ-không \\(\\overrightarrow{AA}=\\vec 0\\) có độ dài bằng 0."
+          ],
+          "must_understand": [
+            "Đổi thứ tự hai điểm đầu-cuối làm đổi hướng vectơ.",
+            "Vectơ bằng nhau không nhất thiết có cùng điểm đầu; chỉ có độ dài bằng nhau chưa đủ để kết luận hai vectơ bằng nhau.",
+            "Có thể tịnh tiến vectơ mà vẫn giữ nguyên hướng và độ dài."
+          ],
+          "related": [
+            {
+              "chapter_id": "V",
+              "lesson": "Tổng và hiệu của hai vectơ",
+              "relation": "Các phép cộng, trừ vectơ sử dụng khái niệm vectơ đối, vectơ-không và vectơ bằng nhau."
+            }
+          ],
+          "difficulty": "easy",
+          "activities": [
+            {
+              "type": "video",
+              "content": "Xem video về khái niệm vectơ, chú ý vectơ được xác định bởi điểm đầu, điểm cuối và sự khác nhau giữa vectơ bằng nhau, vectơ đối nhau.",
+              "minutes": 25,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "reading",
+              "content": "Đọc lý thuyết về tổng và hiệu hai vectơ, tập trung vào quy tắc ba điểm và việc biểu diễn phép trừ bằng vectơ đối.",
+              "minutes": 25,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "exercise",
+              "content": "Luyện nhận diện vectơ, xác định điểm đầu và điểm cuối, rồi dựng tổng vectơ bằng quy tắc ba điểm.",
+              "minutes": 55,
+              "difficulty": "easy",
+              "problem_type": "Nhận diện vectơ và xác định điểm đầu, điểm cuối từ kí hiệu hoặc hình vẽ."
+            },
+            {
+              "type": "summary",
+              "content": "Tóm tắt cách nhận diện vectơ và liên hệ giữa vectơ đối với phép trừ hai vectơ.",
+              "minutes": 15,
+              "difficulty": "easy",
+              "problem_type": ""
+            }
+          ],
+          "resources": [
+            {
+              "type": "video",
+              "title": "Giới thiệu khái niệm Vectơ | Toán 10 | OLM.VN",
+              "url": "https://youtube.com/watch?v=qmZMORByNNE",
+              "note": "Video lý thuyết cho bài Khái niệm vectơ."
+            },
+            {
+              "type": "document",
+              "title": "Lý thuyết Tổng và hiệu của hai vectơ lớp 10 (hay, chi tiết)",
+              "url": "http://vietjack.com/toan-lop-10/ly-thuyet-tong-va-hieu-cua-hai-vecto.jsp",
+              "note": "Tài liệu lý thuyết cho phần Tổng và hiệu của hai vectơ."
+            }
+          ],
+          "assessment": null,
+          "exam_enabled": true,
+          "session_id": "e3797a66-9a19-5500-ad5a-4c0220d9f670",
+          "completed": false,
+          "completed_at": null
+        },
+        {
+          "date": "2026-11-02",
+          "start_time": "07:00",
+          "minutes": 120,
+          "type": "lesson",
+          "chapter_id": "V",
+          "lesson": "Tích của một số với một vectơ",
+          "key_points": [
+            "Phép nhân một vectơ với số thực tạo ra một vectơ có hướng và độ dài phụ thuộc vào dấu, giá trị tuyệt đối của số nhân.",
+            "Phép nhân với số có các tính chất phân phối và kết hợp tương tự phép nhân đại số.",
+            "Điều kiện cùng phương của hai vectơ có thể biểu diễn bằng một vectơ là bội của vectơ kia.",
+            "Quan hệ thẳng hàng của ba điểm có thể được xét thông qua hai vectơ cùng phương."
+          ],
+          "must_know": [
+            "Với số thực k và vectơ a: |ka| = |k||a|.",
+            "Nếu k > 0 và a khác vectơ-không thì ka cùng hướng với a; nếu k < 0 thì ngược hướng.",
+            "Quy ước 0a = 0 và k0 = 0.",
+            "Các tính chất: k(a+b)=ka+kb; (k+m)a=ka+ma; k(ma)=(km)a.",
+            "Với a khác vectơ-không, a và b cùng phương khi và chỉ khi tồn tại số thực k sao cho b=ka.",
+            "Ba điểm phân biệt A, B, C thẳng hàng khi và chỉ khi AB và AC cùng phương."
+          ],
+          "must_understand": [
+            "Nhân với số âm làm đổi hướng; độ dài của vectơ mới thay đổi theo hệ số |k|.",
+            "Khi dùng điều kiện b=ka để xét cùng phương, cần kiểm tra giả thiết vectơ làm cơ sở khác vectơ-không.",
+            "Biểu diễn vectơ dưới dạng tổ hợp các vectơ đã biết giúp chuyển quan hệ hình học thành phép biến đổi đại số vectơ."
+          ],
+          "related": [
+            {
+              "chapter_id": "V",
+              "lesson": "Tích vô hướng của hai vectơ",
+              "relation": "Các phép toán vectơ là công cụ chung để biểu diễn và xử lý quan hệ hình học."
+            }
+          ],
+          "difficulty": "easy",
+          "activities": [
+            {
+              "type": "review",
+              "content": "Ôn nhanh quy tắc cộng, trừ vectơ của bài V.2 và nhắc lại khái niệm vectơ cùng phương làm nền cho bài V.3.",
+              "minutes": 15,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "lecture",
+              "content": "Học phép nhân một vectơ với số thực, chú ý dấu của số nhân quyết định hướng và giá trị tuyệt đối của số nhân quyết định độ dài vectơ mới.",
+              "minutes": 25,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "reading",
+              "content": "Đọc về tích vô hướng, tập trung vào việc tích vô hướng liên hệ với độ dài và côsin góc giữa hai vectơ, đồng thời dùng điều kiện tích vô hướng bằng 0 để xét vuông góc.",
+              "minutes": 25,
+              "difficulty": "easy",
+              "problem_type": ""
+            },
+            {
+              "type": "exercise",
+              "content": "Luyện xác định phương, hướng và độ dài của k a, sau đó vận dụng điều kiện tích vô hướng bằng 0 để chứng minh hai vectơ vuông góc.",
+              "minutes": 40,
+              "difficulty": "easy",
+              "problem_type": "Xác định phương, hướng và độ dài của k a theo k và a."
+            },
+            {
+              "type": "summary",
+              "content": "Tóm tắt ảnh hưởng của hệ số nhân đến vectơ và ý nghĩa của tích vô hướng khi xét vuông góc.",
+              "minutes": 15,
+              "difficulty": "easy",
+              "problem_type": ""
+            }
+          ],
+          "resources": [
+            {
+              "type": "video",
+              "title": "Bài 4. Tích Vô Hướng Của Hai Vecto - Toán 10 (Sgk Mới) || Thầy Nguyễn Phan Tiến",
+              "url": "https://youtube.com/watch?v=npNRm9lZG30",
+              "note": "Tài nguyên luyện tập cho bài Tích vô hướng của hai vectơ."
+            },
+            {
+              "type": "document",
+              "title": "Chuyên đề vectơ Toán 10 - TOANMATH.com",
+              "url": "https://toanmath.com/2024/09/chuyen-de-vecto-toan-10.html",
+              "note": "Tài liệu luyện tập tổng hợp cho chương Vectơ."
+            }
+          ],
+          "assessment": null,
+          "exam_enabled": true,
+          "session_id": "38bbb9bc-501b-55c3-9c0b-da7104fc0a01",
+          "completed": false,
+          "completed_at": null
+        },
+        {
+          "date": "2026-11-03",
+          "start_time": "07:00",
+          "minutes": 120,
+          "type": "assessment",
+          "chapter_id": "III",
+          "lesson": "Hàm số bậc hai",
+          "key_points": [
+            "Đồ thị của hàm số bậc hai là một parabol.",
+            "Đỉnh và trục đối xứng là những yếu tố đặc trưng để phác họa parabol.",
+            "Dấu của hệ số bậc hai xác định chiều mở của parabol và dạng biến thiên của hàm số.",
+            "Có thể khảo sát giao điểm của parabol với các trục tọa độ và xác định tập giá trị trên R."
+          ],
+          "must_know": [
+            "Hàm số bậc hai có dạng f(x) = ax² + bx + c, với a khác 0; tập xác định là R.",
+            "Đặt Δ = b² − 4ac; đỉnh là I(−b/(2a); −Δ/(4a)) và trục đối xứng là x = −b/(2a).",
+            "Dạng hoàn thành bình phương: f(x) = a(x + b/(2a))² − Δ/(4a).",
+            "Nếu a > 0, parabol mở lên, hàm số nghịch biến rồi đồng biến và có giá trị nhỏ nhất −Δ/(4a); nếu a < 0, parabol mở xuống, hàm số đồng biến rồi nghịch biến và có giá trị lớn nhất −Δ/(4a).",
+            "Đồ thị cắt trục tung tại (0; c); giao điểm với trục hoành ứng với nghiệm thực của ax² + bx + c = 0, số giao điểm phụ thuộc vào dấu của Δ.",
+            "Trên R, tập giá trị là [−Δ/(4a); +∞) nếu a > 0 và (−∞; −Δ/(4a)] nếu a < 0."
+          ],
+          "must_understand": [
+            "Dấu của a quyết định chiều mở của parabol và việc đỉnh là điểm thấp nhất hay cao nhất.",
+            "Trục đối xứng đi qua đỉnh; hai điểm có hoành độ đối xứng qua trục có cùng tung độ.",
+            "Cực trị trên R không nhất thiết là cực trị trên miền biến bị giới hạn; bài toán thực tế cần xét đúng miền của biến.",
+            "Cần phân biệt nghiệm của phương trình bậc hai với giá trị cực trị của hàm số."
+          ],
+          "related": [
+            {
+              "chapter_id": "III",
+              "lesson": "Hàm số và đồ thị",
+              "relation": "Bài này vận dụng các khái niệm hàm số, đồ thị và sự biến thiên để khảo sát một loại hàm số cụ thể."
+            }
+          ],
+          "difficulty": "medium",
+          "activities": [
+            {
+              "type": "exercise",
+              "content": "Làm bài kiểm tra tổng hợp về bài Vectơ và bài Hàm số bậc hai, gồm xác định đỉnh, trục đối xứng, chiều mở của parabol và xác định giao điểm với các trục tọa độ.",
+              "minutes": 90,
+              "difficulty": "medium",
+              "problem_type": "Xác định đỉnh, trục đối xứng và chiều mở của parabol."
+            },
+            {
+              "type": "review",
+              "content": "Đối chiếu bài làm, xác định lỗi sai khi khảo sát parabol và khi thực hiện các phép toán vectơ, rồi ghi lại nội dung cần ôn.",
+              "minutes": 30,
+              "difficulty": "medium",
+              "problem_type": ""
+            }
+          ],
+          "resources": [
+            {
+              "type": "document",
+              "title": "Đề kiểm tra theo bài học chủ đề vectơ - TOANMATH.com",
+              "url": "https://toanmath.com/2025/09/de-kiem-tra-theo-bai-hoc-chu-de-vecto.html",
+              "note": "Tài nguyên kiểm tra cho chương Vectơ."
+            },
+            {
+              "type": "document",
+              "title": "Chuyên đề hàm số bậc hai Toán 10 Kết Nối Tri Thức Với Cuộc Sống - TOANMATH.com",
+              "url": "https://toanmath.com/2023/01/chuyen-de-ham-so-bac-hai-toan-10-ket-noi-tri-thuc-voi-cuoc-song.html",
+              "note": "Tài nguyên kiểm tra cho bài Hàm số bậc hai."
+            }
+          ],
+          "assessment": {
+            "chapter_ids": [
+              "V",
+              "V",
+              "V",
+              "V",
+              "III",
+              "III"
+            ],
+            "num_questions": 10
+          },
+          "exam_enabled": true,
+          "session_id": "96eee0c7-f542-5014-a6a9-f736fea8e5fd",
+          "completed": false,
+          "completed_at": null
+        }
+      ]
+    }
+  ],
+  "assumptions": [
+    "Cần xem lại: Tăng tổng thời lượng học lên ít nhất 32h bằng cách thêm buổi học 2h vào cuối tuần (Sat) mỗi tuần và bổ sung một buổi review tổng hợp cuối tuần. (căn cứ: Mục tiêu: đạt 8.0 điểm trong 4 tuần (từ 6.0 hiện tại). Lộ trình chỉ cung cấp 24h học (6h/tuần) và không có tăng tải thời gian.)",
+    "Cần xem lại: Trong mỗi buổi của tuần 2‑4, chèn ít nhất 20 phút video và 20 phút đọc tài liệu, sau đó đưa ra bài tập thực hành ngắn (15‑20 phút) để đáp ứng sở thích. (căn cứ: Tuần 2, 3, 4 không có chi tiết \"Buổi\" nên không thể xác nhận việc sử dụng video, tài liệu, bài tập sau buổi mà học sinh thích.)"
+  ],
+  "subject": "Toán 10",
+  "overview": {
+    "muc_tieu_tong": "Trong bốn tuần, hướng tới nâng điểm Toán 10 từ 6,0 lên mục tiêu 8,0 vào ngày 28-11-2026, đồng thời cân bằng giữa kết quả làm bài và hiểu bản chất kiến thức.",
+    "chien_luoc": "Không dùng kết quả bài kiểm tra đầu vào làm căn cứ xếp mức độ từng chương vì học sinh cho biết bài kiểm tra không chính xác. Lấy thứ tự tự nhận điểm yếu làm ưu tiên: V, III, IV, II, I; củng cố các chương này qua bài tập và tự kiểm tra. Chương VI không được học sinh nêu là điểm yếu nên chỉ rà soát ngắn. Chia thời gian giữa ba giai đoạn trong giới hạn tối đa 12 buổi, dành phần lớn công sức cho các chương học sinh tự nhận còn yếu và điều chỉnh trọng tâm theo kết quả làm bài thực tế.",
+    "giai_doan": [
+      {
+        "thu_tu": 1,
+        "ten": "Ưu tiên củng cố vectơ và hàm số",
+        "mon_hoc": "Toán 10",
+        "muc_tieu": "Ôn có trọng tâm chương V và III theo thứ tự học sinh tự nêu điểm yếu; củng cố khái niệm, phép toán và cách đọc, biểu diễn kiến thức qua bài tập. Sau mỗi mảng, tự kiểm tra để xác định lỗi và điều chỉnh phần cần ôn.",
+        "chapters": [
+          {
+            "chapter_id": "V",
+            "lessons": [
+              "Khái niệm vectơ",
+              "Tổng và hiệu của hai vectơ",
+              "Tích của một số với một vectơ",
+              "Tích vô hướng của hai vectơ"
+            ],
+            "ly_do": "Học sinh xếp chương V đầu tiên trong danh sách các chương tự nhận yếu, nên đây là ưu tiên sớm nhất. Kết quả bài kiểm tra đầu vào không được xem là căn cứ đáng tin cậy theo thông tin học sinh cung cấp; cần dùng bài tự kiểm tra mới để xác định cụ thể phần còn hổng."
+          },
+          {
+            "chapter_id": "III",
+            "lessons": [
+              "Hàm số và đồ thị",
+              "Hàm số bậc hai"
+            ],
+            "ly_do": "Học sinh xếp chương III thứ hai trong danh sách tự nhận yếu. Vì mục tiêu là tăng từ 6,0 lên 8,0 trong bốn tuần, cần củng cố cả kiến thức nền về hàm số và phần hàm số bậc hai, sau đó kiểm tra bằng bài tập thay vì dựa vào kết quả đầu vào mà học sinh cho là không chính xác."
+          }
+        ],
+        "tieu_chi_hoan_thanh": "Có thể tự giải bài tập cơ bản thuộc các bài trong hai chương, trình bày được cách làm và giải thích được phép toán hoặc đặc điểm đồ thị đã sử dụng; hoàn thành bài tự kiểm tra và ghi lại những lỗi cần tiếp tục sửa.",
+        "tai_nguyen": [
+          {
+            "loai": "video",
+            "tieu_de": "Bài 1. Vecto và các khái niệm, định nghĩa - Toán 10 (Sgk Mới) || Thầy Nguyễn Phan Tiến",
+            "url": "https://youtube.com/watch?v=zXyDnOHwBf4",
+            "ghi_chu": "Video giúp ôn các khái niệm vectơ trước khi luyện những phép toán trong chương."
+          },
+          {
+            "loai": "tai_lieu",
+            "tieu_de": "Các dạng bài tập Vecto lớp 10 (chọn lọc, có lời giải)",
+            "url": "https://vietjack.com/toan-lop-10/cac-dang-bai-tap-chuong-vecto.jsp",
+            "ghi_chu": "Tài liệu giúp luyện bài vectơ và đối chiếu lời giải để phát hiện lỗi."
+          },
+          {
+            "loai": "video",
+            "tieu_de": "Hàm số bậc hai - Bài 3 - Toán học 10 - Thầy Lê Thành Đạt (DỄ HIỂU NHẤT)",
+            "url": "https://youtube.com/watch?v=XuG121zTSsE",
+            "ghi_chu": "Video hỗ trợ ôn hàm số bậc hai và luyện các dạng bài liên quan."
+          }
+        ]
+      },
+      {
+        "thu_tu": 2,
+        "ten": "Củng cố hệ thức lượng và bất phương trình",
+        "mon_hoc": "Toán 10",
+        "muc_tieu": "Tiếp tục theo thứ tự tự đánh giá của học sinh: củng cố chương IV trước chương II. Tập trung hiểu cách chọn hệ thức lượng, biểu diễn miền nghiệm và kết hợp các điều kiện trong hệ; dùng bài tập tự kiểm tra để điều chỉnh phần cần ưu tiên.",
+        "chapters": [
+          {
+            "chapter_id": "IV",
+            "lessons": [
+              "Giá trị lượng giác của một góc từ 0° đến 180°",
+              "Định lí côsin và định lí sin",
+              "Giải tam giác và ứng dụng thực tế"
+            ],
+            "ly_do": "Học sinh xếp chương IV thứ ba trong danh sách tự nhận yếu. Vì vậy, chương này cần được củng cố trước chương II theo thứ tự học sinh nêu; kết quả bài kiểm tra đầu vào không được dùng để xác định mức độ hiện tại."
+          },
+          {
+            "chapter_id": "II",
+            "lessons": [
+              "Bất phương trình bậc nhất hai ẩn",
+              "Hệ bất phương trình bậc nhất hai ẩn"
+            ],
+            "ly_do": "Học sinh xếp chương II thứ tư trong danh sách tự nhận yếu. Cần dành thời gian ôn cách xác định và biểu diễn miền nghiệm, sau đó luyện giao các miền nghiệm và bài tập vận dụng; các bài tự kiểm tra sẽ cho căn cứ thực tế hơn kết quả đầu vào bị cho là không chính xác."
+          }
+        ],
+        "tieu_chi_hoan_thanh": "Tự giải được bài tập cơ bản trong các bài của hai chương; biết chọn hệ thức phù hợp khi giải tam giác, biểu diễn đúng miền nghiệm và xác định nghiệm của hệ qua phần giao; có thể nêu và sửa các lỗi phát hiện trong bài tự kiểm tra.",
+        "tai_nguyen": [
+          {
+            "loai": "video",
+            "tieu_de": "Toán 10 Bài 2: Định lí côsin và định lí sin | Chân trời sáng tạo (HAY NHẤT)",
+            "url": "https://youtube.com/watch?v=E6yneqV6KSk",
+            "ghi_chu": "Video hỗ trợ ôn cách vận dụng định lí côsin và định lí sin."
+          },
+          {
+            "loai": "tai_lieu",
+            "tieu_de": "Bất Phương Trình Bậc Nhất Hai Ẩn - TOANMATH.com",
+            "url": "https://toanmath.com/bat-phuong-trinh-bac-nhat-hai-an",
+            "ghi_chu": "Tài liệu giúp hệ thống và luyện nội dung bất phương trình bậc nhất hai ẩn."
+          },
+          {
+            "loai": "tai_lieu",
+            "tieu_de": "Đề kiểm tra theo bài học chủ đề BPT và hệ BPT bậc nhất hai ẩn - TOANMATH.com",
+            "url": "https://toanmath.com/2025/09/de-kiem-tra-theo-bai-hoc-chu-de-bpt-va-he-bpt-bac-nhat-hai-an.html",
+            "ghi_chu": "Tài liệu giúp tự kiểm tra kiến thức và bài tập về bất phương trình, hệ bất phương trình."
+          }
+        ]
+      },
+      {
+        "thu_tu": 3,
+        "ten": "Rà soát mệnh đề, tập hợp và thống kê",
+        "mon_hoc": "Toán 10",
+        "muc_tieu": "Củng cố chương I, chương cuối trong danh sách học sinh tự nhận yếu, rồi rà soát chương VI ở mức ngắn hơn vì học sinh không nêu đây là điểm yếu. Kết thúc bằng bài tổng hợp, ưu tiên sửa lỗi còn lặp lại và cân đối giữa độ chính xác khi làm bài với việc giải thích cách làm.",
+        "chapters": [
+          {
+            "chapter_id": "I",
+            "lessons": [
+              "Mệnh đề",
+              "Tập hợp",
+              "Các phép toán trên tập hợp"
+            ],
+            "ly_do": "Học sinh xếp chương I cuối cùng trong danh sách tự nhận yếu, nên chương này vẫn cần được ôn trước hạn, dù nằm sau các chương V, III, IV và II theo thứ tự ưu tiên đã nêu. Không lấy kết quả bài kiểm tra đầu vào làm thước đo mức độ hiện tại."
+          },
+          {
+            "chapter_id": "VI",
+            "lessons": [
+              "Số gần đúng và sai số",
+              "Mô tả và biểu diễn dữ liệu trên các bảng và biểu đồ",
+              "Các số đặc trưng đo xu thế trung tâm của mẫu số liệu",
+              "Các số đặc trưng đo mức độ phân tán của mẫu số liệu"
+            ],
+            "ly_do": "Học sinh không nêu chương VI trong danh sách các chương tự nhận yếu, nên có thể dành phần rà soát ngắn hơn so với các chương được ưu tiên. Mức độ hiện tại chưa được xác nhận đáng tin cậy bởi bài kiểm tra đầu vào; cần kiểm tra nhanh các nội dung để phát hiện nếu còn lỗ hổng."
+          }
+        ],
+        "tieu_chi_hoan_thanh": "Làm được bài tập cơ bản về mệnh đề, tập hợp và các phép toán trên tập hợp; rà soát được cách tính, biểu diễn và diễn giải dữ liệu thống kê. Hoàn thành một bài tự đánh giá tổng hợp, phân loại lỗi còn mắc và dành phần ôn cuối cho các lỗi ảnh hưởng nhiều nhất đến kết quả.",
+        "tai_nguyen": [
+          {
+            "loai": "video",
+            "tieu_de": "Đại số 10 - Bài 1 : Mệnh đề toán học ( chương trình mới )",
+            "url": "https://youtube.com/watch?v=ArLunKleahE",
+            "ghi_chu": "Video giúp ôn lại khái niệm và cách nhận biết mệnh đề."
+          },
+          {
+            "loai": "tai_lieu",
+            "tieu_de": "Đề kiểm tra Mệnh đề lớp 10 (có lời giải) - Đề 1",
+            "url": "https://khoahoc.vietjack.com/thi-online/de-kiem-tra-menh-de-lop-10-co-loi-giai",
+            "ghi_chu": "Tài liệu giúp tự kiểm tra phần mệnh đề và đối chiếu lời giải để nhận diện lỗi."
+          },
+          {
+            "loai": "tai_lieu",
+            "tieu_de": "Lý thuyết tổng hợp Thống kê lớp 10 (hay, chi tiết)",
+            "url": "https://vietjack.com/toan-lop-10/ly-thuyet-tong-hop-chuong-thong-ke.jsp",
+            "ghi_chu": "Tài liệu giúp hệ thống lại kiến thức thống kê khi rà soát chương VI."
+          }
+        ]
+      }
+    ],
+    "gia_dinh": [
+      "Học sinh cho biết bài kiểm tra đầu vào không chính xác; do chưa có kết quả bài kiểm tra thay thế, mức độ thực tế của từng chương chưa được xác nhận bằng dữ liệu khác.",
+      "Thứ tự ưu tiên các chương V, III, IV, II, I được giữ theo danh sách học sinh tự nhận yếu; đây là lựa chọn dựa trên tự đánh giá, không phải kết luận độc lập về mức độ nắm bài.",
+      "Chương VI không có trong danh sách học sinh tự nhận yếu nên được xếp vào phần rà soát ngắn; đây là đề xuất phân bổ ưu tiên, không khẳng định học sinh đã nắm vững chương này.",
+      "Ba giai đoạn bao quát toàn bộ sáu chương trong giới hạn tối đa 12 buổi. Tỉ lệ thời gian cụ thể cho từng chương cần được điều chỉnh theo kết quả tự kiểm tra trong quá trình học.",
+      "Thứ tự học và cách gộp chương trong các giai đoạn là đề xuất để phù hợp với danh sách tự đánh giá và thời gian còn lại, không được xác nhận trực tiếp bởi cấu trúc chương trình.",
+      "Thời lượng trong các giáo án là gợi ý tham khảo, chưa xác minh và không được xem là phân phối chính thức hay lịch học cố định.",
+      "Mục tiêu 8,0 là định hướng; lộ trình không thể bảo đảm đạt điểm này chỉ dựa trên kế hoạch."
+    ]
+  },
+  "student_model_snapshot": {
+    "student_id": "hs_002",
+    "ca_nhan": {
+      "ho_ten": "",
+      "khoi_lop": 10,
+      "so_thich": [],
+      "hoat_dong_ngoai_khoa": []
+    },
+    "nang_luc": [
+      {
+        "mon_hoc": "Toán 10",
+        "diem_hien_tai": 6.0,
+        "diem_manh": [],
+        "diem_yeu": [
+          "V",
+          "III",
+          "IV",
+          "II",
+          "I"
+        ],
+        "da_test_dau_vao": true,
+        "chu_de": [
+          {
+            "chapter_id": "V",
+            "lesson": "",
+            "muc_nam": 0.0,
+            "do_tin_cay": 0.6,
+            "nguon": "bai_kiem_tra",
+            "cap_nhat": "2026-10-31T06:18:02.456755"
+          },
+          {
+            "chapter_id": "III",
+            "lesson": "",
+            "muc_nam": 0.25,
+            "do_tin_cay": 0.8,
+            "nguon": "bai_kiem_tra",
+            "cap_nhat": "2026-10-31T06:18:02.456755"
+          },
+          {
+            "chapter_id": "VI",
+            "lesson": "",
+            "muc_nam": 0.5,
+            "do_tin_cay": 0.4,
+            "nguon": "bai_kiem_tra",
+            "cap_nhat": "2026-10-31T06:18:02.456755"
+          },
+          {
+            "chapter_id": "IV",
+            "lesson": "",
+            "muc_nam": 0.33,
+            "do_tin_cay": 0.6,
+            "nguon": "bai_kiem_tra",
+            "cap_nhat": "2026-10-31T06:18:02.456755"
+          },
+          {
+            "chapter_id": "II",
+            "lesson": "",
+            "muc_nam": 0.0,
+            "do_tin_cay": 0.4,
+            "nguon": "bai_kiem_tra",
+            "cap_nhat": "2026-10-31T06:18:02.456755"
+          },
+          {
+            "chapter_id": "I",
+            "lesson": "",
+            "muc_nam": 0.0,
+            "do_tin_cay": 1,
+            "nguon": "bai_kiem_tra",
+            "cap_nhat": "2026-10-31T06:18:02.456755"
+          }
+        ]
+      }
+    ],
+    "muc_tieu": [
+      {
+        "mon_hoc": "Toán 10",
+        "muc_tieu_diem": 8.0,
+        "han_chot": null,
+        "ngay_ket_thuc": "2026-11-28",
+        "so_tuan_con_lai": 4,
+        "uu_tien": "ca_hai",
+        "dang_bai_can_giu": []
+      }
+    ],
+    "so_thich_hoc": {
+      "dung_tai_lieu": true,
+      "dung_video": true,
+      "bai_tap_sau_buoi": true,
+      "tom_tat_cuoi_buoi": null,
+      "thoi_luong_buoi_phut": 120
+    },
+    "lich_hoc": {
+      "so_buoi_tuan": 3,
+      "khung_gio_ranh": {
+        "Mon": [
+          "07:00-09:00"
+        ],
+        "Sat": [
+          "19:00-21:00"
+        ],
+        "Tue": [
+          "07:00-09:00"
+        ]
+      },
+      "lich_ban": []
+    },
+    "tien_do": {
+      "ti_le_hoan_thanh": null,
+      "so_ngay_lien_tiep": 0,
+      "lan_hoat_dong_cuoi": null,
+      "tin_hieu_dong_luc": null
+    },
+    "version": 1,
+    "updated_at": "2026-10-31T06:18:02.456755"
+  },
+  "plan_id": "afa450a9-c1d0-4c95-861b-c4900e41d9f2",
+  "student_id": "hs_002",
+  "created_at": "2026-10-30T23:23:08.894659+00:00",
+  "updated_at": "2026-10-30T23:23:08.894659+00:00",
+  "progress_version": 0,
+  "title": "Toán 10 · 2026-10-31"
+}

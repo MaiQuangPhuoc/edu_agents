@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "chuong": "VECTƠ",
+    "bai": "Khái niệm vectơ",
+    "dang_bai": "Nhận dạng vectơ và xác định điểm đầu, điểm cuối",
+    "type": "bai_tap",
+    "do_kho": 0,
+    "question": "Vectơ \\(\\overrightarrow{MN}\\) có điểm đầu và điểm cuối lần lượt là cặp điểm nào?",
+    "options": {
+      "A": "Điểm đầu \\(M\\), điểm cuối \\(N\\)",
+      "B": "Điểm đầu \\(N\\), điểm cuối \\(M\\)",
+      "C": "Điểm đầu \\(M\\), điểm cuối \\(M\\)",
+      "D": "Điểm đầu \\(N\\), điểm cuối \\(N\\)"
+    },
+    "answer": "A",
+    "giai_thich": "Theo định nghĩa, vectơ \\(\\overrightarrow{AB}\\) có điểm đầu là \\(A\\) và điểm cuối là \\(B\\). Thay \\(A=M\\), \\(B=N\\), ta được điểm đầu là \\(M\\), điểm cuối là \\(N\\). Vì vậy A đúng. B đảo điểm đầu và điểm cuối; C và D lần lượt gán hai đầu cùng là M hoặc cùng là N, không đúng với kí hiệu \\(\\overrightarrow{MN}\\).",
+    "y_tuong": "Đọc thứ tự điểm đầu và điểm cuối trực tiếp từ kí hiệu vectơ.",
+    "answer_code": "Start=M, End=N",
+    "check": "✅"
+  },
+  {
+    "id": 2,
+    "chuong": "VECTƠ",
+    "bai": "Khái niệm vectơ",
+    "dang_bai": "Xác định giá và độ dài của vectơ",
+    "type": "bai_tap",
+    "do_kho": 0,
+    "question": "Cho hai điểm \\(P,Q\\) có \\(PQ=7\\text{ cm}\\). Giá và độ dài của vectơ \\(\\overrightarrow{PQ}\\) lần lượt là gì?",
+    "options": {
+      "A": "Đường thẳng \\(PQ\\) và \\(7\\text{ cm}\\)",
+      "B": "Đoạn thẳng \\(PQ\\) và \\(7\\text{ cm}\\)",
+      "C": "Đường thẳng \\(PQ\\) và \\(49\\text{ cm}\\)",
+      "D": "Đường thẳng \\(QP\\) và \\(-7\\text{ cm}\\)"
+    },
+    "answer": "A",
+    "giai_thich": "Giá của vectơ \\(\\overrightarrow{PQ}\\) là đường thẳng đi qua P và Q. Độ dài vectơ bằng độ dài đoạn thẳng PQ, nên \\(|\\overrightarrow{PQ}|=PQ=7\\text{ cm}\\). Do đó A đúng. B nhầm giá (đường thẳng) với đoạn thẳng; C bình phương độ dài; D cho độ dài âm, trong khi độ dài là 7 cm.",
+    "y_tuong": "Phân biệt giá là đường thẳng chứa vectơ với độ dài là độ dài đoạn thẳng tương ứng.",
+    "answer_code": "('đường thẳng PQ', 7)",
+    "check": "N/A (không đồng thuận)"
+  },
+  {
+    "id": 3,
+    "chuong": "VECTƠ",
+    "bai": "Khái niệm vectơ",
+    "dang_bai": "Phân loại hai vectơ theo phương và hướng",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Hai vectơ khác vectơ-không \\(\\overrightarrow{AB}\\) và \\(\\overrightarrow{CD}\\) có các giá lần lượt nằm trên hai đường thẳng song song. Biết chúng hướng ngược chiều nhau. Kết luận nào đúng?",
+    "options": {
+      "A": "Chúng cùng phương và ngược hướng",
+      "B": "Chúng cùng phương và cùng hướng",
+      "C": "Chúng không cùng phương",
+      "D": "Chúng bằng nhau"
+    },
+    "answer": "A",
+    "giai_thich": "Hai vectơ cùng phương khi các đường thẳng chứa giá của chúng song song hoặc trùng nhau. Hai giá đã cho song song nên hai vectơ cùng phương. Vì đề bài cho biết chúng hướng ngược chiều nhau, chúng ngược hướng. Vậy A đúng. B trái với dữ kiện hướng; C trái với định nghĩa cùng phương; D không thể kết luận và cũng mâu thuẫn với việc ngược hướng vì hai vectơ bằng nhau phải cùng hướng.",
+    "y_tuong": "Dùng quan hệ giữa giá song song và tính cùng phương, đồng thời phân biệt cùng phương với hướng.",
+    "answer_code": "cùng phương, ngược hướng",
+    "check": "✅"
+  },
+  {
+    "id": 4,
+    "chuong": "VECTƠ",
+    "bai": "Khái niệm vectơ",
+    "dang_bai": "Kiểm tra hai vectơ bằng nhau hoặc đối nhau",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Xét hai cặp vectơ khác vectơ-không. Cặp thứ nhất \\((\\vec u,\\vec v)\\) gồm hai vectơ cùng hướng và cùng độ dài; cặp thứ hai \\((\\vec p,\\vec q)\\) gồm hai vectơ ngược hướng và cùng độ dài. Phân loại đúng là gì?",
+    "options": {
+      "A": "\\(\\vec u=\\vec v\\); \\(\\vec p\\) và \\(\\vec q\\) đối nhau",
+      "B": "\\(\\vec u\\) và \\(\\vec v\\) đối nhau; \\(\\vec p=\\vec q\\)",
+      "C": "Cả hai cặp đều là vectơ bằng nhau",
+      "D": "Cả hai cặp đều là vectơ đối nhau"
+    },
+    "answer": "A",
+    "giai_thich": "Theo định nghĩa, hai vectơ cùng hướng và cùng độ dài thì bằng nhau; do đó \\(\\vec u=\\vec v\\). Hai vectơ ngược hướng và cùng độ dài thì đối nhau; do đó \\(\\vec p\\) và \\(\\vec q\\) đối nhau. Vậy A đúng. B hoán đổi hai tiêu chuẩn; C sai vì cặp thứ hai ngược hướng; D sai vì cặp thứ nhất cùng hướng.",
+    "y_tuong": "Phân loại đồng thời một cặp vectơ bằng nhau và một cặp vectơ đối nhau từ hướng và độ dài.",
+    "answer_code": "u=v, p and q opposite",
+    "check": "✅"
+  },
+  {
+    "id": 5,
+    "chuong": "VECTƠ",
+    "bai": "Khái niệm vectơ",
+    "dang_bai": "Nhận biết vectơ-không và độ dài của nó",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Mệnh đề nào đúng về vectơ-không?",
+    "options": {
+      "A": "\\(\\overrightarrow{AA}=\\vec 0\\) và \\(|\\vec 0|=0\\)",
+      "B": "\\(\\overrightarrow{AA}=\\vec 0\\) và \\(|\\vec 0|=1\\)",
+      "C": "Vectơ-không có hai điểm đầu và điểm cuối khác nhau",
+      "D": "Vectơ-không luôn có một hướng xác định"
+    },
+    "answer": "A",
+    "giai_thich": "Tài liệu nêu \\(\\overrightarrow{AA}=\\vec 0\\), vectơ-không có điểm đầu và điểm cuối trùng nhau, đồng thời có độ dài bằng 0. Vì vậy A đúng. B sai vì độ dài vectơ-không không phải 1; C trái với tính chất hai đầu trùng nhau; D không đúng vì không suy diễn vectơ-không có một hướng xác định.",
+    "y_tuong": "Nhận biết kí hiệu vectơ-không, độ dài bằng 0 và tránh gán hướng xác định cho nó.",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 6,
+    "chuong": "VECTƠ",
+    "bai": "Khái niệm vectơ",
+    "dang_bai": "Phân loại hai vectơ theo phương và hướng",
+    "type": "ly_thuyet",
+    "do_kho": 0,
+    "question": "Giá của vectơ \\(\\overrightarrow{AB}\\) song song với giá của vectơ \\(\\overrightarrow{CD}\\). Chiều từ \\(A\\) đến \\(B\\) ngược với chiều từ \\(C\\) đến \\(D\\). Kết luận nào đúng?",
+    "options": {
+      "A": "Hai vectơ không cùng phương vì chúng ngược hướng.",
+      "B": "Hai vectơ cùng phương và cùng hướng.",
+      "C": "Hai vectơ cùng phương và ngược hướng.",
+      "D": "Chỉ biết hai vectơ cùng phương, không thể xác định chúng cùng hay ngược hướng."
+    },
+    "answer": "C",
+    "giai_thich": "Theo định nghĩa trong tài liệu, hai vectơ cùng phương nếu các đường thẳng chứa giá của chúng song song hoặc trùng nhau. Vì hai giá song song nên hai vectơ cùng phương. Với hai vectơ khác vectơ-không cùng phương, chúng cùng hướng hoặc ngược hướng; đề bài cho chiều của chúng ngược nhau nên kết luận hai vectơ ngược hướng. Do đó C đúng. A nhầm ngược hướng với không cùng phương; B trái với dữ kiện về chiều; D không đúng vì đề đã cho chiều để xác định hướng.",
+    "y_tuong": "Cho hai giá song song nhưng chiều vectơ trái ngược để kiểm tra phân biệt cùng phương với ngược hướng.",
+    "answer_code": "",
+    "check": ""
+  },
+  {
+    "id": 7,
+    "chuong": "VECTƠ",
+    "bai": "Khái niệm vectơ",
+    "dang_bai": "Kiểm tra hai vectơ bằng nhau hoặc đối nhau",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Trên một trục tọa độ, cho các điểm có tọa độ \\(A=1\\), \\(B=6\\), \\(C=9\\), \\(D=4\\). Hai vectơ \\(\\overrightarrow{AB}\\) và \\(\\overrightarrow{CD}\\) có quan hệ nào?",
+    "options": {
+      "A": "Bằng nhau.",
+      "B": "Đối nhau.",
+      "C": "Cùng độ dài nhưng không bằng nhau cũng không đối nhau.",
+      "D": "Không cùng độ dài."
+    },
+    "answer": "B",
+    "giai_thich": "Trên trục tọa độ, vectơ từ điểm có tọa độ \\(x_1\\) đến điểm có tọa độ \\(x_2\\) có độ dịch chuyển \\(x_2-x_1\\). Ta tính \\(\\overrightarrow{AB}: 6-1=5\\), còn \\(\\overrightarrow{CD}: 4-9=-5\\). Hai vectơ có độ dài đều bằng \\(5\\), nhưng dấu trái nhau cho biết chúng ngược hướng. Theo tài liệu, hai vectơ ngược hướng và cùng độ dài là hai vectơ đối nhau, vậy chọn B. A sai vì hai vectơ không cùng hướng; C sai vì chúng thuộc trường hợp đối nhau; D sai vì độ dài của cả hai đều là 5.",
+    "y_tuong": "Tính độ dịch chuyển có dấu của hai vectơ trên trục, rồi đối chiếu hướng và độ dài để phân loại là đối nhau.",
+    "answer_code": "Đối nhau",
+    "check": "✅"
+  },
+  {
+    "id": 8,
+    "chuong": "VECTƠ",
+    "bai": "Khái niệm vectơ",
+    "dang_bai": "Nhận biết vectơ-không và độ dài của nó",
+    "type": "bai_tap",
+    "do_kho": 1,
+    "question": "Cho các cặp điểm sau: \\(A=B\\), \\(C\\ne D\\), \\(E=F\\). Xét các vectơ \\(\\overrightarrow{AA}\\), \\(\\overrightarrow{CD}\\), \\(\\overrightarrow{EF}\\). Phương án nào nêu đúng các vectơ-không trong danh sách và độ dài của mỗi vectơ-không?",
+    "options": {
+      "A": "Chỉ \\(\\overrightarrow{AA}\\) là vectơ-không và có độ dài bằng 0.",
+      "B": "\\(\\overrightarrow{AA}\\) và \\(\\overrightarrow{EF}\\) là vectơ-không, mỗi vectơ có độ dài bằng 0.",
+      "C": "Cả ba vectơ đều là vectơ-không và có độ dài bằng 0.",
+      "D": "\\(\\overrightarrow{AA}\\) và \\(\\overrightarrow{EF}\\) là vectơ-không, mỗi vectơ có độ dài bằng 1."
+    },
+    "answer": "B",
+    "giai_thich": "Theo tài liệu, vectơ có điểm đầu và điểm cuối trùng nhau là vectơ-không, và \\(\\overrightarrow{AA}=\\vec 0\\) có độ dài bằng 0. Vì \\(A=B\\), vectơ \\(\\overrightarrow{AA}\\) là vectơ-không; vì \\(E=F\\), vectơ \\(\\overrightarrow{EF}\\) cũng có điểm đầu trùng điểm cuối nên là vectơ-không. Mỗi vectơ-không có độ dài 0. Còn \\(C\\ne D\\) nên \\(\\overrightarrow{CD}\\) không phải vectơ-không. Vậy B đúng. A bỏ sót \\(\\overrightarrow{EF}\\); C kết luận sai về \\(\\overrightarrow{CD}\\); D nhận diện đúng các vectơ-không nhưng gán sai độ dài.",
+    "y_tuong": "Dùng dữ kiện điểm đầu và điểm cuối trùng hay khác nhau để nhận diện tất cả vectơ-không và nêu độ dài.",
+    "answer_code": "AA và EF là vectơ‑không, mỗi vectơ có độ dài bằng 0",
+    "check": "✅"
+  }
+]
